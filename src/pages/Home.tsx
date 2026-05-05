@@ -7,6 +7,7 @@ import AuthorByline from '../components/AuthorByline';
 import PullQuote from '../components/PullQuote';
 import ImageBreak from '../components/ImageBreak';
 import TripTypeRecommender from '../components/TripTypeRecommender';
+import WorkInLaplandPromo from '../components/WorkInLaplandPromo';
 import { allCategoriesSummary, destinations } from '../data/properties';
 import { pageUrl } from '../lib/meta';
 
@@ -191,6 +192,10 @@ export default function Home() {
           <TripTypeRecommender />
         </div>
       </section>
+
+      <FinnishDivider />
+
+      <WorkInLaplandPromo placement="home_below_trips" />
 
       <FinnishDivider />
 

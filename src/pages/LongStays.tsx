@@ -9,6 +9,7 @@ import EditorsPick from '../components/EditorsPick';
 import PullQuote from '../components/PullQuote';
 import ImageBreak from '../components/ImageBreak';
 import MarginNote from '../components/MarginNote';
+import WorkInLaplandPromo from '../components/WorkInLaplandPromo';
 import { longStays } from '../data/properties';
 import { pageUrl } from '../lib/meta';
 
@@ -66,6 +67,10 @@ export default function LongStays() {
       <section className="py-12 sm:py-16 px-5 sm:px-6">
         <div className="max-w-4xl mx-auto">
           <AuthorByline note="Six properties cross-checked with on-the-ground partners and weekly-rate calendars across the 2025/26 season." />
+
+          <div className="mt-10">
+            <WorkInLaplandPromo placement="long_stays_top" variant="inline" />
+          </div>
         </div>
       </section>
 

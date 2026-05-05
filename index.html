@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+
+    <!-- Canonical (per-route override via React 19 native <link>) -->
+    <link rel="canonical" href="https://stayinlapland.com" />
+
+    <!-- Performance: preconnect to Drive CDN + Google Fonts -->
+    <link rel="preconnect" href="https://lh3.googleusercontent.com" crossorigin />
+    <link rel="dns-prefetch" href="https://lh3.googleusercontent.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- Hero LCP preload -->
+    <link rel="preload" as="image" href="/images/home-hero.webp" fetchpriority="high" />
+
+    <!-- Icons & manifest -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <meta name="theme-color" content="#FAFAF8" />
+
+    <!-- Primary SEO — title set per-route via React 19 native <title>.
+         No static <meta name="description"> — would override per-route. -->
+    <title>StayInLapland — Long Stays &amp; Boutique Hotels in Finnish Lapland</title>
+    <meta name="keywords" content="long stay lapland, lapland villa rental, lapland boutique hotel, weekly cabin lapland, lapland apartment rental, lapland luxury accommodation, glass igloo lapland, wilderness lodge finland" />
+    <meta name="author" content="StayInLapland — Lapeso Oy" />
+    <meta name="publisher" content="Lapeso Oy" />
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1" />
+
+    <!-- Open Graph -->
+    <meta property="og:site_name" content="StayInLapland" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://stayinlapland.com/" />
+    <meta property="og:title" content="StayInLapland — Long Stays &amp; Boutique Hotels in Finnish Lapland" />
+    <meta property="og:description" content="Settle into Finnish Lapland — luxury cabin rentals by the week, design hotels in Rovaniemi and Saariselkä, and the iconic Lapland glass igloos." />
+    <meta property="og:image" content="https://stayinlapland.com/og-default.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Editorial luxury cabin in Finnish Lapland with warm window light" />
+    <meta property="og:locale" content="en_US" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@laplandvibes" />
+    <meta name="twitter:title" content="StayInLapland — Long Stays &amp; Boutique Hotels in Finnish Lapland" />
+    <meta name="twitter:description" content="Luxury cabin rentals by the week and boutique hotels across Finnish Lapland." />
+    <meta name="twitter:image" content="https://stayinlapland.com/og-default.jpg" />
+
+    <link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml" />
+
+    <!-- GetYourGuide Integration Analyzer -->
+    <script async defer
+      src="https://widget.getyourguide.com/dist/pa.umd.production.min.js"
+      data-gyg-partner-id="VRMKD7N"></script>
+
+    <!-- Schema.org Organization + WebSite -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Organization",
+          "@id": "https://stayinlapland.com/#organization",
+          "name": "StayInLapland",
+          "url": "https://stayinlapland.com",
+          "logo": "https://stayinlapland.com/favicon.svg",
+          "description": "Luxury accommodation guide for Finnish Lapland — long-stay rentals, boutique hotels, glass igloos and wilderness lodges.",
+          "parentOrganization": { "@type": "Organization", "name": "Lapeso Oy" },
+          "sameAs": [
+            "https://www.youtube.com/@laplandvibes",
+            "https://www.facebook.com/LaplandVibes",
+            "https://www.instagram.com/laplandvibesofficial",
+            "https://www.tiktok.com/@laplandvibesofficial"
+          ]
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://stayinlapland.com/#website",
+          "url": "https://stayinlapland.com",
+          "name": "StayInLapland",
+          "inLanguage": "en",
+          "description": "Long stays and boutique hotels in Finnish Lapland.",
+          "publisher": { "@id": "https://stayinlapland.com/#organization" }
+        }
+      ]
+    }
+    </script>
+
+    <!-- GA4 Consent Mode v2 — default denied -->
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('consent', 'default', {
+        analytics_storage: 'denied',
+        ad_storage: 'denied',
+        ad_user_data: 'denied',
+        ad_personalization: 'denied',
+        wait_for_update: 500
+      });
+      if (localStorage.getItem('stayinlapland_cookie_consent') === 'accepted') {
+        gtag('consent', 'update', {
+          analytics_storage: 'granted',
+          ad_storage: 'granted',
+          ad_user_data: 'granted',
+          ad_personalization: 'granted'
+        });
+      }
+    </script>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-4TH2FKDESP"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-4TH2FKDESP', {
+        anonymize_ip: true,
+        linker: {
+          domains: [
+            'laplandvibes.com',
+            'laplandnature.com',
+            'laplandstays.com',
+            'stayinlapland.com',
+            'laplandbars.com',
+            'laplanddeals.com',
+            'laplanddining.com',
+            'laplandfood.com',
+            'laplandgifts.com',
+            'laplandnightlife.com',
+            'laplandtransport.com',
+            'laplandhuskysafaris.com',
+            'laplandskiresorts.com',
+            'laplandsnowmobile.com',
+            'laplandcarrental.com',
+            'laplandhoteldeals.com',
+            'laplandkids.com',
+            'laplandvisit.com',
+            'laplandwellness.com',
+            'laplandactivities.online'
+          ]
+        }
+      });
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800&family=Nunito:wght@300;400;500;600;700&display=swap');
+@import "tailwindcss";
+@source "../../shared/**/*.{ts,tsx,js,jsx}";
+
+@theme {
+  /* LV-canon colours — required for shared/Footer + CookieBanner */
+  --color-vibe-pink: #EC4899;
+  --color-arctic-cyan: #06B6D4;
+  --color-aurora-green: #10B981;
+  --color-deep-night: #0F172A;
+  --color-finland-blue: #002F6C;
+  --color-snow: #F9FAFB;
+
+  /* Luxury editorial palette */
+  --color-cream: #FAFAF8;
+  --color-cream-2: #F2EFE8;
+  --color-charcoal: #1F2937;
+  --color-graphite: #374151;
+  --color-stone: #6B7280;
+  --color-gold: #C9A464;
+  --color-gold-soft: #E8D9B7;
+  --color-night: #0F172A;
+
+  /* Typography */
+  --font-heading: 'Playfair Display', serif;
+  --font-display: 'Playfair Display', serif;
+  --font-body: 'Nunito', sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: var(--font-body);
+    color: var(--color-charcoal);
+    background-color: var(--color-cream);
+    font-feature-settings: 'kern', 'liga', 'ss01';
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+    font-weight: 600;
+    color: var(--color-charcoal);
+    letter-spacing: -0.01em;
+  }
+
+  ::selection {
+    background-color: var(--color-gold);
+    color: var(--color-night);
+  }
+}
+
+@keyframes auroraShimmer {
+  0%   { background-position: 0% 50%; }
+  100% { background-position: 100% 50%; }
+}
+
+@keyframes slowFloat {
+  0%, 100% { transform: translateY(0); }
+  50%      { transform: translateY(-6px); }
+}

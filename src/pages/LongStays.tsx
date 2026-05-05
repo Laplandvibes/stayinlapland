@@ -10,6 +10,7 @@ import PullQuote from '../components/PullQuote';
 import ImageBreak from '../components/ImageBreak';
 import MarginNote from '../components/MarginNote';
 import WorkInLaplandPromo from '../components/WorkInLaplandPromo';
+import LongTermRentals from '../components/LongTermRentals';
 import { longStays } from '../data/properties';
 import { pageUrl } from '../lib/meta';
 
@@ -169,6 +170,10 @@ export default function LongStays() {
           </MarginNote>
         </div>
       </section>
+
+      <FinnishDivider />
+
+      <LongTermRentals />
 
       <FinnishDivider />
 

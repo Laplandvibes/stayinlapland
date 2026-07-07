@@ -1,13 +1,14 @@
 import { ShieldCheck } from 'lucide-react';
+import { useLang } from '../i18n/useLang';
+import { getCopy } from '../locales/copy';
 
 interface AuthorBylineProps {
   note?: string;
 }
 
-/**
- * Editorial provenance strip — no personal author. Cream-themed.
- */
 export default function AuthorByline({ note }: AuthorBylineProps) {
+  const lang = useLang();
+  const t = getCopy(lang).authorByline;
   return (
     <div className="flex items-start gap-4">
       <div
@@ -17,13 +18,8 @@ export default function AuthorByline({ note }: AuthorBylineProps) {
         <ShieldCheck className="w-6 h-6 sm:w-7 sm:h-7 text-vibe-pink" />
       </div>
       <div className="text-graphite text-sm sm:text-[15px] leading-relaxed">
-        <p className="text-charcoal font-semibold mb-0.5">
-          Reviewed by the LaplandVibes editorial network
-        </p>
-        <p className="text-stone">
-          {note ??
-            'Written and fact-checked with on-the-ground partners across Finnish Lapland. We earn affiliate commission on bookings, but it never shapes which properties we recommend.'}
-        </p>
+        <p className="text-charcoal font-semibold mb-0.5">{t.reviewed}</p>
+        <p className="text-stone">{note ?? t.defaultNote}</p>
       </div>
     </div>
   );

@@ -14,6 +14,8 @@ import {
 } from '../data/properties';
 import type { Property } from '../data/properties';
 import { pageUrl } from '../lib/meta';
+import { useLang, useLocalePath } from '../i18n/useLang';
+import { getCopy } from '../locales/copy';
 
 const HERO_IMAGES: Record<string, string> = {
   rovaniemi: '/images/hero-cabins.webp',
@@ -23,55 +25,81 @@ const HERO_IMAGES: Record<string, string> = {
   yllas: '/images/hero-wilderness.webp',
 };
 
-function findProperty(name: string): { p: Property; bucket: string } | null {
-  const sources: { items: Property[]; bucket: string }[] = [
+type Bucket = 'long-stays' | 'hotels' | 'glass-igloos' | 'wilderness';
+
+function findProperty(name: string): { p: Property; bucket: Bucket; index: number } | null {
+  const sources: { items: Property[]; bucket: Bucket }[] = [
     { items: longStays, bucket: 'long-stays' },
     { items: hotels, bucket: 'hotels' },
     { items: glassIgloos, bucket: 'glass-igloos' },
     { items: wilderness, bucket: 'wilderness' },
   ];
   for (const s of sources) {
-    const p = s.items.find((x) => x.name === name);
-    if (p) return { p, bucket: s.bucket };
+    const index = s.items.findIndex((x) => x.name === name);
+    if (index !== -1) return { p: s.items[index], bucket: s.bucket, index };
   }
   return null;
 }
 
 export default function DestinationPage() {
   const { slug = '' } = useParams<{ slug: string }>();
-  const dest = destinations.find((d) => d.slug === slug);
+  const lang = useLang();
+  const localePath = useLocalePath();
+  const t = getCopy(lang);
+  const d = t.destinationPage;
+  const dest = destinations.find((x) => x.slug === slug);
 
   if (!dest) {
     return (
       <section className="py-32 px-5 max-w-3xl mx-auto text-center">
         <p className="text-vibe-pink text-[11px] font-semibold tracking-[0.28em] uppercase mb-3">
-          Page not found
+          {d.notFoundKicker}
         </p>
-        <h1 className="font-heading text-5xl text-charcoal mb-5">
-          Destination not on the list.
-        </h1>
-        <p className="text-graphite mb-8">
-          We currently cover Rovaniemi, Levi, Saariselkä, Inari and Ylläs.
-        </p>
+        <h1 className="font-heading text-4xl sm:text-5xl text-charcoal mb-5">{d.notFoundTitle}</h1>
+        <p className="text-graphite mb-8">{d.notFoundBody}</p>
         <Link
-          to="/"
+          to={localePath('/')}
           className="inline-flex items-center gap-2 px-6 py-3 bg-charcoal hover:bg-vibe-pink text-snow rounded-full font-semibold transition-colors"
         >
-          Back home <ArrowRight className="w-4 h-4" />
+          {d.backHome} <ArrowRight className="w-4 h-4" />
         </Link>
       </section>
     );
   }
 
-  const matched = dest.propertyNames.map(findProperty).filter(Boolean) as { p: Property; bucket: string }[];
+  // Build localized dest pitch/longStayAngle from copy.
+  const destCopy = t.destinationsData.find((x) => x.slug === dest.slug);
+  const pitch = destCopy?.pitch ?? dest.pitch;
+  const longStayAngle = destCopy?.longStayAngle ?? dest.longStayAngle;
+
+  const dataForBucket: Record<Bucket, typeof t.hotelsData> = {
+    'long-stays': t.longStaysData,
+    hotels: t.hotelsData,
+    'glass-igloos': t.glassIgloosData,
+    wilderness: t.wildernessData,
+  };
+
+  const matched = (dest.propertyNames
+    .map(findProperty)
+    .filter(Boolean) as { p: Property; bucket: Bucket; index: number }[])
+    .map(({ p, bucket, index }) => {
+      const loc = dataForBucket[bucket][index];
+      return {
+        bucket,
+        p: {
+          ...p,
+          name: loc?.name ?? p.name,
+          location: loc?.location ?? p.location,
+          highlight: loc?.highlight ?? p.highlight,
+          description: loc?.description ?? p.description,
+        } as Property,
+      };
+    });
 
   return (
     <>
-      <title>{dest.name} — Where to Stay | StayInLapland</title>
-      <meta
-        name="description"
-        content={`${dest.pitch} ${dest.longStayAngle}`.slice(0, 160)}
-      />
+      <title>{`${dest.name} — ${d.metaTitleSuffix}`}</title>
+      <meta name="description" content={`${pitch} ${longStayAngle}`.slice(0, 160)} />
       <link rel="canonical" href={pageUrl(`/destinations/${dest.slug}`)} />
       <meta name="robots" content="index, follow" />
       <script
@@ -83,13 +111,13 @@ export default function DestinationPage() {
               {
                 '@type': 'TouristDestination',
                 name: dest.name,
-                description: dest.pitch,
+                description: pitch,
                 containedInPlace: { '@type': 'Place', name: 'Finnish Lapland' },
               },
               {
                 '@type': 'BreadcrumbList',
                 itemListElement: [
-                  { '@type': 'ListItem', position: 1, name: 'Home', item: pageUrl('/') },
+                  { '@type': 'ListItem', position: 1, name: t.home.breadcrumbHome, item: pageUrl('/') },
                   { '@type': 'ListItem', position: 2, name: dest.name, item: pageUrl(`/destinations/${dest.slug}`) },
                 ],
               },
@@ -99,19 +127,17 @@ export default function DestinationPage() {
       />
 
       <PageHero
-        eyebrow="Lapland destination"
+        eyebrow={d.pageHeroEyebrow}
         title={dest.name}
-        subtitle={dest.pitch}
+        subtitle={pitch}
         imageSrc={HERO_IMAGES[dest.slug]}
         imageAlt={`Editorial winter scene from ${dest.name}, Finnish Lapland`}
       />
 
       <section className="py-16 sm:py-20 px-5 sm:px-6">
         <div className="max-w-4xl mx-auto">
-          <AuthorByline note={`Long-stay angle for ${dest.name} — written and fact-checked with on-the-ground partners.`} />
-          <p className="mt-10 text-graphite text-[17px] leading-relaxed">
-            {dest.longStayAngle}
-          </p>
+          <AuthorByline note={d.authorNoteFor(dest.name)} />
+          <p className="mt-10 text-graphite text-[17px] leading-relaxed">{longStayAngle}</p>
         </div>
       </section>
 
@@ -121,10 +147,10 @@ export default function DestinationPage() {
         <div className="max-w-5xl mx-auto">
           <div className="mb-10 max-w-2xl">
             <p className="text-vibe-pink text-[11px] font-semibold tracking-[0.28em] uppercase mb-3">
-              Recommended in {dest.name}
+              {d.recommendedIn(dest.name)}
             </p>
             <h2 className="font-heading text-4xl sm:text-5xl text-charcoal leading-tight tracking-tight">
-              Where to actually stay.
+              {d.whereToStay}
             </h2>
           </div>
 
@@ -136,7 +162,7 @@ export default function DestinationPage() {
               >
                 <div className="md:col-span-8">
                   <p className="text-[11px] tracking-[0.18em] uppercase text-stone font-semibold mb-2">
-                    {bucket.replace('-', ' ')}
+                    {d.bucketLabels[bucket] ?? bucket.replace('-', ' ')}
                   </p>
                   <h3 className="font-heading text-2xl sm:text-3xl text-charcoal leading-tight mb-2">
                     {p.name}
@@ -148,10 +174,10 @@ export default function DestinationPage() {
                 </div>
                 <div className="md:col-span-4 flex flex-col gap-3 md:items-end md:text-right">
                   <p className="text-charcoal font-semibold text-lg">
-                    {p.priceRange} <span className="text-stone font-normal text-sm">/ night</span>
+                    {p.priceRange} <span className="text-stone font-normal text-sm">{d.perNight}</span>
                   </p>
                   {p.minStay && (
-                    <p className="text-stone text-[13px]">Min stay: {p.minStay}</p>
+                    <p className="text-stone text-[13px]">{d.minStayLabel} {p.minStay}</p>
                   )}
                   <AffiliateCTA
                     partner="hotels"
@@ -159,13 +185,13 @@ export default function DestinationPage() {
                     destination={p.searchQuery ?? p.name}
                     className="inline-flex justify-center px-5 py-2.5 bg-charcoal hover:bg-vibe-pink text-snow rounded-full text-sm font-semibold transition-colors"
                   >
-                    Check rates
+                    {d.checkRates}
                   </AffiliateCTA>
                   <Link
-                    to={`/${bucket}`}
+                    to={localePath(`/${bucket}`)}
                     className="text-vibe-pink text-[13px] font-semibold hover:underline"
                   >
-                    See all {bucket.replace('-', ' ')}
+                    {d.seeAll} {d.bucketLabels[bucket] ?? bucket.replace('-', ' ')}
                   </Link>
                 </div>
               </article>
@@ -179,11 +205,12 @@ export default function DestinationPage() {
       <section className="py-16 sm:py-20 px-5 sm:px-6">
         <div className="max-w-3xl mx-auto text-center">
           <h2 className="font-heading text-3xl sm:text-4xl md:text-5xl text-charcoal mb-5 leading-tight tracking-tight">
-            Searching live availability in {dest.name}?
+            {d.liveAvailabilityIn(dest.name)}
           </h2>
           <p className="text-graphite mb-7 leading-relaxed">
-            Our network only ranks 17 properties. Hotels.com lists everything else operating
-            in {dest.name} this winter — flex dates, filter by amenity, see the full inventory.
+            {d.networkLeadA}
+            {dest.name}
+            {d.networkLeadB}
           </p>
           <AffiliateCTA
             partner="hotels"
@@ -191,7 +218,7 @@ export default function DestinationPage() {
             destination={dest.name}
             className="inline-flex items-center gap-2 px-7 py-3.5 bg-vibe-pink hover:bg-vibe-pink/90 text-white rounded-full font-semibold transition-all"
           >
-            Browse Hotels.com — {dest.name}
+            {d.browseInDest(dest.name)}
           </AffiliateCTA>
         </div>
       </section>

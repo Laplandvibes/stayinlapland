@@ -1,16 +1,13 @@
 import type { ReactNode } from 'react';
+import { useLang } from '../i18n/useLang';
 
 /**
  * Every monetised click goes through go.laplandvibes.com — the Cloudflare
  * Worker handles CJ tracking, GYG partner_id injection and per-domain
  * Website ID attribution via the Referer header.
  *
- * SID convention (LV spec §5):
- *   - hero_widget_*, hero_cta              — main hero placements
- *   - {pillar}_{intent}_cta                — pillar bottom CTAs (e.g. gi_property_card_cta)
- *   - inline_paragraph, property_card,
- *     sidebar_widget, footer_banner        — body / in-content placements
- * a–z, 0–9, underscore. Max 50 chars. No domain (Worker reads Referer).
+ * LOCALE 2026-05-16: appends partner-specific locale params so DE/FI users
+ * land on the local partner site.
  */
 
 export type AffiliatePartner =
@@ -19,6 +16,8 @@ export type AffiliatePartner =
   | 'hotels-budget'
   | 'cars'
   | 'activities';
+
+type _Lang = 'en' | 'fi' | 'de' | 'ja' | 'es' | 'pt-BR' | 'zh-CN' | 'ko' | 'fr' | 'it' | 'nl';
 
 export interface AffiliateCTAProps {
   partner: AffiliatePartner;
@@ -33,9 +32,52 @@ export interface AffiliateCTAProps {
 }
 
 const REDIRECT_BASE = 'https://go.laplandvibes.com/go';
+const GYG_PARTNER_ID = 'VRMKD7N';
+const SITE_ID = 'stayinlapland';
 
-function buildHref(props: AffiliateCTAProps): string {
+const HOTELS_LOCALE: Record<_Lang, string> = {
+  en: 'en_US', fi: 'fi_FI', de: 'de_DE', ja: 'ja_JP',
+  es: 'es_ES', 'pt-BR': 'pt_BR', 'zh-CN': 'zh_CN',
+  ko: 'ko_KR', fr: 'fr_FR', it: 'it_IT', nl: 'nl_NL',
+};
+const CARS_LANG: Record<_Lang, string> = {
+  en: 'en', fi: 'fi', de: 'de', ja: 'ja',
+  es: 'es', 'pt-BR': 'pt', 'zh-CN': 'zh',
+  ko: 'ko', fr: 'fr', it: 'it', nl: 'nl',
+};
+const GYG_DOMAIN: Record<_Lang, string> = {
+  en: 'https://www.getyourguide.com',
+  fi: 'https://www.getyourguide.com',
+  de: 'https://www.getyourguide.de',
+  ja: 'https://www.getyourguide.com',
+  es: 'https://www.getyourguide.es',
+  'pt-BR': 'https://www.getyourguide.com.br',
+  'zh-CN': 'https://www.getyourguide.com',
+  ko: 'https://www.getyourguide.com',
+  fr: 'https://www.getyourguide.fr',
+  it: 'https://www.getyourguide.it',
+  nl: 'https://www.getyourguide.nl',
+};
+const GYG_LANGUAGE: Partial<Record<_Lang, string>> = {
+  fi: 'fi', ja: 'ja', es: 'es', 'pt-BR': 'pt-br', 'zh-CN': 'zh',
+  ko: 'ko', fr: 'fr', it: 'it', nl: 'nl',
+};
+
+function buildHref(props: AffiliateCTAProps, lang: _Lang = 'en'): string {
   const { partner, sid, destination, query } = props;
+
+  if (partner === 'activities') {
+    const base = GYG_DOMAIN[lang];
+    const path = (destination ?? '').replace(/^\/+/, '').replace(/\/+$/, '');
+    const url = new URL(path ? `${base}/${path}/` : `${base}/`);
+    url.searchParams.set('partner_id', GYG_PARTNER_ID);
+    url.searchParams.set('cmp', `lv_${SITE_ID}_${sid}`);
+    const gygLang = GYG_LANGUAGE[lang];
+    if (gygLang) url.searchParams.set('language', gygLang);
+    if (query) for (const [k, v] of Object.entries(query)) if (v !== undefined && v !== '') url.searchParams.set(k, v);
+    return url.toString();
+  }
+
   const params = new URLSearchParams();
   params.set('sid', sid);
 
@@ -47,23 +89,28 @@ function buildHref(props: AffiliateCTAProps): string {
     }
   }
 
+  if (partner.startsWith('hotels')) {
+    params.set('locale', HOTELS_LOCALE[lang]);
+  } else if (partner === 'cars') {
+    params.set('lang', CARS_LANG[lang]);
+  }
+
   if (query) {
     for (const [key, value] of Object.entries(query)) {
       if (value !== undefined && value !== '') params.set(key, value);
     }
   }
 
-  if (partner === 'activities' && destination) {
-    return `${REDIRECT_BASE}/activities/${destination}?${params.toString()}`;
-  }
   return `${REDIRECT_BASE}/${partner}?${params.toString()}`;
 }
 
 export default function AffiliateCTA(props: AffiliateCTAProps) {
   const { className, children, onClick, ariaLabel } = props;
+  const rawLang = useLang();
+  const lang = rawLang as _Lang;
   return (
     <a
-      href={buildHref(props)}
+      href={buildHref(props, lang)}
       target="_blank"
       rel="sponsored nofollow noopener"
       className={className}

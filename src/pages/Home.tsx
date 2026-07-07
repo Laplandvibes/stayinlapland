@@ -8,36 +8,50 @@ import PullQuote from '../components/PullQuote';
 import ImageBreak from '../components/ImageBreak';
 import TripTypeRecommender from '../components/TripTypeRecommender';
 import WorkInLaplandPromo from '../components/WorkInLaplandPromo';
+import LomarengasAd from '../components/LomarengasAd';
 import { allCategoriesSummary, destinations } from '../data/properties';
 import { pageUrl } from '../lib/meta';
+import { useLang, useLocalePath } from '../i18n/useLang';
+import { getCopy } from '../locales/copy';
 
-const faqs = [
-  {
-    q: 'How long is a "long stay" on this site?',
-    a: 'We treat anything from four nights upwards as a long stay — it is the threshold at which most Lapland properties offer weekly rates and a real kitchen starts to matter. The featured long-stay properties run 5-night to 4-week minimums depending on the unit; each card lists the minimum.',
-  },
-  {
-    q: 'Why is the homepage focused on long stays rather than glass igloos?',
-    a: 'Glass igloos are the iconic Lapland format and we cover them on a dedicated page. But the longest-loved Lapland trips are not three-night bucket-list stays in a glass dome — they are weeklong base-camp stays in a cabin or design hotel, with one or two nights elsewhere built in. The site reflects how Lapland actually rewards repeat visitors.',
-  },
-  {
-    q: 'Is Kakslauttanen really worth the headline price?',
-    a: 'Yes — but only the Kelo-Glass igloos, not the classic Glass Igloos. Kelo-Glass pairs the panoramic glass roof with a heated log structure, a kitchenette and a private fireplace. Two-night minimum gets the most out of it. Best aurora windows: early February and late March.',
-  },
-  {
-    q: 'Where should I base if my long stay involves remote work?',
-    a: 'Rovaniemi. It is the only Lapland city with reliable fibre, daily Helsinki and Stockholm flights, and a real winter restaurant scene that stays open in shoulder seasons. Arctic TreeHouse Resort and the Ounasvaara Chalets both offer weekly rates and proper desks.',
-  },
+// Per-question links to the pages that back each FAQ answer (Vesa 2026-07-07:
+// FAQ answers must point to our own supporting content). Labels reuse the
+// existing nav translations; "Rovaniemi" is a proper noun in every locale.
+const FAQ_LINKS: { route: string; navKey?: 'longStays' | 'glassIgloos'; literal?: string }[][] = [
+  [{ route: '/long-stays', navKey: 'longStays' }],                                                  // 1 what counts as a long stay
+  [{ route: '/long-stays', navKey: 'longStays' }, { route: '/glass-igloos', navKey: 'glassIgloos' }], // 2 long stays vs igloos
+  [{ route: '/glass-igloos', navKey: 'glassIgloos' }],                                              // 3 Kakslauttanen worth it
+  [{ route: '/destinations/rovaniemi', literal: 'Rovaniemi' }, { route: '/long-stays', navKey: 'longStays' }], // 4 remote-work base
 ];
 
 export default function Home() {
+  const lang = useLang();
+  const localePath = useLocalePath();
+  const t = getCopy(lang);
+  const h = t.home;
+
+  const localizedCategories = allCategoriesSummary.map((cat) => {
+    const key =
+      cat.slug === 'long-stays' ? 'longStays'
+      : cat.slug === 'hotels' ? 'hotels'
+      : cat.slug === 'glass-igloos' ? 'glassIgloos'
+      : 'wilderness';
+    return {
+      ...cat,
+      name: h.categoryNames[key as keyof typeof h.categoryNames],
+      description: h.categoryDescriptions[key as keyof typeof h.categoryDescriptions],
+    };
+  });
+
+  const dests = destinations.map((d) => {
+    const dl = t.destinationsData.find((x) => x.slug === d.slug);
+    return { ...d, pitch: dl?.pitch ?? d.pitch };
+  });
+
   return (
     <>
-      <title>StayInLapland — Long Stays &amp; Boutique Hotels in Finnish Lapland</title>
-      <meta
-        name="description"
-        content="Settle into Finnish Lapland — luxury cabins by the week, design hotels in Rovaniemi and Saariselkä, the iconic glass igloos and the wilderness lodges past the last road."
-      />
+      <title>{h.metaTitle}</title>
+      <meta name="description" content={h.metaDescription} />
       <link rel="canonical" href={pageUrl('/')} />
       <meta name="robots" content="index, follow" />
       <script
@@ -50,19 +64,20 @@ export default function Home() {
                 '@type': 'WebPage',
                 '@id': `${pageUrl('/')}#webpage`,
                 url: pageUrl('/'),
-                name: 'StayInLapland — Long Stays & Boutique Hotels in Finnish Lapland',
+                name: h.schemaName,
                 isPartOf: { '@id': `${pageUrl('/')}#website` },
+                inLanguage: lang,
                 about: { '@type': 'Place', name: 'Finnish Lapland' },
               },
               {
                 '@type': 'BreadcrumbList',
                 itemListElement: [
-                  { '@type': 'ListItem', position: 1, name: 'Home', item: pageUrl('/') },
+                  { '@type': 'ListItem', position: 1, name: h.breadcrumbHome, item: pageUrl('/') },
                 ],
               },
               {
                 '@type': 'FAQPage',
-                mainEntity: faqs.map(({ q, a }) => ({
+                mainEntity: h.faqs.map(({ q, a }) => ({
                   '@type': 'Question',
                   name: q,
                   acceptedAnswer: { '@type': 'Answer', text: a },
@@ -78,27 +93,12 @@ export default function Home() {
       {/* Editor intro */}
       <section className="py-20 sm:py-28 px-5 sm:px-6">
         <div className="max-w-3xl mx-auto">
-          <AuthorByline note="A curated short-list — written and fact-checked with on-the-ground partners across Finnish Lapland." />
+          <AuthorByline note={h.authorNote} />
 
           <div className="mt-10 space-y-5 text-graphite text-base sm:text-[17px] leading-relaxed">
-            <p>
-              Most &ldquo;best Lapland accommodation&rdquo; lists put a glass igloo at the
-              top, twenty other glass igloos in roughly the same order, and not a single
-              sentence about whether the writer has ever spent more than two nights at any
-              of them. This guide is the opposite.
-            </p>
-            <p>
-              We split Lapland accommodation into four buckets — long-stay rentals, hotels,
-              glass igloos, and wilderness lodges — and we list the seventeen properties
-              that earn their place. Across them you can build a trip that starts with a
-              week-long cabin base near Levi, moves to a design hotel in Rovaniemi for two
-              nights of city, ends with a single glass-igloo night before flying home. That
-              is how Lapland actually rewards a longer stay.
-            </p>
-            <p className="text-stone italic">
-              Three things this guide does not do: aggregate prices, recycle reviews, or
-              pretend to cover places where no-one in our network has spent a real night.
-            </p>
+            <p>{h.intro.p1}</p>
+            <p>{h.intro.p2}</p>
+            <p className="text-stone italic">{h.intro.p3}</p>
           </div>
         </div>
       </section>
@@ -114,23 +114,21 @@ export default function Home() {
         <div className="max-w-6xl mx-auto">
           <div className="mb-12 sm:mb-16 max-w-2xl">
             <p className="text-vibe-pink text-[11px] font-semibold tracking-[0.28em] uppercase mb-3">
-              Four ways to stay
+              {h.fourWays.kicker}
             </p>
             <h2 className="font-heading text-4xl sm:text-5xl md:text-6xl text-charcoal leading-[1.1] tracking-tight">
-              Settle into one. <span className="italic font-light">Or string two together.</span>
+              {h.fourWays.h2A} <span className="italic font-light">{h.fourWays.h2B}</span>
             </h2>
             <p className="text-graphite text-base sm:text-lg mt-5 leading-relaxed">
-              Pick the category that matches the trip you actually want. Then pick a
-              destination. Most of our long-stay readers combine two — a week of cabin
-              base, two nights of contrast.
+              {h.fourWays.lead}
             </p>
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 sm:gap-6">
-            {allCategoriesSummary.map((cat) => (
+            {localizedCategories.map((cat) => (
               <Link
                 key={cat.slug}
-                to={`/${cat.slug}`}
+                to={localePath(`/${cat.slug}`)}
                 className="group flex flex-col overflow-hidden rounded-2xl bg-white border border-charcoal/8 hover:border-charcoal/20 hover:shadow-md transition-all"
               >
                 <div className="relative aspect-[4/3] overflow-hidden bg-cream-2">
@@ -145,7 +143,7 @@ export default function Home() {
                 </div>
                 <div className="p-6 sm:p-7 flex flex-col flex-1">
                   <p className="text-[11px] tracking-[0.22em] uppercase text-stone font-semibold mb-2">
-                    {cat.count} {cat.count === 1 ? 'property' : 'properties'}
+                    {cat.count} {cat.count === 1 ? h.propertyWord : h.propertiesWord}
                   </p>
                   <h3 className="font-heading text-3xl text-charcoal leading-tight mb-3">
                     {cat.name}
@@ -154,7 +152,7 @@ export default function Home() {
                     {cat.description}
                   </p>
                   <span className="inline-flex items-center gap-1.5 text-vibe-pink group-hover:gap-2.5 text-sm font-semibold transition-all mt-auto">
-                    Explore
+                    {h.explore}
                     <ArrowRight className="w-4 h-4" />
                   </span>
                 </div>
@@ -164,11 +162,15 @@ export default function Home() {
         </div>
       </section>
 
-      <PullQuote attribution="Lapland accommodation report · Lapin Liitto, 2024">
-        Lapland is bigger than people expect, and the road between Rovaniemi and Saariselkä
-        eats half a day in each direction. The biggest first-trip mistake is booking three
-        different bases in five nights.
-      </PullQuote>
+      {/* Flagship affiliate ad — Lomarengas (privately-owned weekly cottages),
+          matched to the long-stay / whole-cabin angle of the page above. */}
+      <section className="py-12 sm:py-16 px-5 sm:px-6">
+        <div className="max-w-6xl mx-auto">
+          <LomarengasAd sid="home_overview" />
+        </div>
+      </section>
+
+      <PullQuote attribution={h.pullQuote.attr}>{h.pullQuote.text}</PullQuote>
 
       <ImageBreak
         src="/images/break-boreal-forest.webp"
@@ -183,10 +185,10 @@ export default function Home() {
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12 sm:mb-14 max-w-2xl mx-auto">
             <p className="text-vibe-pink text-[11px] font-semibold tracking-[0.28em] uppercase mb-3">
-              Already know roughly what you want?
+              {h.tripKicker}
             </p>
             <h2 className="font-heading text-4xl sm:text-5xl md:text-6xl text-charcoal leading-[1.1] tracking-tight">
-              The local short-cuts.
+              {h.tripH2}
             </h2>
           </div>
           <TripTypeRecommender />
@@ -204,22 +206,21 @@ export default function Home() {
         <div className="max-w-6xl mx-auto">
           <div className="mb-12 sm:mb-14 max-w-2xl">
             <p className="text-vibe-pink text-[11px] font-semibold tracking-[0.28em] uppercase mb-3">
-              Five Lapland bases
+              {h.destKicker}
             </p>
             <h2 className="font-heading text-4xl sm:text-5xl md:text-6xl text-charcoal leading-[1.1] tracking-tight">
-              Where in Lapland?
+              {h.destH2}
             </h2>
             <p className="text-graphite text-base sm:text-lg mt-5 leading-relaxed">
-              Each destination has a different long-stay rationale. Click through for
-              property recommendations and the case for picking that base over the others.
+              {h.destLead}
             </p>
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6">
-            {destinations.map((d) => (
+            {dests.map((d) => (
               <Link
                 key={d.slug}
-                to={`/destinations/${d.slug}`}
+                to={localePath(`/destinations/${d.slug}`)}
                 className="group flex flex-col overflow-hidden rounded-2xl bg-white border border-charcoal/8 hover:border-charcoal/20 hover:shadow-md transition-all"
               >
                 <div className="relative aspect-[16/10] overflow-hidden bg-cream-2">
@@ -231,9 +232,6 @@ export default function Home() {
                     decoding="async"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-night/65 via-transparent to-transparent" />
-                  <p className="absolute top-4 left-5 text-[11px] tracking-[0.22em] uppercase text-snow/95 font-semibold drop-shadow">
-                    Destination
-                  </p>
                   <h3 className="absolute bottom-4 left-5 right-5 font-heading text-3xl text-snow leading-tight drop-shadow">
                     {d.name}
                   </h3>
@@ -243,7 +241,7 @@ export default function Home() {
                     {d.pitch}
                   </p>
                   <span className="inline-flex items-center gap-1.5 text-vibe-pink group-hover:gap-2.5 text-sm font-semibold transition-all mt-auto">
-                    Read the {d.name} guide
+                    {h.readGuide} {d.name}
                     <ArrowRight className="w-4 h-4" />
                   </span>
                 </div>
@@ -260,14 +258,14 @@ export default function Home() {
         <div className="max-w-3xl mx-auto">
           <div className="mb-10">
             <p className="text-vibe-pink text-[11px] font-semibold tracking-[0.28em] uppercase mb-3">
-              Real questions, real answers
+              {h.faqKicker}
             </p>
             <h2 className="font-heading text-4xl sm:text-5xl md:text-6xl text-charcoal leading-[1.1] tracking-tight">
-              Before you click anything.
+              {h.faqH2}
             </h2>
           </div>
           <div className="space-y-3">
-            {faqs.map((f) => (
+            {h.faqs.map((f, faqIndex) => (
               <details
                 key={f.q}
                 className="group rounded-2xl bg-white border border-charcoal/8 open:border-charcoal/20 open:shadow-sm transition-all"
@@ -280,18 +278,33 @@ export default function Home() {
                     +
                   </span>
                 </summary>
-                <p className="px-6 pb-6 text-graphite leading-relaxed text-[15px] sm:text-base">
-                  {f.a}
-                </p>
+                <div className="px-6 pb-6">
+                  <p className="text-graphite leading-relaxed text-[15px] sm:text-base">
+                    {f.a}
+                  </p>
+                  {(FAQ_LINKS[faqIndex] ?? []).length > 0 && (
+                    <div className="flex flex-wrap gap-x-5 gap-y-2 mt-4">
+                      {FAQ_LINKS[faqIndex].map((l) => (
+                        <Link
+                          key={l.route}
+                          to={localePath(l.route)}
+                          className="inline-flex items-center gap-1.5 text-xs sm:text-sm font-semibold uppercase tracking-wider text-charcoal hover:text-vibe-pink transition-colors"
+                        >
+                          {l.navKey ? t.nav[l.navKey] : l.literal} →
+                        </Link>
+                      ))}
+                    </div>
+                  )}
+                </div>
               </details>
             ))}
           </div>
           <div className="mt-12 text-center">
             <Link
-              to="/booking-guide"
+              to={localePath('/booking-guide')}
               className="inline-flex items-center gap-2 px-7 py-3.5 bg-charcoal hover:bg-vibe-pink text-snow rounded-full font-semibold transition-colors"
             >
-              Read the full booking guide
+              {h.fullGuideCta}
               <ArrowRight className="w-4 h-4" />
             </Link>
           </div>

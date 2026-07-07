@@ -15,8 +15,9 @@ const SITE_URL = 'https://stayinlapland.com';
 const DEFAULT_OG = `${SITE_URL}/og-default.jpg`;
 
 export function pageUrl(path: string): string {
-  if (path === '/') return SITE_URL;
-  return `${SITE_URL}${path}`;
+  // Trailing-slash form matches the prerendered static HTML (Cloudflare Pages
+  // serves /path/index.html at /path/ with 200; the no-slash form 308-redirects).
+  return `${SITE_URL}${path === '/' ? '' : path}`.replace(/\/?$/, '/');
 }
 
 export function pageOg(image?: string): string {

@@ -1,0 +1,110 @@
+{
+  "site": "stayinlapland-new",
+  "scanned_webp": 18,
+  "converted": 17,
+  "skipped_exists": 0,
+  "skipped_avif_larger": 1,
+  "errors": 0,
+  "total_webp_bytes": 3309690,
+  "total_avif_bytes": 2532151,
+  "saved_mb": "0.74",
+  "saved_pct": "23.5",
+  "report": [
+    {
+      "file": "public\\images\\break-boreal-forest.webp",
+      "webp_bytes": 360564,
+      "avif_bytes": 280501,
+      "saved_pct": "22.2"
+    },
+    {
+      "file": "public\\images\\break-frozen-lake.webp",
+      "webp_bytes": 156156,
+      "avif_bytes": 118274,
+      "saved_pct": "24.3"
+    },
+    {
+      "file": "public\\images\\hero-aurora-cabins.webp",
+      "webp_bytes": 41918,
+      "avif_bytes": 29967,
+      "saved_pct": "28.5"
+    },
+    {
+      "file": "public\\images\\hero-booking-guide.webp",
+      "webp_bytes": 394242,
+      "avif_bytes": 297482,
+      "saved_pct": "24.5"
+    },
+    {
+      "file": "public\\images\\hero-cabins.webp",
+      "webp_bytes": 164036,
+      "avif_bytes": 146137,
+      "saved_pct": "10.9"
+    },
+    {
+      "file": "public\\images\\hero-glass-igloos.webp",
+      "webp_bytes": 229794,
+      "avif_bytes": 177516,
+      "saved_pct": "22.7"
+    },
+    {
+      "file": "public\\images\\hero-hotels.webp",
+      "webp_bytes": 206454,
+      "avif_bytes": 129985,
+      "saved_pct": "37.0"
+    },
+    {
+      "file": "public\\images\\hero-long-stays.webp",
+      "webp_bytes": 310812,
+      "avif_bytes": 232628,
+      "saved_pct": "25.2"
+    },
+    {
+      "file": "public\\images\\hero-when-to-go.webp",
+      "webp_bytes": 255556,
+      "avif_bytes": 207037,
+      "saved_pct": "19.0"
+    },
+    {
+      "file": "public\\images\\hero-wilderness.webp",
+      "webp_bytes": 204026,
+      "avif_bytes": 127604,
+      "saved_pct": "37.5"
+    },
+    {
+      "file": "public\\images\\home-hero.webp",
+      "webp_bytes": 442220,
+      "avif_bytes": 402659,
+      "saved_pct": "8.9"
+    },
+    {
+      "file": "public\\images\\pick-aurora-pyramids.webp",
+      "webp_bytes": 85718,
+      "avif_bytes": 55461,
+      "saved_pct": "35.3"
+    },
+    {
+      "file": "public\\images\\pick-kakslauttanen.webp",
+      "webp_bytes": 222912,
+      "avif_bytes": 176199,
+      "saved_pct": "21.0"
+    },
+    {
+      "file": "public\\images\\trip-first-timer.webp",
+      "webp_bytes": 26346,
+      "avif_bytes": 16767,
+      "saved_pct": "36.4"
+    },
+    {
+      "file": "public\\images\\trip-luxury.webp",
+      "webp_bytes": 37198,
+      "avif_bytes": 26109,
+      "saved_pct": "29.8"
+    },
+    {
+      "file": "public\\images\\trip-repeat-visitor.webp",
+      "webp_bytes": 43560,
+      "avif_bytes": 31162,
+      "saved_pct": "28.5"
+    }
+  ]
+}

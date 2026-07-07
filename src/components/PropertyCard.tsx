@@ -1,24 +1,26 @@
 import { MapPin, ArrowUpRight, Clock } from 'lucide-react';
 import AffiliateCTA from './AffiliateCTA';
+import { searchDest } from '../data/properties';
 import type { Property } from '../data/properties';
+import { useLang } from '../i18n/useLang';
+import { getCopy } from '../locales/copy';
 
 interface PropertyCardProps {
   property: Property;
-  /** SID prefix per pillar — e.g. 'ls' long-stay, 'hot' hotels, 'gi' glass igloos. */
   sidPrefix: string;
-  /** Optional photographic image src. Falls back to a soft cream placeholder. */
   imageSrc?: string;
   imageAlt?: string;
 }
 
-const STAY_LABEL: Record<Property['bestFor'], string> = {
-  short: '1–3 nights',
-  medium: '3–6 nights',
-  long: '7+ nights',
-};
-
 export default function PropertyCard({ property, sidPrefix, imageSrc, imageAlt }: PropertyCardProps) {
-  // Fall back to property's own image if no override is passed.
+  const lang = useLang();
+  const t = getCopy(lang).propertyCard;
+  const stayLabel: Record<Property['bestFor'], string> = {
+    short: t.short,
+    medium: t.medium,
+    long: t.long,
+  };
+
   const finalSrc = imageSrc ?? property.imageSrc;
   return (
     <article className="group flex flex-col overflow-hidden rounded-2xl bg-white border border-charcoal/8 shadow-sm hover:shadow-md hover:border-charcoal/15 transition-all duration-300">
@@ -43,11 +45,11 @@ export default function PropertyCard({ property, sidPrefix, imageSrc, imageAlt }
         <div className="absolute top-4 left-4 right-4 flex items-start justify-between">
           <span className="inline-flex items-center gap-1.5 px-2.5 py-1 bg-white/85 backdrop-blur-sm rounded-full text-[10px] sm:text-[11px] font-semibold tracking-wider uppercase text-charcoal">
             <Clock className="w-3 h-3 text-vibe-pink" />
-            {STAY_LABEL[property.bestFor]}
+            {stayLabel[property.bestFor]}
           </span>
           {property.minStay && (
             <span className="px-2.5 py-1 bg-night/70 backdrop-blur-sm rounded-full text-[10px] sm:text-[11px] font-semibold tracking-wider uppercase text-snow">
-              Min {property.minStay}
+              {t.minPrefix} {property.minStay}
             </span>
           )}
         </div>
@@ -66,7 +68,7 @@ export default function PropertyCard({ property, sidPrefix, imageSrc, imageAlt }
             {property.location}
           </span>
           <span className="text-charcoal font-semibold">
-            {property.priceRange} <span className="text-stone font-normal">/ night</span>
+            {property.priceRange} <span className="text-stone font-normal">{t.perNight}</span>
           </span>
         </div>
 
@@ -77,10 +79,10 @@ export default function PropertyCard({ property, sidPrefix, imageSrc, imageAlt }
         <AffiliateCTA
           partner="hotels"
           sid={`${sidPrefix}_property_card`}
-          destination={property.searchQuery ?? property.name}
+          destination={searchDest(property.location, property.searchQuery)}
           className="inline-flex items-center justify-between gap-2 w-full px-5 py-3 bg-charcoal hover:bg-vibe-pink text-white rounded-full font-semibold text-sm transition-all duration-200"
         >
-          <span>Check rates &amp; book</span>
+          <span>{t.cta}</span>
           <ArrowUpRight className="w-4 h-4" />
         </AffiliateCTA>
       </div>

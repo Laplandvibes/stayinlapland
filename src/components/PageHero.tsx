@@ -1,4 +1,5 @@
 import type { ReactNode } from 'react';
+import PageBreadcrumb from './PageBreadcrumb';
 
 interface PageHeroProps {
   eyebrow: string;
@@ -22,6 +23,7 @@ export default function PageHero({
   children,
 }: PageHeroProps) {
   return (
+    <>
     <section className="relative overflow-hidden bg-night">
       <div className="relative min-h-[60svh] sm:min-h-[68svh] flex items-center justify-center py-24 sm:py-28">
         {imageSrc ? (
@@ -29,7 +31,7 @@ export default function PageHero({
             <img
               src={imageSrc}
               alt={imageAlt ?? ''}
-              className="absolute inset-0 w-full h-full object-cover"
+              className="absolute inset-0 w-full h-full object-cover [object-position:50%_45%]"
               fetchPriority="high"
               decoding="async"
             />
@@ -69,5 +71,7 @@ export default function PageHero({
         </div>
       </div>
     </section>
+    <PageBreadcrumb />
+    </>
   );
 }

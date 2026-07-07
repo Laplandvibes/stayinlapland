@@ -118,13 +118,6 @@ IMAGES: list[tuple[str, str, str]] = [
      "soft natural daylight. Architectural-magazine composition. NO aurora, NO night. " + STYLE,
      "1536x1024"),
 
-    # === EDITOR'S PICK — OCTOLA (Long Stays + Wilderness) ===
-    ("pick-octola.webp",
-     "Editorial interior of an architect-designed wilderness lodge at golden hour: cream sofa, "
-     "oak floor, large window with snow-covered fjell view, a fireplace lit, single Sami-design "
-     "wool blanket draped on a chair. Empty room, no people. Aman / Six Senses luxury aesthetic. " + STYLE,
-     "1536x1024"),
-
     # === EDITOR'S PICK — AURORA PYRAMIDS (kept for reference) ===
     ("pick-aurora-pyramids.webp",
      "Editorial daytime view of a single triangular pyramid-shaped cabin with a full glass "
@@ -182,7 +175,6 @@ FINAL_WIDTHS = {
     "hero-when-to-go.webp":    2000,
     "hero-booking-guide.webp": 2000,
     "pick-kakslauttanen.webp": 1600,
-    "pick-octola.webp":        1600,
     "pick-aurora-pyramids.webp": 1600,
     "trip-first-timer.webp":   800,
     "trip-repeat-visitor.webp": 800,
@@ -202,7 +194,6 @@ CROP_RATIOS: dict[str, tuple[int, int]] = {
     "hero-when-to-go.webp": (16, 9),
     "hero-booking-guide.webp": (16, 9),
     "pick-kakslauttanen.webp": (16, 10),
-    "pick-octola.webp": (16, 10),
     "pick-aurora-pyramids.webp": (16, 10),
     "trip-first-timer.webp": (4, 3),
     "trip-repeat-visitor.webp": (4, 3),

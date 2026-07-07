@@ -5,20 +5,24 @@ interface LogoProps {
   light?: boolean;
 }
 
+/**
+ * #STAYINLAPLAND wordmark — LV brand signature.
+ * Pattern per CLAUDE.md: # accent (vibe-pink) + STAYIN (neutral) + LAPLAND (vibe-pink).
+ * Single word, no spaces, CAPS, font-heading.
+ */
 export default function Logo({ size = 'sm', light = false }: LogoProps) {
   const textSize =
     size === 'lg'
       ? 'text-3xl sm:text-4xl md:text-5xl'
-      : 'text-xl md:text-[22px]';
+      : 'text-xl md:text-2xl';
 
-  const lapText = light ? 'text-snow' : 'text-charcoal';
-  const inText = light ? 'text-snow/85' : 'text-charcoal/70';
+  const heavy = light ? 'text-snow' : 'text-charcoal';
 
   return (
-    <span className={`font-heading tracking-tight font-semibold ${textSize}`}>
-      <span className="text-vibe-pink">Stay</span>
-      <span className={inText}>&nbsp;in&nbsp;</span>
-      <span className={lapText}>Lapland</span>
+    <span className={`font-heading tracking-wide font-semibold leading-none ${textSize}`}>
+      <span className="text-vibe-pink">#</span>
+      <span className={heavy}>STAYIN</span>
+      <span className="text-vibe-pink">LAPLAND</span>
     </span>
   );
 }

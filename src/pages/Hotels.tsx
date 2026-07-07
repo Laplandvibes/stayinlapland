@@ -9,25 +9,41 @@ import PullQuote from '../components/PullQuote';
 import ImageBreak from '../components/ImageBreak';
 import ComparisonTable from '../components/ComparisonTable';
 import MarginNote from '../components/MarginNote';
+import HotelsComAd from '../components/HotelsComAd';
 import { hotels } from '../data/properties';
+import type { Property } from '../data/properties';
 import { pageUrl } from '../lib/meta';
+import { useLang, useLocalePath } from '../i18n/useLang';
+import { getCopy } from '../locales/copy';
 
-const comparisonRows = [
-  { name: 'Arctic TreeHouse',  scores: [5, 4, 5, 4, 4], verdict: 'Best design hotel in Rovaniemi.' },
-  { name: 'Arctic Light',      scores: [4, 5, 3, 4, 4], verdict: 'Most architecturally interesting building.' },
-  { name: 'Levi Spirit',       scores: [3, 5, 5, 5, 3], verdict: 'Adults-only feel. Spa + ski-in.' },
-  { name: 'Lapland Hotels Saaga', scores: [4, 3, 4, 3, 4], verdict: 'Reliable mid-luxury near Kittilä airport.' },
-  { name: 'Star Arctic',       scores: [3, 4, 5, 4, 5], verdict: 'Hilltop · darkest sky · cabin/hotel mix.' },
+const COMPARISON_SCORES = [
+  [5, 4, 5, 4, 4],
+  [4, 5, 3, 4, 4],
+  [3, 5, 5, 5, 3],
+  [4, 3, 4, 3, 4],
+  [3, 4, 5, 4, 5],
 ];
 
 export default function Hotels() {
+  const lang = useLang();
+  const localePath = useLocalePath();
+  const t = getCopy(lang);
+  const h = t.hotels;
+
+  const localizedHotels: Property[] = hotels.map((p, i) => ({
+    ...p,
+    name: t.hotelsData[i]?.name ?? p.name,
+    location: t.hotelsData[i]?.location ?? p.location,
+    highlight: t.hotelsData[i]?.highlight ?? p.highlight,
+    description: t.hotelsData[i]?.description ?? p.description,
+  }));
+
+  const comparisonRows = h.rows.map((row, i) => ({ ...row, scores: COMPARISON_SCORES[i] }));
+
   return (
     <>
-      <title>Boutique &amp; Design Hotels in Finnish Lapland | StayInLapland</title>
-      <meta
-        name="description"
-        content="Five Lapland hotels worth booking — Arctic TreeHouse design suites, Arctic Light boutique heritage, Levi Spirit villa hotel, Lapland Hotels Saaga, Star Arctic Hotel. Curated for short stays, work trips, and the nights between long-stay legs."
-      />
+      <title>{h.metaTitle}</title>
+      <meta name="description" content={h.metaDescription} />
       <link rel="canonical" href={pageUrl('/hotels')} />
       <meta name="robots" content="index, follow" />
       <script
@@ -38,15 +54,16 @@ export default function Hotels() {
             '@graph': [
               {
                 '@type': 'Article',
-                headline: 'Boutique & Design Hotels in Finnish Lapland',
+                headline: h.metaTitle,
                 publisher: { '@id': `${pageUrl('/')}#organization` },
                 mainEntityOfPage: pageUrl('/hotels'),
+                inLanguage: lang,
               },
               {
                 '@type': 'BreadcrumbList',
                 itemListElement: [
-                  { '@type': 'ListItem', position: 1, name: 'Home', item: pageUrl('/') },
-                  { '@type': 'ListItem', position: 2, name: 'Hotels', item: pageUrl('/hotels') },
+                  { '@type': 'ListItem', position: 1, name: t.home.breadcrumbHome, item: pageUrl('/') },
+                  { '@type': 'ListItem', position: 2, name: h.breadcrumb, item: pageUrl('/hotels') },
                 ],
               },
             ],
@@ -55,37 +72,24 @@ export default function Hotels() {
       />
 
       <PageHero
-        eyebrow="Five hotels worth booking"
-        title="Hotels in Lapland."
-        subtitle="Boutique, design and reliably classic Lapland hotels — for the short stays, the work trips, and the two-night cities you build around a longer cabin base."
+        eyebrow={h.pageHero.eyebrow}
+        title={h.pageHero.title}
+        subtitle={h.pageHero.subtitle}
         imageSrc="/images/hero-hotels.webp"
         imageAlt="Boutique design hotel in Finnish Lapland — exterior at golden hour"
       />
 
       <section className="py-12 sm:py-16 px-5 sm:px-6">
         <div className="max-w-4xl mx-auto">
-          <AuthorByline note="Five properties cross-checked with on-site partners and recent stays across the 2025/26 season." />
-
+          <AuthorByline note={h.authorNote} />
           <div className="mt-10 space-y-4 text-graphite text-[16px] leading-relaxed">
-            <p>
-              Lapland has plenty of mid-tier chain hotels — Scandic, Cumulus, Sokos — that
-              do the basics well at €90–140/night. We do not list them; their booking
-              decision is largely &ldquo;closest to airport, cheapest week.&rdquo;
-            </p>
-            <p>
-              The five hotels below earn their spot for a different reason — design,
-              architecture, view, or service mix. They are the right answer when you want
-              a hotel that is part of why you came, not just a base.
-            </p>
+            <p>{h.introP1}</p>
+            <p>{h.introP2}</p>
           </div>
         </div>
       </section>
 
-      <ImageBreak
-        src="/images/break-boreal-forest.webp"
-        alt="Boreal pine forest in winter"
-        ratio="3/1"
-      />
+      <ImageBreak src="/images/break-boreal-forest.webp" alt="Boreal pine forest in winter" ratio="3/1" />
 
       <FinnishDivider />
 
@@ -93,25 +97,28 @@ export default function Hotels() {
         <div className="max-w-7xl mx-auto">
           <div className="mb-10 max-w-2xl">
             <p className="text-vibe-pink text-[11px] font-semibold tracking-[0.28em] uppercase mb-3">
-              Five picks
+              {h.picksKicker}
             </p>
             <h2 className="font-heading text-4xl sm:text-5xl text-charcoal leading-tight tracking-tight">
-              Curated, not aggregated.
+              {h.picksH2}
             </h2>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6">
-            {hotels.map((p) => (
+            {localizedHotels.map((p) => (
               <PropertyCard key={p.slug} property={p} sidPrefix="hot" />
             ))}
           </div>
         </div>
       </section>
 
-      <PullQuote attribution="Architectural Record · Arctic Light Hotel feature">
-        Rovaniemi was rebuilt three times after 1944 — the third time by Alvar Aalto, who
-        drew the city plan in the shape of a reindeer&rsquo;s antlers. The Arctic Light Hotel
-        sits inside the antlers, in a 1939 building that survived all three rebuilds.
-      </PullQuote>
+      <PullQuote attribution={h.pullQuote.attr}>{h.pullQuote.text}</PullQuote>
+
+      {/* Flagship affiliate ad — Hotels.com (live hotel inventory in the towns). */}
+      <section className="py-10 sm:py-14 px-5 sm:px-6">
+        <div className="max-w-6xl mx-auto">
+          <HotelsComAd sid="hotels_partner_card" ss="Lapland, Finland" />
+        </div>
+      </section>
 
       <FinnishDivider />
 
@@ -119,24 +126,14 @@ export default function Hotels() {
         <div className="max-w-5xl mx-auto">
           <div className="mb-8">
             <p className="text-vibe-pink text-[11px] font-semibold tracking-[0.28em] uppercase mb-3">
-              All five at a glance
+              {h.glanceKicker}
             </p>
             <h2 className="font-heading text-4xl sm:text-5xl text-charcoal leading-tight tracking-tight">
-              Opinionated comparison.
+              {h.glanceH2}
             </h2>
           </div>
-          <ComparisonTable
-            axes={['Design', 'Architecture', 'Spa / sauna', 'Activities', 'Restaurant']}
-            rows={comparisonRows}
-            rubric="Five dots is best. Design = interior styling and material quality. Architecture = the building itself. Activities = ski-in/out, husky kennels, local culture within 15 min."
-          />
-
-          <MarginNote label="Insider">
-            Arctic TreeHouse and Levi Spirit both run their own restaurants — Rakas
-            (TreeHouse) and Spirit Kitchen (Levi). Both source local. If you book either,
-            book a table the same day you book the room — they sell out faster than the
-            hotel does on weekends.
-          </MarginNote>
+          <ComparisonTable axes={h.axes} rows={comparisonRows} rubric={h.rubric} />
+          <MarginNote label={h.marginLabel}>{h.marginBody}</MarginNote>
         </div>
       </section>
 
@@ -145,42 +142,35 @@ export default function Hotels() {
       <section className="py-16 sm:py-20 px-5 sm:px-6 bg-cream-2/60">
         <div className="max-w-3xl mx-auto">
           <p className="text-vibe-pink text-[11px] font-semibold tracking-[0.28em] uppercase mb-3">
-            Honest counter-recommendation
+            {h.counterKicker}
           </p>
           <h2 className="font-heading text-3xl sm:text-4xl md:text-5xl text-charcoal mb-5 leading-tight tracking-tight">
-            When a hotel is not the answer.
+            {h.counterH2}
           </h2>
           <div className="space-y-4 text-graphite text-[16px] leading-relaxed">
-            <p>
-              For 5+ nights with the same trip rhythm — skiing, cooking, sauna, repeat — a
-              long-stay cabin or apartment beats any of these hotels on cost-per-night and
-              quality of life. Hotels are right when the days are different from each other.
-            </p>
-            <p>
-              For a single aurora-bucket-list night, glass igloos win. None of the hotels
-              above have a glass roof.
-            </p>
+            <p>{h.counterP1}</p>
+            <p>{h.counterP2}</p>
           </div>
           <div className="mt-8 flex flex-wrap gap-3">
             <Link
-              to="/long-stays"
+              to={localePath('/long-stays')}
               className="px-5 py-2.5 bg-white hover:bg-charcoal hover:text-snow border border-charcoal/15 text-charcoal rounded-full text-sm font-semibold transition-colors"
             >
-              See long stays
+              {h.seeLong}
             </Link>
             <Link
-              to="/glass-igloos"
+              to={localePath('/glass-igloos')}
               className="px-5 py-2.5 bg-white hover:bg-charcoal hover:text-snow border border-charcoal/15 text-charcoal rounded-full text-sm font-semibold transition-colors"
             >
-              See glass igloos
+              {h.seeIgloos}
             </Link>
             <AffiliateCTA
               partner="hotels"
               sid="hot_browse_all_cta"
-              destination="Lapland boutique hotel"
+              destination="Lapland, Finland"
               className="px-5 py-2.5 bg-vibe-pink hover:bg-vibe-pink/90 text-white rounded-full text-sm font-semibold transition-all"
             >
-              Browse Hotels.com inventory
+              {h.browseAll}
             </AffiliateCTA>
           </div>
         </div>

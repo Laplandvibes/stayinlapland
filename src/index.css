@@ -46,6 +46,14 @@
     font-weight: 600;
     color: var(--color-charcoal);
     letter-spacing: -0.01em;
+    /* premium_design_standard §3: tidy heading line-breaks site-wide so long
+       multi-word titles wrap evenly instead of leaving a lonely last word. */
+    text-wrap: balance;
+  }
+
+  /* Body paragraphs read better with pretty wrapping (no orphan last word). */
+  p {
+    text-wrap: pretty;
   }
 
   ::selection {

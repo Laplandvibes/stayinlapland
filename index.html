@@ -1,6 +1,69 @@
 <!doctype html>
 <html lang="en">
   <head>
+    <!-- LV-LOCALE-TITLE (managed by scripts/inject_locale_titles.mjs) -->
+    <script>
+      (function () {
+        try {
+          var T = {"en":"StayInLapland — Long Stays & Hotels in Finnish Lapland","fi":"StayInLapland — Pitkät oleskelut ja boutique-hotellit Suomen Lapissa","de":"StayInLapland — Langaufenthalte und Boutique-Hotels im finnischen Lappland","ja":"StayInLapland — フィンランド・ラップランドの長期滞在とブティックホテル","es":"StayInLapland — estancias largas y hoteles boutique en la Laponia finlandesa","pt-br":"StayInLapland — estadias longas e hotéis boutique na Lapônia finlandesa","zh-cn":"StayInLapland — 芬兰拉普兰长住与精品酒店","kr":"StayInLapland — 핀란드 라플란드의 장기 체류와 부티크 호텔","fr":"StayInLapland — longs séjours et hôtels-boutiques en Laponie finlandaise","it":"StayInLapland — soggiorni lunghi e hotel boutique nella Lapponia finlandese","nl":"StayInLapland — lange verblijven en boutique-hotels in Fins Lapland"};
+          var path = location.pathname || '/';
+          var map = { fi: 'fi', de: 'de', ja: 'ja', es: 'es', br: 'pt-br', cn: 'zh-cn', kr: 'kr', fr: 'fr', it: 'it', nl: 'nl' };
+          var loc = 'en';
+          for (var p in map) {
+            if (path === '/' + p || path.indexOf('/' + p + '/') === 0) { loc = map[p]; break; }
+          }
+          if (T[loc]) document.title = T[loc];
+        } catch (e) { /* fail silent */ }
+      })();
+    </script>
+    <!-- /LV-LOCALE-TITLE -->
+    <!-- LV-SYNC-LOCALE-REDIRECT (managed by scripts/inject_sync_redirect.mjs) -->
+    <script>
+      (function () {
+        try {
+          var path = location.pathname || '/';
+          // Already on a locale prefix? — never override
+          var prefixes = ['/fi','/de','/ja','/es','/br','/cn','/kr','/fr','/it','/nl'];
+          for (var i = 0; i < prefixes.length; i++) {
+            if (path === prefixes[i] || path.indexOf(prefixes[i] + '/') === 0) return;
+          }
+          // Only redirect from bare root or sub-pages without a locale prefix
+          var map = { fi: 'fi', de: 'de', ja: 'ja', es: 'es', 'pt-br': 'br', 'zh-cn': 'cn', ko: 'kr', fr: 'fr', it: 'it', nl: 'nl' };
+          var stored = null;
+          try { stored = localStorage.getItem('lv_locale_choice'); } catch (e) {}
+          var target = null;
+          if (stored) {
+            var k = stored.toLowerCase();
+            if (map[k]) target = '/' + map[k];
+            else if (k === 'en') return; // explicit EN choice — stay
+          }
+          if (!target) {
+            var langs = navigator.languages || [navigator.language || 'en'];
+            for (var j = 0; j < langs.length; j++) {
+              var l = (langs[j] || '').toLowerCase();
+              if (l.indexOf('en') === 0) return; // EN browser — stay on /
+              if (l.indexOf('fi') === 0) { target = '/fi'; break; }
+              if (l.indexOf('de') === 0) { target = '/de'; break; }
+              if (l.indexOf('ja') === 0) { target = '/ja'; break; }
+              if (l.indexOf('es') === 0) { target = '/es'; break; }
+              if (l.indexOf('pt') === 0) { target = '/br'; break; }
+              if (l.indexOf('zh') === 0) { target = '/cn'; break; }
+              if (l.indexOf('ko') === 0) { target = '/kr'; break; }
+              if (l.indexOf('fr') === 0) { target = '/fr'; break; }
+              if (l.indexOf('it') === 0) { target = '/it'; break; }
+              if (l.indexOf('nl') === 0) { target = '/nl'; break; }
+            }
+          }
+          if (!target) return;
+          var dest = path === '/' ? target : target + path;
+          if (location.search) dest += location.search;
+          if (location.hash) dest += location.hash;
+          location.replace(dest);
+        } catch (err) { /* fail silent — fall through to React-based redirect */ }
+      })();
+    </script>
+    <!-- /LV-SYNC-LOCALE-REDIRECT -->
+
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
 
@@ -17,15 +80,10 @@
     <link rel="preload" as="image" href="/images/home-hero.webp" fetchpriority="high" />
 
     <!-- Icons & manifest -->
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-    <link rel="manifest" href="/site.webmanifest" />
-    <meta name="theme-color" content="#FAFAF8" />
-
-    <!-- Primary SEO — title set per-route via React 19 native <title>.
-         No static <meta name="description"> — would override per-route. -->
-    <title>StayInLapland — Long Stays &amp; Boutique Hotels in Finnish Lapland</title>
+    <!-- Primary SEO — title is set per-route via React 19 native title tag.
+         The page description is baked per-route by the prerenderer; no static
+         description tag here, to avoid a duplicate/empty one before it. -->
+    <title>StayInLapland — Long Stays &amp; Hotels in Finnish Lapland</title>
     <meta name="keywords" content="long stay lapland, lapland villa rental, lapland boutique hotel, weekly cabin lapland, lapland apartment rental, lapland luxury accommodation, glass igloo lapland, wilderness lodge finland" />
     <meta name="author" content="StayInLapland — Lapeso Oy" />
     <meta name="publisher" content="Lapeso Oy" />
@@ -35,21 +93,14 @@
     <meta property="og:site_name" content="StayInLapland" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://stayinlapland.com/" />
-    <meta property="og:title" content="StayInLapland — Long Stays &amp; Boutique Hotels in Finnish Lapland" />
+    <meta property="og:title" content="StayInLapland — Long Stays &amp; Hotels in Finnish Lapland" />
     <meta property="og:description" content="Settle into Finnish Lapland — luxury cabin rentals by the week, design hotels in Rovaniemi and Saariselkä, and the iconic Lapland glass igloos." />
-    <meta property="og:image" content="https://stayinlapland.com/og-default.jpg" />
-    <meta property="og:image:width" content="1200" />
-    <meta property="og:image:height" content="630" />
-    <meta property="og:image:alt" content="Editorial luxury cabin in Finnish Lapland with warm window light" />
     <meta property="og:locale" content="en_US" />
 
     <!-- Twitter Card -->
-    <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:site" content="@laplandvibes" />
-    <meta name="twitter:title" content="StayInLapland — Long Stays &amp; Boutique Hotels in Finnish Lapland" />
+    <meta name="twitter:title" content="StayInLapland — Long Stays &amp; Hotels in Finnish Lapland" />
     <meta name="twitter:description" content="Luxury cabin rentals by the week and boutique hotels across Finnish Lapland." />
-    <meta name="twitter:image" content="https://stayinlapland.com/og-default.jpg" />
-
     <link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml" />
 
     <!-- GetYourGuide Integration Analyzer -->
@@ -74,7 +125,7 @@
             "https://www.youtube.com/@laplandvibes",
             "https://www.facebook.com/LaplandVibes",
             "https://www.instagram.com/laplandvibesofficial",
-            "https://www.tiktok.com/@laplandvibesofficial"
+            "https://www.tiktok.com/@laplandvibes"
           ]
         },
         {
@@ -144,6 +195,26 @@
         }
       });
     </script>
+      <!-- Open Graph image (1200×630 JPEG) -->
+    <meta property="og:image" content="https://stayinlapland.com/og-default.jpg?v=20260626b" />
+    <meta property="og:image:secure_url" content="https://stayinlapland.com/og-default.jpg?v=20260626b" />
+    <meta property="og:image:type" content="image/jpeg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="StayInLapland — cozy Finnish log cabin in snowy Lapland at dusk" />
+    <!-- Twitter card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:image" content="https://stayinlapland.com/og-default.jpg?v=20260626b" />
+    <meta name="twitter:image:alt" content="StayInLapland — cozy Finnish log cabin in snowy Lapland at dusk" />
+      <!-- Favicon stack (LV ecosystem unified design) -->
+    <link rel="icon" href="/favicon.svg?v=20260626b" type="image/svg+xml" />
+    <link rel="alternate icon" href="/favicon.ico?v=20260626b" sizes="32x32" type="image/png" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png?v=20260626b" sizes="180x180" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <meta name="theme-color" content="#0F172A" />
+    <meta name="apple-mobile-web-app-title" content="StayInLapland" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="mobile-web-app-capable" content="yes" />
   </head>
   <body>
     <div id="root"></div>

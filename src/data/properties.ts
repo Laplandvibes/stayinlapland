@@ -21,19 +21,18 @@ export interface Property {
 }
 
 /* ─── LONG STAYS ─── 1+ week rentals: villas, design cabins, apartments. ─── */
+/** Build a Hotels.com-resolvable destination from a property location. Property NAMES must
+ *  NEVER be used as the ss= search (Hotels.com fuzzy-matches lodge names to unrelated US towns).
+ *  Always resolve to a real Lapland city + ", Finland". */
+export function searchDest(location: string, searchQuery?: string): string {
+  if (searchQuery && searchQuery.trim()) return searchQuery;
+  let c = (location || '').split('(')[0].split(' · ')[0].split(',')[0];
+  c = c.replace(/(village|fell|National Park|area|city centre|southern shore|district)/gi, '').trim();
+  c = c.replace(/^Lake\s+/i, '').trim();
+  return c ? `${c}, Finland` : 'Lapland, Finland';
+}
+
 export const longStays: Property[] = [
-  {
-    slug: 'octola-private-reserve',
-    name: 'Octola Private Reserve',
-    location: 'Rovaniemi (private wilderness)',
-    priceRange: '€2 800+',
-    minStay: '2 nights',
-    bestFor: 'long',
-    highlight: 'Full buyout · 300 ha private reserve · 10 suites',
-    description:
-      'A 300-hectare private wilderness reserve with one architect-designed lodge — Studio Puisto, ten suites, full buyout only. Booked monthly by film crews and family groups celebrating once-in-a-life occasions. The closest thing in Finland to a private island.',
-    imageSrc: '/images/pick-octola.webp',
-  },
   {
     slug: 'arctic-treehouse-suite',
     name: 'Arctic TreeHouse Resort — Long Stay',
@@ -206,17 +205,6 @@ export const glassIgloos: Property[] = [
 /* ─── WILDERNESS ─── high-end remote retreats ─── */
 export const wilderness: Property[] = [
   {
-    slug: 'octola-lodge',
-    name: 'Octola Lodge',
-    location: 'Rovaniemi (private wilderness)',
-    priceRange: '€2 800+',
-    bestFor: 'long',
-    highlight: 'Private 300-hectare reserve · full buyout',
-    description:
-      'See the long-stay listing — Octola is technically a wilderness lodge, structurally a long-stay full buyout. We list it twice because the booking question is fundamentally different from the others in this category.',
-    imageSrc: '/images/pick-octola.webp',
-  },
-  {
     slug: 'iso-syote-eagle',
     name: 'Iso-Syöte Eagle View Suites',
     location: 'Iso-Syöte (Pudasjärvi)',
@@ -261,7 +249,7 @@ export const destinations: DestinationInfo[] = [
     pitch: 'The capital of Finnish Lapland — the only Lapland city with a real winter restaurant scene, a working airport hub and a year-round design culture.',
     longStayAngle:
       'The right base if your long stay involves work-from-Lapland weekdays and weekend trips north — fast wifi, Stockholm-direct flights, restaurants open in shoulder season.',
-    propertyNames: ['Arctic TreeHouse Resort', 'Arctic Light Hotel', 'Lapland Hotels Ounasvaara Chalets', 'Octola Private Reserve'],
+    propertyNames: ['Arctic TreeHouse Resort', 'Arctic Light Hotel', 'Lapland Hotels Ounasvaara Chalets'],
     imageSrc: '/images/hero-cabins.webp',
   },
   {
@@ -306,5 +294,5 @@ export const allCategoriesSummary = [
   { slug: 'long-stays',   name: 'Long Stays',        count: longStays.length,   description: 'Weekly + monthly rentals — villas, design cabins, ski apartments.', imageSrc: '/images/hero-long-stays.webp' },
   { slug: 'hotels',       name: 'Hotels',            count: hotels.length,      description: 'Boutique, design and classic Lapland hotels for short stays.',     imageSrc: '/images/hero-hotels.webp' },
   { slug: 'glass-igloos', name: 'Glass Igloos',      count: glassIgloos.length, description: 'The iconic Lapland format — four resorts that earn the name.',     imageSrc: '/images/hero-glass-igloos.webp' },
-  { slug: 'wilderness',   name: 'Wilderness Lodges', count: wilderness.length,  description: 'Past the last road — three retreats for serious travellers.',      imageSrc: '/images/hero-wilderness.webp' },
+  { slug: 'wilderness',   name: 'Wilderness Lodges', count: wilderness.length,  description: 'Past the last road — remote retreats for serious travellers.',      imageSrc: '/images/hero-wilderness.webp' },
 ] as const;

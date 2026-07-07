@@ -1,6 +1,8 @@
 import { Link } from 'react-router-dom';
 import { MapPin, ChevronRight, ArrowDown } from 'lucide-react';
 import AffiliateCTA from './AffiliateCTA';
+import { useLang, useLocalePath } from '../i18n/useLang';
+import { getCopy } from '../locales/copy';
 
 const destinations = [
   { name: 'Rovaniemi', sid: 'hero_dest_rovaniemi' },
@@ -10,20 +12,30 @@ const destinations = [
   { name: 'Ylläs', sid: 'hero_dest_yllas' },
 ];
 
+const isSummerSeason = () => {
+  const m = new Date().getMonth() + 1;
+  return m >= 5 && m <= 9;
+};
+
 export default function Hero() {
+  const lang = useLang();
+  const localePath = useLocalePath();
+  const t = getCopy(lang).hero;
+  const summer = isSummerSeason();
+  const heroBase = summer ? 'home-hero-summer' : 'hero-aurora-cabins';
+  const heroAlt = summer
+    ? 'Lakeside log cabin in the Finnish Lapland summer'
+    : 'Aurora over a snow-covered log cabin in Finnish Lapland';
   return (
     <section className="relative overflow-hidden bg-night">
       <div className="relative min-h-[88svh] sm:min-h-[94svh] flex items-center justify-center">
-        <img
-          src="/images/home-hero.webp"
-          alt="Luxury log cabin in Finnish Lapland with warm window light at twilight"
-          className="absolute inset-0 w-full h-full object-cover"
+        <picture><source srcSet={`/images/${heroBase}.avif`} type="image/avif" /><source srcSet={`/images/${heroBase}.webp`} type="image/webp" /><img
+          src={`/images/${heroBase}.webp`}
+          alt={heroAlt}
+          className="absolute inset-0 w-full h-full object-cover [object-position:50%_42%]"
           fetchPriority="high"
-          decoding="async"
-        />
+          decoding="async" /></picture>
 
-        {/* Editorial scrim — strong at top + bottom, soft in middle to keep
-            the photograph readable */}
         <div className="absolute inset-0 bg-gradient-to-b from-night/60 via-night/30 to-night" />
         <div
           className="absolute inset-0"
@@ -39,33 +51,31 @@ export default function Hero() {
             style={{ textShadow: '0 2px 12px rgba(0,0,0,0.85)' }}
           >
             <MapPin className="w-3.5 h-3.5" />
-            Finnish Lapland · Editorial guide
+            {t.eyebrow}
           </p>
 
           <h1
             className="font-heading font-medium text-snow leading-[1.05] tracking-tight text-[42px] sm:text-6xl lg:text-7xl mb-6"
             style={{ textShadow: '0 4px 30px rgba(0,0,0,0.85)' }}
           >
-            Settle into Lapland.
+            {t.h1Line1}
             <br />
-            <span className="italic font-light text-snow/95">Don&rsquo;t just visit.</span>
+            <span className="italic font-light text-snow/95">{t.h1Line2}</span>
           </h1>
 
           <p
             className="font-body text-snow/85 text-base sm:text-lg lg:text-xl max-w-2xl mx-auto leading-relaxed"
             style={{ textShadow: '0 2px 14px rgba(0,0,0,0.8)' }}
           >
-            Luxury cabins by the week, design hotels in Rovaniemi, glass igloos for the
-            bucket-list nights — and the wilderness lodges past the last road. Verified rates
-            from <span className="text-snow">€140 to €2 800</span> across Finnish Lapland.
+            {t.lead} <span className="text-snow">{t.leadPriceRange}</span>.
           </p>
 
-          <div className="mt-10 mb-2">
+          <div className="mt-10 mb-2 hidden sm:block">
             <p
               className="text-[11px] sm:text-xs text-snow/65 mb-3 uppercase tracking-[0.22em] font-semibold"
               style={{ textShadow: '0 2px 10px rgba(0,0,0,0.85)' }}
             >
-              Live availability · Hotels.com search
+              {t.liveLabel}
             </p>
             <div className="flex flex-wrap gap-2 sm:gap-3 justify-center">
               {destinations.map((d) => (
@@ -73,12 +83,12 @@ export default function Hero() {
                   key={d.name}
                   partner="hotels"
                   sid={d.sid}
-                  destination={d.name}
+                  destination={`${d.name}, Finland`}
                   className="group inline-flex items-center gap-1.5 sm:gap-2 px-3 sm:px-5 py-2 sm:py-3 rounded-full bg-night/60 backdrop-blur-sm border border-snow/30 text-[13px] sm:text-base text-snow hover:bg-vibe-pink/15 hover:border-vibe-pink/55 transition-all duration-200"
                 >
                   <MapPin className="w-3.5 h-3.5 text-gold group-hover:text-vibe-pink transition-colors" />
                   <span className="font-medium">{d.name}</span>
-                  <ChevronRight className="w-3.5 h-3.5 text-snow/45 group-hover:text-vibe-pink transition-colors" />
+                  <ChevronRight className="w-3.5 h-3.5 text-snow/75 group-hover:text-vibe-pink transition-colors" />
                 </AffiliateCTA>
               ))}
             </div>
@@ -86,22 +96,22 @@ export default function Hero() {
 
           <div className="mt-10 flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center">
             <Link
-              to="/long-stays"
+              to={localePath('/long-stays')}
               className="px-7 py-3.5 bg-vibe-pink hover:bg-vibe-pink/90 text-white rounded-full font-semibold transition-all hover:scale-[1.02] shadow-lg shadow-vibe-pink/30 text-center"
             >
-              Browse long stays
+              {t.browseLongStays}
             </Link>
             <Link
-              to="/hotels"
+              to={localePath('/hotels')}
               className="px-7 py-3.5 bg-night/55 backdrop-blur-sm border border-snow/35 text-snow rounded-full font-semibold hover:bg-night/75 hover:border-snow/55 transition-all text-center"
             >
-              See hotels
+              {t.seeHotels}
             </Link>
           </div>
         </div>
 
         <div className="absolute bottom-6 sm:bottom-9 left-1/2 -translate-x-1/2 animate-bounce">
-          <ArrowDown className="w-5 h-5 text-snow/55" />
+          <ArrowDown className="w-5 h-5 text-snow/80" />
         </div>
       </div>
     </section>

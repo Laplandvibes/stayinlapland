@@ -1,0 +1,692 @@
+{
+  "/": {
+    "en": {
+      "title": "Where to Stay in Lapland 2026, 17 Verified Hotels & Cabins",
+      "description": "Plan your 2026 Lapland stay, 17 verified properties: weekly cabins from €120/night, design hotels in Rovaniemi, glass igloos from €450 and wilderness lodges."
+    },
+    "fi": {
+      "title": "Majoitus Suomen Lapissa | StayInLapland",
+      "description": "Asetu Suomen Lappiin, mökit viikoittain, design-hotellit Rovaniemellä ja Saariselällä, ikoniset lasi-iglut ja erämaalodget viimeisen tien jälkeen."
+    },
+    "de": {
+      "title": "Unterkünfte in Finnisch-Lappland | StayInLapland",
+      "description": "Lassen Sie sich in Finnisch-Lappland nieder, Blockhütten zur Wochenmiete, Designhotels in Rovaniemi, ikonische Glasiglus und Wildnishütten im Norden."
+    },
+    "ja": {
+      "title": "StayInLapland, フィンランド・ラップランドの長期滞在とブティックホテル",
+      "description": "フィンランド・ラップランドに腰を据える, 週単位で借りるコテージ、ロヴァニエミとサーリセルカのデザインホテル、象徴的なガラスイグルー、最終道路の先のウィルダネスロッジまで。"
+    },
+    "es": {
+      "title": "Dónde alojarse en la Laponia finlandesa | StayInLapland",
+      "description": "Instálate en la Laponia finlandesa, cabañas por semana, hoteles de diseño en Rovaniemi, iglús de cristal icónicos y refugios silvestres en el norte."
+    },
+    "pt-BR": {
+      "title": "Onde ficar na Lapônia finlandesa | StayInLapland",
+      "description": "Acomode-se na Lapônia finlandesa, cabanas por semana, hotéis de design em Rovaniemi, iglus de vidro icônicos e lodges silvestres depois da última estrada."
+    },
+    "zh-CN": {
+      "title": "StayInLapland, 芬兰拉普兰的长期入住与精品酒店",
+      "description": "在芬兰拉普兰住下来，，按周入住的木屋、罗瓦涅米与萨利色尔卡的设计酒店、标志性的玻璃冰屋,以及最后一条公路尽头的荒野别墅。"
+    },
+    "ko": {
+      "title": "StayInLapland, 라플란드의 장기 숙박과 부티크 호텔",
+      "description": "라플란드에서 머무를 곳을 찾으십니까? 장기 숙박, 부티크 호텔, 유리 이글루, 야생 로지를 엄선해 안내합니다. 실시간 가격과 솔직한 평가, 정확한 위치 정보를 제공합니다."
+    },
+    "fr": {
+      "title": "Où loger en Laponie 2026, 17 adresses vérifiées",
+      "description": "Préparez votre séjour Laponie 2026, 17 adresses vérifiées : chalets dès 120 €/nuit, hôtels design à Rovaniemi, igloos de verre dès 450 € et lodges nature."
+    },
+    "it": {
+      "title": "Dove alloggiare in Lapponia 2026, 17 strutture verificate",
+      "description": "Pianifichi il Suo soggiorno Lapponia 2026, 17 strutture verificate: baite da €120/notte, hotel design a Rovaniemi, igloo di vetro €450+ e lodge selvaggi."
+    },
+    "nl": {
+      "title": "Waar te verblijven in Lapland 2026, 17 adressen",
+      "description": "Plan uw verblijf Lapland 2026, 17 geverifieerde accommodaties: hutten vanaf €120/nacht, designhotels in Rovaniemi, glasiglo’s €450+ en wildernislodges."
+    }
+  },
+  "/long-stays": {
+    "en": {
+      "title": "Long Stays in Finnish Lapland | StayInLapland",
+      "description": "Five long-stay Lapland properties for week-plus rentals, Arctic TreeHouse suites, Levi penthouses, Ounasvaara chalets, Pyhä cabins and Lake Inari villas."
+    },
+    "fi": {
+      "title": "Pitkät jaksot Suomen Lapissa | StayInLapland",
+      "description": "Viisi pitkän jakson Lapin kohdetta viikon+ vuokrauksiin, Arctic TreeHouse, Levin penthouset, Ounasvaaran chaletit, Pyhän hirsimökit ja Inarinjärven huvilat."
+    },
+    "de": {
+      "title": "Langzeitaufenthalte in Finnisch-Lappland | StayInLapland",
+      "description": "Fünf Langzeitobjekte in Lappland für Mieten ab einer Woche, Arctic TreeHouse Suiten, Levi-Residenzen, Ounasvaara-Chalets, Pyhä-Blockhütten, Inarisee-Villen."
+    },
+    "ja": {
+      "title": "フィンランド・ラップランドの長期滞在, 1週間以上のレンタル | StayInLapland",
+      "description": "1週間以上のレンタルにふさわしいラップランドの長期滞在物件5軒, Arctic TreeHouseのデザインスイート、Leviのペントハウスレジデンス、Ounasvaaraのシャレー、Pyhäのログコテージ、イナリ湖のヴィラ。週料金、専用サウナ、キッチネット完備。"
+    },
+    "es": {
+      "title": "Larga estancia en la Laponia finlandesa | StayInLapland",
+      "description": "Cinco alojamientos de larga estancia en Laponia para una semana o más, Arctic TreeHouse, penthouses de Levi, Ounasvaara, cabañas de Pyhä y villas de Inari."
+    },
+    "pt-BR": {
+      "title": "Estadias longas na Lapônia finlandesa | StayInLapland",
+      "description": "Cinco propriedades de estadia longa na Lapônia para uma semana ou mais, Arctic TreeHouse, penthouses Levi, chalés Ounasvaara, cabanas Pyhä e villas de Inari."
+    },
+    "zh-CN": {
+      "title": "StayInLapland, 芬兰拉普兰长期入住,一周起的租住",
+      "description": "五处适合一周以上租住的拉普兰长住房源，，Arctic TreeHouse 设计套房、Levi 顶层公寓、Ounasvaara 木屋、Pyhä 原木木屋、伊纳里湖畔别墅。周价、私人桑拿、独立厨房。"
+    },
+    "ko": {
+      "title": "StayInLapland, 핀란드 라플란드 장기 숙박, 일주일 이상 임대",
+      "description": "일주일 이상 임대를 위한 라플란드 장기 숙박 숙소 다섯 곳, Arctic TreeHouse 디자인 스위트, Levi 펜트하우스 레지던스, Ounasvaara 샬레, Pyhä 통나무 캐빈, 이나리 호숫가 빌라. 주 단위 요금, 전용 사우나, 주방 완비."
+    },
+    "fr": {
+      "title": "Séjours longue durée en Laponie finlandaise | StayInLapland",
+      "description": "Cinq adresses longue durée en Laponie pour une semaine ou plus, Arctic TreeHouse, penthouses de Levi, chalets d’Ounasvaara, chalets de Pyhä et villas d’Inari."
+    },
+    "it": {
+      "title": "Soggiorni lunghi nella Lapponia finlandese | StayInLapland",
+      "description": "Cinque strutture in Lapponia per soggiorni di una settimana o più, suite Arctic TreeHouse, attici a Levi, chalet di Ounasvaara, baite a Pyhä e ville a Inari."
+    },
+    "nl": {
+      "title": "Lange verblijven in Fins Lapland | StayInLapland",
+      "description": "Vijf lange-verblijfsaccommodaties in Lapland voor een week of langer, Arctic TreeHouse, Levi penthouses, Ounasvaara-chalets, Pyhä-hutten en Inari-villa’s."
+    }
+  },
+  "/hotels": {
+    "en": {
+      "title": "Boutique & Design Hotels in Finnish Lapland | StayInLapland",
+      "description": "Five Lapland hotels worth booking, Arctic TreeHouse, Arctic Light, Levi Spirit, Lapland Hotels Saaga and Star Arctic. Curated for short stays and work trips."
+    },
+    "fi": {
+      "title": "Boutique- ja design-hotellit Suomen Lapissa | StayInLapland",
+      "description": "Viisi käsin valittua Lapin hotellia, Arctic TreeHouse, Arctic Light, Levi Spirit, Lapland Hotels Saaga ja Star Arctic. Lyhyihin jaksoihin ja työreissuihin."
+    },
+    "de": {
+      "title": "Boutique- und Designhotels in Finnisch-Lappland",
+      "description": "Fünf Lappland-Hotels, die eine Buchung wert sind, Arctic TreeHouse, Arctic Light, Levi Spirit, Lapland Hotels Saaga und Star Arctic. Für Kurzaufenthalte."
+    },
+    "ja": {
+      "title": "フィンランド・ラップランドのブティック&デザインホテル | StayInLapland",
+      "description": "予約する価値のあるラップランドのホテル5軒, Arctic TreeHouseのデザインスイート、Arctic Lightのブティック歴史建築、Levi Spiritのヴィラホテル、Lapland Hotels Saaga、Star Arctic Hotel。短期滞在、出張、長期滞在の合間の街時間に厳選しました。"
+    },
+    "es": {
+      "title": "Hoteles boutique y de diseño en la Laponia finlandesa",
+      "description": "Cinco hoteles seleccionados en Laponia, Arctic TreeHouse, Arctic Light, Levi Spirit, Lapland Hotels Saaga y Star Arctic. Para estancias cortas y trabajo."
+    },
+    "pt-BR": {
+      "title": "Hotéis boutique e de design na Lapônia finlandesa",
+      "description": "Cinco hotéis da Lapônia que valem a reserva, Arctic TreeHouse, Arctic Light, Levi Spirit, Lapland Hotels Saaga e Star Arctic. Para estadias curtas e trabalho."
+    },
+    "zh-CN": {
+      "title": "StayInLapland, 芬兰拉普兰的精品与设计酒店",
+      "description": "值得预订的五家拉普兰酒店，，Arctic TreeHouse 设计套房、Arctic Light 精品酒店、Levi Spirit 别墅酒店、Lapland Hotels Saaga、Star Arctic Hotel。为短住、出差,以及长住行程之间的过渡夜晚精选。"
+    },
+    "ko": {
+      "title": "StayInLapland, 핀란드 라플란드의 부티크 & 디자인 호텔",
+      "description": "예약할 가치가 있는 라플란드 호텔 다섯 곳, Arctic TreeHouse 디자인 스위트, Arctic Light 부티크, Levi Spirit 빌라 호텔, Lapland Hotels Saaga, Star Arctic Hotel. 짧은 일정과 출장을 위해 엄선했습니다."
+    },
+    "fr": {
+      "title": "Hôtels boutique et design en Laponie finlandaise",
+      "description": "Cinq hôtels de Laponie qui valent la réservation, Arctic TreeHouse, Arctic Light, Levi Spirit, Lapland Hotels Saaga et Star Arctic. Pour séjours courts."
+    },
+    "it": {
+      "title": "Hotel boutique e design nella Lapponia finlandese",
+      "description": "Cinque hotel in Lapponia che vale la pena prenotare, Arctic TreeHouse, Arctic Light, Levi Spirit, Lapland Hotels Saaga e Star Arctic. Per soggiorni brevi."
+    },
+    "nl": {
+      "title": "Boutique- en designhotels in Fins Lapland | StayInLapland",
+      "description": "Vijf Lapland-hotels die de boeking waard zijn, Arctic TreeHouse, Arctic Light, Levi Spirit, Lapland Hotels Saaga en Star Arctic. Voor korte verblijven."
+    }
+  },
+  "/glass-igloos": {
+    "en": {
+      "title": "Glass Igloos in Finnish Lapland | StayInLapland",
+      "description": "A guide to Finnish Lapland glass igloo resorts that earn the name, Kakslauttanen, Levin Iglut, Aurora Village, Aurora Pyramids. Ranked by sky and access."
+    },
+    "fi": {
+      "title": "Lasi-iglut Suomen Lapissa | StayInLapland",
+      "description": "Suomen Lapin lasi-igluresortit, jotka ansaitsevat nimen, Kakslauttanen, Levin Iglut, Aurora Village ja Aurora Pyramids. Järjestys taivaan mukaan."
+    },
+    "de": {
+      "title": "Glasiglus in Finnisch-Lappland | StayInLapland",
+      "description": "Glasiglu-Resorts in Finnisch-Lappland, die den Namen verdienen, Kakslauttanen, Levin Iglut, Aurora Village, Aurora Pyramids. Nach Himmelssicht bewertet."
+    },
+    "ja": {
+      "title": "フィンランド・ラップランドのガラスイグルー, 4リゾートをランキング | StayInLapland",
+      "description": "その名に値するフィンランド・ラップランドのガラスイグルーリゾート厳選ガイド, カクスラウッタネン、Levin Iglut、Aurora Village、Aurora Pyramids。空の視認性、暗空のロケーション、快適性、アクセスでランク付け。"
+    },
+    "es": {
+      "title": "Iglús de cristal en la Laponia finlandesa | StayInLapland",
+      "description": "Resorts de iglús de cristal en Laponia que merecen el nombre, Kakslauttanen, Levin Iglut, Aurora Village y Aurora Pyramids. Clasificados por cielo y acceso."
+    },
+    "pt-BR": {
+      "title": "Iglus de vidro na Lapônia finlandesa | StayInLapland",
+      "description": "Os resorts de iglu de vidro da Lapônia finlandesa à altura do nome, Kakslauttanen, Levin Iglut, Aurora Village e Aurora Pyramids. Ranqueados por céu e acesso."
+    },
+    "zh-CN": {
+      "title": "StayInLapland, 芬兰拉普兰玻璃冰屋,四家度假村排名",
+      "description": "精选指南:对得起名字的芬兰拉普兰玻璃冰屋度假村，，Kakslauttanen、Levin Iglut、Aurora Village、Aurora Pyramids。按天空可见度、暗夜位置、舒适度与可达性排名。"
+    },
+    "ko": {
+      "title": "StayInLapland, 핀란드 라플란드 유리 이글루, 네 리조트 순위",
+      "description": "그 이름값을 하는 핀란드 라플란드 유리 이글루 리조트 엄선 가이드, 칵슬라우타넨, Levin Iglut, Aurora Village, Aurora Pyramids. 하늘 가시성, 어두운 하늘 위치, 쾌적함, 접근성으로 순위를 매겼습니다."
+    },
+    "fr": {
+      "title": "Igloos de verre en Laponie finlandaise | StayInLapland",
+      "description": "Les igloos de verre de Laponie qui méritent ce nom, Kakslauttanen, Levin Iglut, Aurora Village et Aurora Pyramids. Classés selon le ciel et l’accès."
+    },
+    "it": {
+      "title": "Igloo di vetro nella Lapponia finlandese | StayInLapland",
+      "description": "I resort di igloo di vetro in Lapponia che meritano il nome, Kakslauttanen, Levin Iglut, Aurora Village e Aurora Pyramids. Classificati per cielo e accesso."
+    },
+    "nl": {
+      "title": "Glasiglo’s in Fins Lapland | StayInLapland",
+      "description": "Glasigloo-resorts in Fins Lapland die hun naam waarmaken, Kakslauttanen, Levin Iglut, Aurora Village en Aurora Pyramids. Gerangschikt op hemelzicht."
+    }
+  },
+  "/wilderness": {
+    "en": {
+      "title": "Wilderness Lodges in Finnish Lapland | StayInLapland",
+      "description": "Wilderness lodges past the last road, Iso-Syöte Eagle View Suites and Wilderness Hotel Muotka. Above-treeline aurora viewing and on-site wake-up service."
+    },
+    "fi": {
+      "title": "Erämaalodget Suomen Lapissa | StayInLapland",
+      "description": "Erämaalodget viimeisen tien jälkeen, Iso-Syöte Eagle View -sviitit ja Wilderness Hotel Muotka. Revontulikatselu puurajan yltä ja revontulien herätyspalvelu."
+    },
+    "de": {
+      "title": "Wildnishütten in Finnisch-Lappland | StayInLapland",
+      "description": "Wildnishütten jenseits der letzten Straße, Iso-Syöte Eagle View Suites und Wilderness Hotel Muotka. Nordlichter oberhalb der Baumgrenze, Aurora-Weckdienst."
+    },
+    "ja": {
+      "title": "フィンランド・ラップランドのウィルダネスロッジ, 本気のリトリート | StayInLapland",
+      "description": "最終道路の先のウィルダネスロッジ, Iso-Syöte Eagle View SuitesとWilderness Hotel Muotka。森林限界上のオーロラ観測と、オーロラの目覚ましサービス。"
+    },
+    "es": {
+      "title": "Refugios silvestres en la Laponia finlandesa | StayInLapland",
+      "description": "Refugios silvestres tras la última carretera, Iso-Syöte Eagle View y Wilderness Hotel Muotka. Auroras sobre el límite de los árboles y despertador aurora."
+    },
+    "pt-BR": {
+      "title": "Lodges na natureza da Lapônia | StayInLapland",
+      "description": "Lodges na natureza depois da última estrada, suítes Iso-Syöte Eagle View e Wilderness Hotel Muotka. Aurora acima das árvores e serviço de despertar-aurora."
+    },
+    "zh-CN": {
+      "title": "StayInLapland, 芬兰拉普兰荒野别墅,认真的隐居地",
+      "description": "最后一条公路之后的荒野别墅，，Iso-Syöte Eagle View 套房与 Wilderness Hotel Muotka。林线之上的极光观测,以及现场极光叫醒服务。"
+    },
+    "ko": {
+      "title": "StayInLapland, 핀란드 라플란드의 야생 로지, 진지한 리트리트",
+      "description": "마지막 도로 너머의 야생 로지, Iso-Syöte Eagle View 스위트와 Wilderness Hotel Muotka. 수목한계선 위 오로라 조망과 현장 오로라 모닝콜 서비스."
+    },
+    "fr": {
+      "title": "Lodges en pleine nature en Laponie | StayInLapland",
+      "description": "Des lodges au-delà de la dernière route, suites Iso-Syöte Eagle View et Wilderness Hotel Muotka. Aurore au-dessus des arbres et réveil aurore sur place."
+    },
+    "it": {
+      "title": "Lodge nella natura in Lapponia | StayInLapland",
+      "description": "Lodge nella natura oltre l’ultima strada, Iso-Syöte Eagle View Suites e Wilderness Hotel Muotka. Aurora sopra la linea degli alberi e sveglia aurora in loco."
+    },
+    "nl": {
+      "title": "Wildernislodges in Fins Lapland | StayInLapland",
+      "description": "Wildernislodges voorbij de laatste weg, Iso-Syöte Eagle View Suites en Wilderness Hotel Muotka. Noorderlicht boven de boomgrens en noorderlicht-wekservice."
+    }
+  },
+  "/when-to-go": {
+    "en": {
+      "title": "When to Visit Lapland, month-by-month guide | StayInLapland",
+      "description": "Month-by-month guide to visiting Finnish Lapland, when aurora is strongest, when snow stabilises, peak vs shoulder rates, and which weeks locals book."
+    },
+    "fi": {
+      "title": "Milloin Lappiin, kuukausi kerrallaan -opas | StayInLapland",
+      "description": "Kuukausi kerrallaan -opas Suomen Lapissa vierailuun, milloin revontulet ovat vahvimpia, milloin lumi tasoittuu ja mitkä viikot paikalliset varaavat itselleen."
+    },
+    "de": {
+      "title": "Reisezeit Lappland, Monat-für-Monat-Leitfaden",
+      "description": "Monat-für-Monat-Leitfaden für Finnisch-Lappland, wann die Nordlichter am stärksten sind, wann der Schnee hält und welche Wochen Einheimische selbst buchen."
+    },
+    "ja": {
+      "title": "ラップランド訪問時期, 月別ガイド | StayInLapland",
+      "description": "フィンランド・ラップランドを訪れる月別の編集ガイド, オーロラが最も強い時期、雪が安定する時期、ピークとショルダーの料金、そして地元の方々が自分のために予約する週まで。"
+    },
+    "es": {
+      "title": "Cuándo ir a Laponia, guía mes a mes | StayInLapland",
+      "description": "Guía mes a mes para visitar la Laponia finlandesa, cuándo son más fuertes las auroras, cuándo se asienta la nieve y qué semanas reservan los locales."
+    },
+    "pt-BR": {
+      "title": "Quando visitar a Lapônia, guia mês a mês | StayInLapland",
+      "description": "Guia mês a mês para visitar a Lapônia finlandesa, quando a aurora é mais forte, quando a neve firma e quais semanas os locais reservam para si."
+    },
+    "zh-CN": {
+      "title": "StayInLapland, 拉普兰旅行时机,逐月指南",
+      "description": "芬兰拉普兰逐月编辑指南，，极光何时最强、积雪何时稳定、旺季与过渡季价格,以及当地人留给自己的那几周。"
+    },
+    "ko": {
+      "title": "StayInLapland, 라플란드 여행 시기, 월별 가이드",
+      "description": "핀란드 라플란드 방문을 위한 월별 에디토리얼 가이드, 오로라가 가장 강한 때, 눈이 안정되는 때, 성수기 대 비수기 요금, 그리고 현지인이 스스로를 위해 잡는 주간들."
+    },
+    "fr": {
+      "title": "Quand visiter la Laponie, guide mois par mois",
+      "description": "Guide mois par mois pour visiter la Laponie, quand l’aurore est la plus forte, quand la neige se stabilise et les semaines que les locaux réservent pour eux."
+    },
+    "it": {
+      "title": "Quando visitare la Lapponia, guida mese per mese",
+      "description": "Guida mese per mese per visitare la Lapponia, quando l’aurora è più forte, quando la neve si stabilizza e le settimane che i locali prenotano per sé."
+    },
+    "nl": {
+      "title": "Wanneer Lapland bezoeken, maand-voor-maand-gids",
+      "description": "Maand-voor-maand-gids voor Fins Lapland, wanneer het noorderlicht het sterkst is, wanneer de sneeuw stabiliseert en welke weken de locals voor zichzelf boeken."
+    }
+  },
+  "/booking-guide": {
+    "en": {
+      "title": "Lapland Booking Guide | StayInLapland",
+      "description": "Practical Lapland booking guide, when to come for the best aurora, how to get there, what to pack, what it costs, and cancellation tips."
+    },
+    "fi": {
+      "title": "Lapin varausopas, milloin, miten, mitä pakata",
+      "description": "Käytännöllinen Lapin varausopas, milloin tulla parhaiden revontulien aikaan, miten päästä perille, mitä pakata, mitä se maksaa ja sisäpiirivinkit."
+    },
+    "de": {
+      "title": "Lappland-Buchungsleitfaden | StayInLapland",
+      "description": "Praktischer Lappland-Buchungsleitfaden, wann anreisen für die besten Nordlichter, Anreise, Packliste, tatsächliche Kosten, Stornobedingungen und Insider-Tipps."
+    },
+    "ja": {
+      "title": "ラップランド予約ガイド, いつ、どのように、何を持参するか | StayInLapland",
+      "description": "実用的なラップランドの予約ガイド, オーロラを楽しむ最適な時期、行き方、持ち物、実際の費用、キャンセルポリシー、インサイダーの情報まで。"
+    },
+    "es": {
+      "title": "Guía de reservas de Laponia, cuándo, cómo, qué llevar",
+      "description": "Guía práctica de reservas de Laponia, cuándo venir con las mejores auroras, cómo llegar, qué llevar, qué cuesta de verdad y consejos de los locales."
+    },
+    "pt-BR": {
+      "title": "Guia de reservas da Lapônia, quando, como, o que levar",
+      "description": "Guia prático de reservas da Lapônia, quando vir para a melhor aurora, como chegar, o que levar, quanto custa de verdade e dicas de quem é de lá."
+    },
+    "zh-CN": {
+      "title": "StayInLapland, 拉普兰预订指南:何时、如何、带什么",
+      "description": "实用的拉普兰预订指南，，何时来看极光最好、怎么抵达、带什么、实际花多少、取消政策与内行贴士。"
+    },
+    "ko": {
+      "title": "StayInLapland, 라플란드 예약 가이드: 시기·방법·준비물",
+      "description": "실용적인 라플란드 예약 가이드, 최고의 오로라를 위한 시기, 가는 방법, 준비물, 실제 비용, 취소 정책, 그리고 현지 팁."
+    },
+    "fr": {
+      "title": "Guide de réservation Laponie, quand, comment, quoi emporter",
+      "description": "Guide pratique de réservation pour la Laponie, quand venir pour la meilleure aurore, comment s’y rendre, quoi emporter, le coût réel et les conseils d’initiés."
+    },
+    "it": {
+      "title": "Guida alle prenotazioni in Lapponia, quando e come",
+      "description": "Guida pratica alle prenotazioni in Lapponia, quando venire per la migliore aurora, come arrivare, cosa portare, quanto costa e i suggerimenti dei locali."
+    },
+    "nl": {
+      "title": "Lapland-boekingsgids, wanneer, hoe, wat in te pakken",
+      "description": "Praktische Lapland-boekingsgids, wanneer komen voor het beste noorderlicht, hoe er te komen, wat in te pakken, wat het werkelijk kost en insidertips."
+    }
+  },
+  "/destinations/rovaniemi": {
+    "en": {
+      "title": "Rovaniemi — Where to Stay | StayInLapland",
+      "description": "The capital of Finnish Lapland, the only Lapland city with a real winter restaurant scene, a working airport hub and a year-round design culture. The right base if"
+    },
+    "fi": {
+      "title": "Rovaniemi — Missä yöpyä | StayInLapland",
+      "description": "Suomen Lapin pääkaupunki, ainoa Lapin kaupunki, jossa on oikea talviravintolaskene, toimiva lentokenttähub ja ympärivuotinen design-kulttuuri. Oikea tukikohta, jos"
+    },
+    "de": {
+      "title": "Rovaniemi — Wo übernachten | StayInLapland",
+      "description": "Die Hauptstadt Finnisch-Lapplands, die einzige Lappland-Stadt mit echter Wintergastronomie, einem funktionierenden Flughafenknoten und ganzjähriger Designkultur"
+    },
+    "ja": {
+      "title": "Rovaniemi — 泊まる場所 | StayInLapland",
+      "description": "フィンランド・ラップランドの首都, 本格的な冬のレストランシーン、現役の空港ハブ、通年のデザイン文化を備える唯一のラップランドの都市。 ラップランドで平日働き、週末に北を訪れる長期滞在に最適な拠点, 高速Wi-Fi、ストックホルム直行便、ショルダーシーズンも営業するレストラン。"
+    },
+    "es": {
+      "title": "Rovaniemi — Dónde alojarse | StayInLapland",
+      "description": "La capital de la Laponia finlandesa, la única ciudad lapona con una verdadera escena gastronómica de invierno, un hub aeroportuario en funcionamiento y cultura del"
+    },
+    "pt-BR": {
+      "title": "Rovaniemi — Onde ficar | StayInLapland",
+      "description": "A capital da Lapônia finlandesa, a única cidade da Lapônia com uma cena gastronômica de inverno de verdade, um hub aeroportuário funcionando e cultura de design o"
+    },
+    "zh-CN": {
+      "title": "Rovaniemi — 住在哪里 | StayInLapland",
+      "description": "芬兰拉普兰的首府，，唯一一座拥有真正冬季餐饮场景、运转中的机场枢纽和全年设计文化的拉普兰城市。 若您的长住包含在拉普兰远程办公的工作日和往北的周末出行,这便是合适的大本营，，快速 wifi、直飞斯德哥尔摩的航班、淡季照常营业的餐厅。"
+    },
+    "ko": {
+      "title": "Rovaniemi — 머무를 곳 | StayInLapland",
+      "description": "핀란드 라플란드의 수도, 제대로 된 겨울 레스토랑 신과 작동하는 공항 허브, 사철 이어지는 디자인 문화를 갖춘 라플란드 유일의 도시입니다. 장기 숙박이 라플란드에서 일하는 평일과 북쪽으로의 주말 여행을 포함한다면 알맞은 거점입니다, 빠른 와이파이, 스톡홀름 직항, 비수기에도 문을 여는 레스토랑."
+    },
+    "fr": {
+      "title": "Rovaniemi — Où loger | StayInLapland",
+      "description": "La capitale de la Laponie finlandaise, la seule ville lapone à avoir une vraie scène gastronomique hivernale, un hub aéroportuaire en activité et une culture du"
+    },
+    "it": {
+      "title": "Rovaniemi — Dove alloggiare | StayInLapland",
+      "description": "La capitale della Lapponia finlandese, l’unica città della Lapponia con una vera scena gastronomica invernale, un hub aeroportuale funzionante e una cultura del"
+    },
+    "nl": {
+      "title": "Rovaniemi — Waar te verblijven | StayInLapland",
+      "description": "De hoofdstad van Fins Lapland, de enige Lapland-stad met een echte winterse restaurantscene, een werkende luchthavenhub en een designcultuur het hele jaar door. De"
+    }
+  },
+  "/destinations/levi": {
+    "en": {
+      "title": "Levi — Where to Stay | StayInLapland",
+      "description": "Finland’s largest ski resort with the deepest selection of ski-in/out apartments and a real village high street. Long-stay sense: ski-in/out apartments rent by the"
+    },
+    "fi": {
+      "title": "Levi — Missä yöpyä | StayInLapland",
+      "description": "Suomen suurin hiihtokeskus, syvin valikoima ski-in/out-asuntoja ja oikea kylän raitti. Pitkän jakson logiikka: ski-in/out-asunnot vuokrataan viikoittain"
+    },
+    "de": {
+      "title": "Levi — Wo übernachten | StayInLapland",
+      "description": "Finnlands größtes Skiresort mit der tiefsten Auswahl an Ski-in/out-Apartments und einer echten Dorf-Hauptstraße. Langzeit-Logik: Ski-in/out-Apartments werden von"
+    },
+    "ja": {
+      "title": "Levi — 泊まる場所 | StayInLapland",
+      "description": "フィンランド最大のスキーリゾート。スキーイン・アウトのアパートメントの選択肢が最も豊富で、本格的な村のメインストリートがあります。 長期滞在の意義:スキーイン・アウトのアパートメントは12月から4月まで週単位でレンタル可能。リフトシステムは毎日稼働、村のレストランは毎晩営業、本格的なシーズン滞在ができます。"
+    },
+    "es": {
+      "title": "Levi — Dónde alojarse | StayInLapland",
+      "description": "La mayor estación de esquí de Finlandia, con la oferta más amplia de apartamentos a pie de pista y una calle de pueblo de verdad. Lógica de larga estancia: los"
+    },
+    "pt-BR": {
+      "title": "Levi — Onde ficar | StayInLapland",
+      "description": "A maior estação de esqui da Finlândia, com a maior oferta de apartamentos pé na pista e uma rua de vila de verdade. Lógica da estadia longa: os apartamentos pé na"
+    },
+    "zh-CN": {
+      "title": "Levi — 住在哪里 | StayInLapland",
+      "description": "芬兰最大的滑雪度假村,滑雪进出公寓的选择最深,还有一条真正的村庄主街。 长住逻辑:滑雪进出公寓自十二月至四月按周出租。缆车每天运行,村中餐厅夜夜营业,你可以在这里好好过上一季。"
+    },
+    "ko": {
+      "title": "Levi — 머무를 곳 | StayInLapland",
+      "description": "스키 인/아웃 아파트의 선택지가 가장 깊고, 진짜 마을 번화가를 갖춘 핀란드 최대의 스키 리조트. 장기 숙박의 의미: 스키 인/아웃 아파트가 12월부터 4월까지 주 단위로 임대됩니다. 리프트는 매일 돌고, 마을 레스토랑은 매일 밤 문을 엽니다. 여기서라면 제대로 한 시즌을 보낼 수 있습니다."
+    },
+    "fr": {
+      "title": "Levi — Où loger | StayInLapland",
+      "description": "La plus grande station de ski de Finlande, avec le plus large choix d’appartements ski aux pieds et une vraie rue de village. Logique longue durée : les"
+    },
+    "it": {
+      "title": "Levi — Dove alloggiare | StayInLapland",
+      "description": "Il più grande comprensorio sciistico della Finlandia, con la più ampia scelta di appartamenti ski-in/out e una vera via principale di villaggio. Logica del"
+    },
+    "nl": {
+      "title": "Levi — Waar te verblijven | StayInLapland",
+      "description": "Het grootste skigebied van Finland, met de breedste keuze aan ski-in/out-appartementen en een echte dorpsstraat. Logica van het lange verblijf"
+    }
+  },
+  "/destinations/saariselka": {
+    "en": {
+      "title": "Saariselkä — Where to Stay | StayInLapland",
+      "description": "Higher latitude than Rovaniemi, harder snow, darker sky. The Lapland village that takes winter most seriously. Long-stay sense: rent a hilltop cabin and write a"
+    },
+    "fi": {
+      "title": "Saariselkä — Missä yöpyä | StayInLapland",
+      "description": "Pohjoisempana kuin Rovaniemi, kovempi lumi, pimeämpi taivas. Lapin kylä, joka ottaa talven vakavimmin. Pitkän jakson logiikka: vuokraa harjamökki ja kirjoita kirja"
+    },
+    "de": {
+      "title": "Saariselkä — Wo übernachten | StayInLapland",
+      "description": "Höhere Breite als Rovaniemi, härterer Schnee, dunklerer Himmel. Das Lappland-Dorf, das den Winter am ernsthaftesten nimmt. Langzeit-Logik: Mieten Sie eine"
+    },
+    "ja": {
+      "title": "Saariselkä — 泊まる場所 | StayInLapland",
+      "description": "ロヴァニエミより緯度が高く、雪は硬く、空は暗い。冬を最も真剣に捉えるラップランドの村です。 長期滞在の意義:丘の上のコテージを借りて本を書く。気が散るものは少ない。優れたクロスカントリーネットワーク、近くにハスキーケンネル、都市の気が散る要素なし。"
+    },
+    "es": {
+      "title": "Saariselkä — Dónde alojarse | StayInLapland",
+      "description": "Latitud más alta que Rovaniemi, nieve más dura, cielo más oscuro. El pueblo lapón que se toma el invierno más en serio. Lógica de larga estancia: alquila una cabaña"
+    },
+    "pt-BR": {
+      "title": "Saariselkä — Onde ficar | StayInLapland",
+      "description": "Latitude mais alta que Rovaniemi, neve mais dura, céu mais escuro. A vila da Lapônia que leva o inverno mais a sério. Lógica da estadia longa: alugue uma cabana no"
+    },
+    "zh-CN": {
+      "title": "Saariselkä — 住在哪里 | StayInLapland",
+      "description": "纬度比罗瓦涅米更高,雪更硬,天更暗。是最把冬天当回事的拉普兰村庄。 长住逻辑:租一栋山丘上的木屋,写一本书。少有干扰。出色的越野滑雪网络、附近的哈士奇农场,没有城市的纷扰。"
+    },
+    "ko": {
+      "title": "Saariselkä — 머무를 곳 | StayInLapland",
+      "description": "로바니에미보다 높은 위도, 더 단단한 눈, 더 어두운 하늘. 겨울을 가장 진지하게 받아들이는 라플란드 마을입니다. 장기 숙박의 의미: 언덕 위 캐빈을 빌려 책 한 권을 쓰십시오. 방해 요소가 거의 없습니다. 빼어난 크로스컨트리 네트워크, 인근의 허스키 켄넬, 그리고 도시의 산만함이 없습니다."
+    },
+    "fr": {
+      "title": "Saariselkä — Où loger | StayInLapland",
+      "description": "Latitude plus haute que Rovaniemi, neige plus dure, ciel plus sombre. Le village lapon qui prend l’hiver le plus au sérieux. Logique longue durée : louez un chalet"
+    },
+    "it": {
+      "title": "Saariselkä — Dove alloggiare | StayInLapland",
+      "description": "Latitudine più alta di Rovaniemi, neve più dura, cielo più scuro. Il villaggio della Lapponia che prende l’inverno più sul serio. Logica del soggiorno lungo"
+    },
+    "nl": {
+      "title": "Saariselkä — Waar te verblijven | StayInLapland",
+      "description": "Hogere breedtegraad dan Rovaniemi, hardere sneeuw, donkerdere hemel. Het Lapland-dorp dat de winter het serieust neemt. Logica van het lange verblijf: huur een hut"
+    }
+  },
+  "/destinations/inari": {
+    "en": {
+      "title": "Inari — Where to Stay | StayInLapland",
+      "description": "Sami cultural capital, Lake Inari (1 084 km²), the most northern long-stay base in Finland. Long-stay sense: the lake itself is the activity. Ice fishing every"
+    },
+    "fi": {
+      "title": "Inari — Missä yöpyä | StayInLapland",
+      "description": "Saamelaisten kulttuuripääkaupunki, Inarinjärvi (1 084 km²), Suomen pohjoisin pitkän jakson tukikohta. Pitkän jakson logiikka: itse järvi on aktiviteetti"
+    },
+    "de": {
+      "title": "Inari — Wo übernachten | StayInLapland",
+      "description": "Samische Kulturhauptstadt, Inarisee (1 084 km²), die nördlichste Langzeitbasis Finnlands. Langzeit-Logik: Der See selbst ist die Aktivität. Jeden Morgen Eisfischen"
+    },
+    "ja": {
+      "title": "Inari — 泊まる場所 | StayInLapland",
+      "description": "サーミ文化の中心地、イナリ湖(1,084 km²)、フィンランド最北の長期滞在拠点。 長期滞在の意義:湖そのものがアクティビティです。毎朝の氷上釣り、凍結湖を渡るクロスカントリー、イナリ・サーミ博物館とSIIDA文化センターが目の前。"
+    },
+    "es": {
+      "title": "Inari — Dónde alojarse | StayInLapland",
+      "description": "Capital cultural sami, lago Inari (1 084 km²), la base de larga estancia más septentrional de Finlandia. Lógica de larga estancia: el lago en sí es la actividad"
+    },
+    "pt-BR": {
+      "title": "Inari — Onde ficar | StayInLapland",
+      "description": "Capital cultural sami, lago Inari (1 084 km²), a base de estadia longa mais ao norte da Finlândia. Lógica da estadia longa: o próprio lago é a atividade. Pesca no"
+    },
+    "zh-CN": {
+      "title": "Inari — 住在哪里 | StayInLapland",
+      "description": "萨米文化之都,伊纳里湖(1 084 km²),芬兰最北的长住大本营。 长住逻辑:湖本身就是活动。每天清晨冰钓、横穿封冻湖面的越野滑雪、门口的伊纳里萨米博物馆与 SIIDA 文化中心。"
+    },
+    "ko": {
+      "title": "Inari — 머무를 곳 | StayInLapland",
+      "description": "사미 문화의 중심, 이나리 호수(1,084km²), 핀란드에서 가장 북쪽의 장기 숙박 거점. 장기 숙박의 의미: 호수 자체가 액티비티입니다. 매일 아침 얼음낚시, 얼어붙은 호수를 가로지르는 크로스컨트리, 문 앞의 이나리 사미 박물관과 SIIDA 문화센터."
+    },
+    "fr": {
+      "title": "Inari — Où loger | StayInLapland",
+      "description": "Capitale culturelle sami, lac Inari (1 084 km²), la base longue durée la plus septentrionale de Finlande. Logique longue durée : le lac lui-même est l’activité"
+    },
+    "it": {
+      "title": "Inari — Dove alloggiare | StayInLapland",
+      "description": "Capitale culturale sami, Lago Inari (1 084 km²), la base per soggiorni lunghi più a nord della Finlandia. Logica del soggiorno lungo: il lago stesso è l’attività"
+    },
+    "nl": {
+      "title": "Inari — Waar te verblijven | StayInLapland",
+      "description": "Samische culturele hoofdstad, Inarimeer (1 084 km²), de noordelijkste lange-verblijfbasis van Finland. Logica van het lange verblijf: het meer zelf is de"
+    }
+  },
+  "/destinations/yllas": {
+    "en": {
+      "title": "Ylläs — Where to Stay | StayInLapland",
+      "description": "Quieter than Levi, longer ski season, the largest cross-country trail network in Lapland (330 km). Long-stay sense: the cross-country network is the draw. Cabin"
+    },
+    "fi": {
+      "title": "Ylläs — Missä yöpyä | StayInLapland",
+      "description": "Hiljaisempi kuin Levi, pidempi hiihtokausi, suurin maastohiihtoverkko Lapissa (330 km). Pitkän jakson logiikka: maastohiihtoverkko on vetonaula. Mökkivuokraukset"
+    },
+    "de": {
+      "title": "Ylläs — Wo übernachten | StayInLapland",
+      "description": "Ruhiger als Levi, längere Skisaison, das größte Langlaufnetz Lapplands (330 km). Langzeit-Logik: Das Langlaufnetz ist der Magnet. Hüttenmieten laufen hier"
+    },
+    "ja": {
+      "title": "Ylläs — 泊まる場所 | StayInLapland",
+      "description": "レヴィより静か、スキーシーズンが長く、ラップランド最大のクロスカントリーコースネットワーク(330km)。 長期滞在の意義:クロスカントリーネットワークが決め手。コテージレンタルは11月下旬から5月上旬まで週単位で稼働。毎日リフト付きアルペンを必要としないスキー愛好家に最適の長期滞在先です。"
+    },
+    "es": {
+      "title": "Ylläs — Dónde alojarse | StayInLapland",
+      "description": "Más tranquilo que Levi, temporada de esquí más larga, la mayor red de pistas de fondo de Laponia (330 km). Lógica de larga estancia: la red de esquí de fondo es el"
+    },
+    "pt-BR": {
+      "title": "Ylläs — Onde ficar | StayInLapland",
+      "description": "Mais tranquila que Levi, temporada de esqui mais longa, a maior rede de trilhas de cross-country da Lapônia (330 km). Lógica da estadia longa: a rede de"
+    },
+    "zh-CN": {
+      "title": "Ylläs — 住在哪里 | StayInLapland",
+      "description": "比莱维更安静,雪季更长,拥有拉普兰最大的越野滑道网络(330 km)。 长住逻辑:越野滑道网络是看点。这里的木屋租赁自十一月底至五月初按周出租。对不需要每天乘缆车滑高山的滑雪者而言,是最好的长住之选。"
+    },
+    "ko": {
+      "title": "Ylläs — 머무를 곳 | StayInLapland",
+      "description": "레비보다 한산하고, 스키 시즌이 더 길며, 라플란드 최대의 크로스컨트리 트레일 네트워크(330km)를 갖췄습니다. 장기 숙박의 의미: 크로스컨트리 네트워크가 매력입니다. 이곳의 캐빈 임대는 11월 말부터 5월 초까지 주 단위로 이어집니다. 리프트로 오르는 다운힐을 매일 필요로 하지 않는"
+    },
+    "fr": {
+      "title": "Ylläs — Où loger | StayInLapland",
+      "description": "Plus calme que Levi, saison de ski plus longue, le plus grand réseau de pistes de fond de Laponie (330 km). Logique longue durée : le réseau de ski de fond est"
+    },
+    "it": {
+      "title": "Ylläs — Dove alloggiare | StayInLapland",
+      "description": "Più tranquillo di Levi, stagione sciistica più lunga, la rete di sci di fondo più grande della Lapponia (330 km). Logica del soggiorno lungo: la rete di sci di"
+    },
+    "nl": {
+      "title": "Ylläs — Waar te verblijven | StayInLapland",
+      "description": "Rustiger dan Levi, langer skiseizoen, het grootste langlaufnetwerk van Lapland (330 km). Logica van het lange verblijf: het langlaufnetwerk is de trekker"
+    }
+  },
+  "/privacy": {
+    "en": {
+      "title": "Privacy Policy | StayInLapland",
+      "description": "StayInLapland privacy policy — how we handle anonymous analytics, newsletter subscriptions, your GDPR rights, and our data controller (Lapeso Oy, Finland)."
+    },
+    "fi": {
+      "title": "Tietosuojaseloste | StayInLapland",
+      "description": "StayInLaplandin tietosuojaseloste — anonyymi analytiikka, uutiskirjetilaukset, GDPR-oikeutesi ja rekisterinpitäjä (Lapeso Oy, Suomi)."
+    },
+    "de": {
+      "title": "Datenschutzerklärung | StayInLapland",
+      "description": "Datenschutzerklärung von StayInLapland — anonyme Analytics, Newsletter-Abos, Ihre DSGVO-Rechte und der Verantwortliche (Lapeso Oy, Finnland)."
+    },
+    "ja": {
+      "title": "プライバシーポリシー | StayInLapland",
+      "description": "StayInLaplandのプライバシーポリシー — 匿名アナリティクス、ニュースレター購読、GDPR上の権利、データ管理者（フィンランドのLapeso Oy）について。"
+    },
+    "es": {
+      "title": "Política de privacidad | StayInLapland",
+      "description": "Política de privacidad de StayInLapland — analítica anónima, suscripciones al boletín, tus derechos RGPD y el responsable del tratamiento (Lapeso Oy, Finlandia)."
+    },
+    "pt-BR": {
+      "title": "Política de privacidade | StayInLapland",
+      "description": "Política de privacidade do StayInLapland — analytics anônimo, assinaturas da newsletter, seus direitos GDPR e o controlador de dados (Lapeso Oy, Finlândia)."
+    },
+    "zh-CN": {
+      "title": "隐私政策 | StayInLapland",
+      "description": "StayInLapland 隐私政策 — 匿名分析、新闻通讯订阅、您的 GDPR 权利及数据控制者（芬兰 Lapeso Oy）。"
+    },
+    "ko": {
+      "title": "개인정보 처리방침 | StayInLapland",
+      "description": "StayInLapland 개인정보 처리방침 — 익명 분석, 뉴스레터 구독, GDPR 권리 및 데이터 관리자(핀란드 Lapeso Oy)."
+    },
+    "fr": {
+      "title": "Politique de confidentialité | StayInLapland",
+      "description": "Politique de confidentialité de StayInLapland — analytics anonymes, abonnements à la newsletter, vos droits RGPD et le responsable du traitement (Lapeso Oy"
+    },
+    "it": {
+      "title": "Informativa sulla privacy | StayInLapland",
+      "description": "Informativa sulla privacy di StayInLapland — analytics anonimi, iscrizioni alla newsletter, i tuoi diritti GDPR e il titolare del trattamento (Lapeso Oy, Finlandia)."
+    },
+    "nl": {
+      "title": "Privacybeleid | StayInLapland",
+      "description": "Privacybeleid van StayInLapland — anonieme analytics, nieuwsbriefinschrijvingen, je AVG-rechten en de verwerkingsverantwoordelijke (Lapeso Oy, Finland)."
+    }
+  },
+  "/terms": {
+    "en": {
+      "title": "Terms of Use | StayInLapland",
+      "description": "StayInLapland terms of use — editorial scope, affiliate disclosure, third-party booking links, intellectual property, and Finnish jurisdiction."
+    },
+    "fi": {
+      "title": "Käyttöehdot | StayInLapland",
+      "description": "StayInLaplandin käyttöehdot — toimituksellinen sisältö, affiliate-ilmoitus, kolmansien osapuolten varauslinkit, immateriaalioikeudet ja Suomen lainkäyttöalue."
+    },
+    "de": {
+      "title": "Nutzungsbedingungen | StayInLapland",
+      "description": "Nutzungsbedingungen von StayInLapland — redaktioneller Umfang, Affiliate-Hinweis, Buchungslinks Dritter, geistiges Eigentum und finnischer Gerichtsstand."
+    },
+    "ja": {
+      "title": "利用規約 | StayInLapland",
+      "description": "StayInLaplandの利用規約 — 編集方針、アフィリエイト開示、第三者の予約リンク、知的財産、フィンランドの準拠法。"
+    },
+    "es": {
+      "title": "Términos de uso | StayInLapland",
+      "description": "Términos de uso de StayInLapland — alcance editorial, divulgación de afiliados, enlaces de reserva de terceros, propiedad intelectual y jurisdicción finlandesa."
+    },
+    "pt-BR": {
+      "title": "Termos de uso | StayInLapland",
+      "description": "Termos de uso do StayInLapland — escopo editorial, divulgação de afiliados, links de reserva de terceiros, propriedade intelectual e jurisdição finlandesa."
+    },
+    "zh-CN": {
+      "title": "使用条款 | StayInLapland",
+      "description": "StayInLapland 使用条款 — 编辑范围、联盟披露、第三方预订链接、知识产权及芬兰司法管辖。"
+    },
+    "ko": {
+      "title": "이용약관 | StayInLapland",
+      "description": "StayInLapland 이용약관 — 에디토리얼 범위, 제휴 고지, 제3자 예약 링크, 지적 재산권, 핀란드 관할."
+    },
+    "fr": {
+      "title": "Conditions d'utilisation | StayInLapland",
+      "description": "Conditions d'utilisation de StayInLapland — périmètre éditorial, divulgation d'affiliation, liens de réservation tiers, propriété intellectuelle et juridiction"
+    },
+    "it": {
+      "title": "Termini di utilizzo | StayInLapland",
+      "description": "Termini di utilizzo di StayInLapland — ambito editoriale, divulgazione di affiliazione, link di prenotazione di terzi, proprietà intellettuale e giurisdizione"
+    },
+    "nl": {
+      "title": "Gebruiksvoorwaarden | StayInLapland",
+      "description": "Gebruiksvoorwaarden van StayInLapland — redactionele reikwijdte, affiliate-vermelding, boekingslinks van derden, intellectueel eigendom en Finse jurisdictie."
+    }
+  },
+  "/cookie-policy": {
+    "en": {
+      "title": "Cookie Policy | StayInLapland",
+      "description": "StayInLapland cookie policy — what cookies we set (Google Analytics 4, consent state, newsletter popup state), how to opt out, and your rights under GDPR."
+    },
+    "fi": {
+      "title": "Evästekäytäntö | StayInLapland",
+      "description": "StayInLaplandin evästekäytäntö — mitä evästeitä asetamme (Google Analytics 4, suostumustila, uutiskirjepopupin tila), miten kieltäydyt ja GDPR-oikeutesi."
+    },
+    "de": {
+      "title": "Cookie-Richtlinie | StayInLapland",
+      "description": "Cookie-Richtlinie von StayInLapland — welche Cookies wir setzen (Google Analytics 4, Consent-Status, Newsletter-Popup-Status), Opt-out und Ihre DSGVO-Rechte."
+    },
+    "ja": {
+      "title": "クッキーポリシー | StayInLapland",
+      "description": "StayInLaplandのクッキーポリシー — 設定するCookie（Google Analytics 4、同意状態、ニュースレターポップアップ状態）、オプトアウト方法、GDPR上の権利。"
+    },
+    "es": {
+      "title": "Política de cookies | StayInLapland",
+      "description": "Política de cookies de StayInLapland — qué cookies establecemos (Google Analytics 4, estado de consentimiento, popup del boletín), cómo rechazarlas y tus derechos"
+    },
+    "pt-BR": {
+      "title": "Política de cookies | StayInLapland",
+      "description": "Política de cookies do StayInLapland — quais cookies definimos (Google Analytics 4, estado de consentimento, popup da newsletter), como recusar e seus direitos GDPR."
+    },
+    "zh-CN": {
+      "title": "Cookie 政策 | StayInLapland",
+      "description": "StayInLapland Cookie 政策 — 我们设置哪些 Cookie（Google Analytics 4、同意状态、新闻通讯弹窗状态）、如何退出及您的 GDPR 权利。"
+    },
+    "ko": {
+      "title": "쿠키 정책 | StayInLapland",
+      "description": "StayInLapland 쿠키 정책 — 설정하는 쿠키(Google Analytics 4, 동의 상태, 뉴스레터 팝업 상태), 거부 방법 및 GDPR 권리."
+    },
+    "fr": {
+      "title": "Politique de cookies | StayInLapland",
+      "description": "Politique de cookies de StayInLapland — quels cookies nous déposons (Google Analytics 4, état du consentement, popup newsletter), comment les refuser et vos droits"
+    },
+    "it": {
+      "title": "Informativa sui cookie | StayInLapland",
+      "description": "Informativa sui cookie di StayInLapland — quali cookie impostiamo (Google Analytics 4, stato del consenso, popup newsletter), come rifiutarli e i tuoi diritti GDPR."
+    },
+    "nl": {
+      "title": "Cookiebeleid | StayInLapland",
+      "description": "Cookiebeleid van StayInLapland — welke cookies we plaatsen (Google Analytics 4, toestemmingsstatus, nieuwsbriefpopup), hoe je weigert en je AVG-rechten."
+    }
+  }
+}

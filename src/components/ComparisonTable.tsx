@@ -1,3 +1,6 @@
+import { useLang } from '../i18n/useLang';
+import { getCopy } from '../locales/copy';
+
 interface Row {
   name: string;
   scores: number[];
@@ -11,9 +14,9 @@ interface ComparisonTableProps {
   rubric?: string;
 }
 
-function Dots({ n }: { n: number }) {
+function Dots({ n, ariaLabel }: { n: number; ariaLabel: string }) {
   return (
-    <span className="inline-flex gap-[3px]" aria-label={`${n} out of 5`}>
+    <span className="inline-flex gap-[3px]" aria-label={ariaLabel}>
       {[0, 1, 2, 3, 4].map((i) => (
         <span
           key={i}
@@ -27,6 +30,8 @@ function Dots({ n }: { n: number }) {
 }
 
 export default function ComparisonTable({ axes, rows, title, rubric }: ComparisonTableProps) {
+  const lang = useLang();
+  const t = getCopy(lang).comparison;
   return (
     <section className="rounded-2xl overflow-hidden bg-white border border-charcoal/10 shadow-sm">
       {(title || rubric) && (
@@ -45,7 +50,7 @@ export default function ComparisonTable({ axes, rows, title, rubric }: Compariso
           <thead>
             <tr className="border-b border-charcoal/8">
               <th className="text-left text-[11px] font-semibold text-stone uppercase tracking-[0.16em] py-4 px-5 sm:px-7">
-                Property
+                {t.property}
               </th>
               {axes.map((axis) => (
                 <th
@@ -56,7 +61,7 @@ export default function ComparisonTable({ axes, rows, title, rubric }: Compariso
                 </th>
               ))}
               <th className="text-left text-[11px] font-semibold text-stone uppercase tracking-[0.16em] py-4 px-5 sm:px-7">
-                Verdict
+                {t.verdict}
               </th>
             </tr>
           </thead>
@@ -71,7 +76,7 @@ export default function ComparisonTable({ axes, rows, title, rubric }: Compariso
                 </td>
                 {row.scores.map((s, j) => (
                   <td key={j} className="py-4 px-3">
-                    <Dots n={s} />
+                    <Dots n={s} ariaLabel={t.nOutOf5(s)} />
                   </td>
                 ))}
                 <td className="py-4 px-5 sm:px-7 text-graphite italic">{row.verdict}</td>
@@ -93,7 +98,7 @@ export default function ComparisonTable({ axes, rows, title, rubric }: Compariso
                     {axis}
                   </dt>
                   <dd>
-                    <Dots n={row.scores[j]} />
+                    <Dots n={row.scores[j]} ariaLabel={t.nOutOf5(row.scores[j])} />
                   </dd>
                 </div>
               ))}

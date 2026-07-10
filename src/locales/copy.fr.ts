@@ -456,7 +456,7 @@ export const copyFR: SectionCopy = {
           'Hôtel boutique : 140–420 €/nuit, petit-déjeuner généralement inclus.',
           'Igloo de verre, haute saison : 400–1 500 €/nuit pour deux.',
           'Lodge en pleine nature, privatisation complète : à partir de 2 800 €/nuit pour dix.',
-          'Activités (safari husky, motoneige, chasse à l’aurore) : en général 120–200 € par personne et par sortie, en plus.',
+          'Activités (safari en traîneau de huskies, motoneige, chasse à l’aurore) : en général 120–200 € par personne et par sortie, en plus.',
         ],
       },
       {

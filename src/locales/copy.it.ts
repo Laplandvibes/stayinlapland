@@ -435,7 +435,7 @@ export const copyIT: SectionCopy = {
           'Hotel boutique: 140–420 €/notte, di solito colazione inclusa.',
           'Igloo di vetro, alta stagione: 400–1500 €/notte per due.',
           'Lodge nella natura in esclusiva totale: oltre 2 800 €/notte per dieci.',
-          'Attività (safari husky, motoslitta, caccia all’aurora) di solito 120–200 € per persona per uscita in aggiunta.',
+          'Attività (safari con gli husky, motoslitta, caccia all’aurora) di solito 120–200 € per persona per uscita in aggiunta.',
         ],
       },
       {

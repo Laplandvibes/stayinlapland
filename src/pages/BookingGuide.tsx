@@ -7,6 +7,8 @@ import { Calendar, Plane, Snowflake, Wallet, Compass, Lightbulb } from 'lucide-r
 import { pageUrl } from '../lib/meta';
 import { useLang } from '../i18n/useLang';
 import { getCopy } from '../locales/copy';
+import AdUnit from '../../../shared/ads/AdUnit';
+import omenaHotelsAd from '../../../shared/ads/advertisers/omenaHotels';
 
 const ICONS = [Calendar, Plane, Snowflake, Wallet, Compass, Lightbulb];
 
@@ -103,6 +105,17 @@ export default function BookingGuide() {
               {b.browseAll}
             </AffiliateCTA>
           </div>
+
+          {/* Omena Hotels ad — city-stopover angle complements Lapland stays
+              (shared/ads; different product than the site's own Hotels.com
+              routing: budget city hotels for the journey, not Lapland stays). */}
+          <AdUnit
+            spec={omenaHotelsAd}
+            sid="booking_guide_stopover"
+            lang={lang}
+            variant="light"
+            className="mt-12"
+          />
         </div>
       </section>
 

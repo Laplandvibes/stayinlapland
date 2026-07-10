@@ -50,10 +50,16 @@ const HOTELS_LOCALE: Record<Lang, string> = {
   ko: 'ko_KR', fr: 'fr_FR', it: 'it_IT', nl: 'nl_NL',
 };
 
+/** Force ", Finland" onto any hotels query lacking a country — a bare "Lapland"
+ *  geocodes to Lapland, Indiana on Hotels.com (Vesa 2026-07-08). */
+function anchorFinland(ss: string): string {
+  return /finland|suomi/i.test(ss) ? ss : `${ss.replace(/[\s,]+$/, '')}, Finland`;
+}
+
 function buildHref(sid: string, ss: string, lang: Lang): string {
   const params = new URLSearchParams();
   params.set('sid', sid);
-  params.set('ss', ss);
+  params.set('ss', anchorFinland(ss));
   params.set('locale', HOTELS_LOCALE[lang]);
   return `${REDIRECT_BASE}?${params.toString()}`;
 }

@@ -5,7 +5,6 @@ import Newsletter from '../components/Newsletter';
 import FinnishDivider from '../components/FinnishDivider';
 import AuthorByline from '../components/AuthorByline';
 import PullQuote from '../components/PullQuote';
-import ImageBreak from '../components/ImageBreak';
 import TripTypeRecommender from '../components/TripTypeRecommender';
 import WorkInLaplandPromo from '../components/WorkInLaplandPromo';
 import LomarengasAd from '../components/LomarengasAd';
@@ -91,23 +90,17 @@ export default function Home() {
       <Hero />
 
       {/* Editor intro */}
-      <section className="py-20 sm:py-28 px-5 sm:px-6">
+      <section className="pt-14 pb-12 sm:pt-16 sm:pb-16 px-5 sm:px-6">
         <div className="max-w-3xl mx-auto">
           <AuthorByline note={h.authorNote} />
 
-          <div className="mt-10 space-y-5 text-graphite text-base sm:text-[17px] leading-relaxed">
+          <div className="mt-8 space-y-5 text-graphite text-base sm:text-[17px] leading-relaxed">
             <p>{h.intro.p1}</p>
             <p>{h.intro.p2}</p>
             <p className="text-stone italic">{h.intro.p3}</p>
           </div>
         </div>
       </section>
-
-      <ImageBreak
-        src="/images/break-frozen-lake.webp"
-        alt="Empty frozen lake at dawn with single track in snow"
-        ratio="3/1"
-      />
 
       {/* Four-bucket overview */}
       <section className="py-20 sm:py-28 px-5 sm:px-6 bg-cream-2/60">
@@ -171,12 +164,6 @@ export default function Home() {
       </section>
 
       <PullQuote attribution={h.pullQuote.attr}>{h.pullQuote.text}</PullQuote>
-
-      <ImageBreak
-        src="/images/break-boreal-forest.webp"
-        alt="Snow-covered pine forest at midday"
-        ratio="3/1"
-      />
 
       <FinnishDivider />
 

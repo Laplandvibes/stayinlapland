@@ -8,6 +8,8 @@ import PullQuote from '../components/PullQuote';
 import TripTypeRecommender from '../components/TripTypeRecommender';
 import WorkInLaplandPromo from '../components/WorkInLaplandPromo';
 import LomarengasAd from '../components/LomarengasAd';
+import HomeAdSlots from '../../../shared/HomeAdSlots';
+import { AD_SLOTS } from '../data/adSlots';
 import { allCategoriesSummary, destinations } from '../data/properties';
 import { pageUrl } from '../lib/meta';
 import { useLang, useLocalePath } from '../i18n/useLang';
@@ -237,6 +239,10 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* LV Media — standardi mainospaikkaosio (2 pääsponsoria + 6 kohdepaikkaa).
+          Cream-pinta → surface="light"; tyhjät paikat renderöivät house-adit. */}
+      <HomeAdSlots config={AD_SLOTS} locale={lang} surface="light" />
 
       <FinnishDivider />
 

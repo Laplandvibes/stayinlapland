@@ -8,7 +8,7 @@ import PullQuote from '../components/PullQuote';
 import TripTypeRecommender from '../components/TripTypeRecommender';
 import WorkInLaplandPromo from '../components/WorkInLaplandPromo';
 import LomarengasAd from '../components/LomarengasAd';
-import HomeAdSlots from '../../../shared/HomeAdSlots';
+import HomeAdSlots, { MainPartnerBanner } from '../../../shared/HomeAdSlots';
 import { AD_SLOTS } from '../data/adSlots';
 import { allCategoriesSummary, destinations } from '../data/properties';
 import { pageUrl } from '../lib/meta';
@@ -91,6 +91,9 @@ export default function Home() {
 
       <Hero />
 
+      {/* LV Media — PÄÄKUMPPANI-banneri heti heron alla */}
+      <MainPartnerBanner config={AD_SLOTS} locale={lang} surface="light" />
+
       {/* Editor intro */}
       <section className="pt-14 pb-12 sm:pt-16 sm:pb-16 px-5 sm:px-6">
         <div className="max-w-3xl mx-auto">
@@ -156,6 +159,10 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* LV Media — kumppaniosio ylhäällä: kakkospääkumppani + 6 premium-
+          kohdepaikkaa. Cream-pinta → surface="light". */}
+      <HomeAdSlots config={AD_SLOTS} locale={lang} surface="light" />
 
       {/* Flagship affiliate ad — Lomarengas (privately-owned weekly cottages),
           matched to the long-stay / whole-cabin angle of the page above. */}
@@ -239,10 +246,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-
-      {/* LV Media — standardi mainospaikkaosio (2 pääsponsoria + 6 kohdepaikkaa).
-          Cream-pinta → surface="light"; tyhjät paikat renderöivät house-adit. */}
-      <HomeAdSlots config={AD_SLOTS} locale={lang} surface="light" />
 
       <FinnishDivider />
 

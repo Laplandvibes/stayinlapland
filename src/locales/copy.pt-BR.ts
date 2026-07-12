@@ -88,7 +88,7 @@ export const copyPTBR: SectionCopy = {
     fullP2A: 'LaplandWork.com',
     fullP2B:
       ' é o hub central de vagas da Lapônia finlandesa, empregos de alta temporada na hospitalidade, vagas em estações de esqui, posições em canis de huskies, postos em hospitais e em engenharia em Rovaniemi, Levi, Saariselkä e Inari. Gratuito para candidatos, três planos para empregadores.',
-    fullCta: 'Ver vagas no laplandwork.com',
+    fullCta: 'Ver vagas',
     blocks: [
       { label: 'Hospitalidade de alta temporada', tag: 'Levi · Ylläs · Saariselkä' },
       { label: 'Canis de huskies', tag: 'Sazonal de nov a abr' },

@@ -53,7 +53,7 @@ export const copyIT: SectionCopy = {
       'Molti dei soggiorni lunghi su questo sito vengono prenotati da chi è arrivato per una stagione sciistica, un contratto di ingegneria artica o un mese di remote work, e si è innamorato del posto. Se è questo il Suo caso, c’è un sito dedicato al lavoro.',
     fullP2B:
       ' è l’hub centralizzato per il lavoro nella Lapponia finlandese, ospitalità stagionale, ruoli nelle stazioni sciistiche, posizioni nei canili di husky, lavori in ospedale e ingegneria a Rovaniemi, Levi, Saariselkä e Inari. Gratuito per chi cerca lavoro, tre fasce di prezzo per i datori di lavoro.',
-    fullCta: 'Vedere le offerte su laplandwork.com',
+    fullCta: 'Vedi i lavori',
     blocks: [
       { label: 'Ospitalità stagionale', tag: 'Levi · Ylläs · Saariselkä' },
       { label: 'Canili di husky', tag: 'Stagionale nov–apr' },

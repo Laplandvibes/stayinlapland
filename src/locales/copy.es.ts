@@ -88,7 +88,7 @@ export const copyES: SectionCopy = {
     fullP2A: 'LaplandWork.com',
     fullP2B:
       ' es el centro de empleo dedicado a la Laponia finlandesa: trabajos de temporada en alojamientos, plazas en estaciones de esquí, vacantes en granjas de huskies, puestos hospitalarios y de ingeniería en Rovaniemi, Levi, Saariselkä e Inari. Gratis para candidatos, con tres niveles de tarifa para empleadores.',
-    fullCta: 'Ver ofertas en laplandwork.com',
+    fullCta: 'Ver empleos',
     blocks: [
       { label: 'Trabajos de temporada en alojamientos', tag: 'Levi · Ylläs · Saariselkä' },
       { label: 'Granjas de huskies', tag: 'Temporada nov–abr' },

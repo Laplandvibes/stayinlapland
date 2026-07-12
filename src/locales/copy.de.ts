@@ -83,7 +83,7 @@ export const copyDE: SectionCopy = {
     fullP2A: 'LaplandWork.com',
     fullP2B:
       ' ist die zentrale Stellenbörse für Finnisch-Lappland, saisonale Hotellerie, Ski-Resort-Rollen, Husky-Zwinger-Stellen, Krankenhaus- und Ingenieursjobs in Rovaniemi, Levi, Saariselkä und Inari. Kostenfrei für Bewerber, drei Tarife für Arbeitgeber.',
-    fullCta: 'Stellen auf laplandwork.com ansehen',
+    fullCta: 'Jobs in Lappland ansehen',
     blocks: [
       { label: 'Saisonale Hotellerie', tag: 'Levi · Ylläs · Saariselkä' },
       { label: 'Husky-Zwinger', tag: 'Nov.–Apr. saisonal' },

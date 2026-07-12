@@ -79,7 +79,7 @@ export const copyJA: SectionCopy = {
     fullP2A: 'LaplandWork.com',
     fullP2B:
       'はフィンランド・ラップランドの求人を集約したハブです, 季節ホスピタリティ、スキーリゾート、ハスキーケンネル、ロヴァニエミ・レヴィ・サーリセルカ・イナリの病院や技術系の求人まで。求職者は無料、雇用主には3段階の料金プランをご用意しています。',
-    fullCta: 'laplandwork.com で求人を見る',
+    fullCta: '求人を見る',
     blocks: [
       { label: '季節のホスピタリティ', tag: 'レヴィ · ユッラス · サーリセルカ' },
       { label: 'ハスキーケンネル', tag: '11月〜4月の季節雇用' },

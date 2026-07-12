@@ -83,7 +83,7 @@ export const copyFI: SectionCopy = {
     fullP2A: 'LaplandWork.com',
     fullP2B:
       ' on Suomen Lapin keskitetty työpaikkahubi, kausimajoitustyöt, hiihtokeskusten paikat, huskytarhojen vakanssit, sairaala- ja insinöörityöt Rovaniemellä, Levillä, Saariselällä ja Inarissa. Ilmainen työnhakijoille, kolme hintatasoa työnantajille.',
-    fullCta: 'Selaa työpaikkoja laplandwork.com-sivustolla',
+    fullCta: 'Selaa työpaikkoja',
     blocks: [
       { label: 'Kausimajoitustyöt', tag: 'Levi · Ylläs · Saariselkä' },
       { label: 'Huskytarhat', tag: 'Marras–huhtikuu kausityö' },

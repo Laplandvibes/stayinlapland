@@ -88,7 +88,7 @@ export const copyFR: SectionCopy = {
     fullP2A: 'LaplandWork.com',
     fullP2B:
       ' est la plateforme centralisée pour l’emploi en Laponie finlandaise, postes saisonniers en hôtellerie, emplois en stations de ski, postes en chenils, postes hospitaliers et techniques à Rovaniemi, Levi, Saariselkä et Inari. Gratuit pour les candidats, trois formules pour les employeurs.',
-    fullCta: 'Voir les offres sur laplandwork.com',
+    fullCta: 'Voir les emplois',
     blocks: [
       { label: 'Hôtellerie saisonnière', tag: 'Levi · Ylläs · Saariselkä' },
       { label: 'Chenils de huskies', tag: 'Saisonnier nov.–avr.' },

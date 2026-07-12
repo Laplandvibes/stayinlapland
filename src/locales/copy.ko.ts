@@ -38,7 +38,7 @@ export const copyKO: SectionCopy = {
     fullP2A: 'LaplandWork.com',
     fullP2B:
       '은 핀란드 라플란드의 일자리를 한곳에 모은 허브입니다, 시즌 호스피탈리티, 스키 리조트 직무, 허스키 켄넬 채용, 로바니에미·레비·사리셀카·이나리의 의료 및 엔지니어링 정규직까지. 구직자는 무료, 채용 기업에는 세 가지 요금제를 제공합니다.',
-    fullCta: 'laplandwork.com에서 일자리 둘러보기',
+    fullCta: '일자리 보기',
     blocks: [
       { label: '시즌 호스피탈리티', tag: '레비 · 윌래스 · 사리셀카' },
       { label: '허스키 켄넬', tag: '11–4월 시즌 채용' },

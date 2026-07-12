@@ -79,7 +79,7 @@ export const copyEN: SectionCopy = {
     fullP2A: 'LaplandWork.com',
     fullP2B:
       ' is the centralised job hub for Finnish Lapland: seasonal hospitality, ski-resort roles, husky-kennel openings, hospital and engineering jobs across Rovaniemi, Levi, Saariselkä and Inari. Free for jobseekers, three pricing tiers for employers.',
-    fullCta: 'Browse jobs at laplandwork.com',
+    fullCta: 'Browse Lapland jobs',
     blocks: [
       { label: 'Seasonal hospitality', tag: 'Levi · Ylläs · Saariselkä' },
       { label: 'Husky kennels', tag: 'Nov–Apr seasonal' },

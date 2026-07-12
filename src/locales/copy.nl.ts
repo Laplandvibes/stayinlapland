@@ -66,7 +66,7 @@ export const copyNL: SectionCopy = {
     fullP2A: 'LaplandWork.com',
     fullP2B:
       ' is de centrale vacaturehub voor Fins Lapland, seizoensgebonden horeca, banen in skigebieden, vacatures bij huskykennels, ziekenhuis- en ingenieursbanen in Rovaniemi, Levi, Saariselkä en Inari. Gratis voor werkzoekenden, drie prijsniveaus voor werkgevers.',
-    fullCta: 'Bekijk vacatures op laplandwork.com',
+    fullCta: 'Bekijk vacatures',
     blocks: [
       { label: 'Seizoenswerk horeca', tag: 'Levi · Ylläs · Saariselkä' },
       { label: 'Huskykennels', tag: 'Seizoen nov–apr' },

@@ -86,7 +86,7 @@ export const copyZHCN: SectionCopy = {
     fullP2A: 'LaplandWork.com',
     fullP2B:
       ' 是芬兰拉普兰的集中式就业枢纽，，季节性住宿岗位、滑雪场职位、哈士奇农场空缺,以及罗瓦涅米、莱维、萨利色尔卡和伊纳里的医院与工程职位。对求职者免费,雇主分三档付费。',
-    fullCta: '在 laplandwork.com 浏览职位',
+    fullCta: '查看职位',
     blocks: [
       { label: '季节性住宿岗位', tag: '莱维 · 于莱斯 · 萨利色尔卡' },
       { label: '哈士奇农场', tag: '十一月至四月季节性' },

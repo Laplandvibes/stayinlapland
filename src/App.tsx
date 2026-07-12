@@ -16,6 +16,7 @@ const DestinationPage = lazy(() => import('./pages/DestinationPage'))
 const PrivacyPolicy = lazy(() => import('./pages/PrivacyPolicy'))
 const Terms = lazy(() => import('./pages/Terms'))
 const CookiePolicy = lazy(() => import('./pages/CookiePolicy'))
+const NotFound = lazy(() => import('./pages/NotFound'))
 import LocaleAutoRedirect from './i18n/LocaleAutoRedirect';
 import { useHtmlLang, useLang, type Lang } from './i18n/useLang';
 import { getCopy, isCopyLoaded, loadCopy } from './locales/copy';
@@ -171,6 +172,8 @@ export default function App() {
             <Route key={`${prefix}-tm`} path={`${prefix}/terms`} element={<Terms />} />,
             <Route key={`${prefix}-ck`} path={`${prefix}/cookie-policy`} element={<CookiePolicy />} />,
           ])}
+          {/* Catch-all — unknown URLs get the shared network 404 instead of a blank page. */}
+          <Route path="*" element={<NotFound />} />
         </Routes>
         </Suspense>
       </main>

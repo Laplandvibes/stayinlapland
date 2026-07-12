@@ -298,7 +298,7 @@ export default function Home() {
           <div className="mt-12 text-center">
             <Link
               to={localePath('/booking-guide')}
-              className="inline-flex items-center gap-2 px-7 py-3.5 bg-charcoal hover:bg-vibe-pink text-snow rounded-full font-semibold transition-colors"
+              className="inline-flex items-center justify-center text-center leading-snug gap-2 px-7 py-3.5 bg-charcoal hover:bg-vibe-pink text-snow rounded-full font-semibold transition-colors"
             >
               {h.fullGuideCta}
               <ArrowRight className="w-4 h-4" />

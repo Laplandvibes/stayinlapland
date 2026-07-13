@@ -47,7 +47,7 @@ export const copyFI: SectionCopy = {
   },
   affiliateDisclosure:
     'Osa tämän sivun linkeistä on kumppanilinkkejä. Jos varaat niiden kautta, saamme komission ilman lisäkustannusta sinulle. Kohteet on valittu käsin ansioiden perusteella, ei komission.',
-  langSwitchAria: { en: 'In English', fi: 'Suomeksi', de: 'Auf Deutsch', ja: '日本語で', es: 'En español', 'pt-BR': 'Em português', 'zh-CN': '简体中文', ko: '한국어로', fr: 'En français', it: 'In italiano', nl: 'In het Nederlands' },
+  langSwitchAria: { en: 'In English', fi: 'Suomeksi', de: 'Auf Deutsch', ja: '日本語で', es: 'En español', 'pt-BR': 'Em português', 'zh-CN': '简体中文', ko: '한국어로', fr: 'En français', it: 'In italiano', nl: 'In het Nederlands', sv: 'På svenska' },
   marginNoteDefault: 'Sivuhuomio',
   comparison: {
     property: 'Kohde',

@@ -592,7 +592,7 @@ export const copyNL: SectionCopy = {
   },
   affiliateDisclosure:
     'Sommige links op deze pagina zijn affiliate-links. Boekt u via deze links, dan verdienen wij een commissie, zonder extra kosten voor u. De accommodaties zijn gekozen op verdienste, niet op commissie.',
-  langSwitchAria: { en: 'English', fi: 'Suomeksi', de: 'Auf Deutsch', ja: '日本語で', es: 'En español', 'pt-BR': 'Em português', 'zh-CN': '简体中文', ko: '한국어', fr: 'En français', it: 'In italiano', nl: 'In het Nederlands' },
+  langSwitchAria: { en: 'English', fi: 'Suomeksi', de: 'Auf Deutsch', ja: '日本語で', es: 'En español', 'pt-BR': 'Em português', 'zh-CN': '简体中文', ko: '한국어', fr: 'En français', it: 'In italiano', nl: 'In het Nederlands', sv: 'På svenska' },
   marginNoteDefault: 'Terzijde',
   comparison: {
     property: 'Accommodatie',

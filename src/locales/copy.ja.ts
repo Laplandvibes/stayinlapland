@@ -44,7 +44,7 @@ export const copyJA: SectionCopy = {
   },
   affiliateDisclosure:
     'このページの一部リンクはアフィリエイトリンクです。リンク経由でご予約いただいた場合、追加費用なしで手数料を受け取ります。物件は手数料ではなく、その実力で選んでいます。',
-  langSwitchAria: { en: 'English', fi: 'Suomeksi', de: 'Auf Deutsch', ja: '日本語で', es: 'En español', 'pt-BR': 'Em português', 'zh-CN': '简体中文', ko: '韓国語で', fr: 'フランス語で', it: 'イタリア語で', nl: 'オランダ語で' },
+  langSwitchAria: { en: 'English', fi: 'Suomeksi', de: 'Auf Deutsch', ja: '日本語で', es: 'En español', 'pt-BR': 'Em português', 'zh-CN': '简体中文', ko: '韓国語で', fr: 'フランス語で', it: 'イタリア語で', nl: 'オランダ語で', sv: 'スウェーデン語で' },
   marginNoteDefault: '補足',
   comparison: {
     property: '物件',

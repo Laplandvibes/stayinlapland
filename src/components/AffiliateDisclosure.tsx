@@ -68,6 +68,10 @@ const TEXT: Record<Lang, { compact: string; full: string }> = {
     compact: 'Affiliate-link. Als je hier boekt, krijgen we een kleine commissie, zonder extra kosten voor jou.',
     full: 'Deze pagina bevat affiliate-links. Als je via deze links boekt, krijgen we een kleine commissie, zonder extra kosten voor jou. Accommodaties worden op kwaliteit gekozen, nooit op commissie.',
   },
+  sv: {
+    compact: 'Affiliatelänk. Om du bokar via den får vi en liten provision, utan extra kostnad för dig.',
+    full: 'Den här sidan har affiliatelänkar. Om du bokar via dem får vi en liten provision, utan extra kostnad för dig. Boendena väljs ändå på sina meriter, aldrig efter provision.',
+  },
 };
 
 export default function AffiliateDisclosure({

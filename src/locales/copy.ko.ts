@@ -149,7 +149,7 @@ export const copyKO: SectionCopy = {
   },
   affiliateDisclosure:
     '이 페이지의 일부 링크는 제휴 링크입니다. 이 링크를 통해 예약하시면 저희가 수수료를 받습니다, 추가 비용은 없습니다. 숙소는 수수료가 아니라 그 가치만 보고 골랐습니다.',
-  langSwitchAria: { en: 'English', fi: 'Suomeksi', de: 'Auf Deutsch', ja: '日本語で', es: 'En español', 'pt-BR': 'Em português', 'zh-CN': '简体中文', ko: '한국어', fr: 'En français', it: 'In italiano', nl: 'In het Nederlands' },
+  langSwitchAria: { en: 'English', fi: 'Suomeksi', de: 'Auf Deutsch', ja: '日本語で', es: 'En español', 'pt-BR': 'Em português', 'zh-CN': '简体中文', ko: '한국어', fr: 'En français', it: 'In italiano', nl: 'In het Nederlands', sv: 'På svenska' },
   marginNoteDefault: '곁들임',
   comparison: {
     property: '숙소',

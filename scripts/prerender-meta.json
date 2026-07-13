@@ -43,6 +43,10 @@
     "nl": {
       "title": "Waar te verblijven in Lapland 2026, 17 adressen",
       "description": "Plan uw verblijf Lapland 2026, 17 geverifieerde accommodaties: hutten vanaf €120/nacht, designhotels in Rovaniemi, glasiglo’s €450+ en wildernislodges."
+    },
+    "sv": {
+      "title": "Var du bor i Lappland 2026, 17 adresser",
+      "description": "Planera din vistelse i Lappland 2026, 17 verifierade boenden: stugor från 120 €/natt, designhotell i Rovaniemi, glasiglor 450 €+ och vildmarkslodger."
     }
   },
   "/long-stays": {
@@ -89,6 +93,10 @@
     "nl": {
       "title": "Lange verblijven in Fins Lapland | StayInLapland",
       "description": "Vijf lange-verblijfsaccommodaties in Lapland voor een week of langer, Arctic TreeHouse, Levi penthouses, Ounasvaara-chalets, Pyhä-hutten en Inari-villa’s."
+    },
+    "sv": {
+      "title": "Långtidsvistelser i finska Lappland | StayInLapland",
+      "description": "Fem långtidsboenden i Lappland för en vecka eller längre, Arctic TreeHouse, Levi-penthouse, Ounasvaara-stugor, Pyhä-stugor och Inari-villor."
     }
   },
   "/hotels": {
@@ -135,6 +143,10 @@
     "nl": {
       "title": "Boutique- en designhotels in Fins Lapland | StayInLapland",
       "description": "Vijf Lapland-hotels die de boeking waard zijn, Arctic TreeHouse, Arctic Light, Levi Spirit, Lapland Hotels Saaga en Star Arctic. Voor korte verblijven."
+    },
+    "sv": {
+      "title": "Boutique- och designhotell i finska Lappland | StayInLapland",
+      "description": "Fem Lapplandshotell värda att boka, Arctic TreeHouse, Arctic Light, Levi Spirit, Lapland Hotels Saaga och Star Arctic. För korta vistelser."
     }
   },
   "/glass-igloos": {
@@ -181,6 +193,10 @@
     "nl": {
       "title": "Glasiglo’s in Fins Lapland | StayInLapland",
       "description": "Glasigloo-resorts in Fins Lapland die hun naam waarmaken, Kakslauttanen, Levin Iglut, Aurora Village en Aurora Pyramids. Gerangschikt op hemelzicht."
+    },
+    "sv": {
+      "title": "Glasiglor i finska Lappland | StayInLapland",
+      "description": "Glasigloresorter i finska Lappland som lever upp till namnet, Kakslauttanen, Levin Iglut, Aurora Village och Aurora Pyramids. Rangordnade efter himmel."
     }
   },
   "/wilderness": {
@@ -227,6 +243,10 @@
     "nl": {
       "title": "Wildernislodges in Fins Lapland | StayInLapland",
       "description": "Wildernislodges voorbij de laatste weg, Iso-Syöte Eagle View Suites en Wilderness Hotel Muotka. Noorderlicht boven de boomgrens en noorderlicht-wekservice."
+    },
+    "sv": {
+      "title": "Vildmarkslodger i finska Lappland | StayInLapland",
+      "description": "Vildmarkslodger bortom sista vägen, Iso-Syöte Eagle View Suites och Wilderness Hotel Muotka. Norrsken ovanför trädgränsen och norrskensväckning."
     }
   },
   "/when-to-go": {
@@ -273,6 +293,10 @@
     "nl": {
       "title": "Wanneer Lapland bezoeken, maand-voor-maand-gids",
       "description": "Maand-voor-maand-gids voor Fins Lapland, wanneer het noorderlicht het sterkst is, wanneer de sneeuw stabiliseert en welke weken de locals voor zichzelf boeken."
+    },
+    "sv": {
+      "title": "När du ska besöka Lappland, guide månad för månad",
+      "description": "Guide månad för månad för finska Lappland, när norrskenet är som starkast, när snön stabiliseras och vilka veckor lokalborna bokar åt sig själva."
     }
   },
   "/booking-guide": {
@@ -319,6 +343,10 @@
     "nl": {
       "title": "Lapland-boekingsgids, wanneer, hoe, wat in te pakken",
       "description": "Praktische Lapland-boekingsgids, wanneer komen voor het beste noorderlicht, hoe er te komen, wat in te pakken, wat het werkelijk kost en insidertips."
+    },
+    "sv": {
+      "title": "Lapplands bokningsguide, när, hur, vad du packar",
+      "description": "Praktisk bokningsguide för Lappland, när du åker för bäst norrsken, hur du tar dig dit, vad du packar, vad det verkligen kostar och insidertips."
     }
   },
   "/destinations/rovaniemi": {
@@ -365,6 +393,10 @@
     "nl": {
       "title": "Rovaniemi — Waar te verblijven | StayInLapland",
       "description": "De hoofdstad van Fins Lapland, de enige Lapland-stad met een echte winterse restaurantscene, een werkende luchthavenhub en een designcultuur het hele jaar door. De"
+    },
+    "sv": {
+      "title": "Rovaniemi — Var du bor | StayInLapland",
+      "description": "Finska Lapplands huvudort, den enda staden i Lappland med en riktig restaurangscen på vintern, en fungerande flygplatshub och en designkultur året runt. Rätt bas om"
     }
   },
   "/destinations/levi": {
@@ -411,6 +443,10 @@
     "nl": {
       "title": "Levi — Waar te verblijven | StayInLapland",
       "description": "Het grootste skigebied van Finland, met de breedste keuze aan ski-in/out-appartementen en een echte dorpsstraat. Logica van het lange verblijf"
+    },
+    "sv": {
+      "title": "Levi — Var du bor | StayInLapland",
+      "description": "Finlands största skidområde, med det bredaste utbudet av ski-in/out-lägenheter och en riktig bygata. Långtidslogiken: ski-in/out-lägenheter hyrs ut per vecka från"
     }
   },
   "/destinations/saariselka": {
@@ -457,6 +493,10 @@
     "nl": {
       "title": "Saariselkä — Waar te verblijven | StayInLapland",
       "description": "Hogere breedtegraad dan Rovaniemi, hardere sneeuw, donkerdere hemel. Het Lapland-dorp dat de winter het serieust neemt. Logica van het lange verblijf: huur een hut"
+    },
+    "sv": {
+      "title": "Saariselkä — Var du bor | StayInLapland",
+      "description": "Högre breddgrad än Rovaniemi, hårdare snö, mörkare himmel. Lapplandsbyn som tar vintern mest på allvar. Långtidslogiken: hyr en stuga på en kulle och skriv en bok"
     }
   },
   "/destinations/inari": {
@@ -503,6 +543,10 @@
     "nl": {
       "title": "Inari — Waar te verblijven | StayInLapland",
       "description": "Samische culturele hoofdstad, Inarimeer (1 084 km²), de noordelijkste lange-verblijfbasis van Finland. Logica van het lange verblijf: het meer zelf is de"
+    },
+    "sv": {
+      "title": "Inari — Var du bor | StayInLapland",
+      "description": "Samisk kulturhuvudstad, Inarisjön (1 084 km²), Finlands nordligaste långtidsbas. Långtidslogiken: sjön själv är aktiviteten. Pimpelfiske varje morgon"
     }
   },
   "/destinations/yllas": {
@@ -549,6 +593,10 @@
     "nl": {
       "title": "Ylläs — Waar te verblijven | StayInLapland",
       "description": "Rustiger dan Levi, langer skiseizoen, het grootste langlaufnetwerk van Lapland (330 km). Logica van het lange verblijf: het langlaufnetwerk is de trekker"
+    },
+    "sv": {
+      "title": "Ylläs — Var du bor | StayInLapland",
+      "description": "Lugnare än Levi, längre skidsäsong, Lapplands största längdskidnät (330 km). Långtidslogiken: längdskidnätet är dragplåstret. Stuguthyrning löper här per vecka från"
     }
   },
   "/privacy": {
@@ -595,6 +643,10 @@
     "nl": {
       "title": "Privacybeleid | StayInLapland",
       "description": "Privacybeleid van StayInLapland — anonieme analytics, nieuwsbriefinschrijvingen, je AVG-rechten en de verwerkingsverantwoordelijke (Lapeso Oy, Finland)."
+    },
+    "sv": {
+      "title": "Integritetspolicy | StayInLapland",
+      "description": "StayInLaplands integritetspolicy — anonym analys, nyhetsbrevsprenumerationer, dina rättigheter enligt GDPR och personuppgiftsansvarig (Lapeso Oy, Finland)."
     }
   },
   "/terms": {
@@ -641,6 +693,10 @@
     "nl": {
       "title": "Gebruiksvoorwaarden | StayInLapland",
       "description": "Gebruiksvoorwaarden van StayInLapland — redactionele reikwijdte, affiliate-vermelding, boekingslinks van derden, intellectueel eigendom en Finse jurisdictie."
+    },
+    "sv": {
+      "title": "Användarvillkor | StayInLapland",
+      "description": "StayInLaplands användarvillkor — redaktionell räckvidd, affiliateinformation, bokningslänkar från tredje part, immateriella rättigheter och finsk jurisdiktion."
     }
   },
   "/cookie-policy": {
@@ -687,6 +743,10 @@
     "nl": {
       "title": "Cookiebeleid | StayInLapland",
       "description": "Cookiebeleid van StayInLapland — welke cookies we plaatsen (Google Analytics 4, toestemmingsstatus, nieuwsbriefpopup), hoe je weigert en je AVG-rechten."
+    },
+    "sv": {
+      "title": "Cookiepolicy | StayInLapland",
+      "description": "StayInLaplands cookiepolicy — vilka cookies vi sätter (Google Analytics 4, samtyckesstatus, status för nyhetsbrevspopup), hur du tackar nej och dina rättigheter"
     }
   }
 }

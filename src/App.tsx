@@ -125,9 +125,13 @@ const POPUP_COPY: Record<Lang, { headline: string; description: string }> = {
     headline: 'Beschikbaarheid voor langere verblijven, laagseizoentarieven, designhotels.',
     description: 'Abonnees krijgen als eersten bericht wanneer onze meest geboekte accommodaties in Lapland beschikbaarheid voor meerdere weken vrijgeven, plus de laagseizoenweken (november, eind april) waarin de overnachtingsprijzen 50% dalen terwijl het noorderlicht nog actief is.',
   },
+  'sv': {
+    headline: 'Lediga långtidsvistelser, lågsäsongspriser, designhotell.',
+    description: 'Prenumeranter får veta först när våra mest bokade boenden i Lappland släpper flerveckorsplatser, plus lågsäsongsveckorna (november, slutet av april) då dygnspriserna sjunker 50 % men norrskenet fortfarande är aktivt.',
+  },
 };
 
-const LOCALE_PREFIXES = ['', '/fi', '/de', '/ja', '/es', '/br', '/cn', '/kr', '/fr', '/it', '/nl'] as const;
+const LOCALE_PREFIXES = ['', '/fi', '/de', '/ja', '/es', '/br', '/cn', '/kr', '/fr', '/it', '/nl', '/sv'] as const;
 
 const SUPABASE_URL = (import.meta.env.VITE_SUPABASE_URL as string) ?? '';
 const SUPABASE_ANON_KEY = (import.meta.env.VITE_SUPABASE_PUBLISHABLE_KEY as string) ?? '';

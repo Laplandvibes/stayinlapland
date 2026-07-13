@@ -47,7 +47,7 @@ export const copyDE: SectionCopy = {
   },
   affiliateDisclosure:
     'Einige Links auf dieser Seite sind Affiliate-Links. Bei einer Buchung darüber erhalten wir eine Provision, ohne Aufpreis für Sie. Die Objekte werden nach Qualität ausgewählt, nicht nach Provision.',
-  langSwitchAria: { en: 'In English', fi: 'Suomeksi', de: 'Auf Deutsch', ja: '日本語で', es: 'En español', 'pt-BR': 'Em português', 'zh-CN': '简体中文', ko: 'Auf Koreanisch', fr: 'Auf Französisch', it: 'Auf Italienisch', nl: 'Auf Niederländisch' },
+  langSwitchAria: { en: 'In English', fi: 'Suomeksi', de: 'Auf Deutsch', ja: '日本語で', es: 'En español', 'pt-BR': 'Em português', 'zh-CN': '简体中文', ko: 'Auf Koreanisch', fr: 'Auf Französisch', it: 'Auf Italienisch', nl: 'Auf Niederländisch', sv: 'Auf Schwedisch' },
   marginNoteDefault: 'Randnotiz',
   comparison: {
     property: 'Unterkunft',

@@ -42,7 +42,7 @@ export type SectionCopy = {
     defaultNote: string;
   };
   affiliateDisclosure: string;
-  langSwitchAria: { en: string; fi: string; de: string; ja: string; es: string; 'pt-BR': string; 'zh-CN': string; ko: string; fr: string; it: string; nl: string };
+  langSwitchAria: { en: string; fi: string; de: string; ja: string; es: string; 'pt-BR': string; 'zh-CN': string; ko: string; fr: string; it: string; nl: string; sv: string };
   marginNoteDefault: string;
   comparison: { property: string; verdict: string; nOutOf5: (n: number) => string };
   editorsPick: { kicker: string; perNight: string; note: string; cta: string };
@@ -290,6 +290,7 @@ const loaders: Record<Lang, () => Promise<SectionCopy>> = {
   fr: () => import('./copy.fr').then((m) => m.copyFR),
   it: () => import('./copy.it').then((m) => m.copyIT),
   nl: () => import('./copy.nl').then((m) => m.copyNL),
+  sv: () => import('./copy.sv').then((m) => m.copySV),
 };
 
 export function getCopy(lang: Lang): SectionCopy {

@@ -12,10 +12,10 @@ const STORAGE_KEY = 'lv_locale_choice';
 const PREFIX_FOR: Record<Lang, string> = {
   en: '', fi: 'fi', de: 'de', ja: 'ja',
   es: 'es', 'pt-BR': 'br', 'zh-CN': 'cn',
-  ko: 'kr', fr: 'fr', it: 'it', nl: 'nl',
+  ko: 'kr', fr: 'fr', it: 'it', nl: 'nl', sv: 'sv',
 };
 
-const KNOWN_PREFIXES = ['/fi', '/de', '/ja', '/es', '/br', '/cn', '/kr', '/fr', '/it', '/nl'];
+const KNOWN_PREFIXES = ['/fi', '/de', '/ja', '/es', '/br', '/cn', '/kr', '/fr', '/it', '/nl', '/sv'];
 
 function buildLink(pathname: string, target: Lang): string {
   // strip any known locale prefix
@@ -33,7 +33,7 @@ function buildLink(pathname: string, target: Lang): string {
 
 const LANG_NAMES: Record<Lang, string> = {
   en: 'English', fi: 'Suomi', de: 'Deutsch', ja: '日本語', es: 'Español',
-  'pt-BR': 'Português', 'zh-CN': '中文', ko: '한국어', fr: 'Français', it: 'Italiano', nl: 'Nederlands',
+  'pt-BR': 'Português', 'zh-CN': '中文', ko: '한국어', fr: 'Français', it: 'Italiano', nl: 'Nederlands', sv: 'Svenska',
 };
 
 export default function Nav() {
@@ -94,6 +94,7 @@ export default function Nav() {
     { code: 'fr', label: 'FR' },
     { code: 'it', label: 'IT' },
     { code: 'nl', label: 'NL' },
+    { code: 'sv', label: 'SV' },
   ];
 
   return (

@@ -49,6 +49,7 @@ const LOCALES = [
   { lang: 'fr', file: 'copy.fr.ts' },
   { lang: 'it', file: 'copy.it.ts' },
   { lang: 'nl', file: 'copy.nl.ts' },
+  { lang: 'sv', file: 'copy.sv.ts' },
 ];
 
 const MAX_TITLE = 62;

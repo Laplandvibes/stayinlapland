@@ -58,6 +58,11 @@ const META: Record<Lang, { title: string; description: string }> = {
     description:
       'Gebruiksvoorwaarden van StayInLapland — redactionele reikwijdte, affiliate-vermelding, boekingslinks van derden, intellectueel eigendom en Finse jurisdictie.',
   },
+  sv: {
+    title: 'Användarvillkor | StayInLapland',
+    description:
+      'StayInLaplands användarvillkor — redaktionell räckvidd, affiliateinformation, bokningslänkar från tredje part, immateriella rättigheter och finsk jurisdiktion.',
+  },
 };
 
 export default function Terms() {

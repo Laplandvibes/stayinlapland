@@ -101,7 +101,7 @@ export default function LomarengasAd({
 
   const adLabel = pick({
     en: 'Ad', fi: 'Mainos', de: 'Anzeige', ja: '広告', es: 'Anuncio',
-    'pt-BR': 'Anúncio', 'zh-CN': '广告', ko: '광고', fr: 'Annonce', it: 'Annuncio', nl: 'Advertentie',
+    'pt-BR': 'Anúncio', 'zh-CN': '广告', ko: '광고', fr: 'Annonce', it: 'Annuncio', nl: 'Advertentie', sv: 'Annons',
   });
 
   const eyebrow = pick({
@@ -116,6 +116,7 @@ export default function LomarengasAd({
     fr: 'Chalets de vacances finlandais',
     it: 'Cottage per vacanze in Finlandia',
     nl: 'Finse vakantiehuisjes',
+    sv: 'Finska semesterstugor',
   });
 
   // Two short, human sentences. Warm puhekieli in FI; no em-dash poetry.
@@ -131,6 +132,7 @@ export default function LomarengasAd({
     fr: 'Envie d’un chalet entier rien qu’à vous pour la semaine ? Lomarengas loue des chalets finlandais de propriétaires privés.',
     it: 'Volete un intero cottage tutto per voi per una settimana? Lomarengas affitta cottage finlandesi di proprietari privati.',
     nl: 'Een heel huisje voor jezelf de hele week? Lomarengas verhuurt particuliere Finse vakantiehuisjes.',
+    sv: 'Vill ni ha en hel stuga för er själva hela veckan? Lomarengas hyr ut privatägda finska semesterstugor.',
   });
 
   const sub = pick({
@@ -145,6 +147,7 @@ export default function LomarengasAd({
     fr: 'Lomarengas est la maison des chalets finlandais depuis 1967 : plus de 4 400 chalets sélectionnés à la main, chaque propriétaire vérifié et chaque logement contrôlé en personne. Le vrai chalet au bord du lac ou de la colline, avec son propre sauna, que les grands sites d’hôtels ne référencent pas.',
     it: 'Lomarengas è la casa dei cottage finlandesi dal 1967: oltre 4.400 cottage scelti a mano, ogni proprietario verificato e ogni alloggio controllato di persona. Proprio il cottage sul lago o sulla collina, con la sua sauna, che i grandi siti di hotel non elencano.',
     nl: 'Lomarengas is sinds 1967 het thuis van Finse vakantiehuisjes: ruim 4.400 met de hand geselecteerde huisjes, elke eigenaar geverifieerd en elke plek persoonlijk gecontroleerd. Precies het huisje aan het meer of de heuvel, met eigen sauna, dat de grote hotelsites gewoon niet hebben.',
+    sv: 'Lomarengas har varit de finska semesterstugornas hem sedan 1967: över 4 400 handplockade stugor, varje ägare kontrollerad och varje ställe personligen besiktigat. Just den där stugan vid sjön eller fjället med egen bastu som de stora hotellsajterna helt enkelt inte listar.',
   });
 
   const trust: { icon: typeof ShieldCheck; label: string }[] = [
@@ -162,6 +165,7 @@ export default function LomarengasAd({
         fr: 'Plus de 4 400 chalets vérifiés',
         it: 'Oltre 4.400 cottage verificati',
         nl: 'Ruim 4.400 geverifieerde huisjes',
+        sv: 'Över 4 400 kontrollerade stugor',
       }),
     },
     {
@@ -178,6 +182,7 @@ export default function LomarengasAd({
         fr: 'Assurance annulation sur chaque réservation',
         it: 'Assicurazione annullamento su ogni prenotazione',
         nl: 'Annuleringsverzekering bij elke boeking',
+        sv: 'Avbokningsskydd på varje bokning',
       }),
     },
     {
@@ -194,6 +199,7 @@ export default function LomarengasAd({
         fr: 'De vraies personnes, depuis 1967',
         it: 'Persone vere, dal 1967',
         nl: 'Echte mensen, sinds 1967',
+        sv: 'Riktiga människor, sedan 1967',
       }),
     },
   ];
@@ -210,6 +216,7 @@ export default function LomarengasAd({
     fr: 'Trouver un chalet sur Lomarengas',
     it: 'Trova un cottage su Lomarengas',
     nl: 'Zoek een huisje op Lomarengas',
+    sv: 'Hitta en stuga på Lomarengas',
   });
 
   const poweredBy = pick({
@@ -224,6 +231,7 @@ export default function LomarengasAd({
     fr: 'Réservation via Lomarengas',
     it: 'Prenotazione con Lomarengas',
     nl: 'Boeking via Lomarengas',
+    sv: 'Bokning via Lomarengas',
   });
 
   return (

@@ -58,6 +58,11 @@ const META: Record<Lang, { title: string; description: string }> = {
     description:
       'Privacybeleid van StayInLapland — anonieme analytics, nieuwsbriefinschrijvingen, je AVG-rechten en de verwerkingsverantwoordelijke (Lapeso Oy, Finland).',
   },
+  sv: {
+    title: 'Integritetspolicy | StayInLapland',
+    description:
+      'StayInLaplands integritetspolicy — anonym analys, nyhetsbrevsprenumerationer, dina rättigheter enligt GDPR och personuppgiftsansvarig (Lapeso Oy, Finland).',
+  },
 };
 
 export default function PrivacyPolicy() {

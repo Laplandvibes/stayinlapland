@@ -44,7 +44,7 @@ export const copyEN: SectionCopy = {
   },
   affiliateDisclosure:
     'Some links on this page are affiliate links. If you book through them we earn a commission, at no extra cost to you. The properties are chosen on merit, not on commission.',
-  langSwitchAria: { en: 'English', fi: 'Suomeksi', de: 'Auf Deutsch', ja: '日本語で', es: 'En español', 'pt-BR': 'Em português', 'zh-CN': '简体中文', ko: '한국어', fr: 'En français', it: 'In italiano', nl: 'In het Nederlands' },
+  langSwitchAria: { en: 'English', fi: 'Suomeksi', de: 'Auf Deutsch', ja: '日本語で', es: 'En español', 'pt-BR': 'Em português', 'zh-CN': '简体中文', ko: '한국어', fr: 'En français', it: 'In italiano', nl: 'In het Nederlands', sv: 'På svenska' },
   marginNoteDefault: 'Aside',
   comparison: {
     property: 'Property',

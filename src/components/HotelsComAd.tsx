@@ -47,7 +47,7 @@ const REDIRECT_BASE = 'https://go.laplandvibes.com/go/hotels';
 const HOTELS_LOCALE: Record<Lang, string> = {
   en: 'en_US', fi: 'fi_FI', de: 'de_DE', ja: 'ja_JP',
   es: 'es_ES', 'pt-BR': 'pt_BR', 'zh-CN': 'zh_CN',
-  ko: 'ko_KR', fr: 'fr_FR', it: 'it_IT', nl: 'nl_NL',
+  ko: 'ko_KR', fr: 'fr_FR', it: 'it_IT', nl: 'nl_NL', sv: 'sv_SE',
 };
 
 /** Force ", Finland" onto any hotels query lacking a country — a bare "Lapland"
@@ -126,7 +126,7 @@ export default function HotelsComAd({
 
   const adLabel = pick({
     en: 'Ad', fi: 'Mainos', de: 'Anzeige', ja: '広告', es: 'Anuncio',
-    'pt-BR': 'Anúncio', 'zh-CN': '广告', ko: '광고', fr: 'Annonce', it: 'Annuncio', nl: 'Advertentie',
+    'pt-BR': 'Anúncio', 'zh-CN': '广告', ko: '광고', fr: 'Annonce', it: 'Annuncio', nl: 'Advertentie', sv: 'Annons',
   });
 
   const eyebrow = pick({
@@ -141,6 +141,7 @@ export default function HotelsComAd({
     fr: 'Hôtels dans les villes de Laponie',
     it: 'Hotel nelle città della Lapponia',
     nl: 'Hotels in de plaatsen van Lapland',
+    sv: 'Hotell i Lapplands orter',
   });
 
   // Two short, human sentences. Warm puhekieli in FI; no em-dash poetry.
@@ -156,6 +157,7 @@ export default function HotelsComAd({
     fr: 'Vous préférez une chambre réservable ce soir, en ville, avec tout déjà prêt ?',
     it: 'Preferite una camera prenotabile stasera, in centro, con tutto già pronto?',
     nl: 'Liever een kamer die je vanavond kunt boeken, in het dorp, met alles al klaar?',
+    sv: 'Vill du ha ett rum du kan boka i kväll, mitt i byn, med allt redan på plats?',
   });
 
   const sub = pick({
@@ -170,6 +172,7 @@ export default function HotelsComAd({
     fr: 'Pour les nuits à l’hôtel : les chambres design de Rovaniemi, les adresses au pied des pistes à Levi et Ylläs, les apparthôtels. C’est sur Hotels.com qu’on trouve le plus de chambres aux prix du moment, et la plupart s’annulent gratuitement si vos plans changent. Pratique au début et à la fin d’un voyage, ou n’importe quelle nuit où vous voulez juste un bureau, une douche et le petit-déjeuner en bas.',
     it: 'Per le notti in hotel: le camere di design a Rovaniemi, gli alloggi ski-in a Levi e Ylläs, gli aparthotel. Su Hotels.com trovi più camere con prezzi aggiornati, e la maggior parte si cancella gratis se i piani cambiano. Comodo per l’inizio e la fine di un viaggio, o qualsiasi notte in cui ti basta una scrivania, una doccia e la colazione di sotto.',
     nl: 'Voor de hotelnachten: de designkamers in Rovaniemi, de ski-in adressen in Levi en Ylläs, de aparthotels. Op Hotels.com staan de meeste kamers met actuele prijzen, en de meeste kun je gratis annuleren als je plannen wijzigen. Handig voor het begin en eind van een reis, of elke nacht dat je gewoon een bureau, een douche en ontbijt beneden wilt.',
+    sv: 'För hotellnätterna: designrummen i Rovaniemi, ski-in-boendena i Levi och Ylläs, lägenhetshotellen. Hotels.com listar flest rum med aktuella priser, och de flesta går att avboka gratis om planerna ändras. Bra för början och slutet av en resa, eller vilken natt som helst då du bara vill ha ett skrivbord, en dusch och frukost en trappa ner.',
   });
 
   const trust: { icon: typeof BedDouble; label: string }[] = [
@@ -187,6 +190,7 @@ export default function HotelsComAd({
         fr: 'Prix du moment, le plus de chambres',
         it: 'Prezzi aggiornati, più camere',
         nl: 'Actuele prijzen, meeste kamers',
+        sv: 'Aktuella priser, flest rum',
       }),
     },
     {
@@ -203,6 +207,7 @@ export default function HotelsComAd({
         fr: 'Annulation gratuite sur la plupart',
         it: 'Cancellazione gratis sulla maggior parte',
         nl: 'Gratis annuleren bij de meeste kamers',
+        sv: 'Fri avbokning på de flesta rum',
       }),
     },
     {
@@ -219,6 +224,7 @@ export default function HotelsComAd({
         fr: 'Hôtels, chalets et appartements',
         it: 'Hotel, baite e appartamenti',
         nl: 'Hotels, hutten en appartementen',
+        sv: 'Hotell, stugor och lägenheter',
       }),
     },
   ];
@@ -235,6 +241,7 @@ export default function HotelsComAd({
     fr: 'Voir les prix sur Hotels.com',
     it: 'Vedi i prezzi su Hotels.com',
     nl: 'Bekijk prijzen op Hotels.com',
+    sv: 'Se priser på Hotels.com',
   });
 
   const poweredBy = pick({
@@ -249,6 +256,7 @@ export default function HotelsComAd({
     fr: 'Réservation via Hotels.com',
     it: 'Prenotazione con Hotels.com',
     nl: 'Boeking via Hotels.com',
+    sv: 'Bokning via Hotels.com',
   });
 
   return (

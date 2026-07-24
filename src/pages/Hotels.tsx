@@ -113,7 +113,7 @@ export default function Hotels() {
 
       <PullQuote attribution={h.pullQuote.attr}>{h.pullQuote.text}</PullQuote>
 
-      {/* Flagship affiliate ad — Hotels.com (live hotel inventory in the towns). */}
+      {/* Flagship affiliate ad — hotel partner card (fi=Sembo, others=Trip.com via Worker). */}
       <section className="py-10 sm:py-14 px-5 sm:px-6">
         <div className="max-w-6xl mx-auto">
           <HotelsComAd sid="hotels_partner_card" ss="Lapland, Finland" />

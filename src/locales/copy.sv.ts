@@ -26,7 +26,7 @@ export const copySV: SectionCopy = {
     h1Line2: 'en veckas semester.',
     lead:
       'Stugor per vecka, designhotell i Rovaniemi, glasiglor för bucketlist-nätterna och vildmarkslodgerna bortom sista vägen. Verifierade priser från',
-    leadPriceRange: '140 € till 2 800 €',
+    leadPriceRange: '140 € till 1 500 €',
     liveLabel: 'Live tillgänglighet · Trip.com-sökning',
     browseLongStays: 'Se långtidsvistelser',
     seeHotels: 'Se hotell',
@@ -133,14 +133,15 @@ export const copySV: SectionCopy = {
   },
   home: {
     ...copyEN.home,
-    metaTitle: 'Var du bor i Lappland 2026, 17 adresser',
+    metaTitle: 'Var du bor i Lappland 2026, 16 adresser',
     metaDescription:
-      'Planera din vistelse i Lappland 2026, 17 verifierade boenden: stugor från 120 €/natt, designhotell i Rovaniemi, glasiglor 450 €+ och vildmarkslodger.',
+      'Planera din vistelse i Lappland 2026, 16 verifierade boenden: stugor från 140 €/natt, designhotell i Rovaniemi, glasiglor 280 €+ och vildmarkslodger.',
     schemaName: 'StayInLapland, långtidsvistelser och boutiquehotell i finska Lappland',
     breadcrumbHome: 'Hem',
+    stats: { stays: 'Utvalda boenden', bases: 'Baser i Lappland', categories: 'Sätt att bo', months: 'Betygsatta månader' },
     intro: {
       p1: 'De flesta listor med ”bästa boende i Lappland” börjar med en glasiglo överst, radar upp tjugo andra glasiglor i ungefär samma ordning under den, och innehåller inte en enda mening om huruvida skribenten någonsin tillbringat mer än två nätter där. Den här guiden är motsatsen.',
-      p2: 'Boende i Lappland delas in i fyra kategorier, långtidshyra, hotell, glasiglor och vildmarkslodger, och de sjutton boenden som förtjänar sin plats står nedan. Med det kan du bygga en resa som börjar med en vecka i en stuga vid Levi, fortsätter till ett designhotell i Rovaniemi för två stadsnätter och avslutas med en glasiglonatt före hemresan. Så belönar Lappland en längre vistelse.',
+      p2: 'Boende i Lappland delas in i fyra kategorier, långtidshyra, hotell, glasiglor och vildmarkslodger, och de sexton boenden som förtjänar sin plats står nedan. Med det kan du bygga en resa som börjar med en vecka i en stuga vid Levi, fortsätter till ett designhotell i Rovaniemi för två stadsnätter och avslutas med en glasiglonatt före hemresan. Så belönar Lappland en längre vistelse.',
       p3: 'Tre saker den här guiden inte gör: aggregerar priser, återvinner recensioner eller låtsas täcka platser där ingen partner i nätverket någonsin tillbringat en riktig natt.',
     },
     authorNote:
@@ -173,7 +174,7 @@ export const copySV: SectionCopy = {
     faqs: [
       {
         q: 'Vad räknas som en ”lång vistelse” på den här sidan?',
-        a: 'Allt från fyra nätter räknas som en lång vistelse, det är tröskeln där de flesta boenden i Lappland erbjuder veckopriser och ett riktigt kök blir viktigt. De utvalda långtidsboendena har ett minimum på 5 nätter upp till 4 veckor, beroende på enhet; varje kort anger sitt minimum.',
+        a: 'Allt från fyra nätter räknas som en lång vistelse, det är tröskeln där de flesta boenden i Lappland erbjuder veckopriser och ett riktigt kök blir viktigt. De utvalda långtidsboendena har ett minimum på 3 upp till 7 nätter, beroende på enhet; varje kort anger sitt minimum.',
       },
       {
         q: 'Varför fokuserar startsidan på långtidsvistelser i stället för glasiglor?',
@@ -193,7 +194,7 @@ export const copySV: SectionCopy = {
       longStays: 'Vecko- och månadshyra, villor, designstugor, skidlägenheter.',
       hotels: 'Boutique-, design- och klassiska Lapplandshotell för korta vistelser.',
       glassIgloos: 'Det ikoniska Lapplandsformatet, fyra resorter som förtjänar namnet.',
-      wilderness: 'Bortom sista vägen, tre retreater för seriösa resenärer.',
+      wilderness: 'Bortom sista vägen, två retreater för seriösa resenärer.',
     },
     categoryNames: {
       longStays: 'Långtidsvistelser',
@@ -441,7 +442,7 @@ export const copySV: SectionCopy = {
           'Långtidsstuga (veckopris): 140–280 €/natt, plats för 4–6.',
           'Boutiquehotell: 140–420 €/natt, frukost oftast inkluderad.',
           'Glasiglo, högsäsong: 400–1 500 €/natt för två.',
-          'Vildmarkslodge bokad i sin helhet: från 2 800 €/natt för tio.',
+          'Vildmarkslodge-svit: 220–950 €/natt beroende på boendet.',
           'Aktiviteter (huskysafari, snöskoter, norrskensjakt) oftast 120–200 € per person och tur utöver detta.',
         ],
       },
@@ -582,7 +583,7 @@ export const copySV: SectionCopy = {
     checkRates: 'Se priser',
     seeAll: 'Se alla',
     liveAvailabilityIn: (n) => `Söka live tillgänglighet i ${n}?`,
-    networkLeadA: 'Vårt nätverk rangordnar bara 17 boenden. Trip.com visar allt annat som är i drift i vinter i ',
+    networkLeadA: 'Vårt nätverk rangordnar bara 16 boenden. Trip.com visar allt annat som är i drift i vinter i ',
     networkLeadB: ', flexibla datum, filtrera på bekvämlighet, hela utbudet.',
     browseInDest: (n) => `Se Trip.com, ${n}`,
     bucketLabels: {
@@ -619,7 +620,7 @@ export const copySV: SectionCopy = {
     { slug: 'long-stays', description: 'Vecko- och månadshyra, villor, designstugor, skidlägenheter.' },
     { slug: 'hotels', description: 'Boutique-, design- och klassiska Lapplandshotell för korta vistelser.' },
     { slug: 'glass-igloos', description: 'Det ikoniska Lapplandsformatet, fyra resorter som förtjänar namnet.' },
-    { slug: 'wilderness', description: 'Bortom sista vägen, tre retreater för seriösa resenärer.' },
+    { slug: 'wilderness', description: 'Bortom sista vägen, två retreater för seriösa resenärer.' },
   ],
   hotelsData: [
     {

@@ -19,7 +19,7 @@ export const copyFI: SectionCopy = {
     h1Line2: 'kuin viikon loma.',
     lead:
       'Mökkejä viikoittaisilla hinnoilla, design-hotelleja Rovaniemellä, lasi-iglut bucket-list-öihin, ja erämaalodget viimeisen tien jälkeen. Varmistetut hinnat alkaen',
-    leadPriceRange: '140 € – 2 800 €',
+    leadPriceRange: '140 € – 1 500 €',
     liveLabel: 'Reaaliaikainen saatavuus · Sembo-haku',
     browseLongStays: 'Katso pitkät jaksot',
     seeHotels: 'Katso hotellit',
@@ -151,9 +151,10 @@ export const copyFI: SectionCopy = {
       'Asetu Suomen Lappiin, mökit viikoittain, design-hotellit Rovaniemellä ja Saariselällä, ikoniset lasi-iglut ja erämaalodget viimeisen tien jälkeen.',
     schemaName: 'StayInLapland, Pitkät jaksot ja boutique-hotellit Suomen Lapissa',
     breadcrumbHome: 'Etusivu',
+    stats: { stays: 'Valittua kohdetta', bases: 'Lapin tukikohtaa', categories: 'Tapaa majoittua', months: 'Arvioitua kuukautta' },
     intro: {
       p1: '"Lapin parhaat majoitukset" -listat alkavat lähes aina lasi-iglulla, ja jatkavat samalla kaavalla. Tämä opas on tehty toisin: itse koeasutut yöt, paikalliset suositukset, ja vain ne kohteet jotka pitää matkan jälkeen muistissa.',
-      p2: 'Olemme jakaneet Lapin majoitukset neljään selkeään kategoriaan: pitkät jaksot, hotellit, lasi-iglut ja erämaalodget. 17 valittua kohdetta, kaikki itse käytyjä. Suosittu reitti: viikko mökillä Levillä, kaksi yötä design-hotellissa Rovaniemellä, viimeinen yö lasi-iglussa. Näin yhdistettynä syntyy se Lappi, jonka takia tänne palataan.',
+      p2: 'Olemme jakaneet Lapin majoitukset neljään selkeään kategoriaan: pitkät jaksot, hotellit, lasi-iglut ja erämaalodget. 16 valittua kohdetta, kaikki itse käytyjä. Suosittu reitti: viikko mökillä Levillä, kaksi yötä design-hotellissa Rovaniemellä, viimeinen yö lasi-iglussa. Näin yhdistettynä syntyy se Lappi, jonka takia tänne palataan.',
       p3: 'Tämä opas ei aggregoi hintoja eikä kierrätä arvosteluja. Lähteet näkyvissä, kumppanuussuhteet avoinna.',
     },
     authorNote:
@@ -185,7 +186,7 @@ export const copyFI: SectionCopy = {
     faqs: [
       {
         q: 'Mikä on “pitkä jakso” tällä sivustolla?',
-        a: 'Pitkäksi jaksoksi luokitellaan kaikki neljästä yöstä ylöspäin, se on raja, jossa useimmat Lapin kohteet tarjoavat viikkohintoja ja kunnon keittiöllä alkaa olla merkitystä. Listatut pitkän jakson kohteet vaativat yksiköstä riippuen 5 yöstä 4 viikkoon minimissään; jokainen kortti näyttää minimin.',
+        a: 'Pitkäksi jaksoksi luokitellaan kaikki neljästä yöstä ylöspäin, se on raja, jossa useimmat Lapin kohteet tarjoavat viikkohintoja ja kunnon keittiöllä alkaa olla merkitystä. Listatut pitkän jakson kohteet vaativat yksiköstä riippuen 3 yöstä 7 yöhön minimissään; jokainen kortti näyttää minimin.',
       },
       {
         q: 'Miksi etusivu painottaa pitkiä jaksoja eikä lasi-igluja?',
@@ -205,7 +206,7 @@ export const copyFI: SectionCopy = {
       longStays: 'Viikko- ja kuukausivuokraukset, huvilat, design-mökit, hiihtoasunnot.',
       hotels: 'Boutique-, design- ja klassiset Lapin hotellit lyhyisiin jaksoihin.',
       glassIgloos: 'Lapin ikoninen muoto, neljä lomakohdetta, jotka ansaitsevat nimen.',
-      wilderness: 'Viimeisen tien jälkeen, kolme retreatia vakaville matkaajille.',
+      wilderness: 'Viimeisen tien jälkeen, kaksi retreatia vakaville matkaajille.',
     },
     categoryNames: {
       longStays: 'Pitkät jaksot',
@@ -454,7 +455,7 @@ export const copyFI: SectionCopy = {
           'Pitkän jakson mökki (viikoittain): 140–280 €/yö, nukkuu 4–6.',
           'Boutique-hotelli: 140–420 €/yö, aamupala yleensä sisältyy.',
           'Lasi-iglu, huippukausi: 400–1500 €/yö kahdelle.',
-          'Erämaalodgen koko vuokraus: 2 800+ €/yö kymmenelle.',
+          'Erämaalodgen sviitti: 220–950 €/yö kohteesta riippuen.',
           'Aktiviteetit (huskysafari, moottorikelkka, revontulijahti) tyypillisesti 120–200 € hengeltä per kerta päälle.',
         ],
       },
@@ -595,7 +596,7 @@ export const copyFI: SectionCopy = {
     checkRates: 'Tarkista hinnat',
     seeAll: 'Katso kaikki',
     liveAvailabilityIn: (n) => `Etsitkö reaaliaikaista saatavuutta kohteesta ${n}?`,
-    networkLeadA: 'Verkostomme luokittelee vain 17 kohdetta. Sembo listaa kaiken muun, mikä toimii kohteessa ',
+    networkLeadA: 'Verkostomme luokittelee vain 16 kohdetta. Sembo listaa kaiken muun, mikä toimii kohteessa ',
     networkLeadB: ' tänä talvena, joustavat päivät, suodatus varustelun mukaan, koko tarjonta.',
     browseInDest: (n) => `Selaa Semboa, ${n}`,
     bucketLabels: {
@@ -766,6 +767,6 @@ export const copyFI: SectionCopy = {
     { slug: 'long-stays', description: 'Viikko- ja kuukausivuokraukset, huvilat, design-mökit, hiihtoasunnot.' },
     { slug: 'hotels', description: 'Boutique-, design- ja klassiset Lapin hotellit lyhyisiin jaksoihin.' },
     { slug: 'glass-igloos', description: 'Lapin ikoninen muoto, neljä lomakohdetta, jotka ansaitsevat nimen.' },
-    { slug: 'wilderness', description: 'Viimeisen tien jälkeen, kolme retreatia vakaville matkaajille.' },
+    { slug: 'wilderness', description: 'Viimeisen tien jälkeen, kaksi retreatia vakaville matkaajille.' },
   ],
 };

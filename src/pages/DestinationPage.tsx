@@ -158,12 +158,30 @@ export default function DestinationPage() {
             {matched.map(({ p, bucket }) => (
               <article
                 key={p.slug}
-                className="grid grid-cols-1 md:grid-cols-12 gap-6 p-6 sm:p-8 bg-white border border-charcoal/8 rounded-2xl shadow-sm hover:shadow-md transition-all"
+                className="group overflow-hidden bg-white border border-charcoal/8 rounded-2xl shadow-sm hover:shadow-md transition-all"
               >
-                <div className="md:col-span-8">
-                  <p className="text-[11px] tracking-[0.18em] uppercase text-stone font-semibold mb-2">
+                {/* Image top from the property's existing card image (no new assets). */}
+                <div className="relative h-40 overflow-hidden bg-cream-2">
+                  <img
+                    src={p.imageSrc ?? HERO_IMAGES[dest.slug]}
+                    alt={p.name}
+                    className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                  <div
+                    className="absolute inset-0"
+                    style={{
+                      background:
+                        'linear-gradient(to top, rgba(15,23,42,0.60) 0%, rgba(15,23,42,0.05) 60%)',
+                    }}
+                  />
+                  <p className="absolute bottom-3 left-5 right-5 text-[11px] tracking-[0.18em] uppercase text-snow font-semibold">
                     {d.bucketLabels[bucket] ?? bucket.replace('-', ' ')}
                   </p>
+                </div>
+                <div className="grid grid-cols-1 md:grid-cols-12 gap-6 p-6 sm:p-8">
+                <div className="md:col-span-8">
                   <h3 className="font-heading text-2xl sm:text-3xl text-charcoal leading-tight mb-2">
                     {p.name}
                   </h3>
@@ -193,6 +211,7 @@ export default function DestinationPage() {
                   >
                     {d.seeAll} {d.bucketLabels[bucket] ?? bucket.replace('-', ' ')}
                   </Link>
+                </div>
                 </div>
               </article>
             ))}

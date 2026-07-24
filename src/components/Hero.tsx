@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { MapPin, ChevronRight, ArrowDown } from 'lucide-react';
+import { MapPin, ChevronRight } from 'lucide-react';
 import AffiliateCTA from './AffiliateCTA';
 import { useLang, useLocalePath } from '../i18n/useLang';
 import { getCopy } from '../locales/copy';
@@ -110,9 +110,6 @@ export default function Hero() {
           </div>
         </div>
 
-        <div className="absolute bottom-6 sm:bottom-9 left-1/2 -translate-x-1/2 animate-bounce">
-          <ArrowDown className="w-5 h-5 text-snow/80" />
-        </div>
       </div>
     </section>
   );

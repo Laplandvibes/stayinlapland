@@ -19,7 +19,7 @@ export const copyDE: SectionCopy = {
     h1Line2: 'als eine Woche Urlaub.',
     lead:
       'Blockhütten zur Wochenmiete, Designhotels in Rovaniemi, Glasiglus für die Wunsch-Nächte, und Wildnishütten jenseits der letzten Straße. Geprüfte Preise von',
-    leadPriceRange: '140 € bis 2 800 €',
+    leadPriceRange: '140 € bis 1 500 €',
     liveLabel: 'Live-Verfügbarkeit · Trip.com-Suche',
     browseLongStays: 'Langzeitaufenthalte ansehen',
     seeHotels: 'Hotels anzeigen',
@@ -151,9 +151,10 @@ export const copyDE: SectionCopy = {
       'Lassen Sie sich in Finnisch-Lappland nieder, Blockhütten zur Wochenmiete, Designhotels in Rovaniemi, ikonische Glasiglus und Wildnishütten im Norden.',
     schemaName: 'StayInLapland, Langzeitaufenthalte und Boutique-Hotels in Finnisch-Lappland',
     breadcrumbHome: 'Startseite',
+    stats: { stays: 'Kuratierte Unterkünfte', bases: 'Lappland-Basen', categories: 'Arten zu wohnen', months: 'Bewertete Monate' },
     intro: {
       p1: 'Die meisten Listen „Beste Unterkünfte in Lappland“ setzen ein Glasiglu an die Spitze, zwanzig weitere Glasiglus folgen in ähnlicher Reihenfolge, und kein einziger Satz dazu, ob die Verfasser je länger als zwei Nächte dort übernachtet haben. Dieser Leitfaden geht den umgekehrten Weg.',
-      p2: 'Lappland-Unterkünfte werden in vier Kategorien gegliedert, Langzeitmieten, Hotels, Glasiglus und Wildnishütten, und unten sind die siebzehn Häuser aufgeführt, die ihren Platz verdienen. Daraus lässt sich eine Reise bauen: eine Woche Blockhütte bei Levi, zwei Stadtnächte in einem Designhotel in Rovaniemi, eine einzige Glasiglu-Nacht vor dem Heimflug. So belohnt Lappland einen längeren Aufenthalt wirklich.',
+      p2: 'Lappland-Unterkünfte werden in vier Kategorien gegliedert, Langzeitmieten, Hotels, Glasiglus und Wildnishütten, und unten sind die sechzehn Häuser aufgeführt, die ihren Platz verdienen. Daraus lässt sich eine Reise bauen: eine Woche Blockhütte bei Levi, zwei Stadtnächte in einem Designhotel in Rovaniemi, eine einzige Glasiglu-Nacht vor dem Heimflug. So belohnt Lappland einen längeren Aufenthalt wirklich.',
       p3: 'Drei Dinge tut dieser Leitfaden nicht: Preise aggregieren, Bewertungen recyceln oder so tun, als deckten wir Orte ab, an denen niemand aus dem Netzwerk je wirklich übernachtet hat.',
     },
     authorNote:
@@ -185,7 +186,7 @@ export const copyDE: SectionCopy = {
     faqs: [
       {
         q: 'Wie lang ist ein „Langzeitaufenthalt“ auf dieser Seite?',
-        a: 'Alles ab vier Nächten zählt als Langzeitaufenthalt, das ist die Schwelle, ab der die meisten Häuser in Lappland Wochenpreise anbieten und eine echte Küche zu zählen beginnt. Die vorgestellten Objekte verlangen je nach Einheit 5 Nächte bis 4 Wochen Mindestaufenthalt; jede Karte zeigt das Minimum.',
+        a: 'Alles ab vier Nächten zählt als Langzeitaufenthalt, das ist die Schwelle, ab der die meisten Häuser in Lappland Wochenpreise anbieten und eine echte Küche zu zählen beginnt. Die vorgestellten Objekte verlangen je nach Einheit 3 bis 7 Nächte Mindestaufenthalt; jede Karte zeigt das Minimum.',
       },
       {
         q: 'Warum fokussiert die Startseite Langzeitaufenthalte und nicht Glasiglus?',
@@ -205,7 +206,7 @@ export const copyDE: SectionCopy = {
       longStays: 'Wochen- und Monatsmieten, Villen, Designhütten, Skiapartments.',
       hotels: 'Boutique-, Design- und klassische Lappland-Hotels für kurze Aufenthalte.',
       glassIgloos: 'Das ikonische Format Lapplands, vier Resorts, die den Namen verdienen.',
-      wilderness: 'Jenseits der letzten Straße, drei Refugien für anspruchsvolle Reisende.',
+      wilderness: 'Jenseits der letzten Straße, zwei Refugien für anspruchsvolle Reisende.',
     },
     categoryNames: {
       longStays: 'Langzeitaufenthalte',
@@ -454,7 +455,7 @@ export const copyDE: SectionCopy = {
           'Langzeit-Blockhütte (Woche): 140–280 €/Nacht, Platz für 4–6.',
           'Boutique-Hotel: 140–420 €/Nacht, Frühstück meist inklusive.',
           'Glasiglu, Hochsaison: 400–1500 €/Nacht für zwei.',
-          'Wildnishütten-Full-Buyout: 2 800+ €/Nacht für zehn.',
+          'Wildnishütten-Suite: 220–950 €/Nacht je nach Haus.',
           'Aktivitäten (Husky-Safari, Schneemobil, Nordlichtjagd) typisch 120–200 € pro Person und Ausflug obendrauf.',
         ],
       },
@@ -595,7 +596,7 @@ export const copyDE: SectionCopy = {
     checkRates: 'Preise prüfen',
     seeAll: 'Alle anzeigen',
     liveAvailabilityIn: (n) => `Live-Verfügbarkeit in ${n} suchen?`,
-    networkLeadA: 'Unser Netzwerk bewertet nur 17 Objekte. Trip.com listet alles weitere in ',
+    networkLeadA: 'Unser Netzwerk bewertet nur 16 Objekte. Trip.com listet alles weitere in ',
     networkLeadB: ' in diesem Winter, flexible Daten, nach Ausstattung filtern, das gesamte Angebot.',
     browseInDest: (n) => `Trip.com durchsuchen, ${n}`,
     bucketLabels: {
@@ -766,6 +767,6 @@ export const copyDE: SectionCopy = {
     { slug: 'long-stays', description: 'Wochen- und Monatsmieten, Villen, Designhütten, Skiapartments.' },
     { slug: 'hotels', description: 'Boutique-, Design- und klassische Lappland-Hotels für kurze Aufenthalte.' },
     { slug: 'glass-igloos', description: 'Das ikonische Format Lapplands, vier Resorts, die den Namen verdienen.' },
-    { slug: 'wilderness', description: 'Jenseits der letzten Straße, drei Refugien für anspruchsvolle Reisende.' },
+    { slug: 'wilderness', description: 'Jenseits der letzten Straße, zwei Refugien für anspruchsvolle Reisende.' },
   ],
 };

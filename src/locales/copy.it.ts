@@ -12,7 +12,7 @@ export const copyIT: SectionCopy = {
     h1Line2: 'di una settimana di vacanza.',
     lead:
       'Baite a settimana, design hotel a Rovaniemi, igloo di vetro per le notti da non perdere, e i lodge nella natura selvaggia oltre l’ultima strada. Tariffe verificate da',
-    leadPriceRange: '140 € a 2 800 €',
+    leadPriceRange: '140 € a 1 500 €',
     liveLabel: 'Disponibilità in tempo reale · Ricerca Trip.com',
     browseLongStays: 'Vedere i soggiorni lunghi',
     seeHotels: 'Vedere gli hotel',
@@ -119,14 +119,15 @@ export const copyIT: SectionCopy = {
   },
   home: {
     ...copyEN.home,
-    metaTitle: 'Dove alloggiare in Lapponia 2026, 17 strutture verificate',
+    metaTitle: 'Dove alloggiare in Lapponia 2026, 16 strutture verificate',
     metaDescription:
-      'Pianifichi il Suo soggiorno Lapponia 2026, 17 strutture verificate: baite da €120/notte, hotel design a Rovaniemi, igloo di vetro €450+ e lodge selvaggi.',
+      'Pianifichi il Suo soggiorno Lapponia 2026, 16 strutture verificate: baite da €140/notte, hotel design a Rovaniemi, igloo di vetro €280+ e lodge selvaggi.',
     schemaName: 'StayInLapland, Soggiorni lunghi e hotel boutique nella Lapponia finlandese',
     breadcrumbHome: 'Home',
+    stats: { stays: 'Strutture scelte', bases: 'Basi in Lapponia', categories: 'Modi di soggiornare', months: 'Mesi valutati' },
     intro: {
       p1: 'La maggior parte delle liste "migliori alloggi in Lapponia" mette un igloo di vetro in cima, venti altri igloo di vetro più o meno nello stesso ordine, e neanche una frase sul fatto che chi scrive abbia mai passato più di due notti in uno di essi. Questa guida è l’opposto.',
-      p2: 'L’alloggio in Lapponia si divide in quattro categorie, affitti a soggiorno lungo, hotel, igloo di vetro e lodge nella natura, e le diciassette strutture che meritano il loro posto sono elencate qui sotto. Tra esse può costruire un viaggio che inizia con una settimana in una baita base vicino a Levi, prosegue con due notti in un design hotel a Rovaniemi e finisce con una notte in igloo di vetro prima del volo di ritorno. Così la Lapponia premia davvero un soggiorno più lungo.',
+      p2: 'L’alloggio in Lapponia si divide in quattro categorie, affitti a soggiorno lungo, hotel, igloo di vetro e lodge nella natura, e le sedici strutture che meritano il loro posto sono elencate qui sotto. Tra esse può costruire un viaggio che inizia con una settimana in una baita base vicino a Levi, prosegue con due notti in un design hotel a Rovaniemi e finisce con una notte in igloo di vetro prima del volo di ritorno. Così la Lapponia premia davvero un soggiorno più lungo.',
       p3: 'Tre cose che questa guida non fa: aggregare prezzi, riciclare recensioni, o fingere di coprire luoghi dove nessun partner della rete ha mai trascorso una vera notte.',
     },
     authorNote: 'Una breve lista curata, scritta e verificata con partner locali in tutta la Lapponia finlandese.',
@@ -157,7 +158,7 @@ export const copyIT: SectionCopy = {
     faqs: [
       {
         q: 'Quanto dura un "soggiorno lungo" su questo sito?',
-        a: 'Tutto a partire da quattro notti conta come soggiorno lungo, è la soglia alla quale la maggior parte delle strutture in Lapponia offre tariffe settimanali e una vera cucina inizia ad avere importanza. Le strutture proposte per soggiorni lunghi hanno minimi da 5 notti fino a 4 settimane a seconda dell’unità; ogni scheda indica il minimo.',
+        a: 'Tutto a partire da quattro notti conta come soggiorno lungo, è la soglia alla quale la maggior parte delle strutture in Lapponia offre tariffe settimanali e una vera cucina inizia ad avere importanza. Le strutture proposte per soggiorni lunghi hanno minimi da 3 fino a 7 notti a seconda dell’unità; ogni scheda indica il minimo.',
       },
       {
         q: 'Perché la home è focalizzata sui soggiorni lunghi e non sugli igloo di vetro?',
@@ -177,7 +178,7 @@ export const copyIT: SectionCopy = {
       longStays: 'Affitti settimanali + mensili, ville, baite design, appartamenti sci.',
       hotels: 'Hotel boutique, design e classici della Lapponia per soggiorni brevi.',
       glassIgloos: 'Il formato iconico della Lapponia, quattro resort che meritano il nome.',
-      wilderness: 'Oltre l’ultima strada, tre rifugi per viaggiatori seri.',
+      wilderness: 'Oltre l’ultima strada, due rifugi per viaggiatori seri.',
     },
     categoryNames: {
       longStays: 'Soggiorni lunghi',
@@ -434,7 +435,7 @@ export const copyIT: SectionCopy = {
           'Baita per soggiorno lungo (settimanale): 140–280 €/notte, può ospitare 4–6 persone.',
           'Hotel boutique: 140–420 €/notte, di solito colazione inclusa.',
           'Igloo di vetro, alta stagione: 400–1500 €/notte per due.',
-          'Lodge nella natura in esclusiva totale: oltre 2 800 €/notte per dieci.',
+          'Suite in lodge nella natura: 220–950 €/notte a seconda della struttura.',
           'Attività (safari con gli husky, motoslitta, caccia all’aurora) di solito 120–200 € per persona per uscita in aggiunta.',
         ],
       },
@@ -577,7 +578,7 @@ export const copyIT: SectionCopy = {
     checkRates: 'Verifica tariffe',
     seeAll: 'Vedi tutto',
     liveAvailabilityIn: (n) => `Cerca disponibilità in tempo reale a ${n}?`,
-    networkLeadA: 'La nostra rete classifica solo 17 strutture. Trip.com elenca tutto il resto che opera a ',
+    networkLeadA: 'La nostra rete classifica solo 16 strutture. Trip.com elenca tutto il resto che opera a ',
     networkLeadB: ' quest’inverno, date flessibili, filtri per servizio, l’offerta completa.',
     browseInDest: (n) => `Sfoglia Trip.com, ${n}`,
     bucketLabels: {
@@ -780,6 +781,6 @@ export const copyIT: SectionCopy = {
     { slug: 'long-stays', description: 'Affitti settimanali + mensili, ville, baite design, appartamenti sci.' },
     { slug: 'hotels', description: 'Hotel boutique, design e classici della Lapponia per soggiorni brevi.' },
     { slug: 'glass-igloos', description: 'Il formato iconico della Lapponia, quattro resort che meritano il nome.' },
-    { slug: 'wilderness', description: 'Oltre l’ultima strada, tre rifugi per viaggiatori seri.' },
+    { slug: 'wilderness', description: 'Oltre l’ultima strada, due rifugi per viaggiatori seri.' },
   ],
 };

@@ -49,6 +49,10 @@ export default function Home() {
     return { ...d, pitch: dl?.pitch ?? d.pitch };
   });
 
+  // Real counts from the data layer — the stat band must never drift from the
+  // actual inventory (the old hardcoded "17" survived a property removal).
+  const totalStays = allCategoriesSummary.reduce((n, c) => n + c.count, 0);
+
   return (
     <>
       <title>{h.metaTitle}</title>
@@ -90,6 +94,29 @@ export default function Home() {
       />
 
       <Hero />
+
+      {/* Stat band — glass tiles straddling the hero/cream edge. Numbers are
+          REAL counts from the data layer (never hardcode; see LV recipe). */}
+      <section className="relative z-10 -mt-14 sm:-mt-16 px-5 sm:px-6" aria-label={`${totalStays} ${h.stats.stays}`}>
+        <div className="max-w-5xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-4">
+          {[
+            { n: totalStays, label: h.stats.stays },
+            { n: destinations.length, label: h.stats.bases },
+            { n: allCategoriesSummary.length, label: h.stats.categories },
+            { n: t.whenToGo.months.length, label: h.stats.months },
+          ].map((s) => (
+            <div
+              key={s.label}
+              className="rounded-2xl border border-white/10 bg-night/85 backdrop-blur-md p-4 md:p-5 text-center shadow-[0_8px_30px_rgba(0,0,0,0.35)]"
+            >
+              <p className="font-heading text-4xl md:text-5xl text-vibe-pink leading-none">{s.n}</p>
+              <p className="mt-2 text-[10px] md:text-[11px] uppercase tracking-[0.18em] text-snow/75 font-semibold leading-snug">
+                {s.label}
+              </p>
+            </div>
+          ))}
+        </div>
+      </section>
 
       {/* LV Media — PÄÄKUMPPANI-banneri heti heron alla */}
       <MainPartnerBanner config={AD_SLOTS} locale={lang} surface="light" />

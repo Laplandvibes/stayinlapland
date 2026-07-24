@@ -26,7 +26,7 @@ export const copyPTBR: SectionCopy = {
     h1Line1: 'A Lapônia é mais',
     h1Line2: 'que uma semana de férias.',
     lead: 'Cabanas por semana, hotéis boutique em Rovaniemi, iglus de vidro para aquela noite especial, e os refúgios silvestres além da última estrada. Tarifas verificadas a partir de',
-    leadPriceRange: '140 € até 2 800 €',
+    leadPriceRange: '140 € até 1 500 €',
     liveLabel: 'Disponibilidade ao vivo · busca Trip.com',
     browseLongStays: 'Ver longa duração',
     seeHotels: 'Ver hotéis',
@@ -157,9 +157,10 @@ export const copyPTBR: SectionCopy = {
       'Acomode-se na Lapônia finlandesa, cabanas por semana, hotéis de design em Rovaniemi, iglus de vidro icônicos e lodges silvestres depois da última estrada.',
     schemaName: 'StayInLapland, Estadias longas e hotéis boutique na Lapônia finlandesa',
     breadcrumbHome: 'Início',
+    stats: { stays: 'Hospedagens escolhidas', bases: 'Bases na Lapônia', categories: 'Formas de se hospedar', months: 'Meses avaliados' },
     intro: {
       p1: 'As listas de "melhores hospedagens da Lapônia" quase sempre começam por um iglu de vidro, e seguem nessa fórmula. Este guia foi feito de outro jeito: noites realmente dormidas, indicações de quem mora aqui e só os lugares que ficam na memória depois da viagem.',
-      p2: 'Dividimos as hospedagens da Lapônia em quatro categorias claras, estadias longas, hotéis, iglus de vidro e lodges na natureza. 17 propriedades selecionadas, todas visitadas pessoalmente. O roteiro mais comum: uma semana de cabana em Levi, duas noites em hotel de design em Rovaniemi e a última noite num iglu de vidro. Combinados, esses três formatos formam a Lapônia que faz a gente voltar.',
+      p2: 'Dividimos as hospedagens da Lapônia em quatro categorias claras, estadias longas, hotéis, iglus de vidro e lodges na natureza. 16 propriedades selecionadas, todas visitadas pessoalmente. O roteiro mais comum: uma semana de cabana em Levi, duas noites em hotel de design em Rovaniemi e a última noite num iglu de vidro. Combinados, esses três formatos formam a Lapônia que faz a gente voltar.',
       p3: 'Este guia não agrega preços nem recicla avaliações. Fontes à vista, parcerias declaradas.',
     },
     authorNote:
@@ -191,7 +192,7 @@ export const copyPTBR: SectionCopy = {
     faqs: [
       {
         q: 'O que conta como "estadia longa" neste site?',
-        a: 'Tudo a partir de quatro noites entra como estadia longa, é o limiar em que a maioria das propriedades da Lapônia oferece tarifa semanal e uma cozinha de verdade começa a importar. As propriedades de longa duração em destaque pedem mínimos de 5 noites a 4 semanas, dependendo da unidade; cada card mostra o mínimo.',
+        a: 'Tudo a partir de quatro noites entra como estadia longa, é o limiar em que a maioria das propriedades da Lapônia oferece tarifa semanal e uma cozinha de verdade começa a importar. As propriedades de longa duração em destaque pedem mínimos de 3 a 7 noites, dependendo da unidade; cada card mostra o mínimo.',
       },
       {
         q: 'Por que a home foca em estadias longas, e não em iglus de vidro?',
@@ -211,7 +212,7 @@ export const copyPTBR: SectionCopy = {
       longStays: 'Aluguéis semanais e mensais, vilas, cabanas de design, apartamentos de esqui.',
       hotels: 'Hotéis boutique, de design e clássicos da Lapônia para estadias curtas.',
       glassIgloos: 'O formato icônico da Lapônia, quatro resorts à altura do nome.',
-      wilderness: 'Depois da última estrada, três refúgios para viajantes sérios.',
+      wilderness: 'Depois da última estrada, dois refúgios para viajantes sérios.',
     },
     categoryNames: {
       longStays: 'Estadias longas',
@@ -459,7 +460,7 @@ export const copyPTBR: SectionCopy = {
           'Cabana de estadia longa (por semana): 140–280 €/noite, acomoda 4–6.',
           'Hotel boutique: 140–420 €/noite, café da manhã geralmente incluso.',
           'Iglu de vidro, alta temporada: 400–1 500 €/noite para dois.',
-          'Lodge na natureza em ocupação exclusiva: a partir de 2 800 €/noite para dez.',
+          'Suíte em lodge na natureza: 220–950 €/noite conforme a propriedade.',
           'Atividades (safári de huskies, snowmobile, caça à aurora): em geral 120–200 € por pessoa por passeio, à parte.',
         ],
       },
@@ -600,7 +601,7 @@ export const copyPTBR: SectionCopy = {
     checkRates: 'Ver tarifas',
     seeAll: 'Ver tudo',
     liveAvailabilityIn: (n) => `Buscar disponibilidade ao vivo em ${n}?`,
-    networkLeadA: 'Nossa rede ranqueia apenas 17 propriedades. A Trip.com lista todo o resto que opera em ',
+    networkLeadA: 'Nossa rede ranqueia apenas 16 propriedades. A Trip.com lista todo o resto que opera em ',
     networkLeadB: ' neste inverno, datas flexíveis, filtro por comodidade, a oferta completa.',
     browseInDest: (n) => `Buscar na Trip.com, ${n}`,
     bucketLabels: {
@@ -770,6 +771,6 @@ export const copyPTBR: SectionCopy = {
     { slug: 'long-stays', description: 'Aluguéis por semana e por mês, villas, cabanas de design, apartamentos de esqui.' },
     { slug: 'hotels', description: 'Hotéis boutique, de design e clássicos da Lapônia para estadias curtas.' },
     { slug: 'glass-igloos', description: 'O formato icônico da Lapônia, quatro resorts que ficam à altura do nome.' },
-    { slug: 'wilderness', description: 'Depois da última estrada, três refúgios para viajantes sérios.' },
+    { slug: 'wilderness', description: 'Depois da última estrada, dois refúgios para viajantes sérios.' },
   ],
 };

@@ -107,7 +107,7 @@ export default function BookingGuide() {
           </div>
 
           {/* Omena Hotels ad — city-stopover angle complements Lapland stays
-              (shared/ads; different product than the site's own Hotels.com
+              (shared/ads; different product than the site's own hotel-partner
               routing: budget city hotels for the journey, not Lapland stays). */}
           <AdUnit
             spec={omenaHotelsAd}

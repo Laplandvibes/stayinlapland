@@ -26,7 +26,7 @@ export const copyES: SectionCopy = {
     h1Line1: 'Laponia es más',
     h1Line2: 'que una semana de vacaciones.',
     lead: 'Cabañas por semanas, hoteles boutique en Rovaniemi, iglús de cristal para esa noche soñada, y los refugios silvestres más allá de la última carretera. Tarifas verificadas desde',
-    leadPriceRange: '140 € hasta 2 800 €',
+    leadPriceRange: '140 € hasta 1 500 €',
     liveLabel: 'Disponibilidad en vivo · búsqueda Trip.com',
     browseLongStays: 'Ver larga estancia',
     seeHotels: 'Ver hoteles',
@@ -157,9 +157,10 @@ export const copyES: SectionCopy = {
       'Instálate en la Laponia finlandesa, cabañas por semana, hoteles de diseño en Rovaniemi, iglús de cristal icónicos y refugios silvestres en el norte.',
     schemaName: 'StayInLapland, Larga estancia y hoteles boutique en la Laponia finlandesa',
     breadcrumbHome: 'Inicio',
+    stats: { stays: 'Alojamientos escogidos', bases: 'Bases en Laponia', categories: 'Formas de alojarse', months: 'Meses evaluados' },
     intro: {
       p1: 'Las listas de "los mejores alojamientos de Laponia" casi siempre arrancan con un iglú de cristal, y siguen con la misma fórmula. Esta guía está hecha de otra forma: noches probadas por nosotros, recomendaciones locales y solo los alojamientos que se quedan grabados después del viaje.',
-      p2: 'Hemos dividido los alojamientos de Laponia en cuatro categorías claras: larga estancia, hoteles, iglús de cristal y refugios silvestres. 17 alojamientos seleccionados, todos visitados. La ruta favorita: una semana en cabaña en Levi, dos noches en un hotel de diseño en Rovaniemi, una última noche en un iglú de cristal. Combinadas, son la Laponia por la que se vuelve.',
+      p2: 'Hemos dividido los alojamientos de Laponia en cuatro categorías claras: larga estancia, hoteles, iglús de cristal y refugios silvestres. 16 alojamientos seleccionados, todos visitados. La ruta favorita: una semana en cabaña en Levi, dos noches en un hotel de diseño en Rovaniemi, una última noche en un iglú de cristal. Combinadas, son la Laponia por la que se vuelve.',
       p3: 'Esta guía no agrega precios ni recicla reseñas. Las fuentes están a la vista, las relaciones de afiliación, abiertas.',
     },
     authorNote:
@@ -191,7 +192,7 @@ export const copyES: SectionCopy = {
     faqs: [
       {
         q: '¿Qué cuenta como "larga estancia" en este sitio?',
-        a: 'Larga estancia es todo lo que va de cuatro noches en adelante, el umbral a partir del cual la mayoría de los alojamientos de Laponia ofrece tarifas semanales y donde una cocina decente empieza a importar. Los alojamientos de larga estancia listados aquí piden un mínimo de entre 5 noches y 4 semanas según el caso; cada tarjeta lo indica.',
+        a: 'Larga estancia es todo lo que va de cuatro noches en adelante, el umbral a partir del cual la mayoría de los alojamientos de Laponia ofrece tarifas semanales y donde una cocina decente empieza a importar. Los alojamientos de larga estancia listados aquí piden un mínimo de entre 3 y 7 noches según el caso; cada tarjeta lo indica.',
       },
       {
         q: '¿Por qué la portada prioriza larga estancia y no los iglús de cristal?',
@@ -211,7 +212,7 @@ export const copyES: SectionCopy = {
       longStays: 'Alquileres semanales y mensuales, villas, cabañas de diseño, apartamentos de esquí.',
       hotels: 'Hoteles boutique, de diseño y clásicos de Laponia para estancias cortas.',
       glassIgloos: 'La forma icónica de Laponia, cuatro resorts que merecen el nombre.',
-      wilderness: 'Más allá de la última carretera, tres refugios para viajeros serios.',
+      wilderness: 'Más allá de la última carretera, dos refugios para viajeros serios.',
     },
     categoryNames: {
       longStays: 'Larga estancia',
@@ -310,7 +311,7 @@ export const copyES: SectionCopy = {
           'Cabaña de larga estancia (por semana): 140–280 €/noche, puede dormir a 4–6.',
           'Hotel boutique: 140–420 €/noche, desayuno normalmente incluido.',
           'Iglú de cristal, temporada alta: 400–1 500 €/noche para dos.',
-          'Refugio silvestre en exclusiva completa: desde 2 800 €/noche para diez.',
+          'Suite en refugio silvestre: 220–950 €/noche según la propiedad.',
           'Actividades (safari de huskies, motonieve, caza de auroras): por lo general 120–200 € por persona y salida, aparte.',
         ],
       },
@@ -452,7 +453,7 @@ export const copyES: SectionCopy = {
     checkRates: 'Ver tarifas',
     seeAll: 'Ver todo',
     liveAvailabilityIn: (n) => `¿Buscas disponibilidad en vivo en ${n}?`,
-    networkLeadA: 'Nuestra red clasifica solo 17 alojamientos. Trip.com lista todo lo demás que funciona en ',
+    networkLeadA: 'Nuestra red clasifica solo 16 alojamientos. Trip.com lista todo lo demás que funciona en ',
     networkLeadB: ' este invierno, fechas flexibles, filtros por equipamiento, oferta completa.',
     browseInDest: (n) => `Buscar en Trip.com, ${n}`,
     bucketLabels: {
@@ -769,6 +770,6 @@ export const copyES: SectionCopy = {
     { slug: 'long-stays', description: 'Alquileres por semana y por mes, villas, cabañas de diseño, apartamentos de esquí.' },
     { slug: 'hotels', description: 'Hoteles boutique, de diseño y clásicos laponeses para estancias cortas.' },
     { slug: 'glass-igloos', description: 'La forma icónica de Laponia, cuatro resorts que merecen el nombre.' },
-    { slug: 'wilderness', description: 'Más allá de la última carretera, tres retiros para viajeros serios.' },
+    { slug: 'wilderness', description: 'Más allá de la última carretera, dos retiros para viajeros serios.' },
   ],
 };

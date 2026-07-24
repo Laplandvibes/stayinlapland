@@ -18,7 +18,7 @@ export const copyEN: SectionCopy = {
     h1Line1: 'Settle into Lapland.',
     h1Line2: "Don’t just visit.",
     lead: 'Cabins by the week, design hotels in Rovaniemi, glass igloos for the bucket-list nights, and the wilderness lodges past the last road. Verified rates from',
-    leadPriceRange: '€140 to €2 800',
+    leadPriceRange: '€140 to €1 500',
     liveLabel: 'Live availability · Trip.com search',
     browseLongStays: 'Browse long stays',
     seeHotels: 'See hotels',
@@ -142,14 +142,15 @@ export const copyEN: SectionCopy = {
     ],
   },
   home: {
-    metaTitle: 'Where to Stay in Lapland 2026, 17 Verified Hotels & Cabins',
+    metaTitle: 'Where to Stay in Lapland 2026, 16 Verified Hotels & Cabins',
     metaDescription:
-      'Plan your 2026 Lapland stay, 17 verified properties: weekly cabins from €120/night, design hotels in Rovaniemi, glass igloos from €450 and wilderness lodges.',
+      'Plan your 2026 Lapland stay, 16 verified properties: weekly cabins from €140/night, design hotels in Rovaniemi, glass igloos from €280 and wilderness lodges.',
     schemaName: 'StayInLapland, Long Stays & Boutique Hotels in Finnish Lapland',
     breadcrumbHome: 'Home',
+    stats: { stays: 'Hand-picked stays', bases: 'Lapland bases', categories: 'Ways to stay', months: 'Months rated' },
     intro: {
       p1: 'Most “best Lapland accommodation” lists put a glass igloo at the top, twenty other glass igloos in roughly the same order, and not a single sentence about whether the writer has ever spent more than two nights at any of them. This guide is the opposite.',
-      p2: 'Lapland accommodation splits into four buckets: long-stay rentals, hotels, glass igloos and wilderness lodges. The seventeen properties that earn their place are listed below. Across them you can build a trip that starts with a week-long cabin base near Levi, moves to a design hotel in Rovaniemi for two nights of city, then ends with a single glass-igloo night before flying home. That is how Lapland actually rewards a longer stay.',
+      p2: 'Lapland accommodation splits into four buckets: long-stay rentals, hotels, glass igloos and wilderness lodges. The sixteen properties that earn their place are listed below. Across them you can build a trip that starts with a week-long cabin base near Levi, moves to a design hotel in Rovaniemi for two nights of city, then ends with a single glass-igloo night before flying home. That is how Lapland actually rewards a longer stay.',
       p3: 'Three things this guide does not do: aggregate prices, recycle reviews, or pretend to cover places where no partner in the network has spent a real night.',
     },
     authorNote: 'A curated short-list, written and fact-checked with on-the-ground partners across Finnish Lapland.',
@@ -180,7 +181,7 @@ export const copyEN: SectionCopy = {
     faqs: [
       {
         q: 'How long is a "long stay" on this site?',
-        a: 'Anything from four nights upwards counts as a long stay, it is the threshold at which most Lapland properties offer weekly rates and a real kitchen starts to matter. The featured long-stay properties run 5-night to 4-week minimums depending on the unit; each card lists the minimum.',
+        a: 'Anything from four nights upwards counts as a long stay, it is the threshold at which most Lapland properties offer weekly rates and a real kitchen starts to matter. The featured long-stay properties run 3-night to 7-night minimums depending on the unit; each card lists the minimum.',
       },
       {
         q: 'Why is the homepage focused on long stays rather than glass igloos?',
@@ -200,7 +201,7 @@ export const copyEN: SectionCopy = {
       longStays: 'Weekly + monthly rentals, villas, design cabins, ski apartments.',
       hotels: 'Boutique, design and classic Lapland hotels for short stays.',
       glassIgloos: 'The iconic Lapland format, four resorts that earn the name.',
-      wilderness: 'Past the last road, three retreats for serious travellers.',
+      wilderness: 'Past the last road, two retreats for serious travellers.',
     },
     categoryNames: {
       longStays: 'Long Stays',
@@ -445,7 +446,7 @@ export const copyEN: SectionCopy = {
           'Long-stay cabin (weekly): €140–280/night, can sleep 4–6.',
           'Boutique hotel: €140–420/night, breakfast usually included.',
           'Glass igloo, peak season: €400–1500/night for two.',
-          'Wilderness lodge full buyout: €2 800+/night for ten.',
+          'Wilderness lodge suite: €220–950/night depending on the property.',
           'Activities (husky safari, snowmobile, aurora hunt) typically €120–200 per person per outing on top.',
         ],
       },
@@ -586,7 +587,7 @@ export const copyEN: SectionCopy = {
     checkRates: 'Check rates',
     seeAll: 'See all',
     liveAvailabilityIn: (n) => `Searching live availability in ${n}?`,
-    networkLeadA: 'The network ranks only 17 properties. Trip.com lists everything else operating in ',
+    networkLeadA: 'The network ranks only 16 properties. Trip.com lists everything else operating in ',
     networkLeadB: ' this winter, flex dates, filter by amenity, see the full inventory.',
     browseInDest: (n) => `Browse Trip.com, ${n}`,
     bucketLabels: {
@@ -756,6 +757,6 @@ export const copyEN: SectionCopy = {
     { slug: 'long-stays', description: 'Weekly + monthly rentals, villas, design cabins, ski apartments.' },
     { slug: 'hotels', description: 'Boutique, design and classic Lapland hotels for short stays.' },
     { slug: 'glass-igloos', description: 'The iconic Lapland format, four resorts that earn the name.' },
-    { slug: 'wilderness', description: 'Past the last road, three retreats for serious travellers.' },
+    { slug: 'wilderness', description: 'Past the last road, two retreats for serious travellers.' },
   ],
 };

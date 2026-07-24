@@ -24,7 +24,7 @@ export const copyNL: SectionCopy = {
     h1Line2: 'een weekje vakantie.',
     lead:
       'Hutten per week, design hotels in Rovaniemi, glasiglo’s voor de bucketlist-nachten, en de wildernislodges voorbij de laatste weg. Geverifieerde tarieven van',
-    leadPriceRange: '€140 tot €2 800',
+    leadPriceRange: '€140 tot €1 500',
     liveLabel: 'Live beschikbaarheid · Trip.com-zoekopdracht',
     browseLongStays: 'Lange verblijven bekijken',
     seeHotels: 'Hotels bekijken',
@@ -131,14 +131,15 @@ export const copyNL: SectionCopy = {
   },
   home: {
     ...copyEN.home,
-    metaTitle: 'Waar te verblijven in Lapland 2026, 17 adressen',
+    metaTitle: 'Waar te verblijven in Lapland 2026, 16 adressen',
     metaDescription:
-      'Plan uw verblijf Lapland 2026, 17 geverifieerde accommodaties: hutten vanaf €120/nacht, designhotels in Rovaniemi, glasiglo’s €450+ en wildernislodges.',
+      'Plan uw verblijf Lapland 2026, 16 geverifieerde accommodaties: hutten vanaf €140/nacht, designhotels in Rovaniemi, glasiglo’s €280+ en wildernislodges.',
     schemaName: 'StayInLapland, Lange verblijven en boutique-hotels in Fins Lapland',
     breadcrumbHome: 'Home',
+    stats: { stays: 'Gekozen verblijven', bases: 'Bases in Lapland', categories: 'Manieren van verblijven', months: 'Beoordeelde maanden' },
     intro: {
       p1: 'De meeste lijstjes met "beste accommodatie in Lapland" beginnen met een glasiglo bovenaan, zetten daaronder twintig andere glasiglo’s in ongeveer dezelfde volgorde, en bevatten geen enkele zin over de vraag of de schrijver er ooit meer dan twee nachten heeft doorgebracht. Deze gids is het tegenovergestelde.',
-      p2: 'Lapland-accommodatie valt uiteen in vier categorieën, lange-verblijfshuur, hotels, glasiglo’s en wildernislodges, en de zeventien accommodaties die hun plek verdienen, staan hieronder. Daarmee kunt u een reis bouwen die begint met een week in een hut bij Levi, doorgaat naar een design hotel in Rovaniemi voor twee stadse nachten, en eindigt met één glasiglonacht voor de terugvlucht. Zo beloont Lapland een langer verblijf.',
+      p2: 'Lapland-accommodatie valt uiteen in vier categorieën, lange-verblijfshuur, hotels, glasiglo’s en wildernislodges, en de zestien accommodaties die hun plek verdienen, staan hieronder. Daarmee kunt u een reis bouwen die begint met een week in een hut bij Levi, doorgaat naar een design hotel in Rovaniemi voor twee stadse nachten, en eindigt met één glasiglonacht voor de terugvlucht. Zo beloont Lapland een langer verblijf.',
       p3: 'Drie dingen die deze gids niet doet: prijzen aggregeren, beoordelingen recyclen, of doen alsof we plekken behandelen waar geen partner in het netwerk ooit een echte nacht heeft doorgebracht.',
     },
     authorNote:
@@ -171,7 +172,7 @@ export const copyNL: SectionCopy = {
     faqs: [
       {
         q: 'Wat geldt op deze site als een "lang verblijf"?',
-        a: 'Alles vanaf vier nachten geldt als een lang verblijf, dat is de drempel waarbij de meeste Lapland-accommodaties weektarieven aanbieden en een echte keuken belangrijk wordt. De uitgelichte lange-verblijfsaccommodaties hanteren een minimum van 5 nachten tot 4 weken, afhankelijk van de unit; bij elke kaart staat het minimum vermeld.',
+        a: 'Alles vanaf vier nachten geldt als een lang verblijf, dat is de drempel waarbij de meeste Lapland-accommodaties weektarieven aanbieden en een echte keuken belangrijk wordt. De uitgelichte lange-verblijfsaccommodaties hanteren een minimum van 3 tot 7 nachten, afhankelijk van de unit; bij elke kaart staat het minimum vermeld.',
       },
       {
         q: 'Waarom richt de homepage zich op lange verblijven in plaats van glasiglo’s?',
@@ -191,7 +192,7 @@ export const copyNL: SectionCopy = {
       longStays: 'Week- en maandverhuur, villa\'s, designhutten, ski-appartementen.',
       hotels: 'Boutique-, design- en klassieke Lapland-hotels voor korte verblijven.',
       glassIgloos: 'Het iconische Lapland-formaat, vier resorts die de naam verdienen.',
-      wilderness: 'Voorbij de laatste weg, drie retreats voor serieuze reizigers.',
+      wilderness: 'Voorbij de laatste weg, twee retreats voor serieuze reizigers.',
     },
     categoryNames: {
       longStays: 'Lange verblijven',
@@ -439,7 +440,7 @@ export const copyNL: SectionCopy = {
           'Lange-verblijfshut (weektarief): €140–280/nacht, slaapt 4–6.',
           'Boutique hotel: €140–420/nacht, ontbijt meestal inbegrepen.',
           'Glasiglo, hoogseizoen: €400–1 500/nacht voor twee.',
-          'Wildernislodge volledige buyout: vanaf €2 800/nacht voor tien.',
+          'Wildernislodge-suite: €220–950/nacht afhankelijk van de accommodatie.',
           'Activiteiten (husky-safari, sneeuwscooter, noorderlichtjacht) doorgaans €120–200 per persoon per uitstap erbovenop.',
         ],
       },
@@ -580,7 +581,7 @@ export const copyNL: SectionCopy = {
     checkRates: 'Tarieven bekijken',
     seeAll: 'Alles bekijken',
     liveAvailabilityIn: (n) => `Live beschikbaarheid in ${n} zoeken?`,
-    networkLeadA: 'Ons netwerk rangschikt slechts 17 accommodaties. Trip.com toont al het overige dat deze winter opereert in ',
+    networkLeadA: 'Ons netwerk rangschikt slechts 16 accommodaties. Trip.com toont al het overige dat deze winter opereert in ',
     networkLeadB: ', flexibele data, filter op voorziening, het volledige aanbod.',
     browseInDest: (n) => `Bekijk Trip.com, ${n}`,
     bucketLabels: {
@@ -617,7 +618,7 @@ export const copyNL: SectionCopy = {
     { slug: 'long-stays', description: 'Week- en maandverhuur, villa\'s, designhutten, ski-appartementen.' },
     { slug: 'hotels', description: 'Boutique-, design- en klassieke Lapland-hotels voor korte verblijven.' },
     { slug: 'glass-igloos', description: 'Het iconische Lapland-formaat, vier resorts die de naam verdienen.' },
-    { slug: 'wilderness', description: 'Voorbij de laatste weg, drie retreats voor serieuze reizigers.' },
+    { slug: 'wilderness', description: 'Voorbij de laatste weg, twee retreats voor serieuze reizigers.' },
   ],
   hotelsData: [
     {

@@ -26,7 +26,7 @@ export const copyFR: SectionCopy = {
     h1Line1: 'La Laponie, c’est',
     h1Line2: 'bien plus qu’une semaine de vacances.',
     lead: 'Des chalets à la semaine, des hôtels design à Rovaniemi, des igloos de verre pour les nuits inoubliables, et les lodges en pleine nature au-delà de la dernière route. Tarifs vérifiés à partir de',
-    leadPriceRange: '140 € à 2 800 €',
+    leadPriceRange: '140 € à 1 500 €',
     liveLabel: 'Disponibilité en direct · recherche Trip.com',
     browseLongStays: 'Voir les séjours longue durée',
     seeHotels: 'Voir les hôtels',
@@ -152,14 +152,15 @@ export const copyFR: SectionCopy = {
   },
   home: {
     ...copyEN.home,
-    metaTitle: 'Où loger en Laponie 2026, 17 adresses vérifiées',
+    metaTitle: 'Où loger en Laponie 2026, 16 adresses vérifiées',
     metaDescription:
-      'Préparez votre séjour Laponie 2026, 17 adresses vérifiées : chalets dès 120 €/nuit, hôtels design à Rovaniemi, igloos de verre dès 450 € et lodges nature.',
+      'Préparez votre séjour Laponie 2026, 16 adresses vérifiées : chalets dès 140 €/nuit, hôtels design à Rovaniemi, igloos de verre dès 280 € et lodges nature.',
     schemaName: 'StayInLapland, Séjours longue durée et hôtels boutique en Laponie finlandaise',
     breadcrumbHome: 'Accueil',
+    stats: { stays: 'Adresses choisies', bases: 'Bases en Laponie', categories: 'Façons de séjourner', months: 'Mois évalués' },
     intro: {
       p1: 'La plupart des classements « meilleurs hébergements de Laponie » placent un igloo de verre en tête, puis vingt autres igloos de verre dans à peu près le même ordre, sans une seule phrase indiquant si l’auteur y a déjà passé plus de deux nuits. Ce guide fait l’inverse.',
-      p2: 'Les hébergements de Laponie se répartissent en quatre catégories, locations longue durée, hôtels, igloos de verre et lodges en pleine nature, et les dix-sept adresses qui méritent leur place sont listées ci-dessous. On peut construire à partir d’elles un voyage qui commence par une semaine en chalet près de Levi, se poursuit par deux nuits en hôtel design à Rovaniemi, puis se termine par une seule nuit en igloo de verre avant le retour. C’est ainsi que la Laponie récompense vraiment un séjour prolongé.',
+      p2: 'Les hébergements de Laponie se répartissent en quatre catégories, locations longue durée, hôtels, igloos de verre et lodges en pleine nature, et les seize adresses qui méritent leur place sont listées ci-dessous. On peut construire à partir d’elles un voyage qui commence par une semaine en chalet près de Levi, se poursuit par deux nuits en hôtel design à Rovaniemi, puis se termine par une seule nuit en igloo de verre avant le retour. C’est ainsi que la Laponie récompense vraiment un séjour prolongé.',
       p3: 'Trois choses que ce guide ne fait pas : agréger des prix, recycler des avis, ni prétendre couvrir des lieux où aucun partenaire du réseau n’a réellement passé la nuit.',
     },
     authorNote: 'Une sélection éditoriale, rédigée et vérifiée sur place avec nos partenaires en Laponie finlandaise.',
@@ -190,7 +191,7 @@ export const copyFR: SectionCopy = {
     faqs: [
       {
         q: 'Qu’est-ce qu’un « séjour longue durée » sur ce site ?',
-        a: 'Tout séjour de quatre nuits ou plus compte comme un séjour longue durée, c’est le seuil à partir duquel la plupart des hébergements de Laponie proposent des tarifs hebdomadaires et où une vraie cuisine commence à compter. Les hébergements longue durée mis en avant ici imposent un minimum de 5 nuits à 4 semaines selon l’unité ; chaque fiche l’indique.',
+        a: 'Tout séjour de quatre nuits ou plus compte comme un séjour longue durée, c’est le seuil à partir duquel la plupart des hébergements de Laponie proposent des tarifs hebdomadaires et où une vraie cuisine commence à compter. Les hébergements longue durée mis en avant ici imposent un minimum de 3 à 7 nuits selon l’unité ; chaque fiche l’indique.',
       },
       {
         q: 'Pourquoi la page d’accueil met-elle l’accent sur les longs séjours plutôt que sur les igloos de verre ?',
@@ -210,7 +211,7 @@ export const copyFR: SectionCopy = {
       longStays: 'Locations à la semaine et au mois, villas, chalets design, appartements de ski.',
       hotels: 'Hôtels boutique, design et grands classiques de Laponie pour des séjours courts.',
       glassIgloos: 'La forme emblématique de la Laponie, quatre adresses qui méritent ce nom.',
-      wilderness: 'Au-delà de la dernière route, trois retraites pour voyageurs avertis.',
+      wilderness: 'Au-delà de la dernière route, deux retraites pour voyageurs avertis.',
     },
     categoryNames: {
       longStays: 'Séjours longue durée',
@@ -455,7 +456,7 @@ export const copyFR: SectionCopy = {
           'Chalet longue durée (à la semaine) : 140–280 €/nuit, peut coucher 4 à 6 personnes.',
           'Hôtel boutique : 140–420 €/nuit, petit-déjeuner généralement inclus.',
           'Igloo de verre, haute saison : 400–1 500 €/nuit pour deux.',
-          'Lodge en pleine nature, privatisation complète : à partir de 2 800 €/nuit pour dix.',
+          'Suite en lodge nature : 220–950 €/nuit selon l’adresse.',
           'Activités (safari en traîneau de huskies, motoneige, chasse à l’aurore) : en général 120–200 € par personne et par sortie, en plus.',
         ],
       },
@@ -596,7 +597,7 @@ export const copyFR: SectionCopy = {
     checkRates: 'Voir les tarifs',
     seeAll: 'Voir tout',
     liveAvailabilityIn: (n) => `Chercher les disponibilités en direct à ${n} ?`,
-    networkLeadA: 'Notre réseau ne classe que 17 adresses. Trip.com référence tout le reste de ce qui ouvre à ',
+    networkLeadA: 'Notre réseau ne classe que 16 adresses. Trip.com référence tout le reste de ce qui ouvre à ',
     networkLeadB: ' cet hiver, dates flexibles, filtres par équipement, l’offre complète.',
     browseInDest: (n) => `Parcourir Trip.com, ${n}`,
     bucketLabels: {
@@ -766,6 +767,6 @@ export const copyFR: SectionCopy = {
     { slug: 'long-stays', description: 'Locations à la semaine et au mois, villas, chalets design, appartements de ski.' },
     { slug: 'hotels', description: 'Hôtels boutique, design et grands classiques de Laponie pour des séjours courts.' },
     { slug: 'glass-igloos', description: 'La forme emblématique de la Laponie, quatre adresses qui méritent ce nom.' },
-    { slug: 'wilderness', description: 'Au-delà de la dernière route, trois retraites pour voyageurs avertis.' },
+    { slug: 'wilderness', description: 'Au-delà de la dernière route, deux retraites pour voyageurs avertis.' },
   ],
 };

@@ -88,6 +88,8 @@ export type SectionCopy = {
     metaDescription: string;
     schemaName: string;
     breadcrumbHome: string;
+    /** Hero stat-band labels; numbers come from the data layer (real counts only). */
+    stats: { stays: string; bases: string; categories: string; months: string };
     intro: { p1: string; p2: string; p3: string };
     authorNote: string;
     fourWays: { kicker: string; h2A: string; h2B: string; lead: string };

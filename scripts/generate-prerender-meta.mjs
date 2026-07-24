@@ -288,7 +288,7 @@ for (const loc of LOCALES) {
   for (const { slug, name } of destList) {
     const dd = destData.get(slug);
     // Title: "<Name> — <localized suffix>"  (mirrors DestinationPage.tsx line 101)
-    const title = suffix ? `${name} — ${suffix}` : null;
+    const title = suffix ? `${name}: ${suffix}` : null;
     // Description: "<pitch> <longStayAngle>" sliced to 160 (mirrors line 102).
     const description = dd
       ? clip([dd.pitch, dd.longStayAngle].filter(Boolean).join(' '), MAX_DESC)

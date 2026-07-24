@@ -76,7 +76,7 @@ export default function Hotels() {
         title={h.pageHero.title}
         subtitle={h.pageHero.subtitle}
         imageSrc="/images/hero-hotels.webp"
-        imageAlt="Boutique design hotel in Finnish Lapland — exterior at golden hour"
+        imageAlt="Boutique design hotel in Finnish Lapland, exterior at golden hour"
       />
 
       <section className="py-12 sm:py-16 px-5 sm:px-6">

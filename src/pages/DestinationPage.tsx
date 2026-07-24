@@ -98,7 +98,7 @@ export default function DestinationPage() {
 
   return (
     <>
-      <title>{`${dest.name} — ${d.metaTitleSuffix}`}</title>
+      <title>{`${dest.name}: ${d.metaTitleSuffix}`}</title>
       <meta name="description" content={`${pitch} ${longStayAngle}`.slice(0, 160)} />
       <link rel="canonical" href={pageUrl(`/destinations/${dest.slug}`)} />
       <meta name="robots" content="index, follow" />

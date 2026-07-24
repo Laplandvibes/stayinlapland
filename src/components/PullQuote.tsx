@@ -17,7 +17,7 @@ export default function PullQuote({ children, attribution }: PullQuoteProps) {
       </blockquote>
       {attribution && (
         <figcaption className="mt-6 text-stone text-xs sm:text-sm uppercase tracking-[0.2em]">
-          — {attribution}
+          – {attribution}
         </figcaption>
       )}
     </figure>

@@ -35,19 +35,19 @@ export function searchDest(location: string, searchQuery?: string): string {
 export const longStays: Property[] = [
   {
     slug: 'arctic-treehouse-suite',
-    name: 'Arctic TreeHouse Resort — Long Stay',
+    name: 'Arctic TreeHouse Resort: Long Stay',
     location: 'Rovaniemi',
     priceRange: '€280–520',
     minStay: '7 nights',
     bestFor: 'long',
     highlight: 'Design suites · weekly rates · sauna village',
     description:
-      'Design suites overlooking pine forest at the edge of Santa Park. Weekly rate drops 25% from nightly. Each suite has a kitchenette, panoramic glass front and access to the resort sauna village — making this one of the few ways to do a proper long stay in Rovaniemi without renting raw cabin.',
+      'Design suites overlooking pine forest at the edge of Santa Park. Weekly rate drops 25% from nightly. Each suite has a kitchenette, panoramic glass front and access to the resort sauna village, making this one of the few ways to do a proper long stay in Rovaniemi without renting raw cabin.',
     imageSrc: '/images/hero-hotels.webp',
   },
   {
     slug: 'levi-residences',
-    name: 'Levi Residences — Penthouse Suites',
+    name: 'Levi Residences: Penthouse Suites',
     location: 'Levi village',
     priceRange: '€220–480',
     minStay: '4 nights',
@@ -83,14 +83,14 @@ export const longStays: Property[] = [
   },
   {
     slug: 'inari-lakeside-villa',
-    name: 'Wilderness Hotel Nangu — Lakeside Villas',
+    name: 'Wilderness Hotel Nangu: Lakeside Villas',
     location: 'Lake Inari southern shore',
     priceRange: '€220–460',
     minStay: '4 nights',
     bestFor: 'long',
     highlight: 'Sami-led activities · lake views · long-stay rates',
     description:
-      'Lakeside villas on Lake Inari with rooms facing the water. Sami-led ice fishing, ranger-guided wilderness skiing, Inari Sami Museum twenty minutes away. Long-stay rates from four nights — the most cultural of the lake-based long-stays.',
+      'Lakeside villas on Lake Inari with rooms facing the water. Sami-led ice fishing, ranger-guided wilderness skiing, Inari Sami Museum twenty minutes away. Long-stay rates from four nights. The most cultural of the lake-based long-stays.',
     imageSrc: '/images/hero-aurora-cabins.webp',
   },
 ];
@@ -105,7 +105,7 @@ export const hotels: Property[] = [
     bestFor: 'short',
     highlight: 'Design hotel · forest-edge suites',
     description:
-      'A 70-suite design hotel built into the pine forest behind Santa Park, Rovaniemi. Each suite has a panoramic glass front facing the trees and a Nordic-minimal interior. Strong restaurant on site — Rakas, locally sourced — and the resort sauna village is open to all guests.',
+      'A 70-suite design hotel built into the pine forest behind Santa Park, Rovaniemi. Each suite has a panoramic glass front facing the trees and a Nordic-minimal interior. Strong restaurant on site, Rakas, locally sourced, and the resort sauna village is open to all guests.',
     imageSrc: '/images/hero-hotels.webp',
   },
   {
@@ -116,7 +116,7 @@ export const hotels: Property[] = [
     bestFor: 'short',
     highlight: 'Boutique 57 rooms · 1939 functionalist building',
     description:
-      'A boutique 57-room hotel in a 1939 functionalist building — formerly the local newspaper office, rebuilt after the 1944 Lapland War destroyed Rovaniemi. Each floor has a different interior theme; the rooftop suite has its own sauna. The most architecturally serious hotel in the city.',
+      'A boutique 57-room hotel in a 1939 functionalist building, formerly the local newspaper office, rebuilt after the 1944 Lapland War destroyed Rovaniemi. Each floor has a different interior theme; the rooftop suite has its own sauna. The most architecturally serious hotel in the city.',
     imageSrc: '/images/trip-first-timer.webp',
   },
   {
@@ -127,7 +127,7 @@ export const hotels: Property[] = [
     bestFor: 'short',
     highlight: 'Design villas · spa · ski-in/out',
     description:
-      'High-end villa hotel at the base of Levi fell. Private outdoor hot tubs, an in-suite sauna in every villa, ski-in/out access to the lifts and a full-service spa. Built for adults — no kids\' programme, just quiet rooms and good food.',
+      'High-end villa hotel at the base of Levi fell. Private outdoor hot tubs, an in-suite sauna in every villa, ski-in/out access to the lifts and a full-service spa. Built for adults: no kids\' programme, just quiet rooms and good food.',
     imageSrc: '/images/trip-luxury.webp',
   },
   {
@@ -149,7 +149,7 @@ export const hotels: Property[] = [
     bestFor: 'short',
     highlight: 'Hilltop · darkest sky · suite & glass cabin mix',
     description:
-      'A hybrid property — classic hotel rooms plus glass-roofed cabins on the highest point above Saariselkä. Effectively zero light pollution. The hotel rooms get the same hilltop view through an oversized window and run roughly 40% cheaper than the cabins.',
+      'A hybrid property: classic hotel rooms plus glass-roofed cabins on the highest point above Saariselkä. Effectively zero light pollution. The hotel rooms get the same hilltop view through an oversized window and run roughly 40% cheaper than the cabins.',
     imageSrc: '/images/hero-glass-igloos.webp',
   },
 ];
@@ -164,7 +164,7 @@ export const glassIgloos: Property[] = [
     bestFor: 'short',
     highlight: 'The original glass igloo · 1973 · Kelo-Glass available',
     description:
-      'The resort that invented the modern glass igloo in 1973. Choose Kelo-Glass over the classic Glass Igloos — Kelo pairs the panoramic glass roof with a heated log structure, kitchenette and fireplace. Two-night minimum gets the most out of it.',
+      'The resort that invented the modern glass igloo in 1973. Choose Kelo-Glass over the classic Glass Igloos: Kelo pairs the panoramic glass roof with a heated log structure, kitchenette and fireplace. Two-night minimum gets the most out of it.',
     imageSrc: '/images/pick-kakslauttanen.webp',
   },
   {
@@ -197,7 +197,7 @@ export const glassIgloos: Property[] = [
     bestFor: 'short',
     highlight: 'Pyramid cabins · lake reflections',
     description:
-      'Pyramid-shaped glass-front cabins on the shore of Lake Inari. The frozen lake reflects the auroral arc when wind drops below 3 m/s — a viewing geometry no other Finnish property delivers.',
+      'Pyramid-shaped glass-front cabins on the shore of Lake Inari. The frozen lake reflects the auroral arc when wind drops below 3 m/s, a viewing geometry no other Finnish property delivers.',
     imageSrc: '/images/pick-aurora-pyramids.webp',
   },
 ];
@@ -207,12 +207,12 @@ export const wilderness: Property[] = [
   {
     slug: 'iso-syote-eagle',
     name: 'Iso-Syöte Eagle View Suites',
-    location: 'Iso-Syöte (Pudasjärvi)',
+    location: 'Iso-Syöte (Pudasjärvi, just south of Lapland)',
     priceRange: '€500–950',
     bestFor: 'short',
     highlight: 'Above-treeline · accessible from Oulu',
     description:
-      'Pine-built suites at 432 m on the Iso-Syöte fell — the southernmost real fell in Lapland. Above-the-treeline aurora viewing without the long flight to Saariselkä, and 90 minutes from Oulu airport.',
+      'Pine-built suites at 432 m on the Iso-Syöte fell, the southernmost real fell in Finland. Above-the-treeline aurora viewing without the long flight to Saariselkä, and 90 minutes from Oulu airport.',
     imageSrc: '/images/hero-wilderness.webp',
   },
   {
@@ -223,7 +223,7 @@ export const wilderness: Property[] = [
     bestFor: 'short',
     highlight: 'Aurora wake-up service · hotel comforts',
     description:
-      'Aurora cabins with full-wall glass facing the surrounding fells. On-site aurora hunters wake guests when activity rises — useful since most aurora windows happen well after midnight. Hotel comforts in a wilderness location.',
+      'Aurora cabins with full-wall glass facing the surrounding fells. On-site aurora hunters wake guests when activity rises, useful since most aurora windows happen well after midnight. Hotel comforts in a wilderness location.',
     imageSrc: '/images/hero-aurora-cabins.webp',
   },
 ];
@@ -246,9 +246,9 @@ export const destinations: DestinationInfo[] = [
   {
     slug: 'rovaniemi',
     name: 'Rovaniemi',
-    pitch: 'The capital of Finnish Lapland — the only Lapland city with a real winter restaurant scene, a working airport hub and a year-round design culture.',
+    pitch: 'The capital of Finnish Lapland, the only Lapland city with a real winter restaurant scene, a working airport hub and a year-round design culture.',
     longStayAngle:
-      'The right base if your long stay involves work-from-Lapland weekdays and weekend trips north — fast wifi, Stockholm-direct flights, restaurants open in shoulder season.',
+      'The right base if your long stay involves work-from-Lapland weekdays and weekend trips north: fast wifi, Stockholm-direct flights, restaurants open in shoulder season.',
     propertyNames: ['Arctic TreeHouse Resort', 'Arctic Light Hotel', 'Lapland Hotels Ounasvaara Chalets'],
     imageSrc: '/images/hero-cabins.webp',
   },
@@ -258,7 +258,7 @@ export const destinations: DestinationInfo[] = [
     pitch: 'Finland\'s largest ski resort with the deepest selection of ski-in/out apartments and a real village high street.',
     longStayAngle:
       'Long-stay sense: ski-in/out apartments rent by the week from December through April. The lift system runs daily, the village restaurants open every night, you can do a proper season here.',
-    propertyNames: ['Levi Spirit', 'Levi Residences — Penthouse Suites', 'Levin Iglut'],
+    propertyNames: ['Levi Spirit', 'Levi Residences: Penthouse Suites', 'Levin Iglut'],
     imageSrc: '/images/hero-long-stays.webp',
   },
   {
@@ -276,7 +276,7 @@ export const destinations: DestinationInfo[] = [
     pitch: 'Sami cultural capital, Lake Inari (1 084 km²), the most northern long-stay base in Finland.',
     longStayAngle:
       'Long-stay sense: the lake itself is the activity. Ice fishing every morning, cross-country across the frozen lake, Inari Sami Museum and SIIDA cultural centre on doorstep.',
-    propertyNames: ['Wilderness Hotel Nangu — Lakeside Villas', 'Aurora Pyramids', 'Aurora Village'],
+    propertyNames: ['Wilderness Hotel Nangu: Lakeside Villas', 'Aurora Pyramids', 'Aurora Village'],
     imageSrc: '/images/pick-aurora-pyramids.webp',
   },
   {
@@ -291,8 +291,8 @@ export const destinations: DestinationInfo[] = [
 ];
 
 export const allCategoriesSummary = [
-  { slug: 'long-stays',   name: 'Long Stays',        count: longStays.length,   description: 'Weekly + monthly rentals — villas, design cabins, ski apartments.', imageSrc: '/images/hero-long-stays.webp' },
+  { slug: 'long-stays',   name: 'Long Stays',        count: longStays.length,   description: 'Weekly + monthly rentals: villas, design cabins, ski apartments.', imageSrc: '/images/hero-long-stays.webp' },
   { slug: 'hotels',       name: 'Hotels',            count: hotels.length,      description: 'Boutique, design and classic Lapland hotels for short stays.',     imageSrc: '/images/hero-hotels.webp' },
-  { slug: 'glass-igloos', name: 'Glass Igloos',      count: glassIgloos.length, description: 'The iconic Lapland format — four resorts that earn the name.',     imageSrc: '/images/hero-glass-igloos.webp' },
-  { slug: 'wilderness',   name: 'Wilderness Lodges', count: wilderness.length,  description: 'Past the last road — remote retreats for serious travellers.',      imageSrc: '/images/hero-wilderness.webp' },
+  { slug: 'glass-igloos', name: 'Glass Igloos',      count: glassIgloos.length, description: 'The iconic Lapland format: four resorts that earn the name.',     imageSrc: '/images/hero-glass-igloos.webp' },
+  { slug: 'wilderness',   name: 'Wilderness Lodges', count: wilderness.length,  description: 'Past the last road: remote retreats for serious travellers.',      imageSrc: '/images/hero-wilderness.webp' },
 ] as const;

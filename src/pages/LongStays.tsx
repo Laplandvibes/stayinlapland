@@ -77,7 +77,7 @@ export default function LongStays() {
         title={ls.pageHero.title}
         subtitle={ls.pageHero.subtitle}
         imageSrc="/images/hero-long-stays.webp"
-        imageAlt="Lakeside Finnish log cabin in winter — long-stay rental setting"
+        imageAlt="Lakeside Finnish log cabin in winter, long-stay rental setting"
       />
 
       <section className="py-12 sm:py-16 px-5 sm:px-6">
@@ -96,7 +96,7 @@ export default function LongStays() {
             location={editorsPick.location}
             priceRange={editorsPick.priceRange}
             imageSrc={editorsPick.imageSrc ?? '/images/hero-long-stays.webp'}
-            imageAlt="Design suites at the forest edge — long-stay rental setting in winter golden hour"
+            imageAlt="Design suites at the forest edge, long-stay rental setting in winter golden hour"
             sidPrefix="ls"
             whyParagraphs={ls.pickWhy}
             caveat={ls.pickCaveat}

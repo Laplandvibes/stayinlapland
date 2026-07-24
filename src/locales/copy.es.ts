@@ -27,7 +27,7 @@ export const copyES: SectionCopy = {
     h1Line2: 'que una semana de vacaciones.',
     lead: 'Cabañas por semanas, hoteles boutique en Rovaniemi, iglús de cristal para esa noche soñada, y los refugios silvestres más allá de la última carretera. Tarifas verificadas desde',
     leadPriceRange: '140 € hasta 2 800 €',
-    liveLabel: 'Disponibilidad en vivo · búsqueda Hotels.com',
+    liveLabel: 'Disponibilidad en vivo · búsqueda Trip.com',
     browseLongStays: 'Ver larga estancia',
     seeHotels: 'Ver hoteles',
   },
@@ -101,7 +101,7 @@ export const copyES: SectionCopy = {
     h2A: '¿Buscas vivienda de verdad,',
     h2B: 'no un alquiler corto?',
     lead:
-      'Los alojamientos de este sitio son alquileres de corto o medio plazo a través de Hotels.com, la solución correcta para viajes de hasta cuatro semanas. Para 6 meses, un año o una mudanza permanente necesitas portales de alquiler finlandeses. Estas son las seis fuentes más activas en Laponia.',
+      'Los alojamientos de este sitio son alquileres de corto o medio plazo a través de nuestro socio de reservas, la solución correcta para viajes de hasta cuatro semanas. Para 6 meses, un año o una mudanza permanente necesitas portales de alquiler finlandeses. Estas son las seis fuentes más activas en Laponia.',
     process: {
       title: 'Proceso típico',
       body:
@@ -266,7 +266,7 @@ export const copyES: SectionCopy = {
     counterP2: 'Para una sola noche de auroras de lista de deseos, ganan los iglús de cristal. Ninguno de los hoteles de arriba tiene techo de vidrio.',
     seeLong: 'Ver larga estancia',
     seeIgloos: 'Ver iglús de cristal',
-    browseAll: 'Buscar en Hotels.com',
+    browseAll: 'Buscar en Trip.com',
   },
   bookingGuide: {
     metaTitle: 'Guía de reservas de Laponia, cuándo, cómo, qué llevar',
@@ -319,7 +319,7 @@ export const copyES: SectionCopy = {
         body: [
           'La mayoría de los alojamientos laponeses han pasado a tarifas no reembolsables en las semanas de máxima demanda. Lee la letra pequeña antes de pulsar "reservar".',
           'Un seguro de viaje con cancelación por cualquier motivo merece de verdad la pena en viajes de más de 2 000 €. Los cazadores de auroras cancelan por el tiempo a todas horas.',
-          'Hotels.com y Booking.com respetan sus políticas de cancelación públicas, reserva a través de la redirección de este sitio para mantener la tarifa visible y coherente.',
+          'Nuestros socios de reservas respetan las condiciones de cancelación mostradas al reservar, reserva a través de la redirección de este sitio para mantener la tarifa visible y coherente.',
         ],
       },
       {
@@ -333,7 +333,7 @@ export const copyES: SectionCopy = {
     ],
     readyTitle: '¿Listo para reservar?',
     readyLead:
-      'Explora alojamientos seleccionados por categoría o salta directamente a la disponibilidad en vivo en Hotels.com.',
+      'Explora alojamientos seleccionados por categoría o salta directamente a la disponibilidad en vivo en Trip.com.',
     browseAll: 'Ver todos los alojamientos de Laponia',
   },
   whenToGo: {
@@ -452,9 +452,9 @@ export const copyES: SectionCopy = {
     checkRates: 'Ver tarifas',
     seeAll: 'Ver todo',
     liveAvailabilityIn: (n) => `¿Buscas disponibilidad en vivo en ${n}?`,
-    networkLeadA: 'Nuestra red clasifica solo 17 alojamientos. Hotels.com lista todo lo demás que funciona en ',
+    networkLeadA: 'Nuestra red clasifica solo 17 alojamientos. Trip.com lista todo lo demás que funciona en ',
     networkLeadB: ' este invierno, fechas flexibles, filtros por equipamiento, oferta completa.',
-    browseInDest: (n) => `Buscar en Hotels.com, ${n}`,
+    browseInDest: (n) => `Buscar en Trip.com, ${n}`,
     bucketLabels: {
       'long-stays': 'larga estancia',
       'hotels': 'hoteles',
@@ -510,7 +510,7 @@ export const copyES: SectionCopy = {
       'En Navidad (22 dic. → 2 ene.) los precios se triplican y el 90 % del inventario va a los circuitos organizados británicos antes de la primavera. Mueve las fechas a la segunda mitad de enero si puedes, más frío, más oscuro, la mitad de precio, mejores auroras.',
     seeLong: 'Ver larga estancia',
     bookingGuideBtn: 'Guía de reservas',
-    browseAll: 'Buscar en Hotels.com',
+    browseAll: 'Buscar en Trip.com',
   },
   wilderness: {
     metaTitle: 'Refugios silvestres en la Laponia finlandesa | StayInLapland',
@@ -525,12 +525,12 @@ export const copyES: SectionCopy = {
     },
     authorNote: 'Los datos de ambos alojamientos se han verificado con la información publicada por los operadores y reseñas recientes de huéspedes.',
     pickWhy: [
-      'Las suites Iso-Syöte Eagle View se alzan a 432 m en el fjell más meridional de la verdadera Laponia, suites de madera de pino con observación de auroras por encima del límite de los árboles y sin el largo vuelo al norte.',
+      'Las suites Iso-Syöte Eagle View se alzan a 432 m en el fjell de verdad más meridional de Finlandia, suites de madera de pino con observación de auroras por encima del límite de los árboles y sin el largo vuelo al norte.',
       'Las fachadas de cristal miran al cielo abierto, así que en una noche despejada el arco auroral se lee desde la cama. Observas la aurora desde tu propia suite en la cresta y no desde un refugio compartido, privacidad sin el compromiso de un alquiler completo.',
       'Y es el refugio silvestre serio más fácil de alcanzar: a 90 minutos del aeropuerto de Oulu, lo que lo convierte en el raro retiro que funciona incluso para un viaje corto.',
     ],
     pickCaveat:
-      'El botón "ver tarifas" de este sitio lleva a una búsqueda en Hotels.com del alojamiento reservable más cercano. Las Eagle View Suites se agotan antes los fines de semana de cielo despejado, reserva las fechas, no el pronóstico.',
+      'El botón "ver tarifas" de este sitio lleva a una búsqueda en Trip.com del alojamiento reservable más cercano. Las Eagle View Suites se agotan antes los fines de semana de cielo despejado, reserva las fechas, no el pronóstico.',
     pullQuote: {
       text:
         'La palabra "remoto" suele ser lenguaje de marketing. Aquí arriba es cierto. La carretera se acaba, el límite de los árboles queda por debajo de ti y la única luz que queda es la que el cielo decide hacer. A un lugar así no te presentas sin más, te comprometes con él.',
@@ -557,7 +557,7 @@ export const copyES: SectionCopy = {
     counterP2:
       'Para quien viaja al Ártico por primera vez: haz antes un viaje a Rovaniemi o Saariselkä. Un refugio silvestre de alquiler completo se desperdicia en alguien que aún está descubriendo qué es el −25 °C.',
     seeLong: 'Ver larga estancia',
-    browseAll: 'Buscar en Hotels.com',
+    browseAll: 'Buscar en Trip.com',
   },
   longStays: {
     metaTitle: 'Larga estancia en la Laponia finlandesa | StayInLapland',
@@ -607,7 +607,7 @@ export const copyES: SectionCopy = {
       'Para grupos con movilidad mixta, llama directamente al alojamiento antes de reservar, la mayoría de las cabañas de larga estancia no son accesibles sin escalones, y el sauna en particular suele estar en el sótano, sobre suelo de madera.',
     seeHotels: 'Ver hoteles',
     seeIgloos: 'Ver iglús de cristal',
-    browseAll: 'Buscar en Hotels.com',
+    browseAll: 'Buscar en Trip.com',
   },
   hotelsData: [
     {
@@ -716,10 +716,10 @@ export const copyES: SectionCopy = {
   wildernessData: [
     {
       name: 'Iso-Syöte Eagle View Suites',
-      location: 'Iso-Syöte (Pudasjärvi)',
+      location: 'Iso-Syöte (Pudasjärvi, justo al sur de Laponia)',
       highlight: 'Por encima del límite de los árboles · accesible desde Oulu',
       description:
-        'Suites de pino a 432 m en el fjell de Iso-Syöte, el fjell de verdad más meridional de Laponia. Observación de auroras por encima del límite de los árboles sin el largo vuelo a Saariselkä, y a 90 minutos del aeropuerto de Oulu.',
+        'Suites de pino a 432 m en el fjell de Iso-Syöte, el fjell de verdad más meridional de Finlandia. Observación de auroras por encima del límite de los árboles sin el largo vuelo a Saariselkä, y a 90 minutos del aeropuerto de Oulu.',
     },
     {
       name: 'Wilderness Hotel Muotka',

@@ -20,7 +20,7 @@ export const copyFI: SectionCopy = {
     lead:
       'Mökkejä viikoittaisilla hinnoilla, design-hotelleja Rovaniemellä, lasi-iglut bucket-list-öihin, ja erämaalodget viimeisen tien jälkeen. Varmistetut hinnat alkaen',
     leadPriceRange: '140 € – 2 800 €',
-    liveLabel: 'Reaaliaikainen saatavuus · Hotels.com-haku',
+    liveLabel: 'Reaaliaikainen saatavuus · Sembo-haku',
     browseLongStays: 'Katso pitkät jaksot',
     seeHotels: 'Katso hotellit',
   },
@@ -96,7 +96,7 @@ export const copyFI: SectionCopy = {
     h2A: 'Etsitkö oikeaa asuntoa,',
     h2B: 'et lyhytaikaista vuokrausta?',
     lead:
-      'Tämän sivuston kohteet ovat lyhyt- tai keskipitkän aikavälin vuokrauksia Hotels.comin kautta, oikea ratkaisu enintään neljän viikon matkoille. 6 kuukauden, vuoden tai pysyvän muuton kohdalla tarvitset suomalaisia vuokraportaaleja. Tässä Lapin osalta aktiivisimmat kuusi.',
+      'Tämän sivuston kohteet ovat lyhyt- tai keskipitkän aikavälin vuokrauksia majoituskumppanimme kautta, oikea ratkaisu enintään neljän viikon matkoille. 6 kuukauden, vuoden tai pysyvän muuton kohdalla tarvitset suomalaisia vuokraportaaleja. Tässä Lapin osalta aktiivisimmat kuusi.',
     process: {
       title: 'Tyypillinen prosessi',
       body:
@@ -261,7 +261,7 @@ export const copyFI: SectionCopy = {
       'Yhteen revontuli-bucket-list-yöhön lasi-iglut voittavat. Yhdelläkään ylläolevista hotelleista ei ole lasikattoa.',
     seeLong: 'Katso pitkät jaksot',
     seeIgloos: 'Katso lasi-iglut',
-    browseAll: 'Selaa Hotels.comin tarjontaa',
+    browseAll: 'Selaa Sembon tarjontaa',
   },
   glassIgloos: {
     metaTitle: 'Lasi-iglut Suomen Lapissa | StayInLapland',
@@ -312,7 +312,7 @@ export const copyFI: SectionCopy = {
       'Jouluna (22.12. → 2.1.) hinnat kolminkertaistuvat ja 90 % tarjonnasta menee brittiläisten pakettimatkoihin kevääseen mennessä. Siirrä päiviä mahdollisuuksien mukaan tammikuun jälkipuoliskolle, kylmempi, pimeämpi, puolet hinnasta, paremmat revontulet.',
     seeLong: 'Katso pitkät jaksot',
     bookingGuideBtn: 'Varausopas',
-    browseAll: 'Selaa Hotels.comin tarjontaa',
+    browseAll: 'Selaa Sembon tarjontaa',
   },
   wilderness: {
     metaTitle: 'Erämaalodget Suomen Lapissa | StayInLapland',
@@ -333,7 +333,7 @@ export const copyFI: SectionCopy = {
       'Se on myös helpoiten saavutettava vakava erämaalodge: 90 minuuttia Oulun lentokentältä, mikä tekee siitä harvinaisen retreatin, joka toimii lyhyelläkin matkalla.',
     ],
     pickCaveat:
-      'Tämän sivuston ”tarkista hinnat” -nappi reitittää Hotels.com-hakuun lähimpään varattavissa olevaan tarjontaan. Eagle View -sviitit täyttyvät nopeimmin kirkkaina viikonloppuina, varaa päivät, älä sääennustetta.',
+      'Tämän sivuston ”tarkista hinnat” -nappi reitittää Sembo-hakuun lähimpään varattavissa olevaan tarjontaan. Eagle View -sviitit täyttyvät nopeimmin kirkkaina viikonloppuina, varaa päivät, älä sääennustetta.',
     pullQuote: {
       text:
         'Sana ”syrjäinen” on yleensä markkinointikieltä. Täällä ylhäällä se on totta. Tie loppuu, puuraja jää allesi, ja ainoa valo on se, minkä taivas päättää tehdä. Tällaiseen paikkaan ei vain pörhälletä, siihen sitoudutaan.',
@@ -360,7 +360,7 @@ export const copyFI: SectionCopy = {
     counterP2:
       'Ensimmäistä kertaa arktiselle matkaaville: tee Rovaniemen tai Saariselän matka ensin. Koko vuokrauksena varattava erämaalodge menee hukkaan jollekulle, joka opettelee vielä -25°C:n vaatetusta.',
     seeLong: 'Katso pitkät jaksot',
-    browseAll: 'Selaa Hotels.comin tarjontaa',
+    browseAll: 'Selaa Sembon tarjontaa',
   },
   longStays: {
     metaTitle: 'Pitkät jaksot Suomen Lapissa | StayInLapland',
@@ -410,7 +410,7 @@ export const copyFI: SectionCopy = {
       'Liikkuvuudeltaan eritasoisille ryhmille soita kohteeseen suoraan ennen varausta, useimmat pitkän jakson mökit eivät ole esteettömiä, ja erityisesti saunat sijaitsevat kellaritasossa puulattialla.',
     seeHotels: 'Katso hotellit',
     seeIgloos: 'Katso lasi-iglut',
-    browseAll: 'Selaa Hotels.comin tarjontaa',
+    browseAll: 'Selaa Sembon tarjontaa',
   },
   bookingGuide: {
     metaTitle: 'Lapin varausopas, milloin, miten, mitä pakata',
@@ -463,7 +463,7 @@ export const copyFI: SectionCopy = {
         body: [
           'Useimmat Lapin kohteet ovat siirtyneet ei-palautuviin hintoihin huippuviikoiksi. Lue pieni printti ennen ”varaa”-painalluksen klikkausta.',
           'Matkavakuutus, jossa peru-mistä-syystä-tahansa-kattavuus, on aidosti hintansa arvoinen yli 2 000 € matkoilla. Revontulen­metsästäjät peruuttavat sään takia jatkuvasti.',
-          'Hotels.com ja Booking.com noudattavat molemmat julkisia peruutusehtojaan, varaa tämän sivuston uudelleenohjauksen kautta pitääksesi hinnan näkyvänä ja yhdenmukaisena.',
+          'Varauskumppanimme noudattavat varausvaiheessa näkyviä peruutusehtoja, varaa tämän sivuston uudelleenohjauksen kautta pitääksesi hinnan näkyvänä ja yhdenmukaisena.',
         ],
       },
       {
@@ -477,7 +477,7 @@ export const copyFI: SectionCopy = {
     ],
     readyTitle: 'Valmis varaamaan?',
     readyLead:
-      'Selaa käsin valittuja kohteita kategorioittain tai siirry suoraan reaaliaikaiseen saatavuuteen Hotels.comissa.',
+      'Selaa käsin valittuja kohteita kategorioittain tai siirry suoraan reaaliaikaiseen saatavuuteen Sembossa.',
     browseAll: 'Selaa kaikkia Lapin majoituksia',
   },
   whenToGo: {
@@ -595,9 +595,9 @@ export const copyFI: SectionCopy = {
     checkRates: 'Tarkista hinnat',
     seeAll: 'Katso kaikki',
     liveAvailabilityIn: (n) => `Etsitkö reaaliaikaista saatavuutta kohteesta ${n}?`,
-    networkLeadA: 'Verkostomme luokittelee vain 17 kohdetta. Hotels.com listaa kaiken muun, mikä toimii kohteessa ',
+    networkLeadA: 'Verkostomme luokittelee vain 17 kohdetta. Sembo listaa kaiken muun, mikä toimii kohteessa ',
     networkLeadB: ' tänä talvena, joustavat päivät, suodatus varustelun mukaan, koko tarjonta.',
-    browseInDest: (n) => `Selaa Hotels.com, ${n}`,
+    browseInDest: (n) => `Selaa Semboa, ${n}`,
     bucketLabels: {
       'long-stays': 'pitkät jaksot',
       'hotels': 'hotellit',
@@ -712,10 +712,10 @@ export const copyFI: SectionCopy = {
   wildernessData: [
     {
       name: 'Iso-Syöte Eagle View -sviitit',
-      location: 'Iso-Syöte (Pudasjärvi)',
+      location: 'Iso-Syöte (Pudasjärvi, heti Lapin eteläpuolella)',
       highlight: 'Tunturilatvalla · saavutettavissa Oulusta',
       description:
-        'Mäntyrakenteiset sviitit 432 metrissä Iso-Syötteen tunturilla, eteläisin oikea tunturi Lapissa. Tunturilatvan revontulikatselu ilman pitkää lentoa Saariselälle, ja 90 minuuttia Oulun lentokentästä.',
+        'Mäntyrakenteiset sviitit 432 metrissä Iso-Syötteen tunturilla, Suomen eteläisin oikea tunturi. Tunturilatvan revontulikatselu ilman pitkää lentoa Saariselälle, ja 90 minuuttia Oulun lentokentästä.',
     },
     {
       name: 'Wilderness Hotel Muotka',

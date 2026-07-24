@@ -27,7 +27,7 @@ export const copySV: SectionCopy = {
     lead:
       'Stugor per vecka, designhotell i Rovaniemi, glasiglor för bucketlist-nätterna och vildmarkslodgerna bortom sista vägen. Verifierade priser från',
     leadPriceRange: '140 € till 2 800 €',
-    liveLabel: 'Live tillgänglighet · Hotels.com-sökning',
+    liveLabel: 'Live tillgänglighet · Trip.com-sökning',
     browseLongStays: 'Se långtidsvistelser',
     seeHotels: 'Se hotell',
   },
@@ -82,7 +82,7 @@ export const copySV: SectionCopy = {
     h2A: 'Söker du ett riktigt hem,',
     h2B: 'inte korttidshyra?',
     lead:
-      'Boendena på den här sidan är kort- till medellång hyra, bokade via Hotels.com, rätt svar för resor upp till fyra veckor. För 6 månader, ett år eller en permanent flytt behöver du de finska hyresportalerna för landsbygden. Här är de sex mest aktiva för utbudet i Lappland.',
+      'Boendena på den här sidan är kort- till medellång hyra, bokade via vår bokningspartner, rätt svar för resor upp till fyra veckor. För 6 månader, ett år eller en permanent flytt behöver du de finska hyresportalerna för landsbygden. Här är de sex mest aktiva för utbudet i Lappland.',
     process: {
       title: 'Vanlig process',
       body:
@@ -248,7 +248,7 @@ export const copySV: SectionCopy = {
     counterP2: 'För en enda bucketlist-natt med norrsken vinner glasiglor. Inget av hotellen ovan har glastak.',
     seeLong: 'Se långtidsvistelser',
     seeIgloos: 'Se glasiglor',
-    browseAll: 'Se utbudet på Hotels.com',
+    browseAll: 'Se utbudet på Trip.com',
   },
   glassIgloos: {
     metaTitle: 'Glasiglor i finska Lappland | StayInLapland',
@@ -299,7 +299,7 @@ export const copySV: SectionCopy = {
       'Kring jul (22 dec → 2 jan) tredubblas priserna och 90 % av utbudet går till brittiska paketresor till våren. Flytta dina datum om möjligt till andra halvan av januari, kallare, mörkare, hälften så dyrt, bättre norrsken.',
     seeLong: 'Se långtidsvistelser',
     bookingGuideBtn: 'Bokningsguide',
-    browseAll: 'Se utbudet på Hotels.com',
+    browseAll: 'Se utbudet på Trip.com',
   },
   wilderness: {
     metaTitle: 'Vildmarkslodger i finska Lappland | StayInLapland',
@@ -315,12 +315,12 @@ export const copySV: SectionCopy = {
     authorNote:
       'Uppgifterna för båda boendena är verifierade mot publicerad information från operatörerna och färska gästrecensioner.',
     pickWhy: [
-      'Iso-Syöte Eagle View Suites ligger på 432 m på Lapplands sydligaste riktiga fjäll, sviter byggda i furu med norrskensskådning ovanför trädgränsen och utan den långa flygturen norrut.',
+      'Iso-Syöte Eagle View Suites ligger på 432 m på Finlands sydligaste riktiga fjäll, sviter byggda i furu med norrskensskådning ovanför trädgränsen och utan den långa flygturen norrut.',
       'Glasfasaderna vetter mot öppen himmel, så att norrskensbågen syns från sängen en klar natt. Du ser norrskenet från din egen svit på fjällryggen i stället för ett gemensamt skydd, avskildhet utan att behöva boka hela stället.',
       'Och det är den lättast nåbara seriösa vildmarkslodgen: 90 minuter från flygplatsen i Uleåborg, vilket gör den till den ovanliga retreat som fungerar även för en kort resa.',
     ],
     pickCaveat:
-      'Knappen ”se priser” på den här sidan leder till en Hotels.com-sökning för närmaste bokningsbara utbud. Eagle View Suites blir snabbast slutsålda på helger med klar himmel, boka datumen, inte väderprognosen.',
+      'Knappen ”se priser” på den här sidan leder till en Trip.com-sökning för närmaste bokningsbara utbud. Eagle View Suites blir snabbast slutsålda på helger med klar himmel, boka datumen, inte väderprognosen.',
     pullQuote: {
       text:
         'Ordet ”avlägset” är oftast marknadsföring. Häruppe är det sant. Vägen tar slut, trädgränsen sjunker under dig, och det enda ljus som återstår är det himlen väljer att skapa. På en sådan plats tittar man inte bara förbi, man förbinder sig.',
@@ -347,7 +347,7 @@ export const copySV: SectionCopy = {
     counterP2:
       'För den som reser till Arktis för första gången: gör en resa till Rovaniemi eller Saariselkä först. En vildmarkslodge bokad i sin helhet är bortkastad på någon som fortfarande listar ut vad −25 °C är.',
     seeLong: 'Se långtidsvistelser',
-    browseAll: 'Se utbudet på Hotels.com',
+    browseAll: 'Se utbudet på Trip.com',
   },
   longStays: {
     metaTitle: 'Långtidsvistelser i finska Lappland | StayInLapland',
@@ -397,7 +397,7 @@ export const copySV: SectionCopy = {
       'För grupper med blandad rörlighet ringer du boendet direkt i förväg, de flesta långtidsstugor är inte tröskelfria, och just bastun ligger ofta i källaren på ett trägolv.',
     seeHotels: 'Se hotell',
     seeIgloos: 'Se glasiglor',
-    browseAll: 'Se utbudet på Hotels.com',
+    browseAll: 'Se utbudet på Trip.com',
   },
   bookingGuide: {
     metaTitle: 'Lapplands bokningsguide, när, hur, vad du packar',
@@ -450,7 +450,7 @@ export const copySV: SectionCopy = {
         body: [
           'De flesta boenden i Lappland har för toppveckorna gått över till återbetalningsfria priser. Läs det finstilta innan du klickar på ”boka”.',
           'En reseförsäkring med ”avboka av vilken anledning som helst”-skydd är verkligen värd det för resor över 2 000 €. Norrskensjägare avbokar hela tiden på grund av vädret.',
-          'Hotels.com och Booking.com respekterar båda sina offentliga avbokningsvillkor, boka via omdirigeringen på den här sidan för att hålla priset synligt och konsekvent.',
+          'Våra bokningspartner respekterar de avbokningsvillkor som visas vid bokningen, boka via omdirigeringen på den här sidan för att hålla priset synligt och konsekvent.',
         ],
       },
       {
@@ -464,7 +464,7 @@ export const copySV: SectionCopy = {
     ],
     readyTitle: 'Redo att boka?',
     readyLead:
-      'Se noga utvalda boenden per kategori, eller hoppa direkt till live tillgänglighet på Hotels.com.',
+      'Se noga utvalda boenden per kategori, eller hoppa direkt till live tillgänglighet på Trip.com.',
     browseAll: 'Se alla boenden i Lappland',
   },
   whenToGo: {
@@ -582,9 +582,9 @@ export const copySV: SectionCopy = {
     checkRates: 'Se priser',
     seeAll: 'Se alla',
     liveAvailabilityIn: (n) => `Söka live tillgänglighet i ${n}?`,
-    networkLeadA: 'Vårt nätverk rangordnar bara 17 boenden. Hotels.com visar allt annat som är i drift i vinter i ',
+    networkLeadA: 'Vårt nätverk rangordnar bara 17 boenden. Trip.com visar allt annat som är i drift i vinter i ',
     networkLeadB: ', flexibla datum, filtrera på bekvämlighet, hela utbudet.',
-    browseInDest: (n) => `Se Hotels.com, ${n}`,
+    browseInDest: (n) => `Se Trip.com, ${n}`,
     bucketLabels: {
       'long-stays': 'långtidsvistelser',
       'hotels': 'hotell',
@@ -728,10 +728,10 @@ export const copySV: SectionCopy = {
   wildernessData: [
     {
       name: 'Iso-Syöte Eagle View Suites',
-      location: 'Iso-Syöte (Pudasjärvi)',
+      location: 'Iso-Syöte (Pudasjärvi, strax söder om Lappland)',
       highlight: 'Ovanför trädgränsen · nåbar från Uleåborg',
       description:
-        'Furusviter på 432 m på Iso-Syötefjället, det sydligaste riktiga fjället i Lappland. Norrskensskådning ovanför trädgränsen utan den långa flygturen till Saariselkä, och 90 minuter från flygplatsen i Uleåborg.',
+        'Furusviter på 432 m på Iso-Syötefjället, det sydligaste riktiga fjället i Finland. Norrskensskådning ovanför trädgränsen utan den långa flygturen till Saariselkä, och 90 minuter från flygplatsen i Uleåborg.',
     },
     {
       name: 'Wilderness Hotel Muotka',

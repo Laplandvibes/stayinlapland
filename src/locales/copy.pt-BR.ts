@@ -27,7 +27,7 @@ export const copyPTBR: SectionCopy = {
     h1Line2: 'que uma semana de férias.',
     lead: 'Cabanas por semana, hotéis boutique em Rovaniemi, iglus de vidro para aquela noite especial, e os refúgios silvestres além da última estrada. Tarifas verificadas a partir de',
     leadPriceRange: '140 € até 2 800 €',
-    liveLabel: 'Disponibilidade ao vivo · busca Hotels.com',
+    liveLabel: 'Disponibilidade ao vivo · busca Trip.com',
     browseLongStays: 'Ver longa duração',
     seeHotels: 'Ver hotéis',
   },
@@ -101,7 +101,7 @@ export const copyPTBR: SectionCopy = {
     h2A: 'Procurando uma moradia de verdade,',
     h2B: 'não um aluguel de curta duração?',
     lead:
-      'As propriedades deste site são aluguéis de curto e médio prazo via Hotels.com, a resposta certa para viagens de até quatro semanas. Para mudanças de 6 meses, um ano ou permanentes, você precisa dos portais imobiliários finlandeses. Aqui estão os seis mais ativos na Lapônia.',
+      'As propriedades deste site são aluguéis de curto e médio prazo via nosso parceiro de reservas, a resposta certa para viagens de até quatro semanas. Para mudanças de 6 meses, um ano ou permanentes, você precisa dos portais imobiliários finlandeses. Aqui estão os seis mais ativos na Lapônia.',
     process: {
       title: 'O processo típico',
       body:
@@ -266,7 +266,7 @@ export const copyPTBR: SectionCopy = {
     counterP2: 'Para uma única noite de aurora na lista dos sonhos, os iglus de vidro vencem. Nenhum dos hotéis acima tem teto de vidro.',
     seeLong: 'Ver estadias longas',
     seeIgloos: 'Ver iglus de vidro',
-    browseAll: 'Ver toda a oferta do Hotels.com',
+    browseAll: 'Ver toda a oferta da Trip.com',
   },
   longStays: {
     metaTitle: 'Estadias longas na Lapônia finlandesa | StayInLapland',
@@ -316,7 +316,7 @@ export const copyPTBR: SectionCopy = {
       'Para grupos com mobilidade mista, ligue direto para a propriedade antes de reservar, a maioria das cabanas de estadia longa não é sem degraus, e a sauna em particular costuma ficar no porão, sobre piso de madeira.',
     seeHotels: 'Ver hotéis',
     seeIgloos: 'Ver iglus de vidro',
-    browseAll: 'Ver toda a oferta do Hotels.com',
+    browseAll: 'Ver toda a oferta da Trip.com',
   },
   glassIgloos: {
     metaTitle: 'Iglus de vidro na Lapônia finlandesa | StayInLapland',
@@ -367,7 +367,7 @@ export const copyPTBR: SectionCopy = {
       'No Natal (22 dez. → 2 jan.) os preços triplicam e 90% da oferta vai para os pacotes turísticos britânicos antes da primavera. Mude as datas para a segunda metade de janeiro, se puder, mais frio, mais escuro, metade do preço, aurora melhor.',
     seeLong: 'Ver estadias longas',
     bookingGuideBtn: 'Guia de reservas',
-    browseAll: 'Ver toda a oferta do Hotels.com',
+    browseAll: 'Ver toda a oferta da Trip.com',
   },
   wilderness: {
     metaTitle: 'Lodges na natureza da Lapônia | StayInLapland',
@@ -383,12 +383,12 @@ export const copyPTBR: SectionCopy = {
     authorNote:
       'Os dados das duas propriedades foram verificados com as informações publicadas pelos operadores e avaliações recentes de hóspedes.',
     pickWhy: [
-      'As suítes Iso-Syöte Eagle View ficam a 432 m no fjell mais ao sul da verdadeira Lapônia, suítes de pinho com observação de aurora acima da linha das árvores e sem o longo voo até o norte.',
+      'As suítes Iso-Syöte Eagle View ficam a 432 m no fjell de verdade mais ao sul da Finlândia, suítes de pinho com observação de aurora acima da linha das árvores e sem o longo voo até o norte.',
       'As fachadas de vidro dão para o céu aberto, então, em uma noite limpa, o arco auroral se lê da própria cama. Você observa a aurora da sua suíte no alto da crista, e não de um abrigo compartilhado, privacidade sem o compromisso de uma ocupação exclusiva.',
       'E é o lodge na natureza sério mais fácil de alcançar: a 90 minutos do aeroporto de Oulu, o que o torna o raro refúgio que funciona até para uma viagem curta.',
     ],
     pickCaveat:
-      'O botão "ver tarifas" deste site leva a uma busca no Hotels.com pela oferta reservável mais próxima. As Eagle View Suites esgotam primeiro nos fins de semana de céu limpo, reserve as datas, não a previsão.',
+      'O botão "ver tarifas" deste site leva a uma busca na Trip.com pela oferta reservável mais próxima. As Eagle View Suites esgotam primeiro nos fins de semana de céu limpo, reserve as datas, não a previsão.',
     pullQuote: {
       text:
         'A palavra "remoto" costuma ser linguagem de marketing. Aqui em cima é verdade. A estrada acaba, a linha das árvores fica abaixo de você, e a única luz que resta é a que o céu decide criar. Num lugar assim não se aparece sem aviso, você se compromete com ele.',
@@ -415,7 +415,7 @@ export const copyPTBR: SectionCopy = {
     counterP2:
       'Para quem viaja ao Ártico pela primeira vez: faça antes uma viagem a Rovaniemi ou Saariselkä. Um lodge na natureza de ocupação exclusiva é desperdício em alguém que ainda está descobrindo o que é −25 °C.',
     seeLong: 'Ver estadias longas',
-    browseAll: 'Ver toda a oferta do Hotels.com',
+    browseAll: 'Ver toda a oferta da Trip.com',
   },
   bookingGuide: {
     metaTitle: 'Guia de reservas da Lapônia, quando, como, o que levar',
@@ -468,7 +468,7 @@ export const copyPTBR: SectionCopy = {
         body: [
           'A maioria das propriedades da Lapônia migrou para tarifas não reembolsáveis nas semanas de pico. Leia as letras miúdas antes de clicar em "reservar".',
           'Seguro de viagem com cancelamento por qualquer motivo vale muito a pena em viagens acima de 2 000 €. Caçadores de aurora cancelam por causa do tempo o tempo todo.',
-          'Hotels.com e Booking.com honram suas políticas de cancelamento públicas, reserve pelo redirecionamento deste site para manter a tarifa visível e consistente.',
+          'Nossos parceiros de reservas honram as condições de cancelamento exibidas na hora de reservar, reserve pelo redirecionamento deste site para manter a tarifa visível e consistente.',
         ],
       },
       {
@@ -482,7 +482,7 @@ export const copyPTBR: SectionCopy = {
     ],
     readyTitle: 'Pronto para reservar?',
     readyLead:
-      'Explore propriedades escolhidas a dedo por categoria ou vá direto à disponibilidade ao vivo no Hotels.com.',
+      'Explore propriedades escolhidas a dedo por categoria ou vá direto à disponibilidade ao vivo na Trip.com.',
     browseAll: 'Ver todas as hospedagens da Lapônia',
   },
   whenToGo: {
@@ -600,9 +600,9 @@ export const copyPTBR: SectionCopy = {
     checkRates: 'Ver tarifas',
     seeAll: 'Ver tudo',
     liveAvailabilityIn: (n) => `Buscar disponibilidade ao vivo em ${n}?`,
-    networkLeadA: 'Nossa rede ranqueia apenas 17 propriedades. O Hotels.com lista todo o resto que opera em ',
+    networkLeadA: 'Nossa rede ranqueia apenas 17 propriedades. A Trip.com lista todo o resto que opera em ',
     networkLeadB: ' neste inverno, datas flexíveis, filtro por comodidade, a oferta completa.',
-    browseInDest: (n) => `Buscar no Hotels.com, ${n}`,
+    browseInDest: (n) => `Buscar na Trip.com, ${n}`,
     bucketLabels: {
       'long-stays': 'estadias longas',
       'hotels': 'hotéis',
@@ -717,10 +717,10 @@ export const copyPTBR: SectionCopy = {
   wildernessData: [
     {
       name: 'Iso-Syöte Eagle View Suites',
-      location: 'Iso-Syöte (Pudasjärvi)',
+      location: 'Iso-Syöte (Pudasjärvi, logo ao sul da Lapônia)',
       highlight: 'Acima da linha das árvores · acessível a partir de Oulu',
       description:
-        'Suítes de pinho a 432 m no fjell de Iso-Syöte, o fjell de verdade mais ao sul da Lapônia. Observação de aurora acima da linha das árvores sem o longo voo até Saariselkä, e a 90 minutos do aeroporto de Oulu.',
+        'Suítes de pinho a 432 m no fjell de Iso-Syöte, o fjell de verdade mais ao sul da Finlândia. Observação de aurora acima da linha das árvores sem o longo voo até Saariselkä, e a 90 minutos do aeroporto de Oulu.',
     },
     {
       name: 'Wilderness Hotel Muotka',

@@ -19,7 +19,7 @@ export const copyEN: SectionCopy = {
     h1Line2: "Don’t just visit.",
     lead: 'Cabins by the week, design hotels in Rovaniemi, glass igloos for the bucket-list nights, and the wilderness lodges past the last road. Verified rates from',
     leadPriceRange: '€140 to €2 800',
-    liveLabel: 'Live availability · Hotels.com search',
+    liveLabel: 'Live availability · Trip.com search',
     browseLongStays: 'Browse long stays',
     seeHotels: 'See hotels',
   },
@@ -92,7 +92,7 @@ export const copyEN: SectionCopy = {
     h2A: 'Looking for a real apartment,',
     h2B: 'not a rental?',
     lead:
-      'The properties on this site are short-to-medium-term rentals booked through Hotels.com, the right answer for trips up to four weeks. For 6 months, a year, or a permanent move, you want the Finnish national rental portals. These are the six most active for Lapland inventory.',
+      'The properties on this site are short-to-medium-term rentals booked through our booking partner, the right answer for trips up to four weeks. For 6 months, a year, or a permanent move, you want the Finnish national rental portals. These are the six most active for Lapland inventory.',
     process: {
       title: 'Typical process',
       body:
@@ -254,7 +254,7 @@ export const copyEN: SectionCopy = {
     counterP2: 'For a single aurora-bucket-list night, glass igloos win. None of the hotels above have a glass roof.',
     seeLong: 'See long stays',
     seeIgloos: 'See glass igloos',
-    browseAll: 'Browse Hotels.com inventory',
+    browseAll: 'Browse Trip.com inventory',
   },
   glassIgloos: {
     metaTitle: 'Glass Igloos in Finnish Lapland | StayInLapland',
@@ -304,7 +304,7 @@ export const copyEN: SectionCopy = {
       'For Christmas (Dec 22 → Jan 2), prices triple and 90% of inventory goes to UK package tours by spring. Move dates to the second half of January if possible, colder, darker, half the price, better aurora.',
     seeLong: 'See long stays',
     bookingGuideBtn: 'Booking guide',
-    browseAll: 'Browse Hotels.com inventory',
+    browseAll: 'Browse Trip.com inventory',
   },
   wilderness: {
     metaTitle: 'Wilderness Lodges in Finnish Lapland | StayInLapland',
@@ -319,12 +319,12 @@ export const copyEN: SectionCopy = {
     },
     authorNote: 'Details for both properties verified against the operators\' published information and recent guest reviews.',
     pickWhy: [
-      'Iso-Syöte Eagle View Suites sit at 432 m on the southernmost real fell in Lapland, pine-built suites with above-the-treeline aurora viewing and none of the long flight north.',
+      'Iso-Syöte Eagle View Suites sit at 432 m on the southernmost real fell in Finland, pine-built suites with above-the-treeline aurora viewing and none of the long flight north.',
       'The glass fronts face open sky, so the auroral arc reads from the bed on a clear night. Aurora viewing is from your own ridge-top suite rather than a shared shelter, privacy without a full-buyout commitment.',
       'And it is the easiest serious wilderness lodge to reach: 90 minutes from Oulu airport, which makes it the rare retreat that works even for a short trip.',
     ],
     pickCaveat:
-      "The ‘check rates’ button on this site routes to Hotels.com search for the nearest bookable inventory. Eagle View Suites sell out fastest on clear-sky weekends, book the dates, not the forecast.",
+      "The ‘check rates’ button on this site routes to Trip.com search for the nearest bookable inventory. Eagle View Suites sell out fastest on clear-sky weekends, book the dates, not the forecast.",
     pullQuote: {
       text:
         'The word “remote” is usually marketing language. It is true up here. The road runs out, the treeline drops below you, and the only light left is whatever the sky decides to make. You do not drop in to a place like this, you commit to it.',
@@ -351,7 +351,7 @@ export const copyEN: SectionCopy = {
     counterP2:
       'For first-time Arctic travellers: do a Rovaniemi or Saariselkä trip first. A full-buyout wilderness lodge is wasted on someone still figuring out -25°C.',
     seeLong: 'See long stays',
-    browseAll: 'Browse Hotels.com inventory',
+    browseAll: 'Browse Trip.com inventory',
   },
   longStays: {
     metaTitle: 'Long Stays in Finnish Lapland | StayInLapland',
@@ -401,7 +401,7 @@ export const copyEN: SectionCopy = {
       'For mixed-mobility groups, call the property directly before booking, most long-stay cabins are not step-free and the saunas in particular sit in the basement on a wood floor.',
     seeHotels: 'See hotels',
     seeIgloos: 'See glass igloos',
-    browseAll: 'Browse Hotels.com inventory',
+    browseAll: 'Browse Trip.com inventory',
   },
   bookingGuide: {
     metaTitle: 'Lapland Booking Guide | StayInLapland',
@@ -454,7 +454,7 @@ export const copyEN: SectionCopy = {
         body: [
           'Most Lapland properties have moved to non-refundable rates for peak weeks. Read the fine print before clicking “book”.',
           'Travel insurance with cancel-for-any-reason coverage is genuinely worth it for trips over €2 000. Aurora chasers cancel for weather all the time.',
-          'Hotels.com and Booking.com both honour their public cancellation policies, book through the redirect on this site to keep the rate visible and consistent.',
+          'Our booking partners honour the cancellation terms shown at checkout, book through the redirect on this site to keep the rate visible and consistent.',
         ],
       },
       {
@@ -468,7 +468,7 @@ export const copyEN: SectionCopy = {
     ],
     readyTitle: 'Ready to book?',
     readyLead:
-      'Browse hand-picked properties by category, or jump straight to live availability on Hotels.com.',
+      'Browse hand-picked properties by category, or jump straight to live availability on Trip.com.',
     browseAll: 'Browse all Lapland accommodation',
   },
   whenToGo: {
@@ -586,9 +586,9 @@ export const copyEN: SectionCopy = {
     checkRates: 'Check rates',
     seeAll: 'See all',
     liveAvailabilityIn: (n) => `Searching live availability in ${n}?`,
-    networkLeadA: 'The network ranks only 17 properties. Hotels.com lists everything else operating in ',
+    networkLeadA: 'The network ranks only 17 properties. Trip.com lists everything else operating in ',
     networkLeadB: ' this winter, flex dates, filter by amenity, see the full inventory.',
-    browseInDest: (n) => `Browse Hotels.com, ${n}`,
+    browseInDest: (n) => `Browse Trip.com, ${n}`,
     bucketLabels: {
       'long-stays': 'long stays',
       'hotels': 'hotels',
@@ -703,10 +703,10 @@ export const copyEN: SectionCopy = {
   wildernessData: [
     {
       name: 'Iso-Syöte Eagle View Suites',
-      location: 'Iso-Syöte (Pudasjärvi)',
+      location: 'Iso-Syöte (Pudasjärvi, just south of Lapland)',
       highlight: 'Above-treeline · accessible from Oulu',
       description:
-        'Pine-built suites at 432 m on the Iso-Syöte fell, the southernmost real fell in Lapland. Above-the-treeline aurora viewing without the long flight to Saariselkä, and 90 minutes from Oulu airport.',
+        'Pine-built suites at 432 m on the Iso-Syöte fell, the southernmost real fell in Finland. Above-the-treeline aurora viewing without the long flight to Saariselkä, and 90 minutes from Oulu airport.',
     },
     {
       name: 'Wilderness Hotel Muotka',

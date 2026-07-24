@@ -19,7 +19,7 @@ export const copyJA: SectionCopy = {
     h1Line2: '語り尽くせない。',
     lead: '週単位で借りるコテージ、ロヴァニエミのデザインホテル、人生に一度のガラスイグルーの夜、そして最終道路の先のウィルダネスロッジまで。確認済みの料金は',
     leadPriceRange: '€140〜€2,800',
-    liveLabel: 'リアルタイム空室状況 · Hotels.com 検索',
+    liveLabel: 'リアルタイム空室状況 · Trip.com 検索',
     browseLongStays: '長期滞在を見る',
     seeHotels: 'ホテルを見る',
   },
@@ -92,7 +92,7 @@ export const copyJA: SectionCopy = {
     h2A: '本格的なアパートを探している方、',
     h2B: 'レンタルではなく?',
     lead:
-      '当サイトの物件はHotels.com経由で予約する短期〜中期レンタルです, 最長4週間程度の旅行に最適です。6ヶ月、1年、または永住をお考えの場合は、フィンランドの国内賃貸ポータルをお使いください。以下はラップランドの在庫が最も活発な6つのポータルです。',
+      '当サイトの物件は提携予約サイト経由で予約する短期〜中期レンタルです, 最長4週間程度の旅行に最適です。6ヶ月、1年、または永住をお考えの場合は、フィンランドの国内賃貸ポータルをお使いください。以下はラップランドの在庫が最も活発な6つのポータルです。',
     process: {
       title: '一般的な流れ',
       body:
@@ -254,7 +254,7 @@ export const copyJA: SectionCopy = {
     counterP2: '人生に一度のオーロラ目当ての一夜なら、ガラスイグルーが勝ちます。上記のホテルにはガラスの屋根はありません。',
     seeLong: '長期滞在を見る',
     seeIgloos: 'ガラスイグルーを見る',
-    browseAll: 'Hotels.com の在庫を見る',
+    browseAll: 'Trip.com の在庫を見る',
   },
   glassIgloos: {
     metaTitle: 'フィンランド・ラップランドのガラスイグルー, 4リゾートをランキング | StayInLapland',
@@ -304,7 +304,7 @@ export const copyJA: SectionCopy = {
       'クリスマス(12月22日 → 1月2日)は価格が3倍になり、春までに在庫の90%が英国のパッケージツアーへ。可能であれば1月後半に日程をずらしてください, 寒く、暗く、価格は半分、オーロラはより良いです。',
     seeLong: '長期滞在を見る',
     bookingGuideBtn: '予約ガイド',
-    browseAll: 'Hotels.com の在庫を見る',
+    browseAll: 'Trip.com の在庫を見る',
   },
   wilderness: {
     metaTitle: 'フィンランド・ラップランドのウィルダネスロッジ, 本気のリトリート | StayInLapland',
@@ -319,12 +319,12 @@ export const copyJA: SectionCopy = {
     },
     authorNote: '2軒とも、運営者の公式情報と最新の宿泊者レビューをもとに詳細を確認しています。',
     pickWhy: [
-      'Iso-Syöte Eagle View Suitesは、ラップランドで最も南にある本物のフィエル(山)に標高432mで建っています, パイン造りのスイートから、北への長いフライトなしに森林限界上のオーロラ観測ができます。',
+      'Iso-Syöte Eagle View Suitesは、フィンランドで最も南にある本物のフィエル(山)に標高432mで建っています, パイン造りのスイートから、北への長いフライトなしに森林限界上のオーロラ観測ができます。',
       'ガラス張りのファサードは開けた空に向いており、晴れた夜にはベッドからオーロラのアーチが見えます。共用のシェルターではなく、自分だけの尾根上のスイートからオーロラを眺められる, 貸切のような拘束なしのプライバシーです。',
       'しかも、本気のウィルダネスロッジの中で最もアクセスしやすい1軒です:オウル空港から90分で、短い旅でも成立する稀有なリトリートです。',
     ],
     pickCaveat:
-      '当サイトの「料金を確認」ボタンは、最も近い予約可能な在庫をHotels.com検索に誘導します。Eagle View Suitesは晴天の週末から先に埋まります, 天気予報ではなく日程で押さえてください。',
+      '当サイトの「料金を確認」ボタンは、最も近い予約可能な在庫をTrip.com検索に誘導します。Eagle View Suitesは晴天の週末から先に埋まります, 天気予報ではなく日程で押さえてください。',
     pullQuote: {
       text:
         '「人里離れた」という言葉は通常マーケティング用語です。ここ、この高みでは本当です。道は途切れ、森林限界が足元に下がり、残る光は空が作ると決めたものだけ。こういう場所にはふらりと立ち寄れません, 覚悟して向き合うものです。',
@@ -351,7 +351,7 @@ export const copyJA: SectionCopy = {
     counterP2:
       '初めて北極圏を訪れる方へ:まずロヴァニエミやサーリセルカの旅をご検討ください。-25°Cの感覚をまだ掴めていない方にとって、丸ごと貸切のウィルダネスロッジはもったいない選択です。',
     seeLong: '長期滞在を見る',
-    browseAll: 'Hotels.com の在庫を見る',
+    browseAll: 'Trip.com の在庫を見る',
   },
   longStays: {
     metaTitle: 'フィンランド・ラップランドの長期滞在, 1週間以上のレンタル | StayInLapland',
@@ -401,7 +401,7 @@ export const copyJA: SectionCopy = {
       '移動に配慮が必要なグループの場合は、予約前に必ず物件に直接ご連絡ください, 長期滞在コテージの多くはバリアフリーではなく、特にサウナは木の床の地下階にあります。',
     seeHotels: 'ホテルを見る',
     seeIgloos: 'ガラスイグルーを見る',
-    browseAll: 'Hotels.com の在庫を見る',
+    browseAll: 'Trip.com の在庫を見る',
   },
   bookingGuide: {
     metaTitle: 'ラップランド予約ガイド, いつ、どのように、何を持参するか | StayInLapland',
@@ -454,7 +454,7 @@ export const copyJA: SectionCopy = {
         body: [
           '多くのラップランドの物件はピーク週について返金不可料金へ移行しています。「予約」をクリックする前に細則をお読みください。',
           '€2,000以上の旅行では、理由を問わずキャンセル可能な特約付きの旅行保険は本当に価値があります。オーロラ目当ての方は天候で頻繁にキャンセルします。',
-          'Hotels.comとBooking.comはどちらも公開キャンセルポリシーを尊重します, 当サイトのリダイレクト経由で予約すると、料金が一貫して表示されます。',
+          '提携予約サイトは予約時に表示されるキャンセル条件を尊重します, 当サイトのリダイレクト経由で予約すると、料金が一貫して表示されます。',
         ],
       },
       {
@@ -468,7 +468,7 @@ export const copyJA: SectionCopy = {
     ],
     readyTitle: 'ご予約の準備はできましたか?',
     readyLead:
-      'カテゴリー別に厳選物件を見るか、Hotels.comのリアルタイム空室状況へ直接お進みください。',
+      'カテゴリー別に厳選物件を見るか、Trip.comのリアルタイム空室状況へ直接お進みください。',
     browseAll: 'ラップランドの全宿泊先を見る',
   },
   whenToGo: {
@@ -586,9 +586,9 @@ export const copyJA: SectionCopy = {
     checkRates: '料金を確認',
     seeAll: 'すべて見る',
     liveAvailabilityIn: (n) => `${n}のリアルタイム空室状況をお探しですか?`,
-    networkLeadA: '当ネットワークでは17物件のみを評価しています。Hotels.comには',
+    networkLeadA: '当ネットワークでは17物件のみを評価しています。Trip.comには',
     networkLeadB: 'のこの冬営業中の全在庫が掲載されています, 日程の柔軟検索、設備フィルター、全在庫の閲覧が可能です。',
-    browseInDest: (n) => `${n}のHotels.comを見る`,
+    browseInDest: (n) => `${n}のTrip.comを見る`,
     bucketLabels: {
       'long-stays': '長期滞在',
       'hotels': 'ホテル',
@@ -703,10 +703,10 @@ export const copyJA: SectionCopy = {
   wildernessData: [
     {
       name: 'Iso-Syöte Eagle View Suites',
-      location: 'Iso-Syöte(Pudasjärvi)',
+      location: 'Iso-Syöte(Pudasjärvi、ラップランドのすぐ南)',
       highlight: '森林限界上 · オウルからアクセス可能',
       description:
-        'Iso-Syöte山の標高432mに建つ松造りのスイート, ラップランドで最南の本格的な山です。サーリセルカへの長距離フライトなしで森林限界上のオーロラ観測ができ、オウル空港から90分です。',
+        'Iso-Syöte山の標高432mに建つ松造りのスイート, フィンランドで最南の本格的な山です。サーリセルカへの長距離フライトなしで森林限界上のオーロラ観測ができ、オウル空港から90分です。',
     },
     {
       name: 'Wilderness Hotel Muotka',

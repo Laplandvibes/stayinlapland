@@ -26,7 +26,7 @@ export const copyZHCN: SectionCopy = {
     h1Line2: '一周的假期。',
     lead: '按周入住的木屋、罗瓦涅米的精品酒店、那一晚梦寐以求的玻璃冰屋,以及最后一条公路尽头的荒野旅舍。已验证价格区间',
     leadPriceRange: '140 € 至 2 800 €',
-    liveLabel: '实时空房 · Hotels.com 搜索',
+    liveLabel: '实时空房 · Trip.com 搜索',
     browseLongStays: '浏览长期入住',
     seeHotels: '查看酒店',
   },
@@ -99,7 +99,7 @@ export const copyZHCN: SectionCopy = {
     h2A: '在找真正的住房,',
     h2B: '而不是短租?',
     lead:
-      '本网站收录的是通过 Hotels.com 提供的短期或中期租住，，最多四周的旅行是合适的解决方案。若是六个月、一年或永久搬迁,您需要的是芬兰本地的租房门户。这里列出拉普兰最活跃的六个。',
+      '本网站收录的是通过我们的预订伙伴提供的短期或中期租住，最多四周的旅行是合适的解决方案。若是六个月、一年或永久搬迁,您需要的是芬兰本地的租房门户。这里列出拉普兰最活跃的六个。',
     process: {
       title: '通常的流程',
       body:
@@ -264,7 +264,7 @@ export const copyZHCN: SectionCopy = {
     counterP2: '若只为一晚极光打卡,玻璃冰屋更胜一筹。以上酒店都没有玻璃屋顶。',
     seeLong: '查看长期入住',
     seeIgloos: '查看玻璃冰屋',
-    browseAll: '浏览 Hotels.com 房源',
+    browseAll: '浏览 Trip.com 房源',
   },
   glassIgloos: {
     metaTitle: 'StayInLapland, 芬兰拉普兰玻璃冰屋,四家度假村排名',
@@ -314,7 +314,7 @@ export const copyZHCN: SectionCopy = {
       '圣诞(12 月 22 日 → 1 月 2 日)价格翻三倍,到开春前九成房源都被英国包价团订走。可能的话把日期挪到一月下半月，，更冷、更暗、价格减半、极光更好。',
     seeLong: '查看长期入住',
     bookingGuideBtn: '预订指南',
-    browseAll: '浏览 Hotels.com 房源',
+    browseAll: '浏览 Trip.com 房源',
   },
   wilderness: {
     metaTitle: 'StayInLapland, 芬兰拉普兰荒野别墅,认真的隐居地',
@@ -329,12 +329,12 @@ export const copyZHCN: SectionCopy = {
     },
     authorNote: '两处住宿的信息均依据运营方公布的资料及近期住客评价核实。',
     pickWhy: [
-      'Iso-Syöte Eagle View 套房坐落在拉普兰最南端的真正高山上,海拔 432 米，，松木建造的套房,可在林线之上观测极光,无需向北长途飞行。',
+      'Iso-Syöte Eagle View 套房坐落在芬兰最南端的真正高山上,海拔 432 米，，松木建造的套房,可在林线之上观测极光,无需向北长途飞行。',
       '玻璃立面朝向开阔的天空,晴朗夜里躺在床上便能看见极光弧。极光观测来自你山脊上的专属套房,而非共用的庇护点，，既有私密,又无需整栋包场的承诺。',
       '它也是认真的荒野别墅中最易抵达的一处:距奥卢机场 90 分钟,使其成为连短途行程都适合的难得隐居地。',
     ],
     pickCaveat:
-      '本站的"查看价格"按钮会跳转到 Hotels.com 搜索最近的可订房源。Eagle View 套房在晴空的周末最先订满，，请按日期下手,而非看天气预报。',
+      '本站的"查看价格"按钮会跳转到 Trip.com 搜索最近的可订房源。Eagle View 套房在晴空的周末最先订满，请按日期下手,而非看天气预报。',
     pullQuote: {
       text:
         '"偏远"通常只是营销话术,在这片高处却是事实。公路到此为止,林线沉到你脚下,余下的光只有天空决定造出的那一点。这样的地方无法随意造访，，你只能郑重投入其中。',
@@ -361,7 +361,7 @@ export const copyZHCN: SectionCopy = {
     counterP2:
       '对首次到北极的旅人:先去罗瓦涅米或萨利色尔卡走一趟。把整栋包场的荒野别墅留给还在适应零下 25 度的人,是种浪费。',
     seeLong: '查看长期入住',
-    browseAll: '浏览 Hotels.com 房源',
+    browseAll: '浏览 Trip.com 房源',
   },
   longStays: {
     metaTitle: 'StayInLapland, 芬兰拉普兰长期入住,一周起的租住',
@@ -411,7 +411,7 @@ export const copyZHCN: SectionCopy = {
       '若同行者行动能力不一,预订前先直接致电房源，，多数长住木屋并非无台阶,桑拿尤其常设在地下的木地板上。',
     seeHotels: '查看酒店',
     seeIgloos: '查看玻璃冰屋',
-    browseAll: '浏览 Hotels.com 房源',
+    browseAll: '浏览 Trip.com 房源',
   },
   bookingGuide: {
     metaTitle: 'StayInLapland, 拉普兰预订指南:何时、如何、带什么',
@@ -464,7 +464,7 @@ export const copyZHCN: SectionCopy = {
         body: [
           '多数拉普兰房源在旺季周已改为不可退款房价。点"预订"前先读清小字。',
           '对超过 2 000 € 的行程,带"任意理由取消"保障的旅行保险确实值得。追极光的人总会因天气而取消。',
-          'Hotels.com 与 Booking.com 都遵守各自公开的取消政策，，通过本站的跳转预订,可让房价保持可见且一致。',
+          '我们的预订伙伴会遵守预订时显示的取消政策，通过本站的跳转预订，可让房价保持可见且一致。',
         ],
       },
       {
@@ -478,7 +478,7 @@ export const copyZHCN: SectionCopy = {
     ],
     readyTitle: '准备好预订了吗?',
     readyLead:
-      '按类别浏览精挑细选的房源,或直接跳到 Hotels.com 的实时空房。',
+      '按类别浏览精挑细选的房源,或直接跳到 Trip.com 的实时空房。',
     browseAll: '浏览全部拉普兰住宿',
   },
   whenToGo: {
@@ -596,9 +596,9 @@ export const copyZHCN: SectionCopy = {
     checkRates: '查看价格',
     seeAll: '查看全部',
     liveAvailabilityIn: (n) => `在 ${n} 查实时空房?`,
-    networkLeadA: '我们的网络只排名 17 处房源。Hotels.com 列出今冬在 ',
+    networkLeadA: '我们的网络只排名 17 处房源。Trip.com 列出今冬在 ',
     networkLeadB: ' 运营的其余一切，，灵活改期、按设施筛选、查看全部房源。',
-    browseInDest: (n) => `浏览 Hotels.com, ${n}`,
+    browseInDest: (n) => `浏览 Trip.com, ${n}`,
     bucketLabels: {
       'long-stays': '长期入住',
       'hotels': '酒店',
@@ -713,10 +713,10 @@ export const copyZHCN: SectionCopy = {
   wildernessData: [
     {
       name: 'Iso-Syöte Eagle View Suites',
-      location: 'Iso-Syöte(普达斯耶尔维)',
+      location: 'Iso-Syöte(普达斯耶尔维，拉普兰以南不远)',
       highlight: '林线之上 · 可从奥卢抵达',
       description:
-        '建在 Iso-Syöte 山海拔 432 米处的原木套房，，拉普兰最南的真正山丘。无需飞往萨利色尔卡的长途,即可在林线之上观赏极光,距奥卢机场 90 分钟。',
+        '建在 Iso-Syöte 山海拔 432 米处的原木套房，，芬兰最南的真正山丘。无需飞往萨利色尔卡的长途,即可在林线之上观赏极光,距奥卢机场 90 分钟。',
     },
     {
       name: 'Wilderness Hotel Muotka',

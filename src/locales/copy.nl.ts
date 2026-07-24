@@ -25,7 +25,7 @@ export const copyNL: SectionCopy = {
     lead:
       'Hutten per week, design hotels in Rovaniemi, glasiglo’s voor de bucketlist-nachten, en de wildernislodges voorbij de laatste weg. Geverifieerde tarieven van',
     leadPriceRange: '€140 tot €2 800',
-    liveLabel: 'Live beschikbaarheid · Hotels.com-zoekopdracht',
+    liveLabel: 'Live beschikbaarheid · Trip.com-zoekopdracht',
     browseLongStays: 'Lange verblijven bekijken',
     seeHotels: 'Hotels bekijken',
   },
@@ -80,7 +80,7 @@ export const copyNL: SectionCopy = {
     h2A: 'Zoekt u een echte woning,',
     h2B: 'geen kortetermijnhuur?',
     lead:
-      'De accommodaties op deze site zijn korte- tot middellange-termijnhuur, geboekt via Hotels.com, het juiste antwoord voor reizen tot vier weken. Voor 6 maanden, een jaar of een permanente verhuizing heeft u de Finse landelijke verhuurportalen nodig. Dit zijn de zes meest actieve voor het aanbod in Lapland.',
+      'De accommodaties op deze site zijn korte- tot middellange-termijnhuur, geboekt via onze boekingspartner, het juiste antwoord voor reizen tot vier weken. Voor 6 maanden, een jaar of een permanente verhuizing heeft u de Finse landelijke verhuurportalen nodig. Dit zijn de zes meest actieve voor het aanbod in Lapland.',
     process: {
       title: 'Gebruikelijk proces',
       body:
@@ -246,7 +246,7 @@ export const copyNL: SectionCopy = {
     counterP2: 'Voor één noorderlicht-bucketlistnacht winnen glasiglo’s. Geen van de hotels hierboven heeft een glazen dak.',
     seeLong: 'Bekijk lange verblijven',
     seeIgloos: 'Bekijk glasiglo’s',
-    browseAll: 'Bekijk Hotels.com-aanbod',
+    browseAll: 'Bekijk Trip.com-aanbod',
   },
   glassIgloos: {
     metaTitle: 'Glasiglo’s in Fins Lapland | StayInLapland',
@@ -297,7 +297,7 @@ export const copyNL: SectionCopy = {
       'Voor Kerstmis (22 dec → 2 jan) verdrievoudigen de prijzen en gaat 90% van het aanbod tegen het voorjaar naar Britse pakketreizen. Verschuif uw data zo mogelijk naar de tweede helft van januari, kouder, donkerder, half zo duur, beter noorderlicht.',
     seeLong: 'Bekijk lange verblijven',
     bookingGuideBtn: 'Boekingsgids',
-    browseAll: 'Bekijk Hotels.com-aanbod',
+    browseAll: 'Bekijk Trip.com-aanbod',
   },
   wilderness: {
     metaTitle: 'Wildernislodges in Fins Lapland | StayInLapland',
@@ -313,12 +313,12 @@ export const copyNL: SectionCopy = {
     authorNote:
       'De gegevens van beide accommodaties zijn geverifieerd aan de hand van gepubliceerde informatie van de exploitanten en recente gastbeoordelingen.',
     pickWhy: [
-      'De Iso-Syöte Eagle View Suites liggen op 432 m op de zuidelijkste echte fjell van Lapland, in grenenhout gebouwde suites met noorderlicht-kijken boven de boomgrens en zonder de lange vlucht naar het noorden.',
+      'De Iso-Syöte Eagle View Suites liggen op 432 m op de zuidelijkste echte fjell van Finland, in grenenhout gebouwde suites met noorderlicht-kijken boven de boomgrens en zonder de lange vlucht naar het noorden.',
       'De glasgevels kijken uit op de open hemel, zodat de noorderlichtboog op een heldere nacht vanuit het bed te zien is. U bekijkt het noorderlicht vanuit uw eigen suite op de bergkam in plaats van een gedeelde schuilplaats, privacy zonder de verplichting van een volledige buyout.',
       'En het is de makkelijkst bereikbare serieuze wildernislodge: 90 minuten van de luchthaven van Oulu, wat het de zeldzame retreat maakt die zelfs voor een korte reis werkt.',
     ],
     pickCaveat:
-      'De knop "tarieven bekijken" op deze site verwijst naar een Hotels.com-zoekopdracht voor het dichtstbijzijnde boekbare aanbod. De Eagle View Suites zijn het snelst uitverkocht in weekenden met heldere lucht, boek de data, niet de weersvoorspelling.',
+      'De knop "tarieven bekijken" op deze site verwijst naar een Trip.com-zoekopdracht voor het dichtstbijzijnde boekbare aanbod. De Eagle View Suites zijn het snelst uitverkocht in weekenden met heldere lucht, boek de data, niet de weersvoorspelling.',
     pullQuote: {
       text:
         'Het woord "afgelegen" is meestal marketingtaal. Hierboven is het waar. De weg houdt op, de boomgrens zakt onder u weg, en het enige licht dat overblijft is wat de hemel besluit te maken. Op zo’n plek val je niet zomaar binnen, je verbindt je eraan.',
@@ -345,7 +345,7 @@ export const copyNL: SectionCopy = {
     counterP2:
       'Voor wie voor het eerst naar het noordpoolgebied reist: doe eerst een reis naar Rovaniemi of Saariselkä. Een wildernislodge als volledige buyout is verspild aan iemand die nog uitvindt wat -25°C is.',
     seeLong: 'Bekijk lange verblijven',
-    browseAll: 'Bekijk Hotels.com-aanbod',
+    browseAll: 'Bekijk Trip.com-aanbod',
   },
   longStays: {
     metaTitle: 'Lange verblijven in Fins Lapland | StayInLapland',
@@ -395,7 +395,7 @@ export const copyNL: SectionCopy = {
       'Voor groepen met gemengde mobiliteit belt u de accommodatie vooraf rechtstreeks, de meeste lange-verblijfshutten zijn niet drempelvrij, en juist de sauna ligt vaak in de kelder op een houten vloer.',
     seeHotels: 'Bekijk hotels',
     seeIgloos: 'Bekijk glasiglo’s',
-    browseAll: 'Bekijk Hotels.com-aanbod',
+    browseAll: 'Bekijk Trip.com-aanbod',
   },
   bookingGuide: {
     metaTitle: 'Lapland-boekingsgids, wanneer, hoe, wat in te pakken',
@@ -448,7 +448,7 @@ export const copyNL: SectionCopy = {
         body: [
           'De meeste Lapland-accommodaties zijn voor de piekweken overgestapt op niet-restitueerbare tarieven. Lees de kleine lettertjes voordat u op "boeken" klikt.',
           'Een reisverzekering met "annuleer-om-elke-reden"-dekking is écht de moeite waard voor reizen boven €2 000. Noorderlichtjagers annuleren voortdurend om het weer.',
-          'Hotels.com en Booking.com respecteren beide hun openbare annuleringsvoorwaarden, boek via de redirect op deze site om het tarief zichtbaar en consistent te houden.',
+          'Onze boekingspartners respecteren de annuleringsvoorwaarden die bij het boeken worden getoond, boek via de redirect op deze site om het tarief zichtbaar en consistent te houden.',
         ],
       },
       {
@@ -462,7 +462,7 @@ export const copyNL: SectionCopy = {
     ],
     readyTitle: 'Klaar om te boeken?',
     readyLead:
-      'Bekijk zorgvuldig gekozen accommodaties per categorie, of spring direct naar live beschikbaarheid op Hotels.com.',
+      'Bekijk zorgvuldig gekozen accommodaties per categorie, of spring direct naar live beschikbaarheid op Trip.com.',
     browseAll: 'Bekijk alle Lapland-accommodaties',
   },
   whenToGo: {
@@ -580,9 +580,9 @@ export const copyNL: SectionCopy = {
     checkRates: 'Tarieven bekijken',
     seeAll: 'Alles bekijken',
     liveAvailabilityIn: (n) => `Live beschikbaarheid in ${n} zoeken?`,
-    networkLeadA: 'Ons netwerk rangschikt slechts 17 accommodaties. Hotels.com toont al het overige dat deze winter opereert in ',
+    networkLeadA: 'Ons netwerk rangschikt slechts 17 accommodaties. Trip.com toont al het overige dat deze winter opereert in ',
     networkLeadB: ', flexibele data, filter op voorziening, het volledige aanbod.',
-    browseInDest: (n) => `Bekijk Hotels.com, ${n}`,
+    browseInDest: (n) => `Bekijk Trip.com, ${n}`,
     bucketLabels: {
       'long-stays': 'lange verblijven',
       'hotels': 'hotels',
@@ -726,10 +726,10 @@ export const copyNL: SectionCopy = {
   wildernessData: [
     {
       name: 'Iso-Syöte Eagle View Suites',
-      location: 'Iso-Syöte (Pudasjärvi)',
+      location: 'Iso-Syöte (Pudasjärvi, net ten zuiden van Lapland)',
       highlight: 'Boven de boomgrens · bereikbaar vanuit Oulu',
       description:
-        'Pijnboomsuites op 432 m op de Iso-Syöte-fjeld, de zuidelijkste echte fjeld in Lapland. Noorderlicht-kijken boven de boomgrens zonder de lange vlucht naar Saariselkä, en 90 minuten van vliegveld Oulu.',
+        'Pijnboomsuites op 432 m op de Iso-Syöte-fjeld, de zuidelijkste echte fjeld in Finland. Noorderlicht-kijken boven de boomgrens zonder de lange vlucht naar Saariselkä, en 90 minuten van vliegveld Oulu.',
     },
     {
       name: 'Wilderness Hotel Muotka',

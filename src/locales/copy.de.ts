@@ -20,7 +20,7 @@ export const copyDE: SectionCopy = {
     lead:
       'Blockhütten zur Wochenmiete, Designhotels in Rovaniemi, Glasiglus für die Wunsch-Nächte, und Wildnishütten jenseits der letzten Straße. Geprüfte Preise von',
     leadPriceRange: '140 € bis 2 800 €',
-    liveLabel: 'Live-Verfügbarkeit · Hotels.com-Suche',
+    liveLabel: 'Live-Verfügbarkeit · Trip.com-Suche',
     browseLongStays: 'Langzeitaufenthalte ansehen',
     seeHotels: 'Hotels anzeigen',
   },
@@ -96,7 +96,7 @@ export const copyDE: SectionCopy = {
     h2A: 'Suchen Sie eine richtige Wohnung,',
     h2B: 'keine Ferienunterkunft?',
     lead:
-      'Die Objekte auf dieser Seite sind Kurz- bis Mittelfristmieten über Hotels.com, die richtige Wahl für Reisen bis zu vier Wochen. Für 6 Monate, ein Jahr oder einen dauerhaften Umzug benötigen Sie die finnischen Mietportale. Dies sind die sechs aktivsten für Lappland-Inserate.',
+      'Die Objekte auf dieser Seite sind Kurz- bis Mittelfristmieten über unseren Buchungspartner, die richtige Wahl für Reisen bis zu vier Wochen. Für 6 Monate, ein Jahr oder einen dauerhaften Umzug benötigen Sie die finnischen Mietportale. Dies sind die sechs aktivsten für Lappland-Inserate.',
     process: {
       title: 'Typischer Ablauf',
       body:
@@ -261,7 +261,7 @@ export const copyDE: SectionCopy = {
       'Für die eine Wunsch-Nordlicht-Nacht gewinnen Glasiglus. Keines der obigen Hotels hat ein Glasdach.',
     seeLong: 'Langzeitaufenthalte ansehen',
     seeIgloos: 'Glasiglus ansehen',
-    browseAll: 'Hotels.com-Verfügbarkeit ansehen',
+    browseAll: 'Trip.com-Verfügbarkeit ansehen',
   },
   glassIgloos: {
     metaTitle: 'Glasiglus in Finnisch-Lappland | StayInLapland',
@@ -312,7 +312,7 @@ export const copyDE: SectionCopy = {
       'An Weihnachten (22.12. → 02.01.) verdreifachen sich die Preise und 90 % des Kontingents gehen bis zum Frühjahr an britische Pauschalveranstalter. Verschieben Sie die Daten nach Möglichkeit in die zweite Januarhälfte, kälter, dunkler, halber Preis, bessere Nordlichter.',
     seeLong: 'Langzeitaufenthalte ansehen',
     bookingGuideBtn: 'Buchungsleitfaden',
-    browseAll: 'Hotels.com-Verfügbarkeit ansehen',
+    browseAll: 'Trip.com-Verfügbarkeit ansehen',
   },
   wilderness: {
     metaTitle: 'Wildnishütten in Finnisch-Lappland | StayInLapland',
@@ -328,12 +328,12 @@ export const copyDE: SectionCopy = {
     authorNote:
       'Die Angaben zu beiden Objekten wurden anhand der veröffentlichten Betreiberinformationen und aktueller Gästebewertungen geprüft.',
     pickWhy: [
-      'Die Iso-Syöte Eagle View Suites liegen auf 432 m auf dem südlichsten echten Fjell Lapplands, kieferngebaute Suiten mit Nordlichtbeobachtung oberhalb der Baumgrenze und ohne den langen Flug in den Norden.',
+      'Die Iso-Syöte Eagle View Suites liegen auf 432 m auf dem südlichsten echten Fjell Finnlands, kieferngebaute Suiten mit Nordlichtbeobachtung oberhalb der Baumgrenze und ohne den langen Flug in den Norden.',
       'Die Glasfronten weisen zum offenen Himmel, sodass sich der Aurorabogen in klaren Nächten vom Bett aus lesen lässt. Nordlichter beobachtet man von der eigenen Suite auf dem Bergrücken statt von einem gemeinsamen Unterstand, Privatsphäre ohne Full-Buyout-Verpflichtung.',
       'Und es ist die am einfachsten erreichbare ernsthafte Wildnishütte: 90 Minuten vom Flughafen Oulu, was sie zum seltenen Refugium macht, das sogar für eine kurze Reise funktioniert.',
     ],
     pickCaveat:
-      'Der Button „Preise prüfen“ auf dieser Seite leitet zur Hotels.com-Suche nach der nächstgelegenen buchbaren Verfügbarkeit. Die Eagle View Suites sind an klaren Wochenenden am schnellsten ausverkauft, buchen Sie die Daten, nicht die Wettervorhersage.',
+      'Der Button „Preise prüfen“ auf dieser Seite leitet zur Trip.com-Suche nach der nächstgelegenen buchbaren Verfügbarkeit. Die Eagle View Suites sind an klaren Wochenenden am schnellsten ausverkauft, buchen Sie die Daten, nicht die Wettervorhersage.',
     pullQuote: {
       text:
         'Das Wort „abgelegen“ ist meist Marketingsprache. Hier oben ist es zutreffend. Die Straße endet, die Baumgrenze fällt unter Sie ab, und das einzige Licht ist das, was der Himmel zu machen beschließt. An einen solchen Ort schaut man nicht einfach vorbei, man lässt sich auf ihn ein.',
@@ -360,7 +360,7 @@ export const copyDE: SectionCopy = {
     counterP2:
       'Für Erstreisende in der Arktis: Erst eine Tour nach Rovaniemi oder Saariselkä. Eine Wildnishütte als Full-Buyout ist verschwendet an jemanden, der -25 °C-Kleidung noch lernen muss.',
     seeLong: 'Langzeitaufenthalte ansehen',
-    browseAll: 'Hotels.com-Verfügbarkeit ansehen',
+    browseAll: 'Trip.com-Verfügbarkeit ansehen',
   },
   longStays: {
     metaTitle: 'Langzeitaufenthalte in Finnisch-Lappland | StayInLapland',
@@ -410,7 +410,7 @@ export const copyDE: SectionCopy = {
       'Bei Gruppen mit gemischter Mobilität rufen Sie vor der Buchung direkt im Haus an, die meisten Langzeithütten sind nicht stufenfrei, und insbesondere die Saunen befinden sich im Untergeschoss auf Holzboden.',
     seeHotels: 'Hotels anzeigen',
     seeIgloos: 'Glasiglus ansehen',
-    browseAll: 'Hotels.com-Verfügbarkeit ansehen',
+    browseAll: 'Trip.com-Verfügbarkeit ansehen',
   },
   bookingGuide: {
     metaTitle: 'Lappland-Buchungsleitfaden | StayInLapland',
@@ -463,7 +463,7 @@ export const copyDE: SectionCopy = {
         body: [
           'Die meisten Häuser in Lappland sind in Hochsaisonwochen zu nicht erstattbaren Raten übergegangen. Lesen Sie das Kleingedruckte vor dem Klick auf „Buchen“.',
           'Eine Reiseversicherung mit „Stornierung aus beliebigem Grund“ ist bei Reisen über 2 000 € echt sinnvoll. Nordlichtjäger stornieren laufend wegen des Wetters.',
-          'Hotels.com und Booking.com halten beide ihre öffentlichen Stornobedingungen ein, buchen Sie über die Weiterleitung dieser Seite, um die Rate sichtbar und konsistent zu halten.',
+          'Unsere Buchungspartner halten die bei der Buchung angezeigten Stornobedingungen ein, buchen Sie über die Weiterleitung dieser Seite, um die Rate sichtbar und konsistent zu halten.',
         ],
       },
       {
@@ -477,7 +477,7 @@ export const copyDE: SectionCopy = {
     ],
     readyTitle: 'Bereit zur Buchung?',
     readyLead:
-      'Durchsuchen Sie handverlesene Objekte nach Kategorie oder springen Sie direkt zur Live-Verfügbarkeit auf Hotels.com.',
+      'Durchsuchen Sie handverlesene Objekte nach Kategorie oder springen Sie direkt zur Live-Verfügbarkeit auf Trip.com.',
     browseAll: 'Alle Lappland-Unterkünfte ansehen',
   },
   whenToGo: {
@@ -595,9 +595,9 @@ export const copyDE: SectionCopy = {
     checkRates: 'Preise prüfen',
     seeAll: 'Alle anzeigen',
     liveAvailabilityIn: (n) => `Live-Verfügbarkeit in ${n} suchen?`,
-    networkLeadA: 'Unser Netzwerk bewertet nur 17 Objekte. Hotels.com listet alles weitere in ',
+    networkLeadA: 'Unser Netzwerk bewertet nur 17 Objekte. Trip.com listet alles weitere in ',
     networkLeadB: ' in diesem Winter, flexible Daten, nach Ausstattung filtern, das gesamte Angebot.',
-    browseInDest: (n) => `Hotels.com durchsuchen, ${n}`,
+    browseInDest: (n) => `Trip.com durchsuchen, ${n}`,
     bucketLabels: {
       'long-stays': 'Langzeitaufenthalte',
       'hotels': 'Hotels',
@@ -712,10 +712,10 @@ export const copyDE: SectionCopy = {
   wildernessData: [
     {
       name: 'Iso-Syöte Eagle View Suites',
-      location: 'Iso-Syöte (Pudasjärvi)',
+      location: 'Iso-Syöte (Pudasjärvi, knapp südlich Lapplands)',
       highlight: 'Oberhalb der Baumgrenze · aus Oulu erreichbar',
       description:
-        'Suiten in Kiefernbauweise auf 432 m am Iso-Syöte-Fjell, dem südlichsten echten Fjell Lapplands. Nordlichtbeobachtung oberhalb der Baumgrenze ohne den langen Flug nach Saariselkä, und 90 Minuten vom Flughafen Oulu.',
+        'Suiten in Kiefernbauweise auf 432 m am Iso-Syöte-Fjell, dem südlichsten echten Fjell Finnlands. Nordlichtbeobachtung oberhalb der Baumgrenze ohne den langen Flug nach Saariselkä, und 90 Minuten vom Flughafen Oulu.',
     },
     {
       name: 'Wilderness Hotel Muotka',

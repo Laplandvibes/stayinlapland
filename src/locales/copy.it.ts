@@ -13,7 +13,7 @@ export const copyIT: SectionCopy = {
     lead:
       'Baite a settimana, design hotel a Rovaniemi, igloo di vetro per le notti da non perdere, e i lodge nella natura selvaggia oltre l’ultima strada. Tariffe verificate da',
     leadPriceRange: '140 € a 2 800 €',
-    liveLabel: 'Disponibilità in tempo reale · Ricerca Hotels.com',
+    liveLabel: 'Disponibilità in tempo reale · Ricerca Trip.com',
     browseLongStays: 'Vedere i soggiorni lunghi',
     seeHotels: 'Vedere gli hotel',
   },
@@ -74,7 +74,7 @@ export const copyIT: SectionCopy = {
     h2A: 'Cerca un vero appartamento,',
     h2B: 'non un affitto turistico?',
     lead:
-      'Le strutture su questo sito sono affitti a breve-medio termine prenotati tramite Hotels.com, la risposta giusta per soggiorni fino a quattro settimane. Per 6 mesi, un anno o un trasferimento permanente, servono i portali immobiliari nazionali finlandesi. Questi sono i sei più attivi per l’inventario in Lapponia.',
+      'Le strutture su questo sito sono affitti a breve-medio termine prenotati tramite il nostro partner di prenotazione, la risposta giusta per soggiorni fino a quattro settimane. Per 6 mesi, un anno o un trasferimento permanente, servono i portali immobiliari nazionali finlandesi. Questi sono i sei più attivi per l’inventario in Lapponia.',
     process: {
       title: 'Processo tipico',
       body:
@@ -234,7 +234,7 @@ export const copyIT: SectionCopy = {
       'Per una singola notte da bucket list sotto l’aurora, vincono gli igloo di vetro. Nessuno degli hotel qui sopra ha un tetto di vetro.',
     seeLong: 'Vedi soggiorni lunghi',
     seeIgloos: 'Vedi igloo di vetro',
-    browseAll: 'Sfoglia l’inventario di Hotels.com',
+    browseAll: 'Sfoglia l’inventario di Trip.com',
   },
   glassIgloos: {
     ...copyEN.glassIgloos,
@@ -287,7 +287,7 @@ export const copyIT: SectionCopy = {
       'Per Natale (22 dic → 2 gen) i prezzi triplicano e il 90% dell’inventario va ai pacchetti turistici britannici entro primavera. Sposti le date alla seconda metà di gennaio se possibile, più freddo, più buio, metà prezzo, aurora migliore.',
     seeLong: 'Vedi soggiorni lunghi',
     bookingGuideBtn: 'Guida alla prenotazione',
-    browseAll: 'Sfoglia l’inventario di Hotels.com',
+    browseAll: 'Sfoglia l’inventario di Trip.com',
   },
   wilderness: {
     ...copyEN.wilderness,
@@ -305,12 +305,12 @@ export const copyIT: SectionCopy = {
     authorNote:
       'I dettagli di entrambe le strutture sono verificati sulle informazioni pubblicate dai gestori e sulle recensioni recenti degli ospiti.',
     pickWhy: [
-      'Le Iso-Syöte Eagle View Suites si trovano a 432 m sul fjell più meridionale della vera Lapponia, suite in legno di pino, con osservazione dell’aurora sopra la linea degli alberi e senza il lungo volo verso nord.',
+      'Le Iso-Syöte Eagle View Suites si trovano a 432 m sul vero fjell più meridionale della Finlandia, suite in legno di pino, con osservazione dell’aurora sopra la linea degli alberi e senza il lungo volo verso nord.',
       'Le vetrate guardano il cielo aperto, così nelle notti limpide l’arco aurorale si legge dal letto. L’aurora si osserva dalla propria suite in cima al crinale anziché da un riparo condiviso, privacy senza l’impegno di un’esclusiva totale.',
       'Ed è il lodge nella natura serio più facile da raggiungere: 90 minuti dall’aeroporto di Oulu, il che lo rende il raro rifugio che funziona anche per un viaggio breve.',
     ],
     pickCaveat:
-      'Il pulsante "Verifica tariffe" su questo sito reindirizza alla ricerca Hotels.com per la disponibilità prenotabile più vicina. Le Eagle View Suites si esauriscono prima nei fine settimana di cielo sereno, prenoti le date, non le previsioni.',
+      'Il pulsante "Verifica tariffe" su questo sito reindirizza alla ricerca Trip.com per la disponibilità prenotabile più vicina. Le Eagle View Suites si esauriscono prima nei fine settimana di cielo sereno, prenoti le date, non le previsioni.',
     pullQuote: {
       text:
         'La parola "remoto" è di solito un termine di marketing. Quassù è vero. La strada finisce, la linea degli alberi scende sotto di Lei, e l’unica luce che resta è quella che il cielo decide di fare. In un posto così non si capita per caso, ci si impegna.',
@@ -337,7 +337,7 @@ export const copyIT: SectionCopy = {
     counterP2:
       'Per chi viene la prima volta nell’Artico: faccia prima un viaggio a Rovaniemi o Saariselkä. Un lodge nella natura da prenotare in esclusiva totale è sprecato su chi sta ancora capendo cosa sono i -25°C.',
     seeLong: 'Vedi soggiorni lunghi',
-    browseAll: 'Sfoglia l’inventario di Hotels.com',
+    browseAll: 'Sfoglia l’inventario di Trip.com',
   },
   longStays: {
     ...copyEN.longStays,
@@ -389,7 +389,7 @@ export const copyIT: SectionCopy = {
       'Per gruppi con mobilità mista, chiami la struttura direttamente prima di prenotare, la maggior parte delle baite a soggiorno lungo non è priva di gradini e in particolare le saune si trovano in seminterrato su pavimento di legno.',
     seeHotels: 'Vedi hotel',
     seeIgloos: 'Vedi igloo di vetro',
-    browseAll: 'Sfoglia l’inventario di Hotels.com',
+    browseAll: 'Sfoglia l’inventario di Trip.com',
   },
   bookingGuide: {
     ...copyEN.bookingGuide,
@@ -443,7 +443,7 @@ export const copyIT: SectionCopy = {
         body: [
           'La maggior parte delle strutture in Lapponia è passata a tariffe non rimborsabili per le settimane di picco. Legga le clausole prima di cliccare "prenota".',
           'L’assicurazione di viaggio con copertura "cancella per qualsiasi motivo" vale davvero per viaggi sopra i 2 000 €. I cacciatori di aurora cancellano per maltempo di continuo.',
-          'Hotels.com e Booking.com rispettano entrambi le loro politiche di cancellazione pubbliche, prenoti tramite il reindirizzamento di questo sito per mantenere visibili e coerenti le tariffe.',
+          'I nostri partner di prenotazione rispettano le condizioni di cancellazione mostrate al momento della prenotazione, prenoti tramite il reindirizzamento di questo sito per mantenere visibili e coerenti le tariffe.',
         ],
       },
       {
@@ -457,7 +457,7 @@ export const copyIT: SectionCopy = {
     ],
     readyTitle: 'Pronto a prenotare?',
     readyLead:
-      'Sfogli strutture selezionate per categoria, oppure salti dritto alla disponibilità in tempo reale su Hotels.com.',
+      'Sfogli strutture selezionate per categoria, oppure salti dritto alla disponibilità in tempo reale su Trip.com.',
     browseAll: 'Esplori tutti gli alloggi in Lapponia',
   },
   whenToGo: {
@@ -577,9 +577,9 @@ export const copyIT: SectionCopy = {
     checkRates: 'Verifica tariffe',
     seeAll: 'Vedi tutto',
     liveAvailabilityIn: (n) => `Cerca disponibilità in tempo reale a ${n}?`,
-    networkLeadA: 'La nostra rete classifica solo 17 strutture. Hotels.com elenca tutto il resto che opera a ',
+    networkLeadA: 'La nostra rete classifica solo 17 strutture. Trip.com elenca tutto il resto che opera a ',
     networkLeadB: ' quest’inverno, date flessibili, filtri per servizio, l’offerta completa.',
-    browseInDest: (n) => `Sfoglia Hotels.com, ${n}`,
+    browseInDest: (n) => `Sfoglia Trip.com, ${n}`,
     bucketLabels: {
       'long-stays': 'soggiorni lunghi',
       'hotels': 'hotel',
@@ -727,10 +727,10 @@ export const copyIT: SectionCopy = {
   wildernessData: [
     {
       name: 'Iso-Syöte Eagle View Suites',
-      location: 'Iso-Syöte (Pudasjärvi)',
+      location: 'Iso-Syöte (Pudasjärvi, appena a sud della Lapponia)',
       highlight: 'Sopra la linea degli alberi · raggiungibile da Oulu',
       description:
-        'Suite in pino a 432 m sul monte Iso-Syöte, il fell vero più meridionale della Lapponia. Osservazione dell’aurora sopra la linea degli alberi senza il lungo volo per Saariselkä, e a 90 minuti dall’aeroporto di Oulu.',
+        'Suite in pino a 432 m sul monte Iso-Syöte, il fell vero più meridionale della Finlandia. Osservazione dell’aurora sopra la linea degli alberi senza il lungo volo per Saariselkä, e a 90 minuti dall’aeroporto di Oulu.',
     },
     {
       name: 'Wilderness Hotel Muotka',

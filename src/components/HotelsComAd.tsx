@@ -4,44 +4,44 @@ import AffiliateDisclosure from './AffiliateDisclosure';
 import { useLang, type Lang } from '../i18n/useLang';
 
 /**
- * Affiliate ad — Hotels.com (CJ, via the go.laplandvibes.com redirect Worker).
+ * Affiliate ad — hotel partner card (via the go.laplandvibes.com redirect Worker).
  *
- * Hotels.com is the broad inventory partner for this site: where Lomarengas
- * covers privately-owned weekly cottages, Hotels.com covers the design hotels,
+ * CJ-EXIT 2026-07-24: the Worker now routes go/hotels by locale — `fi_FI` goes
+ * to Sembo (Adtraction), every other locale to Trip.com. This card is skinned
+ * per locale to match: FI visitors see a Sembo unit, everyone else a Trip.com
+ * unit. The href already carries `locale=<code>` per language, so brand and
+ * landing page always agree.
+ *
+ * The hotel partner is the broad inventory side of this site: where Lomarengas
+ * covers privately-owned weekly cottages, the partner covers the design hotels,
  * resort cabins and apartment-hotels in the Lapland towns. The site already
  * routes its inline "check prices" CTAs through the same Worker; this is the
  * one framed, brand-skinned placement that names the partner and explains why
  * it is the right tool for a hotel stay.
  *
  * Skinned in the ADVERTISER's OWN brand (premium_design_standard §6: "mainos
- * pitää olla heidän brändin mukainen, ei meidän"). Hotels.com's identity is a
- * deep navy wordmark with a red dot accent on white — so the card is a clean
- * white unit with their navy/red, sitting as a distinct "Mainos / Ad" block on
- * the cream page.
+ * pitää olla heidän brändin mukainen, ei meidän"): Sembo sky blue on white,
+ * Trip.com blue on white — a distinct "Mainos / Ad" block on the cream page.
  *
- * Logo note: Hotels.com is a CJ text-link partner — there is no licensed logo
- * asset in the repo, and fabricating/AI-generating a real trademark is a legal
- * risk (premium_design_standard §1c). So the wordmark is rendered as clean
- * styled TEXT in the brand colours (a typographic wordmark, not a copied logo).
- * If an official logo asset is later licensed, drop it in at /images/partners/.
+ * Logo note: no licensed logo assets in the repo, and fabricating/AI-generating
+ * a real trademark is a legal risk (premium_design_standard §1c). The wordmark
+ * is rendered as clean styled TEXT in the brand colours (a typographic
+ * wordmark, not a copied logo).
  *
  * Offer hooks — compliance-safe, EVERGREEN only (no fake/stale % — brand rule):
- *   • Real-time availability and prices across the Lapland towns.
- *   • Free cancellation on most rooms (a standing Hotels.com filter/feature).
- *   • One OneKey reward night style loyalty is NOT claimed (programme terms
- *     change) — only structural, always-true facts are shown.
+ * live prices and availability, instant confirmation, breadth of stay types.
+ * No partner-programme perks are claimed (those change).
  *
  * Required affiliate attributes (LV spec): target="_blank"
  * rel="sponsored nofollow noopener" — NO `noreferrer` (the Worker reads Referer
- * to resolve the per-site CJ Website ID for attribution).
+ * to resolve the per-site Website ID for attribution).
  *
  * Animation is pure CSS/Tailwind (one-shot scroll reveal). No Framer Motion.
  */
 
-/** Hotels.com brand: deep navy wordmark + red dot accent on white. */
-const HC_NAVY = '#1B2C5E';
-const HC_NAVY_DEEP = '#13234F';
-const HC_RED = '#D32F2F';
+/** Per-locale partner brand: FI → Sembo, all other locales → Trip.com. */
+const BRAND_SEMBO = { name: 'Sembo', accent: '#0EA5E9', deep: '#0369A1' } as const;
+const BRAND_TRIP = { name: 'Trip.com', accent: '#3264FF', deep: '#2449B8' } as const;
 
 const REDIRECT_BASE = 'https://go.laplandvibes.com/go/hotels';
 const HOTELS_LOCALE: Record<Lang, string> = {
@@ -51,7 +51,7 @@ const HOTELS_LOCALE: Record<Lang, string> = {
 };
 
 /** Force ", Finland" onto any hotels query lacking a country — a bare "Lapland"
- *  geocodes to Lapland, Indiana on Hotels.com (Vesa 2026-07-08). */
+ *  geocodes to Lapland, Indiana in partner search (Vesa 2026-07-08). */
 function anchorFinland(ss: string): string {
   return /finland|suomi/i.test(ss) ? ss : `${ss.replace(/[\s,]+$/, '')}, Finland`;
 }
@@ -75,6 +75,7 @@ export default function HotelsComAd({
   className?: string;
 }) {
   const lang = useLang();
+  const brand = lang === 'fi' ? BRAND_SEMBO : BRAND_TRIP;
 
   // One-shot scroll reveal (progressive enhancement; content never gated).
   const rootRef = useRef<HTMLElement | null>(null);
@@ -161,53 +162,53 @@ export default function HotelsComAd({
   });
 
   const sub = pick({
-    en: 'For the hotel nights, the design rooms in Rovaniemi, the ski-in places at Levi and Ylläs, the apartment-hotels, Hotels.com lists the most rooms with live prices, and most of them you can cancel free if your plans move. Handy for the start and end of a trip, or any night you just want a desk, a shower and breakfast downstairs.',
-    fi: 'Hotelliöitä varten Hotels.com listaa eniten huoneita ajantasaisin hinnoin: design-huoneet Rovaniemellä, rinteeseen pääsevät paikat Levillä ja Ylläksellä, huoneistohotellit. Useimmat voi perua maksutta, jos suunnitelmat muuttuvat. Kätevä matkan alkuun ja loppuun, tai mille tahansa yölle kun haluat vain työpöydän, suihkun ja aamupalan alakerrasta.',
-    de: 'Für die Hotelnächte listet Hotels.com die meisten Zimmer mit Live-Preisen: die Designzimmer in Rovaniemi, die Ski-in-Häuser in Levi und Ylläs, die Apartmenthotels. Die meisten lassen sich kostenlos stornieren, falls sich eure Pläne ändern. Praktisch für Anfang und Ende einer Reise, oder jede Nacht, in der ihr einfach Schreibtisch, Dusche und Frühstück unten wollt.',
-    ja: 'ホテルに泊まる夜には。ロヴァニエミのデザインルーム、レヴィやウッラスのスキーイン、アパートメントホテルまで、Hotels.com はいちばん多くの部屋を最新価格で載せていて、その多くは予定が変わっても無料でキャンセルできます。旅の始めと終わり、あるいは机とシャワーと朝食さえあればいい夜に便利です。',
-    es: 'Para las noches de hotel: las habitaciones de diseño de Rovaniemi, los alojamientos a pie de pista en Levi y Ylläs, los apartahoteles. Hotels.com es donde más habitaciones encuentras con precios al momento, y la mayoría se cancelan gratis si cambian los planes. Va bien para el principio y el final del viaje, o cualquier noche en que solo quieras un escritorio, una ducha y desayuno abajo.',
-    'pt-BR': 'Para as noites de hotel: os quartos de design em Rovaniemi, os lugares com acesso à pista em Levi e Ylläs, os apart-hotéis. A Hotels.com é onde aparecem mais quartos com preços na hora, e a maioria dá para cancelar de graça se os planos mudarem. Bom para o começo e o fim da viagem, ou qualquer noite em que você só quer uma mesa, um chuveiro e café da manhã embaixo.',
-    'zh-CN': '要在酒店过夜时，罗瓦涅米的设计房、列维和 Ylläs 的滑雪即达住宿、公寓式酒店，Hotels.com 列出的房间最多、价格实时，而且大多数在计划有变时都能免费取消。适合旅程的开头和结尾，或任何只想要一张书桌、一个淋浴和楼下早餐的夜晚。',
-    ko: '호텔에서 묵는 밤을 위해. 로바니에미의 디자인 객실, 레비와 윌라스의 스키인 숙소, 아파트형 호텔까지 Hotels.com에 가장 많은 객실이 실시간 가격으로 올라오고, 대부분은 일정이 바뀌어도 무료로 취소할 수 있어요. 여행의 처음과 끝, 또는 책상과 샤워, 아래층 조식만 있으면 되는 어떤 밤에도 편합니다.',
-    fr: 'Pour les nuits à l’hôtel : les chambres design de Rovaniemi, les adresses au pied des pistes à Levi et Ylläs, les apparthôtels. C’est sur Hotels.com qu’on trouve le plus de chambres aux prix du moment, et la plupart s’annulent gratuitement si vos plans changent. Pratique au début et à la fin d’un voyage, ou n’importe quelle nuit où vous voulez juste un bureau, une douche et le petit-déjeuner en bas.',
-    it: 'Per le notti in hotel: le camere di design a Rovaniemi, gli alloggi ski-in a Levi e Ylläs, gli aparthotel. Su Hotels.com trovi più camere con prezzi aggiornati, e la maggior parte si cancella gratis se i piani cambiano. Comodo per l’inizio e la fine di un viaggio, o qualsiasi notte in cui ti basta una scrivania, una doccia e la colazione di sotto.',
-    nl: 'Voor de hotelnachten: de designkamers in Rovaniemi, de ski-in adressen in Levi en Ylläs, de aparthotels. Op Hotels.com staan de meeste kamers met actuele prijzen, en de meeste kun je gratis annuleren als je plannen wijzigen. Handig voor het begin en eind van een reis, of elke nacht dat je gewoon een bureau, een douche en ontbijt beneden wilt.',
-    sv: 'För hotellnätterna: designrummen i Rovaniemi, ski-in-boendena i Levi och Ylläs, lägenhetshotellen. Hotels.com listar flest rum med aktuella priser, och de flesta går att avboka gratis om planerna ändras. Bra för början och slutet av en resa, eller vilken natt som helst då du bara vill ha ett skrivbord, en dusch och frukost en trappa ner.',
+    en: 'For the hotel nights, the design rooms in Rovaniemi, the ski-in places at Levi and Ylläs, the apartment-hotels, Trip.com lists a wide choice of rooms with live prices. Handy for the start and end of a trip, or any night you just want a desk, a shower and breakfast downstairs.',
+    fi: 'Hotelliöitä varten Sembo listaa laajan valikoiman huoneita ajantasaisin hinnoin: design-huoneet Rovaniemellä, rinteeseen pääsevät paikat Levillä ja Ylläksellä, huoneistohotellit. Kätevä matkan alkuun ja loppuun, tai mille tahansa yölle kun haluat vain työpöydän, suihkun ja aamupalan alakerrasta.',
+    de: 'Für die Hotelnächte listet Trip.com eine große Auswahl an Zimmern mit Live-Preisen: die Designzimmer in Rovaniemi, die Ski-in-Häuser in Levi und Ylläs, die Apartmenthotels. Praktisch für Anfang und Ende einer Reise, oder jede Nacht, in der ihr einfach Schreibtisch, Dusche und Frühstück unten wollt.',
+    ja: 'ホテルに泊まる夜には。ロヴァニエミのデザインルーム、レヴィやウッラスのスキーイン、アパートメントホテルまで、Trip.com は幅広い部屋を最新価格で載せています。旅の始めと終わり、あるいは机とシャワーと朝食さえあればいい夜に便利です。',
+    es: 'Para las noches de hotel: las habitaciones de diseño de Rovaniemi, los alojamientos a pie de pista en Levi y Ylläs, los apartahoteles. En Trip.com encuentras una amplia selección de habitaciones con precios al momento. Va bien para el principio y el final del viaje, o cualquier noche en que solo quieras un escritorio, una ducha y desayuno abajo.',
+    'pt-BR': 'Para as noites de hotel: os quartos de design em Rovaniemi, os lugares com acesso à pista em Levi e Ylläs, os apart-hotéis. Na Trip.com aparece uma ampla seleção de quartos com preços na hora. Bom para o começo e o fim da viagem, ou qualquer noite em que você só quer uma mesa, um chuveiro e café da manhã embaixo.',
+    'zh-CN': '要在酒店过夜时，罗瓦涅米的设计房、列维和 Ylläs 的滑雪即达住宿、公寓式酒店，Trip.com 提供丰富的房源选择，价格实时更新。适合旅程的开头和结尾，或任何只想要一张书桌、一个淋浴和楼下早餐的夜晚。',
+    ko: '호텔에서 묵는 밤을 위해. 로바니에미의 디자인 객실, 레비와 윌라스의 스키인 숙소, 아파트형 호텔까지 Trip.com에 다양한 객실이 실시간 가격으로 올라옵니다. 여행의 처음과 끝, 또는 책상과 샤워, 아래층 조식만 있으면 되는 어떤 밤에도 편합니다.',
+    fr: 'Pour les nuits à l’hôtel : les chambres design de Rovaniemi, les adresses au pied des pistes à Levi et Ylläs, les apparthôtels. Trip.com propose un large choix de chambres aux prix du moment. Pratique au début et à la fin d’un voyage, ou n’importe quelle nuit où vous voulez juste un bureau, une douche et le petit-déjeuner en bas.',
+    it: 'Per le notti in hotel: le camere di design a Rovaniemi, gli alloggi ski-in a Levi e Ylläs, gli aparthotel. Su Trip.com trovi un’ampia scelta di camere con prezzi aggiornati. Comodo per l’inizio e la fine di un viaggio, o qualsiasi notte in cui ti basta una scrivania, una doccia e la colazione di sotto.',
+    nl: 'Voor de hotelnachten: de designkamers in Rovaniemi, de ski-in adressen in Levi en Ylläs, de aparthotels. Op Trip.com vind je een ruime keuze aan kamers met actuele prijzen. Handig voor het begin en eind van een reis, of elke nacht dat je gewoon een bureau, een douche en ontbijt beneden wilt.',
+    sv: 'För hotellnätterna: designrummen i Rovaniemi, ski-in-boendena i Levi och Ylläs, lägenhetshotellen. Trip.com listar ett brett urval rum med aktuella priser. Bra för början och slutet av en resa, eller vilken natt som helst då du bara vill ha ett skrivbord, en dusch och frukost en trappa ner.',
   });
 
   const trust: { icon: typeof BedDouble; label: string }[] = [
     {
       icon: Globe2,
       label: pick({
-        en: 'Live prices, most rooms in town',
-        fi: 'Ajantasaiset hinnat, eniten huoneita',
-        de: 'Live-Preise, die meisten Zimmer',
-        ja: '最新価格・部屋数いちばん',
-        es: 'Precios al momento, más habitaciones',
-        'pt-BR': 'Preços na hora, mais quartos',
-        'zh-CN': '实时价格，房间最多',
-        ko: '실시간 가격, 객실 최다',
-        fr: 'Prix du moment, le plus de chambres',
-        it: 'Prezzi aggiornati, più camere',
-        nl: 'Actuele prijzen, meeste kamers',
-        sv: 'Aktuella priser, flest rum',
+        en: 'Live prices and availability',
+        fi: 'Ajantasaiset hinnat ja saatavuus',
+        de: 'Live-Preise und Verfügbarkeit',
+        ja: '最新価格と空室状況',
+        es: 'Precios y disponibilidad al momento',
+        'pt-BR': 'Preços e disponibilidade na hora',
+        'zh-CN': '实时价格与空房',
+        ko: '실시간 가격과 예약 가능 여부',
+        fr: 'Prix et disponibilités en direct',
+        it: 'Prezzi e disponibilità aggiornati',
+        nl: 'Actuele prijzen en beschikbaarheid',
+        sv: 'Aktuella priser och tillgänglighet',
       }),
     },
     {
       icon: CalendarCheck,
       label: pick({
-        en: 'Free cancellation on most rooms',
-        fi: 'Maksuton peruutus useimpiin huoneisiin',
-        de: 'Kostenlose Stornierung bei den meisten Zimmern',
-        ja: '多くの部屋が無料キャンセル可',
-        es: 'Cancelación gratis en la mayoría',
-        'pt-BR': 'Cancelamento grátis na maioria',
-        'zh-CN': '多数房间可免费取消',
-        ko: '대부분 객실 무료 취소',
-        fr: 'Annulation gratuite sur la plupart',
-        it: 'Cancellazione gratis sulla maggior parte',
-        nl: 'Gratis annuleren bij de meeste kamers',
-        sv: 'Fri avbokning på de flesta rum',
+        en: 'Instant booking confirmation',
+        fi: 'Varausvahvistus heti',
+        de: 'Sofortige Buchungsbestätigung',
+        ja: '予約確認がすぐ届く',
+        es: 'Confirmación inmediata de la reserva',
+        'pt-BR': 'Confirmação imediata da reserva',
+        'zh-CN': '预订即时确认',
+        ko: '즉시 예약 확인',
+        fr: 'Confirmation immédiate de la réservation',
+        it: 'Conferma immediata della prenotazione',
+        nl: 'Directe boekingsbevestiging',
+        sv: 'Omedelbar bokningsbekräftelse',
       }),
     },
     {
@@ -230,33 +231,33 @@ export default function HotelsComAd({
   ];
 
   const cta = pick({
-    en: 'Check prices on Hotels.com',
-    fi: 'Katso hinnat Hotels.comista',
-    de: 'Preise auf Hotels.com ansehen',
-    ja: 'Hotels.com で料金を見る',
-    es: 'Ver precios en Hotels.com',
-    'pt-BR': 'Ver preços na Hotels.com',
-    'zh-CN': '在 Hotels.com 查看价格',
-    ko: 'Hotels.com에서 가격 확인',
-    fr: 'Voir les prix sur Hotels.com',
-    it: 'Vedi i prezzi su Hotels.com',
-    nl: 'Bekijk prijzen op Hotels.com',
-    sv: 'Se priser på Hotels.com',
+    en: 'Check prices on Trip.com',
+    fi: 'Katso hinnat Sembosta',
+    de: 'Preise auf Trip.com ansehen',
+    ja: 'Trip.com で料金を見る',
+    es: 'Ver precios en Trip.com',
+    'pt-BR': 'Ver preços na Trip.com',
+    'zh-CN': '在 Trip.com 查看价格',
+    ko: 'Trip.com에서 가격 확인',
+    fr: 'Voir les prix sur Trip.com',
+    it: 'Vedi i prezzi su Trip.com',
+    nl: 'Bekijk prijzen op Trip.com',
+    sv: 'Se priser på Trip.com',
   });
 
   const poweredBy = pick({
-    en: 'Booking with Hotels.com',
-    fi: 'Varaus Hotels.comin kautta',
-    de: 'Buchung über Hotels.com',
-    ja: '予約は Hotels.com 経由',
-    es: 'Reserva con Hotels.com',
-    'pt-BR': 'Reserva com a Hotels.com',
-    'zh-CN': '由 Hotels.com 提供预订',
-    ko: 'Hotels.com을 통한 예약',
-    fr: 'Réservation via Hotels.com',
-    it: 'Prenotazione con Hotels.com',
-    nl: 'Boeking via Hotels.com',
-    sv: 'Bokning via Hotels.com',
+    en: 'Booking with Trip.com',
+    fi: 'Varaus Sembon kautta',
+    de: 'Buchung über Trip.com',
+    ja: '予約は Trip.com 経由',
+    es: 'Reserva con Trip.com',
+    'pt-BR': 'Reserva com a Trip.com',
+    'zh-CN': '由 Trip.com 提供预订',
+    ko: 'Trip.com을 통한 예약',
+    fr: 'Réservation via Trip.com',
+    it: 'Prenotazione con Trip.com',
+    nl: 'Boeking via Trip.com',
+    sv: 'Bokning via Trip.com',
   });
 
   return (
@@ -264,7 +265,7 @@ export default function HotelsComAd({
       ref={rootRef}
       data-anim={animState}
       className={`sl-hc-ad group/ad relative overflow-hidden rounded-3xl bg-white text-charcoal shadow-[0_24px_70px_-30px_rgba(19,35,79,0.42)] ring-1 ring-charcoal/5 ${className}`}
-      style={{ borderTop: `3px solid ${HC_NAVY}` }}
+      style={{ borderTop: `3px solid ${brand.accent}` }}
       aria-label={headline}
     >
       <style>{`
@@ -281,11 +282,11 @@ export default function HotelsComAd({
         }
       `}</style>
 
-      {/* Soft navy wash, top-right — keeps the white card cool, on-brand. */}
+      {/* Soft brand-tint wash, top-right — keeps the white card cool, on-brand. */}
       <div
         aria-hidden="true"
         className="pointer-events-none absolute -top-24 -right-20 h-72 w-72 rounded-full"
-        style={{ background: `radial-gradient(closest-side, ${HC_NAVY}14, transparent)` }}
+        style={{ background: `radial-gradient(closest-side, ${brand.accent}14, transparent)` }}
       />
 
       <div className="relative p-6 sm:p-8 lg:p-10">
@@ -294,18 +295,18 @@ export default function HotelsComAd({
           <div className="flex items-center gap-3">
             <div
               className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl"
-              style={{ background: `${HC_NAVY}12`, boxShadow: `inset 0 0 0 1px ${HC_NAVY}33` }}
+              style={{ background: `${brand.accent}12`, boxShadow: `inset 0 0 0 1px ${brand.accent}33` }}
             >
-              <BedDouble className="h-5 w-5" style={{ color: HC_NAVY }} aria-hidden="true" />
+              <BedDouble className="h-5 w-5" style={{ color: brand.deep }} aria-hidden="true" />
             </div>
             <div className="flex flex-col gap-1">
               <span
                 className="inline-flex w-fit items-center rounded-full px-2 py-0.5 text-[10px] font-semibold uppercase tracking-[0.16em]"
-                style={{ background: `${HC_NAVY}12`, color: HC_NAVY }}
+                style={{ background: `${brand.accent}12`, color: brand.deep }}
               >
                 {adLabel}
               </span>
-              <p className="text-xs font-semibold uppercase tracking-[0.2em]" style={{ color: HC_NAVY }}>
+              <p className="text-xs font-semibold uppercase tracking-[0.2em]" style={{ color: brand.deep }}>
                 {eyebrow}
               </p>
             </div>
@@ -313,10 +314,10 @@ export default function HotelsComAd({
           {/* Brand wordmark — typographic (no licensed logo asset; see header note). */}
           <span
             className="shrink-0 font-body text-xl sm:text-2xl font-extrabold tracking-tight leading-none select-none"
-            style={{ color: HC_NAVY }}
-            aria-label="Hotels.com"
+            style={{ color: brand.deep }}
+            aria-label={brand.name}
           >
-            Hotels<span style={{ color: HC_RED }}>.</span>com
+            {brand.name}
           </span>
         </div>
 
@@ -332,14 +333,14 @@ export default function HotelsComAd({
             <ul className="sl-rise sl-rise-2 mt-5 flex flex-wrap gap-x-5 gap-y-2.5">
               {trust.map((tp) => (
                 <li key={tp.label} className="flex items-center gap-2 text-graphite text-sm">
-                  <tp.icon className="h-4 w-4 shrink-0" style={{ color: HC_NAVY }} aria-hidden="true" />
+                  <tp.icon className="h-4 w-4 shrink-0" style={{ color: brand.deep }} aria-hidden="true" />
                   <span>{tp.label}</span>
                 </li>
               ))}
             </ul>
           </div>
 
-          {/* CTA — Hotels.com navy pill so the unit reads as their own placement. */}
+          {/* CTA — partner-brand pill so the unit reads as their own placement. */}
           <div className="sl-rise sl-rise-3 lg:text-right shrink-0">
             <a
               href={buildHref(sid, ss, lang)}
@@ -347,7 +348,7 @@ export default function HotelsComAd({
               rel="sponsored nofollow noopener"
               data-sid={sid}
               className="group/cta inline-flex items-center justify-center gap-2 rounded-full px-7 py-4 text-white font-semibold shadow-lg transition-all duration-200 hover:-translate-y-0.5 active:translate-y-0 no-underline whitespace-nowrap"
-              style={{ backgroundColor: HC_NAVY, boxShadow: `0 14px 30px -12px ${HC_NAVY_DEEP}99` }}
+              style={{ backgroundColor: brand.deep, boxShadow: `0 14px 30px -12px ${brand.deep}99` }}
             >
               <Sparkles className="h-4 w-4 opacity-90" aria-hidden="true" />
               {cta}

@@ -18,7 +18,7 @@ export const copyKO: SectionCopy = {
     lead:
       '주 단위 가격으로 빌리는 통나무 캐빈, 로바니에미의 디자인 호텔, 인생에 한 번뿐인 유리 이글루의 밤, 그리고 마지막 도로 너머의 야생 로지까지. 확인된 가격은',
     leadPriceRange: '€140 – €2,800',
-    liveLabel: '실시간 가용성 · Hotels.com 검색',
+    liveLabel: '실시간 가용성 · Trip.com 검색',
     browseLongStays: '장기 숙박 보기',
     seeHotels: '호텔 보기',
   },
@@ -175,7 +175,7 @@ export const copyKO: SectionCopy = {
     h2A: '단기 임대가 아니라,',
     h2B: '진짜 집을 찾으십니까?',
     lead:
-      '이 사이트의 숙소들은 Hotels.com을 통해 예약하는 단기·중기 임대로, 최대 4주까지의 여행에 알맞은 답입니다. 6개월이나 1년, 혹은 영구 이주를 고려하신다면 핀란드 국내 임대 포털을 이용하셔야 합니다. 아래는 라플란드 매물이 가장 활발한 여섯 곳입니다.',
+      '이 사이트의 숙소들은 제휴 예약 파트너를 통해 예약하는 단기·중기 임대로, 최대 4주까지의 여행에 알맞은 답입니다. 6개월이나 1년, 혹은 영구 이주를 고려하신다면 핀란드 국내 임대 포털을 이용하셔야 합니다. 아래는 라플란드 매물이 가장 활발한 여섯 곳입니다.',
     process: {
       title: '일반적인 절차',
       body:
@@ -269,7 +269,7 @@ export const copyKO: SectionCopy = {
     counterP2: '오로라 버킷리스트의 하룻밤이라면 유리 이글루가 이깁니다. 위의 호텔 중 유리 천장을 가진 곳은 없습니다.',
     seeLong: '장기 숙박 보기',
     seeIgloos: '유리 이글루 보기',
-    browseAll: 'Hotels.com 객실 둘러보기',
+    browseAll: 'Trip.com 객실 둘러보기',
   },
   glassIgloos: {
     metaTitle: 'StayInLapland, 핀란드 라플란드 유리 이글루, 네 리조트 순위',
@@ -319,7 +319,7 @@ export const copyKO: SectionCopy = {
       '크리스마스(12월 22일 → 1월 2일)에는 가격이 세 배로 뛰고, 봄이 오기 전 객실의 90%가 영국 패키지 투어로 넘어갑니다. 가능하다면 날짜를 1월 후반으로 옮기십시오, 더 춥고 더 어둡고 절반 가격에 오로라도 더 좋습니다.',
     seeLong: '장기 숙박 보기',
     bookingGuideBtn: '예약 가이드',
-    browseAll: 'Hotels.com 객실 둘러보기',
+    browseAll: 'Trip.com 객실 둘러보기',
   },
   wilderness: {
     metaTitle: 'StayInLapland, 핀란드 라플란드의 야생 로지, 진지한 리트리트',
@@ -334,12 +334,12 @@ export const copyKO: SectionCopy = {
     },
     authorNote: '두 곳 모두 운영사가 공개한 정보와 최근 투숙객 후기를 바탕으로 세부 정보를 확인했습니다.',
     pickWhy: [
-      'Iso-Syöte Eagle View 스위트는 라플란드 최남단의 진짜 펠(fell) 위 해발 432m에 자리합니다, 소나무로 지은 스위트에서, 북쪽으로의 긴 비행 없이 수목한계선 위 오로라를 조망할 수 있습니다.',
+      'Iso-Syöte Eagle View 스위트는 핀란드 최남단의 진짜 펠(fell) 위 해발 432m에 자리합니다, 소나무로 지은 스위트에서, 북쪽으로의 긴 비행 없이 수목한계선 위 오로라를 조망할 수 있습니다.',
       '유리 파사드가 열린 하늘을 향해 있어, 맑은 밤에는 침대에서 오로라의 아치가 읽힙니다. 공용 쉼터가 아니라 능선 위 나만의 스위트에서 오로라를 보는 것, 통째 전세 같은 약정 없이 누리는 프라이버시입니다.',
       '게다가 진지한 야생 로지 가운데 가장 닿기 쉬운 곳입니다. 오울루 공항에서 90분 거리로, 짧은 여행에도 어울리는 보기 드문 리트리트입니다.',
     ],
     pickCaveat:
-      '이 사이트의 "요금 확인" 버튼은 가장 가까운 예약 가능 객실을 찾는 Hotels.com 검색으로 연결됩니다. Eagle View 스위트는 하늘이 맑은 주말부터 먼저 매진됩니다, 일기예보가 아니라 날짜를 잡으십시오.',
+      '이 사이트의 "요금 확인" 버튼은 가장 가까운 예약 가능 객실을 찾는 Trip.com 검색으로 연결됩니다. Eagle View 스위트는 하늘이 맑은 주말부터 먼저 매진됩니다, 일기예보가 아니라 날짜를 잡으십시오.',
     pullQuote: {
       text:
         '"외진"이라는 말은 대개 마케팅 언어입니다. 이 높은 곳에서는 사실입니다. 길이 끊기고, 수목한계선이 발아래로 내려가며, 남는 빛이라고는 하늘이 만들기로 한 것뿐입니다. 이런 곳에는 불쑥 들르는 게 아니라, 마음먹고 들어서는 것입니다.',
@@ -366,7 +366,7 @@ export const copyKO: SectionCopy = {
     counterP2:
       '북극 여행이 처음이시라면, 먼저 로바니에미나 사리셀카 여행을 해 보십시오. 영하 25도에 아직 적응 중인 분에게 통째 전세 야생 로지는 아깝습니다.',
     seeLong: '장기 숙박 보기',
-    browseAll: 'Hotels.com 객실 둘러보기',
+    browseAll: 'Trip.com 객실 둘러보기',
   },
   longStays: {
     metaTitle: 'StayInLapland, 핀란드 라플란드 장기 숙박, 일주일 이상 임대',
@@ -416,7 +416,7 @@ export const copyKO: SectionCopy = {
       '거동이 제각각인 단체라면 예약 전에 숙소에 직접 전화하십시오, 대부분의 장기 숙박 캐빈은 단차가 있고, 특히 사우나는 지하 나무 바닥에 자리한 경우가 많습니다.',
     seeHotels: '호텔 보기',
     seeIgloos: '유리 이글루 보기',
-    browseAll: 'Hotels.com 객실 둘러보기',
+    browseAll: 'Trip.com 객실 둘러보기',
   },
   bookingGuide: {
     metaTitle: 'StayInLapland, 라플란드 예약 가이드: 시기·방법·준비물',
@@ -469,7 +469,7 @@ export const copyKO: SectionCopy = {
         body: [
           '대부분의 라플란드 숙소가 성수기 주간에 대해 환불 불가 요금으로 전환했습니다. "예약"을 누르기 전에 세부 약관을 읽으십시오.',
           '사유 불문 취소가 가능한 여행자 보험은 2,000€를 넘는 여행이라면 정말로 그 값을 합니다. 오로라를 좇는 이들은 날씨 때문에 늘 취소합니다.',
-          'Hotels.com과 Booking.com 모두 공개된 취소 정책을 지킵니다, 요금이 일관되게 보이도록 이 사이트의 연결을 통해 예약하십시오.',
+          '제휴 예약 파트너는 예약 시 표시되는 취소 조건을 지킵니다, 요금이 일관되게 보이도록 이 사이트의 연결을 통해 예약하십시오.',
         ],
       },
       {
@@ -483,7 +483,7 @@ export const copyKO: SectionCopy = {
     ],
     readyTitle: '예약할 준비가 되셨나요?',
     readyLead:
-      '카테고리별로 엄선한 숙소를 둘러보시거나, Hotels.com의 실시간 가용성으로 바로 건너뛰십시오.',
+      '카테고리별로 엄선한 숙소를 둘러보시거나, Trip.com의 실시간 가용성으로 바로 건너뛰십시오.',
     browseAll: '라플란드 숙소 전체 둘러보기',
   },
   whenToGo: {
@@ -601,9 +601,9 @@ export const copyKO: SectionCopy = {
     checkRates: '요금 확인',
     seeAll: '전체 보기',
     liveAvailabilityIn: (n) => `${n}의 실시간 가용성을 찾고 계신가요?`,
-    networkLeadA: '저희 네트워크는 단 17개 숙소만 순위에 올립니다. Hotels.com은 그 외 ',
+    networkLeadA: '저희 네트워크는 단 17개 숙소만 순위에 올립니다. Trip.com은 그 외 ',
     networkLeadB: '에서 이번 겨울 운영하는 나머지 전부를 보여줍니다, 날짜를 유연하게 잡고, 편의시설로 필터링하며, 전체 객실을 확인하십시오.',
-    browseInDest: (n) => `Hotels.com 둘러보기, ${n}`,
+    browseInDest: (n) => `Trip.com 둘러보기, ${n}`,
     bucketLabels: {
       'long-stays': '장기 숙박',
       'hotels': '호텔',
@@ -718,10 +718,10 @@ export const copyKO: SectionCopy = {
   wildernessData: [
     {
       name: 'Iso-Syöte Eagle View Suites',
-      location: 'Iso-Syöte (푸다스예르비)',
+      location: 'Iso-Syöte (푸다스예르비, 라플란드 바로 남쪽)',
       highlight: '수목한계선 위 · 오울루에서 접근 가능',
       description:
-        'Iso-Syöte 펠 해발 432미터에 지은 소나무 스위트, 라플란드에서 가장 남쪽에 있는 진짜 펠입니다. 사리셀카까지의 긴 비행 없이 수목한계선 위에서 오로라를 보며, 오울루 공항에서 90분 거리입니다.',
+        'Iso-Syöte 펠 해발 432미터에 지은 소나무 스위트, 핀란드에서 가장 남쪽에 있는 진짜 펠입니다. 사리셀카까지의 긴 비행 없이 수목한계선 위에서 오로라를 보며, 오울루 공항에서 90분 거리입니다.',
     },
     {
       name: 'Wilderness Hotel Muotka',

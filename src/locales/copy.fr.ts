@@ -27,7 +27,7 @@ export const copyFR: SectionCopy = {
     h1Line2: 'bien plus qu’une semaine de vacances.',
     lead: 'Des chalets à la semaine, des hôtels design à Rovaniemi, des igloos de verre pour les nuits inoubliables, et les lodges en pleine nature au-delà de la dernière route. Tarifs vérifiés à partir de',
     leadPriceRange: '140 € à 2 800 €',
-    liveLabel: 'Disponibilité en direct · recherche Hotels.com',
+    liveLabel: 'Disponibilité en direct · recherche Trip.com',
     browseLongStays: 'Voir les séjours longue durée',
     seeHotels: 'Voir les hôtels',
   },
@@ -101,7 +101,7 @@ export const copyFR: SectionCopy = {
     h2A: 'Vous cherchez un vrai appartement,',
     h2B: 'pas une location touristique ?',
     lead:
-      'Les hébergements de ce site sont des locations courtes à moyennes via Hotels.com, la bonne réponse pour des séjours jusqu’à quatre semaines. Pour 6 mois, un an ou une installation définitive, il vous faut les portails de location finlandais. Voici les six plus actifs pour les annonces en Laponie.',
+      'Les hébergements de ce site sont des locations courtes à moyennes via notre partenaire de réservation, la bonne réponse pour des séjours jusqu’à quatre semaines. Pour 6 mois, un an ou une installation définitive, il vous faut les portails de location finlandais. Voici les six plus actifs pour les annonces en Laponie.',
     process: {
       title: 'Processus type',
       body:
@@ -264,7 +264,7 @@ export const copyFR: SectionCopy = {
     counterP2: 'Pour une seule nuit aurore en mode liste de rêves, les igloos de verre gagnent. Aucun des hôtels ci-dessus n’a de toit en verre.',
     seeLong: 'Voir les séjours longue durée',
     seeIgloos: 'Voir les igloos de verre',
-    browseAll: 'Parcourir l’offre Hotels.com',
+    browseAll: 'Parcourir l’offre Trip.com',
   },
   glassIgloos: {
     metaTitle: 'Igloos de verre en Laponie finlandaise | StayInLapland',
@@ -314,7 +314,7 @@ export const copyFR: SectionCopy = {
       'Pour Noël (22 déc. → 2 janv.), les prix triplent et 90 % des disponibilités partent vers les voyages organisés britanniques avant le printemps. Décalez vos dates sur la seconde quinzaine de janvier si possible, plus froid, plus sombre, moitié prix, meilleure aurore.',
     seeLong: 'Voir les séjours longue durée',
     bookingGuideBtn: 'Guide de réservation',
-    browseAll: 'Parcourir l’offre Hotels.com',
+    browseAll: 'Parcourir l’offre Trip.com',
   },
   wilderness: {
     metaTitle: 'Lodges en pleine nature en Laponie | StayInLapland',
@@ -329,12 +329,12 @@ export const copyFR: SectionCopy = {
     },
     authorNote: 'Les informations des deux adresses sont vérifiées à partir des données publiées par les exploitants et d\'avis récents de voyageurs.',
     pickWhy: [
-      'Les suites Iso-Syöte Eagle View se trouvent à 432 m sur le fjell le plus au sud de la vraie Laponie, des suites en pin, avec observation de l’aurore au-dessus de la ligne des arbres et sans le long vol vers le nord.',
+      'Les suites Iso-Syöte Eagle View se trouvent à 432 m sur le vrai fjell le plus au sud de Finlande, des suites en pin, avec observation de l’aurore au-dessus de la ligne des arbres et sans le long vol vers le nord.',
       'Les façades vitrées donnent sur le ciel ouvert : par nuit claire, l’arc auroral se lit depuis le lit. On observe l’aurore depuis sa propre suite au sommet de la crête, et non depuis un abri partagé, l’intimité sans l’engagement d’une privatisation complète.',
       'C’est aussi le lodge en pleine nature sérieux le plus facile d’accès : 90 minutes de l’aéroport d’Oulu, ce qui en fait la rare retraite envisageable même pour un court séjour.',
     ],
     pickCaveat:
-      'Le bouton « voir les tarifs » de ce site renvoie vers une recherche Hotels.com pour l’offre réservable la plus proche. Les suites Eagle View partent le plus vite les week-ends de ciel dégagé, réservez les dates, pas la météo.',
+      'Le bouton « voir les tarifs » de ce site renvoie vers une recherche Trip.com pour l’offre réservable la plus proche. Les suites Eagle View partent le plus vite les week-ends de ciel dégagé, réservez les dates, pas la météo.',
     pullQuote: {
       text:
         'Le mot « reculé » relève d’habitude du langage marketing. Ici, en haut, c’est vrai. La route s’arrête, la ligne des arbres passe en dessous de vous, et la seule lumière qui reste est celle que le ciel décide de faire. On ne passe pas à l’improviste dans un endroit pareil, on s’y engage.',
@@ -361,7 +361,7 @@ export const copyFR: SectionCopy = {
     counterP2:
       'Pour qui découvre l’Arctique : faites d’abord un séjour à Rovaniemi ou Saariselkä. Un lodge en pleine nature à privatiser entièrement est du gâchis pour quelqu’un qui apprend encore ce qu’est le −25 °C.',
     seeLong: 'Voir les séjours longue durée',
-    browseAll: 'Parcourir l’offre Hotels.com',
+    browseAll: 'Parcourir l’offre Trip.com',
   },
   longStays: {
     metaTitle: 'Séjours longue durée en Laponie finlandaise | StayInLapland',
@@ -411,7 +411,7 @@ export const copyFR: SectionCopy = {
       'Pour les groupes à mobilité mixte, appelez directement l’adresse avant de réserver, la plupart des chalets longue durée ne sont pas de plain-pied, et le sauna en particulier se trouve souvent au sous-sol, sur un plancher en bois.',
     seeHotels: 'Voir les hôtels',
     seeIgloos: 'Voir les igloos de verre',
-    browseAll: 'Parcourir l’offre Hotels.com',
+    browseAll: 'Parcourir l’offre Trip.com',
   },
   bookingGuide: {
     metaTitle: 'Guide de réservation Laponie, quand, comment, quoi emporter',
@@ -464,7 +464,7 @@ export const copyFR: SectionCopy = {
         body: [
           'La plupart des adresses lapones sont passées à des tarifs non remboursables pour les semaines de pointe. Lisez les petites lignes avant de cliquer sur « réserver ».',
           'Une assurance voyage avec annulation pour motif libre vaut vraiment le coup pour les voyages au-delà de 2 000 €. Les chasseurs d’aurores annulent sans cesse pour la météo.',
-          'Hotels.com et Booking.com respectent tous deux leurs conditions d’annulation publiées, réservez via la redirection de ce site pour garder un tarif visible et cohérent.',
+          'Nos partenaires de réservation respectent les conditions d’annulation affichées au moment de la réservation, réservez via la redirection de ce site pour garder un tarif visible et cohérent.',
         ],
       },
       {
@@ -478,7 +478,7 @@ export const copyFR: SectionCopy = {
     ],
     readyTitle: 'Prêt à réserver ?',
     readyLead:
-      'Parcourez nos adresses triées sur le volet par catégorie, ou passez directement aux disponibilités en direct sur Hotels.com.',
+      'Parcourez nos adresses triées sur le volet par catégorie, ou passez directement aux disponibilités en direct sur Trip.com.',
     browseAll: 'Parcourir tous les hébergements de Laponie',
   },
   whenToGo: {
@@ -596,9 +596,9 @@ export const copyFR: SectionCopy = {
     checkRates: 'Voir les tarifs',
     seeAll: 'Voir tout',
     liveAvailabilityIn: (n) => `Chercher les disponibilités en direct à ${n} ?`,
-    networkLeadA: 'Notre réseau ne classe que 17 adresses. Hotels.com référence tout le reste de ce qui ouvre à ',
+    networkLeadA: 'Notre réseau ne classe que 17 adresses. Trip.com référence tout le reste de ce qui ouvre à ',
     networkLeadB: ' cet hiver, dates flexibles, filtres par équipement, l’offre complète.',
-    browseInDest: (n) => `Parcourir Hotels.com, ${n}`,
+    browseInDest: (n) => `Parcourir Trip.com, ${n}`,
     bucketLabels: {
       'long-stays': 'séjours longue durée',
       'hotels': 'hôtels',
@@ -713,10 +713,10 @@ export const copyFR: SectionCopy = {
   wildernessData: [
     {
       name: 'Iso-Syöte Eagle View Suites',
-      location: 'Iso-Syöte (Pudasjärvi)',
+      location: 'Iso-Syöte (Pudasjärvi, juste au sud de la Laponie)',
       highlight: 'Au-dessus de la ligne des arbres · accessible depuis Oulu',
       description:
-        'Suites en pin à 432 m sur le fjell d’Iso-Syöte, le vrai fjell le plus méridional de Laponie. Observation de l’aurore au-dessus de la ligne des arbres sans le long vol jusqu’à Saariselkä, et à 90 minutes de l’aéroport d’Oulu.',
+        'Suites en pin à 432 m sur le fjell d’Iso-Syöte, le vrai fjell le plus méridional de Finlande. Observation de l’aurore au-dessus de la ligne des arbres sans le long vol jusqu’à Saariselkä, et à 90 minutes de l’aéroport d’Oulu.',
     },
     {
       name: 'Wilderness Hotel Muotka',

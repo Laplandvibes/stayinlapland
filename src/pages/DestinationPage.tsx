@@ -234,7 +234,7 @@ export default function DestinationPage() {
           <AffiliateCTA
             partner="hotels"
             sid={`dest_${dest.slug}_browse_all`}
-            destination={dest.name}
+            destination={dest.searchQuery ?? dest.name}
             className="inline-flex items-center gap-2 px-7 py-3.5 bg-vibe-pink hover:bg-vibe-pink/90 text-white rounded-full font-semibold transition-all"
           >
             {d.browseInDest(dest.name)}

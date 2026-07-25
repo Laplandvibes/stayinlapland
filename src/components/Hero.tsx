@@ -83,7 +83,7 @@ export default function Hero() {
                   key={d.name}
                   partner="hotels"
                   sid={d.sid}
-                  destination={`${d.name}, Finland`}
+                  destination={`${d.name === 'Ylläs' ? 'Äkäslompolo' : d.name}, Finland`}
                   className="group inline-flex items-center gap-1.5 sm:gap-2 px-3 sm:px-5 py-2 sm:py-3 rounded-full bg-night/60 backdrop-blur-sm border border-snow/30 text-[13px] sm:text-base text-snow hover:bg-vibe-pink/15 hover:border-vibe-pink/55 transition-all duration-200"
                 >
                   <MapPin className="w-3.5 h-3.5 text-gold group-hover:text-vibe-pink transition-colors" />

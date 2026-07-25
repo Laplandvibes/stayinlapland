@@ -232,6 +232,9 @@ export const wilderness: Property[] = [
 export interface DestinationInfo {
   slug: string;
   name: string;
+  /** Override for the hotels ?ss= search when the display name is a weak
+   *  Sembo polygon (e.g. "Ylläs" = 3 properties vs village Äkäslompolo = 13). */
+  searchQuery?: string;
   /** Quick description used as page hero subtitle. */
   pitch: string;
   /** Why long-stay specifically here. */
@@ -282,6 +285,7 @@ export const destinations: DestinationInfo[] = [
   {
     slug: 'yllas',
     name: 'Ylläs',
+    searchQuery: 'Äkäslompolo',
     pitch: 'Quieter than Levi, longer ski season, the largest cross-country trail network in Lapland (330 km).',
     longStayAngle:
       'Long-stay sense: the cross-country network is the draw. Cabin rentals here run by the week from late November to early May. The best long-stay choice for skiers who do not need lift-served downhill every day.',

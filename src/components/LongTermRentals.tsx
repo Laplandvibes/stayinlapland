@@ -1,6 +1,7 @@
 import { ArrowUpRight, Home, Building2, MapPin } from 'lucide-react';
 import { useLang } from '../i18n/useLang';
 import { getCopy } from '../locales/copy';
+import { withUtm } from '../lib/utm';
 
 interface Portal {
   name: string;
@@ -77,7 +78,7 @@ export default function LongTermRentals() {
             return (
               <a
                 key={p.domain}
-                href={p.url}
+                href={withUtm(p.url, 'long_stays_portal')}
                 target="_blank"
                 rel="noopener nofollow"
                 className="group flex flex-col p-6 bg-white border border-charcoal/8 hover:border-charcoal/20 hover:shadow-md rounded-2xl transition-all"

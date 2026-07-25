@@ -48,7 +48,13 @@ export default function PageHero({
           <div className="absolute inset-0 bg-night" />
         )}
 
-        <div className="relative z-10 max-w-3xl mx-auto text-center px-5">
+        {/* Desktop gets a wider measure so long FI/DE compounds stay on one
+            line: at max-w-3xl "Der Lappland-Buchungsleitfaden." wrapped at its
+            own hyphen on lg+. The H1 also holds text-6xl through the lg band
+            and only steps up to text-7xl at xl, so 1024px stays one line.
+            Mobile/tablet measure is unchanged; the subtitle keeps its own
+            max-w-2xl so body copy stays readable. */}
+        <div className="relative z-10 max-w-3xl lg:max-w-6xl mx-auto text-center px-5">
           <p
             className="inline-flex text-vibe-pink uppercase tracking-[0.28em] text-[11px] sm:text-xs font-semibold mb-5"
             style={{ textShadow: '0 2px 12px rgba(0,0,0,0.8)' }}
@@ -56,7 +62,7 @@ export default function PageHero({
             {eyebrow}
           </p>
           <h1
-            className="font-heading font-medium text-snow leading-[1.08] tracking-tight text-[38px] sm:text-5xl md:text-6xl lg:text-7xl mb-5"
+            className="font-heading font-medium text-snow leading-[1.08] tracking-tight text-[38px] sm:text-5xl md:text-6xl xl:text-7xl mb-5"
             style={{ textShadow: '0 4px 30px rgba(0,0,0,0.85)' }}
           >
             {title}

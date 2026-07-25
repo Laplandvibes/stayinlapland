@@ -236,7 +236,7 @@ export const copySV: SectionCopy = {
       { name: 'Arctic TreeHouse', verdict: 'Bästa designhotellet i Rovaniemi.' },
       { name: 'Arctic Light', verdict: 'Arkitektoniskt mest intressanta byggnaden.' },
       { name: 'Levi Spirit', verdict: 'Vuxenstämning. Spa + ski-in.' },
-      { name: 'Lapland Hotels Saaga', verdict: 'Pålitligt mellanlyx nära flygplatsen i Kittilä.' },
+      { name: 'Lapland Hotels Saaga', verdict: 'Ski-in/out-klassiker vid Ylläs. Spa ingår.' },
       { name: 'Star Arctic', verdict: 'Kulle · mörkast himmel · mix stuga/hotell.' },
     ],
     marginLabel: 'Insider',
@@ -645,11 +645,11 @@ export const copySV: SectionCopy = {
         'Villahotell i toppklass vid foten av Levifjället. Egna utomhusbadtunnor, en bastu i varje villa, ski-in/out-tillgång till liftarna och ett fullständigt spa. Byggt för vuxna, inget barnprogram, bara lugna rum och bra mat.',
     },
     {
-      name: 'Lapland Hotels SnowVillage Saaga',
-      location: 'Kittilä',
-      highlight: 'Lapplandsklassiker · egna bastur · nära flygplatsen',
+      name: 'Lapland Hotels Saaga',
+      location: 'Ylläsjärvi (Ylläs)',
+      highlight: 'Klassiker vid Ylläs · ski-in/out · spa och pool',
       description:
-        'Ett pålitligt mellanlyx-Lapplandshotell tio minuter från flygplatsen i Kittilä. Varje rum har egen bastu; restaurangen serverar lokal ren och arktisk röding. Mindre berömt än igloresorterna i rubrikerna, men jämnt högt betygsatt och i grunden ett hotell, inte en resort.',
+        'Klassikerhotellet på Ylläs lugnare sida i byn Ylläsjärvi, ungefär hundra meter från Iso-Ylläs-liften, ski-in/ski-out på vintern. Pool-, spa- och gymavdelningen ingår för standard- och superiorrum; lägenheterna har dessutom egen bastu. Restaurang Bieggas buffé blickar ut över både fjället och sjön Ylläsjärvi.',
     },
     {
       name: 'Star Arctic Hotel',

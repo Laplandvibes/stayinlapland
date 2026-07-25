@@ -254,7 +254,7 @@ export const copyES: SectionCopy = {
       { name: 'Arctic TreeHouse', verdict: 'El mejor hotel de diseño de Rovaniemi.' },
       { name: 'Arctic Light', verdict: 'El edificio más interesante a nivel arquitectónico.' },
       { name: 'Levi Spirit', verdict: 'Ambiente solo para adultos. Spa + esquí a pie de pista.' },
-      { name: 'Lapland Hotels Saaga', verdict: 'Lujo medio fiable cerca del aeropuerto de Kittilä.' },
+      { name: 'Lapland Hotels Saaga', verdict: 'Clásico a pie de pista en Ylläs. Spa incluido.' },
       { name: 'Star Arctic', verdict: 'En lo alto · cielo más oscuro · mezcla cabaña/hotel.' },
     ],
     marginLabel: 'De iniciados',
@@ -633,11 +633,11 @@ export const copyES: SectionCopy = {
         'Hotel de villas de alta gama al pie del fjell de Levi. Jacuzzis privados al aire libre, sauna en cada villa, acceso a pie de pista a los remontes y spa completo. Pensado para adultos, sin programa infantil, solo habitaciones tranquilas y buena cocina.',
     },
     {
-      name: 'Lapland Hotels SnowVillage Saaga',
-      location: 'Kittilä',
-      highlight: 'Clásico lapón · saunas privados · cerca del aeropuerto',
+      name: 'Lapland Hotels Saaga',
+      location: 'Ylläsjärvi (Ylläs)',
+      highlight: 'Clásico de Ylläs · esquí a pie de pista · spa y piscina',
       description:
-        'Un hotel lapón de lujo medio fiable, a diez minutos del aeropuerto de Kittilä. Cada habitación tiene sauna privado; el restaurante sirve reno local y salvelino ártico. Menos famoso que los resorts de iglús de portada, pero con valoraciones consistentemente buenas y, en el fondo, un hotel, no un resort.',
+        'El hotel clásico del lado más tranquilo de Ylläs, en el pueblo de Ylläsjärvi, a unos cien metros del remonte Iso-Ylläs, con esquí a pie de pista en invierno. Piscina, spa y gimnasio están incluidos para las habitaciones estándar y superior; los apartamentos añaden sauna privado. El bufé del restaurante Biegga mira al monte y al lago Ylläsjärvi.',
     },
     {
       name: 'Star Arctic Hotel',

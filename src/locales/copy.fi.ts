@@ -248,7 +248,7 @@ export const copyFI: SectionCopy = {
       { name: 'Arctic TreeHouse', verdict: 'Rovaniemen paras design-hotelli.' },
       { name: 'Arctic Light', verdict: 'Arkkitehtuurisesti kiinnostavin rakennus.' },
       { name: 'Levi Spirit', verdict: 'Aikuisten tunnelma. Spa + ski-in.' },
-      { name: 'Lapland Hotels Saaga', verdict: 'Luotettava keskitason luksus Kittilän lentokentän lähellä.' },
+      { name: 'Lapland Hotels Saaga', verdict: 'Ylläksen ski-in/out-klassikko, kylpylä hintaan.' },
       { name: 'Star Arctic', verdict: 'Harjun päällä · pimein taivas · mökki/hotelli-yhdistelmä.' },
     ],
     marginLabel: 'Sisäpiirin vinkki',
@@ -629,11 +629,11 @@ export const copyFI: SectionCopy = {
         'Korkealuokkainen huvilahotelli Levitunturin juurella. Yksityiset ulkoporeammet, sisätilan sauna jokaisessa huvilassa, ski-in/out-yhteys hisseille ja täysmittainen spa. Suunniteltu aikuisille, ei lasten ohjelmaa, vain hiljaisia huoneita ja hyvää ruokaa.',
     },
     {
-      name: 'Lapland Hotels SnowVillage Saaga',
-      location: 'Kittilä',
-      highlight: 'Lapin klassikko · omat saunat · lentokenttäläheinen',
+      name: 'Lapland Hotels Saaga',
+      location: 'Ylläsjärvi (Ylläs)',
+      highlight: 'Ylläksen klassikko · ski-in/out · kylpylä ja allasosasto',
       description:
-        'Luotettava keskitason luksus-Lapin hotelli kymmenen minuutin päässä Kittilän lentokentästä. Jokaisessa huoneessa on oma sauna; ravintola tarjoaa paikallista poroa ja nieriää. Vähemmän kuuluisa kuin igluresortit, mutta jatkuvasti hyvin arvioitu ja perustaltaan hotelli, ei resortti.',
+        'Ylläksen klassikkohotelli tunturin hiljaisemmalla puolella Ylläsjärven kylässä, noin sadan metrin päässä Iso-Ylläksen hissistä, eli talvella rinteeseen pääsee suksilla ovelta. Allas-, kylpylä- ja kuntosaliosasto kuuluu standard- ja superior-huoneiden hintaan; huoneistoissa on lisäksi omat saunat. Biegga-ravintolan noutopöytä avautuu tunturiin ja Ylläsjärvelle.',
     },
     {
       name: 'Star Arctic Hotel',

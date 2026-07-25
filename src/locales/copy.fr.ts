@@ -252,7 +252,7 @@ export const copyFR: SectionCopy = {
       { name: 'Arctic TreeHouse', verdict: 'Le meilleur hôtel design de Rovaniemi.' },
       { name: 'Arctic Light', verdict: 'Le bâtiment le plus intéressant sur le plan architectural.' },
       { name: 'Levi Spirit', verdict: 'Esprit réservé aux adultes. Spa + ski aux pieds.' },
-      { name: 'Lapland Hotels Saaga', verdict: 'Milieu-luxe fiable près de l’aéroport de Kittilä.' },
+      { name: 'Lapland Hotels Saaga', verdict: 'Classique ski aux pieds à Ylläs. Spa inclus.' },
       { name: 'Star Arctic', verdict: 'En haut de colline · ciel le plus sombre · mix chalet/hôtel.' },
     ],
     marginLabel: 'D’initié',
@@ -630,11 +630,11 @@ export const copyFR: SectionCopy = {
         'Hôtel-villas haut de gamme au pied du fjell de Levi. Bains nordiques privés en extérieur, sauna dans chaque villa, accès ski aux pieds aux remontées et spa complet. Conçu pour les adultes, pas de programme enfants, juste des chambres calmes et une bonne table.',
     },
     {
-      name: 'Lapland Hotels SnowVillage Saaga',
-      location: 'Kittilä',
-      highlight: 'Classique lapon · saunas privés · proche aéroport',
+      name: 'Lapland Hotels Saaga',
+      location: 'Ylläsjärvi (Ylläs)',
+      highlight: 'Classique d’Ylläs · ski aux pieds · spa et piscine',
       description:
-        'Un hôtel lapon de milieu-luxe fiable, à dix minutes de l’aéroport de Kittilä. Chaque chambre a son sauna privé ; le restaurant sert du renne local et de l’omble arctique. Moins célèbre que les resorts d’igloos en une, mais constamment bien noté et, au fond, un hôtel, pas un resort.',
+        'L’hôtel classique du versant plus calme d’Ylläs, dans le village d’Ylläsjärvi, à une centaine de mètres de la remontée Iso-Ylläs, ski aux pieds en hiver. Piscine, spa et salle de sport sont inclus pour les chambres standard et superior ; les appartements ajoutent un sauna privé. Le buffet du restaurant Biegga donne sur le fjell et le lac Ylläsjärvi.',
     },
     {
       name: 'Star Arctic Hotel',

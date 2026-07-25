@@ -132,13 +132,13 @@ export const hotels: Property[] = [
   },
   {
     slug: 'lapland-hotels-saaga',
-    name: 'Lapland Hotels SnowVillage Saaga',
-    location: 'Kittilä',
+    name: 'Lapland Hotels Saaga',
+    location: 'Ylläsjärvi (Ylläs)',
     priceRange: '€180–340',
     bestFor: 'short',
-    highlight: 'Lapland classic · private saunas · airport-near',
+    highlight: 'Ski-in/out at Ylläs · spa & pool · fell-view dining',
     description:
-      'A reliable mid-luxury Lapland hotel ten minutes from Kittilä airport. Each room has a private sauna; the restaurant serves local reindeer and Arctic char. Less famous than the headline igloo resorts but consistently well-rated and fundamentally a hotel, not a resort.',
+      'The classic hotel on the quieter Ylläsjärvi side of Ylläs, about a hundred metres from the Iso-Ylläs lift, ski-in/ski-out in winter. Pool, spa and gym use is included with standard and superior rooms; the self-catering apartments add private saunas. The Biegga buffet restaurant looks over both the fell and Ylläsjärvi lake.',
     imageSrc: '/images/hero-cabins.webp',
   },
   {
@@ -289,7 +289,7 @@ export const destinations: DestinationInfo[] = [
     pitch: 'Quieter than Levi, longer ski season, the largest cross-country trail network in Lapland (330 km).',
     longStayAngle:
       'Long-stay sense: the cross-country network is the draw. Cabin rentals here run by the week from late November to early May. The best long-stay choice for skiers who do not need lift-served downhill every day.',
-    propertyNames: ['Iso-Syöte Eagle View Suites'],
+    propertyNames: ['Lapland Hotels Saaga'],
     imageSrc: '/images/hero-wilderness.webp',
   },
 ];

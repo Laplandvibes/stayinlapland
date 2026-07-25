@@ -254,7 +254,7 @@ export const copyPTBR: SectionCopy = {
       { name: 'Arctic TreeHouse', verdict: 'O melhor hotel de design de Rovaniemi.' },
       { name: 'Arctic Light', verdict: 'O edifício mais interessante do ponto de vista arquitetônico.' },
       { name: 'Levi Spirit', verdict: 'Clima só para adultos. Spa + esqui pé na pista.' },
-      { name: 'Lapland Hotels Saaga', verdict: 'Médio-luxo confiável perto do aeroporto de Kittilä.' },
+      { name: 'Lapland Hotels Saaga', verdict: 'Clássico esqui pé na pista em Ylläs. Spa incluído.' },
       { name: 'Star Arctic', verdict: 'No alto · céu mais escuro · mistura cabana/hotel.' },
     ],
     marginLabel: 'Dica de quem está por dentro',
@@ -634,11 +634,11 @@ export const copyPTBR: SectionCopy = {
         'Hotel-villas de alto padrão na base do fjell de Levi. Banheiras externas privativas, sauna em cada villa, acesso pé na pista aos teleféricos e spa completo. Feito para adultos, sem programa infantil, só quartos silenciosos e boa comida.',
     },
     {
-      name: 'Lapland Hotels SnowVillage Saaga',
-      location: 'Kittilä',
-      highlight: 'Clássico da Lapônia · saunas privativas · perto do aeroporto',
+      name: 'Lapland Hotels Saaga',
+      location: 'Ylläsjärvi (Ylläs)',
+      highlight: 'Clássico de Ylläs · esqui pé na pista · spa e piscina',
       description:
-        'Um hotel médio-luxo confiável da Lapônia a dez minutos do aeroporto de Kittilä. Cada quarto tem sauna privativa; o restaurante serve rena local e salvelino-ártico. Menos famoso que os resorts de iglu de capa, mas com avaliações consistentemente boas e, no fundo, um hotel, não um resort.',
+        'O hotel clássico do lado mais tranquilo de Ylläs, no vilarejo de Ylläsjärvi, a cerca de cem metros do teleférico Iso-Ylläs, com esqui pé na pista no inverno. Piscina, spa e academia estão incluídos para os quartos standard e superior; os apartamentos somam sauna privativa. O bufê do restaurante Biegga tem vista para o monte e para o lago Ylläsjärvi.',
     },
     {
       name: 'Star Arctic Hotel',

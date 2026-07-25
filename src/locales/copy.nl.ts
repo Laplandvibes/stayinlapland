@@ -234,7 +234,7 @@ export const copyNL: SectionCopy = {
       { name: 'Arctic TreeHouse', verdict: 'Beste design hotel in Rovaniemi.' },
       { name: 'Arctic Light', verdict: 'Architectonisch meest interessante gebouw.' },
       { name: 'Levi Spirit', verdict: 'Volwassenensfeer. Spa + ski-in.' },
-      { name: 'Lapland Hotels Saaga', verdict: 'Betrouwbaar mid-luxe nabij vliegveld Kittilä.' },
+      { name: 'Lapland Hotels Saaga', verdict: 'Ski-in/out-klassieker bij Ylläs. Spa inbegrepen.' },
       { name: 'Star Arctic', verdict: 'Heuveltop · donkerste hemel · mix hut/hotel.' },
     ],
     marginLabel: 'Insider',
@@ -643,11 +643,11 @@ export const copyNL: SectionCopy = {
         'Hoogwaardig villahotel aan de voet van de Levi-fjeld. Privé-buitenhottubs, een sauna in elke villa, ski-in/out-toegang tot de liften en een volledige spa. Gebouwd voor volwassenen, geen kinderprogramma, alleen rustige kamers en goed eten.',
     },
     {
-      name: 'Lapland Hotels SnowVillage Saaga',
-      location: 'Kittilä',
-      highlight: 'Lapland-klassieker · privésauna’s · dicht bij vliegveld',
+      name: 'Lapland Hotels Saaga',
+      location: 'Ylläsjärvi (Ylläs)',
+      highlight: 'Ylläs-klassieker · ski-in/out · spa en zwembad',
       description:
-        'Een betrouwbaar mid-luxe Lapland-hotel op tien minuten van vliegveld Kittilä. Elke kamer heeft een privésauna; het restaurant serveert lokaal rendier en arctische zalmforel. Minder beroemd dan de iglo-resorts uit de koppen, maar consequent goed beoordeeld en in de kern een hotel, geen resort.',
+        'Het klassieke hotel aan de rustigere Ylläsjärvi-kant van de Ylläs, op zo’n honderd meter van de Iso-Ylläs-lift, ski-in/ski-out in de winter. Zwembad, spa en fitness zijn inbegrepen bij standard- en superiorkamers; de appartementen hebben bovendien een privésauna. Buffetrestaurant Biegga kijkt uit over het fjell en het meer Ylläsjärvi.',
     },
     {
       name: 'Star Arctic Hotel',

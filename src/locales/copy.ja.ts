@@ -242,7 +242,7 @@ export const copyJA: SectionCopy = {
       { name: 'Arctic TreeHouse', verdict: 'ロヴァニエミ最高のデザインホテル。' },
       { name: 'Arctic Light', verdict: '最も建築的に興味深い建物。' },
       { name: 'Levi Spirit', verdict: '大人専用の雰囲気。スパ + スキーイン。' },
-      { name: 'Lapland Hotels Saaga', verdict: 'キッティラ空港近くの安定した中位ラグジュアリー。' },
+      { name: 'Lapland Hotels Saaga', verdict: 'ユッラスのスキーイン/アウトの定番。スパ込み。' },
       { name: 'Star Arctic', verdict: '丘の上 · 最も暗い空 · コテージとホテルの組み合わせ。' },
     ],
     marginLabel: 'インサイダー情報',
@@ -620,11 +620,11 @@ export const copyJA: SectionCopy = {
         'レヴィ山の麓に建つ高級ヴィラホテル。専用屋外ホットタブ、各ヴィラの室内サウナ、リフトへのスキーイン・アウトアクセス、本格的なスパサービス。大人向けに設計されています, 子供向けプログラムはなく、静かなお部屋と良質な食事のみをご提供しています。',
     },
     {
-      name: 'Lapland Hotels SnowVillage Saaga',
-      location: 'キッティラ',
-      highlight: 'ラップランドのクラシック · 専用サウナ · 空港近く',
+      name: 'Lapland Hotels Saaga',
+      location: 'ユッラスヤルヴィ(ユッラス)',
+      highlight: 'ユッラスのクラシック · スキーイン/アウト · スパ&プール',
       description:
-        'キッティラ空港から10分の、安定した中位ラグジュアリーのラップランドホテル。各室に専用サウナがあり、レストランでは地元のトナカイと北極イワナをご提供します。話題のイグルーリゾートほどの知名度はないものの、安定して評価が高く、本質的にホテルであり、リゾートではありません。',
+        'ユッラスの静かなユッラスヤルヴィ側にあるクラシックホテル。Iso-Ylläsリフトまで約100mで、冬はスキーイン/スキーアウトができます。スタンダードとスーペリアの客室はプール・スパ・ジムの利用が料金込み、アパートメントには専用サウナも付きます。ビュッフェレストランBieggaからは山とユッラスヤルヴィ湖を望めます。',
     },
     {
       name: 'Star Arctic Hotel',

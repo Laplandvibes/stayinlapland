@@ -252,7 +252,7 @@ export const copyZHCN: SectionCopy = {
       { name: 'Arctic TreeHouse', verdict: '罗瓦涅米最好的设计酒店。' },
       { name: 'Arctic Light', verdict: '建筑上最有看头的一栋。' },
       { name: 'Levi Spirit', verdict: '成人氛围。水疗 + 滑雪进出。' },
-      { name: 'Lapland Hotels Saaga', verdict: '基蒂莱机场旁可靠的中端奢华。' },
+      { name: 'Lapland Hotels Saaga', verdict: '于莱斯的滑雪进出经典。已含水疗。' },
       { name: 'Star Arctic', verdict: '山顶 · 天最暗 · 木屋/酒店混合。' },
     ],
     marginLabel: '内行话',
@@ -630,11 +630,11 @@ export const copyZHCN: SectionCopy = {
         '位于莱维山脚的高端别墅酒店。室外私人热浴缸、每栋别墅内置桑拿、可滑雪进出缆车,以及全套水疗服务。为成人而建，没有儿童项目,只有安静的房间和好食物。',
     },
     {
-      name: 'Lapland Hotels SnowVillage Saaga',
-      location: '基蒂莱',
-      highlight: '拉普兰经典 · 私人桑拿 · 近机场',
+      name: 'Lapland Hotels Saaga',
+      location: '于莱斯耶尔维(于莱斯)',
+      highlight: '于莱斯经典 · 滑雪进出 · 水疗与泳池',
       description:
-        '距基蒂莱机场十分钟、可靠的中端奢华拉普兰酒店。每间客房自带桑拿;餐厅供应本地驯鹿肉和北极红点鲑。不如那些头牌冰屋度假村出名,但口碑一贯稳定,本质上是一家酒店,而非度假村。',
+        '位于于莱斯较安静的于莱斯耶尔维一侧的经典酒店,距 Iso-Ylläs 缆车约百米,冬季可滑雪进出。标准房与高级房房价含泳池、水疗和健身房;公寓另配私人桑拿。自助餐厅 Biegga 望向山峦与于莱斯耶尔维湖。',
     },
     {
       name: 'Star Arctic Hotel',

@@ -257,7 +257,7 @@ export const copyKO: SectionCopy = {
       { name: 'Arctic TreeHouse', verdict: '로바니에미 최고의 디자인 호텔.' },
       { name: 'Arctic Light', verdict: '건축적으로 가장 흥미로운 건물.' },
       { name: 'Levi Spirit', verdict: '어른 전용 분위기. 스파 + 스키 인.' },
-      { name: 'Lapland Hotels Saaga', verdict: '키틸레 공항 인근의 믿음직한 중급 럭셔리.' },
+      { name: 'Lapland Hotels Saaga', verdict: '윌래스의 스키인/아웃 클래식. 스파 포함.' },
       { name: 'Star Arctic', verdict: '언덕 위 · 가장 어두운 하늘 · 캐빈/호텔 혼합.' },
     ],
     marginLabel: '현지 팁',
@@ -635,11 +635,11 @@ export const copyKO: SectionCopy = {
         '레비 펠 기슭의 고급 빌라 호텔. 빌라마다 전용 야외 핫텁과 객실 내 사우나를 갖췄고, 리프트로 이어지는 스키 인/아웃과 풀서비스 스파가 있습니다. 어른을 위해 지어졌습니다, 아동 프로그램은 없고, 조용한 객실과 좋은 음식만 있습니다.',
     },
     {
-      name: 'Lapland Hotels SnowVillage Saaga',
-      location: '키틸레',
-      highlight: '라플란드 클래식 · 전용 사우나 · 공항 인근',
+      name: 'Lapland Hotels Saaga',
+      location: '윌래스예르비(윌래스)',
+      highlight: '윌래스 클래식 · 스키인/아웃 · 스파&수영장',
       description:
-        '키틸레 공항에서 10분 거리의 믿음직한 중급 럭셔리 라플란드 호텔. 모든 객실에 전용 사우나가 있고, 레스토랑은 지역산 순록과 북극 곤들매기를 냅니다. 헤드라인을 장식하는 이글루 리조트보다 덜 유명하지만 한결같이 평이 좋으며, 본질적으로 리조트가 아닌 호텔입니다.',
+        '윌래스의 조용한 윌래스예르비 쪽에 자리한 클래식 호텔. Iso-Ylläs 리프트까지 약 100m라 겨울에는 스키를 신은 채 드나들 수 있습니다. 스탠다드·수페리어 객실은 수영장·스파·짐 이용이 요금에 포함되고, 아파트먼트에는 전용 사우나가 더해집니다. 뷔페 레스토랑 Biegga에서는 산과 윌래스예르비 호수가 내다보입니다.',
     },
     {
       name: 'Star Arctic Hotel',

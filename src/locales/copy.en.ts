@@ -242,7 +242,7 @@ export const copyEN: SectionCopy = {
       { name: 'Arctic TreeHouse', verdict: 'Best design hotel in Rovaniemi.' },
       { name: 'Arctic Light', verdict: 'Most architecturally interesting building.' },
       { name: 'Levi Spirit', verdict: 'Adults-only feel. Spa + ski-in.' },
-      { name: 'Lapland Hotels Saaga', verdict: 'Reliable mid-luxury near Kittilä airport.' },
+      { name: 'Lapland Hotels Saaga', verdict: 'Ski-in/out classic at Ylläs. Spa included.' },
       { name: 'Star Arctic', verdict: 'Hilltop · darkest sky · cabin/hotel mix.' },
     ],
     marginLabel: 'Insider',
@@ -620,11 +620,11 @@ export const copyEN: SectionCopy = {
         "High-end villa hotel at the base of Levi fell. Private outdoor hot tubs, an in-suite sauna in every villa, ski-in/out access to the lifts and a full-service spa. Built for adults, no kids’ programme, just quiet rooms and good food.",
     },
     {
-      name: 'Lapland Hotels SnowVillage Saaga',
-      location: 'Kittilä',
-      highlight: 'Lapland classic · private saunas · airport-near',
+      name: 'Lapland Hotels Saaga',
+      location: 'Ylläsjärvi (Ylläs)',
+      highlight: 'Ski-in/out at Ylläs · spa & pool · fell-view dining',
       description:
-        'A reliable mid-luxury Lapland hotel ten minutes from Kittilä airport. Each room has a private sauna; the restaurant serves local reindeer and Arctic char. Less famous than the headline igloo resorts but consistently well-rated and fundamentally a hotel, not a resort.',
+        'The classic hotel on the quieter Ylläsjärvi side of Ylläs, about a hundred metres from the Iso-Ylläs lift, ski-in/ski-out in winter. Pool, spa and gym use is included with standard and superior rooms; the self-catering apartments add private saunas. The Biegga buffet restaurant looks over both the fell and Ylläsjärvi lake.',
     },
     {
       name: 'Star Arctic Hotel',

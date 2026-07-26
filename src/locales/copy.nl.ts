@@ -751,7 +751,7 @@ export const copyNL: SectionCopy = {
     {
       slug: 'levi',
       pitch:
-        'Het grootste skigebied van Finland gemeten in liftkaartverkoop, met de breedste keuze aan ski-in/out-appartementen en een echte dorpsstraat.',
+        'Het grootste skigebied van Finland gemeten in liftkaartverkoop, met 25 000 bedden, ski-in/out-appartementen en een echte dorpsstraat.',
       longStayAngle:
         'Logica van het lange verblijf: ski-in/out-appartementen worden van december tot april per week verhuurd. Het liftsysteem draait dagelijks, de dorpsrestaurants openen elke avond, u kunt hier een echt seizoen doen.',
     },
@@ -764,7 +764,7 @@ export const copyNL: SectionCopy = {
     },
     {
       slug: 'inari',
-      pitch: 'Samische culturele hoofdstad, Inarimeer (op twee na grootste meer van Finland), de noordelijkste lange-verblijfbasis van Finland.',
+      pitch: 'Samische culturele hoofdstad, Inarimeer (op twee na grootste meer van Finland), onze noordelijkste lange-verblijfbasis.',
       longStayAngle:
         'Logica van het lange verblijf: het meer zelf is de activiteit. Elke ochtend ijsvissen, langlaufen over het bevroren meer, het Samische museum van Inari en het cultuurcentrum SIIDA voor de deur.',
     },

@@ -258,7 +258,7 @@ export const destinations: DestinationInfo[] = [
   {
     slug: 'levi',
     name: 'Levi',
-    pitch: 'Finland\'s biggest ski resort by lift ticket sales, with the deepest selection of ski-in/out apartments and a real village high street.',
+    pitch: 'Finland\'s biggest ski resort by lift ticket sales, with 25 000 beds, ski-in/out apartments and a real village high street.',
     longStayAngle:
       'Long-stay sense: ski-in/out apartments rent by the week from December through April. The lift system runs daily, the village restaurants open every night, you can do a proper season here.',
     propertyNames: ['Levi Spirit', 'Levi Residences: Penthouse Suites', 'Levin Iglut'],
@@ -276,7 +276,7 @@ export const destinations: DestinationInfo[] = [
   {
     slug: 'inari',
     name: 'Inari',
-    pitch: 'Sami cultural capital, Lake Inari (Finland’s third-largest lake), the most northern long-stay base in Finland.',
+    pitch: 'Sami cultural capital, Lake Inari (Finland’s third-largest lake), our northernmost long-stay base.',
     longStayAngle:
       'Long-stay sense: the lake itself is the activity. Ice fishing every morning, cross-country across the frozen lake, Inari Sami Museum and SIIDA cultural centre on doorstep.',
     propertyNames: ['Wilderness Hotel Nangu: Lakeside Villas', 'Aurora Pyramids', 'Aurora Village'],

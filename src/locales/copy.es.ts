@@ -741,7 +741,7 @@ export const copyES: SectionCopy = {
     {
       slug: 'levi',
       pitch:
-        'La mayor estación de esquí de Finlandia por venta de forfaits, con la oferta más amplia de apartamentos a pie de pista y una calle de pueblo de verdad.',
+        'La mayor estación de esquí de Finlandia por venta de forfaits, con 25 000 plazas, apartamentos a pie de pista y una calle de pueblo de verdad.',
       longStayAngle:
         'Lógica de larga estancia: los apartamentos a pie de pista se alquilan por semana de diciembre a abril. Los remontes funcionan a diario, los restaurantes del pueblo abren cada noche, aquí se puede hacer una temporada de verdad.',
     },
@@ -754,7 +754,7 @@ export const copyES: SectionCopy = {
     },
     {
       slug: 'inari',
-      pitch: 'Capital cultural sami, lago Inari (el tercer lago más grande de Finlandia), la base de larga estancia más septentrional de Finlandia.',
+      pitch: 'Capital cultural sami, lago Inari (el tercer lago más grande de Finlandia), nuestra base de larga estancia más septentrional.',
       longStayAngle:
         'Lógica de larga estancia: el lago en sí es la actividad. Pesca en hielo cada mañana, esquí de fondo cruzando el lago helado, el Museo Sami de Inari y el centro cultural SIIDA en la puerta.',
     },

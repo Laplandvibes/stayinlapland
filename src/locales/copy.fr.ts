@@ -738,7 +738,7 @@ export const copyFR: SectionCopy = {
     {
       slug: 'levi',
       pitch:
-        'La plus grande station de ski de Finlande en ventes de forfaits, avec le plus large choix d’appartements ski aux pieds et une vraie rue de village.',
+        'La plus grande station de ski de Finlande en ventes de forfaits, avec 25 000 lits, des appartements ski aux pieds et une vraie rue de village.',
       longStayAngle:
         'Logique longue durée : les appartements ski aux pieds se louent à la semaine de décembre à avril. Les remontées tournent tous les jours, les restaurants du village ouvrent chaque soir, on peut y faire une vraie saison.',
     },
@@ -751,7 +751,7 @@ export const copyFR: SectionCopy = {
     },
     {
       slug: 'inari',
-      pitch: 'Capitale culturelle sami, lac Inari (troisième lac de Finlande), la base longue durée la plus septentrionale de Finlande.',
+      pitch: 'Capitale culturelle sami, lac Inari (troisième lac de Finlande), notre base longue durée la plus septentrionale.',
       longStayAngle:
         'Logique longue durée : le lac lui-même est l’activité. Pêche blanche chaque matin, ski de fond en travers du lac gelé, musée sami d’Inari et centre culturel SIIDA au pas de la porte.',
     },

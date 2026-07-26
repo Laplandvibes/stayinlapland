@@ -742,7 +742,7 @@ export const copyPTBR: SectionCopy = {
     {
       slug: 'levi',
       pitch:
-        'A maior estação de esqui da Finlândia em venda de passes de teleférico, com a maior oferta de apartamentos pé na pista e uma rua de vila de verdade.',
+        'A maior estação de esqui da Finlândia em venda de passes de teleférico, com 25 000 leitos, apartamentos pé na pista e uma rua de vila de verdade.',
       longStayAngle:
         'Lógica da estadia longa: os apartamentos pé na pista são alugados por semana de dezembro a abril. Os teleféricos funcionam todos os dias, os restaurantes da vila abrem toda noite, dá para fazer uma temporada de verdade aqui.',
     },
@@ -755,7 +755,7 @@ export const copyPTBR: SectionCopy = {
     },
     {
       slug: 'inari',
-      pitch: 'Capital cultural sami, lago Inari (o terceiro maior lago da Finlândia), a base de estadia longa mais ao norte da Finlândia.',
+      pitch: 'Capital cultural sami, lago Inari (o terceiro maior lago da Finlândia), nossa base de estadia longa mais ao norte.',
       longStayAngle:
         'Lógica da estadia longa: o próprio lago é a atividade. Pesca no gelo toda manhã, cross-country atravessando o lago congelado, o Museu Sami de Inari e o centro cultural SIIDA na porta.',
     },

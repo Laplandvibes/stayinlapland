@@ -737,7 +737,7 @@ export const copyDE: SectionCopy = {
     {
       slug: 'levi',
       pitch:
-        'Finnlands größtes Skiresort, gemessen am Liftkartenverkauf, mit der tiefsten Auswahl an Ski-in/out-Apartments und einer echten Dorf-Hauptstraße.',
+        'Finnlands größtes Skiresort, gemessen am Liftkartenverkauf, mit 25 000 Betten, Ski-in/out-Apartments und einer echten Dorf-Hauptstraße.',
       longStayAngle:
         'Langzeit-Logik: Ski-in/out-Apartments werden von Dezember bis April wöchentlich vermietet. Das Liftsystem läuft täglich, die Dorfrestaurants öffnen jeden Abend, eine echte Saison ist möglich.',
     },
@@ -751,7 +751,7 @@ export const copyDE: SectionCopy = {
     {
       slug: 'inari',
       pitch:
-        'Samische Kulturhauptstadt, Inarisee (drittgrößter See Finnlands), die nördlichste Langzeitbasis Finnlands.',
+        'Samische Kulturhauptstadt, Inarisee (drittgrößter See Finnlands), unsere nördlichste Langzeitbasis.',
       longStayAngle:
         'Langzeit-Logik: Der See selbst ist die Aktivität. Jeden Morgen Eisfischen, Langlauf über den gefrorenen See, Sami-Museum Inari und Kulturzentrum SIIDA direkt vor der Tür.',
     },

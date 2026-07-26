@@ -55,12 +55,12 @@ export default function Hero() {
           </p>
 
           <h1
-            className="font-heading font-medium text-snow leading-[1.05] tracking-tight text-[42px] sm:text-6xl lg:text-7xl mb-6"
+            className="font-heading font-medium text-snow leading-[1.05] tracking-wide text-[42px] sm:text-6xl lg:text-7xl mb-6"
             style={{ textShadow: '0 4px 30px rgba(0,0,0,0.85)' }}
           >
             {t.h1Line1}
             <br />
-            <span className="italic font-light text-snow/95">{t.h1Line2}</span>
+            <span className="text-vibe-pink">{t.h1Line2}</span>
           </h1>
 
           <p

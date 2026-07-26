@@ -166,7 +166,7 @@ export default function DestinationPage() {
             <p className="text-vibe-pink text-[11px] font-semibold tracking-[0.28em] uppercase mb-3">
               {d.recommendedIn(dest.name)}
             </p>
-            <h2 className="font-heading text-4xl sm:text-5xl text-charcoal leading-tight tracking-tight">
+            <h2 className="font-heading text-4xl sm:text-5xl text-charcoal leading-tight tracking-wide">
               {d.whereToStay}
             </h2>
           </div>
@@ -242,7 +242,7 @@ export default function DestinationPage() {
 
       <section className="py-16 sm:py-20 px-5 sm:px-6">
         <div className="max-w-3xl mx-auto text-center">
-          <h2 className="font-heading text-3xl sm:text-4xl md:text-5xl text-charcoal mb-5 leading-tight tracking-tight">
+          <h2 className="font-heading text-3xl sm:text-4xl md:text-5xl text-charcoal mb-5 leading-tight tracking-wide">
             {d.liveAvailabilityIn(dest.name)}
           </h2>
           <p className="text-graphite mb-7 leading-relaxed">

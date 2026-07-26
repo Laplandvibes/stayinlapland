@@ -92,7 +92,7 @@ export default function BookingGuide() {
           })}
 
           <div className="text-center pt-8">
-            <h2 className="font-heading text-3xl sm:text-4xl text-charcoal mb-3 leading-tight tracking-tight">
+            <h2 className="font-heading text-3xl sm:text-4xl text-charcoal mb-3 leading-tight tracking-wide">
               {b.readyTitle}
             </h2>
             <p className="text-graphite max-w-xl mx-auto mb-6 leading-relaxed">{b.readyLead}</p>

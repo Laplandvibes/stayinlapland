@@ -111,7 +111,7 @@ export default function WildernessLodges() {
             <p className="text-vibe-pink text-[11px] font-semibold tracking-[0.28em] uppercase mb-3">
               {w.runnersKicker}
             </p>
-            <h2 className="font-heading text-4xl sm:text-5xl text-charcoal leading-tight tracking-tight">
+            <h2 className="font-heading text-4xl sm:text-5xl text-charcoal leading-tight tracking-wide">
               {w.runnersH2}
             </h2>
           </div>
@@ -131,7 +131,7 @@ export default function WildernessLodges() {
             <p className="text-vibe-pink text-[11px] font-semibold tracking-[0.28em] uppercase mb-3">
               {w.glanceKicker}
             </p>
-            <h2 className="font-heading text-4xl sm:text-5xl text-charcoal leading-tight tracking-tight">
+            <h2 className="font-heading text-4xl sm:text-5xl text-charcoal leading-tight tracking-wide">
               {w.glanceH2}
             </h2>
           </div>
@@ -147,7 +147,7 @@ export default function WildernessLodges() {
           <p className="text-vibe-pink text-[11px] font-semibold tracking-[0.28em] uppercase mb-3">
             {w.counterKicker}
           </p>
-          <h2 className="font-heading text-3xl sm:text-4xl md:text-5xl text-charcoal mb-5 leading-tight tracking-tight">
+          <h2 className="font-heading text-3xl sm:text-4xl md:text-5xl text-charcoal mb-5 leading-tight tracking-wide">
             {w.counterH2}
           </h2>
           <div className="space-y-4 text-graphite text-[16px] leading-relaxed">

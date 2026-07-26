@@ -49,8 +49,8 @@ export default function WorkInLaplandPromo({ placement, variant = 'full' }: Work
             <p className="text-vibe-pink text-[11px] font-semibold tracking-[0.28em] uppercase mb-3">
               {t.fullEyebrow}
             </p>
-            <h2 className="font-heading text-4xl sm:text-5xl md:text-6xl text-charcoal leading-[1.1] tracking-tight mb-5">
-              {t.fullH2A} <span className="italic font-light">{t.fullH2B}</span>
+            <h2 className="font-heading text-4xl sm:text-5xl md:text-6xl text-charcoal leading-[1.1] tracking-wide mb-5">
+              {t.fullH2A} <span className="text-vibe-pink">{t.fullH2B}</span>
             </h2>
             <p className="text-graphite text-base sm:text-lg leading-relaxed mb-4">
               {t.fullP1}

@@ -123,7 +123,7 @@ export default function WhenToGo() {
           <p className="text-vibe-pink text-[11px] font-semibold tracking-[0.28em] uppercase mb-3">
             {w.cheatKicker}
           </p>
-          <h2 className="font-heading text-3xl sm:text-4xl md:text-5xl text-charcoal mb-7 leading-tight tracking-tight">
+          <h2 className="font-heading text-3xl sm:text-4xl md:text-5xl text-charcoal mb-7 leading-tight tracking-wide">
             {w.cheatH2}
           </h2>
 

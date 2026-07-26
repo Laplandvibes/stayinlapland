@@ -66,8 +66,8 @@ export default function LongTermRentals() {
           <p className="text-vibe-pink text-[11px] font-semibold tracking-[0.28em] uppercase mb-3">
             {t.eyebrow}
           </p>
-          <h2 className="font-heading text-4xl sm:text-5xl md:text-6xl text-charcoal leading-[1.1] tracking-tight mb-5">
-            {t.h2A} <span className="italic font-light">{t.h2B}</span>
+          <h2 className="font-heading text-4xl sm:text-5xl md:text-6xl text-charcoal leading-[1.1] tracking-wide mb-5">
+            {t.h2A} <span className="text-vibe-pink">{t.h2B}</span>
           </h2>
           <p className="text-graphite text-base sm:text-lg leading-relaxed">{t.lead}</p>
         </div>

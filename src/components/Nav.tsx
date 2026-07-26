@@ -5,7 +5,18 @@ import Logo from './Logo';
 import AffiliateCTA from './AffiliateCTA';
 import { useLang, useLocalePath, type Lang } from '../i18n/useLang';
 import { getCopy } from '../locales/copy';
+import { destinations } from '../data/properties';
 import EcosystemMenu from '../../../shared/EcosystemMenu';
+
+// Destination pages had no entry point in the nav at all — the only way in was
+// the grid halfway down the home page, so /destinations/* was effectively a
+// dead end (Vesa 2026-07-26: "miten sinne navigoidaan?"). Label lives here
+// rather than in the 12 copy files: one new string, one file.
+const DESTINATIONS_LABEL: Record<Lang, string> = {
+  en: 'Destinations', fi: 'Kohteet', sv: 'Destinationer', de: 'Reiseziele',
+  fr: 'Destinations', es: 'Destinos', it: 'Destinazioni', nl: 'Bestemmingen',
+  'pt-BR': 'Destinos', ja: 'エリア', ko: '지역', 'zh-CN': '目的地',
+};
 
 const STORAGE_KEY = 'lv_locale_choice';
 
@@ -39,7 +50,25 @@ const LANG_NAMES: Record<Lang, string> = {
 export default function Nav() {
   const [open, setOpen] = useState(false);
   const [langOpen, setLangOpen] = useState(false);
+  const [destOpen, setDestOpen] = useState(false);
   const langRef = useRef<HTMLDivElement>(null);
+  const destRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    if (!destOpen) return;
+    function onClick(e: MouseEvent) {
+      if (destRef.current && !destRef.current.contains(e.target as Node)) setDestOpen(false);
+    }
+    function onKey(e: KeyboardEvent) {
+      if (e.key === 'Escape') setDestOpen(false);
+    }
+    document.addEventListener('mousedown', onClick);
+    document.addEventListener('keydown', onKey);
+    return () => {
+      document.removeEventListener('mousedown', onClick);
+      document.removeEventListener('keydown', onKey);
+    };
+  }, [destOpen]);
 
   useEffect(() => {
     if (!langOpen) return;
@@ -123,6 +152,43 @@ export default function Nav() {
               </Link>
             );
           })}
+
+          {/* Destinations dropdown */}
+          <div ref={destRef} className="relative">
+            <button
+              type="button"
+              onClick={() => setDestOpen((o) => !o)}
+              aria-haspopup="true"
+              aria-expanded={destOpen}
+              className={`inline-flex items-center gap-1 whitespace-nowrap text-[14px] font-medium transition-colors ${
+                pathname.includes('/destinations/') ? 'text-vibe-pink' : 'text-charcoal/75 hover:text-vibe-pink'
+              }`}
+            >
+              {DESTINATIONS_LABEL[lang]}
+              <ChevronDown size={12} className={destOpen ? 'rotate-180 transition-transform' : 'transition-transform'} />
+            </button>
+            {destOpen && (
+              <ul className="absolute left-0 mt-2 min-w-[190px] rounded-xl border border-charcoal/15 bg-white shadow-2xl py-1 z-50">
+                {destinations.map((d) => {
+                  const to = localePath(`/destinations/${d.slug}`);
+                  const active = pathname === to;
+                  return (
+                    <li key={d.slug}>
+                      <Link
+                        to={to}
+                        onClick={() => setDestOpen(false)}
+                        className={`block px-4 py-2 text-sm transition-colors ${
+                          active ? 'bg-vibe-pink/10 text-vibe-pink font-semibold' : 'text-charcoal hover:bg-charcoal/5'
+                        }`}
+                      >
+                        {d.name}
+                      </Link>
+                    </li>
+                  );
+                })}
+              </ul>
+            )}
+          </div>
 
           {/* Globe-dropdown language switcher */}
           <div ref={langRef} className="relative ml-1">
@@ -225,7 +291,30 @@ export default function Nav() {
             );
           })}
 
-          <div className="flex flex-wrap items-center gap-2 px-3 py-3" role="group" aria-label="Language">
+          {/* Destinations, grouped so the pages are reachable on mobile too */}
+          <p className="px-3 pt-4 pb-1 text-[11px] font-semibold uppercase tracking-[0.22em] text-stone">
+            {DESTINATIONS_LABEL[lang]}
+          </p>
+          {destinations.map((d) => {
+            const to = localePath(`/destinations/${d.slug}`);
+            const active = pathname === to;
+            return (
+              <Link
+                key={d.slug}
+                to={to}
+                onClick={() => setOpen(false)}
+                className={`block px-3 py-2.5 text-base font-medium rounded-lg transition-colors ${
+                  active
+                    ? 'text-vibe-pink bg-charcoal/[0.04]'
+                    : 'text-charcoal/85 hover:text-vibe-pink hover:bg-charcoal/[0.04]'
+                }`}
+              >
+                {d.name}
+              </Link>
+            );
+          })}
+
+          <div className="flex flex-wrap items-center gap-2 px-3 py-3 mt-2 border-t border-charcoal/10" role="group" aria-label="Language">
             {langButtons.map((b) => {
               const active = lang === b.code;
               return (

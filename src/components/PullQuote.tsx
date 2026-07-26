@@ -12,7 +12,7 @@ export default function PullQuote({ children, attribution }: PullQuoteProps) {
       >
         &ldquo;
       </span>
-      <blockquote className="font-heading font-medium italic text-2xl sm:text-3xl md:text-4xl leading-snug text-charcoal">
+      <blockquote className="font-heading text-2xl sm:text-3xl md:text-4xl leading-snug text-charcoal">
         {children}
       </blockquote>
       {attribution && (

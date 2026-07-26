@@ -102,7 +102,7 @@ export default function PageHero({
             {eyebrow}
           </p>
           <h1
-            className="font-heading font-medium text-snow leading-[1.08] tracking-tight text-[38px] sm:text-5xl md:text-6xl xl:text-7xl mb-5"
+            className="font-heading font-medium text-snow leading-[1.08] tracking-wide text-[38px] sm:text-5xl md:text-6xl xl:text-7xl mb-5"
             style={{ textShadow: '0 4px 30px rgba(0,0,0,0.85)' }}
           >
             {title}

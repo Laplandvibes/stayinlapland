@@ -113,7 +113,7 @@ export default function GlassIgloos() {
             <p className="text-vibe-pink text-[11px] font-semibold tracking-[0.28em] uppercase mb-3">
               {g.runnersKicker}
             </p>
-            <h2 className="font-heading text-4xl sm:text-5xl text-charcoal leading-tight tracking-tight">
+            <h2 className="font-heading text-4xl sm:text-5xl text-charcoal leading-tight tracking-wide">
               {g.runnersH2}
             </h2>
           </div>
@@ -133,7 +133,7 @@ export default function GlassIgloos() {
             <p className="text-vibe-pink text-[11px] font-semibold tracking-[0.28em] uppercase mb-3">
               {g.glanceKicker}
             </p>
-            <h2 className="font-heading text-4xl sm:text-5xl text-charcoal leading-tight tracking-tight">
+            <h2 className="font-heading text-4xl sm:text-5xl text-charcoal leading-tight tracking-wide">
               {g.glanceH2}
             </h2>
           </div>
@@ -149,7 +149,7 @@ export default function GlassIgloos() {
           <p className="text-vibe-pink text-[11px] font-semibold tracking-[0.28em] uppercase mb-3">
             {g.counterKicker}
           </p>
-          <h2 className="font-heading text-3xl sm:text-4xl md:text-5xl text-charcoal mb-5 leading-tight tracking-tight">
+          <h2 className="font-heading text-3xl sm:text-4xl md:text-5xl text-charcoal mb-5 leading-tight tracking-wide">
             {g.counterH2}
           </h2>
           <div className="space-y-4 text-graphite text-[16px] leading-relaxed">

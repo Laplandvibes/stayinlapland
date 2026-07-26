@@ -26,7 +26,7 @@ export default function DestinationFacts({ facts }: { facts: Facts }) {
         <p className="text-vibe-pink text-[11px] font-semibold tracking-[0.28em] uppercase mb-3">
           {t(factsUi.highlightsKicker)}
         </p>
-        <h2 className="font-heading text-4xl sm:text-5xl text-charcoal leading-tight tracking-tight mb-10">
+        <h2 className="font-heading text-4xl sm:text-5xl text-charcoal leading-tight tracking-wide mb-10">
           {t(factsUi.highlightsH2)}
         </h2>
 
@@ -43,7 +43,7 @@ export default function DestinationFacts({ facts }: { facts: Facts }) {
           <p className="text-vibe-pink text-[11px] font-semibold tracking-[0.28em] uppercase mb-3">
             {t(factsUi.placesKicker)}
           </p>
-          <h2 className="font-heading text-3xl sm:text-4xl text-charcoal leading-tight tracking-tight mb-4">
+          <h2 className="font-heading text-3xl sm:text-4xl text-charcoal leading-tight tracking-wide mb-4">
             {t(factsUi.placesH2)}
           </h2>
           <p className="text-graphite text-[15px] leading-relaxed max-w-3xl mb-8">{t(factsUi.placesNote)}</p>

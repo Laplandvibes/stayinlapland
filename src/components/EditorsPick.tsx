@@ -46,7 +46,7 @@ export default function EditorsPick({
         </div>
 
         <div className="lg:col-span-5 lg:pt-12">
-          <h2 className="font-heading text-4xl sm:text-5xl text-charcoal leading-tight tracking-tight mb-2">
+          <h2 className="font-heading text-4xl sm:text-5xl text-charcoal leading-tight tracking-wide mb-2">
             {name}
           </h2>
           <p className="text-stone text-sm mb-7 inline-flex items-center gap-2">

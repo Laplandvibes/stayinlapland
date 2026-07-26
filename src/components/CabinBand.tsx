@@ -197,9 +197,34 @@ function PriceLine({ tpl, price }: { tpl: string; price: string }) {
   );
 }
 
-export default function CabinBand({ area, destName }: { area: CabinArea; destName: string }) {
+/** Display names are proper nouns — never translated. */
+const AREA_NAMES: Record<CabinArea, string> = {
+  yllas: 'Ylläs',
+  levi: 'Levi',
+  saariselka: 'Saariselkä',
+  lapland: 'Lapland',
+};
+
+/**
+ * `area` renders one destination's cabins (destination pages).
+ * `areas` renders a tab per area (home page) — the heading follows the active
+ * tab, so no extra copy is needed for the tabbed variant.
+ */
+export default function CabinBand({
+  area,
+  areas,
+  destName,
+}: {
+  area?: CabinArea;
+  areas?: CabinArea[];
+  destName?: string;
+}) {
   const lang = useLang();
   const c = COPY[lang];
+  const tabs = areas && areas.length ? areas : null;
+  const [tab, setTab] = useState<CabinArea>(tabs ? tabs[0] : (area as CabinArea));
+  const active: CabinArea = tabs ? tab : (area as CabinArea);
+  const activeName = destName && !tabs ? destName : AREA_NAMES[active];
   const [data, setData] = useState<CabinsApiData | null>(getCachedCabins());
   const [failed, setFailed] = useState(false);
 
@@ -225,11 +250,11 @@ export default function CabinBand({ area, destName }: { area: CabinArea; destNam
 
   if (failed) return null;
 
-  const cabins = data ? (data.groups[area] ?? []).slice(0, CARDS_SHOWN) : [];
-  const total = data?.totals[area] ?? 0;
+  const cabins = data ? (data.groups[active] ?? []).slice(0, CARDS_SHOWN) : [];
+  const total = data?.totals[active] ?? 0;
   if (data && cabins.length === 0) return null;
 
-  const moreHref = buildLomarengasUrl(area, `cabin_more_${area}`, lang);
+  const moreHref = buildLomarengasUrl(active, `cabin_more_${active}`, lang);
 
   return (
     <section className="py-16 sm:py-24 px-5 sm:px-6 bg-cream-2/60">
@@ -239,8 +264,8 @@ export default function CabinBand({ area, destName }: { area: CabinArea; destNam
             <p className="text-vibe-pink text-[11px] font-semibold tracking-[0.28em] uppercase mb-3">
               {c.eyebrow}
             </p>
-            <h2 className="font-heading text-4xl sm:text-5xl text-charcoal leading-tight tracking-tight">
-              {c.h2(destName)}
+            <h2 className="font-heading text-4xl sm:text-5xl text-charcoal leading-tight tracking-wide">
+              {c.h2(activeName)}
             </h2>
           </div>
           {/* Lomarengas wordmark stays visible at the placement (programme term) */}
@@ -256,7 +281,28 @@ export default function CabinBand({ area, destName }: { area: CabinArea; destNam
             />
           </span>
         </div>
-        <p className="text-graphite text-[16px] leading-relaxed mb-9 max-w-3xl">{c.lead}</p>
+        <p className="text-graphite text-[16px] leading-relaxed mb-7 max-w-3xl">{c.lead}</p>
+
+        {tabs && (
+          <div className="flex flex-wrap gap-2 mb-8" role="tablist" aria-label={c.eyebrow}>
+            {tabs.map((key) => (
+              <button
+                key={key}
+                type="button"
+                role="tab"
+                aria-selected={active === key}
+                onClick={() => setTab(key)}
+                className={`px-4 py-2 rounded-full text-sm font-semibold transition-colors ${
+                  active === key
+                    ? 'bg-vibe-pink text-white'
+                    : 'bg-white text-charcoal/75 border border-charcoal/15 hover:border-vibe-pink hover:text-vibe-pink'
+                }`}
+              >
+                {AREA_NAMES[key]}
+              </button>
+            ))}
+          </div>
+        )}
 
         {/* Mobile: one-row swipe; sm+: grid */}
         <div className="flex gap-4 overflow-x-auto pb-3 snap-x snap-mandatory sm:grid sm:grid-cols-2 lg:grid-cols-3 sm:gap-5 sm:overflow-visible sm:pb-0">
@@ -268,7 +314,7 @@ export default function CabinBand({ area, destName }: { area: CabinArea; destNam
                 />
               ))
             : cabins.map((cab) => {
-                const sid = `cabin_card_${area}`;
+                const sid = `cabin_card_${active}`;
                 const href = buildLomarengasCabinUrl(cab.slug, sid, lang);
                 // 'relative' is load-bearing: the sr-only spans below are
                 // position:absolute, and with no positioned ancestor they

@@ -7,7 +7,7 @@ import AuthorByline from '../components/AuthorByline';
 import PullQuote from '../components/PullQuote';
 import TripTypeRecommender from '../components/TripTypeRecommender';
 import WorkInLaplandPromo from '../components/WorkInLaplandPromo';
-import LomarengasAd from '../components/LomarengasAd';
+import CabinBand from '../components/CabinBand';
 import HomeAdSlots, { MainPartnerBanner } from '../../../shared/HomeAdSlots';
 import { AD_SLOTS } from '../data/adSlots';
 import { allCategoriesSummary, destinations } from '../data/properties';
@@ -141,8 +141,8 @@ export default function Home() {
             <p className="text-vibe-pink text-[11px] font-semibold tracking-[0.28em] uppercase mb-3">
               {h.fourWays.kicker}
             </p>
-            <h2 className="font-heading text-4xl sm:text-5xl md:text-6xl text-charcoal leading-[1.1] tracking-tight">
-              {h.fourWays.h2A} <span className="italic font-light">{h.fourWays.h2B}</span>
+            <h2 className="font-heading text-4xl sm:text-5xl md:text-6xl text-charcoal leading-[1.1] tracking-wide">
+              {h.fourWays.h2A} <span className="text-vibe-pink">{h.fourWays.h2B}</span>
             </h2>
             <p className="text-graphite text-base sm:text-lg mt-5 leading-relaxed">
               {h.fourWays.lead}
@@ -187,17 +187,17 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Real, bookable cabins high on the page (Vesa 2026-07-26: "aidot
+          mökkikohteet heti etusivulle, että herättää luottamusta"). This is the
+          only photography on the site that shows actual properties, so it does
+          more for trust than any amount of copy. Replaces the text-only
+          Lomarengas ad that used to sit further down: same partner, same
+          disclosure, far better creative. */}
+      <CabinBand areas={['yllas', 'levi', 'saariselka']} />
+
       {/* LV Media — kumppaniosio ylhäällä: kakkospääkumppani + 6 premium-
           kohdepaikkaa. Cream-pinta → surface="light". */}
       <HomeAdSlots config={AD_SLOTS} locale={lang} surface="light" />
-
-      {/* Flagship affiliate ad — Lomarengas (privately-owned weekly cottages),
-          matched to the long-stay / whole-cabin angle of the page above. */}
-      <section className="py-12 sm:py-16 px-5 sm:px-6">
-        <div className="max-w-6xl mx-auto">
-          <LomarengasAd sid="home_overview" />
-        </div>
-      </section>
 
       <PullQuote attribution={h.pullQuote.attr}>{h.pullQuote.text}</PullQuote>
 
@@ -210,7 +210,7 @@ export default function Home() {
             <p className="text-vibe-pink text-[11px] font-semibold tracking-[0.28em] uppercase mb-3">
               {h.tripKicker}
             </p>
-            <h2 className="font-heading text-4xl sm:text-5xl md:text-6xl text-charcoal leading-[1.1] tracking-tight">
+            <h2 className="font-heading text-4xl sm:text-5xl md:text-6xl text-charcoal leading-[1.1] tracking-wide">
               {h.tripH2}
             </h2>
           </div>
@@ -231,7 +231,7 @@ export default function Home() {
             <p className="text-vibe-pink text-[11px] font-semibold tracking-[0.28em] uppercase mb-3">
               {h.destKicker}
             </p>
-            <h2 className="font-heading text-4xl sm:text-5xl md:text-6xl text-charcoal leading-[1.1] tracking-tight">
+            <h2 className="font-heading text-4xl sm:text-5xl md:text-6xl text-charcoal leading-[1.1] tracking-wide">
               {h.destH2}
             </h2>
             <p className="text-graphite text-base sm:text-lg mt-5 leading-relaxed">
@@ -283,7 +283,7 @@ export default function Home() {
             <p className="text-vibe-pink text-[11px] font-semibold tracking-[0.28em] uppercase mb-3">
               {h.faqKicker}
             </p>
-            <h2 className="font-heading text-4xl sm:text-5xl md:text-6xl text-charcoal leading-[1.1] tracking-tight">
+            <h2 className="font-heading text-4xl sm:text-5xl md:text-6xl text-charcoal leading-[1.1] tracking-wide">
               {h.faqH2}
             </h2>
           </div>

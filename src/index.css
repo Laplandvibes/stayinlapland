@@ -1,4 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800&family=Nunito:wght@300;400;500;600;700&family=Bebas+Neue&display=swap');
+/* Network-canonical type (Vesa 2026-07-26): this was the last site still on
+   the Playfair/Nunito variant — laplandstays, christmas and hoteldeals were all
+   moved to Bebas Neue + DM Sans on 23.–24.7. The cream luxury palette stays;
+   only the typography joins the rest of the network. */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@300;400;500;600;700&display=swap');
 @import "tailwindcss";
 @source "../../shared/**/*.{ts,tsx,js,jsx}";
 
@@ -22,9 +26,9 @@
   --color-night: #0F172A;
 
   /* Typography */
-  --font-heading: 'Playfair Display', serif;
-  --font-display: 'Playfair Display', serif;
-  --font-body: 'Nunito', sans-serif;
+  --font-heading: 'Bebas Neue', sans-serif;
+  --font-display: 'Bebas Neue', sans-serif;
+  --font-body: 'DM Sans', sans-serif;
   /* NETWORK RULE (Vesa 2026-07-24): hashtag wordmark = Bebas Neue on every
      site, incl. font-variant sites. Only the logo uses this token. */
   --font-logo: 'Bebas Neue', 'Arial Narrow', sans-serif;
@@ -46,9 +50,10 @@
 
   h1, h2, h3, h4, h5, h6 {
     font-family: var(--font-heading);
-    font-weight: 600;
+    /* Bebas Neue ships a single weight and is already condensed, so no
+       font-weight and never negative tracking (brand rule: tracking-wide). */
     color: var(--color-charcoal);
-    letter-spacing: -0.01em;
+    letter-spacing: 0.01em;
     /* premium_design_standard §3: tidy heading line-breaks site-wide so long
        multi-word titles wrap evenly instead of leaving a lonely last word. */
     text-wrap: balance;

@@ -124,7 +124,7 @@ export default function LongStays() {
             <p className="text-vibe-pink text-[11px] font-semibold tracking-[0.28em] uppercase mb-3">
               {ls.runnersKicker}
             </p>
-            <h2 className="font-heading text-4xl sm:text-5xl text-charcoal leading-tight tracking-tight">
+            <h2 className="font-heading text-4xl sm:text-5xl text-charcoal leading-tight tracking-wide">
               {ls.runnersH2}
             </h2>
             <p className="text-graphite mt-4 leading-relaxed">{ls.runnersLead}</p>
@@ -150,7 +150,7 @@ export default function LongStays() {
           <p className="text-gold text-[11px] font-semibold tracking-[0.28em] uppercase mb-3">
             {ls.weeklyKicker}
           </p>
-          <h2 className="font-heading text-3xl sm:text-4xl md:text-5xl text-charcoal mb-6 leading-tight tracking-tight">
+          <h2 className="font-heading text-3xl sm:text-4xl md:text-5xl text-charcoal mb-6 leading-tight tracking-wide">
             {ls.weeklyH2}
           </h2>
           <div className="space-y-4 text-graphite text-[16px] leading-relaxed">
@@ -172,7 +172,7 @@ export default function LongStays() {
           <p className="text-vibe-pink text-[11px] font-semibold tracking-[0.28em] uppercase mb-3">
             {ls.counterKicker}
           </p>
-          <h2 className="font-heading text-3xl sm:text-4xl md:text-5xl text-charcoal mb-5 leading-tight tracking-tight">
+          <h2 className="font-heading text-3xl sm:text-4xl md:text-5xl text-charcoal mb-5 leading-tight tracking-wide">
             {ls.counterH2}
           </h2>
           <div className="space-y-4 text-graphite text-[16px] leading-relaxed">

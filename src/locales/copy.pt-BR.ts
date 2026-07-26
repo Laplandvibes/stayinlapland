@@ -762,7 +762,7 @@ export const copyPTBR: SectionCopy = {
     {
       slug: 'yllas',
       pitch:
-        'Mais tranquila que Levi, temporada de esqui mais longa, a maior rede de trilhas de cross-country da Lapônia (330 km).',
+        'Mais tranquila que Levi, temporada de esqui mais longa, cerca de 300 km de trilhas de esqui nórdico mantidas atravessando um parque nacional.',
       longStayAngle:
         'Lógica da estadia longa: a rede de cross-country é o atrativo. Os aluguéis de cabana aqui são por semana de fim de novembro a início de maio. A melhor escolha de estadia longa para esquiadores que não precisam de descida com teleférico todo dia.',
     },

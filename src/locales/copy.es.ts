@@ -761,7 +761,7 @@ export const copyES: SectionCopy = {
     {
       slug: 'yllas',
       pitch:
-        'Más tranquilo que Levi, temporada de esquí más larga, la mayor red de pistas de fondo de Laponia (330 km).',
+        'Más tranquilo que Levi, temporada de esquí más larga, unos 300 km de pistas de fondo mantenidas a través de un parque nacional.',
       longStayAngle:
         'Lógica de larga estancia: la red de esquí de fondo es el reclamo. Los alquileres de cabañas van por semana de finales de noviembre a principios de mayo. La mejor opción de larga estancia para esquiadores que no necesitan descenso con remontes a diario.',
     },

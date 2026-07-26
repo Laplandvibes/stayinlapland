@@ -758,7 +758,7 @@ export const copyDE: SectionCopy = {
     {
       slug: 'yllas',
       pitch:
-        'Ruhiger als Levi, längere Skisaison, das größte Langlaufnetz Lapplands (330 km).',
+        'Ruhiger als Levi, längere Skisaison, rund 300 km gepflegte Loipen durch einen Nationalpark.',
       longStayAngle:
         'Langzeit-Logik: Das Langlaufnetz ist der Magnet. Hüttenmieten laufen hier wöchentlich von Ende November bis Anfang Mai. Die beste Langzeitwahl für Skifahrer, die nicht jeden Tag liftbedientes Alpinfahren brauchen.',
     },

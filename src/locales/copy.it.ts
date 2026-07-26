@@ -772,7 +772,7 @@ export const copyIT: SectionCopy = {
     {
       slug: 'yllas',
       pitch:
-        'Più tranquillo di Levi, stagione sciistica più lunga, la rete di sci di fondo più grande della Lapponia (330 km).',
+        'Più tranquillo di Levi, stagione sciistica più lunga, circa 300 km di piste da fondo battute attraverso un parco nazionale.',
       longStayAngle:
         'Logica del soggiorno lungo: la rete di sci di fondo è l’attrattiva. Gli affitti di baite qui vanno a settimana da fine novembre a inizio maggio. La migliore scelta per sciatori che non hanno bisogno di discesa con impianti tutti i giorni.',
     },

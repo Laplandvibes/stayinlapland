@@ -45,7 +45,47 @@ export default function PageHero({
             />
           </>
         ) : (
-          <div className="absolute inset-0 bg-night" />
+          /* Editorial backdrop for pages we have no honest photograph of.
+             Deliberately a GRAPHIC, not a picture: an AI render of "a lodge
+             somewhere" claims to show a place it has never seen, which is the
+             one thing an accommodation guide cannot afford (Vesa 2026-07-26).
+             Real photography on this site lives in the cabin cards, where the
+             partner licence lets us show the actual property. */
+          <>
+            <div className="absolute inset-0 bg-night" />
+            <div
+              className="absolute inset-0"
+              style={{
+                background:
+                  'radial-gradient(120% 78% at 50% -15%, rgba(6,182,212,0.30) 0%, rgba(16,185,129,0.16) 38%, rgba(236,72,153,0.10) 62%, transparent 82%)',
+              }}
+            />
+            <div
+              className="absolute inset-0"
+              style={{
+                background:
+                  'radial-gradient(70% 42% at 16% 6%, rgba(16,185,129,0.18) 0%, transparent 68%)',
+              }}
+            />
+            <svg
+              className="absolute inset-x-0 bottom-0 w-full h-[42%]"
+              viewBox="0 0 1440 300"
+              preserveAspectRatio="none"
+              aria-hidden="true"
+              focusable="false"
+            >
+              <path
+                d="M0,190 L210,120 L360,168 L560,74 L760,166 L980,110 L1180,172 L1440,120 L1440,300 L0,300 Z"
+                fill="#0B1220"
+                opacity="0.9"
+              />
+              <path
+                d="M0,238 L260,186 L470,226 L700,160 L920,222 L1160,182 L1440,232 L1440,300 L0,300 Z"
+                fill="#070D16"
+              />
+            </svg>
+            <div className="absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-b from-transparent to-night" />
+          </>
         )}
 
         {/* Desktop gets a wider measure so long FI/DE compounds stay on one

@@ -773,7 +773,7 @@ export const copySV: SectionCopy = {
     {
       slug: 'yllas',
       pitch:
-        'Lugnare än Levi, längre skidsäsong, Lapplands största längdskidnät (330 km).',
+        'Lugnare än Levi, längre skidsäsong, omkring 300 km preparerade längdspår genom en nationalpark.',
       longStayAngle:
         'Långtidslogiken: längdskidnätet är dragplåstret. Stuguthyrning löper här per vecka från slutet av november till början av maj. Det bästa långtidsvalet för skidåkare som inte behöver alpint med liftar varje dag.',
     },

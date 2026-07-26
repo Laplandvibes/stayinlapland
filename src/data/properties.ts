@@ -286,7 +286,10 @@ export const destinations: DestinationInfo[] = [
     slug: 'yllas',
     name: 'Ylläs',
     searchQuery: 'Äkäslompolo',
-    pitch: 'Quieter than Levi, longer ski season, the largest cross-country trail network in Lapland (330 km).',
+    // "Largest in Lapland (330 km)" was neither operator-published nor
+    // consistent with ski.yllas.fi / yllas.fi, which state around 300 km and
+    // make no such superlative (verified 2026-07-23, re-checked 2026-07-26).
+    pitch: 'Quieter than Levi, longer ski season, around 300 km of maintained cross-country tracks through a national park.',
     longStayAngle:
       'Long-stay sense: the cross-country network is the draw. Cabin rentals here run by the week from late November to early May. The best long-stay choice for skiers who do not need lift-served downhill every day.',
     propertyNames: ['Lapland Hotels Saaga'],

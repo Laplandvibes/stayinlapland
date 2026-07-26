@@ -771,7 +771,7 @@ export const copyNL: SectionCopy = {
     {
       slug: 'yllas',
       pitch:
-        'Rustiger dan Levi, langer skiseizoen, het grootste langlaufnetwerk van Lapland (330 km).',
+        'Rustiger dan Levi, langer skiseizoen, zo’n 300 km geprepareerde langlaufloipes door een nationaal park.',
       longStayAngle:
         'Logica van het lange verblijf: het langlaufnetwerk is de trekker. Hutverhuur loopt hier per week van eind november tot begin mei. De beste lange-verblijfskeuze voor skiërs die geen alpine met liften elke dag nodig hebben.',
     },

@@ -16,14 +16,10 @@ import type { Property } from '../data/properties';
 import { pageUrl } from '../lib/meta';
 import { useLang, useLocalePath } from '../i18n/useLang';
 import { getCopy } from '../locales/copy';
-
-const HERO_IMAGES: Record<string, string> = {
-  rovaniemi: '/images/hero-cabins.webp',
-  levi: '/images/hero-aurora-cabins.webp',
-  saariselka: '/images/hero-glass-igloos.webp',
-  inari: '/images/hero-aurora-cabins.webp',
-  yllas: '/images/hero-wilderness.webp',
-};
+import DestinationFacts from '../components/DestinationFacts';
+import CabinBand from '../components/CabinBand';
+import { getDestinationFacts } from '../data/destinationFacts';
+import { isCabinArea } from '../lib/lomarengas';
 
 type Bucket = 'long-stays' | 'hotels' | 'glass-igloos' | 'wilderness';
 
@@ -71,6 +67,8 @@ export default function DestinationPage() {
   const destCopy = t.destinationsData.find((x) => x.slug === dest.slug);
   const pitch = destCopy?.pitch ?? dest.pitch;
   const longStayAngle = destCopy?.longStayAngle ?? dest.longStayAngle;
+
+  const facts = getDestinationFacts(dest.slug);
 
   const dataForBucket: Record<Bucket, typeof t.hotelsData> = {
     'long-stays': t.longStaysData,
@@ -126,13 +124,32 @@ export default function DestinationPage() {
         }}
       />
 
-      <PageHero
-        eyebrow={d.pageHeroEyebrow}
-        title={dest.name}
-        subtitle={pitch}
-        imageSrc={HERO_IMAGES[dest.slug]}
-        imageAlt={`Editorial winter scene from ${dest.name}, Finnish Lapland`}
-      />
+      {/* No imageSrc on purpose: PageHero then renders its editorial aurora
+          backdrop. We have no photograph of these places that we took or
+          licensed, and an AI render captioned as a real destination is a
+          claim we cannot back (Vesa 2026-07-26). */}
+      <PageHero eyebrow={d.pageHeroEyebrow} title={dest.name} subtitle={pitch}>
+        {facts && (
+          <dl className="flex flex-wrap justify-center gap-x-3 gap-y-2.5">
+            {facts.stats.map((s) => (
+              <div
+                key={s.value + (s.label.en ?? '')}
+                className="rounded-2xl bg-snow/10 border border-snow/20 backdrop-blur-sm px-4 py-2.5 text-center min-w-[104px]"
+              >
+                <dt className="sr-only">{s.label[lang] ?? s.label.en}</dt>
+                <dd>
+                  <span className="block font-heading text-snow text-2xl sm:text-3xl leading-none">
+                    {s.value}
+                  </span>
+                  <span className="block font-body text-snow/70 text-[11px] mt-1.5 leading-tight">
+                    {s.label[lang] ?? s.label.en}
+                  </span>
+                </dd>
+              </div>
+            ))}
+          </dl>
+        )}
+      </PageHero>
 
       <section className="py-16 sm:py-20 px-5 sm:px-6">
         <div className="max-w-4xl mx-auto">
@@ -160,25 +177,18 @@ export default function DestinationPage() {
                 key={p.slug}
                 className="group overflow-hidden bg-white border border-charcoal/8 rounded-2xl shadow-sm hover:shadow-md transition-all"
               >
-                {/* Image top from the property's existing card image (no new assets). */}
-                <div className="relative h-40 overflow-hidden bg-cream-2">
-                  <img
-                    src={p.imageSrc ?? HERO_IMAGES[dest.slug]}
-                    alt={p.name}
-                    className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-                    loading="lazy"
-                    decoding="async"
-                  />
-                  <div
-                    className="absolute inset-0"
-                    style={{
-                      background:
-                        'linear-gradient(to top, rgba(15,23,42,0.60) 0%, rgba(15,23,42,0.05) 60%)',
-                    }}
-                  />
-                  <p className="absolute bottom-3 left-5 right-5 text-[11px] tracking-[0.18em] uppercase text-snow font-semibold">
+                {/* Label bar instead of a photo. The only image available was
+                    an AI render, and putting one under the name of a real,
+                    named hotel misrepresents that hotel — the same problem as
+                    the old fake hero, just smaller. Real photography on this
+                    page is in the cabin cards below, where the partner licence
+                    covers the actual properties. */}
+                <div className="flex items-center gap-3 px-6 sm:px-8 pt-6">
+                  <span className="h-px flex-1 bg-charcoal/10" />
+                  <p className="text-[11px] tracking-[0.18em] uppercase text-gold font-semibold">
                     {d.bucketLabels[bucket] ?? bucket.replace('-', ' ')}
                   </p>
+                  <span className="h-px flex-1 bg-charcoal/10" />
                 </div>
                 <div className="grid grid-cols-1 md:grid-cols-12 gap-6 p-6 sm:p-8">
                 <div className="md:col-span-8">
@@ -218,6 +228,15 @@ export default function DestinationPage() {
           </div>
         </div>
       </section>
+
+      {isCabinArea(dest.slug) && <CabinBand area={dest.slug} destName={dest.name} />}
+
+      {facts && (
+        <>
+          <FinnishDivider />
+          <DestinationFacts facts={facts} />
+        </>
+      )}
 
       <FinnishDivider />
 

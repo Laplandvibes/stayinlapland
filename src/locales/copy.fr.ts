@@ -758,7 +758,7 @@ export const copyFR: SectionCopy = {
     {
       slug: 'yllas',
       pitch:
-        'Plus calme que Levi, saison de ski plus longue, le plus grand réseau de pistes de fond de Laponie (330 km).',
+        'Plus calme que Levi, saison de ski plus longue, environ 300 km de pistes de fond entretenues à travers un parc national.',
       longStayAngle:
         'Logique longue durée : le réseau de ski de fond est l’attrait. Les locations de chalets s’y font à la semaine de fin novembre à début mai. Le meilleur choix longue durée pour les skieurs qui n’ont pas besoin de descente sur remontées tous les jours.',
     },

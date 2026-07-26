@@ -748,7 +748,7 @@ export const copyEN: SectionCopy = {
     {
       slug: 'yllas',
       pitch:
-        'Quieter than Levi, longer ski season, the largest cross-country trail network in Lapland (330 km).',
+        'Quieter than Levi, longer ski season, around 300 km of maintained cross-country tracks through a national park.',
       longStayAngle:
         'Long-stay sense: the cross-country network is the draw. Cabin rentals here run by the week from late November to early May. The best long-stay choice for skiers who do not need lift-served downhill every day.',
     },

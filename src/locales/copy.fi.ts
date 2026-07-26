@@ -758,7 +758,7 @@ export const copyFI: SectionCopy = {
     {
       slug: 'yllas',
       pitch:
-        'Hiljaisempi kuin Levi, pidempi hiihtokausi, suurin maastohiihtoverkko Lapissa (330 km).',
+        'Hiljaisempi kuin Levi, pidempi hiihtokausi, noin 300 km hoidettuja latuja kansallispuiston halki.',
       longStayAngle:
         'Pitkän jakson logiikka: maastohiihtoverkko on vetonaula. Mökkivuokraukset täällä menevät viikoittain marraskuun lopusta toukokuun alkuun. Paras pitkä jakso hiihtäjille, jotka eivät tarvitse hissiavusteista laskettelua joka päivä.',
     },

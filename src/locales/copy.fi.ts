@@ -737,7 +737,7 @@ export const copyFI: SectionCopy = {
     {
       slug: 'levi',
       pitch:
-        'Suomen suurin hiihtokeskus, syvin valikoima ski-in/out-asuntoja ja oikea kylän raitti.',
+        'Suomen suurin hiihtokeskus hissilippujen myynnillä mitattuna, syvin valikoima ski-in/out-asuntoja ja oikea kylän raitti.',
       longStayAngle:
         'Pitkän jakson logiikka: ski-in/out-asunnot vuokrataan viikoittain joulu–huhtikuussa. Hissijärjestelmä toimii päivittäin, kyläravintolat auki joka ilta, voit tehdä oikean hiihtokauden.',
     },
@@ -751,7 +751,7 @@ export const copyFI: SectionCopy = {
     {
       slug: 'inari',
       pitch:
-        'Saamelaisten kulttuuripääkaupunki, Inarinjärvi (1 084 km²), Suomen pohjoisin pitkän jakson tukikohta.',
+        'Saamelaisten kulttuuripääkaupunki, Inarijärvi (Suomen kolmanneksi suurin järvi), Suomen pohjoisin pitkän jakson tukikohta.',
       longStayAngle:
         'Pitkän jakson logiikka: itse järvi on aktiviteetti. Pilkkimistä joka aamu, maastohiihto jäätyneen järven yli, Saamelaismuseo ja Siida-keskus kynnyksellä.',
     },

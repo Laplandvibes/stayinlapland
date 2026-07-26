@@ -753,7 +753,7 @@ export const copySV: SectionCopy = {
     {
       slug: 'levi',
       pitch:
-        'Finlands största skidområde, med det bredaste utbudet av ski-in/out-lägenheter och en riktig bygata.',
+        'Finlands största skidort mätt i liftkortsförsäljning, med det bredaste utbudet av ski-in/out-lägenheter och en riktig bygata.',
       longStayAngle:
         'Långtidslogiken: ski-in/out-lägenheter hyrs ut per vecka från december till april. Liftsystemet går dagligen, byns restauranger öppnar varje kväll, du kan göra en riktig säsong här.',
     },
@@ -766,7 +766,7 @@ export const copySV: SectionCopy = {
     },
     {
       slug: 'inari',
-      pitch: 'Samisk kulturhuvudstad, Inarisjön (1 084 km²), Finlands nordligaste långtidsbas.',
+      pitch: 'Samisk kulturhuvudstad, Inarisjön (Finlands tredje största sjö), Finlands nordligaste långtidsbas.',
       longStayAngle:
         'Långtidslogiken: sjön själv är aktiviteten. Pimpelfiske varje morgon, längdskidåkning över den frusna sjön, samiska museet i Inari och kulturcentret SIIDA utanför dörren.',
     },

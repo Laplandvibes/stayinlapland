@@ -752,7 +752,7 @@ export const copyIT: SectionCopy = {
     {
       slug: 'levi',
       pitch:
-        'Il più grande comprensorio sciistico della Finlandia, con la più ampia scelta di appartamenti ski-in/out e una vera via principale di villaggio.',
+        'Il più grande comprensorio sciistico della Finlandia per vendita di skipass, con la più ampia scelta di appartamenti ski-in/out e una vera via principale di villaggio.',
       longStayAngle:
         'Logica del soggiorno lungo: gli appartamenti ski-in/out si affittano a settimana da dicembre ad aprile. Gli impianti vanno ogni giorno, i ristoranti del villaggio aprono ogni sera, qui si può fare una vera stagione.',
     },
@@ -765,7 +765,7 @@ export const copyIT: SectionCopy = {
     },
     {
       slug: 'inari',
-      pitch: 'Capitale culturale sami, Lago Inari (1 084 km²), la base per soggiorni lunghi più a nord della Finlandia.',
+      pitch: 'Capitale culturale sami, Lago Inari (terzo lago della Finlandia per grandezza), la base per soggiorni lunghi più a nord della Finlandia.',
       longStayAngle:
         'Logica del soggiorno lungo: il lago stesso è l’attività. Pesca sul ghiaccio ogni mattina, sci di fondo attraverso il lago ghiacciato, il Museo Sami di Inari e il centro culturale SIIDA sull’uscio.',
     },

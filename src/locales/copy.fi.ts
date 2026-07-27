@@ -18,7 +18,7 @@ export const copyFI: SectionCopy = {
     h1Line1: 'Lappi on enemmän',
     h1Line2: 'kuin viikon loma.',
     lead:
-      'Mökkejä viikoittaisilla hinnoilla, design-hotelleja Rovaniemellä, lasi-iglut bucket-list-öihin, ja erämaalodget viimeisen tien jälkeen. Varmistetut hinnat alkaen',
+      'Mökkejä viikoittaisilla hinnoilla, design-hotelleja Rovaniemellä, lasi-iglut bucket-list-öihin ja erämaalodget viimeisen tien jälkeen. Varmistetut hinnat alkaen',
     leadPriceRange: '140 € – 1 500 €',
     liveLabel: 'Reaaliaikainen saatavuus · Sembo-haku',
     browseLongStays: 'Katso pitkät jaksot',
@@ -82,7 +82,7 @@ export const copyFI: SectionCopy = {
       'Monet näistä pitkän jakson kohteista varaa ihminen, joka tuli alun perin hiihtokaudeksi, arktiselle insinöörikeikalle tai etätyökuukaudeksi ja jäi sitten rakastumaan paikkaan. Jos olet siksi täällä, työpuolella on oma sivustonsa.',
     fullP2A: 'LaplandWork.com',
     fullP2B:
-      ' on Suomen Lapin keskitetty työpaikkahubi, kausimajoitustyöt, hiihtokeskusten paikat, huskytarhojen vakanssit, sairaala- ja insinöörityöt Rovaniemellä, Levillä, Saariselällä ja Inarissa. Ilmainen työnhakijoille, kolme hintatasoa työnantajille.',
+      ' on Suomen Lapin keskitetty työpaikkahubi: kausimajoitustyöt, hiihtokeskusten paikat, huskytarhojen vakanssit, sairaala- ja insinöörityöt Rovaniemellä, Levillä, Saariselällä ja Inarissa. Ilmainen työnhakijoille, kolme hintatasoa työnantajille.',
     fullCta: 'Selaa työpaikkoja',
     blocks: [
       { label: 'Kausimajoitustyöt', tag: 'Levi · Ylläs · Saariselkä' },
@@ -153,7 +153,7 @@ export const copyFI: SectionCopy = {
     breadcrumbHome: 'Etusivu',
     stats: { stays: 'Valittua kohdetta', bases: 'Lapin tukikohtaa', categories: 'Tapaa majoittua', months: 'Arvioitua kuukautta' },
     intro: {
-      p1: '"Lapin parhaat majoitukset" -listat alkavat lähes aina lasi-iglulla, ja jatkavat samalla kaavalla. Tämä opas on tehty toisin: itse koeasutut yöt, paikalliset suositukset, ja vain ne kohteet jotka pitää matkan jälkeen muistissa.',
+      p1: '"Lapin parhaat majoitukset" -listat alkavat lähes aina lasi-iglulla, ja jatkavat samalla kaavalla. Tämä opas on tehty toisin: itse koeasutut yöt, paikalliset suositukset ja vain ne kohteet, jotka jäävät mieleen matkan jälkeen.',
       p2: 'Olemme jakaneet Lapin majoitukset neljään selkeään kategoriaan: pitkät jaksot, hotellit, lasi-iglut ja erämaalodget. 16 valittua kohdetta, kaikki itse käytyjä. Suosittu reitti: viikko mökillä Levillä, kaksi yötä design-hotellissa Rovaniemellä, viimeinen yö lasi-iglussa. Näin yhdistettynä syntyy se Lappi, jonka takia tänne palataan.',
       p3: 'Tämä opas ei aggregoi hintoja eikä kierrätä arvosteluja. Lähteet näkyvissä, kumppanuussuhteet avoinna.',
     },
@@ -190,7 +190,7 @@ export const copyFI: SectionCopy = {
       },
       {
         q: 'Miksi etusivu painottaa pitkiä jaksoja eikä lasi-igluja?',
-        a: 'Lasi-iglu on Lapin ikoninen muoto ja sille on oma sivunsa. Mutta pidempään rakastetuimmat Lapin-reissut eivät ole kolmen yön bucket-list-vierailuja lasikupoleissa, ne ovat viikon tukikohtia mökissä tai design-hotellissa, joihin lisätään yksi tai kaksi yötä muualla. Sivusto heijastaa sitä, miten Lappi todella palkitsee toistuvia kävijöitä.',
+        a: 'Lasi-iglu on Lapin ikoninen muoto ja sille on oma sivunsa. Mutta pidempään rakastetuimmat Lapin-reissut eivät ole kolmen yön bucket-list-vierailuja lasikupoleissa: ne ovat viikon tukikohtia mökissä tai design-hotellissa, joihin lisätään yksi tai kaksi yötä muualla. Sivusto heijastaa sitä, miten Lappi todella palkitsee toistuvia kävijöitä.',
       },
       {
         q: 'Onko Kakslauttanen oikeasti hintansa arvoinen?',
@@ -414,9 +414,9 @@ export const copyFI: SectionCopy = {
     browseAll: 'Selaa Sembon tarjontaa',
   },
   bookingGuide: {
-    metaTitle: 'Lapin varausopas, milloin, miten, mitä pakata',
+    metaTitle: 'Lapin varausopas: milloin, miten, mitä pakata',
     metaDescription:
-      'Käytännöllinen Lapin varausopas, milloin tulla parhaiden revontulien aikaan, miten päästä perille, mitä pakata, mitä se maksaa ja sisäpiirivinkit.',
+      'Käytännöllinen Lapin varausopas: milloin tulla parhaiden revontulien aikaan, miten päästä perille, mitä pakata, mitä se maksaa ja sisäpiirivinkit.',
     breadcrumb: 'Varausopas',
     pageHero: {
       eyebrow: 'Suunnittele oikea reissu',
@@ -484,7 +484,7 @@ export const copyFI: SectionCopy = {
   whenToGo: {
     metaTitle: 'Milloin Lappiin, kuukausi kerrallaan -opas | StayInLapland',
     metaDescription:
-      'Kuukausi kerrallaan -opas Suomen Lapissa vierailuun, milloin revontulet ovat vahvimpia, milloin lumi tasoittuu ja mitkä viikot paikalliset varaavat itselleen.',
+      'Kuukausi kerrallaan -opas Suomen Lapissa vierailuun: milloin revontulet ovat vahvimpia, milloin lumi tasoittuu ja mitkä viikot paikalliset varaavat itselleen.',
     breadcrumb: 'Milloin matkustaa',
     pageHero: {
       eyebrow: 'Kuukausi kerrallaan',
@@ -716,7 +716,7 @@ export const copyFI: SectionCopy = {
       location: 'Iso-Syöte (Pudasjärvi, heti Lapin eteläpuolella)',
       highlight: 'Tunturilatvalla · saavutettavissa Oulusta',
       description:
-        'Mäntyrakenteiset sviitit 432 metrissä Iso-Syötteen tunturilla, Suomen eteläisin oikea tunturi. Tunturilatvan revontulikatselu ilman pitkää lentoa Saariselälle, ja 90 minuuttia Oulun lentokentästä.',
+        'Mäntyrakenteiset sviitit 432 metrissä Iso-Syötteen tunturilla, Suomen eteläisin oikea tunturi. Tunturilatvan revontulikatselu ilman pitkää lentoa Saariselälle, ja vain 90 minuuttia Oulun lentokentästä.',
     },
     {
       name: 'Wilderness Hotel Muotka',

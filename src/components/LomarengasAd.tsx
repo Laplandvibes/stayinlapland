@@ -40,7 +40,7 @@ const LOMA_NAVY = '#1E3A8A';
 const LOMA_NAVY_DEEP = '#172E6E';
 const LOMA_SUN = '#F4C20D';
 
-const LOMA_LINK = 'https://on.lomarengas.fi/t/t?a=1071150667&as=2086870803&t=2&tk=1';
+const LOMA_LINK = 'https://go.laplandvibes.com/go/lomarengas?sid=sil_lomarengas';
 
 export default function LomarengasAd({
   sid = 'long_stays_cottages',

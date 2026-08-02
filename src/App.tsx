@@ -21,6 +21,7 @@ import LocaleAutoRedirect from './i18n/LocaleAutoRedirect';
 import { useHtmlLang, useLang, type Lang } from './i18n/useLang';
 import { getCopy, isCopyLoaded, loadCopy } from './locales/copy';
 import LocaleHead from './components/LocaleHead';
+import { AppPromoNudge } from './components/AppPromo';
 
 /**
  * Non-EN copy lives in per-language lazy chunks (see locales/copy.ts).
@@ -183,7 +184,9 @@ export default function App() {
       </main>
       <SiteChrome />
       </CopyGate>
-    </BrowserRouter>
+    {/* App promo: engagement-triggered, never on arrival. */}
+      <AppPromoNudge />
+      </BrowserRouter>
   );
 }
 

@@ -14,6 +14,7 @@ import { allCategoriesSummary, destinations } from '../data/properties';
 import { pageUrl } from '../lib/meta';
 import { useLang, useLocalePath } from '../i18n/useLang';
 import { getCopy } from '../locales/copy';
+import { AppPromoHero } from '../components/AppPromo';
 
 // Per-question links to the pages that back each FAQ answer (Vesa 2026-07-07:
 // FAQ answers must point to our own supporting content). Labels reuse the
@@ -335,6 +336,9 @@ export default function Home() {
       </section>
 
       <Newsletter />
+    {/* App launch block. Bottom of the page on purpose: the site's own hero is
+        what the search result promised, and this does not get to interrupt it. */}
+    <AppPromoHero />
     </>
   );
 }

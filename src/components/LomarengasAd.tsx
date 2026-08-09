@@ -2,6 +2,7 @@ import { useEffect, useRef, useState } from 'react';
 import { ArrowRight, ShieldCheck, BadgeCheck, Home, Headset } from 'lucide-react';
 import AffiliateDisclosure from './AffiliateDisclosure';
 import { useLang, type Lang } from '../i18n/useLang';
+import { buildLomarengasUrl } from '../lib/lomarengas';
 
 /**
  * FLAGSHIP affiliate ad — Lomarengas (Adtraction), Finland's largest holiday-
@@ -40,7 +41,10 @@ const LOMA_NAVY = '#1E3A8A';
 const LOMA_NAVY_DEEP = '#172E6E';
 const LOMA_SUN = '#F4C20D';
 
-const LOMA_LINK = 'https://go.laplandvibes.com/go/lomarengas?sid=sil_lomarengas';
+// [LV-PERM-5 2026-08-09] Vanha vakio LOMA_LINK (sid=sil_lomarengas, ei destiä)
+// ohitti sid-propin JA pudotti lomarengas.fi:n ETUSIVULLE — href rakennetaan
+// nyt lib/lomarengas.ts:n verifioidulla aluesyvälinkillä (lappi) ja sid tulee
+// kutsupaikasta (LongStays: long_stays_cottages).
 
 export default function LomarengasAd({
   sid = 'long_stays_cottages',
@@ -50,6 +54,7 @@ export default function LomarengasAd({
   className?: string;
 }) {
   const lang = useLang();
+  const href = buildLomarengasUrl('lapland', sid, lang);
 
   // One-shot scroll reveal (progressive enhancement; content never gated).
   const rootRef = useRef<HTMLElement | null>(null);
@@ -333,7 +338,7 @@ export default function LomarengasAd({
           {/* CTA — Lomarengas navy pill so the unit reads as their own placement. */}
           <div className="sl-rise sl-rise-3 lg:text-right shrink-0">
             <a
-              href={LOMA_LINK}
+              href={href}
               target="_blank"
               rel="sponsored nofollow noopener"
               data-sid={sid}

@@ -28,7 +28,7 @@ export const copyDE: SectionCopy = {
     eyebrow: 'Langzeitfenster · Nebensaison-Preise',
     h2: 'Unterkünfte, die Sie noch nicht buchen können.',
     lead:
-      'Die meisten Langzeitobjekte auf dieser Seite geben ihr Winterkontingent Ende August frei und sind binnen vier Wochen vergeben. Abonnenten erhalten den Vorabhinweis, sowie die Nebensaisonwochen (November, Ende April), wenn die Übernachtungspreise um 50 % fallen und die Nordlichter weiterhin aktiv sind.',
+      'Die meisten Langzeit-Unterkünfte dieser Seite geben ihre Winterkontingente Ende August frei, und sie sind schnell weg. Wir berichten, wann die Buchungsfenster öffnen, und über die Nebensaison-Wochen (November, Ende April), in denen die Übernachtungspreise sinken, während die Polarlichter noch zu sehen sind.',
     placeholder: 'Ihre E-Mail-Adresse',
     subscribe: 'Abonnieren',
     subscribing: 'Wird abonniert…',

@@ -28,7 +28,7 @@ export const copyFI: SectionCopy = {
     eyebrow: 'Pitkät jaksot · kausialennukset',
     h2: 'Majoitukset, joita et voi vielä varata.',
     lead:
-      'Suurin osa tämän sivuston pitkän jakson kohteista vapauttaa talvikauden varauksensa elokuun lopussa ja ne menevät neljässä viikossa. Tilaajat saavat vinkin ensin. Kerromme myös matalakausiviikot (marraskuu, huhtikuun loppu), jolloin yöhinnat tippuvat 50 % mutta revontulet näkyvät yhä.',
+      'Suurin osa tämän sivuston pitkän jakson kohteista vapauttaa talvikauden varauksensa elokuun lopussa, ja ne menevät nopeasti. Kerromme, milloin varausikkunat aukeavat, sekä matalakausiviikot (marraskuu, huhtikuun loppu), jolloin yöhinnat laskevat mutta revontulet näkyvät yhä.',
     placeholder: 'Sähköpostiosoitteesi',
     subscribe: 'Tilaa',
     subscribing: 'Tilataan…',

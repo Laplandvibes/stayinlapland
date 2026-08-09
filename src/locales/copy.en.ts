@@ -26,7 +26,7 @@ export const copyEN: SectionCopy = {
   newsletter: {
     eyebrow: 'Long-stay openings · off-season rates',
     h2: "The stays you can’t book yet.",
-    lead: 'Most of the long-stay properties on this site release winter inventory in late August and resell within four weeks. Subscribers get the heads-up, plus the off-season weeks (November, late April) when nightly rates drop 50% and aurora is still active.',
+    lead: 'Most long-stay places on this site release their winter inventory in late August, and it goes fast. We cover when the booking windows open, plus the low-season weeks (November, late April) when nightly rates drop while the auroras still show.',
     placeholder: 'Your email address',
     subscribe: 'Subscribe',
     subscribing: 'Subscribing…',

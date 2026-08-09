@@ -34,7 +34,7 @@ export const copyES: SectionCopy = {
   newsletter: {
     eyebrow: 'Aperturas de larga estancia · tarifas de temporada baja',
     h2: 'Los alojamientos que aún no puedes reservar.',
-    lead: 'La mayoría de las propiedades de larga estancia liberan el inventario invernal a finales de agosto y se agotan en cuatro semanas. Los suscriptores reciben el aviso primero, además de las semanas de temporada baja (noviembre, finales de abril), cuando la tarifa por noche cae un 50 % y la aurora sigue activa.',
+    lead: 'La mayoría de los alojamientos de larga estancia de este sitio liberan su inventario de invierno a finales de agosto, y vuela. Contamos cuándo se abren las ventanas de reserva, y las semanas de temporada baja (noviembre, finales de abril) cuando las tarifas bajan mientras las auroras siguen visibles.',
     placeholder: 'Tu dirección de correo',
     subscribe: 'Suscribirse',
     subscribing: 'Suscribiendo…',

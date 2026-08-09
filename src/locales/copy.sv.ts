@@ -36,7 +36,7 @@ export const copySV: SectionCopy = {
     eyebrow: 'Långtidsplatser · lågsäsongspriser',
     h2: 'Boendena du inte kan boka än.',
     lead:
-      'De flesta långtidsboenden på den här sidan släpper sin vinterkapacitet i slutet av augusti och är slutsålda inom fyra veckor. Prenumeranter får besked i förväg, plus lågsäsongsveckorna (november, slutet av april) då priserna sjunker 50 % och norrskenet fortfarande är aktivt.',
+      'De flesta långtidsboenden på den här sajten släpper sitt vinterutbud i slutet av augusti, och det går åt snabbt. Vi berättar när bokningsfönstren öppnar, samt lågsäsongsveckorna (november, slutet av april) då priserna sjunker medan norrskenet fortfarande syns.',
     placeholder: 'Din e-postadress',
     subscribe: 'Prenumerera',
     subscribing: 'Prenumererar…',

@@ -34,7 +34,7 @@ export const copyPTBR: SectionCopy = {
   newsletter: {
     eyebrow: 'Aberturas de longa duração · tarifas de baixa temporada',
     h2: 'As hospedagens que você ainda não pode reservar.',
-    lead: 'A maioria das propriedades de longa duração libera o estoque de inverno no final de agosto e esgota em quatro semanas. Assinantes recebem o aviso, além das semanas de baixa temporada (novembro, fim de abril), quando a diária cai 50 % e a aurora segue ativa.',
+    lead: 'A maioria das hospedagens de longa estadia deste site libera o inventário de inverno no fim de agosto, e ele esgota rápido. Contamos quando as janelas de reserva abrem, além das semanas de baixa temporada (novembro, fim de abril), quando as diárias caem enquanto as auroras seguem visíveis.',
     placeholder: 'Seu endereço de e-mail',
     subscribe: 'Inscrever-se',
     subscribing: 'Inscrevendo…',

@@ -22,7 +22,7 @@ export const copyIT: SectionCopy = {
     eyebrow: 'Aperture soggiorni lunghi · tariffe bassa stagione',
     h2: 'Le strutture che non può ancora prenotare.',
     lead:
-      'La maggior parte delle strutture per soggiorni lunghi di questo sito rilascia l’inventario invernale a fine agosto e si esaurisce in quattro settimane. Gli iscritti ricevono il preavviso, più le settimane di bassa stagione (novembre, fine aprile) quando le tariffe scendono del 50% e l’aurora boreale è ancora attiva.',
+      'La maggior parte delle strutture per soggiorni lunghi di questo sito libera l\'inventario invernale a fine agosto, e va a ruba. Raccontiamo quando si aprono le finestre di prenotazione, e le settimane di bassa stagione (novembre, fine aprile) quando i prezzi scendono mentre le aurore restano visibili.',
     placeholder: 'Il Suo indirizzo email',
     subscribe: 'Iscriversi',
     subscribing: 'Iscrizione in corso…',

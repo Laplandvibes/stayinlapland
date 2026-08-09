@@ -35,7 +35,7 @@ export const copyFR: SectionCopy = {
     ...copyEN.newsletter,
     eyebrow: 'Ouvertures longue durée · tarifs basse saison',
     h2: 'Les hébergements que vous ne pouvez pas encore réserver.',
-    lead: 'La plupart des chalets longue durée de ce site libèrent leur stock hiver fin août et se revendent en quatre semaines. Nos abonnés reçoivent l’information en avance, ainsi que les semaines de basse saison (novembre, fin avril) où les tarifs chutent de 50 % et où les aurores sont encore actives.',
+    lead: 'La plupart des hébergements longue durée de ce site libèrent leur inventaire d\'hiver fin août, et tout part vite. Nous racontons quand les fenêtres de réservation ouvrent, et les semaines de basse saison (novembre, fin avril) où les tarifs baissent alors que les aurores restent visibles.',
     placeholder: 'Votre adresse e-mail',
     subscribe: 'S’abonner',
     subscribing: 'Inscription…',

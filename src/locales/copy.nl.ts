@@ -34,7 +34,7 @@ export const copyNL: SectionCopy = {
     eyebrow: 'Lange-verblijfsopeningen · laagseizoentarieven',
     h2: 'De verblijven die u nog niet kunt boeken.',
     lead:
-      'De meeste lange-verblijfsaccommodaties op deze site geven hun winterinventaris eind augustus vrij en zijn binnen vier weken uitverkocht. Abonnees krijgen vooraf bericht, plus de laagseizoenweken (november, eind april) wanneer de tarieven met 50% dalen en het noorderlicht nog actief is.',
+      'De meeste langverblijfadressen op deze site geven hun winterinventaris eind augustus vrij, en die is snel weg. We vertellen wanneer de boekingsvensters opengaan, plus de laagseizoenweken (november, eind april) waarin de prijzen dalen terwijl het noorderlicht nog te zien is.',
     placeholder: 'Uw e-mailadres',
     subscribe: 'Inschrijven',
     subscribing: 'Bezig met inschrijven…',

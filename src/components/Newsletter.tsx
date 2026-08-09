@@ -69,7 +69,7 @@ export default function Newsletter() {
             {t.success}
           </div>
         ) : (
-          <FounderByline tone="pink" />
+          <><FounderByline tone="pink" />
           <form
             onSubmit={handleSubmit}
             className="flex flex-col sm:flex-row gap-3 max-w-lg mx-auto"
@@ -91,7 +91,7 @@ export default function Newsletter() {
               <Send className="w-4 h-4" />
               {status === 'loading' ? t.subscribing : t.subscribe}
             </button>
-          </form>
+          </form></>
         )}
 
         {status === 'error' && (

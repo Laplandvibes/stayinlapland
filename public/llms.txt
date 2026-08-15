@@ -1,0 +1,26 @@
+# StayInLapland
+
+> Settle into Finnish Lapland: cabin rentals by the week, design hotels in Rovaniemi and Saariselkä, and Lapland glass igloos.
+
+## Main pages
+
+- [Home](https://stayinlapland.com/): Where to stay in Finnish Lapland
+- [Long stays](https://stayinlapland.com/long-stays/): Weekly and monthly stays, serviced apartments and cabins
+- [Hotels](https://stayinlapland.com/hotels/): Hotels across Finnish Lapland
+- [Glass igloos](https://stayinlapland.com/glass-igloos/): Glass igloo stays in Lapland
+- [Wilderness](https://stayinlapland.com/wilderness/): Wilderness lodges and remote stays
+- [Booking guide](https://stayinlapland.com/booking-guide/): How and when to book Lapland accommodation
+- [When to go](https://stayinlapland.com/when-to-go/): Seasons in Finnish Lapland
+- [Rovaniemi](https://stayinlapland.com/destinations/rovaniemi/): Where to stay in Rovaniemi
+- [Levi](https://stayinlapland.com/destinations/levi/): Where to stay in Levi
+- [Inari](https://stayinlapland.com/destinations/inari/): Where to stay in Inari
+
+## Languages
+
+English (default), Finnish (/fi/), Swedish (/sv/), German (/de/), French (/fr/), Spanish (/es/), Italian (/it/), Dutch (/nl/), Japanese (/ja/), Brazilian Portuguese (/br/), Chinese (/cn/), Korean (/kr/)
+
+## Network
+
+- [LaplandVibes hub](https://laplandvibes.com/)
+- [Sitemap](https://stayinlapland.com/sitemap.xml)
+- Contact: info@stayinlapland.com

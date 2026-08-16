@@ -9,17 +9,82 @@ const SUPABASE_ANON_KEY = (import.meta.env.VITE_SUPABASE_PUBLISHABLE_KEY as stri
 
 type Status = 'idle' | 'loading' | 'success' | 'error';
 
+const CONSENT_COPY = {
+  en: {
+    consent:
+      'Yes, send the LaplandVibes newsletter (travel tips, seasonal updates and offers) to this email address. I confirm I am 18 or over.',
+    privacy: 'Privacy Policy',
+  },
+  fi: {
+    consent:
+      'LaplandVibes saa lähettää minulle uutiskirjettä (matkailuvinkkejä, sesonkitietoa ja tarjouksia) antamaani sähköpostiosoitteeseen. Olen täyttänyt 18 vuotta.',
+    privacy: 'Tietosuojaseloste',
+  },
+  de: {
+    consent:
+      'Ja, LaplandVibes darf mir den Newsletter mit Reisetipps, Saisoninfos und Angeboten an diese E-Mail-Adresse senden. Ich bin mindestens 18 Jahre alt.',
+    privacy: 'Datenschutzerklärung',
+  },
+  ja: {
+    consent:
+      '入力したメールアドレス宛に、LaplandVibesがニュースレター（旅のヒント、シーズン情報、キャンペーン情報）を送ることに同意します。私は18歳以上です。',
+    privacy: 'プライバシーポリシー',
+  },
+  es: {
+    consent:
+      'Acepto recibir en mi correo el boletín de LaplandVibes (consejos de viaje, información de temporada y ofertas) y confirmo que tengo al menos 18 años.',
+    privacy: 'Política de privacidad',
+  },
+  'pt-BR': {
+    consent:
+      'Aceito receber a newsletter da LaplandVibes no e-mail informado, com dicas de viagem, informações de temporada e ofertas. Tenho 18 anos ou mais.',
+    privacy: 'Política de Privacidade',
+  },
+  'zh-CN': {
+    consent:
+      '我同意 LaplandVibes 向我填写的邮箱发送订阅邮件，内容包括拉普兰旅行建议、季节资讯和优惠信息，并确认本人已年满18周岁。',
+    privacy: '隐私政策',
+  },
+  ko: {
+    consent:
+      '입력한 이메일 주소로 LaplandVibes가 보내는 여행 팁·시즌 정보·프로모션 소식 뉴스레터 수신에 동의하며, 만 18세 이상임을 확인합니다.',
+    privacy: '개인정보처리방침',
+  },
+  fr: {
+    consent:
+      "J'accepte de recevoir la newsletter LaplandVibes (conseils voyage, infos saisonnières, offres) à cette adresse e-mail et je confirme avoir 18 ans ou plus.",
+    privacy: 'Politique de confidentialité',
+  },
+  it: {
+    consent:
+      "Sì, desidero ricevere la newsletter di LaplandVibes (consigli di viaggio, novità stagionali e offerte) all'indirizzo indicato. Ho almeno 18 anni.",
+    privacy: 'Informativa sulla privacy',
+  },
+  nl: {
+    consent:
+      'Ja, LaplandVibes mag de nieuwsbrief met reistips, seizoensinfo en aanbiedingen naar dit e-mailadres sturen. Ik ben 18 jaar of ouder.',
+    privacy: 'Privacyverklaring',
+  },
+  sv: {
+    consent:
+      'Ja, jag vill ha nyhetsbrevet från LaplandVibes med restips, säsongsinfo och erbjudanden till min e-postadress. Jag är minst 18 år.',
+    privacy: 'Integritetspolicy',
+  },
+} as const;
+
 export default function Newsletter() {
   const [email, setEmail] = useState('');
+  const [consented, setConsented] = useState(false);
   const [status, setStatus] = useState<Status>('idle');
   const [errorMsg, setErrorMsg] = useState('');
   const lang = useLang();
   const localePath = useLocalePath();
   const t = getCopy(lang).newsletter;
+  const c = CONSENT_COPY[lang];
 
   async function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
-    if (!email || status === 'loading') return;
+    if (!email || !consented || status === 'loading') return;
     setStatus('loading');
     setErrorMsg('');
 
@@ -35,7 +100,13 @@ export default function Newsletter() {
           'Content-Type': 'application/json',
           Authorization: `Bearer ${SUPABASE_ANON_KEY}`,
         },
-        body: JSON.stringify({ email, source: 'stayinlapland-newsletter' }),
+        body: JSON.stringify({
+          email,
+          source: 'stayinlapland-newsletter',
+          consent: true,
+          ageConfirmed: true,
+          consentText: c.consent,
+        }),
       });
       if (!res.ok) throw new Error('Subscribe failed');
       setStatus('success');
@@ -70,27 +141,47 @@ export default function Newsletter() {
           </div>
         ) : (
           <><FounderByline tone="pink" />
-          <form
-            onSubmit={handleSubmit}
-            className="flex flex-col sm:flex-row gap-3 max-w-lg mx-auto"
-          >
-            <input
-              type="email"
-              required
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-              placeholder={t.placeholder}
-              aria-label="Email address"
-              className="flex-1 px-6 py-4 rounded-full bg-snow/12 backdrop-blur-sm text-snow placeholder:text-snow/80 border border-snow/30 focus:outline-none focus:ring-2 focus:ring-gold/60 text-base"
-            />
-            <button
-              type="submit"
-              disabled={status === 'loading'}
-              className="px-8 py-4 rounded-full bg-vibe-pink text-snow font-semibold hover:bg-vibe-pink/90 transition-colors flex items-center justify-center gap-2 disabled:opacity-60"
-            >
-              <Send className="w-4 h-4" />
-              {status === 'loading' ? t.subscribing : t.subscribe}
-            </button>
+          <form onSubmit={handleSubmit} className="max-w-lg mx-auto">
+            <div className="flex flex-col sm:flex-row gap-3">
+              <input
+                type="email"
+                required
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+                placeholder={t.placeholder}
+                aria-label="Email address"
+                className="flex-1 px-6 py-4 rounded-full bg-snow/12 backdrop-blur-sm text-snow placeholder:text-snow/80 border border-snow/30 focus:outline-none focus:ring-2 focus:ring-gold/60 text-base"
+              />
+              <button
+                type="submit"
+                disabled={status === 'loading'}
+                className="px-8 py-4 rounded-full bg-vibe-pink text-snow font-semibold hover:bg-vibe-pink/90 transition-colors flex items-center justify-center gap-2 disabled:opacity-60"
+              >
+                <Send className="w-4 h-4" />
+                {status === 'loading' ? t.subscribing : t.subscribe}
+              </button>
+            </div>
+
+            <label className="mt-4 flex items-start gap-3 text-left text-xs leading-relaxed text-snow/75 cursor-pointer">
+              <input
+                type="checkbox"
+                checked={consented}
+                onChange={(e) => setConsented(e.target.checked)}
+                required
+                className="mt-0.5 h-4 w-4 shrink-0 rounded border border-snow/40 bg-snow/12 accent-vibe-pink focus:outline-none focus:ring-2 focus:ring-gold/60"
+              />
+              <span>
+                {c.consent}{' '}
+                <a
+                  href={localePath('/privacy')}
+                  target="_blank"
+                  rel="noopener"
+                  className="underline hover:text-snow"
+                >
+                  {c.privacy}
+                </a>
+              </span>
+            </label>
           </form></>
         )}
 

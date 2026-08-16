@@ -100,9 +100,6 @@ function buildPillarLinks(lang: Lang) {
 // that surfaced on every locale.
 const LOCALE_PREFIXES = ['', '/fi', '/de', '/ja', '/es', '/br', '/cn', '/kr', '/fr', '/it', '/nl', '/sv'] as const;
 
-const SUPABASE_URL = (import.meta.env.VITE_SUPABASE_URL as string) ?? '';
-const SUPABASE_ANON_KEY = (import.meta.env.VITE_SUPABASE_PUBLISHABLE_KEY as string) ?? '';
-
 export default function App() {
   return (
     <BrowserRouter>
@@ -166,15 +163,33 @@ function SiteChrome() {
       <Footer pillarLinks={buildPillarLinks(lang)} />
 
       <LocalisedCookieBanner />
-      {SUPABASE_URL && SUPABASE_ANON_KEY && (
-        <NewsletterPopup
-          siteId="stayinlapland"
-          brandWord="LAPLAND"
-          lang={lang}
-          supabaseUrl={SUPABASE_URL}
-          supabaseAnonKey={SUPABASE_ANON_KEY}
-        />
-      )}
+      {/*
+        Signup goes through the same-origin Pages Function `/api/newsletter`
+        (functions/api/newsletter.ts), which proxies server-side to Supabase.
+        Two reasons, both load-bearing:
+
+        1. The shared `send-welcome-email` CORS allowlist only has
+           laplandvibes.com — a direct browser → Supabase call from
+           stayinlapland.com dies with "Failed to fetch".
+        2. No client-side Supabase keys. This is why the popup used to be
+           gated on `VITE_SUPABASE_URL && VITE_SUPABASE_PUBLISHABLE_KEY`:
+           the repo has no .env, so both were '' and the popup NEVER
+           rendered in production (verified live 2026-08-16). Do not
+           reintroduce an env gate here — the endpoint needs no secrets.
+
+        `brandWord="VIBES"` on purpose: the shared popup renders a fixed
+        `#LAPLAND<brandWord>` lockup, which cannot spell this site's own
+        `#STAYINLAPLAND` mark. The list and the welcome email are the one
+        network-wide #LaplandVibes list, so that is the honest wordmark here
+        (Vesa 2026-08-16). The previous `"LAPLAND"` would render
+        `#LAPLANDLAPLAND`.
+      */}
+      <NewsletterPopup
+        siteId="stayinlapland"
+        brandWord="VIBES"
+        lang={lang}
+        endpoint="/api/newsletter"
+      />
     </>
   );
 }

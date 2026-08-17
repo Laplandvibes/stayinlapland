@@ -18,6 +18,15 @@ const DESTINATIONS_LABEL: Record<Lang, string> = {
   'pt-BR': 'Destinos', ja: 'エリア', ko: '지역', 'zh-CN': '目的地',
 };
 
+// 🔴 MITATTU 2026-08-17 (live, 1280 px, `header > div` slack CTA:n oikeaan reunaan):
+// fi/de/nl/es = +24 px eli TASAN container-paddingin verran — rivi on rajalla.
+// it = −21 px, fr = −186 px ("Parcourir les hébergements" + pisimmät navilabelit).
+// Ranskan rivi ei siis mahdu 1280:een millään gap-viilauksella. Nama kaksi lokaalia
+// saavat desktop-navin vasta 2xl:ssa (1536) ja siihen asti saman toimivan
+// laatikkovalikon kuin mobiili — rikkinaisen, palkin ulkopuolelle vuotavan rivin
+// sijaan. Lista on mittaustulos, ei arvaus: jos labelit lyhenevat, mittaa uudelleen.
+const WIDE_NAV_LOCALES: ReadonlySet<Lang> = new Set(['fr', 'it']);
+
 const STORAGE_KEY = 'lv_locale_choice';
 
 const PREFIX_FOR: Record<Lang, string> = {
@@ -91,6 +100,7 @@ export default function Nav() {
   const lang = useLang();
   const localePath = useLocalePath();
   const t = getCopy(lang);
+  const wideNav = WIDE_NAV_LOCALES.has(lang);
 
   const links = [
     { to: '/long-stays', label: t.nav.longStays },
@@ -128,15 +138,15 @@ export default function Nav() {
 
   return (
     <header className="fixed top-0 left-0 right-0 z-40 bg-cream/85 backdrop-blur-md border-b border-charcoal/10">
-      <div className="max-w-screen-2xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between gap-8">
-        <div className="flex items-center gap-3 sm:gap-5 shrink-0">
+      <div className="max-w-screen-2xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between gap-4">
+        <div className="flex items-center gap-3 sm:gap-4 shrink-0">
           <EcosystemMenu lang={lang} currentDomain="stayinlapland.com" variant="light" />
           <Link to={localePath('/')} className="shrink-0 mr-2" aria-label={t.nav.homeAria}>
             <Logo size="sm" />
           </Link>
         </div>
 
-        <nav className="hidden xl:flex items-center gap-4">
+        <nav className={`hidden ${wideNav ? '2xl:flex' : 'xl:flex'} items-center gap-3`}>
           {links.map(({ to, label }) => {
             const localized = localePath(to);
             const active = pathname === localized;
@@ -144,7 +154,7 @@ export default function Nav() {
               <Link
                 key={to}
                 to={localized}
-                className={`whitespace-nowrap text-[14px] font-medium transition-colors ${
+                className={`whitespace-nowrap text-[13px] font-medium transition-colors ${
                   active ? 'text-vibe-pink' : 'text-charcoal/75 hover:text-vibe-pink'
                 }`}
               >
@@ -160,7 +170,7 @@ export default function Nav() {
               onClick={() => setDestOpen((o) => !o)}
               aria-haspopup="true"
               aria-expanded={destOpen}
-              className={`inline-flex items-center gap-1 whitespace-nowrap text-[14px] font-medium transition-colors ${
+              className={`inline-flex items-center gap-1 whitespace-nowrap text-[13px] font-medium transition-colors ${
                 pathname.includes('/destinations/') ? 'text-vibe-pink' : 'text-charcoal/75 hover:text-vibe-pink'
               }`}
             >
@@ -236,17 +246,24 @@ export default function Nav() {
             )}
           </div>
 
+          {/* 🔴 whitespace-nowrap + shrink-0 are load-bearing. Every nav LINK
+              already had nowrap but this pill did not, so once the xl row got
+              tight (Finnish "Selaa majoituksia", German "Unterkünfte ansehen")
+              flex shrank the button and the label broke onto two lines inside a
+              py-2 pill — the CTA rendered taller than the 64 px header row and
+              read as broken. Same defect class as the 2026-08-09 network CTA
+              sweep. The row buys the space back from the container gaps below. */}
           <AffiliateCTA
             partner="hotels"
             sid="nav_browse_stays"
             destination="Lapland Finland"
-            className="ml-2 px-5 py-2 bg-vibe-pink hover:bg-vibe-pink/90 text-white text-sm font-semibold rounded-full transition-colors shadow-sm shadow-vibe-pink/30"
+            className="ml-1 shrink-0 whitespace-nowrap px-4 py-2 bg-vibe-pink hover:bg-vibe-pink/90 text-white text-sm font-semibold rounded-full transition-colors shadow-sm shadow-vibe-pink/30"
           >
             {t.nav.browseStays}
           </AffiliateCTA>
         </nav>
 
-        <div className="xl:hidden flex items-center gap-2">
+        <div className={`${wideNav ? '2xl:hidden' : 'xl:hidden'} flex items-center gap-2`}>
           <select
             value={lang}
             onChange={(e) => setLocale(e.target.value as Lang)}
@@ -271,7 +288,7 @@ export default function Nav() {
       </div>
 
       {open && (
-        <nav className="xl:hidden bg-cream border-t border-charcoal/10 px-4 py-4 flex flex-col gap-1">
+        <nav className={`${wideNav ? '2xl:hidden' : 'xl:hidden'} bg-cream border-t border-charcoal/10 px-4 py-4 flex flex-col gap-1`}>
           {links.map(({ to, label }) => {
             const localized = localePath(to);
             const active = pathname === localized;

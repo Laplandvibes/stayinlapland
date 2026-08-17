@@ -74,7 +74,7 @@ export default function WildernessLodges() {
         eyebrow={w.pageHero.eyebrow}
         title={w.pageHero.title}
         subtitle={w.pageHero.subtitle}
-        imageSrc="/images/hero-wilderness.webp"
+        imageSrc="/images/pillar-wilderness-hero.webp"
       />
 
       <section className="py-12 sm:py-16 px-5 sm:px-6">
@@ -89,7 +89,7 @@ export default function WildernessLodges() {
             name={editorsPick.name}
             location={editorsPick.location}
             priceRange={editorsPick.priceRange}
-            imageSrc={stayCardImage(wilderness[0].name) ?? editorsPick.imageSrc ?? '/images/hero-wilderness.webp'}
+            imageSrc={stayCardImage(wilderness[0].name) ?? editorsPick.imageSrc ?? '/images/pillar-wilderness-hero.webp'}
             imageAlt={t.home.categoryNames.wilderness}
             sidPrefix="wl"
             whyParagraphs={w.pickWhy}

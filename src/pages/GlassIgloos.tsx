@@ -76,7 +76,7 @@ export default function GlassIgloos() {
         eyebrow={g.pageHero.eyebrow}
         title={g.pageHero.title}
         subtitle={g.pageHero.subtitle}
-        imageSrc="/images/hero-glass-igloos.webp"
+        imageSrc="/images/pillar-glass-igloos-hero.webp"
       />
 
       <section className="py-12 sm:py-16 px-5 sm:px-6">

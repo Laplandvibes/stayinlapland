@@ -51,7 +51,7 @@ export default function BookingGuide() {
         eyebrow={b.pageHero.eyebrow}
         title={b.pageHero.title}
         subtitle={b.pageHero.subtitle}
-        imageSrc="/images/hero-booking-guide.webp"
+        imageSrc="/images/bookingguide-hero.webp"
       />
 
       <section className="py-12 sm:py-16 px-5 sm:px-6">

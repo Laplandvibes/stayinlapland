@@ -74,7 +74,7 @@ export default function Hotels() {
         eyebrow={h.pageHero.eyebrow}
         title={h.pageHero.title}
         subtitle={h.pageHero.subtitle}
-        imageSrc="/images/hero-hotels.webp"
+        imageSrc="/images/pillar-hotels-hero.webp"
       />
 
       <section className="py-12 sm:py-16 px-5 sm:px-6">

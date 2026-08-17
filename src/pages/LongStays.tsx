@@ -75,7 +75,7 @@ export default function LongStays() {
         eyebrow={ls.pageHero.eyebrow}
         title={ls.pageHero.title}
         subtitle={ls.pageHero.subtitle}
-        imageSrc="/images/hero-long-stays.webp"
+        imageSrc="/images/pillar-long-stays-hero.webp"
       />
 
       <section className="py-12 sm:py-16 px-5 sm:px-6">
@@ -93,7 +93,7 @@ export default function LongStays() {
             name={editorsPick.name}
             location={editorsPick.location}
             priceRange={editorsPick.priceRange}
-            imageSrc={stayCardImage(longStays[0].name) ?? editorsPick.imageSrc ?? '/images/hero-long-stays.webp'}
+            imageSrc={stayCardImage(longStays[0].name) ?? editorsPick.imageSrc ?? '/images/pillar-long-stays-hero.webp'}
             imageAlt={t.home.categoryNames.longStays}
             sidPrefix="ls"
             whyParagraphs={ls.pickWhy}

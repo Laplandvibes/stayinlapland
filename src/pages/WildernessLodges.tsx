@@ -10,7 +10,7 @@ import PullQuote from '../components/PullQuote';
 import ImageBreak from '../components/ImageBreak';
 import ComparisonTable from '../components/ComparisonTable';
 import MarginNote from '../components/MarginNote';
-import { wilderness } from '../data/properties';
+import { wilderness, stayCardImage } from '../data/properties';
 import type { Property } from '../data/properties';
 import { pageUrl } from '../lib/meta';
 import { useLang, useLocalePath } from '../i18n/useLang';
@@ -75,7 +75,6 @@ export default function WildernessLodges() {
         title={w.pageHero.title}
         subtitle={w.pageHero.subtitle}
         imageSrc="/images/hero-wilderness.webp"
-        imageAlt="Aerial view of single wooden lodge on lakeside in vast pine forest"
       />
 
       <section className="py-12 sm:py-16 px-5 sm:px-6">
@@ -90,8 +89,8 @@ export default function WildernessLodges() {
             name={editorsPick.name}
             location={editorsPick.location}
             priceRange={editorsPick.priceRange}
-            imageSrc={editorsPick.imageSrc ?? '/images/hero-wilderness.webp'}
-            imageAlt="Above-treeline wilderness suites on a Lapland fell ridge in winter golden hour"
+            imageSrc={stayCardImage(wilderness[0].name) ?? editorsPick.imageSrc ?? '/images/hero-wilderness.webp'}
+            imageAlt={t.home.categoryNames.wilderness}
             sidPrefix="wl"
             whyParagraphs={w.pickWhy}
             caveat={w.pickCaveat}
@@ -101,7 +100,7 @@ export default function WildernessLodges() {
 
       <PullQuote attribution={w.pullQuote.attr}>{w.pullQuote.text}</PullQuote>
 
-      <ImageBreak src="/images/break-frozen-lake.webp" alt="Frozen lake stretching to horizon at dawn" ratio="3/1" />
+      <ImageBreak src="/images/break-frozen-lake.webp" alt="" ratio="3/1" />
 
       <FinnishDivider />
 
@@ -114,10 +113,22 @@ export default function WildernessLodges() {
             <h2 className="font-heading text-4xl sm:text-5xl text-charcoal leading-tight tracking-wide">
               {w.runnersH2}
             </h2>
+            {/* Sama rehellisyyshuomautus kuin kohdesivuilla, ja tarkoituksella
+                SAMA merkkijono: vaite on identtinen ("kuva esittaa tyyppia, ei
+                tata kohdetta"), joten se on yksi kaannos eika kaksi. */}
+            <p className="text-stone text-[13px] leading-relaxed mt-4 max-w-xl">
+              {t.destinationPage.imageNote}
+            </p>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-5 sm:gap-6">
-            {runnersUp.map((p) => (
-              <PropertyCard key={p.slug} property={p} sidPrefix="wl" />
+            {runnersUp.map((p, i) => (
+              <PropertyCard
+                key={p.slug}
+                property={p}
+                sidPrefix="wl"
+                imageSrc={stayCardImage(wilderness[i + 1].name)}
+                imageAlt={`${t.home.categoryNames.wilderness} \u2014 ${p.location}`}
+              />
             ))}
           </div>
         </div>

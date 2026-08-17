@@ -311,6 +311,17 @@ export const destinations: DestinationInfo[] = [
  *  and the alt text names the category rather than the hotel. One image per card
  *  slot so no destination page ever shows the same picture twice (Vesa 2026-08-17).
  */
+/** Resolve a card image from the canonical (English) property name.
+ *
+ *  Callers must pass the CANONICAL name, not the localized one: the pages swap
+ *  in translated names before rendering, and a localized name misses on all 11
+ *  non-EN locales. Every page that needs this already keeps the canonical array
+ *  around, so read the name from there by index. */
+export function stayCardImage(canonicalName: string): string | undefined {
+  const base = stayCardImages[canonicalName];
+  return base ? `/images/${base}.webp` : undefined;
+}
+
 export const stayCardImages: Record<string, string> = {
   // Rovaniemi
   'Arctic TreeHouse Resort': 'stay-rovaniemi-treehouse',
@@ -330,6 +341,13 @@ export const stayCardImages: Record<string, string> = {
   'Aurora Village': 'stay-inari-aurora',
   // Ylläs
   'Lapland Hotels Saaga': 'stay-yllas-spa',
+  // Pillar-sivujen EditorsPick-paikat: nämä kaksi eivät esiinny millään
+  // kohdesivulla, joten ne puuttuivat 17.8. ensimmäiseltä kierrokselta.
+  // TreeHouse saa oman kuvan pitkälle jaksolle (keittiönurkkaus + työpiste),
+  // jotta /long-stays ja /hotels eivät näytä samaa kuvaa saman nimen alla.
+  'Arctic TreeHouse Resort: Long Stay': 'stay-treehouse-longstay',
+  'Iso-Syöte Eagle View Suites': 'stay-isosyote-eagle',
+  "Lapland Hotels Bear's Lodge": 'stay-pyha-bearslodge',
 };
 
 export const allCategoriesSummary = [

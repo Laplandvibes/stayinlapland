@@ -10,7 +10,7 @@ import PullQuote from '../components/PullQuote';
 import ImageBreak from '../components/ImageBreak';
 import ComparisonTable from '../components/ComparisonTable';
 import MarginNote from '../components/MarginNote';
-import { glassIgloos } from '../data/properties';
+import { glassIgloos, stayCardImage } from '../data/properties';
 import type { Property } from '../data/properties';
 import { pageUrl } from '../lib/meta';
 import { useLang, useLocalePath } from '../i18n/useLang';
@@ -77,7 +77,6 @@ export default function GlassIgloos() {
         title={g.pageHero.title}
         subtitle={g.pageHero.subtitle}
         imageSrc="/images/hero-glass-igloos.webp"
-        imageAlt="Single glass igloo dome on a Lappish hillside under faint green aurora at night"
       />
 
       <section className="py-12 sm:py-16 px-5 sm:px-6">
@@ -93,7 +92,7 @@ export default function GlassIgloos() {
             location={editorsPick.location}
             priceRange={editorsPick.priceRange}
             imageSrc="/images/pick-kakslauttanen.webp"
-            imageAlt="Kakslauttanen Kelo-Glass igloo at night with warm interior light"
+            imageAlt={t.home.categoryNames.glassIgloos}
             sidPrefix="gi"
             whyParagraphs={g.pickWhy}
             caveat={g.pickCaveat}
@@ -103,7 +102,7 @@ export default function GlassIgloos() {
 
       <PullQuote attribution={g.pullQuote.attr}>{g.pullQuote.text}</PullQuote>
 
-      <ImageBreak src="/images/break-boreal-forest.webp" alt="Snow-covered pine forest at midday" ratio="3/1" />
+      <ImageBreak src="/images/break-boreal-forest.webp" alt="" ratio="3/1" />
 
       <FinnishDivider />
 
@@ -116,10 +115,22 @@ export default function GlassIgloos() {
             <h2 className="font-heading text-4xl sm:text-5xl text-charcoal leading-tight tracking-wide">
               {g.runnersH2}
             </h2>
+            {/* Sama rehellisyyshuomautus kuin kohdesivuilla, ja tarkoituksella
+                SAMA merkkijono: vaite on identtinen ("kuva esittaa tyyppia, ei
+                tata kohdetta"), joten se on yksi kaannos eika kaksi. */}
+            <p className="text-stone text-[13px] leading-relaxed mt-4 max-w-xl">
+              {t.destinationPage.imageNote}
+            </p>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6">
-            {runnersUp.map((p) => (
-              <PropertyCard key={p.slug} property={p} sidPrefix="gi" />
+            {runnersUp.map((p, i) => (
+              <PropertyCard
+                key={p.slug}
+                property={p}
+                sidPrefix="gi"
+                imageSrc={stayCardImage(glassIgloos[i + 1].name)}
+                imageAlt={`${t.home.categoryNames.glassIgloos} \u2014 ${p.location}`}
+              />
             ))}
           </div>
         </div>

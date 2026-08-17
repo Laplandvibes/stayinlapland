@@ -108,7 +108,6 @@ export default function WhenToGo() {
         title={w.pageHero.title}
         subtitle={w.pageHero.subtitle}
         imageSrc="/images/whentogo-hero.webp"
-        imageAlt="Lapland fell at 14:00 in late February, deep snow with long blue shadows"
       />
 
       {/* The page used to open with a section containing nothing but the

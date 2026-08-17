@@ -12,16 +12,15 @@ import MarginNote from '../components/MarginNote';
 import WorkInLaplandPromo from '../components/WorkInLaplandPromo';
 import LongTermRentals from '../components/LongTermRentals';
 import LomarengasAd from '../components/LomarengasAd';
-import { longStays } from '../data/properties';
+import { longStays, stayCardImage } from '../data/properties';
 import type { Property } from '../data/properties';
 import { pageUrl } from '../lib/meta';
 import { useLang, useLocalePath } from '../i18n/useLang';
 import { getCopy } from '../locales/copy';
 
-const PROPERTY_IMAGES: Record<string, string> = {
-  "Lapland Hotels Bear's Lodge": '/images/hero-cabins.webp',
-  'Lapland Hotels Ounasvaara Chalets': '/images/hero-cabins.webp',
-};
+// PROPERTY_IMAGES poistettu 2026-08-17: se mappasi kaksi eri kohdetta SAMAAN
+// kuvaan (hero-cabins.webp) ja jatti loput kortit kultaliukuvarille. Tilalla
+// stayCardImage(), joka kattaa kaikki 16 kohdetta omalla kuvalla.
 
 export default function LongStays() {
   const lang = useLang();
@@ -77,7 +76,6 @@ export default function LongStays() {
         title={ls.pageHero.title}
         subtitle={ls.pageHero.subtitle}
         imageSrc="/images/hero-long-stays.webp"
-        imageAlt="Lakeside Finnish log cabin in winter, long-stay rental setting"
       />
 
       <section className="py-12 sm:py-16 px-5 sm:px-6">
@@ -95,8 +93,8 @@ export default function LongStays() {
             name={editorsPick.name}
             location={editorsPick.location}
             priceRange={editorsPick.priceRange}
-            imageSrc={editorsPick.imageSrc ?? '/images/hero-long-stays.webp'}
-            imageAlt="Design suites at the forest edge, long-stay rental setting in winter golden hour"
+            imageSrc={stayCardImage(longStays[0].name) ?? editorsPick.imageSrc ?? '/images/hero-long-stays.webp'}
+            imageAlt={t.home.categoryNames.longStays}
             sidPrefix="ls"
             whyParagraphs={ls.pickWhy}
             caveat={ls.pickCaveat}
@@ -114,7 +112,7 @@ export default function LongStays() {
         </div>
       </section>
 
-      <ImageBreak src="/images/break-frozen-lake.webp" alt="Frozen lake at dawn" ratio="3/1" />
+      <ImageBreak src="/images/break-frozen-lake.webp" alt="" ratio="3/1" />
 
       <FinnishDivider />
 
@@ -127,6 +125,12 @@ export default function LongStays() {
             <h2 className="font-heading text-4xl sm:text-5xl text-charcoal leading-tight tracking-wide">
               {ls.runnersH2}
             </h2>
+            {/* Sama rehellisyyshuomautus kuin kohdesivuilla, ja tarkoituksella
+                SAMA merkkijono: vaite on identtinen ("kuva esittaa tyyppia, ei
+                tata kohdetta"), joten se on yksi kaannos eika kaksi. */}
+            <p className="text-stone text-[13px] leading-relaxed mt-4 max-w-xl">
+              {t.destinationPage.imageNote}
+            </p>
             <p className="text-graphite mt-4 leading-relaxed">{ls.runnersLead}</p>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6">
@@ -135,8 +139,8 @@ export default function LongStays() {
                 key={p.slug}
                 property={p}
                 sidPrefix="ls"
-                imageSrc={PROPERTY_IMAGES[originalNames[i + 1]]}
-                imageAlt={p.name}
+                imageSrc={stayCardImage(originalNames[i + 1])}
+                imageAlt={`${t.home.categoryNames.longStays} \u2014 ${p.location}`}
               />
             ))}
           </div>

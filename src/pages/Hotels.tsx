@@ -9,7 +9,7 @@ import PullQuote from '../components/PullQuote';
 import ComparisonTable from '../components/ComparisonTable';
 import MarginNote from '../components/MarginNote';
 import HotelsComAd from '../components/HotelsComAd';
-import { hotels } from '../data/properties';
+import { hotels, stayCardImage } from '../data/properties';
 import type { Property } from '../data/properties';
 import { pageUrl } from '../lib/meta';
 import { useLang, useLocalePath } from '../i18n/useLang';
@@ -75,7 +75,6 @@ export default function Hotels() {
         title={h.pageHero.title}
         subtitle={h.pageHero.subtitle}
         imageSrc="/images/hero-hotels.webp"
-        imageAlt="Boutique design hotel in Finnish Lapland, exterior at golden hour"
       />
 
       <section className="py-12 sm:py-16 px-5 sm:px-6">
@@ -99,10 +98,22 @@ export default function Hotels() {
             <h2 className="font-heading text-4xl sm:text-5xl text-charcoal leading-tight tracking-wide">
               {h.picksH2}
             </h2>
+            {/* Sama rehellisyyshuomautus kuin kohdesivuilla, ja tarkoituksella
+                SAMA merkkijono: vaite on identtinen ("kuva esittaa tyyppia, ei
+                tata kohdetta"), joten se on yksi kaannos eika kaksi. */}
+            <p className="text-stone text-[13px] leading-relaxed mt-4 max-w-xl">
+              {t.destinationPage.imageNote}
+            </p>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6">
-            {localizedHotels.map((p) => (
-              <PropertyCard key={p.slug} property={p} sidPrefix="hot" />
+            {localizedHotels.map((p, i) => (
+              <PropertyCard
+                key={p.slug}
+                property={p}
+                sidPrefix="hot"
+                imageSrc={stayCardImage(hotels[i].name)}
+                imageAlt={`${t.home.categoryNames.hotels} \u2014 ${p.location}`}
+              />
             ))}
           </div>
         </div>

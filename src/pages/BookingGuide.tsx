@@ -52,7 +52,6 @@ export default function BookingGuide() {
         title={b.pageHero.title}
         subtitle={b.pageHero.subtitle}
         imageSrc="/images/hero-booking-guide.webp"
-        imageAlt="Flat lay: paper map of Lapland, wool gloves, thermos, vintage compass, hand-written notes"
       />
 
       <section className="py-12 sm:py-16 px-5 sm:px-6">

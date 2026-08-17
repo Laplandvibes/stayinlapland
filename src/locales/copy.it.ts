@@ -581,6 +581,9 @@ export const copyIT: SectionCopy = {
     networkLeadA: 'La nostra rete classifica solo 16 strutture. Trip.com elenca tutto il resto che opera a ',
     networkLeadB: ' quest’inverno, date flessibili, filtri per servizio, l’offerta completa.',
     browseInDest: (n) => `Sfoglia Trip.com, ${n}`,
+    imageNote:
+      'Le immagini sono illustrative: mostrano il tipo di alloggio e il paesaggio della zona, non le stanze della struttura.',
+    landscapeAlt: (n) => `Paesaggio invernale a ${n}, Lapponia finlandese`,
     bucketLabels: {
       'long-stays': 'soggiorni lunghi',
       'hotels': 'hotel',
@@ -617,6 +620,7 @@ export const copyIT: SectionCopy = {
     short: '1–3 notti',
     medium: '3–6 notti',
     long: '7+ notti',
+    nights: (n) => `${n} ${n === 1 ? 'notte' : 'notti'}`,
     minPrefix: 'Min',
     perNight: '/ notte',
     cta: 'Verifica tariffe e prenota',

@@ -167,6 +167,7 @@ export const copyKO: SectionCopy = {
     short: '1–3박',
     medium: '3–6박',
     long: '7박 이상',
+    nights: (n) => `${n}박`,
     minPrefix: '최소',
     perNight: '/ 박',
     cta: '요금 확인 및 예약',
@@ -605,6 +606,9 @@ export const copyKO: SectionCopy = {
     networkLeadA: '저희 네트워크는 단 16개 숙소만 순위에 올립니다. Trip.com은 그 외 ',
     networkLeadB: '에서 이번 겨울 운영하는 나머지 전부를 보여줍니다, 날짜를 유연하게 잡고, 편의시설로 필터링하며, 전체 객실을 확인하십시오.',
     browseInDest: (n) => `Trip.com 둘러보기, ${n}`,
+    imageNote:
+      '사진은 이미지 컷입니다. 숙소 유형과 주변 풍경을 보여 주며, 해당 숙소의 실제 객실은 아닙니다.',
+    landscapeAlt: (n) => `${n}의 겨울 풍경, 핀란드 라플란드`,
     bucketLabels: {
       'long-stays': '장기 숙박',
       'hotels': '호텔',

@@ -64,6 +64,7 @@ export const copyFI: SectionCopy = {
     short: '1–3 yötä',
     medium: '3–6 yötä',
     long: '7+ yötä',
+    nights: (n) => `${n} ${n === 1 ? 'yö' : 'yötä'}`,
     minPrefix: 'Min',
     perNight: '/ yö',
     cta: 'Tarkista hinnat ja varaa',
@@ -599,6 +600,9 @@ export const copyFI: SectionCopy = {
     networkLeadA: 'Verkostomme luokittelee vain 16 kohdetta. Sembo listaa kaiken muun, mikä toimii kohteessa ',
     networkLeadB: ' tänä talvena, joustavat päivät, suodatus varustelun mukaan, koko tarjonta.',
     browseInDest: (n) => `Selaa Semboa, ${n}`,
+    imageNote:
+      'Kuvat ovat kuvituskuvia: ne esittävät majoitustyyppiä ja seudun maisemaa, eivät kohteen omia tiloja.',
+    landscapeAlt: (n) => `Talvimaisemaa kohteessa ${n}, Suomen Lappi`,
     bucketLabels: {
       'long-stays': 'pitkät jaksot',
       'hotels': 'hotellit',

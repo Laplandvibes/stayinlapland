@@ -47,9 +47,9 @@ export default function PropertyCard({ property, sidPrefix, imageSrc, imageAlt }
             <Clock className="w-3 h-3 text-vibe-pink" />
             {stayLabel[property.bestFor]}
           </span>
-          {property.minStay && (
+          {property.minStayNights !== undefined && (
             <span className="px-2.5 py-1 bg-night/70 backdrop-blur-sm rounded-full text-[10px] sm:text-[11px] font-semibold tracking-wider uppercase text-snow">
-              {t.minPrefix} {property.minStay}
+              {t.minPrefix} {t.nights(property.minStayNights)}
             </span>
           )}
         </div>

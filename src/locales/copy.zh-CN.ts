@@ -68,6 +68,7 @@ export const copyZHCN: SectionCopy = {
     short: '1–3晚',
     medium: '3–6晚',
     long: '7晚以上',
+    nights: (n) => `${n}晚`,
     minPrefix: '起价',
     perNight: '/ 晚',
     cta: '查看价格',
@@ -600,6 +601,9 @@ export const copyZHCN: SectionCopy = {
     networkLeadA: '我们的网络只排名 16 处房源。Trip.com 列出今冬在 ',
     networkLeadB: ' 运营的其余一切，灵活改期、按设施筛选、查看全部房源。',
     browseInDest: (n) => `浏览 Trip.com, ${n}`,
+    imageNote:
+      '图片仅为示意：展示的是住宿类型与当地风景，并非该住处本身的房间。',
+    landscapeAlt: (n) => `${n}的冬季风景，芬兰拉普兰`,
     bucketLabels: {
       'long-stays': '长期入住',
       'hotels': '酒店',

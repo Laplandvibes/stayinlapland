@@ -11,7 +11,9 @@ import {
   hotels,
   glassIgloos,
   wilderness,
+  stayCardImages,
 } from '../data/properties';
+import ImageBreak from '../components/ImageBreak';
 import type { Property } from '../data/properties';
 import { pageUrl } from '../lib/meta';
 import { useLang, useLocalePath } from '../i18n/useLang';
@@ -84,6 +86,9 @@ export default function DestinationPage() {
       const loc = dataForBucket[bucket][index];
       return {
         bucket,
+        // Keep the canonical (English) name: it is the key into stayCardImages,
+        // and the localized name would miss on every non-EN locale.
+        imageBase: stayCardImages[p.name],
         p: {
           ...p,
           name: loc?.name ?? p.name,
@@ -124,11 +129,18 @@ export default function DestinationPage() {
         }}
       />
 
-      {/* No imageSrc on purpose: PageHero then renders its editorial aurora
-          backdrop. We have no photograph of these places that we took or
-          licensed, and an AI render captioned as a real destination is a
-          claim we cannot back (Vesa 2026-07-26). */}
-      <PageHero eyebrow={d.pageHeroEyebrow} title={dest.name} subtitle={pitch}>
+      {/* One generated winter landscape per destination (2026-08-17, Vesa: the
+          gradient backdrop read as unfinished). The alt text calls it a winter
+          landscape of the area rather than a photograph of a named landmark,
+          and `imageNote` further down says the imagery is illustrative. Base
+          name is derived from the slug so hero and Home card cannot drift. */}
+      <PageHero
+        eyebrow={d.pageHeroEyebrow}
+        title={dest.name}
+        subtitle={pitch}
+        imageSrc={`/images/dest-${dest.slug}-hero.webp`}
+        imageAlt={d.landscapeAlt(dest.name)}
+      >
         {facts && (
           <dl className="flex flex-wrap justify-center gap-x-3 gap-y-2.5">
             {facts.stats.map((s) => (
@@ -169,74 +181,107 @@ export default function DestinationPage() {
             <h2 className="font-heading text-4xl sm:text-5xl text-charcoal leading-tight tracking-wide">
               {d.whereToStay}
             </h2>
+            {/* Names the imagery for what it is. The pictures show the stay type
+                and the local landscape, not the named property's own rooms —
+                saying so is what lets us use them at all. */}
+            <p className="text-stone text-[13px] leading-relaxed mt-4">{d.imageNote}</p>
           </div>
 
-          <div className="space-y-5">
-            {matched.map(({ p, bucket }) => (
-              <article
-                key={p.slug}
-                className="group overflow-hidden bg-white border border-charcoal/8 rounded-2xl shadow-sm hover:shadow-md transition-all"
-              >
-                {/* Label bar instead of a photo. The only image available was
-                    an AI render, and putting one under the name of a real,
-                    named hotel misrepresents that hotel — the same problem as
-                    the old fake hero, just smaller. Real photography on this
-                    page is in the cabin cards below, where the partner licence
-                    covers the actual properties. */}
-                <div className="flex items-center gap-3 px-6 sm:px-8 pt-6">
-                  <span className="h-px flex-1 bg-charcoal/10" />
-                  <p className="text-[11px] tracking-[0.18em] uppercase text-gold font-semibold">
-                    {d.bucketLabels[bucket] ?? bucket.replace('-', ' ')}
-                  </p>
-                  <span className="h-px flex-1 bg-charcoal/10" />
-                </div>
-                <div className="grid grid-cols-1 md:grid-cols-12 gap-6 p-6 sm:p-8">
-                <div className="md:col-span-8">
-                  <h3 className="font-heading text-2xl sm:text-3xl text-charcoal leading-tight mb-2">
-                    {p.name}
-                  </h3>
-                  <p className="text-vibe-pink text-[12px] tracking-[0.18em] uppercase font-semibold mb-3">
-                    {p.highlight}
-                  </p>
-                  <p className="text-graphite text-[15px] leading-relaxed">{p.description}</p>
-                </div>
-                <div className="md:col-span-4 flex flex-col gap-3 md:items-end md:text-right">
-                  <p className="text-charcoal font-semibold text-lg">
-                    {p.priceRange} <span className="text-stone font-normal text-sm">{d.perNight}</span>
-                  </p>
-                  {p.minStay && (
-                    <p className="text-stone text-[13px]">{d.minStayLabel} {p.minStay}</p>
-                  )}
-                  <AffiliateCTA
-                    partner="hotels"
-                    sid={`dest_${dest.slug}_card`}
-                    destination={p.searchQuery ?? p.name}
-                    className="inline-flex justify-center px-5 py-2.5 bg-charcoal hover:bg-vibe-pink text-snow rounded-full text-sm font-semibold transition-colors"
+          <div className="space-y-6 sm:space-y-8">
+            {matched.map(({ p, bucket, imageBase }, i) => {
+              const label = d.bucketLabels[bucket] ?? bucket.replace('-', ' ');
+              return (
+                <article
+                  key={p.slug}
+                  className="group grid grid-cols-1 md:grid-cols-12 overflow-hidden bg-white border border-charcoal/8 rounded-2xl shadow-sm hover:shadow-lg hover:border-charcoal/15 transition-all duration-300"
+                >
+                  {/* Alternating image side gives the list a magazine rhythm
+                      instead of five identical rows. */}
+                  <div
+                    className={`relative md:col-span-5 aspect-[4/3] md:aspect-auto md:min-h-[300px] overflow-hidden bg-cream-2 ${
+                      i % 2 === 1 ? 'md:order-2' : ''
+                    }`}
                   >
-                    {d.checkRates}
-                  </AffiliateCTA>
-                  <Link
-                    to={localePath(`/${bucket}`)}
-                    className="text-vibe-pink text-[13px] font-semibold hover:underline"
-                  >
-                    {d.seeAll} {d.bucketLabels[bucket] ?? bucket.replace('-', ' ')}
-                  </Link>
-                </div>
-                </div>
-              </article>
-            ))}
+                    {imageBase ? (
+                      <img
+                        src={`/images/${imageBase}.webp`}
+                        alt={`${label} — ${dest.name}`}
+                        className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-[1.04]"
+                        loading="lazy"
+                        decoding="async"
+                      />
+                    ) : (
+                      <div
+                        className="absolute inset-0"
+                        style={{
+                          background:
+                            'linear-gradient(135deg, #F2EFE8 0%, #E8D9B7 60%, #C9A464 100%)',
+                        }}
+                      />
+                    )}
+                    <span className="absolute top-4 left-4 inline-flex px-3 py-1.5 rounded-full bg-night/70 backdrop-blur-sm text-snow text-[10px] font-semibold tracking-[0.18em] uppercase">
+                      {label}
+                    </span>
+                  </div>
+
+                  <div className="md:col-span-7 p-6 sm:p-8 flex flex-col">
+                    <p className="text-vibe-pink text-[11px] tracking-[0.18em] uppercase font-semibold mb-2">
+                      {p.highlight}
+                    </p>
+                    <h3 className="font-heading text-3xl sm:text-4xl text-charcoal leading-[1.05] tracking-wide mb-3">
+                      {p.name}
+                    </h3>
+                    <p className="text-graphite text-[15px] leading-relaxed">{p.description}</p>
+
+                    <div className="mt-6 pt-5 border-t border-charcoal/10 flex flex-wrap items-end justify-between gap-x-6 gap-y-4">
+                      <div>
+                        <p className="text-charcoal font-semibold text-xl leading-none">
+                          {p.priceRange}{' '}
+                          <span className="text-stone font-normal text-sm">{d.perNight}</span>
+                        </p>
+                        {p.minStayNights !== undefined && (
+                          <p className="text-stone text-[13px] mt-1.5">
+                            {d.minStayLabel} {t.propertyCard.nights(p.minStayNights)}
+                          </p>
+                        )}
+                      </div>
+                      <div className="flex flex-col items-start sm:items-end gap-2">
+                        <AffiliateCTA
+                          partner="hotels"
+                          sid={`dest_${dest.slug}_card`}
+                          destination={p.searchQuery ?? p.name}
+                          className="inline-flex justify-center px-5 py-2.5 bg-charcoal hover:bg-vibe-pink text-snow rounded-full text-sm font-semibold transition-colors"
+                        >
+                          {d.checkRates}
+                        </AffiliateCTA>
+                        <Link
+                          to={localePath(`/${bucket}`)}
+                          className="text-vibe-pink text-[13px] font-semibold hover:underline"
+                        >
+                          {d.seeAll} {label}
+                        </Link>
+                      </div>
+                    </div>
+                  </div>
+                </article>
+              );
+            })}
           </div>
         </div>
       </section>
 
       {isCabinArea(dest.slug) && <CabinBand area={dest.slug} destName={dest.name} />}
 
-      {facts && (
-        <>
-          <FinnishDivider />
-          <DestinationFacts facts={facts} />
-        </>
-      )}
+      {/* Wide landscape band. Rovaniemi and Inari have no CabinBand (the partner
+          feed carries no cabins there), so without this the lower half of those
+          two pages was text only. */}
+      <ImageBreak
+        src={`/images/dest-${dest.slug}-band.webp`}
+        alt={d.landscapeAlt(dest.name)}
+        ratio="band"
+      />
+
+      {facts && <DestinationFacts facts={facts} />}
 
       <FinnishDivider />
 

@@ -8,8 +8,10 @@ export interface Property {
   searchQuery?: string;
   /** Nightly rate range, formatted. */
   priceRange: string;
-  /** Typical minimum stay reference — null when no minimum. */
-  minStay?: string;
+  /** Typical minimum stay in nights — omitted when there is no minimum.
+   *  A number, not a string: '4 nights' rendered literally on every locale
+   *  (Finnish pages read "Min jakso: 4 nights" until 2026-08-17). */
+  minStayNights?: number;
   /** Stay length the property is best at. */
   bestFor: StayLength;
   /** One-line tag shown on cards. */
@@ -38,7 +40,7 @@ export const longStays: Property[] = [
     name: 'Arctic TreeHouse Resort: Long Stay',
     location: 'Rovaniemi',
     priceRange: '€280–520',
-    minStay: '7 nights',
+    minStayNights: 7,
     bestFor: 'long',
     highlight: 'Design suites · weekly rates · sauna village',
     description:
@@ -50,7 +52,7 @@ export const longStays: Property[] = [
     name: 'Levi Residences: Penthouse Suites',
     location: 'Levi village',
     priceRange: '€220–480',
-    minStay: '4 nights',
+    minStayNights: 4,
     bestFor: 'long',
     highlight: '2-bedroom · ski-in · private sauna · weekly rates',
     description:
@@ -62,7 +64,7 @@ export const longStays: Property[] = [
     name: 'Lapland Hotels Ounasvaara Chalets',
     location: 'Rovaniemi · Ounasvaara fell',
     priceRange: '€140–260',
-    minStay: '3 nights',
+    minStayNights: 3,
     bestFor: 'medium',
     highlight: 'Ski-in/out · walk to Rovaniemi centre',
     description:
@@ -74,7 +76,7 @@ export const longStays: Property[] = [
     name: 'Lapland Hotels Bear\'s Lodge',
     location: 'Pyhä-Luosto National Park',
     priceRange: '€150–280',
-    minStay: '5 nights',
+    minStayNights: 5,
     bestFor: 'long',
     highlight: 'National park doorstep · private sauna · families',
     description:
@@ -86,7 +88,7 @@ export const longStays: Property[] = [
     name: 'Wilderness Hotel Nangu: Lakeside Villas',
     location: 'Lake Inari southern shore',
     priceRange: '€220–460',
-    minStay: '4 nights',
+    minStayNights: 4,
     bestFor: 'long',
     highlight: 'Sami-led activities · lake views · long-stay rates',
     description:
@@ -241,7 +243,9 @@ export interface DestinationInfo {
   longStayAngle: string;
   /** Properties best matched to this destination (cross-references the four arrays). */
   propertyNames: string[];
-  /** Card image shown on Home destination grid + DestinationPage hero. */
+  /** Small 16:10 card image for the Home destination grid. The full-size hero on
+   *  /destinations/{slug} is derived from the slug instead (`dest-{slug}-hero`) so
+   *  the two sizes can never drift apart. */
   imageSrc: string;
 }
 
@@ -253,7 +257,7 @@ export const destinations: DestinationInfo[] = [
     longStayAngle:
       'The right base if your long stay involves work-from-Lapland weekdays and weekend trips north: fast wifi, Stockholm-direct flights, restaurants open in shoulder season.',
     propertyNames: ['Arctic TreeHouse Resort', 'Arctic Light Hotel', 'Lapland Hotels Ounasvaara Chalets'],
-    imageSrc: '/images/hero-cabins.webp',
+    imageSrc: '/images/dest-rovaniemi-card.webp',
   },
   {
     slug: 'levi',
@@ -262,7 +266,7 @@ export const destinations: DestinationInfo[] = [
     longStayAngle:
       'Long-stay sense: ski-in/out apartments rent by the week from December through April. The lift system runs daily, the village restaurants open every night, you can do a proper season here.',
     propertyNames: ['Levi Spirit', 'Levi Residences: Penthouse Suites', 'Levin Iglut'],
-    imageSrc: '/images/hero-long-stays.webp',
+    imageSrc: '/images/dest-levi-card.webp',
   },
   {
     slug: 'saariselka',
@@ -271,7 +275,7 @@ export const destinations: DestinationInfo[] = [
     longStayAngle:
       'Long-stay sense: rent a hilltop cabin and write a book. Few distractions. Excellent cross-country network, husky kennels nearby, no urban distractions.',
     propertyNames: ['Star Arctic Hotel', 'Kakslauttanen Arctic Resort', 'Wilderness Hotel Muotka'],
-    imageSrc: '/images/pick-kakslauttanen.webp',
+    imageSrc: '/images/dest-saariselka-card.webp',
   },
   {
     slug: 'inari',
@@ -280,7 +284,7 @@ export const destinations: DestinationInfo[] = [
     longStayAngle:
       'Long-stay sense: the lake itself is the activity. Ice fishing every morning, cross-country across the frozen lake, Inari Sami Museum and SIIDA cultural centre on doorstep.',
     propertyNames: ['Wilderness Hotel Nangu: Lakeside Villas', 'Aurora Pyramids', 'Aurora Village'],
-    imageSrc: '/images/pick-aurora-pyramids.webp',
+    imageSrc: '/images/dest-inari-card.webp',
   },
   {
     slug: 'yllas',
@@ -293,9 +297,40 @@ export const destinations: DestinationInfo[] = [
     longStayAngle:
       'Long-stay sense: the cross-country network is the draw. Cabin rentals here run by the week from late November to early May. The best long-stay choice for skiers who do not need lift-served downhill every day.',
     propertyNames: ['Lapland Hotels Saaga'],
-    imageSrc: '/images/hero-wilderness.webp',
+    imageSrc: '/images/dest-yllas-card.webp',
   },
 ];
+
+/** Context image for each accommodation card on a destination page, keyed by the
+ *  canonical (English) property name in `propertyNames`.
+ *
+ *  These are NOT photographs of the named property — we have neither shot nor
+ *  licensed those. Each one shows the *kind* of stay in the *kind* of landscape
+ *  the destination has, which is what a reader is actually choosing between at
+ *  this point in the page. `destinationPage.imageNote` says so in every locale,
+ *  and the alt text names the category rather than the hotel. One image per card
+ *  slot so no destination page ever shows the same picture twice (Vesa 2026-08-17).
+ */
+export const stayCardImages: Record<string, string> = {
+  // Rovaniemi
+  'Arctic TreeHouse Resort': 'stay-rovaniemi-treehouse',
+  'Arctic Light Hotel': 'stay-rovaniemi-boutique',
+  'Lapland Hotels Ounasvaara Chalets': 'stay-rovaniemi-chalet',
+  // Levi
+  'Levi Spirit': 'stay-levi-villa',
+  'Levi Residences: Penthouse Suites': 'stay-levi-apartment',
+  'Levin Iglut': 'stay-levi-iglut',
+  // Saariselkä
+  'Star Arctic Hotel': 'stay-saariselka-hilltop',
+  'Kakslauttanen Arctic Resort': 'stay-saariselka-domes',
+  'Wilderness Hotel Muotka': 'stay-saariselka-wilderness',
+  // Inari
+  'Wilderness Hotel Nangu: Lakeside Villas': 'stay-inari-lakeside',
+  'Aurora Pyramids': 'stay-inari-pyramid',
+  'Aurora Village': 'stay-inari-aurora',
+  // Ylläs
+  'Lapland Hotels Saaga': 'stay-yllas-spa',
+};
 
 export const allCategoriesSummary = [
   { slug: 'long-stays',   name: 'Long Stays',        count: longStays.length,   description: 'Weekly + monthly rentals: villas, design cabins, ski apartments.', imageSrc: '/images/hero-long-stays.webp' },

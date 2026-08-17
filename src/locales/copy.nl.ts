@@ -584,6 +584,9 @@ export const copyNL: SectionCopy = {
     networkLeadA: 'Ons netwerk rangschikt slechts 16 accommodaties. Trip.com toont al het overige dat deze winter opereert in ',
     networkLeadB: ', flexibele data, filter op voorziening, het volledige aanbod.',
     browseInDest: (n) => `Bekijk Trip.com, ${n}`,
+    imageNote:
+      'De beelden zijn illustratief: ze tonen het type verblijf en het landschap van de streek, niet de kamers van het huis zelf.',
+    landscapeAlt: (n) => `Winterlandschap bij ${n}, Fins Lapland`,
     bucketLabels: {
       'long-stays': 'lange verblijven',
       'hotels': 'hotels',
@@ -610,6 +613,7 @@ export const copyNL: SectionCopy = {
     short: '1–3 nachten',
     medium: '3–6 nachten',
     long: '7+ nachten',
+    nights: (n) => `${n} ${n === 1 ? 'nacht' : 'nachten'}`,
     minPrefix: 'Min.',
     perNight: '/ nacht',
     cta: 'Tarieven bekijken & boeken',

@@ -61,6 +61,7 @@ export const copyEN: SectionCopy = {
     short: '1–3 nights',
     medium: '3–6 nights',
     long: '7+ nights',
+    nights: (n) => `${n} ${n === 1 ? 'night' : 'nights'}`,
     minPrefix: 'Min',
     perNight: '/ night',
     cta: 'Check rates & book',
@@ -590,6 +591,9 @@ export const copyEN: SectionCopy = {
     networkLeadA: 'The network ranks only 16 properties. Trip.com lists everything else operating in ',
     networkLeadB: ' this winter, flex dates, filter by amenity, see the full inventory.',
     browseInDest: (n) => `Browse Trip.com, ${n}`,
+    imageNote:
+      'The pictures are illustrative: they show the type of stay and the surrounding landscape, not the property’s own rooms.',
+    landscapeAlt: (n) => `Winter landscape around ${n}, Finnish Lapland`,
     bucketLabels: {
       'long-stays': 'long stays',
       'hotels': 'hotels',

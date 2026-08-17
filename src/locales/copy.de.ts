@@ -64,6 +64,7 @@ export const copyDE: SectionCopy = {
     short: '1–3 Nächte',
     medium: '3–6 Nächte',
     long: '7+ Nächte',
+    nights: (n) => `${n} ${n === 1 ? 'Nacht' : 'Nächte'}`,
     minPrefix: 'Min.',
     perNight: '/ Nacht',
     cta: 'Preise prüfen & buchen',
@@ -599,6 +600,9 @@ export const copyDE: SectionCopy = {
     networkLeadA: 'Unser Netzwerk bewertet nur 16 Objekte. Trip.com listet alles weitere in ',
     networkLeadB: ' in diesem Winter, flexible Daten, nach Ausstattung filtern, das gesamte Angebot.',
     browseInDest: (n) => `Trip.com durchsuchen, ${n}`,
+    imageNote:
+      'Die Bilder sind Illustrationen: Sie zeigen die Art der Unterkunft und die Landschaft der Region, nicht die Räume des jeweiligen Hauses.',
+    landscapeAlt: (n) => `Winterlandschaft in ${n}, Finnisch-Lappland`,
     bucketLabels: {
       'long-stays': 'Langzeitaufenthalte',
       'hotels': 'Hotels',

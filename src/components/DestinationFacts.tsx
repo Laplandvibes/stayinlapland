@@ -1,6 +1,11 @@
-import { ArrowUpRight, ExternalLink } from 'lucide-react';
+import { ArrowUpRight, ExternalLink, UtensilsCrossed, Flame } from 'lucide-react';
 import { factsUi, type DestinationFacts as Facts, type PlaceKind } from '../data/destinationFacts';
 import { useLang } from '../i18n/useLang';
+
+const KIND_ICON: Record<PlaceKind, typeof UtensilsCrossed> = {
+  food: UtensilsCrossed,
+  wellness: Flame,
+};
 
 /**
  * The "this is a real place" section: verified figures, three things that are
@@ -31,9 +36,18 @@ export default function DestinationFacts({ facts }: { facts: Facts }) {
         </h2>
 
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-5 mb-14">
-          {facts.highlights.map((h) => (
-            <article key={h.title.en} className="bg-white border border-charcoal/8 rounded-2xl p-6 shadow-sm">
-              <h3 className="font-heading text-2xl text-charcoal leading-tight mb-3">{t(h.title)}</h3>
+          {facts.highlights.map((h, i) => (
+            <article
+              key={h.title.en}
+              className="relative bg-white border border-charcoal/8 rounded-2xl p-6 pt-7 shadow-sm overflow-hidden"
+            >
+              <span className="absolute inset-x-0 top-0 h-[3px] bg-gradient-to-r from-gold to-gold/20" />
+              <span className="block font-heading text-gold/70 text-lg leading-none mb-2">
+                {String(i + 1).padStart(2, '0')}
+              </span>
+              <h3 className="font-heading text-2xl text-charcoal leading-tight mb-3 tracking-wide">
+                {t(h.title)}
+              </h3>
               <p className="text-graphite text-[15px] leading-relaxed">{t(h.body)}</p>
             </article>
           ))}
@@ -48,26 +62,34 @@ export default function DestinationFacts({ facts }: { facts: Facts }) {
           </h2>
           <p className="text-graphite text-[15px] leading-relaxed max-w-3xl mb-8">{t(factsUi.placesNote)}</p>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-10 gap-y-8">
+          {/* Was a bare bulleted list of links — Vesa 2026-08-17. Same links, but
+              grouped into cards with a category icon so the section reads as
+              editorial recommendations rather than a footer link dump. */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
             {groups.map(({ kind, label }) => {
               const items = byKind(kind);
               if (items.length === 0) return null;
+              const Icon = KIND_ICON[kind];
               return (
-                <div key={kind}>
-                  <p className="text-gold text-[11px] font-semibold tracking-[0.22em] uppercase mb-3">{label}</p>
-                  <ul className="space-y-2">
+                <div key={kind} className="bg-white border border-charcoal/8 rounded-2xl p-6 shadow-sm">
+                  <p className="flex items-center gap-2 text-gold text-[11px] font-semibold tracking-[0.22em] uppercase mb-4">
+                    <Icon className="w-4 h-4 shrink-0" aria-hidden="true" />
+                    {label}
+                  </p>
+                  <ul className="divide-y divide-charcoal/8">
                     {items.map((p) => (
                       <li key={p.name}>
                         <a
                           href={p.href}
                           target="_blank"
                           rel="noopener"
-                          className="group inline-flex items-start gap-1.5 text-charcoal hover:text-vibe-pink transition-colors"
+                          className="group flex items-center justify-between gap-3 py-2.5 text-charcoal hover:text-vibe-pink transition-colors"
                         >
-                          <span className="border-b border-charcoal/15 group-hover:border-vibe-pink/60">
-                            {p.name}
-                          </span>
-                          <ExternalLink className="w-3.5 h-3.5 mt-1 shrink-0 opacity-50" aria-hidden="true" />
+                          <span className="font-medium">{p.name}</span>
+                          <ExternalLink
+                            className="w-3.5 h-3.5 shrink-0 opacity-40 group-hover:opacity-100 transition-opacity"
+                            aria-hidden="true"
+                          />
                         </a>
                       </li>
                     ))}

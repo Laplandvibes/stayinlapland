@@ -586,6 +586,9 @@ export const copySV: SectionCopy = {
     networkLeadA: 'Vårt nätverk rangordnar bara 16 boenden. Trip.com visar allt annat som är i drift i vinter i ',
     networkLeadB: ', flexibla datum, filtrera på bekvämlighet, hela utbudet.',
     browseInDest: (n) => `Se Trip.com, ${n}`,
+    imageNote:
+      'Bilderna är illustrationer: de visar boendetypen och landskapet i området, inte husets egna rum.',
+    landscapeAlt: (n) => `Vinterlandskap i ${n}, finska Lappland`,
     bucketLabels: {
       'long-stays': 'långtidsvistelser',
       'hotels': 'hotell',
@@ -612,6 +615,7 @@ export const copySV: SectionCopy = {
     short: '1–3 nätter',
     medium: '3–6 nätter',
     long: '7+ nätter',
+    nights: (n) => `${n} ${n === 1 ? 'natt' : 'nätter'}`,
     minPrefix: 'Min.',
     perNight: '/ natt',
     cta: 'Se priser & boka',

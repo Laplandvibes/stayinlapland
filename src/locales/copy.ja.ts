@@ -61,6 +61,7 @@ export const copyJA: SectionCopy = {
     short: '1〜3泊',
     medium: '3〜6泊',
     long: '7泊以上',
+    nights: (n) => `${n}泊`,
     minPrefix: '最低',
     perNight: '/ 1泊',
     cta: '料金を確認して予約',
@@ -590,6 +591,9 @@ export const copyJA: SectionCopy = {
     networkLeadA: '当ネットワークでは16物件のみを評価しています。Trip.comには',
     networkLeadB: 'のこの冬営業中の全在庫が掲載されています, 日程の柔軟検索、設備フィルター、全在庫の閲覧が可能です。',
     browseInDest: (n) => `${n}のTrip.comを見る`,
+    imageNote:
+      '写真はイメージです。宿泊タイプと周辺の風景を示すもので、各施設の実際の客室ではありません。',
+    landscapeAlt: (n) => `${n}の冬の風景、フィンランド・ラップランド`,
     bucketLabels: {
       'long-stays': '長期滞在',
       'hotels': 'ホテル',

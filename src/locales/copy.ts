@@ -50,6 +50,8 @@ export type SectionCopy = {
     short: string;
     medium: string;
     long: string;
+    /** Localized minimum-stay unit, e.g. "4 yötä" / "4 nights" / "4泊". */
+    nights: (n: number) => string;
     minPrefix: string;
     perNight: string;
     cta: string;
@@ -263,6 +265,10 @@ export type SectionCopy = {
     networkLeadB: string;
     browseInDest: (n: string) => string;
     bucketLabels: Record<string, string>;
+    /** Says out loud that the card images show a stay type, not the named property. */
+    imageNote: string;
+    /** Alt text for the hero + wide landscape band. */
+    landscapeAlt: (n: string) => string;
   };
   hotelsData: { name: string; highlight: string; description: string; location: string }[];
   longStaysData: { name: string; highlight: string; description: string; location: string }[];

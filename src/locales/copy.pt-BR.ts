@@ -69,6 +69,7 @@ export const copyPTBR: SectionCopy = {
     short: '1–3 noites',
     medium: '3–6 noites',
     long: '7+ noites',
+    nights: (n) => `${n} ${n === 1 ? 'noite' : 'noites'}`,
     minPrefix: 'a partir de',
     perNight: '/ noite',
     cta: 'Ver tarifas',
@@ -604,6 +605,9 @@ export const copyPTBR: SectionCopy = {
     networkLeadA: 'Nossa rede ranqueia apenas 16 propriedades. A Trip.com lista todo o resto que opera em ',
     networkLeadB: ' neste inverno, datas flexíveis, filtro por comodidade, a oferta completa.',
     browseInDest: (n) => `Buscar na Trip.com, ${n}`,
+    imageNote:
+      'As imagens são ilustrativas: mostram o tipo de hospedagem e a paisagem da região, não os quartos do próprio estabelecimento.',
+    landscapeAlt: (n) => `Paisagem de inverno em ${n}, Lapônia finlandesa`,
     bucketLabels: {
       'long-stays': 'estadias longas',
       'hotels': 'hotéis',

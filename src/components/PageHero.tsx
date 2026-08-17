@@ -6,6 +6,9 @@ interface PageHeroProps {
   title: string;
   subtitle: string;
   imageSrc?: string;
+  /** AVIF sibling of imageSrc. Pass it only when the file really exists — a
+   *  404 inside <source> does NOT fall back to the <img>, it just breaks. */
+  avifSrc?: string;
   imageAlt?: string;
   children?: ReactNode;
 }
@@ -19,6 +22,7 @@ export default function PageHero({
   title,
   subtitle,
   imageSrc,
+  avifSrc,
   imageAlt,
   children,
 }: PageHeroProps) {
@@ -28,13 +32,17 @@ export default function PageHero({
       <div className="relative min-h-[60svh] sm:min-h-[68svh] flex items-center justify-center py-24 sm:py-28">
         {imageSrc ? (
           <>
-            <img
-              src={imageSrc}
-              alt={imageAlt ?? ''}
-              className="absolute inset-0 w-full h-full object-cover [object-position:50%_45%]"
-              fetchPriority="high"
-              decoding="async"
-            />
+            <picture>
+              {avifSrc && <source srcSet={avifSrc} type="image/avif" />}
+              <source srcSet={imageSrc} type="image/webp" />
+              <img
+                src={imageSrc}
+                alt={imageAlt ?? ''}
+                className="absolute inset-0 w-full h-full object-cover [object-position:50%_45%]"
+                fetchPriority="high"
+                decoding="async"
+              />
+            </picture>
             <div className="absolute inset-0 bg-gradient-to-b from-night/55 via-night/35 to-night" />
             <div
               className="absolute inset-0"

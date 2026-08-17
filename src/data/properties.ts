@@ -33,7 +33,7 @@ export interface Property {
 export function searchDest(location: string, searchQuery?: string): string {
   if (searchQuery && searchQuery.trim()) return searchQuery;
   let c = (location || '').split('(')[0].split(' · ')[0].split(',')[0];
-  c = c.replace(/(village|fell|National Park|area|city centre|southern shore|district)/gi, '').trim();
+  c = c.replace(/\b(village|fell|National Park|area|city centre|southern shore|district)\b/gi, '').trim();
   c = c.replace(/^Lake\s+/i, '').trim();
   return c ? `${c}, Finland` : 'Lapland, Finland';
 }

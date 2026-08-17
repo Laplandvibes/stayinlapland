@@ -17,9 +17,13 @@ const RATIO_CLS: Record<NonNullable<ImageBreakProps['ratio']>, string> = {
 };
 
 export default function ImageBreak({ src, avifSrc, alt, caption, ratio = '3/1' }: ImageBreakProps) {
+  // 🔴 The ratio is relative to viewport WIDTH, so "3:1 cinematic strip" became
+  // a 665 px wall of forest on a 1994 px window — Vesa 2026-08-17: "keskellä on
+  // täysi leveä metsäkuva ilman mitään funktiota". Cap the height so a strip
+  // stays a strip on wide screens; object-cover handles the tighter crop.
   return (
     <figure className="relative w-full overflow-hidden bg-night">
-      <div className={`relative w-full ${RATIO_CLS[ratio]}`}>
+      <div className={`relative w-full max-h-[clamp(160px,26vh,380px)] ${RATIO_CLS[ratio]}`}>
         <picture>
           {avifSrc && <source srcSet={avifSrc} type="image/avif" />}
           <source srcSet={src} type="image/webp" />

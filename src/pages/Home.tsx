@@ -95,15 +95,13 @@ export default function Home() {
       />
 
       <Hero />
-      {/* App launch block, directly under the site's own opening. At the foot
-          of the page it measured 81 % down a 33 000 px front page, and an
-          announcement nobody scrolls to is not an announcement. */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <AppPromoHero />
-      </div>
 
-      {/* Stat band — glass tiles straddling the hero/cream edge. Numbers are
-          REAL counts from the data layer (never hardcode; see LV recipe). */}
+      {/* Stat band — glass tiles straddling the hero/cream edge. The negative
+          margin only works against the Hero: while AppPromoHero sat between
+          the two, these tiles were pulled on top of the app card and covered
+          its last line (Vesa 2026-08-17, "miksi trust ikonit on apin päällä").
+          Keep the stat band adjacent to the Hero and the app block after it.
+          Numbers are REAL counts from the data layer (never hardcode). */}
       <section className="relative z-10 -mt-14 sm:-mt-16 px-5 sm:px-6" aria-label={`${totalStays} ${h.stats.stays}`}>
         <div className="max-w-5xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-4">
           {[
@@ -125,6 +123,13 @@ export default function Home() {
         </div>
       </section>
 
+      {/* App launch block, high on the page. At the foot of the page it measured
+          81 % down a 33 000 px front page, and an announcement nobody scrolls
+          to is not an announcement. */}
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-14 sm:mt-16">
+        <AppPromoHero />
+      </div>
+
       {/* LV Media — PÄÄKUMPPANI-banneri heti heron alla */}
       <MainPartnerBanner config={AD_SLOTS} locale={lang} surface="light" />
 
@@ -140,6 +145,14 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* Real, bookable cabins BEFORE the category grid. These are the only
+          photographs on the site of actual, bookable properties; the
+          category cards below are generated imagery. Showing the generated set
+          first and the real one 700 px later had it backwards (Vesa 2026-08-17:
+          "aitoja mökkejä, aidot kuvat -osio pitää olla ylempänä kuin fake
+          kuvat"). Same partner, same disclosure, better creative. */}
+      <CabinBand areas={['yllas', 'levi', 'saariselka']} />
 
       {/* Four-bucket overview */}
       <section className="py-20 sm:py-28 px-5 sm:px-6 bg-cream-2/60">
@@ -193,14 +206,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-
-      {/* Real, bookable cabins high on the page (Vesa 2026-07-26: "aidot
-          mökkikohteet heti etusivulle, että herättää luottamusta"). This is the
-          only photography on the site that shows actual properties, so it does
-          more for trust than any amount of copy. Replaces the text-only
-          Lomarengas ad that used to sit further down: same partner, same
-          disclosure, far better creative. */}
-      <CabinBand areas={['yllas', 'levi', 'saariselka']} />
 
       {/* LV Media — kumppaniosio ylhäällä: kakkospääkumppani + 6 premium-
           kohdepaikkaa. Cream-pinta → surface="light". */}

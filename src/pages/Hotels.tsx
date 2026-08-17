@@ -6,7 +6,6 @@ import FinnishDivider from '../components/FinnishDivider';
 import AffiliateCTA from '../components/AffiliateCTA';
 import AuthorByline from '../components/AuthorByline';
 import PullQuote from '../components/PullQuote';
-import ImageBreak from '../components/ImageBreak';
 import ComparisonTable from '../components/ComparisonTable';
 import MarginNote from '../components/MarginNote';
 import HotelsComAd from '../components/HotelsComAd';
@@ -88,8 +87,6 @@ export default function Hotels() {
           </div>
         </div>
       </section>
-
-      <ImageBreak src="/images/break-boreal-forest.webp" alt="Boreal pine forest in winter" ratio="3/1" />
 
       <FinnishDivider />
 

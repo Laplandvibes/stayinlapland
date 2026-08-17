@@ -4,8 +4,22 @@ import { useLang, useLocalePath } from '../i18n/useLang';
 import { getCopy } from '../locales/copy';
 import FounderByline from '../../../shared/FounderByline';
 
-const SUPABASE_URL = (import.meta.env.VITE_SUPABASE_URL as string) ?? '';
-const SUPABASE_ANON_KEY = (import.meta.env.VITE_SUPABASE_PUBLISHABLE_KEY as string) ?? '';
+/**
+ * Signup goes through the same-origin Pages Function `/api/newsletter`
+ * (functions/api/newsletter.ts), the same route the popup uses.
+ *
+ * 🔴 This used to read `VITE_SUPABASE_URL` + `VITE_SUPABASE_PUBLISHABLE_KEY`
+ * and call Supabase from the browser. The repo has no `.env`, so both were ''
+ * — and the handler treated "no keys" as a reason to show the success view
+ * without sending anything. This section renders on 8 pages, so every visitor
+ * who subscribed here was told it worked and had their address discarded.
+ * Verified live 2026-08-17: submitting sent zero network requests.
+ *
+ * Do NOT reintroduce an env read or a "no keys configured" branch here. The
+ * endpoint needs no secrets, and a signup form must never fake success — if
+ * the request fails the visitor has to see the error state.
+ */
+const NEWSLETTER_ENDPOINT = '/api/newsletter';
 
 type Status = 'idle' | 'loading' | 'success' | 'error';
 
@@ -74,6 +88,7 @@ const CONSENT_COPY = {
 
 export default function Newsletter() {
   const [email, setEmail] = useState('');
+  const [website, setWebsite] = useState(''); // honeypot, humans leave blank
   const [consented, setConsented] = useState(false);
   const [status, setStatus] = useState<Status>('idle');
   const [errorMsg, setErrorMsg] = useState('');
@@ -88,27 +103,29 @@ export default function Newsletter() {
     setStatus('loading');
     setErrorMsg('');
 
-    if (!SUPABASE_URL || !SUPABASE_ANON_KEY) {
-      setTimeout(() => setStatus('success'), 600);
-      return;
-    }
-
     try {
-      const res = await fetch(`${SUPABASE_URL}/functions/v1/send-welcome-email`, {
+      const res = await fetch(NEWSLETTER_ENDPOINT, {
         method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-          Authorization: `Bearer ${SUPABASE_ANON_KEY}`,
-        },
+        // No Authorization header: the proxy injects the Supabase key
+        // server-side. Nothing secret reaches the browser.
+        headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
           email,
           source: 'stayinlapland-newsletter',
+          // `website` is the honeypot (send-welcome-email's HONEYPOT_FIELDS) —
+          // humans leave it blank, bots fill it. A non-empty value drops the
+          // signup silently upstream.
+          website,
+          site: 'stayinlapland',
+          language: lang,
+          channel: 'inline',
           consent: true,
           ageConfirmed: true,
           consentText: c.consent,
         }),
       });
-      if (!res.ok) throw new Error('Subscribe failed');
+      const data = await res.json().catch(() => ({}));
+      if (!res.ok) throw new Error(data.error || 'Subscribe failed');
       setStatus('success');
     } catch (err) {
       setStatus('error');
@@ -142,6 +159,20 @@ export default function Newsletter() {
         ) : (
           <><FounderByline tone="pink" />
           <form onSubmit={handleSubmit} className="max-w-lg mx-auto">
+            {/* Honeypot: off-screen, not focusable, hidden from the a11y tree.
+                Added with the endpoint switch — this form now actually reaches
+                the upstream, so it is a real spam target for the first time.
+                Mirrors shared/NewsletterPopup.tsx. */}
+            <input
+              type="text"
+              name="website"
+              value={website}
+              onChange={(e) => setWebsite(e.target.value)}
+              tabIndex={-1}
+              autoComplete="off"
+              aria-hidden="true"
+              style={{ position: 'absolute', left: '-9999px', width: '1px', height: '1px', opacity: 0 }}
+            />
             <div className="flex flex-col sm:flex-row gap-3">
               <input
                 type="email"

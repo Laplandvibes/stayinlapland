@@ -64,6 +64,25 @@ function buildHref(sid: string, ss: string, lang: Lang): string {
   return `${REDIRECT_BASE}?${params.toString()}`;
 }
 
+// Reveal-support probes. Both answers are fixed properties of the environment,
+// not state that changes over time, so they are read once in the lazy useState
+// initialisers below rather than pushed in with a setState from inside an
+// effect (which cascades an extra render — react-hooks/set-state-in-effect).
+
+/** Browser present and the reader has not asked for reduced motion. */
+function canAnimate(): boolean {
+  if (typeof window === 'undefined') return false;
+  return !(
+    typeof window.matchMedia === 'function' &&
+    window.matchMedia('(prefers-reduced-motion: reduce)').matches
+  );
+}
+
+/** Without an observer nothing could ever trigger the reveal. */
+function canObserve(): boolean {
+  return typeof IntersectionObserver !== 'undefined';
+}
+
 export default function HotelsComAd({
   sid = 'hotels_partner_card',
   /** Search seed passed to the Worker (city or region). */
@@ -78,30 +97,18 @@ export default function HotelsComAd({
   const brand = lang === 'fi' ? BRAND_SEMBO : BRAND_TRIP;
 
   // One-shot scroll reveal (progressive enhancement; content never gated).
+  // `armed` = the animation runs at all; `revealed` = show the final state.
+  // Reduced motion → never armed, so animState stays 'off' and the card renders
+  // static. No IntersectionObserver → armed but revealed up front, so animState
+  // is 'in' on the first render and the content is never left hidden.
   const rootRef = useRef<HTMLElement | null>(null);
-  const [armed, setArmed] = useState(false);
-  const [revealed, setRevealed] = useState(false);
-
-  useEffect(() => {
-    const prefersReduced =
-      typeof window !== 'undefined' &&
-      window.matchMedia &&
-      window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-    if (prefersReduced) {
-      setRevealed(true);
-      return;
-    }
-    setArmed(true);
-  }, []);
+  const [armed] = useState(canAnimate);
+  const [revealed, setRevealed] = useState(() => !(canAnimate() && canObserve()));
 
   useEffect(() => {
     if (!armed || revealed) return;
     const el = rootRef.current;
     if (!el) return;
-    if (typeof IntersectionObserver === 'undefined') {
-      setRevealed(true);
-      return;
-    }
     const io = new IntersectionObserver(
       (entries) => {
         for (const e of entries) {

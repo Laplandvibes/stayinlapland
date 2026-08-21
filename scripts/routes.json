@@ -54,7 +54,8 @@
     "fallbackTitle": "Terms of Use | StayInLapland",
     "fallbackDescription": "The terms governing your use of StayInLapland, including affiliate disclosures, accuracy of accommodation information and limitations of liability.",
     "harvestFiles": [
-      "../shared/Legal/TermsContent.tsx"
+      "../shared/Legal/TermsContent.tsx",
+      "src/pages/Terms.tsx"
     ]
   },
   {
@@ -62,7 +63,8 @@
     "fallbackTitle": "Cookie Policy | StayInLapland",
     "fallbackDescription": "How StayInLapland uses cookies and similar technologies for analytics and affiliate tracking, and how you can manage your consent.",
     "harvestFiles": [
-      "../shared/Legal/CookieContent.tsx"
+      "../shared/Legal/CookieContent.tsx",
+      "src/pages/CookiePolicy.tsx"
     ]
   },
   {

@@ -74,8 +74,6 @@
     <!-- Performance: preconnect to Drive CDN + Google Fonts -->
     <link rel="preconnect" href="https://lh3.googleusercontent.com" crossorigin />
     <link rel="dns-prefetch" href="https://lh3.googleusercontent.com" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
     <!-- Hero LCP preload -->
     <link rel="preload" as="image" href="/images/home-hero.webp" fetchpriority="high" />
@@ -223,8 +221,17 @@
     <meta name="apple-mobile-web-app-title" content="StayInLapland" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="mobile-web-app-capable" content="yes" />
-      <script defer src="https://cloud.umami.is/script.js" data-website-id="f602b771-ded0-4943-a94d-00ea52f9d3e3"></script>
-</head>
+      <script defer src="https://cloud.umami.is/script.js" data-website-id="f602b771-ded0-4943-a94d-00ea52f9d3e3" data-domains="stayinlapland.com,www.stayinlapland.com"></script>
+    <!-- Self-hosted heading + body faces. Without these the browser cannot
+         discover the fonts until the bundled CSS has parsed, which guarantees a
+         visible pass in the fallback sans (33 % wider than Bebas). crossorigin is
+         required even same-origin — fonts are fetched in CORS mode and a preload
+         without it downloads the file twice. -->
+    <link rel="preload" as="font" type="font/woff2" crossorigin
+          href="/fonts/v16-JTUSjIg69CK48gW7PXoo9Wlhyw.woff2" />
+    <link rel="preload" as="font" type="font/woff2" crossorigin
+          href="/fonts/v17-rP2Hp2ywxg089UriCZOIHQ.woff2" />
+  </head>
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>

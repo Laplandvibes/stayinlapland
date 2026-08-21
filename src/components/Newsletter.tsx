@@ -1,8 +1,19 @@
-import { useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { Send } from 'lucide-react';
 import { useLang, useLocalePath } from '../i18n/useLang';
 import { getCopy } from '../locales/copy';
 import FounderByline from '../../../shared/FounderByline';
+
+/**
+ * [LV-FUNNEL 2026-08-21] Lomakesuppilon eventit Umamiin — paikallinen apuri,
+ * ei jaettua importtia (vendoroitu sync on refresh-only). Ei saa koskaan
+ * rikkoa lomaketta. Standardi: memory _procedural/lv_form_funnel_events.md.
+ */
+function track(event: string, data?: Record<string, unknown>) {
+  try {
+    (window as unknown as { umami?: { track: (e: string, d?: unknown) => void } }).umami?.track(event, data);
+  } catch { /* ignore */ }
+}
 
 /**
  * Signup goes through the same-origin Pages Function `/api/newsletter`
@@ -96,12 +107,40 @@ export default function Newsletter() {
   const localePath = useLocalePath();
   const t = getCopy(lang).newsletter;
   const c = CONSENT_COPY[lang];
+  // [LV-FUNNEL] view = osio vieritetty näkyviin (kerran), start = 1. fokus,
+  // blocked kerran per submit-yritys (natiivi invalid laukeaa per kenttä).
+  const funnelData = { surface: 'inline', lang };
+  const sectionRef = useRef<HTMLElement | null>(null);
+  const startTracked = useRef(false);
+  const blockedTracked = useRef(false);
+  useEffect(() => {
+    const el = sectionRef.current;
+    if (!el || typeof IntersectionObserver === 'undefined') return;
+    const io = new IntersectionObserver((entries) => {
+      if (entries.some((en) => en.isIntersecting)) {
+        track('nl_view', funnelData);
+        io.disconnect();
+      }
+    }, { threshold: 0.4 });
+    io.observe(el);
+    return () => io.disconnect();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+  const trackStart = () => {
+    if (startTracked.current) return;
+    startTracked.current = true;
+    track('nl_start', funnelData);
+  };
 
   async function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
-    if (!email || !consented || status === 'loading') return;
+    if (!email || !consented || status === 'loading') {
+      if (status !== 'loading') track('nl_blocked', { ...funnelData, reason: !email ? 'email' : 'consent' });
+      return;
+    }
     setStatus('loading');
     setErrorMsg('');
+    track('nl_submit', funnelData);
 
     try {
       const res = await fetch(NEWSLETTER_ENDPOINT, {
@@ -127,14 +166,16 @@ export default function Newsletter() {
       const data = await res.json().catch(() => ({}));
       if (!res.ok) throw new Error(data.error || 'Subscribe failed');
       setStatus('success');
+      track('nl_success', funnelData);
     } catch (err) {
       setStatus('error');
       setErrorMsg(err instanceof Error ? err.message : 'Subscribe failed');
+      track('nl_error', funnelData);
     }
   }
 
   return (
-    <section className="relative bg-night text-snow">
+    <section className="relative bg-night text-snow" ref={sectionRef}>
       <div
         aria-hidden="true"
         className="absolute -top-px left-0 right-0 h-24 pointer-events-none"
@@ -158,7 +199,17 @@ export default function Newsletter() {
           </div>
         ) : (
           <><FounderByline tone="pink" />
-          <form onSubmit={handleSubmit} className="max-w-lg mx-auto">
+          <form
+            onSubmit={handleSubmit}
+            onInvalidCapture={(e) => {
+              if (blockedTracked.current) return;
+              blockedTracked.current = true;
+              window.setTimeout(() => { blockedTracked.current = false; }, 400);
+              const t = e.target as HTMLInputElement;
+              track('nl_blocked', { ...funnelData, reason: t.type === 'checkbox' ? 'consent' : 'email' });
+            }}
+            className="max-w-lg mx-auto"
+          >
             {/* Honeypot: off-screen, not focusable, hidden from the a11y tree.
                 Added with the endpoint switch — this form now actually reaches
                 the upstream, so it is a real spam target for the first time.
@@ -178,6 +229,7 @@ export default function Newsletter() {
                 type="email"
                 required
                 value={email}
+                onFocus={trackStart}
                 onChange={(e) => setEmail(e.target.value)}
                 placeholder={t.placeholder}
                 aria-label="Email address"
@@ -197,6 +249,7 @@ export default function Newsletter() {
               <input
                 type="checkbox"
                 checked={consented}
+                onFocus={trackStart}
                 onChange={(e) => setConsented(e.target.checked)}
                 required
                 className="mt-0.5 h-4 w-4 shrink-0 rounded border border-snow/40 bg-snow/12 accent-vibe-pink focus:outline-none focus:ring-2 focus:ring-gold/60"

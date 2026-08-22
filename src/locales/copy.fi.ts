@@ -147,7 +147,7 @@ export const copyFI: SectionCopy = {
     ],
   },
   home: {
-    metaTitle: 'Majoitus Suomen Lapissa | StayInLapland',
+    metaTitle: '16 verifioitua Lapin majoitusta 2026: design ja iglut',
     metaDescription:
       'Asetu Suomen Lappiin, mökit viikoittain, design-hotellit Rovaniemellä ja Saariselällä, ikoniset lasi-iglut ja erämaalodget viimeisen tien jälkeen.',
     schemaName: 'StayInLapland, Pitkät jaksot ja boutique-hotellit Suomen Lapissa',

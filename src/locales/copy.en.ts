@@ -143,7 +143,7 @@ export const copyEN: SectionCopy = {
     ],
   },
   home: {
-    metaTitle: 'Where to Stay in Lapland 2026, 16 Verified Hotels & Cabins',
+    metaTitle: '16 Verified Lapland Stays 2026: Boutique, Wild, Igloos',
     metaDescription:
       'Plan your 2026 Lapland stay, 16 verified properties: weekly cabins from €140/night, design hotels in Rovaniemi, glass igloos from €280 and wilderness lodges.',
     schemaName: 'StayInLapland, Long Stays & Boutique Hotels in Finnish Lapland',

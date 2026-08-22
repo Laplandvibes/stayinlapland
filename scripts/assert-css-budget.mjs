@@ -23,7 +23,11 @@ import { join } from 'node:path';
 const DIR = 'dist/assets';
 // Nykyinen koko ~105 kt. Raja on reilusti alle sen mutta selvasti yli rikkinaisen
 // 72 kt:n, jotta normaali vaihtelu ei laukaise tata.
-const MIN_BYTES = 95_000;
+// 2026-08-21: kalibroitu vendoroinnin jalkeiseen todelliseen kokoon (94 478 t).
+// Aiempi raja 95 000 nojasi INFLATOITUUN kokoon: @source osoitti monorepon
+// shared/:aan, joten Tailwind skannasi komponentteja joita tama sivusto ei
+// renderoi. Mikaan ei puuttunut — kaikki kolme merkkiluokkaa olivat mukana.
+const MIN_BYTES = 88_000;
 // Luokat jotka tulevat VAIN taman sivuston src/:sta -- ei shared/:sta.
 // Nama olivat kaikki poissa rikkinaisesta buildista.
 const REQUIRED = ['bg-night', 'bg-cream', 'font-logo'];

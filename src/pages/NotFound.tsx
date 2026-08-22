@@ -1,6 +1,6 @@
 import { useLang, useLocalePath } from '../i18n/useLang';
 import { getCopy } from '../locales/copy';
-import SharedNotFound from '../../../shared/NotFound';
+import SharedNotFound from '../shared/NotFound';
 
 // Thin wrapper around the shared LV-network 404 (see ../../../shared/NotFound.tsx
 // for the design contract). This site is the cream/Playfair editorial variant

@@ -83,8 +83,10 @@ export default function AffiliateDisclosure({
   const resolved: Lang = lang ?? auto;
   const text = TEXT[resolved][variant];
 
+  // 🔴 charcoal/60 kermalla (#FAFAF8) = 3,98:1, ja 12 px vaatii 4,5:1.
+  // /70 = 5,39:1. Lakisääteinen merkintä ei saa jäädä taustakohinaksi.
   return (
-    <p className={`flex items-start gap-2 text-xs text-charcoal/60 ${className}`} role="note">
+    <p className={`flex items-start gap-2 text-xs text-charcoal/70 ${className}`} role="note">
       <Info className="w-3.5 h-3.5 shrink-0 mt-0.5" aria-hidden="true" />
       <span className="text-balance">{text}</span>
     </p>

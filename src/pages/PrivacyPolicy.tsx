@@ -1,4 +1,4 @@
-import PrivacyContent from '../../../shared/Legal/PrivacyContent';
+import PrivacyContent from '../shared/Legal/PrivacyContent';
 import { pageUrl } from '../lib/meta';
 import { useLang, type Lang } from '../i18n/useLang';
 

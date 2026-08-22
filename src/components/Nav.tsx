@@ -6,7 +6,7 @@ import AffiliateCTA from './AffiliateCTA';
 import { useLang, useLocalePath, type Lang } from '../i18n/useLang';
 import { getCopy } from '../locales/copy';
 import { destinations } from '../data/properties';
-import EcosystemMenu from '../../../shared/EcosystemMenu';
+import EcosystemMenu from '../shared/EcosystemMenu';
 
 // Destination pages had no entry point in the nav at all — the only way in was
 // the grid halfway down the home page, so /destinations/* was effectively a

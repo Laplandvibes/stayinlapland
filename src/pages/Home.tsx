@@ -8,7 +8,7 @@ import PullQuote from '../components/PullQuote';
 import TripTypeRecommender from '../components/TripTypeRecommender';
 import WorkInLaplandPromo from '../components/WorkInLaplandPromo';
 import CabinBand from '../components/CabinBand';
-import HomeAdSlots, { MainPartnerBanner } from '../../../shared/HomeAdSlots';
+import HomeAdSlots, { MainPartnerBanner } from '../shared/HomeAdSlots';
 import { AD_SLOTS } from '../data/adSlots';
 import { allCategoriesSummary, destinations } from '../data/properties';
 import { pageUrl } from '../lib/meta';

@@ -1,4 +1,4 @@
-import CookieContent from '../../../shared/Legal/CookieContent';
+import CookieContent from '../shared/Legal/CookieContent';
 import { pageUrl } from '../lib/meta';
 import { useLang, type Lang } from '../i18n/useLang';
 

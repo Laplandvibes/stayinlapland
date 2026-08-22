@@ -7,8 +7,8 @@ import { Calendar, Plane, Snowflake, Wallet, Compass, Lightbulb } from 'lucide-r
 import { pageUrl } from '../lib/meta';
 import { useLang } from '../i18n/useLang';
 import { getCopy } from '../locales/copy';
-import AdUnit from '../../../shared/ads/AdUnit';
-import omenaHotelsAd from '../../../shared/ads/advertisers/omenaHotels';
+import AdUnit from '../shared/ads/AdUnit';
+import omenaHotelsAd from '../shared/ads/advertisers/omenaHotels';
 
 const ICONS = [Calendar, Plane, Snowflake, Wallet, Compass, Lightbulb];
 

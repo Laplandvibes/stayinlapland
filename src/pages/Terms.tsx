@@ -1,4 +1,4 @@
-import TermsContent from '../../../shared/Legal/TermsContent';
+import TermsContent from '../shared/Legal/TermsContent';
 import { pageUrl } from '../lib/meta';
 import { useLang, type Lang } from '../i18n/useLang';
 

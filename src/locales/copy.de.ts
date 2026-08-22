@@ -33,7 +33,7 @@ export const copyDE: SectionCopy = {
     subscribe: 'Abonnieren',
     subscribing: 'Wird abonniert…',
     success:
-      'Willkommen an Bord. Bitte bestätigen Sie über Ihren Posteingang, die erste Langzeit-Meldung kommt, sobald wir das nächste Kontingent öffnen.',
+      'Fast geschafft: Bestätigen Sie Ihr Abo über die E-Mail, die wir Ihnen gerade geschickt haben.',
     errorPrefix: 'Abonnement nicht möglich, ',
     pleaseTryAgain: 'bitte erneut versuchen',
     footnotePart1: 'Wir versenden niemals Spam. Mit einem Klick abbestellbar. Siehe ',

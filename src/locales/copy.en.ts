@@ -30,7 +30,7 @@ export const copyEN: SectionCopy = {
     placeholder: 'Your email address',
     subscribe: 'Subscribe',
     subscribing: 'Subscribing…',
-    success: 'Welcome aboard. Check your inbox to confirm, the first long-stay alert lands when we open the next inventory window.',
+    success: 'Almost there: confirm your subscription from the email we just sent you.',
     errorPrefix: 'Could not subscribe, ',
     pleaseTryAgain: 'please try again',
     footnotePart1: 'We never spam. Unsubscribe with one click. See our ',

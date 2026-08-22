@@ -38,7 +38,7 @@ export const copyES: SectionCopy = {
     placeholder: 'Tu dirección de correo',
     subscribe: 'Suscribirse',
     subscribing: 'Suscribiendo…',
-    success: 'Bienvenido a bordo. Revisa tu bandeja de entrada para confirmar, la primera alerta de larga estancia llegará cuando abramos la próxima ventana de inventario.',
+    success: 'Ya casi: confirma tu suscripción desde el correo que acabamos de enviarte.',
     errorPrefix: 'No se ha podido suscribir, ',
     pleaseTryAgain: 'inténtalo de nuevo',
     footnotePart1: 'Nada de spam. Cancela con un clic. Consulta nuestra ',

@@ -136,7 +136,7 @@ export const copyKO: SectionCopy = {
     placeholder: '이메일 주소',
     subscribe: '구독하기',
     subscribing: '구독 중…',
-    success: '환영합니다. 받은편지함에서 확인 메일을 눌러주세요, 다음 객실 오픈 시점에 첫 장기 숙박 알림을 보내드립니다.',
+    success: '거의 다 됐습니다. 방금 보내드린 이메일에서 구독을 확인해 주세요.',
     errorPrefix: '구독에 실패했습니다, ',
     pleaseTryAgain: '다시 시도해 주세요',
     footnotePart1: '스팸은 보내지 않습니다. 한 번의 클릭으로 해지하실 수 있습니다. ',

@@ -39,7 +39,7 @@ export const copyFR: SectionCopy = {
     placeholder: 'Votre adresse e-mail',
     subscribe: 'S’abonner',
     subscribing: 'Inscription…',
-    success: 'Bienvenue. Vérifiez votre boîte mail pour confirmer, la première alerte longue durée arrivera dès la prochaine ouverture des stocks.',
+    success: 'Presque fini : confirmez votre inscription depuis l\'e-mail que nous venons de vous envoyer.',
     errorPrefix: 'Inscription impossible, ',
     pleaseTryAgain: 'merci de réessayer',
     footnotePart1: 'Pas de spam. Désinscription en un clic. Voir notre ',

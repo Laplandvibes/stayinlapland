@@ -41,7 +41,7 @@ export const copySV: SectionCopy = {
     subscribe: 'Prenumerera',
     subscribing: 'Prenumererar…',
     success:
-      'Välkommen ombord. Kolla din inkorg för att bekräfta – den första långtidsnotisen kommer så snart vi öppnar nästa kapacitetsfönster.',
+      'Nästan klart: bekräfta din prenumeration i mejlet vi just skickade.',
     errorPrefix: 'Prenumerationen misslyckades, ',
     pleaseTryAgain: 'försök igen',
     footnotePart1: 'Vi skickar aldrig skräppost. Avsluta med ett klick. Se vår ',

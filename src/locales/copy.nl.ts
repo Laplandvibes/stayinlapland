@@ -39,7 +39,7 @@ export const copyNL: SectionCopy = {
     subscribe: 'Inschrijven',
     subscribing: 'Bezig met inschrijven…',
     success:
-      'Welkom aan boord. Controleer uw inbox om te bevestigen, de eerste lange-verblijfmelding komt zodra wij het volgende inventarisvenster openen.',
+      'Bijna klaar: bevestig je aanmelding via de e-mail die we net hebben gestuurd.',
     errorPrefix: 'Inschrijven niet gelukt, ',
     pleaseTryAgain: 'probeer het opnieuw',
     footnotePart1: 'Wij sturen nooit spam. Met één klik uitschrijven. Zie ons ',

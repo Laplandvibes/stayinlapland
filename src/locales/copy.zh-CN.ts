@@ -37,7 +37,7 @@ export const copyZHCN: SectionCopy = {
     placeholder: '您的邮箱地址',
     subscribe: '订阅',
     subscribing: '订阅中…',
-    success: '欢迎加入。请查收邮件以确认, 我们将在下一个库存窗口开启时发送第一条长期入住提醒。',
+    success: '就快好了：请在我们刚发送的邮件中确认订阅。',
     errorPrefix: '订阅未成功, ',
     pleaseTryAgain: '请重试',
     footnotePart1: '我们绝不发垃圾邮件。一键退订。详见我们的',

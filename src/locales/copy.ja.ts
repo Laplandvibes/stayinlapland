@@ -30,7 +30,7 @@ export const copyJA: SectionCopy = {
     placeholder: 'メールアドレス',
     subscribe: '購読する',
     subscribing: '登録中…',
-    success: 'ご登録ありがとうございます。受信ボックスにて確認をお願いします, 次の在庫枠が開いたとき、最初の長期滞在通知をお届けします。',
+    success: 'あと少しです。いまお送りしたメールから登録を確認してください。',
     errorPrefix: '登録できませんでした, ',
     pleaseTryAgain: 'もう一度お試しください',
     footnotePart1: 'スパムは一切送りません。ワンクリックで配信解除できます。詳しくは',

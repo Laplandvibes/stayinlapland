@@ -38,7 +38,7 @@ export const copyPTBR: SectionCopy = {
     placeholder: 'Seu endereço de e-mail',
     subscribe: 'Inscrever-se',
     subscribing: 'Inscrevendo…',
-    success: 'Bem-vindo a bordo. Verifique sua caixa de entrada para confirmar, o primeiro alerta de longa duração chegará quando abrirmos a próxima janela de inventário.',
+    success: 'Quase lá: confirme sua inscrição no e-mail que acabamos de enviar.',
     errorPrefix: 'Não foi possível se inscrever, ',
     pleaseTryAgain: 'tente novamente',
     footnotePart1: 'Nunca enviamos spam. Cancele com um clique. Veja nossa ',

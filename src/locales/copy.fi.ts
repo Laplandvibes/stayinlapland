@@ -33,7 +33,7 @@ export const copyFI: SectionCopy = {
     subscribe: 'Tilaa',
     subscribing: 'Tilataan…',
     success:
-      'Tervetuloa mukaan. Vahvista tilaus sähköpostista, ensimmäinen pitkän jakson ilmoitus saapuu, kun seuraava varausikkuna avautuu.',
+      'Melkein valmista: käy vahvistamassa tilaus sähköpostiisi tulleesta viestistä.',
     errorPrefix: 'Tilaus ei onnistunut, ',
     pleaseTryAgain: 'yritä uudelleen',
     footnotePart1: 'Emme lähetä roskapostia. Peruuta yhdellä klikkauksella. Katso ',

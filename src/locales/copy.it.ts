@@ -27,7 +27,7 @@ export const copyIT: SectionCopy = {
     subscribe: 'Iscriversi',
     subscribing: 'Iscrizione in corso…',
     success:
-      'Benvenuto a bordo. Controlli la Sua posta per confermare, la prima notifica arriva quando apriremo la prossima finestra di inventario.',
+      'Ci siamo quasi: conferma l\'iscrizione dall\'e-mail che ti abbiamo appena inviato.',
     errorPrefix: 'Iscrizione non riuscita, ',
     pleaseTryAgain: 'riprovi',
     footnotePart1: 'Niente spam. Disiscrizione con un clic. Veda la nostra ',

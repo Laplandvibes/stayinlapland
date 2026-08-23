@@ -4,7 +4,7 @@ export interface Property {
   slug: string;
   name: string;
   location: string;
-  /** Hotels.com search query (defaults to name). */
+  /** Hotel partner search query (defaults to name). */
   searchQuery?: string;
   /** Nightly rate range, formatted. */
   priceRange: string;
@@ -27,8 +27,8 @@ export interface Property {
 }
 
 /* ─── LONG STAYS ─── 1+ week rentals: villas, design cabins, apartments. ─── */
-/** Build a Hotels.com-resolvable destination from a property location. Property NAMES must
- *  NEVER be used as the ss= search (Hotels.com fuzzy-matches lodge names to unrelated US towns).
+/** Build a partner-resolvable destination from a property location. Property NAMES must
+ *  NEVER be used as the ss= search (the partner fuzzy-matches lodge names to unrelated US towns).
  *  Always resolve to a real Lapland city + ", Finland". */
 export function searchDest(location: string, searchQuery?: string): string {
   if (searchQuery && searchQuery.trim()) return searchQuery;

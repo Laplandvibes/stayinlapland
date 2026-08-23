@@ -8,7 +8,7 @@ import AuthorByline from '../components/AuthorByline';
 import PullQuote from '../components/PullQuote';
 import ComparisonTable from '../components/ComparisonTable';
 import MarginNote from '../components/MarginNote';
-import HotelsComAd from '../components/HotelsComAd';
+import HotelPartnerAd from '../components/HotelPartnerAd';
 import { hotels, stayCardImage } from '../data/properties';
 import type { Property } from '../data/properties';
 import { pageUrl } from '../lib/meta';
@@ -124,7 +124,7 @@ export default function Hotels() {
       {/* Flagship affiliate ad — hotel partner card (fi=Sembo, others=Trip.com via Worker). */}
       <section className="py-10 sm:py-14 px-5 sm:px-6">
         <div className="max-w-6xl mx-auto">
-          <HotelsComAd sid="hotels_partner_card" ss="Lapland, Finland" />
+          <HotelPartnerAd sid="hotels_partner_card" ss="Lapland, Finland" />
         </div>
       </section>
 

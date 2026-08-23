@@ -7,7 +7,7 @@ import { buildLomarengasUrl } from '../lib/lomarengas';
 /**
  * FLAGSHIP affiliate ad — Lomarengas (Adtraction), Finland's largest holiday-
  * home booking service (since 1967). This is the natural primary partner for a
- * long-stay accommodation site: where Hotels.com covers hotels and resort
+ * long-stay accommodation site: where the hotel partner covers hotels and resort
  * cabins, Lomarengas covers privately-owned cottages and cabins rented by the
  * week — exactly the "rent a cabin for a week and settle in" gap this site is
  * about.

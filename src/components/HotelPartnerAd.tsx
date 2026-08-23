@@ -83,7 +83,7 @@ function canObserve(): boolean {
   return typeof IntersectionObserver !== 'undefined';
 }
 
-export default function HotelsComAd({
+export default function HotelPartnerAd({
   sid = 'hotels_partner_card',
   /** Search seed passed to the Worker (city or region). */
   ss = 'Lapland, Finland',
@@ -271,21 +271,21 @@ export default function HotelsComAd({
     <section
       ref={rootRef}
       data-anim={animState}
-      className={`sl-hc-ad group/ad relative overflow-hidden rounded-3xl bg-white text-charcoal shadow-[0_24px_70px_-30px_rgba(19,35,79,0.42)] ring-1 ring-charcoal/5 ${className}`}
+      className={`sl-hp-ad group/ad relative overflow-hidden rounded-3xl bg-white text-charcoal shadow-[0_24px_70px_-30px_rgba(19,35,79,0.42)] ring-1 ring-charcoal/5 ${className}`}
       style={{ borderTop: `3px solid ${brand.accent}` }}
       aria-label={headline}
     >
       <style>{`
-        .sl-hc-ad[data-anim='pending'] .sl-rise { opacity: 0; transform: translateY(14px); }
-        .sl-hc-ad[data-anim='in'] .sl-rise {
+        .sl-hp-ad[data-anim='pending'] .sl-rise { opacity: 0; transform: translateY(14px); }
+        .sl-hp-ad[data-anim='in'] .sl-rise {
           opacity: 1; transform: none;
           transition: opacity .6s ease, transform .6s cubic-bezier(.22,.61,.36,1);
         }
-        .sl-hc-ad[data-anim='in'] .sl-rise-1 { transition-delay: .05s; }
-        .sl-hc-ad[data-anim='in'] .sl-rise-2 { transition-delay: .14s; }
-        .sl-hc-ad[data-anim='in'] .sl-rise-3 { transition-delay: .23s; }
+        .sl-hp-ad[data-anim='in'] .sl-rise-1 { transition-delay: .05s; }
+        .sl-hp-ad[data-anim='in'] .sl-rise-2 { transition-delay: .14s; }
+        .sl-hp-ad[data-anim='in'] .sl-rise-3 { transition-delay: .23s; }
         @media (prefers-reduced-motion: reduce) {
-          .sl-hc-ad .sl-rise { opacity: 1 !important; transform: none !important; transition: none !important; }
+          .sl-hp-ad .sl-rise { opacity: 1 !important; transform: none !important; transition: none !important; }
         }
       `}</style>
 

@@ -21,6 +21,8 @@ import { getCopy } from '../locales/copy';
 import DestinationFacts from '../components/DestinationFacts';
 import CabinBand from '../components/CabinBand';
 import { getDestinationFacts } from '../data/destinationFacts';
+import DestinationAreas from '../components/DestinationAreas';
+import { getDestinationStaying } from '../data/destinationStaying';
 import { isCabinArea } from '../lib/lomarengas';
 
 type Bucket = 'long-stays' | 'hotels' | 'glass-igloos' | 'wilderness';
@@ -71,6 +73,7 @@ export default function DestinationPage() {
   const longStayAngle = destCopy?.longStayAngle ?? dest.longStayAngle;
 
   const facts = getDestinationFacts(dest.slug);
+  const areas = getDestinationStaying(dest.slug);
 
   const dataForBucket: Record<Bucket, typeof t.hotelsData> = {
     'long-stays': t.longStaysData,
@@ -169,6 +172,8 @@ export default function DestinationPage() {
           <p className="mt-10 text-graphite text-[17px] leading-relaxed">{longStayAngle}</p>
         </div>
       </section>
+
+      {areas && <DestinationAreas notes={areas} />}
 
       <FinnishDivider />
 

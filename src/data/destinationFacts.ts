@@ -77,6 +77,13 @@ export interface LocalPlace {
   name: string;
   href: string;
   kind: PlaceKind;
+  /**
+   * Optional one-line caveat rendered under the name. Use it when the venue is
+   * real and bookable but part of what the category heading promises is not
+   * currently available — a closed pool world under "Sauna & spa", say. The
+   * alternative (dropping the venue) hides a place the reader may still want.
+   */
+  note?: L12;
 }
 
 export interface NetworkLink {
@@ -719,6 +726,24 @@ const saariselka: DestinationFacts = {
       name: 'Holiday Club Saariselkä',
       href: 'https://www.holidayclubresorts.com/en/resorts/saariselka/',
       kind: 'wellness',
+      // Pool world shut for a rebuild since 2026; Holiday Club's own Finnish
+      // page states it reopens in 2027. The hotel, the Aurora Spa treatment
+      // side and the bowling alley stay open, so the venue keeps its place
+      // here — with the pools named as closed rather than sold.
+      note: {
+        en: 'Pool world closed for renovation, reopens 2027 — Aurora Spa treatments and bowling continue',
+        fi: 'Allasmaailma remontissa, avautuu 2027 — Aurora Span hoidot ja keilahalli jatkavat',
+        sv: 'Badavdelningen renoveras, öppnar 2027 – Aurora Spas behandlingar och bowling fortsätter',
+        de: 'Badelandschaft wird umgebaut, öffnet 2027 – Aurora-Spa-Behandlungen und Bowling laufen weiter',
+        fr: 'Espace piscines en rénovation, réouverture en 2027 – soins de l’Aurora Spa et bowling maintenus',
+        es: 'Zona de piscinas en reforma, reabre en 2027: los tratamientos del Aurora Spa y la bolera siguen',
+        it: 'Area piscine in ristrutturazione, riapre nel 2027 – trattamenti dell’Aurora Spa e bowling attivi',
+        nl: 'Zwembadgedeelte in verbouwing, opent weer in 2027 – behandelingen van de Aurora Spa en bowlen gaan door',
+        'pt-BR': 'Área de piscinas em reforma, reabre em 2027 – tratamentos do Aurora Spa e boliche continuam',
+        ja: 'プール施設は改装中、再開は2027年。Aurora Spa のトリートメントとボウリングは営業中',
+        ko: '수영장은 개보수 중, 2027년 재개장 — Aurora Spa 트리트먼트와 볼링장은 계속 운영',
+        'zh-CN': '泳池区整修中，2027 年重开——Aurora Spa 护理与保龄球照常',
+      },
     },
   ],
   networkLinks: [

@@ -85,7 +85,14 @@ export default function DestinationFacts({ facts }: { facts: Facts }) {
                           rel="noopener"
                           className="group flex items-center justify-between gap-3 py-2.5 text-charcoal hover:text-vibe-pink transition-colors"
                         >
-                          <span className="font-medium">{p.name}</span>
+                          <span className="min-w-0">
+                            <span className="block font-medium">{p.name}</span>
+                            {p.note && (
+                              <span className="block text-stone text-[12px] leading-snug mt-0.5">
+                                {t(p.note)}
+                              </span>
+                            )}
+                          </span>
                           <ExternalLink
                             className="w-3.5 h-3.5 shrink-0 opacity-40 group-hover:opacity-100 transition-opacity"
                             aria-hidden="true"

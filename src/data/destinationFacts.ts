@@ -732,7 +732,7 @@ const saariselka: DestinationFacts = {
       // here — with the pools named as closed rather than sold.
       note: {
         en: 'Pool world closed for renovation, reopens 2027 — Aurora Spa treatments and bowling continue',
-        fi: 'Allasmaailma remontissa, avautuu 2027 — Aurora Span hoidot ja keilahalli jatkavat',
+        fi: 'Allasmaailma remontissa, avautuu 2027; Aurora Span hoidot ja keilahalli jatkavat',
         sv: 'Badavdelningen renoveras, öppnar 2027 – Aurora Spas behandlingar och bowling fortsätter',
         de: 'Badelandschaft wird umgebaut, öffnet 2027 – Aurora-Spa-Behandlungen und Bowling laufen weiter',
         fr: 'Espace piscines en rénovation, réouverture en 2027 – soins de l’Aurora Spa et bowling maintenus',

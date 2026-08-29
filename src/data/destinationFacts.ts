@@ -731,7 +731,7 @@ const saariselka: DestinationFacts = {
       // side and the bowling alley stay open, so the venue keeps its place
       // here — with the pools named as closed rather than sold.
       note: {
-        en: 'Pool world closed for renovation, reopens 2027 — Aurora Spa treatments and bowling continue',
+        en: 'Pool world closed for renovation, reopens 2027, Aurora Spa treatments and bowling continue',
         fi: 'Allasmaailma remontissa, avautuu 2027; Aurora Span hoidot ja keilahalli jatkavat',
         sv: 'Badavdelningen renoveras, öppnar 2027 – Aurora Spas behandlingar och bowling fortsätter',
         de: 'Badelandschaft wird umgebaut, öffnet 2027 – Aurora-Spa-Behandlungen und Bowling laufen weiter',
@@ -741,7 +741,7 @@ const saariselka: DestinationFacts = {
         nl: 'Zwembadgedeelte in verbouwing, opent weer in 2027 – behandelingen van de Aurora Spa en bowlen gaan door',
         'pt-BR': 'Área de piscinas em reforma, reabre em 2027 – tratamentos do Aurora Spa e boliche continuam',
         ja: 'プール施設は改装中、再開は2027年。Aurora Spa のトリートメントとボウリングは営業中',
-        ko: '수영장은 개보수 중, 2027년 재개장 — Aurora Spa 트리트먼트와 볼링장은 계속 운영',
+        ko: '수영장은 개보수 중, 2027년 재개장, Aurora Spa 트리트먼트와 볼링장은 계속 운영',
         'zh-CN': '泳池区整修中，2027 年重开——Aurora Spa 护理与保龄球照常',
       },
     },

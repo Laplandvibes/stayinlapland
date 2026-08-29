@@ -430,7 +430,7 @@ export const copyEN: SectionCopy = {
         body: [
           'Three Lapland airports cover most of what you would book. Rovaniemi (RVN) for Santa Claus Village and the south, Kittilä (KTT) for Levi and Ylläs, Ivalo (IVL) for Saariselkä, Inari and the north.',
           'Helsinki (HEL) → Lapland is a 90-minute domestic flight. Direct flights from London, Berlin and Paris also exist December–March.',
-          'Trains: the Helsinki–Rovaniemi overnight sleeper is slow, but the dawn over the Bothnian Bay around Kemi is genuinely beautiful and the cabin is full of locals doing the same trip.',
+          'Trains: the Helsinki–Rovaniemi overnight sleeper is slow, but the run up the Bothnian Bay coast through Kemi is genuinely beautiful and the cabin is full of locals doing the same trip.',
         ],
       },
       {

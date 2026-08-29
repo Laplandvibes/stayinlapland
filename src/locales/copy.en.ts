@@ -392,7 +392,7 @@ export const copyEN: SectionCopy = {
       'The shoulder weeks, <strong>mid-November</strong> (right before snow stabilises) and <strong>late April</strong> (right after the snow melts), drop a further 30–50% on top. Aurora is still active in both windows. This is the sweet spot for long stays with a flexible work calendar.',
     marginLabel: 'Booking tactic',
     marginBody:
-      'For a 4-week stay, splitting it across two properties can beat a single-property booking, you avoid the “peak week” spike that hits Christmas and Mardi Gras, and you actually see two parts of Lapland. The transfer day takes half a day; the money saved usually pays for two extra nights elsewhere.',
+      'For a 4-week stay, splitting it across two properties can beat a single-property booking, you avoid the “peak week” spikes around Christmas and the February ski holidays, and you actually see two parts of Lapland. The transfer day takes half a day; the money saved usually pays for two extra nights elsewhere.',
     counterKicker: 'Honest counter-recommendation',
     counterH2: 'When NOT to book a long stay.',
     counterP1:
@@ -430,7 +430,7 @@ export const copyEN: SectionCopy = {
         body: [
           'Three Lapland airports cover most of what you would book. Rovaniemi (RVN) for Santa Claus Village and the south, Kittilä (KTT) for Levi and Ylläs, Ivalo (IVL) for Saariselkä, Inari and the north.',
           'Helsinki (HEL) → Lapland is a 90-minute domestic flight. Direct flights from London, Berlin and Paris also exist December–March.',
-          'Trains: the Helsinki–Rovaniemi overnight sleeper is slow but the Tornio dawn is genuinely beautiful and the cabin is full of locals doing the same trip.',
+          'Trains: the Helsinki–Rovaniemi overnight sleeper is slow, but the dawn over the Bothnian Bay around Kemi is genuinely beautiful and the cabin is full of locals doing the same trip.',
         ],
       },
       {
@@ -512,7 +512,7 @@ export const copyEN: SectionCopy = {
         name: 'November',
         pitch: 'Polar night begins, snow stabilises',
         body:
-          'Coldest start to a Lapland winter. Polar night kicks in north of Sodankylä mid-month. Snow starts holding in late November, by month-end most resorts and snow hotels open. Late November is the absolute best value for long stays.',
+          'Coldest start to a Lapland winter. In the far north (Utsjoki), the polar night begins in the last days of the month. Snow starts holding in late November, and by month-end most resorts and snow hotels open. Late November is the absolute best value for long stays.',
         bestFor: ['Long stays at -50% rates', 'Repeat visitors who know the cold'],
         avoidIf: ['First-time travellers (snow inconsistency)'],
       },

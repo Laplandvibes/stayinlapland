@@ -97,7 +97,7 @@ const rovaniemi: Record<string, StayingNote> = {
     },
     body: {
       en: 'Ounasvaara rises on the far bank, facing the centre. A room on that side has the slopes and the lit tracks at the door and the city one bridge away — sensible if you plan to ski every day, less so if you want to walk to dinner.',
-      fi: 'Ounasvaara kohoaa joen takana keskustaa vastapäätä. Sillä puolella rinteet ja valaistut ladut ovat oven takana ja kaupunki yhden sillan päässä — järkevä valinta jos hiihdät joka päivä, vähemmän jos haluat kävellä illalliselle.',
+      fi: 'Ounasvaara kohoaa joen takana keskustaa vastapäätä. Sillä puolella rinteet ja valaistut ladut ovat oven takana ja kaupunki yhden sillan päässä: järkevä valinta, jos hiihdät joka päivä, vähemmän jos haluat kävellä illalliselle.',
       sv: 'Ounasvaara reser sig på andra stranden, mitt emot centrum. Där har du backarna och de belysta spåren utanför dörren och staden en bro bort — klokt om du tänker åka skidor varje dag, mindre klokt om du vill promenera till middagen.',
       de: 'Ounasvaara erhebt sich am gegenüberliegenden Ufer, dem Zentrum zugewandt. Dort liegen Pisten und beleuchtete Loipen vor der Tür und die Stadt eine Brücke entfernt – sinnvoll, wenn Sie täglich Ski fahren, weniger, wenn Sie zum Abendessen laufen wollen.',
       es: 'Ounasvaara se levanta en la otra orilla, frente al centro. Ese lado tiene las pistas y los circuitos iluminados en la puerta y la ciudad a un puente de distancia: acertado si vas a esquiar cada día, menos si prefieres ir andando a cenar.',
@@ -187,7 +187,7 @@ const levi: Record<string, StayingNote> = {
     },
     body: {
       en: 'Cabins further out trade walking distance for dark sky and quiet. You will need a car, and in a snowfall the last few kilometres are the slow ones — but the aurora does not have to compete with street lighting.',
-      fi: 'Kauempana olevat mökit vaihtavat kävelymatkan pimeään taivaaseen ja hiljaisuuteen. Auto tarvitaan, ja lumisateella viimeiset kilometrit ovat ne hitaat — mutta revontulien ei tarvitse kilpailla katuvalojen kanssa.',
+      fi: 'Kauempana olevat mökit vaihtavat kävelymatkan pimeään taivaaseen ja hiljaisuuteen. Auto tarvitaan, ja lumisateella viimeiset kilometrit ovat ne hitaat, mutta revontulien ei tarvitse kilpailla katuvalojen kanssa.',
       sv: 'Stugor längre ut byter gångavstånd mot mörk himmel och tystnad. Bil behövs, och i snöfall är de sista kilometrarna de långsamma — men norrskenet slipper tävla med gatubelysningen.',
       de: 'Hütten weiter draußen tauschen Gehweite gegen dunklen Himmel und Ruhe. Ein Auto ist nötig, und bei Schneefall sind die letzten Kilometer die langsamen – dafür muss das Nordlicht nicht gegen Straßenlaternen ankommen.',
       es: 'Las cabañas más alejadas cambian la distancia a pie por cielo oscuro y silencio. Hará falta coche, y con nieve los últimos kilómetros son los lentos, pero la aurora no tiene que competir con el alumbrado.',
@@ -238,7 +238,7 @@ const saariselka: Record<string, StayingNote> = {
     },
     body: {
       en: 'Kiilopää stands a little apart, run by the outdoor association Suomen Latu, with marked routes starting at the door and a smoke sauna beside the stream. Staying there means the national park before breakfast — and a drive to anything else.',
-      fi: 'Kiilopää on hieman erillään, Suomen Ladun ylläpitämä, ja merkityt reitit lähtevät ovelta savusaunan ollessa puron rannassa. Siellä yöpyminen tarkoittaa kansallispuistoa ennen aamiaista — ja automatkaa kaikkeen muuhun.',
+      fi: 'Kiilopää on hieman erillään, Suomen Ladun ylläpitämä, ja merkityt reitit lähtevät ovelta savusaunan ollessa puron rannassa. Siellä yöpyminen tarkoittaa kansallispuistoa ennen aamiaista, ja automatkaa kaikkeen muuhun.',
       sv: 'Kiilopää ligger lite för sig, drivet av friluftsförbundet Suomen Latu, med markerade leder som börjar vid dörren och en rökbastu vid bäcken. Att bo där betyder nationalparken före frukost — och bil till allt annat.',
       de: 'Kiilopää liegt etwas abseits, betrieben vom Outdoor-Verband Suomen Latu, mit markierten Routen ab der Haustür und einer Rauchsauna am Bach. Dort zu wohnen heißt Nationalpark vor dem Frühstück – und Autofahrt zu allem anderen.',
       es: 'Kiilopää queda algo aparte, gestionado por la asociación de aire libre Suomen Latu, con rutas señalizadas que arrancan en la puerta y una sauna de humo junto al arroyo. Dormir allí significa parque nacional antes del desayuno, y coche para todo lo demás.',
@@ -334,7 +334,7 @@ const inari: Record<string, StayingNote> = {
     },
     body: {
       en: 'Cabins stand along the shore and back in the forest, with a great deal of space and very little between them. Buy food before you drive out — the shops are in the villages, not on the road.',
-      fi: 'Mökkejä on rantaa pitkin ja metsän puolella, tilaa on paljon ja niiden välissä hyvin vähän. Osta ruoat ennen kuin ajat ulos — kaupat ovat kylissä, eivät matkan varrella.',
+      fi: 'Mökkejä on rantaa pitkin ja metsän puolella, tilaa on paljon ja niiden välissä hyvin vähän. Osta ruoat ennen kuin ajat ulos: kaupat ovat kylissä, eivät matkan varrella.',
       sv: 'Stugor ligger längs stranden och inne i skogen, med gott om utrymme och mycket lite däremellan. Handla mat innan du kör ut — affärerna finns i byarna, inte längs vägen.',
       de: 'Hütten stehen am Ufer und drinnen im Wald, mit viel Raum und sehr wenig dazwischen. Kaufen Sie ein, bevor Sie hinausfahren – die Geschäfte sind in den Dörfern, nicht an der Strecke.',
       es: 'Las cabañas se reparten por la orilla y por el bosque, con mucho espacio y muy poco entre ellas. Compra comida antes de salir: las tiendas están en los pueblos, no en la carretera.',
@@ -361,7 +361,7 @@ const yllas: Record<string, StayingNote> = {
     },
     body: {
       en: 'One fell, two villages, and the choice matters more than the map suggests, because they sit on opposite sides of it. Ski buses link both to the lifts, so neither is cut off — but crossing between them is a journey rather than a stroll.',
-      fi: 'Yksi tunturi, kaksi kylää, ja valinta merkitsee enemmän kuin kartalta näyttää, sillä kylät ovat tunturin vastakkaisilla puolilla. Hiihtobussit vievät molemmista hisseille, joten kumpikaan ei jää erilleen — mutta kylästä toiseen siirtyminen on matka eikä kävelylenkki.',
+      fi: 'Yksi tunturi, kaksi kylää, ja valinta merkitsee enemmän kuin kartalta näyttää, sillä kylät ovat tunturin vastakkaisilla puolilla. Hiihtobussit vievät molemmista hisseille, joten kumpikaan ei jää erilleen, mutta kylästä toiseen siirtyminen on matka eikä kävelylenkki.',
       sv: 'Ett fjäll, två byar, och valet betyder mer än kartan antyder, för de ligger på var sin sida av det. Skidbussar förbinder båda med liftarna, så ingen blir avskuren — men att ta sig mellan dem är en resa och ingen promenad.',
       de: 'Ein Fjell, zwei Dörfer – und die Wahl wiegt schwerer, als die Karte vermuten lässt, denn sie liegen auf gegenüberliegenden Seiten. Skibusse verbinden beide mit den Liften, abgeschnitten ist also keines; der Weg von einem zum anderen ist aber eine Fahrt und kein Spaziergang.',
       es: 'Una montaña, dos pueblos, y la elección pesa más de lo que sugiere el mapa, porque están en laderas opuestas. Los autobuses de esquí conectan ambos con los remontes, así que ninguno queda aislado, pero ir de uno a otro es un trayecto y no un paseo.',

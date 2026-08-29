@@ -159,7 +159,7 @@ export const copyFI: SectionCopy = {
       p3: 'Tämä opas ei aggregoi hintoja eikä kierrätä arvosteluja. Lähteet näkyvissä, kumppanuussuhteet avoinna.',
     },
     authorNote:
-      'Käsin valittu lyhytlista, kirjoitettu Suomesta ja faktatarkastettu paikallisten kumppaneiden kanssa eri puolilla Lappia.',
+      'Käsin valittu lyhytlista, kirjoitettu Suomessa ja faktatarkastettu paikallisten kumppaneiden kanssa eri puolilla Lappia.',
     fourWays: {
       kicker: 'Neljä tapaa majoittua',
       h2A: 'Valitse yksi.',
@@ -230,7 +230,7 @@ export const copyFI: SectionCopy = {
     authorNote:
       'Viisi kohdetta ristiintarkistettu kohteiden julkaisemista tiedoista ja tuoreista vieraspalautteista kaudella 2025/26.',
     introP1:
-      'Lapissa on paljon keskitason ketjuhotelleja, Scandic, Cumulus, Sokos, jotka tekevät perusasiat hyvin hintaan 90–140 €/yö. Niitä ei ole listattu tässä; niiden varauspäätös on suurelta osin ”lähimpänä lentokenttää, halvin viikko.”',
+      'Lapissa on paljon keskitason ketjuhotelleja, Scandic ja Sokos, jotka tekevät perusasiat hyvin hintaan 90–140 €/yö. Niitä ei ole listattu tässä; niiden varauspäätös on suurelta osin ”lähimpänä lentokenttää, halvin viikko.”',
     introP2:
       'Alla olevat viisi hotellia ansaitsevat paikkansa toisesta syystä: design, arkkitehtuuri, näkymä tai palvelumix. Ne ovat oikea vastaus kun haluat hotellin, joka on osa matkan syytä, ei pelkkä tukikohta.',
     picksKicker: 'Viisi valintaa',
@@ -274,12 +274,12 @@ export const copyFI: SectionCopy = {
       eyebrow: 'Lapin ikoninen muoto',
       title: 'Lasi-iglut Suomen Lapissa.',
       subtitle:
-        'Suomalainen lasikattoinen kupoli keksittiin Saariselällä 1973. Neljä kohdetta ansaitsee nimen tänään, ja niiden välillä on todellinen ero.',
+        'Suomalainen lasikattoinen kupoli keksittiin Saariselällä. Neljä kohdetta ansaitsee nimen tänään, ja niiden välillä on todellinen ero.',
     },
     authorNote:
       'Neljä resorttia ristiintarkistettu kohteiden julkaisemista tiedoista ja tuoreista vieraspalautteista. Hinnat tarkistettu viimeksi: helmikuu 2026.',
     pickWhy: [
-      'Kakslauttanen on jokaisella listalla, koska se ansaitsee paikan siellä. Resortti keksi modernin lasi-iglun 1973, aikana, jolloin ”matkailumajoitus Saariselällä” tarkoitti puurakenteista hostellia ja revontulia katseltiin parkkipaikalta.',
+      'Kakslauttanen on jokaisella listalla, koska se ansaitsee paikan siellä. Resortti aloitti Saariselällä 1973, aikana, jolloin ”matkailumajoitus Saariselällä” tarkoitti puurakenteista hostellia ja revontulia katseltiin parkkipaikalta, ja se keksi sittemmin modernin lasi-iglun.',
       'On kuitenkin haarukka: varaa Kelo-Glass-iglut, älä klassisia lasi-igluja. Kelo-Glass yhdistää panoraamalasikaton lämmitettyyn hirsirakenteeseen, omaan keittiötilaan ja takkaan. Klassiset lasi-iglut ovat pienempiä, ruuhkaisempia, ja kylpyhuone on 50 metrin kävelyn päässä -25°C:ssa.',
       'Hintaero on noin 200 €/yö. Kolmen yön aikana Kelo-Glass ansaitsee preemionsa takaisin sillä, ettei tarvitse vetää lumikenkiä jalkaan klo 4 aamulla.',
     ],
@@ -287,7 +287,7 @@ export const copyFI: SectionCopy = {
       'Klassiset lasi-iglut ovat noin 30 % halvempia, mutta kokemus on selvästi heikompi. Jos budjetti on enintään 400 €/yö, katso Aurora Villagea tai Aurora Pyramidsia, sama taivas, usein parempi järvi- tai erämaaympäristö.',
     pullQuote: {
       text:
-        'Ensimmäinen lasi-iglu rakennettiin, jotta vieraat näkisivät revontulet ilman seisomista ulkona -30°C:ssa. Viisikymmentä vuotta myöhemmin se on yhä koko pointti, ja jokaisen jäljittelijän epäonnistumispiste on se, mitä tapahtuu, kun revontulet ovat menneet.',
+        'Ensimmäinen lasi-iglu rakennettiin, jotta vieraat näkisivät revontulet ilman seisomista ulkona -30°C:ssa. Vuosikymmeniä myöhemmin se on yhä koko pointti, ja jokaisen jäljittelijän epäonnistumispiste on se, mitä tapahtuu, kun revontulet ovat menneet.',
       attr: 'Kakslauttasen alkuperätarina · 1973',
     },
     runnersKicker: 'Kolme muuta',
@@ -338,7 +338,7 @@ export const copyFI: SectionCopy = {
       'Tämän sivuston ”tarkista hinnat” -nappi reitittää Sembo-hakuun lähimpään varattavissa olevaan tarjontaan. Eagle View -sviitit täyttyvät nopeimmin kirkkaina viikonloppuina, varaa päivät, älä sääennustetta.',
     pullQuote: {
       text:
-        'Sana ”syrjäinen” on yleensä markkinointikieltä. Täällä ylhäällä se on totta. Tie loppuu, puuraja jää allesi, ja ainoa valo on se, minkä taivas päättää tehdä. Tällaiseen paikkaan ei vain pörhälletä, siihen sitoudutaan.',
+        'Sana ”syrjäinen” on yleensä markkinointikieltä. Täällä ylhäällä se on totta. Tie loppuu, puuraja jää allesi, ja ainoa valo on se, minkä taivas päättää tehdä. Tällaiseen paikkaan ei vain pyörähdetä, siihen sitoudutaan.',
       attr: 'Iso-Syötteen tunturitiellä, katsoen ylöspäin',
     },
     runnersKicker: 'Se toinen',
@@ -445,8 +445,8 @@ export const copyFI: SectionCopy = {
       {
         title: 'Mitä pakata',
         body: [
-          'Useimmat kohteet tarjoavat arktiset ulkoiluvaatteet (-30°C-haalarit, kengät, hanskat, pipot) joko sisältyvinä tai pienellä päivämaksulla. Varmista ennen lentoa täydellä matkalaukulla hiihtotavaraa.',
-          'Kerrokset ratkaisevat enemmän kuin paksuus, merinopohja + fleece + tuulenpitävä kuori. Puuvilla tappaa.',
+          'Useimmat kohteet tarjoavat arktiset ulkoiluvaatteet (-30°C-haalarit, kengät, hanskat, pipot) joko sisältyvinä tai pienellä päivämaksulla. Varmista asia ennen kuin lennät perille matkalaukku täynnä hiihtovarusteita.',
+          'Kerrokset ratkaisevat enemmän kuin paksuus, merinoaluskerros + fleece + tuulenpitävä kuori. Puuvilla tappaa.',
           'Kamerat: pidä vara-akut takin sisällä. Pakkanen tyhjentää ne nopeasti.',
         ],
       },
@@ -463,8 +463,8 @@ export const copyFI: SectionCopy = {
       {
         title: 'Peruutusehdot',
         body: [
-          'Useimmat Lapin kohteet ovat siirtyneet ei-palautuviin hintoihin huippuviikoiksi. Lue pieni printti ennen ”varaa”-painalluksen klikkausta.',
-          'Matkavakuutus, jossa peru-mistä-syystä-tahansa-kattavuus, on aidosti hintansa arvoinen yli 2 000 € matkoilla. Revontulen­metsästäjät peruuttavat sään takia jatkuvasti.',
+          'Useimmat Lapin kohteet ovat siirtyneet ei-palautuviin hintoihin huippuviikoiksi. Lue pieni printti ennen Varaa-napin painallusta.',
+          'Matkavakuutus, joka korvaa peruutuksen syystä riippumatta, on aidosti hintansa arvoinen yli 2 000 € matkoilla. Revontulen­metsästäjät peruuttavat sään takia jatkuvasti.',
           'Varauskumppanimme noudattavat varausvaiheessa näkyviä peruutusehtoja, varaa tämän sivuston uudelleenohjauksen kautta pitääksesi hinnan näkyvänä ja yhdenmukaisena.',
         ],
       },
@@ -513,7 +513,7 @@ export const copyFI: SectionCopy = {
         name: 'Lokakuu',
         pitch: 'Rauhallinen välikausi',
         body:
-          'Ensimmäiset lumikuurot, mutta maa pysyy harvoin valkoisena ennen kuun loppua. Hotellit pyörittävät välikaushintoja (-30 % huipusta), revontulet aktiivisia, hyvin vähän turisteja. Halvin revontuli-ikkuna täydellä aktiviteetti­infrastruktuurilla.',
+          'Ensimmäiset lumikuurot, mutta maa pysyy harvoin valkoisena ennen kuun loppua. Hotellit pyörittävät välikausihintoja (-30 % huipusta), revontulet aktiivisia, hyvin vähän turisteja. Halvin revontuli-ikkuna täydellä aktiviteetti­infrastruktuurilla.',
         bestFor: ['Revontulen­metsästäjät budjetilla', 'Pitkän jakson saapuminen ennen huippua'],
         avoidIf: ['Haluat hiihto- tai moottorikelkka­takuita'],
       },
@@ -561,7 +561,7 @@ export const copyFI: SectionCopy = {
         name: 'Huhtikuu',
         pitch: 'Kevätlumi + valo',
         body:
-          'Lumi vielä syvää ja hiihto huipputasoa tuntureilla. Revontulikausi loppuu huhtikuun puolivälissä yöt muuttuessa liian valoisiksi. Huhtikuun loppu on jälleen välikautta, hinnat tippuvat 30 %, kohteet vielä auki, aurinko horisontin yläpuolella 16+ tuntia.',
+          'Lumi vielä syvää ja hiihto huipputasoa tuntureilla. Revontulikausi loppuu huhtikuun puolivälissä öiden muuttuessa liian valoisiksi. Huhtikuun loppu on jälleen välikautta, hinnat tippuvat 30 %, kohteet vielä auki, aurinko horisontin yläpuolella 16+ tuntia.',
         bestFor: ['Loppukauden hiihtopitkät jaksot', 'Maastohiihto'],
         avoidIf: ['Revontulet edellä -matkat'],
       },
@@ -589,7 +589,7 @@ export const copyFI: SectionCopy = {
     notFoundTitle: 'Kohde ei ole listalla.',
     notFoundBody: 'Käsittelemme tällä hetkellä Rovaniemen, Levin, Saariselän, Inarin ja Yllässeudun.',
     backHome: 'Takaisin etusivulle',
-    authorNoteFor: (n) => `Pitkän jakson näkökulma kohteeseen ${n}, kirjoitettu Suomesta ja faktatarkastettu paikallisten kumppaneiden kanssa.`,
+    authorNoteFor: (n) => `Pitkän jakson näkökulma kohteeseen ${n}, kirjoitettu Suomessa ja faktatarkastettu paikallisten kumppaneiden kanssa.`,
     recommendedIn: (n) => `Suositukset kohteessa ${n}`,
     whereToStay: 'Missä todella yöpyä.',
     minStayLabel: 'Min jakso:',

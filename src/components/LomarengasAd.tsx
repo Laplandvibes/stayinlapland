@@ -135,7 +135,7 @@ export default function LomarengasAd({
   const headline = pick({
     en: 'Want a whole cabin to yourselves for the week? Lomarengas rents out privately-owned Finnish cottages.',
     fi: 'Haluatko oman mökin koko viikoksi? Lomarengas vuokraa yksityisten omistamia suomalaisia lomamökkejä.',
-    de: 'Lieber ein ganzes Häuschen für die Woche für euch allein? Lomarengas vermietet privat geführte finnische Ferienhäuser.',
+    de: 'Lieber ein ganzes Häuschen für die Woche ganz für Sie allein? Lomarengas vermietet privat geführte finnische Ferienhäuser.',
     ja: '一週間、まるごと一棟を自分たちだけで。Lomarengas は個人所有のフィンランドのコテージを貸し出しています。',
     es: '¿Queréis una cabaña entera para vosotros toda la semana? Lomarengas alquila cabañas finlandesas de propietarios particulares.',
     'pt-BR': 'Quer um chalé inteiro só para vocês a semana toda? A Lomarengas aluga chalés finlandeses de proprietários particulares.',

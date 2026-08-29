@@ -329,12 +329,12 @@ export const copyPTBR: SectionCopy = {
       eyebrow: 'O formato icônico da Lapônia',
       title: 'Iglus de vidro na Lapônia finlandesa.',
       subtitle:
-        'A cúpula de teto de vidro finlandesa foi inventada em Saariselkä em 1973. Quatro propriedades ficam à altura do nome hoje, e a diferença entre elas é real.',
+        'A cúpula de teto de vidro finlandesa foi inventada em Saariselkä. Quatro propriedades ficam à altura do nome hoje, e a diferença entre elas é real.',
     },
     authorNote:
       'Quatro resorts cruzados com as informações publicadas pelos operadores e avaliações recentes de hóspedes. Preços verificados pela última vez: fevereiro de 2026.',
     pickWhy: [
-      'Kakslauttanen está em toda lista porque merece. Foi aqui que se inventou o iglu de vidro moderno, em 1973, numa época em que "hospedagem turística em Saariselkä" era um albergue de madeira e a aurora se assistia do estacionamento.',
+      'Kakslauttanen está em toda lista porque merece. O resort começou em Saariselkä em 1973, numa época em que "hospedagem turística em Saariselkä" era um albergue de madeira e a aurora se assistia do estacionamento, e inventou mais tarde o iglu de vidro moderno.',
       'Há uma bifurcação: reserve os iglus Kelo-Glass, não os iglus de vidro clássicos. O Kelo-Glass combina o teto panorâmico de vidro com uma estrutura de toras aquecida, uma cozinha própria e uma lareira. Os clássicos são menores, mais movimentados, e o banheiro fica a 50 metros de caminhada, a −25 °C.',
       'A diferença de preço gira em torno de 200 €/noite. Ao longo de três noites, o Kelo-Glass paga o ágio só por não precisar calçar as botas de neve às 4h da manhã.',
     ],
@@ -444,7 +444,7 @@ export const copyPTBR: SectionCopy = {
         body: [
           'Três aeroportos da Lapônia cobrem quase tudo o que você vai reservar. Rovaniemi (RVN) para a Vila do Papai Noel e o sul, Kittilä (KTT) para Levi e Ylläs, Ivalo (IVL) para Saariselkä, Inari e o norte.',
           'Helsinque (HEL) → Lapônia é um voo doméstico de 90 minutos. Voos diretos de Londres, Berlim e Paris também existem de dezembro a março.',
-          'Trens: o noturno Helsinque–Rovaniemi é lento, mas o amanhecer em Tornio é genuinamente bonito e o vagão fica cheio de gente local fazendo a mesma viagem.',
+          'Trens: o noturno Helsinque–Rovaniemi é lento, mas o trecho pela costa do golfo de Bótnia passando por Kemi é genuinamente bonito e o vagão fica cheio de gente local fazendo a mesma viagem.',
         ],
       },
       {
@@ -526,7 +526,7 @@ export const copyPTBR: SectionCopy = {
         name: 'Novembro',
         pitch: 'Começa a noite polar, a neve firma',
         body:
-          'O começo de inverno mais frio da Lapônia. A noite polar entra ao norte de Sodankylä na metade do mês. A neve passa a firmar no fim de novembro, até o fim do mês a maioria dos resorts e hotéis de neve abre. O fim de novembro é o melhor custo-benefício absoluto para estadias longas.',
+          'O começo de inverno mais frio da Lapônia. No extremo norte (Utsjoki), a noite polar começa nos últimos dias do mês. A neve passa a firmar no fim de novembro, até o fim do mês a maioria dos resorts e hotéis de neve abre. O fim de novembro é o melhor custo-benefício absoluto para estadias longas.',
         bestFor: ['Estadias longas a −50% da tarifa', 'Visitantes recorrentes que conhecem o frio'],
         avoidIf: ['Viajantes de primeira vez (neve inconsistente)'],
       },
@@ -566,7 +566,7 @@ export const copyPTBR: SectionCopy = {
         name: 'Abril',
         pitch: 'Neve de primavera + luz',
         body:
-          'A neve ainda é profunda e o esqui nos fjells, excelente. A temporada de aurora termina em meados de abril, quando as noites ficam claras demais. O fim de abril é média temporada de novo, as tarifas caem 30%, as propriedades seguem abertas, o sol fica acima do horizonte por mais de 16 horas.',
+          'A neve ainda é profunda e o esqui nos fjells, excelente. A temporada de aurora termina no início de abril, quando as noites ficam claras demais. O fim de abril é média temporada de novo, as tarifas caem 30%, as propriedades seguem abertas, o sol fica acima do horizonte por mais de 16 horas.',
         bestFor: ['Estadias longas de esqui no fim da temporada', 'Esqui cross-country'],
         avoidIf: ['Viagens focadas em aurora'],
       },
@@ -576,7 +576,7 @@ export const copyPTBR: SectionCopy = {
     cheatKicker: 'A cola dos locais',
     cheatH2: 'Três semanas que os locais reservam para si.',
     cheatP1:
-      '<strong class="text-charcoal">Fim de novembro (semanas 47–48).</strong> A neve acabou de firmar, a noite polar atinge o auge, a temporada de aurora a pleno vapor. Tarifas de estadia longa 40–50% abaixo do pico. Algumas propriedades ainda não estão totalmente abertas, confirme antes de reservar.',
+      '<strong class="text-charcoal">Fim de novembro (semanas 47–48).</strong> A neve acabou de firmar, começam as semanas mais escuras do ano, a temporada de aurora a pleno vapor. Tarifas de estadia longa 40–50% abaixo do pico. Algumas propriedades ainda não estão totalmente abertas, confirme antes de reservar.',
     cheatP2:
       '<strong class="text-charcoal">Segunda metade de janeiro (semanas 3–4).</strong> A melhor semana da temporada na relação aurora vs. custo. Multidões de Natal foram embora, férias de fevereiro ainda não começaram, dias se alongando, neve bem assentada. É quando o nosso editor tira férias.',
     cheatP3:
@@ -693,9 +693,9 @@ export const copyPTBR: SectionCopy = {
     {
       name: 'Kakslauttanen Arctic Resort',
       location: 'Saariselkä',
-      highlight: 'O iglu de vidro original · 1973 · Kelo-Glass disponível',
+      highlight: 'O iglu de vidro original · Kelo-Glass disponível',
       description:
-        'O resort que inventou o iglu de vidro moderno em 1973. Escolha o Kelo-Glass em vez dos iglus de vidro clássicos, o Kelo combina o teto panorâmico de vidro com uma estrutura de toras aquecida, kitchenette e lareira. Duas noites no mínimo para aproveitar ao máximo.',
+        'O resort que inventou o iglu de vidro moderno. Escolha o Kelo-Glass em vez dos iglus de vidro clássicos, o Kelo combina o teto panorâmico de vidro com uma estrutura de toras aquecida, kitchenette e lareira. Duas noites no mínimo para aproveitar ao máximo.',
     },
     {
       name: 'Levin Iglut',

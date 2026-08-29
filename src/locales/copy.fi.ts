@@ -439,7 +439,7 @@ export const copyFI: SectionCopy = {
         body: [
           'Kolme Lapin lentokenttää kattaa suurimman osan varauksista. Rovaniemi (RVN) Joulupukin pajakylän ja etelän osalta, Kittilä (KTT) Leville ja Yllässeudulle, Ivalo (IVL) Saariselälle, Inariin ja pohjoiseen.',
           'Helsinki (HEL) → Lappi on 90 minuutin kotimaanlento. Suorat lennot Lontoosta, Berliinistä ja Pariisista myös joulu–maaliskuussa.',
-          'Junat: Helsinki–Rovaniemi-yövuoro on hidas, mutta Tornion aamunkoitto on aidosti kaunis ja vaunu on täynnä paikallisia samalla matkalla.',
+          'Junat: Helsinki–Rovaniemi-yövuoro on hidas, mutta matka Perämeren rannikkoa pitkin Kemin kautta on aidosti kaunis ja vaunu on täynnä paikallisia samalla matkalla.',
         ],
       },
       {
@@ -521,7 +521,7 @@ export const copyFI: SectionCopy = {
         name: 'Marraskuu',
         pitch: 'Kaamos alkaa, lumi tasoittuu',
         body:
-          'Lapin talven kylmin alku. Kaamos käynnistyy Sodankylän pohjoispuolella kuun puolivälissä. Lumi alkaa pysyä marraskuun lopussa, kuun loppuun mennessä useimmat lomakohteet ja lumihotellit avautuvat. Marraskuun loppu on ehdoton paras arvo pitkille jaksoille.',
+          'Lapin talven kylmin alku. Pohjoisimmassa Lapissa (Utsjoki) kaamos alkaa kuun viimeisinä päivinä. Lumi alkaa pysyä marraskuun lopussa, kuun loppuun mennessä useimmat lomakohteet ja lumihotellit avautuvat. Marraskuun loppu on ehdoton paras arvo pitkille jaksoille.',
         bestFor: ['Pitkät jaksot -50 % hinnoilla', 'Toistuvat kävijät, jotka tuntevat kylmän'],
         avoidIf: ['Ensikertalaiset (lumen epäsäännöllisyys)'],
       },
@@ -561,7 +561,7 @@ export const copyFI: SectionCopy = {
         name: 'Huhtikuu',
         pitch: 'Kevätlumi + valo',
         body:
-          'Lumi vielä syvää ja hiihto huipputasoa tuntureilla. Revontulikausi loppuu huhtikuun puolivälissä öiden muuttuessa liian valoisiksi. Huhtikuun loppu on jälleen välikautta, hinnat tippuvat 30 %, kohteet vielä auki, aurinko horisontin yläpuolella 16+ tuntia.',
+          'Lumi vielä syvää ja hiihto huipputasoa tuntureilla. Revontulikausi loppuu huhtikuun alussa öiden muuttuessa liian valoisiksi. Huhtikuun loppu on jälleen välikautta, hinnat tippuvat 30 %, kohteet vielä auki, aurinko horisontin yläpuolella 16+ tuntia.',
         bestFor: ['Loppukauden hiihtopitkät jaksot', 'Maastohiihto'],
         avoidIf: ['Revontulet edellä -matkat'],
       },
@@ -571,7 +571,7 @@ export const copyFI: SectionCopy = {
     cheatKicker: 'Paikallisten huijauslapppu',
     cheatH2: 'Kolme viikkoa, jotka paikalliset varaavat itselleen.',
     cheatP1:
-      '<strong class="text-charcoal">Marraskuun loppu (viikko 47–48).</strong> Lumi juuri tasoittunut, kaamos huipussaan, revontulikausi täydessä aktiivisuudessa. Pitkän jakson hinnat 40–50 % huipun alla. Osa kohteista ei ole vielä täysin auki, varmista ennen varausta.',
+      '<strong class="text-charcoal">Marraskuun loppu (viikko 47–48).</strong> Lumi juuri tasoittunut, vuoden pimeimmät viikot alkavat, revontulikausi täydessä aktiivisuudessa. Pitkän jakson hinnat 40–50 % huipun alla. Osa kohteista ei ole vielä täysin auki, varmista ennen varausta.',
     cheatP2:
       '<strong class="text-charcoal">Tammikuun jälkipuolisko (viikko 3–4).</strong> Kauden ainoa paras revontulet-vs-hinta-viikko. Joulun ruuhka mennyt, helmikuun talviloma ei alkanut, päivät pitenevät, lumi täysin asettunut. Tähän aikaan toimittajamme lomailee.',
     cheatP3:
@@ -688,9 +688,9 @@ export const copyFI: SectionCopy = {
     {
       name: 'Kakslauttanen Arctic Resort',
       location: 'Saariselkä',
-      highlight: 'Alkuperäinen lasi-iglu · 1973 · Kelo-Glass saatavilla',
+      highlight: 'Alkuperäinen lasi-iglu · Kelo-Glass saatavilla',
       description:
-        'Resortti, joka keksi modernin lasi-iglun 1973. Valitse Kelo-Glass klassisten lasi-iglujen sijaan, Kelo yhdistää panoraamalasikaton lämmitettyyn hirsirakenteeseen, keittiötilaan ja takkaan. Kahden yön minimi saa kohteesta eniten irti.',
+        'Resortti, joka keksi modernin lasi-iglun. Valitse Kelo-Glass klassisten lasi-iglujen sijaan, Kelo yhdistää panoraamalasikaton lämmitettyyn hirsirakenteeseen, keittiötilaan ja takkaan. Kahden yön minimi saa kohteesta eniten irti.',
     },
     {
       name: 'Levin Iglut',

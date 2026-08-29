@@ -156,7 +156,7 @@ export default function HotelPartnerAd({
   const headline = pick({
     en: 'Want a room you can book tonight, in town, with everything already there?',
     fi: 'Haluatko huoneen jonka voi varata tänään, keskustasta, valmiiksi katettuna?',
-    de: 'Lieber ein Zimmer, das ihr heute Abend buchen könnt, mitten im Ort, mit allem schon da?',
+    de: 'Lieber ein Zimmer, das Sie heute Abend buchen können, mitten im Ort, mit allem schon da?',
     ja: '今夜そのまま予約できて、町なかで、何もかも揃った部屋がいいですか？',
     es: '¿Prefieres una habitación que puedas reservar esta noche, en el pueblo y con todo ya puesto?',
     'pt-BR': 'Quer um quarto que dá para reservar hoje à noite, na cidade, com tudo já pronto?',
@@ -171,7 +171,7 @@ export default function HotelPartnerAd({
   const sub = pick({
     en: 'For the hotel nights, the design rooms in Rovaniemi, the ski-in places at Levi and Ylläs, the apartment-hotels, Trip.com lists a wide choice of rooms with live prices. Handy for the start and end of a trip, or any night you just want a desk, a shower and breakfast downstairs.',
     fi: 'Hotelliöitä varten Sembo listaa laajan valikoiman huoneita ajantasaisin hinnoin: design-huoneet Rovaniemellä, rinteeseen pääsevät paikat Levillä ja Ylläksellä, huoneistohotellit. Kätevä matkan alkuun ja loppuun, tai mille tahansa yölle kun haluat vain työpöydän, suihkun ja aamupalan alakerrasta.',
-    de: 'Für die Hotelnächte listet Trip.com eine große Auswahl an Zimmern mit Live-Preisen: die Designzimmer in Rovaniemi, die Ski-in-Häuser in Levi und Ylläs, die Apartmenthotels. Praktisch für Anfang und Ende einer Reise, oder jede Nacht, in der ihr einfach Schreibtisch, Dusche und Frühstück unten wollt.',
+    de: 'Für die Hotelnächte listet Trip.com eine große Auswahl an Zimmern mit Live-Preisen: die Designzimmer in Rovaniemi, die Ski-in-Häuser in Levi und Ylläs, die Apartmenthotels. Praktisch für Anfang und Ende einer Reise, oder jede Nacht, in der Sie einfach Schreibtisch, Dusche und Frühstück unten wollen.',
     ja: 'ホテルに泊まる夜には。ロヴァニエミのデザインルーム、レヴィやウッラスのスキーイン、アパートメントホテルまで、Trip.com は幅広い部屋を最新価格で載せています。旅の始めと終わり、あるいは机とシャワーと朝食さえあればいい夜に便利です。',
     es: 'Para las noches de hotel: las habitaciones de diseño de Rovaniemi, los alojamientos a pie de pista en Levi y Ylläs, los apartahoteles. En Trip.com encuentras una amplia selección de habitaciones con precios al momento. Va bien para el principio y el final del viaje, o cualquier noche en que solo quieras un escritorio, una ducha y desayuno abajo.',
     'pt-BR': 'Para as noites de hotel: os quartos de design em Rovaniemi, os lugares com acesso à pista em Levi e Ylläs, os apart-hotéis. Na Trip.com aparece uma ampla seleção de quartos com preços na hora. Bom para o começo e o fim da viagem, ou qualquer noite em que você só quer uma mesa, um chuveiro e café da manhã embaixo.',

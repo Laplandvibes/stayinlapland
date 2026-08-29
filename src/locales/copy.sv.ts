@@ -260,12 +260,12 @@ export const copySV: SectionCopy = {
       eyebrow: 'Det ikoniska Lapplandsformatet',
       title: 'Glasiglor i finska Lappland.',
       subtitle:
-        'Den finska kupolen med glastak uppfanns 1973 i Saariselkä. Fyra boenden lever upp till namnet i dag, och skillnaden mellan dem är verklig.',
+        'Den finska kupolen med glastak uppfanns i Saariselkä. Fyra boenden lever upp till namnet i dag, och skillnaden mellan dem är verklig.',
     },
     authorNote:
       'Fyra resorter dubbelkollade mot publicerad information från operatörerna och färska gästrecensioner. Priser senast kontrollerade: februari 2026.',
     pickWhy: [
-      'Kakslauttanen står på varje lista för att det förtjänar den platsen. Resorten uppfann den moderna glasiglon 1973, när ”turistboende i Saariselkä” fortfarande betydde ett vandrarhem i trä och norrskenet var något du tittade på från parkeringen.',
+      'Kakslauttanen står på varje lista för att det förtjänar den platsen. Resorten startade i Saariselkä 1973, när ”turistboende i Saariselkä” fortfarande betydde ett vandrarhem i trä och norrskenet var något du tittade på från parkeringen, och uppfann senare den moderna glasiglon.',
       'Här finns en vägdelning: boka Kelo-Glass-iglorna, inte de klassiska Glass Igloos. Kelo-Glass kombinerar det panoramiska glastaket med en uppvärmd trästomme, ett eget pentry och en öppen spis. De klassiska är mindre, trängre, och badrummet ligger 50 meter bort, i −25 °C.',
       'Prisskillnaden ligger på runt 200 €/natt. Över tre nätter tjänar Kelo-Glass in den merkostnaden, bara genom att du slipper dra på dig snöskorna klockan fyra på natten.',
     ],
@@ -425,7 +425,7 @@ export const copySV: SectionCopy = {
         body: [
           'Tre flygplatser i Lappland täcker det mesta du skulle boka. Rovaniemi (RVN) för Tomtens by och söder, Kittilä (KTT) för Levi och Ylläs, Ivalo (IVL) för Saariselkä, Inari och norr.',
           'Helsingfors (HEL) → Lappland är ett inrikesflyg på 90 minuter. Direktflyg från London, Berlin och Paris finns också från december till mars.',
-          'Tåg: nattåget Helsingfors–Rovaniemi är långsamt men gryningen vid Torneå är verkligen vacker och kupén är full av lokalbor som gör samma resa.',
+          'Tåg: nattåget Helsingfors–Rovaniemi är långsamt men sträckan längs Bottenvikens kust via Kemi är verkligen vacker och kupén är full av lokalbor som gör samma resa.',
         ],
       },
       {
@@ -507,7 +507,7 @@ export const copySV: SectionCopy = {
         name: 'november',
         pitch: 'Polarnatten börjar, snön stabiliseras',
         body:
-          'Den kallaste starten på en Lapplandsvinter. Polarnatten inleds mitt i månaden norr om Sodankylä. Snön börjar ligga kvar i slutet av november, mot månadens slut öppnar de flesta resorter och snöhotell. Slutet av november är det klart bästa priset för pengarna för långtidsvistelser.',
+          'Den kallaste starten på en Lapplandsvinter. I nordligaste Lappland (Utsjoki) inleds polarnatten under månadens sista dagar. Snön börjar ligga kvar i slutet av november, mot månadens slut öppnar de flesta resorter och snöhotell. Slutet av november är det klart bästa priset för pengarna för långtidsvistelser.',
         bestFor: ['Långtidsvistelser till −50 % pris', 'Återkommande gäster som känner kylan'],
         avoidIf: ['Förstagångsresenärer (snön är ombytlig)'],
       },
@@ -547,7 +547,7 @@ export const copySV: SectionCopy = {
         name: 'april',
         pitch: 'Vårsnö + ljus',
         body:
-          'Snön är fortfarande djup och skidåkningen utmärkt på fjällen. Norrskenssäsongen tar slut i mitten av april när nätterna blir för ljusa. Slutet av april är åter mellansäsong, priserna sjunker 30 %, boendena fortfarande öppna, sol över horisonten i 16+ timmar.',
+          'Snön är fortfarande djup och skidåkningen utmärkt på fjällen. Norrskenssäsongen tar slut i början av april när nätterna blir för ljusa. Slutet av april är åter mellansäsong, priserna sjunker 30 %, boendena fortfarande öppna, sol över horisonten i 16+ timmar.',
         bestFor: ['Långa skidvistelser i slutet av säsongen', 'Längdskidåkning'],
         avoidIf: ['Resor inriktade på norrsken'],
       },
@@ -557,7 +557,7 @@ export const copySV: SectionCopy = {
     cheatKicker: 'Lokalbornas fusklapp',
     cheatH2: 'Tre veckor lokalborna bokar åt sig själva.',
     cheatP1:
-      '<strong class="text-charcoal">Slutet av november (vecka 47–48).</strong> Snön är precis stabil, polarnatten toppar, norrskenssäsongen på full aktivitet. Långtidspriser 40–50 % under peak. Vissa boenden är inte helt öppna än, kontrollera före bokning.',
+      '<strong class="text-charcoal">Slutet av november (vecka 47–48).</strong> Snön är precis stabil, årets mörkaste veckor börjar, norrskenssäsongen på full aktivitet. Långtidspriser 40–50 % under peak. Vissa boenden är inte helt öppna än, kontrollera före bokning.',
     cheatP2:
       '<strong class="text-charcoal">Andra halvan av januari (vecka 3–4).</strong> Säsongens allra bästa norrsken-mot-kostnad-vecka. Julträngseln borta, februaris sportlov ännu inte börjat, dagarna blir längre, snön helt fast. Det är då redaktören åker på semester.',
     cheatP3:
@@ -704,9 +704,9 @@ export const copySV: SectionCopy = {
     {
       name: 'Kakslauttanen Arctic Resort',
       location: 'Saariselkä',
-      highlight: 'Den ursprungliga glasiglon · 1973 · Kelo-Glass tillgänglig',
+      highlight: 'Den ursprungliga glasiglon · Kelo-Glass tillgänglig',
       description:
-        'Resorten som uppfann den moderna glasiglon 1973. Välj Kelo-Glass framför de klassiska Glass Igloos, Kelo kombinerar det panoramiska glastaket med en uppvärmd trästomme, ett pentry och en öppen spis. Ett minimum på två nätter får ut mest av det.',
+        'Resorten som uppfann den moderna glasiglon. Välj Kelo-Glass framför de klassiska Glass Igloos, Kelo kombinerar det panoramiska glastaket med en uppvärmd trästomme, ett pentry och en öppen spis. Ett minimum på två nätter får ut mest av det.',
     },
     {
       name: 'Levin Iglut',

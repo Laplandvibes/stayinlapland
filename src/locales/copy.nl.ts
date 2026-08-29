@@ -258,12 +258,12 @@ export const copyNL: SectionCopy = {
       eyebrow: 'Het iconische Lapland-formaat',
       title: 'Glasiglo’s in Fins Lapland.',
       subtitle:
-        'De Finse koepel met glazen dak werd in 1973 uitgevonden in Saariselkä. Vier accommodaties maken die naam vandaag waar, en het verschil tussen hen is reëel.',
+        'De Finse koepel met glazen dak werd uitgevonden in Saariselkä. Vier accommodaties maken die naam vandaag waar, en het verschil tussen hen is reëel.',
     },
     authorNote:
       'Vier resorts dubbel gecheckt met gepubliceerde informatie van de exploitanten en recente gastbeoordelingen. Prijzen laatst gecontroleerd: februari 2026.',
     pickWhy: [
-      'Kakslauttanen staat op elke lijst omdat het die plek verdient. Het resort vond de moderne glasiglo uit in 1973, toen "toeristenaccommodatie in Saariselkä" nog een houten hostel betekende en het noorderlicht iets was dat u vanaf de parkeerplaats bekeek.',
+      'Kakslauttanen staat op elke lijst omdat het die plek verdient. Het resort begon in 1973 in Saariselkä, toen "toeristenaccommodatie in Saariselkä" nog een houten hostel betekende en het noorderlicht iets was dat u vanaf de parkeerplaats bekeek, en vond later de moderne glasiglo uit.',
       'Er is een tweesprong: boek de Kelo-Glass-iglo’s, niet de klassieke Glass Igloos. Kelo-Glass combineert het panoramische glazen dak met een verwarmde houten structuur, een eigen kitchenette en een open haard. De klassieke zijn kleiner, drukker, en de badkamer ligt op 50 meter lopen, bij -25°C.',
       'Het prijsverschil bedraagt zo’n €200/nacht. Over drie nachten verdient de Kelo-Glass die meerprijs terug, alleen al doordat u om 4 uur ’s nachts geen sneeuwlaarzen hoeft aan te trekken.',
     ],
@@ -423,7 +423,7 @@ export const copyNL: SectionCopy = {
         body: [
           'Drie Lapland-vliegvelden dekken het meeste van wat u zou boeken. Rovaniemi (RVN) voor het Kerstmandorp en het zuiden, Kittilä (KTT) voor Levi en Ylläs, Ivalo (IVL) voor Saariselkä, Inari en het noorden.',
           'Helsinki (HEL) → Lapland is een binnenlandse vlucht van 90 minuten. Directe vluchten vanuit Londen, Berlijn en Parijs bestaan ook van december tot maart.',
-          'Treinen: de nachttrein Helsinki–Rovaniemi is langzaam maar de dageraad bij Tornio is werkelijk prachtig en de coupé zit vol locals die dezelfde reis maken.',
+          'Treinen: de nachttrein Helsinki–Rovaniemi is langzaam maar de rit langs de kust van de Botnische Golf via Kemi is werkelijk prachtig en de coupé zit vol locals die dezelfde reis maken.',
         ],
       },
       {
@@ -505,7 +505,7 @@ export const copyNL: SectionCopy = {
         name: 'November',
         pitch: 'Poolnacht begint, sneeuw stabiliseert',
         body:
-          'Het koudste begin van een Lapland-winter. De poolnacht zet halverwege de maand in ten noorden van Sodankylä. De sneeuw begint eind november te blijven liggen, tegen het eind van de maand openen de meeste resorts en sneeuwhotels. Eind november is veruit de beste prijs-kwaliteit voor lange verblijven.',
+          'Het koudste begin van een Lapland-winter. In het hoge noorden (Utsjoki) begint de poolnacht in de laatste dagen van de maand. De sneeuw begint eind november te blijven liggen, tegen het eind van de maand openen de meeste resorts en sneeuwhotels. Eind november is veruit de beste prijs-kwaliteit voor lange verblijven.',
         bestFor: ['Lange verblijven tegen -50% tarief', 'Terugkerende gasten die de kou kennen'],
         avoidIf: ['Eerste-keer-reizigers (sneeuw is wisselvallig)'],
       },
@@ -545,7 +545,7 @@ export const copyNL: SectionCopy = {
         name: 'April',
         pitch: 'Lentesneeuw + licht',
         body:
-          'Sneeuw nog diep en skiën uitmuntend op de fjelden. Noorderlichtseizoen eindigt half april als nachten te licht worden. Eind april is weer schouder, tarieven dalen 30%, accommodaties nog open, zon boven de horizon voor 16+ uur.',
+          'Sneeuw nog diep en skiën uitmuntend op de fjelden. Noorderlichtseizoen eindigt begin april als nachten te licht worden. Eind april is weer schouder, tarieven dalen 30%, accommodaties nog open, zon boven de horizon voor 16+ uur.',
         bestFor: ['Lange ski-verblijven aan het eind van het seizoen', 'Langlaufen'],
         avoidIf: ['Reizen gericht op noorderlicht'],
       },
@@ -555,7 +555,7 @@ export const copyNL: SectionCopy = {
     cheatKicker: 'Het spiekbriefje van de locals',
     cheatH2: 'Drie weken die de locals voor zichzelf boeken.',
     cheatP1:
-      '<strong class="text-charcoal">Eind november (week 47–48).</strong> Sneeuw is net stabiel, poolnacht piekt, noorderlichtseizoen op volle activiteit. Lange-verblijftarieven 40–50% onder de piek. Sommige accommodaties zijn nog niet volledig open, controleer vóór het boeken.',
+      '<strong class="text-charcoal">Eind november (week 47–48).</strong> Sneeuw is net stabiel, de donkerste weken van het jaar beginnen, noorderlichtseizoen op volle activiteit. Lange-verblijftarieven 40–50% onder de piek. Sommige accommodaties zijn nog niet volledig open, controleer vóór het boeken.',
     cheatP2:
       '<strong class="text-charcoal">Tweede helft januari (week 3–4).</strong> Dé beste noorderlicht-vs-kosten-week van het seizoen. Kerstdrukte weg, februari-schoolvakantie nog niet begonnen, dagen lengen, sneeuw volledig vast. Dit is wanneer de redacteur op vakantie gaat.',
     cheatP3:
@@ -702,9 +702,9 @@ export const copyNL: SectionCopy = {
     {
       name: 'Kakslauttanen Arctic Resort',
       location: 'Saariselkä',
-      highlight: 'De originele glasiglo · 1973 · Kelo-Glass beschikbaar',
+      highlight: 'De originele glasiglo · Kelo-Glass beschikbaar',
       description:
-        'Het resort dat de moderne glasiglo uitvond in 1973. Kies Kelo-Glass boven de klassieke Glass Igloos, Kelo combineert het panoramische glazen dak met een verwarmde houten structuur, een kitchenette en een open haard. Een minimum van twee nachten haalt er het meeste uit.',
+        'Het resort dat de moderne glasiglo uitvond. Kies Kelo-Glass boven de klassieke Glass Igloos, Kelo combineert het panoramische glazen dak met een verwarmde houten structuur, een kitchenette en een open haard. Een minimum van twee nachten haalt er het meeste uit.',
     },
     {
       name: 'Levin Iglut',

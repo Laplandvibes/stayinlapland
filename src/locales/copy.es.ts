@@ -295,7 +295,7 @@ export const copyES: SectionCopy = {
         body: [
           'Tres aeropuertos laponeses cubren casi todo lo que reservarás. Rovaniemi (RVN) para el pueblo de Papá Noel y el sur, Kittilä (KTT) para Levi y Ylläs, Ivalo (IVL) para Saariselkä, Inari y el norte.',
           'Helsinki (HEL) → Laponia es un vuelo nacional de 90 minutos. De diciembre a marzo también hay vuelos directos desde Londres, Berlín y París.',
-          'Trenes: el nocturno Helsinki–Rovaniemi es lento, pero el amanecer en Tornio es genuinamente bonito y el vagón se llena de locales haciendo el mismo viaje.',
+          'Trenes: el nocturno Helsinki–Rovaniemi es lento, pero el trayecto por la costa del golfo de Botnia pasando por Kemi es genuinamente bonito y el vagón se llena de locales haciendo el mismo viaje.',
         ],
       },
       {
@@ -377,7 +377,7 @@ export const copyES: SectionCopy = {
         name: 'Noviembre',
         pitch: 'Empieza la noche polar, se asienta la nieve',
         body:
-          'El arranque de invierno más frío de Laponia. La noche polar entra al norte de Sodankylä a mediados de mes. La nieve empieza a cuajar a finales de noviembre, para fin de mes abren la mayoría de las estaciones y los hoteles de nieve. Finales de noviembre es la mejor relación calidad-precio absoluta para larga estancia.',
+          'El arranque de invierno más frío de Laponia. En el extremo norte (Utsjoki), la noche polar empieza en los últimos días del mes. La nieve empieza a cuajar a finales de noviembre, para fin de mes abren la mayoría de las estaciones y los hoteles de nieve. Finales de noviembre es la mejor relación calidad-precio absoluta para larga estancia.',
         bestFor: ['Larga estancia a −50 % de tarifa', 'Repetidores que conocen el frío'],
         avoidIf: ['Primera vez (la nieve es irregular)'],
       },
@@ -417,7 +417,7 @@ export const copyES: SectionCopy = {
         name: 'Abril',
         pitch: 'Nieve de primavera + luz',
         body:
-          'La nieve sigue profunda y el esquí en los fjells, excelente. La temporada de auroras termina a mediados de abril, cuando las noches se vuelven demasiado claras. Finales de abril es de nuevo temporada media, las tarifas bajan un 30 %, los alojamientos siguen abiertos y el sol queda sobre el horizonte más de 16 horas.',
+          'La nieve sigue profunda y el esquí en los fjells, excelente. La temporada de auroras termina a principios de abril, cuando las noches se vuelven demasiado claras. Finales de abril es de nuevo temporada media, las tarifas bajan un 30 %, los alojamientos siguen abiertos y el sol queda sobre el horizonte más de 16 horas.',
         bestFor: ['Larga estancia de esquí de fin de temporada', 'Esquí de fondo'],
         avoidIf: ['Viajes centrados en auroras'],
       },
@@ -427,7 +427,7 @@ export const copyES: SectionCopy = {
     cheatKicker: 'Chuleta de los locales',
     cheatH2: 'Tres semanas que los locales reservan para sí mismos.',
     cheatP1:
-      '<strong class="text-charcoal">Finales de noviembre (semanas 47–48).</strong> La nieve acaba de asentarse, la noche polar alcanza su punto álgido y la temporada de auroras está a pleno rendimiento. Tarifas de larga estancia un 40–50 % por debajo del pico. Algunos alojamientos aún no han abierto del todo, confírmalo antes de reservar.',
+      '<strong class="text-charcoal">Finales de noviembre (semanas 47–48).</strong> La nieve acaba de asentarse, empiezan las semanas más oscuras del año y la temporada de auroras está a pleno rendimiento. Tarifas de larga estancia un 40–50 % por debajo del pico. Algunos alojamientos aún no han abierto del todo, confírmalo antes de reservar.',
     cheatP2:
       '<strong class="text-charcoal">Segunda quincena de enero (semanas 3–4).</strong> La mejor semana de la temporada en relación aurora-coste. Multitudes de Navidad fuera, vacaciones de febrero sin empezar, días que se alargan, nieve bien puesta. Es cuando nuestro editor se va de vacaciones.',
     cheatP3:
@@ -476,11 +476,11 @@ export const copyES: SectionCopy = {
       eyebrow: 'La forma icónica de Laponia',
       title: 'Iglús de cristal en la Laponia finlandesa.',
       subtitle:
-        'La cúpula finlandesa de techo de vidrio se inventó en Saariselkä en 1973. Hoy cuatro alojamientos merecen el nombre, y entre ellos hay una diferencia real.',
+        'La cúpula finlandesa de techo de vidrio se inventó en Saariselkä. Hoy cuatro alojamientos merecen el nombre, y entre ellos hay una diferencia real.',
     },
     authorNote: 'Cuatro resorts contrastados con la información publicada por los operadores y reseñas recientes de huéspedes. Precios revisados por última vez: febrero de 2026.',
     pickWhy: [
-      'Kakslauttanen está en todas las listas porque se lo merece. Aquí se inventó el iglú de cristal moderno, en 1973, cuando "alojamiento turístico en Saariselkä" significaba un albergue de madera y la aurora se miraba desde el aparcamiento.',
+      'Kakslauttanen está en todas las listas porque se lo merece. El resort abrió en Saariselkä en 1973, cuando "alojamiento turístico en Saariselkä" significaba un albergue de madera y la aurora se miraba desde el aparcamiento, y más tarde inventó el iglú de cristal moderno.',
       'Hay una bifurcación: reserva los iglús Kelo-Glass, no los iglús de cristal clásicos. El Kelo-Glass combina el techo panorámico de vidrio con una estructura de troncos con calefacción, cocina propia y chimenea. Los clásicos son más pequeños, con más trasiego, y el baño está a 50 metros a pie, a −25 °C.',
       'La diferencia de precio ronda los 200 €/noche. A lo largo de tres noches, el Kelo-Glass amortiza su sobreprecio solo por no tener que ponerse las botas de nieve a las 4 de la madrugada.',
     ],
@@ -692,9 +692,9 @@ export const copyES: SectionCopy = {
     {
       name: 'Kakslauttanen Arctic Resort',
       location: 'Saariselkä',
-      highlight: 'El iglú de cristal original · 1973 · Kelo-Glass disponible',
+      highlight: 'El iglú de cristal original · Kelo-Glass disponible',
       description:
-        'El resort que inventó el iglú de cristal moderno en 1973. Elige Kelo-Glass antes que los iglús de cristal clásicos, el Kelo combina el techo panorámico de vidrio con una estructura de troncos con calefacción, cocina americana y chimenea. Dos noches mínimo para sacarle todo el partido.',
+        'El resort que inventó el iglú de cristal moderno. Elige Kelo-Glass antes que los iglús de cristal clásicos, el Kelo combina el techo panorámico de vidrio con una estructura de troncos con calefacción, cocina americana y chimenea. Dos noches mínimo para sacarle todo el partido.',
     },
     {
       name: 'Levin Iglut',

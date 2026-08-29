@@ -158,7 +158,7 @@ export const glassIgloos: Property[] = [
     location: 'Saariselkä',
     priceRange: '€400–1500',
     bestFor: 'short',
-    highlight: 'The original glass igloo · 1973 · Kelo-Glass available',
+    highlight: 'The original glass igloo · Kelo-Glass available',
     description:
       'The resort that invented the modern glass igloo. Choose Kelo-Glass over the classic Glass Igloos: Kelo pairs the panoramic glass roof with a heated log structure, kitchenette and fireplace. Two-night minimum gets the most out of it.',
   },

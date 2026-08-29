@@ -552,7 +552,7 @@ export const copyEN: SectionCopy = {
         name: 'April',
         pitch: 'Spring snow + light',
         body:
-          'Snow still deep and the fell skiing excellent. Aurora season ends mid-April as nights become too light. Late April is shoulder again, rates drop 30%, properties still open, sun above horizon for 16+ hours.',
+          'Snow still deep and the fell skiing excellent. Aurora season ends in early April as nights become too light. Late April is shoulder again, rates drop 30%, properties still open, sun above horizon for 16+ hours.',
         bestFor: ['Late-season ski long stays', 'Cross-country skiing'],
         avoidIf: ['Aurora-first trips'],
       },
@@ -562,7 +562,7 @@ export const copyEN: SectionCopy = {
     cheatKicker: 'The local cheat-sheet',
     cheatH2: 'Three weeks the locals book for themselves.',
     cheatP1:
-      '<strong class="text-charcoal">Late November (week 47–48).</strong> Snow has just stabilised, polar night peaks, aurora season at full activity. Long-stay rates 40–50% off peak. Some properties not fully open yet, confirm before booking.',
+      '<strong class="text-charcoal">Late November (week 47–48).</strong> Snow has just stabilised, the darkest weeks of the year begin, aurora season at full activity. Long-stay rates 40–50% off peak. Some properties not fully open yet, confirm before booking.',
     cheatP2:
       '<strong class="text-charcoal">Second half of January (week 3–4).</strong> The single best aurora-vs-cost week of the season. Christmas crowds gone, February school break has not started, days lengthening, snow fully set. This is when the editor takes vacation.',
     cheatP3:
@@ -679,9 +679,9 @@ export const copyEN: SectionCopy = {
     {
       name: 'Kakslauttanen Arctic Resort',
       location: 'Saariselkä',
-      highlight: 'The original glass igloo · 1973 · Kelo-Glass available',
+      highlight: 'The original glass igloo · Kelo-Glass available',
       description:
-        'The resort that invented the modern glass igloo in 1973. Choose Kelo-Glass over the classic Glass Igloos, Kelo pairs the panoramic glass roof with a heated log structure, kitchenette and fireplace. Two-night minimum gets the most out of it.',
+        'The resort that invented the modern glass igloo. Choose Kelo-Glass over the classic Glass Igloos, Kelo pairs the panoramic glass roof with a heated log structure, kitchenette and fireplace. Two-night minimum gets the most out of it.',
     },
     {
       name: 'Levin Iglut',

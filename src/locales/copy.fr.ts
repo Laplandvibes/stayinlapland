@@ -277,11 +277,11 @@ export const copyFR: SectionCopy = {
       eyebrow: 'La forme emblématique de la Laponie',
       title: 'Les igloos de verre de Laponie finlandaise.',
       subtitle:
-        'Le dôme finlandais à toit de verre est né à Saariselkä en 1973. Quatre adresses méritent ce nom aujourd’hui, et la différence entre elles est réelle.',
+        'Le dôme finlandais à toit de verre est né à Saariselkä. Quatre adresses méritent ce nom aujourd’hui, et la différence entre elles est réelle.',
     },
     authorNote: 'Quatre adresses recoupées avec les informations publiées par les exploitants et des avis récents de voyageurs. Tarifs vérifiés pour la dernière fois : février 2026.',
     pickWhy: [
-      'Kakslauttanen figure sur toutes les listes parce qu’elle le mérite. C’est ici qu’est né l’igloo de verre moderne, en 1973, à une époque où « hébergement touristique à Saariselkä » voulait dire une auberge en bois et où l’aurore se regardait depuis le parking.',
+      'Kakslauttanen figure sur toutes les listes parce qu’elle le mérite. Le resort a ouvert à Saariselkä en 1973, à une époque où « hébergement touristique à Saariselkä » voulait dire une auberge en bois et où l’aurore se regardait depuis le parking, et il a inventé plus tard l’igloo de verre moderne.',
       'Il y a un embranchement : réservez les igloos Kelo-Glass, pas les igloos de verre classiques. Le Kelo-Glass marie le toit panoramique en verre à une structure en rondins chauffée, une kitchenette privée et une cheminée. Les classiques sont plus petits, plus fréquentés, et la salle de bain est à 50 mètres à pied, par −25 °C.',
       'L’écart de prix tourne autour de 200 €/nuit. Sur trois nuits, le Kelo-Glass rembourse son supplément rien qu’en vous évitant d’enfiler les bottes de neige à 4 h du matin.',
     ],
@@ -440,7 +440,7 @@ export const copyFR: SectionCopy = {
         body: [
           'Trois aéroports lapons couvrent l’essentiel de ce que vous réserverez. Rovaniemi (RVN) pour le village du père Noël et le sud, Kittilä (KTT) pour Levi et Ylläs, Ivalo (IVL) pour Saariselkä, Inari et le nord.',
           'Helsinki (HEL) → Laponie, c’est un vol intérieur de 90 minutes. Des vols directs depuis Londres, Berlin et Paris existent aussi de décembre à mars.',
-          'Trains : le train de nuit Helsinki–Rovaniemi est lent, mais l’aube sur Tornio est franchement belle et la voiture est pleine de locaux qui font le même trajet.',
+          'Trains : le train de nuit Helsinki–Rovaniemi est lent, mais la remontée de la côte du golfe de Botnie par Kemi est franchement belle et la voiture est pleine de locaux qui font le même trajet.',
         ],
       },
       {
@@ -522,7 +522,7 @@ export const copyFR: SectionCopy = {
         name: 'Novembre',
         pitch: 'La nuit polaire commence, la neige se stabilise',
         body:
-          'Le début d’hiver lapon le plus froid. La nuit polaire s’installe au nord de Sodankylä à la mi-mois. La neige commence à tenir fin novembre, d’ici la fin du mois, la plupart des stations et hôtels de neige ouvrent. Fin novembre, c’est le meilleur rapport qualité-prix absolu pour un long séjour.',
+          'Le début d’hiver lapon le plus froid. Dans l’extrême nord (Utsjoki), la nuit polaire s’installe dans les derniers jours du mois. La neige commence à tenir fin novembre, d’ici la fin du mois, la plupart des stations et hôtels de neige ouvrent. Fin novembre, c’est le meilleur rapport qualité-prix absolu pour un long séjour.',
         bestFor: ['Longs séjours à −50 % du tarif', 'Habitués qui connaissent le froid'],
         avoidIf: ['Premier voyage (neige irrégulière)'],
       },
@@ -562,7 +562,7 @@ export const copyFR: SectionCopy = {
         name: 'Avril',
         pitch: 'Neige de printemps + lumière',
         body:
-          'La neige est encore épaisse et le ski sur les fjells excellent. La saison des aurores se termine à la mi-avril, quand les nuits deviennent trop claires. Fin avril, c’est de nouveau la charnière, les tarifs baissent de 30 %, les adresses restent ouvertes, le soleil reste au-dessus de l’horizon plus de 16 heures.',
+          'La neige est encore épaisse et le ski sur les fjells excellent. La saison des aurores se termine au début du mois d’avril, quand les nuits deviennent trop claires. Fin avril, c’est de nouveau la charnière, les tarifs baissent de 30 %, les adresses restent ouvertes, le soleil reste au-dessus de l’horizon plus de 16 heures.',
         bestFor: ['Longs séjours ski de fin de saison', 'Ski de fond'],
         avoidIf: ['Voyages aurore avant tout'],
       },
@@ -572,7 +572,7 @@ export const copyFR: SectionCopy = {
     cheatKicker: 'L’antisèche des locaux',
     cheatH2: 'Trois semaines que les locaux réservent pour eux-mêmes.',
     cheatP1:
-      '<strong class="text-charcoal">Fin novembre (semaines 47–48).</strong> La neige vient de se stabiliser, la nuit polaire culmine, la saison des aurores bat son plein. Tarifs longue durée à −40 à −50 % du pic. Certaines adresses ne sont pas encore tout à fait ouvertes, confirmez avant de réserver.',
+      '<strong class="text-charcoal">Fin novembre (semaines 47–48).</strong> La neige vient de se stabiliser, les semaines les plus sombres de l’année commencent, la saison des aurores bat son plein. Tarifs longue durée à −40 à −50 % du pic. Certaines adresses ne sont pas encore tout à fait ouvertes, confirmez avant de réserver.',
     cheatP2:
       '<strong class="text-charcoal">Seconde quinzaine de janvier (semaines 3–4).</strong> La meilleure semaine de la saison sur le rapport aurore/coût. Foules de Noël parties, vacances de février pas commencées, jours qui rallongent, neige bien posée. C’est là que notre rédacteur prend ses congés.',
     cheatP3:
@@ -689,9 +689,9 @@ export const copyFR: SectionCopy = {
     {
       name: 'Kakslauttanen Arctic Resort',
       location: 'Saariselkä',
-      highlight: 'L’igloo de verre originel · 1973 · Kelo-Glass disponible',
+      highlight: 'L’igloo de verre originel · Kelo-Glass disponible',
       description:
-        'Le resort qui a inventé l’igloo de verre moderne en 1973. Choisissez le Kelo-Glass plutôt que les igloos de verre classiques, le Kelo marie le toit panoramique en verre à une structure en rondins chauffée, une kitchenette et une cheminée. Deux nuits minimum pour en tirer le meilleur.',
+        'Le resort qui a inventé l’igloo de verre moderne. Choisissez le Kelo-Glass plutôt que les igloos de verre classiques, le Kelo marie le toit panoramique en verre à une structure en rondins chauffée, une kitchenette et une cheminée. Deux nuits minimum pour en tirer le meilleur.',
     },
     {
       name: 'Levin Iglut',

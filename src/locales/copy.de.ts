@@ -18,7 +18,7 @@ export const copyDE: SectionCopy = {
     h1Line1: 'Lappland ist mehr',
     h1Line2: 'als eine Woche Urlaub.',
     lead:
-      'Blockhütten zur Wochenmiete, Designhotels in Rovaniemi, Glasiglus für die Wunsch-Nächte, und Wildnishütten jenseits der letzten Straße. Geprüfte Preise von',
+      'Blockhütten zur Wochenmiete, Designhotels in Rovaniemi, Glasiglus für die Nächte auf der Wunschliste und Wildnishütten jenseits der letzten Straße. Geprüfte Preise von',
     leadPriceRange: '140 € bis 1 500 €',
     liveLabel: 'Live-Verfügbarkeit · Trip.com-Suche',
     browseLongStays: 'Langzeitaufenthalte ansehen',
@@ -47,7 +47,7 @@ export const copyDE: SectionCopy = {
   },
   affiliateDisclosure:
     'Einige Links auf dieser Seite sind Affiliate-Links. Bei einer Buchung darüber erhalten wir eine Provision, ohne Aufpreis für Sie. Die Objekte werden nach Qualität ausgewählt, nicht nach Provision.',
-  langSwitchAria: { en: 'In English', fi: 'Suomeksi', de: 'Auf Deutsch', ja: '日本語で', es: 'En español', 'pt-BR': 'Em português', 'zh-CN': '简体中文', ko: 'Auf Koreanisch', fr: 'Auf Französisch', it: 'Auf Italienisch', nl: 'Auf Niederländisch', sv: 'Auf Schwedisch' },
+  langSwitchAria: { en: 'Auf Englisch', fi: 'Auf Finnisch', de: 'Auf Deutsch', ja: 'Auf Japanisch', es: 'Auf Spanisch', 'pt-BR': 'Auf Portugiesisch', 'zh-CN': 'Auf Chinesisch', ko: 'Auf Koreanisch', fr: 'Auf Französisch', it: 'Auf Italienisch', nl: 'Auf Niederländisch', sv: 'Auf Schwedisch' },
   marginNoteDefault: 'Randnotiz',
   comparison: {
     property: 'Unterkunft',
@@ -80,7 +80,7 @@ export const copyDE: SectionCopy = {
     fullH2A: 'Kommen Sie nach Lappland',
     fullH2B: 'zum Arbeiten?',
     fullP1:
-      'Viele Langzeitaufenthalte auf dieser Seite werden von Menschen gebucht, die für eine Skisaison, einen arktischen Ingenieursauftrag oder einen Remote-Work-Monat anreisten, und blieben. Wenn das auf Sie zutrifft, hat die Arbeitsseite ihre eigene Plattform.',
+      'Viele Langzeitaufenthalte auf dieser Seite werden von Menschen gebucht, die für eine Skisaison, einen arktischen Ingenieursauftrag oder einen Remote-Work-Monat anreisten und blieben. Wenn das auf Sie zutrifft, hat die Arbeitsseite ihre eigene Plattform.',
     fullP2A: 'LaplandWork.com',
     fullP2B:
       ' ist die zentrale Stellenbörse für Finnisch-Lappland, saisonale Hotellerie, Ski-Resort-Rollen, Husky-Zwinger-Stellen, Krankenhaus- und Ingenieursjobs in Rovaniemi, Levi, Saariselkä und Inari. Kostenfrei für Bewerber, drei Tarife für Arbeitgeber.',
@@ -101,7 +101,7 @@ export const copyDE: SectionCopy = {
     process: {
       title: 'Typischer Ablauf',
       body:
-        'E-Mail an Vermieter/Makler → Besichtigung vor Ort → Bewerbungsformular (palkkatodistus + luottotiedot) → 1–2 Monatskautionen + erste Monatsmiete → Schlüssel. 2–6 Wochen Vorlauf sind realistisch.',
+        'E-Mail an Vermieter/Makler → Besichtigung vor Ort → Bewerbungsformular (palkkatodistus = Gehaltsnachweis, luottotiedot = Bonitätsauskunft) → 1–2 Monatskautionen + erste Monatsmiete → Schlüssel. 2–6 Wochen Vorlauf sind realistisch.',
     },
     cost: {
       title: 'Kosten',
@@ -111,7 +111,7 @@ export const copyDE: SectionCopy = {
     abroad: {
       title: 'Kommen Sie aus dem Ausland?',
       body:
-        'EU/EWR-Bürger können frei mieten. Nicht-EU benötigen eine Aufenthaltsgenehmigung (Migri-Bearbeitung 1–4 Monate). Die Jobseite laplandwork.com behandelt Migri, Kela-Anmeldung, finnisches Bankkonto, Steuerkarte und die vollständige Umzugscheckliste.',
+        'EU/EWR-Bürger können frei mieten. Nicht-EU-Bürger benötigen eine Aufenthaltserlaubnis (Migri-Bearbeitung 1–4 Monate). Die Jobseite laplandwork.com behandelt Migri, Kela-Anmeldung, finnisches Bankkonto, Steuerkarte und die vollständige Umzugscheckliste.',
     },
     tags: {
       national: 'NATIONAL',
@@ -138,10 +138,10 @@ export const copyDE: SectionCopy = {
         ctaLabel: 'Langzeitaufenthalte ansehen',
       },
       {
-        forWho: 'Hochzeitstag · Ruhestand · Gruppenbuyout',
+        forWho: 'Hochzeitstag · Ruhestand · Gruppenbuchung',
         recommendation: 'Eine Wildnishütte',
         rationale:
-          'Eine Wildnishütte ist der exklusivste Weg, den Anlass zu feiern. Eine Iso-Syöte Eagle View Suite bietet Abgeschiedenheit oberhalb der Baumgrenze, und eine Wilderness Hotel Nangu Villa ergänzt sie um samisch geführte Aktivitäten am Inarisee, beide privat genug, dass sich die ganze Landschaft wie Ihre eigene anfühlt, und das ohne den Preis eines Full-Buyouts.',
+          'Eine Wildnishütte ist der exklusivste Weg, den Anlass zu feiern. Eine Iso-Syöte Eagle View Suite bietet Abgeschiedenheit oberhalb der Baumgrenze, und eine Wilderness Hotel Nangu Villa ergänzt sie um samisch geführte Aktivitäten am Inarisee, beide privat genug, dass sich die ganze Landschaft wie Ihre eigene anfühlt, und das ohne den Preis einer Exklusivbuchung.',
         ctaLabel: 'Wildnishütten ansehen',
       },
     ],
@@ -152,10 +152,10 @@ export const copyDE: SectionCopy = {
       'Lassen Sie sich in Finnisch-Lappland nieder, Blockhütten zur Wochenmiete, Designhotels in Rovaniemi, ikonische Glasiglus und Wildnishütten im Norden.',
     schemaName: 'StayInLapland, Langzeitaufenthalte und Boutique-Hotels in Finnisch-Lappland',
     breadcrumbHome: 'Startseite',
-    stats: { stays: 'Kuratierte Unterkünfte', bases: 'Lappland-Basen', categories: 'Arten zu wohnen', months: 'Bewertete Monate' },
+    stats: { stays: 'Kuratierte Unterkünfte', bases: 'Standorte in Lappland', categories: 'Arten zu wohnen', months: 'Bewertete Monate' },
     intro: {
       p1: 'Die meisten Listen „Beste Unterkünfte in Lappland“ setzen ein Glasiglu an die Spitze, zwanzig weitere Glasiglus folgen in ähnlicher Reihenfolge, und kein einziger Satz dazu, ob die Verfasser je länger als zwei Nächte dort übernachtet haben. Dieser Leitfaden geht den umgekehrten Weg.',
-      p2: 'Lappland-Unterkünfte werden in vier Kategorien gegliedert, Langzeitmieten, Hotels, Glasiglus und Wildnishütten, und unten sind die sechzehn Häuser aufgeführt, die ihren Platz verdienen. Daraus lässt sich eine Reise bauen: eine Woche Blockhütte bei Levi, zwei Stadtnächte in einem Designhotel in Rovaniemi, eine einzige Glasiglu-Nacht vor dem Heimflug. So belohnt Lappland einen längeren Aufenthalt wirklich.',
+      p2: 'Lappland-Unterkünfte werden in vier Kategorien gegliedert, Langzeitmieten, Hotels, Glasiglus und Wildnishütten, und unten sind die sechzehn Häuser aufgeführt, die ihren Platz verdienen. Daraus lässt sich eine Reise zusammenstellen: eine Woche Blockhütte bei Levi, zwei Stadtnächte in einem Designhotel in Rovaniemi, eine einzige Glasiglu-Nacht vor dem Heimflug. So belohnt Lappland einen längeren Aufenthalt wirklich.',
       p3: 'Drei Dinge tut dieser Leitfaden nicht: Preise aggregieren, Bewertungen recyceln oder so tun, als deckten wir Orte ab, an denen niemand aus dem Netzwerk je wirklich übernachtet hat.',
     },
     authorNote:
@@ -165,7 +165,7 @@ export const copyDE: SectionCopy = {
       h2A: 'Wählen Sie eine.',
       h2B: 'Oder verbinden Sie zwei.',
       lead:
-        'Wählen Sie die Kategorie, die zu Ihrer Reise passt. Dann wählen Sie einen Ort. Langzeit-Leser kombinieren am häufigsten zwei, eine Woche Hüttenbasis und zwei Kontrastnächte.',
+        'Wählen Sie die Kategorie, die zu Ihrer Reise passt. Dann wählen Sie einen Ort. Leser mit Langzeitplänen kombinieren am häufigsten zwei, eine Woche Hüttenbasis und zwei Kontrastnächte.',
     },
     propertyWord: 'Unterkunft',
     propertiesWord: 'Unterkünfte',
@@ -237,7 +237,7 @@ export const copyDE: SectionCopy = {
     picksH2: 'Kuratiert, nicht aggregiert.',
     pullQuote: {
       text:
-        'Rovaniemi wurde nach 1944 dreimal wieder aufgebaut, beim dritten Mal von Alvar Aalto, der den Stadtplan in Form eines Rentiergeweihs zeichnete. Das Arctic Light Hotel sitzt im Geweih, in einem Gebäude von 1939, das alle drei Wiederaufbauten überstand.',
+        'Rovaniemi wurde nach 1944 dreimal wieder aufgebaut, beim dritten Mal von Alvar Aalto, der den Stadtplan in Form eines Rentiergeweihs zeichnete. Das Arctic Light Hotel steht im Geweih, in einem Gebäude von 1939, das alle drei Wiederaufbauten überstand.',
       attr: 'Architectural Record · Bericht zum Arctic Light Hotel',
     },
     glanceKicker: 'Alle fünf auf einen Blick',
@@ -274,17 +274,17 @@ export const copyDE: SectionCopy = {
       eyebrow: 'Das ikonische Format Lapplands',
       title: 'Glasiglus in Finnisch-Lappland.',
       subtitle:
-        'Die finnische Glasdachkuppel wurde 1973 in Saariselkä erfunden. Heute verdienen vier Häuser den Namen, und es gibt einen spürbaren Unterschied zwischen ihnen.',
+        'Die finnische Glasdachkuppel wurde in Saariselkä erfunden. Heute verdienen vier Häuser den Namen, und es gibt einen spürbaren Unterschied zwischen ihnen.',
     },
     authorNote:
       'Vier Resorts gegengeprüft anhand der veröffentlichten Betreiberangaben und aktueller Gästebewertungen. Preise zuletzt geprüft: Februar 2026.',
     pickWhy: [
-      'Kakslauttanen steht auf jeder Liste, weil es dorthin gehört. Das Resort erfand 1973 das moderne Glasiglu, zu einer Zeit, als „touristische Unterkunft in Saariselkä“ ein hölzernes Hostel meinte und man die Nordlichter vom Parkplatz aus betrachtete.',
+      'Kakslauttanen steht auf jeder Liste, weil es dorthin gehört. Das Resort begann 1973 in Saariselkä, zu einer Zeit, als „touristische Unterkunft in Saariselkä“ ein hölzernes Hostel meinte und man die Nordlichter vom Parkplatz aus betrachtete, und erfand später das moderne Glasiglu.',
       'Es gibt jedoch eine Gabelung: Buchen Sie die Kelo-Glas-Iglus, nicht die klassischen Glasiglus. Kelo-Glas verbindet ein Panorama-Glasdach mit einer beheizten Blockstruktur, einer eigenen Kochnische und einem Kamin. Die klassischen Glasiglus sind kleiner, voller, und das Bad ist ein 50-Meter-Marsch bei -25 °C.',
-      'Die Preisdifferenz liegt bei rund 200 €/Nacht. Über drei Nächte verdient das Kelo-Glas seinen Aufpreis allein dadurch, nicht um 4 Uhr früh Schneestiefel anziehen zu müssen.',
+      'Die Preisdifferenz liegt bei rund 200 €/Nacht. Über drei Nächte verdient das Kelo-Glas seinen Aufpreis allein dadurch, dass man nicht um 4 Uhr früh Schneestiefel anziehen muss.',
     ],
     pickCaveat:
-      'Die klassischen Glasiglus sind rund 30 % günstiger, das Erlebnis ist jedoch spürbar schlechter. Wer bei 400 €/Nacht obergrenzt, schaue sich Aurora Village oder Aurora Pyramids an, derselbe Himmel, oft eine bessere See- oder Wildnislage.',
+      'Die klassischen Glasiglus sind rund 30 % günstiger, das Erlebnis ist jedoch spürbar schlechter. Wer bei 400 €/Nacht die Grenze zieht, sollte sich Aurora Village oder Aurora Pyramids ansehen, derselbe Himmel, oft eine bessere See- oder Wildnislage.',
     pullQuote: {
       text:
         'Das erste Glasiglu wurde gebaut, damit Gäste die Nordlichter sehen, ohne bei -30 °C draußen zu stehen. Fünfzig Jahre später ist das immer noch das ganze Konzept, und was jeder Nachahmer falsch macht, ist das, was passiert, wenn die Aurora wieder weg ist.',
@@ -330,8 +330,8 @@ export const copyDE: SectionCopy = {
     authorNote:
       'Die Angaben zu beiden Objekten wurden anhand der veröffentlichten Betreiberinformationen und aktueller Gästebewertungen geprüft.',
     pickWhy: [
-      'Die Iso-Syöte Eagle View Suites liegen auf 432 m auf dem südlichsten echten Fjell Finnlands, kieferngebaute Suiten mit Nordlichtbeobachtung oberhalb der Baumgrenze und ohne den langen Flug in den Norden.',
-      'Die Glasfronten weisen zum offenen Himmel, sodass sich der Aurorabogen in klaren Nächten vom Bett aus lesen lässt. Nordlichter beobachtet man von der eigenen Suite auf dem Bergrücken statt von einem gemeinsamen Unterstand, Privatsphäre ohne Full-Buyout-Verpflichtung.',
+      'Die Iso-Syöte Eagle View Suites liegen auf 432 m auf dem südlichsten echten Fjell Finnlands, aus Kiefernholz gebaute Suiten mit Nordlichtbeobachtung oberhalb der Baumgrenze und ohne den langen Flug in den Norden.',
+      'Die Glasfronten weisen zum offenen Himmel, sodass sich der Aurorabogen in klaren Nächten vom Bett aus lesen lässt. Nordlichter beobachtet man von der eigenen Suite auf dem Bergrücken statt von einem gemeinsamen Unterstand, Privatsphäre, ohne gleich das ganze Haus buchen zu müssen.',
       'Und es ist die am einfachsten erreichbare ernsthafte Wildnishütte: 90 Minuten vom Flughafen Oulu, was sie zum seltenen Refugium macht, das sogar für eine kurze Reise funktioniert.',
     ],
     pickCaveat:
@@ -354,20 +354,20 @@ export const copyDE: SectionCopy = {
     ],
     marginLabel: 'Aurora-Weckdienst in Muotka',
     marginBody:
-      'Das Wilderness Hotel Muotka beschäftigt einen diensthabenden Nordlichtjäger, der den Kp-Index überwacht und persönlich an die Türen klopft, sobald die Aurora aufzieht. Es ist das beste Einzelmerkmal jedes Objekts in diesem Leitfaden und den Preisaufschlag bei Einnachtsreisen wert.',
+      'Das Wilderness Hotel Muotka beschäftigt einen diensthabenden Nordlichtjäger, der den Kp-Index überwacht und persönlich an die Türen klopft, sobald die Aurora aufzieht. Es ist das beste Einzelmerkmal jedes Objekts in diesem Leitfaden und den Preisaufschlag wert, wenn Sie nur eine Nacht bleiben.',
     counterKicker: 'Ehrliche Gegenempfehlung',
     counterH2: 'Wildnishütten sind nicht für jeden.',
     counterP1:
-      'Beide Hütten liegen 1–3 Stunden Transfer vom nächsten Flughafen. Bei Reisen unter drei Nächten ist der Zeitaufwand für die Anreise überproportional.',
+      'Zu beiden Hütten sind es 1–3 Stunden Transfer vom nächsten Flughafen. Bei Reisen unter drei Nächten ist der Zeitaufwand für die Anreise überproportional.',
     counterP2:
-      'Für Erstreisende in der Arktis: Erst eine Tour nach Rovaniemi oder Saariselkä. Eine Wildnishütte als Full-Buyout ist verschwendet an jemanden, der -25 °C-Kleidung noch lernen muss.',
+      'Für Erstreisende in der Arktis: Erst eine Tour nach Rovaniemi oder Saariselkä. Eine Wildnishütte, exklusiv für die eigene Gruppe gebucht, ist an jemanden verschwendet, der -25 °C-Kleidung erst noch lernen muss.',
     seeLong: 'Langzeitaufenthalte ansehen',
     browseAll: 'Trip.com-Verfügbarkeit ansehen',
   },
   longStays: {
     metaTitle: 'Langzeitaufenthalte in Finnisch-Lappland | StayInLapland',
     metaDescription:
-      'Fünf Langzeitobjekte in Lappland für Mieten ab einer Woche, Arctic TreeHouse Suiten, Levi-Residenzen, Ounasvaara-Chalets, Pyhä-Blockhütten, Inarisee-Villen.',
+      'Fünf Lappland-Objekte für Mieten ab einer Woche: Arctic-TreeHouse-Suiten, Levi-Residenzen, Ounasvaara-Chalets, Pyhä-Blockhütten, Inarisee-Villen.',
     breadcrumb: 'Langzeitaufenthalte',
     pageHero: {
       eyebrow: 'Fünf Langzeitobjekte',
@@ -398,10 +398,10 @@ export const copyDE: SectionCopy = {
     weeklyP1:
       'Über die Objekte auf dieser Seite liegt der Wochenpreis im Schnitt <strong>23 % günstiger pro Nacht</strong> als der angezeigte Übernachtungspreis. Levi Residences fällt um 30 %, Pyhä Bear’s Lodge um 18 %, Arctic TreeHouse um 25 %. Die meisten Häuser werben nicht damit, der Rabatt erscheint im Buchungssystem, sobald 7+ Nächte gewählt werden.',
     weeklyP2:
-      'Die Übergangswochen, <strong>Mitte November</strong> (kurz bevor sich der Schnee stabilisiert) und <strong>Ende April</strong> (kurz nach der Schmelze), geben weitere 30–50 % oben drauf nach. Die Nordlichter sind in beiden Fenstern aktiv. Das ist der Sweet Spot für Langzeitaufenthalte mit flexiblem Arbeitskalender.',
+      'Die Übergangswochen, <strong>Mitte November</strong> (kurz bevor sich der Schnee stabilisiert) und <strong>Ende April</strong> (kurz nach der Schmelze), bringen weitere 30–50 % Nachlass obendrauf. Die Nordlichter sind in beiden Fenstern aktiv. Das ist der Sweet Spot für Langzeitaufenthalte mit flexiblem Arbeitskalender.',
     marginLabel: 'Buchungstaktik',
     marginBody:
-      'Bei einem vierwöchigen Aufenthalt kann die Aufteilung auf zwei Häuser eine Einzelbuchung schlagen, Sie umgehen den „Hochwochen“-Aufschlag zu Weihnachten und Fasching und sehen tatsächlich zwei Seiten Lapplands. Der Transfertag dauert einen halben Tag; das gesparte Geld zahlt meist zwei zusätzliche Nächte anderswo.',
+      'Bei einem vierwöchigen Aufenthalt kann die Aufteilung auf zwei Häuser eine Einzelbuchung schlagen, Sie umgehen den „Hochwochen“-Aufschlag zu Weihnachten und in den Februar-Skiferien und sehen tatsächlich zwei Seiten Lapplands. Der Transfertag dauert einen halben Tag; das gesparte Geld zahlt meist zwei zusätzliche Nächte anderswo.',
     counterKicker: 'Ehrliche Gegenempfehlung',
     counterH2: 'Wann KEIN Langzeitaufenthalt gebucht werden sollte.',
     counterP1:
@@ -417,7 +417,7 @@ export const copyDE: SectionCopy = {
   bookingGuide: {
     metaTitle: 'Lappland-Buchungsleitfaden | StayInLapland',
     metaDescription:
-      'Praktischer Lappland-Buchungsleitfaden, wann anreisen für die besten Nordlichter, Anreise, Packliste, tatsächliche Kosten, Stornobedingungen und Insider-Tipps.',
+      'Praktischer Lappland-Buchungsleitfaden: wann anreisen für die besten Nordlichter, Anreise, Packliste, echte Kosten, Stornobedingungen, Insider-Tipps.',
     breadcrumb: 'Buchungsleitfaden',
     pageHero: {
       eyebrow: 'Eine echte Reise planen',
@@ -439,14 +439,14 @@ export const copyDE: SectionCopy = {
         body: [
           'Drei Flughäfen in Lappland decken das meiste ab. Rovaniemi (RVN) für das Weihnachtsmanndorf und den Süden, Kittilä (KTT) für Levi und Ylläs, Ivalo (IVL) für Saariselkä, Inari und den Norden.',
           'Helsinki (HEL) → Lappland ist ein 90-minütiger Inlandsflug. Direktflüge aus London, Berlin und Paris gibt es ebenfalls von Dezember bis März.',
-          'Bahn: Der Nachtzug Helsinki–Rovaniemi ist langsam, aber die Morgendämmerung über Tornio ist tatsächlich schön und der Wagen voller Einheimischer auf derselben Reise.',
+          'Bahn: Der Nachtzug Helsinki–Rovaniemi ist langsam, aber die Fahrt die Küste des Bottnischen Meerbusens hinauf über Kemi ist tatsächlich schön und der Wagen voller Einheimischer auf derselben Reise.',
         ],
       },
       {
         title: 'Packliste',
         body: [
-          'Die meisten Häuser stellen arktische Außenkleidung (-30 °C-Anzüge, Stiefel, Handschuhe, Mützen) inklusive oder gegen kleine Tagesgebühr. Bestätigen Sie das, bevor Sie mit einem Koffer voller Skiausrüstung fliegen.',
-          'Schichten sind wichtiger als Dicke, Merino-Basis + Fleece-Mittellage + winddichte Schale. Baumwolle tötet.',
+          'Die meisten Häuser stellen arktische Außenkleidung (-30 °C-Anzüge, Stiefel, Handschuhe, Mützen) kostenlos oder gegen eine kleine Tagesgebühr zur Verfügung. Bestätigen Sie das, bevor Sie mit einem Koffer voller Skiausrüstung fliegen.',
+          'Schichten sind wichtiger als Dicke, Merino-Basis + Fleece-Mittellage + winddichte Schale. Baumwolle hat draußen nichts zu suchen.',
           'Kameras: Reserveakkus in der Innenjacke tragen. Kälte leert sie schnell.',
         ],
       },
@@ -455,7 +455,7 @@ export const copyDE: SectionCopy = {
         body: [
           'Langzeit-Blockhütte (Woche): 140–280 €/Nacht, Platz für 4–6.',
           'Boutique-Hotel: 140–420 €/Nacht, Frühstück meist inklusive.',
-          'Glasiglu, Hochsaison: 400–1500 €/Nacht für zwei.',
+          'Glasiglu, Hochsaison: 400–1 500 €/Nacht für zwei.',
           'Wildnishütten-Suite: 220–950 €/Nacht je nach Haus.',
           'Aktivitäten (Husky-Safari, Schneemobil, Nordlichtjagd) typisch 120–200 € pro Person und Ausflug obendrauf.',
         ],
@@ -464,8 +464,8 @@ export const copyDE: SectionCopy = {
         title: 'Stornobedingungen',
         body: [
           'Die meisten Häuser in Lappland sind in Hochsaisonwochen zu nicht erstattbaren Raten übergegangen. Lesen Sie das Kleingedruckte vor dem Klick auf „Buchen“.',
-          'Eine Reiseversicherung mit „Stornierung aus beliebigem Grund“ ist bei Reisen über 2 000 € echt sinnvoll. Nordlichtjäger stornieren laufend wegen des Wetters.',
-          'Unsere Buchungspartner halten die bei der Buchung angezeigten Stornobedingungen ein, buchen Sie über die Weiterleitung dieser Seite, um die Rate sichtbar und konsistent zu halten.',
+          'Eine Reiseversicherung mit „Stornierung aus beliebigem Grund“ ist bei Reisen über 2 000 € wirklich sinnvoll. Nordlichtjäger stornieren laufend wegen des Wetters.',
+          'Unsere Buchungspartner halten die bei der Buchung angezeigten Stornobedingungen ein, buchen Sie über die Weiterleitung dieser Seite, um den Preis sichtbar und konsistent zu halten.',
         ],
       },
       {
@@ -513,7 +513,7 @@ export const copyDE: SectionCopy = {
         name: 'Oktober',
         pitch: 'Ruhige Nebensaison',
         body:
-          'Erste Schneeschauer, der Boden bleibt aber meist erst Ende des Monats weiß. Hotels in Nebensaison-Raten (-30 % von der Spitze), Nordlichter aktiv, sehr wenige Touristen. Das günstigste Nordlicht-Fenster mit vollständiger Aktivitäts-Infrastruktur.',
+          'Erste Schneeschauer, der Boden bleibt aber meist erst Ende des Monats weiß. Hotels zu Nebensaisonpreisen (30 % unter dem Spitzenpreis), Nordlichter aktiv, sehr wenige Touristen. Das günstigste Nordlicht-Fenster mit vollständiger Aktivitäts-Infrastruktur.',
         bestFor: ['Nordlichtjäger mit Budget', 'Langzeit-Anreise vor der Hochsaison'],
         avoidIf: ['Sie wollen Ski- oder Schneemobilgarantien'],
       },
@@ -521,8 +521,8 @@ export const copyDE: SectionCopy = {
         name: 'November',
         pitch: 'Polarnacht beginnt, Schnee stabilisiert sich',
         body:
-          'Kältester Start in den Lappland-Winter. Die Polarnacht setzt nördlich von Sodankylä Mitte des Monats ein. Schnee bleibt Ende November liegen, bis Monatsende öffnen die meisten Resorts und Schneehotels. Ende November ist absolute Spitzenklasse für Langzeitaufenthalte.',
-        bestFor: ['Langzeitaufenthalte zu -50 %', 'Wiederkehrende Gäste, die die Kälte kennen'],
+          'Kältester Start in den Lappland-Winter. Im hohen Norden (Utsjoki) beginnt die Polarnacht in den letzten Tagen des Monats. Schnee bleibt Ende November liegen, bis Monatsende öffnen die meisten Resorts und Schneehotels. Ende November bietet das mit Abstand beste Preis-Leistungs-Verhältnis für Langzeitaufenthalte.',
+        bestFor: ['Langzeitaufenthalte 50 % unter Spitzenpreis', 'Wiederkehrende Gäste, die die Kälte kennen'],
         avoidIf: ['Erstreisende (Schneeunsicherheit)'],
       },
       {
@@ -537,7 +537,7 @@ export const copyDE: SectionCopy = {
         name: 'Januar',
         pitch: 'Die lokale Wahl',
         body:
-          'Die zweite Januarhälfte ist der ruhige Sweet Spot, Spitzenpreise sind zurückgegangen, die Tage werden spürbar länger, der Schnee ist stabil, die Nordlichter sind besonders aktiv. Die Weihnachts-Menge ist abgereist, die Februar-Schulferien-Menge noch nicht angekommen.',
+          'Die zweite Januarhälfte ist der ruhige Sweet Spot, Spitzenpreise sind zurückgegangen, die Tage werden spürbar länger, der Schnee ist stabil, die Nordlichter sind besonders aktiv. Die Weihnachtsgäste sind abgereist, die Februar-Schulferien haben noch nicht begonnen.',
         bestFor: ['Langzeitaufenthalte', 'Flitterwochen', 'Nordlicht-Fotografie'],
         avoidIf: ['Sie brauchen irgendeine Form warmer Witterung'],
       },
@@ -553,7 +553,7 @@ export const copyDE: SectionCopy = {
         name: 'März',
         pitch: 'Das Licht kehrt zurück',
         body:
-          'Die Tage werden rasch länger, bis Monatsende 13 Stunden Tageslicht. Nordlichter weiterhin stark in dunklen Morgen- und späten Abendstunden. Frühlingsskifahren an den nach Süden gerichteten Fjells. Der fotogenste Skimonat.',
+          'Die Tage werden rasch länger, bis Monatsende 13 Stunden Tageslicht. Nordlichter weiterhin stark in dunklen Morgen- und späten Abendstunden. Frühjahrsskifahren an den Südhängen der Fjells. Der fotogenste Skimonat.',
         bestFor: ['Ski-in-Langzeitaufenthalte', 'Wer Licht + Nordlichter will'],
         avoidIf: ['Fotografen, die wegen der Polarnacht kamen'],
       },
@@ -561,7 +561,7 @@ export const copyDE: SectionCopy = {
         name: 'April',
         pitch: 'Frühlingsschnee + Licht',
         body:
-          'Schnee weiterhin tief, Skifahren auf den Fjells weiterhin ausgezeichnet. Die Nordlicht-Saison endet Mitte April, da die Nächte zu hell werden. Ende April ist erneut Übergangszeit, Preise fallen um 30 %, Häuser weiter geöffnet, Sonne 16+ Stunden über dem Horizont.',
+          'Schnee weiterhin tief, Skifahren auf den Fjells weiterhin ausgezeichnet. Die Nordlicht-Saison endet Anfang April, da die Nächte zu hell werden. Ende April ist erneut Übergangszeit, Preise fallen um 30 %, Häuser weiter geöffnet, Sonne 16+ Stunden über dem Horizont.',
         bestFor: ['Spätsaison-Ski-Langzeitaufenthalte', 'Langlauf'],
         avoidIf: ['Nordlicht-Fokus'],
       },
@@ -571,7 +571,7 @@ export const copyDE: SectionCopy = {
     cheatKicker: 'Der lokale Spickzettel',
     cheatH2: 'Drei Wochen, die sich Einheimische selbst sichern.',
     cheatP1:
-      '<strong class="text-charcoal">Ende November (Woche 47–48).</strong> Der Schnee hat sich gerade stabilisiert, die Polarnacht erreicht ihren Höhepunkt, die Nordlicht-Saison ist voll aktiv. Langzeit-Preise 40–50 % unter Spitze. Einige Häuser noch nicht vollständig geöffnet, vor Buchung prüfen.',
+      '<strong class="text-charcoal">Ende November (Woche 47–48).</strong> Der Schnee hat sich gerade stabilisiert, die dunkelsten Wochen des Jahres beginnen, die Nordlicht-Saison ist voll aktiv. Langzeit-Preise 40–50 % unter Spitze. Einige Häuser noch nicht vollständig geöffnet, vor Buchung prüfen.',
     cheatP2:
       '<strong class="text-charcoal">Zweite Januarhälfte (Woche 3–4).</strong> Die einzige beste Nordlicht-vs-Kosten-Woche der Saison. Weihnachtsgäste weg, Februar-Ferien noch nicht begonnen, Tage werden länger, Schnee voll gelegt. Genau dann nimmt unser Redakteur Urlaub.',
     cheatP3:
@@ -688,9 +688,9 @@ export const copyDE: SectionCopy = {
     {
       name: 'Kakslauttanen Arctic Resort',
       location: 'Saariselkä',
-      highlight: 'Das originale Glasiglu · 1973 · Kelo-Glas verfügbar',
+      highlight: 'Das originale Glasiglu · Kelo-Glas verfügbar',
       description:
-        'Das Resort, das 1973 das moderne Glasiglu erfand. Wählen Sie Kelo-Glas statt der klassischen Glasiglus, Kelo verbindet das Panorama-Glasdach mit einer beheizten Blockstruktur, einer Kochnische und einem Kamin. Zwei-Nächte-Minimum holt das Beste heraus.',
+        'Das Resort, das das moderne Glasiglu erfand. Wählen Sie Kelo-Glas statt der klassischen Glasiglus, Kelo verbindet das Panorama-Glasdach mit einer beheizten Blockstruktur, einer Kochnische und einem Kamin. Zwei-Nächte-Minimum holt das Beste heraus.',
     },
     {
       name: 'Levin Iglut',

@@ -16,7 +16,7 @@ const META: Record<Lang, { title: string; description: string }> = {
   de: {
     title: 'Cookie-Richtlinie | StayInLapland',
     description:
-      'Cookie-Richtlinie von StayInLapland: welche Cookies wir setzen (Google Analytics 4, Consent-Status, Newsletter-Popup-Status), Opt-out und Ihre DSGVO-Rechte.',
+      'Cookie-Richtlinie von StayInLapland: welche Cookies wir setzen (Google Analytics 4, Consent, Newsletter-Popup), Opt-out und Ihre DSGVO-Rechte.',
   },
   ja: {
     title: 'クッキーポリシー | StayInLapland',

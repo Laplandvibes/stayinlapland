@@ -224,7 +224,7 @@ export const copyEN: SectionCopy = {
     },
     authorNote: 'Five properties cross-checked against operator-published details and recent guest reviews across the 2025/26 season.',
     introP1:
-      'Lapland has plenty of mid-tier chain hotels (Scandic, Cumulus, Sokos) that do the basics well at €90–140/night. They are not listed here; their booking decision is largely “closest to airport, cheapest week.”',
+      'Lapland has plenty of mid-tier chain hotels (Scandic, Sokos) that do the basics well at €90–140/night. They are not listed here; their booking decision is largely “closest to airport, cheapest week.”',
     introP2:
       'The five hotels below earn their spot for a different reason: design, architecture, view, or service mix. They are the right answer when you want a hotel that is part of why you came, not just a base.',
     picksKicker: 'Five picks',
@@ -267,11 +267,11 @@ export const copyEN: SectionCopy = {
       eyebrow: 'The iconic Lapland format',
       title: 'Glass Igloos in Finnish Lapland.',
       subtitle:
-        'The Finnish glass-roofed dome was invented in Saariselkä in 1973. Four properties earn the name today, and there is a meaningful difference between them.',
+        'The Finnish glass-roofed dome was invented in Saariselkä. Four properties earn the name today, and there is a meaningful difference between them.',
     },
     authorNote: 'Four resorts cross-checked against operator-published details and recent guest reviews. Prices last checked: February 2026.',
     pickWhy: [
-      'Kakslauttanen is on every list because it deserves to be there. The resort invented the modern glass igloo in 1973, at a time when “tourist accommodation in Saariselkä” meant a wooden hostel and the aurora was something you watched from the parking lot.',
+      'Kakslauttanen is on every list because it deserves to be there. The resort started in Saariselkä in 1973, at a time when “tourist accommodation in Saariselkä” meant a wooden hostel and the aurora was something you watched from the parking lot, and went on to invent the modern glass igloo.',
       "There is a fork: book the Kelo-Glass igloos, not the classic Glass Igloos. Kelo-Glass pairs a panoramic glass roof with a heated log structure, a private kitchenette and a fireplace. The classic Glass Igloos are smaller, busier, and the bathroom is a 50-metre walk in -25°C.",
       "The price difference is roughly €200/night. Across three nights, the Kelo-Glass earns its premium back in not having to put on snow boots at 4 AM.",
     ],

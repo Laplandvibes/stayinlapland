@@ -234,7 +234,7 @@ export const copyFR: SectionCopy = {
     },
     authorNote: 'Cinq adresses recoupées avec les informations publiées par les exploitants et des avis récents de voyageurs au fil de la saison 2025/26.',
     introP1:
-      'La Laponie ne manque pas de chaînes de milieu de gamme, Scandic, Cumulus, Sokos, qui font correctement l’essentiel entre 90 et 140 €/nuit. Elles ne figurent pas ici : on les choisit surtout pour « la plus proche de l’aéroport, la moins chère cette semaine-là ».',
+      'La Laponie ne manque pas de chaînes de milieu de gamme, Scandic, Sokos, qui font correctement l’essentiel entre 90 et 140 €/nuit. Elles ne figurent pas ici : on les choisit surtout pour « la plus proche de l’aéroport, la moins chère cette semaine-là ».',
     introP2:
       'Les cinq hôtels ci-dessous gagnent leur place pour une autre raison, le design, l’architecture, la vue ou l’équilibre du service. Ce sont les bonnes adresses quand on veut un hôtel qui fait partie des raisons du voyage, pas seulement un point de chute.',
     picksKicker: 'Cinq choix',

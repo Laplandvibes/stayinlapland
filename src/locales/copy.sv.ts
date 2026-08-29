@@ -217,7 +217,7 @@ export const copySV: SectionCopy = {
     authorNote:
       'Fem boenden dubbelkollade mot publicerad information från operatörerna och färska gästrecensioner under säsongen 2025/26.',
     introP1:
-      'Lappland har gott om kedjehotell i mellanklass, Scandic, Cumulus, Sokos, som gör grunden bra för 90–140 €/natt. De står inte med här; bokningsbeslutet där handlar mest om ”närmast flygplatsen, billigaste veckan”.',
+      'Lappland har gott om kedjehotell i mellanklass, Scandic, Sokos, som gör grunden bra för 90–140 €/natt. De står inte med här; bokningsbeslutet där handlar mest om ”närmast flygplatsen, billigaste veckan”.',
     introP2:
       'De fem hotellen nedan förtjänar sin plats av ett annat skäl, design, arkitektur, utsikt eller tjänstemix. De är rätt svar när du vill ha ett hotell som är en del av resans syfte, inte bara en bas.',
     picksKicker: 'Fem val',

@@ -236,7 +236,7 @@ export const copyPTBR: SectionCopy = {
     authorNote:
       'Cinco propriedades cruzadas com as informações publicadas pelos operadores e avaliações recentes de hóspedes na temporada 2025/26.',
     introP1:
-      'A Lapônia tem vários hotéis de rede de gama média, Scandic, Cumulus, Sokos, que cumprem bem o básico por 90–140 €/noite. Eles não entram nesta lista; a decisão de reservá-los se resume a "o mais perto do aeroporto, o mais barato naquela semana".',
+      'A Lapônia tem vários hotéis de rede de gama média, Scandic, Sokos, que cumprem bem o básico por 90–140 €/noite. Eles não entram nesta lista; a decisão de reservá-los se resume a "o mais perto do aeroporto, o mais barato naquela semana".',
     introP2:
       'Os cinco hotéis abaixo conquistam seu lugar por outro motivo, design, arquitetura, vista ou combinação de serviços. São a resposta certa quando você quer um hotel que faça parte do motivo da viagem, não apenas uma base.',
     picksKicker: 'Cinco escolhas',

@@ -230,7 +230,7 @@ export const copyDE: SectionCopy = {
     authorNote:
       'Fünf Objekte gegengeprüft anhand der veröffentlichten Betreiberangaben und aktueller Gästebewertungen in der Saison 2025/26.',
     introP1:
-      'In Lappland gibt es viele Kettenhotels mittlerer Preisklasse, Scandic, Cumulus, Sokos, die für 90–140 €/Nacht solide Grundleistung bieten. Sie werden hier nicht gelistet; ihre Buchungsentscheidung läuft meist auf „nächstgelegen zum Flughafen, günstigste Woche“ hinaus.',
+      'In Lappland gibt es viele Kettenhotels mittlerer Preisklasse, Scandic, Sokos, die für 90–140 €/Nacht solide Grundleistung bieten. Sie werden hier nicht gelistet; ihre Buchungsentscheidung läuft meist auf „nächstgelegen zum Flughafen, günstigste Woche“ hinaus.',
     introP2:
       'Die fünf Hotels unten verdienen ihren Platz aus einem anderen Grund, Design, Architektur, Aussicht oder Servicemix. Sie sind die richtige Wahl, wenn das Hotel selbst Teil des Reisegrundes ist und nicht nur Basislager.',
     picksKicker: 'Fünf Empfehlungen',

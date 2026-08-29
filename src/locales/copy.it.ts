@@ -202,7 +202,7 @@ export const copyIT: SectionCopy = {
     authorNote:
       'Cinque strutture verificate con le informazioni pubblicate dai gestori e le recensioni recenti degli ospiti durante la stagione 2025/26.',
     introP1:
-      'La Lapponia ha numerose catene di hotel di fascia media, Scandic, Cumulus, Sokos, che fanno bene le basi a 90–140 €/notte. Non sono elencate qui; la loro scelta è in gran parte "il più vicino all’aeroporto, la settimana più economica".',
+      'La Lapponia ha numerose catene di hotel di fascia media, Scandic, Sokos, che fanno bene le basi a 90–140 €/notte. Non sono elencate qui; la loro scelta è in gran parte "il più vicino all’aeroporto, la settimana più economica".',
     introP2:
       'I cinque hotel qui sotto si guadagnano il loro posto per un motivo diverso, design, architettura, vista o mix di servizi. Sono la risposta giusta quando si vuole un hotel che sia parte del motivo per cui si è venuti, non solo una base.',
     picksKicker: 'Cinque selezioni',

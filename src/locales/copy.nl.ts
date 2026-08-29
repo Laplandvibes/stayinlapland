@@ -215,7 +215,7 @@ export const copyNL: SectionCopy = {
     authorNote:
       'Vijf accommodaties dubbel gecheckt met gepubliceerde informatie van de exploitanten en recente gastbeoordelingen in het seizoen 2025/26.',
     introP1:
-      'Lapland heeft genoeg ketenhotels in het middensegment, Scandic, Cumulus, Sokos, die de basis goed doen voor €90–140/nacht. Die staan hier niet vermeld; de boekingsbeslissing daar is grotendeels "dichtst bij de luchthaven, goedkoopste week".',
+      'Lapland heeft genoeg ketenhotels in het middensegment, Scandic, Sokos, die de basis goed doen voor €90–140/nacht. Die staan hier niet vermeld; de boekingsbeslissing daar is grotendeels "dichtst bij de luchthaven, goedkoopste week".',
     introP2:
       'De vijf hotels hieronder verdienen hun plek om een andere reden, design, architectuur, uitzicht of dienstenmix. Ze zijn het juiste antwoord wanneer u een hotel wilt dat onderdeel is van de reden van uw reis, niet alleen een basis.',
     picksKicker: 'Vijf keuzes',

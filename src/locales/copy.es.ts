@@ -236,7 +236,7 @@ export const copyES: SectionCopy = {
     authorNote:
       'Cinco alojamientos contrastados con la información publicada por los operadores y reseñas recientes de huéspedes en la temporada 2025/26.',
     introP1:
-      'Laponia tiene muchos hoteles de cadena de gama media, Scandic, Cumulus, Sokos, que cumplen bien lo básico por 90–140 €/noche. No aparecen aquí; la decisión de reservarlos suele reducirse a "el más cercano al aeropuerto, la semana más barata".',
+      'Laponia tiene muchos hoteles de cadena de gama media, Scandic, Sokos, que cumplen bien lo básico por 90–140 €/noche. No aparecen aquí; la decisión de reservarlos suele reducirse a "el más cercano al aeropuerto, la semana más barata".',
     introP2:
       'Los cinco hoteles de abajo se ganan su sitio por otra razón: diseño, arquitectura, vistas o mezcla de servicios. Son la respuesta correcta cuando quieres un hotel que sea parte del motivo del viaje, no solo una base.',
     picksKicker: 'Cinco elegidos',

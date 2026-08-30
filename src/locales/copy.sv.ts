@@ -45,6 +45,7 @@ export const copySV: SectionCopy = {
     errorPrefix: 'Prenumerationen misslyckades, ',
     pleaseTryAgain: 'försök igen',
     footnotePart1: 'Vi skickar aldrig skräppost. Avsluta med ett klick. Se vår ',
+      footnotePart2: '.',
     footnoteLink: 'integritetspolicy',
   },
   authorByline: {

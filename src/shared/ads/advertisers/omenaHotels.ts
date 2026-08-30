@@ -112,7 +112,7 @@ const omenaHotels: AdSpec = {
     nl: {
       eyebrow: 'Tussenstop in de stad',
       headline: 'Omena Hotels, een kamer in het centrum met deurcode, prijs per kamer',
-      sub: 'Een handige overnachting op weg naar het noorden of vóór een vroege vlucht: een kamer in het centrum van Helsinki, Tampere of Turku zonder rij bij de receptie. De deurcode komt op je telefoon en je loopt zo naar binnen. De prijs geldt per kamer, niet per persoon.',
+      sub: 'Een handige overnachting op weg naar het noorden of vóór een vroege vlucht: een kamer in het centrum van Helsinki, Tampere of Turku zonder rij bij de receptie. De deurcode komt op uw telefoon en u loopt zo naar binnen. De prijs geldt per kamer, niet per persoon.',
       trust: ['Inchecken met deurcode', 'Centrale locaties', 'Prijs per kamer'],
       cta: 'Bekijk kamerprijzen',
       poweredBy: 'Boeking bij Omena Hotels',

@@ -39,7 +39,7 @@ export const copyNL: SectionCopy = {
     subscribe: 'Inschrijven',
     subscribing: 'Bezig met inschrijven…',
     success:
-      'Bijna klaar: bevestig je aanmelding via de e-mail die we net hebben gestuurd.',
+      'Bijna klaar: bevestig uw aanmelding via de e-mail die we net hebben gestuurd.',
     errorPrefix: 'Inschrijven niet gelukt, ',
     pleaseTryAgain: 'probeer het opnieuw',
     footnotePart1: 'Wij sturen nooit spam. Met één klik uitschrijven. Zie ons ',
@@ -322,7 +322,7 @@ export const copyNL: SectionCopy = {
       'De knop "tarieven bekijken" op deze site verwijst naar een Trip.com-zoekopdracht voor het dichtstbijzijnde boekbare aanbod. De Eagle View Suites zijn het snelst uitverkocht in weekenden met heldere lucht, boek de data, niet de weersvoorspelling.',
     pullQuote: {
       text:
-        'Het woord "afgelegen" is meestal marketingtaal. Hierboven is het waar. De weg houdt op, de boomgrens zakt onder u weg, en het enige licht dat overblijft is wat de hemel besluit te maken. Op zo’n plek val je niet zomaar binnen, je verbindt je eraan.',
+        'Het woord "afgelegen" is meestal marketingtaal. Hierboven is het waar. De weg houdt op, de boomgrens zakt onder u weg, en het enige licht dat overblijft is wat de hemel besluit te maken. Op zo’n plek valt u niet zomaar binnen, u verbindt zich eraan.',
       attr: 'Op de fjellweg van Iso-Syöte, omhoogkijkend',
     },
     runnersKicker: 'De andere',

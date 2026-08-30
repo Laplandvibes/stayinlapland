@@ -56,7 +56,7 @@ const META: Record<Lang, { title: string; description: string }> = {
   nl: {
     title: 'Cookiebeleid | StayInLapland',
     description:
-      'Cookiebeleid van StayInLapland: welke cookies we plaatsen (Google Analytics 4, toestemmingsstatus, nieuwsbriefpopup), hoe je weigert en je AVG-rechten.',
+      'Cookiebeleid van StayInLapland: welke cookies we plaatsen (Google Analytics 4, toestemmingsstatus, nieuwsbriefpopup), hoe u weigert en uw AVG-rechten.',
   },
   sv: {
     title: 'Cookiepolicy | StayInLapland',

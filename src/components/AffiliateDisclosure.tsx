@@ -65,8 +65,8 @@ const TEXT: Record<Lang, { compact: string; full: string }> = {
     full: 'Questa pagina contiene link di affiliazione. Se prenota tramite questi link riceviamo una piccola commissione, senza costi aggiuntivi per Lei. Gli alloggi sono scelti per il loro valore, mai per la commissione.',
   },
   nl: {
-    compact: 'Affiliate-link. Als je hier boekt, krijgen we een kleine commissie, zonder extra kosten voor jou.',
-    full: 'Deze pagina bevat affiliate-links. Als je via deze links boekt, krijgen we een kleine commissie, zonder extra kosten voor jou. Accommodaties worden op kwaliteit gekozen, nooit op commissie.',
+    compact: 'Affiliate-link. Als u hier boekt, krijgen we een kleine commissie, zonder extra kosten voor u.',
+    full: 'Deze pagina bevat affiliate-links. Als u via deze links boekt, krijgen we een kleine commissie, zonder extra kosten voor u. Accommodaties worden op kwaliteit gekozen, nooit op commissie.',
   },
   sv: {
     compact: 'Affiliatelänk. Om du bokar via den får vi en liten provision, utan extra kostnad för dig.',

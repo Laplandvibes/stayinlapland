@@ -163,7 +163,7 @@ export default function HotelPartnerAd({
     'zh-CN': '想要一间今晚就能订、在镇上、一切都已备好的房间吗？',
     ko: '오늘 밤 바로 예약할 수 있고, 시내에 있고, 모든 게 갖춰진 방이 좋으세요?',
     fr: 'Vous préférez une chambre réservable ce soir, en ville, avec tout déjà prêt ?',
-    it: 'Preferite una camera prenotabile stasera, in centro, con tutto già pronto?',
+    it: 'Preferisce una camera prenotabile stasera, in centro, con tutto già pronto?',
     nl: 'Liever een kamer die je vanavond kunt boeken, in het dorp, met alles al klaar?',
     sv: 'Vill du ha ett rum du kan boka i kväll, mitt i byn, med allt redan på plats?',
   });
@@ -178,7 +178,7 @@ export default function HotelPartnerAd({
     'zh-CN': '要在酒店过夜时，罗瓦涅米的设计房、列维和 Ylläs 的滑雪即达住宿、公寓式酒店，Trip.com 提供丰富的房源选择，价格实时更新。适合旅程的开头和结尾，或任何只想要一张书桌、一个淋浴和楼下早餐的夜晚。',
     ko: '호텔에서 묵는 밤을 위해. 로바니에미의 디자인 객실, 레비와 윌라스의 스키인 숙소, 아파트형 호텔까지 Trip.com에 다양한 객실이 실시간 가격으로 올라옵니다. 여행의 처음과 끝, 또는 책상과 샤워, 아래층 조식만 있으면 되는 어떤 밤에도 편합니다.',
     fr: 'Pour les nuits à l’hôtel : les chambres design de Rovaniemi, les adresses au pied des pistes à Levi et Ylläs, les apparthôtels. Trip.com propose un large choix de chambres aux prix du moment. Pratique au début et à la fin d’un voyage, ou n’importe quelle nuit où vous voulez juste un bureau, une douche et le petit-déjeuner en bas.',
-    it: 'Per le notti in hotel: le camere di design a Rovaniemi, gli alloggi ski-in a Levi e Ylläs, gli aparthotel. Su Trip.com trovi un’ampia scelta di camere con prezzi aggiornati. Comodo per l’inizio e la fine di un viaggio, o qualsiasi notte in cui ti basta una scrivania, una doccia e la colazione di sotto.',
+    it: 'Per le notti in hotel: le camere di design a Rovaniemi, gli alloggi ski-in a Levi e Ylläs, gli aparthotel. Su Trip.com trova un’ampia scelta di camere con prezzi aggiornati. Comodo per l’inizio e la fine di un viaggio, o per qualsiasi notte in cui Le basta una scrivania, una doccia e la colazione di sotto.',
     nl: 'Voor de hotelnachten: de designkamers in Rovaniemi, de ski-in adressen in Levi en Ylläs, de aparthotels. Op Trip.com vind je een ruime keuze aan kamers met actuele prijzen. Handig voor het begin en eind van een reis, of elke nacht dat je gewoon een bureau, een douche en ontbijt beneden wilt.',
     sv: 'För hotellnätterna: designrummen i Rovaniemi, ski-in-boendena i Levi och Ylläs, lägenhetshotellen. Trip.com listar ett brett urval rum med aktuella priser. Bra för början och slutet av en resa, eller vilken natt som helst då du bara vill ha ett skrivbord, en dusch och frukost en trappa ner.',
   });
@@ -247,7 +247,7 @@ export default function HotelPartnerAd({
     'zh-CN': '在 Trip.com 查看价格',
     ko: 'Trip.com에서 가격 확인',
     fr: 'Voir les prix sur Trip.com',
-    it: 'Vedi i prezzi su Trip.com',
+    it: 'Veda i prezzi su Trip.com',
     nl: 'Bekijk prijzen op Trip.com',
     sv: 'Se priser på Trip.com',
   });

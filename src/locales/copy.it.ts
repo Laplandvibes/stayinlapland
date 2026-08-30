@@ -14,8 +14,8 @@ export const copyIT: SectionCopy = {
       'Baite a settimana, design hotel a Rovaniemi, igloo di vetro per le notti da non perdere, e i lodge nella natura selvaggia oltre l’ultima strada. Tariffe verificate da',
     leadPriceRange: '140 € a 1 500 €',
     liveLabel: 'Disponibilità in tempo reale · Ricerca Trip.com',
-    browseLongStays: 'Vedere i soggiorni lunghi',
-    seeHotels: 'Vedere gli hotel',
+    browseLongStays: 'Sfogli i soggiorni lunghi',
+    seeHotels: 'Veda gli hotel',
   },
   newsletter: {
     ...copyEN.newsletter,
@@ -24,10 +24,10 @@ export const copyIT: SectionCopy = {
     lead:
       'La maggior parte delle strutture per soggiorni lunghi di questo sito libera l\'inventario invernale a fine agosto, e va a ruba. Raccontiamo quando si aprono le finestre di prenotazione, e le settimane di bassa stagione (novembre, fine aprile) quando i prezzi scendono mentre le aurore restano visibili.',
     placeholder: 'Il Suo indirizzo email',
-    subscribe: 'Iscriversi',
+    subscribe: 'Si iscriva',
     subscribing: 'Iscrizione in corso…',
     success:
-      'Ci siamo quasi: conferma l\'iscrizione dall\'e-mail che ti abbiamo appena inviato.',
+      'Ci siamo quasi: confermi l\'iscrizione dall\'e-mail che Le abbiamo appena inviato.',
     errorPrefix: 'Iscrizione non riuscita, ',
     pleaseTryAgain: 'riprovi',
     footnotePart1: 'Niente spam. Disiscrizione con un clic. Veda la nostra ',
@@ -45,7 +45,7 @@ export const copyIT: SectionCopy = {
     inlineEyebrow: 'Viene in Lapponia per lavoro?',
     inlineBodyPrefix:
       'Lavori stagionali, basi per remote working e posizioni nelle stazioni sciistiche sono sul nostro sito gemello ',
-    inlineCta: 'Vedere le offerte',
+    inlineCta: 'Sfogli le offerte',
     fullEyebrow: 'Sito gemello · laplandwork.com',
     fullH2A: 'Viene in Lapponia',
     fullH2B: 'per lavoro?',
@@ -53,7 +53,7 @@ export const copyIT: SectionCopy = {
       'Molti dei soggiorni lunghi su questo sito vengono prenotati da chi è arrivato per una stagione sciistica, un contratto di ingegneria artica o un mese di remote work, e si è innamorato del posto. Se è questo il Suo caso, c’è un sito dedicato al lavoro.',
     fullP2B:
       ' è l’hub centralizzato per il lavoro nella Lapponia finlandese, ospitalità stagionale, ruoli nelle stazioni sciistiche, posizioni nei canili di husky, lavori in ospedale e ingegneria a Rovaniemi, Levi, Saariselkä e Inari. Gratuito per chi cerca lavoro, tre fasce di prezzo per i datori di lavoro.',
-    fullCta: 'Vedi i lavori',
+    fullCta: 'Vedi i lavori in Lapponia',
     blocks: [
       { label: 'Ospitalità stagionale', tag: 'Levi · Ylläs · Saariselkä' },
       { label: 'Canili di husky', tag: 'Stagionale nov–apr' },
@@ -71,7 +71,7 @@ export const copyIT: SectionCopy = {
       classifieds: 'DIRETTO DAL PROPRIETARIO',
     },
     eyebrow: 'Trasferirsi in Lapponia · 6 mesi e oltre',
-    h2A: 'Cerca un vero appartamento,',
+    h2A: 'In cerca di un vero appartamento,',
     h2B: 'non un affitto turistico?',
     lead:
       'Le strutture su questo sito sono affitti a breve-medio termine prenotati tramite il nostro partner di prenotazione, la risposta giusta per soggiorni fino a quattro settimane. Per 6 mesi, un anno o un trasferimento permanente, servono i portali immobiliari nazionali finlandesi. Questi sono i sei più attivi per l’inventario in Lapponia.',
@@ -99,21 +99,21 @@ export const copyIT: SectionCopy = {
         recommendation: 'Hotel boutique a Rovaniemi',
         rationale:
           'Un design hotel come Arctic Light o Arctic TreeHouse offre comodità dall’aeroporto, una vera scena gastronomica e la logistica per il Villaggio di Babbo Natale, senza costringere la famiglia in una baita remota dove il riscaldamento diventa un progetto serale.',
-        ctaLabel: 'Vedere gli hotel',
+        ctaLabel: 'Veda gli hotel',
       },
       {
         forWho: 'Visitatore di ritorno · 7–14 notti · base in un solo posto',
         recommendation: 'Baita a soggiorno lungo a Levi o Saariselkä',
         rationale:
           'Si fermi per una settimana. Un appartamento con due camere a Levi Spirit o una baita in collina vicino a Saariselkä offre tariffe settimanali, sauna privata e tempo sufficiente per stabilirsi davvero in Lapponia, invece di correre tra notti da bucket list.',
-        ctaLabel: 'Vedere i soggiorni lunghi',
+        ctaLabel: 'Veda i soggiorni lunghi',
       },
       {
         forWho: 'Anniversario · pensione · gruppo in esclusiva',
         recommendation: 'Un lodge nella natura',
         rationale:
           'Un lodge nella natura è il modo più esclusivo di celebrare l’occasione. Una Iso-Syöte Eagle View Suite offre isolamento sopra la linea degli alberi, e una villa al Wilderness Hotel Nangu aggiunge attività guidate dai Sami sul Lago Inari, entrambe abbastanza private da far sembrare l’intero paesaggio Suo, senza il prezzo di un’esclusiva totale.',
-        ctaLabel: 'Vedere i lodge nella natura',
+        ctaLabel: 'Veda i lodge nella natura',
       },
     ],
   },
@@ -121,7 +121,7 @@ export const copyIT: SectionCopy = {
     ...copyEN.home,
     metaTitle: 'Dove alloggiare in Lapponia 2026, 16 strutture verificate',
     metaDescription:
-      'Pianifichi il Suo soggiorno Lapponia 2026, 16 strutture verificate: baite da €140/notte, hotel design a Rovaniemi, igloo di vetro €280+ e lodge selvaggi.',
+      'Pianifichi il soggiorno 2026 in Lapponia: 16 strutture verificate, baite da 140 €/notte, design hotel a Rovaniemi, igloo di vetro da 280 €, lodge nella natura.',
     schemaName: 'StayInLapland, Soggiorni lunghi e hotel boutique nella Lapponia finlandese',
     breadcrumbHome: 'Home',
     stats: { stays: 'Strutture scelte', bases: 'Basi in Lapponia', categories: 'Modi di soggiornare', months: 'Mesi valutati' },
@@ -140,10 +140,10 @@ export const copyIT: SectionCopy = {
     },
     propertyWord: 'struttura',
     propertiesWord: 'strutture',
-    explore: 'Esplorare',
+    explore: 'Esplori',
     pullQuote: {
       text:
-        'La Lapponia è più grande di quanto la gente si aspetti, e la strada tra Rovaniemi e Saariselkä prende mezza giornata in ciascuna direzione. Il più grande errore al primo viaggio è prenotare tre basi diverse in cinque notti.',
+        'La Lapponia è più grande di quanto la gente si aspetti, e la strada tra Rovaniemi e Saariselkä richiede mezza giornata in ciascuna direzione. Il più grande errore al primo viaggio è prenotare tre basi diverse in cinque notti.',
       attr: 'Rapporto alloggi Lapponia · Lapin Liitto, 2024',
     },
     tripKicker: 'Ha già un’idea di cosa vuole?',
@@ -202,7 +202,7 @@ export const copyIT: SectionCopy = {
     authorNote:
       'Cinque strutture verificate con le informazioni pubblicate dai gestori e le recensioni recenti degli ospiti durante la stagione 2025/26.',
     introP1:
-      'La Lapponia ha numerose catene di hotel di fascia media, Scandic, Sokos, che fanno bene le basi a 90–140 €/notte. Non sono elencate qui; la loro scelta è in gran parte "il più vicino all’aeroporto, la settimana più economica".',
+      'La Lapponia ha numerose catene di hotel di fascia media, Scandic, Sokos, che coprono bene l’essenziale a 90–140 €/notte. Non sono elencate qui; la loro scelta è in gran parte "il più vicino all’aeroporto, la settimana più economica".',
     introP2:
       'I cinque hotel qui sotto si guadagnano il loro posto per un motivo diverso, design, architettura, vista o mix di servizi. Sono la risposta giusta quando si vuole un hotel che sia parte del motivo per cui si è venuti, non solo una base.',
     picksKicker: 'Cinque selezioni',
@@ -224,18 +224,18 @@ export const copyIT: SectionCopy = {
       { name: 'Lapland Hotels Saaga', verdict: 'Classico ski-in/out a Ylläs. Spa inclusa.' },
       { name: 'Star Arctic', verdict: 'In collina · cielo più scuro · mix baita/hotel.' },
     ],
-    marginLabel: 'Insider',
+    marginLabel: 'Dritta',
     marginBody:
-      'Arctic TreeHouse e Levi Spirit gestiscono entrambi i propri ristoranti, Rakas (TreeHouse) e Spirit Kitchen (Levi). Entrambi puntano su materie prime locali. Se prenota uno dei due, prenoti tavolo lo stesso giorno della camera, il sabato e la domenica si esauriscono prima dell’hotel.',
+      'Arctic TreeHouse e Levi Spirit gestiscono entrambi i propri ristoranti, Rakas (TreeHouse) e Spirit Kitchen (Levi). Entrambi puntano su materie prime locali. Se prenota uno dei due, prenoti il tavolo lo stesso giorno della camera, il sabato e la domenica si esauriscono prima dell’hotel.',
     counterKicker: 'Controproposta onesta',
     counterH2: 'Quando un hotel non è la risposta.',
     counterP1:
-      'Per 5+ notti con lo stesso ritmo di viaggio, sci, cucina, sauna, ripeti, una baita o un appartamento a soggiorno lungo batte qualsiasi di questi hotel per costo a notte e qualità della vita. Gli hotel hanno senso quando le giornate sono diverse l’una dall’altra.',
+      'Per 5+ notti con lo stesso ritmo di viaggio, sci, cucina, sauna e si ricomincia, una baita o un appartamento a soggiorno lungo batte qualsiasi di questi hotel per costo a notte e qualità della vita. Gli hotel hanno senso quando le giornate sono diverse l’una dall’altra.',
     counterP2:
       'Per una singola notte da bucket list sotto l’aurora, vincono gli igloo di vetro. Nessuno degli hotel qui sopra ha un tetto di vetro.',
-    seeLong: 'Vedi soggiorni lunghi',
-    seeIgloos: 'Vedi igloo di vetro',
-    browseAll: 'Sfoglia l’inventario di Trip.com',
+    seeLong: 'Veda i soggiorni lunghi',
+    seeIgloos: 'Veda gli igloo di vetro',
+    browseAll: 'Sfogli l’inventario di Trip.com',
   },
   glassIgloos: {
     ...copyEN.glassIgloos,
@@ -286,9 +286,9 @@ export const copyIT: SectionCopy = {
       'Per soggiorni di quattro o più notti, due notti in igloo di vetro più un blocco in baita per soggiorno lungo è un viaggio migliore di quattro notti in igloo di vetro. La novità svanisce dopo la seconda notte; una hirsimökki con sauna privata regala la parte di Lapponia che una cupola di vetro non può.',
     counterP2:
       'Per Natale (22 dic → 2 gen) i prezzi triplicano e il 90% dell’inventario va ai pacchetti turistici britannici entro primavera. Sposti le date alla seconda metà di gennaio se possibile, più freddo, più buio, metà prezzo, aurora migliore.',
-    seeLong: 'Vedi soggiorni lunghi',
+    seeLong: 'Veda i soggiorni lunghi',
     bookingGuideBtn: 'Guida alla prenotazione',
-    browseAll: 'Sfoglia l’inventario di Trip.com',
+    browseAll: 'Sfogli l’inventario di Trip.com',
   },
   wilderness: {
     ...copyEN.wilderness,
@@ -311,7 +311,7 @@ export const copyIT: SectionCopy = {
       'Ed è il lodge nella natura serio più facile da raggiungere: 90 minuti dall’aeroporto di Oulu, il che lo rende il raro rifugio che funziona anche per un viaggio breve.',
     ],
     pickCaveat:
-      'Il pulsante "Verifica tariffe" su questo sito reindirizza alla ricerca Trip.com per la disponibilità prenotabile più vicina. Le Eagle View Suites si esauriscono prima nei fine settimana di cielo sereno, prenoti le date, non le previsioni.',
+      'Il pulsante "Verifichi le tariffe" su questo sito reindirizza alla ricerca Trip.com per la disponibilità prenotabile più vicina. Le Eagle View Suites si esauriscono prima nei fine settimana di cielo sereno, prenoti le date, non le previsioni.',
     pullQuote: {
       text:
         'La parola "remoto" è di solito un termine di marketing. Quassù è vero. La strada finisce, la linea degli alberi scende sotto di Lei, e l’unica luce che resta è quella che il cielo decide di fare. In un posto così non si capita per caso, ci si impegna.',
@@ -337,8 +337,8 @@ export const copyIT: SectionCopy = {
       'Entrambi i lodge sono a 1–3 ore di transfer dall’aeroporto più vicino. Per viaggi sotto le tre notti il tempo speso in trasferimenti è sproporzionato.',
     counterP2:
       'Per chi viene la prima volta nell’Artico: faccia prima un viaggio a Rovaniemi o Saariselkä. Un lodge nella natura da prenotare in esclusiva totale è sprecato su chi sta ancora capendo cosa sono i -25°C.',
-    seeLong: 'Vedi soggiorni lunghi',
-    browseAll: 'Sfoglia l’inventario di Trip.com',
+    seeLong: 'Veda i soggiorni lunghi',
+    browseAll: 'Sfogli l’inventario di Trip.com',
   },
   longStays: {
     ...copyEN.longStays,
@@ -358,7 +358,7 @@ export const copyIT: SectionCopy = {
     pickWhy: [
       'L’Arctic TreeHouse Resort è la risposta quando la domanda è "come faccio un vero soggiorno lungo a Rovaniemi senza affittare una baita spoglia?" Suite design costruite nella pineta ai margini del Santa Park, ciascuna con angolo cottura e una vetrata panoramica rivolta verso gli alberi.',
       'La tariffa settimanale scende di circa il 25% rispetto a quella giornaliera, e ogni suite dà accesso al villaggio di saune del resort, una settimana qui costa quindi meno a notte di una serie di prenotazioni di una notte, con molto più spazio per ambientarsi davvero.',
-      'È anche la base più flessibile di questo elenco: aeroporto, ristoranti e cultura del design di Rovaniemi sono a dieci minuti, mentre la suite stessa guarda solo la foresta. Il bottone "Verifica tariffe" qui sotto La porta direttamente alla disponibilità settimanale.',
+      'È anche la base più flessibile di questo elenco: aeroporto, ristoranti e cultura del design di Rovaniemi sono a dieci minuti, mentre la suite stessa guarda solo la foresta. Il pulsante "Verifichi le tariffe" qui sotto La porta direttamente alla disponibilità settimanale.',
     ],
     pickCaveat:
       'Lo sconto settimanale vive nel sistema di prenotazione una volta selezionate 7+ notti, non sempre compare nella tariffa giornaliera mostrata. Le settimane di punta intorno a Natale si esauriscono con mesi di anticipo; metà novembre e fine aprile sono molto più economiche.',
@@ -379,7 +379,7 @@ export const copyIT: SectionCopy = {
       'Le settimane di spalla, <strong>metà novembre</strong> (appena prima che la neve si stabilizzi) e <strong>fine aprile</strong> (appena dopo che la neve si scioglie), calano di un ulteriore 30–50%. L’aurora è ancora attiva in entrambe le finestre. È il punto dolce per i soggiorni lunghi con un calendario di lavoro flessibile.',
     marginLabel: 'Tattica di prenotazione',
     marginBody:
-      'Per un soggiorno di 4 settimane, dividere il periodo tra due strutture può battere una prenotazione singola, si evita il picco delle "settimane di punta" a Natale e Carnevale, e si vedono davvero due parti della Lapponia. Il giorno di trasferimento prende mezza giornata; il risparmio di solito paga due notti in più altrove.',
+      'Per un soggiorno di 4 settimane, dividere il periodo tra due strutture può battere una prenotazione singola, si evita il picco delle "settimane di punta" a Natale e durante le vacanze sciistiche di febbraio, e si vedono davvero due parti della Lapponia. Il giorno di trasferimento richiede mezza giornata; il risparmio di solito paga due notti in più altrove.',
     counterKicker: 'Controproposta onesta',
     counterH2: 'Quando NON prenotare un soggiorno lungo.',
     counterP1:
@@ -388,9 +388,9 @@ export const copyIT: SectionCopy = {
       'Per una singola notte aurora da bucket list, gli igloo di vetro sono la risposta migliore. Il tetto di vetro è l’esperienza per cui si viene; una baita per soggiorno lungo offre solo una finestra.',
     counterP3:
       'Per gruppi con mobilità mista, chiami la struttura direttamente prima di prenotare, la maggior parte delle baite a soggiorno lungo non è priva di gradini e in particolare le saune si trovano in seminterrato su pavimento di legno.',
-    seeHotels: 'Vedi hotel',
-    seeIgloos: 'Vedi igloo di vetro',
-    browseAll: 'Sfoglia l’inventario di Trip.com',
+    seeHotels: 'Veda gli hotel',
+    seeIgloos: 'Veda gli igloo di vetro',
+    browseAll: 'Sfogli l’inventario di Trip.com',
   },
   bookingGuide: {
     ...copyEN.bookingGuide,
@@ -400,7 +400,7 @@ export const copyIT: SectionCopy = {
       'Guida pratica alle prenotazioni in Lapponia, quando venire per la migliore aurora, come arrivare, cosa portare, quanto costa e i suggerimenti dei locali.',
     pageHero: {
       ...copyEN.bookingGuide.pageHero,
-      eyebrow: 'Pianifica un viaggio vero',
+      eyebrow: 'Pianifichi un viaggio vero',
       title: 'La guida alle prenotazioni in Lapponia.',
       subtitle: 'Consigli pratici e schietti. Quando venire, come arrivare, cosa mettere in valigia, quanto costa davvero.',
     },
@@ -434,7 +434,7 @@ export const copyIT: SectionCopy = {
         body: [
           'Baita per soggiorno lungo (settimanale): 140–280 €/notte, può ospitare 4–6 persone.',
           'Hotel boutique: 140–420 €/notte, di solito colazione inclusa.',
-          'Igloo di vetro, alta stagione: 400–1500 €/notte per due.',
+          'Igloo di vetro, alta stagione: 400–1 500 €/notte per due.',
           'Suite in lodge nella natura: 220–950 €/notte a seconda della struttura.',
           'Attività (safari con gli husky, motoslitta, caccia all’aurora) di solito 120–200 € per persona per uscita in aggiunta.',
         ],
@@ -456,7 +456,7 @@ export const copyIT: SectionCopy = {
         ],
       },
     ],
-    readyTitle: 'Pronto a prenotare?',
+    readyTitle: 'Tutto pronto per prenotare?',
     readyLead:
       'Sfogli strutture selezionate per categoria, oppure salti dritto alla disponibilità in tempo reale su Trip.com.',
     browseAll: 'Esplori tutti gli alloggi in Lapponia',
@@ -472,7 +472,7 @@ export const copyIT: SectionCopy = {
       eyebrow: 'Mese per mese',
       title: 'Quando visitare la Lapponia.',
       subtitle:
-        'Il mese giusto dipende dal viaggio. Aurora-first, sci-first, valore per soggiorno lungo, picco di Natale, ognuno ha il suo punto dolce. Ecco la guida editoriale mese per mese.',
+        'Il mese giusto dipende dal viaggio. Priorità aurora, priorità sci, valore per soggiorno lungo, picco di Natale, ognuno ha il suo punto dolce. Ecco la guida editoriale mese per mese.',
     },
     authorNote:
       'Elaborata sulla base dei rapporti dei nostri partner sul territorio in tutta la Lapponia finlandese.',
@@ -494,8 +494,8 @@ export const copyIT: SectionCopy = {
     marginLabel: 'Tempistica di prenotazione',
     marginBody:
       'Per il picco di febbraio: prenoti con 6 mesi di anticipo. Per fine gennaio: 3 mesi. Per la spalla (novembre, fine aprile): 6–8 settimane bastano. Natale / Capodanno: minimo 9 mesi, e tenga date di riserva perché l’inventario di picco sparisce in primavera.',
-    readGuide: 'Leggi la guida alla prenotazione',
-    seeLong: 'Vedi soggiorni lunghi',
+    readGuide: 'Legga la guida alla prenotazione',
+    seeLong: 'Veda i soggiorni lunghi',
     months: [
       {
         name: 'Settembre',
@@ -503,7 +503,7 @@ export const copyIT: SectionCopy = {
         body:
           'Iniziano le lunghe notti buie. La neve non è ancora caduta, è il periodo della "ruska", quando le betulle virano al rosso e all’oro. L’aurora si staglia sul terreno spoglio e i colori sono i più fotografati di tutti i mesi.',
         bestFor: ['Fotografi', 'Soggiorni brevi incentrati sull’aurora', 'Combinazione trekking + aurora'],
-        avoidIf: ['È venuto appositamente per la neve'],
+        avoidIf: ['Viene appositamente per la neve'],
       },
       {
         name: 'Ottobre',
@@ -519,7 +519,7 @@ export const copyIT: SectionCopy = {
         body:
           'Inizio più freddo dell’inverno in Lapponia. Nell’estremo nord (Utsjoki) la notte polare arriva negli ultimi giorni del mese. La neve inizia a tenere a fine novembre, entro fine mese la maggior parte dei resort e degli snow hotel apre. Fine novembre è in assoluto il miglior rapporto qualità-prezzo per soggiorni lunghi.',
         bestFor: ['Soggiorni lunghi a -50% di tariffa', 'Chi torna e conosce il freddo'],
-        avoidIf: ['Viaggiatori alla prima volta (neve incostante)'],
+        avoidIf: ['Chi viene per la prima volta (neve incostante)'],
       },
       {
         name: 'Dicembre',
@@ -569,18 +569,18 @@ export const copyIT: SectionCopy = {
     notFoundKicker: 'Pagina non trovata',
     notFoundTitle: 'Destinazione non in elenco.',
     notFoundBody: 'Al momento copriamo Rovaniemi, Levi, Saariselkä, Inari e Ylläs.',
-    backHome: 'Torna alla home',
+    backHome: 'Torni alla home',
     authorNoteFor: (n) => `La prospettiva del soggiorno lungo per ${n}, scritta e verificata con i partner sul territorio.`,
     recommendedIn: (n) => `Consigliati a ${n}`,
     whereToStay: 'Dove alloggiare davvero.',
     minStayLabel: 'Soggiorno min.:',
     perNight: '/ notte',
-    checkRates: 'Verifica tariffe',
-    seeAll: 'Vedi tutto',
-    liveAvailabilityIn: (n) => `Cerca disponibilità in tempo reale a ${n}?`,
+    checkRates: 'Verifichi le tariffe',
+    seeAll: 'Veda tutto',
+    liveAvailabilityIn: (n) => `In cerca di disponibilità in tempo reale a ${n}?`,
     networkLeadA: 'La nostra rete classifica solo 16 strutture. Trip.com elenca tutto il resto che opera a ',
     networkLeadB: ' quest’inverno, date flessibili, filtri per servizio, l’offerta completa.',
-    browseInDest: (n) => `Sfoglia Trip.com, ${n}`,
+    browseInDest: (n) => `Sfogli Trip.com, ${n}`,
     imageNote:
       'Le immagini sono illustrative: mostrano il tipo di alloggio e il paesaggio della zona, non le stanze della struttura.',
     landscapeAlt: (n) => `Paesaggio invernale a ${n}, Lapponia finlandese`,
@@ -598,10 +598,10 @@ export const copyIT: SectionCopy = {
     wilderness: 'Natura selvaggia',
     whenToGo: 'Quando andare',
     bookingGuide: 'Guida alla prenotazione',
-    browseStays: 'Sfoglia gli alloggi',
+    browseStays: 'Sfogli gli alloggi',
     homeAria: 'StayInLapland, pagina iniziale',
-    openMenu: 'Apri menu',
-    closeMenu: 'Chiudi menu',
+    openMenu: 'Apra il menu',
+    closeMenu: 'Chiuda il menu',
   },
   langSwitchAria: { en: 'English', fi: 'Suomeksi', de: 'Auf Deutsch', ja: '日本語で', es: 'En español', 'pt-BR': 'Em português', 'zh-CN': '简体中文', ko: '한국어', fr: 'En français', it: 'In italiano', nl: 'In het Nederlands', sv: 'På svenska' },
   marginNoteDefault: 'A margine',
@@ -614,7 +614,7 @@ export const copyIT: SectionCopy = {
     kicker: 'Scelta della redazione',
     perNight: '/ notte',
     note: 'Nota',
-    cta: 'Verifica tariffe e prenota',
+    cta: 'Verifichi le tariffe e prenoti',
   },
   propertyCard: {
     short: '1–3 notti',
@@ -623,7 +623,7 @@ export const copyIT: SectionCopy = {
     nights: (n) => `${n} ${n === 1 ? 'notte' : 'notti'}`,
     minPrefix: 'Min',
     perNight: '/ notte',
-    cta: 'Verifica tariffe e prenota',
+    cta: 'Verifichi le tariffe e prenoti',
   },
   hotelsData: [
     {
@@ -735,7 +735,7 @@ export const copyIT: SectionCopy = {
       location: 'Iso-Syöte (Pudasjärvi, appena a sud della Lapponia)',
       highlight: 'Sopra la linea degli alberi · raggiungibile da Oulu',
       description:
-        'Suite in pino a 432 m sul monte Iso-Syöte, il fell vero più meridionale della Finlandia. Osservazione dell’aurora sopra la linea degli alberi senza il lungo volo per Saariselkä, e a 90 minuti dall’aeroporto di Oulu.',
+        'Suite in pino a 432 m sul monte Iso-Syöte, il vero fjell più meridionale della Finlandia. Osservazione dell’aurora sopra la linea degli alberi senza il lungo volo per Saariselkä, e a 90 minuti dall’aeroporto di Oulu.',
     },
     {
       name: 'Wilderness Hotel Muotka',
@@ -756,7 +756,7 @@ export const copyIT: SectionCopy = {
     {
       slug: 'levi',
       pitch:
-        'Il più grande comprensorio sciistico della Finlandia per vendita di skipass, con 25 000 posti letto, appartamenti ski-in/out e una vera via principale di villaggio.',
+        'La più grande stazione sciistica della Finlandia per vendita di skipass, con 25 000 posti letto, appartamenti ski-in/out e una vera via principale di villaggio.',
       longStayAngle:
         'Logica del soggiorno lungo: gli appartamenti ski-in/out si affittano a settimana da dicembre ad aprile. Gli impianti vanno ogni giorno, i ristoranti del villaggio aprono ogni sera, qui si può fare una vera stagione.',
     },

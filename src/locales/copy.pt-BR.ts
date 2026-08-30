@@ -307,7 +307,7 @@ export const copyPTBR: SectionCopy = {
       'As semanas de transição, <strong>meados de novembro</strong> (logo antes de a neve firmar) e <strong>fim de abril</strong> (logo depois do degelo), tiram outros 30–50% por cima. A aurora segue ativa nas duas janelas. É o ponto ideal para estadias longas com agenda de trabalho flexível.',
     marginLabel: 'Estratégia de reserva',
     marginBody:
-      'Para uma estadia de 4 semanas, dividi-la entre duas propriedades pode ganhar de uma reserva única, você evita o pico de "semana cheia" que bate no Natal e no Carnaval e, de quebra, conhece duas partes da Lapônia. O dia de transferência leva meia jornada; a economia costuma pagar duas noites extras em outro lugar.',
+      'Para uma estadia de 4 semanas, dividi-la entre duas propriedades pode ganhar de uma reserva única, você evita o pico de "semana cheia" que bate no Natal e nas férias escolares de esqui de fevereiro e, de quebra, conhece duas partes da Lapônia. O dia de transferência leva meia jornada; a economia costuma pagar duas noites extras em outro lugar.',
     counterKicker: 'Contraindicação honesta',
     counterH2: 'Quando NÃO reservar estadia longa.',
     counterP1:

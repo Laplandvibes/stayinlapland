@@ -126,7 +126,7 @@ export default function LomarengasAd({
     'zh-CN': '芬兰度假小屋',
     ko: '핀란드 휴가용 코티지',
     fr: 'Chalets de vacances finlandais',
-    it: 'Cottage per vacanze in Finlandia',
+    it: 'Baite per vacanze in Finlandia',
     nl: 'Finse vakantiehuisjes',
     sv: 'Finska semesterstugor',
   });
@@ -142,7 +142,7 @@ export default function LomarengasAd({
     'zh-CN': '想整周独享一整栋小屋吗？Lomarengas 出租芬兰私人业主的度假小屋。',
     ko: '일주일 동안 통째로 빌리고 싶으세요? Lomarengas는 개인 소유의 핀란드 코티지를 빌려드립니다.',
     fr: 'Envie d’un chalet entier rien qu’à vous pour la semaine ? Lomarengas loue des chalets finlandais de propriétaires privés.',
-    it: 'Volete un intero cottage tutto per voi per una settimana? Lomarengas affitta cottage finlandesi di proprietari privati.',
+    it: 'Vuole una baita intera tutta per sé per una settimana? Lomarengas affitta baite finlandesi di proprietari privati.',
     nl: 'Een heel huisje voor jezelf de hele week? Lomarengas verhuurt particuliere Finse vakantiehuisjes.',
     sv: 'Vill ni ha en hel stuga för er själva hela veckan? Lomarengas hyr ut privatägda finska semesterstugor.',
   });
@@ -157,7 +157,7 @@ export default function LomarengasAd({
     'zh-CN': '自 1967 年以来，Lomarengas 一直是芬兰度假小屋的大本营，4,400 多套精选小屋，每位业主都经过核实，每处都亲自查验。那种带私人桑拿、靠湖或靠山的整栋小屋，大型酒店网站根本没有。',
     ko: 'Lomarengas는 1967년부터 핀란드 코티지의 본거지입니다. 4,400채가 넘는 엄선된 코티지는 모든 집주인을 확인하고 모든 숙소를 직접 점검합니다. 대형 호텔 사이트에는 없는, 전용 사우나가 딸린 호숫가나 펠 코티지를 만나보세요.',
     fr: 'Lomarengas est la maison des chalets finlandais depuis 1967 : plus de 4 400 chalets sélectionnés à la main, chaque propriétaire vérifié et chaque logement contrôlé en personne. Le vrai chalet au bord du lac ou de la colline, avec son propre sauna, que les grands sites d’hôtels ne référencent pas.',
-    it: 'Lomarengas è la casa dei cottage finlandesi dal 1967: oltre 4.400 cottage scelti a mano, ogni proprietario verificato e ogni alloggio controllato di persona. Proprio il cottage sul lago o sulla collina, con la sua sauna, che i grandi siti di hotel non elencano.',
+    it: 'Lomarengas è la casa delle baite finlandesi dal 1967: oltre 4 400 baite scelte a mano, ogni proprietario verificato e ogni alloggio controllato di persona. Proprio la baita sul lago o sul fjell, con la sua sauna, che i grandi siti di hotel non elencano.',
     nl: 'Lomarengas is sinds 1967 het thuis van Finse vakantiehuisjes: ruim 4.400 met de hand geselecteerde huisjes, elke eigenaar geverifieerd en elke plek persoonlijk gecontroleerd. Precies het huisje aan het meer of de heuvel, met eigen sauna, dat de grote hotelsites gewoon niet hebben.',
     sv: 'Lomarengas har varit de finska semesterstugornas hem sedan 1967: över 4 400 handplockade stugor, varje ägare kontrollerad och varje ställe personligen besiktigat. Just den där stugan vid sjön eller fjället med egen bastu som de stora hotellsajterna helt enkelt inte listar.',
   });
@@ -175,7 +175,7 @@ export default function LomarengasAd({
         'zh-CN': '4,400+ 套已核实小屋',
         ko: '4,400채 이상 검증된 코티지',
         fr: 'Plus de 4 400 chalets vérifiés',
-        it: 'Oltre 4.400 cottage verificati',
+        it: 'Oltre 4 400 baite verificate',
         nl: 'Ruim 4.400 geverifieerde huisjes',
         sv: 'Över 4 400 kontrollerade stugor',
       }),
@@ -226,7 +226,7 @@ export default function LomarengasAd({
     'zh-CN': '在 Lomarengas 找小屋',
     ko: 'Lomarengas에서 코티지 찾기',
     fr: 'Trouver un chalet sur Lomarengas',
-    it: 'Trova un cottage su Lomarengas',
+    it: 'Trovi una baita su Lomarengas',
     nl: 'Zoek een huisje op Lomarengas',
     sv: 'Hitta en stuga på Lomarengas',
   });

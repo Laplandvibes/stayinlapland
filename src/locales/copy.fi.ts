@@ -401,7 +401,7 @@ export const copyFI: SectionCopy = {
       'Välikausiviikot, <strong>marraskuun puoliväli</strong> (juuri ennen kuin lumi tasoittuu) ja <strong>huhtikuun loppu</strong> (juuri kun lumi sulaa), laskevat lisäksi 30–50 % päälle. Revontulet ovat aktiivisia molemmissa ikkunoissa. Tämä on pitkien jaksojen sweet spot joustavalla työkalenterilla.',
     marginLabel: 'Varausstrategia',
     marginBody:
-      'Neljän viikon jakson kohdalla sen jakaminen kahteen kohteeseen voi voittaa yhden kohteen varauksen, vältät ”huippuviikon” piikin, joka osuu jouluun ja laskiaiseen, ja näet aidosti kaksi Lapin osaa. Siirtopäivä vie puoli päivää; säästetty raha maksaa yleensä kaksi ylimääräistä yötä muualla.',
+      'Neljän viikon jakson kohdalla sen jakaminen kahteen kohteeseen voi voittaa yhden kohteen varauksen, vältät ”huippuviikon” piikin, joka osuu jouluun ja helmikuun hiihtolomiin, ja näet aidosti kaksi Lapin osaa. Siirtopäivä vie puoli päivää; säästetty raha maksaa yleensä kaksi ylimääräistä yötä muualla.',
     counterKicker: 'Rehellinen vastasuositus',
     counterH2: 'Milloin EI kannata varata pitkää jaksoa.',
     counterP1:

@@ -601,7 +601,7 @@ export const copyES: SectionCopy = {
       'Las semanas bisagra, <strong>mediados de noviembre</strong> (justo antes de que la nieve se estabilice) y <strong>finales de abril</strong> (justo después del deshielo), restan otro 30–50 % por encima. La aurora sigue activa en ambas ventanas. Es el punto dulce para la larga estancia con un calendario laboral flexible.',
     marginLabel: 'Táctica de reserva',
     marginBody:
-      'Para una estancia de 4 semanas, repartirla entre dos alojamientos puede ganarle a una sola reserva, evitas el pico de "semana alta" que golpea en Navidad y Carnaval, y de paso ves dos partes de Laponia. El día de traslado se lleva media jornada; el ahorro suele pagar dos noches extra en otro sitio.',
+      'Para una estancia de 4 semanas, repartirla entre dos alojamientos puede ganarle a una sola reserva, evitas el pico de "semana alta" que golpea en Navidad y en las vacaciones escolares de esquí de febrero, y de paso ves dos partes de Laponia. El día de traslado se lleva media jornada; el ahorro suele pagar dos noches extra en otro sitio.',
     counterKicker: 'Contrarrecomendación honesta',
     counterH2: 'Cuándo NO reservar una larga estancia.',
     counterP1:

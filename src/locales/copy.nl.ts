@@ -385,7 +385,7 @@ export const copyNL: SectionCopy = {
       'De schouderweken, <strong>half november</strong> (vlak voordat de sneeuw stabiliseert) en <strong>eind april</strong> (vlak nadat de sneeuw smelt), zakken nog eens 30–50% extra. Noorderlicht is in beide vensters nog actief. Dit is het zoete punt voor lange verblijven met een flexibele werkkalender.',
     marginLabel: 'Boekingstactiek',
     marginBody:
-      'Voor een verblijf van 4 weken kan het opsplitsen over twee accommodaties een enkele boeking verslaan, u vermijdt de "piekweek"-piek rond Kerst en carnaval, en u ziet meteen twee delen van Lapland. De transferdag kost een halve dag; de besparing betaalt doorgaans twee extra nachten elders.',
+      'Voor een verblijf van 4 weken kan het opsplitsen over twee accommodaties een enkele boeking verslaan, u vermijdt de "piekweek"-piek rond Kerst en in de skivakantie van februari, en u ziet meteen twee delen van Lapland. De transferdag kost een halve dag; de besparing betaalt doorgaans twee extra nachten elders.',
     counterKicker: 'Eerlijke tegenaanbeveling',
     counterH2: 'Wanneer u GEEN lang verblijf boekt.',
     counterP1:

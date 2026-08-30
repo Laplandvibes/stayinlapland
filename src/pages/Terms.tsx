@@ -51,7 +51,7 @@ const META: Record<Lang, { title: string; description: string }> = {
   it: {
     title: 'Termini di utilizzo | StayInLapland',
     description:
-      'Termini di utilizzo di StayInLapland: ambito editoriale, divulgazione di affiliazione, link di prenotazione di terzi, proprietà intellettuale e giurisdizione finlandese.',
+      'Termini di utilizzo di StayInLapland: ambito editoriale, informativa di affiliazione, link di prenotazione di terzi, proprietà intellettuale e giurisdizione finlandese.',
   },
   nl: {
     title: 'Gebruiksvoorwaarden | StayInLapland',

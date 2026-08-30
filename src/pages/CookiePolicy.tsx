@@ -51,7 +51,7 @@ const META: Record<Lang, { title: string; description: string }> = {
   it: {
     title: 'Informativa sui cookie | StayInLapland',
     description:
-      'Informativa sui cookie di StayInLapland: quali cookie impostiamo (Google Analytics 4, stato del consenso, popup newsletter), come rifiutarli e i tuoi diritti GDPR.',
+      'Informativa sui cookie di StayInLapland: quali cookie impostiamo (Google Analytics 4, stato del consenso, popup newsletter), come rifiutarli e i Suoi diritti GDPR.',
   },
   nl: {
     title: 'Cookiebeleid | StayInLapland',

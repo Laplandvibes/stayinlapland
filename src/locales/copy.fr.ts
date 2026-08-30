@@ -402,7 +402,7 @@ export const copyFR: SectionCopy = {
       'Les semaines charnières, <strong>mi-novembre</strong> (juste avant que la neige se stabilise) et <strong>fin avril</strong> (juste après la fonte), retirent encore 30 à 50 % par-dessus. L’aurore reste active sur ces deux fenêtres. C’est le point idéal pour un long séjour avec un calendrier de travail souple.',
     marginLabel: 'Tactique de réservation',
     marginBody:
-      'Pour un séjour de 4 semaines, le répartir sur deux adresses peut battre une réservation unique, vous évitez le pic de la « semaine de pointe » qui frappe à Noël et au Mardi gras, et vous découvrez réellement deux facettes de la Laponie. Le jour de transfert prend une demi-journée ; l’économie réalisée paie en général deux nuits supplémentaires ailleurs.',
+      'Pour un séjour de 4 semaines, le répartir sur deux adresses peut battre une réservation unique, vous évitez le pic de la « semaine de pointe » qui frappe à Noël et pendant les vacances de ski de février, et vous découvrez réellement deux facettes de la Laponie. Le jour de transfert prend une demi-journée ; l’économie réalisée paie en général deux nuits supplémentaires ailleurs.',
     counterKicker: 'Contre-recommandation honnête',
     counterH2: 'Quand NE PAS réserver un séjour longue durée.',
     counterP1:

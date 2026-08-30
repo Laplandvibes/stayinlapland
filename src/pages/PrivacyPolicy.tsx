@@ -51,7 +51,7 @@ const META: Record<Lang, { title: string; description: string }> = {
   it: {
     title: 'Informativa sulla privacy | StayInLapland',
     description:
-      'Informativa sulla privacy di StayInLapland: analytics anonimi, iscrizioni alla newsletter, i tuoi diritti GDPR e il titolare del trattamento (Lapeso Oy, Finlandia).',
+      'Informativa sulla privacy di StayInLapland: analytics anonimi, iscrizioni alla newsletter, i Suoi diritti GDPR e il titolare del trattamento (Lapeso Oy, Finlandia).',
   },
   nl: {
     title: 'Privacybeleid | StayInLapland',

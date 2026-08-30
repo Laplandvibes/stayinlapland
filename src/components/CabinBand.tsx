@@ -114,14 +114,14 @@ const COPY: Record<Lang, BandCopy> = {
   },
   it: {
     eyebrow: 'Direttamente dal catalogo',
-    h2: (d) => `Chalet veri a ${d}, foto vere.`,
-    lead: 'Una selezione di ciò che Lomarengas affitta in questo momento intorno al villaggio. Sono chalet di proprietari privati, affittati a settimana, e ogni foto ritrae la struttura reale.',
+    h2: (d) => `Baite vere a ${d}, foto vere.`,
+    lead: 'Una selezione di ciò che Lomarengas affitta in questo momento intorno al villaggio. Sono baite di proprietari privati, affittate a settimana, e ogni foto ritrae la struttura reale.',
     weekFrom: 'settimana da {price} €',
     guestsLabel: 'persone',
     bedroomsLabel: 'camere',
     sizeLabel: 'dimensione',
-    viewCabin: 'Vedi lo chalet',
-    browseAll: 'Sfoglia tutti i {count} chalet della zona',
+    viewCabin: 'Veda la baita',
+    browseAll: 'Sfogli tutte le {count} baite della zona',
     dataNote: 'Foto e prezzi dai dati di prodotto Lomarengas, aggiornati ogni giorno. Prezzi settimanali a partire da; il prezzo finale dipende dalla settimana.',
   },
   nl: {

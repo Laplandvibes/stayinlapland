@@ -415,7 +415,7 @@ export const copyPTBR: SectionCopy = {
     counterP1:
       'Os dois lodges ficam a 1–3 horas de transfer do aeroporto mais próximo. Para viagens de menos de três noites, o tempo em trânsito é desproporcional.',
     counterP2:
-      'Para quem viaja ao Ártico pela primeira vez: faça antes uma viagem a Rovaniemi ou Saariselkä. Um lodge na natureza de ocupação exclusiva é desperdício em alguém que ainda está descobrindo o que é −25 °C.',
+      'Para quem viaja ao Ártico pela primeira vez: faça antes uma viagem a Rovaniemi ou Saariselkä. Um lodge na natureza de ocupação exclusiva é desperdício para alguém que ainda está descobrindo o que é −25 °C.',
     seeLong: 'Ver estadias longas',
     browseAll: 'Ver toda a oferta da Trip.com',
   },
@@ -469,7 +469,7 @@ export const copyPTBR: SectionCopy = {
         title: 'Políticas de cancelamento',
         body: [
           'A maioria das propriedades da Lapônia migrou para tarifas não reembolsáveis nas semanas de pico. Leia as letras miúdas antes de clicar em "reservar".',
-          'Seguro de viagem com cancelamento por qualquer motivo vale muito a pena em viagens acima de 2 000 €. Caçadores de aurora cancelam por causa do tempo o tempo todo.',
+          'Seguro de viagem com cancelamento por qualquer motivo vale muito a pena em viagens acima de 2 000 €. Caçadores de aurora cancelam por causa do clima o tempo todo.',
           'Nossos parceiros de reservas honram as condições de cancelamento exibidas na hora de reservar, reserve pelo redirecionamento deste site para manter a tarifa visível e consistente.',
         ],
       },

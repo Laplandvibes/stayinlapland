@@ -356,7 +356,7 @@ const yllas: Record<string, StayingNote> = {
       sv: 'Äkäslompolo eller Ylläsjärvi', de: 'Äkäslompolo oder Ylläsjärvi',
       es: 'Äkäslompolo o Ylläsjärvi', fr: 'Äkäslompolo ou Ylläsjärvi',
       it: 'Äkäslompolo o Ylläsjärvi', nl: 'Äkäslompolo of Ylläsjärvi',
-      ja: 'アカスロンポロか、ウラスヤルヴィか', ko: '애캐슬롬폴로냐 윌래스야르비냐',
+      ja: 'アカスロンポロか、ユッラスヤルヴィか', ko: '애캐슬롬폴로냐 윌래스야르비냐',
       'zh-CN': '选阿卡斯隆波罗还是于莱斯耶尔维', 'pt-BR': 'Äkäslompolo ou Ylläsjärvi',
     },
     body: {
@@ -417,7 +417,7 @@ const yllas: Record<string, StayingNote> = {
       fr: 'Le parc national de Pallas-Yllästunturi commence là où finissent les villages, et un chalet en lisière a le départ des sentiers devant la porte. Le centre d’accueil Kellokas, sur la route entre les deux villages, est où prendre les cartes en premier.',
       it: 'Il parco nazionale di Pallas-Yllästunturi comincia dove finiscono i villaggi, e una baita su quel margine ha l’imbocco del sentiero davanti alla porta. Il centro visitatori Kellokas, sulla strada fra i due paesi, è il primo posto dove prendere le mappe.',
       nl: 'Nationaal park Pallas-Yllästunturi begint waar de dorpen ophouden, en een hut aan die rand heeft het startpunt van de route voor de deur. Bezoekerscentrum Kellokas, aan de weg tussen de twee dorpen, is waar u eerst de kaarten haalt.',
-      ja: 'パラス・ウラストゥントゥリ国立公園は村が終わるところから始まり、そのきわのキャビンなら登山口が玄関先です。ふたつの村を結ぶ道沿いのケッロカス自然センターが、まず地図を受け取る場所になります。',
+      ja: 'パラス・ユッラストゥントゥリ国立公園は村が終わるところから始まり、そのきわのキャビンなら登山口が玄関先です。ふたつの村を結ぶ道沿いのケッロカス自然センターが、まず地図を受け取る場所になります。',
       ko: '팔라스-윌래스툰투리 국립공원은 마을이 끝나는 곳에서 시작되고, 그 가장자리의 캐빈은 등산로 입구가 문 앞입니다. 두 마을을 잇는 길가의 켈로카스 방문자센터가 먼저 지도를 받아 갈 곳입니다.',
       'zh-CN': '帕拉斯-于莱斯图恩图里国家公园从村子的尽头开始，建在林缘的木屋，步道起点就在门口。两村之间公路边的 Kellokas 游客中心，是先去取地图的地方。',
       'pt-BR': 'O Parque Nacional Pallas-Yllästunturi começa onde os vilarejos terminam, e uma cabana nessa borda tem o início da trilha à porta. O centro de visitantes Kellokas, na estrada entre os dois vilarejos, é onde pegar os mapas primeiro.',

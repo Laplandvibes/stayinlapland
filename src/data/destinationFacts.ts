@@ -46,6 +46,18 @@ import type { Lang } from '../i18n/useLang';
  *    Sámi languages are officially used side by side with Finnish". Siida's
  *    role as the national museum of Sámi culture from siida.fi.
  *
+ * 🔴 The island count and the lake count in the Inari quote above are
+ * reproduced verbatim from inari.fi, which groups the digits the Finnish way
+ * with a plain space. The rendered strings must NOT copy that form. A plain
+ * space between digits reads as two separate numbers in Korean, Japanese and
+ * Chinese, and everywhere else it lets a line break fall inside the figure.
+ * Every language therefore carries its own separator: comma for en/ja/ko/
+ * zh-CN, non-breaking space (U+00A0) for fi/sv/de/fr/it, no separator below
+ * five digits for es (RAE forbids both dot and comma), dot for nl/pt-BR.
+ * This applies to the hero stat `value` map as much as to highlights[0].body:
+ * a language-neutral `value` string puts the Finnish form in the Korean hero
+ * however carefully every body text is fixed.
+ *
  * No park-area figure is published anywhere here: luontoon.fi (which replaced
  * nationalparks.fi in 2026) renders its destination pages client-side and
  * states no area for Urho Kekkonen or Lemmenjoki in the served HTML, so the
@@ -60,8 +72,14 @@ import type { Lang } from '../i18n/useLang';
 export type L12 = Record<Lang, string>;
 
 export interface DestinationStat {
-  /** Language-neutral figure, e.g. '62' or '464 m'. */
-  value: string;
+  /**
+   * Figure shown in the hero tile. A plain string when it renders identically
+   * in every language ('62', '464 m') — an L12 map when it does not. A
+   * thousands separator is language-specific: one shared string would print
+   * the Finnish plain-space form on the Korean and Japanese pages, where a
+   * space between digits reads as two separate numbers.
+   */
+  value: string | L12;
   label: L12;
 }
 
@@ -227,7 +245,7 @@ const yllas: DestinationFacts = {
         en: 'The slopes of Ylläs', fi: 'Ylläksen rinteet', sv: 'Backarna i Ylläs',
         de: 'Die Pisten von Ylläs', es: 'Las pistas de Ylläs', fr: 'Les pistes de Ylläs',
         it: 'Le piste di Ylläs', nl: 'De pistes van Ylläs', ja: 'Ylläs のゲレンデ',
-        ko: 'Ylläs의 슬로프', 'zh-CN': 'Ylläs 的雪道', 'pt-BR': 'As pistas de Ylläs',
+        ko: '윌래스의 슬로프', 'zh-CN': 'Ylläs 的雪道', 'pt-BR': 'As pistas de Ylläs',
       },
       body: {
         en: '62 slopes on two sides of the fell and the longest downhill runs in Finland: over three kilometres from the treeless top to the valley, a 464-metre drop. Ski buses link both villages to the lifts.',
@@ -262,7 +280,7 @@ const yllas: DestinationFacts = {
         it: 'Circa 300 chilometri di piste battute attraversano i boschi del parco nazionale, oltre 30 illuminati per i mesi bui. Scelga un caffè lungo la pista come meta e lo raggiunga sugli sci per un caffè.',
         nl: 'Zo’n 300 kilometer geprepareerde loipes kronkelen door de bossen van het nationale park, ruim 30 daarvan verlicht voor de donkere maanden. Kies een loipecafé als bestemming en langlauf erheen voor koffie.',
         ja: '国立公園の森を約300キロの整備されたトラックが縫うように走り、うち30キロ以上が暗い季節のために照明付き。トラック沿いのカフェを目的地に選び、コーヒーを飲みに滑っていきましょう。',
-        ko: '국립공원 숲을 약 300킬로미터의 정비된 트랙이 굽이굽이 지나가며, 그중 30킬로미터 이상은 어두운 계절을 위해 조명이 켜집니다. 트랙 옆 카페를 목적지로 정하고 커피 한 잔 마시러 스키를 타고 가 보세요.',
+        ko: '국립공원 숲을 약 300킬로미터의 정비된 트랙이 굽이굽이 지나가며, 그중 30킬로미터 이상은 어두운 계절을 위해 조명이 켜집니다. 트랙 옆 카페를 목적지로 정하고 커피 한 잔 마시러 스키를 타고 가 보십시오.',
         'zh-CN': '约 300 公里的雪道穿行于国家公园的森林之间，其中 30 多公里在漫长黑夜里点着灯。挑一家雪道旁的咖啡馆作为目的地，滑过去喝杯咖啡。',
         'pt-BR': 'Cerca de 300 quilômetros de trilhas mantidas serpenteiam pelas florestas do parque nacional, mais de 30 deles iluminados para os meses escuros. Escolha um café de trilha como destino e esquie até lá para um café.',
       },
@@ -273,7 +291,7 @@ const yllas: DestinationFacts = {
         sv: 'Nationalparken Pallas-Yllästunturi', de: 'Nationalpark Pallas-Yllästunturi',
         es: 'Parque Nacional Pallas-Yllästunturi', fr: 'Parc national de Pallas-Yllästunturi',
         it: 'Parco Nazionale di Pallas-Yllästunturi', nl: 'Nationaal Park Pallas-Yllästunturi',
-        ja: 'Pallas-Yllästunturi 国立公園', ko: 'Pallas-Yllästunturi 국립공원',
+        ja: 'Pallas-Yllästunturi 国立公園', ko: '팔라스-윌래스툰투리 국립공원',
         'zh-CN': 'Pallas-Yllästunturi 国家公园', 'pt-BR': 'Parque Nacional Pallas-Yllästunturi',
       },
       body: {
@@ -286,7 +304,7 @@ const yllas: DestinationFacts = {
         it: 'Il parco nazionale più visitato della Finlandia inizia ai margini del villaggio. Il centro visitatori Kellokas, sulla strada tra i due villaggi, è la prima tappa naturale per mappe dei sentieri ed esposizioni.',
         nl: 'Het meest bezochte nationale park van Finland begint aan de rand van het dorp. Het bezoekerscentrum Kellokas, aan de weg tussen de twee dorpen, is de logische eerste stop voor wandelkaarten en tentoonstellingen.',
         ja: 'フィンランドで最も訪れる人の多い国立公園が、村のすぐ端から始まります。2つの村を結ぶ道沿いにあるビジターセンター Kellokas は、ルート地図や展示を見る最初の立ち寄り先にぴったりです。',
-        ko: '핀란드에서 가장 많은 사람이 찾는 국립공원이 마을 가장자리에서 시작됩니다. 두 마을을 잇는 길가에 있는 방문자 센터 Kellokas는 경로 지도와 전시를 살펴보기에 자연스러운 첫 기착지입니다.',
+        ko: '핀란드에서 가장 많은 사람이 찾는 국립공원이 마을 가장자리에서 시작됩니다. 두 마을을 잇는 길가에 있는 방문자 센터 켈로카스는 경로 지도와 전시를 살펴보기에 자연스러운 첫 기착지입니다.',
         'zh-CN': '芬兰访客最多的国家公园就从村边开始。位于两村之间道路旁的 Kellokas 游客中心，是索取步道地图、参观展览的理想第一站。',
         'pt-BR': 'O parque nacional mais visitado da Finlândia começa na borda do vilarejo. O centro de visitantes Kellokas, na estrada entre os dois vilarejos, é a primeira parada natural para mapas de trilhas e exposições.',
       },
@@ -313,7 +331,7 @@ const yllas: DestinationFacts = {
         en: 'Ylläs on LaplandSkiResorts', fi: 'Ylläs LaplandSkiResortsissa', sv: 'Ylläs på LaplandSkiResorts',
         de: 'Ylläs auf LaplandSkiResorts', es: 'Ylläs en LaplandSkiResorts', fr: 'Ylläs sur LaplandSkiResorts',
         it: 'Ylläs su LaplandSkiResorts', nl: 'Ylläs op LaplandSkiResorts', ja: 'LaplandSkiResorts で Ylläs を見る',
-        ko: 'LaplandSkiResorts에서 Ylläs 보기', 'zh-CN': '在 LaplandSkiResorts 上看 Ylläs',
+        ko: 'LaplandSkiResorts에서 윌래스 보기', 'zh-CN': '在 LaplandSkiResorts 上看 Ylläs',
         'pt-BR': 'Ylläs no LaplandSkiResorts',
       },
       href: 'https://laplandskiresorts.com/resort/yllas',
@@ -324,7 +342,7 @@ const yllas: DestinationFacts = {
         sv: 'Ylläs-guiden på LaplandVibes', de: 'Der Ylläs-Guide auf LaplandVibes',
         es: 'La guía de Ylläs en LaplandVibes', fr: 'Le guide d’Ylläs sur LaplandVibes',
         it: 'La guida di Ylläs su LaplandVibes', nl: 'De Ylläs-gids op LaplandVibes',
-        ja: 'LaplandVibes の Ylläs ガイド', ko: 'LaplandVibes의 Ylläs 가이드',
+        ja: 'LaplandVibes の Ylläs ガイド', ko: 'LaplandVibes의 윌래스 가이드',
         'zh-CN': 'LaplandVibes 上的 Ylläs 指南', 'pt-BR': 'O guia de Ylläs no LaplandVibes',
       },
       href: 'https://laplandvibes.com/destination/yllas',
@@ -403,7 +421,7 @@ const rovaniemi: DestinationFacts = {
         it: 'Il circolo polare attraversa Rovaniemi a 66°33′ di latitudine nord. Dal 6 giugno al 7 luglio il sole non tramonta. A dicembre sorge ancora: il 21 dicembre dalle 11:08 alle 13:22, poco più di due ore di luce. La vera notte polare, kaamos in finlandese, comincia più a nord.',
         nl: 'De poolcirkel loopt bij 66°33′ noorderbreedte door Rovaniemi. Van 6 juni tot 7 juli gaat de zon niet onder. In december komt ze nog steeds op: op 21 december van 11.08 tot 13.22 uur, ruim twee uur licht. De echte poolnacht, kaamos in het Fins, begint pas verder naar het noorden.',
         ja: '北極圏は北緯66度33分で Rovaniemi を横切ります。6月6日から7月7日まで太陽は沈みません。12月でも太陽は昇り、12月21日は11時08分から13時22分まで、2時間あまりの明るさがあります。フィンランド語で kaamos と呼ばれる本当の極夜が始まるのは、さらに北です。',
-        ko: '북극권은 북위 66도 33분에서 Rovaniemi를 가로지릅니다. 6월 6일부터 7월 7일까지는 해가 지지 않습니다. 12월에도 해는 뜹니다. 12월 21일에는 11시 08분부터 13시 22분까지, 두 시간 남짓 빛이 있습니다. 핀란드어로 kaamos라 부르는 진짜 극야는 더 북쪽에서 시작됩니다.',
+        ko: '북극권은 북위 66도 33분에서 로바니에미를 가로지릅니다. 6월 6일부터 7월 7일까지는 해가 지지 않습니다. 12월에도 해는 뜹니다. 12월 21일에는 11시 08분부터 13시 22분까지, 두 시간 남짓 빛이 있습니다. 핀란드어로 kaamos라 부르는 진짜 극야는 더 북쪽에서 시작됩니다.',
         'zh-CN': '北极圈在北纬 66°33′ 穿过 Rovaniemi。6 月 6 日到 7 月 7 日太阳不落。12 月太阳依然会升起：12 月 21 日从 11:08 到 13:22，有两个多小时的光。芬兰语称作 kaamos 的真正极夜，要更靠北才开始。',
         'pt-BR': 'O círculo polar cruza Rovaniemi a 66°33′ de latitude norte. De 6 de junho a 7 de julho o sol não se põe. Em dezembro ele ainda nasce: em 21 de dezembro, das 11:08 às 13:22, pouco mais de duas horas de luz. A noite polar de verdade, kaamos em finlandês, começa mais ao norte.',
       },
@@ -414,7 +432,7 @@ const rovaniemi: DestinationFacts = {
         sv: 'Ounasvaara på andra sidan älven', de: 'Ounasvaara jenseits des Flusses',
         es: 'Ounasvaara, al otro lado del río', fr: 'Ounasvaara, de l’autre côté du fleuve',
         it: 'Ounasvaara, dall’altra parte del fiume', nl: 'Ounasvaara aan de overkant van de rivier',
-        ja: '川の向こうの Ounasvaara', ko: '강 건너의 Ounasvaara', 'zh-CN': '河对岸的 Ounasvaara',
+        ja: '川の向こうの Ounasvaara', ko: '강 건너의 오우나스바라', 'zh-CN': '河对岸的 Ounasvaara',
         'pt-BR': 'Ounasvaara, do outro lado do rio',
       },
       body: {
@@ -475,7 +493,7 @@ const rovaniemi: DestinationFacts = {
         sv: 'Ounasvaara på LaplandSkiResorts', de: 'Ounasvaara auf LaplandSkiResorts',
         es: 'Ounasvaara en LaplandSkiResorts', fr: 'Ounasvaara sur LaplandSkiResorts',
         it: 'Ounasvaara su LaplandSkiResorts', nl: 'Ounasvaara op LaplandSkiResorts',
-        ja: 'LaplandSkiResorts で Ounasvaara を見る', ko: 'LaplandSkiResorts에서 Ounasvaara 보기',
+        ja: 'LaplandSkiResorts で Ounasvaara を見る', ko: 'LaplandSkiResorts에서 오우나스바라 보기',
         'zh-CN': '在 LaplandSkiResorts 上看 Ounasvaara', 'pt-BR': 'Ounasvaara no LaplandSkiResorts',
       },
       href: 'https://laplandskiresorts.com/resort/ounasvaara',
@@ -486,7 +504,7 @@ const rovaniemi: DestinationFacts = {
         sv: 'Rovaniemi-guiden på LaplandVibes', de: 'Der Rovaniemi-Guide auf LaplandVibes',
         es: 'La guía de Rovaniemi en LaplandVibes', fr: 'Le guide de Rovaniemi sur LaplandVibes',
         it: 'La guida di Rovaniemi su LaplandVibes', nl: 'De Rovaniemi-gids op LaplandVibes',
-        ja: 'LaplandVibes の Rovaniemi ガイド', ko: 'LaplandVibes의 Rovaniemi 가이드',
+        ja: 'LaplandVibes の Rovaniemi ガイド', ko: 'LaplandVibes의 로바니에미 가이드',
         'zh-CN': 'LaplandVibes 上的 Rovaniemi 指南', 'pt-BR': 'O guia de Rovaniemi no LaplandVibes',
       },
       href: 'https://laplandvibes.com/destination/rovaniemi',
@@ -516,7 +534,7 @@ const levi: DestinationFacts = {
         en: 'The slopes of Levi', fi: 'Levin rinteet', sv: 'Backarna i Levi',
         de: 'Die Pisten von Levi', es: 'Las pistas de Levi', fr: 'Les pistes de Levi',
         it: 'Le piste di Levi', nl: 'De pistes van Levi', ja: 'Levi のゲレンデ',
-        ko: 'Levi의 슬로프', 'zh-CN': 'Levi 的雪道', 'pt-BR': 'As pistas de Levi',
+        ko: '레비의 슬로프', 'zh-CN': 'Levi 的雪道', 'pt-BR': 'As pistas de Levi',
       },
       body: {
         en: '44 slopes drop off Levitunturi to the village at its foot, and two gondolas carry you to the 531-metre summit. The alpine World Cup opens here every November, with the season’s first slalom raced on the front slope on 14 and 15 November 2026.',
@@ -528,7 +546,7 @@ const levi: DestinationFacts = {
         it: '44 piste scendono dal Levitunturi fino al villaggio ai suoi piedi, e due cabinovie La portano alla vetta di 531 metri. La Coppa del Mondo di sci alpino si apre qui ogni novembre, e il primo slalom della stagione si corre sulla pista frontale il 14 e 15 novembre 2026.',
         nl: '44 pistes dalen van de Levitunturi af naar het dorp aan de voet, en twee gondels brengen u naar de top op 531 meter. De alpine wereldbeker opent hier elke november, en de eerste slalom van het seizoen wordt op de frontpiste verreden op 14 en 15 november 2026.',
         ja: '44本のコースが Levitunturi から山ふもとの村へと下り、2基のゴンドラが標高531メートルの山頂へ運びます。アルペンスキーのワールドカップは毎年11月にここで開幕し、今シーズン最初のスラロームは2026年11月14日と15日にフロントスロープで行われます。',
-        ko: '44개의 슬로프가 Levitunturi에서 기슭의 마을로 내려오고, 두 대의 곤돌라가 해발 531미터 정상까지 데려다줍니다. 알파인 월드컵은 해마다 11월 이곳에서 개막하며, 시즌 첫 회전 경기는 2026년 11월 14일과 15일 프런트 슬로프에서 열립니다.',
+        ko: '44개의 슬로프가 레비툰투리에서 기슭의 마을로 내려오고, 두 대의 곤돌라가 해발 531미터 정상까지 데려다줍니다. 알파인 월드컵은 해마다 11월 이곳에서 개막하며, 시즌 첫 회전 경기는 2026년 11월 14일과 15일 프런트 슬로프에서 열립니다.',
         'zh-CN': '44 条雪道自 Levitunturi 一路下延至山脚的村庄，两部吊厢缆车载你登上 531 米的山顶。高山滑雪世界杯每年 11 月在此揭幕，本赛季首场回转赛将于 2026 年 11 月 14 日和 15 日在正面雪道举行。',
         'pt-BR': '44 pistas descem do Levitunturi até o vilarejo a seus pés, e dois teleféricos gôndola levam você ao cume de 531 metros. A Copa do Mundo de esqui alpino abre aqui todo mês de novembro, e o primeiro slalom da temporada é disputado na pista frontal em 14 e 15 de novembro de 2026.',
       },
@@ -552,7 +570,7 @@ const levi: DestinationFacts = {
         it: 'Circa 230 chilometri di piste battute partono dal villaggio verso le montagne, di cui 28 chilometri illuminati nei mesi bui. Scelga un caffè lungo la pista come punto di ritorno, lo raggiunga sugli sci per un caffè e torni scivolando prima del tramonto.',
         nl: 'Zo’n 230 kilometer geprepareerde loipes lopen vanuit het dorp de fjälls in, waarvan 28 kilometer verlicht in de donkere maanden. Kies een loipecafé als keerpunt, langlauf erheen voor koffie en glijd terug voor het donker.',
         ja: '約230キロの整備されたトラックが村から山々へと延び、そのうち28キロは暗い季節のために照明が付いています。トラックカフェを折り返し地点に選び、コーヒーを飲みに滑っていき、暗くなる前に戻ってきましょう。',
-        ko: '약 230킬로미터의 정비된 트랙이 마을에서 산으로 뻗어 있고, 그중 28킬로미터는 어두운 계절 동안 조명이 켜집니다. 트랙 카페를 반환점으로 정해 커피 한 잔 마시러 나갔다가 해 지기 전에 미끄러져 돌아오세요.',
+        ko: '약 230킬로미터의 정비된 트랙이 마을에서 산으로 뻗어 있고, 그중 28킬로미터는 어두운 계절 동안 조명이 켜집니다. 트랙 카페를 반환점으로 정해 커피 한 잔 마시러 나갔다가 해 지기 전에 미끄러져 돌아오십시오.',
         'zh-CN': '约 230 公里的整备雪道自村庄延伸进山，其中 28 公里在漫长黑夜里点着灯。挑一家雪道咖啡馆作为折返点，滑过去喝杯咖啡，再在暮色前滑回来。',
         'pt-BR': 'Cerca de 230 quilômetros de trilhas mantidas partem do vilarejo rumo às montanhas, com 28 quilômetros iluminados durante os meses escuros. Escolha um café de trilha como ponto de retorno, esquie até lá para um café e deslize de volta antes do anoitecer.',
       },
@@ -599,7 +617,7 @@ const levi: DestinationFacts = {
         en: 'Levi on LaplandSkiResorts', fi: 'Levi LaplandSkiResortsissa', sv: 'Levi på LaplandSkiResorts',
         de: 'Levi auf LaplandSkiResorts', es: 'Levi en LaplandSkiResorts', fr: 'Levi sur LaplandSkiResorts',
         it: 'Levi su LaplandSkiResorts', nl: 'Levi op LaplandSkiResorts', ja: 'LaplandSkiResorts で Levi を見る',
-        ko: 'LaplandSkiResorts에서 Levi 보기', 'zh-CN': '在 LaplandSkiResorts 上看 Levi',
+        ko: 'LaplandSkiResorts에서 레비 보기', 'zh-CN': '在 LaplandSkiResorts 上看 Levi',
         'pt-BR': 'Levi no LaplandSkiResorts',
       },
       href: 'https://laplandskiresorts.com/resort/levi',
@@ -610,7 +628,7 @@ const levi: DestinationFacts = {
         sv: 'Levi-guiden på LaplandVibes', de: 'Der Levi-Guide auf LaplandVibes',
         es: 'La guía de Levi en LaplandVibes', fr: 'Le guide de Levi sur LaplandVibes',
         it: 'La guida di Levi su LaplandVibes', nl: 'De Levi-gids op LaplandVibes',
-        ja: 'LaplandVibes の Levi ガイド', ko: 'LaplandVibes의 Levi 가이드',
+        ja: 'LaplandVibes の Levi ガイド', ko: 'LaplandVibes의 레비 가이드',
         'zh-CN': 'LaplandVibes 上的 Levi 指南', 'pt-BR': 'O guia de Levi no LaplandVibes',
       },
       href: 'https://laplandvibes.com/destination/levi',
@@ -669,7 +687,7 @@ const saariselka: DestinationFacts = {
         sv: 'Kiilopää och nationalparken', de: 'Kiilopää und der Nationalpark',
         es: 'Kiilopää y el parque nacional', fr: 'Kiilopää et le parc national',
         it: 'Kiilopää e il parco nazionale', nl: 'Kiilopää en het nationale park',
-        ja: 'Kiilopää と国立公園', ko: 'Kiilopää와 국립공원', 'zh-CN': 'Kiilopää 与国家公园',
+        ja: 'Kiilopää と国立公園', ko: '킬로패와 국립공원', 'zh-CN': 'Kiilopää 与国家公园',
         'pt-BR': 'Kiilopää e o parque nacional',
       },
       body: {
@@ -682,7 +700,7 @@ const saariselka: DestinationFacts = {
         it: 'Kiilopää, gestito dall’associazione outdoor Suomen Latu, si trova proprio accanto al Parco Nazionale Urho Kekkonen. I percorsi segnalati partono dalla porta e vanno da un anello di un chilometro a camminate di oltre venti, così la lunghezza della giornata la sceglie Lei.',
         nl: 'Kiilopää, gerund door de outdoorvereniging Suomen Latu, ligt pal naast Nationaal Park Urho Kekkonen. Gemarkeerde routes beginnen bij de deur en lopen van een lus van één kilometer tot tochten van ruim twintig, dus de lengte van de dag kiest u zelf.',
         ja: 'アウトドア団体 Suomen Latu が運営する Kiilopää は、Urho Kekkonen 国立公園のすぐ隣にあります。標識付きのルートは玄関先から始まり、1キロの周回から20キロを超える行程まで。一日の長さは自分で選べます。',
-        ko: '아웃도어 단체 Suomen Latu가 운영하는 Kiilopää는 Urho Kekkonen 국립공원 바로 옆에 있습니다. 표시된 경로가 문 앞에서 시작해 1킬로미터 순환로부터 20킬로미터가 넘는 길까지 이어지니, 하루의 길이는 직접 고르면 됩니다.',
+        ko: '아웃도어 단체 수오멘 라투가 운영하는 킬로패는 우르호 케코넨 국립공원 바로 옆에 있습니다. 표시된 경로가 문 앞에서 시작해 1킬로미터 순환로부터 20킬로미터가 넘는 길까지 이어지니, 하루의 길이는 직접 고르면 됩니다.',
         'zh-CN': '由户外协会 Suomen Latu 运营的 Kiilopää 就紧挨着 Urho Kekkonen 国家公园。标记好的路线从门口起步，短则一公里环线，长则二十公里以上，一天走多远由你自己定。',
         'pt-BR': 'O Kiilopää, administrado pela associação de atividades ao ar livre Suomen Latu, fica bem ao lado do Parque Nacional Urho Kekkonen. As rotas sinalizadas começam na porta e vão de um circuito de um quilômetro a caminhadas de mais de vinte, então a duração do dia é você quem escolhe.',
       },
@@ -706,7 +724,7 @@ const saariselka: DestinationFacts = {
         it: 'A Kuurakaltio, Kiilopää scalda una sauna a fumo tradizionale accanto a un ruscello di montagna, e il refrigerio si prende nell’acqua corrente invece che in una vasca. I turni di sauna pubblici sono aperti anche a chi non alloggia lì.',
         nl: 'Bij Kuurakaltio stookt Kiilopää een traditionele rooksauna aan een fjällbeek, en afkoelen doet u in stromend water in plaats van in een dompelbad. De openbare saunatijden staan ook open voor wie er niet logeert.',
         ja: 'Kuurakaltio では、Kiilopää が山の小川のほとりで伝統的なスモークサウナを焚いています。火照りを冷ますのは水風呂ではなく、流れる沢の水。一般開放のサウナ時間は、宿泊者以外にも開かれています。',
-        ko: 'Kuurakaltio에서 Kiilopää는 산속 개울가에 전통 스모크 사우나를 지핍니다. 몸을 식히는 곳은 냉탕이 아니라 흐르는 개울물입니다. 공개 사우나 시간은 그곳에 묵지 않는 사람에게도 열려 있습니다.',
+        ko: 'Kuurakaltio에서 킬로패는 산속 개울가에 전통 스모크 사우나를 지핍니다. 몸을 식히는 곳은 냉탕이 아니라 흐르는 개울물입니다. 공개 사우나 시간은 그곳에 묵지 않는 사람에게도 열려 있습니다.',
         'zh-CN': '在 Kuurakaltio，Kiilopää 于山间溪畔烧起传统烟熏桑拿，降温靠的不是冷水池，而是跳进流动的溪水。公共桑拿时段也向非住客开放。',
         'pt-BR': 'Em Kuurakaltio, o Kiilopää aquece uma sauna de fumaça tradicional à beira de um riacho da montanha, e o resfriamento é um mergulho na água corrente, não numa piscina. Os turnos públicos de sauna estão abertos também a quem não está hospedado ali.',
       },
@@ -753,7 +771,7 @@ const saariselka: DestinationFacts = {
         sv: 'Saariselkä på LaplandSkiResorts', de: 'Saariselkä auf LaplandSkiResorts',
         es: 'Saariselkä en LaplandSkiResorts', fr: 'Saariselkä sur LaplandSkiResorts',
         it: 'Saariselkä su LaplandSkiResorts', nl: 'Saariselkä op LaplandSkiResorts',
-        ja: 'LaplandSkiResorts で Saariselkä を見る', ko: 'LaplandSkiResorts에서 Saariselkä 보기',
+        ja: 'LaplandSkiResorts で Saariselkä を見る', ko: 'LaplandSkiResorts에서 사리셀카 보기',
         'zh-CN': '在 LaplandSkiResorts 上看 Saariselkä', 'pt-BR': 'Saariselkä no LaplandSkiResorts',
       },
       href: 'https://laplandskiresorts.com/resort/saariselka',
@@ -764,7 +782,7 @@ const saariselka: DestinationFacts = {
         sv: 'Saariselkä-guiden på LaplandVibes', de: 'Der Saariselkä-Guide auf LaplandVibes',
         es: 'La guía de Saariselkä en LaplandVibes', fr: 'Le guide de Saariselkä sur LaplandVibes',
         it: 'La guida di Saariselkä su LaplandVibes', nl: 'De Saariselkä-gids op LaplandVibes',
-        ja: 'LaplandVibes の Saariselkä ガイド', ko: 'LaplandVibes의 Saariselkä 가이드',
+        ja: 'LaplandVibes の Saariselkä ガイド', ko: 'LaplandVibes의 사리셀카 가이드',
         'zh-CN': 'LaplandVibes 上的 Saariselkä 指南', 'pt-BR': 'O guia de Saariselkä no LaplandVibes',
       },
       href: 'https://laplandvibes.com/destination/saariselka',
@@ -778,7 +796,12 @@ const saariselka: DestinationFacts = {
 const inari: DestinationFacts = {
   stats: [
     {
-      value: '3 300+',
+      value: {
+        en: '3,300+', fi: '3 300+', sv: '3 300+',
+        de: '3 300+', fr: '3 300+', es: '3300+',
+        it: '3 300+', nl: '3.300+', 'pt-BR': '3.300+',
+        ja: '3,300+', ko: '3,300+', 'zh-CN': '3,300+',
+      },
       label: {
         en: 'islands in the lake', fi: 'saarta järvessä', sv: 'öar i sjön',
         de: 'Inseln im See', fr: 'îles dans le lac', es: 'islas en el lago',
@@ -830,18 +853,18 @@ const inari: DestinationFacts = {
         'zh-CN': '芬兰第三大湖', 'pt-BR': 'O terceiro maior lago da Finlândia',
       },
       body: {
-        en: 'Lake Inari runs about a hundred kilometres end to end and holds over 3 300 islands. It averages 14 metres deep and reaches nearly 100 at its deepest. The municipality counts more than 10 000 lakes in all.',
-        fi: 'Inarijärvi on päästä päähän noin sata kilometriä ja siinä on yli 3 300 saarta. Keskisyvyys on 14 metriä ja syvimmillään lähes 100. Koko kunnassa lasketaan olevan yli 10 000 järveä.',
-        sv: 'Enare träsk mäter omkring hundra kilometer från ände till ände och rymmer över 3 300 öar. Medeldjupet är 14 meter och som djupast närmar det sig 100. I hela kommunen räknar man med över 10 000 sjöar.',
-        de: 'Der Inarisee misst von einem Ende zum anderen rund hundert Kilometer und zählt über 3 300 Inseln. Im Schnitt ist er 14 Meter tief, an der tiefsten Stelle fast 100. In der ganzen Gemeinde werden über 10 000 Seen gezählt.',
-        es: 'El lago Inari mide unos cien kilómetros de punta a punta y tiene más de 3 300 islas. Su profundidad media es de 14 metros y llega casi a 100 en el punto más hondo. En todo el municipio se cuentan más de 10 000 lagos.',
-        fr: 'Le lac Inari s’étire sur une centaine de kilomètres et compte plus de 3 300 îles. Sa profondeur moyenne est de 14 mètres et atteint près de 100 au point le plus profond. La commune entière compte plus de 10 000 lacs.',
-        it: 'Il lago Inari misura un centinaio di chilometri da un capo all’altro e conta oltre 3 300 isole. La profondità media è di 14 metri e nel punto più profondo sfiora i 100. In tutto il comune si contano più di 10 000 laghi.',
-        nl: 'Het Inarimeer meet zo’n honderd kilometer van eind tot eind en telt ruim 3 300 eilanden. Gemiddeld is het 14 meter diep en op het diepste punt bijna 100. In de hele gemeente worden meer dan 10 000 meren geteld.',
-        ja: 'Inari 湖は端から端までおよそ100キロ、3 300 を超える島を抱えています。平均水深は14メートル、最も深いところでは100メートル近く。この自治体全体では1万を超える湖が数えられています。',
-        ko: 'Inari 호수는 끝에서 끝까지 약 100킬로미터에 이르고 3 300개가 넘는 섬을 품고 있습니다. 평균 수심은 14미터, 가장 깊은 곳은 100미터에 가깝습니다. 이 지자체 전체에는 1만 개가 넘는 호수가 있습니다.',
-        'zh-CN': 'Inari 湖首尾约一百公里，湖中散布着 3 300 多座岛屿。平均水深 14 米，最深处接近 100 米。整个市镇境内的湖泊超过一万个。',
-        'pt-BR': 'O lago Inari tem cerca de cem quilômetros de ponta a ponta e abriga mais de 3 300 ilhas. A profundidade média é de 14 metros e chega a quase 100 no ponto mais fundo. O município todo conta mais de 10 000 lagos.',
+        en: 'Lake Inari runs about a hundred kilometres end to end and holds over 3,300 islands. It averages 14 metres deep and reaches nearly 100 at its deepest. The municipality counts more than 10,000 lakes in all.',
+        fi: 'Inarijärvi on päästä päähän noin sata kilometriä ja siinä on yli 3 300 saarta. Keskisyvyys on 14 metriä ja syvimmillään lähes 100. Koko kunnassa lasketaan olevan yli 10 000 järveä.',
+        sv: 'Enare träsk mäter omkring hundra kilometer från ände till ände och rymmer över 3 300 öar. Medeldjupet är 14 meter och som djupast närmar det sig 100. I hela kommunen räknar man med över 10 000 sjöar.',
+        de: 'Der Inarisee misst von einem Ende zum anderen rund hundert Kilometer und zählt über 3 300 Inseln. Im Schnitt ist er 14 Meter tief, an der tiefsten Stelle fast 100. In der ganzen Gemeinde werden über 10 000 Seen gezählt.',
+        es: 'El lago Inari mide unos cien kilómetros de punta a punta y tiene más de 3300 islas. Su profundidad media es de 14 metros y llega casi a 100 en el punto más hondo. En todo el municipio se cuentan más de 10 000 lagos.',
+        fr: 'Le lac Inari s’étire sur une centaine de kilomètres et compte plus de 3 300 îles. Sa profondeur moyenne est de 14 mètres et atteint près de 100 au point le plus profond. La commune entière compte plus de 10 000 lacs.',
+        it: 'Il lago Inari misura un centinaio di chilometri da un capo all’altro e conta oltre 3 300 isole. La profondità media è di 14 metri e nel punto più profondo sfiora i 100. In tutto il comune si contano più di 10 000 laghi.',
+        nl: 'Het Inarimeer meet zo’n honderd kilometer van eind tot eind en telt ruim 3.300 eilanden. Gemiddeld is het 14 meter diep en op het diepste punt bijna 100. In de hele gemeente worden meer dan 10.000 meren geteld.',
+        ja: 'Inari 湖は端から端までおよそ100キロ、3,300 を超える島を抱えています。平均水深は14メートル、最も深いところでは100メートル近く。この自治体全体では1万を超える湖が数えられています。',
+        ko: '이나리 호수는 끝에서 끝까지 약 100킬로미터에 이르고 3,300개가 넘는 섬을 품고 있습니다. 평균 수심은 14미터, 가장 깊은 곳은 100미터에 가깝습니다. 이 지자체 전체에는 1만 개가 넘는 호수가 있습니다.',
+        'zh-CN': 'Inari 湖首尾约一百公里，湖中散布着 3,300 多座岛屿。平均水深 14 米，最深处接近 100 米。整个市镇境内的湖泊超过一万个。',
+        'pt-BR': 'O lago Inari tem cerca de cem quilômetros de ponta a ponta e abriga mais de 3.300 ilhas. A profundidade média é de 14 metros e chega a quase 100 no ponto mais fundo. O município todo conta mais de 10.000 lagos.',
       },
     },
     {
@@ -863,7 +886,7 @@ const inari: DestinationFacts = {
         it: 'Il sami settentrionale, il sami di Inari e il sami skolt sono qui tutti in uso ufficiale accanto al finlandese, e quasi un terzo degli abitanti del comune è sami. Siida, il museo nazionale della cultura sami, accosta la sua esposizione principale e il museo all’aperto alla natura dell’estremo nord.',
         nl: 'Noord-Samisch, Inari-Samisch en Skolt-Samisch zijn hier alle drie in officieel gebruik naast het Fins, en bijna een derde van de inwoners van de gemeente is Sami. Siida, het nationale museum van de Samische cultuur, zet zijn hoofdtentoonstelling en openluchtmuseum af tegen de natuur van het hoge noorden.',
         ja: 'ここでは北サーミ語、イナリサーミ語、スコルトサーミ語がフィンランド語と並んで公用に使われ、自治体の住民のおよそ3分の1がサーミの人々です。サーミ文化の国立博物館 Siida は、常設展と野外博物館を北の自然と向き合わせて見せています。',
-        ko: '이곳에서는 북부 사미어, 이나리 사미어, 스콜트 사미어가 핀란드어와 나란히 공식적으로 쓰이고, 지자체 주민의 거의 3분의 1이 사미인입니다. 사미 문화의 국립 박물관 Siida는 상설 전시와 야외 박물관을 북방의 자연과 마주 세워 보여 줍니다.',
+        ko: '이곳에서는 북부 사미어, 이나리 사미어, 스콜트 사미어가 핀란드어와 나란히 공식적으로 쓰이고, 지자체 주민의 거의 3분의 1이 사미인입니다. 사미 문화의 국립 박물관 시이다는 상설 전시와 야외 박물관을 북방의 자연과 마주 세워 보여 줍니다.',
         'zh-CN': '在这里，北萨米语、伊纳里萨米语和斯科尔特萨米语与芬兰语并列，同为官方使用的语言，市镇近三分之一的居民是萨米人。萨米文化的国立博物馆 Siida，把常设展与露天博物馆安置在极北的自然之中。',
         'pt-BR': 'O sámi do norte, o sámi de Inari e o sámi skolt estão todos em uso oficial aqui ao lado do finlandês, e quase um terço dos moradores do município é sámi. O Siida, museu nacional da cultura sámi, coloca sua exposição principal e seu museu ao ar livre diante da natureza do extremo norte.',
       },
@@ -887,7 +910,7 @@ const inari: DestinationFacts = {
         it: 'Inari copre il cinque per cento della superficie della Finlandia, e due terzi dei suoi abitanti vivono a Ivalo e non nel villaggio di Inari stesso. Intorno al villaggio resta quindi spazio: foresta, acqua e montagna aperta, con ben poco nel mezzo.',
         nl: 'Inari beslaat vijf procent van de oppervlakte van Finland, en twee derde van de inwoners woont in Ivalo in plaats van in het dorp Inari zelf. Wat er rond het dorp overblijft is ruimte: bos, water en open fjäll, met heel weinig ertussen.',
         ja: 'Inari はフィンランドの国土の5パーセントを占め、住民の3分の2は Inari 村ではなく Ivalo に暮らしています。だから村のまわりに残るのは、空間そのもの。森と水と開けた山があり、その間にはほとんど何もありません。',
-        ko: 'Inari는 핀란드 국토의 5퍼센트를 차지하고, 주민의 3분의 2는 Inari 마을이 아니라 Ivalo에 삽니다. 그래서 마을 둘레에 남는 것은 공간입니다. 숲과 물과 트인 산이 있고, 그 사이에는 거의 아무것도 없습니다.',
+        ko: '이나리는 핀란드 국토의 5퍼센트를 차지하고, 주민의 3분의 2는 이나리 마을이 아니라 이발로에 삽니다. 그래서 마을 둘레에 남는 것은 공간입니다. 숲과 물과 트인 산이 있고, 그 사이에는 거의 아무것도 없습니다.',
         'zh-CN': 'Inari 占芬兰国土面积的百分之五，而三分之二的居民住在 Ivalo，而非 Inari 村本身。于是村庄四周留下的就是空间：森林、水域和开阔的山地，中间几乎别无他物。',
         'pt-BR': 'Inari ocupa cinco por cento da superfície da Finlândia, e dois terços de seus moradores vivem em Ivalo, não na própria vila de Inari. O que sobra em volta da vila é espaço: floresta, água e montanha aberta, com muito pouco no meio.',
       },
@@ -914,7 +937,7 @@ const inari: DestinationFacts = {
         sv: 'Enare-guiden på LaplandVibes', de: 'Der Inari-Guide auf LaplandVibes',
         es: 'La guía de Inari en LaplandVibes', fr: 'Le guide d’Inari sur LaplandVibes',
         it: 'La guida di Inari su LaplandVibes', nl: 'De Inari-gids op LaplandVibes',
-        ja: 'LaplandVibes の Inari ガイド', ko: 'LaplandVibes의 Inari 가이드',
+        ja: 'LaplandVibes の Inari ガイド', ko: 'LaplandVibes의 이나리 가이드',
         'zh-CN': 'LaplandVibes 上的 Inari 指南', 'pt-BR': 'O guia de Inari no LaplandVibes',
       },
       href: 'https://laplandvibes.com/destination/inari',
@@ -925,7 +948,7 @@ const inari: DestinationFacts = {
         sv: 'Boende i Enare på LaplandStays', de: 'Unterkünfte in Inari auf LaplandStays',
         es: 'Alojamientos de Inari en LaplandStays', fr: 'Les hébergements d’Inari sur LaplandStays',
         it: 'Alloggi a Inari su LaplandStays', nl: 'Verblijven in Inari op LaplandStays',
-        ja: 'LaplandStays で Inari の宿を見る', ko: 'LaplandStays에서 Inari 숙소 보기',
+        ja: 'LaplandStays で Inari の宿を見る', ko: 'LaplandStays에서 이나리 숙소 보기',
         'zh-CN': '在 LaplandStays 上看 Inari 的住宿', 'pt-BR': 'Hospedagens em Inari no LaplandStays',
       },
       href: 'https://laplandstays.com/destinations/inari',

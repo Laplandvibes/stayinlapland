@@ -149,17 +149,17 @@ export default function LomarengasAd({
 
   const sub = pick({
     en: 'Lomarengas has been the home of Finnish holiday homes since 1967: over 4,400 handpicked cottages, every owner verified and every place personally checked. The proper lakeside or fell cabin with its own sauna that the big hotel sites just don’t list.',
-    fi: 'Lomarengas on ollut suomalaisten lomamökkien koti vuodesta 1967: yli 4 400 käsin valittua mökkiä, jokainen omistaja tarkistettu ja jokainen kohde käyty läpi. Juuri se järven- tai tunturinrantamökki omalla saunalla, jollaista isot hotellisivut eivät listaa.',
-    de: 'Lomarengas ist seit 1967 die Heimat finnischer Ferienhäuser: über 4.400 handverlesene Häuschen, jeder Eigentümer geprüft, jedes Objekt persönlich kontrolliert. Genau das Häuschen am See oder Fjell mit eigener Sauna, das die großen Hotelseiten einfach nicht führen.',
+    fi: 'Lomarengas on ollut suomalaisten lomamökkien koti vuodesta 1967: yli 4 400 käsin valittua mökkiä, jokainen omistaja tarkistettu ja jokainen kohde käyty läpi. Juuri se järven- tai tunturinrantamökki omalla saunalla, jollaista isot hotellisivut eivät listaa.',
+    de: 'Lomarengas ist seit 1967 die Heimat finnischer Ferienhäuser: über 4 400 handverlesene Häuschen, jeder Eigentümer geprüft, jedes Objekt persönlich kontrolliert. Genau das Häuschen am See oder Fjell mit eigener Sauna, das die großen Hotelseiten einfach nicht führen.',
     ja: 'Lomarengas は 1967 年からフィンランドのコテージの拠点。4,400 軒以上の厳選された物件は、オーナーも一軒一軒も確認済みです。大手ホテルサイトには載らない、湖畔やフェルのサウナ付きの一棟まるごとが見つかります。',
-    es: 'Lomarengas es el hogar de las cabañas finlandesas desde 1967: más de 4.400 cabañas seleccionadas a mano, con cada propietario verificado y cada alojamiento revisado en persona. La cabaña junto al lago o la montaña, con su propia sauna, que las grandes webs de hoteles no incluyen.',
+    es: 'Lomarengas es el hogar de las cabañas finlandesas desde 1967: más de 4400 cabañas seleccionadas a mano, con cada propietario verificado y cada alojamiento revisado en persona. La cabaña junto al lago o la montaña, con su propia sauna, que las grandes webs de hoteles no incluyen.',
     'pt-BR': 'A Lomarengas é a casa dos chalés finlandeses desde 1967: mais de 4.400 chalés escolhidos a dedo, cada proprietário verificado e cada lugar conferido pessoalmente. O chalé à beira do lago ou da montanha, com sauna própria, que os grandes sites de hotéis simplesmente não listam.',
     'zh-CN': '自 1967 年以来，Lomarengas 一直是芬兰度假小屋的大本营，4,400 多套精选小屋，每位业主都经过核实，每处都亲自查验。那种带私人桑拿、靠湖或靠山的整栋小屋，大型酒店网站根本没有。',
-    ko: 'Lomarengas는 1967년부터 핀란드 코티지의 본거지입니다. 4,400채가 넘는 엄선된 코티지는 모든 집주인을 확인하고 모든 숙소를 직접 점검합니다. 대형 호텔 사이트에는 없는, 전용 사우나가 딸린 호숫가나 펠 코티지를 만나보세요.',
-    fr: 'Lomarengas est la maison des chalets finlandais depuis 1967 : plus de 4 400 chalets sélectionnés à la main, chaque propriétaire vérifié et chaque logement contrôlé en personne. Le vrai chalet au bord du lac ou de la colline, avec son propre sauna, que les grands sites d’hôtels ne référencent pas.',
-    it: 'Lomarengas è la casa delle baite finlandesi dal 1967: oltre 4 400 baite scelte a mano, ogni proprietario verificato e ogni alloggio controllato di persona. Proprio la baita sul lago o sul fjell, con la sua sauna, che i grandi siti di hotel non elencano.',
+    ko: 'Lomarengas는 1967년부터 핀란드 코티지의 본거지입니다. 4,400채가 넘는 엄선된 코티지는 모든 집주인을 확인하고 모든 숙소를 직접 점검합니다. 대형 호텔 사이트에는 없는, 전용 사우나가 딸린 호숫가나 산속 코티지를 만나보세요.',
+    fr: 'Lomarengas est la maison des chalets finlandais depuis 1967 : plus de 4 400 chalets sélectionnés à la main, chaque propriétaire vérifié et chaque logement contrôlé en personne. Le vrai chalet au bord du lac ou de la colline, avec son propre sauna, que les grands sites d’hôtels ne référencent pas.',
+    it: 'Lomarengas è la casa delle baite finlandesi dal 1967: oltre 4 400 baite scelte a mano, ogni proprietario verificato e ogni alloggio controllato di persona. Proprio la baita sul lago o sul fjell, con la sua sauna, che i grandi siti di hotel non elencano.',
     nl: 'Lomarengas is sinds 1967 het thuis van Finse vakantiehuisjes: ruim 4.400 met de hand geselecteerde huisjes, elke eigenaar geverifieerd en elke plek persoonlijk gecontroleerd. Precies het huisje aan het meer of de heuvel, met eigen sauna, dat de grote hotelsites gewoon niet hebben.',
-    sv: 'Lomarengas har varit de finska semesterstugornas hem sedan 1967: över 4 400 handplockade stugor, varje ägare kontrollerad och varje ställe personligen besiktigat. Just den där stugan vid sjön eller fjället med egen bastu som de stora hotellsajterna helt enkelt inte listar.',
+    sv: 'Lomarengas har varit de finska semesterstugornas hem sedan 1967: över 4 400 handplockade stugor, varje ägare kontrollerad och varje ställe personligen besiktigat. Just den där stugan vid sjön eller fjället med egen bastu som de stora hotellsajterna helt enkelt inte listar.',
   });
 
   const trust: { icon: typeof ShieldCheck; label: string }[] = [
@@ -167,17 +167,17 @@ export default function LomarengasAd({
       icon: BadgeCheck,
       label: pick({
         en: '4,400+ verified cottages',
-        fi: 'Yli 4 400 tarkistettua mökkiä',
-        de: 'Über 4.400 geprüfte Häuschen',
+        fi: 'Yli 4 400 tarkistettua mökkiä',
+        de: 'Über 4 400 geprüfte Häuschen',
         ja: '4,400 軒以上の確認済み物件',
-        es: 'Más de 4.400 cabañas verificadas',
+        es: 'Más de 4400 cabañas verificadas',
         'pt-BR': 'Mais de 4.400 chalés verificados',
         'zh-CN': '4,400+ 套已核实小屋',
         ko: '4,400채 이상 검증된 코티지',
-        fr: 'Plus de 4 400 chalets vérifiés',
-        it: 'Oltre 4 400 baite verificate',
+        fr: 'Plus de 4 400 chalets vérifiés',
+        it: 'Oltre 4 400 baite verificate',
         nl: 'Ruim 4.400 geverifieerde huisjes',
-        sv: 'Över 4 400 kontrollerade stugor',
+        sv: 'Över 4 400 kontrollerade stugor',
       }),
     },
     {

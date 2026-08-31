@@ -132,7 +132,7 @@ export const copyFR: SectionCopy = {
         forWho: 'Première fois · 4 à 6 nuits · en famille',
         recommendation: 'Hôtel boutique à Rovaniemi',
         rationale:
-          'Un hôtel design comme Arctic Light ou Arctic TreeHouse vous donne la proximité de l’aéroport, une vraie scène gastronomique et la logistique du village du père Noël, sans imposer à la famille un chalet isolé où le chauffage devient un chantier du soir.',
+          'Un hôtel design comme Arctic Light ou Arctic TreeHouse vous donne la proximité de l’aéroport, une vraie scène gastronomique et la logistique du village du Père Noël, sans imposer à la famille un chalet isolé où le chauffage devient un chantier du soir.',
         ctaLabel: 'Voir les hôtels',
       },
       {
@@ -331,7 +331,7 @@ export const copyFR: SectionCopy = {
     },
     authorNote: 'Les informations des deux adresses sont vérifiées à partir des données publiées par les exploitants et d\'avis récents de voyageurs.',
     pickWhy: [
-      'Les suites Iso-Syöte Eagle View se trouvent à 432 m sur le vrai fjell le plus au sud de Finlande, des suites en pin, avec observation de l’aurore au-dessus de la ligne des arbres et sans le long vol vers le nord.',
+      'Les suites Iso-Syöte Eagle View se trouvent à 432 m sur le vrai fjäll le plus au sud de Finlande, des suites en pin, avec observation de l’aurore au-dessus de la ligne des arbres et sans le long vol vers le nord.',
       'Les façades vitrées donnent sur le ciel ouvert : par nuit claire, l’arc auroral se lit depuis le lit. On observe l’aurore depuis sa propre suite au sommet de la crête, et non depuis un abri partagé, l’intimité sans l’engagement d’une privatisation complète.',
       'C’est aussi le lodge en pleine nature sérieux le plus facile d’accès : 90 minutes de l’aéroport d’Oulu, ce qui en fait la rare retraite envisageable même pour un court séjour.',
     ],
@@ -340,7 +340,7 @@ export const copyFR: SectionCopy = {
     pullQuote: {
       text:
         'Le mot « reculé » relève d’habitude du langage marketing. Ici, en haut, c’est vrai. La route s’arrête, la ligne des arbres passe en dessous de vous, et la seule lumière qui reste est celle que le ciel décide de faire. On ne passe pas à l’improviste dans un endroit pareil, on s’y engage.',
-      attr: 'Sur la route du fjell d’Iso-Syöte, le regard vers le haut',
+      attr: 'Sur la route du fjäll d’Iso-Syöte, le regard vers le haut',
     },
     runnersKicker: 'L’autre',
     runnersH2: 'Quand une suite entière au sommet de la crête, c’est trop.',
@@ -438,7 +438,7 @@ export const copyFR: SectionCopy = {
       {
         title: 'Comment s’y rendre',
         body: [
-          'Trois aéroports lapons couvrent l’essentiel de ce que vous réserverez. Rovaniemi (RVN) pour le village du père Noël et le sud, Kittilä (KTT) pour Levi et Ylläs, Ivalo (IVL) pour Saariselkä, Inari et le nord.',
+          'Trois aéroports lapons couvrent l’essentiel de ce que vous réserverez. Rovaniemi (RVN) pour le village du Père Noël et le sud, Kittilä (KTT) pour Levi et Ylläs, Ivalo (IVL) pour Saariselkä, Inari et le nord.',
           'Helsinki (HEL) → Laponie, c’est un vol intérieur de 90 minutes. Des vols directs depuis Londres, Berlin et Paris existent aussi de décembre à mars.',
           'Trains : le train de nuit Helsinki–Rovaniemi est lent, mais la remontée de la côte du golfe de Botnie par Kemi est franchement belle et la voiture est pleine de locaux qui font le même trajet.',
         ],
@@ -472,7 +472,7 @@ export const copyFR: SectionCopy = {
       {
         title: 'Conseils d’initiés',
         body: [
-          'Saariselkä et Inari sont plus froids, plus sombres et offrent une aurore plus forte que Rovaniemi, mais Rovaniemi a l’aéroport, les activités, le village du père Noël. Combinez vos bases.',
+          'Saariselkä et Inari sont plus froids, plus sombres et offrent une aurore plus forte que Rovaniemi, mais Rovaniemi a l’aéroport, les activités, le village du Père Noël. Combinez vos bases.',
           'Si vous n’avez que 3 nuits, faites-les au même endroit. La Laponie est plus grande qu’on ne le pense et les transferts grignotent les journées.',
           'Les prévisions d’aurore (NOAA, Aurora Service Europe) sont fiables à 30–90 minutes, pas à plusieurs jours. Restez souple.',
         ],
@@ -530,7 +530,7 @@ export const copyFR: SectionCopy = {
         name: 'Décembre',
         pitch: 'Pic de Noël',
         body:
-          'De Noël au Nouvel An, tout est au pic, prix au pic, demande au pic, tourisme père Noël au pic à Rovaniemi. Les igloos de verre triplent de prix, les hôtels de neige ouvrent pleinement. L’aurore est toujours active mais le ciel est souvent plus nuageux.',
+          'De Noël au Nouvel An, tout est au pic, prix au pic, demande au pic, tourisme Père Noël au pic à Rovaniemi. Les igloos de verre triplent de prix, les hôtels de neige ouvrent pleinement. L’aurore est toujours active mais le ciel est souvent plus nuageux.',
         bestFor: ['Voyages familiaux sur le thème de Noël', 'Premières fois qui veulent la neige garantie'],
         avoidIf: ['Voyage sensible au budget', 'Séjours aurore avant tout'],
       },
@@ -554,7 +554,7 @@ export const copyFR: SectionCopy = {
         name: 'Mars',
         pitch: 'La lumière revient',
         body:
-          'Les jours rallongent vite, à la fin du mois, vous avez 13 heures de jour. L’aurore reste forte aux aubes sombres et en soirée tardive. Ski de printemps sur les fjells exposés au sud. Le mois de ski le plus photogénique.',
+          'Les jours rallongent vite, à la fin du mois, vous avez 13 heures de jour. L’aurore reste forte aux aubes sombres et en soirée tardive. Ski de printemps sur les fjälls exposés au sud. Le mois de ski le plus photogénique.',
         bestFor: ['Longs séjours ski aux pieds', 'Qui veut lumière + aurore'],
         avoidIf: ['Photographes venus pour l’ambiance nuit polaire'],
       },
@@ -562,7 +562,7 @@ export const copyFR: SectionCopy = {
         name: 'Avril',
         pitch: 'Neige de printemps + lumière',
         body:
-          'La neige est encore épaisse et le ski sur les fjells excellent. La saison des aurores se termine au début du mois d’avril, quand les nuits deviennent trop claires. Fin avril, c’est de nouveau la charnière, les tarifs baissent de 30 %, les adresses restent ouvertes, le soleil reste au-dessus de l’horizon plus de 16 heures.',
+          'La neige est encore épaisse et le ski sur les fjälls excellent. La saison des aurores se termine au début du mois d’avril, quand les nuits deviennent trop claires. Fin avril, c’est de nouveau la charnière, les tarifs baissent de 30 %, les adresses restent ouvertes, le soleil reste au-dessus de l’horizon plus de 16 heures.',
         bestFor: ['Longs séjours ski de fin de saison', 'Ski de fond'],
         avoidIf: ['Voyages aurore avant tout'],
       },
@@ -631,14 +631,14 @@ export const copyFR: SectionCopy = {
       location: 'Levi',
       highlight: 'Villas design · spa · ski aux pieds',
       description:
-        'Hôtel-villas haut de gamme au pied du fjell de Levi. Bains nordiques privés en extérieur, sauna dans chaque villa, accès ski aux pieds aux remontées et spa complet. Conçu pour les adultes, pas de programme enfants, juste des chambres calmes et une bonne table.',
+        'Hôtel-villas haut de gamme au pied du fjäll de Levi. Bains nordiques privés en extérieur, sauna dans chaque villa, accès ski aux pieds aux remontées et spa complet. Conçu pour les adultes, pas de programme enfants, juste des chambres calmes et une bonne table.',
     },
     {
       name: 'Lapland Hotels Saaga',
       location: 'Ylläsjärvi (Ylläs)',
       highlight: 'Classique d’Ylläs · ski aux pieds · spa et piscine',
       description:
-        'L’hôtel classique du versant plus calme d’Ylläs, dans le village d’Ylläsjärvi, à une centaine de mètres de la remontée Iso-Ylläs, ski aux pieds en hiver. Piscine, spa et salle de sport sont inclus pour les chambres standard et superior ; les appartements ajoutent un sauna privé. Le buffet du restaurant Biegga donne sur le fjell et le lac Ylläsjärvi.',
+        'L’hôtel classique du versant plus calme d’Ylläs, dans le village d’Ylläsjärvi, à une centaine de mètres de la remontée Iso-Ylläs, ski aux pieds en hiver. Piscine, spa et salle de sport sont inclus pour les chambres standard et superior ; les appartements ajoutent un sauna privé. Le buffet du restaurant Biegga donne sur le fjäll et le lac Ylläsjärvi.',
     },
     {
       name: 'Star Arctic Hotel',
@@ -661,14 +661,14 @@ export const copyFR: SectionCopy = {
       location: 'Village de Levi',
       highlight: '2 chambres · ski aux pieds · sauna privé · tarifs hebdomadaires',
       description:
-        'Appartements de deux chambres au pied du fjell de Levi, à distance de marche des remontées et du village. Chaque unité a un sauna privé au feu de bois, une vraie cuisine et un minimum de quatre nuits de décembre à mars. Le choix des familles qui passent une semaine à skier sans renoncer aux commodités urbaines.',
+        'Appartements de deux chambres au pied du fjäll de Levi, à distance de marche des remontées et du village. Chaque unité a un sauna privé au feu de bois, une vraie cuisine et un minimum de quatre nuits de décembre à mars. Le choix des familles qui passent une semaine à skier sans renoncer aux commodités urbaines.',
     },
     {
       name: 'Lapland Hotels Ounasvaara Chalets',
-      location: 'Rovaniemi · fjell d’Ounasvaara',
+      location: 'Rovaniemi · fjäll d’Ounasvaara',
       highlight: 'Ski aux pieds · à pied du centre de Rovaniemi',
       description:
-        'Chalets tout équipés sur le fjell d’Ounasvaara. Ski aux pieds en hiver, dix minutes à pied du centre de Rovaniemi. L’option longue durée la plus souple si vous voulez mêler commodité urbaine et matins arctiques.',
+        'Chalets tout équipés sur le fjäll d’Ounasvaara. Ski aux pieds en hiver, dix minutes à pied du centre de Rovaniemi. L’option longue durée la plus souple si vous voulez mêler commodité urbaine et matins arctiques.',
     },
     {
       name: "Lapland Hotels Bear's Lodge",
@@ -682,7 +682,7 @@ export const copyFR: SectionCopy = {
       location: 'Rive sud du lac Inari',
       highlight: 'Activités menées par les Samis · vue sur le lac · tarifs longue durée',
       description:
-        'Villas au bord du lac Inari, chambres face à l’eau. Pêche blanche guidée par des Samis, ski sauvage encadré par un ranger, le musée sami d’Inari à vingt minutes. Tarifs longue durée à partir de quatre nuits, le plus culturel des longs séjours au bord d’un lac.',
+        'Villas au bord du lac Inari, chambres face à l’eau. Pêche blanche guidée par des Samis, ski sauvage encadré par un ranger, le musée same d’Inari à vingt minutes. Tarifs longue durée à partir de quatre nuits, le plus culturel des longs séjours au bord d’un lac.',
     },
   ],
   glassIgloosData: [
@@ -696,9 +696,9 @@ export const copyFR: SectionCopy = {
     {
       name: 'Levin Iglut',
       location: 'Fjell de Levi',
-      highlight: 'Lits aurore motorisés · position en haut du fjell',
+      highlight: 'Lits aurore motorisés · position en haut du fjäll',
       description:
-        'Igloos de verre haut de gamme sur le fjell de Levi, bien au-dessus du halo lumineux du village. Les lits motorisés s’orientent vers l’arc auroral, chaque unité a sa kitchenette privée, l’ingénierie la mieux aboutie des cinq resorts finlandais.',
+        'Igloos de verre haut de gamme sur le fjäll de Levi, bien au-dessus du halo lumineux du village. Les lits motorisés s’orientent vers l’arc auroral, chaque unité a sa kitchenette privée, l’ingénierie la mieux aboutie des cinq resorts finlandais.',
     },
     {
       name: 'Aurora Village',
@@ -721,14 +721,14 @@ export const copyFR: SectionCopy = {
       location: 'Iso-Syöte (Pudasjärvi, juste au sud de la Laponie)',
       highlight: 'Au-dessus de la ligne des arbres · accessible depuis Oulu',
       description:
-        'Suites en pin à 432 m sur le fjell d’Iso-Syöte, le vrai fjell le plus méridional de Finlande. Observation de l’aurore au-dessus de la ligne des arbres sans le long vol jusqu’à Saariselkä, et à 90 minutes de l’aéroport d’Oulu.',
+        'Suites en pin à 432 m sur le fjäll d’Iso-Syöte, le vrai fjäll le plus méridional de Finlande. Observation de l’aurore au-dessus de la ligne des arbres sans le long vol jusqu’à Saariselkä, et à 90 minutes de l’aéroport d’Oulu.',
     },
     {
       name: 'Wilderness Hotel Muotka',
       location: 'Région de Saariselkä',
       highlight: 'Service de réveil aurore · confort hôtelier',
       description:
-        'Cabanes aurore avec baie vitrée toute hauteur face aux fjells environnants. Les chasseurs d’aurores sur place réveillent les hôtes quand l’activité monte, utile, puisque la plupart des fenêtres aurore se produisent bien après minuit. Le confort hôtelier en pleine nature.',
+        'Cabanes aurore avec baie vitrée toute hauteur face aux fjälls environnants. Les chasseurs d’aurores sur place réveillent les hôtes quand l’activité monte, utile, puisque la plupart des fenêtres aurore se produisent bien après minuit. Le confort hôtelier en pleine nature.',
     },
   ],
   destinationsData: [
@@ -755,9 +755,9 @@ export const copyFR: SectionCopy = {
     },
     {
       slug: 'inari',
-      pitch: 'Capitale culturelle sami, lac Inari (troisième lac de Finlande), notre base longue durée la plus septentrionale.',
+      pitch: 'Capitale culturelle same, lac Inari (troisième lac de Finlande), notre base longue durée la plus septentrionale.',
       longStayAngle:
-        'Logique longue durée : le lac lui-même est l’activité. Pêche blanche chaque matin, ski de fond en travers du lac gelé, musée sami d’Inari et centre culturel SIIDA au pas de la porte.',
+        'Logique longue durée : le lac lui-même est l’activité. Pêche blanche chaque matin, ski de fond en travers du lac gelé, musée same d’Inari et centre culturel Siida au pas de la porte.',
     },
     {
       slug: 'yllas',

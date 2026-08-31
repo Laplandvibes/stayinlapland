@@ -182,11 +182,11 @@ export const copyEN: SectionCopy = {
     faqs: [
       {
         q: 'How long is a "long stay" on this site?',
-        a: 'Anything from four nights upwards counts as a long stay, it is the threshold at which most Lapland properties offer weekly rates and a real kitchen starts to matter. The featured long-stay properties run 3-night to 7-night minimums depending on the unit; each card lists the minimum.',
+        a: 'Anything from four nights upwards counts as a long stay: it is the threshold at which most Lapland properties offer weekly rates and a real kitchen starts to matter. The featured long-stay properties run 3-night to 7-night minimums depending on the unit; each card lists the minimum.',
       },
       {
         q: 'Why is the homepage focused on long stays rather than glass igloos?',
-        a: 'Glass igloos are the iconic Lapland format and they have a dedicated page. But the longest-loved Lapland trips are not three-night bucket-list stays in a glass dome, they are weeklong base-camp stays in a cabin or design hotel, with one or two nights elsewhere built in. The site reflects how Lapland actually rewards repeat visitors.',
+        a: 'Glass igloos are the iconic Lapland format and they have a dedicated page. But the longest-loved Lapland trips are not three-night bucket-list stays in a glass dome: they are weeklong base-camp stays in a cabin or design hotel, with one or two nights elsewhere built in. The site reflects how Lapland actually rewards repeat visitors.',
       },
       {
         q: 'Is Kakslauttanen really worth the headline price?',
@@ -374,7 +374,7 @@ export const copyEN: SectionCopy = {
       'It is also the most flexible base in this list: Rovaniemi’s airport, restaurants and design culture are ten minutes away, while the suite itself faces nothing but forest. The “Check rates” button below routes you straight to the weekly inventory.',
     ],
     pickCaveat:
-      'The weekly discount lives in the booking system once you select 7+ nights, it is not always shown on the headline nightly price. Peak weeks around Christmas book out months ahead; mid-November and late April open up far cheaper.',
+      'The weekly discount lives in the booking system once you select 7+ nights. It is not always shown on the headline nightly price. Peak weeks around Christmas book out months ahead; mid-November and late April open up far cheaper.',
     pullQuote: {
       text:
         'The brief was to disappear into the ridge. Use timber that came from the property, glass facing only north, and never raise the roofline above the tree line. What you see is what was already there, we just made it possible to live inside it.',
@@ -496,7 +496,7 @@ export const copyEN: SectionCopy = {
         name: 'September',
         pitch: 'Aurora season opens',
         body:
-          'Long dark nights begin. Snow has not yet fallen, this is the “ruska” period when birch turns red and gold. Aurora reads against bare ground, the colours are the most photographed of any month.',
+          'Long dark nights begin. Snow has not yet fallen. This is the “ruska” period when birch turns red and gold. Aurora reads against bare ground, and the colours are the most photographed of any month.',
         bestFor: ['Photographers', 'Aurora-first short stays', 'Hiking + aurora combo'],
         avoidIf: ['You came specifically for snow'],
       },
@@ -688,7 +688,7 @@ export const copyEN: SectionCopy = {
       location: 'Levi fell',
       highlight: 'Motorised aurora beds · fell-top position',
       description:
-        'Premium glass igloos on Levi fell, well above the village light bowl. Motorised beds adjust toward the auroral arc, every unit has a private kitchenette, the engineering is the best of the five Finnish resorts.',
+        'Premium glass igloos on Levi fell, well above the village light bowl. Motorised beds adjust toward the auroral arc and every unit has a private kitchenette; the engineering is the best of the five Finnish resorts.',
     },
     {
       name: 'Aurora Village',
@@ -734,7 +734,7 @@ export const copyEN: SectionCopy = {
       pitch:
         "Finland’s biggest ski resort by lift ticket sales, with 25,000 beds, ski-in/out apartments and a real village high street.",
       longStayAngle:
-        'Long-stay sense: ski-in/out apartments rent by the week from December through April. The lift system runs daily, the village restaurants open every night, you can do a proper season here.',
+        'Long-stay sense: ski-in/out apartments rent by the week from December through April. The lift system runs daily and the village restaurants open every night, so you can do a proper season here.',
     },
     {
       slug: 'saariselka',

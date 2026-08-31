@@ -12,7 +12,7 @@ export const copyIT: SectionCopy = {
     h1Line2: 'di una settimana di vacanza.',
     lead:
       'Baite a settimana, design hotel a Rovaniemi, igloo di vetro per le notti da non perdere, e i lodge nella natura selvaggia oltre l’ultima strada. Tariffe verificate da',
-    leadPriceRange: '140 € a 1 500 €',
+    leadPriceRange: '140 € a 1 500 €',
     liveLabel: 'Disponibilità in tempo reale · Ricerca Trip.com',
     browseLongStays: 'Sfogli i soggiorni lunghi',
     seeHotels: 'Veda gli hotel',
@@ -83,7 +83,7 @@ export const copyIT: SectionCopy = {
     cost: {
       title: 'Quanto costa',
       body:
-        'Rovaniemi monolocale: 600–900 €/mese. Levi/Saariselkä monolocale (stagione invernale): 900–1 400 €. Fuori dal picco invernale nei villaggi sciistici, i prezzi scendono del 30–40%. Tutti i valori includono l’acqua; elettricità e riscaldamento sono di solito separati.',
+        'Rovaniemi monolocale: 600–900 €/mese. Levi/Saariselkä monolocale (stagione invernale): 900–1 400 €. Fuori dal picco invernale nei villaggi sciistici, i prezzi scendono del 30–40%. Tutti i valori includono l’acqua; elettricità e riscaldamento sono di solito separati.',
     },
     abroad: {
       title: 'Viene dall’estero?',
@@ -261,8 +261,8 @@ export const copyIT: SectionCopy = {
       'I classici Glass Igloos costano circa il 30% in meno ma l’esperienza è chiaramente inferiore. Se il Suo budget si ferma a 400 €/notte, valuti Aurora Village o Aurora Pyramids, stesso cielo, spesso con una cornice migliore di lago o natura selvaggia.',
     pullQuote: {
       text:
-        'Il primo igloo di vetro fu costruito perché gli ospiti potessero vedere l’aurora senza stare fuori a -30°C. Cinquant’anni dopo questo è ancora tutto il concept, e la parte che ogni imitatore sbaglia è cosa succede quando l’aurora se ne va.',
-      attr: 'Storia delle origini di Kakslauttanen · 1973',
+        'Il primo igloo di vetro fu costruito perché gli ospiti potessero vedere l’aurora senza stare fuori a -30°C. Decenni dopo questo è ancora tutto il concept, e la parte che ogni imitatore sbaglia è cosa succede quando l’aurora se ne va.',
+      attr: 'Storia delle origini di Kakslauttanen · resort fondato nel 1973',
     },
     runnersKicker: 'Gli altri tre',
     runnersH2: 'Quando Kakslauttanen non è la risposta giusta.',
@@ -434,7 +434,7 @@ export const copyIT: SectionCopy = {
         body: [
           'Baita per soggiorno lungo (settimanale): 140–280 €/notte, può ospitare 4–6 persone.',
           'Hotel boutique: 140–420 €/notte, di solito colazione inclusa.',
-          'Igloo di vetro, alta stagione: 400–1 500 €/notte per due.',
+          'Igloo di vetro, alta stagione: 400–1 500 €/notte per due.',
           'Suite in lodge nella natura: 220–950 €/notte a seconda della struttura.',
           'Attività (safari con gli husky, motoslitta, caccia all’aurora) di solito 120–200 € per persona per uscita in aggiunta.',
         ],
@@ -443,7 +443,7 @@ export const copyIT: SectionCopy = {
         title: 'Politiche di cancellazione',
         body: [
           'La maggior parte delle strutture in Lapponia è passata a tariffe non rimborsabili per le settimane di picco. Legga le clausole prima di cliccare "prenota".',
-          'L’assicurazione di viaggio con copertura "cancella per qualsiasi motivo" vale davvero per viaggi sopra i 2 000 €. I cacciatori di aurora cancellano per maltempo di continuo.',
+          'L’assicurazione di viaggio con copertura "cancella per qualsiasi motivo" vale davvero per viaggi sopra i 2 000 €. I cacciatori di aurora cancellano per maltempo di continuo.',
           'I nostri partner di prenotazione rispettano le condizioni di cancellazione mostrate al momento della prenotazione, prenoti tramite il reindirizzamento di questo sito per mantenere visibili e coerenti le tariffe.',
         ],
       },
@@ -756,7 +756,7 @@ export const copyIT: SectionCopy = {
     {
       slug: 'levi',
       pitch:
-        'La più grande stazione sciistica della Finlandia per vendita di skipass, con 25 000 posti letto, appartamenti ski-in/out e una vera via principale di villaggio.',
+        'La più grande stazione sciistica della Finlandia per vendita di skipass, con 25 000 posti letto, appartamenti ski-in/out e una vera via principale di villaggio.',
       longStayAngle:
         'Logica del soggiorno lungo: gli appartamenti ski-in/out si affittano a settimana da dicembre ad aprile. Gli impianti vanno ogni giorno, i ristoranti del villaggio aprono ogni sera, qui si può fare una vera stagione.',
     },

@@ -24,7 +24,7 @@ export const copyNL: SectionCopy = {
     h1Line2: 'een weekje vakantie.',
     lead:
       'Hutten per week, design hotels in Rovaniemi, glasiglo’s voor de bucketlist-nachten, en de wildernislodges voorbij de laatste weg. Geverifieerde tarieven van',
-    leadPriceRange: '€140 tot €1 500',
+    leadPriceRange: '€140 tot €1.500',
     liveLabel: 'Live beschikbaarheid · Trip.com-zoekopdracht',
     browseLongStays: 'Lange verblijven bekijken',
     seeHotels: 'Hotels bekijken',
@@ -89,7 +89,7 @@ export const copyNL: SectionCopy = {
     cost: {
       title: 'Wat kost het',
       body:
-        'Rovaniemi 1-kamerwoning: €600–900/maand. Levi/Saariselkä 1-kamerwoning (winterseizoen): €900–1 400. Buiten de winterpiek in skidorpen dalen de prijzen met 30–40%. Alle bedragen zijn inclusief water; elektriciteit en verwarming zijn doorgaans apart.',
+        'Rovaniemi 1-kamerwoning: €600–900/maand. Levi/Saariselkä 1-kamerwoning (winterseizoen): €900–1.400. Buiten de winterpiek in skidorpen dalen de prijzen met 30–40%. Alle bedragen zijn inclusief water; elektriciteit en verwarming zijn doorgaans apart.',
     },
     abroad: {
       title: 'Komt u uit het buitenland?',
@@ -271,8 +271,8 @@ export const copyNL: SectionCopy = {
       'De klassieke Glass Igloos zijn ongeveer 30% goedkoper, maar de ervaring is duidelijk minder. Past uw budget op €400/nacht, kijk dan naar Aurora Village of Aurora Pyramids, dezelfde hemel, vaak met een mooiere meer- of wildernislocatie.',
     pullQuote: {
       text:
-        'De eerste glasiglo werd gebouwd zodat gasten het noorderlicht konden zien zonder buiten te staan bij -30°C. Vijftig jaar later is dat nog steeds de hele propositie, en wat elke nabootser verkeerd doet, is wat er gebeurt nadat het noorderlicht verdwijnt.',
-      attr: 'Ontstaansverhaal Kakslauttanen · 1973',
+        'De eerste glasiglo werd gebouwd zodat gasten het noorderlicht konden zien zonder buiten te staan bij -30°C. Decennia later is dat nog steeds de hele propositie, en wat elke nabootser verkeerd doet, is wat er gebeurt nadat het noorderlicht verdwijnt.',
+      attr: 'Ontstaansverhaal Kakslauttanen · resort opgericht in 1973',
     },
     runnersKicker: 'De andere drie',
     runnersH2: 'Wanneer Kakslauttanen niet het juiste antwoord is.',
@@ -439,7 +439,7 @@ export const copyNL: SectionCopy = {
         body: [
           'Lange-verblijfshut (weektarief): €140–280/nacht, slaapt 4–6.',
           'Boutique hotel: €140–420/nacht, ontbijt meestal inbegrepen.',
-          'Glasiglo, hoogseizoen: €400–1 500/nacht voor twee.',
+          'Glasiglo, hoogseizoen: €400–1.500/nacht voor twee.',
           'Wildernislodge-suite: €220–950/nacht afhankelijk van de accommodatie.',
           'Activiteiten (husky-safari, sneeuwscooter, noorderlichtjacht) doorgaans €120–200 per persoon per uitstap erbovenop.',
         ],
@@ -448,7 +448,7 @@ export const copyNL: SectionCopy = {
         title: 'Annuleringsvoorwaarden',
         body: [
           'De meeste Lapland-accommodaties zijn voor de piekweken overgestapt op niet-restitueerbare tarieven. Lees de kleine lettertjes voordat u op "boeken" klikt.',
-          'Een reisverzekering met "annuleer-om-elke-reden"-dekking is écht de moeite waard voor reizen boven €2 000. Noorderlichtjagers annuleren voortdurend om het weer.',
+          'Een reisverzekering met "annuleer-om-elke-reden"-dekking is écht de moeite waard voor reizen boven €2.000. Noorderlichtjagers annuleren voortdurend om het weer.',
           'Onze boekingspartners respecteren de annuleringsvoorwaarden die bij het boeken worden getoond, boek via de redirect op deze site om het tarief zichtbaar en consistent te houden.',
         ],
       },
@@ -755,7 +755,7 @@ export const copyNL: SectionCopy = {
     {
       slug: 'levi',
       pitch:
-        'Het grootste skigebied van Finland gemeten in liftkaartverkoop, met 25 000 bedden, ski-in/out-appartementen en een echte dorpsstraat.',
+        'Het grootste skigebied van Finland gemeten in liftkaartverkoop, met 25.000 bedden, ski-in/out-appartementen en een echte dorpsstraat.',
       longStayAngle:
         'Logica van het lange verblijf: ski-in/out-appartementen worden van december tot april per week verhuurd. Het liftsysteem draait dagelijks, de dorpsrestaurants openen elke avond, u kunt hier een echt seizoen doen.',
     },

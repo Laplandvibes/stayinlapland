@@ -124,7 +124,7 @@ export default function Home() {
       </section>
 
       {/* App launch block, high on the page. At the foot of the page it measured
-          81 % down a 33 000 px front page, and an announcement nobody scrolls
+          81 % down a 33,000 px front page, and an announcement nobody scrolls
           to is not an announcement. */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-14 sm:mt-16">
         <AppPromoHero />

@@ -18,7 +18,7 @@ export const copyEN: SectionCopy = {
     h1Line1: 'Settle into Lapland.',
     h1Line2: "Don’t just visit.",
     lead: 'Cabins by the week, design hotels in Rovaniemi, glass igloos for the bucket-list nights, and the wilderness lodges past the last road. Verified rates from',
-    leadPriceRange: '€140 to €1 500',
+    leadPriceRange: '€140 to €1,500',
     liveLabel: 'Live availability · Trip.com search',
     browseLongStays: 'Browse long stays',
     seeHotels: 'See hotels',
@@ -102,7 +102,7 @@ export const copyEN: SectionCopy = {
     cost: {
       title: 'What it costs',
       body:
-        'Rovaniemi 1-bedroom: €600–900/month. Levi/Saariselkä 1-bedroom (winter season): €900–1 400. Outside winter peak in ski villages, prices drop 30–40%. All figures include water; electricity + heating are usually separate.',
+        'Rovaniemi 1-bedroom: €600–900/month. Levi/Saariselkä 1-bedroom (winter season): €900–1,400. Outside winter peak in ski villages, prices drop 30–40%. All figures include water; electricity + heating are usually separate.',
     },
     abroad: {
       title: 'Coming from abroad?',
@@ -279,8 +279,8 @@ export const copyEN: SectionCopy = {
       "The classic Glass Igloos run about 30% cheaper but the experience is meaningfully worse. If your budget caps at €400/night, look at Aurora Village or Aurora Pyramids, same sky, often a better lake or wilderness setting.",
     pullQuote: {
       text:
-        'The first glass igloo was built so guests could see the aurora without standing outside in -30°C. Fifty years later that is still the entire pitch, and the part every imitator gets wrong is what happens after the aurora goes away.',
-      attr: 'Kakslauttanen origin story · 1973',
+        'The first glass igloo was built so guests could see the aurora without standing outside in -30°C. Decades later that is still the entire pitch, and the part every imitator gets wrong is what happens after the aurora goes away.',
+      attr: 'Kakslauttanen origin story · resort founded 1973',
     },
     runnersKicker: 'The other three',
     runnersH2: "When Kakslauttanen isn’t the right answer.",
@@ -455,7 +455,7 @@ export const copyEN: SectionCopy = {
         title: 'Cancellation policies',
         body: [
           'Most Lapland properties have moved to non-refundable rates for peak weeks. Read the fine print before clicking “book”.',
-          'Travel insurance with cancel-for-any-reason coverage is genuinely worth it for trips over €2 000. Aurora chasers cancel for weather all the time.',
+          'Travel insurance with cancel-for-any-reason coverage is genuinely worth it for trips over €2,000. Aurora chasers cancel for weather all the time.',
           'Our booking partners honour the cancellation terms shown at checkout, book through the redirect on this site to keep the rate visible and consistent.',
         ],
       },
@@ -732,7 +732,7 @@ export const copyEN: SectionCopy = {
     {
       slug: 'levi',
       pitch:
-        "Finland’s biggest ski resort by lift ticket sales, with 25 000 beds, ski-in/out apartments and a real village high street.",
+        "Finland’s biggest ski resort by lift ticket sales, with 25,000 beds, ski-in/out apartments and a real village high street.",
       longStayAngle:
         'Long-stay sense: ski-in/out apartments rent by the week from December through April. The lift system runs daily, the village restaurants open every night, you can do a proper season here.',
     },

@@ -26,7 +26,7 @@ export const copyFR: SectionCopy = {
     h1Line1: 'La Laponie, c’est',
     h1Line2: 'bien plus qu’une semaine de vacances.',
     lead: 'Des chalets à la semaine, des hôtels design à Rovaniemi, des igloos de verre pour les nuits inoubliables, et les lodges en pleine nature au-delà de la dernière route. Tarifs vérifiés à partir de',
-    leadPriceRange: '140 € à 1 500 €',
+    leadPriceRange: '140 € à 1 500 €',
     liveLabel: 'Disponibilité en direct · recherche Trip.com',
     browseLongStays: 'Voir les séjours longue durée',
     seeHotels: 'Voir les hôtels',
@@ -111,7 +111,7 @@ export const copyFR: SectionCopy = {
     cost: {
       title: 'Le budget',
       body:
-        'Rovaniemi, T2 : 600 à 900 €/mois. Levi/Saariselkä, T2 (saison d’hiver) : 900 à 1 400 €. Hors saison hivernale dans les villages de ski, les prix baissent de 30 à 40 %. Toutes les sommes incluent l’eau ; l’électricité et le chauffage sont en général en sus.',
+        'Rovaniemi, T2 : 600 à 900 €/mois. Levi/Saariselkä, T2 (saison d’hiver) : 900 à 1 400 €. Hors saison hivernale dans les villages de ski, les prix baissent de 30 à 40 %. Toutes les sommes incluent l’eau ; l’électricité et le chauffage sont en général en sus.',
     },
     abroad: {
       title: 'Vous venez de l’étranger ?',
@@ -289,8 +289,8 @@ export const copyFR: SectionCopy = {
       'Les igloos de verre classiques coûtent environ 30 % de moins, mais l’expérience est nettement en dessous. Si votre budget plafonne à 400 €/nuit, regardez Aurora Village ou Aurora Pyramids, même ciel, souvent un cadre lac ou nature mieux placé.',
     pullQuote: {
       text:
-        'Le premier igloo de verre fut bâti pour que l’on voie l’aurore sans rester dehors par −30 °C. Cinquante ans plus tard, c’est toujours tout l’argumentaire, et ce que chaque imitateur rate, c’est ce qui se passe une fois l’aurore partie.',
-      attr: 'Récit des origines de Kakslauttanen · 1973',
+        'Le premier igloo de verre fut bâti pour que l’on voie l’aurore sans rester dehors par −30 °C. Des décennies plus tard, c’est toujours tout l’argumentaire, et ce que chaque imitateur rate, c’est ce qui se passe une fois l’aurore partie.',
+      attr: 'Récit des origines de Kakslauttanen · établissement fondé en 1973',
     },
     runnersKicker: 'Les trois autres',
     runnersH2: 'Quand Kakslauttanen n’est pas la bonne réponse.',
@@ -456,7 +456,7 @@ export const copyFR: SectionCopy = {
         body: [
           'Chalet longue durée (à la semaine) : 140–280 €/nuit, peut coucher 4 à 6 personnes.',
           'Hôtel boutique : 140–420 €/nuit, petit-déjeuner généralement inclus.',
-          'Igloo de verre, haute saison : 400–1 500 €/nuit pour deux.',
+          'Igloo de verre, haute saison : 400–1 500 €/nuit pour deux.',
           'Suite en lodge nature : 220–950 €/nuit selon l’adresse.',
           'Activités (safari en traîneau de huskies, motoneige, chasse à l’aurore) : en général 120–200 € par personne et par sortie, en plus.',
         ],
@@ -465,7 +465,7 @@ export const copyFR: SectionCopy = {
         title: 'Conditions d’annulation',
         body: [
           'La plupart des adresses lapones sont passées à des tarifs non remboursables pour les semaines de pointe. Lisez les petites lignes avant de cliquer sur « réserver ».',
-          'Une assurance voyage avec annulation pour motif libre vaut vraiment le coup pour les voyages au-delà de 2 000 €. Les chasseurs d’aurores annulent sans cesse pour la météo.',
+          'Une assurance voyage avec annulation pour motif libre vaut vraiment le coup pour les voyages au-delà de 2 000 €. Les chasseurs d’aurores annulent sans cesse pour la météo.',
           'Nos partenaires de réservation respectent les conditions d’annulation affichées au moment de la réservation, réservez via la redirection de ce site pour garder un tarif visible et cohérent.',
         ],
       },
@@ -742,7 +742,7 @@ export const copyFR: SectionCopy = {
     {
       slug: 'levi',
       pitch:
-        'La plus grande station de ski de Finlande en ventes de forfaits, avec 25 000 lits, des appartements ski aux pieds et une vraie rue de village.',
+        'La plus grande station de ski de Finlande en ventes de forfaits, avec 25 000 lits, des appartements ski aux pieds et une vraie rue de village.',
       longStayAngle:
         'Logique longue durée : les appartements ski aux pieds se louent à la semaine de décembre à avril. Les remontées tournent tous les jours, les restaurants du village ouvrent chaque soir, on peut y faire une vraie saison.',
     },

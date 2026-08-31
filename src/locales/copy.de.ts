@@ -19,7 +19,7 @@ export const copyDE: SectionCopy = {
     h1Line2: 'als eine Woche Urlaub.',
     lead:
       'Blockhütten zur Wochenmiete, Designhotels in Rovaniemi, Glasiglus für die Nächte auf der Wunschliste und Wildnishütten jenseits der letzten Straße. Geprüfte Preise von',
-    leadPriceRange: '140 € bis 1 500 €',
+    leadPriceRange: '140 € bis 1 500 €',
     liveLabel: 'Live-Verfügbarkeit · Trip.com-Suche',
     browseLongStays: 'Langzeitaufenthalte ansehen',
     seeHotels: 'Hotels anzeigen',
@@ -106,7 +106,7 @@ export const copyDE: SectionCopy = {
     cost: {
       title: 'Kosten',
       body:
-        'Rovaniemi 1-Zimmer-Wohnung: 600–900 €/Monat. Levi/Saariselkä 1-Zimmer (Wintersaison): 900–1 400 €. Außerhalb des Winterhochs in Skiorten fallen die Preise um 30–40 %. Alle Angaben inklusive Wasser; Strom + Heizung meist separat.',
+        'Rovaniemi 1-Zimmer-Wohnung: 600–900 €/Monat. Levi/Saariselkä 1-Zimmer (Wintersaison): 900–1 400 €. Außerhalb des Winterhochs in Skiorten fallen die Preise um 30–40 %. Alle Angaben inklusive Wasser; Strom + Heizung meist separat.',
     },
     abroad: {
       title: 'Kommen Sie aus dem Ausland?',
@@ -287,8 +287,8 @@ export const copyDE: SectionCopy = {
       'Die klassischen Glasiglus sind rund 30 % günstiger, das Erlebnis ist jedoch spürbar schlechter. Wer bei 400 €/Nacht die Grenze zieht, sollte sich Aurora Village oder Aurora Pyramids ansehen, derselbe Himmel, oft eine bessere See- oder Wildnislage.',
     pullQuote: {
       text:
-        'Das erste Glasiglu wurde gebaut, damit Gäste die Nordlichter sehen, ohne bei -30 °C draußen zu stehen. Fünfzig Jahre später ist das immer noch das ganze Konzept, und was jeder Nachahmer falsch macht, ist das, was passiert, wenn die Aurora wieder weg ist.',
-      attr: 'Kakslauttanen Ursprungsgeschichte · 1973',
+        'Das erste Glasiglu wurde gebaut, damit Gäste die Nordlichter sehen, ohne bei -30 °C draußen zu stehen. Jahrzehnte später ist das immer noch das ganze Konzept, und was jeder Nachahmer falsch macht, ist das, was passiert, wenn die Aurora wieder weg ist.',
+      attr: 'Kakslauttanen Ursprungsgeschichte · Resort 1973 gegründet',
     },
     runnersKicker: 'Die anderen drei',
     runnersH2: 'Wenn Kakslauttanen nicht die richtige Antwort ist.',
@@ -455,7 +455,7 @@ export const copyDE: SectionCopy = {
         body: [
           'Langzeit-Blockhütte (Woche): 140–280 €/Nacht, Platz für 4–6.',
           'Boutique-Hotel: 140–420 €/Nacht, Frühstück meist inklusive.',
-          'Glasiglu, Hochsaison: 400–1 500 €/Nacht für zwei.',
+          'Glasiglu, Hochsaison: 400–1 500 €/Nacht für zwei.',
           'Wildnishütten-Suite: 220–950 €/Nacht je nach Haus.',
           'Aktivitäten (Husky-Safari, Schneemobil, Nordlichtjagd) typisch 120–200 € pro Person und Ausflug obendrauf.',
         ],
@@ -464,7 +464,7 @@ export const copyDE: SectionCopy = {
         title: 'Stornobedingungen',
         body: [
           'Die meisten Häuser in Lappland sind in Hochsaisonwochen zu nicht erstattbaren Raten übergegangen. Lesen Sie das Kleingedruckte vor dem Klick auf „Buchen“.',
-          'Eine Reiseversicherung mit „Stornierung aus beliebigem Grund“ ist bei Reisen über 2 000 € wirklich sinnvoll. Nordlichtjäger stornieren laufend wegen des Wetters.',
+          'Eine Reiseversicherung mit „Stornierung aus beliebigem Grund“ ist bei Reisen über 2 000 € wirklich sinnvoll. Nordlichtjäger stornieren laufend wegen des Wetters.',
           'Unsere Buchungspartner halten die bei der Buchung angezeigten Stornobedingungen ein, buchen Sie über die Weiterleitung dieser Seite, um den Preis sichtbar und konsistent zu halten.',
         ],
       },
@@ -741,7 +741,7 @@ export const copyDE: SectionCopy = {
     {
       slug: 'levi',
       pitch:
-        'Finnlands größtes Skiresort, gemessen am Liftkartenverkauf, mit 25 000 Betten, Ski-in/out-Apartments und einer echten Dorf-Hauptstraße.',
+        'Finnlands größtes Skiresort, gemessen am Liftkartenverkauf, mit 25 000 Betten, Ski-in/out-Apartments und einer echten Dorf-Hauptstraße.',
       longStayAngle:
         'Langzeit-Logik: Ski-in/out-Apartments werden von Dezember bis April wöchentlich vermietet. Das Liftsystem läuft täglich, die Dorfrestaurants öffnen jeden Abend, eine echte Saison ist möglich.',
     },

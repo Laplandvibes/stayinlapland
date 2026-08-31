@@ -26,7 +26,7 @@ export const copyES: SectionCopy = {
     h1Line1: 'Laponia es más',
     h1Line2: 'que una semana de vacaciones.',
     lead: 'Cabañas por semanas, hoteles boutique en Rovaniemi, iglús de cristal para esa noche soñada, y los refugios silvestres más allá de la última carretera. Tarifas verificadas desde',
-    leadPriceRange: '140 € hasta 1 500 €',
+    leadPriceRange: '140 € hasta 1500 €',
     liveLabel: 'Disponibilidad en vivo · búsqueda Trip.com',
     browseLongStays: 'Ver larga estancia',
     seeHotels: 'Ver hoteles',
@@ -111,7 +111,7 @@ export const copyES: SectionCopy = {
     cost: {
       title: 'Qué cuesta',
       body:
-        'Rovaniemi, estudio: 600–900 €/mes. Levi/Saariselkä, estudio (temporada invernal): 900–1.400 €. Fuera del pico invernal en las estaciones, los precios bajan un 30–40 %. Todas las cifras incluyen agua; electricidad y calefacción suelen ir aparte.',
+        'Rovaniemi, estudio: 600–900 €/mes. Levi/Saariselkä, estudio (temporada invernal): 900–1400 €. Fuera del pico invernal en las estaciones, los precios bajan un 30–40 %. Todas las cifras incluyen agua; electricidad y calefacción suelen ir aparte.',
     },
     abroad: {
       title: '¿Vienes del extranjero?',
@@ -311,7 +311,7 @@ export const copyES: SectionCopy = {
         body: [
           'Cabaña de larga estancia (por semana): 140–280 €/noche, puede dormir a 4–6.',
           'Hotel boutique: 140–420 €/noche, desayuno normalmente incluido.',
-          'Iglú de cristal, temporada alta: 400–1 500 €/noche para dos.',
+          'Iglú de cristal, temporada alta: 400–1500 €/noche para dos.',
           'Suite en refugio silvestre: 220–950 €/noche según la propiedad.',
           'Actividades (safari de huskies, motonieve, caza de auroras): por lo general 120–200 € por persona y salida, aparte.',
         ],
@@ -320,7 +320,7 @@ export const copyES: SectionCopy = {
         title: 'Políticas de cancelación',
         body: [
           'La mayoría de los alojamientos laponeses han pasado a tarifas no reembolsables en las semanas de máxima demanda. Lee la letra pequeña antes de pulsar "reservar".',
-          'Un seguro de viaje con cancelación por cualquier motivo merece de verdad la pena en viajes de más de 2 000 €. Los cazadores de auroras cancelan por el tiempo a todas horas.',
+          'Un seguro de viaje con cancelación por cualquier motivo merece de verdad la pena en viajes de más de 2000 €. Los cazadores de auroras cancelan por el tiempo a todas horas.',
           'Nuestros socios de reservas respetan las condiciones de cancelación mostradas al reservar, reserva a través de la redirección de este sitio para mantener la tarifa visible y coherente.',
         ],
       },
@@ -488,8 +488,8 @@ export const copyES: SectionCopy = {
       'Los iglús de cristal clásicos cuestan un 30 % menos, pero la experiencia es claramente peor. Si tu presupuesto se topa en 400 €/noche, mira Aurora Village o Aurora Pyramids, el mismo cielo, a menudo en un entorno de lago o naturaleza mejor situado.',
     pullQuote: {
       text:
-        'El primer iglú de cristal se construyó para que los huéspedes vieran la aurora sin estar fuera a −30 °C. Cincuenta años después sigue siendo todo el argumento, y la parte que todo imitador estropea es lo que pasa cuando la aurora se va.',
-      attr: 'Historia del origen de Kakslauttanen · 1973',
+        'El primer iglú de cristal se construyó para que los huéspedes vieran la aurora sin estar fuera a −30 °C. Décadas después sigue siendo todo el argumento, y la parte que todo imitador estropea es lo que pasa cuando la aurora se va.',
+      attr: 'Historia del origen de Kakslauttanen · resort fundado en 1973',
     },
     runnersKicker: 'Los otros tres',
     runnersH2: 'Cuando Kakslauttanen no es la respuesta correcta.',
@@ -745,7 +745,7 @@ export const copyES: SectionCopy = {
     {
       slug: 'levi',
       pitch:
-        'La mayor estación de esquí de Finlandia por venta de forfaits, con 25 000 plazas, apartamentos a pie de pista y una calle de pueblo de verdad.',
+        'La mayor estación de esquí de Finlandia por venta de forfaits, con 25 000 plazas, apartamentos a pie de pista y una calle de pueblo de verdad.',
       longStayAngle:
         'Lógica de larga estancia: los apartamentos a pie de pista se alquilan por semana de diciembre a abril. Los remontes funcionan a diario, los restaurantes del pueblo abren cada noche, aquí se puede hacer una temporada de verdad.',
     },

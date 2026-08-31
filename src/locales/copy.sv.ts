@@ -26,7 +26,7 @@ export const copySV: SectionCopy = {
     h1Line2: 'en veckas semester.',
     lead:
       'Stugor per vecka, designhotell i Rovaniemi, glasiglor för bucketlist-nätterna och vildmarkslodgerna bortom sista vägen. Verifierade priser från',
-    leadPriceRange: '140 € till 1 500 €',
+    leadPriceRange: '140 € till 1 500 €',
     liveLabel: 'Live tillgänglighet · Trip.com-sökning',
     browseLongStays: 'Se långtidsvistelser',
     seeHotels: 'Se hotell',
@@ -92,7 +92,7 @@ export const copySV: SectionCopy = {
     cost: {
       title: 'Vad det kostar',
       body:
-        'Rovaniemi etta: 600–900 €/månad. Levi/Saariselkä etta (vintersäsong): 900–1 400 €. Utanför vinterpeaken i skidorterna sjunker priserna 30–40 %. Alla belopp inkluderar vatten; el och värme är oftast separat.',
+        'Rovaniemi etta: 600–900 €/månad. Levi/Saariselkä etta (vintersäsong): 900–1 400 €. Utanför vinterpeaken i skidorterna sjunker priserna 30–40 %. Alla belopp inkluderar vatten; el och värme är oftast separat.',
     },
     abroad: {
       title: 'Kommer du från utlandet?',
@@ -274,8 +274,8 @@ export const copySV: SectionCopy = {
       'De klassiska Glass Igloos är ungefär 30 % billigare, men upplevelsen är tydligt sämre. Ligger din budget på 400 €/natt, titta i stället på Aurora Village eller Aurora Pyramids, samma himmel, ofta med ett vackrare läge vid sjö eller vildmark.',
     pullQuote: {
       text:
-        'Den första glasiglon byggdes för att gästerna skulle kunna se norrskenet utan att stå ute i −30 °C. Femtio år senare är det fortfarande hela poängen, och det varje efterapare gör fel är vad som händer efter att norrskenet försvinner.',
-      attr: 'Ursprungsberättelse Kakslauttanen · 1973',
+        'Den första glasiglon byggdes för att gästerna skulle kunna se norrskenet utan att stå ute i −30 °C. Decennier senare är det fortfarande hela poängen, och det varje efterapare gör fel är vad som händer efter att norrskenet försvinner.',
+      attr: 'Ursprungsberättelse Kakslauttanen · resortet grundat 1973',
     },
     runnersKicker: 'De andra tre',
     runnersH2: 'När Kakslauttanen inte är rätt svar.',
@@ -442,7 +442,7 @@ export const copySV: SectionCopy = {
         body: [
           'Långtidsstuga (veckopris): 140–280 €/natt, plats för 4–6.',
           'Boutiquehotell: 140–420 €/natt, frukost oftast inkluderad.',
-          'Glasiglo, högsäsong: 400–1 500 €/natt för två.',
+          'Glasiglo, högsäsong: 400–1 500 €/natt för två.',
           'Vildmarkslodge-svit: 220–950 €/natt beroende på boendet.',
           'Aktiviteter (huskysafari, snöskoter, norrskensjakt) oftast 120–200 € per person och tur utöver detta.',
         ],
@@ -451,7 +451,7 @@ export const copySV: SectionCopy = {
         title: 'Avbokningsvillkor',
         body: [
           'De flesta boenden i Lappland har för toppveckorna gått över till återbetalningsfria priser. Läs det finstilta innan du klickar på ”boka”.',
-          'En reseförsäkring med ”avboka av vilken anledning som helst”-skydd är verkligen värd det för resor över 2 000 €. Norrskensjägare avbokar hela tiden på grund av vädret.',
+          'En reseförsäkring med ”avboka av vilken anledning som helst”-skydd är verkligen värd det för resor över 2 000 €. Norrskensjägare avbokar hela tiden på grund av vädret.',
           'Våra bokningspartner respekterar de avbokningsvillkor som visas vid bokningen, boka via omdirigeringen på den här sidan för att hålla priset synligt och konsekvent.',
         ],
       },
@@ -758,7 +758,7 @@ export const copySV: SectionCopy = {
     {
       slug: 'levi',
       pitch:
-        'Finlands största skidort mätt i liftkortsförsäljning, med 25 000 bäddar, ski-in/out-lägenheter och en riktig bygata.',
+        'Finlands största skidort mätt i liftkortsförsäljning, med 25 000 bäddar, ski-in/out-lägenheter och en riktig bygata.',
       longStayAngle:
         'Långtidslogiken: ski-in/out-lägenheter hyrs ut per vecka från december till april. Liftsystemet går dagligen, byns restauranger öppnar varje kväll, du kan göra en riktig säsong här.',
     },

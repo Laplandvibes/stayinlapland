@@ -26,7 +26,7 @@ export const copyPTBR: SectionCopy = {
     h1Line1: 'A Lapônia é mais',
     h1Line2: 'que uma semana de férias.',
     lead: 'Cabanas por semana, hotéis boutique em Rovaniemi, iglus de vidro para aquela noite especial, e os refúgios silvestres além da última estrada. Tarifas verificadas a partir de',
-    leadPriceRange: '140 € até 1 500 €',
+    leadPriceRange: '140 € até 1.500 €',
     liveLabel: 'Disponibilidade ao vivo · busca Trip.com',
     browseLongStays: 'Ver longa duração',
     seeHotels: 'Ver hotéis',
@@ -111,7 +111,7 @@ export const copyPTBR: SectionCopy = {
     cost: {
       title: 'Quanto custa',
       body:
-        'Em Rovaniemi, um quitinete: 600–900 €/mês. Em Levi/Saariselkä, um quitinete (temporada de inverno): 900–1 400 €. Fora da alta de inverno nas estações de esqui, os preços caem de 30 a 40 %. Todos os valores incluem água; eletricidade + aquecimento normalmente são à parte.',
+        'Em Rovaniemi, um quitinete: 600–900 €/mês. Em Levi/Saariselkä, um quitinete (temporada de inverno): 900–1.400 €. Fora da alta de inverno nas estações de esqui, os preços caem de 30 a 40 %. Todos os valores incluem água; eletricidade + aquecimento normalmente são à parte.',
     },
     abroad: {
       title: 'Vindo do exterior?',
@@ -342,8 +342,8 @@ export const copyPTBR: SectionCopy = {
       'Os iglus de vidro clássicos custam uns 30% menos, mas a experiência é nitidamente pior. Se o seu teto de orçamento é 400 €/noite, veja Aurora Village ou Aurora Pyramids, o mesmo céu, muitas vezes num cenário de lago ou natureza melhor situado.',
     pullQuote: {
       text:
-        'O primeiro iglu de vidro foi construído para que os hóspedes vissem a aurora sem ficar do lado de fora a −30 °C. Cinquenta anos depois, esse ainda é todo o argumento, e a parte que todo imitador erra é o que acontece quando a aurora vai embora.',
-      attr: 'História de origem do Kakslauttanen · 1973',
+        'O primeiro iglu de vidro foi construído para que os hóspedes vissem a aurora sem ficar do lado de fora a −30 °C. Décadas depois, esse ainda é todo o argumento, e a parte que todo imitador erra é o que acontece quando a aurora vai embora.',
+      attr: 'História de origem do Kakslauttanen · resort fundado em 1973',
     },
     runnersKicker: 'Três alternativas',
     runnersH2: 'Quando o Kakslauttanen não é a resposta.',
@@ -460,7 +460,7 @@ export const copyPTBR: SectionCopy = {
         body: [
           'Cabana de estadia longa (por semana): 140–280 €/noite, acomoda 4–6.',
           'Hotel boutique: 140–420 €/noite, café da manhã geralmente incluso.',
-          'Iglu de vidro, alta temporada: 400–1 500 €/noite para dois.',
+          'Iglu de vidro, alta temporada: 400–1.500 €/noite para dois.',
           'Suíte em lodge na natureza: 220–950 €/noite conforme a propriedade.',
           'Atividades (safári de huskies, snowmobile, caça à aurora): em geral 120–200 € por pessoa por passeio, à parte.',
         ],
@@ -469,7 +469,7 @@ export const copyPTBR: SectionCopy = {
         title: 'Políticas de cancelamento',
         body: [
           'A maioria das propriedades da Lapônia migrou para tarifas não reembolsáveis nas semanas de pico. Leia as letras miúdas antes de clicar em "reservar".',
-          'Seguro de viagem com cancelamento por qualquer motivo vale muito a pena em viagens acima de 2 000 €. Caçadores de aurora cancelam por causa do clima o tempo todo.',
+          'Seguro de viagem com cancelamento por qualquer motivo vale muito a pena em viagens acima de 2.000 €. Caçadores de aurora cancelam por causa do clima o tempo todo.',
           'Nossos parceiros de reservas honram as condições de cancelamento exibidas na hora de reservar, reserve pelo redirecionamento deste site para manter a tarifa visível e consistente.',
         ],
       },
@@ -746,7 +746,7 @@ export const copyPTBR: SectionCopy = {
     {
       slug: 'levi',
       pitch:
-        'A maior estação de esqui da Finlândia em venda de passes de teleférico, com 25 000 leitos, apartamentos pé na pista e uma rua de vila de verdade.',
+        'A maior estação de esqui da Finlândia em venda de passes de teleférico, com 25.000 leitos, apartamentos pé na pista e uma rua de vila de verdade.',
       longStayAngle:
         'Lógica da estadia longa: os apartamentos pé na pista são alugados por semana de dezembro a abril. Os teleféricos funcionam todos os dias, os restaurantes da vila abrem toda noite, dá para fazer uma temporada de verdade aqui.',
     },

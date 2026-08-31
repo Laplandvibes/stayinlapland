@@ -250,7 +250,7 @@ export const destinations: DestinationInfo[] = [
   {
     slug: 'levi',
     name: 'Levi',
-    pitch: 'Finland\'s biggest ski resort by lift ticket sales, with 25 000 beds, ski-in/out apartments and a real village high street.',
+    pitch: 'Finland\'s biggest ski resort by lift ticket sales, with 25,000 beds, ski-in/out apartments and a real village high street.',
     longStayAngle:
       'Long-stay sense: ski-in/out apartments rent by the week from December through April. The lift system runs daily, the village restaurants open every night, you can do a proper season here.',
     propertyNames: ['Levi Spirit', 'Levi Residences: Penthouse Suites', 'Levin Iglut'],

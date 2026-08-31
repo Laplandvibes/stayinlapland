@@ -19,7 +19,7 @@ export const copyFI: SectionCopy = {
     h1Line2: 'kuin viikon loma.',
     lead:
       'Mökkejä viikoittaisilla hinnoilla, design-hotelleja Rovaniemellä, lasi-iglut bucket-list-öihin ja erämaalodget viimeisen tien jälkeen. Varmistetut hinnat alkaen',
-    leadPriceRange: '140 € – 1 500 €',
+    leadPriceRange: '140 € – 1 500 €',
     liveLabel: 'Reaaliaikainen saatavuus · Sembo-haku',
     browseLongStays: 'Katso pitkät jaksot',
     seeHotels: 'Katso hotellit',
@@ -106,7 +106,7 @@ export const copyFI: SectionCopy = {
     cost: {
       title: 'Mitä maksaa',
       body:
-        'Rovaniemellä yksiö: 600–900 €/kk. Levillä/Saariselällä yksiö (talvikausi): 900–1 400 €. Hiihtokeskuksissa ulkona talvihuipusta hinnat tippuvat 30–40 %. Kaikki summat sisältävät veden; sähkö + lämmitys ovat yleensä erikseen.',
+        'Rovaniemellä yksiö: 600–900 €/kk. Levillä/Saariselällä yksiö (talvikausi): 900–1 400 €. Hiihtokeskuksissa ulkona talvihuipusta hinnat tippuvat 30–40 %. Kaikki summat sisältävät veden; sähkö + lämmitys ovat yleensä erikseen.',
     },
     abroad: {
       title: 'Tuletko ulkomailta?',
@@ -288,7 +288,7 @@ export const copyFI: SectionCopy = {
     pullQuote: {
       text:
         'Ensimmäinen lasi-iglu rakennettiin, jotta vieraat näkisivät revontulet ilman seisomista ulkona -30°C:ssa. Vuosikymmeniä myöhemmin se on yhä koko pointti, ja jokaisen jäljittelijän epäonnistumispiste on se, mitä tapahtuu, kun revontulet ovat menneet.',
-      attr: 'Kakslauttasen alkuperätarina · 1973',
+      attr: 'Kakslauttasen alkuperätarina · resortti perustettu 1973',
     },
     runnersKicker: 'Kolme muuta',
     runnersH2: 'Kun Kakslauttanen ei ole oikea vastaus.',
@@ -464,7 +464,7 @@ export const copyFI: SectionCopy = {
         title: 'Peruutusehdot',
         body: [
           'Useimmat Lapin kohteet ovat siirtyneet ei-palautuviin hintoihin huippuviikoiksi. Lue pieni printti ennen Varaa-napin painallusta.',
-          'Matkavakuutus, joka korvaa peruutuksen syystä riippumatta, on aidosti hintansa arvoinen yli 2 000 € matkoilla. Revontulen­metsästäjät peruuttavat sään takia jatkuvasti.',
+          'Matkavakuutus, joka korvaa peruutuksen syystä riippumatta, on aidosti hintansa arvoinen yli 2 000 € matkoilla. Revontulen­metsästäjät peruuttavat sään takia jatkuvasti.',
           'Varauskumppanimme noudattavat varausvaiheessa näkyviä peruutusehtoja, varaa tämän sivuston uudelleenohjauksen kautta pitääksesi hinnan näkyvänä ja yhdenmukaisena.',
         ],
       },
@@ -741,7 +741,7 @@ export const copyFI: SectionCopy = {
     {
       slug: 'levi',
       pitch:
-        'Suomen suurin hiihtokeskus hissilippujen myynnillä mitattuna, 25 000 vuodepaikkaa, ski-in/out-asuntoja ja oikea kylän raitti.',
+        'Suomen suurin hiihtokeskus hissilippujen myynnillä mitattuna, 25 000 vuodepaikkaa, ski-in/out-asuntoja ja oikea kylän raitti.',
       longStayAngle:
         'Pitkän jakson logiikka: ski-in/out-asunnot vuokrataan viikoittain joulu–huhtikuussa. Hissijärjestelmä toimii päivittäin, kyläravintolat auki joka ilta, voit tehdä oikean hiihtokauden.',
     },

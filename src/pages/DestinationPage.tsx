@@ -146,22 +146,28 @@ export default function DestinationPage() {
       >
         {facts && (
           <dl className="flex flex-wrap justify-center gap-x-3 gap-y-2.5">
-            {facts.stats.map((s) => (
-              <div
-                key={s.value + (s.label.en ?? '')}
-                className="rounded-2xl bg-snow/10 border border-snow/20 backdrop-blur-sm px-4 py-2.5 text-center min-w-[104px]"
-              >
-                <dt className="sr-only">{s.label[lang] ?? s.label.en}</dt>
-                <dd>
-                  <span className="block font-heading text-snow text-2xl sm:text-3xl leading-none">
-                    {s.value}
-                  </span>
-                  <span className="block font-body text-snow/70 text-[11px] mt-1.5 leading-tight">
-                    {s.label[lang] ?? s.label.en}
-                  </span>
-                </dd>
-              </div>
-            ))}
+            {facts.stats.map((s) => {
+              /* A figure with a thousands separator is written differently in
+                 every language, so `value` may be an L12 map — never render it
+                 as one shared string. */
+              const value = typeof s.value === 'string' ? s.value : (s.value[lang] ?? s.value.en);
+              return (
+                <div
+                  key={value + (s.label.en ?? '')}
+                  className="rounded-2xl bg-snow/10 border border-snow/20 backdrop-blur-sm px-4 py-2.5 text-center min-w-[104px]"
+                >
+                  <dt className="sr-only">{s.label[lang] ?? s.label.en}</dt>
+                  <dd>
+                    <span className="block font-heading text-snow text-2xl sm:text-3xl leading-none">
+                      {value}
+                    </span>
+                    <span className="block font-body text-snow/70 text-[11px] mt-1.5 leading-tight">
+                      {s.label[lang] ?? s.label.en}
+                    </span>
+                  </dd>
+                </div>
+              );
+            })}
           </dl>
         )}
       </PageHero>

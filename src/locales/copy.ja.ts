@@ -317,7 +317,7 @@ export const copyJA: SectionCopy = {
       eyebrow: '最終道路の先',
       title: 'ウィルダネスロッジ。',
       subtitle:
-        '新しいラップランドの伝統, 2010年代以降、観光道路が途切れる場所に建てられた建築家によるリトリート。2つのロッジ、2つの異なるウィルダネスの定義。',
+        '新しいラップランドの伝統，2010年代以降、観光道路が途切れる場所に建てられた建築家によるリトリート。2つのロッジ、2つの異なるウィルダネスの定義。',
     },
     authorNote: '2軒とも、運営者の公式情報と最新の宿泊者レビューをもとに詳細を確認しています。',
     pickWhy: [
@@ -356,7 +356,7 @@ export const copyJA: SectionCopy = {
     browseAll: 'Trip.com の在庫を見る',
   },
   longStays: {
-    metaTitle: 'フィンランド・ラップランドの長期滞在, 1週間以上のレンタル | StayInLapland',
+    metaTitle: 'フィンランド・ラップランドの長期滞在，1週間以上のレンタル | StayInLapland',
     metaDescription:
       '1週間以上のレンタルにふさわしいラップランドの長期滞在物件5軒——Arctic TreeHouseのデザインスイート、Leviのペントハウスレジデンス、Ounasvaaraのシャレー、Pyhäのログコテージ、イナリ湖のヴィラ。週料金、専用サウナ、キッチネット完備。',
     breadcrumb: '長期滞在',
@@ -389,7 +389,7 @@ export const copyJA: SectionCopy = {
     weeklyP1:
       'このページの物件では、週料金は1泊あたりの公表料金より平均して<strong>23%安く</strong>なっています。Levi Residencesは30%、Pyhä Bear\'s Lodgeは18%、Arctic TreeHouseは25%下がります。多くの物件はこれを表立って広告していません。割引は7泊以上を選択した時点で予約システムに現れます。',
     weeklyP2:
-      'ショルダー週, <strong>11月中旬</strong>（雪が安定する直前）と<strong>4月下旬</strong>（雪が溶けた直後）, はその上にさらに30〜50%下がります。オーロラはどちらの期間も活発です。柔軟な勤務カレンダーで長期滞在をお考えの方にとっての最高の時期です。',
+      'ショルダー週，<strong>11月中旬</strong>（雪が安定する直前）と<strong>4月下旬</strong>（雪が溶けた直後）, はその上にさらに30〜50%下がります。オーロラはどちらの期間も活発です。柔軟な勤務カレンダーで長期滞在をお考えの方にとっての最高の時期です。',
     marginLabel: '予約の戦術',
     marginBody:
       '4週間のご滞在では、2つの物件に分けることで単一物件の予約を上回ることがあります。クリスマスや2月のスキー休暇に当たる「ピーク週」の値上げを避けられ、ラップランドの2つの面を実際に見られます。移動日は半日で済み、節約分が他の場所での追加2泊分にだいたい充てられます。',
@@ -464,7 +464,7 @@ export const copyJA: SectionCopy = {
         body: [
           'サーリセルカとイナリはロヴァニエミより寒く、暗く、オーロラが強い、しかしロヴァニエミは空港、アクティビティ、サンタクロース村を擁します。拠点を組み合わせてください。',
           '3泊しかない場合は、1ヶ所で過ごしてください。ラップランドは想像以上に広く、移動が日数を消費します。',
-          'オーロラ予報(NOAA、Aurora Service Europe)は30〜90分先まで正確で、数日先までは正確ではありません。柔軟に動いてください。',
+          'オーロラ予報（NOAA、Aurora Service Europe）は30〜90分先まで正確で、数日先までは正確ではありません。柔軟に動いてください。',
         ],
       },
     ],
@@ -583,7 +583,7 @@ export const copyJA: SectionCopy = {
     authorNoteFor: (n) => `${n}の長期滞在の視点——現地パートナーと共に執筆・事実確認しています。`,
     recommendedIn: (n) => `${n}のおすすめ`,
     whereToStay: '本当に泊まるべき場所。',
-    minStayLabel: '最低滞在:',
+    minStayLabel: '最低滞在：',
     perNight: '/ 1泊',
     checkRates: '料金を確認',
     seeAll: 'すべて見る',
@@ -640,7 +640,7 @@ export const copyJA: SectionCopy = {
   ],
   longStaysData: [
     {
-      name: 'Arctic TreeHouse Resort, 長期滞在',
+      name: 'Arctic TreeHouse Resort，長期滞在',
       location: 'ロヴァニエミ',
       highlight: 'デザインスイート · 週料金 · サウナビレッジ',
       description:

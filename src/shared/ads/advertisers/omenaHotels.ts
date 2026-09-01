@@ -64,7 +64,7 @@ const omenaHotels: AdSpec = {
     es: {
       eyebrow: 'Parada en la ciudad',
       headline: 'Omena Hotels, habitación céntrica con código de puerta, precio por habitación',
-      sub: 'Una parada práctica de camino al norte o antes de un vuelo temprano: habitación en el centro de Helsinki, Tampere o Turku sin cola de recepción. El código llega a tu móvil y entras directamente. El precio es por toda la habitación, no por persona.',
+      sub: 'Una parada práctica de camino al norte o antes de un vuelo temprano: habitación en el centro de Helsinki, Tampere o Turku sin cola de recepción. El código llega a su móvil y entra directamente. El precio es por toda la habitación, no por persona.',
       trust: ['Entrada con código', 'Ubicaciones céntricas', 'Precio por habitación'],
       cta: 'Ver precios de habitaciones',
       poweredBy: 'Reserva con Omena Hotels',

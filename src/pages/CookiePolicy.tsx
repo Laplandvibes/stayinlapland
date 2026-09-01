@@ -26,7 +26,7 @@ const META: Record<Lang, { title: string; description: string }> = {
   es: {
     title: 'Política de cookies | StayInLapland',
     description:
-      'Política de cookies de StayInLapland: qué cookies establecemos (Google Analytics 4, estado de consentimiento, popup del boletín), cómo rechazarlas y tus derechos RGPD.',
+      'Política de cookies de StayInLapland: qué cookies establecemos (Google Analytics 4, estado de consentimiento, popup del boletín), cómo rechazarlas y sus derechos RGPD.',
   },
   'pt-BR': {
     title: 'Política de cookies | StayInLapland',

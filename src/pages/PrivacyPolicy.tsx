@@ -26,7 +26,7 @@ const META: Record<Lang, { title: string; description: string }> = {
   es: {
     title: 'Política de privacidad | StayInLapland',
     description:
-      'Política de privacidad de StayInLapland: analítica anónima, suscripciones al boletín, tus derechos RGPD y el responsable del tratamiento (LaPeso Oy, Finlandia).',
+      'Política de privacidad de StayInLapland: analítica anónima, suscripciones al boletín, sus derechos RGPD y el responsable del tratamiento (LaPeso Oy, Finlandia).',
   },
   'pt-BR': {
     title: 'Política de privacidade | StayInLapland',

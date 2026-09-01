@@ -33,15 +33,15 @@ export const copyES: SectionCopy = {
   },
   newsletter: {
     eyebrow: 'Aperturas de larga estancia · tarifas de temporada baja',
-    h2: 'Los alojamientos que aún no puedes reservar.',
+    h2: 'Los alojamientos que aún no puede reservar.',
     lead: 'La mayoría de los alojamientos de larga estancia de este sitio liberan su inventario de invierno a finales de agosto, y vuela. Contamos cuándo se abren las ventanas de reserva, y las semanas de temporada baja (noviembre, finales de abril) cuando las tarifas bajan mientras las auroras siguen visibles.',
-    placeholder: 'Tu dirección de correo',
+    placeholder: 'Su dirección de correo',
     subscribe: 'Suscribirse',
     subscribing: 'Suscribiendo…',
-    success: 'Ya casi: confirma tu suscripción desde el correo que acabamos de enviarte.',
+    success: 'Ya casi: confirme su suscripción desde el correo que acabamos de enviarle.',
     errorPrefix: 'No se ha podido suscribir, ',
-    pleaseTryAgain: 'inténtalo de nuevo',
-    footnotePart1: 'Nada de spam. Cancela con un clic. Consulta nuestra ',
+    pleaseTryAgain: 'inténtelo de nuevo',
+    footnotePart1: 'Nada de spam. Cancele con un clic. Consulte nuestra ',
     footnoteLink: 'política de privacidad',
     footnotePart2: '.',
   },
@@ -51,7 +51,7 @@ export const copyES: SectionCopy = {
       'Escrito y comprobado con colaboradores sobre el terreno en toda la Laponia finlandesa. Ganamos comisión de afiliación con las reservas, pero eso nunca decide qué alojamientos recomendamos.',
   },
   affiliateDisclosure:
-    'Algunos enlaces de esta página son enlaces de afiliados. Si reservas a través de ellos ganamos una comisión, sin coste adicional para ti. Los alojamientos se eligen por mérito, no por la comisión.',
+    'Algunos enlaces de esta página son enlaces de afiliados. Si reserva a través de ellos ganamos una comisión, sin coste adicional para usted. Los alojamientos se eligen por mérito, no por la comisión.',
   marginNoteDefault: 'Nota al margen',
   comparison: {
     property: 'Alojamiento',
@@ -75,17 +75,17 @@ export const copyES: SectionCopy = {
     cta: 'Ver tarifas',
   },
   workInLaplandPromo: {
-    inlineEyebrow: '¿Te interesa trabajar en la Laponia finlandesa?',
+    inlineEyebrow: '¿Le interesa trabajar en la Laponia finlandesa?',
     inlineBodyPrefix:
-      'Trabajos de temporada, destinos para teletrabajo y vacantes en las estaciones de esquí los encuentras en nuestro sitio hermano ',
+      'Los trabajos de temporada, los destinos para teletrabajo y las vacantes en las estaciones de esquí están en nuestro sitio hermano ',
     inlineBodyBrand: 'laplandwork.com',
     inlineBodySuffix: '.',
     inlineCta: 'Ver ofertas de empleo',
     fullEyebrow: 'Sitio hermano · laplandwork.com',
-    fullH2A: '¿Te interesa trabajar',
+    fullH2A: '¿Le interesa trabajar',
     fullH2B: 'en la Laponia finlandesa?',
     fullP1:
-      'Muchas de las larga estancia de este sitio las reservan personas que vinieron originalmente para una temporada de esquí, un contrato de ingeniería ártica o un mes de teletrabajo, y se quedaron porque se enamoraron del lugar. Si estás aquí por eso, el lado laboral tiene su propio sitio.',
+      'Muchos de los alojamientos de larga estancia de este sitio los reservan personas que vinieron originalmente para una temporada de esquí, un contrato de ingeniería ártica o un mes de teletrabajo, y se quedaron porque se enamoraron del lugar. Si ha llegado por eso, el lado laboral tiene su propio sitio.',
     fullP2A: 'LaplandWork.com',
     fullP2B:
       ' es el centro de empleo dedicado a la Laponia finlandesa: trabajos de temporada en alojamientos, plazas en estaciones de esquí, vacantes en granjas de huskies, puestos hospitalarios y de ingeniería en Rovaniemi, Levi, Saariselkä e Inari. Gratis para candidatos, con tres niveles de tarifa para empleadores.',
@@ -99,14 +99,14 @@ export const copyES: SectionCopy = {
   },
   longTermRentals: {
     eyebrow: 'Mudarse a Laponia · 6 meses y más',
-    h2A: '¿Buscas vivienda de verdad,',
+    h2A: '¿Busca vivienda de verdad,',
     h2B: 'no un alquiler corto?',
     lead:
-      'Los alojamientos de este sitio son alquileres de corto o medio plazo a través de nuestro socio de reservas, la solución correcta para viajes de hasta cuatro semanas. Para 6 meses, un año o una mudanza permanente necesitas portales de alquiler finlandeses. Estas son las seis fuentes más activas en Laponia.',
+      'Los alojamientos de este sitio son alquileres de corto o medio plazo a través de nuestro socio de reservas, la solución correcta para viajes de hasta cuatro semanas. Para 6 meses, un año o una mudanza permanente necesitará portales de alquiler finlandeses. Estas son las seis fuentes más activas en Laponia.',
     process: {
       title: 'Proceso típico',
       body:
-        'Correo al propietario o agente → visita al piso sobre el terreno → solicitud (nómina + informe crediticio) → fianza de 1–2 meses + primer mes de alquiler → llaves. Es realista contar con 2–6 semanas de preparación.',
+        'Correo al propietario o agente → visita al apartamento sobre el terreno → solicitud (nómina + informe crediticio) → fianza de 1–2 meses + primer mes de alquiler → llaves. Es realista contar con 2–6 semanas de preparación.',
     },
     cost: {
       title: 'Qué cuesta',
@@ -114,9 +114,9 @@ export const copyES: SectionCopy = {
         'Rovaniemi, estudio: 600–900 €/mes. Levi/Saariselkä, estudio (temporada invernal): 900–1400 €. Fuera del pico invernal en las estaciones, los precios bajan un 30–40 %. Todas las cifras incluyen agua; electricidad y calefacción suelen ir aparte.',
     },
     abroad: {
-      title: '¿Vienes del extranjero?',
+      title: '¿Viene del extranjero?',
       body:
-        'Los ciudadanos UE/EEE pueden alquilar libremente. Los demás necesitan permiso de residencia (la tramitación en Migri lleva de 1 a 4 meses). El hub laboral en laplandwork.com cubre Migri, registro en Kela, apertura de cuenta bancaria finlandesa, tarjeta de retenciones y la checklist completa para mudarse a Laponia.',
+        'Los ciudadanos UE/EEE pueden alquilar libremente. Los demás necesitan permiso de residencia (la tramitación en Migri lleva de 1 a 4 meses). El centro de empleo de laplandwork.com cubre Migri, registro en Kela, apertura de cuenta bancaria finlandesa, tarjeta de retenciones y la lista de comprobación completa para mudarse a Laponia.',
     },
     tags: {
       national: 'NACIONAL',
@@ -132,35 +132,35 @@ export const copyES: SectionCopy = {
         forWho: 'Primer viaje · 4–6 noches · con niños',
         recommendation: 'Hotel boutique en Rovaniemi',
         rationale:
-          'Un hotel de diseño como Arctic Light o Arctic TreeHouse te da cercanía al aeropuerto, una oferta de restauración decente y la logística del Pueblo de Papá Noel, sin meter a la familia en una cabaña remota donde encender la calefacción se convierte en el proyecto de la tarde.',
+          'Un hotel de diseño como Arctic Light o Arctic TreeHouse le da cercanía al aeropuerto, una oferta de restauración decente y la logística del Pueblo de Papá Noel, sin meter a la familia en una cabaña remota donde encender la calefacción se convierte en el proyecto de la tarde.',
         ctaLabel: 'Ver hoteles',
       },
       {
         forWho: 'Visitante recurrente · 7–14 noches · una sola base',
         recommendation: 'Cabaña de larga estancia en Levi o Saariselkä',
         rationale:
-          'Instálate una semana. Un dos habitaciones en Levi Spirit o una cabaña a las afueras de Saariselkä te da tarifas semanales, sauna propia y tiempo de verdad para sumergirte en Laponia, en lugar de correr entre noches de bucket-list.',
+          'Instálese una semana. Un dos dormitorios en Levi Spirit o una cabaña a las afueras de Saariselkä le da tarifas semanales, sauna propio y tiempo de verdad para sumergirse en Laponia, en lugar de correr entre noches de lista de deseos.',
         ctaLabel: 'Ver larga estancia',
       },
       {
         forWho: 'Aniversario · jubilación · reserva en grupo',
         recommendation: 'Un refugio silvestre',
         rationale:
-          'Un refugio silvestre es la forma más exclusiva de celebrar la ocasión. La suite Eagle View de Iso-Syöte ofrece aislamiento por encima del límite de los árboles, y las villas de Wilderness Hotel Nangu añaden actividades guiadas por los sami en el lago Inari, ambas lo bastante privadas para que todo el paisaje parezca tuyo, sin el precio de un alquiler completo.',
+          'Un refugio silvestre es la forma más exclusiva de celebrar la ocasión. La suite Eagle View de Iso-Syöte ofrece aislamiento por encima del límite de los árboles, y las villas de Wilderness Hotel Nangu añaden actividades guiadas por los sami en el lago Inari, ambas lo bastante privadas para que todo el paisaje parezca suyo, sin el precio de un alquiler completo.',
         ctaLabel: 'Ver refugios silvestres',
       },
     ],
   },
   home: {
     ...copyEN.home,
-    metaTitle: 'Dónde alojarse en la Laponia finlandesa | StayInLapland',
+    metaTitle: 'Dónde alojarse en Laponia 2026, 16 alojamientos verificados',
     metaDescription:
-      'Instálate en la Laponia finlandesa, cabañas por semana, hoteles de diseño en Rovaniemi, iglús de cristal icónicos y refugios silvestres en el norte.',
+      'Planifique su viaje a Laponia 2026: 16 alojamientos verificados, cabañas desde 140 €/noche, hoteles de diseño en Rovaniemi e iglús de cristal desde 280 €.',
     schemaName: 'StayInLapland, Larga estancia y hoteles boutique en la Laponia finlandesa',
     breadcrumbHome: 'Inicio',
     stats: { stays: 'Alojamientos escogidos', bases: 'Bases en Laponia', categories: 'Formas de alojarse', months: 'Meses evaluados' },
     intro: {
-      p1: 'Las listas de "los mejores alojamientos de Laponia" casi siempre arrancan con un iglú de cristal, y siguen con la misma fórmula. Esta guía está hecha de otra forma: noches probadas por nosotros, recomendaciones locales y solo los alojamientos que se quedan grabados después del viaje.',
+      p1: 'Las listas de «los mejores alojamientos de Laponia» casi siempre arrancan con un iglú de cristal, y siguen con la misma fórmula. Esta guía está hecha de otra forma: noches probadas por nosotros, recomendaciones locales y solo los alojamientos que se quedan grabados después del viaje.',
       p2: 'Hemos dividido los alojamientos de Laponia en cuatro categorías claras: larga estancia, hoteles, iglús de cristal y refugios silvestres. 16 alojamientos seleccionados, todos visitados. La ruta favorita: una semana en cabaña en Levi, dos noches en un hotel de diseño en Rovaniemi, una última noche en un iglú de cristal. Combinadas, son la Laponia por la que se vuelve.',
       p3: 'Esta guía no agrega precios ni recicla reseñas. Las fuentes están a la vista, las relaciones de afiliación, abiertas.',
     },
@@ -168,10 +168,10 @@ export const copyES: SectionCopy = {
       'Una lista corta hecha a mano, escrita desde Finlandia y contrastada con colaboradores locales por toda Laponia.',
     fourWays: {
       kicker: 'Cuatro formas de alojarse',
-      h2A: 'Elige una.',
-      h2B: 'O combina dos.',
+      h2A: 'Elija una.',
+      h2B: 'O combine dos.',
       lead:
-        'Elige la categoría que se ajusta al viaje que quieres de verdad. Después escoge el alojamiento. Los lectores de larga estancia suelen combinar dos: una semana de base en una cabaña y dos noches en un sitio distinto.',
+        'Elija la categoría que se ajusta al viaje que quiere de verdad. Después escoja el alojamiento. Los lectores de larga estancia suelen combinar dos: una semana de base en una cabaña y dos noches en un sitio distinto.',
     },
     propertyWord: 'alojamiento',
     propertiesWord: 'alojamientos',
@@ -181,18 +181,18 @@ export const copyES: SectionCopy = {
         'Laponia es más grande de lo que la gente piensa, y la carretera entre Rovaniemi y Saariselkä se come medio día en cada sentido. El error más habitual del primer viaje es repartir cinco noches en tres bases distintas.',
       attr: 'Informe de Alojamiento de Laponia · Consejo Regional de Laponia, 2024',
     },
-    tripKicker: '¿Ya tienes una idea clara de lo que quieres?',
+    tripKicker: '¿Ya tiene una idea clara de lo que quiere?',
     tripH2: 'Atajos locales.',
     destKicker: 'Cinco bases en Laponia',
     destH2: '¿En qué zona de Laponia?',
     destLead:
-      'Cada destino tiene su propia lógica para una estancia larga. Entra y verás las recomendaciones y el motivo de elegir esa base frente a las otras.',
+      'Cada destino tiene su propia lógica para una estancia larga. Entre y verá las recomendaciones y el motivo de elegir esa base frente a las otras.',
     readGuide: 'Leer',
     faqKicker: 'Preguntas reales, respuestas reales',
     faqH2: 'Antes de pulsar nada.',
     faqs: [
       {
-        q: '¿Qué cuenta como "larga estancia" en este sitio?',
+        q: '¿Qué cuenta como «larga estancia» en este sitio?',
         a: 'Larga estancia es todo lo que va de cuatro noches en adelante, el umbral a partir del cual la mayoría de los alojamientos de Laponia ofrece tarifas semanales y donde una cocina decente empieza a importar. Los alojamientos de larga estancia listados aquí piden un mínimo de entre 3 y 7 noches según el caso; cada tarjeta lo indica.',
       },
       {
@@ -236,9 +236,9 @@ export const copyES: SectionCopy = {
     authorNote:
       'Cinco alojamientos contrastados con la información publicada por los operadores y reseñas recientes de huéspedes en la temporada 2025/26.',
     introP1:
-      'Laponia tiene muchos hoteles de cadena de gama media, Scandic, Sokos, que cumplen bien lo básico por 90–140 €/noche. No aparecen aquí; la decisión de reservarlos suele reducirse a "el más cercano al aeropuerto, la semana más barata".',
+      'Laponia tiene muchos hoteles de cadena de gama media, Scandic, Sokos, que cumplen bien lo básico por 90–140 €/noche. No aparecen aquí; la decisión de reservarlos suele reducirse a «el más cercano al aeropuerto, la semana más barata».',
     introP2:
-      'Los cinco hoteles de abajo se ganan su sitio por otra razón: diseño, arquitectura, vistas o mezcla de servicios. Son la respuesta correcta cuando quieres un hotel que sea parte del motivo del viaje, no solo una base.',
+      'Los cinco hoteles de abajo se ganan su sitio por otra razón: diseño, arquitectura, vistas o mezcla de servicios. Son la respuesta correcta cuando quiere un hotel que sea parte del motivo del viaje, no solo una base.',
     picksKicker: 'Cinco elegidos',
     picksH2: 'Selección a mano, no agregada.',
     pullQuote: {
@@ -260,7 +260,7 @@ export const copyES: SectionCopy = {
     ],
     marginLabel: 'De iniciados',
     marginBody:
-      'Arctic TreeHouse y Levi Spirit tienen sus propios restaurantes, Rakas (TreeHouse) y Spirit Kitchen (Levi). Ambos trabajan con producto local. Si reservas cualquiera de los dos, reserva mesa el mismo día que la habitación: los fines de semana se agotan antes que el hotel.',
+      'Arctic TreeHouse y Levi Spirit tienen sus propios restaurantes, Rakas (TreeHouse) y Spirit Kitchen (Levi). Ambos trabajan con producto local. Si reserva cualquiera de los dos, reserve mesa el mismo día que la habitación: los fines de semana se agotan antes que el hotel.',
     counterKicker: 'Contrarrecomendación honesta',
     counterH2: 'Cuándo un hotel no es la respuesta.',
     counterP1:
@@ -276,7 +276,7 @@ export const copyES: SectionCopy = {
       'Guía práctica de reservas de Laponia, cuándo venir con las mejores auroras, cómo llegar, qué llevar, qué cuesta de verdad y consejos de los locales.',
     breadcrumb: 'Guía de reservas',
     pageHero: {
-      eyebrow: 'Planifica el viaje adecuado',
+      eyebrow: 'Planifique el viaje adecuado',
       title: 'Guía de reservas de Laponia.',
       subtitle:
         'Consejos prácticos y con criterio. Cuándo venir, cómo llegar, qué llevar, qué cuesta de verdad.',
@@ -286,14 +286,14 @@ export const copyES: SectionCopy = {
         title: 'Cuándo venir',
         body: [
           'La temporada de auroras va de finales de agosto a principios de abril. Las ventanas más fuertes son septiembre-octubre y febrero-marzo, cuando las largas noches oscuras coinciden con un clima solar activo.',
-          'Evita de finales de noviembre a mediados de diciembre: oscuro, pero la nieve suele ir a parches y muchas actividades aún no han arrancado.',
+          'Evite de finales de noviembre a mediados de diciembre: oscuro, pero la nieve suele ir a parches y muchas actividades aún no han arrancado.',
           'Navidad y Año Nuevo se agotan con 9 meses de antelación y los precios se triplican. La elección de los locales es la segunda quincena de enero, más tranquila, más fría, mejores auroras.',
         ],
       },
       {
         title: 'Cómo llegar',
         body: [
-          'Tres aeropuertos laponeses cubren casi todo lo que reservarás. Rovaniemi (RVN) para el pueblo de Papá Noel y el sur, Kittilä (KTT) para Levi y Ylläs, Ivalo (IVL) para Saariselkä, Inari y el norte.',
+          'Tres aeropuertos laponeses cubren casi todo lo que reservará. Rovaniemi (RVN) para el Pueblo de Papá Noel y el sur, Kittilä (KTT) para Levi y Ylläs, Ivalo (IVL) para Saariselkä, Inari y el norte.',
           'Helsinki (HEL) → Laponia es un vuelo nacional de 90 minutos. De diciembre a marzo también hay vuelos directos desde Londres, Berlín y París.',
           'Trenes: el nocturno Helsinki–Rovaniemi es lento, pero el trayecto por la costa del golfo de Botnia pasando por Kemi es genuinamente bonito y el vagón se llena de locales haciendo el mismo viaje.',
         ],
@@ -301,9 +301,9 @@ export const copyES: SectionCopy = {
       {
         title: 'Qué llevar',
         body: [
-          'La mayoría de los alojamientos prestan equipo ártico (monos para −30 °C, botas, guantes, gorros) incluido o por una pequeña tarifa diaria. Confírmalo antes de facturar una maleta llena de material de esquí.',
+          'La mayoría de los alojamientos prestan equipo ártico (monos para −30 °C, botas, guantes, gorros) incluido o por una pequeña tarifa diaria. Confírmelo antes de facturar una maleta llena de material de esquí.',
           'Importan más las capas que el grosor, base de merino + forro polar + cortavientos. El algodón mata.',
-          'Cámaras: lleva baterías de repuesto pegadas al cuerpo, dentro de la chaqueta. El frío las agota rápido.',
+          'Cámaras: lleve baterías de repuesto pegadas al cuerpo, dentro de la chaqueta. El frío las agota rápido.',
         ],
       },
       {
@@ -319,23 +319,23 @@ export const copyES: SectionCopy = {
       {
         title: 'Políticas de cancelación',
         body: [
-          'La mayoría de los alojamientos laponeses han pasado a tarifas no reembolsables en las semanas de máxima demanda. Lee la letra pequeña antes de pulsar "reservar".',
+          'La mayoría de los alojamientos laponeses han pasado a tarifas no reembolsables en las semanas de máxima demanda. Lea la letra pequeña antes de pulsar «reservar».',
           'Un seguro de viaje con cancelación por cualquier motivo merece de verdad la pena en viajes de más de 2000 €. Los cazadores de auroras cancelan por el tiempo a todas horas.',
-          'Nuestros socios de reservas respetan las condiciones de cancelación mostradas al reservar, reserva a través de la redirección de este sitio para mantener la tarifa visible y coherente.',
+          'Nuestros socios de reservas respetan las condiciones de cancelación mostradas al reservar, reserve a través de la redirección de este sitio para mantener la tarifa visible y coherente.',
         ],
       },
       {
         title: 'Consejos de iniciados',
         body: [
-          'Saariselkä e Inari son más frías, más oscuras y con auroras más intensas que Rovaniemi, pero Rovaniemi tiene el aeropuerto, las actividades y el pueblo de Papá Noel. Combina bases.',
-          'Si solo tienes 3 noches, hazlas en un mismo sitio. Laponia es más grande de lo que la gente cree y los traslados se comen los días.',
-          'Las previsiones de auroras (NOAA, Aurora Service Europe) aciertan a 30–90 minutos, no a días vista. Mantente flexible.',
+          'Saariselkä e Inari son más frías, más oscuras y con auroras más intensas que Rovaniemi, pero Rovaniemi tiene el aeropuerto, las actividades y el Pueblo de Papá Noel. Combine bases.',
+          'Si solo tiene 3 noches, hágalas en un mismo sitio. Laponia es más grande de lo que la gente cree y los traslados se comen los días.',
+          'Las previsiones de auroras (NOAA, Aurora Service Europe) aciertan a 30–90 minutos, no a días vista. Manténgase flexible.',
         ],
       },
     ],
     readyTitle: '¿Listo para reservar?',
     readyLead:
-      'Explora alojamientos seleccionados por categoría o salta directamente a la disponibilidad en vivo en Trip.com.',
+      'Explore alojamientos seleccionados por categoría o salte directamente a la disponibilidad en vivo en Trip.com.',
     browseAll: 'Ver todos los alojamientos de Laponia',
   },
   whenToGo: {
@@ -347,7 +347,7 @@ export const copyES: SectionCopy = {
       eyebrow: 'Mes a mes',
       title: 'Cuándo ir a Laponia.',
       subtitle:
-        'El mes correcto depende del viaje. Auroras, esquí, valor en larga estancia, pico navideño: cada cosa tiene su sweet spot. Aquí tienes el mes a mes editorial.',
+        'El mes correcto depende del viaje. Auroras, esquí, valor en larga estancia, pico navideño: cada cosa tiene su momento óptimo. Aquí tiene el mes a mes editorial.',
     },
     authorNote:
       'Compilado con los partes de colaboradores locales de toda la Laponia finlandesa.',
@@ -361,9 +361,9 @@ export const copyES: SectionCopy = {
         name: 'Septiembre',
         pitch: 'Se abre la temporada de auroras',
         body:
-          'Empiezan las largas noches oscuras. Aún no ha nevado, es la época de la "ruska", cuando el abedul vira al rojo y al oro. La aurora se recorta contra el suelo desnudo y los colores son los más fotografiados de todos los meses.',
+          'Empiezan las largas noches oscuras. Aún no ha nevado, es la época de la «ruska», cuando el abedul vira al rojo y al oro. La aurora se recorta contra el suelo desnudo y los colores son los más fotografiados de todos los meses.',
         bestFor: ['Fotógrafos', 'Estancias cortas centradas en auroras', 'Combo senderismo + aurora'],
-        avoidIf: ['Has venido específicamente por la nieve'],
+        avoidIf: ['Ha venido específicamente por la nieve'],
       },
       {
         name: 'Octubre',
@@ -371,7 +371,7 @@ export const copyES: SectionCopy = {
         body:
           'Primeras nevadas, pero el suelo rara vez queda blanco antes de fin de mes. Los hoteles aplican tarifa media (−30 % respecto al pico), la aurora está activa y hay muy pocos turistas. La ventana de auroras más barata con toda la infraestructura de actividades en marcha.',
         bestFor: ['Cazadores de auroras con presupuesto ajustado', 'Llegada de larga estancia antes del pico'],
-        avoidIf: ['Quieres garantía de esquí o de motonieve'],
+        avoidIf: ['Quiere garantía de esquí o de motonieve'],
       },
       {
         name: 'Noviembre',
@@ -393,23 +393,23 @@ export const copyES: SectionCopy = {
         name: 'Enero',
         pitch: 'La elección de los locales',
         body:
-          'La segunda quincena de enero es el sweet spot tranquilo, los precios pico ya han bajado, los días se alargan de forma perceptible, la nieve está estable y la aurora más activa. Las multitudes navideñas se han ido y las de las vacaciones de febrero aún no han llegado.',
+          'La segunda quincena de enero es el momento óptimo y tranquilo, los precios pico ya han bajado, los días se alargan de forma perceptible, la nieve está estable y la aurora más activa. Las multitudes navideñas se han ido y las de las vacaciones de febrero aún no han llegado.',
         bestFor: ['Larga estancia', 'Lunas de miel', 'Fotografía de auroras'],
-        avoidIf: ['Necesitas calor en cualquier forma'],
+        avoidIf: ['Necesita calor en cualquier forma'],
       },
       {
         name: 'Febrero',
         pitch: 'El mes de auroras más fuertes',
         body:
-          'De mediados de febrero a mediados de marzo es, estadísticamente, la ventana de auroras más fuerte del año, solapamiento de cielo oscuro con clima solar activo. La larga estancia vuelve a tarifa pico por las vacaciones escolares europeas; reserva con 6 meses de antelación.',
+          'De mediados de febrero a mediados de marzo es, estadísticamente, la ventana de auroras más fuerte del año, solapamiento de cielo oscuro con clima solar activo. La larga estancia vuelve a tarifa pico por las vacaciones escolares europeas; reserve con 6 meses de antelación.',
         bestFor: ['Iglús de cristal', 'Viajes de auroras de lista de deseos'],
-        avoidIf: ['Planificas con poca antelación'],
+        avoidIf: ['Planificación de última hora'],
       },
       {
         name: 'Marzo',
         pitch: 'Vuelve la luz',
         body:
-          'Los días se alargan rápido, a fin de mes tienes 13 horas de luz. La aurora sigue fuerte en las madrugadas oscuras y a última hora de la tarde. Esquí de primavera en los fjells orientados al sur. El mes de esquí más fotogénico.',
+          'Los días se alargan rápido, a fin de mes hay 13 horas de luz. La aurora sigue fuerte en las madrugadas oscuras y a última hora de la tarde. Esquí de primavera en los fjells orientados al sur. El mes de esquí más fotogénico.',
         bestFor: ['Larga estancia con esquí a pie de pista', 'Quien quiere luz + aurora'],
         avoidIf: ['Fotógrafos que vienen por el ambiente de noche polar'],
       },
@@ -423,18 +423,18 @@ export const copyES: SectionCopy = {
       },
     ],
     bestForLabel: 'Ideal para',
-    skipIfLabel: 'Sáltatelo si',
+    skipIfLabel: 'Sáltelo si',
     cheatKicker: 'Chuleta de los locales',
     cheatH2: 'Tres semanas que los locales reservan para sí mismos.',
     cheatP1:
-      '<strong class="text-charcoal">Finales de noviembre (semanas 47–48).</strong> La nieve acaba de asentarse, empiezan las semanas más oscuras del año y la temporada de auroras está a pleno rendimiento. Tarifas de larga estancia un 40–50 % por debajo del pico. Algunos alojamientos aún no han abierto del todo, confírmalo antes de reservar.',
+      '<strong class="text-charcoal">Finales de noviembre (semanas 47–48).</strong> La nieve acaba de asentarse, empiezan las semanas más oscuras del año y la temporada de auroras está a pleno rendimiento. Tarifas de larga estancia un 40–50 % por debajo del pico. Algunos alojamientos aún no han abierto del todo, confírmelo antes de reservar.',
     cheatP2:
       '<strong class="text-charcoal">Segunda quincena de enero (semanas 3–4).</strong> La mejor semana de la temporada en relación aurora-coste. Multitudes de Navidad fuera, vacaciones de febrero sin empezar, días que se alargan, nieve bien puesta. Es cuando nuestro editor se va de vacaciones.',
     cheatP3:
       '<strong class="text-charcoal">Finales de abril (semanas 16–17).</strong> Pico del esquí de primavera, sol 16 h/día sobre el horizonte, nieve aún profunda en las laderas orientadas al norte. La ventana de auroras se ha cerrado, pero solo la luz ya vale el viaje. Las tarifas bajan un 30 % después de Semana Santa.',
     marginLabel: 'Cuándo reservar',
     marginBody:
-      'Para el pico de febrero: reserva con 6 meses. Finales de enero: 3 meses. Temporada media (noviembre, finales de abril): bastan 6–8 semanas. Navidad / Nochevieja: 9 meses como mínimo, y ten fechas alternativas porque el inventario pico desaparece en primavera.',
+      'Para el pico de febrero: reserve con 6 meses. Finales de enero: 3 meses. Temporada media (noviembre, finales de abril): bastan 6–8 semanas. Navidad / Nochevieja: 9 meses como mínimo, y tenga fechas alternativas porque el inventario pico desaparece en primavera.',
     readGuide: 'Leer la guía de reservas',
     seeLong: 'Ver larga estancia',
   },
@@ -453,7 +453,7 @@ export const copyES: SectionCopy = {
     perNight: '/ noche',
     checkRates: 'Ver tarifas',
     seeAll: 'Ver todo',
-    liveAvailabilityIn: (n) => `¿Buscas disponibilidad en vivo en ${n}?`,
+    liveAvailabilityIn: (n) => `¿Busca disponibilidad en vivo en ${n}?`,
     networkLeadA: 'Nuestra red clasifica solo 16 alojamientos. Trip.com lista todo lo demás que funciona en ',
     networkLeadB: ' este invierno, fechas flexibles, filtros por equipamiento, oferta completa.',
     browseInDest: (n) => `Buscar en Trip.com, ${n}`,
@@ -480,12 +480,12 @@ export const copyES: SectionCopy = {
     },
     authorNote: 'Cuatro resorts contrastados con la información publicada por los operadores y reseñas recientes de huéspedes. Precios revisados por última vez: febrero de 2026.',
     pickWhy: [
-      'Kakslauttanen está en todas las listas porque se lo merece. El resort abrió en Saariselkä en 1973, cuando "alojamiento turístico en Saariselkä" significaba un albergue de madera y la aurora se miraba desde el aparcamiento, y más tarde inventó el iglú de cristal moderno.',
-      'Hay una bifurcación: reserva los iglús Kelo-Glass, no los iglús de cristal clásicos. El Kelo-Glass combina el techo panorámico de vidrio con una estructura de troncos con calefacción, cocina propia y chimenea. Los clásicos son más pequeños, con más trasiego, y el baño está a 50 metros a pie, a −25 °C.',
+      'Kakslauttanen está en todas las listas porque se lo merece. El resort abrió en Saariselkä en 1973, cuando «alojamiento turístico en Saariselkä» significaba un albergue de madera y la aurora se miraba desde el aparcamiento, y más tarde inventó el iglú de cristal moderno.',
+      'Hay una bifurcación: reserve los iglús Kelo-Glass, no los iglús de cristal clásicos. El Kelo-Glass combina el techo panorámico de vidrio con una estructura de troncos con calefacción, cocina propia y chimenea. Los clásicos son más pequeños, con más trasiego, y el baño está a 50 metros a pie, a −25 °C.',
       'La diferencia de precio ronda los 200 €/noche. A lo largo de tres noches, el Kelo-Glass amortiza su sobreprecio solo por no tener que ponerse las botas de nieve a las 4 de la madrugada.',
     ],
     pickCaveat:
-      'Los iglús de cristal clásicos cuestan un 30 % menos, pero la experiencia es claramente peor. Si tu presupuesto se topa en 400 €/noche, mira Aurora Village o Aurora Pyramids, el mismo cielo, a menudo en un entorno de lago o naturaleza mejor situado.',
+      'Los iglús de cristal clásicos cuestan un 30 % menos, pero la experiencia es claramente peor. Si su presupuesto se topa en 400 €/noche, mire Aurora Village o Aurora Pyramids, el mismo cielo, a menudo en un entorno de lago o naturaleza mejor situado.',
     pullQuote: {
       text:
         'El primer iglú de cristal se construyó para que los huéspedes vieran la aurora sin estar fuera a −30 °C. Décadas después sigue siendo todo el argumento, y la parte que todo imitador estropea es lo que pasa cuando la aurora se va.',
@@ -506,13 +506,13 @@ export const copyES: SectionCopy = {
     ],
     marginLabel: 'Compensación',
     marginBody:
-      'Ningún resort gana en los cinco ejes. Aurora Pyramids supera a todos en reflejo del cielo pero pierde en acceso (40 min de Ivalo). Levin Iglut gana en ingeniería pero está dentro de un pueblo de esquí concurrido. Elige la prioridad que más te importe.',
+      'Ningún resort gana en los cinco ejes. Aurora Pyramids supera a todos en reflejo del cielo pero pierde en acceso (40 min de Ivalo). Levin Iglut gana en ingeniería pero está dentro de un pueblo de esquí concurrido. Elija la prioridad que más le importe.',
     counterKicker: 'Contrarrecomendación honesta',
     counterH2: 'Cuándo saltarse los iglús de cristal por completo.',
     counterP1:
       'Para estancias de cuatro noches o más, dos noches de iglú de cristal y un bloque en cabaña de larga estancia es mejor viaje que cuatro noches de iglú. La novedad se gasta tras la segunda noche; un hirsimökki con sauna privado entrega la parte de Laponia que una cúpula de vidrio no puede dar.',
     counterP2:
-      'En Navidad (22 dic. → 2 ene.) los precios se triplican y el 90 % del inventario va a los circuitos organizados británicos antes de la primavera. Mueve las fechas a la segunda mitad de enero si puedes, más frío, más oscuro, la mitad de precio, mejores auroras.',
+      'En Navidad (22 dic. → 2 ene.) los precios se triplican y el 90 % del inventario va a los circuitos organizados británicos antes de la primavera. Mueva las fechas a la segunda mitad de enero si puede, más frío, más oscuro, la mitad de precio, mejores auroras.',
     seeLong: 'Ver larga estancia',
     bookingGuideBtn: 'Guía de reservas',
     browseAll: 'Buscar en Trip.com',
@@ -531,14 +531,14 @@ export const copyES: SectionCopy = {
     authorNote: 'Los datos de ambos alojamientos se han verificado con la información publicada por los operadores y reseñas recientes de huéspedes.',
     pickWhy: [
       'Las suites Iso-Syöte Eagle View se alzan a 432 m en el fjell de verdad más meridional de Finlandia, suites de madera de pino con observación de auroras por encima del límite de los árboles y sin el largo vuelo al norte.',
-      'Las fachadas de cristal miran al cielo abierto, así que en una noche despejada el arco auroral se lee desde la cama. Observas la aurora desde tu propia suite en la cresta y no desde un refugio compartido, privacidad sin el compromiso de un alquiler completo.',
+      'Las fachadas de cristal miran al cielo abierto, así que en una noche despejada el arco auroral se lee desde la cama. Verá la aurora desde su propia suite en la cresta y no desde un refugio compartido, privacidad sin el compromiso de un alquiler completo.',
       'Y es el refugio silvestre serio más fácil de alcanzar: a 90 minutos del aeropuerto de Oulu, lo que lo convierte en el raro retiro que funciona incluso para un viaje corto.',
     ],
     pickCaveat:
-      'El botón "ver tarifas" de este sitio lleva a una búsqueda en Trip.com del alojamiento reservable más cercano. Las Eagle View Suites se agotan antes los fines de semana de cielo despejado, reserva las fechas, no el pronóstico.',
+      'El botón «ver tarifas» de este sitio lleva a una búsqueda en Trip.com del alojamiento reservable más cercano. Las Eagle View Suites se agotan antes los fines de semana de cielo despejado, reserve las fechas, no el pronóstico.',
     pullQuote: {
       text:
-        'La palabra "remoto" suele ser lenguaje de marketing. Aquí arriba es cierto. La carretera se acaba, el límite de los árboles queda por debajo de ti y la única luz que queda es la que el cielo decide hacer. A un lugar así no te presentas sin más, te comprometes con él.',
+        'La palabra «remoto» suele ser lenguaje de marketing. Aquí arriba es cierto. La carretera se acaba, el límite de los árboles queda por debajo de usted y la única luz que queda es la que el cielo decide hacer. A un lugar así no se llega sin más: uno se compromete con él.',
       attr: 'En la carretera del fjell de Iso-Syöte, mirando hacia arriba',
     },
     runnersKicker: 'El otro',
@@ -546,7 +546,7 @@ export const copyES: SectionCopy = {
     glanceKicker: 'Dos definiciones de naturaleza salvaje',
     glanceH2: 'De un vistazo.',
     rubric:
-      'Aislamiento = cuán solo te sientes de verdad. Servicio = proporción de personal por huésped. Actividades = experiencias guiadas incluidas o disponibles.',
+      'Aislamiento = cuán solo se siente uno de verdad. Servicio = proporción de personal por huésped. Actividades = experiencias guiadas incluidas o disponibles.',
     axes: ['Acceso', 'Aislamiento', 'Servicio', 'Actividades', 'Factor irrepetible'],
     rows: [
       { name: 'Iso-Syöte Eagle View', verdict: 'Por encima del límite de los árboles. Lo más fácil desde el sur de Finlandia.' },
@@ -560,7 +560,7 @@ export const copyES: SectionCopy = {
     counterP1:
       'Ambos refugios están a 1–3 horas de traslado del aeropuerto más cercano. Para viajes de menos de tres noches, el tiempo en tránsito es desproporcionado.',
     counterP2:
-      'Para quien viaja al Ártico por primera vez: haz antes un viaje a Rovaniemi o Saariselkä. Un refugio silvestre de alquiler completo se desperdicia en alguien que aún está descubriendo qué es el −25 °C.',
+      'Para quien viaja al Ártico por primera vez: haga antes un viaje a Rovaniemi o Saariselkä. Un refugio silvestre de alquiler completo se desperdicia en alguien que aún está descubriendo qué es el −25 °C.',
     seeLong: 'Ver larga estancia',
     browseAll: 'Buscar en Trip.com',
   },
@@ -571,22 +571,22 @@ export const copyES: SectionCopy = {
     breadcrumb: 'Larga estancia',
     pageHero: {
       eyebrow: 'Cinco alojamientos de larga estancia',
-      title: 'Quédate una semana. O un mes.',
+      title: 'Quédese una semana. O un mes.',
       subtitle:
         'La respuesta correcta para repetidores, teletrabajadores, familias y todo aquel cuyo viaje a Laponia dure más de tres noches. Tarifas semanales, saunas privados, cocinas de verdad, de suites de diseño a apartamentos a pie de pista.',
     },
     authorNote:
       'Cinco alojamientos contrastados con colaboradores locales y con los calendarios de tarifas semanales de la temporada 2025/26.',
     pickWhy: [
-      'El Arctic TreeHouse Resort es la respuesta cuando la pregunta es "¿cómo hago una larga estancia de verdad en Rovaniemi sin alquilar una cabaña pelada?" Suites de diseño integradas en el bosque de pinos al borde de Santa Park, cada una con cocina americana y una fachada panorámica de cristal orientada a los árboles.',
-      'La tarifa semanal baja en torno al 25 % respecto a la de por noche, y cada suite da acceso al pueblo de saunas del resort, así que una semana aquí cuesta menos por noche que una serie de reservas de una noche, con mucho más espacio para asentarte de verdad.',
-      'Es además la base más flexible de esta lista: el aeropuerto, los restaurantes y la cultura del diseño de Rovaniemi están a diez minutos, mientras que la suite en sí solo mira al bosque. El botón "Ver tarifas" de abajo te lleva directamente al inventario semanal.',
+      'El Arctic TreeHouse Resort es la respuesta cuando la pregunta es «¿cómo hago una larga estancia de verdad en Rovaniemi sin alquilar una cabaña pelada?» Suites de diseño integradas en el bosque de pinos al borde de Santa Park, cada una con cocina americana y una fachada panorámica de cristal orientada a los árboles.',
+      'La tarifa semanal baja en torno al 25 % respecto a la de por noche, y cada suite da acceso al pueblo de saunas del resort, así que una semana aquí cuesta menos por noche que una serie de reservas de una noche, con mucho más espacio para asentarse de verdad.',
+      'Es además la base más flexible de esta lista: el aeropuerto, los restaurantes y la cultura del diseño de Rovaniemi están a diez minutos, mientras que la suite en sí solo mira al bosque. El botón «Ver tarifas» de abajo le lleva directamente al inventario semanal.',
     ],
     pickCaveat:
-      'El descuento semanal aparece en el sistema de reservas en cuanto seleccionas 7+ noches, no siempre figura en la tarifa por noche que se muestra. Las semanas pico en torno a Navidad se agotan con meses de antelación; mediados de noviembre y finales de abril salen mucho más baratos.',
+      'El descuento semanal aparece en el sistema de reservas en cuanto selecciona 7+ noches, no siempre figura en la tarifa por noche que se muestra. Las semanas pico en torno a Navidad se agotan con meses de antelación; mediados de noviembre y finales de abril salen mucho más baratos.',
     pullQuote: {
       text:
-        'El encargo era desaparecer en la cresta. Usar madera de la propia finca, vidrio orientado solo al norte, y no levantar nunca la cubierta por encima de la línea de los árboles. Lo que ves ya estaba ahí, nosotros solo hicimos posible vivir dentro.',
+        'El encargo era desaparecer en la cresta. Usar madera de la propia finca, vidrio orientado solo al norte, y no levantar nunca la cubierta por encima de la línea de los árboles. Lo que se ve ya estaba ahí, nosotros solo hicimos posible vivir dentro.',
       attr: 'Studio Puisto · declaración del arquitecto',
     },
     runnersKicker: 'Los otros cuatro',
@@ -596,20 +596,20 @@ export const copyES: SectionCopy = {
     weeklyKicker: 'Cómo funcionan las tarifas semanales',
     weeklyH2: 'El precio baja más rápido de lo que la gente espera.',
     weeklyP1:
-      'En los alojamientos de esta página, la tarifa semanal sale de media <strong>un 23 % más barata por noche</strong> que la tarifa de cabecera por noche. Levi Residences baja un 30 %, el Pyhä Bear’s Lodge un 18 %, Arctic TreeHouse un 25 %. La mayoría no lo anuncia, el descuento vive en el motor de reservas en cuanto seleccionas 7 noches o más.',
+      'En los alojamientos de esta página, la tarifa semanal sale de media <strong>un 23 % más barata por noche</strong> que la tarifa de cabecera por noche. Levi Residences baja un 30 %, el Pyhä Bear’s Lodge un 18 %, Arctic TreeHouse un 25 %. La mayoría no lo anuncia, el descuento vive en el motor de reservas en cuanto selecciona 7 noches o más.',
     weeklyP2:
-      'Las semanas bisagra, <strong>mediados de noviembre</strong> (justo antes de que la nieve se estabilice) y <strong>finales de abril</strong> (justo después del deshielo), restan otro 30–50 % por encima. La aurora sigue activa en ambas ventanas. Es el punto dulce para la larga estancia con un calendario laboral flexible.',
+      'Las semanas bisagra, <strong>mediados de noviembre</strong> (justo antes de que la nieve se estabilice) y <strong>finales de abril</strong> (justo después del deshielo), restan otro 30–50 % por encima. La aurora sigue activa en ambas ventanas. Es el momento óptimo para la larga estancia con un calendario laboral flexible.',
     marginLabel: 'Táctica de reserva',
     marginBody:
-      'Para una estancia de 4 semanas, repartirla entre dos alojamientos puede ganarle a una sola reserva, evitas el pico de "semana alta" que golpea en Navidad y en las vacaciones escolares de esquí de febrero, y de paso ves dos partes de Laponia. El día de traslado se lleva media jornada; el ahorro suele pagar dos noches extra en otro sitio.',
+      'Para una estancia de 4 semanas, repartirla entre dos alojamientos puede ganarle a una sola reserva: así evita usted el pico de «semana alta» que golpea en Navidad y en las vacaciones escolares de esquí de febrero, y de paso conoce dos partes de Laponia. El día de traslado se lleva media jornada; el ahorro suele pagar dos noches extra en otro sitio.',
     counterKicker: 'Contrarrecomendación honesta',
     counterH2: 'Cuándo NO reservar una larga estancia.',
     counterP1:
-      'Para un primer viaje de 2–3 noches, sáltate los alquileres de larga estancia. El check-in, la compra y el impuesto de "aprender a usar la cocina" se comen el ahorro. Reserva un hotel.',
+      'Para un primer viaje de 2–3 noches, sáltese los alquileres de larga estancia. El check-in, la compra y el impuesto de «aprender a usar la cocina» se comen el ahorro. Reserve un hotel.',
     counterP2:
-      'Para una única noche de auroras de lista de deseos, los iglús de cristal son mejor respuesta. El techo de vidrio es la experiencia a la que vienes; una cabaña de larga estancia te da una ventana.',
+      'Para una única noche de auroras de lista de deseos, los iglús de cristal son mejor respuesta. El techo de vidrio es la experiencia a la que viene; una cabaña de larga estancia le da una ventana.',
     counterP3:
-      'Para grupos con movilidad mixta, llama directamente al alojamiento antes de reservar, la mayoría de las cabañas de larga estancia no son accesibles sin escalones, y el sauna en particular suele estar en el sótano, sobre suelo de madera.',
+      'Para grupos con movilidad mixta, llame directamente al alojamiento antes de reservar, la mayoría de las cabañas de larga estancia no son accesibles sin escalones, y el sauna en particular suele estar en el sótano, sobre suelo de madera.',
     seeHotels: 'Ver hoteles',
     seeIgloos: 'Ver iglús de cristal',
     browseAll: 'Buscar en Trip.com',
@@ -671,7 +671,7 @@ export const copyES: SectionCopy = {
       location: 'Rovaniemi · fjell de Ounasvaara',
       highlight: 'Esquí a pie de pista · a pie del centro de Rovaniemi',
       description:
-        'Chalés totalmente equipados en el fjell de Ounasvaara. Esquí a pie de pista en invierno, diez minutos a pie del centro de Rovaniemi. La opción de larga estancia más flexible si quieres mezclar comodidad urbana y mañanas árticas.',
+        'Chalés totalmente equipados en el fjell de Ounasvaara. Esquí a pie de pista en invierno, diez minutos a pie del centro de Rovaniemi. La opción de larga estancia más flexible si quiere mezclar comodidad urbana y mañanas árticas.',
     },
     {
       name: "Lapland Hotels Bear's Lodge",
@@ -694,7 +694,7 @@ export const copyES: SectionCopy = {
       location: 'Saariselkä',
       highlight: 'El iglú de cristal original · Kelo-Glass disponible',
       description:
-        'El resort que inventó el iglú de cristal moderno. Elige Kelo-Glass antes que los iglús de cristal clásicos, el Kelo combina el techo panorámico de vidrio con una estructura de troncos con calefacción, cocina americana y chimenea. Dos noches mínimo para sacarle todo el partido.',
+        'El resort que inventó el iglú de cristal moderno. Elija Kelo-Glass antes que los iglús de cristal clásicos, el Kelo combina el techo panorámico de vidrio con una estructura de troncos con calefacción, cocina americana y chimenea. Dos noches mínimo para sacarle todo el partido.',
     },
     {
       name: 'Levin Iglut',
@@ -738,14 +738,14 @@ export const copyES: SectionCopy = {
     {
       slug: 'rovaniemi',
       pitch:
-        'La capital de la Laponia finlandesa, la única ciudad lapona con una verdadera escena gastronómica de invierno, un hub aeroportuario en funcionamiento y cultura del diseño todo el año.',
+        'La capital de la Laponia finlandesa, la única ciudad lapona con una verdadera escena gastronómica de invierno, un aeropuerto con conexiones de verdad y cultura del diseño todo el año.',
       longStayAngle:
-        'La base adecuada si tu larga estancia combina teletrabajo entre semana y escapadas al norte el fin de semana, wifi rápido, vuelos directos a Estocolmo, restaurantes abiertos en temporada media.',
+        'La base adecuada si su larga estancia combina teletrabajo entre semana y escapadas al norte el fin de semana, wifi rápido, vuelos directos a Estocolmo, restaurantes abiertos en temporada media.',
     },
     {
       slug: 'levi',
       pitch:
-        'La mayor estación de esquí de Finlandia por venta de forfaits, con 25 000 plazas, apartamentos a pie de pista y una calle de pueblo de verdad.',
+        'La mayor estación de esquí de Finlandia por venta de pases de esquí, con 25 000 plazas, apartamentos a pie de pista y una calle de pueblo de verdad.',
       longStayAngle:
         'Lógica de larga estancia: los apartamentos a pie de pista se alquilan por semana de diciembre a abril. Los remontes funcionan a diario, los restaurantes del pueblo abren cada noche, aquí se puede hacer una temporada de verdad.',
     },
@@ -754,7 +754,7 @@ export const copyES: SectionCopy = {
       pitch:
         'Latitud más alta que Rovaniemi, nieve más dura, cielo más oscuro. El pueblo lapón que se toma el invierno más en serio.',
       longStayAngle:
-        'Lógica de larga estancia: alquila una cabaña en lo alto y escribe un libro. Pocas distracciones. Excelente red de esquí de fondo, criaderos de huskies cerca, ninguna distracción urbana.',
+        'Lógica de larga estancia: alquile una cabaña en lo alto y escriba un libro. Pocas distracciones. Excelente red de esquí de fondo, criaderos de huskies cerca, ninguna distracción urbana.',
     },
     {
       slug: 'inari',

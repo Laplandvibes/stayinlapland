@@ -41,8 +41,8 @@ const TEXT: Record<Lang, { compact: string; full: string }> = {
     full: 'このページにはアフィリエイトリンクが含まれます。リンク経由でご予約いただくと、追加費用なしで少額の手数料を受け取ります。宿の選定は手数料ではなく内容で行っています。',
   },
   es: {
-    compact: 'Enlace de afiliación. Si reservas por aquí, recibimos una pequeña comisión sin coste extra para ti.',
-    full: 'Esta página tiene enlaces de afiliación. Si reservas a través de ellos, recibimos una pequeña comisión sin coste adicional para ti. Los alojamientos se eligen por sus méritos, nunca por la comisión.',
+    compact: 'Enlace de afiliación. Si reserva por aquí, recibimos una pequeña comisión sin coste extra para usted.',
+    full: 'Esta página tiene enlaces de afiliación. Si reserva a través de ellos, recibimos una pequeña comisión sin coste adicional para usted. Los alojamientos se eligen por sus méritos, nunca por la comisión.',
   },
   'pt-BR': {
     compact: 'Link de afiliado. Se você reservar por aqui, recebemos uma pequena comissão sem custo extra para você.',

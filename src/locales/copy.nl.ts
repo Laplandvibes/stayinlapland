@@ -23,7 +23,7 @@ export const copyNL: SectionCopy = {
     h1Line1: 'Lapland is meer dan',
     h1Line2: 'een weekje vakantie.',
     lead:
-      'Hutten per week, design hotels in Rovaniemi, glasiglo’s voor de bucketlist-nachten, en de wildernislodges voorbij de laatste weg. Geverifieerde tarieven van',
+      'Hutten per week, designhotels in Rovaniemi, glasiglo’s voor de bucketlist-nachten, en de wildernislodges voorbij de laatste weg. Geverifieerde tarieven van',
     leadPriceRange: '€140 tot €1.500',
     liveLabel: 'Live beschikbaarheid · Trip.com-zoekopdracht',
     browseLongStays: 'Lange verblijven bekijken',
@@ -110,7 +110,7 @@ export const copyNL: SectionCopy = {
         forWho: 'Eerste reis · 4–6 nachten · met kinderen',
         recommendation: 'Boutiquehotel in Rovaniemi',
         rationale:
-          'Een design hotel als Arctic Light of Arctic TreeHouse biedt nabijheid van het vliegveld, een echte restaurantscene en de logistiek van het Kerstmandorp, zonder het gezin in een afgelegen hut te dwingen waar verwarmen een avondproject wordt.',
+          'Een designhotel als Arctic Light of Arctic TreeHouse biedt nabijheid van het vliegveld, een echte restaurantscene en de logistiek van het Kerstmandorp, zonder het gezin in een afgelegen hut te dwingen waar verwarmen een avondproject wordt.',
         ctaLabel: 'Hotels bekijken',
       },
       {
@@ -139,7 +139,7 @@ export const copyNL: SectionCopy = {
     stats: { stays: 'Gekozen verblijven', bases: 'Bases in Lapland', categories: 'Manieren van verblijven', months: 'Beoordeelde maanden' },
     intro: {
       p1: 'De meeste lijstjes met "beste accommodatie in Lapland" beginnen met een glasiglo bovenaan, zetten daaronder twintig andere glasiglo’s in ongeveer dezelfde volgorde, en bevatten geen enkele zin over de vraag of de schrijver er ooit meer dan twee nachten heeft doorgebracht. Deze gids is het tegenovergestelde.',
-      p2: 'Lapland-accommodatie valt uiteen in vier categorieën, lange-verblijfshuur, hotels, glasiglo’s en wildernislodges, en de zestien accommodaties die hun plek verdienen, staan hieronder. Daarmee kunt u een reis bouwen die begint met een week in een hut bij Levi, doorgaat naar een design hotel in Rovaniemi voor twee stadse nachten, en eindigt met één glasiglonacht voor de terugvlucht. Zo beloont Lapland een langer verblijf.',
+      p2: 'Lapland-accommodatie valt uiteen in vier categorieën, lange-verblijfshuur, hotels, glasiglo’s en wildernislodges, en de zestien accommodaties die hun plek verdienen, staan hieronder. Daarmee kunt u een reis bouwen die begint met een week in een hut bij Levi, doorgaat naar een designhotel in Rovaniemi voor twee stadse nachten, en eindigt met één glasiglonacht voor de terugvlucht. Zo beloont Lapland een langer verblijf.',
       p3: 'Drie dingen die deze gids niet doet: prijzen aggregeren, beoordelingen recyclen, of doen alsof we plekken behandelen waar geen partner in het netwerk ooit een echte nacht heeft doorgebracht.',
     },
     authorNote:
@@ -176,7 +176,7 @@ export const copyNL: SectionCopy = {
       },
       {
         q: 'Waarom richt de homepage zich op lange verblijven in plaats van glasiglo’s?',
-        a: 'Glasiglo’s zijn het iconische Lapland-formaat en hebben een aparte pagina. Maar de meest geliefde Lapland-reizen zijn geen driedaagse bucketlistnachten in een glaskoepel, het zijn weeklange base-camp-verblijven in een hut of design hotel, met een of twee nachten elders ingebouwd. De site weerspiegelt hoe Lapland terugkerende gasten echt beloont.',
+        a: 'Glasiglo’s zijn het iconische Lapland-formaat en hebben een aparte pagina. Maar de meest geliefde Lapland-reizen zijn geen driedaagse bucketlistnachten in een glaskoepel, het zijn weeklange base-camp-verblijven in een hut of designhotel, met een of twee nachten elders ingebouwd. De site weerspiegelt hoe Lapland terugkerende gasten echt beloont.',
       },
       {
         q: 'Is Kakslauttanen werkelijk de hoofdprijs waard?',
@@ -184,7 +184,7 @@ export const copyNL: SectionCopy = {
       },
       {
         q: 'Waar kan ik me het best baseren als mijn lange verblijf remote werk omvat?',
-        a: 'Rovaniemi. Het is de enige stad in Lapland met betrouwbare glasvezel, dagelijkse vluchten op Helsinki en Stockholm en een echte winterse restaurantscene die ook in de tussenseizoenen open blijft. Arctic TreeHouse Resort en de Ounasvaara-chalets bieden allebei weektarieven en goede werkplekken.',
+        a: 'Rovaniemi. Het is de enige stad in Lapland met betrouwbare glasvezel, dagelijkse vluchten naar Helsinki en Stockholm en een echte winterse restaurantscene die ook in de tussenseizoenen open blijft. Arctic TreeHouse Resort en de Ounasvaara-chalets bieden allebei weektarieven en goede werkplekken.',
       },
     ],
     fullGuideCta: 'Lees de volledige boekingsgids',
@@ -231,7 +231,7 @@ export const copyNL: SectionCopy = {
       'Vijf bolletjes is de hoogste score. Design = interieurstijl en materiaalkwaliteit. Architectuur = het gebouw zelf. Activiteiten = ski-in/out, huskykennels en lokale cultuur binnen 15 minuten.',
     axes: ['Design', 'Architectuur', 'Spa / sauna', 'Activiteiten', 'Restaurant'],
     rows: [
-      { name: 'Arctic TreeHouse', verdict: 'Beste design hotel in Rovaniemi.' },
+      { name: 'Arctic TreeHouse', verdict: 'Beste designhotel in Rovaniemi.' },
       { name: 'Arctic Light', verdict: 'Architectonisch meest interessante gebouw.' },
       { name: 'Levi Spirit', verdict: 'Volwassenensfeer. Spa + ski-in.' },
       { name: 'Lapland Hotels Saaga', verdict: 'Ski-in/out-klassieker bij Ylläs. Spa inbegrepen.' },
@@ -252,7 +252,7 @@ export const copyNL: SectionCopy = {
   glassIgloos: {
     metaTitle: 'Glasiglo’s in Fins Lapland | StayInLapland',
     metaDescription:
-      'Glasigloo-resorts in Fins Lapland die hun naam waarmaken, Kakslauttanen, Levin Iglut, Aurora Village en Aurora Pyramids. Gerangschikt op hemelzicht.',
+      'Glasiglo-resorts in Fins Lapland die hun naam waarmaken, Kakslauttanen, Levin Iglut, Aurora Village en Aurora Pyramids. Gerangschikt op hemelzicht.',
     breadcrumb: 'Glasiglo’s',
     pageHero: {
       eyebrow: 'Het iconische Lapland-formaat',
@@ -289,11 +289,11 @@ export const copyNL: SectionCopy = {
     ],
     marginLabel: 'Afweging',
     marginBody:
-      'Geen resort wint op alle vijf assen. Aurora Pyramids verslaat iedereen op hemelreflectie maar verliest op bereikbaarheid (40 min van Ivalo). Levin Iglut wint op engineering maar ligt in een drukke skidorp. Kies de prioriteit die voor u het belangrijkst is.',
+      'Geen resort wint op alle vijf assen. Aurora Pyramids verslaat iedereen op hemelreflectie maar verliest op bereikbaarheid (40 min van Ivalo). Levin Iglut wint op engineering maar ligt in een druk skidorp. Kies de prioriteit die voor u het belangrijkst is.',
     counterKicker: 'Eerlijke tegenaanbeveling',
     counterH2: 'Wanneer u glasiglo’s helemaal overslaat.',
     counterP1:
-      'Bij verblijven van vier of meer nachten is twee glasiglonachten plus een blok in een lange-verblijfshut een betere reis dan vier glasiglonachten. De nieuwigheid slijt na de tweede nacht; een hirsimökki met privésauna levert het deel van Lapland dat een glaskoepel niet kan.',
+      'Bij verblijven van vier of meer nachten zijn twee glasiglonachten plus een blok in een lange-verblijfshut een betere reis dan vier glasiglonachten. De nieuwigheid slijt na de tweede nacht; een hirsimökki met privésauna levert het deel van Lapland dat een glaskoepel niet kan.',
     counterP2:
       'Voor Kerstmis (22 dec → 2 jan) verdrievoudigen de prijzen en gaat 90% van het aanbod tegen het voorjaar naar Britse pakketreizen. Verschuif uw data zo mogelijk naar de tweede helft van januari, kouder, donkerder, half zo duur, beter noorderlicht.',
     seeLong: 'Bekijk lange verblijven',
@@ -314,7 +314,7 @@ export const copyNL: SectionCopy = {
     authorNote:
       'De gegevens van beide accommodaties zijn geverifieerd aan de hand van gepubliceerde informatie van de exploitanten en recente gastbeoordelingen.',
     pickWhy: [
-      'De Iso-Syöte Eagle View Suites liggen op 432 m op de zuidelijkste echte fjell van Finland, in grenenhout gebouwde suites met noorderlicht-kijken boven de boomgrens en zonder de lange vlucht naar het noorden.',
+      'De Iso-Syöte Eagle View Suites liggen op 432 m op de zuidelijkste echte fjäll van Finland, in grenenhout gebouwde suites met noorderlicht-kijken boven de boomgrens en zonder de lange vlucht naar het noorden.',
       'De glasgevels kijken uit op de open hemel, zodat de noorderlichtboog op een heldere nacht vanuit het bed te zien is. U bekijkt het noorderlicht vanuit uw eigen suite op de bergkam in plaats van een gedeelde schuilplaats, privacy zonder de verplichting van een volledige buyout.',
       'En het is de makkelijkst bereikbare serieuze wildernislodge: 90 minuten van de luchthaven van Oulu, wat het de zeldzame retreat maakt die zelfs voor een korte reis werkt.',
     ],
@@ -323,7 +323,7 @@ export const copyNL: SectionCopy = {
     pullQuote: {
       text:
         'Het woord "afgelegen" is meestal marketingtaal. Hierboven is het waar. De weg houdt op, de boomgrens zakt onder u weg, en het enige licht dat overblijft is wat de hemel besluit te maken. Op zo’n plek valt u niet zomaar binnen, u verbindt zich eraan.',
-      attr: 'Op de fjellweg van Iso-Syöte, omhoogkijkend',
+      attr: 'Op de fjällweg van Iso-Syöte, omhoogkijkend',
     },
     runnersKicker: 'De andere',
     runnersH2: 'Wanneer een hele suite op de bergkam te veel is.',
@@ -338,7 +338,7 @@ export const copyNL: SectionCopy = {
     ],
     marginLabel: 'Noorderlicht-wekservice bij Muotka',
     marginBody:
-      'Wilderness Hotel Muotka heeft een dienstdoende noorderlicht-jager die de Kp-index volgt en fysiek op deuren klopt zodra de noorderlichten verschijnen. Het is de beste functie van welke accommodatie dan ook in deze gids en het prijsverschil waard voor reizen van slechts één nacht.',
+      'Wilderness Hotel Muotka heeft een dienstdoende noorderlicht-jager die de Kp-index volgt en fysiek op deuren klopt zodra het noorderlicht verschijnt. Het is de beste functie van welke accommodatie dan ook in deze gids en het prijsverschil waard voor reizen van slechts één nacht.',
     counterKicker: 'Eerlijke tegenaanbeveling',
     counterH2: 'Wildernislodges zijn niet voor iedereen.',
     counterP1:
@@ -382,7 +382,7 @@ export const copyNL: SectionCopy = {
     weeklyP1:
       'Over de accommodaties op deze pagina is het weektarief gemiddeld <strong>23% goedkoper per nacht</strong> dan het nachttarief van de prijslijst. Levi Residences daalt 30%, Pyhä Bear’s Lodge daalt 18%, Arctic TreeHouse daalt 25%. De meeste adverteren dit niet, de korting zit in het boekingssysteem zodra u 7+ nachten selecteert.',
     weeklyP2:
-      'De schouderweken, <strong>half november</strong> (vlak voordat de sneeuw stabiliseert) en <strong>eind april</strong> (vlak nadat de sneeuw smelt), zakken nog eens 30–50% extra. Noorderlicht is in beide vensters nog actief. Dit is het zoete punt voor lange verblijven met een flexibele werkkalender.',
+      'De schouderweken, <strong>half november</strong> (vlak voordat de sneeuw stabiliseert) en <strong>eind april</strong> (vlak nadat de sneeuw smelt), zakken nog eens 30–50% extra. Noorderlicht is in beide vensters nog actief. Dit is de sweet spot voor lange verblijven met een flexibele werkkalender.',
     marginLabel: 'Boekingstactiek',
     marginBody:
       'Voor een verblijf van 4 weken kan het opsplitsen over twee accommodaties een enkele boeking verslaan, u vermijdt de "piekweek"-piek rond Kerst en in de skivakantie van februari, en u ziet meteen twee delen van Lapland. De transferdag kost een halve dag; de besparing betaalt doorgaans twee extra nachten elders.',
@@ -438,7 +438,7 @@ export const copyNL: SectionCopy = {
         title: 'Realiteitscheck van het budget',
         body: [
           'Lange-verblijfshut (weektarief): €140–280/nacht, slaapt 4–6.',
-          'Boutique hotel: €140–420/nacht, ontbijt meestal inbegrepen.',
+          'Boutiquehotel: €140–420/nacht, ontbijt meestal inbegrepen.',
           'Glasiglo, hoogseizoen: €400–1.500/nacht voor twee.',
           'Wildernislodge-suite: €220–950/nacht afhankelijk van de accommodatie.',
           'Activiteiten (husky-safari, sneeuwscooter, noorderlichtjacht) doorgaans €120–200 per persoon per uitstap erbovenop.',
@@ -448,7 +448,7 @@ export const copyNL: SectionCopy = {
         title: 'Annuleringsvoorwaarden',
         body: [
           'De meeste Lapland-accommodaties zijn voor de piekweken overgestapt op niet-restitueerbare tarieven. Lees de kleine lettertjes voordat u op "boeken" klikt.',
-          'Een reisverzekering met "annuleer-om-elke-reden"-dekking is écht de moeite waard voor reizen boven €2.000. Noorderlichtjagers annuleren voortdurend om het weer.',
+          'Een reisverzekering met "annuleer-om-elke-reden"-dekking is écht de moeite waard voor reizen boven €2.000. Noorderlichtjagers annuleren voortdurend vanwege het weer.',
           'Onze boekingspartners respecteren de annuleringsvoorwaarden die bij het boeken worden getoond, boek via de redirect op deze site om het tarief zichtbaar en consistent te houden.',
         ],
       },
@@ -481,7 +481,7 @@ export const copyNL: SectionCopy = {
       'Samengesteld op basis van rapporten van lokale partners in heel Fins Lapland.',
     pullQuote: {
       text:
-        'De meeste noorderlichten boven Fins Lapland verschijnen tussen de avond en de vroege ochtenduren, en de lange, donkere maanden van de herfst tot het vroege voorjaar geven de beste kansen. Een heldere hemel en een beetje geduld tellen zwaarder dan de exacte datum.',
+        'Het meeste noorderlicht boven Fins Lapland verschijnt tussen de avond en de vroege ochtenduren, en de lange, donkere maanden van de herfst tot het vroege voorjaar geven de beste kansen. Een heldere hemel en een beetje geduld tellen zwaarder dan de exacte datum.',
       attr: 'LaplandVibes, uit de noorderlichtlogboeken van onze partners in heel Fins Lapland',
     },
     months: [
@@ -513,7 +513,7 @@ export const copyNL: SectionCopy = {
         name: 'December',
         pitch: 'Kerstpiek',
         body:
-          'Kerst tot Oud-en-Nieuw is piek-alles, pieksprijzen, piekvraag, piek-Kerstman-toerisme in Rovaniemi. Glasiglo’s verdrievoudigen in prijs, snow hotels volledig open. Noorderlicht nog actief maar het weer is vaak bewolkter.',
+          'Kerst tot Oud-en-Nieuw is piek-alles, piekprijzen, piekvraag, piek-Kerstman-toerisme in Rovaniemi. Glasiglo’s verdrievoudigen in prijs, sneeuwhotels volledig open. Noorderlicht nog actief maar het weer is vaak bewolkter.',
         bestFor: ['Gezinsreizen met kerstthema', 'Eerste-keer-gasten die gegarandeerde sneeuw willen'],
         avoidIf: ['Budgetgevoelig reizen', 'Verblijven gericht op noorderlicht'],
       },
@@ -521,7 +521,7 @@ export const copyNL: SectionCopy = {
         name: 'Januari',
         pitch: 'De keuze van de locals',
         body:
-          'De tweede helft van januari is de stille sweet spot, pieksprijzen zijn afgenomen, dagen lengen merkbaar, sneeuw is stabiel, noorderlicht het meest actief. De kerstdrukte is weg en de februari-schoolvakantiedrukte nog niet begonnen.',
+          'De tweede helft van januari is de stille sweet spot, piekprijzen zijn afgenomen, dagen lengen merkbaar, sneeuw is stabiel, noorderlicht het meest actief. De kerstdrukte is weg en de februari-schoolvakantiedrukte nog niet begonnen.',
         bestFor: ['Lange verblijven', 'Huwelijksreizen', 'Noorderlicht-fotografie'],
         avoidIf: ['U heeft warm weer in welke vorm dan ook nodig'],
       },
@@ -537,7 +537,7 @@ export const copyNL: SectionCopy = {
         name: 'Maart',
         pitch: 'Het licht keert terug',
         body:
-          'Dagen lengen snel, eind maand heeft u 13 uur daglicht. Noorderlicht nog sterk in donkere ochtenden en late avonden. Lenteskiën op zuidgerichte fjelden. De meest fotogenieke skimaand.',
+          'Dagen lengen snel, eind maand heeft u 13 uur daglicht. Noorderlicht nog sterk in donkere ochtenden en late avonden. Lenteskiën op zuidgerichte fjälls. De meest fotogenieke skimaand.',
         bestFor: ['Ski-in lange verblijven', 'Iedereen die licht + noorderlicht wil'],
         avoidIf: ['Fotografen die voor de poolnachtsfeer kwamen'],
       },
@@ -545,7 +545,7 @@ export const copyNL: SectionCopy = {
         name: 'April',
         pitch: 'Lentesneeuw + licht',
         body:
-          'Sneeuw nog diep en skiën uitmuntend op de fjelden. Noorderlichtseizoen eindigt begin april als nachten te licht worden. Eind april is weer schouder, tarieven dalen 30%, accommodaties nog open, zon boven de horizon voor 16+ uur.',
+          'Sneeuw nog diep en skiën uitmuntend op de fjälls. Noorderlichtseizoen eindigt begin april als nachten te licht worden. Eind april is weer schouder, tarieven dalen 30%, accommodaties nog open, zon boven de horizon voor 16+ uur.',
         bestFor: ['Lange ski-verblijven aan het eind van het seizoen', 'Langlaufen'],
         avoidIf: ['Reizen gericht op noorderlicht'],
       },
@@ -630,7 +630,7 @@ export const copyNL: SectionCopy = {
       location: 'Rovaniemi',
       highlight: 'Design hotel · suites aan de bosrand',
       description:
-        'Een design hotel met 70 suites, weggewerkt in het dennenbos achter Santa Park in Rovaniemi. Elke suite heeft een panoramische glasvoorzijde naar de bomen en een Noords-minimalistisch interieur. Sterk eigen restaurant, Rakas, met lokale producten, en het saunadorp van het resort staat open voor alle gasten.',
+        'Een designhotel met 70 suites, weggewerkt in het dennenbos achter Santa Park in Rovaniemi. Elke suite heeft een panoramische glasvoorzijde naar de bomen en een Noords-minimalistisch interieur. Sterk eigen restaurant, Rakas, met lokale producten, en het saunadorp van het resort staat open voor alle gasten.',
     },
     {
       name: 'Arctic Light Hotel',
@@ -644,14 +644,14 @@ export const copyNL: SectionCopy = {
       location: 'Levi',
       highlight: 'Designvilla’s · spa · ski-in/out',
       description:
-        'Hoogwaardig villahotel aan de voet van de Levi-fjeld. Privé-buitenhottubs, een sauna in elke villa, ski-in/out-toegang tot de liften en een volledige spa. Gebouwd voor volwassenen, geen kinderprogramma, alleen rustige kamers en goed eten.',
+        'Hoogwaardig villahotel aan de voet van de Levi-fjäll. Privé-buitenhottubs, een sauna in elke villa, ski-in/out-toegang tot de liften en een volledige spa. Gebouwd voor volwassenen, geen kinderprogramma, alleen rustige kamers en goed eten.',
     },
     {
       name: 'Lapland Hotels Saaga',
       location: 'Ylläsjärvi (Ylläs)',
       highlight: 'Ylläs-klassieker · ski-in/out · spa en zwembad',
       description:
-        'Het klassieke hotel aan de rustigere Ylläsjärvi-kant van de Ylläs, op zo’n honderd meter van de Iso-Ylläs-lift, ski-in/ski-out in de winter. Zwembad, spa en fitness zijn inbegrepen bij standard- en superiorkamers; de appartementen hebben bovendien een privésauna. Buffetrestaurant Biegga kijkt uit over het fjell en het meer Ylläsjärvi.',
+        'Het klassieke hotel aan de rustigere Ylläsjärvi-kant van de Ylläs, op zo’n honderd meter van de Iso-Ylläs-lift, ski-in/ski-out in de winter. Zwembad, spa en fitness zijn inbegrepen bij standard- en superiorkamers; de appartementen hebben bovendien een privésauna. Buffetrestaurant Biegga kijkt uit over het fjäll en het meer Ylläsjärvi.',
     },
     {
       name: 'Star Arctic Hotel',
@@ -674,14 +674,14 @@ export const copyNL: SectionCopy = {
       location: 'Dorp Levi',
       highlight: '2 slaapkamers · ski-in · privésauna · weektarieven',
       description:
-        'Tweekamerappartementen aan de voet van de Levi-fjeld, op loopafstand van de liften en het dorp. Elke unit heeft een eigen houtgestookte sauna, een echte keuken en een minimum van vier nachten van december tot maart. De keuze voor gezinnen die een week skiën zonder de stedelijke voorzieningen op te geven.',
+        'Tweekamerappartementen aan de voet van de Levi-fjäll, op loopafstand van de liften en het dorp. Elke unit heeft een eigen houtgestookte sauna, een echte keuken en een minimum van vier nachten van december tot maart. De keuze voor gezinnen die een week skiën zonder de stedelijke voorzieningen op te geven.',
     },
     {
       name: 'Lapland Hotels Ounasvaara Chalets',
-      location: 'Rovaniemi · Ounasvaara-fjeld',
+      location: 'Rovaniemi · Ounasvaara-fjäll',
       highlight: 'Ski-in/out · te voet naar centrum Rovaniemi',
       description:
-        'Volledig uitgeruste chalets op de Ounasvaara-fjeld. In de winter ski-in/ski-out, tien minuten lopen naar het centrum van Rovaniemi. De flexibelste lange-verblijfsoptie als u stedelijk gemak met arctische ochtenden wilt combineren.',
+        'Volledig uitgeruste chalets op de Ounasvaara-fjäll. In de winter ski-in/ski-out, tien minuten lopen naar het centrum van Rovaniemi. De flexibelste lange-verblijfsoptie als u stedelijk gemak met arctische ochtenden wilt combineren.',
     },
     {
       name: "Lapland Hotels Bear's Lodge",
@@ -708,10 +708,10 @@ export const copyNL: SectionCopy = {
     },
     {
       name: 'Levin Iglut',
-      location: 'Levi-fjeld',
-      highlight: 'Gemotoriseerde noorderlichtbedden · positie op de fjeld',
+      location: 'Levi-fjäll',
+      highlight: 'Gemotoriseerde noorderlichtbedden · positie op de fjäll',
       description:
-        'Premium glasiglo’s op de Levi-fjeld, ruim boven de lichtkoepel van het dorp. Gemotoriseerde bedden draaien naar de noorderlichtboog toe, elke unit heeft een eigen kitchenette, de best uitgewerkte engineering van de vijf Finse resorts.',
+        'Premium glasiglo’s op de Levi-fjäll, ruim boven de lichtkoepel van het dorp. Gemotoriseerde bedden draaien naar de noorderlichtboog toe, elke unit heeft een eigen kitchenette, de best uitgewerkte engineering van de vijf Finse resorts.',
     },
     {
       name: 'Noorderlichtdorp (Aurora Village)',
@@ -734,14 +734,14 @@ export const copyNL: SectionCopy = {
       location: 'Iso-Syöte (Pudasjärvi, net ten zuiden van Lapland)',
       highlight: 'Boven de boomgrens · bereikbaar vanuit Oulu',
       description:
-        'Pijnboomsuites op 432 m op de Iso-Syöte-fjeld, de zuidelijkste echte fjeld in Finland. Noorderlicht-kijken boven de boomgrens zonder de lange vlucht naar Saariselkä, en 90 minuten van vliegveld Oulu.',
+        'Pijnboomsuites op 432 m op de Iso-Syöte-fjäll, de zuidelijkste echte fjäll in Finland. Noorderlicht-kijken boven de boomgrens zonder de lange vlucht naar Saariselkä, en 90 minuten van vliegveld Oulu.',
     },
     {
       name: 'Wilderness Hotel Muotka',
       location: 'Regio Saariselkä',
       highlight: 'Noorderlicht-wekservice · hotelcomfort',
       description:
-        'Noorderlichthutten met glaswanden gericht op de omliggende fjelden. On-site noorderlicht-jagers wekken gasten als de activiteit stijgt, nuttig omdat de meeste noorderlichtvensters ruim na middernacht vallen. Hotelcomfort op een wildernislocatie.',
+        'Noorderlichthutten met glaswanden gericht op de omliggende fjälls. On-site noorderlicht-jagers wekken gasten als de activiteit stijgt, nuttig omdat de meeste noorderlichtvensters ruim na middernacht vallen. Hotelcomfort op een wildernislocatie.',
     },
   ],
   destinationsData: [
@@ -762,7 +762,7 @@ export const copyNL: SectionCopy = {
     {
       slug: 'saariselka',
       pitch:
-        'Hogere breedtegraad dan Rovaniemi, hardere sneeuw, donkerdere hemel. Het Lapland-dorp dat de winter het serieust neemt.',
+        'Hogere breedtegraad dan Rovaniemi, hardere sneeuw, donkerdere hemel. Het Lapland-dorp dat de winter het meest serieus neemt.',
       longStayAngle:
         'Logica van het lange verblijf: huur een hut op een heuveltop en schrijf een boek. Weinig afleiding. Uitstekend langlaufnetwerk, husky-kennels in de buurt, geen stadse afleiding.',
     },

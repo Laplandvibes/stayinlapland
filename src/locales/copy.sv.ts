@@ -10,7 +10,7 @@ export const copySV: SectionCopy = {
     ...copyEN.nav,
     longStays: 'Långtidsvistelser',
     hotels: 'Hotell',
-    glassIgloos: 'Glasiglor',
+    glassIgloos: 'Glasigloor',
     wilderness: 'Vildmark',
     whenToGo: 'När åka',
     bookingGuide: 'Bokningsguide',
@@ -25,7 +25,7 @@ export const copySV: SectionCopy = {
     h1Line1: 'Lappland är mer än',
     h1Line2: 'en veckas semester.',
     lead:
-      'Stugor per vecka, designhotell i Rovaniemi, glasiglor för bucketlist-nätterna och vildmarkslodgerna bortom sista vägen. Verifierade priser från',
+      'Stugor per vecka, designhotell i Rovaniemi, glasigloor för bucketlist-nätterna och vildmarkslodgerna bortom sista vägen. Verifierade priser från',
     leadPriceRange: '140 € till 1 500 €',
     liveLabel: 'Live tillgänglighet · Trip.com-sökning',
     browseLongStays: 'Se långtidsvistelser',
@@ -113,7 +113,7 @@ export const copySV: SectionCopy = {
         forWho: 'Första resan · 4–6 nätter · med barn',
         recommendation: 'Boutiquehotell i Rovaniemi',
         rationale:
-          'Ett designhotell som Arctic Light eller Arctic TreeHouse ger närhet till flygplatsen, en riktig restaurangscen och logistiken kring Tomtens by, utan att tvinga in familjen i en avlägsen stuga där uppvärmningen blir ett kvällsprojekt.',
+          'Ett designhotell som Arctic Light eller Arctic TreeHouse ger närhet till flygplatsen, en riktig restaurangscen och logistiken kring Jultomtens by, utan att tvinga in familjen i en avlägsen stuga där uppvärmningen blir ett kvällsprojekt.',
         ctaLabel: 'Se hotell',
       },
       {
@@ -136,13 +136,13 @@ export const copySV: SectionCopy = {
     ...copyEN.home,
     metaTitle: 'Var du bor i Lappland 2026, 16 adresser',
     metaDescription:
-      'Planera din vistelse i Lappland 2026, 16 verifierade boenden: stugor från 140 €/natt, designhotell i Rovaniemi, glasiglor 280 €+ och vildmarkslodger.',
+      'Planera din vistelse i Lappland 2026, 16 verifierade boenden: stugor från 140 €/natt, designhotell i Rovaniemi, glasigloor 280 €+ och vildmarkslodger.',
     schemaName: 'StayInLapland, långtidsvistelser och boutiquehotell i finska Lappland',
     breadcrumbHome: 'Hem',
     stats: { stays: 'Utvalda boenden', bases: 'Baser i Lappland', categories: 'Sätt att bo', months: 'Betygsatta månader' },
     intro: {
-      p1: 'De flesta listor med ”bästa boende i Lappland” börjar med en glasiglo överst, radar upp tjugo andra glasiglor i ungefär samma ordning under den, och innehåller inte en enda mening om huruvida skribenten någonsin tillbringat mer än två nätter där. Den här guiden är motsatsen.',
-      p2: 'Boende i Lappland delas in i fyra kategorier, långtidshyra, hotell, glasiglor och vildmarkslodger, och de sexton boenden som förtjänar sin plats står nedan. Med det kan du bygga en resa som börjar med en vecka i en stuga vid Levi, fortsätter till ett designhotell i Rovaniemi för två stadsnätter och avslutas med en glasiglonatt före hemresan. Så belönar Lappland en längre vistelse.',
+      p1: 'De flesta listor med ”bästa boende i Lappland” börjar med en glasigloo överst, radar upp tjugo andra glasigloor i ungefär samma ordning under den, och innehåller inte en enda mening om huruvida skribenten någonsin tillbringat mer än två nätter där. Den här guiden är motsatsen.',
+      p2: 'Boende i Lappland delas in i fyra kategorier, långtidshyra, hotell, glasigloor och vildmarkslodger, och de sexton boenden som förtjänar sin plats står nedan. Med det kan du bygga en resa som börjar med en vecka i en stuga vid Levi, fortsätter till ett designhotell i Rovaniemi för två stadsnätter och avslutas med en glasigloonatt före hemresan. Så belönar Lappland en längre vistelse.',
       p3: 'Tre saker den här guiden inte gör: aggregerar priser, återvinner recensioner eller låtsas täcka platser där ingen partner i nätverket någonsin tillbringat en riktig natt.',
     },
     authorNote:
@@ -178,12 +178,12 @@ export const copySV: SectionCopy = {
         a: 'Allt från fyra nätter räknas som en lång vistelse, det är tröskeln där de flesta boenden i Lappland erbjuder veckopriser och ett riktigt kök blir viktigt. De utvalda långtidsboendena har ett minimum på 3 upp till 7 nätter, beroende på enhet; varje kort anger sitt minimum.',
       },
       {
-        q: 'Varför fokuserar startsidan på långtidsvistelser i stället för glasiglor?',
-        a: 'Glasiglor är det ikoniska Lapplandsformatet och har en egen sida. Men de mest omtyckta Lapplandsresorna är inte tre dygns bucketlist-nätter i en glaskupol, det är veckolånga basvistelser i en stuga eller ett designhotell, med en eller två nätter någon annanstans inbyggda. Sidan speglar hur Lappland verkligen belönar återkommande gäster.',
+        q: 'Varför fokuserar startsidan på långtidsvistelser i stället för glasigloor?',
+        a: 'Glasigloor är det ikoniska Lapplandsformatet och har en egen sida. Men de mest omtyckta Lapplandsresorna är inte tre dygns bucketlist-nätter i en glaskupol, det är veckolånga basvistelser i en stuga eller ett designhotell, med en eller två nätter någon annanstans inbyggda. Sidan speglar hur Lappland verkligen belönar återkommande gäster.',
       },
       {
         q: 'Är Kakslauttanen verkligen värt toppriset?',
-        a: 'Ja, men bara Kelo-Glass-iglorna, inte de klassiska Glass Igloos. Kelo-Glass kombinerar det panoramiska glastaket med en uppvärmd trästomme, ett pentry och en egen eldstad. Ett minimum på två nätter får ut mest av det. Bästa norrskensfönstren: början av februari och slutet av mars.',
+        a: 'Ja, men bara Kelo-Glass-igloorna, inte de klassiska Glass Igloos. Kelo-Glass kombinerar det panoramiska glastaket med en uppvärmd trästomme, ett pentry och en egen eldstad. Ett minimum på två nätter får ut mest av det. Bästa norrskensfönstren: början av februari och slutet av mars.',
       },
       {
         q: 'Var bör jag helst basera mig om min långa vistelse omfattar distansarbete?',
@@ -200,7 +200,7 @@ export const copySV: SectionCopy = {
     categoryNames: {
       longStays: 'Långtidsvistelser',
       hotels: 'Hotell',
-      glassIgloos: 'Glasiglor',
+      glassIgloos: 'Glasigloor',
       wilderness: 'Vildmarkslodger',
     },
   },
@@ -247,34 +247,34 @@ export const copySV: SectionCopy = {
     counterH2: 'När ett hotell inte är svaret.',
     counterP1:
       'För 5+ nätter med samma rytm, åka skidor, laga mat, basta, upprepa, slår en långtidsstuga eller -lägenhet vart och ett av dessa hotell på pris per natt och livskvalitet. Hotell passar just när dagarna skiljer sig åt.',
-    counterP2: 'För en enda bucketlist-natt med norrsken vinner glasiglor. Inget av hotellen ovan har glastak.',
+    counterP2: 'För en enda bucketlist-natt med norrsken vinner glasigloor. Inget av hotellen ovan har glastak.',
     seeLong: 'Se långtidsvistelser',
-    seeIgloos: 'Se glasiglor',
+    seeIgloos: 'Se glasigloor',
     browseAll: 'Se utbudet på Trip.com',
   },
   glassIgloos: {
-    metaTitle: 'Glasiglor i finska Lappland | StayInLapland',
+    metaTitle: 'Glasigloor i finska Lappland | StayInLapland',
     metaDescription:
-      'Glasigloresorter i finska Lappland som lever upp till namnet, Kakslauttanen, Levin Iglut, Aurora Village och Aurora Pyramids. Rangordnade efter himmel.',
-    breadcrumb: 'Glasiglor',
+      'Glasiglooresorter i finska Lappland som lever upp till namnet, Kakslauttanen, Levin Iglut, Aurora Village och Aurora Pyramids. Rangordnade efter himmel.',
+    breadcrumb: 'Glasigloor',
     pageHero: {
       eyebrow: 'Det ikoniska Lapplandsformatet',
-      title: 'Glasiglor i finska Lappland.',
+      title: 'Glasigloor i finska Lappland.',
       subtitle:
         'Den finska kupolen med glastak uppfanns i Saariselkä. Fyra boenden lever upp till namnet i dag, och skillnaden mellan dem är verklig.',
     },
     authorNote:
       'Fyra resorter dubbelkollade mot publicerad information från operatörerna och färska gästrecensioner. Priser senast kontrollerade: februari 2026.',
     pickWhy: [
-      'Kakslauttanen står på varje lista för att det förtjänar den platsen. Resorten startade i Saariselkä 1973, när ”turistboende i Saariselkä” fortfarande betydde ett vandrarhem i trä och norrskenet var något du tittade på från parkeringen, och uppfann senare den moderna glasiglon.',
-      'Här finns en vägdelning: boka Kelo-Glass-iglorna, inte de klassiska Glass Igloos. Kelo-Glass kombinerar det panoramiska glastaket med en uppvärmd trästomme, ett eget pentry och en öppen spis. De klassiska är mindre, trängre, och badrummet ligger 50 meter bort, i −25 °C.',
+      'Kakslauttanen står på varje lista för att det förtjänar den platsen. Resorten startade i Saariselkä 1973, när ”turistboende i Saariselkä” fortfarande betydde ett vandrarhem i trä och norrskenet var något du tittade på från parkeringen, och uppfann senare den moderna glasigloon.',
+      'Här finns ett vägskäl: boka Kelo-Glass-igloorna, inte de klassiska Glass Igloos. Kelo-Glass kombinerar det panoramiska glastaket med en uppvärmd trästomme, ett eget pentry och en öppen spis. De klassiska är mindre, trängre, och badrummet ligger 50 meter bort, i −25 °C.',
       'Prisskillnaden ligger på runt 200 €/natt. Över tre nätter tjänar Kelo-Glass in den merkostnaden, bara genom att du slipper dra på dig snöskorna klockan fyra på natten.',
     ],
     pickCaveat:
       'De klassiska Glass Igloos är ungefär 30 % billigare, men upplevelsen är tydligt sämre. Ligger din budget på 400 €/natt, titta i stället på Aurora Village eller Aurora Pyramids, samma himmel, ofta med ett vackrare läge vid sjö eller vildmark.',
     pullQuote: {
       text:
-        'Den första glasiglon byggdes för att gästerna skulle kunna se norrskenet utan att stå ute i −30 °C. Decennier senare är det fortfarande hela poängen, och det varje efterapare gör fel är vad som händer efter att norrskenet försvinner.',
+        'Den första glasigloon byggdes för att gästerna skulle kunna se norrskenet utan att stå ute i −30 °C. Decennier senare är det fortfarande hela poängen, och det varje efterapare gör fel är vad som händer efter att norrskenet försvinner.',
       attr: 'Ursprungsberättelse Kakslauttanen · resortet grundat 1973',
     },
     runnersKicker: 'De andra tre',
@@ -294,9 +294,9 @@ export const copySV: SectionCopy = {
     marginBody:
       'Ingen resort vinner på alla fem axlar. Aurora Pyramids slår alla på himmelsreflektion men förlorar på tillgänglighet (40 min från Ivalo). Levin Iglut vinner på konstruktion men ligger i en livlig skidort. Välj den prioritet som betyder mest för dig.',
     counterKicker: 'Ärlig motrekommendation',
-    counterH2: 'När du hoppar över glasiglor helt.',
+    counterH2: 'När du hoppar över glasigloor helt.',
     counterP1:
-      'Vid vistelser på fyra nätter eller mer är två glasiglonätter plus ett block i en långtidsstuga en bättre resa än fyra glasiglonätter. Nyhetsvärdet slits av efter andra natten; en timmerstuga med egen bastu ger den del av Lappland som en glaskupol inte kan.',
+      'Vid vistelser på fyra nätter eller mer är två glasigloonätter plus ett block i en långtidsstuga en bättre resa än fyra glasigloonätter. Nyhetens behag avtar efter andra natten; en timmerstuga med egen bastu ger den del av Lappland som en glaskupol inte kan.',
     counterP2:
       'Kring jul (22 dec → 2 jan) tredubblas priserna och 90 % av utbudet går till brittiska paketresor till våren. Flytta dina datum om möjligt till andra halvan av januari, kallare, mörkare, hälften så dyrt, bättre norrsken.',
     seeLong: 'Se långtidsvistelser',
@@ -326,7 +326,7 @@ export const copySV: SectionCopy = {
     pullQuote: {
       text:
         'Ordet ”avlägset” är oftast marknadsföring. Häruppe är det sant. Vägen tar slut, trädgränsen sjunker under dig, och det enda ljus som återstår är det himlen väljer att skapa. På en sådan plats tittar man inte bara förbi, man förbinder sig.',
-      attr: 'På fjällvägen till Iso-Syöte, blickande uppåt',
+      attr: 'På fjällvägen till Iso-Syöte, med blicken uppåt',
     },
     runnersKicker: 'Den andra',
     runnersH2: 'När en hel svit på fjällryggen är för mycket.',
@@ -347,7 +347,7 @@ export const copySV: SectionCopy = {
     counterP1:
       'Båda lodgerna ligger 1–3 timmars transfer från närmaste flygplats. För resor under tre nätter blir restiden oproportionerlig.',
     counterP2:
-      'För den som reser till Arktis för första gången: gör en resa till Rovaniemi eller Saariselkä först. En vildmarkslodge bokad i sin helhet är bortkastad på någon som fortfarande listar ut vad −25 °C är.',
+      'För den som reser till Arktis för första gången: gör en resa till Rovaniemi eller Saariselkä först. En vildmarkslodge bokad i sin helhet är bortkastad på någon som fortfarande försöker förstå vad −25 °C innebär.',
     seeLong: 'Se långtidsvistelser',
     browseAll: 'Se utbudet på Trip.com',
   },
@@ -385,20 +385,20 @@ export const copySV: SectionCopy = {
     weeklyP1:
       'Över boendena på den här sidan är veckopriset i genomsnitt <strong>23 % billigare per natt</strong> än prislistans nattpris. Levi Residences sjunker 30 %, Pyhä Bear’s Lodge sjunker 18 %, Arctic TreeHouse sjunker 25 %. De flesta annonserar inte detta, rabatten ligger i bokningssystemet så snart du väljer 7+ nätter.',
     weeklyP2:
-      'Mellansäsongsveckorna, <strong>mitten av november</strong> (precis innan snön stabiliseras) och <strong>slutet av april</strong> (precis efter att snön smält), sjunker ytterligare 30–50 %. Norrskenet är fortfarande aktivt i båda fönstren. Det här är det söta läget för långtidsvistelser med en flexibel arbetskalender.',
+      'Mellansäsongsveckorna, <strong>mitten av november</strong> (precis innan snön stabiliseras) och <strong>slutet av april</strong> (precis efter att snön smält), sjunker ytterligare 30–50 %. Norrskenet är fortfarande aktivt i båda fönstren. Det här är idealläget för långtidsvistelser med en flexibel arbetskalender.',
     marginLabel: 'Bokningstaktik',
     marginBody:
-      'För en vistelse på 4 veckor kan det slå en enda bokning att dela upp den på två boenden, du undviker toppveckotoppen kring jul och sportlov, och du ser två delar av Lappland direkt. Transferdagen kostar en halv dag; besparingen betalar oftast två extra nätter någon annanstans.',
+      'För en vistelse på 4 veckor kan det slå en enda bokning att dela upp den på två boenden, du undviker pristoppen kring jul och sportlov, och du ser två delar av Lappland direkt. Transferdagen kostar en halv dag; besparingen betalar oftast två extra nätter någon annanstans.',
     counterKicker: 'Ärlig motrekommendation',
     counterH2: 'När du INTE bokar en lång vistelse.',
     counterP1:
       'För en första resa på 2–3 nätter hoppar du över långtidshyra. Incheckningen, handlingen och ”lär-dig-spisen”-skatten äter upp besparingen. Boka ett hotell då.',
     counterP2:
-      'För en enda bucketlist-natt med norrsken är glasiglor det bättre svaret. Glastaket är upplevelsen du kom för; en långtidsstuga ger dig ett fönster.',
+      'För en enda bucketlist-natt med norrsken är glasigloor det bättre svaret. Glastaket är upplevelsen du kom för; en långtidsstuga ger dig ett fönster.',
     counterP3:
       'För grupper med blandad rörlighet ringer du boendet direkt i förväg, de flesta långtidsstugor är inte tröskelfria, och just bastun ligger ofta i källaren på ett trägolv.',
     seeHotels: 'Se hotell',
-    seeIgloos: 'Se glasiglor',
+    seeIgloos: 'Se glasigloor',
     browseAll: 'Se utbudet på Trip.com',
   },
   bookingGuide: {
@@ -424,7 +424,7 @@ export const copySV: SectionCopy = {
       {
         title: 'Hur du tar dig dit',
         body: [
-          'Tre flygplatser i Lappland täcker det mesta du skulle boka. Rovaniemi (RVN) för Tomtens by och söder, Kittilä (KTT) för Levi och Ylläs, Ivalo (IVL) för Saariselkä, Inari och norr.',
+          'Tre flygplatser i Lappland täcker det mesta du skulle boka. Rovaniemi (RVN) för Jultomtens by och söder, Kittilä (KTT) för Levi och Ylläs, Ivalo (IVL) för Saariselkä, Inari och norr.',
           'Helsingfors (HEL) → Lappland är ett inrikesflyg på 90 minuter. Direktflyg från London, Berlin och Paris finns också från december till mars.',
           'Tåg: nattåget Helsingfors–Rovaniemi är långsamt men sträckan längs Bottenvikens kust via Kemi är verkligen vacker och kupén är full av lokalbor som gör samma resa.',
         ],
@@ -442,7 +442,7 @@ export const copySV: SectionCopy = {
         body: [
           'Långtidsstuga (veckopris): 140–280 €/natt, plats för 4–6.',
           'Boutiquehotell: 140–420 €/natt, frukost oftast inkluderad.',
-          'Glasiglo, högsäsong: 400–1 500 €/natt för två.',
+          'Glasigloo, högsäsong: 400–1 500 €/natt för två.',
           'Vildmarkslodge-svit: 220–950 €/natt beroende på boendet.',
           'Aktiviteter (huskysafari, snöskoter, norrskensjakt) oftast 120–200 € per person och tur utöver detta.',
         ],
@@ -458,7 +458,7 @@ export const copySV: SectionCopy = {
       {
         title: 'Insidertips',
         body: [
-          'Saariselkä och Inari är kallare, mörkare och har starkare norrsken än Rovaniemi, men Rovaniemi har flygplatsen, aktiviteterna, Tomtens by. Kombinera baser.',
+          'Saariselkä och Inari är kallare, mörkare och har starkare norrsken än Rovaniemi, men Rovaniemi har flygplatsen, aktiviteterna, Jultomtens by. Kombinera baser.',
           'Har du bara 3 nätter, gör dem på en och samma plats. Lappland är större än folk tror och transfererna slukar dagar.',
           'Norrskensprognoser (NOAA, Aurora Service Europe) är exakta 30–90 minuter i förväg, inte dagar. Var flexibel.',
         ],
@@ -478,7 +478,7 @@ export const copySV: SectionCopy = {
       eyebrow: 'Månad för månad',
       title: 'När du ska besöka Lappland.',
       subtitle:
-        'Rätt månad beror på resan. Norrsken först, skidor först, långtidsvärde, julpeak, var och en har sitt söta läge. Här är den redaktionella översikten månad för månad.',
+        'Rätt månad beror på resan. Norrsken först, skidor först, långtidsvärde, julpeak, var och en har sin bästa tidpunkt. Här är den redaktionella översikten månad för månad.',
     },
     authorNote:
       'Sammanställd utifrån rapporter från lokala partner i hela finska Lappland.',
@@ -516,7 +516,7 @@ export const copySV: SectionCopy = {
         name: 'december',
         pitch: 'Julpeak',
         body:
-          'Jul till nyår är peak-allt, topppriser, toppefterfrågan, topp-tomteturism i Rovaniemi. Glasiglor tredubblas i pris, snöhotellen helt öppna. Norrskenet är fortfarande aktivt men vädret är ofta molnigare.',
+          'Jul till nyår är peak-allt, toppriser, toppefterfrågan, topp-tomteturism i Rovaniemi. Glasigloor tredubblas i pris, snöhotellen helt öppna. Norrskenet är fortfarande aktivt men vädret är ofta molnigare.',
         bestFor: ['Familjeresor med jultema', 'Förstagångsgäster som vill ha garanterad snö'],
         avoidIf: ['Budgetkänsligt resande', 'Vistelser inriktade på norrsken'],
       },
@@ -524,7 +524,7 @@ export const copySV: SectionCopy = {
         name: 'januari',
         pitch: 'Lokalbornas val',
         body:
-          'Andra halvan av januari är det stilla söta läget, topppriserna har lagt sig, dagarna blir märkbart längre, snön är stabil, norrskenet mest aktivt. Julträngseln är borta och februaris sportlovsträngsel har inte börjat än.',
+          'Andra halvan av januari är det lugna idealfönstret, toppriserna har lagt sig, dagarna blir märkbart längre, snön är stabil, norrskenet mest aktivt. Julträngseln är borta och februaris sportlovsträngsel har inte börjat än.',
         bestFor: ['Långtidsvistelser', 'Smekmånader', 'Norrskensfotografi'],
         avoidIf: ['Du behöver varmt väder i någon form'],
       },
@@ -532,15 +532,15 @@ export const copySV: SectionCopy = {
         name: 'februari',
         pitch: 'Starkaste norrskensmånaden',
         body:
-          'Mitten av februari till mitten av mars är statistiskt det starkaste norrskensfönstret på året, mörk himmel sammanfaller med aktivt rymdväder. Långtidsvistelser åter på topppris på grund av europeiska sportlov; boka 6 månader i förväg.',
-        bestFor: ['Glasiglor', 'Bucketlist-resor för norrsken'],
+          'Mitten av februari till mitten av mars är statistiskt det starkaste norrskensfönstret på året, mörk himmel sammanfaller med aktivt rymdväder. Långtidsvistelser åter på toppris på grund av europeiska sportlov; boka 6 månader i förväg.',
+        bestFor: ['Glasigloor', 'Bucketlist-resor för norrsken'],
         avoidIf: ['Sistaminutenplanerare'],
       },
       {
         name: 'mars',
         pitch: 'Ljuset återvänder',
         body:
-          'Dagarna blir snabbt längre, i slutet av månaden har du 13 timmar dagsljus. Norrskenet är fortfarande starkt under mörka morgnar och sena kvällar. Vårskidåkning på söderlägen fjäll. Den mest fotogeniska skidmånaden.',
+          'Dagarna blir snabbt längre, i slutet av månaden har du 13 timmar dagsljus. Norrskenet är fortfarande starkt under mörka morgnar och sena kvällar. Vårskidåkning på fjällens sydsluttningar. Den mest fotogeniska skidmånaden.',
         bestFor: ['Ski-in långtidsvistelser', 'Alla som vill ha ljus + norrsken'],
         avoidIf: ['Fotografer som kom för polarnattsstämningen'],
       },
@@ -560,9 +560,9 @@ export const copySV: SectionCopy = {
     cheatP1:
       '<strong class="text-charcoal">Slutet av november (vecka 47–48).</strong> Snön är precis stabil, årets mörkaste veckor börjar, norrskenssäsongen på full aktivitet. Långtidspriser 40–50 % under peak. Vissa boenden är inte helt öppna än, kontrollera före bokning.',
     cheatP2:
-      '<strong class="text-charcoal">Andra halvan av januari (vecka 3–4).</strong> Säsongens allra bästa norrsken-mot-kostnad-vecka. Julträngseln borta, februaris sportlov ännu inte börjat, dagarna blir längre, snön helt fast. Det är då redaktören åker på semester.',
+      '<strong class="text-charcoal">Andra halvan av januari (vecka 3–4).</strong> Säsongens bästa vecka räknat i norrsken per euro. Julträngseln borta, februaris sportlov ännu inte börjat, dagarna blir längre, snön helt fast. Det är då redaktören åker på semester.',
     cheatP3:
-      '<strong class="text-charcoal">Slutet av april (vecka 16–17).</strong> Vårskidpeak, sol över horisonten 16 tim/dygn, snön fortfarande djup i norrlägen. Norrskensfönstret är stängt men ljuset ensamt är värt resan. Priserna sjunker 30 % efter påsk.',
+      '<strong class="text-charcoal">Slutet av april (vecka 16–17).</strong> Vårskidpeak, sol över horisonten 16 tim/dygn, snön fortfarande djup i nordsluttningarna. Norrskensfönstret är stängt men ljuset ensamt är värt resan. Priserna sjunker 30 % efter påsk.',
     marginLabel: 'Bokningstiming',
     marginBody:
       'För peaken i februari: boka 6 månader i förväg. Slutet av januari: 3 månader. Mellansäsong (november, slutet av april): 6–8 veckor räcker. Jul / nyår: minst 9 månader, med reservdatum, topputbudet försvinner på våren.',
@@ -593,7 +593,7 @@ export const copySV: SectionCopy = {
     bucketLabels: {
       'long-stays': 'långtidsvistelser',
       'hotels': 'hotell',
-      'glass-igloos': 'glasiglor',
+      'glass-igloos': 'glasigloor',
       'wilderness': 'vildmark',
     },
   },
@@ -705,16 +705,16 @@ export const copySV: SectionCopy = {
     {
       name: 'Kakslauttanen Arctic Resort',
       location: 'Saariselkä',
-      highlight: 'Den ursprungliga glasiglon · Kelo-Glass tillgänglig',
+      highlight: 'Den ursprungliga glasigloon · Kelo-Glass tillgänglig',
       description:
-        'Resorten som uppfann den moderna glasiglon. Välj Kelo-Glass framför de klassiska Glass Igloos, Kelo kombinerar det panoramiska glastaket med en uppvärmd trästomme, ett pentry och en öppen spis. Ett minimum på två nätter får ut mest av det.',
+        'Resorten som uppfann den moderna glasigloon. Välj Kelo-Glass framför de klassiska Glass Igloos, Kelo kombinerar det panoramiska glastaket med en uppvärmd trästomme, ett pentry och en öppen spis. Ett minimum på två nätter får ut mest av det.',
     },
     {
       name: 'Levin Iglut',
       location: 'Levifjället',
       highlight: 'Motoriserade norrskensbäddar · läge på fjället',
       description:
-        'Premium-glasiglor på Levifjället, väl ovanför byns ljuskupol. Motoriserade bäddar vrider sig mot norrskensbågen, varje enhet har eget pentry, den mest genomarbetade konstruktionen av de fem finska resorterna.',
+        'Premium-glasigloor på Levifjället, väl ovanför byns ljuskupol. Motoriserade bäddar vrider sig mot norrskensbågen, varje enhet har eget pentry, den mest genomarbetade konstruktionen av de fem finska resorterna.',
     },
     {
       name: 'Aurora Village',
@@ -771,7 +771,7 @@ export const copySV: SectionCopy = {
     },
     {
       slug: 'inari',
-      pitch: 'Samisk kulturhuvudstad, Inarisjön (Finlands tredje största sjö), vår nordligaste långtidsbas.',
+      pitch: 'Samisk kulturhuvudstad, Enare träsk (Finlands tredje största sjö), vår nordligaste långtidsbas.',
       longStayAngle:
         'Långtidslogiken: sjön själv är aktiviteten. Pimpelfiske varje morgon, längdskidåkning över den frusna sjön, samiska museet i Inari och kulturcentret SIIDA utanför dörren.',
     },

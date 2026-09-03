@@ -14,7 +14,7 @@
     },
     "ja": {
       "title": "StayInLapland, フィンランド・ラップランドの長期滞在とブティックホテル",
-      "description": "フィンランド・ラップランドに腰を据える——週単位で借りるコテージ、ロヴァニエミとサーリセルカのデザインホテル、象徴的なガラスイグルー、最終道路の先のウィルダネスロッジまで。"
+      "description": "フィンランド・ラップランドに腰を据える——週単位で借りるコテージ、ロヴァニエミとサーリセルカのデザインホテル、象徴的なグラスイグルー、最終道路の先のウィルダネスロッジまで。"
     },
     "es": {
       "title": "Dónde alojarse en Laponia 2026, 16 alojamientos verificados",
@@ -46,7 +46,7 @@
     },
     "sv": {
       "title": "Var du bor i Lappland 2026, 16 adresser",
-      "description": "Planera din vistelse i Lappland 2026, 16 verifierade boenden: stugor från 140 €/natt, designhotell i Rovaniemi, glasiglor 280 €+ och vildmarkslodger."
+      "description": "Planera din vistelse i Lappland 2026, 16 verifierade boenden: stugor från 140 €/natt, designhotell i Rovaniemi, glasigloor 280 €+ och vildmarkslodger."
     }
   },
   "/long-stays": {
@@ -163,8 +163,8 @@
       "description": "Glasiglu-Resorts in Finnisch-Lappland, die den Namen verdienen, Kakslauttanen, Levin Iglut, Aurora Village, Aurora Pyramids. Nach Himmelssicht bewertet."
     },
     "ja": {
-      "title": "フィンランド・ラップランドのガラスイグルー, 4リゾートをランキング | StayInLapland",
-      "description": "その名に値するフィンランド・ラップランドのガラスイグルーリゾート厳選ガイド——カクスラウッタネン、Levin Iglut、Aurora Village、Aurora Pyramids。空の視認性、暗空のロケーション、快適性、アクセスでランク付け。"
+      "title": "フィンランド・ラップランドのグラスイグルー, 4リゾートをランキング | StayInLapland",
+      "description": "その名に値するフィンランド・ラップランドのグラスイグルーリゾート厳選ガイド——カクスラウッタネン、Levin Iglut、Aurora Village、Aurora Pyramids。空の視認性、暗空のロケーション、快適性、アクセスでランク付け。"
     },
     "es": {
       "title": "Iglús de cristal en la Laponia finlandesa | StayInLapland",
@@ -192,11 +192,11 @@
     },
     "nl": {
       "title": "Glasiglo’s in Fins Lapland | StayInLapland",
-      "description": "Glasigloo-resorts in Fins Lapland die hun naam waarmaken, Kakslauttanen, Levin Iglut, Aurora Village en Aurora Pyramids. Gerangschikt op hemelzicht."
+      "description": "Glasiglo-resorts in Fins Lapland die hun naam waarmaken, Kakslauttanen, Levin Iglut, Aurora Village en Aurora Pyramids. Gerangschikt op hemelzicht."
     },
     "sv": {
-      "title": "Glasiglor i finska Lappland | StayInLapland",
-      "description": "Glasigloresorter i finska Lappland som lever upp till namnet, Kakslauttanen, Levin Iglut, Aurora Village och Aurora Pyramids. Rangordnade efter himmel."
+      "title": "Glasigloor i finska Lappland | StayInLapland",
+      "description": "Glasiglooresorter i finska Lappland som lever upp till namnet, Kakslauttanen, Levin Iglut, Aurora Village och Aurora Pyramids. Rangordnade efter himmel."
     }
   },
   "/wilderness": {
@@ -492,7 +492,7 @@
     },
     "nl": {
       "title": "Saariselkä: Waar te verblijven | StayInLapland",
-      "description": "Hogere breedtegraad dan Rovaniemi, hardere sneeuw, donkerdere hemel. Het Lapland-dorp dat de winter het serieust neemt. Logica van het lange verblijf: huur een hut"
+      "description": "Hogere breedtegraad dan Rovaniemi, hardere sneeuw, donkerdere hemel. Het Lapland-dorp dat de winter het meest serieus neemt. Logica van het lange verblijf: huur een"
     },
     "sv": {
       "title": "Saariselkä: Var du bor | StayInLapland",
@@ -546,7 +546,7 @@
     },
     "sv": {
       "title": "Inari: Var du bor | StayInLapland",
-      "description": "Samisk kulturhuvudstad, Inarisjön (Finlands tredje största sjö), vår nordligaste långtidsbas. Långtidslogiken: sjön själv är aktiviteten. Pimpelfiske varje morgon"
+      "description": "Samisk kulturhuvudstad, Enare träsk (Finlands tredje största sjö), vår nordligaste långtidsbas. Långtidslogiken: sjön själv är aktiviteten. Pimpelfiske varje"
     }
   },
   "/destinations/yllas": {

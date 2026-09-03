@@ -126,7 +126,7 @@ const rovaniemi: Record<string, StayingNote> = {
       fr: 'Igloos de verre et cabanes à aurores sont un type de chambre, pas un quartier. Ils sont hors de la ville parce que c’est là que le ciel reste noir : réglez donc les trajets avant de réserver, car pour la plupart cela suppose une voiture ou une navette réservée.',
       it: 'Igloo di vetro e baite per l’aurora sono un tipo di camera, non un quartiere. Stanno fuori città perché è lì che il cielo resta buio, quindi risolva gli spostamenti prima di prenotare: per la maggior parte significa auto o un transfer concordato.',
       nl: 'Glazen iglo’s en noorderlichthutten zijn een kamertype, geen wijk. Ze liggen buiten de stad omdat de hemel daar donker blijft, dus regel het vervoer vóór u boekt: voor de meeste betekent dat een auto of een afgesproken transfer.',
-      ja: 'ガラスイグルーやオーロラキャビンは部屋の種類であって、地区の名前ではありません。空が暗いままだから郊外にあるので、予約の前に行き帰りの手段を決めておくこと。多くは車か、手配した送迎が前提です。',
+      ja: 'グラスイグルーやオーロラキャビンは部屋の種類であって、地区の名前ではありません。空が暗いままだから郊外にあるので、予約の前に行き帰りの手段を決めておくこと。多くは車か、手配した送迎が前提です。',
       ko: '글라스 이글루와 오로라 캐빈은 객실 유형이지 동네 이름이 아닙니다. 하늘이 어두운 곳이라 시 외곽에 있으니, 예약 전에 오가는 방법부터 정하십시오. 대부분은 차 또는 미리 잡아둔 픽업이 전제입니다.',
       'zh-CN': '玻璃冰屋和极光小木屋是房型，不是某个街区。它们建在城外，正因为那里的天空够黑，所以订房前先把往返方式定下来：多数情况意味着自驾或预约接送。',
       'pt-BR': 'Iglus de vidro e cabanas de aurora são um tipo de quarto, não um bairro. Ficam fora da cidade porque é ali que o céu permanece escuro, então resolva o deslocamento antes de reservar: na maioria isso significa carro ou transfer combinado.',

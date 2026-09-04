@@ -127,7 +127,7 @@ export const copyIT: SectionCopy = {
     stats: { stays: 'Strutture scelte', bases: 'Basi in Lapponia', categories: 'Modi di soggiornare', months: 'Mesi valutati' },
     intro: {
       p1: 'La maggior parte delle liste "migliori alloggi in Lapponia" mette un igloo di vetro in cima, venti altri igloo di vetro più o meno nello stesso ordine, e neanche una frase sul fatto che chi scrive abbia mai passato più di due notti in uno di essi. Questa guida è l’opposto.',
-      p2: 'L’alloggio in Lapponia si divide in quattro categorie, affitti a soggiorno lungo, hotel, igloo di vetro e lodge nella natura, e le sedici strutture che meritano il loro posto sono elencate qui sotto. Tra esse può costruire un viaggio che inizia con una settimana in una baita base vicino a Levi, prosegue con due notti in un design hotel a Rovaniemi e finisce con una notte in igloo di vetro prima del volo di ritorno. Così la Lapponia premia davvero un soggiorno più lungo.',
+      p2: 'L’alloggio in Lapponia si divide in quattro categorie: affitti a soggiorno lungo, hotel, igloo di vetro e lodge nella natura, e le sedici strutture che meritano il loro posto sono elencate qui sotto. Tra esse può costruire un viaggio che inizia con una settimana in una baita base vicino a Levi, prosegue con due notti in un design hotel a Rovaniemi e finisce con una notte in igloo di vetro prima del volo di ritorno. Così la Lapponia premia davvero un soggiorno più lungo.',
       p3: 'Tre cose che questa guida non fa: aggregare prezzi, riciclare recensioni, o fingere di coprire luoghi dove nessun partner della rete ha mai trascorso una vera notte.',
     },
     authorNote: 'Una breve lista curata, scritta e verificata con partner locali in tutta la Lapponia finlandese.',
@@ -169,7 +169,7 @@ export const copyIT: SectionCopy = {
         a: 'Sì, ma solo gli igloo Kelo-Glass, non i classici Glass Igloos. I Kelo-Glass combinano il tetto panoramico di vetro con una struttura in tronchi riscaldata, un angolo cottura e un caminetto privato. Un minimo di due notti permette di sfruttarli al meglio. Migliori finestre per l’aurora boreale: inizio febbraio e fine marzo.',
       },
       {
-        q: 'Dove dovrei stabilirmi se il mio soggiorno lungo prevede remote working?',
+        q: 'Dove dovrei stabilirmi se il mio soggiorno lungo prevede lo smart working?',
         a: 'Rovaniemi. È l’unica città della Lapponia con fibra affidabile, voli giornalieri per Helsinki e Stoccolma, e una vera scena gastronomica invernale che resta aperta anche in bassa stagione. Arctic TreeHouse Resort e Ounasvaara Chalets offrono entrambi tariffe settimanali e veri scrittoi.',
       },
     ],

@@ -160,7 +160,7 @@ export const copyEN: SectionCopy = {
       h2A: 'Settle into one.',
       h2B: 'Or string two together.',
       lead:
-        'Pick the category that matches the trip you actually want. Then pick a destination. Long-stay readers most often combine two, a week of cabin base, two nights of contrast.',
+        'Pick the category that matches the trip you actually want. Then pick a destination. Long-stay readers most often combine two: a week of cabin base, two nights of contrast.',
     },
     propertyWord: 'property',
     propertiesWord: 'properties',

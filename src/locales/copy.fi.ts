@@ -18,7 +18,7 @@ export const copyFI: SectionCopy = {
     h1Line1: 'Lappi on enemmän',
     h1Line2: 'kuin viikon loma.',
     lead:
-      'Mökkejä viikoittaisilla hinnoilla, design-hotelleja Rovaniemellä, lasi-iglut bucket-list-öihin ja erämaalodget viimeisen tien jälkeen. Varmistetut hinnat alkaen',
+      'Mökkejä viikoittaisilla hinnoilla, design-hotelleja Rovaniemellä, lasi-iglut haavelistan öihin ja erämaalodget viimeisen tien jälkeen. Varmistetut hinnat alkaen',
     leadPriceRange: '140 € – 1 500 €',
     liveLabel: 'Reaaliaikainen saatavuus · Sembo-haku',
     browseLongStays: 'Katso pitkät jaksot',
@@ -154,7 +154,7 @@ export const copyFI: SectionCopy = {
     breadcrumbHome: 'Etusivu',
     stats: { stays: 'Valittua kohdetta', bases: 'Lapin tukikohtaa', categories: 'Tapaa majoittua', months: 'Arvioitua kuukautta' },
     intro: {
-      p1: '"Lapin parhaat majoitukset" -listat alkavat lähes aina lasi-iglulla, ja jatkavat samalla kaavalla. Tämä opas on tehty toisin: itse koeasutut yöt, paikalliset suositukset ja vain ne kohteet, jotka jäävät mieleen matkan jälkeen.',
+      p1: '”Lapin parhaat majoitukset” -listat alkavat lähes aina lasi-iglulla, ja jatkavat samalla kaavalla. Tämä opas on tehty toisin: itse koeasutut yöt, paikalliset suositukset ja vain ne kohteet, jotka jäävät mieleen matkan jälkeen.',
       p2: 'Olemme jakaneet Lapin majoitukset neljään selkeään kategoriaan: pitkät jaksot, hotellit, lasi-iglut ja erämaalodget. 16 valittua kohdetta, kaikki itse käytyjä. Suosittu reitti: viikko mökillä Levillä, kaksi yötä design-hotellissa Rovaniemellä, viimeinen yö lasi-iglussa. Näin yhdistettynä syntyy se Lappi, jonka takia tänne palataan.',
       p3: 'Tämä opas ei aggregoi hintoja eikä kierrätä arvosteluja. Lähteet näkyvissä, kumppanuussuhteet avoinna.',
     },

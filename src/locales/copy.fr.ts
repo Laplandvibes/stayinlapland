@@ -161,7 +161,7 @@ export const copyFR: SectionCopy = {
     stats: { stays: 'Adresses choisies', bases: 'Bases en Laponie', categories: 'Façons de séjourner', months: 'Mois évalués' },
     intro: {
       p1: 'La plupart des classements « meilleurs hébergements de Laponie » placent un igloo de verre en tête, puis vingt autres igloos de verre dans à peu près le même ordre, sans une seule phrase indiquant si l’auteur y a déjà passé plus de deux nuits. Ce guide fait l’inverse.',
-      p2: 'Les hébergements de Laponie se répartissent en quatre catégories, locations longue durée, hôtels, igloos de verre et lodges en pleine nature, et les seize adresses qui méritent leur place sont listées ci-dessous. On peut construire à partir d’elles un voyage qui commence par une semaine en chalet près de Levi, se poursuit par deux nuits en hôtel design à Rovaniemi, puis se termine par une seule nuit en igloo de verre avant le retour. C’est ainsi que la Laponie récompense vraiment un séjour prolongé.',
+      p2: 'Les hébergements de Laponie se répartissent en quatre catégories : locations longue durée, hôtels, igloos de verre et lodges en pleine nature, et les seize adresses qui méritent leur place sont listées ci-dessous. On peut construire à partir d’elles un voyage qui commence par une semaine en chalet près de Levi, se poursuit par deux nuits en hôtel design à Rovaniemi, puis se termine par une seule nuit en igloo de verre avant le retour. C’est ainsi que la Laponie récompense vraiment un séjour prolongé.',
       p3: 'Trois choses que ce guide ne fait pas : agréger des prix, recycler des avis, ni prétendre couvrir des lieux où aucun partenaire du réseau n’a réellement passé la nuit.',
     },
     authorNote: 'Une sélection éditoriale, rédigée et vérifiée sur place avec nos partenaires en Laponie finlandaise.',
@@ -200,7 +200,7 @@ export const copyFR: SectionCopy = {
       },
       {
         q: 'Kakslauttanen vaut-il vraiment son prix ?',
-        a: 'Oui, mais seulement les Kelo-Glass, pas les Glass Igloos classiques. Le Kelo-Glass associe le toit de verre panoramique à une structure en bois chauffée, une kitchenette et une cheminée privée. Deux nuits minimum permettent d’en tirer le meilleur. Meilleures fenêtres aurores : début février et fin mars.',
+        a: 'Oui, mais seulement les Kelo-Glass, pas les Glass Igloos classiques. Le Kelo-Glass associe le toit de verre panoramique à une structure en bois chauffée, une kitchenette et une cheminée privée. Deux nuits minimum permettent d’en tirer le meilleur. Meilleures fenêtres d’aurores boréales : début février et fin mars.',
       },
       {
         q: 'Où loger si mon séjour longue durée inclut du télétravail ?',
@@ -319,7 +319,7 @@ export const copyFR: SectionCopy = {
     browseAll: 'Parcourir l’offre Trip.com',
   },
   wilderness: {
-    metaTitle: 'Lodges en pleine nature en Laponie | StayInLapland',
+    metaTitle: 'Lodges en pleine nature en Laponie finlandaise | StayInLapland',
     metaDescription:
       'Des lodges au-delà de la dernière route, suites Iso-Syöte Eagle View et Wilderness Hotel Muotka. Aurore au-dessus des arbres et réveil aurore sur place.',
     breadcrumb: 'Pleine nature',

@@ -161,7 +161,7 @@ export const copyPTBR: SectionCopy = {
     stats: { stays: 'Hospedagens escolhidas', bases: 'Bases na Lapônia', categories: 'Formas de se hospedar', months: 'Meses avaliados' },
     intro: {
       p1: 'As listas de "melhores hospedagens da Lapônia" quase sempre começam por um iglu de vidro, e seguem nessa fórmula. Este guia foi feito de outro jeito: noites realmente dormidas, indicações de quem mora aqui e só os lugares que ficam na memória depois da viagem.',
-      p2: 'Dividimos as hospedagens da Lapônia em quatro categorias claras, estadias longas, hotéis, iglus de vidro e lodges na natureza. 16 propriedades selecionadas, todas visitadas pessoalmente. O roteiro mais comum: uma semana de cabana em Levi, duas noites em hotel de design em Rovaniemi e a última noite num iglu de vidro. Combinados, esses três formatos formam a Lapônia que faz a gente voltar.',
+      p2: 'Dividimos as hospedagens da Lapônia em quatro categorias claras: estadias longas, hotéis, iglus de vidro e lodges na natureza. 16 propriedades selecionadas, todas visitadas pessoalmente. O roteiro mais comum: uma semana de cabana em Levi, duas noites em hotel de design em Rovaniemi e a última noite num iglu de vidro. Combinados, esses três formatos formam a Lapônia que faz a gente voltar.',
       p3: 'Este guia não agrega preços nem recicla avaliações. Fontes à vista, parcerias declaradas.',
     },
     authorNote:
@@ -201,7 +201,7 @@ export const copyPTBR: SectionCopy = {
       },
       {
         q: 'O Kakslauttanen vale o preço de manchete mesmo?',
-        a: 'Sim, mas só os iglus Kelo-Glass, não os iglus de vidro clássicos. O Kelo-Glass combina o teto panorâmico de vidro com uma estrutura de toras aquecida, kitchenette e lareira privativa. O mínimo de duas noites tira o melhor proveito. Melhores janelas de aurora: início de fevereiro e fim de março.',
+        a: 'Sim, mas só os iglus Kelo-Glass, não os iglus de vidro clássicos. O Kelo-Glass combina o teto panorâmico de vidro com uma estrutura de toras aquecida, kitchenette e lareira privativa. O mínimo de duas noites tira o melhor proveito. Melhores janelas de aurora boreal: início de fevereiro e fim de março.',
       },
       {
         q: 'Onde se basear se a estadia longa envolve trabalho remoto?',

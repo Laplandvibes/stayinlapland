@@ -195,10 +195,10 @@ export const copyDE: SectionCopy = {
       },
       {
         q: 'Ist Kakslauttanen den hohen Preis wirklich wert?',
-        a: 'Ja, aber nur die Kelo-Glas-Iglus, nicht die klassischen Glasiglus. Kelo-Glas verbindet das Panorama-Glasdach mit einer beheizten Blockhütte, einer Kochnische und einem privaten Kamin. Zwei Nächte Minimum holt das Beste heraus. Beste Nordlicht-Fenster: Anfang Februar und Ende März.',
+        a: 'Ja, aber nur die Kelo-Glas-Iglus, nicht die klassischen Glas-Iglus. Kelo-Glas verbindet das Panorama-Glasdach mit einer beheizten Blockhütte, einer Kochnische und einem privaten Kamin. Zwei Nächte Minimum holt das Beste heraus. Beste Polarlicht-Fenster: Anfang Februar und Ende März.',
       },
       {
-        q: 'Wo sollte ich übernachten, wenn der Langzeitaufenthalt Remote Work einschließt?',
+        q: 'Wo sollte ich übernachten, wenn der Langzeitaufenthalt ortsunabhängiges Arbeiten einschließt?',
         a: 'Rovaniemi. Die einzige Lappland-Stadt mit zuverlässigem Glasfaser, täglichen Flügen nach Helsinki und Stockholm und einer echten Wintergastronomie, die auch in der Nebensaison öffnet. Arctic TreeHouse Resort und die Ounasvaara Chalets bieten beide Wochenpreise und richtige Schreibtische.',
       },
     ],
@@ -260,7 +260,7 @@ export const copyDE: SectionCopy = {
     counterP1:
       'Für 5+ Nächte mit gleichem Tagesrhythmus, Skifahren, Kochen, Sauna, Wiederholung, schlägt eine Langzeithütte oder ein Apartment jedes dieser Hotels bei Übernachtungspreis und Lebensqualität. Hotels sind richtig, wenn die Tage sehr unterschiedlich sind.',
     counterP2:
-      'Für die eine Wunsch-Nordlicht-Nacht gewinnen Glasiglus. Keines der obigen Hotels hat ein Glasdach.',
+      'Für die eine Wunsch-Polarlicht-Nacht gewinnen Glasiglus. Keines der obigen Hotels hat ein Glasdach.',
     seeLong: 'Langzeitaufenthalte ansehen',
     seeIgloos: 'Glasiglus ansehen',
     browseAll: 'Trip.com-Verfügbarkeit ansehen',
@@ -279,7 +279,7 @@ export const copyDE: SectionCopy = {
     authorNote:
       'Vier Resorts gegengeprüft anhand der veröffentlichten Betreiberangaben und aktueller Gästebewertungen. Preise zuletzt geprüft: Februar 2026.',
     pickWhy: [
-      'Kakslauttanen steht auf jeder Liste, weil es dorthin gehört. Das Resort begann 1973 in Saariselkä, zu einer Zeit, als „touristische Unterkunft in Saariselkä“ ein hölzernes Hostel meinte und man die Nordlichter vom Parkplatz aus betrachtete, und erfand später das moderne Glasiglu.',
+      'Kakslauttanen steht auf jeder Liste, weil es dorthin gehört. Das Resort begann 1973 in Saariselkä, zu einer Zeit, als „touristische Unterkunft in Saariselkä“ ein hölzernes Hostel meinte und man die Polarlichter vom Parkplatz aus betrachtete, und erfand später das moderne Glasiglu.',
       'Es gibt jedoch eine Gabelung: Buchen Sie die Kelo-Glas-Iglus, nicht die klassischen Glasiglus. Kelo-Glas verbindet ein Panorama-Glasdach mit einer beheizten Blockstruktur, einer eigenen Kochnische und einem Kamin. Die klassischen Glasiglus sind kleiner, voller, und das Bad ist ein 50-Meter-Marsch bei -25 °C.',
       'Die Preisdifferenz liegt bei rund 200 €/Nacht. Über drei Nächte verdient das Kelo-Glas seinen Aufpreis allein dadurch, dass man nicht um 4 Uhr früh Schneestiefel anziehen muss.',
     ],
@@ -287,7 +287,7 @@ export const copyDE: SectionCopy = {
       'Die klassischen Glasiglus sind rund 30 % günstiger, das Erlebnis ist jedoch spürbar schlechter. Wer bei 400 €/Nacht die Grenze zieht, sollte sich Aurora Village oder Aurora Pyramids ansehen, derselbe Himmel, oft eine bessere See- oder Wildnislage.',
     pullQuote: {
       text:
-        'Das erste Glasiglu wurde gebaut, damit Gäste die Nordlichter sehen, ohne bei -30 °C draußen zu stehen. Jahrzehnte später ist das immer noch das ganze Konzept, und was jeder Nachahmer falsch macht, ist das, was passiert, wenn die Aurora wieder weg ist.',
+        'Das erste Glasiglu wurde gebaut, damit Gäste die Polarlichter sehen, ohne bei -30 °C draußen zu stehen. Jahrzehnte später ist das immer noch das ganze Konzept, und was jeder Nachahmer falsch macht, ist das, was passiert, wenn die Aurora wieder weg ist.',
       attr: 'Kakslauttanen Ursprungsgeschichte · Resort 1973 gegründet',
     },
     runnersKicker: 'Die anderen drei',
@@ -301,7 +301,7 @@ export const copyDE: SectionCopy = {
       { name: 'Kakslauttanen', verdict: 'Das Original. Teuer. Nur als Kelo-Glas lohnt es sich.' },
       { name: 'Levin Iglut', verdict: 'Beste Technik. Motorisierte Aurora-Betten.' },
       { name: 'Aurora Village', verdict: 'Abgelegenstes Gefühl. 30 Min. von Ivalo.' },
-      { name: 'Aurora Pyramids', verdict: 'Seereflexionen verdoppeln die Nordlichter.' },
+      { name: 'Aurora Pyramids', verdict: 'Seereflexionen verdoppeln die Polarlichter.' },
     ],
     marginLabel: 'Kompromiss',
     marginBody:
@@ -311,7 +311,7 @@ export const copyDE: SectionCopy = {
     counterP1:
       'Bei Aufenthalten von vier und mehr Nächten ist die Kombination aus zwei Glasiglu-Nächten und einem Langzeit-Hüttenblock die bessere Reise als vier Glasiglu-Nächte. Der Reiz verfliegt nach Nacht zwei; eine Blockhütte mit privater Sauna liefert den Lappland-Teil, den eine Glaskuppel nicht kann.',
     counterP2:
-      'An Weihnachten (22.12. → 02.01.) verdreifachen sich die Preise und 90 % des Kontingents gehen bis zum Frühjahr an britische Pauschalveranstalter. Verschieben Sie die Daten nach Möglichkeit in die zweite Januarhälfte, kälter, dunkler, halber Preis, bessere Nordlichter.',
+      'An Weihnachten (22.12. → 02.01.) verdreifachen sich die Preise und 90 % des Kontingents gehen bis zum Frühjahr an britische Pauschalveranstalter. Verschieben Sie die Daten nach Möglichkeit in die zweite Januarhälfte, kälter, dunkler, halber Preis, bessere Polarlichter.',
     seeLong: 'Langzeitaufenthalte ansehen',
     bookingGuideBtn: 'Buchungsleitfaden',
     browseAll: 'Trip.com-Verfügbarkeit ansehen',
@@ -319,7 +319,7 @@ export const copyDE: SectionCopy = {
   wilderness: {
     metaTitle: 'Wildnishütten in Finnisch-Lappland | StayInLapland',
     metaDescription:
-      'Wildnishütten jenseits der letzten Straße, Iso-Syöte Eagle View Suites und Wilderness Hotel Muotka. Nordlichter oberhalb der Baumgrenze, Aurora-Weckdienst.',
+      'Wildnishütten jenseits der letzten Straße, Iso-Syöte Eagle View Suites und Wilderness Hotel Muotka. Polarlichter oberhalb der Baumgrenze, Aurora-Weckdienst.',
     breadcrumb: 'Wildnis',
     pageHero: {
       eyebrow: 'Jenseits der letzten Straße',
@@ -331,7 +331,7 @@ export const copyDE: SectionCopy = {
       'Die Angaben zu beiden Objekten wurden anhand der veröffentlichten Betreiberinformationen und aktueller Gästebewertungen geprüft.',
     pickWhy: [
       'Die Iso-Syöte Eagle View Suites liegen auf 432 m auf dem südlichsten echten Fjell Finnlands, aus Kiefernholz gebaute Suiten mit Nordlichtbeobachtung oberhalb der Baumgrenze und ohne den langen Flug in den Norden.',
-      'Die Glasfronten weisen zum offenen Himmel, sodass sich der Aurorabogen in klaren Nächten vom Bett aus lesen lässt. Nordlichter beobachtet man von der eigenen Suite auf dem Bergrücken statt von einem gemeinsamen Unterstand, Privatsphäre, ohne gleich das ganze Haus buchen zu müssen.',
+      'Die Glasfronten weisen zum offenen Himmel, sodass sich der Aurorabogen in klaren Nächten vom Bett aus lesen lässt. Polarlichter beobachtet man von der eigenen Suite auf dem Bergrücken statt von einem gemeinsamen Unterstand, Privatsphäre, ohne gleich das ganze Haus buchen zu müssen.',
       'Und es ist die am einfachsten erreichbare ernsthafte Wildnishütte: 90 Minuten vom Flughafen Oulu, was sie zum seltenen Refugium macht, das sogar für eine kurze Reise funktioniert.',
     ],
     pickCaveat:
@@ -398,7 +398,7 @@ export const copyDE: SectionCopy = {
     weeklyP1:
       'Über die Objekte auf dieser Seite liegt der Wochenpreis im Schnitt <strong>23 % günstiger pro Nacht</strong> als der angezeigte Übernachtungspreis. Levi Residences fällt um 30 %, Pyhä Bear’s Lodge um 18 %, Arctic TreeHouse um 25 %. Die meisten Häuser werben nicht damit, der Rabatt erscheint im Buchungssystem, sobald 7+ Nächte gewählt werden.',
     weeklyP2:
-      'Die Übergangswochen, <strong>Mitte November</strong> (kurz bevor sich der Schnee stabilisiert) und <strong>Ende April</strong> (kurz nach der Schmelze), bringen weitere 30–50 % Nachlass obendrauf. Die Nordlichter sind in beiden Fenstern aktiv. Das ist der Sweet Spot für Langzeitaufenthalte mit flexiblem Arbeitskalender.',
+      'Die Übergangswochen, <strong>Mitte November</strong> (kurz bevor sich der Schnee stabilisiert) und <strong>Ende April</strong> (kurz nach der Schmelze), bringen weitere 30–50 % Nachlass obendrauf. Die Polarlichter sind in beiden Fenstern aktiv. Das ist der Sweet Spot für Langzeitaufenthalte mit flexiblem Arbeitskalender.',
     marginLabel: 'Buchungstaktik',
     marginBody:
       'Bei einem vierwöchigen Aufenthalt kann die Aufteilung auf zwei Häuser eine Einzelbuchung schlagen, Sie umgehen den „Hochwochen“-Aufschlag zu Weihnachten und in den Februar-Skiferien und sehen tatsächlich zwei Seiten Lapplands. Der Transfertag dauert einen halben Tag; das gesparte Geld zahlt meist zwei zusätzliche Nächte anderswo.',
@@ -407,7 +407,7 @@ export const copyDE: SectionCopy = {
     counterP1:
       'Für eine 2–3 Nächte lange Erstreise lassen Sie Langzeitmieten aus. Check-in, Lebensmitteleinkauf und das Erlernen des Herds fressen die Einsparung auf. Buchen Sie stattdessen ein Hotel.',
     counterP2:
-      'Für eine einzige Wunsch-Nordlicht-Nacht sind Glasiglus die bessere Antwort. Das Glasdach ist das Erlebnis, weswegen Sie kamen; eine Langzeithütte bietet ein Fenster.',
+      'Für eine einzige Wunsch-Polarlicht-Nacht sind Glasiglus die bessere Antwort. Das Glasdach ist das Erlebnis, weswegen Sie kamen; eine Langzeithütte bietet ein Fenster.',
     counterP3:
       'Bei Gruppen mit gemischter Mobilität rufen Sie vor der Buchung direkt im Haus an, die meisten Langzeithütten sind nicht stufenfrei, und insbesondere die Saunen befinden sich im Untergeschoss auf Holzboden.',
     seeHotels: 'Hotels anzeigen',
@@ -417,7 +417,7 @@ export const copyDE: SectionCopy = {
   bookingGuide: {
     metaTitle: 'Lappland-Buchungsleitfaden | StayInLapland',
     metaDescription:
-      'Praktischer Lappland-Buchungsleitfaden: wann anreisen für die besten Nordlichter, Anreise, Packliste, echte Kosten, Stornobedingungen, Insider-Tipps.',
+      'Praktischer Lappland-Buchungsleitfaden: wann anreisen für die besten Polarlichter, Anreise, Packliste, echte Kosten, Stornobedingungen, Insider-Tipps.',
     breadcrumb: 'Buchungsleitfaden',
     pageHero: {
       eyebrow: 'Eine echte Reise planen',
@@ -429,9 +429,9 @@ export const copyDE: SectionCopy = {
       {
         title: 'Wann anreisen',
         body: [
-          'Die Nordlicht-Saison reicht von Ende August bis Anfang April. Die stärksten Fenster sind September–Oktober und Februar–März, wenn lange dunkle Nächte mit aktivem Sonnenwetter zusammentreffen.',
+          'Die Polarlicht-Saison reicht von Ende August bis Anfang April. Die stärksten Fenster sind September–Oktober und Februar–März, wenn lange dunkle Nächte mit aktivem Sonnenwetter zusammentreffen.',
           'Meiden Sie Ende November bis Mitte Dezember: dunkel, aber der Schnee ist oft fleckig und viele Aktivitäten haben nicht begonnen.',
-          'Weihnachten und Neujahr sind 9 Monate im Voraus ausgebucht und die Preise verdreifachen sich. Die lokale Wahl ist die zweite Januarhälfte, ruhiger, kälter, bessere Nordlichter.',
+          'Weihnachten und Neujahr sind 9 Monate im Voraus ausgebucht und die Preise verdreifachen sich. Die lokale Wahl ist die zweite Januarhälfte, ruhiger, kälter, bessere Polarlichter.',
         ],
       },
       {
@@ -471,9 +471,9 @@ export const copyDE: SectionCopy = {
       {
         title: 'Insider-Tipps',
         body: [
-          'Saariselkä und Inari sind kälter, dunkler und haben stärkere Nordlichter als Rovaniemi, aber Rovaniemi hat den Flughafen, die Aktivitäten, das Weihnachtsmanndorf. Standorte mischen.',
+          'Saariselkä und Inari sind kälter, dunkler und haben stärkere Polarlichter als Rovaniemi, aber Rovaniemi hat den Flughafen, die Aktivitäten, das Weihnachtsmanndorf. Standorte mischen.',
           'Wenn Sie nur 3 Nächte haben, verbringen Sie sie an einem Ort. Lappland ist größer als erwartet, und Transfers verschlingen Tage.',
-          'Nordlicht-Vorhersagen (NOAA, Aurora Service Europe) sind 30–90 Minuten im Voraus genau, nicht Tage. Bleiben Sie flexibel.',
+          'Polarlicht-Vorhersagen (NOAA, Aurora Service Europe) sind 30–90 Minuten im Voraus genau, nicht Tage. Bleiben Sie flexibel.',
         ],
       },
     ],
@@ -485,35 +485,35 @@ export const copyDE: SectionCopy = {
   whenToGo: {
     metaTitle: 'Reisezeit Lappland, Monat-für-Monat-Leitfaden',
     metaDescription:
-      'Monat-für-Monat-Leitfaden für Finnisch-Lappland, wann die Nordlichter am stärksten sind, wann der Schnee hält und welche Wochen Einheimische selbst buchen.',
+      'Monat-für-Monat-Leitfaden für Finnisch-Lappland, wann die Polarlichter am stärksten sind, wann der Schnee hält und welche Wochen Einheimische selbst buchen.',
     breadcrumb: 'Reisezeit',
     pageHero: {
       eyebrow: 'Monat für Monat',
       title: 'Wann nach Lappland.',
       subtitle:
-        'Der richtige Monat hängt von der Reise ab. Nordlicht zuerst, Skifahren zuerst, Langzeit-Wert, Weihnachtsspitze, jedes Profil hat seinen Sweet Spot. Hier der redaktionelle Monatsüberblick.',
+        'Der richtige Monat hängt von der Reise ab. Polarlicht zuerst, Skifahren zuerst, Langzeit-Wert, Weihnachtsspitze, jedes Profil hat seinen Sweet Spot. Hier der redaktionelle Monatsüberblick.',
     },
     authorNote:
       'Zusammengestellt aus Berichten von Partnern vor Ort in ganz Finnisch-Lappland.',
     pullQuote: {
       text:
         'Die meisten Polarlichter über Finnisch-Lappland zeigen sich zwischen Abend und den frühen Morgenstunden, und die langen, dunklen Monate von Herbst bis Frühjahr bieten die besten Chancen. Klarer Himmel und etwas Geduld zählen mehr als das genaue Datum.',
-      attr: 'LaplandVibes, aus den Nordlicht-Aufzeichnungen unserer Partner in ganz Finnisch-Lappland',
+      attr: 'LaplandVibes, aus den Polarlicht-Aufzeichnungen unserer Partner in ganz Finnisch-Lappland',
     },
     months: [
       {
         name: 'September',
-        pitch: 'Nordlicht-Saison beginnt',
+        pitch: 'Polarlicht-Saison beginnt',
         body:
-          'Lange dunkle Nächte setzen ein. Es ist noch kein Schnee gefallen, dies ist die „Ruska“-Zeit, in der die Birken rot und golden werden. Die Nordlichter zeichnen sich gegen kahlen Boden ab; die Farben sind die meistfotografierten des Jahres.',
-        bestFor: ['Fotografen', 'Nordlicht-Kurzaufenthalte', 'Wandern + Nordlicht-Kombination'],
+          'Lange dunkle Nächte setzen ein. Es ist noch kein Schnee gefallen, dies ist die „Ruska“-Zeit, in der die Birken rot und golden werden. Die Polarlichter zeichnen sich gegen kahlen Boden ab; die Farben sind die meistfotografierten des Jahres.',
+        bestFor: ['Fotografen', 'Polarlicht-Kurzaufenthalte', 'Wandern + Polarlicht-Kombination'],
         avoidIf: ['Sie kamen ausschließlich wegen des Schnees'],
       },
       {
         name: 'Oktober',
         pitch: 'Ruhige Nebensaison',
         body:
-          'Erste Schneeschauer, der Boden bleibt aber meist erst Ende des Monats weiß. Hotels zu Nebensaisonpreisen (30 % unter dem Spitzenpreis), Nordlichter aktiv, sehr wenige Touristen. Das günstigste Nordlicht-Fenster mit vollständiger Aktivitäts-Infrastruktur.',
+          'Erste Schneeschauer, der Boden bleibt aber meist erst Ende des Monats weiß. Hotels zu Nebensaisonpreisen (30 % unter dem Spitzenpreis), Polarlichter aktiv, sehr wenige Touristen. Das günstigste Polarlicht-Fenster mit vollständiger Aktivitäts-Infrastruktur.',
         bestFor: ['Nordlichtjäger mit Budget', 'Langzeit-Anreise vor der Hochsaison'],
         avoidIf: ['Sie wollen Ski- oder Schneemobilgarantien'],
       },
@@ -529,41 +529,41 @@ export const copyDE: SectionCopy = {
         name: 'Dezember',
         pitch: 'Weihnachtsspitze',
         body:
-          'Weihnachten bis Neujahr ist Spitze in allem, Spitzenpreise, Spitzennachfrage, Spitze des Weihnachtsmann-Tourismus in Rovaniemi. Glasiglus verdreifachen sich, Schneehotels voll geöffnet. Nordlichter weiterhin aktiv, das Wetter aber häufig bewölkter.',
+          'Weihnachten bis Neujahr ist Spitze in allem, Spitzenpreise, Spitzennachfrage, Spitze des Weihnachtsmann-Tourismus in Rovaniemi. Glasiglus verdreifachen sich, Schneehotels voll geöffnet. Polarlichter weiterhin aktiv, das Wetter aber häufig bewölkter.',
         bestFor: ['Weihnachts-Familienreisen', 'Erstreisende mit Wunsch nach Schneegarantie'],
-        avoidIf: ['Budget-empfindliche Reisen', 'Nordlicht-Fokus'],
+        avoidIf: ['Budget-empfindliche Reisen', 'Polarlicht-Fokus'],
       },
       {
         name: 'Januar',
         pitch: 'Die lokale Wahl',
         body:
-          'Die zweite Januarhälfte ist der ruhige Sweet Spot, Spitzenpreise sind zurückgegangen, die Tage werden spürbar länger, der Schnee ist stabil, die Nordlichter sind besonders aktiv. Die Weihnachtsgäste sind abgereist, die Februar-Schulferien haben noch nicht begonnen.',
-        bestFor: ['Langzeitaufenthalte', 'Flitterwochen', 'Nordlicht-Fotografie'],
+          'Die zweite Januarhälfte ist der ruhige Sweet Spot, Spitzenpreise sind zurückgegangen, die Tage werden spürbar länger, der Schnee ist stabil, die Polarlichter sind besonders aktiv. Die Weihnachtsgäste sind abgereist, die Februar-Schulferien haben noch nicht begonnen.',
+        bestFor: ['Langzeitaufenthalte', 'Flitterwochen', 'Polarlicht-Fotografie'],
         avoidIf: ['Sie brauchen irgendeine Form warmer Witterung'],
       },
       {
         name: 'Februar',
-        pitch: 'Stärkster Nordlicht-Monat',
+        pitch: 'Stärkster Polarlicht-Monat',
         body:
-          'Mitte Februar bis Mitte März ist statistisch das stärkste Nordlicht-Fenster des Jahres, dunkler Himmel trifft auf aktives Sonnenwetter. Langzeitaufenthalte wegen europäischer Schulferien wieder zu Spitzenpreisen; 6 Monate im Voraus buchen.',
-        bestFor: ['Glasiglus', 'Nordlicht-Wunschreisen'],
+          'Mitte Februar bis Mitte März ist statistisch das stärkste Polarlicht-Fenster des Jahres, dunkler Himmel trifft auf aktives Sonnenwetter. Langzeitaufenthalte wegen europäischer Schulferien wieder zu Spitzenpreisen; 6 Monate im Voraus buchen.',
+        bestFor: ['Glasiglus', 'Polarlicht-Wunschreisen'],
         avoidIf: ['Kurzfristplaner'],
       },
       {
         name: 'März',
         pitch: 'Das Licht kehrt zurück',
         body:
-          'Die Tage werden rasch länger, bis Monatsende 13 Stunden Tageslicht. Nordlichter weiterhin stark in dunklen Morgen- und späten Abendstunden. Frühjahrsskifahren an den Südhängen der Fjells. Der fotogenste Skimonat.',
-        bestFor: ['Ski-in-Langzeitaufenthalte', 'Wer Licht + Nordlichter will'],
+          'Die Tage werden rasch länger, bis Monatsende 13 Stunden Tageslicht. Polarlichter weiterhin stark in dunklen Morgen- und späten Abendstunden. Frühjahrsskifahren an den Südhängen der Fjells. Der fotogenste Skimonat.',
+        bestFor: ['Ski-in-Langzeitaufenthalte', 'Wer Licht + Polarlichter will'],
         avoidIf: ['Fotografen, die wegen der Polarnacht kamen'],
       },
       {
         name: 'April',
         pitch: 'Frühlingsschnee + Licht',
         body:
-          'Schnee weiterhin tief, Skifahren auf den Fjells weiterhin ausgezeichnet. Die Nordlicht-Saison endet Anfang April, da die Nächte zu hell werden. Ende April ist erneut Übergangszeit, Preise fallen um 30 %, Häuser weiter geöffnet, Sonne 16+ Stunden über dem Horizont.',
+          'Schnee weiterhin tief, Skifahren auf den Fjells weiterhin ausgezeichnet. Die Polarlicht-Saison endet Anfang April, da die Nächte zu hell werden. Ende April ist erneut Übergangszeit, Preise fallen um 30 %, Häuser weiter geöffnet, Sonne 16+ Stunden über dem Horizont.',
         bestFor: ['Spätsaison-Ski-Langzeitaufenthalte', 'Langlauf'],
-        avoidIf: ['Nordlicht-Fokus'],
+        avoidIf: ['Polarlicht-Fokus'],
       },
     ],
     bestForLabel: 'Am besten für',
@@ -571,11 +571,11 @@ export const copyDE: SectionCopy = {
     cheatKicker: 'Der lokale Spickzettel',
     cheatH2: 'Drei Wochen, die sich Einheimische selbst sichern.',
     cheatP1:
-      '<strong class="text-charcoal">Ende November (Woche 47–48).</strong> Der Schnee hat sich gerade stabilisiert, die dunkelsten Wochen des Jahres beginnen, die Nordlicht-Saison ist voll aktiv. Langzeit-Preise 40–50 % unter Spitze. Einige Häuser noch nicht vollständig geöffnet, vor Buchung prüfen.',
+      '<strong class="text-charcoal">Ende November (Woche 47–48).</strong> Der Schnee hat sich gerade stabilisiert, die dunkelsten Wochen des Jahres beginnen, die Polarlicht-Saison ist voll aktiv. Langzeit-Preise 40–50 % unter Spitze. Einige Häuser noch nicht vollständig geöffnet, vor Buchung prüfen.',
     cheatP2:
-      '<strong class="text-charcoal">Zweite Januarhälfte (Woche 3–4).</strong> Die einzige beste Nordlicht-vs-Kosten-Woche der Saison. Weihnachtsgäste weg, Februar-Ferien noch nicht begonnen, Tage werden länger, Schnee voll gelegt. Genau dann nimmt unser Redakteur Urlaub.',
+      '<strong class="text-charcoal">Zweite Januarhälfte (Woche 3–4).</strong> Die einzige beste Polarlicht-vs-Kosten-Woche der Saison. Weihnachtsgäste weg, Februar-Ferien noch nicht begonnen, Tage werden länger, Schnee voll gelegt. Genau dann nimmt unser Redakteur Urlaub.',
     cheatP3:
-      '<strong class="text-charcoal">Ende April (Woche 16–17).</strong> Höhepunkt des Frühlingsskifahrens, Sonne 16 h/Tag über dem Horizont, Schnee weiterhin tief auf nordseitigen Hängen. Das Nordlicht-Fenster ist geschlossen, doch das Licht allein lohnt die Reise. Preise fallen nach Ostern um 30 %.',
+      '<strong class="text-charcoal">Ende April (Woche 16–17).</strong> Höhepunkt des Frühlingsskifahrens, Sonne 16 h/Tag über dem Horizont, Schnee weiterhin tief auf nordseitigen Hängen. Das Polarlicht-Fenster ist geschlossen, doch das Licht allein lohnt die Reise. Preise fallen nach Ostern um 30 %.',
     marginLabel: 'Buchungstiming',
     marginBody:
       'Spitze Februar: 6 Monate vorab buchen. Ende Januar: 3 Monate. Übergangszeit (November, Ende April): 6–8 Wochen reichen. Weihnachten / Silvester: mindestens 9 Monate, mit Ersatzdaten, die Spitze ist im Frühjahr weg.',
@@ -704,7 +704,7 @@ export const copyDE: SectionCopy = {
       location: 'Ivalo',
       highlight: 'Wildnislage nahe Ivalo · weit gesetzte Hütten',
       description:
-        'Glasdach-Hütten in unberührtem Wald nahe Ivalo. Die Hütten stehen weit auseinander für Privatsphäre, die Umgebung ist dunkel genug, dass die Nordlichter durch dünne Wolken erkennbar sind. Das am abgeschiedensten wirkende Glasiglu-Objekt auf dieser Seite.',
+        'Glasdach-Hütten in unberührtem Wald nahe Ivalo. Die Hütten stehen weit auseinander für Privatsphäre, die Umgebung ist dunkel genug, dass die Polarlichter durch dünne Wolken erkennbar sind. Das am abgeschiedensten wirkende Glasiglu-Objekt auf dieser Seite.',
     },
     {
       name: 'Aurora Pyramids',

@@ -201,7 +201,7 @@ export const copyES: SectionCopy = {
       },
       {
         q: '¿Kakslauttanen merece de verdad lo que cuesta?',
-        a: 'Sí, pero solo los Kelo-Glass, no los iglús de cristal clásicos. Kelo-Glass combina techo panorámico de cristal con una cabaña de troncos climatizada, cocina y chimenea. Con un mínimo de dos noches se le saca el máximo partido. Las mejores ventanas para auroras: principios de febrero y finales de marzo.',
+        a: 'Sí, pero solo los Kelo-Glass, no los iglús de cristal clásicos. Kelo-Glass combina techo panorámico de cristal con una cabaña de troncos climatizada, cocina y chimenea. Con un mínimo de dos noches se le saca el máximo partido. Las mejores ventanas para auroras boreales: principios de febrero y finales de marzo.',
       },
       {
         q: '¿Dónde basarse si la estancia larga incluye teletrabajo?',

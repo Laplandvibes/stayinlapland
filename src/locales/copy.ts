@@ -274,7 +274,7 @@ export type SectionCopy = {
   longStaysData: { name: string; highlight: string; description: string; location: string }[];
   glassIgloosData: { name: string; highlight: string; description: string; location: string }[];
   wildernessData: { name: string; highlight: string; description: string; location: string }[];
-  destinationsData: { slug: string; pitch: string; longStayAngle: string }[];
+  destinationsData: { slug: string; name?: string; pitch: string; longStayAngle: string }[];
   allCategoriesSummary: { slug: string; description: string }[];
 };
 

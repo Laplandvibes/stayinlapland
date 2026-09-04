@@ -724,6 +724,7 @@ export const copyJA: SectionCopy = {
   destinationsData: [
     {
       slug: 'rovaniemi',
+      name: 'ロヴァニエミ',
       pitch:
         'フィンランド・ラップランドの首都——本格的な冬のレストランシーン、現役の空港ハブ、通年のデザイン文化を備える唯一のラップランドの都市。',
       longStayAngle:
@@ -731,6 +732,7 @@ export const copyJA: SectionCopy = {
     },
     {
       slug: 'levi',
+      name: 'レヴィ',
       pitch:
         'リフト券の売上でフィンランド最大のスキーリゾート。25,000のベッド数、スキーイン・アウトのアパートメント、そして本格的な村のメインストリートがあります。',
       longStayAngle:
@@ -738,6 +740,7 @@ export const copyJA: SectionCopy = {
     },
     {
       slug: 'saariselka',
+      name: 'サーリセルカ',
       pitch:
         'ロヴァニエミより緯度が高く、雪は硬く、空は暗い。冬を最も真剣に捉えるラップランドの村です。',
       longStayAngle:
@@ -745,12 +748,14 @@ export const copyJA: SectionCopy = {
     },
     {
       slug: 'inari',
+      name: 'イナリ',
       pitch: 'サーミ文化の中心地、イナリ湖（フィンランドで3番目に大きい湖）、当サイトで最も北の長期滞在拠点。',
       longStayAngle:
         '長期滞在の意義：湖そのものがアクティビティです。毎朝の氷上釣り、凍結湖を渡るクロスカントリー、イナリ・サーミ博物館とSIIDA文化センターが目の前。',
     },
     {
       slug: 'yllas',
+      name: 'ユッラス',
       pitch:
         'レヴィより静か、スキーシーズンが長く、国立公園を抜ける約300kmの整備されたクロスカントリーコース。',
       longStayAngle:

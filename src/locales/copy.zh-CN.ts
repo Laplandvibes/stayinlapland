@@ -734,6 +734,7 @@ export const copyZHCN: SectionCopy = {
   destinationsData: [
     {
       slug: 'rovaniemi',
+      name: '罗瓦涅米',
       pitch:
         '芬兰拉普兰的首府，唯一一座拥有真正冬季餐饮场景、运转中的机场枢纽和全年设计文化的拉普兰城市。',
       longStayAngle:
@@ -741,6 +742,7 @@ export const copyZHCN: SectionCopy = {
     },
     {
       slug: 'levi',
+      name: '莱维',
       pitch:
         '按缆车票销售额计芬兰最大的滑雪度假村，25,000 个床位、滑雪进出公寓，还有一条真正的村庄主街。',
       longStayAngle:
@@ -748,6 +750,7 @@ export const copyZHCN: SectionCopy = {
     },
     {
       slug: 'saariselka',
+      name: '萨利色尔卡',
       pitch:
         '纬度比罗瓦涅米更高，雪更硬，天更暗。是最把冬天当回事的拉普兰村庄。',
       longStayAngle:
@@ -755,12 +758,14 @@ export const copyZHCN: SectionCopy = {
     },
     {
       slug: 'inari',
+      name: '伊纳里',
       pitch: '萨米文化之都，伊纳里湖（芬兰第三大湖），本站最北的长住大本营。',
       longStayAngle:
         '长住逻辑：湖本身就是活动。每天清晨冰钓、横穿封冻湖面的越野滑雪、门口的伊纳里萨米博物馆与 SIIDA 文化中心。',
     },
     {
       slug: 'yllas',
+      name: '于莱斯',
       pitch:
         '比莱维更安静，雪季更长，约 300 公里维护良好的越野雪道穿越国家公园。',
       longStayAngle:

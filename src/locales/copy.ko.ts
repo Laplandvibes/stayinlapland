@@ -739,6 +739,7 @@ export const copyKO: SectionCopy = {
   destinationsData: [
     {
       slug: 'rovaniemi',
+      name: '로바니에미',
       pitch:
         '핀란드 라플란드의 수도, 겨울에도 살아 있는 레스토랑 문화와 제 기능을 하는 공항 허브, 사철 이어지는 디자인 문화를 갖춘 라플란드 유일의 도시입니다.',
       longStayAngle:
@@ -746,6 +747,7 @@ export const copyKO: SectionCopy = {
     },
     {
       slug: 'levi',
+      name: '레비',
       pitch:
         '2만 5000개의 침상과 스키 인/아웃 아파트, 진짜 마을 번화가를 갖춘, 리프트권 판매 기준 핀란드 최대의 스키 리조트.',
       longStayAngle:
@@ -753,6 +755,7 @@ export const copyKO: SectionCopy = {
     },
     {
       slug: 'saariselka',
+      name: '사리셀카',
       pitch:
         '로바니에미보다 높은 위도, 더 단단한 눈, 더 어두운 하늘. 겨울을 가장 진지하게 받아들이는 라플란드 마을입니다.',
       longStayAngle:
@@ -760,12 +763,14 @@ export const copyKO: SectionCopy = {
     },
     {
       slug: 'inari',
+      name: '이나리',
       pitch: '사미 문화의 중심, 이나리 호수(핀란드에서 세 번째로 큰 호수), 저희가 소개하는 가장 북쪽의 장기 숙박 거점.',
       longStayAngle:
         '장기 숙박의 의미: 호수 자체가 액티비티입니다. 매일 아침 얼음낚시, 얼어붙은 호수를 가로지르는 크로스컨트리, 문 앞의 이나리 사미 박물관과 SIIDA 문화센터.',
     },
     {
       slug: 'yllas',
+      name: '윌래스',
       pitch:
         '레비보다 한산하고, 스키 시즌이 더 길며, 국립공원을 가로지르는 약 300킬로미터의 정비된 크로스컨트리 트랙이 있습니다.',
       longStayAngle:

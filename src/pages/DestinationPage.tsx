@@ -69,6 +69,7 @@ export default function DestinationPage() {
 
   // Build localized dest pitch/longStayAngle from copy.
   const destCopy = t.destinationsData.find((x) => x.slug === dest.slug);
+  const destName = destCopy?.name ?? dest.name;
   const pitch = destCopy?.pitch ?? dest.pitch;
   const longStayAngle = destCopy?.longStayAngle ?? dest.longStayAngle;
 
@@ -104,7 +105,7 @@ export default function DestinationPage() {
 
   return (
     <>
-      <title>{`${dest.name}: ${d.metaTitleSuffix}`}</title>
+      <title>{`${destName}: ${d.metaTitleSuffix}`}</title>
       <meta name="description" content={`${pitch} ${longStayAngle}`.slice(0, 160)} />
       <link rel="canonical" href={pageUrl(`/destinations/${dest.slug}`)} />
       <meta name="robots" content="index, follow" />
@@ -116,7 +117,7 @@ export default function DestinationPage() {
             '@graph': [
               {
                 '@type': 'TouristDestination',
-                name: dest.name,
+                name: destName,
                 description: pitch,
                 containedInPlace: { '@type': 'Place', name: 'Finnish Lapland' },
               },
@@ -124,7 +125,7 @@ export default function DestinationPage() {
                 '@type': 'BreadcrumbList',
                 itemListElement: [
                   { '@type': 'ListItem', position: 1, name: t.home.breadcrumbHome, item: pageUrl('/') },
-                  { '@type': 'ListItem', position: 2, name: dest.name, item: pageUrl(`/destinations/${dest.slug}`) },
+                  { '@type': 'ListItem', position: 2, name: destName, item: pageUrl(`/destinations/${dest.slug}`) },
                 ],
               },
             ],
@@ -139,10 +140,10 @@ export default function DestinationPage() {
           name is derived from the slug so hero and Home card cannot drift. */}
       <PageHero
         eyebrow={d.pageHeroEyebrow}
-        title={dest.name}
+        title={destName}
         subtitle={pitch}
         imageSrc={`/images/dest-${dest.slug}-hero.webp`}
-        imageAlt={d.landscapeAlt(dest.name)}
+        imageAlt={d.landscapeAlt(destName)}
       >
         {facts && (
           <dl className="flex flex-wrap justify-center gap-x-3 gap-y-2.5">
@@ -174,7 +175,7 @@ export default function DestinationPage() {
 
       <section className="py-16 sm:py-20 px-5 sm:px-6">
         <div className="max-w-4xl mx-auto">
-          <AuthorByline note={d.authorNoteFor(dest.name)} />
+          <AuthorByline note={d.authorNoteFor(destName)} />
           <p className="mt-10 text-graphite text-[17px] leading-relaxed">{longStayAngle}</p>
         </div>
       </section>
@@ -187,7 +188,7 @@ export default function DestinationPage() {
         <div className="max-w-5xl mx-auto">
           <div className="mb-10 max-w-2xl">
             <p className="text-vibe-pink text-[11px] font-semibold tracking-[0.28em] uppercase mb-3">
-              {d.recommendedIn(dest.name)}
+              {d.recommendedIn(destName)}
             </p>
             <h2 className="font-heading text-4xl sm:text-5xl text-charcoal leading-tight tracking-wide">
               {d.whereToStay}
@@ -216,7 +217,7 @@ export default function DestinationPage() {
                     {imageBase ? (
                       <img
                         src={`/images/${imageBase}.webp`}
-                        alt={`${label}, ${dest.name}`}
+                        alt={`${label}, ${destName}`}
                         className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-[1.04]"
                         loading="lazy"
                         decoding="async"
@@ -281,14 +282,14 @@ export default function DestinationPage() {
         </div>
       </section>
 
-      {isCabinArea(dest.slug) && <CabinBand area={dest.slug} destName={dest.name} />}
+      {isCabinArea(dest.slug) && <CabinBand area={dest.slug} destName={destName} />}
 
       {/* Wide landscape band. Rovaniemi and Inari have no CabinBand (the partner
           feed carries no cabins there), so without this the lower half of those
           two pages was text only. */}
       <ImageBreak
         src={`/images/dest-${dest.slug}-band.webp`}
-        alt={d.landscapeAlt(dest.name)}
+        alt={d.landscapeAlt(destName)}
         ratio="band"
       />
 
@@ -299,20 +300,20 @@ export default function DestinationPage() {
       <section className="py-16 sm:py-20 px-5 sm:px-6">
         <div className="max-w-3xl mx-auto text-center">
           <h2 className="font-heading text-3xl sm:text-4xl md:text-5xl text-charcoal mb-5 leading-tight tracking-wide">
-            {d.liveAvailabilityIn(dest.name)}
+            {d.liveAvailabilityIn(destName)}
           </h2>
           <p className="text-graphite mb-7 leading-relaxed">
             {d.networkLeadA}
-            {dest.name}
+            {destName}
             {d.networkLeadB}
           </p>
           <AffiliateCTA
             partner="hotels"
             sid={`dest_${dest.slug}_browse_all`}
-            destination={dest.searchQuery ?? dest.name}
+            destination={dest.searchQuery ?? destName}
             className="inline-flex items-center gap-2 px-7 py-3.5 bg-vibe-pink hover:bg-vibe-pink/90 text-white rounded-full font-semibold transition-all"
           >
-            {d.browseInDest(dest.name)}
+            {d.browseInDest(destName)}
           </AffiliateCTA>
         </div>
       </section>

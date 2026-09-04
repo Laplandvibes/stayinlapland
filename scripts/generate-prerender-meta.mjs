@@ -169,9 +169,10 @@ function getDestinationsData(src) {
     const inner = sliceBlock(arr, open);
     if (inner == null) break;
     const slug = readString(inner, 'slug');
+    const locName = readString(inner, 'name');
     const pitch = readString(inner, 'pitch');
     const longStayAngle = readString(inner, 'longStayAngle');
-    if (slug) out.set(slug, { pitch, longStayAngle });
+    if (slug) out.set(slug, { pitch, longStayAngle, name: locName });
     // advance cursor past this object
     cursor = open + inner.length + 1;
   }
@@ -204,6 +205,8 @@ function getDestinationList() {
     const inner = sliceBlock(arr, open);
     if (inner == null) break;
     const slug = readString(inner, 'slug');
+
+
     const name = readString(inner, 'name');
     if (slug && name) out.push({ slug, name });
     cursor = open + inner.length + 1;
@@ -288,7 +291,7 @@ for (const loc of LOCALES) {
   for (const { slug, name } of destList) {
     const dd = destData.get(slug);
     // Title: "<Name> — <localized suffix>"  (mirrors DestinationPage.tsx line 101)
-    const title = suffix ? `${name}: ${suffix}` : null;
+    const title = suffix ? `${(dd && dd.name) || name}: ${suffix}` : null;
     // Description: "<pitch> <longStayAngle>" sliced to 160 (mirrors line 102).
     const description = dd
       ? clip([dd.pitch, dd.longStayAngle].filter(Boolean).join(' '), MAX_DESC)

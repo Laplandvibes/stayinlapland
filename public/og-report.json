@@ -1,0 +1,86 @@
+{
+  "version": "20260905",
+  "domain": "stayinlapland.com",
+  "brand": "LAPLAND",
+  "tagline": "Verified stays: boutique, wild, igloos",
+  "generated": "2026-09-05T21:51:04.230Z",
+  "staticFallbackSeason": "summer",
+  "seasons": {
+    "summer": {
+      "heroUrl": "https://stayinlapland.com/images/home-hero-summer.avif",
+      "heroAlt": "Lakeside log cabin in the Finnish Lapland summer",
+      "heroSha": "072608da6385d181",
+      "bytes": 252948,
+      "sha256": "db9cb7fe8834f8517a7ea34718bbbbd62a3fceeea45a2a89a131d2364a31beee",
+      "bandH": 168,
+      "photoPct": 73.3,
+      "ink": 16619,
+      "inkBox": [
+        352,
+        493,
+        847,
+        603
+      ],
+      "safe": true,
+      "accentP10": 5.06,
+      "accentMed": 5.06,
+      "whiteP10": 17.08,
+      "whiteMed": 17.08,
+      "mean": 92.7,
+      "centerSq": 95.6,
+      "photoRegion": 113.1,
+      "photoRegionRef": 113.1,
+      "overlayPixels": 0,
+      "maxDiff": 0,
+      "fit": {
+        "size": 74,
+        "lines": 1,
+        "ts": 30,
+        "tagW": 496,
+        "fits": true,
+        "bandH": 168
+      },
+      "contrastOk": true,
+      "zeroOverlay": true,
+      "errors": []
+    },
+    "winter": {
+      "heroUrl": "https://stayinlapland.com/images/hero-aurora-cabins.avif",
+      "heroAlt": "Aurora over a snow-covered log cabin in Finnish Lapland",
+      "heroSha": "f77794232660faaa",
+      "bytes": 82011,
+      "sha256": "02ba5cf047b2fad557d6baf8cfb7731cab705afa50bc12092226c198e0cdec9c",
+      "bandH": 168,
+      "photoPct": 73.3,
+      "ink": 16619,
+      "inkBox": [
+        352,
+        493,
+        847,
+        603
+      ],
+      "safe": true,
+      "accentP10": 5.06,
+      "accentMed": 5.06,
+      "whiteP10": 17.08,
+      "whiteMed": 17.08,
+      "mean": 77.3,
+      "centerSq": 82,
+      "photoRegion": 92.2,
+      "photoRegionRef": 92.2,
+      "overlayPixels": 0,
+      "maxDiff": 0,
+      "fit": {
+        "size": 74,
+        "lines": 1,
+        "ts": 30,
+        "tagW": 496,
+        "fits": true,
+        "bandH": 168
+      },
+      "contrastOk": true,
+      "zeroOverlay": true,
+      "errors": []
+    }
+  }
+}

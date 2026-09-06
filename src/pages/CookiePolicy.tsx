@@ -24,7 +24,7 @@ const META: Record<Lang, { title: string; description: string }> = {
       'StayInLaplandのクッキーポリシー：設定するCookie（Google Analytics 4、同意状態、ニュースレターポップアップ状態）、オプトアウト方法、GDPR上の権利。',
   },
   es: {
-    title: 'Política de cookies | StayInLapland',
+    title: 'Política de cookies y consentimiento | StayInLapland',
     description:
       'Política de cookies de StayInLapland: qué cookies establecemos (Google Analytics 4, estado de consentimiento, popup del boletín), cómo rechazarlas y sus derechos RGPD.',
   },

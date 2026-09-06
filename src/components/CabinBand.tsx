@@ -305,7 +305,11 @@ export default function CabinBand({
         )}
 
         {/* Mobile: one-row swipe; sm+: grid */}
-        <div className="flex gap-4 overflow-x-auto pb-3 snap-x snap-mandatory sm:grid sm:grid-cols-2 lg:grid-cols-3 sm:gap-5 sm:overflow-visible sm:pb-0">
+        {/* 🔴 Oikean reunan häivytys vain mobiilissa (Vesa 2026-09-06, mitattu
+            scripts/mobile_wrap_audit.mjs): vieritysrivi katkesi kesken kortin
+            suoraan ruudun reunaan. sm:stä ylös tämä on ruudukko joka mahtuu
+            kokonaan, joten maski pois — muuten se haalistaisi oikean sarakkeen. */}
+        <div className="flex gap-4 overflow-x-auto pb-3 snap-x snap-mandatory [mask-image:linear-gradient(to_right,#000_calc(100%_-_44px),transparent_100%)] sm:grid sm:grid-cols-2 lg:grid-cols-3 sm:gap-5 sm:overflow-visible sm:pb-0 sm:[mask-image:none]">
           {!data
             ? Array.from({ length: 3 }).map((_, i) => (
                 <div

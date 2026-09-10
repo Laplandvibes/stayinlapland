@@ -1,12 +1,13 @@
 import { useState, useEffect, useRef } from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
-import { Menu, X, Globe, ChevronDown, Check } from 'lucide-react';
+import { Menu, X, ChevronDown} from 'lucide-react';
 import Logo from './Logo';
 import AffiliateCTA from './AffiliateCTA';
 import { useLang, useLocalePath, type Lang } from '../i18n/useLang';
 import { getCopy } from '../locales/copy';
 import { destinations } from '../data/properties';
 import EcosystemMenu from '../shared/EcosystemMenu';
+import LanguageSwitcher from '../i18n/LanguageSwitcher';
 
 // Destination pages had no entry point in the nav at all — the only way in was
 // the grid halfway down the home page, so /destinations/* was effectively a
@@ -51,16 +52,10 @@ function buildLink(pathname: string, target: Lang): string {
   return `/${prefix}${rest}`;
 }
 
-const LANG_NAMES: Record<Lang, string> = {
-  en: 'English', fi: 'Suomi', de: 'Deutsch', ja: '日本語', es: 'Español',
-  'pt-BR': 'Português', 'zh-CN': '中文', ko: '한국어', fr: 'Français', it: 'Italiano', nl: 'Nederlands', sv: 'Svenska',
-};
 
 export default function Nav() {
   const [open, setOpen] = useState(false);
-  const [langOpen, setLangOpen] = useState(false);
   const [destOpen, setDestOpen] = useState(false);
-  const langRef = useRef<HTMLDivElement>(null);
   const destRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -79,21 +74,6 @@ export default function Nav() {
     };
   }, [destOpen]);
 
-  useEffect(() => {
-    if (!langOpen) return;
-    function onClick(e: MouseEvent) {
-      if (langRef.current && !langRef.current.contains(e.target as Node)) setLangOpen(false);
-    }
-    function onKey(e: KeyboardEvent) {
-      if (e.key === 'Escape') setLangOpen(false);
-    }
-    document.addEventListener('mousedown', onClick);
-    document.addEventListener('keydown', onKey);
-    return () => {
-      document.removeEventListener('mousedown', onClick);
-      document.removeEventListener('keydown', onKey);
-    };
-  }, [langOpen]);
 
   const { pathname } = useLocation();
   const navigate = useNavigate();
@@ -200,50 +180,9 @@ export default function Nav() {
             )}
           </div>
 
-          {/* Globe-dropdown language switcher */}
-          <div ref={langRef} className="relative ml-1">
-            <button
-              type="button"
-              onClick={() => setLangOpen(o => !o)}
-              aria-haspopup="listbox"
-              aria-expanded={langOpen}
-              aria-label="Language"
-              className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-semibold tracking-wider border border-charcoal/25 text-charcoal/85 hover:border-vibe-pink hover:text-vibe-pink transition-colors"
-            >
-              <Globe size={14} />
-              <span>{langButtons.find(b => b.code === lang)?.label}</span>
-              <ChevronDown size={12} className={langOpen ? 'rotate-180 transition-transform' : 'transition-transform'} />
-            </button>
-            {langOpen && (
-              <ul
-                role="listbox"
-                aria-label="Language"
-                className="absolute right-0 mt-2 min-w-[180px] rounded-xl border border-charcoal/15 bg-white shadow-2xl py-1 z-50"
-              >
-                {langButtons.map((b) => {
-                  const active = lang === b.code;
-                  return (
-                    <li key={b.code}>
-                      <button
-                        type="button"
-                        role="option"
-                        aria-selected={active}
-                        onClick={() => { setLocale(b.code); setLangOpen(false); }}
-                        className={`w-full flex items-center justify-between gap-3 px-4 py-2 text-sm transition-colors ${
-                          active ? 'bg-vibe-pink/10 text-vibe-pink font-semibold' : 'text-charcoal hover:bg-charcoal/5'
-                        }`}
-                      >
-                        <span className="flex items-center gap-2">
-                          <span className="font-mono text-[10px] uppercase tracking-wider w-6 text-charcoal/60">{b.label}</span>
-                          <span>{LANG_NAMES[b.code]}</span>
-                        </span>
-                        {active && <Check size={14} className="text-vibe-pink" />}
-                      </button>
-                    </li>
-                  );
-                })}
-              </ul>
-            )}
+          {/* Kielivalitsin — kanoninen LanguageMenu (koko verkosto) */}
+          <div className="ml-1">
+            <LanguageSwitcher tone={'light'} />
           </div>
 
           {/* 🔴 whitespace-nowrap + shrink-0 are load-bearing. Every nav LINK
@@ -264,18 +203,7 @@ export default function Nav() {
         </nav>
 
         <div className={`${wideNav ? '2xl:hidden' : 'xl:hidden'} flex items-center gap-2`}>
-          <select
-            value={lang}
-            onChange={(e) => setLocale(e.target.value as Lang)}
-            aria-label="Language"
-            className="bg-transparent border border-charcoal/30 rounded px-2 py-1 text-xs font-semibold uppercase text-charcoal"
-          >
-            {langButtons.map((b) => (
-              <option key={b.code} value={b.code}>
-                {b.label}
-              </option>
-            ))}
-          </select>
+          <LanguageSwitcher tone={'light'} />
           <button
             onClick={() => setOpen(!open)}
             className="p-2 text-charcoal/80"

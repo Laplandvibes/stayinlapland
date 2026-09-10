@@ -55,7 +55,7 @@ export default function Hero() {
           </p>
 
           <h1
-            className="font-heading font-medium text-snow leading-[1.05] tracking-wide text-[42px] sm:text-6xl lg:text-7xl mb-6"
+            className="font-heading font-medium text-snow leading-[1.05] tracking-wide text-[42px] sm:text-6xl lg:text-7xl xl:text-8xl mb-6"
             style={{ textShadow: '0 4px 30px rgba(0,0,0,0.85)' }}
           >
             {t.h1Line1}
@@ -64,7 +64,7 @@ export default function Hero() {
           </h1>
 
           <p
-            className="font-body text-snow/85 text-base sm:text-lg lg:text-xl max-w-2xl mx-auto leading-relaxed"
+            className="font-body text-snow/85 text-base sm:text-lg lg:text-xl max-w-2xl xl:max-w-4xl mx-auto leading-relaxed xl:text-2xl"
             style={{ textShadow: '0 2px 14px rgba(0,0,0,0.8)' }}
           >
             {t.lead} <span className="text-snow">{t.leadPriceRange}</span>.

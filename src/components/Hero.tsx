@@ -55,7 +55,7 @@ export default function Hero() {
           </p>
 
           <h1
-            className="font-heading font-medium text-snow leading-[1.05] tracking-wide text-[42px] sm:text-6xl lg:text-7xl xl:text-8xl mb-6"
+            className="font-heading font-medium text-snow leading-[1.05] tracking-wide text-[42px] sm:text-6xl lg:text-7xl xl:text-8xl mb-6 xl:text-[clamp(96px,1.5vw_+_76.8px,115.2px)]"
             style={{ textShadow: '0 4px 30px rgba(0,0,0,0.85)' }}
           >
             {t.h1Line1}

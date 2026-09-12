@@ -292,7 +292,7 @@ export default function CabinBand({
                 role="tab"
                 aria-selected={active === key}
                 onClick={() => setTab(key)}
-                className={`px-4 py-2 rounded-full text-sm font-semibold transition-colors ${
+                className={`px-4 py-2 min-h-10 rounded-full text-sm font-semibold transition-colors ${
                   active === key
                     ? 'bg-vibe-pink text-white'
                     : 'bg-white text-charcoal/75 border border-charcoal/15 hover:border-vibe-pink hover:text-vibe-pink'

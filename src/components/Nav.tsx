@@ -121,7 +121,7 @@ export default function Nav() {
       <div className="max-w-screen-2xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between gap-4">
         <div className="flex items-center gap-3 sm:gap-4 shrink-0">
           <EcosystemMenu lang={lang} currentDomain="stayinlapland.com" variant="light" />
-          <Link to={localePath('/')} className="shrink-0 mr-2" aria-label={t.nav.homeAria}>
+          <Link to={localePath('/')} className="shrink-0 mr-2 inline-flex items-center min-h-11" aria-label={t.nav.homeAria}>
             <Logo size="sm" />
           </Link>
         </div>
@@ -206,7 +206,7 @@ export default function Nav() {
           <LanguageSwitcher tone={'light'} />
           <button
             onClick={() => setOpen(!open)}
-            className="p-2 text-charcoal/80"
+            className="p-2 text-charcoal/80 inline-flex items-center justify-center min-h-11 min-w-11"
             aria-label={open ? t.nav.closeMenu : t.nav.openMenu}
             aria-expanded={open}
           >

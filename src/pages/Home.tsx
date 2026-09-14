@@ -330,7 +330,7 @@ export default function Home() {
                         <Link
                           key={l.route}
                           to={localePath(l.route)}
-                          className="inline-flex items-center gap-1.5 text-xs sm:text-sm font-semibold uppercase tracking-wider text-charcoal hover:text-vibe-pink transition-colors"
+                          className="lv-tap inline-flex items-center gap-1.5 text-xs sm:text-sm font-semibold uppercase tracking-wider text-charcoal hover:text-vibe-pink transition-colors"
                         >
                           {l.navKey ? t.nav[l.navKey] : l.literal} →
                         </Link>

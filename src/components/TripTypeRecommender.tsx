@@ -47,7 +47,7 @@ export default function TripTypeRecommender() {
             </p>
             <Link
               to={localePath(tt.to)}
-              className="inline-flex items-center gap-1.5 text-vibe-pink hover:gap-2.5 text-sm font-semibold transition-all mt-auto"
+              className="lv-tap inline-flex items-center gap-1.5 text-vibe-pink hover:gap-2.5 text-sm font-semibold transition-all mt-auto"
             >
               {tt.ctaLabel}
               <ArrowRight className="w-4 h-4" />

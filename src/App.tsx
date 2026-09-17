@@ -6,6 +6,7 @@ import Footer from './shared/Footer';
 import NewsletterPopup from './shared/NewsletterPopup';
 
 const Home = lazy(() => import('./pages/Home'))
+const HomeHousing = lazy(() => import('./pages/HomeHousing'))
 const LongStays = lazy(() => import('./pages/LongStays'))
 const Hotels = lazy(() => import('./pages/Hotels'))
 const GlassIgloos = lazy(() => import('./pages/GlassIgloos'))
@@ -17,11 +18,18 @@ const PrivacyPolicy = lazy(() => import('./pages/PrivacyPolicy'))
 const Terms = lazy(() => import('./pages/Terms'))
 const CookiePolicy = lazy(() => import('./pages/CookiePolicy'))
 const NotFound = lazy(() => import('./pages/NotFound'))
+// Asumissivut (rooli §23, 18.9.2026): yksi moduuli, viisi reittiä.
+const Rentals = lazy(() => import('./pages/HousingPages').then((m) => ({ default: m.Rentals })))
+const RentalsTown = lazy(() => import('./pages/HousingPages').then((m) => ({ default: m.RentalsTown })))
+const SeasonalWorkerHousing = lazy(() => import('./pages/HousingPages').then((m) => ({ default: m.SeasonalWorkerHousing })))
+const MovingToLapland = lazy(() => import('./pages/HousingPages').then((m) => ({ default: m.MovingToLapland })))
+const CostOfLiving = lazy(() => import('./pages/HousingPages').then((m) => ({ default: m.CostOfLiving })))
 import LocaleAutoRedirect from './i18n/LocaleAutoRedirect';
 import { useHtmlLang, useLang, type Lang } from './i18n/useLang';
 import { getCopy, isCopyLoaded, loadCopy } from './locales/copy';
 import LocaleHead from './components/LocaleHead';
 import { AppPromoNudge } from './components/AppPromo';
+import { HOUSING_NAV, HOUSING_ROUTES, isHousingLang } from './housing/labels';
 
 /**
  * Non-EN copy lives in per-language lazy chunks (see locales/copy.ts).
@@ -77,21 +85,35 @@ function LocalisedCookieBanner() {
   return <CookieBanner consentKey="stayinlapland_cookie_consent" lang={lang} />;
 }
 
+/**
+ * Etusivu: asumisen rooli (§23) suomeksi ja englanniksi, vanha lomamajoituksen
+ * etusivu muilla kielillä, kunnes niiden asumissisältö on kirjoitettu ja
+ * kysyntä mitattu (§25, mittaus 18.9.2026: fr 170/kk "vivre en laponie",
+ * nl 110/kk "wonen in lapland" seuraavat ehdokkaat).
+ */
+function HomeSwitch() {
+  const lang = useLang();
+  return isHousingLang(lang) ? <HomeHousing /> : <Home />;
+}
+
 const SIDE_STRIPE_BG =
   'linear-gradient(to right, #002F6C 0 30%, #F8FAFC 30% 70%, #002F6C 70% 100%)';
 
 // Footer pillar links — labels are sourced from the site's localized nav copy
 // (copy.<lang>.ts → nav.*) so the shared Footer renders in the active locale
-// instead of hardcoded English on /fi /de /ja … routes.
+// instead of hardcoded English on /fi /de /ja … routes. Asumissivut (18.9.)
+// edellä, lomasivut perässä.
 function buildPillarLinks(lang: Lang) {
   const nav = getCopy(lang).nav;
   return [
+    { name: HOUSING_NAV.rentals[lang], href: HOUSING_ROUTES.rentals },
+    { name: HOUSING_NAV.seasonal[lang], href: HOUSING_ROUTES.seasonal },
+    { name: HOUSING_NAV.moving[lang], href: HOUSING_ROUTES.moving },
+    { name: HOUSING_NAV.cost[lang], href: HOUSING_ROUTES.cost },
     { name: nav.longStays, href: '/long-stays' },
     { name: nav.hotels, href: '/hotels' },
     { name: nav.glassIgloos, href: '/glass-igloos' },
-    { name: nav.wilderness, href: '/wilderness' },
     { name: nav.whenToGo, href: '/when-to-go' },
-    { name: nav.bookingGuide, href: '/booking-guide' },
   ];
 }
 
@@ -126,9 +148,14 @@ export default function App() {
         <Suspense fallback={<div className="min-h-screen" />}>
           <Routes>
           {LOCALE_PREFIXES.map((prefix) => (
-            <Route key={`${prefix}-root`} path={prefix || '/'} element={<Home />} />
+            <Route key={`${prefix}-root`} path={prefix || '/'} element={<HomeSwitch />} />
           ))}
           {LOCALE_PREFIXES.flatMap((prefix) => [
+            <Route key={`${prefix}-rt`} path={`${prefix}${HOUSING_ROUTES.rentals}`} element={<Rentals />} />,
+            <Route key={`${prefix}-rtt`} path={`${prefix}${HOUSING_ROUTES.rentals}/:town`} element={<RentalsTown />} />,
+            <Route key={`${prefix}-sw`} path={`${prefix}${HOUSING_ROUTES.seasonal}`} element={<SeasonalWorkerHousing />} />,
+            <Route key={`${prefix}-mv`} path={`${prefix}${HOUSING_ROUTES.moving}`} element={<MovingToLapland />} />,
+            <Route key={`${prefix}-cl`} path={`${prefix}${HOUSING_ROUTES.cost}`} element={<CostOfLiving />} />,
             <Route key={`${prefix}-ls`} path={`${prefix}/long-stays`} element={<LongStays />} />,
             <Route key={`${prefix}-ht`} path={`${prefix}/hotels`} element={<Hotels />} />,
             <Route key={`${prefix}-gi`} path={`${prefix}/glass-igloos`} element={<GlassIgloos />} />,

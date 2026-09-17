@@ -235,10 +235,11 @@ export default function Newsletter() {
                 aria-label="Email address"
                 className="flex-1 px-6 py-4 rounded-full bg-snow/12 backdrop-blur-sm text-snow placeholder:text-snow/80 border border-snow/30 focus:outline-none focus:ring-2 focus:ring-gold/60 text-base"
               />
+              {/* 🔴 Nappi #BE185D (pinkkiramppi 700), ei #EC4899: snow-teksti #EC4899:llä on 3,4:1 ja #DB2777:llä 4,4:1, molemmat kaatuvat lomakeportin (audit_lomakkeet 18.9.2026). Valkoinen #BE185D:llä on 5,8:1. */}
               <button
                 type="submit"
                 disabled={status === 'loading'}
-                className="px-8 py-4 rounded-full bg-vibe-pink text-snow font-semibold hover:bg-vibe-pink/90 transition-colors flex items-center justify-center gap-2 disabled:opacity-60"
+                className="px-8 py-4 rounded-full bg-[#BE185D] text-white font-semibold hover:bg-[#9D174D] transition-colors flex items-center justify-center gap-2 disabled:opacity-60"
               >
                 <Send className="w-4 h-4" />
                 {status === 'loading' ? t.subscribing : t.subscribe}

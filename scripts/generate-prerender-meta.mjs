@@ -313,6 +313,34 @@ for (const { path, file } of LEGAL) {
   }
 }
 
+// ---------- asumissivut (rooli §23, 18.9.2026) ----------
+// Meta luetaan suoraan src/housing/*.ts:n `en: {` / `fi: {` -lohkoista. Muut
+// lokaalit jäävät pois kartasta tarkoituksella: prerender pudottaa ne EN-metaan
+// ja routes.json `nativeLocales` kanonisoi ne englantiin.
+const HOUSING_META_FILES = {
+  '/': 'src/housing/home.ts',
+  '/rentals': 'src/housing/rentals.ts',
+  '/rentals/rovaniemi': 'src/housing/towns/rovaniemi.ts',
+  '/rentals/kemi-tornio': 'src/housing/towns/kemi-tornio.ts',
+  '/rentals/kittila-levi': 'src/housing/towns/kittila-levi.ts',
+  '/rentals/ivalo-inari': 'src/housing/towns/ivalo-inari.ts',
+  '/seasonal-worker-housing': 'src/housing/seasonal.ts',
+  '/moving-to-lapland': 'src/housing/moving.ts',
+  '/cost-of-living': 'src/housing/cost.ts',
+};
+for (const [path, rel] of Object.entries(HOUSING_META_FILES)) {
+  const fp = resolve(ROOT, rel);
+  if (!existsSync(fp)) { console.warn(`[gen-meta] WARN: ${rel} missing — ${path} skipped`); continue; }
+  const src = readFileSync(fp, 'utf-8');
+  for (const lang of ['en', 'fi']) {
+    const block = findSectionBlock(src, lang);
+    if (!block) continue;
+    const title = readString(block, 'metaTitle');
+    const description = readString(block, 'metaDescription');
+    if (title) set(path, lang, title, description);
+  }
+}
+
 writeFileSync(OUT, JSON.stringify(META, null, 2) + '\n', 'utf-8');
 
 // ---------- report ----------

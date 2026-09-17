@@ -1,6 +1,7 @@
 import Breadcrumbs from '../shared/Breadcrumbs';
 import { useLang, useLocalePath } from '../i18n/useLang';
 import { getCopy } from '../locales/copy';
+import { HOUSING_NAV, HOUSING_ROUTES } from '../housing/labels';
 
 /**
  * Ecosystem breadcrumb, rendered BELOW the hero (mounted once inside PageHero)
@@ -19,6 +20,16 @@ export default function PageBreadcrumb() {
     '/wilderness': c.nav.wilderness,
     '/when-to-go': c.nav.whenToGo,
     '/booking-guide': c.nav.bookingGuide,
+    // Asumissivut (rooli §23): otsikot 12 kielellä labels.ts:stä.
+    [HOUSING_ROUTES.rentals]: HOUSING_NAV.rentals[lang],
+    [HOUSING_ROUTES.seasonal]: HOUSING_NAV.seasonal[lang],
+    [HOUSING_ROUTES.moving]: HOUSING_NAV.moving[lang],
+    [HOUSING_ROUTES.cost]: HOUSING_NAV.cost[lang],
+    // Paikkakuntasivut → paikannimet (samat kaikilla kielillä).
+    [`${HOUSING_ROUTES.rentals}/rovaniemi`]: 'Rovaniemi',
+    [`${HOUSING_ROUTES.rentals}/kemi-tornio`]: 'Kemi – Tornio',
+    [`${HOUSING_ROUTES.rentals}/kittila-levi`]: 'Kittilä – Levi',
+    [`${HOUSING_ROUTES.rentals}/ivalo-inari`]: 'Ivalo – Inari',
     // Dynamic /destinations/:slug → static place names (locale-invariant proper nouns).
     '/destinations/rovaniemi': 'Rovaniemi',
     '/destinations/levi': 'Levi',

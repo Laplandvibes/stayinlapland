@@ -147,16 +147,16 @@ export const copyFI: SectionCopy = {
     ],
   },
   home: {
-    metaTitle: '16 verifioitua Lapin majoitusta 2026: design ja iglut',
+    metaTitle: 'Asuminen Lapissa: vuokra-asunnot, kausityö ja muutto',
     metaDescription:
-      'Asetu Suomen Lappiin, mökit viikoittain, design-hotellit Rovaniemellä ja Saariselällä, ikoniset lasi-iglut ja erämaalodget viimeisen tien jälkeen.',
+      'Millaista on asua Lapissa? Vuokra-asunnot Rovaniemeltä Ivaloon, kausityöntekijän asunto, muuton käytännöt ja elinkustannukset. Luvut Tilastokeskukselta ja Kelalta.',
     schemaName: 'StayInLapland, Pitkät jaksot ja boutique-hotellit Suomen Lapissa',
     breadcrumbHome: 'Etusivu',
     stats: { stays: 'Valittua kohdetta', bases: 'Lapin tukikohtaa', categories: 'Tapaa majoittua', months: 'Arvioitua kuukautta' },
     intro: {
-      p1: '”Lapin parhaat majoitukset” -listat alkavat lähes aina lasi-iglulla, ja jatkavat samalla kaavalla. Tämä opas on tehty toisin: itse koeasutut yöt, paikalliset suositukset ja vain ne kohteet, jotka jäävät mieleen matkan jälkeen.',
-      p2: 'Olemme jakaneet Lapin majoitukset neljään selkeään kategoriaan: pitkät jaksot, hotellit, lasi-iglut ja erämaalodget. 16 valittua kohdetta, kaikki itse käytyjä. Suosittu reitti: viikko mökillä Levillä, kaksi yötä design-hotellissa Rovaniemellä, viimeinen yö lasi-iglussa. Näin yhdistettynä syntyy se Lappi, jonka takia tänne palataan.',
-      p3: 'Tämä opas ei aggregoi hintoja eikä kierrätä arvosteluja. Lähteet näkyvissä, kumppanuussuhteet avoinna.',
+      p1: 'Lomaoppaita Lapista löytyy joka kielellä. Tämä sivusto on toista lajia: se kertoo, millaista täällä on asua, vuokrata ja tehdä töitä kauden verran tai loppuelämän. Sisarsivustomme laplandstays.com hoitaa hotellit ja lomamökit; me hoidamme arjen.',
+      p2: 'Kysymykset ovat samat, tuli lukija Oulusta, Tallinnasta tai Manchesterista: mistä asunto löytyy, mitä vuokra maksaa, järjestääkö työnantaja katon pään päälle ja mitä pimeän kanssa tehdään. Vastaamme jokaiseen lähteen kanssa, ei tunnelmalla.',
+      p3: 'Lähteet ovat joka sivulla näkyvissä. Jos luku on Tilastokeskuksen, sanomme neljänneksen; jos se on Ylen uutisesta, sanomme päivän.',
     },
     authorNote:
       'Käsin valittu lyhytlista, kirjoitettu Suomessa ja faktatarkastettu paikallisten kumppaneiden kanssa eri puolilla Lappia.',
@@ -186,20 +186,20 @@ export const copyFI: SectionCopy = {
     faqH2: 'Ennen kuin klikkaat mitään.',
     faqs: [
       {
-        q: 'Mikä on “pitkä jakso” tällä sivustolla?',
-        a: 'Pitkäksi jaksoksi luokitellaan kaikki neljästä yöstä ylöspäin, se on raja, jossa useimmat Lapin kohteet tarjoavat viikkohintoja ja kunnon keittiöllä alkaa olla merkitystä. Listatut pitkän jakson kohteet vaativat yksiköstä riippuen 3 yöstä 7 yöhön minimissään; jokainen kortti näyttää minimin.',
+        q: 'Voiko Lapissa asua ympäri vuoden ilman autoa?',
+        a: 'Rovaniemellä kyllä: keskusta, yliopisto ja kaupat ovat kävely- ja bussimatkan päässä. Tunturikylissä ja pienemmissä kunnissa auto on käytännössä välttämätön, koska välimatkat ovat kymmeniä kilometrejä ja bussivuoroja on vähän.',
       },
       {
-        q: 'Miksi etusivu painottaa pitkiä jaksoja eikä lasi-igluja?',
-        a: 'Lasi-iglu on Lapin ikoninen muoto ja sille on oma sivunsa. Mutta pidempään rakastetuimmat Lapin-reissut eivät ole kolmen yön bucket-list-vierailuja lasikupoleissa: ne ovat viikon tukikohtia mökissä tai design-hotellissa, joihin lisätään yksi tai kaksi yötä muualla. Sivusto heijastaa sitä, miten Lappi todella palkitsee toistuvia kävijöitä.',
+        q: 'Mitä vuokra-asunto maksaa Rovaniemellä?',
+        a: 'Tilastokeskuksen mukaan vapaarahoitteisen yksiön keskineliövuokra Rovaniemellä oli 18,66 €/m² huhti–kesäkuussa 2026 ja kaksion 14,35 €/m². Kerro luku neliöillä: 30 m²:n yksiö on noin 560 €/kk ja 50 m²:n kaksio noin 720 €/kk.',
       },
       {
-        q: 'Onko Kakslauttanen oikeasti hintansa arvoinen?',
-        a: 'Kyllä, mutta vain Kelo-Glass-iglut, eivät klassiset lasi-iglut. Kelo-Glass yhdistää panoraamalasikaton lämmitettyyn hirsirakenteeseen, keittiötilaan ja takkaan. Kahden yön minimi saa kohteesta eniten irti. Parhaat revontuli-ikkunat: helmikuun alku ja maaliskuun loppu.',
+        q: 'Järjestääkö työnantaja kausityöntekijälle asunnon?',
+        a: 'Usein, mutta ei aina eikä ilmaiseksi. Hiihtokeskuksissa työnantajat vuokraavat rivitaloja ja vapaa-ajan asuntoja henkilökunnalle, ja vuokra vähennetään yleensä palkasta. Kysy asumisesta kirjallisesti jo työtarjouksen yhteydessä.',
       },
       {
-        q: 'Mihin sijoittautua, jos pitkä jakso sisältää etätyötä?',
-        a: 'Rovaniemi. Se on ainoa Lapin kaupunki, jossa on luotettava kuitu, päivittäiset Helsingin ja Tukholman lennot ja oikea talviravintolaskene, joka pysyy auki välikausina. Arctic TreeHouse Resort ja Ounasvaaran chaletit tarjoavat molemmat viikkohintoja ja kunnon työpisteet.',
+        q: 'Kuinka pimeää kaamos oikeasti on?',
+        a: 'Ilmatieteen laitoksen mukaan kaamos kestää Nuorgamissa lähes kaksi kuukautta (25.11.–17.1.) ja Sodankylässä vain neljä päivää juuri ennen joulua. Rovaniemellä varsinaista kaamosta ei ole, koska sen raja kulkee hieman napapiirin pohjoispuolella (Foreca).',
       },
     ],
     fullGuideCta: 'Lue koko varausopas',

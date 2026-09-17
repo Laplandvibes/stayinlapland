@@ -1,12 +1,12 @@
 {
   "/": {
     "en": {
-      "title": "16 Verified Lapland Stays 2026: Boutique, Wild, Igloos",
-      "description": "Plan your 2026 Lapland stay, 16 verified properties: weekly cabins from €140/night, design hotels in Rovaniemi, glass igloos from €280 and wilderness lodges."
+      "title": "Living in Lapland: Rentals, Seasonal Work and Moving",
+      "description": "Living in Finnish Lapland: rentals from Rovaniemi to Ivalo, seasonal worker housing, moving practicalities and the cost of living. Figures from Statistics Finland"
     },
     "fi": {
-      "title": "16 verifioitua Lapin majoitusta 2026: design ja iglut",
-      "description": "Asetu Suomen Lappiin, mökit viikoittain, design-hotellit Rovaniemellä ja Saariselällä, ikoniset lasi-iglut ja erämaalodget viimeisen tien jälkeen."
+      "title": "Asuminen Lapissa: vuokra-asunnot, kausityö ja muutto",
+      "description": "Millaista on asua Lapissa? Vuokra-asunnot Rovaniemeltä Ivaloon, kausityöntekijän asunto, muuton käytännöt ja elinkustannukset. Luvut Tilastokeskukselta ja Kelalta."
     },
     "de": {
       "title": "Unterkünfte in Finnisch-Lappland | StayInLapland",
@@ -747,6 +747,86 @@
     "sv": {
       "title": "Cookiepolicy | StayInLapland",
       "description": "StayInLaplands cookiepolicy: vilka cookies vi sätter (Google Analytics 4, samtyckesstatus, status för nyhetsbrevspopup), hur du tackar nej och dina rättigheter"
+    }
+  },
+  "/rentals": {
+    "en": {
+      "title": "Rent an Apartment in Lapland: Rovaniemi, Levi, Kemi–Tornio",
+      "description": "Long-term rentals in Finnish Lapland: where the flats are in Rovaniemi, Levi, Ylläs, Kemi–Tornio, Sodankylä and Inari, what they cost per m² (Statistics Finland)"
+    },
+    "fi": {
+      "title": "Vuokra-asunnot Lapissa: Rovaniemi, Levi, Kemi–Tornio, Inari",
+      "description": "Vuokra-asunto Rovaniemeltä, Leviltä, Ylläkseltä, Kemi–Torniosta, Sodankylästä tai Inarista: kuntien vuokrayhtiöt, portaalit, Tilastokeskuksen neliövuokrat ja Kelan"
+    }
+  },
+  "/rentals/rovaniemi": {
+    "en": {
+      "title": "Rentals in Rovaniemi: Rents, Landlords and How to Apply",
+      "description": "Renting a flat in Rovaniemi: rent per m² from Statistics Finland 2026, the landlords listed by the city, DAS for students, the Kela housing allowance ceiling and"
+    },
+    "fi": {
+      "title": "Vuokra-asunnot Rovaniemi: hinnat, hakukanavat, vuokranantajat",
+      "description": "Vuokra-asunnot Rovaniemellä: Tilastokeskuksen neliövuokrat 2026, kaupungin listaamat vuokranantajat, DAS opiskelijoille, Kelan asumistuen katto ja milloin kannattaa"
+    }
+  },
+  "/rentals/kemi-tornio": {
+    "en": {
+      "title": "Rentals in Kemi and Tornio: Municipal Flats and Portals",
+      "description": "Renting in Kemi, Tornio and Keminmaa on Lapland’s coast: the municipal housing companies (Itätuuli, Tornion Krunni, Keminmaan Vuokra-asunnot), private agencies"
+    },
+    "fi": {
+      "title": "Vuokra-asunnot Kemi ja Tornio: kaupungin asunnot ja portaalit",
+      "description": "Vuokra-asunnot Kemissä, Torniossa ja Keminmaalla: kaupunkien omat vuokrayhtiöt (Itätuuli, Tornion Krunni, Keminmaan Vuokra-asunnot), yksityiset välittäjät, Lapin"
+    }
+  },
+  "/rentals/kittila-levi": {
+    "en": {
+      "title": "Rentals in Kittilä and Levi: Municipal Flats and Seasonal",
+      "description": "Renting in Kittilä and Levi: the municipal company Kittilän Vuokratalot Oy, seasonal rents on holiday apartments, staff housing for seasonal workers, Lapland rents"
+    },
+    "fi": {
+      "title": "Vuokra-asunnot Kittilä ja Levi: kunnan asunnot ja kausivuokra",
+      "description": "Vuokra-asunnot Kittilässä ja Levillä: Kittilän Vuokratalot Oy, vapaa-ajan asuntojen kausivuokrat, työnantajan asunnot kausityöntekijöille, Lapin neliövuokrat ja"
+    }
+  },
+  "/rentals/ivalo-inari": {
+    "en": {
+      "title": "Rentals in Ivalo and Inari: Municipal Company and Private",
+      "description": "Renting in Ivalo, Inari and Saariselkä: the municipal company Inarin Vuokra-asunnot Oy with over 500 flats, the private landlords listed by the municipality"
+    },
+    "fi": {
+      "title": "Vuokra-asunnot Ivalo ja Inari: kunnan yhtiö ja yksityiset",
+      "description": "Vuokra-asunnot Ivalossa, Inarissa ja Saariselällä: Inarin Vuokra-asunnot Oy:n yli 500 asuntoa, kunnan listaamat yksityiset vuokranantajat, Lapin neliövuokrat ja"
+    }
+  },
+  "/seasonal-worker-housing": {
+    "en": {
+      "title": "Seasonal Worker Housing in Lapland: Levi, Ylläs, Saariselkä",
+      "description": "Where seasonal workers live at Levi, Ylläs, Saariselkä and Rovaniemi: staff housing, a holiday apartment on a seasonal lease or a municipal flat, and what to ask"
+    },
+    "fi": {
+      "title": "Kausityö Lapissa: asuminen Levillä, Ylläksellä, Saariselällä",
+      "description": "Mihin kausityöntekijä asuu Levillä, Ylläksellä, Saariselällä ja Rovaniemellä: työnantajan asunto, kausivuokra vai kunnan asunto, ja mitä kysyä ennen sopimusta."
+    }
+  },
+  "/moving-to-lapland": {
+    "en": {
+      "title": "Moving to Lapland: A Practical Guide to the First Month",
+      "description": "Address notification, winter tyres, daycare fees, electricity and the polar night: what to sort out in your first month in Finnish Lapland, with deadlines and"
+    },
+    "fi": {
+      "title": "Muutto Lappiin: käytännön opas ensimmäiseen kuukauteen",
+      "description": "Muuttoilmoitus, talvirenkaat, päiväkotimaksut, sähkö ja kaamos: mitä Lappiin muuttavan pitää hoitaa ensimmäisen kuukauden aikana. Määräajat ja luvut viranomaisilta."
+    }
+  },
+  "/cost-of-living": {
+    "en": {
+      "title": "Cost of Living in Lapland 2026: Rent, Electricity, Fuel",
+      "description": "What it costs to live in Finnish Lapland: rent per m² in Rovaniemi and Lapland (Statistics Finland 2026), electricity and fuel, Kela housing allowance ceilings and"
+    },
+    "fi": {
+      "title": "Elinkustannukset Lapissa 2026: vuokra, sähkö, bensa, tuet",
+      "description": "Mitä eläminen Lapissa maksaa: neliövuokrat Rovaniemellä ja Lapissa (Tilastokeskus 2026), sähkö ja polttoaine, Kelan asumistuen katot ja päiväkotimaksut. Lasketut"
     }
   }
 }

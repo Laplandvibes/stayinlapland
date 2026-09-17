@@ -2,9 +2,16 @@
 // + og:locale:alternate × 10 + html lang on every route change. Sits inside
 // <BrowserRouter> alongside ScrollToTop. Pages still emit their own
 // <title>/<meta description>/<link canonical> inline (React 19 head hoisting).
+//
+// 2026-09-18: asumissivut (rooli §23) on kirjoitettu vain suomeksi ja
+// englanniksi. Niille hreflang-joukko on {en, fi, x-default}, sama kuin
+// prerenderin `nativeLocales`: 17.9. mitattiin, että Google lukee kanonisen ja
+// hreflangin RENDERÖIDYSTÄ sivusta, joten JS ei saa mainostaa kymmentä
+// kieliversiota, joita ei ole.
 import { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 import { useLang, type Lang } from '../i18n/useLang';
+import { HOUSING_LANGS, HOUSING_ROUTE_PATHS } from '../housing/labels';
 
 const SITE_URL = 'https://stayinlapland.com';
 
@@ -26,6 +33,12 @@ function stripLocalePath(path: string): string {
   return path.replace(/^\/(fi|de|ja|es|br|cn|kr|fr|it|nl|sv)(?=\/|$)/, '') || '/';
 }
 
+/** Asumisreitit (myös /rentals/<paikkakunta>): vain sisältökielet hreflangiin. */
+function isHousingPath(cleanPath: string): boolean {
+  const p = cleanPath.replace(/\/$/, '') || '/';
+  return HOUSING_ROUTE_PATHS.some((r) => p === r || p.startsWith(`${r}/`));
+}
+
 export default function LocaleHead() {
   const lang = useLang();
   const { pathname } = useLocation();
@@ -33,10 +46,11 @@ export default function LocaleHead() {
   useEffect(() => {
     document.documentElement.lang = BCP47[lang];
     const cleanPath = stripLocalePath(pathname);
+    const langs: Lang[] = isHousingPath(cleanPath) ? [...HOUSING_LANGS] : SUPPORTED;
 
-    // hreflang × 11 + x-default
+    // hreflang × N + x-default
     document.head.querySelectorAll('link[rel="alternate"][data-seo-hreflang]').forEach((el) => el.remove());
-    SUPPORTED.forEach((l) => {
+    langs.forEach((l) => {
       const lnk = document.createElement('link');
       lnk.setAttribute('rel', 'alternate');
       // Short hreflang codes (en, fi, pt-BR, …) + trailing-slash hrefs: must match
@@ -63,9 +77,9 @@ export default function LocaleHead() {
     }
     og.setAttribute('content', OG_LOCALE[lang]);
 
-    // og:locale:alternate × 10
+    // og:locale:alternate × (N-1)
     document.head.querySelectorAll('meta[property="og:locale:alternate"][data-seo-alt]').forEach((el) => el.remove());
-    SUPPORTED.filter((l) => l !== lang).forEach((l) => {
+    langs.filter((l) => l !== lang).forEach((l) => {
       const m = document.createElement('meta');
       m.setAttribute('property', 'og:locale:alternate');
       m.setAttribute('content', OG_LOCALE[l]);

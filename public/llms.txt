@@ -1,9 +1,14 @@
 # StayInLapland
 
-> Settle into Finnish Lapland: cabin rentals by the week, design hotels in Rovaniemi and Saariselkä, and Lapland glass igloos.
+> Living in Finnish Lapland: long-term rentals, seasonal worker housing, moving practicalities and the cost of living, with figures from Statistics Finland and Kela. Holiday stays (hotels, cabins, glass igloos) belong to laplandstays.com.
 
 ## Main pages
 
+- [Living in Lapland](https://stayinlapland.com/): Living, renting and working in Finnish Lapland (English and Finnish)
+- [Rentals](https://stayinlapland.com/rentals/): Long-term rentals in Rovaniemi, Kemi–Tornio, Kittilä–Levi and Ivalo–Inari, rents per m² from Statistics Finland
+- [Seasonal worker housing](https://stayinlapland.com/seasonal-worker-housing/): Where seasonal workers live at Levi, Ylläs, Saariselkä and Rovaniemi
+- [Moving to Lapland](https://stayinlapland.com/moving-to-lapland/): First-month checklist with deadlines from the authorities
+- [Cost of living](https://stayinlapland.com/cost-of-living/): Rent, electricity, fuel and housing allowance in figures
 - [Home](https://stayinlapland.com/): Where to stay in Finnish Lapland
 - [Long stays](https://stayinlapland.com/long-stays/): Weekly and monthly stays, serviced apartments and cabins
 - [Hotels](https://stayinlapland.com/hotels/): Hotels across Finnish Lapland

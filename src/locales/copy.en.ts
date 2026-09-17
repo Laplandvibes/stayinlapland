@@ -143,16 +143,16 @@ export const copyEN: SectionCopy = {
     ],
   },
   home: {
-    metaTitle: '16 Verified Lapland Stays 2026: Boutique, Wild, Igloos',
+    metaTitle: 'Living in Lapland: Rentals, Seasonal Work and Moving',
     metaDescription:
-      'Plan your 2026 Lapland stay, 16 verified properties: weekly cabins from €140/night, design hotels in Rovaniemi, glass igloos from €280 and wilderness lodges.',
+      'Living in Finnish Lapland: rentals from Rovaniemi to Ivalo, seasonal worker housing, moving practicalities and the cost of living. Figures from Statistics Finland and Kela.',
     schemaName: 'StayInLapland, Long Stays & Boutique Hotels in Finnish Lapland',
     breadcrumbHome: 'Home',
     stats: { stays: 'Hand-picked stays', bases: 'Lapland bases', categories: 'Ways to stay', months: 'Months rated' },
     intro: {
-      p1: 'Most “best Lapland accommodation” lists put a glass igloo at the top, twenty other glass igloos in roughly the same order, and not a single sentence about whether the writer has ever spent more than two nights at any of them. This guide is the opposite.',
-      p2: 'Lapland accommodation splits into four buckets: long-stay rentals, hotels, glass igloos and wilderness lodges. The sixteen properties that earn their place are listed below. Across them you can build a trip that starts with a week-long cabin base near Levi, moves to a design hotel in Rovaniemi for two nights of city, then ends with a single glass-igloo night before flying home. That is how Lapland actually rewards a longer stay.',
-      p3: 'Three things this guide does not do: aggregate prices, recycle reviews, or pretend to cover places where no partner in the network has spent a real night.',
+      p1: 'Holiday guides to Lapland exist in every language. This site is a different animal: it tells you what it is like to live, rent and work here, for a season or for good. Our sister site laplandstays.com handles hotels and holiday cabins; we handle everyday life.',
+      p2: 'The questions are the same whether the reader is from Oulu, Tallinn or Manchester: where the flats are, what rent costs, whether the employer puts a roof over your head, and what to do about the dark. We answer each one with a source, not with atmosphere.',
+      p3: 'The sources are on every page. If a figure is from Statistics Finland we name the quarter; if it is from a Yle news story we name the day.',
     },
     authorNote: 'A curated short-list, written and fact-checked with on-the-ground partners across Finnish Lapland.',
     fourWays: {
@@ -181,20 +181,20 @@ export const copyEN: SectionCopy = {
     faqH2: 'Before you click anything.',
     faqs: [
       {
-        q: 'How long is a "long stay" on this site?',
-        a: 'Anything from four nights upwards counts as a long stay: it is the threshold at which most Lapland properties offer weekly rates and a real kitchen starts to matter. The featured long-stay properties run 3-night to 7-night minimums depending on the unit; each card lists the minimum.',
+        q: 'Can you live in Lapland all year without a car?',
+        a: 'In Rovaniemi, yes: the centre, the university and the shops are within walking or bus distance. In the fell villages and smaller municipalities a car is in practice essential, because distances run to tens of kilometres and buses are few.',
       },
       {
-        q: 'Why is the homepage focused on long stays rather than glass igloos?',
-        a: 'Glass igloos are the iconic Lapland format and they have a dedicated page. But the longest-loved Lapland trips are not three-night bucket-list stays in a glass dome: they are weeklong base-camp stays in a cabin or design hotel, with one or two nights elsewhere built in. The site reflects how Lapland actually rewards repeat visitors.',
+        q: 'How much does a rental flat cost in Rovaniemi?',
+        a: 'According to Statistics Finland the average free-market rent for a studio in Rovaniemi was €18.66 per m² in April–June 2026 and €14.35 for a two-room flat. Multiply by the floor area: a 30 m² studio is about €560 a month and a 50 m² two-room flat about €720.',
       },
       {
-        q: 'Is Kakslauttanen really worth the headline price?',
-        a: 'Yes, but only the Kelo-Glass igloos, not the classic Glass Igloos. Kelo-Glass pairs the panoramic glass roof with a heated log structure, a kitchenette and a private fireplace. Two-night minimum gets the most out of it. Best aurora windows: early February and late March.',
+        q: 'Does the employer house seasonal workers?',
+        a: 'Often, but not always and not for free. In the ski resorts employers rent row houses and holiday apartments for staff, and the rent usually comes off your pay. Ask about housing in writing when you get the job offer.',
       },
       {
-        q: 'Where should I base if my long stay involves remote work?',
-        a: 'Rovaniemi. It is the only Lapland city with reliable fibre, daily Helsinki and Stockholm flights, and a real winter restaurant scene that stays open in shoulder seasons. Arctic TreeHouse Resort and the Ounasvaara Chalets both offer weekly rates and proper desks.',
+        q: 'How dark is the polar night, really?',
+        a: 'According to the Finnish Meteorological Institute the polar night lasts almost two months in Nuorgam (25 Nov to 17 Jan) and only four days just before Christmas in Sodankylä. Rovaniemi has no true polar night, because the line runs slightly north of the Arctic Circle (Foreca).',
       },
     ],
     fullGuideCta: 'Read the full booking guide',

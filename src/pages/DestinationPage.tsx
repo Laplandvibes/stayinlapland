@@ -15,8 +15,7 @@ import {
 } from '../data/properties';
 import ImageBreak from '../components/ImageBreak';
 import type { Property } from '../data/properties';
-import { pageUrl } from '../lib/meta';
-import { useLang, useLocalePath } from '../i18n/useLang';
+import { useLang, useLocalePath, useLocalPageUrl } from '../i18n/useLang';
 import { getCopy } from '../locales/copy';
 import DestinationFacts from '../components/DestinationFacts';
 import CabinBand from '../components/CabinBand';
@@ -44,6 +43,7 @@ function findProperty(name: string): { p: Property; bucket: Bucket; index: numbe
 export default function DestinationPage() {
   const { slug = '' } = useParams<{ slug: string }>();
   const lang = useLang();
+  const localUrl = useLocalPageUrl();
   const localePath = useLocalePath();
   const t = getCopy(lang);
   const d = t.destinationPage;
@@ -107,7 +107,7 @@ export default function DestinationPage() {
     <>
       <title>{`${destName}: ${d.metaTitleSuffix}`}</title>
       <meta name="description" content={`${pitch} ${longStayAngle}`.slice(0, 160)} />
-      <link rel="canonical" href={pageUrl(`/destinations/${dest.slug}`)} />
+      <link rel="canonical" href={localUrl(`/destinations/${dest.slug}`)} />
       <meta name="robots" content="index, follow" />
       <script
         type="application/ld+json"
@@ -124,8 +124,8 @@ export default function DestinationPage() {
               {
                 '@type': 'BreadcrumbList',
                 itemListElement: [
-                  { '@type': 'ListItem', position: 1, name: t.home.breadcrumbHome, item: pageUrl('/') },
-                  { '@type': 'ListItem', position: 2, name: destName, item: pageUrl(`/destinations/${dest.slug}`) },
+                  { '@type': 'ListItem', position: 1, name: t.home.breadcrumbHome, item: localUrl('/') },
+                  { '@type': 'ListItem', position: 2, name: destName, item: localUrl(`/destinations/${dest.slug}`) },
                 ],
               },
             ],

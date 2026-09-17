@@ -5,7 +5,7 @@ import AffiliateCTA from '../components/AffiliateCTA';
 import AuthorByline from '../components/AuthorByline';
 import { Calendar, Plane, Snowflake, Wallet, Compass, Lightbulb } from 'lucide-react';
 import { pageUrl } from '../lib/meta';
-import { useLang } from '../i18n/useLang';
+import { useLang, useLocalPageUrl } from '../i18n/useLang';
 import { getCopy } from '../locales/copy';
 import AdUnit from '../shared/ads/AdUnit';
 import omenaHotelsAd from '../shared/ads/advertisers/omenaHotels';
@@ -14,13 +14,14 @@ const ICONS = [Calendar, Plane, Snowflake, Wallet, Compass, Lightbulb];
 
 export default function BookingGuide() {
   const lang = useLang();
+  const localUrl = useLocalPageUrl();
   const t = getCopy(lang);
   const b = t.bookingGuide;
   return (
     <>
       <title>{b.metaTitle}</title>
       <meta name="description" content={b.metaDescription} />
-      <link rel="canonical" href={pageUrl('/booking-guide')} />
+      <link rel="canonical" href={localUrl('/booking-guide')} />
       <meta name="robots" content="index, follow" />
       <script
         type="application/ld+json"
@@ -32,14 +33,14 @@ export default function BookingGuide() {
                 '@type': 'Article',
                 headline: b.metaTitle,
                 publisher: { '@id': `${pageUrl('/')}#organization` },
-                mainEntityOfPage: pageUrl('/booking-guide'),
+                mainEntityOfPage: localUrl('/booking-guide'),
                 inLanguage: lang,
               },
               {
                 '@type': 'BreadcrumbList',
                 itemListElement: [
-                  { '@type': 'ListItem', position: 1, name: t.home.breadcrumbHome, item: pageUrl('/') },
-                  { '@type': 'ListItem', position: 2, name: b.breadcrumb, item: pageUrl('/booking-guide') },
+                  { '@type': 'ListItem', position: 1, name: t.home.breadcrumbHome, item: localUrl('/') },
+                  { '@type': 'ListItem', position: 2, name: b.breadcrumb, item: localUrl('/booking-guide') },
                 ],
               },
             ],

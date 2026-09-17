@@ -15,7 +15,7 @@ import LomarengasAd from '../components/LomarengasAd';
 import { longStays, stayCardImage } from '../data/properties';
 import type { Property } from '../data/properties';
 import { pageUrl } from '../lib/meta';
-import { useLang, useLocalePath } from '../i18n/useLang';
+import { useLang, useLocalePath, useLocalPageUrl } from '../i18n/useLang';
 import { getCopy } from '../locales/copy';
 
 // PROPERTY_IMAGES poistettu 2026-08-17: se mappasi kaksi eri kohdetta SAMAAN
@@ -24,6 +24,7 @@ import { getCopy } from '../locales/copy';
 
 export default function LongStays() {
   const lang = useLang();
+  const localUrl = useLocalPageUrl();
   const localePath = useLocalePath();
   const t = getCopy(lang);
   const ls = t.longStays;
@@ -44,7 +45,7 @@ export default function LongStays() {
     <>
       <title>{ls.metaTitle}</title>
       <meta name="description" content={ls.metaDescription} />
-      <link rel="canonical" href={pageUrl('/long-stays')} />
+      <link rel="canonical" href={localUrl('/long-stays')} />
       <meta name="robots" content="index, follow" />
       <script
         type="application/ld+json"
@@ -56,14 +57,14 @@ export default function LongStays() {
                 '@type': 'Article',
                 headline: ls.metaTitle,
                 publisher: { '@id': `${pageUrl('/')}#organization` },
-                mainEntityOfPage: pageUrl('/long-stays'),
+                mainEntityOfPage: localUrl('/long-stays'),
                 inLanguage: lang,
               },
               {
                 '@type': 'BreadcrumbList',
                 itemListElement: [
-                  { '@type': 'ListItem', position: 1, name: t.home.breadcrumbHome, item: pageUrl('/') },
-                  { '@type': 'ListItem', position: 2, name: ls.breadcrumb, item: pageUrl('/long-stays') },
+                  { '@type': 'ListItem', position: 1, name: t.home.breadcrumbHome, item: localUrl('/') },
+                  { '@type': 'ListItem', position: 2, name: ls.breadcrumb, item: localUrl('/long-stays') },
                 ],
               },
             ],

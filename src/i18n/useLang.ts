@@ -1,4 +1,5 @@
 import { useLocation } from 'react-router-dom';
+import { pageUrl } from '../lib/meta';
 
 export type Lang = 'en' | 'fi' | 'de' | 'ja' | 'es' | 'pt-BR' | 'zh-CN' | 'ko' | 'fr' | 'it' | 'nl' | 'sv';
 
@@ -34,7 +35,20 @@ export function useLocalePath() {
   };
 }
 
-export type Bcp47 = 'en-US' | 'fi-FI' | 'de-DE' | 'ja-JP' | 'es-ES' | 'pt-BR' | 'zh-CN' | 'ko-KR' | 'fr-FR' | 'it-IT' | 'nl-NL' | 'sv-SE';
+/**
+ * Sivun OMA absoluuttinen osoite nykyisellä kielellä: kanoninen, murupolku,
+ * mainEntityOfPage. 🔴 Älä käytä pelkkää `pageUrl('/x')` näihin: se antaa aina
+ * englanninkielisen osoitteen. 17.9.2026 asti jokainen ei-englanninkielinen sivu
+ * sai renderöinnissä KAKSI kanonista (prerenderin oikea + Reactin englanninkielinen),
+ * ja ristiriitaiset kanoniset Google jättää huomiotta. Organisaation ja
+ * sivuston @id:t pysyvät kielettöminä, koska ne ovat sama olio kaikilla kielillä.
+ */
+export function useLocalPageUrl() {
+  const localePath = useLocalePath();
+  return (path: string): string => pageUrl(localePath(path));
+}
+
+export type Bcp47 ='en-US' | 'fi-FI' | 'de-DE' | 'ja-JP' | 'es-ES' | 'pt-BR' | 'zh-CN' | 'ko-KR' | 'fr-FR' | 'it-IT' | 'nl-NL' | 'sv-SE';
 
 export function useHtmlLang(): Bcp47 {
   const lang = useLang();

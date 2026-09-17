@@ -15,7 +15,7 @@ import HomeAdSlots, { MainPartnerBanner } from '../shared/HomeAdSlots';
 import { AD_SLOTS } from '../data/adSlots';
 import { allCategoriesSummary, destinations } from '../data/properties';
 import { pageUrl } from '../lib/meta';
-import { useLang, useLocalePath } from '../i18n/useLang';
+import { useLang, useLocalePath, useLocalPageUrl } from '../i18n/useLang';
 import { getCopy } from '../locales/copy';
 import { AppPromoHero } from '../components/AppPromo';
 
@@ -31,6 +31,7 @@ const FAQ_LINKS: { route: string; navKey?: 'longStays' | 'glassIgloos'; literal?
 
 export default function Home() {
   const lang = useLang();
+  const localUrl = useLocalPageUrl();
   const localePath = useLocalePath();
   const t = getCopy(lang);
   const h = t.home;
@@ -61,7 +62,7 @@ export default function Home() {
     <>
       <title>{h.metaTitle}</title>
       <meta name="description" content={h.metaDescription} />
-      <link rel="canonical" href={pageUrl('/')} />
+      <link rel="canonical" href={localUrl('/')} />
       <meta name="robots" content="index, follow" />
       <script
         type="application/ld+json"
@@ -71,8 +72,8 @@ export default function Home() {
             '@graph': [
               {
                 '@type': 'WebPage',
-                '@id': `${pageUrl('/')}#webpage`,
-                url: pageUrl('/'),
+                '@id': `${localUrl('/')}#webpage`,
+                url: localUrl('/'),
                 name: h.schemaName,
                 isPartOf: { '@id': `${pageUrl('/')}#website` },
                 inLanguage: lang,
@@ -81,7 +82,7 @@ export default function Home() {
               {
                 '@type': 'BreadcrumbList',
                 itemListElement: [
-                  { '@type': 'ListItem', position: 1, name: h.breadcrumbHome, item: pageUrl('/') },
+                  { '@type': 'ListItem', position: 1, name: h.breadcrumbHome, item: localUrl('/') },
                 ],
               },
               {

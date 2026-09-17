@@ -1,6 +1,5 @@
 import TermsContent from '../shared/Legal/TermsContent';
-import { pageUrl } from '../lib/meta';
-import { useLang, type Lang } from '../i18n/useLang';
+import { useLang, type Lang, useLocalPageUrl } from '../i18n/useLang';
 
 const META: Record<Lang, { title: string; description: string }> = {
   en: {
@@ -67,12 +66,13 @@ const META: Record<Lang, { title: string; description: string }> = {
 
 export default function Terms() {
   const lang = useLang();
+  const localUrl = useLocalPageUrl();
   const meta = META[lang];
   return (
     <>
       <title>{meta.title}</title>
       <meta name="description" content={meta.description} />
-      <link rel="canonical" href={pageUrl('/terms')} />
+      <link rel="canonical" href={localUrl('/terms')} />
       <meta name="robots" content="index, follow" />
       <TermsContent siteName="StayInLapland" siteUrl="stayinlapland.com" lang={lang} />
     </>

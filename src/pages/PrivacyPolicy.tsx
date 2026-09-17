@@ -1,6 +1,5 @@
 import PrivacyContent from '../shared/Legal/PrivacyContent';
-import { pageUrl } from '../lib/meta';
-import { useLang, type Lang } from '../i18n/useLang';
+import { useLang, type Lang, useLocalPageUrl } from '../i18n/useLang';
 
 const META: Record<Lang, { title: string; description: string }> = {
   en: {
@@ -67,12 +66,13 @@ const META: Record<Lang, { title: string; description: string }> = {
 
 export default function PrivacyPolicy() {
   const lang = useLang();
+  const localUrl = useLocalPageUrl();
   const meta = META[lang];
   return (
     <>
       <title>{meta.title}</title>
       <meta name="description" content={meta.description} />
-      <link rel="canonical" href={pageUrl('/privacy')} />
+      <link rel="canonical" href={localUrl('/privacy')} />
       <meta name="robots" content="index, follow" />
       <PrivacyContent siteName="StayInLapland" lang={lang} />
     </>

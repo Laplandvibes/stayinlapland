@@ -13,7 +13,7 @@ import MarginNote from '../components/MarginNote';
 import { wilderness, stayCardImage } from '../data/properties';
 import type { Property } from '../data/properties';
 import { pageUrl } from '../lib/meta';
-import { useLang, useLocalePath } from '../i18n/useLang';
+import { useLang, useLocalePath, useLocalPageUrl } from '../i18n/useLang';
 import { getCopy } from '../locales/copy';
 
 const COMPARISON_SCORES = [
@@ -23,6 +23,7 @@ const COMPARISON_SCORES = [
 
 export default function WildernessLodges() {
   const lang = useLang();
+  const localUrl = useLocalPageUrl();
   const localePath = useLocalePath();
   const t = getCopy(lang);
   const w = t.wilderness;
@@ -43,7 +44,7 @@ export default function WildernessLodges() {
     <>
       <title>{w.metaTitle}</title>
       <meta name="description" content={w.metaDescription} />
-      <link rel="canonical" href={pageUrl('/wilderness')} />
+      <link rel="canonical" href={localUrl('/wilderness')} />
       <meta name="robots" content="index, follow" />
       <script
         type="application/ld+json"
@@ -55,14 +56,14 @@ export default function WildernessLodges() {
                 '@type': 'Article',
                 headline: w.metaTitle,
                 publisher: { '@id': `${pageUrl('/')}#organization` },
-                mainEntityOfPage: pageUrl('/wilderness'),
+                mainEntityOfPage: localUrl('/wilderness'),
                 inLanguage: lang,
               },
               {
                 '@type': 'BreadcrumbList',
                 itemListElement: [
-                  { '@type': 'ListItem', position: 1, name: t.home.breadcrumbHome, item: pageUrl('/') },
-                  { '@type': 'ListItem', position: 2, name: w.breadcrumb, item: pageUrl('/wilderness') },
+                  { '@type': 'ListItem', position: 1, name: t.home.breadcrumbHome, item: localUrl('/') },
+                  { '@type': 'ListItem', position: 2, name: w.breadcrumb, item: localUrl('/wilderness') },
                 ],
               },
             ],

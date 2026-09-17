@@ -8,11 +8,12 @@ import PullQuote from '../components/PullQuote';
 import MarginNote from '../components/MarginNote';
 import ImageBreak from '../components/ImageBreak';
 import { pageUrl } from '../lib/meta';
-import { useLang, useLocalePath } from '../i18n/useLang';
+import { useLang, useLocalePath, useLocalPageUrl } from '../i18n/useLang';
 import { getCopy } from '../locales/copy';
 
 export default function WhenToGo() {
   const lang = useLang();
+  const localUrl = useLocalPageUrl();
   const localePath = useLocalePath();
   const t = getCopy(lang);
   const w = t.whenToGo;
@@ -76,7 +77,7 @@ export default function WhenToGo() {
     <>
       <title>{w.metaTitle}</title>
       <meta name="description" content={w.metaDescription} />
-      <link rel="canonical" href={pageUrl('/when-to-go')} />
+      <link rel="canonical" href={localUrl('/when-to-go')} />
       <meta name="robots" content="index, follow" />
       <script
         type="application/ld+json"
@@ -88,14 +89,14 @@ export default function WhenToGo() {
                 '@type': 'Article',
                 headline: w.metaTitle,
                 publisher: { '@id': `${pageUrl('/')}#organization` },
-                mainEntityOfPage: pageUrl('/when-to-go'),
+                mainEntityOfPage: localUrl('/when-to-go'),
                 inLanguage: lang,
               },
               {
                 '@type': 'BreadcrumbList',
                 itemListElement: [
-                  { '@type': 'ListItem', position: 1, name: t.home.breadcrumbHome, item: pageUrl('/') },
-                  { '@type': 'ListItem', position: 2, name: w.breadcrumb, item: pageUrl('/when-to-go') },
+                  { '@type': 'ListItem', position: 1, name: t.home.breadcrumbHome, item: localUrl('/') },
+                  { '@type': 'ListItem', position: 2, name: w.breadcrumb, item: localUrl('/when-to-go') },
                 ],
               },
             ],

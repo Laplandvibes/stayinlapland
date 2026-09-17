@@ -13,7 +13,7 @@ import MarginNote from '../components/MarginNote';
 import { glassIgloos, stayCardImage } from '../data/properties';
 import type { Property } from '../data/properties';
 import { pageUrl } from '../lib/meta';
-import { useLang, useLocalePath } from '../i18n/useLang';
+import { useLang, useLocalePath, useLocalPageUrl } from '../i18n/useLang';
 import { getCopy } from '../locales/copy';
 
 const COMPARISON_SCORES = [
@@ -25,6 +25,7 @@ const COMPARISON_SCORES = [
 
 export default function GlassIgloos() {
   const lang = useLang();
+  const localUrl = useLocalPageUrl();
   const localePath = useLocalePath();
   const t = getCopy(lang);
   const g = t.glassIgloos;
@@ -45,7 +46,7 @@ export default function GlassIgloos() {
     <>
       <title>{g.metaTitle}</title>
       <meta name="description" content={g.metaDescription} />
-      <link rel="canonical" href={pageUrl('/glass-igloos')} />
+      <link rel="canonical" href={localUrl('/glass-igloos')} />
       <meta name="robots" content="index, follow" />
       <script
         type="application/ld+json"
@@ -57,14 +58,14 @@ export default function GlassIgloos() {
                 '@type': 'Article',
                 headline: g.metaTitle,
                 publisher: { '@id': `${pageUrl('/')}#organization` },
-                mainEntityOfPage: pageUrl('/glass-igloos'),
+                mainEntityOfPage: localUrl('/glass-igloos'),
                 inLanguage: lang,
               },
               {
                 '@type': 'BreadcrumbList',
                 itemListElement: [
-                  { '@type': 'ListItem', position: 1, name: t.home.breadcrumbHome, item: pageUrl('/') },
-                  { '@type': 'ListItem', position: 2, name: g.breadcrumb, item: pageUrl('/glass-igloos') },
+                  { '@type': 'ListItem', position: 1, name: t.home.breadcrumbHome, item: localUrl('/') },
+                  { '@type': 'ListItem', position: 2, name: g.breadcrumb, item: localUrl('/glass-igloos') },
                 ],
               },
             ],

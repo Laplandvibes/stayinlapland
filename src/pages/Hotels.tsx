@@ -12,7 +12,7 @@ import HotelPartnerAd from '../components/HotelPartnerAd';
 import { hotels, stayCardImage } from '../data/properties';
 import type { Property } from '../data/properties';
 import { pageUrl } from '../lib/meta';
-import { useLang, useLocalePath } from '../i18n/useLang';
+import { useLang, useLocalePath, useLocalPageUrl } from '../i18n/useLang';
 import { getCopy } from '../locales/copy';
 
 const COMPARISON_SCORES = [
@@ -25,6 +25,7 @@ const COMPARISON_SCORES = [
 
 export default function Hotels() {
   const lang = useLang();
+  const localUrl = useLocalPageUrl();
   const localePath = useLocalePath();
   const t = getCopy(lang);
   const h = t.hotels;
@@ -43,7 +44,7 @@ export default function Hotels() {
     <>
       <title>{h.metaTitle}</title>
       <meta name="description" content={h.metaDescription} />
-      <link rel="canonical" href={pageUrl('/hotels')} />
+      <link rel="canonical" href={localUrl('/hotels')} />
       <meta name="robots" content="index, follow" />
       <script
         type="application/ld+json"
@@ -55,14 +56,14 @@ export default function Hotels() {
                 '@type': 'Article',
                 headline: h.metaTitle,
                 publisher: { '@id': `${pageUrl('/')}#organization` },
-                mainEntityOfPage: pageUrl('/hotels'),
+                mainEntityOfPage: localUrl('/hotels'),
                 inLanguage: lang,
               },
               {
                 '@type': 'BreadcrumbList',
                 itemListElement: [
-                  { '@type': 'ListItem', position: 1, name: t.home.breadcrumbHome, item: pageUrl('/') },
-                  { '@type': 'ListItem', position: 2, name: h.breadcrumb, item: pageUrl('/hotels') },
+                  { '@type': 'ListItem', position: 1, name: t.home.breadcrumbHome, item: localUrl('/') },
+                  { '@type': 'ListItem', position: 2, name: h.breadcrumb, item: localUrl('/hotels') },
                 ],
               },
             ],

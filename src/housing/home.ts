@@ -32,7 +32,7 @@ export const HOME: Record<HousingLang, HousingHomeCopy> = {
       h1a: 'Asetu Lappiin.',
       h1b: 'Älä vain käy.',
       lead:
-        'Vuokra-asunnot Rovaniemeltä Ivaloon, kausityöntekijän asunto Levillä ja Ylläksellä, muuton paperityöt ja se, mitä eläminen täällä oikeasti maksaa. Luvut ovat Tilastokeskuksen, Kelan ja kuntien omia, eivät arvioita.',
+        'Vuokra-asunnot Rovaniemeltä Ivaloon, kausityöntekijän asunto Levillä ja Ylläksellä, muuton paperityöt ja mitä eläminen täällä maksaa. Luvut ovat Tilastokeskuksen ja Kelan, eivät arvioita.',
       ctaPrimary: 'Vuokra-asunnot',
       ctaSecondary: 'Kausityöntekijälle',
     },
@@ -132,7 +132,7 @@ export const HOME: Record<HousingLang, HousingHomeCopy> = {
       h1a: 'Settle into Lapland.',
       h1b: 'Don’t just visit.',
       lead:
-        'Rentals from Rovaniemi to Ivalo, seasonal worker housing at Levi and Ylläs, the paperwork of moving and what living here really costs. The figures are Statistics Finland’s, Kela’s and the municipalities’ own, not estimates.',
+        'Rentals from Rovaniemi to Ivalo, seasonal worker housing at Levi and Ylläs, the paperwork of moving and what living here costs. Figures from Statistics Finland and Kela, not estimates.',
       ctaPrimary: 'Rentals',
       ctaSecondary: 'Seasonal workers',
     },

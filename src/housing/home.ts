@@ -5,7 +5,7 @@ import type { HousingRouteKey } from './labels';
 /**
  * Etusivun copy (fi + en).
  *
- * 🔴 19.9.2026 (Vesa): heron alla EI puhuta sivustosta itsestään eikä sen
+ * 🔴 18.9.2026 (Vesa): heron alla EI puhuta sivustosta itsestään eikä sen
  * lähteistä. Ensimmäinen ruutu heron jälkeen on se, mitä lukija tuli hakemaan:
  * vuokrat paikkakunnittain kuvakortteina, sitten polut. Sama vika kirjattiin
  * laplandstaysin auditissa 16.9. (kohdat 4 ja 6: "copy puolusteli"). Lähde- ja

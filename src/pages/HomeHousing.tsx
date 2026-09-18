@@ -16,7 +16,7 @@ import { HOME, HOUSING_ROUTES, HOUSING_UI, housingLang, type HousingRouteKey } f
  * suomeksi ja englanniksi. Muut kielet näkevät vanhan etusivun, kunnes niiden
  * asumissisältö on kirjoitettu ja kysyntä mitattu (§25).
  *
- * 🔴 JÄRJESTYS (Vesa 19.9.2026: "eihän tällaista voi olla etusivun parhaalla
+ * 🔴 JÄRJESTYS (Vesa 18.9.2026: "eihän tällaista voi olla etusivun parhaalla
  * paikalla"): heron ja lukukaistan jälkeen tulee HETI sisältö, jota lukija
  * haki: paikkakuntakortit kuvilla, sitten polut kuvilla. Talon mainospaikka
  * (MainPartnerBanner) vasta näiden jälkeen, appimainos UKK:n jälkeen. Sama
@@ -215,7 +215,7 @@ export default function HomeHousing() {
         </div>
       </section>
 
-      {/* Talon mainospaikka vasta sisällön jälkeen (Vesa 19.9.2026). */}
+      {/* Talon mainospaikka vasta sisällön jälkeen (Vesa 18.9.2026). */}
       <MainPartnerBanner config={AD_SLOTS} locale={lang} surface="light" />
 
       {/* 3. Työ: kuva + yksi viesti, ei tekstilaatikoita. */}

@@ -97,6 +97,7 @@ export const RENTALS: HousingCopyMap = {
         cards: [
           {
             title: 'Rovaniemi',
+            image: { src: '/images/housing-rovaniemi-lappia-card.webp', alt: 'Lappia-talo Rovaniemen keskustassa' },
             body:
               'Kaupungin oma sivu ohjaa KAS asunnoille, M2-Kodeille, Tarveasunnoille, Avaralle ja Lumolle sekä hakupalveluihin Oikotie, Vuokraovi ja Qasa. Opiskelijalle Domus Arctica -säätiö DAS (noin 1 700 asuntoa, joista 700 yksiötä) ja 18–29-vuotiaille NAL Rovaniemi. DAS-hakemus on voimassa kolme kuukautta, ja uudet opiskelijat ovat etusijalla elo–syyskuussa.',
             href: 'https://www.rovaniemi.fi/Asuminen-ja-ymparisto/Asuminen',
@@ -105,6 +106,7 @@ export const RENTALS: HousingCopyMap = {
           },
           {
             title: 'Kittilä ja Levi',
+            image: { src: '/images/housing-levi-uudet-talot.webp', alt: 'Uusia taloja rakenteilla Levillä, taustalla Levitunturi' },
             body:
               'Kittilän Vuokratalot Oy välittää kunnan omistamia vuokra-asuntoja; toimisto on kunnantalon ala-aulassa (Valtatie 15). Hakemus on voimassa kolme kuukautta, ja sen voi jättää, vaikka vapaita asuntoja ei juuri nyt olisi. Levin vapaa-ajan asuntoja saa kuukausivuokralle lähinnä touko–marraskuussa; talvella sama asunto myydään viikoittain.',
             href: 'https://kittila.fi/asuminen-ja-ymparisto/asuminen/vuokra-asunnot',
@@ -113,6 +115,7 @@ export const RENTALS: HousingCopyMap = {
           },
           {
             title: 'Kolari ja Ylläs',
+            image: { src: '/images/housing-jouninkauppa.webp', alt: 'Jounin Kauppa Äkäslompolossa' },
             body:
               'Äkäslompolossa K-Market Jounin Kaupan kauppiaat rakennuttavat kolme rivitaloa vakituisille ja kausityöntekijöilleen; talot valmistuvat marras–joulukuussa 2026 (Kesko 17.6.2026). Kunta vauhditti hanketta nopealla kaavoituksella, ja kylän ensimmäinen modulitalo valmistui lokakuussa 2025 (Yle 16.6.2026). Vapaat asunnot: Oikotie ja Vuokraovi hakusanalla Kolari.',
             href: 'https://yle.fi/a/74-20231905',
@@ -121,6 +124,7 @@ export const RENTALS: HousingCopyMap = {
           },
           {
             title: 'Kemi, Keminmaa ja Tornio',
+            image: { src: '/images/housing-tornio-kerrostalo-card.webp', alt: 'Kerrostalo Tornion keskustassa' },
             body:
               'Kemin kaupungin vuokra-asunnoista vastaa Kiinteistö Oy Itätuuli, jolla on reilut 600 asuntoa keskustassa ja viiden kilometrin säteellä. Keminmaan Vuokra-asunnot Oy:llä on 162 kerrostalo- ja 146 rivitaloasuntoa, ja molempiin haetaan samalla sähköisellä hakemuksella. Torniossa kaupungin asuntoja hallinnoi Tornion Krunni Oy (Tornion Vuokra-asunnot Oy).',
             href: 'https://www.kemi.fi/asuminen-ja-ymparisto/asuminen/vuokra-asunnot/',
@@ -291,6 +295,7 @@ export const RENTALS: HousingCopyMap = {
         cards: [
           {
             title: 'Rovaniemi',
+            image: { src: '/images/housing-rovaniemi-lappia-card.webp', alt: 'Lappia House in the centre of Rovaniemi' },
             body:
               'The city’s own page points to the landlords KAS asunnot, M2-Kodit, Tarveasunnot, Avara and Lumo, and to the search services Oikotie, Vuokraovi and Qasa. Students apply to the Domus Arctica Foundation DAS (about 1,700 flats, 700 of them studios); 18–29-year-olds to NAL Rovaniemi. A DAS application is valid for three months, and new students have priority in August and September.',
             href: 'https://www.rovaniemi.fi/Asuminen-ja-ymparisto/Asuminen',
@@ -299,6 +304,7 @@ export const RENTALS: HousingCopyMap = {
           },
           {
             title: 'Kittilä and Levi',
+            image: { src: '/images/housing-levi-uudet-talot.webp', alt: 'New houses under construction in Levi with Levi fell behind' },
             body:
               'Kittilän Vuokratalot Oy lets the municipality’s own rental flats; the office is on the ground floor of the municipal hall (Valtatie 15). An application is valid for three months and can be filed even when nothing is free right now. Levi’s holiday apartments go on monthly rent mainly from May to November; in winter the same flat is sold by the week.',
             href: 'https://kittila.fi/asuminen-ja-ymparisto/asuminen/vuokra-asunnot',
@@ -307,6 +313,7 @@ export const RENTALS: HousingCopyMap = {
           },
           {
             title: 'Kolari and Ylläs',
+            image: { src: '/images/housing-jouninkauppa.webp', alt: 'The Jounin Kauppa grocery store in Äkäslompolo' },
             body:
               'In Äkäslompolo the owners of K-Market Jounin Kauppa are building three row houses for their permanent and seasonal staff, due in November–December 2026 (Kesko, 17 Jun 2026). The municipality sped the project up with fast zoning, and the village’s first modular building was completed in October 2025 (Yle, 16 Jun 2026). Vacancies: Oikotie and Vuokraovi, search term Kolari.',
             href: 'https://yle.fi/a/74-20231905',
@@ -315,6 +322,7 @@ export const RENTALS: HousingCopyMap = {
           },
           {
             title: 'Kemi, Keminmaa and Tornio',
+            image: { src: '/images/housing-tornio-kerrostalo-card.webp', alt: 'An apartment block in the centre of Tornio' },
             body:
               'Kemi’s municipal flats are run by Kiinteistö Oy Itätuuli, which has over 600 flats in the centre and within five kilometres of it. Keminmaan Vuokra-asunnot Oy has 162 flats in apartment blocks and 146 in row houses, and one online application covers both companies. In Tornio the city’s flats are managed by Tornion Krunni Oy (Tornion Vuokra-asunnot Oy).',
             href: 'https://www.kemi.fi/asuminen-ja-ymparisto/asuminen/vuokra-asunnot/',

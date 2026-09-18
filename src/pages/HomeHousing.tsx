@@ -9,6 +9,9 @@ import { pageUrl } from '../lib/meta';
 import { useLang, useLocalePath, useLocalPageUrl } from '../i18n/useLang';
 import { getCopy } from '../locales/copy';
 import { AppPromoHero } from '../components/AppPromo';
+import PlaceGraphic from '../components/housing/PlaceGraphic';
+import HousingWorkPromo from '../components/housing/HousingWorkPromo';
+import { KickerChip, TwoTone } from '../components/housing/ui';
 import { HOME, HOUSING_ROUTES, HOUSING_UI, housingLang, type HousingRouteKey } from '../housing';
 
 /**
@@ -25,8 +28,8 @@ import { HOME, HOUSING_ROUTES, HOUSING_UI, housingLang, type HousingRouteKey } f
  * Älä palauta tekstikappaletta tai mainosta heron alle.
  *
  * Kuvat ovat omia valokuvia heinäkuun 2026 ajomatkalta (meta-lasit), ei AI:ta.
- * Inarista ei ole omaa kuvaa: kortissa on nimeämätön tunturimaisema, alt ei
- * väitä paikkaa.
+ * Inarista ei ole omaa kuvaa: kortissa on graafinen tausta (PlaceGraphic), ei
+ * toisen paikan valokuvaa (Vesa 26.7.2026).
  */
 export default function HomeHousing() {
   const lang = useLang();
@@ -38,7 +41,6 @@ export default function HomeHousing() {
   const localUrl = useLocalPageUrl();
 
   const pathHref = (key: HousingRouteKey | 'longStays') => (key === 'longStays' ? '/long-stays' : HOUSING_ROUTES[key]);
-  const workHref = 'https://laplandwork.com/?utm_source=stayinlapland&utm_medium=crosslink&utm_campaign=housing_home';
 
   return (
     <>
@@ -133,8 +135,9 @@ export default function HomeHousing() {
       <section className="pt-14 pb-16 sm:pt-20 sm:pb-24 px-5 sm:px-6">
         <div className="max-w-7xl mx-auto">
           <div className="mb-10 sm:mb-12 max-w-2xl">
-            <p className="text-vibe-pink text-[11px] font-semibold tracking-[0.28em] uppercase mb-3">{h.towns.kicker}</p>
+            <div className="mb-4"><KickerChip tone="pink">{h.towns.kicker}</KickerChip></div>
             <h2 className="font-heading text-4xl sm:text-5xl md:text-6xl text-charcoal leading-[1.1] tracking-wide">{h.towns.h2}</h2>
+            <div className="mt-4 h-1 w-14 rounded-full bg-vibe-pink" aria-hidden="true" />
             <p className="text-graphite text-base sm:text-lg mt-5 leading-relaxed">{h.towns.lead}</p>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-5 sm:gap-6">
@@ -142,24 +145,28 @@ export default function HomeHousing() {
               <Link
                 key={town.slug}
                 to={localePath(`${HOUSING_ROUTES.rentals}/${town.slug}`)}
-                className="group flex flex-col overflow-hidden rounded-2xl bg-white border border-charcoal/8 hover:border-charcoal/20 hover:shadow-md transition-all"
+                className="group flex flex-col overflow-hidden rounded-2xl bg-white border border-charcoal/10 shadow-sm hover:border-charcoal/20 hover:shadow-lg hover:-translate-y-0.5 transition-all duration-300"
               >
-                <div className="relative aspect-[4/3] overflow-hidden bg-cream-2">
-                  <img
-                    src={town.image}
-                    alt={town.alt}
-                    style={town.pos ? { objectPosition: town.pos } : undefined}
-                    className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-                    loading="lazy"
-                    decoding="async"
-                  />
+                <div className="relative aspect-[4/3] overflow-hidden bg-night">
+                  {town.image ? (
+                    <img
+                      src={town.image}
+                      alt={town.alt}
+                      style={town.pos ? { objectPosition: town.pos } : undefined}
+                      className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                      loading="lazy"
+                      decoding="async"
+                    />
+                  ) : (
+                    <PlaceGraphic />
+                  )}
                   <div className="absolute inset-0 bg-gradient-to-t from-night/75 via-night/10 to-transparent" />
                   <h3 className="absolute bottom-4 left-5 right-5 font-heading text-2xl sm:text-3xl text-snow leading-tight tracking-wide drop-shadow">{town.name}</h3>
                 </div>
                 <div className="p-6 flex flex-col flex-1">
                   <p className="text-[11px] tracking-[0.16em] uppercase text-stone font-semibold mb-2">{town.fact}</p>
                   <p className="text-graphite text-[15px] leading-relaxed mb-5 flex-1">{town.body}</p>
-                  <span className="inline-flex items-center gap-1.5 text-vibe-pink group-hover:gap-2.5 text-sm font-semibold transition-all mt-auto">
+                  <span className="inline-flex items-center gap-1.5 text-[#BE185D] group-hover:gap-2.5 text-sm font-semibold transition-all mt-auto">
                     {town.cta}
                     <ArrowRight className="w-4 h-4 shrink-0" />
                   </span>
@@ -168,7 +175,7 @@ export default function HomeHousing() {
             ))}
           </div>
           <div className="mt-8">
-            <Link to={localePath(HOUSING_ROUTES.rentals)} className="lv-tap inline-flex items-center gap-1.5 text-vibe-pink text-sm font-semibold">
+            <Link to={localePath(HOUSING_ROUTES.rentals)} className="lv-tap inline-flex items-center gap-1.5 text-[#BE185D] text-sm font-semibold">
               {h.towns.more}
               <ArrowRight className="w-4 h-4 shrink-0" />
             </Link>
@@ -177,21 +184,24 @@ export default function HomeHousing() {
       </section>
 
       {/* 2. Polut kuvakortteina */}
-      <section className="py-16 sm:py-24 px-5 sm:px-6 bg-cream-2/60">
-        <div className="max-w-7xl mx-auto">
+      <section className="relative overflow-hidden py-16 sm:py-24 px-5 sm:px-6 bg-night text-snow">
+        <div className="pointer-events-none absolute -top-32 -left-24 w-[28rem] h-[28rem] rounded-full bg-vibe-pink/20 blur-3xl" aria-hidden="true" />
+        <div className="pointer-events-none absolute -bottom-40 -right-24 w-[32rem] h-[32rem] rounded-full bg-arctic-cyan/10 blur-3xl" aria-hidden="true" />
+        <div className="relative max-w-7xl mx-auto">
           <div className="mb-10 sm:mb-12 max-w-2xl">
-            <p className="text-vibe-pink text-[11px] font-semibold tracking-[0.28em] uppercase mb-3">{h.paths.kicker}</p>
-            <h2 className="font-heading text-4xl sm:text-5xl md:text-6xl text-charcoal leading-[1.1] tracking-wide">{h.paths.h2}</h2>
-            <p className="text-graphite text-base sm:text-lg mt-5 leading-relaxed">{h.paths.lead}</p>
+            <div className="mb-4"><KickerChip tone="night">{h.paths.kicker}</KickerChip></div>
+            <h2 className="font-heading text-4xl sm:text-5xl md:text-6xl text-snow leading-[1.1] tracking-wide">{h.paths.h2}</h2>
+            <div className="mt-4 h-1 w-14 rounded-full bg-vibe-pink" aria-hidden="true" />
+            <p className="text-snow/85 text-base sm:text-lg mt-5 leading-relaxed">{h.paths.lead}</p>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-5 sm:gap-6">
             {h.paths.cards.map((c) => (
               <Link
                 key={c.key}
                 to={localePath(pathHref(c.key))}
-                className="group flex flex-col overflow-hidden rounded-2xl bg-white border border-charcoal/8 hover:border-charcoal/20 hover:shadow-md transition-all"
+                className="group flex flex-col overflow-hidden rounded-2xl bg-white/[0.06] border border-white/12 hover:bg-white/[0.1] hover:border-white/25 transition-all duration-300"
               >
-                <div className="relative aspect-[4/3] overflow-hidden bg-cream-2">
+                <div className="relative aspect-[4/3] overflow-hidden bg-night">
                   <img
                     src={c.image}
                     alt={c.alt}
@@ -202,9 +212,9 @@ export default function HomeHousing() {
                   />
                 </div>
                 <div className="p-6 flex flex-col flex-1">
-                  <h3 className="font-heading text-2xl sm:text-3xl text-charcoal leading-tight tracking-wide mb-3">{c.title}</h3>
-                  <p className="text-graphite text-[15px] leading-relaxed mb-5 flex-1">{c.body}</p>
-                  <span className="inline-flex items-center gap-1.5 text-vibe-pink group-hover:gap-2.5 text-sm font-semibold transition-all mt-auto">
+                  <h3 className="font-heading text-2xl sm:text-3xl text-snow leading-tight tracking-wide mb-3">{c.title}</h3>
+                  <p className="text-snow/80 text-[15px] leading-relaxed mb-5 flex-1">{c.body}</p>
+                  <span className="inline-flex items-center gap-1.5 text-[#F9A8D4] group-hover:gap-2.5 text-sm font-semibold transition-all mt-auto">
                     {ui.readMore}
                     <ArrowRight className="w-4 h-4 shrink-0" />
                   </span>
@@ -219,35 +229,7 @@ export default function HomeHousing() {
       <MainPartnerBanner config={AD_SLOTS} locale={lang} surface="light" />
 
       {/* 3. Työ: kuva + yksi viesti, ei tekstilaatikoita. */}
-      <section className="py-16 sm:py-24 px-5 sm:px-6">
-        <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-14 items-center">
-          <figure>
-            <div className="relative aspect-[4/3] overflow-hidden rounded-2xl bg-night">
-              <img src={h.work.image} alt={h.work.alt} className="absolute inset-0 w-full h-full object-cover" loading="lazy" decoding="async" />
-            </div>
-            <figcaption className="mt-3 text-stone text-xs sm:text-sm italic leading-relaxed">{h.work.caption}</figcaption>
-          </figure>
-          <div>
-            <p className="text-vibe-pink text-[11px] font-semibold tracking-[0.28em] uppercase mb-3">{h.work.kicker}</p>
-            <h2 className="font-heading text-4xl sm:text-5xl md:text-6xl text-charcoal leading-[1.1] tracking-wide mb-5">
-              {h.work.h2a} <span className="text-vibe-pink">{h.work.h2b}</span>
-            </h2>
-            <p className="text-graphite text-base sm:text-lg leading-relaxed mb-7">{h.work.body}</p>
-            <a
-              href={workHref}
-              target="_blank"
-              rel="noopener"
-              className="inline-flex items-center justify-center text-center leading-snug gap-2 px-7 py-3.5 min-h-11 bg-charcoal hover:bg-vibe-pink text-snow rounded-full font-semibold transition-colors"
-              data-umami-event="housing_out"
-              data-umami-event-page="home"
-              data-umami-event-target="laplandwork"
-            >
-              {h.work.cta}
-              <ArrowUpRight className="w-4 h-4 shrink-0" />
-            </a>
-          </div>
-        </div>
-      </section>
+      <HousingWorkPromo copy={h.work} placement="housing_home" />
 
       <FinnishDivider />
 
@@ -255,15 +237,15 @@ export default function HomeHousing() {
       <section className="py-16 sm:py-24 px-5 sm:px-6">
         <div className="max-w-3xl mx-auto">
           <div className="mb-10">
-            <p className="text-vibe-pink text-[11px] font-semibold tracking-[0.28em] uppercase mb-3">{h.faq.kicker}</p>
-            <h2 className="font-heading text-4xl sm:text-5xl md:text-6xl text-charcoal leading-[1.1] tracking-wide">{h.faq.h2}</h2>
+            <div className="mb-4"><KickerChip tone="pink">{h.faq.kicker}</KickerChip></div>
+            <h2 className="font-heading text-4xl sm:text-5xl md:text-6xl text-charcoal leading-[1.1] tracking-wide"><TwoTone text={h.faq.h2} /></h2>
           </div>
           <div className="space-y-3">
             {h.faq.items.map((f) => (
-              <details key={f.q} className="group rounded-2xl bg-white border border-charcoal/8 open:border-charcoal/20 open:shadow-sm transition-all">
+              <details key={f.q} className="group rounded-2xl bg-white border border-charcoal/10 shadow-sm open:border-vibe-pink/50 open:shadow-md transition-all">
                 <summary className="cursor-pointer list-none px-6 py-5 flex items-start justify-between gap-4 min-h-11">
                   <span className="font-heading text-xl sm:text-2xl text-charcoal leading-tight tracking-wide">{f.q}</span>
-                  <span className="text-stone group-open:rotate-45 transition-transform text-2xl leading-none mt-0.5 shrink-0">+</span>
+                  <span className="inline-flex w-7 h-7 shrink-0 items-center justify-center rounded-full bg-vibe-pink/10 text-[#BE185D] group-open:bg-vibe-pink group-open:text-white group-open:rotate-45 transition-all text-xl leading-none">+</span>
                 </summary>
                 <div className="px-6 pb-6">
                   <p className="text-graphite leading-relaxed text-[15px] sm:text-base">{f.a}</p>
@@ -284,20 +266,21 @@ export default function HomeHousing() {
       <FinnishDivider />
 
       {/* Lomalle Lappiin → laplandstays + omat lomasivut (vaihe 2 ohjaa nämä staysille) */}
-      <section className="py-14 sm:py-20 px-5 sm:px-6 bg-cream-2/60">
-        <div className="max-w-3xl mx-auto">
-          <p className="text-vibe-pink text-[11px] font-semibold tracking-[0.28em] uppercase mb-3">{h.holiday.kicker}</p>
-          <h2 className="font-heading text-3xl sm:text-4xl md:text-5xl text-charcoal leading-tight tracking-wide">{h.holiday.h2}</h2>
-          <p className="text-graphite text-base sm:text-lg mt-4 leading-relaxed">{h.holiday.lead}</p>
+      <section className="relative overflow-hidden py-14 sm:py-20 px-5 sm:px-6 bg-finland-blue text-snow">
+        <div className="pointer-events-none absolute -top-24 -right-16 w-[26rem] h-[26rem] rounded-full bg-vibe-pink/25 blur-3xl" aria-hidden="true" />
+        <div className="relative max-w-3xl mx-auto">
+          <p className="inline-flex px-3 py-1 rounded-full bg-white/12 text-snow text-[11px] font-semibold tracking-[0.18em] uppercase mb-4">{h.holiday.kicker}</p>
+          <h2 className="font-heading text-3xl sm:text-4xl md:text-5xl text-snow leading-tight tracking-wide">{h.holiday.h2}</h2>
+          <p className="text-snow/90 text-base sm:text-lg mt-4 leading-relaxed">{h.holiday.lead}</p>
           <div className="mt-6 flex flex-wrap gap-3">
             {h.holiday.links.map((l) =>
               l.external ? (
-                <a key={l.href} href={l.href} target="_blank" rel="noopener" className="lv-tap inline-flex items-center gap-1.5 px-4 py-2.5 min-h-11 rounded-full bg-vibe-pink text-white text-sm font-semibold" data-umami-event="housing_out" data-umami-event-page="home" data-umami-event-target="laplandstays">
+                <a key={l.href} href={l.href} target="_blank" rel="noopener" className="lv-tap inline-flex items-center gap-1.5 px-4 py-2.5 min-h-11 rounded-full bg-[#DB2777] hover:bg-[#BE185D] text-white text-sm font-semibold transition-colors" data-umami-event="housing_out" data-umami-event-page="home" data-umami-event-target="laplandstays">
                   {l.label}
                   <ArrowUpRight className="w-4 h-4" />
                 </a>
               ) : (
-                <Link key={l.href} to={localePath(l.href)} className="lv-tap inline-flex items-center gap-1.5 px-4 py-2.5 min-h-11 rounded-full bg-white border border-charcoal/15 text-charcoal text-sm font-semibold hover:border-vibe-pink hover:text-vibe-pink transition-colors">
+                <Link key={l.href} to={localePath(l.href)} className="lv-tap inline-flex items-center gap-1.5 px-4 py-2.5 min-h-11 rounded-full bg-white/10 border border-white/25 text-snow text-sm font-semibold hover:bg-white/20 transition-colors">
                   {l.label}
                   <ArrowRight className="w-4 h-4" />
                 </Link>
@@ -312,7 +295,7 @@ export default function HomeHousing() {
       <section className="py-10 sm:py-12 px-5 sm:px-6">
         <div className="max-w-3xl mx-auto">
           <AuthorByline note={h.authorNote} />
-          <p className="mt-8 text-gold text-[11px] font-semibold tracking-[0.28em] uppercase mb-3">{ui.sources}</p>
+          <div className="mt-9 mb-3"><KickerChip tone="gold">{ui.sources}</KickerChip></div>
           <ol className="space-y-1.5 text-[13px] leading-relaxed list-decimal pl-5 marker:text-stone">
             {h.sources.map((s) => (
               <li key={s.id} className="text-graphite">

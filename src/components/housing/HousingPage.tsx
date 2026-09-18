@@ -1,15 +1,41 @@
 import { Link } from 'react-router-dom';
-import { ArrowRight, ArrowUpRight } from 'lucide-react';
+import {
+  ArrowRight,
+  ArrowUpRight,
+  Banknote,
+  Building2,
+  CalendarDays,
+  Car,
+  Check,
+  ClipboardCheck,
+  FileSignature,
+  HandCoins,
+  Home,
+  Info,
+  KeyRound,
+  ListChecks,
+  MapPin,
+  Scale,
+  School,
+  Search,
+  ShieldAlert,
+  Sun,
+  SunMoon,
+  Zap,
+  type LucideIcon,
+} from 'lucide-react';
 import PageHero from '../PageHero';
 import AuthorByline from '../AuthorByline';
-import FinnishDivider from '../FinnishDivider';
 import Newsletter from '../Newsletter';
 import AffiliateCTA from '../AffiliateCTA';
-import WorkInLaplandPromo from '../WorkInLaplandPromo';
+import HousingWorkPromo from './HousingWorkPromo';
+import PlaceGraphic from './PlaceGraphic';
+import { TwoTone } from './ui';
 import { pageUrl } from '../../lib/meta';
 import { useLang, useLocalePath, useLocalPageUrl } from '../../i18n/useLang';
 import { getCopy } from '../../locales/copy';
 import {
+  HOME,
   HOUSING_LANG_NOTICE,
   HOUSING_NAV,
   HOUSING_ROUTES,
@@ -31,6 +57,21 @@ import {
  * Google ei näe kymmentä kopiota (routes.json `nativeLocales` tekee saman
  * prerenderiin).
  *
+ * 🎨 ILME (Vesa 18.9.2026: "saisi eloa vähän, liian vaaleaa kaikkialla, jotain
+ * korostusvärejä"): sivu ei ole valkoista valkoisella. Osiot vuorottelevat
+ * kolmea sävyä (kerma → sävytetty → tumma yökaista korttiosioille), jokaisella
+ * osiolla on väriaksentti (pinkki → Suomen sininen → kulta) kuvakkeessa,
+ * otsikkolapussa ja luettelomerkeissä, taulukon otsikkorivi on tumma, kortit
+ * saavat värillisen yläreunan, numeron tai kuvan, ja kumppani-CTA on sininen
+ * kaista. Värit ovat sivuston omista tokeneista (index.css @theme), ei uusia.
+ * Pieni teksti vaalealla pohjalla käyttää pinkin tummaa porrasta (#BE185D) ja
+ * kullan tummaa porrasta (#7A5C1E), tummalla pohjalla vaaleaa pinkkiä (#F9A8D4),
+ * jotta kontrasti on yli 4,5:1. #EC4899 vain isoissa otsikoissa (3:1 raja).
+ * Älä palauta valkoisia tekstilaatikoita kermapohjalle.
+ *
+ * Tarkistusmerkintä (AuthorByline) on lähteiden yhteydessä sivun lopussa, ei
+ * heron alla (Vesa 17.8. ja 18.9.2026: sivun kärki kuuluu sisällölle).
+ *
  * Mittaus (_jobs/06): sivulla ei ole omaa lomaketta, joten pageview riittää;
  * ulos vievät linkit kantavat `data-umami-event="housing_out"` -attribuutin,
  * jotta näemme mihin lukija lähtee (kunnan sivu, portaali, laplandwork).
@@ -39,12 +80,55 @@ import {
 interface HousingPageProps {
   route: string;
   copy: HousingCopyMap;
-  heroImage: string;
+  /** Tyhjä = PageHeron graafinen tausta (paikasta ei ole rehellistä valokuvaa). */
+  heroImage?: string;
   current: HousingRouteKey;
   /** Paikkakuntasivut: murupolun välitaso. */
   parent?: { route: string; key: HousingRouteKey };
   workPromo?: 'inline' | 'full' | 'none';
 }
+
+type Tone = 'plain' | 'tint' | 'night';
+type AccentKey = 'pink' | 'blue' | 'gold';
+
+const ACCENT_ORDER: AccentKey[] = ['pink', 'blue', 'gold'];
+
+/** Aksentin luokat vaalealla pohjalla. Tummalla kaistalla käytetään NIGHT_BARS-värejä. */
+const ACCENT: Record<AccentKey, { bar: string; icon: string; chip: string; dot: string }> = {
+  pink: { bar: 'bg-vibe-pink', icon: 'bg-vibe-pink text-white', chip: 'bg-vibe-pink/10 text-[#BE185D]', dot: 'bg-vibe-pink' },
+  blue: { bar: 'bg-finland-blue', icon: 'bg-finland-blue text-white', chip: 'bg-finland-blue/10 text-finland-blue', dot: 'bg-finland-blue' },
+  gold: { bar: 'bg-gold', icon: 'bg-gold text-night', chip: 'bg-gold-soft/70 text-[#7A5C1E]', dot: 'bg-gold' },
+};
+const NIGHT_BARS = ['bg-vibe-pink', 'bg-arctic-cyan', 'bg-gold'];
+
+const SECTION_ICON: Record<string, LucideIcon> = {
+  hinnat: Banknote, prices: Banknote, vuokra: Banknote, rent: Banknote,
+  asumistuki: HandCoins, 'housing-allowance': HandCoins,
+  sopimus: FileSignature, contract: FileSignature,
+  kysy: ClipboardCheck, ask: ClipboardCheck, ennen: ClipboardCheck, 'before-signing': ClipboardCheck,
+  'ennen-maksua': ShieldAlert, 'before-paying': ShieldAlert,
+  paikkakunnat: MapPin, towns: MapPin, places: MapPin,
+  kanavat: Building2, channels: Building2,
+  portaalit: Search, portals: Search,
+  milloin: CalendarDays, when: CalendarDays,
+  viikko: ListChecks, 'week-one': ListChecks,
+  auto: Car, car: Car, liikkuminen: Car, 'getting-around': Car,
+  lapset: School, children: School,
+  valo: SunMoon, light: SunMoon,
+  kesa: Sun, summer: Sun,
+  sahko: Zap, electricity: Zap,
+  yhteenveto: Scale, summary: Scale,
+  'kolme-tapaa': KeyRound, 'three-ways': KeyRound,
+};
+
+/** Muiden asumissivujen pikkukuvat (240 px, omat valokuvat). */
+const SIBLING_THUMB: Record<HousingRouteKey | 'home', string> = {
+  home: '/images/housing-thumb-home.webp',
+  rentals: '/images/housing-thumb-rentals.webp',
+  seasonal: '/images/housing-thumb-seasonal.webp',
+  moving: '/images/housing-thumb-moving.webp',
+  cost: '/images/housing-thumb-cost.webp',
+};
 
 const OUT_ATTRS = (page: string, target?: string) => ({
   'data-umami-event': 'housing_out',
@@ -52,27 +136,25 @@ const OUT_ATTRS = (page: string, target?: string) => ({
   'data-umami-event-target': target ?? 'link',
 });
 
+const LINK_LIGHT = '[&_a]:text-[#BE185D] [&_a]:font-medium [&_a]:underline [&_a]:underline-offset-2 hover:[&_a]:text-[#9D174D]';
+
 function Html({ html, className }: { html: string; className?: string }) {
   return <p className={className} dangerouslySetInnerHTML={{ __html: html }} />;
 }
 
 function Table({ t }: { t: FactTable }) {
   return (
-    <div className="mt-6">
-      <div className="overflow-x-auto -mx-5 sm:mx-0">
+    <div className="mt-7">
+      {t.caption && <p className="pb-2.5 text-[11px] font-semibold uppercase tracking-[0.18em] text-graphite">{t.caption}</p>}
+      <div className="overflow-x-auto -mx-5 sm:mx-0 border-y sm:border border-charcoal/10 sm:rounded-2xl bg-white shadow-sm">
         <table className="w-full border-collapse text-[13px] sm:text-[15px] table-auto">
-          {t.caption && (
-            <caption className="text-left px-5 sm:px-0 pb-2 text-[11px] font-semibold uppercase tracking-[0.2em] text-stone">
-              {t.caption}
-            </caption>
-          )}
           <thead>
-            <tr>
+            <tr className="bg-night">
               {t.head.map((h, i) => (
                 <th
                   key={i}
                   scope="col"
-                  className={`px-2 sm:px-3 py-2 text-[11px] sm:text-[12px] font-semibold uppercase tracking-[0.08em] sm:tracking-[0.12em] text-stone border-b border-charcoal/15 align-bottom ${i === 0 ? 'text-left pl-5 sm:pl-3' : 'text-right'} ${i === t.head.length - 1 ? 'pr-5 sm:pr-3' : ''}`}
+                  className={`px-2 sm:px-4 py-3 text-[11px] sm:text-[12px] font-semibold uppercase tracking-[0.08em] sm:tracking-[0.12em] text-snow align-bottom ${i === 0 ? 'text-left pl-5 sm:pl-5' : 'text-right'} ${i === t.head.length - 1 ? 'pr-5 sm:pr-5' : ''}`}
                 >
                   {h}
                 </th>
@@ -81,11 +163,11 @@ function Table({ t }: { t: FactTable }) {
           </thead>
           <tbody>
             {t.rows.map((r, ri) => (
-              <tr key={ri} className="border-b border-charcoal/10">
+              <tr key={ri} className="border-t border-charcoal/8 odd:bg-white even:bg-cream-2/55 hover:bg-vibe-pink/5 transition-colors">
                 {r.map((c, ci) => (
                   <td
                     key={ci}
-                    className={`px-2 sm:px-3 py-2.5 ${ci === 0 ? 'text-left text-charcoal font-semibold pl-5 sm:pl-3' : 'text-right text-graphite tabular-nums'} ${ci === r.length - 1 ? 'pr-5 sm:pr-3' : ''}`}
+                    className={`px-2 sm:px-4 py-3 ${ci === 0 ? 'text-left text-charcoal font-semibold pl-5 sm:pl-5' : 'text-right text-charcoal tabular-nums'} ${ci === r.length - 1 ? 'pr-5 sm:pr-5' : ''}`}
                   >
                     {c}
                   </td>
@@ -95,30 +177,73 @@ function Table({ t }: { t: FactTable }) {
           </tbody>
         </table>
       </div>
-      {t.foot && <p className="mt-2 text-stone text-[12px] leading-relaxed">{t.foot}</p>}
+      {t.foot && <p className="mt-2.5 text-stone text-[12px] leading-relaxed">{t.foot}</p>}
     </div>
   );
 }
 
-function CardGrid({ cards, page }: { cards: Card[]; page: string }) {
+function CardGrid({ cards, page, tone }: { cards: Card[]; page: string; tone: Tone }) {
   const localePath = useLocalePath();
+  const night = tone === 'night';
+  const anyImage = cards.some((c) => c.image);
   return (
-    <div className="max-w-6xl mx-auto mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-5">
-      {cards.map((c) => {
+    <div className="relative max-w-6xl mx-auto mt-9 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-5">
+      {cards.map((c, i) => {
         const internal = !!c.href && c.href.startsWith('/');
+        const numbered = c.title.match(/^(\d+)\.\s+(.+)$/);
+        const title = numbered ? numbered[2] : c.title;
+        const accent = ACCENT[ACCENT_ORDER[i % 3]];
+        const bar = night ? NIGHT_BARS[i % 3] : accent.bar;
         const body = (
           <>
-            <h3 className="font-heading text-2xl text-charcoal leading-tight tracking-wide mb-2">{c.title}</h3>
-            <p className="text-graphite text-[14px] leading-relaxed flex-1" dangerouslySetInnerHTML={{ __html: c.body }} />
-            {c.href && c.linkLabel && (
-              <span className="mt-4 inline-flex items-center gap-1.5 text-vibe-pink text-sm font-semibold">
-                {c.linkLabel}
-                {internal ? <ArrowRight className="w-4 h-4" /> : <ArrowUpRight className="w-4 h-4" />}
-              </span>
+            {anyImage ? (
+              <div className="relative aspect-[4/3] overflow-hidden bg-night">
+                {c.image ? (
+                  <img
+                    src={c.image.src}
+                    alt={c.image.alt}
+                    className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                ) : (
+                  <PlaceGraphic />
+                )}
+                <div className="absolute inset-0 bg-gradient-to-t from-night/80 via-night/10 to-transparent" />
+                <h3 className="absolute bottom-3.5 left-5 right-5 font-heading text-2xl sm:text-[28px] text-snow leading-tight tracking-wide drop-shadow">{title}</h3>
+              </div>
+            ) : (
+              <div className={`h-1.5 w-full ${bar}`} aria-hidden="true" />
             )}
+            <div className="flex flex-col flex-1 p-6">
+              {!anyImage && (
+                <div className="flex items-start gap-3 mb-3">
+                  {numbered && (
+                    <span className={`inline-flex w-10 h-10 shrink-0 items-center justify-center rounded-full font-heading text-2xl leading-none ${night ? 'bg-white/10 text-vibe-pink' : accent.icon}`}>
+                      {numbered[1]}
+                    </span>
+                  )}
+                  <h3 className={`font-heading text-2xl leading-tight tracking-wide ${numbered ? 'pt-1.5' : ''} ${night ? 'text-snow' : 'text-charcoal'}`}>{title}</h3>
+                </div>
+              )}
+              <p
+                className={`text-[14.5px] leading-relaxed flex-1 ${night ? 'text-snow/80 [&_a]:text-[#F9A8D4] [&_a]:underline [&_strong]:text-snow' : `text-graphite ${LINK_LIGHT}`}`}
+                dangerouslySetInnerHTML={{ __html: c.body }}
+              />
+              {c.href && c.linkLabel && (
+                <span className={`mt-4 inline-flex items-center gap-1.5 text-sm font-semibold group-hover:gap-2.5 transition-all ${night ? 'text-[#F9A8D4]' : 'text-[#BE185D]'}`}>
+                  {c.linkLabel}
+                  {internal ? <ArrowRight className="w-4 h-4 shrink-0" /> : <ArrowUpRight className="w-4 h-4 shrink-0" />}
+                </span>
+              )}
+            </div>
           </>
         );
-        const cls = 'group flex flex-col h-full p-6 bg-white border border-charcoal/8 rounded-2xl hover:border-charcoal/20 hover:shadow-md transition-all';
+        const cls = `group flex flex-col h-full overflow-hidden rounded-2xl border transition-all duration-300 ${
+          night
+            ? 'bg-white/[0.06] border-white/12 hover:bg-white/[0.1] hover:border-white/25'
+            : 'bg-white border-charcoal/10 shadow-sm hover:shadow-lg hover:-translate-y-0.5 hover:border-charcoal/20'
+        }`;
         if (c.href && internal) {
           return (
             <Link key={c.title} to={localePath(c.href)} className={cls}>
@@ -143,44 +268,75 @@ function CardGrid({ cards, page }: { cards: Card[]; page: string }) {
   );
 }
 
-function SectionBlock({ s, page }: { s: Section; page: string }) {
+function SectionBlock({ s, page, tone, accentKey }: { s: Section; page: string; tone: Tone; accentKey: AccentKey }) {
+  const night = tone === 'night';
+  const accent = ACCENT[accentKey];
+  const Icon = SECTION_ICON[s.id] ?? Home;
+  const bg = night ? 'bg-night text-snow' : tone === 'tint' ? 'bg-cream-2/70' : '';
   return (
-    <section id={s.id} className={`py-12 sm:py-16 px-5 sm:px-6 ${s.band ? 'bg-cream-2/60' : ''}`}>
-      <div className="max-w-3xl mx-auto">
-        {s.kicker && (
-          <p className="text-vibe-pink text-[11px] font-semibold tracking-[0.28em] uppercase mb-3">{s.kicker}</p>
-        )}
-        <h2 className="font-heading text-3xl sm:text-4xl md:text-5xl text-charcoal leading-tight tracking-wide">{s.h2}</h2>
-        {s.lead && <p className="text-graphite text-base sm:text-lg mt-4 leading-relaxed">{s.lead}</p>}
+    <section id={s.id} className={`relative overflow-hidden scroll-mt-24 py-14 sm:py-20 px-5 sm:px-6 ${bg}`}>
+      {night && (
+        <>
+          <div className="pointer-events-none absolute -top-32 -left-24 w-[28rem] h-[28rem] rounded-full bg-vibe-pink/20 blur-3xl" aria-hidden="true" />
+          <div className="pointer-events-none absolute -bottom-40 -right-24 w-[32rem] h-[32rem] rounded-full bg-arctic-cyan/10 blur-3xl" aria-hidden="true" />
+        </>
+      )}
+      <div className={`relative mx-auto ${s.cards ? 'max-w-6xl' : 'max-w-3xl'}`}>
+        <div className="flex items-center gap-3 mb-4">
+          <span className={`inline-flex w-10 h-10 shrink-0 items-center justify-center rounded-xl shadow-sm ${night ? 'bg-vibe-pink text-white' : accent.icon}`} aria-hidden="true">
+            <Icon className="w-5 h-5" />
+          </span>
+          {s.kicker && (
+            <p className={`inline-flex px-3 py-1 rounded-full text-[11px] font-semibold tracking-[0.18em] uppercase ${night ? 'bg-white/10 text-[#F9A8D4]' : accent.chip}`}>
+              {s.kicker}
+            </p>
+          )}
+        </div>
+        <h2 className={`font-heading text-3xl sm:text-4xl md:text-5xl leading-tight tracking-wide ${night ? 'text-snow' : 'text-charcoal'}`}>
+          <TwoTone text={s.h2} />
+        </h2>
+        <div className={`mt-4 h-1 w-14 rounded-full ${night ? 'bg-vibe-pink' : accent.bar}`} aria-hidden="true" />
+        {s.lead && <p className={`max-w-3xl text-base sm:text-lg mt-5 leading-relaxed ${night ? 'text-snow/85' : 'text-graphite'}`}>{s.lead}</p>}
         {s.table && <Table t={s.table} />}
         {s.paras && (
-          <div className="mt-6 space-y-4 text-graphite text-[16px] leading-relaxed [&_a]:text-vibe-pink [&_a]:underline [&_a]:underline-offset-2">
+          <div className={`mt-6 space-y-4 text-[16px] leading-relaxed ${night ? 'text-snow/85 [&_a]:text-[#F9A8D4] [&_a]:underline' : `text-graphite ${LINK_LIGHT}`}`}>
             {s.paras.map((p, i) => (
               <Html key={i} html={p} />
             ))}
           </div>
         )}
         {s.bullets && (
-          <ul className="mt-6 space-y-3 text-graphite text-[16px] leading-relaxed list-disc pl-5 marker:text-vibe-pink [&_a]:text-vibe-pink [&_a]:underline [&_a]:underline-offset-2">
+          <ul className={`mt-7 rounded-2xl border p-5 sm:p-7 space-y-4 ${night ? 'bg-white/[0.06] border-white/12' : 'bg-white border-charcoal/10 shadow-sm'}`}>
             {s.bullets.map((b, i) => (
-              <li key={i} dangerouslySetInnerHTML={{ __html: b }} />
+              <li key={i} className="flex items-start gap-3.5">
+                <span className={`mt-0.5 inline-flex w-6 h-6 shrink-0 items-center justify-center rounded-full ${night ? 'bg-vibe-pink text-white' : accent.icon}`} aria-hidden="true">
+                  <Check className="w-3.5 h-3.5" strokeWidth={3} />
+                </span>
+                <span
+                  className={`text-[16px] leading-relaxed ${night ? 'text-snow/85 [&_a]:text-[#F9A8D4] [&_a]:underline' : `text-graphite [&_strong]:text-charcoal ${LINK_LIGHT}`}`}
+                  dangerouslySetInnerHTML={{ __html: b }}
+                />
+              </li>
             ))}
           </ul>
         )}
         {s.note && (
-          <aside className="mt-8 px-5 py-4 sm:px-6 sm:py-5 bg-cream-2 border-l-2 border-gold rounded-r-md">
-            <p className="text-gold text-[11px] font-semibold tracking-[0.2em] uppercase mb-2">{s.note.label}</p>
-            <p className="text-graphite text-[15px] leading-relaxed italic">{s.note.body}</p>
+          <aside className="mt-8 flex gap-3.5 px-5 py-4 sm:px-6 sm:py-5 bg-gold-soft/45 border-l-4 border-gold rounded-r-xl">
+            <Info className="w-5 h-5 shrink-0 mt-0.5 text-[#7A5C1E]" aria-hidden="true" />
+            <div>
+              <p className="text-[#7A5C1E] text-[11px] font-semibold tracking-[0.18em] uppercase mb-1.5">{s.note.label}</p>
+              <p className="text-charcoal text-[15px] leading-relaxed">{s.note.body}</p>
+            </div>
           </aside>
         )}
       </div>
-      {s.cards && <CardGrid cards={s.cards} page={page} />}
+      {s.cards && <CardGrid cards={s.cards} page={page} tone={tone} />}
       {s.image && (
-        <figure className="max-w-3xl mx-auto mt-8">
-          <div className={`relative overflow-hidden rounded-2xl bg-night ${s.image.ratio === '4/3' ? 'aspect-[4/3]' : 'aspect-[16/9]'}`}>
+        <figure className="relative max-w-3xl mx-auto mt-9">
+          <div className={`relative overflow-hidden rounded-2xl bg-night shadow-md ${s.image.ratio === '4/3' ? 'aspect-[4/3]' : 'aspect-[16/9]'}`}>
             <img src={s.image.src} alt={s.image.alt} className="absolute inset-0 w-full h-full object-cover" loading="lazy" decoding="async" />
           </div>
-          <figcaption className="mt-3 text-stone text-xs sm:text-sm italic leading-relaxed">{s.image.caption}</figcaption>
+          <figcaption className={`mt-3 text-xs sm:text-sm italic leading-relaxed ${night ? 'text-snow/70' : 'text-stone'}`}>{s.image.caption}</figcaption>
         </figure>
       )}
     </section>
@@ -230,6 +386,13 @@ export default function HousingPage({ route, copy, heroImage, current, parent, w
 
   const siblings = (Object.keys(HOUSING_ROUTES) as HousingRouteKey[]).filter((k) => k !== current);
 
+  // Sävyrytmi: korttikaista (band) on tumma, muut vuorottelevat sävytettyä ja kermaa.
+  const tones: Tone[] = [];
+  c.sections.forEach((s, i) => {
+    const prev: Tone = i === 0 ? 'plain' : tones[i - 1];
+    tones.push(s.cards && s.band ? 'night' : prev === 'tint' ? 'plain' : 'tint');
+  });
+
   return (
     <>
       <title>{c.metaTitle}</title>
@@ -251,124 +414,138 @@ export default function HousingPage({ route, copy, heroImage, current, parent, w
         </div>
       )}
 
+      {/* Johdanto + sisällysnavigaatio. Ei tarkistusmerkintää eikä sivuston itsepuhetta kärjessä. */}
       <section className="py-12 sm:py-16 px-5 sm:px-6">
         <div className="max-w-3xl mx-auto">
-          <AuthorByline note={c.authorNote} />
-          <div className="mt-8 space-y-5 text-graphite text-base sm:text-[17px] leading-relaxed [&_a]:text-vibe-pink [&_a]:underline [&_a]:underline-offset-2">
+          <div className={`space-y-5 text-graphite text-base sm:text-[17px] leading-relaxed [&>p:first-child]:text-charcoal [&>p:first-child]:text-lg sm:[&>p:first-child]:text-xl [&>p:first-child]:leading-relaxed ${LINK_LIGHT}`}>
             {c.intro.map((p, i) => (
               <Html key={i} html={p} />
             ))}
           </div>
+          <nav aria-label={ui.onThisPage} className="mt-9">
+            <p className="text-[11px] font-semibold tracking-[0.2em] uppercase text-graphite mb-3">{ui.onThisPage}</p>
+            <div className="flex flex-wrap gap-2">
+              {c.sections.map((s, i) => (
+                <a
+                  key={s.id}
+                  href={`#${s.id}`}
+                  className="lv-tap inline-flex items-center gap-2 px-3.5 py-2 min-h-11 rounded-full bg-white border border-charcoal/12 text-charcoal text-[13px] font-semibold shadow-sm hover:border-vibe-pink hover:text-[#BE185D] transition-colors"
+                >
+                  <span className={`w-2.5 h-2.5 rounded-full ${ACCENT[ACCENT_ORDER[i % 3]].dot}`} aria-hidden="true" />
+                  {s.kicker ?? s.h2}
+                </a>
+              ))}
+            </div>
+          </nav>
           {workPromo === 'inline' && (
             <div className="mt-10">
-              <WorkInLaplandPromo placement={`housing_${current}`} variant="inline" />
+              <HousingWorkPromo copy={HOME[hl].work} placement={`housing_${current}`} variant="strip" />
             </div>
           )}
         </div>
       </section>
 
       {c.sections.map((s, i) => (
-        <div key={s.id}>
-          {i > 0 && <FinnishDivider />}
-          <SectionBlock s={s} page={page} />
-        </div>
+        <SectionBlock key={s.id} s={s} page={page} tone={tones[i]} accentKey={ACCENT_ORDER[i % 3]} />
       ))}
 
       {c.cta && (
-        <>
-          <FinnishDivider />
-          <section className="py-14 sm:py-20 px-5 sm:px-6 bg-cream-2/60">
-            <div className="max-w-3xl mx-auto">
-              <p className="text-vibe-pink text-[11px] font-semibold tracking-[0.28em] uppercase mb-3">{c.cta.kicker}</p>
-              <h2 className="font-heading text-3xl sm:text-4xl md:text-5xl text-charcoal leading-tight tracking-wide">{c.cta.h2}</h2>
-              <p className="text-graphite text-base sm:text-lg mt-4 leading-relaxed">{c.cta.lead}</p>
-              <div className="mt-6 flex flex-wrap gap-3">
-                {c.cta.chips.map((chip) => (
-                  <AffiliateCTA
-                    key={chip.sid}
-                    partner={c.cta!.partner}
-                    sid={chip.sid}
-                    destination={chip.destination}
-                    className="inline-flex items-center gap-2 px-5 py-3 min-h-11 bg-vibe-pink hover:bg-vibe-pink/90 text-white rounded-full text-sm font-semibold transition-colors shadow-sm shadow-vibe-pink/30"
-                  >
-                    {chip.label}
-                    <ArrowUpRight className="w-4 h-4" />
-                  </AffiliateCTA>
-                ))}
-              </div>
-              <p className="mt-4 text-stone text-[12px]">{ui.affiliateNote}</p>
+        <section className="relative overflow-hidden py-14 sm:py-20 px-5 sm:px-6 bg-finland-blue text-snow">
+          <div className="pointer-events-none absolute -top-24 -right-16 w-[26rem] h-[26rem] rounded-full bg-vibe-pink/25 blur-3xl" aria-hidden="true" />
+          <div className="relative max-w-3xl mx-auto">
+            <p className="inline-flex px-3 py-1 rounded-full bg-white/12 text-snow text-[11px] font-semibold tracking-[0.18em] uppercase mb-4">{c.cta.kicker}</p>
+            <h2 className="font-heading text-3xl sm:text-4xl md:text-5xl text-snow leading-tight tracking-wide">
+              <TwoTone text={c.cta.h2} />
+            </h2>
+            <p className="text-snow/90 text-base sm:text-lg mt-4 leading-relaxed">{c.cta.lead}</p>
+            <div className="mt-7 flex flex-wrap gap-3">
+              {c.cta.chips.map((chip) => (
+                <AffiliateCTA
+                  key={chip.sid}
+                  partner={c.cta!.partner}
+                  sid={chip.sid}
+                  destination={chip.destination}
+                  className="inline-flex items-center gap-2 px-5 py-3 min-h-11 bg-[#DB2777] hover:bg-[#BE185D] text-white rounded-full text-sm font-semibold transition-colors shadow-md shadow-night/30"
+                >
+                  {chip.label}
+                  <ArrowUpRight className="w-4 h-4" />
+                </AffiliateCTA>
+              ))}
             </div>
-          </section>
-        </>
+            <p className="mt-5 text-snow/75 text-[12px]">{ui.affiliateNote}</p>
+          </div>
+        </section>
       )}
 
       {c.faqs && c.faqs.length > 0 && (
-        <>
-          <FinnishDivider />
-          <section className="py-14 sm:py-20 px-5 sm:px-6">
-            <div className="max-w-3xl mx-auto">
-              <p className="text-vibe-pink text-[11px] font-semibold tracking-[0.28em] uppercase mb-3">{ui.faqKicker}</p>
-              <h2 className="font-heading text-3xl sm:text-4xl md:text-5xl text-charcoal leading-tight tracking-wide mb-8">{ui.faqH2}</h2>
-              <div className="space-y-3">
-                {c.faqs.map((f) => (
-                  <details key={f.q} className="group rounded-2xl bg-white border border-charcoal/8 open:border-charcoal/20 open:shadow-sm transition-all">
-                    <summary className="cursor-pointer list-none px-6 py-5 flex items-start justify-between gap-4 min-h-11">
-                      <span className="font-heading text-xl sm:text-2xl text-charcoal leading-tight tracking-wide">{f.q}</span>
-                      <span className="text-stone group-open:rotate-45 transition-transform text-2xl leading-none mt-0.5 shrink-0">+</span>
-                    </summary>
-                    <div className="px-6 pb-6">
-                      <p className="text-graphite leading-relaxed text-[15px] sm:text-base">{f.a}</p>
-                    </div>
-                  </details>
-                ))}
-              </div>
+        <section className="py-14 sm:py-20 px-5 sm:px-6">
+          <div className="max-w-3xl mx-auto">
+            <p className="inline-flex px-3 py-1 rounded-full bg-vibe-pink/10 text-[#BE185D] text-[11px] font-semibold tracking-[0.18em] uppercase mb-4">{ui.faqKicker}</p>
+            <h2 className="font-heading text-3xl sm:text-4xl md:text-5xl text-charcoal leading-tight tracking-wide mb-8">
+              <TwoTone text={ui.faqH2} />
+            </h2>
+            <div className="space-y-3">
+              {c.faqs.map((f) => (
+                <details key={f.q} className="group rounded-2xl bg-white border border-charcoal/10 shadow-sm open:border-vibe-pink/50 open:shadow-md transition-all">
+                  <summary className="cursor-pointer list-none px-6 py-5 flex items-start justify-between gap-4 min-h-11">
+                    <span className="font-heading text-xl sm:text-2xl text-charcoal leading-tight tracking-wide group-hover:text-[#BE185D] transition-colors">{f.q}</span>
+                    <span className="inline-flex w-7 h-7 shrink-0 items-center justify-center rounded-full bg-vibe-pink/10 text-[#BE185D] group-open:bg-vibe-pink group-open:text-white group-open:rotate-45 transition-all text-xl leading-none">+</span>
+                  </summary>
+                  <div className="px-6 pb-6">
+                    <p className="text-graphite leading-relaxed text-[15px] sm:text-base">{f.a}</p>
+                  </div>
+                </details>
+              ))}
             </div>
-          </section>
-        </>
+          </div>
+        </section>
       )}
 
-      {workPromo === 'full' && (
-        <>
-          <FinnishDivider />
-          <WorkInLaplandPromo placement={`housing_${current}_full`} />
-        </>
-      )}
+      {workPromo === 'full' && <HousingWorkPromo copy={HOME[hl].work} placement={`housing_${current}_full`} />}
 
-      <FinnishDivider />
-      <section className="py-12 sm:py-16 px-5 sm:px-6 bg-cream-2/60">
+      {/* Muut asumisen sivut: kuvalliset linkit */}
+      <section className="py-12 sm:py-16 px-5 sm:px-6 bg-cream-2/70">
+        <div className="max-w-6xl mx-auto">
+          <p className="inline-flex px-3 py-1 rounded-full bg-finland-blue/10 text-finland-blue text-[11px] font-semibold tracking-[0.18em] uppercase mb-4">{ui.siblingsKicker}</p>
+          <h2 className="font-heading text-3xl sm:text-4xl text-charcoal leading-tight tracking-wide mb-7">
+            <TwoTone text={ui.siblingsH2} />
+          </h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4">
+            {(['home', ...siblings] as (HousingRouteKey | 'home')[]).map((k) => (
+              <Link
+                key={k}
+                to={localePath(k === 'home' ? '/' : HOUSING_ROUTES[k])}
+                className="group flex items-center gap-4 p-3 pr-4 min-h-11 rounded-2xl bg-white border border-charcoal/10 shadow-sm hover:shadow-md hover:border-vibe-pink/50 transition-all"
+              >
+                <span className="relative block w-20 h-[60px] shrink-0 overflow-hidden rounded-xl bg-night">
+                  <img src={SIBLING_THUMB[k]} alt="" className="absolute inset-0 w-full h-full object-cover" loading="lazy" decoding="async" />
+                </span>
+                <span className="flex-1 font-semibold text-charcoal text-[15px] leading-snug group-hover:text-[#BE185D] transition-colors">
+                  {k === 'home' ? HOUSING_NAV.housingHome[lang] : HOUSING_NAV[k][lang]}
+                </span>
+                <ArrowRight className="w-4 h-4 shrink-0 text-[#BE185D] group-hover:translate-x-0.5 transition-transform" />
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Lähteet + tarkistusmerkintä sivun lopussa */}
+      <section className="py-12 sm:py-16 px-5 sm:px-6">
         <div className="max-w-3xl mx-auto">
-          <p className="text-gold text-[11px] font-semibold tracking-[0.28em] uppercase mb-3">{ui.sources}</p>
+          <AuthorByline note={c.authorNote} />
+          <p className="mt-9 inline-flex px-3 py-1 rounded-full bg-gold-soft/70 text-[#7A5C1E] text-[11px] font-semibold tracking-[0.18em] uppercase mb-3">{ui.sources}</p>
           <p className="text-graphite text-[15px] leading-relaxed mb-4">{ui.sourcesLead}</p>
           <ol className="space-y-2 text-[14px] leading-relaxed list-decimal pl-5 marker:text-stone">
             {c.sources.map((s) => (
               <li key={s.id} className="text-graphite">
-                <a href={s.url} target="_blank" rel="noopener" className="text-charcoal underline underline-offset-2 hover:text-vibe-pink" {...OUT_ATTRS(page, `source_${s.id}`)}>
+                <a href={s.url} target="_blank" rel="noopener" className="text-charcoal underline underline-offset-2 hover:text-[#BE185D]" {...OUT_ATTRS(page, `source_${s.id}`)}>
                   {s.label}
                 </a>
               </li>
             ))}
           </ol>
           <p className="mt-4 text-stone text-[12px]">{ui.updated}</p>
-        </div>
-      </section>
-
-      <FinnishDivider />
-      <section className="py-12 sm:py-16 px-5 sm:px-6">
-        <div className="max-w-6xl mx-auto">
-          <p className="text-vibe-pink text-[11px] font-semibold tracking-[0.28em] uppercase mb-3">{ui.siblingsKicker}</p>
-          <h2 className="font-heading text-3xl sm:text-4xl text-charcoal leading-tight tracking-wide mb-6">{ui.siblingsH2}</h2>
-          <div className="flex flex-wrap gap-3">
-            <Link to={localePath('/')} className="lv-tap inline-flex items-center gap-1.5 px-4 py-2.5 min-h-11 rounded-full bg-white border border-charcoal/15 text-charcoal text-sm font-semibold hover:border-vibe-pink hover:text-vibe-pink transition-colors">
-              {HOUSING_NAV.housingHome[lang]}
-              <ArrowRight className="w-4 h-4" />
-            </Link>
-            {siblings.map((k) => (
-              <Link key={k} to={localePath(HOUSING_ROUTES[k])} className="lv-tap inline-flex items-center gap-1.5 px-4 py-2.5 min-h-11 rounded-full bg-white border border-charcoal/15 text-charcoal text-sm font-semibold hover:border-vibe-pink hover:text-vibe-pink transition-colors">
-                {HOUSING_NAV[k][lang]}
-                <ArrowRight className="w-4 h-4" />
-              </Link>
-            ))}
-          </div>
         </div>
       </section>
 

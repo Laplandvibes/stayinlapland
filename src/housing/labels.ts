@@ -90,6 +90,7 @@ export const HOUSING_UI: Record<HousingLang, {
   siblingsH2: string;
   photoCredit: string;
   affiliateNote: string;
+  onThisPage: string;
 }> = {
   fi: {
     sources: 'Lähteet',
@@ -102,6 +103,7 @@ export const HOUSING_UI: Record<HousingLang, {
     siblingsH2: 'Muut asumisen sivut.',
     photoCredit: 'Kuva: LaplandVibes',
     affiliateNote: 'Kumppanilinkki: varaus tuo meille komission, sinulle hinta on sama.',
+    onThisPage: 'Tällä sivulla',
   },
   en: {
     sources: 'Sources',
@@ -114,6 +116,7 @@ export const HOUSING_UI: Record<HousingLang, {
     siblingsH2: 'The other housing pages.',
     photoCredit: 'Photo: LaplandVibes',
     affiliateNote: 'Partner link: a booking earns us a commission, the price to you is the same.',
+    onThisPage: 'On this page',
   },
 };
 

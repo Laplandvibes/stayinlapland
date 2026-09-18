@@ -24,6 +24,7 @@ export interface HousingHomeCopy {
     kicker: string;
     h2: string;
     lead: string;
+    /** image tyhjä = paikasta ei ole omaa valokuvaa, kortti saa graafisen taustan (PlaceGraphic). */
     items: { slug: RentalTownSlugLiteral; name: string; fact: string; body: string; cta: string; image: string; alt: string; pos?: string }[];
     more: string;
   };
@@ -33,7 +34,7 @@ export interface HousingHomeCopy {
     lead: string;
     cards: { key: HousingRouteKey | 'longStays'; title: string; body: string; image: string; alt: string; pos?: string }[];
   };
-  work: { kicker: string; h2a: string; h2b: string; body: string; cta: string; image: string; alt: string; caption: string };
+  work: { kicker: string; h2a: string; h2b: string; body: string; stripText: string; cta: string; image: string; alt: string; caption: string };
   faq: { kicker: string; h2: string; items: Faq[] };
   holiday: { kicker: string; h2: string; lead: string; links: { label: string; href: string; external?: boolean }[] };
   authorNote: string;
@@ -46,7 +47,7 @@ const IMG = {
   rovaniemi: '/images/housing-rovaniemi-lappia-card.webp',
   kemiTornio: '/images/housing-tornio-kerrostalo-card.webp',
   levi: '/images/housing-levi-uudet-talot.webp',
-  inari: '/images/housing-tunturimaisema.webp',
+  inari: '',
   seasonal: '/images/housing-levi-keskusta-card.webp',
   moving: '/images/housing-tornionjoki-card.webp',
   cost: '/images/housing-jouninkauppa.webp',
@@ -115,7 +116,7 @@ export const HOME: Record<HousingLang, HousingHomeCopy> = {
           body: 'Kunnan Inarin Vuokra-asunnot Oy:llä on yli 500 asuntoa Ivalossa, Inarissa ja Saariselällä.',
           cta: 'Ivalon ja Inarin vuokra-asunnot',
           image: IMG.inari,
-          alt: 'Tunturimaisema Lapissa kesällä',
+          alt: '',
         },
       ],
       more: 'Kolari ja Ylläs, Sodankylä ja muut kunnat',
@@ -158,8 +159,9 @@ export const HOME: Record<HousingLang, HousingHomeCopy> = {
     work: {
       kicker: 'Sisarsivusto · LaplandWork.com',
       h2a: 'Työpaikka ensin,',
-      h2b: 'asunto sen mukaan.',
+      h2b: 'asunto sen\u00a0mukaan.',
       body: 'LaplandWork.com kokoaa Lapin avoimet työpaikat: hiihtokeskukset, hotellit, ohjelmapalvelut ja terveydenhuolto. Kausitöissä asunto tulee usein työn mukana, joten katso paikat ennen kuin etsit vuokra-asuntoa.',
+      stripText: 'LaplandWork.com: Lapin avoimet työpaikat hiihtokeskuksissa, hotelleissa ja terveydenhuollossa.',
       cta: 'Selaa työpaikkoja',
       image: IMG.work,
       alt: 'Ylläksen hiihtokeskuksen vuokraamo ja hiihtokoulu kesällä, lumitykit varastoituna katoksen alle',
@@ -266,7 +268,7 @@ export const HOME: Record<HousingLang, HousingHomeCopy> = {
           body: 'The municipal company Inarin Vuokra-asunnot Oy has over 500 flats in Ivalo, Inari and Saariselkä.',
           cta: 'Renting in Ivalo and Inari',
           image: IMG.inari,
-          alt: 'A fell landscape in Lapland in summer',
+          alt: '',
         },
       ],
       more: 'Kolari and Ylläs, Sodankylä and the other municipalities',
@@ -309,8 +311,9 @@ export const HOME: Record<HousingLang, HousingHomeCopy> = {
     work: {
       kicker: 'Sister site · LaplandWork.com',
       h2a: 'The job first,',
-      h2b: 'the home follows.',
+      h2b: 'the home\u00a0follows.',
       body: 'LaplandWork.com lists the open jobs in Lapland: ski resorts, hotels, activity companies and healthcare. Seasonal jobs often come with housing, so look at the vacancies before you hunt for a flat.',
+      stripText: 'LaplandWork.com: open jobs in Lapland’s ski resorts, hotels and healthcare.',
       cta: 'Browse jobs',
       image: IMG.work,
       alt: 'The ski rental and ski school at the Ylläs resort in summer, snow cannons stored under the canopy',

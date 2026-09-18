@@ -33,6 +33,9 @@ export interface Card {
   linkLabel?: string;
   /** Umami-eventin data-arvo linkille (link-CTA-sääntö, _jobs/06). */
   event?: string;
+  /** Paikkakuntakortin oma valokuva. Jos ruudukossa on yksikin kuva, kuvattomat kortit saavat graafisen taustan
+   *  (ei toisen paikan kuvaa). */
+  image?: { src: string; alt: string };
 }
 
 export interface Section {

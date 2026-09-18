@@ -24,11 +24,11 @@ export function CostOfLiving() {
   return <HousingPage route={HOUSING_ROUTES.cost} copy={HOUSING_PAGES.cost} heroImage="/images/housing-cost-hero.webp" current="cost" workPromo="none" />;
 }
 
-const TOWN_HERO: Record<string, string> = {
+const TOWN_HERO: Record<string, string | undefined> = {
   rovaniemi: '/images/housing-rovaniemi-lappia.webp',
   'kemi-tornio': '/images/housing-cost-hero.webp',
   'kittila-levi': '/images/housing-home-hero.webp',
-  'ivalo-inari': '/images/housing-moving-hero.webp',
+  // Inarista ei ole omaa valokuvaa: PageHero piirtää graafisen taustan. Ei toisen paikan kuvaa (Vesa 26.7.2026).
 };
 
 export function RentalsTown() {

@@ -56,6 +56,7 @@ export const SEASONAL: HousingCopyMap = {
         cards: [
           {
             title: 'Levi ja Kittilä',
+            image: { src: '/images/housing-levi-keskusta-card.webp', alt: 'Levin keskustan puurakennuksia kesäpäivänä' },
             body:
               'Kittilän väkiluku kasvoi 2,0 prosenttia vuonna 2025, eniten Lapin kunnista (Tilastokeskus). Työnantajat vuokraavat rivitaloja henkilökunnalle koko kaudeksi, ja loput hakevat Levin asuntohaun Facebook-ryhmästä. Kittilän kirkonkylässä on kunnan vuokra-asuntoja niille, joilla on auto.',
             href: 'https://kittila.fi/asuminen-ja-ymparisto/asuminen/vuokra-asunnot',
@@ -64,6 +65,7 @@ export const SEASONAL: HousingCopyMap = {
           },
           {
             title: 'Ylläs: Äkäslompolo ja Ylläsjärvi',
+            image: { src: '/images/housing-yllas-hiihtokeskus.webp', alt: 'Ylläksen hiihtokeskuksen vuokraamo ja hiihtokoulu kesällä' },
             body:
               'Kauppiaat rakennuttavat itse: Jounin Kaupan kolme rivitaloa valmistuvat marras–joulukuussa 2026, ja niissä on yksiöitä, soluasunnoiksi suunniteltuja kaksioita ja perheille kolmioita, jokaisessa sauna (Kesko 17.6.2026). Kylän ensimmäinen modulitalo valmistui lokakuussa 2025 (Yle 16.6.2026).',
             href: 'https://www.kesko.fi/media/uutiset-ja-tiedotteet/uutiset/2026/lapin-asuntopulaa-ratkomassa-k-market-jounin-kaupan-kauppiaat-rakennuttavat-kolme-rivitaloa-tyontekijoilleen/',
@@ -80,6 +82,7 @@ export const SEASONAL: HousingCopyMap = {
           },
           {
             title: 'Rovaniemi',
+            image: { src: '/images/housing-rovaniemi-lappia-card.webp', alt: 'Lappia-talo Rovaniemen keskustassa' },
             body:
               'Yksiöistä kilpailevat opiskelijat, matkailijat ja kausityöntekijät samaan aikaan: DAS:lle tuli noin 1 300 hakemusta ja se teki noin 550 sopimusta, eli asunnon sai noin 30 prosenttia hakijoista (Lapin Kansa). Joulupukin pajakylän ja safariyritysten työntekijät asuvat usein työnantajan vuokraamissa asunnoissa kaupungin laidoilla.',
             href: 'https://yle.fi/a/74-20213937',
@@ -88,6 +91,7 @@ export const SEASONAL: HousingCopyMap = {
           },
           {
             title: 'Ruka ja Kuusamo',
+            image: { src: '/images/housing-ruka-kyla-card.webp', alt: 'Rukan kävelykylän aukio ja punainen näkötorni kesällä' },
             body:
               'Ruka on Pohjois-Pohjanmaata, ei Lappia, mutta kausi ja pula ovat samat. Rukan ravintolayhtiö kasvaa talveksi noin 20 vakituisesta yli 80 työntekijään ja vuokrasi jo 2017 neljä vapaa-ajan kohdetta henkilökunnalleen marraskuusta toukokuuhun (Yle 25.10.2017).',
             href: 'https://yle.fi/a/3-9895965',
@@ -211,6 +215,7 @@ export const SEASONAL: HousingCopyMap = {
         cards: [
           {
             title: 'Levi and Kittilä',
+            image: { src: '/images/housing-levi-keskusta-card.webp', alt: 'Wooden buildings in the centre of Levi on a summer day' },
             body:
               'Kittilä’s population grew 2.0 percent in 2025, the most of any Lapland municipality (Statistics Finland). Employers rent row houses for staff for the whole season, and everyone else searches the Levi housing group on Facebook. Kittilä village has municipal flats for those with a car.',
             href: 'https://kittila.fi/asuminen-ja-ymparisto/asuminen/vuokra-asunnot',
@@ -219,6 +224,7 @@ export const SEASONAL: HousingCopyMap = {
           },
           {
             title: 'Ylläs: Äkäslompolo and Ylläsjärvi',
+            image: { src: '/images/housing-yllas-hiihtokeskus.webp', alt: 'The ski rental and ski school at the Ylläs resort in summer' },
             body:
               'Shopkeepers are building for themselves: Jounin Kauppa’s three row houses are due in November–December 2026 with studios, two-room flats designed for sharing and three-room family flats, each with a sauna (Kesko, 17 Jun 2026). The village’s first modular building was completed in October 2025 (Yle, 16 Jun 2026).',
             href: 'https://www.kesko.fi/media/uutiset-ja-tiedotteet/uutiset/2026/lapin-asuntopulaa-ratkomassa-k-market-jounin-kaupan-kauppiaat-rakennuttavat-kolme-rivitaloa-tyontekijoilleen/',
@@ -235,6 +241,7 @@ export const SEASONAL: HousingCopyMap = {
           },
           {
             title: 'Rovaniemi',
+            image: { src: '/images/housing-rovaniemi-lappia-card.webp', alt: 'Lappia House in the centre of Rovaniemi' },
             body:
               'Students, tourists and seasonal workers compete for the same studios at the same time: DAS received about 1,300 applications and made about 550 contracts, so roughly 30 percent of applicants got a flat (Lapin Kansa). Santa Claus Village and safari company staff often live in flats their employer rents on the edge of town.',
             href: 'https://yle.fi/a/74-20213937',
@@ -243,6 +250,7 @@ export const SEASONAL: HousingCopyMap = {
           },
           {
             title: 'Ruka and Kuusamo',
+            image: { src: '/images/housing-ruka-kyla-card.webp', alt: 'The square and red lookout tower in Ruka pedestrian village in summer' },
             body:
               'Ruka is in Northern Ostrobothnia, not Lapland, but the season and the shortage are the same. Ruka’s restaurant group grows from about 20 permanent staff to over 80 in winter and was already renting four holiday properties for staff from November to May in 2017 (Yle, 25 Oct 2017).',
             href: 'https://yle.fi/a/3-9895965',

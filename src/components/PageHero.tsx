@@ -1,5 +1,8 @@
 import type { ReactNode } from 'react';
 import PageBreadcrumb from './PageBreadcrumb';
+import PhotoCredit from './PhotoCredit';
+import { creditFor } from '../data/photoCredits';
+import { useLang } from '../i18n/useLang';
 
 interface PageHeroProps {
   eyebrow: string;
@@ -26,6 +29,9 @@ export default function PageHero({
   imageAlt,
   children,
 }: PageHeroProps) {
+  const lang = useLang();
+  // Avoimen lisenssin kuva (Commons) ⇒ tekijä + lisenssi kuvan päälle (src/data/photoCredits.ts).
+  const credit = creditFor(imageSrc);
   return (
     <>
     <section className="relative overflow-hidden bg-night">
@@ -123,6 +129,7 @@ export default function PageHero({
           </p>
           {children && <div className="mt-8">{children}</div>}
         </div>
+        <PhotoCredit credit={credit} label={lang === 'fi' ? 'Kuva' : 'Photo'} />
       </div>
     </section>
     <PageBreadcrumb />

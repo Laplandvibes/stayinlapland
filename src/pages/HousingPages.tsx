@@ -28,7 +28,9 @@ const TOWN_HERO: Record<string, string | undefined> = {
   rovaniemi: '/images/housing-rovaniemi-lappia.webp',
   'kemi-tornio': '/images/housing-cost-hero.webp',
   'kittila-levi': '/images/housing-home-hero.webp',
-  // Inarista ei ole omaa valokuvaa: PageHero piirtää graafisen taustan. Ei toisen paikan kuvaa (Vesa 26.7.2026).
+  // Ivalo ilmasta helmikuussa 2017, Wikimedia Commons CC BY-SA 4.0 (Markus Säynevirta). Tekijä piirtyy heroon
+  // automaattisesti src/data/photoCredits.ts:stä.
+  'ivalo-inari': '/images/housing-ivalo-ilmakuva.webp',
 };
 
 export function RentalsTown() {

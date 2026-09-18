@@ -31,6 +31,8 @@ import AffiliateCTA from '../AffiliateCTA';
 import HousingWorkPromo from './HousingWorkPromo';
 import PlaceGraphic from './PlaceGraphic';
 import { TwoTone } from './ui';
+import PhotoCredit, { PhotoCreditList, uniqueCredits } from '../PhotoCredit';
+import { creditFor } from '../../data/photoCredits';
 import { pageUrl } from '../../lib/meta';
 import { useLang, useLocalePath, useLocalPageUrl } from '../../i18n/useLang';
 import { getCopy } from '../../locales/copy';
@@ -182,7 +184,7 @@ function Table({ t }: { t: FactTable }) {
   );
 }
 
-function CardGrid({ cards, page, tone }: { cards: Card[]; page: string; tone: Tone }) {
+function CardGrid({ cards, page, tone, photoLabel }: { cards: Card[]; page: string; tone: Tone; photoLabel: string }) {
   const localePath = useLocalePath();
   const night = tone === 'night';
   const anyImage = cards.some((c) => c.image);
@@ -210,6 +212,8 @@ function CardGrid({ cards, page, tone }: { cards: Card[]; page: string; tone: To
                   <PlaceGraphic />
                 )}
                 <div className="absolute inset-0 bg-gradient-to-t from-night/80 via-night/10 to-transparent" />
+                {/* Kortti on linkki ⇒ merkintä tekstinä; linkit sivun lopun kuvaluettelossa. */}
+                <PhotoCredit credit={creditFor(c.image?.src)} label={photoLabel} linked={!c.href} position="top" />
                 <h3 className="absolute bottom-3.5 left-5 right-5 font-heading text-2xl sm:text-[28px] text-snow leading-tight tracking-wide drop-shadow">{title}</h3>
               </div>
             ) : (
@@ -268,7 +272,7 @@ function CardGrid({ cards, page, tone }: { cards: Card[]; page: string; tone: To
   );
 }
 
-function SectionBlock({ s, page, tone, accentKey }: { s: Section; page: string; tone: Tone; accentKey: AccentKey }) {
+function SectionBlock({ s, page, tone, accentKey, photoLabel }: { s: Section; page: string; tone: Tone; accentKey: AccentKey; photoLabel: string }) {
   const night = tone === 'night';
   const accent = ACCENT[accentKey];
   const Icon = SECTION_ICON[s.id] ?? Home;
@@ -330,11 +334,12 @@ function SectionBlock({ s, page, tone, accentKey }: { s: Section; page: string; 
           </aside>
         )}
       </div>
-      {s.cards && <CardGrid cards={s.cards} page={page} tone={tone} />}
+      {s.cards && <CardGrid cards={s.cards} page={page} tone={tone} photoLabel={photoLabel} />}
       {s.image && (
         <figure className="relative max-w-3xl mx-auto mt-9">
           <div className={`relative overflow-hidden rounded-2xl bg-night shadow-md ${s.image.ratio === '4/3' ? 'aspect-[4/3]' : 'aspect-[16/9]'}`}>
             <img src={s.image.src} alt={s.image.alt} className="absolute inset-0 w-full h-full object-cover" loading="lazy" decoding="async" />
+            <PhotoCredit credit={creditFor(s.image.src)} label={photoLabel} />
           </div>
           <figcaption className={`mt-3 text-xs sm:text-sm italic leading-relaxed ${night ? 'text-snow/70' : 'text-stone'}`}>{s.image.caption}</figcaption>
         </figure>
@@ -385,6 +390,11 @@ export default function HousingPage({ route, copy, heroImage, current, parent, w
   }
 
   const siblings = (Object.keys(HOUSING_ROUTES) as HousingRouteKey[]).filter((k) => k !== current);
+  // Kaikki sivun avoimen lisenssin kuvat (hero, kortit, osiokuvat) ⇒ luettelo lähteiden alle.
+  const photoCredits = uniqueCredits(
+    [heroImage, ...c.sections.flatMap((s) => [...(s.cards ?? []).map((k) => k.image?.src), s.image?.src])],
+    creditFor,
+  );
 
   // Sävyrytmi: korttikaista (band) on tumma, muut vuorottelevat sävytettyä ja kermaa.
   const tones: Tone[] = [];
@@ -446,7 +456,7 @@ export default function HousingPage({ route, copy, heroImage, current, parent, w
       </section>
 
       {c.sections.map((s, i) => (
-        <SectionBlock key={s.id} s={s} page={page} tone={tones[i]} accentKey={ACCENT_ORDER[i % 3]} />
+        <SectionBlock key={s.id} s={s} page={page} tone={tones[i]} accentKey={ACCENT_ORDER[i % 3]} photoLabel={ui.photo} />
       ))}
 
       {c.cta && (
@@ -546,6 +556,7 @@ export default function HousingPage({ route, copy, heroImage, current, parent, w
             ))}
           </ol>
           <p className="mt-4 text-stone text-[12px]">{ui.updated}</p>
+          <PhotoCreditList credits={photoCredits} heading={ui.photosHeading} lead={ui.photosLead} />
         </div>
       </section>
 

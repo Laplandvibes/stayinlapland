@@ -10,6 +10,8 @@ import { useLang, useLocalePath, useLocalPageUrl } from '../i18n/useLang';
 import { getCopy } from '../locales/copy';
 import { AppPromoHero } from '../components/AppPromo';
 import PlaceGraphic from '../components/housing/PlaceGraphic';
+import PhotoCredit, { PhotoCreditList, uniqueCredits } from '../components/PhotoCredit';
+import { creditFor } from '../data/photoCredits';
 import HousingWorkPromo from '../components/housing/HousingWorkPromo';
 import { KickerChip, TwoTone } from '../components/housing/ui';
 import { HOME, HOUSING_ROUTES, HOUSING_UI, housingLang, type HousingRouteKey } from '../housing';
@@ -41,6 +43,7 @@ export default function HomeHousing() {
   const localUrl = useLocalPageUrl();
 
   const pathHref = (key: HousingRouteKey | 'longStays') => (key === 'longStays' ? '/long-stays' : HOUSING_ROUTES[key]);
+  const photoCredits = uniqueCredits([...h.towns.items.map((t) => t.image), ...h.paths.cards.map((c) => c.image), h.work.image], creditFor);
 
   return (
     <>
@@ -161,6 +164,8 @@ export default function HomeHousing() {
                     <PlaceGraphic />
                   )}
                   <div className="absolute inset-0 bg-gradient-to-t from-night/75 via-night/10 to-transparent" />
+                  {/* Kortti on linkki ⇒ merkintä tekstinä; linkit sivun lopun kuvaluettelossa. */}
+                  <PhotoCredit credit={creditFor(town.image)} label={ui.photo} linked={false} position="top" />
                   <h3 className="absolute bottom-4 left-5 right-5 font-heading text-2xl sm:text-3xl text-snow leading-tight tracking-wide drop-shadow">{town.name}</h3>
                 </div>
                 <div className="p-6 flex flex-col flex-1">
@@ -306,6 +311,7 @@ export default function HomeHousing() {
             ))}
           </ol>
           <p className="mt-3 text-stone text-[12px]">{ui.updated}</p>
+          <PhotoCreditList credits={photoCredits} heading={ui.photosHeading} lead={ui.photosLead} />
         </div>
       </section>
 

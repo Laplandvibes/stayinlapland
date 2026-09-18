@@ -133,6 +133,7 @@ export const RENTALS: HousingCopyMap = {
           },
           {
             title: 'Sodankylä',
+            image: { src: '/images/housing-sodankyla-jaamerentie.webp', alt: 'Jäämerentie, Sodankylän kirkonkylän pääkatu, syyskuussa' },
             body:
               'Kunta omistaa noin 720 vuokra-asuntoa, joita hallinnoi kunnan tytäryhtiö Asentopuulaaki Oy. Vapaat asunnot ja hakemus yhtiön omilla sivuilla; yksityiset ilmoitukset Oikotiellä ja Vuokraovella.',
             href: 'https://www.sodankyla.fi/en/environment/municipal-rental-housing/',
@@ -141,6 +142,7 @@ export const RENTALS: HousingCopyMap = {
           },
           {
             title: 'Inari, Ivalo ja Saariselkä',
+            image: { src: '/images/housing-ivalo-joki.webp', alt: 'Ivalo Ivalojoen yli kesäiltana' },
             body:
               'Inarin Vuokra-asunnot Oy:llä on yli 500 asuntoa Ivalossa, Inarissa, Saariselällä, Nellimissä ja Sevettijärvellä. Kunnan sivu listaa myös yksityiset vuokranantajat (Bilto, Ivalon vuokra-asunnot, IvaloCenter, Rakennusliike Holmberg, Uni Kodit) ja Sodankylä–Inari–Utsjoki-alueen vuokra-asuntoryhmän Facebookissa.',
             href: 'https://www.inari.fi/fi/palvelut/asuminen.html',
@@ -331,6 +333,7 @@ export const RENTALS: HousingCopyMap = {
           },
           {
             title: 'Sodankylä',
+            image: { src: '/images/housing-sodankyla-jaamerentie.webp', alt: 'Jäämerentie, the main street of Sodankylä village, in September' },
             body:
               'The municipality owns about 720 rental flats, managed by its subsidiary Asentopuulaaki Oy. Vacancies and applications on the company’s own site; private listings on Oikotie and Vuokraovi.',
             href: 'https://www.sodankyla.fi/en/environment/municipal-rental-housing/',
@@ -339,6 +342,7 @@ export const RENTALS: HousingCopyMap = {
           },
           {
             title: 'Inari, Ivalo and Saariselkä',
+            image: { src: '/images/housing-ivalo-joki.webp', alt: 'Ivalo seen across the Ivalo river on a summer evening' },
             body:
               'Inarin Vuokra-asunnot Oy has over 500 flats in Ivalo, Inari, Saariselkä, Nellim and Sevettijärvi. The municipality’s page also lists the private landlords (Bilto, Ivalon vuokra-asunnot, IvaloCenter, Rakennusliike Holmberg, Uni Kodit) and the Sodankylä–Inari–Utsjoki rental group on Facebook.',
             href: 'https://www.inari.fi/fi/palvelut/asuminen.html',

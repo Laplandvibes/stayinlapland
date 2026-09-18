@@ -91,6 +91,9 @@ export const HOUSING_UI: Record<HousingLang, {
   photoCredit: string;
   affiliateNote: string;
   onThisPage: string;
+  photo: string;
+  photosHeading: string;
+  photosLead: string;
 }> = {
   fi: {
     sources: 'Lähteet',
@@ -104,6 +107,9 @@ export const HOUSING_UI: Record<HousingLang, {
     photoCredit: 'Kuva: LaplandVibes',
     affiliateNote: 'Kumppanilinkki: varaus tuo meille komission, sinulle hinta on sama.',
     onThisPage: 'Tällä sivulla',
+    photo: 'Kuva',
+    photosHeading: 'Kuvat',
+    photosLead: 'Avoimella lisenssillä käytetyt kuvat Wikimedia Commonsista. Muut kuvat: LaplandVibes.',
   },
   en: {
     sources: 'Sources',
@@ -117,6 +123,9 @@ export const HOUSING_UI: Record<HousingLang, {
     photoCredit: 'Photo: LaplandVibes',
     affiliateNote: 'Partner link: a booking earns us a commission, the price to you is the same.',
     onThisPage: 'On this page',
+    photo: 'Photo',
+    photosHeading: 'Photos',
+    photosLead: 'Openly licensed photos from Wikimedia Commons. All other photos: LaplandVibes.',
   },
 };
 

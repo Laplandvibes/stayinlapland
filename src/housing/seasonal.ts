@@ -74,6 +74,7 @@ export const SEASONAL: HousingCopyMap = {
           },
           {
             title: 'Saariselkä ja Ivalo',
+            image: { src: '/images/housing-saariselka-hirsitalot.webp', alt: 'Hirsirakennuksia Saariselällä marraskuussa' },
             body:
               'Kunnan Inarin Vuokra-asunnot Oy:llä on asuntoja sekä Saariselällä että Ivalossa, ja kunnan sivu listaa yksityiset vuokranantajat ja Sodankylä–Inari–Utsjoki-alueen Facebook-ryhmän. Saariselän työnantajat majoittavat henkilökuntaa myös itse; kysy jo haastattelussa.',
             href: 'https://www.inari.fi/fi/palvelut/asuminen.html',
@@ -233,6 +234,7 @@ export const SEASONAL: HousingCopyMap = {
           },
           {
             title: 'Saariselkä and Ivalo',
+            image: { src: '/images/housing-saariselka-hirsitalot.webp', alt: 'Log buildings in Saariselkä in November' },
             body:
               'The municipal company Inarin Vuokra-asunnot Oy has flats in both Saariselkä and Ivalo, and the municipality’s page lists private landlords and the Sodankylä–Inari–Utsjoki Facebook group. Saariselkä employers also house staff themselves; ask at the interview.',
             href: 'https://www.inari.fi/fi/palvelut/asuminen.html',

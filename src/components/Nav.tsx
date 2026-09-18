@@ -10,6 +10,9 @@ import EcosystemMenu from '../shared/EcosystemMenu';
 import LanguageSwitcher from '../i18n/LanguageSwitcher';
 import { HOUSING_NAV, HOUSING_NAV_SHORT, HOUSING_ROUTES } from '../housing/labels';
 
+/** Sama sivu loppukauttaviivasta riippumatta: sisääntulo on `/x/`, linkki voi olla `/x` (18.9.2026). */
+const samePath = (a: string, b: string) => a.replace(/\/+$/, '') === b.replace(/\/+$/, '');
+
 // Destination pages had no entry point in the nav at all — the only way in was
 // the grid halfway down the home page, so /destinations/* was effectively a
 // dead end (Vesa 2026-07-26: "miten sinne navigoidaan?"). Label lives here
@@ -110,7 +113,7 @@ export default function Nav() {
     { to: '/when-to-go', label: t.nav.whenToGo },
     { to: '/booking-guide', label: t.nav.bookingGuide },
   ];
-  const staysActive = stayLinks.some(({ to }) => pathname === localePath(to));
+  const staysActive = stayLinks.some(({ to }) => samePath(pathname, localePath(to)));
 
   function setLocale(target: Lang) {
     try {
@@ -153,7 +156,7 @@ export default function Nav() {
         <nav className={`hidden ${wideNav ? '2xl:flex' : 'xl:flex'} items-center gap-3`}>
           {links.map(({ to, short }) => {
             const localized = localePath(to);
-            const active = pathname === localized || pathname.startsWith(`${localized}/`);
+            const active = samePath(pathname, localized) || pathname.startsWith(`${localized}/`);
             return (
               <Link
                 key={to}
@@ -187,7 +190,7 @@ export default function Nav() {
                   const localized = localePath(to);
                   return (
                     <li key={to}>
-                      <Link to={localized} onClick={() => setStaysOpen(false)} className={dropdownItemCls(pathname === localized)}>
+                      <Link to={localized} onClick={() => setStaysOpen(false)} className={dropdownItemCls(samePath(pathname, localized))}>
                         {label}
                       </Link>
                     </li>
@@ -217,7 +220,7 @@ export default function Nav() {
                   const to = localePath(`/destinations/${d.slug}`);
                   return (
                     <li key={d.slug}>
-                      <Link to={to} onClick={() => setDestOpen(false)} className={dropdownItemCls(pathname === to)}>
+                      <Link to={to} onClick={() => setDestOpen(false)} className={dropdownItemCls(samePath(pathname, to))}>
                         {d.name}
                       </Link>
                     </li>
@@ -266,7 +269,7 @@ export default function Nav() {
         <nav className={`${wideNav ? '2xl:hidden' : 'xl:hidden'} bg-cream border-t border-charcoal/10 px-4 py-4 flex flex-col gap-1 max-h-[calc(100svh-4rem)] overflow-y-auto`}>
           {links.map(({ to, label }) => {
             const localized = localePath(to);
-            const active = pathname === localized || pathname.startsWith(`${localized}/`);
+            const active = samePath(pathname, localized) || pathname.startsWith(`${localized}/`);
             return (
               <Link
                 key={to}
@@ -288,7 +291,7 @@ export default function Nav() {
           </p>
           {stayLinks.map(({ to, label }) => {
             const localized = localePath(to);
-            const active = pathname === localized;
+            const active = samePath(pathname, localized);
             return (
               <Link
                 key={to}
@@ -311,7 +314,7 @@ export default function Nav() {
           </p>
           {destinations.map((d) => {
             const to = localePath(`/destinations/${d.slug}`);
-            const active = pathname === to;
+            const active = samePath(pathname, to);
             return (
               <Link
                 key={d.slug}

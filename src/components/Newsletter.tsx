@@ -258,7 +258,7 @@ export default function Newsletter() {
               <span>
                 {c.consent}{' '}
                 <a
-                  href={localePath('/privacy')}
+                  href={localePath('/privacy/')}
                   target="_blank"
                   rel="noopener"
                   className="underline hover:text-snow"
@@ -278,7 +278,7 @@ export default function Newsletter() {
 
         <p className="mt-7 text-xs text-snow/75">
           {t.footnotePart1}
-          <a href={localePath('/privacy')} className="underline hover:text-snow">
+          <a href={localePath('/privacy/')} className="underline hover:text-snow">
             {t.footnoteLink}
           </a>
           {t.footnotePart2}

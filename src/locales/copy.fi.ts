@@ -149,14 +149,14 @@ export const copyFI: SectionCopy = {
   home: {
     metaTitle: 'Asuminen Lapissa: vuokra-asunnot, kausityö ja muutto',
     metaDescription:
-      'Millaista on asua Lapissa? Vuokra-asunnot Rovaniemeltä Ivaloon, kausityöntekijän asunto, muuton käytännöt ja elinkustannukset. Luvut Tilastokeskukselta ja Kelalta.',
+      'Asuminen Lapissa: vuokra-asunnot Rovaniemeltä Ivaloon, kausityöntekijän asunto, muutto ja elinkustannukset. Yksiö Rovaniemellä noin 560 €/kk (Tilastokeskus).',
     schemaName: 'StayInLapland, Pitkät jaksot ja boutique-hotellit Suomen Lapissa',
     breadcrumbHome: 'Etusivu',
     stats: { stays: 'Valittua kohdetta', bases: 'Lapin tukikohtaa', categories: 'Tapaa majoittua', months: 'Arvioitua kuukautta' },
     intro: {
-      p1: 'Lomaoppaita Lapista löytyy joka kielellä. Tämä sivusto on toista lajia: se kertoo, millaista täällä on asua, vuokrata ja tehdä töitä kauden verran tai loppuelämän. Sisarsivustomme laplandstays.com hoitaa hotellit ja lomamökit; me hoidamme arjen.',
-      p2: 'Kysymykset ovat samat, tuli lukija Oulusta, Tallinnasta tai Manchesterista: mistä asunto löytyy, mitä vuokra maksaa, järjestääkö työnantaja katon pään päälle ja mitä pimeän kanssa tehdään. Vastaamme jokaiseen lähteen kanssa, ei tunnelmalla.',
-      p3: 'Lähteet ovat joka sivulla näkyvissä. Jos luku on Tilastokeskuksen, sanomme neljänneksen; jos se on Ylen uutisesta, sanomme päivän.',
+      p1: 'Lapissa asuu 176 215 ihmistä (Tilastokeskus 31.12.2025), ja yli kolmannes heistä Rovaniemellä. Loput jakautuvat rannikolle, jokivarsiin ja tunturikyliin, joissa kausi määrää vuokramarkkinan.',
+      p2: 'Vapaarahoitteisen yksiön keskineliövuokra Rovaniemellä oli 18,66 €/m² huhti–kesäkuussa 2026 (Tilastokeskus), eli 30 m²:n yksiö maksaa noin 560 €/kk. Kemissä ja Inarissa vuokra-asuntoja tarjoaa kunnan oma vuokrayhtiö: Itätuulella on yli 600 asuntoa Kemissä ja Inarin Vuokra-asunnoilla yli 500.',
+      p3: 'Kausityössä asunto tulee usein työnantajalta ja vuokra vähennetään palkasta. Kysy asumisesta kirjallisesti jo työtarjouksen yhteydessä.',
     },
     authorNote:
       'Käsin valittu lyhytlista, kirjoitettu Suomessa ja faktatarkastettu paikallisten kumppaneiden kanssa eri puolilla Lappia.',

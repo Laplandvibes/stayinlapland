@@ -145,14 +145,14 @@ export const copyEN: SectionCopy = {
   home: {
     metaTitle: 'Living in Lapland: Rentals, Seasonal Work and Moving',
     metaDescription:
-      'Living in Finnish Lapland: rentals from Rovaniemi to Ivalo, seasonal worker housing, moving practicalities and the cost of living. Figures from Statistics Finland and Kela.',
+      'Living in Finnish Lapland: rentals from Rovaniemi to Ivalo, seasonal worker housing, moving and the cost of living. A studio in Rovaniemi is about €560 a month.',
     schemaName: 'StayInLapland, Long Stays & Boutique Hotels in Finnish Lapland',
     breadcrumbHome: 'Home',
     stats: { stays: 'Hand-picked stays', bases: 'Lapland bases', categories: 'Ways to stay', months: 'Months rated' },
     intro: {
-      p1: 'Holiday guides to Lapland exist in every language. This site is a different animal: it tells you what it is like to live, rent and work here, for a season or for good. Our sister site laplandstays.com handles hotels and holiday cabins; we handle everyday life.',
-      p2: 'The questions are the same whether the reader is from Oulu, Tallinn or Manchester: where the flats are, what rent costs, whether the employer puts a roof over your head, and what to do about the dark. We answer each one with a source, not with atmosphere.',
-      p3: 'The sources are on every page. If a figure is from Statistics Finland we name the quarter; if it is from a Yle news story we name the day.',
+      p1: 'Lapland has 176,215 residents (Statistics Finland, 31 Dec 2025), more than a third of them in Rovaniemi. The rest are spread along the coast, the river valleys and the fell villages, where the season sets the rental market.',
+      p2: 'The average free-market rent for a studio in Rovaniemi was €18.66 per m² in April–June 2026 (Statistics Finland), so a 30 m² studio costs about €560 a month. In Kemi and Inari the municipality’s own housing company rents out flats: Itätuuli has over 600 in Kemi and Inarin Vuokra-asunnot over 500.',
+      p3: 'In seasonal work the home often comes from the employer and the rent comes off your pay. Ask about housing in writing when you get the job offer.',
     },
     authorNote: 'A curated short-list, written and fact-checked with on-the-ground partners across Finnish Lapland.',
     fourWays: {

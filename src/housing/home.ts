@@ -2,6 +2,17 @@ import type { Faq, HousingLang, Source } from './types';
 import { pickSources } from './sources';
 import type { HousingRouteKey } from './labels';
 
+/**
+ * Etusivun copy (fi + en).
+ *
+ * 🔴 19.9.2026 (Vesa): heron alla EI puhuta sivustosta itsestään eikä sen
+ * lähteistä. Ensimmäinen ruutu heron jälkeen on se, mitä lukija tuli hakemaan:
+ * vuokrat paikkakunnittain kuvakortteina, sitten polut. Sama vika kirjattiin
+ * laplandstaysin auditissa 16.9. (kohdat 4 ja 6: "copy puolusteli"). Lähde- ja
+ * tarkistusmerkintä kuuluu sivun loppuun lähdelistan viereen.
+ */
+export type RentalTownSlugLiteral = 'rovaniemi' | 'kemi-tornio' | 'kittila-levi' | 'ivalo-inari';
+
 export interface HousingHomeCopy {
   metaTitle: string;
   metaDescription: string;
@@ -9,77 +20,150 @@ export interface HousingHomeCopy {
   hero: { eyebrow: string; h1a: string; h1b: string; lead: string; ctaPrimary: string; ctaSecondary: string };
   stats: { value: string; label: string }[];
   statsSource: string;
-  authorNote: string;
-  intro: string[];
-  paths: { kicker: string; h2: string; lead: string; cards: { key: HousingRouteKey | 'longStays'; title: string; body: string }[] };
-  places: { kicker: string; h2: string; lead: string; items: { name: string; pop: string; body: string }[] };
-  photo: { src: string; alt: string; caption: string };
+  towns: {
+    kicker: string;
+    h2: string;
+    lead: string;
+    items: { slug: RentalTownSlugLiteral; name: string; fact: string; body: string; cta: string; image: string; alt: string; pos?: string }[];
+    more: string;
+  };
+  paths: {
+    kicker: string;
+    h2: string;
+    lead: string;
+    cards: { key: HousingRouteKey | 'longStays'; title: string; body: string; image: string; alt: string; pos?: string }[];
+  };
+  work: { kicker: string; h2a: string; h2b: string; body: string; cta: string; image: string; alt: string; caption: string };
   faq: { kicker: string; h2: string; items: Faq[] };
   holiday: { kicker: string; h2: string; lead: string; links: { label: string; href: string; external?: boolean }[] };
+  authorNote: string;
   sources: Source[];
 }
 
 const SOURCES = ['tkVaesto', 'tkVuokrat', 'kemi', 'sodankyla', 'inari', 'kesko2026', 'fmi', 'foreca'] as const;
 
+const IMG = {
+  rovaniemi: '/images/housing-rovaniemi-lappia-card.webp',
+  kemiTornio: '/images/housing-tornio-kerrostalo-card.webp',
+  levi: '/images/housing-levi-uudet-talot.webp',
+  inari: '/images/housing-tunturimaisema.webp',
+  seasonal: '/images/housing-levi-keskusta-card.webp',
+  moving: '/images/housing-tornionjoki-card.webp',
+  cost: '/images/housing-jouninkauppa.webp',
+  longStays: '/images/housing-pyha-huoneistot.webp',
+  work: '/images/housing-yllas-hiihtokeskus.webp',
+} as const;
+
 export const HOME: Record<HousingLang, HousingHomeCopy> = {
   fi: {
     metaTitle: 'Asuminen Lapissa: vuokra-asunnot, kausityö ja muutto',
     metaDescription:
-      'Millaista on asua Lapissa? Vuokra-asunnot Rovaniemeltä Ivaloon, kausityöntekijän asunto, muuton käytännöt ja elinkustannukset. Luvut Tilastokeskukselta ja Kelalta.',
+      'Asuminen Lapissa: vuokra-asunnot Rovaniemeltä Ivaloon, kausityöntekijän asunto, muutto ja elinkustannukset. Yksiö Rovaniemellä noin 560 €/kk (Tilastokeskus).',
     schemaName: 'StayInLapland: asuminen Suomen Lapissa',
     hero: {
       eyebrow: 'Suomen Lappi · Asuminen · Vuokraus · Kausityö',
       h1a: 'Asetu Lappiin.',
       h1b: 'Älä vain käy.',
-      lead:
-        'Vuokra-asunnot Rovaniemeltä Ivaloon, kausityöntekijän asunto Levillä ja Ylläksellä, muuton paperityöt ja elämisen hinta. Luvut Tilastokeskukselta ja Kelalta.',
+      lead: 'Vuokrat paikkakunnittain, kausityöntekijän asunto, muuton paperityöt ja arjen hinta. Yksiö Rovaniemellä maksaa noin 560 €/kk.',
       ctaPrimary: 'Vuokra-asunnot',
       ctaSecondary: 'Kausityöntekijälle',
     },
     stats: [
+      { value: '560 €/kk', label: 'yksiö Rovaniemellä: 30 m² × 18,66 €/m²' },
+      { value: '720 €/kk', label: 'kaksio Rovaniemellä: 50 m² × 14,35 €/m²' },
       { value: '66 191', label: 'asukasta Rovaniemellä 31.12.2025' },
-      { value: '176 215', label: 'asukasta Lapissa 31.12.2025' },
-      { value: '14,55 €/m²', label: 'keskivuokra Rovaniemellä, huhti–kesäkuu 2026' },
       { value: '+2,0 %', label: 'Kittilän väestönkasvu vuonna 2025' },
     ],
-    statsSource: 'Tilastokeskus: väestörakenne 31.12.2025 ja vuokratilasto 2026Q2.',
-    authorNote:
-      'Luvut tarkistettu Tilastokeskuksen, Kelan ja kuntien omista lähteistä 17.9.2026. Päivitämme, kun seuraava neljännes julkaistaan.',
-    intro: [
-      'Lomaoppaita Lapista löytyy joka kielellä. Tämä sivusto on toista lajia: se kertoo, millaista täällä on asua, vuokrata ja tehdä töitä kauden verran tai loppuelämän. Sisarsivustomme laplandstays.com hoitaa hotellit ja lomamökit; me hoidamme arjen.',
-      'Kysymykset ovat samat, tuli lukija Oulusta, Tallinnasta tai Manchesterista: mistä asunto löytyy, mitä vuokra maksaa, järjestääkö työnantaja katon pään päälle ja mitä pimeän kanssa tehdään. Vastaamme jokaiseen lähteen kanssa, ei tunnelmalla.',
-      'Lähteet ovat joka sivulla näkyvissä. Jos luku on Tilastokeskuksen, sanomme neljänneksen; jos se on Ylen uutisesta, sanomme päivän.',
-    ],
-    paths: {
-      kicker: 'Neljä polkua',
-      h2: 'Mistä aloitat?',
-      lead: 'Valitse tilanteesi. Jokainen sivu seisoo omillaan, mutta ne on kirjoitettu samasta datasta.',
-      cards: [
-        { key: 'rentals', title: 'Vuokra-asunnot', body: 'Rovaniemi, Kittilä ja Levi, Kolari ja Ylläs, Kemi–Tornio, Sodankylä, Inari. Kuntien vuokrayhtiöt, portaalit ja Tilastokeskuksen neliövuokrat.' },
-        { key: 'seasonal', title: 'Kausityöntekijän asuminen', body: 'Työnantajan asunto, vapaa-ajan asunto kausivuokralla vai kunnan vuokra-asunto. Mitä kysyä ennen kuin allekirjoitat.' },
-        { key: 'moving', title: 'Muutto Lappiin', body: 'Muuttoilmoitus, talvirenkaat, päiväkoti, sähkösopimus ja kaamos. Ensimmäisen kuukauden tarkistuslista.' },
-        { key: 'cost', title: 'Elinkustannukset', body: 'Vuokra, sähkö, polttoaine ja asumistuki lukuina. Mikä täällä on halvempaa ja mikä ei.' },
-        { key: 'longStays', title: 'Pitkät jaksot', body: 'Viikosta kuukauteen: kalustetut asunnot ja mökit viikkohinnoin, kun tarvitset katon ennen omaa vuokrasopimusta.' },
-      ],
-    },
-    places: {
-      kicker: 'Kaupungit ja kylät',
-      h2: 'Missä päin Lappia?',
+    statsSource: 'Tilastokeskus: vapaarahoitteiset neliövuokrat huhti–kesäkuu 2026 (pyöristetty), väestörakenne 31.12.2025.',
+    towns: {
+      kicker: 'Vuokra-asunnot paikkakunnittain',
+      h2: 'Minne olet muuttamassa?',
       lead:
-        'Lapissa asuu 176 215 ihmistä (Tilastokeskus 31.12.2025), ja yli kolmannes heistä Rovaniemellä. Loput jakautuvat rannikolle, jokivarsiin ja tunturikyliin, joissa kausi määrää vuokramarkkinan.',
+        'Lapissa asuu 176 215 ihmistä (Tilastokeskus 31.12.2025), yli kolmannes heistä Rovaniemellä. Joka sivulla on paikkakunnan vuokrataso, vuokranantajat ja hakukanavat.',
       items: [
-        { name: 'Rovaniemi', pop: '66 191 asukasta', body: 'Ainoa oikea kaupunki. Yliopisto, lentokenttä, työpaikat ympäri vuoden ja Lapin kirein yksiömarkkina: opiskelijat, matkailijat ja kausityöntekijät hakevat samoja asuntoja.' },
-        { name: 'Kittilä ja Levi', pop: '6 973 asukasta, +2,0 % vuonna 2025', body: 'Lapin nopeimmin kasvava kunta hiihtokeskuksen ympärillä. Talvella asuntoja haetaan tuhansille kausityöntekijöille.' },
-        { name: 'Kolari ja Ylläs', pop: '4 001 asukasta', body: 'Äkäslompolo ja Ylläsjärvi: kauppiaat rakennuttavat itse asuntoja työntekijöilleen, koska vuokrat ovat nousseet korkeiksi.' },
-        { name: 'Kemi ja Tornio', pop: '19 339 + 20 823 asukasta', body: 'Rannikon kaksoiskaupunki, jossa kaupungin vuokrayhtiöillä on satoja asuntoja: Itätuulella yli 600 Kemissä. Tornio on rajakaupunki Haaparannan kyljessä.' },
-        { name: 'Sodankylä', pop: '8 095 asukasta', body: 'Kaivos, varuskunta ja kunnan noin 720 vuokra-asuntoa Asentopuulaakin hoidossa.' },
-        { name: 'Inari, Ivalo ja Saariselkä', pop: '7 244 asukasta', body: 'Pohjoisin tukikohta: kunnan Inarin Vuokra-asunnot Oy:llä on yli 500 asuntoa Ivalossa, Inarissa ja Saariselällä.' },
+        {
+          slug: 'rovaniemi',
+          name: 'Rovaniemi',
+          fact: '66 191 asukasta · yksiö n. 560 €/kk',
+          body: 'Yliopisto, lentokenttä ja työpaikat ympäri vuoden. Yksiöistä kilpailevat opiskelijat, matkailijat ja kausityöntekijät.',
+          cta: 'Rovaniemen vuokra-asunnot',
+          image: IMG.rovaniemi,
+          alt: 'Lappia-talo Rovaniemen keskustassa kesäpäivänä',
+        },
+        {
+          slug: 'kemi-tornio',
+          name: 'Kemi ja Tornio',
+          fact: '19 339 + 20 823 asukasta',
+          body: 'Rannikon kaksoiskaupunki. Kaupunkien omilla vuokrayhtiöillä on satoja asuntoja, Itätuulella yli 600 Kemissä.',
+          cta: 'Kemin ja Tornion vuokra-asunnot',
+          image: IMG.kemiTornio,
+          alt: 'Kerrostalo Tornion keskustassa',
+        },
+        {
+          slug: 'kittila-levi',
+          name: 'Kittilä ja Levi',
+          fact: '6 973 asukasta · +2,0 % vuonna 2025',
+          body: 'Lapin nopeimmin kasvava kunta hiihtokeskuksen ympärillä. Talvella asuntoja haetaan tuhansille kausityöntekijöille.',
+          cta: 'Kittilän ja Levin vuokra-asunnot',
+          image: IMG.levi,
+          alt: 'Uusia taloja rakenteilla Levillä, taustalla Levitunturi',
+        },
+        {
+          slug: 'ivalo-inari',
+          name: 'Ivalo, Inari ja Saariselkä',
+          fact: '7 244 asukasta',
+          body: 'Kunnan Inarin Vuokra-asunnot Oy:llä on yli 500 asuntoa Ivalossa, Inarissa ja Saariselällä.',
+          cta: 'Ivalon ja Inarin vuokra-asunnot',
+          image: IMG.inari,
+          alt: 'Tunturimaisema Lapissa kesällä',
+        },
+      ],
+      more: 'Kolari ja Ylläs, Sodankylä ja muut kunnat',
+    },
+    paths: {
+      kicker: 'Tilanteesi mukaan',
+      h2: 'Mistä aloitat?',
+      lead: 'Tuletko kaudeksi töihin, muutatko pysyvästi vai tarvitsetko katon muutamaksi viikoksi?',
+      cards: [
+        {
+          key: 'seasonal',
+          title: 'Kausityöntekijän asuminen',
+          body: 'Työnantajan asunto, vapaa-ajan asunto kausivuokralla vai kunnan vuokra-asunto. Mitä kysyä ennen kuin allekirjoitat.',
+          image: IMG.seasonal,
+          alt: 'Levin keskustan puurakennuksia kesäpäivänä',
+        },
+        {
+          key: 'moving',
+          title: 'Muutto Lappiin',
+          body: 'Muuttoilmoitus, talvirenkaat, päiväkoti, sähkösopimus ja kaamos. Ensimmäisen kuukauden tarkistuslista.',
+          image: IMG.moving,
+          alt: 'Laituri Tornionjoella kesäiltana',
+        },
+        {
+          key: 'cost',
+          title: 'Elinkustannukset',
+          body: 'Vuokra, sähkö, polttoaine ja asumistuki lukuina. Mikä täällä on halvempaa ja mikä ei.',
+          image: IMG.cost,
+          alt: 'Jounin Kauppa Äkäslompolossa',
+        },
+        {
+          key: 'longStays',
+          title: 'Pitkät jaksot',
+          body: 'Viikosta kuukauteen: kalustetut asunnot ja mökit viikkohinnoin, kun tarvitset katon ennen omaa vuokrasopimusta.',
+          image: IMG.longStays,
+          alt: 'Huoneistorakennus Pyhän tunturikylässä kesällä',
+        },
       ],
     },
-    photo: {
-      src: '/images/housing-rovaniemi-lappia.webp',
-      alt: 'Lappia-talo Rovaniemen keskustassa kesäpäivänä',
-      caption: 'Rovaniemi, Lappia-talo heinäkuussa 2026. Kuva: LaplandVibes.',
+    work: {
+      kicker: 'Sisarsivusto · LaplandWork.com',
+      h2a: 'Työpaikka ensin,',
+      h2b: 'asunto sen mukaan.',
+      body: 'LaplandWork.com kokoaa Lapin avoimet työpaikat: hiihtokeskukset, hotellit, ohjelmapalvelut ja terveydenhuolto. Kausitöissä asunto tulee usein työn mukana, joten katso paikat ennen kuin etsit vuokra-asuntoa.',
+      cta: 'Selaa työpaikkoja',
+      image: IMG.work,
+      alt: 'Ylläksen hiihtokeskuksen vuokraamo ja hiihtokoulu kesällä, lumitykit varastoituna katoksen alle',
+      caption: 'Ylläs heinäkuussa 2026: lumitykit odottavat kautta. Kuva: LaplandVibes.',
     },
     faq: {
       kicker: 'Kysytyimmät',
@@ -103,15 +187,14 @@ export const HOME: Record<HousingLang, HousingHomeCopy> = {
         },
         {
           q: 'Mistä saan apua muuttoon ulkomailta?',
-          a: 'Sisarsivustomme laplandwork.com käy läpi oleskeluluvat, henkilötunnuksen, verokortin ja pankkitilin. Tämä sivusto jatkaa siitä, mihin se päättyy: asuntoon ja arkeen.',
+          a: 'Sisarsivustomme laplandwork.com käy läpi oleskeluluvat, henkilötunnuksen, verokortin ja pankkitilin. Asunnon ja arjen käytännöt löydät Muutto Lappiin -sivulta.',
         },
       ],
     },
     holiday: {
       kicker: 'Lomalle Lappiin?',
-      h2: 'Se on toinen sivusto.',
-      lead:
-        'Hotellit, mökit ja lasi-iglut löytyvät verkoston viralliselta majoitussivustolta laplandstays.com. Omat lomasivumme löydät yhä täältä:',
+      h2: 'Hotellit, mökit ja iglut.',
+      lead: 'Lomamajoituksen haku on sisarsivustollamme laplandstays.com. Omat lomasivumme löydät yhä täältä:',
       links: [
         { label: 'laplandstays.com', href: 'https://laplandstays.com/fi/', external: true },
         { label: 'Hotellit', href: '/hotels' },
@@ -120,66 +203,118 @@ export const HOME: Record<HousingLang, HousingHomeCopy> = {
         { label: 'Milloin matkustaa', href: '/when-to-go' },
       ],
     },
+    authorNote: 'Luvut tarkistettu Tilastokeskuksen, Kelan ja kuntien omista lähteistä 17.9.2026. Päivitämme, kun seuraava neljännes julkaistaan.',
     sources: pickSources('fi', SOURCES),
   },
   en: {
     metaTitle: 'Living in Lapland: Rentals, Seasonal Work and Moving',
     metaDescription:
-      'Living in Finnish Lapland: rentals from Rovaniemi to Ivalo, seasonal worker housing, moving practicalities and the cost of living. Figures from Statistics Finland and Kela.',
+      'Living in Finnish Lapland: rentals from Rovaniemi to Ivalo, seasonal worker housing, moving and the cost of living. A studio in Rovaniemi is about €560 a month.',
     schemaName: 'StayInLapland: living in Finnish Lapland',
     hero: {
       eyebrow: 'Finnish Lapland · Living · Renting · Seasonal work',
       h1a: 'Settle into Lapland.',
       h1b: 'Don’t just visit.',
-      lead:
-        'Rentals from Rovaniemi to Ivalo, seasonal worker housing at Levi and Ylläs, the paperwork of moving and the cost of living. Figures from Statistics Finland and Kela.',
+      lead: 'Rents town by town, seasonal worker housing, the paperwork of moving and what daily life costs. A studio in Rovaniemi is about €560 a month.',
       ctaPrimary: 'Rentals',
       ctaSecondary: 'Seasonal workers',
     },
     stats: [
+      { value: '€560/mo', label: 'studio in Rovaniemi: 30 m² × €18.66/m²' },
+      { value: '€720/mo', label: 'two-room flat in Rovaniemi: 50 m² × €14.35/m²' },
       { value: '66,191', label: 'residents in Rovaniemi, 31 Dec 2025' },
-      { value: '176,215', label: 'residents in Lapland, 31 Dec 2025' },
-      { value: '€14.55/m²', label: 'average rent in Rovaniemi, Apr–Jun 2026' },
       { value: '+2.0 %', label: 'Kittilä population growth in 2025' },
     ],
-    statsSource: 'Statistics Finland: population structure 31 Dec 2025 and rent statistics 2026Q2.',
-    authorNote:
-      'Figures checked against Statistics Finland, Kela and the municipalities’ own sources on 17 September 2026. Updated when the next quarter is published.',
-    intro: [
-      'Holiday guides to Lapland exist in every language. This site is a different animal: it tells you what it is like to live, rent and work here, for a season or for good. Our sister site laplandstays.com handles hotels and holiday cabins; we handle everyday life.',
-      'The questions are the same whether the reader is from Oulu, Tallinn or Manchester: where the flats are, what rent costs, whether the employer puts a roof over your head, and what to do about the dark. We answer each one with a source, not with atmosphere.',
-      'The sources are on every page. If a figure is from Statistics Finland we name the quarter; if it is from a Yle news story we name the day.',
-    ],
-    paths: {
-      kicker: 'Four paths',
-      h2: 'Where do you start?',
-      lead: 'Pick your situation. Each page stands on its own, but they are written from the same data.',
-      cards: [
-        { key: 'rentals', title: 'Rentals', body: 'Rovaniemi, Kittilä and Levi, Kolari and Ylläs, Kemi–Tornio, Sodankylä, Inari. Municipal housing companies, portals and Statistics Finland rents per m².' },
-        { key: 'seasonal', title: 'Seasonal worker housing', body: 'Staff housing, a holiday apartment on a seasonal lease or a municipal flat. What to ask before you sign.' },
-        { key: 'moving', title: 'Moving to Lapland', body: 'Address notification, winter tyres, daycare, electricity contract and the polar night. The first-month checklist.' },
-        { key: 'cost', title: 'Cost of living', body: 'Rent, electricity, fuel and housing allowance in figures. What is cheaper here and what is not.' },
-        { key: 'longStays', title: 'Long stays', body: 'A week to a month: furnished apartments and cabins at weekly rates when you need a roof before your own lease.' },
-      ],
-    },
-    places: {
-      kicker: 'Towns and villages',
-      h2: 'Which part of Lapland?',
+    statsSource: 'Statistics Finland: free-market rents per m², April–June 2026 (rounded); population structure 31 Dec 2025.',
+    towns: {
+      kicker: 'Rentals town by town',
+      h2: 'Where are you moving to?',
       lead:
-        'Lapland has 176,215 residents (Statistics Finland, 31 Dec 2025), more than a third of them in Rovaniemi. The rest are spread along the coast, the river valleys and the fell villages, where the season sets the rental market.',
+        'Lapland has 176,215 residents (Statistics Finland, 31 Dec 2025), more than a third of them in Rovaniemi. Each page covers the local rent level, the landlords and where to apply.',
       items: [
-        { name: 'Rovaniemi', pop: '66,191 residents', body: 'The only real city. A university, an airport, year-round jobs and Lapland’s tightest studio market: students, tourists and seasonal workers chase the same flats.' },
-        { name: 'Kittilä and Levi', pop: '6,973 residents, +2.0 % in 2025', body: 'Lapland’s fastest-growing municipality, wrapped around a ski resort. In winter, homes are sought for thousands of seasonal workers.' },
-        { name: 'Kolari and Ylläs', pop: '4,001 residents', body: 'Äkäslompolo and Ylläsjärvi: shopkeepers are building homes for their own staff because rents have climbed high.' },
-        { name: 'Kemi and Tornio', pop: '19,339 + 20,823 residents', body: 'The coastal twin towns, where the municipal housing companies hold hundreds of flats: Itätuuli alone has over 600 in Kemi. Tornio is a border town joined to Haparanda.' },
-        { name: 'Sodankylä', pop: '8,095 residents', body: 'A mine, a garrison and about 720 municipal rental flats run by Asentopuulaaki.' },
-        { name: 'Inari, Ivalo and Saariselkä', pop: '7,244 residents', body: 'The northernmost base: the municipal company Inarin Vuokra-asunnot Oy has over 500 flats in Ivalo, Inari and Saariselkä.' },
+        {
+          slug: 'rovaniemi',
+          name: 'Rovaniemi',
+          fact: '66,191 residents · studio about €560/mo',
+          body: 'A university, an airport and year-round jobs. Students, tourists and seasonal workers compete for the same studios.',
+          cta: 'Renting in Rovaniemi',
+          image: IMG.rovaniemi,
+          alt: 'Lappia House in the centre of Rovaniemi on a summer day',
+        },
+        {
+          slug: 'kemi-tornio',
+          name: 'Kemi and Tornio',
+          fact: '19,339 + 20,823 residents',
+          body: 'The coastal twin towns. The municipal housing companies hold hundreds of flats; Itätuuli alone has over 600 in Kemi.',
+          cta: 'Renting in Kemi and Tornio',
+          image: IMG.kemiTornio,
+          alt: 'An apartment block in the centre of Tornio',
+        },
+        {
+          slug: 'kittila-levi',
+          name: 'Kittilä and Levi',
+          fact: '6,973 residents · +2.0 % in 2025',
+          body: 'Lapland’s fastest-growing municipality, wrapped around a ski resort. In winter, homes are sought for thousands of seasonal workers.',
+          cta: 'Renting in Kittilä and Levi',
+          image: IMG.levi,
+          alt: 'New houses under construction in Levi with Levi fell behind',
+        },
+        {
+          slug: 'ivalo-inari',
+          name: 'Ivalo, Inari and Saariselkä',
+          fact: '7,244 residents',
+          body: 'The municipal company Inarin Vuokra-asunnot Oy has over 500 flats in Ivalo, Inari and Saariselkä.',
+          cta: 'Renting in Ivalo and Inari',
+          image: IMG.inari,
+          alt: 'A fell landscape in Lapland in summer',
+        },
+      ],
+      more: 'Kolari and Ylläs, Sodankylä and the other municipalities',
+    },
+    paths: {
+      kicker: 'By situation',
+      h2: 'Where do you start?',
+      lead: 'Coming for a season of work, moving for good, or in need of a roof for a few weeks?',
+      cards: [
+        {
+          key: 'seasonal',
+          title: 'Seasonal worker housing',
+          body: 'Staff housing, a holiday apartment on a seasonal lease or a municipal flat. What to ask before you sign.',
+          image: IMG.seasonal,
+          alt: 'Wooden buildings in the centre of Levi on a summer day',
+        },
+        {
+          key: 'moving',
+          title: 'Moving to Lapland',
+          body: 'Address notification, winter tyres, daycare, electricity contract and the polar night. The first-month checklist.',
+          image: IMG.moving,
+          alt: 'A jetty on the Tornio river on a summer evening',
+        },
+        {
+          key: 'cost',
+          title: 'Cost of living',
+          body: 'Rent, electricity, fuel and housing allowance in figures. What is cheaper here and what is not.',
+          image: IMG.cost,
+          alt: 'The Jounin Kauppa grocery store in Äkäslompolo',
+        },
+        {
+          key: 'longStays',
+          title: 'Long stays',
+          body: 'A week to a month: furnished apartments and cabins at weekly rates when you need a roof before your own lease.',
+          image: IMG.longStays,
+          alt: 'An apartment building in the Pyhä fell village in summer',
+        },
       ],
     },
-    photo: {
-      src: '/images/housing-rovaniemi-lappia.webp',
-      alt: 'Lappia House in the centre of Rovaniemi on a summer day',
-      caption: 'Rovaniemi, Lappia House in July 2026. Photo: LaplandVibes.',
+    work: {
+      kicker: 'Sister site · LaplandWork.com',
+      h2a: 'The job first,',
+      h2b: 'the home follows.',
+      body: 'LaplandWork.com lists the open jobs in Lapland: ski resorts, hotels, activity companies and healthcare. Seasonal jobs often come with housing, so look at the vacancies before you hunt for a flat.',
+      cta: 'Browse jobs',
+      image: IMG.work,
+      alt: 'The ski rental and ski school at the Ylläs resort in summer, snow cannons stored under the canopy',
+      caption: 'Ylläs in July 2026: the snow cannons wait for the season. Photo: LaplandVibes.',
     },
     faq: {
       kicker: 'Most asked',
@@ -203,15 +338,14 @@ export const HOME: Record<HousingLang, HousingHomeCopy> = {
         },
         {
           q: 'Where do I get help moving from abroad?',
-          a: 'Our sister site laplandwork.com walks through residence permits, the personal identity code, the tax card and a bank account. This site picks up where it ends: the home and everyday life.',
+          a: 'Our sister site laplandwork.com walks through residence permits, the personal identity code, the tax card and a bank account. The home and everyday practicalities are on the Moving to Lapland page.',
         },
       ],
     },
     holiday: {
       kicker: 'Coming on holiday?',
-      h2: 'That is another site.',
-      lead:
-        'Hotels, cabins and glass igloos live on the network’s official accommodation site, laplandstays.com. Our own holiday pages are still here too:',
+      h2: 'Hotels, cabins and igloos.',
+      lead: 'Holiday accommodation search lives on our sister site laplandstays.com. Our own holiday pages are still here too:',
       links: [
         { label: 'laplandstays.com', href: 'https://laplandstays.com/', external: true },
         { label: 'Hotels', href: '/hotels' },
@@ -220,6 +354,7 @@ export const HOME: Record<HousingLang, HousingHomeCopy> = {
         { label: 'When to go', href: '/when-to-go' },
       ],
     },
+    authorNote: 'Figures checked against Statistics Finland, Kela and the municipalities’ own sources on 17 September 2026. Updated when the next quarter is published.',
     sources: pickSources('en', SOURCES),
   },
 };

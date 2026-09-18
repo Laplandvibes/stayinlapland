@@ -14,7 +14,7 @@ export const TOWN_ROVANIEMI: HousingCopyMap = {
       eyebrow: 'Rovaniemi · 66 191 asukasta · Kelan kuntaryhmä II',
       title: 'Vuokra-asunnot Rovaniemi.',
       subtitle:
-        'Lapin ainoa kaupunki ja sen kirein yksiömarkkina. Mitä vuokra maksaa, keneltä asuntoa haetaan ja milloin.',
+        'Lapin suurin kaupunki, 66 191 asukasta. Mitä vuokra maksaa, keneltä asuntoa haetaan ja milloin.',
     },
     authorNote:
       'Neliövuokrat Tilastokeskuksen vuokratilastosta (huhti–kesäkuu 2026), vuokranantajat Rovaniemen kaupungin omalta Asuminen-sivulta, asuntopulan luvut Ylen ja Lapin Kansan uutisista. Tarkistettu 17.9.2026.',
@@ -160,7 +160,7 @@ export const TOWN_ROVANIEMI: HousingCopyMap = {
       eyebrow: 'Rovaniemi · 66,191 residents · Kela municipality group II',
       title: 'Rentals in Rovaniemi.',
       subtitle:
-        'Lapland’s only city and its tightest studio market. What rent costs, who you apply to and when.',
+        'Lapland’s largest city, 66,191 residents. What rent costs, who you apply to and when.',
     },
     authorNote:
       'Rents per m² from Statistics Finland (April–June 2026), landlords from the City of Rovaniemi’s own housing page, shortage figures from Yle and Lapin Kansa. Checked 17 September 2026.',

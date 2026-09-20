@@ -97,7 +97,7 @@ const ACCENT_ORDER: AccentKey[] = ['pink', 'blue', 'gold'];
 
 /** Aksentin luokat vaalealla pohjalla. Tummalla kaistalla käytetään NIGHT_BARS-värejä. */
 const ACCENT: Record<AccentKey, { bar: string; icon: string; chip: string; dot: string }> = {
-  pink: { bar: 'bg-vibe-pink', icon: 'bg-vibe-pink text-white', chip: 'bg-vibe-pink/10 text-[#BE185D]', dot: 'bg-vibe-pink' },
+  pink: { bar: 'bg-vibe-pink', icon: 'bg-[#DB2777] text-white', chip: 'bg-vibe-pink/10 text-[#BE185D]', dot: 'bg-vibe-pink' },
   blue: { bar: 'bg-finland-blue', icon: 'bg-finland-blue text-white', chip: 'bg-finland-blue/10 text-finland-blue', dot: 'bg-finland-blue' },
   gold: { bar: 'bg-gold', icon: 'bg-gold text-night', chip: 'bg-gold-soft/70 text-[#7A5C1E]', dot: 'bg-gold' },
 };
@@ -287,7 +287,7 @@ function SectionBlock({ s, page, tone, accentKey, photoLabel }: { s: Section; pa
       )}
       <div className={`relative mx-auto ${s.cards ? 'max-w-6xl' : 'max-w-3xl'}`}>
         <div className="flex items-center gap-3 mb-4">
-          <span className={`inline-flex w-10 h-10 shrink-0 items-center justify-center rounded-xl shadow-sm ${night ? 'bg-vibe-pink text-white' : accent.icon}`} aria-hidden="true">
+          <span className={`inline-flex w-10 h-10 shrink-0 items-center justify-center rounded-xl shadow-sm ${night ? 'bg-[#DB2777] text-white' : accent.icon}`} aria-hidden="true">
             <Icon className="w-5 h-5" />
           </span>
           {s.kicker && (
@@ -313,7 +313,7 @@ function SectionBlock({ s, page, tone, accentKey, photoLabel }: { s: Section; pa
           <ul className={`mt-7 rounded-2xl border p-5 sm:p-7 space-y-4 ${night ? 'bg-white/[0.06] border-white/12' : 'bg-white border-charcoal/10 shadow-sm'}`}>
             {s.bullets.map((b, i) => (
               <li key={i} className="flex items-start gap-3.5">
-                <span className={`mt-0.5 inline-flex w-6 h-6 shrink-0 items-center justify-center rounded-full ${night ? 'bg-vibe-pink text-white' : accent.icon}`} aria-hidden="true">
+                <span className={`mt-0.5 inline-flex w-6 h-6 shrink-0 items-center justify-center rounded-full ${night ? 'bg-[#DB2777] text-white' : accent.icon}`} aria-hidden="true">
                   <Check className="w-3.5 h-3.5" strokeWidth={3} />
                 </span>
                 <span

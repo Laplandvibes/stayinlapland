@@ -28,7 +28,7 @@ export default function HousingWorkPromo({ copy, placement, variant = 'banner' }
         className="group relative overflow-hidden flex items-center gap-4 p-4 sm:p-5 min-h-11 rounded-2xl bg-finland-blue text-snow shadow-md hover:shadow-lg transition-shadow"
       >
         <span className="pointer-events-none absolute -top-16 -right-10 w-48 h-48 rounded-full bg-vibe-pink/25 blur-3xl" aria-hidden="true" />
-        <span className="relative inline-flex w-11 h-11 shrink-0 items-center justify-center rounded-xl bg-vibe-pink text-white" aria-hidden="true">
+        <span className="relative inline-flex w-11 h-11 shrink-0 items-center justify-center rounded-xl bg-[#DB2777] text-white" aria-hidden="true">
           <Briefcase className="w-5 h-5" />
         </span>
         <span className="relative flex-1">

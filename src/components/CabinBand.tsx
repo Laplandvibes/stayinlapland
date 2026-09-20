@@ -294,7 +294,7 @@ export default function CabinBand({
                 onClick={() => setTab(key)}
                 className={`px-4 py-2 min-h-11 rounded-full text-sm font-semibold transition-colors ${
                   active === key
-                    ? 'bg-vibe-pink text-white'
+                    ? 'bg-[#DB2777] text-white'
                     : 'bg-white text-charcoal/75 border border-charcoal/15 hover:border-vibe-pink hover:text-vibe-pink'
                 }`}
               >

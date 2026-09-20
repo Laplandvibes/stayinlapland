@@ -80,7 +80,7 @@ export default function PropertyCard({ property, sidPrefix, imageSrc, imageAlt }
           partner="hotels"
           sid={`${sidPrefix}_property_card`}
           destination={searchDest(property.location, property.searchQuery)}
-          className="inline-flex items-center justify-between gap-2 w-full px-5 py-3 bg-charcoal hover:bg-vibe-pink text-white rounded-full font-semibold text-sm transition-all duration-200"
+          className="inline-flex items-center justify-between gap-2 w-full px-5 py-3 bg-charcoal hover:bg-[#BE185D] text-white rounded-full font-semibold text-sm transition-all duration-200"
         >
           <span>{t.cta}</span>
           <ArrowUpRight className="w-4 h-4" />

@@ -110,7 +110,7 @@ export default function HomeHousing() {
               {h.hero.lead}
             </p>
             <div className="mt-10 flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center">
-              <Link to={localePath(HOUSING_ROUTES.rentals)} className="px-7 py-3.5 min-h-11 bg-vibe-pink hover:bg-vibe-pink/90 text-white rounded-full font-semibold transition-all hover:scale-[1.02] shadow-lg shadow-vibe-pink/30 text-center">
+              <Link to={localePath(HOUSING_ROUTES.rentals)} className="px-7 py-3.5 min-h-11 bg-[#DB2777] hover:bg-[#BE185D] text-white rounded-full font-semibold transition-all hover:scale-[1.02] shadow-lg shadow-vibe-pink/30 text-center">
                 {h.hero.ctaPrimary}
               </Link>
               <Link to={localePath(HOUSING_ROUTES.seasonal)} className="px-7 py-3.5 min-h-11 bg-night/55 backdrop-blur-sm border border-snow/35 text-snow rounded-full font-semibold hover:bg-night/75 hover:border-snow/55 transition-all text-center">

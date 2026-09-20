@@ -77,7 +77,7 @@ export default function EditorsPick({
             partner="hotels"
             sid={`${sidPrefix}_editors_pick_cta`}
             destination={searchDest(location)}
-            className="mt-8 inline-flex items-center gap-2 px-6 py-3 bg-charcoal hover:bg-vibe-pink text-white rounded-full font-semibold text-sm transition-colors"
+            className="mt-8 inline-flex items-center gap-2 px-6 py-3 bg-charcoal hover:bg-[#BE185D] text-white rounded-full font-semibold text-sm transition-colors"
           >
             {t.cta}
             <ArrowUpRight className="w-4 h-4" />

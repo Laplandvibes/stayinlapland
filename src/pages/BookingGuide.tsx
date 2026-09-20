@@ -100,7 +100,7 @@ export default function BookingGuide() {
               partner="hotels"
               sid="bg_browse_all_cta"
               destination="Lapland Finland"
-              className="inline-flex px-7 py-3.5 bg-vibe-pink hover:bg-vibe-pink/90 text-white rounded-full font-semibold transition-all"
+              className="inline-flex px-7 py-3.5 bg-[#DB2777] hover:bg-[#BE185D] text-white rounded-full font-semibold transition-all"
             >
               {b.browseAll}
             </AffiliateCTA>

@@ -90,11 +90,16 @@ export default function HomeHousing() {
             decoding="async"
           />
           {/* Tummennus painotettu alas ja vasemmalle: teksti on keskellä, kirkas taivas ylhäällä. */}
-          <div className="absolute inset-0 bg-gradient-to-b from-night/55 via-night/45 to-night" />
-          <div className="absolute inset-0" style={{ background: 'radial-gradient(ellipse 70% 65% at 50% 55%, rgba(15,23,42,0.55) 0%, rgba(15,23,42,0) 72%)' }} />
+          {/* 🔴 Peite oli 55/45 %, ja mediaani tekstin alla oli 1,5-1,7:1 eli kuva
+              paistoi lapi lahes sellaisenaan. Kesainen Levin keskusta on kirkas. */}
+          <div className="absolute inset-0 bg-gradient-to-b from-night/78 via-night/70 to-night" />
+          <div className="absolute inset-0" style={{ background: 'radial-gradient(ellipse 72% 68% at 50% 55%, rgba(15,23,42,0.72) 0%, rgba(15,23,42,0) 78%)' }} />
 
           <div className="relative z-10 text-center px-5 sm:px-6 max-w-3xl mx-auto pt-28 pb-32">
-            <p className="inline-flex items-center gap-2 text-vibe-pink uppercase tracking-[0.3em] text-[11px] sm:text-xs font-semibold mb-6" style={{ textShadow: '0 2px 12px rgba(0,0,0,0.85)' }}>
+            {/* 🔴 11 px muste valokuvalla: varjo ei riita kirkkaalla taustalla (1,17:1).
+                Tumma laatta antaa musteelle taustan - sama ratkaisu kuin verkoston
+                muissa heroissa 21.9. */}
+            <p className="inline-flex items-center gap-2 rounded-full bg-night/80 px-3 py-1.5 text-vibe-pink uppercase tracking-[0.3em] text-[11px] sm:text-xs font-semibold mb-6">
               <MapPin className="w-3.5 h-3.5" />
               {h.hero.eyebrow}
             </p>
@@ -106,7 +111,7 @@ export default function HomeHousing() {
               <br />
               <span className="text-vibe-pink">{h.hero.h1b}</span>
             </h1>
-            <p className="font-body text-snow/85 text-base sm:text-lg lg:text-xl max-w-2xl xl:max-w-4xl mx-auto leading-relaxed" style={{ textShadow: '0 2px 14px rgba(0,0,0,0.8)' }}>
+            <p className="font-body text-snow text-base sm:text-lg lg:text-xl max-w-2xl xl:max-w-4xl mx-auto leading-relaxed" style={{ textShadow: '0 2px 14px rgba(0,0,0,0.8)' }}>
               {h.hero.lead}
             </p>
             <div className="mt-10 flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center">
@@ -197,7 +202,7 @@ export default function HomeHousing() {
             <div className="mb-4"><KickerChip tone="night">{h.paths.kicker}</KickerChip></div>
             <h2 className="font-heading text-4xl sm:text-5xl md:text-6xl text-snow leading-[1.1] tracking-wide">{h.paths.h2}</h2>
             <div className="mt-4 h-1 w-14 rounded-full bg-vibe-pink" aria-hidden="true" />
-            <p className="text-snow/85 text-base sm:text-lg mt-5 leading-relaxed">{h.paths.lead}</p>
+            <p className="text-snow text-base sm:text-lg mt-5 leading-relaxed">{h.paths.lead}</p>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-5 sm:gap-6">
             {h.paths.cards.map((c) => (

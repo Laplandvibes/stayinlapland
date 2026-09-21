@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef } from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
-import { Menu, X, ChevronDown} from 'lucide-react';
+import { Menu, X, ChevronDown, ArrowUpRight } from 'lucide-react';
 import Logo from './Logo';
 import AffiliateCTA from './AffiliateCTA';
 import { useLang, useLocalePath, type Lang } from '../i18n/useLang';
@@ -9,6 +9,7 @@ import { destinations } from '../data/properties';
 import EcosystemMenu from '../shared/EcosystemMenu';
 import LanguageSwitcher from '../i18n/LanguageSwitcher';
 import { HOUSING_NAV, HOUSING_NAV_SHORT, HOUSING_ROUTES } from '../housing/labels';
+import { staysHome } from '../lib/movedToStays';
 
 /** Sama sivu loppukauttaviivasta riippumatta: sisääntulo on `/x/`, linkki voi olla `/x` (18.9.2026). */
 const samePath = (a: string, b: string) => a.replace(/\/+$/, '') === b.replace(/\/+$/, '');
@@ -105,15 +106,15 @@ export default function Nav() {
     { to: HOUSING_ROUTES.moving, label: HOUSING_NAV.moving[lang], short: HOUSING_NAV_SHORT.moving[lang] },
     { to: HOUSING_ROUTES.cost, label: HOUSING_NAV.cost[lang], short: HOUSING_NAV_SHORT.cost[lang] },
   ];
-  const stayLinks = [
+  // Vaihe 2 (18.9.2026): hotellit, iglut ja erämaalodget siirtyivät laplandstays.comiin
+  // (public/_redirects 301). Valikossa yksi ulkoinen linkki niiden tilalla.
+  const stayLinks: { to?: string; href?: string; label: string }[] = [
     { to: '/long-stays', label: t.nav.longStays },
-    { to: '/hotels', label: t.nav.hotels },
-    { to: '/glass-igloos', label: t.nav.glassIgloos },
-    { to: '/wilderness', label: t.nav.wilderness },
+    { href: staysHome(lang), label: HOUSING_NAV.staysSite[lang] },
     { to: '/when-to-go', label: t.nav.whenToGo },
     { to: '/booking-guide', label: t.nav.bookingGuide },
   ];
-  const staysActive = stayLinks.some(({ to }) => samePath(pathname, localePath(to)));
+  const staysActive = stayLinks.some(({ to }) => !!to && samePath(pathname, localePath(to)));
 
   function setLocale(target: Lang) {
     try {
@@ -161,7 +162,9 @@ export default function Nav() {
               <Link
                 key={to}
                 to={localized}
-                className={`whitespace-nowrap text-[13px] font-medium transition-colors ${
+                // 🔴 Kosketuskorkeus 44 px: linkit olivat 20 px korkeita (pelkka tekstirivi),
+                // 12 kielta x 3 leveytta = 112 loydosta. Logolinkki kaytti jo min-h-11:ta.
+                className={`inline-flex items-center min-h-11 whitespace-nowrap text-[13px] font-medium transition-colors ${
                   active ? 'text-vibe-pink' : 'text-charcoal/75 hover:text-vibe-pink'
                 }`}
               >
@@ -170,14 +173,14 @@ export default function Nav() {
             );
           })}
 
-          {/* Majoitus-valikko: lomamajoituksen kuusi sivua (vaihe 2 ohjaa osan staysille) */}
+          {/* Majoitus-valikko: pitkät jaksot, ajoitus, varausopas + linkki staysille (vaihe 2, 18.9.2026) */}
           <div ref={staysRef} className="relative">
             <button
               type="button"
               onClick={() => setStaysOpen((o) => !o)}
               aria-haspopup="true"
               aria-expanded={staysOpen}
-              className={`inline-flex items-center gap-1 whitespace-nowrap text-[13px] font-medium transition-colors ${
+              className={`inline-flex items-center min-h-11 gap-1 whitespace-nowrap text-[13px] font-medium transition-colors ${
                 staysActive ? 'text-vibe-pink' : 'text-charcoal/75 hover:text-vibe-pink'
               }`}
             >
@@ -185,9 +188,19 @@ export default function Nav() {
               <ChevronDown size={12} className={staysOpen ? 'rotate-180 transition-transform' : 'transition-transform'} />
             </button>
             {staysOpen && (
-              <ul className="absolute left-0 mt-2 min-w-[210px] rounded-xl border border-charcoal/15 bg-white shadow-2xl py-1 z-50">
-                {stayLinks.map(({ to, label }) => {
-                  const localized = localePath(to);
+              <ul className="absolute left-0 mt-2 min-w-[210px] w-max rounded-xl border border-charcoal/15 bg-white shadow-2xl py-1 z-50">
+                {stayLinks.map(({ to, href, label }) => {
+                  if (href) {
+                    return (
+                      <li key={href}>
+                        <a href={href} target="_blank" rel="noopener" onClick={() => setStaysOpen(false)} className={`${dropdownItemCls(false)} flex items-center gap-1.5 whitespace-nowrap`} data-umami-event="housing_out" data-umami-event-page="nav" data-umami-event-target="laplandstays">
+                          {label}
+                          <ArrowUpRight size={13} className="shrink-0" />
+                        </a>
+                      </li>
+                    );
+                  }
+                  const localized = localePath(to!);
                   return (
                     <li key={to}>
                       <Link to={localized} onClick={() => setStaysOpen(false)} className={dropdownItemCls(samePath(pathname, localized))}>
@@ -246,7 +259,7 @@ export default function Nav() {
             partner="hotels"
             sid="nav_browse_stays"
             destination="Lapland Finland"
-            className="ml-1 shrink-0 whitespace-nowrap px-4 py-2 bg-vibe-pink hover:bg-vibe-pink/90 text-white text-sm font-semibold rounded-full transition-colors shadow-sm shadow-vibe-pink/30"
+            className="ml-1 shrink-0 whitespace-nowrap px-4 py-2 bg-[#DB2777] hover:bg-[#BE185D] text-white text-sm font-semibold rounded-full transition-colors shadow-sm shadow-vibe-pink/30"
           >
             {t.nav.browseStays}
           </AffiliateCTA>
@@ -289,8 +302,26 @@ export default function Nav() {
           <p className="px-3 pt-4 pb-1 text-[11px] font-semibold uppercase tracking-[0.22em] text-stone">
             {HOUSING_NAV.stays[lang]}
           </p>
-          {stayLinks.map(({ to, label }) => {
-            const localized = localePath(to);
+          {stayLinks.map(({ to, href, label }) => {
+            if (href) {
+              return (
+                <a
+                  key={href}
+                  href={href}
+                  target="_blank"
+                  rel="noopener"
+                  onClick={() => setOpen(false)}
+                  className="flex items-center gap-1.5 px-3 py-2.5 text-base font-medium rounded-lg transition-colors text-charcoal/85 hover:text-vibe-pink hover:bg-charcoal/[0.04]"
+                  data-umami-event="housing_out"
+                  data-umami-event-page="nav"
+                  data-umami-event-target="laplandstays"
+                >
+                  {label}
+                  <ArrowUpRight size={15} className="shrink-0" />
+                </a>
+              );
+            }
+            const localized = localePath(to!);
             const active = samePath(pathname, localized);
             return (
               <Link
@@ -358,7 +389,7 @@ export default function Nav() {
             sid="nav_browse_stays_mobile"
             destination="Lapland Finland"
             onClick={() => setOpen(false)}
-            className="mt-2 px-5 py-3 bg-vibe-pink text-white text-base font-semibold rounded-full text-center"
+            className="mt-2 px-5 py-3 bg-[#DB2777] text-white text-base font-semibold rounded-full text-center"
           >
             {t.nav.browseStays}
           </AffiliateCTA>

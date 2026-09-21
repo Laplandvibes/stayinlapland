@@ -1,12 +1,52 @@
 {
-  "version": "20260905",
+  "version": "20260921",
   "domain": "stayinlapland.com",
   "brand": "LAPLAND",
   "tagline": "Verified stays: boutique, wild, igloos",
-  "generated": "2026-09-21T08:31:06.523Z",
+  "generated": "2026-09-21T11:35:29.589Z",
   "staticFallbackSeason": "summer",
   "seasons": {
     "summer": {
+      "tagline": "Verified stays: boutique, wild, lakes",
+      "heroUrl": "https://stayinlapland.com/images/housing-home-hero.webp?v=93075e2b",
+      "heroAlt": "Levi village centre and the fell on a summer evening",
+      "heroSha": "93075e2b5b22a0b4",
+      "bytes": 191923,
+      "sha256": "99916aadafddcf572282c152cb6aee6f2212d746477696cb4836fcdb828ead5a",
+      "bandH": 168,
+      "photoPct": 73.3,
+      "ink": 16418,
+      "inkBox": [
+        358,
+        493,
+        841,
+        603
+      ],
+      "safe": true,
+      "accentP10": 5.06,
+      "accentMed": 5.06,
+      "whiteP10": 17.08,
+      "whiteMed": 17.08,
+      "mean": 119.8,
+      "centerSq": 125,
+      "photoRegion": 150.1,
+      "photoRegionRef": 150.1,
+      "overlayPixels": 0,
+      "maxDiff": 0,
+      "fit": {
+        "size": 74,
+        "lines": 1,
+        "ts": 30,
+        "tagW": 485,
+        "fits": true,
+        "bandH": 168
+      },
+      "contrastOk": true,
+      "zeroOverlay": true,
+      "errors": []
+    },
+    "winter": {
+      "tagline": "Verified stays: boutique, wild, igloos",
       "heroUrl": "https://stayinlapland.com/images/housing-home-hero.webp?v=93075e2b",
       "heroAlt": "Levi village centre and the fell on a summer evening",
       "heroSha": "93075e2b5b22a0b4",
@@ -43,45 +83,6 @@
       "contrastOk": true,
       "zeroOverlay": true,
       "errors": []
-    },
-    "winter": {
-      "heroUrl": "https://stayinlapland.com/images/housing-home-hero.webp?v=93075e2b",
-      "heroAlt": "Levi village centre and the fell on a summer evening",
-      "heroSha": "93075e2b5b22a0b4",
-      "bytes": 192057,
-      "sha256": "8556508ef53c6a4c8b88dc3a3746e5034722f97c7adfb1bd372fc6bcd121491a",
-      "bandH": 168,
-      "photoPct": 73.3,
-      "ink": 16619,
-      "inkBox": [
-        352,
-        493,
-        847,
-        603
-      ],
-      "safe": true,
-      "accentP10": 5.06,
-      "accentMed": 5.06,
-      "whiteP10": 17.08,
-      "whiteMed": 17.08,
-      "mean": 119.8,
-      "centerSq": 125,
-      "photoRegion": 150.1,
-      "photoRegionRef": 150.1,
-      "overlayPixels": 0,
-      "maxDiff": 0,
-      "fit": {
-        "size": 74,
-        "lines": 1,
-        "ts": 30,
-        "tagW": 496,
-        "fits": true,
-        "bandH": 168
-      },
-      "contrastOk": true,
-      "zeroOverlay": true,
-      "errors": [],
-      "sameAsSummer": true
     }
   }
 }

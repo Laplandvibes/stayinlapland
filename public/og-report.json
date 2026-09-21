@@ -3,15 +3,15 @@
   "domain": "stayinlapland.com",
   "brand": "LAPLAND",
   "tagline": "Verified stays: boutique, wild, igloos",
-  "generated": "2026-09-05T21:51:04.230Z",
+  "generated": "2026-09-21T08:31:06.523Z",
   "staticFallbackSeason": "summer",
   "seasons": {
     "summer": {
-      "heroUrl": "https://stayinlapland.com/images/home-hero-summer.avif",
-      "heroAlt": "Lakeside log cabin in the Finnish Lapland summer",
-      "heroSha": "072608da6385d181",
-      "bytes": 252948,
-      "sha256": "db9cb7fe8834f8517a7ea34718bbbbd62a3fceeea45a2a89a131d2364a31beee",
+      "heroUrl": "https://stayinlapland.com/images/housing-home-hero.webp?v=93075e2b",
+      "heroAlt": "Levi village centre and the fell on a summer evening",
+      "heroSha": "93075e2b5b22a0b4",
+      "bytes": 192057,
+      "sha256": "8556508ef53c6a4c8b88dc3a3746e5034722f97c7adfb1bd372fc6bcd121491a",
       "bandH": 168,
       "photoPct": 73.3,
       "ink": 16619,
@@ -26,10 +26,10 @@
       "accentMed": 5.06,
       "whiteP10": 17.08,
       "whiteMed": 17.08,
-      "mean": 92.7,
-      "centerSq": 95.6,
-      "photoRegion": 113.1,
-      "photoRegionRef": 113.1,
+      "mean": 119.8,
+      "centerSq": 125,
+      "photoRegion": 150.1,
+      "photoRegionRef": 150.1,
       "overlayPixels": 0,
       "maxDiff": 0,
       "fit": {
@@ -45,11 +45,11 @@
       "errors": []
     },
     "winter": {
-      "heroUrl": "https://stayinlapland.com/images/hero-aurora-cabins.avif",
-      "heroAlt": "Aurora over a snow-covered log cabin in Finnish Lapland",
-      "heroSha": "f77794232660faaa",
-      "bytes": 82011,
-      "sha256": "02ba5cf047b2fad557d6baf8cfb7731cab705afa50bc12092226c198e0cdec9c",
+      "heroUrl": "https://stayinlapland.com/images/housing-home-hero.webp?v=93075e2b",
+      "heroAlt": "Levi village centre and the fell on a summer evening",
+      "heroSha": "93075e2b5b22a0b4",
+      "bytes": 192057,
+      "sha256": "8556508ef53c6a4c8b88dc3a3746e5034722f97c7adfb1bd372fc6bcd121491a",
       "bandH": 168,
       "photoPct": 73.3,
       "ink": 16619,
@@ -64,10 +64,10 @@
       "accentMed": 5.06,
       "whiteP10": 17.08,
       "whiteMed": 17.08,
-      "mean": 77.3,
-      "centerSq": 82,
-      "photoRegion": 92.2,
-      "photoRegionRef": 92.2,
+      "mean": 119.8,
+      "centerSq": 125,
+      "photoRegion": 150.1,
+      "photoRegionRef": 150.1,
       "overlayPixels": 0,
       "maxDiff": 0,
       "fit": {
@@ -80,7 +80,8 @@
       },
       "contrastOk": true,
       "zeroOverlay": true,
-      "errors": []
+      "errors": [],
+      "sameAsSummer": true
     }
   }
 }

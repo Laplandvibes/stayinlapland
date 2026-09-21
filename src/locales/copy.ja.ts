@@ -143,7 +143,7 @@ export const copyJA: SectionCopy = {
     ],
   },
   home: {
-    metaTitle: 'StayInLapland, フィンランド・ラップランドの長期滞在とブティックホテル',
+    metaTitle: 'フィンランド・ラップランドの長期滞在とブティックホテル',
     metaDescription:
       'フィンランド・ラップランドに腰を据える——週単位で借りるコテージ、ロヴァニエミとサーリセルカのデザインホテル、象徴的なグラスイグルー、最終道路の先の秘境ロッジまで。',
     schemaName: 'StayInLapland, フィンランド・ラップランドの長期滞在とブティックホテル',

@@ -3,7 +3,7 @@
 // Postbuild SEO localizer reads the FIRST metaTitle / metaDescription in this file.
 //
 // SEO strings (parsed by _postbuild_locale_seo.mjs):
-//   metaTitle: 'StayInLapland, 라플란드의 장기 숙박과 부티크 호텔'
+//   metaTitle: '라플란드의 장기 숙박과 부티크 호텔'
 //   metaDescription: '라플란드에서 머무를 곳을 찾으십니까? 장기 숙박, 부티크 호텔, 유리 이글루, 야생 코티지를 엄선해 안내합니다. 실시간 가격과 솔직한 평가, 그리고 정확한 위치 정보를 제공합니다.'
 import { copyEN } from './copy.en';
 import type { SectionCopy } from './copy';
@@ -48,7 +48,7 @@ export const copyKO: SectionCopy = {
   },
   home: {
     ...copyEN.home,
-    metaTitle: 'StayInLapland, 라플란드의 장기 숙박과 부티크 호텔',
+    metaTitle: '라플란드의 장기 숙박과 부티크 호텔',
     metaDescription:
       '라플란드에서 머무를 곳을 찾으십니까? 장기 숙박, 부티크 호텔, 유리 이글루, 야생 로지를 엄선해 안내합니다. 실시간 가격과 솔직한 평가, 정확한 위치 정보를 제공합니다.',
     schemaName: 'StayInLapland, 핀란드 라플란드의 장기 숙박과 부티크 호텔',
@@ -227,7 +227,7 @@ export const copyKO: SectionCopy = {
     ],
   },
   hotels: {
-    metaTitle: 'StayInLapland, 핀란드 라플란드의 부티크 & 디자인 호텔',
+    metaTitle: '핀란드 라플란드의 부티크 & 디자인 호텔',
     metaDescription:
       '예약할 가치가 있는 라플란드 호텔 다섯 곳, Arctic TreeHouse 디자인 스위트, Arctic Light 부티크, Levi Spirit 빌라 호텔, Lapland Hotels Saaga, Star Arctic Hotel. 짧은 일정과 출장을 위해 엄선했습니다.',
     breadcrumb: '호텔',
@@ -274,7 +274,7 @@ export const copyKO: SectionCopy = {
     browseAll: 'Trip.com 객실 둘러보기',
   },
   glassIgloos: {
-    metaTitle: 'StayInLapland, 핀란드 라플란드 유리 이글루, 네 리조트 순위',
+    metaTitle: '핀란드 라플란드 유리 이글루, 네 리조트 순위',
     metaDescription:
       '그 이름값을 하는 핀란드 라플란드 유리 이글루 리조트 엄선 가이드, 칵슬라우타넨, Levin Iglut, Aurora Village, Aurora Pyramids. 하늘 가시성, 어두운 하늘 위치, 쾌적함, 접근성으로 순위를 매겼습니다.',
     breadcrumb: '유리 이글루',
@@ -324,7 +324,7 @@ export const copyKO: SectionCopy = {
     browseAll: 'Trip.com 객실 둘러보기',
   },
   wilderness: {
-    metaTitle: 'StayInLapland, 핀란드 라플란드의 야생 로지, 진지한 리트리트',
+    metaTitle: '핀란드 라플란드의 야생 로지, 진지한 리트리트',
     metaDescription:
       '마지막 도로 너머의 야생 로지, Iso-Syöte Eagle View 스위트와 Wilderness Hotel Muotka. 수목한계선 위 오로라 조망과 현장 오로라 모닝콜 서비스.',
     breadcrumb: '야생 숙소',
@@ -371,7 +371,7 @@ export const copyKO: SectionCopy = {
     browseAll: 'Trip.com 객실 둘러보기',
   },
   longStays: {
-    metaTitle: 'StayInLapland, 핀란드 라플란드 장기 숙박, 일주일 이상 임대',
+    metaTitle: '핀란드 라플란드 장기 숙박, 일주일 이상 임대',
     metaDescription:
       '일주일 이상 임대를 위한 라플란드 장기 숙박 숙소 다섯 곳, Arctic TreeHouse 디자인 스위트, Levi 펜트하우스 레지던스, Ounasvaara 샬레, Pyhä 통나무 캐빈, 이나리 호숫가 빌라. 주 단위 요금, 전용 사우나, 주방 완비.',
     breadcrumb: '장기 숙박',
@@ -421,7 +421,7 @@ export const copyKO: SectionCopy = {
     browseAll: 'Trip.com 객실 둘러보기',
   },
   bookingGuide: {
-    metaTitle: 'StayInLapland, 라플란드 예약 가이드: 시기·방법·준비물',
+    metaTitle: '라플란드 예약 가이드: 시기·방법·준비물',
     metaDescription:
       '실용적인 라플란드 예약 가이드, 최고의 오로라를 위한 시기, 가는 방법, 준비물, 실제 비용, 취소 정책, 그리고 현지 팁.',
     breadcrumb: '예약 가이드',
@@ -489,7 +489,7 @@ export const copyKO: SectionCopy = {
     browseAll: '라플란드 숙소 전체 둘러보기',
   },
   whenToGo: {
-    metaTitle: 'StayInLapland, 라플란드 여행 시기, 월별 가이드',
+    metaTitle: '라플란드 여행 시기, 월별 가이드',
     metaDescription:
       '핀란드 라플란드 방문을 위한 월별 에디토리얼 가이드, 오로라가 가장 강한 때, 눈이 안정되는 때, 성수기 대 비수기 요금, 그리고 현지인이 스스로를 위해 잡는 주간들.',
     breadcrumb: '여행 시기',

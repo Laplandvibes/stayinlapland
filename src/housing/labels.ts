@@ -88,6 +88,8 @@ export const HOUSING_LANG_NOTICE: Record<Lang, string> = {
 /** Sivujen yhteiset pienet UI-merkkijonot (vain sisältökielillä). */
 export const HOUSING_UI: Record<HousingLang, {
   sources: string;
+  /** Avattavan lähderivin otsikko (SourcesDisclosure, 23.9.2026). */
+  sourcesSummary: string;
   sourcesLead: string;
   updated: string;
   readMore: string;
@@ -104,6 +106,7 @@ export const HOUSING_UI: Record<HousingLang, {
 }> = {
   fi: {
     sources: 'Lähteet',
+    sourcesSummary: 'Lähteet ja kuvat',
     sourcesLead: 'Jokainen luku tällä sivulla on jostakin näistä. Lasketut luvut näyttävät kaavansa.',
     updated: 'Tarkistettu 17.9.2026',
     readMore: 'Lue lisää',
@@ -120,6 +123,7 @@ export const HOUSING_UI: Record<HousingLang, {
   },
   en: {
     sources: 'Sources',
+    sourcesSummary: 'Sources and photos',
     sourcesLead: 'Every figure on this page comes from one of these. Calculated figures show their formula.',
     updated: 'Checked 17 September 2026',
     readMore: 'Read more',

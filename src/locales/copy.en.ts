@@ -24,9 +24,9 @@ export const copyEN: SectionCopy = {
     seeHotels: 'See hotels',
   },
   newsletter: {
-    eyebrow: 'Long-stay openings · off-season rates',
-    h2: "The stays you can’t book yet.",
-    lead: 'Most long-stay places on this site release their winter inventory in late August, and it goes fast. We cover when the booking windows open, plus the low-season weeks (November, late April) when nightly rates drop while the auroras still show.',
+    eyebrow: 'The LaplandVibes newsletter',
+    h2: 'The Lapland seasons in your inbox.',
+    lead: 'What happens next in Lapland: polar night, autumn colours, events, the start of the seasonal-work year and offers from across our network. Sent by the LaplandVibes team in Finland.',
     placeholder: 'Your email address',
     subscribe: 'Subscribe',
     subscribing: 'Subscribing…',
@@ -421,8 +421,8 @@ export const copyEN: SectionCopy = {
         title: 'When to come',
         body: [
           'Aurora season is late August through early April. The strongest windows are September–October and February–March, when long dark nights overlap with active solar weather.',
-          'Avoid late November to mid-December: dark, but the snow is often patchy and many activities have not started.',
-          'Christmas and New Year sell out 9 months ahead and prices triple. The local pick is the second half of January, quieter, colder, better aurora.',
+          'Late November and early December are dark, but the snow can still be thin and not every activity has started. Check the property’s season before you book.',
+          'Christmas and New Year fill first, and prices are then at their highest of the year. The second half of January is quieter and colder, and the sky is still dark enough for the aurora.',
         ],
       },
       {
@@ -485,7 +485,7 @@ export const copyEN: SectionCopy = {
         'The right month depends on the trip. Aurora-first, ski-first, long-stay value, Christmas peak, each has a different sweet spot. Here is the editorial month-by-month.',
     },
     authorNote:
-      'Compiled from on-the-ground reports across Finnish Lapland.',
+      'The month notes are our editorial overview of the Lapland seasons. Prices vary by property, so we do not quote percentages.',
     pullQuote: {
       text:
         'Most auroras over Finnish Lapland appear between the evening and the small hours, and the long, dark months from autumn to early spring give the best odds. Clear skies and a little patience matter more than the exact date.',
@@ -504,7 +504,7 @@ export const copyEN: SectionCopy = {
         name: 'October',
         pitch: 'Quiet shoulder',
         body:
-          'First snow flurries, but ground rarely stays white before late month. Hotels run shoulder rates (-30% from peak), aurora active, very few tourists. The cheapest aurora window with full activity infrastructure.',
+          'First snow flurries, but ground rarely stays white before late month. Hotels run shoulder rates, the aurora is active and there are few tourists.',
         bestFor: ['Aurora hunters on a budget', 'Long-stay arrival before peak'],
         avoidIf: ['You want skiing or snowmobile guarantees'],
       },
@@ -512,15 +512,15 @@ export const copyEN: SectionCopy = {
         name: 'November',
         pitch: 'Polar night begins, snow stabilises',
         body:
-          'Coldest start to a Lapland winter. In the far north (Utsjoki), the polar night begins in the last days of the month. Snow starts holding in late November, and by month-end most resorts and snow hotels open. Late November is the absolute best value for long stays.',
-        bestFor: ['Long stays at -50% rates', 'Repeat visitors who know the cold'],
+          'Coldest start to a Lapland winter. In the far north (Utsjoki), the polar night begins in the last days of the month. Snow starts holding in late November, and by month-end most resorts and snow hotels open. Late November is good value for long stays.',
+        bestFor: ['Long stays at shoulder rates', 'Repeat visitors who know the cold'],
         avoidIf: ['First-time travellers (snow inconsistency)'],
       },
       {
         name: 'December',
         pitch: 'Christmas peak',
         body:
-          'Christmas through New Year is peak everything, peak prices, peak demand, peak Santa Claus tourism in Rovaniemi. Glass igloos triple in price, snow hotels fully open. Aurora still active but weather often cloudier.',
+          'Christmas through New Year is peak everything, peak prices, peak demand, peak Santa Claus tourism in Rovaniemi. Glass igloo prices are at their highest of the year, and snow hotels are fully open. Aurora still active but weather often cloudier.',
         bestFor: ['Christmas-themed family trips', 'First-timers who want guaranteed snow'],
         avoidIf: ['Budget-sensitive travel', 'Aurora-first stays'],
       },
@@ -534,9 +534,9 @@ export const copyEN: SectionCopy = {
       },
       {
         name: 'February',
-        pitch: 'Strongest aurora month',
+        pitch: 'Dark skies, school breaks',
         body:
-          'Mid-Feb to mid-March is statistically the strongest aurora window of the year, dark sky overlap with active solar weather. Long stays at peak rates again because of European school breaks; book 6 months ahead.',
+          'The sky is still dark and the aurora shows often on clear nights. Long stays are at peak rates again because of European school breaks, so book early.',
         bestFor: ['Glass igloos', 'Aurora bucket-list trips'],
         avoidIf: ['Short-notice planners'],
       },
@@ -552,7 +552,7 @@ export const copyEN: SectionCopy = {
         name: 'April',
         pitch: 'Spring snow + light',
         body:
-          'Snow still deep and the fell skiing excellent. Aurora season ends in early April as nights become too light. Late April is shoulder again, rates drop 30%, properties still open, sun above horizon for 16+ hours.',
+          'Snow still deep and the fell skiing excellent. Aurora season ends in early April as nights become too light. Late April is shoulder season again: rates fall, many properties are still open and the sun is above the horizon for more than 16 hours.',
         bestFor: ['Late-season ski long stays', 'Cross-country skiing'],
         avoidIf: ['Aurora-first trips'],
       },
@@ -562,14 +562,14 @@ export const copyEN: SectionCopy = {
     cheatKicker: 'The local cheat-sheet',
     cheatH2: 'Three weeks the locals book for themselves.',
     cheatP1:
-      '<strong class="text-charcoal">Late November (week 47–48).</strong> Snow has just stabilised, the darkest weeks of the year begin, aurora season at full activity. Long-stay rates 40–50% off peak. Some properties not fully open yet, confirm before booking.',
+      '<strong class="text-charcoal">Late November (week 47–48).</strong> Snow has just stabilised, the darkest weeks of the year begin, aurora season at full activity. Long-stay rates are well below peak. Some properties not fully open yet, confirm before booking.',
     cheatP2:
-      '<strong class="text-charcoal">Second half of January (week 3–4).</strong> The single best aurora-vs-cost week of the season. Christmas crowds gone, February school break has not started, days lengthening, snow fully set. This is when the editor takes vacation.',
+      '<strong class="text-charcoal">Second half of January (week 3–4).</strong> The single best aurora-vs-cost week of the season. Christmas crowds gone, February school break has not started, days lengthening, snow fully set.',
     cheatP3:
-      '<strong class="text-charcoal">Late April (week 16–17).</strong> Spring skiing peak, sun above horizon 16h/day, snow still deep on north-facing slopes. Aurora window has closed but the light alone is worth the trip. Rates drop 30% after Easter.',
+      '<strong class="text-charcoal">Late April (week 16–17).</strong> Spring skiing peak, sun above horizon 16h/day, snow still deep on north-facing slopes. Aurora window has closed but the light alone is worth the trip. Rates fall after Easter.',
     marginLabel: 'Booking timing',
     marginBody:
-      'For peak February: book 6 months out. For late January: 3 months. For shoulder (Nov, late Apr): 6–8 weeks works. Christmas / NYE: 9 months minimum, and have backup dates because peak inventory disappears in spring.',
+      'February and Christmas–New Year fill first, so book them as soon as the property opens its calendar, and keep backup dates in mind. Shoulder weeks (November, late April) are usually available at shorter notice.',
     readGuide: 'Read the booking guide',
     seeLong: 'See long stays',
   },

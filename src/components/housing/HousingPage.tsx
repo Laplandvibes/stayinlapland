@@ -3,6 +3,7 @@ import {
   ArrowRight,
   ArrowUpRight,
   Banknote,
+  Briefcase,
   Building2,
   CalendarDays,
   Car,
@@ -21,17 +22,18 @@ import {
   ShieldAlert,
   Sun,
   SunMoon,
+  Truck,
   Zap,
   type LucideIcon,
 } from 'lucide-react';
 import PageHero from '../PageHero';
-import AuthorByline from '../AuthorByline';
+import SourcesDisclosure from '../SourcesDisclosure';
 import Newsletter from '../Newsletter';
 import AffiliateCTA from '../AffiliateCTA';
 import HousingWorkPromo from './HousingWorkPromo';
 import PlaceGraphic from './PlaceGraphic';
 import { TwoTone } from './ui';
-import PhotoCredit, { PhotoCreditList, uniqueCredits } from '../PhotoCredit';
+import PhotoCredit, { uniqueCredits } from '../PhotoCredit';
 import { creditFor } from '../../data/photoCredits';
 import { pageUrl } from '../../lib/meta';
 import { useLang, useLocalePath, useLocalPageUrl } from '../../i18n/useLang';
@@ -123,13 +125,17 @@ const SECTION_ICON: Record<string, LucideIcon> = {
   'kolme-tapaa': KeyRound, 'three-ways': KeyRound,
 };
 
-/** Muiden asumissivujen pikkukuvat (240 px, omat valokuvat). */
-const SIBLING_THUMB: Record<HousingRouteKey | 'home', string> = {
-  home: '/images/housing-thumb-home.webp',
-  rentals: '/images/housing-thumb-rentals.webp',
-  seasonal: '/images/housing-thumb-seasonal.webp',
-  moving: '/images/housing-thumb-moving.webp',
-  cost: '/images/housing-thumb-cost.webp',
+/**
+ * Muiden asumissivujen linkit: kuvake, ei valokuvaa.
+ * 🔴 Vesa 23.9.2026: *"käytät liikaa samoja kuvia useaan kertaan"*. Mitattu: tämän rivin viisi
+ * pikkukuvaa toistuivat 7–8 sivulla eli 35 kertaa, enemmän kuin mikään muu sivuston kuva.
+ */
+const SIBLING_ICON: Record<HousingRouteKey | 'home', LucideIcon> = {
+  home: Home,
+  rentals: KeyRound,
+  seasonal: Briefcase,
+  moving: Truck,
+  cost: Banknote,
 };
 
 const OUT_ATTRS = (page: string, target?: string) => ({
@@ -212,9 +218,11 @@ function CardGrid({ cards, page, tone, photoLabel }: { cards: Card[]; page: stri
                   <PlaceGraphic />
                 )}
                 <div className="absolute inset-0 bg-gradient-to-t from-night/80 via-night/10 to-transparent" />
-                {/* Kortti on linkki ⇒ merkintä tekstinä; linkit sivun lopun kuvaluettelossa. */}
-                <PhotoCredit credit={creditFor(c.image?.src)} label={photoLabel} linked={!c.href} position="top" />
-                <h3 className="absolute bottom-3.5 left-5 right-5 font-heading text-2xl sm:text-[28px] text-snow leading-tight tracking-wide drop-shadow">{title}</h3>
+                {/* Kortti on linkki ⇒ merkintä tekstinä; linkit sivun lopun kuvaluettelossa.
+                    Merkintä aina oikeaan alakulmaan (Vesa 23.9.2026: "kuvatiedot pitää olla aina
+                    oikea alalaita, ei me mainosteta sitä") — otsikko nostettu sen yläpuolelle. */}
+                <PhotoCredit credit={creditFor(c.image?.src)} label={photoLabel} linked={!c.href} />
+                <h3 className="absolute bottom-5 left-5 right-5 font-heading text-2xl sm:text-[28px] text-snow leading-tight tracking-wide drop-shadow">{title}</h3>
               </div>
             ) : (
               <div className={`h-1.5 w-full ${bar}`} aria-hidden="true" />
@@ -447,11 +455,6 @@ export default function HousingPage({ route, copy, heroImage, current, parent, w
               ))}
             </div>
           </nav>
-          {workPromo === 'inline' && (
-            <div className="mt-10">
-              <HousingWorkPromo copy={HOME[hl].work} placement={`housing_${current}`} variant="strip" />
-            </div>
-          )}
         </div>
       </section>
 
@@ -487,6 +490,9 @@ export default function HousingPage({ route, copy, heroImage, current, parent, w
         </section>
       )}
 
+      {/* Työlinkki sisällön JÄLKEEN, ei johdannon alla (Vesa 23.9.2026: vuokrasivu "poukkoilee"). */}
+      {workPromo === 'inline' && <HousingWorkPromo copy={HOME[hl].work} placement={`housing_${current}`} variant="strip" />}
+
       {c.faqs && c.faqs.length > 0 && (
         <section className="py-14 sm:py-20 px-5 sm:px-6">
           <div className="max-w-3xl mx-auto">
@@ -513,7 +519,7 @@ export default function HousingPage({ route, copy, heroImage, current, parent, w
 
       {workPromo === 'full' && <HousingWorkPromo copy={HOME[hl].work} placement={`housing_${current}_full`} />}
 
-      {/* Muut asumisen sivut: kuvalliset linkit */}
+      {/* Muut asumisen sivut: kuvakkeelliset linkit (ei toistuvia valokuvia) */}
       <section className="py-12 sm:py-16 px-5 sm:px-6 bg-cream-2/70">
         <div className="max-w-6xl mx-auto">
           <p className="inline-flex px-3 py-1 rounded-full bg-finland-blue/10 text-finland-blue text-[11px] font-semibold tracking-[0.18em] uppercase mb-4">{ui.siblingsKicker}</p>
@@ -527,9 +533,14 @@ export default function HousingPage({ route, copy, heroImage, current, parent, w
                 to={localePath(k === 'home' ? '/' : HOUSING_ROUTES[k])}
                 className="group flex items-center gap-4 p-3 pr-4 min-h-11 rounded-2xl bg-white border border-charcoal/10 shadow-sm hover:shadow-md hover:border-vibe-pink/50 transition-all"
               >
-                <span className="relative block w-20 h-[60px] shrink-0 overflow-hidden rounded-xl bg-night">
-                  <img src={SIBLING_THUMB[k]} alt="" className="absolute inset-0 w-full h-full object-cover" loading="lazy" decoding="async" />
-                </span>
+                {(() => {
+                  const Icon = SIBLING_ICON[k];
+                  return (
+                    <span className="inline-flex w-12 h-12 shrink-0 items-center justify-center rounded-xl bg-finland-blue/10 text-finland-blue group-hover:bg-[#DB2777] group-hover:text-white transition-colors" aria-hidden="true">
+                      <Icon className="w-5 h-5" />
+                    </span>
+                  );
+                })()}
                 <span className="flex-1 font-semibold text-charcoal text-[15px] leading-snug group-hover:text-[#BE185D] transition-colors">
                   {k === 'home' ? HOUSING_NAV.housingHome[lang] : HOUSING_NAV[k][lang]}
                 </span>
@@ -540,25 +551,19 @@ export default function HousingPage({ route, copy, heroImage, current, parent, w
         </div>
       </section>
 
-      {/* Lähteet + tarkistusmerkintä sivun lopussa */}
-      <section className="py-12 sm:py-16 px-5 sm:px-6">
-        <div className="max-w-3xl mx-auto">
-          <AuthorByline note={c.authorNote} />
-          <p className="mt-9 inline-flex px-3 py-1 rounded-full bg-gold-soft/70 text-[#7A5C1E] text-[11px] font-semibold tracking-[0.18em] uppercase mb-3">{ui.sources}</p>
-          <p className="text-graphite text-[15px] leading-relaxed mb-4">{ui.sourcesLead}</p>
-          <ol className="space-y-2 text-[14px] leading-relaxed list-decimal pl-5 marker:text-stone">
-            {c.sources.map((s) => (
-              <li key={s.id} className="text-graphite">
-                <a href={s.url} target="_blank" rel="noopener" className="text-charcoal underline underline-offset-2 hover:text-[#BE185D]" {...OUT_ATTRS(page, `source_${s.id}`)}>
-                  {s.label}
-                </a>
-              </li>
-            ))}
-          </ol>
-          <p className="mt-4 text-stone text-[12px]">{ui.updated}</p>
-          <PhotoCreditList credits={photoCredits} heading={ui.photosHeading} lead={ui.photosLead} />
-        </div>
-      </section>
+      {/* Lähteet, tarkistusmerkintä ja kuvien tekijät: yksi suljettu rivi sivun lopussa
+          (Vesa 23.9.2026: "ei kait ainakaan näin selkeästi tulisi olla nämä"). */}
+      <SourcesDisclosure
+        summary={ui.sourcesSummary}
+        updated={ui.updated}
+        note={c.authorNote}
+        sourcesLead={ui.sourcesLead}
+        sources={c.sources}
+        photoCredits={photoCredits}
+        photosHeading={ui.photosHeading}
+        photosLead={ui.photosLead}
+        page={page}
+      />
 
       <Newsletter />
     </>

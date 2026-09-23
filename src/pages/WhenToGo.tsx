@@ -2,15 +2,29 @@ import { Link } from 'react-router-dom';
 import { ArrowRight } from 'lucide-react';
 import PageHero from '../components/PageHero';
 import Newsletter from '../components/Newsletter';
-import FinnishDivider from '../components/FinnishDivider';
-import AuthorByline from '../components/AuthorByline';
-import PullQuote from '../components/PullQuote';
+import SourcesDisclosure from '../components/SourcesDisclosure';
 import MarginNote from '../components/MarginNote';
-import ImageBreak from '../components/ImageBreak';
 import { pageUrl } from '../lib/meta';
 import { useLang, useLocalePath, useLocalPageUrl } from '../i18n/useLang';
 import { getCopy } from '../locales/copy';
 
+/**
+ * Milloin Lappiin, kuukausi kerrallaan.
+ *
+ * 🔴 Vesa 23.9.2026: *"todella kamala osio tämä, hyvä sivu menee vähän hukkaan, hierarkia
+ * ihan hukassa"* + *"mikä luettelo tämä on, eikö näitä saa kaksi rinnan"* + tekoälykuvat.
+ * Mitattu ennen korjausta: jokainen kuukausi oli <h2> (8 samantasoista pääotsikkoa ilman
+ * yläotsikkoa), kuukaudet yhdessä 896 px:n palstassa, välissä kaksi AI-kuvakaistaa, ja
+ * heron ja kuukausien välissä pikavalikko + tarkistusmerkintä + viisirivinen versaalisitaatti,
+ * jonka "lähde" oli sivusto itse. Nyt:
+ *   - kuukausipillerit hyppylinkkeinä heti heron alla (kevyt, ei korttiruudukkoa)
+ *   - kuukaudet pareittain, parilla oma <h2> ja kuukaudella <h3>
+ *   - kaksi palstaa ≥ 768 px, yksi puhelimessa (feedback_mobile_uniform_grid)
+ *   - sitaattikortti pois (feedback_ei_geneerista_ai_ulkoasua: ei sitaattikortteja)
+ *   - tarkistusmerkintä suljettuna rivinä sivun lopussa (SourcesDisclosure)
+ * Ryhmän otsikko muodostetaan kuukausien omista nimistä, joten se toimii 12 kielellä
+ * ilman uusia käännöksiä.
+ */
 export default function WhenToGo() {
   const lang = useLang();
   const localUrl = useLocalPageUrl();
@@ -18,53 +32,44 @@ export default function WhenToGo() {
   const t = getCopy(lang);
   const w = t.whenToGo;
 
-  // Yksi kortti, kolmessa eri paikassa (kaistat jakavat pinon) — siksi funktio
-  // eikä kolme kopiota. `i` on kuukauden järjestysluku, ja siitä tulee sekä
-  // ankkuri että kortin numero, joten ylälaidan pikavalikko osuu aina oikeaan.
+  // Kahden kuukauden parit: kahden palstan ruudukko täyttyy aina (kolmen ryhmä jätti
+  // reiän, 23.9.2026 mitattu kuvakaappauksesta: marraskuu ja helmikuu yksin rivillään).
+  const groups: { start: number; months: (typeof w.months)[number][] }[] = [];
+  for (let i = 0; i < w.months.length; i += 2) groups.push({ start: i, months: w.months.slice(i, i + 2) });
+
   const renderMonth = (m: (typeof w.months)[number], i: number) => (
     <article
       key={m.name}
       id={`kk-${i + 1}`}
-      className="relative bg-white border border-charcoal/8 rounded-2xl p-7 sm:p-9 shadow-sm scroll-mt-24 overflow-hidden"
+      className="relative flex flex-col bg-white border border-charcoal/10 rounded-2xl p-6 sm:p-7 shadow-sm scroll-mt-24 overflow-hidden"
     >
-      <span className="absolute inset-x-0 top-0 h-[3px] bg-gradient-to-r from-gold to-gold/20" />
-      <div className="flex flex-wrap items-baseline gap-x-5 gap-y-2 mb-4">
-        <span className="font-heading text-gold/70 text-lg leading-none">
+      <span className="absolute inset-x-0 top-0 h-1 bg-gradient-to-r from-vibe-pink via-gold to-finland-blue" aria-hidden="true" />
+      <div className="flex items-center gap-3 mb-1">
+        <span className="inline-flex w-9 h-9 shrink-0 items-center justify-center rounded-full bg-finland-blue text-white font-heading text-lg leading-none">
           {String(i + 1).padStart(2, '0')}
         </span>
-        <h2 className="font-heading text-3xl sm:text-4xl text-charcoal leading-tight tracking-wide">
-          {m.name}
-        </h2>
-        <p className="text-vibe-pink text-[12px] tracking-[0.2em] uppercase font-semibold">
-          {m.pitch}
-        </p>
+        <h3 className="font-heading text-3xl text-charcoal leading-tight tracking-wide">{m.name}</h3>
       </div>
-      <p
-        className="text-graphite text-[16px] leading-relaxed mb-5"
-        dangerouslySetInnerHTML={{ __html: m.body }}
-      />
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-sm">
+      <p className="text-[#BE185D] text-[12px] tracking-[0.16em] uppercase font-semibold mb-4 pl-12">{m.pitch}</p>
+      <p className="text-graphite text-[16px] leading-relaxed mb-5" dangerouslySetInnerHTML={{ __html: m.body }} />
+      <div className="mt-auto grid grid-cols-1 sm:grid-cols-2 gap-4 text-[15px] border-t border-charcoal/8 pt-4">
         <div>
-          <p className="text-aurora-green text-[11px] font-semibold tracking-[0.2em] uppercase mb-2">
-            {w.bestForLabel}
-          </p>
+          <p className="text-[#047857] text-[11px] font-semibold tracking-[0.18em] uppercase mb-2">{w.bestForLabel}</p>
           <ul className="space-y-1.5 text-graphite">
             {m.bestFor.map((bf) => (
               <li key={bf} className="flex items-start gap-2">
-                <span className="text-aurora-green mt-1">●</span>
+                <span className="mt-2 w-1.5 h-1.5 shrink-0 rounded-full bg-aurora-green" aria-hidden="true" />
                 {bf}
               </li>
             ))}
           </ul>
         </div>
         <div>
-          <p className="text-stone text-[11px] font-semibold tracking-[0.2em] uppercase mb-2">
-            {w.skipIfLabel}
-          </p>
+          <p className="text-graphite text-[11px] font-semibold tracking-[0.18em] uppercase mb-2">{w.skipIfLabel}</p>
           <ul className="space-y-1.5 text-graphite">
             {m.avoidIf.map((a) => (
               <li key={a} className="flex items-start gap-2">
-                <span className="text-stone mt-1">○</span>
+                <span className="mt-2 w-1.5 h-1.5 shrink-0 rounded-full border border-stone" aria-hidden="true" />
                 {a}
               </li>
             ))}
@@ -73,6 +78,7 @@ export default function WhenToGo() {
       </div>
     </article>
   );
+
   return (
     <>
       <title>{w.metaTitle}</title>
@@ -104,114 +110,84 @@ export default function WhenToGo() {
         }}
       />
 
-      <PageHero
-        eyebrow={w.pageHero.eyebrow}
-        title={w.pageHero.title}
-        subtitle={w.pageHero.subtitle}
-        imageSrc="/images/whentogo-hero.webp"
-      />
+      <PageHero eyebrow={w.pageHero.eyebrow} title={w.pageHero.title} subtitle={w.pageHero.subtitle} imageSrc="/images/whentogo-hero.webp" />
 
-      {/* The page used to open with a section containing nothing but the
-          editorial credit, then a pull quote, then eight identical white cards
-          (Vesa 2026-08-17: "tämän sivun alku on aivan paska" + "jatkuu vain
-          valkoisena seinänä"). A visitor asking "when should I go" now gets the
-          answer as the first thing on the page: every month, its one-line verdict,
-          and a jump to the detail. Built entirely from the existing month copy —
-          no new claims. */}
-      <section className="py-12 sm:py-16 px-5 sm:px-6">
-        <div className="max-w-5xl mx-auto">
-          <nav aria-label={w.pageHero.title} className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-            {w.months.map((m, i) => (
+      {/* Kuukaudet hyppylinkkeinä: kevyt rivi, ei korttiruudukkoa. */}
+      <nav aria-label={w.pageHero.eyebrow} className="px-5 sm:px-6 pt-10 sm:pt-12">
+        <ul className="max-w-6xl mx-auto flex flex-wrap gap-2">
+          {w.months.map((m, i) => (
+            <li key={m.name}>
               <a
-                key={m.name}
                 href={`#kk-${i + 1}`}
-                className="group flex items-baseline gap-3 rounded-xl bg-white border border-charcoal/8 px-4 py-3 shadow-sm hover:border-vibe-pink/50 hover:shadow-md transition-all"
+                className="lv-tap inline-flex items-center gap-2 px-3.5 py-2 min-h-11 rounded-full bg-white border border-charcoal/12 text-charcoal text-[14px] font-semibold shadow-sm hover:border-vibe-pink hover:text-[#BE185D] transition-colors"
               >
-                <span className="font-heading text-gold/70 text-sm leading-none shrink-0 w-6">
-                  {String(i + 1).padStart(2, '0')}
-                </span>
-                <span className="font-heading text-xl sm:text-2xl text-charcoal leading-none tracking-wide shrink-0">
-                  {m.name}
-                </span>
-                <span className="text-stone text-[13px] leading-snug min-w-0 flex-1">{m.pitch}</span>
-                <ArrowRight className="w-4 h-4 shrink-0 text-charcoal/25 group-hover:text-vibe-pink transition-colors" />
+                <span className="font-heading text-[#7A5C1E] text-sm leading-none">{String(i + 1).padStart(2, '0')}</span>
+                {m.name}
               </a>
-            ))}
-          </nav>
+            </li>
+          ))}
+        </ul>
+      </nav>
 
-          <div className="mt-10 max-w-3xl">
-            <AuthorByline note={w.authorNote} />
+      {groups.map((g, gi) => {
+        const first = g.months[0];
+        const last = g.months[g.months.length - 1];
+        return (
+          <section key={g.start} className={`px-5 sm:px-6 py-12 sm:py-16 ${gi % 2 === 0 ? '' : 'bg-cream-2/70'}`}>
+            <div className="max-w-6xl mx-auto">
+              <h2 className="font-heading text-4xl sm:text-5xl text-charcoal leading-tight tracking-wide mb-2">
+                {first.name}
+                {last !== first && (
+                  <>
+                    {' '}
+                    <span className="text-vibe-pink">–</span> {last.name}
+                  </>
+                )}
+              </h2>
+              <div className="h-1 w-14 rounded-full bg-vibe-pink mb-8" aria-hidden="true" />
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-5 sm:gap-6">
+                {g.months.map((m, j) => renderMonth(m, g.start + j))}
+              </div>
+            </div>
+          </section>
+        );
+      })}
+
+      {/* Paikallisten vinkit ja varausajoitus kuukausien jälkeen */}
+      <section className="py-14 sm:py-20 px-5 sm:px-6 bg-night text-snow relative overflow-hidden">
+        <div className="pointer-events-none absolute -top-32 -left-24 w-[28rem] h-[28rem] rounded-full bg-vibe-pink/20 blur-3xl" aria-hidden="true" />
+        <div className="relative max-w-3xl mx-auto">
+          <p className="inline-flex px-3 py-1 rounded-full bg-white/10 text-[#F9A8D4] text-[11px] font-semibold tracking-[0.18em] uppercase mb-4">{w.cheatKicker}</p>
+          <h2 className="font-heading text-3xl sm:text-4xl md:text-5xl text-snow mb-7 leading-tight tracking-wide">{w.cheatH2}</h2>
+          <div className="space-y-5 text-snow/85 text-[16px] leading-relaxed [&_strong]:text-snow">
+            <p dangerouslySetInnerHTML={{ __html: w.cheatP1.replace(/class="text-charcoal"/g, '') }} />
+            <p dangerouslySetInnerHTML={{ __html: w.cheatP2.replace(/class="text-charcoal"/g, '') }} />
+            <p dangerouslySetInnerHTML={{ __html: w.cheatP3.replace(/class="text-charcoal"/g, '') }} />
           </div>
         </div>
       </section>
 
-      <PullQuote attribution={w.pullQuote.attr}>{w.pullQuote.text}</PullQuote>
-
-      <FinnishDivider />
-
-      {/* Eight identical white cards in one column was the "white wall". Two
-          full-bleed landscape bands split the run into three stretches of the
-          winter, and each card carries its month number so the pile has a
-          rhythm you can read at a glance. The bands are decorative, so their
-          alt is empty on purpose — that is the correct accessible choice and it
-          keeps them out of a 12-locale translation sweep. */}
-      <section className="pt-16 sm:pt-24 px-5 sm:px-6 bg-cream-2/60">
-        <div className="max-w-4xl mx-auto space-y-6">
-          {w.months.slice(0, 3).map((m, i) => renderMonth(m, i))}
-        </div>
-      </section>
-
-      <ImageBreak src="/images/whentogo-band-kaamos.webp" alt="" ratio="band" />
-
-      <section className="py-16 sm:py-24 px-5 sm:px-6 bg-cream-2/60">
-        <div className="max-w-4xl mx-auto space-y-6">
-          {w.months.slice(3, 6).map((m, i) => renderMonth(m, i + 3))}
-        </div>
-      </section>
-
-      <ImageBreak src="/images/whentogo-band-kevat.webp" alt="" ratio="band" />
-
-      <section className="pt-16 sm:pt-24 pb-16 sm:pb-24 px-5 sm:px-6 bg-cream-2/60">
-        <div className="max-w-4xl mx-auto space-y-6">
-          {w.months.slice(6).map((m, i) => renderMonth(m, i + 6))}
-        </div>
-      </section>
-
-      <FinnishDivider />
-
-      <section className="py-16 sm:py-20 px-5 sm:px-6">
+      <section className="py-12 sm:py-16 px-5 sm:px-6">
         <div className="max-w-3xl mx-auto">
-          <p className="text-vibe-pink text-[11px] font-semibold tracking-[0.28em] uppercase mb-3">
-            {w.cheatKicker}
-          </p>
-          <h2 className="font-heading text-3xl sm:text-4xl md:text-5xl text-charcoal mb-7 leading-tight tracking-wide">
-            {w.cheatH2}
-          </h2>
-
-          <div className="space-y-5 text-graphite text-[16px] leading-relaxed">
-            <p dangerouslySetInnerHTML={{ __html: w.cheatP1 }} />
-            <p dangerouslySetInnerHTML={{ __html: w.cheatP2 }} />
-            <p dangerouslySetInnerHTML={{ __html: w.cheatP3 }} />
-          </div>
-
           <MarginNote label={w.marginLabel}>{w.marginBody}</MarginNote>
-
           <div className="mt-8 flex flex-wrap gap-3">
             <Link
               to={localePath('/booking-guide')}
-              className="px-5 py-2.5 bg-charcoal hover:bg-vibe-pink text-snow rounded-full text-sm font-semibold transition-colors"
+              className="inline-flex items-center px-5 py-2.5 min-h-11 bg-charcoal hover:bg-[#BE185D] text-snow rounded-full text-sm font-semibold transition-colors"
             >
               {w.readGuide}
             </Link>
             <Link
               to={localePath('/long-stays')}
-              className="inline-flex items-center gap-1.5 px-5 py-2.5 bg-white hover:bg-cream-2 border border-charcoal/15 text-charcoal rounded-full text-sm font-semibold transition-colors"
+              className="inline-flex items-center gap-1.5 px-5 py-2.5 min-h-11 bg-white hover:bg-cream-2 border border-charcoal/15 text-charcoal rounded-full text-sm font-semibold transition-colors"
             >
               {w.seeLong} <ArrowRight className="w-4 h-4" />
             </Link>
           </div>
         </div>
       </section>
+
+      <SourcesDisclosure summary={t.authorByline.reviewed} note={w.authorNote} page="when_to_go" />
 
       <Newsletter />
     </>

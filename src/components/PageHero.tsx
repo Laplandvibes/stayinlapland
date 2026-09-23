@@ -109,10 +109,9 @@ export default function PageHero({
             Mobile/tablet measure is unchanged; the subtitle keeps its own
             max-w-2xl so body copy stays readable. */}
         <div className="relative z-10 max-w-3xl lg:max-w-6xl mx-auto text-center px-5">
-          <p
-            className="inline-flex text-vibe-pink uppercase tracking-[0.28em] text-[11px] sm:text-xs font-semibold mb-5"
-            style={{ textShadow: '0 2px 12px rgba(0,0,0,0.8)' }}
-          >
+          {/* 🔴 Yläotsikko tummalla laatalla (Vesa 23.9.2026 vuokrasivun kuvakaappauksesta): pinkki 11 px
+              teksti pelkällä varjolla katosi kirkkaaseen valokuvaan. Vaalea pinkki tummalla ≈ 8:1. */}
+          <p className="inline-flex max-w-full rounded-full bg-night/80 px-3.5 py-1.5 text-[#F9A8D4] uppercase tracking-[0.24em] text-[11px] sm:text-xs font-semibold leading-relaxed mb-5">
             {eyebrow}
           </p>
           <h1

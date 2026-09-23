@@ -97,6 +97,19 @@
     scroll-behavior: smooth;
   }
 
+  /* 🔴 Kohdistusrengas (Vesa 23.9.2026 kuvakaappauksista: klikattu navilinkki sai
+     mustan laatikon ympärilleen). Selaimen oletusrengas oli ainoa tyyli. Nyt:
+     näppäimistöllä pinkki rengas (saavutettavuus säilyy), hiiren klikkauksesta ei
+     mitään. */
+  :focus-visible {
+    outline: 2px solid #DB2777;
+    outline-offset: 3px;
+    border-radius: 6px;
+  }
+  :focus:not(:focus-visible) {
+    outline: none;
+  }
+
   body {
     font-family: var(--font-body);
     color: var(--color-charcoal);

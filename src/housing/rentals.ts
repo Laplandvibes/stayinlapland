@@ -16,78 +16,18 @@ export const RENTALS: HousingCopyMap = {
       eyebrow: 'Vuokra-asunnot · Rovaniemi · Levi · Ylläs · Kemi–Tornio · Sodankylä · Inari',
       title: 'Vuokra-asunnot Lapissa.',
       subtitle:
-        'Mistä asunnot oikeasti löytyvät, mitä ne maksavat ja kenelle ne menevät. Neliövuokrat Tilastokeskukselta, hakukanavat kunnilta itseltään.',
+        'Mistä vuokra-asunnon löytää, mitä se maksaa ja paljonko Kela korvaa. Kunta kerrallaan.',
     },
     authorNote:
       'Neliövuokrat: Tilastokeskuksen vuokratilasto, vapaarahoitteiset vuokra-asunnot, huhti–kesäkuu 2026. Kuntien vuokrayhtiöt tarkistettu kuntien omilta sivuilta 17.9.2026.',
+    // 🔴 Johdanto kertoo, MISTÄ aloittaa (Vesa 23.9.2026: sivu "poukkoilee"). Aiemmat kolme kappaletta
+    // olivat kolme eri aihetta (opiskelijat, Levin kausihinnat, kuntien yhtiöt) ennen kuin sivu kertoi
+    // mistä asunto löytyy. Esimerkit asuvat nyt osioissa, joihin ne kuuluvat.
     intro: [
-      'Lapin vuokramarkkina on kaksi eri markkinaa. Rovaniemellä yksiöistä kilpaillaan opiskelijoiden ja matkailijoiden kanssa: opiskelija-asuntosäätiö DAS sai kesällä 2025 noin 550 kiireellistä hakemusta, lähes 90 prosenttia hakijoista halusi yksiön, ja kaupungin yksiöitä lyhytvuokrataan talvisesongiksi matkailijoille (Yle 27.7.2025).',
-      'Tunturikylissä markkina elää kauden mukaan. Levillä 80 neliön alppimökki lähellä keskustaa maksoi Ylen (25.5.2023) mukaan 750 euroa kuukaudessa touko–marraskuussa ja 2 000 euroa viikossa sesongissa; ympärivuotinen vuokra oli 1 650 euroa kuukaudessa. Sama asunto, kolme hintaa.',
-      'Rannikolla ja jokivarsissa on väljempää, ja kuntien omat vuokrayhtiöt ovat ensimmäinen osoite: Kemissä Kiinteistö Oy Itätuulella on reilut 600 asuntoa, Sodankylän Asentopuulaakilla noin 720 ja Inarin Vuokra-asunnoilla yli 500.',
+      'Lapissa vuokra-asunto löytyy kolmesta paikasta: kunnan omalta vuokrayhtiöltä, valtakunnallisista portaaleista ja paikallisista ryhmistä. Aloita kunnasta. Kuntien yhtiöillä on satoja asuntoja, esimerkiksi Kemissä reilut 600, Sodankylässä noin 720 ja Inarissa yli 500, ja hakemuksen voi jättää, vaikka vapaata asuntoa ei juuri nyt olisi.',
+      'Hinta riippuu siitä, minne muutat. Rovaniemellä 30 neliön yksiö maksaa keskimäärin noin 560 euroa kuukaudessa, muualla Lapissa vähemmän. Tunturikylissä vuokra vaihtelee kauden mukaan, joten talveksi kannattaa kysyä ensin työnantajan asuntoa.',
     ],
     sections: [
-      {
-        id: 'hinnat',
-        kicker: 'Mitä vuokra maksaa',
-        h2: 'Neliövuokrat, ei mutu.',
-        lead:
-          'Tilastokeskus julkaisee vuokrat neljännesvuosittain. Alla vapaarahoitteisten vuokra-asuntojen keskineliövuokra huhti–kesäkuussa 2026, euroa neliöltä kuukaudessa.',
-        table: {
-          caption: 'Keskineliövuokra €/m²/kk, vapaarahoitteiset vuokra-asunnot, 2026Q2',
-          head: ['', 'Rovaniemi', 'Lappi (maakunta)', 'Koko maa'],
-          rows: [
-            ['Yksiöt', '18,66', '17,30', '20,46'],
-            ['Kaksiot', '14,35', '12,85', '15,04'],
-            ['Kolmiot ja isommat', '12,09', '10,97', '13,92'],
-            ['Kaikki asunnot', '14,55', '13,10', '15,94'],
-            ['Uudet vuokrasuhteet, kaikki', '15,87', '14,10', '17,26'],
-          ],
-          foot: 'Tilastokeskus, vuokrat 2026Q2, taulukko 15fa. Uusi vuokrasuhde = neljänneksellä alkaneet sopimukset; ne kertovat, mitä juuri nyt pyydetään.',
-        },
-        paras: [
-          '<strong>Näin lasket:</strong> kerro neliövuokra asunnon pinta-alalla. Rovaniemellä 30 m²:n yksiö maksaa keskimäärin noin 560 €/kk (18,66 × 30) ja uudessa vuokrasuhteessa noin 635 €/kk (21,17 × 30, uusien vuokrasuhteiden yksiöhinta Rovaniemellä). 50 m²:n kaksio: noin 720 €/kk (14,35 × 50). Vesi ja sähkö tulevat yleensä päälle.',
-          'Lapin neliövuokrat ovat koko maan keskiarvoa matalammat kaikissa asuntokokoissa, mutta ero on pienin yksiöissä, joissa kysyntä on kovin.',
-        ],
-        note: {
-          label: 'Mitä tilasto ei näe',
-          body:
-            'Tunturikeskusten kausivuokrat ja kalustetut lyhytvuokrat eivät ole tässä luvussa. Siksi Levin talvihinta voi olla aivan muuta kuin Lapin keskiarvo, kuten Ylen esimerkki yllä näyttää.',
-        },
-      },
-      {
-        id: 'asumistuki',
-        kicker: 'Kelan asumistuki',
-        h2: 'Katto on kunnan mukaan.',
-        lead:
-          'Yleinen asumistuki on enintään 70 % hyväksyttävistä asumismenoista, ja hyväksyttävillä menoilla on yläraja, joka riippuu kunnasta ja ruokakunnan koosta. Rovaniemi kuuluu kuntaryhmään II, kaikki muut Lapin kunnat ryhmään III.',
-        table: {
-          caption: 'Enimmäisasumismenot 2026, €/kk',
-          head: ['Ruokakunnan koko', 'Rovaniemi, ryhmä II', 'Muut Lapin kunnat, ryhmä III'],
-          rows: [
-            ['1 henkilö', '447', '394'],
-            ['2 henkilöä', '652', '574'],
-            ['3 henkilöä', '828', '734'],
-            ['4 henkilöä', '981', '875'],
-            ['Jokainen lisähenkilö', '+134', '+129'],
-          ],
-          foot: 'Kela, yleinen asumistuki 2026. Alle 15 euron tukea ei makseta.',
-        },
-        paras: [
-          'Katto tarkoittaa, että Rovaniemellä yhden hengen ruokakunnan vuokrasta huomioidaan enintään 447 euroa, vaikka vuokra olisi 600. Loput maksat itse. Tulot pienentävät tukea perusomavastuun kautta; Kelan laskuri kertoo oman tilanteesi.',
-        ],
-      },
-      {
-        id: 'sopimus',
-        kicker: 'Vuokrasopimus',
-        h2: 'Neljä asiaa, jotka laki sanoo.',
-        bullets: [
-          '<strong>Vakuus on enintään kolmen kuukauden vuokra</strong> (laki asuinhuoneiston vuokrauksesta 8 §). Yksi tai kaksi kuukautta on tavallinen.',
-          '<strong>1.10.2026 alkaen vakuus on palautettava</strong> tai sen pidättämisestä on ilmoitettava kirjallisesti viimeistään 14 päivän kuluessa vuokrasuhteen päättymisestä tai asunnon luovuttamisesta (lakimuutos 1.10.2026, Rakli).',
-          '<strong>Vuokralaisen irtisanomisaika on yksi kuukausi.</strong> Vuokranantajan irtisanomisaika on lakimuutoksen jälkeen kolme kuukautta ja neljä kuukautta, jos vuokrasuhde on kestänyt yhtäjaksoisesti vähintään kaksi vuotta (Rakli).',
-          '<strong>Määräaikainen sopimus sitoo molempia sen loppuun.</strong> Kausityössä työnantajan asunnon sopimus on usein sidottu työsuhteeseen: lue, mitä tapahtuu, jos työ loppuu ennen kautta.',
-          '<strong>Luottotiedot tarkistetaan lähes aina.</strong> Maksuhäiriömerkintä ei estä vuokraamista, mutta kunnan vuokrayhtiö ja suora vuokranantaja ovat silloin todennäköisempiä kuin isot ketjut.',
-        ],
-      },
       {
         id: 'paikkakunnat',
         kicker: 'Mistä asunto löytyy',
@@ -164,6 +104,68 @@ export const RENTALS: HousingCopyMap = {
         ],
       },
       {
+        id: 'hinnat',
+        kicker: 'Mitä vuokra maksaa',
+        h2: 'Neliövuokrat, ei mutu.',
+        lead:
+          'Tilastokeskus julkaisee vuokrat neljännesvuosittain. Alla vapaarahoitteisten vuokra-asuntojen keskineliövuokra huhti–kesäkuussa 2026, euroa neliöltä kuukaudessa.',
+        table: {
+          caption: 'Keskineliövuokra €/m²/kk, vapaarahoitteiset vuokra-asunnot, 2026Q2',
+          head: ['', 'Rovaniemi', 'Lappi (maakunta)', 'Koko maa'],
+          rows: [
+            ['Yksiöt', '18,66', '17,30', '20,46'],
+            ['Kaksiot', '14,35', '12,85', '15,04'],
+            ['Kolmiot ja isommat', '12,09', '10,97', '13,92'],
+            ['Kaikki asunnot', '14,55', '13,10', '15,94'],
+            ['Uudet vuokrasuhteet, kaikki', '15,87', '14,10', '17,26'],
+          ],
+          foot: 'Tilastokeskus, vuokrat 2026Q2, taulukko 15fa. Uusi vuokrasuhde = neljänneksellä alkaneet sopimukset; ne kertovat, mitä juuri nyt pyydetään.',
+        },
+        paras: [
+          '<strong>Näin lasket:</strong> kerro neliövuokra asunnon pinta-alalla. Rovaniemellä 30 m²:n yksiö maksaa keskimäärin noin 560 €/kk (18,66 × 30) ja uudessa vuokrasuhteessa noin 635 €/kk (21,17 × 30, uusien vuokrasuhteiden yksiöhinta Rovaniemellä). 50 m²:n kaksio: noin 720 €/kk (14,35 × 50). Vesi ja sähkö tulevat yleensä päälle.',
+          'Lapin neliövuokrat ovat koko maan keskiarvoa matalammat kaikissa asuntokokoissa, mutta ero on pienin yksiöissä, joissa kysyntä on kovin.',
+        ],
+        note: {
+          label: 'Mitä tilasto ei näe',
+          body:
+            'Tunturikeskusten kausivuokrat ja kalustetut lyhytvuokrat eivät ole tässä luvussa. Levillä 80 neliön alppimökki maksoi Ylen (25.5.2023) mukaan 750 euroa kuukaudessa touko–marraskuussa, 2 000 euroa viikossa sesongissa ja 1 650 euroa kuukaudessa ympäri vuoden: sama asunto, kolme hintaa.',
+        },
+      },
+      {
+        id: 'asumistuki',
+        kicker: 'Kelan asumistuki',
+        h2: 'Katto on kunnan mukaan.',
+        lead:
+          'Yleinen asumistuki on enintään 70 % hyväksyttävistä asumismenoista, ja hyväksyttävillä menoilla on yläraja, joka riippuu kunnasta ja ruokakunnan koosta. Rovaniemi kuuluu kuntaryhmään II, kaikki muut Lapin kunnat ryhmään III.',
+        table: {
+          caption: 'Enimmäisasumismenot 2026, €/kk',
+          head: ['Ruokakunnan koko', 'Rovaniemi, ryhmä II', 'Muut Lapin kunnat, ryhmä III'],
+          rows: [
+            ['1 henkilö', '447', '394'],
+            ['2 henkilöä', '652', '574'],
+            ['3 henkilöä', '828', '734'],
+            ['4 henkilöä', '981', '875'],
+            ['Jokainen lisähenkilö', '+134', '+129'],
+          ],
+          foot: 'Kela, yleinen asumistuki 2026. Alle 15 euron tukea ei makseta.',
+        },
+        paras: [
+          'Katto tarkoittaa, että Rovaniemellä yhden hengen ruokakunnan vuokrasta huomioidaan enintään 447 euroa, vaikka vuokra olisi 600. Loput maksat itse. Tulot pienentävät tukea perusomavastuun kautta; Kelan laskuri kertoo oman tilanteesi.',
+        ],
+      },
+      {
+        id: 'sopimus',
+        kicker: 'Vuokrasopimus',
+        h2: 'Viisi asiaa ennen allekirjoitusta.',
+        bullets: [
+          '<strong>Vakuus on enintään kolmen kuukauden vuokra</strong> (laki asuinhuoneiston vuokrauksesta 8 §). Yksi tai kaksi kuukautta on tavallinen.',
+          '<strong>1.10.2026 alkaen vakuus on palautettava</strong> tai sen pidättämisestä on ilmoitettava kirjallisesti viimeistään 14 päivän kuluessa vuokrasuhteen päättymisestä tai asunnon luovuttamisesta (lakimuutos 1.10.2026, Rakli).',
+          '<strong>Vuokralaisen irtisanomisaika on yksi kuukausi.</strong> Vuokranantajan irtisanomisaika on lakimuutoksen jälkeen kolme kuukautta ja neljä kuukautta, jos vuokrasuhde on kestänyt yhtäjaksoisesti vähintään kaksi vuotta (Rakli).',
+          '<strong>Määräaikainen sopimus sitoo molempia sen loppuun.</strong> Kausityössä työnantajan asunnon sopimus on usein sidottu työsuhteeseen: lue, mitä tapahtuu, jos työ loppuu ennen kautta.',
+          '<strong>Luottotiedot tarkistetaan lähes aina.</strong> Maksuhäiriömerkintä ei estä vuokraamista, mutta kunnan vuokrayhtiö ja suora vuokranantaja ovat silloin todennäköisempiä kuin isot ketjut.',
+        ],
+      },
+      {
         id: 'ennen-maksua',
         kicker: 'Ennen kuin maksat mitään',
         h2: 'Kolme sääntöä, jotka säästävät vakuuden.',
@@ -216,78 +218,15 @@ export const RENTALS: HousingCopyMap = {
       eyebrow: 'Rentals · Rovaniemi · Levi · Ylläs · Kemi–Tornio · Sodankylä · Inari',
       title: 'Renting a home in Lapland.',
       subtitle:
-        'Where the flats really are, what they cost and who gets them. Rents per square metre from Statistics Finland, the search channels from the municipalities themselves.',
+        'Where to find a rental flat, what it costs and how much Kela covers. Town by town.',
     },
     authorNote:
       'Rents per m²: Statistics Finland rent statistics, free-market rental flats, April–June 2026. Municipal housing companies checked on the municipalities’ own sites on 17 September 2026.',
     intro: [
-      'Lapland has two rental markets. In Rovaniemi you compete for studios with students and tourists: the student housing foundation DAS received about 550 urgent applications in summer 2025, nearly 90 percent of applicants wanted a studio, and the city’s studios are let short-term to tourists for the winter season (Yle, 27 Jul 2025).',
-      'In the fell villages the market follows the season. At Levi an 80 m² alpine cabin near the centre cost €750 a month from May to November and €2,000 a week in high season; the year-round rent was €1,650 a month (Yle, 25 May 2023). Same flat, three prices.',
-      'On the coast and along the rivers there is more room, and the municipal housing companies are the first address: Kiinteistö Oy Itätuuli in Kemi has over 600 flats, Asentopuulaaki in Sodankylä about 720 and Inarin Vuokra-asunnot over 500.',
+      'In Lapland a rental flat comes from one of three places: the municipality’s own housing company, the national portals or local groups. Start with the municipality. Their companies own hundreds of flats, for example over 600 in Kemi, about 720 in Sodankylä and over 500 in Inari, and you can apply even when nothing is free right now.',
+      'The price depends on where you move. In Rovaniemi a 30 m² studio averages about €560 a month, elsewhere in Lapland less. In the fell villages rent follows the season, so for the winter ask your employer about staff housing first.',
     ],
     sections: [
-      {
-        id: 'prices',
-        kicker: 'What rent costs',
-        h2: 'Per square metre, not by feel.',
-        lead:
-          'Statistics Finland publishes rents every quarter. Below, the average rent of free-market rental flats in April–June 2026, euros per square metre per month.',
-        table: {
-          caption: 'Average rent €/m²/month, free-market rental flats, 2026Q2',
-          head: ['', 'Rovaniemi', 'Lapland (region)', 'Whole country'],
-          rows: [
-            ['Studios', '18.66', '17.30', '20.46'],
-            ['Two-room flats', '14.35', '12.85', '15.04'],
-            ['Three rooms and larger', '12.09', '10.97', '13.92'],
-            ['All flats', '14.55', '13.10', '15.94'],
-            ['New tenancies, all flats', '15.87', '14.10', '17.26'],
-          ],
-          foot: 'Statistics Finland, rents 2026Q2, table 15fa. New tenancy = contracts that started during the quarter; they show what is being asked right now.',
-        },
-        paras: [
-          '<strong>How to calculate:</strong> multiply the rent per m² by the floor area. In Rovaniemi a 30 m² studio averages about €560 a month (18.66 × 30) and about €635 in a new tenancy (21.17 × 30, the new-tenancy studio figure for Rovaniemi). A 50 m² two-room flat: about €720 a month (14.35 × 50). Water and electricity usually come on top.',
-          'Lapland’s rents per square metre are below the national average in every flat size, but the gap is smallest in studios, where demand is fiercest.',
-        ],
-        note: {
-          label: 'What the statistics do not see',
-          body:
-            'Seasonal lets in the ski resorts and furnished short-term rentals are not in these figures. That is why a winter rent at Levi can be nothing like the Lapland average, as the Yle example above shows.',
-        },
-      },
-      {
-        id: 'housing-allowance',
-        kicker: 'Kela housing allowance',
-        h2: 'The ceiling depends on the municipality.',
-        lead:
-          'General housing allowance covers at most 70 % of accepted housing costs, and accepted costs have a ceiling that depends on the municipality and household size. Rovaniemi is in municipality group II; every other Lapland municipality is in group III.',
-        table: {
-          caption: 'Maximum housing costs 2026, €/month',
-          head: ['Household size', 'Rovaniemi, group II', 'Other Lapland municipalities, group III'],
-          rows: [
-            ['1 person', '447', '394'],
-            ['2 persons', '652', '574'],
-            ['3 persons', '828', '734'],
-            ['4 persons', '981', '875'],
-            ['Each additional person', '+134', '+129'],
-          ],
-          foot: 'Kela, general housing allowance 2026. An allowance below €15 is not paid.',
-        },
-        paras: [
-          'The ceiling means that in Rovaniemi a single-person household’s rent counts up to €447, even if the rent is €600. You pay the rest yourself. Income reduces the allowance through the basic deductible; Kela’s calculator shows your own case.',
-        ],
-      },
-      {
-        id: 'contract',
-        kicker: 'The tenancy agreement',
-        h2: 'Four things the law says.',
-        bullets: [
-          '<strong>The deposit is at most three months’ rent</strong> (Act on Residential Leases, section 8). One or two months is usual.',
-          '<strong>From 1 October 2026 the deposit must be returned</strong>, or its retention explained in writing, within 14 days of the tenancy ending or the flat being handed back (reform in force 1 Oct 2026, Rakli).',
-          '<strong>The tenant’s notice period is one month.</strong> After the reform the landlord’s notice period is three months, and four months if the tenancy has lasted continuously for at least two years (Rakli).',
-          '<strong>A fixed-term contract binds both sides to the end.</strong> In seasonal work an employer’s flat is often tied to the job: read what happens if the job ends before the season does.',
-          '<strong>Credit records are almost always checked.</strong> A default entry does not rule out renting, but a municipal housing company or a private landlord is then a likelier match than the large chains.',
-        ],
-      },
       {
         id: 'towns',
         kicker: 'Where the flats are',
@@ -361,6 +300,68 @@ export const RENTALS: HousingCopyMap = {
           '<a href="https://qasa.fi" target="_blank" rel="noopener">Qasa</a>: listed by the City of Rovaniemi; contract and rent payments run through the platform.',
           '<a href="https://www.tori.fi" target="_blank" rel="noopener">Tori</a>: straight from the landlord, no agency fee. Read below what to check before you pay.',
           'Facebook groups: Levi housing search, Kemi–Keminmaa and Sodankylä–Inari–Utsjoki. The fastest channel in the fell villages, but nobody vouches for the listings.',
+        ],
+      },
+      {
+        id: 'prices',
+        kicker: 'What rent costs',
+        h2: 'Per square metre, not by feel.',
+        lead:
+          'Statistics Finland publishes rents every quarter. Below, the average rent of free-market rental flats in April–June 2026, euros per square metre per month.',
+        table: {
+          caption: 'Average rent €/m²/month, free-market rental flats, 2026Q2',
+          head: ['', 'Rovaniemi', 'Lapland (region)', 'Whole country'],
+          rows: [
+            ['Studios', '18.66', '17.30', '20.46'],
+            ['Two-room flats', '14.35', '12.85', '15.04'],
+            ['Three rooms and larger', '12.09', '10.97', '13.92'],
+            ['All flats', '14.55', '13.10', '15.94'],
+            ['New tenancies, all flats', '15.87', '14.10', '17.26'],
+          ],
+          foot: 'Statistics Finland, rents 2026Q2, table 15fa. New tenancy = contracts that started during the quarter; they show what is being asked right now.',
+        },
+        paras: [
+          '<strong>How to calculate:</strong> multiply the rent per m² by the floor area. In Rovaniemi a 30 m² studio averages about €560 a month (18.66 × 30) and about €635 in a new tenancy (21.17 × 30, the new-tenancy studio figure for Rovaniemi). A 50 m² two-room flat: about €720 a month (14.35 × 50). Water and electricity usually come on top.',
+          'Lapland’s rents per square metre are below the national average in every flat size, but the gap is smallest in studios, where demand is fiercest.',
+        ],
+        note: {
+          label: 'What the statistics do not see',
+          body:
+            'Seasonal lets in the ski resorts and furnished short-term rentals are not in these figures. At Levi an 80 m² alpine cabin cost €750 a month from May to November, €2,000 a week in high season and €1,650 a month year-round (Yle, 25 May 2023): the same flat at three prices.',
+        },
+      },
+      {
+        id: 'housing-allowance',
+        kicker: 'Kela housing allowance',
+        h2: 'The ceiling depends on the municipality.',
+        lead:
+          'General housing allowance covers at most 70 % of accepted housing costs, and accepted costs have a ceiling that depends on the municipality and household size. Rovaniemi is in municipality group II; every other Lapland municipality is in group III.',
+        table: {
+          caption: 'Maximum housing costs 2026, €/month',
+          head: ['Household size', 'Rovaniemi, group II', 'Other Lapland municipalities, group III'],
+          rows: [
+            ['1 person', '447', '394'],
+            ['2 persons', '652', '574'],
+            ['3 persons', '828', '734'],
+            ['4 persons', '981', '875'],
+            ['Each additional person', '+134', '+129'],
+          ],
+          foot: 'Kela, general housing allowance 2026. An allowance below €15 is not paid.',
+        },
+        paras: [
+          'The ceiling means that in Rovaniemi a single-person household’s rent counts up to €447, even if the rent is €600. You pay the rest yourself. Income reduces the allowance through the basic deductible; Kela’s calculator shows your own case.',
+        ],
+      },
+      {
+        id: 'contract',
+        kicker: 'The tenancy agreement',
+        h2: 'Five things before you sign.',
+        bullets: [
+          '<strong>The deposit is at most three months’ rent</strong> (Act on Residential Leases, section 8). One or two months is usual.',
+          '<strong>From 1 October 2026 the deposit must be returned</strong>, or its retention explained in writing, within 14 days of the tenancy ending or the flat being handed back (reform in force 1 Oct 2026, Rakli).',
+          '<strong>The tenant’s notice period is one month.</strong> After the reform the landlord’s notice period is three months, and four months if the tenancy has lasted continuously for at least two years (Rakli).',
+          '<strong>A fixed-term contract binds both sides to the end.</strong> In seasonal work an employer’s flat is often tied to the job: read what happens if the job ends before the season does.',
+          '<strong>Credit records are almost always checked.</strong> A default entry does not rule out renting, but a municipal housing company or a private landlord is then a likelier match than the large chains.',
         ],
       },
       {

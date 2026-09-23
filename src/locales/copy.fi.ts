@@ -25,10 +25,10 @@ export const copyFI: SectionCopy = {
     seeHotels: 'Katso hotellit',
   },
   newsletter: {
-    eyebrow: 'Pitkät jaksot · kausialennukset',
-    h2: 'Majoitukset, joita et voi vielä varata.',
+    eyebrow: 'LaplandVibes-uutiskirje',
+    h2: 'Lapin kaudet sähköpostiisi.',
     lead:
-      'Suurin osa tämän sivuston pitkän jakson kohteista vapauttaa talvikauden varauksensa elokuun lopussa, ja ne menevät nopeasti. Kerromme, milloin varausikkunat aukeavat, sekä matalakausiviikot (marraskuu, huhtikuun loppu), jolloin yöhinnat laskevat mutta revontulet näkyvät yhä.',
+      'Mitä Lapissa tapahtuu seuraavaksi: kaamos, ruska, tapahtumat, kausityön alku ja verkoston tarjoukset. Kirjeet lähettää LaplandVibesin toimitus Suomesta.',
     placeholder: 'Sähköpostiosoitteesi',
     subscribe: 'Tilaa',
     subscribing: 'Tilataan…',
@@ -430,8 +430,8 @@ export const copyFI: SectionCopy = {
         title: 'Milloin tulla',
         body: [
           'Revontulikausi on elokuun lopusta huhtikuun alkuun. Vahvimmat ikkunat ovat syys–lokakuu ja helmi–maaliskuu, jolloin pitkät pimeät yöt limittyvät aktiivisen aurinkosään kanssa.',
-          'Vältä marraskuun loppua ja joulukuun puoliväliä: pimeää, mutta lumi on usein laikukasta ja moni aktiviteetti ei ole vielä alkanut.',
-          'Joulu ja uusivuosi myydään loppuun 9 kuukautta etukäteen ja hinnat kolminkertaistuvat. Paikallisten valinta on tammikuun jälkipuolisko, rauhallisempi, kylmempi, paremmat revontulet.',
+          'Marraskuun lopussa ja joulukuun alussa on pimeää, mutta lumi voi olla vielä ohut, eivätkä kaikki aktiviteetit ole alkaneet. Tarkista kohteen kausi ennen varausta.',
+          'Joulu ja uusivuosi täyttyvät ensimmäisinä, ja silloin hinnat ovat vuoden korkeimmat. Tammikuun jälkipuolisko on rauhallisempi ja kylmempi, ja taivas on vielä pimeä revontulille.',
         ],
       },
       {
@@ -494,7 +494,7 @@ export const copyFI: SectionCopy = {
         'Lapin sää muuttuu kahdessa viikossa täysin toiseksi. Tämä opas kertoo mihin kuukauteen kannattaa varata, revontulille, hiihdolle, joululle vai pitkälle rauhaan vetäytymiselle. Kuukausi kerrallaan, ilman markkinapuhetta.',
     },
     authorNote:
-      'Koottu paikallisten kumppaneiden raporteista eri puolilta Suomen Lappia.',
+      'Kuukausikuvaukset ovat toimituksen yleiskuva Lapin kausista. Hinnat vaihtelevat kohteittain, joten emme esitä niistä prosentteja.',
     pullQuote: {
       text:
         'Useimmat revontulet näkyvät Suomen Lapissa illan ja aamuyön välillä, ja pitkät pimeät kuukaudet syksystä alkukevääseen antavat parhaat mahdollisuudet. Kirkas taivas ja hieman kärsivällisyyttä ratkaisevat enemmän kuin tarkka päivämäärä.',
@@ -513,7 +513,7 @@ export const copyFI: SectionCopy = {
         name: 'Lokakuu',
         pitch: 'Rauhallinen välikausi',
         body:
-          'Ensimmäiset lumikuurot, mutta maa pysyy harvoin valkoisena ennen kuun loppua. Hotellit pyörittävät välikausihintoja (-30 % huipusta), revontulet aktiivisia, hyvin vähän turisteja. Halvin revontuli-ikkuna täydellä aktiviteetti­infrastruktuurilla.',
+          'Ensimmäiset lumikuurot, mutta maa pysyy harvoin valkoisena ennen kuun loppua. Hotellit pyörittävät välikauden hintoja, revontulet ovat aktiivisia ja turisteja on vähän.',
         bestFor: ['Revontulen­metsästäjät budjetilla', 'Pitkän jakson saapuminen ennen huippua'],
         avoidIf: ['Haluat hiihto- tai moottorikelkka­takuita'],
       },
@@ -521,15 +521,15 @@ export const copyFI: SectionCopy = {
         name: 'Marraskuu',
         pitch: 'Kaamos alkaa, lumi tasoittuu',
         body:
-          'Lapin talven kylmin alku. Pohjoisimmassa Lapissa (Utsjoki) kaamos alkaa kuun viimeisinä päivinä. Lumi alkaa pysyä marraskuun lopussa, kuun loppuun mennessä useimmat lomakohteet ja lumihotellit avautuvat. Marraskuun loppu on ehdoton paras arvo pitkille jaksoille.',
-        bestFor: ['Pitkät jaksot -50 % hinnoilla', 'Toistuvat kävijät, jotka tuntevat kylmän'],
+          'Lapin talven kylmin alku. Pohjoisimmassa Lapissa (Utsjoki) kaamos alkaa kuun viimeisinä päivinä. Lumi alkaa pysyä marraskuun lopussa, kuun loppuun mennessä useimmat lomakohteet ja lumihotellit avautuvat. Marraskuun loppu on pitkille jaksoille edullista aikaa.',
+        bestFor: ['Pitkät jaksot välikauden hinnoilla', 'Toistuvat kävijät, jotka tuntevat kylmän'],
         avoidIf: ['Ensikertalaiset (lumen epäsäännöllisyys)'],
       },
       {
         name: 'Joulukuu',
         pitch: 'Joulun huippu',
         body:
-          'Joulu uudenvuoteen on huippu kaikessa, huippuhinnat, huippukysyntä, Joulupukki-matkailun huippu Rovaniemellä. Lasi-iglut kolminkertaistuvat hinnaltaan, lumihotellit täysin auki. Revontulet vielä aktiivisia mutta sää usein pilvisempi.',
+          'Joulu uudenvuoteen on huippu kaikessa, huippuhinnat, huippukysyntä, Joulupukki-matkailun huippu Rovaniemellä. Lasi-iglujen hinnat ovat vuoden korkeimmat, ja lumihotellit ovat täysin auki. Revontulet vielä aktiivisia mutta sää usein pilvisempi.',
         bestFor: ['Joulu-teemaiset perheretket', 'Ensikertalaiset, jotka haluavat varman lumen'],
         avoidIf: ['Budjettiherkkä matkailu', 'Revontulet edellä -jaksot'],
       },
@@ -537,16 +537,16 @@ export const copyFI: SectionCopy = {
         name: 'Tammikuu',
         pitch: 'Paikallisten valinta',
         body:
-          'Tammikuun jälkipuolisko on rauhallinen sweet spot, huippuhinnat ovat laskeneet, päivät pidentyvät selvästi, lumi on vakaa, revontulet aktiivisimmillaan. Joulun ruuhka on poistunut eikä helmikuun talvilomien ruuhka ole vielä alkanut.',
+          'Tammikuun jälkipuolisko on rauhallista aikaa: huippuhinnat ovat laskeneet, päivät pidentyvät selvästi, lumi on vakaa, revontulet aktiivisimmillaan. Joulun ruuhka on poistunut eikä helmikuun talvilomien ruuhka ole vielä alkanut.',
         bestFor: ['Pitkät jaksot', 'Häämatkalaiset', 'Revontulivalokuvaus'],
         avoidIf: ['Tarvitset minkäänlaista lämmintä säätä'],
       },
       {
         name: 'Helmikuu',
-        pitch: 'Vahvimmat revontulet',
+        pitch: 'Pimeä taivas, talvilomat',
         body:
-          'Helmikuun puolivälistä maaliskuun puoliväliin on tilastollisesti vuoden vahvin revontuli-ikkuna, pimeän taivaan ja aktiivisen aurinkosään yhdistelmä. Pitkät jaksot taas huippuhinnoilla eurooppalaisten talvilomien takia; varaa 6 kuukautta etukäteen.',
-        bestFor: ['Lasi-iglut', 'Revontuli-bucket-list-matkat'],
+          'Taivas on vielä pimeä, ja revontulia näkyy selkeinä öinä usein. Pitkät jaksot ovat taas huippuhinnoissa eurooppalaisten talvilomien takia, joten varaa ajoissa.',
+        bestFor: ['Lasi-iglut', 'Revontulimatkat'],
         avoidIf: ['Lyhyellä varoitusajalla suunnittelijat'],
       },
       {
@@ -554,31 +554,31 @@ export const copyFI: SectionCopy = {
         pitch: 'Valo palaa',
         body:
           'Päivät pidentyvät nopeasti, kuun loppuun mennessä päivänvaloa on 13 tuntia. Revontulet vielä vahvoja pimeinä aamuina ja iltoina. Kevätlasku etelään suuntautuvilla tuntureilla. Valokuvallisesti komein laskukuukausi.',
-        bestFor: ['Ski-in-pitkät jaksot', 'Kuka tahansa, joka haluaa valoa + revontulia'],
+        bestFor: ['Pitkät jaksot rinteen vieressä', 'Kuka tahansa, joka haluaa valoa + revontulia'],
         avoidIf: ['Valokuvaajat, jotka tulivat kaamoksen tunnelman takia'],
       },
       {
         name: 'Huhtikuu',
         pitch: 'Kevätlumi + valo',
         body:
-          'Lumi vielä syvää ja hiihto huipputasoa tuntureilla. Revontulikausi loppuu huhtikuun alussa öiden muuttuessa liian valoisiksi. Huhtikuun loppu on jälleen välikautta, hinnat tippuvat 30 %, kohteet vielä auki, aurinko horisontin yläpuolella 16+ tuntia.',
+          'Lumi vielä syvää ja hiihto huipputasoa tuntureilla. Revontulikausi loppuu huhtikuun alussa öiden muuttuessa liian valoisiksi. Huhtikuun loppu on jälleen välikautta: hinnat laskevat, monet kohteet ovat vielä auki ja aurinko on horisontin yläpuolella yli 16 tuntia.',
         bestFor: ['Loppukauden hiihtopitkät jaksot', 'Maastohiihto'],
         avoidIf: ['Revontulet edellä -matkat'],
       },
     ],
     bestForLabel: 'Parhaiten sopii',
     skipIfLabel: 'Ohita jos',
-    cheatKicker: 'Paikallisten huijauslapppu',
+    cheatKicker: 'Paikallisten muistilappu',
     cheatH2: 'Kolme viikkoa, jotka paikalliset varaavat itselleen.',
     cheatP1:
-      '<strong class="text-charcoal">Marraskuun loppu (viikko 47–48).</strong> Lumi juuri tasoittunut, vuoden pimeimmät viikot alkavat, revontulikausi täydessä aktiivisuudessa. Pitkän jakson hinnat 40–50 % huipun alla. Osa kohteista ei ole vielä täysin auki, varmista ennen varausta.',
+      '<strong class="text-charcoal">Marraskuun loppu (viikko 47–48).</strong> Lumi juuri tasoittunut, vuoden pimeimmät viikot alkavat, revontulikausi täydessä aktiivisuudessa. Pitkän jakson hinnat ovat selvästi huippukauden alapuolella. Osa kohteista ei ole vielä täysin auki, varmista ennen varausta.',
     cheatP2:
-      '<strong class="text-charcoal">Tammikuun jälkipuolisko (viikko 3–4).</strong> Kauden ainoa paras revontulet-vs-hinta-viikko. Joulun ruuhka mennyt, helmikuun talviloma ei alkanut, päivät pitenevät, lumi täysin asettunut. Tähän aikaan toimittajamme lomailee.',
+      '<strong class="text-charcoal">Tammikuun jälkipuolisko (viikko 3–4).</strong> Revontulien ja hinnan puolesta kauden paras viikko. Joulun ruuhka mennyt, helmikuun talviloma ei alkanut, päivät pitenevät, lumi täysin asettunut.',
     cheatP3:
-      '<strong class="text-charcoal">Huhtikuun loppu (viikko 16–17).</strong> Kevätlaskun huippu, aurinko horisontin yläpuolella 16h/päivä, lumi vielä syvää pohjoisrinteillä. Revontuli-ikkuna on sulkeutunut mutta pelkkä valo on matkan arvoinen. Hinnat laskevat 30 % pääsiäisen jälkeen.',
+      '<strong class="text-charcoal">Huhtikuun loppu (viikko 16–17).</strong> Kevätlaskun huippu, aurinko horisontin yläpuolella 16h/päivä, lumi vielä syvää pohjoisrinteillä. Revontuli-ikkuna on sulkeutunut mutta pelkkä valo on matkan arvoinen. Hinnat laskevat pääsiäisen jälkeen.',
     marginLabel: 'Varausajoitus',
     marginBody:
-      'Helmikuun huippu: varaa 6 kuukautta etukäteen. Tammikuun loppuosa: 3 kuukautta. Välikausi (marras, huhtikuun loppu): 6–8 viikkoa riittää. Joulu / uusivuosi: 9 kuukautta minimi, ja varaa varapäiviä, sillä huippukauden tarjonta katoaa keväällä.',
+      'Helmikuu ja joulu–uusivuosi täyttyvät ensin, joten varaa ne heti kun kohteen kalenteri aukeaa, ja pidä varapäivät mielessä. Välikauden viikot (marraskuu, huhtikuun loppu) löytyvät yleensä lyhyemmälläkin varoitusajalla.',
     readGuide: 'Lue varausopas',
     seeLong: 'Katso pitkät jaksot',
   },

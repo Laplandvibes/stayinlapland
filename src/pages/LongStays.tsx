@@ -4,9 +4,8 @@ import PropertyCard from '../components/PropertyCard';
 import Newsletter from '../components/Newsletter';
 import FinnishDivider from '../components/FinnishDivider';
 import AffiliateCTA from '../components/AffiliateCTA';
-import AuthorByline from '../components/AuthorByline';
+import SourcesDisclosure from '../components/SourcesDisclosure';
 import EditorsPick from '../components/EditorsPick';
-import PullQuote from '../components/PullQuote';
 import ImageBreak from '../components/ImageBreak';
 import MarginNote from '../components/MarginNote';
 import WorkInLaplandPromo from '../components/WorkInLaplandPromo';
@@ -80,10 +79,8 @@ export default function LongStays() {
 
       <section className="py-12 sm:py-16 px-5 sm:px-6">
         <div className="max-w-4xl mx-auto">
-          <AuthorByline note={ls.authorNote} />
-          <div className="mt-10">
-            <WorkInLaplandPromo placement="long_stays_top" variant="inline" />
-          </div>
+          {/* Tarkistusmerkintä sivun lopussa suljettuna rivinä (Vesa 23.9.2026). */}
+          <WorkInLaplandPromo placement="long_stays_top" variant="inline" />
         </div>
       </section>
 
@@ -102,7 +99,7 @@ export default function LongStays() {
         </div>
       </section>
 
-      <PullQuote attribution={ls.pullQuote.attr}>{ls.pullQuote.text}</PullQuote>
+      {/* Sitaattikortti poistettu 23.9.2026: sen "lähde" oli sivusto itse (feedback_ei_geneerista_ai_ulkoasua). */}
 
       {/* Flagship affiliate ad — Lomarengas (privately-owned weekly cottages),
           the natural partner for the whole-cabin-for-a-week angle. */}
@@ -208,6 +205,8 @@ export default function LongStays() {
           </div>
         </div>
       </section>
+
+      <SourcesDisclosure summary={t.authorByline.reviewed} note={ls.authorNote} page="long_stays" />
 
       <Newsletter />
     </>

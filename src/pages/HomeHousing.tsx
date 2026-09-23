@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 import { ArrowRight, ArrowUpRight, MapPin } from 'lucide-react';
 import Newsletter from '../components/Newsletter';
 import FinnishDivider from '../components/FinnishDivider';
-import AuthorByline from '../components/AuthorByline';
+import SourcesDisclosure from '../components/SourcesDisclosure';
 import HomeAdSlots, { MainPartnerBanner } from '../shared/HomeAdSlots';
 import { AD_SLOTS } from '../data/adSlots';
 import { pageUrl } from '../lib/meta';
@@ -10,7 +10,7 @@ import { useLang, useLocalePath, useLocalPageUrl } from '../i18n/useLang';
 import { getCopy } from '../locales/copy';
 import { AppPromoHero } from '../components/AppPromo';
 import PlaceGraphic from '../components/housing/PlaceGraphic';
-import PhotoCredit, { PhotoCreditList, uniqueCredits } from '../components/PhotoCredit';
+import PhotoCredit, { uniqueCredits } from '../components/PhotoCredit';
 import { creditFor } from '../data/photoCredits';
 import HousingWorkPromo from '../components/housing/HousingWorkPromo';
 import { KickerChip, TwoTone } from '../components/housing/ui';
@@ -170,8 +170,9 @@ export default function HomeHousing() {
                   )}
                   <div className="absolute inset-0 bg-gradient-to-t from-night/75 via-night/10 to-transparent" />
                   {/* Kortti on linkki ⇒ merkintä tekstinä; linkit sivun lopun kuvaluettelossa. */}
-                  <PhotoCredit credit={creditFor(town.image)} label={ui.photo} linked={false} position="top" />
-                  <h3 className="absolute bottom-4 left-5 right-5 font-heading text-2xl sm:text-3xl text-snow leading-tight tracking-wide drop-shadow">{town.name}</h3>
+                  {/* Merkintä aina oikeaan alakulmaan (Vesa 23.9.2026), otsikko sen yläpuolella. */}
+                  <PhotoCredit credit={creditFor(town.image)} label={ui.photo} linked={false} />
+                  <h3 className="absolute bottom-5 left-5 right-5 font-heading text-2xl sm:text-3xl text-snow leading-tight tracking-wide drop-shadow">{town.name}</h3>
                 </div>
                 <div className="p-6 flex flex-col flex-1">
                   <p className="text-[11px] tracking-[0.16em] uppercase text-stone font-semibold mb-2">{town.fact}</p>
@@ -301,24 +302,17 @@ export default function HomeHousing() {
       </section>
 
       <FinnishDivider />
-      {/* Lähteet + tarkistusmerkintä: sivun lopussa, ei heron alla. */}
-      <section className="py-10 sm:py-12 px-5 sm:px-6">
-        <div className="max-w-3xl mx-auto">
-          <AuthorByline note={h.authorNote} />
-          <div className="mt-9 mb-3"><KickerChip tone="gold">{ui.sources}</KickerChip></div>
-          <ol className="space-y-1.5 text-[13px] leading-relaxed list-decimal pl-5 marker:text-stone">
-            {h.sources.map((s) => (
-              <li key={s.id} className="text-graphite">
-                <a href={s.url} target="_blank" rel="noopener" className="text-charcoal underline underline-offset-2 hover:text-vibe-pink" data-umami-event="housing_out" data-umami-event-page="home" data-umami-event-target={`source_${s.id}`}>
-                  {s.label}
-                </a>
-              </li>
-            ))}
-          </ol>
-          <p className="mt-3 text-stone text-[12px]">{ui.updated}</p>
-          <PhotoCreditList credits={photoCredits} heading={ui.photosHeading} lead={ui.photosLead} />
-        </div>
-      </section>
+      {/* Lähteet, tarkistusmerkintä ja kuvien tekijät: yksi suljettu rivi (Vesa 23.9.2026). */}
+      <SourcesDisclosure
+        summary={ui.sourcesSummary}
+        updated={ui.updated}
+        note={h.authorNote}
+        sources={h.sources}
+        photoCredits={photoCredits}
+        photosHeading={ui.photosHeading}
+        photosLead={ui.photosLead}
+        page="home"
+      />
 
       <Newsletter />
     </>

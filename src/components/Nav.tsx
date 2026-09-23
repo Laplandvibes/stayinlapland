@@ -14,6 +14,11 @@ import { staysHome } from '../lib/movedToStays';
 /** Sama sivu loppukauttaviivasta riippumatta: sisääntulo on `/x/`, linkki voi olla `/x` (18.9.2026). */
 const samePath = (a: string, b: string) => a.replace(/\/+$/, '') === b.replace(/\/+$/, '');
 
+/** Navin linkkivärit kermalla: charcoal 14,9:1, #BE185D 5,4:1 (#EC4899 olisi 3,5:1).
+ *  Aktiivinen sivu = tumma pinkki + alleviivaus, jotta tila ei ole pelkän värin varassa. */
+const NAV_IDLE = 'text-charcoal hover:text-[#BE185D]';
+const NAV_ACTIVE = 'text-[#BE185D] underline decoration-2 decoration-[#DB2777] underline-offset-[10px]';
+
 // Destination pages had no entry point in the nav at all — the only way in was
 // the grid halfway down the home page, so /destinations/* was effectively a
 // dead end (Vesa 2026-07-26: "miten sinne navigoidaan?"). Label lives here
@@ -142,10 +147,13 @@ export default function Nav() {
   ];
 
   const dropdownItemCls = (active: boolean) =>
-    `block px-4 py-2.5 min-h-11 text-sm transition-colors ${active ? 'bg-vibe-pink/10 text-vibe-pink font-semibold' : 'text-charcoal hover:bg-charcoal/5'}`;
+    `block px-4 py-2.5 min-h-11 text-sm transition-colors ${active ? 'bg-vibe-pink/10 text-[#BE185D] font-semibold' : 'text-charcoal hover:bg-charcoal/5 hover:text-[#BE185D]'}`;
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-40 bg-cream/85 backdrop-blur-md border-b border-charcoal/10">
+    // 🔴 Kiinteä tausta (Vesa 23.9.2026: "navigaation värimaailma ei toimi, erottuvuus tosi huono"):
+    // bg-cream/85 + blur muuttui tumman osion päällä harmaaksi (~#D7D8D9), ja pinkki aktiivilinkki
+    // jäi siinä noin 2,5:1:een. Kiinteä kerma + varjo pitää palkin samana joka osion päällä.
+    <header className="fixed top-0 left-0 right-0 z-40 bg-cream border-b border-charcoal/10 shadow-[0_2px_12px_rgba(15,23,42,0.08)]">
       <div className="max-w-screen-2xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between gap-4">
         <div className="flex items-center gap-3 sm:gap-4 shrink-0">
           <EcosystemMenu lang={lang} currentDomain="stayinlapland.com" variant="light" />
@@ -165,7 +173,7 @@ export default function Nav() {
                 // 🔴 Kosketuskorkeus 44 px: linkit olivat 20 px korkeita (pelkka tekstirivi),
                 // 12 kielta x 3 leveytta = 112 loydosta. Logolinkki kaytti jo min-h-11:ta.
                 className={`inline-flex items-center min-h-11 whitespace-nowrap text-[13px] font-medium transition-colors ${
-                  active ? 'text-vibe-pink' : 'text-charcoal/75 hover:text-vibe-pink'
+                  active ? NAV_ACTIVE : NAV_IDLE
                 }`}
               >
                 {short}
@@ -181,7 +189,7 @@ export default function Nav() {
               aria-haspopup="true"
               aria-expanded={staysOpen}
               className={`inline-flex items-center min-h-11 gap-1 whitespace-nowrap text-[13px] font-medium transition-colors ${
-                staysActive ? 'text-vibe-pink' : 'text-charcoal/75 hover:text-vibe-pink'
+                staysActive ? NAV_ACTIVE : NAV_IDLE
               }`}
             >
               {HOUSING_NAV.stays[lang]}
@@ -220,8 +228,8 @@ export default function Nav() {
               onClick={() => setDestOpen((o) => !o)}
               aria-haspopup="true"
               aria-expanded={destOpen}
-              className={`inline-flex items-center gap-1 whitespace-nowrap text-[13px] font-medium transition-colors ${
-                pathname.includes('/destinations/') ? 'text-vibe-pink' : 'text-charcoal/75 hover:text-vibe-pink'
+              className={`inline-flex items-center min-h-11 gap-1 whitespace-nowrap text-[13px] font-medium transition-colors ${
+                pathname.includes('/destinations/') ? NAV_ACTIVE : NAV_IDLE
               }`}
             >
               {DESTINATIONS_LABEL[lang]}

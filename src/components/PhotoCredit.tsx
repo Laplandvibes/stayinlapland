@@ -21,17 +21,16 @@ export default function PhotoCredit({
   credit,
   label,
   linked = true,
-  position = 'bottom',
 }: {
   credit?: Credit;
   label: string;
   linked?: boolean;
-  position?: 'bottom' | 'top';
 }) {
   if (!credit) return null;
-  const pos = position === 'top' ? 'top-0 right-0 rounded-bl' : 'bottom-0 right-0 rounded-tl';
+  // 🔴 Aina oikea alakulma (Vesa 23.9.2026: "kuvatiedot pitää olla aina oikea alalaita, ei me
+  // mainosteta sitä"). Yläkulmavaihtoehto poistettu, ettei se palaa korttiin.
   return (
-    <span className={`absolute ${pos} z-10 max-w-full bg-black/55 px-1.5 py-[2px] text-[9px] sm:text-[10px] leading-tight text-white`}>
+    <span className={`absolute bottom-0 right-0 rounded-tl z-10 max-w-full bg-black/55 px-1.5 py-[2px] text-[9px] sm:text-[10px] leading-tight text-white`}>
       {label}:{' '}
       {linked ? (
         <>
@@ -66,8 +65,8 @@ export function PhotoCreditList({
   return (
     <div className="mt-8">
       <p className="text-[11px] font-semibold uppercase tracking-[0.18em] text-graphite mb-2">{heading}</p>
-      <p className="text-stone text-[13px] leading-relaxed mb-2">{lead}</p>
-      <ul className="space-y-1.5 text-[13px] leading-relaxed">
+      <p className="text-graphite text-[15px] leading-relaxed mb-2">{lead}</p>
+      <ul className="space-y-1.5 text-[15px] leading-relaxed">
         {credits.map((c) => (
           <li key={c.sourceUrl} className="text-graphite">
             <a href={c.sourceUrl} target="_blank" rel="noopener" className="text-charcoal underline underline-offset-2 hover:text-[#BE185D]">

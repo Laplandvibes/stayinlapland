@@ -1,8 +1,7 @@
 import PageHero from '../components/PageHero';
 import Newsletter from '../components/Newsletter';
-import FinnishDivider from '../components/FinnishDivider';
 import AffiliateCTA from '../components/AffiliateCTA';
-import AuthorByline from '../components/AuthorByline';
+import SourcesDisclosure from '../components/SourcesDisclosure';
 import { Calendar, Plane, Snowflake, Wallet, Compass, Lightbulb } from 'lucide-react';
 import { pageUrl } from '../lib/meta';
 import { useLang, useLocalPageUrl } from '../i18n/useLang';
@@ -55,15 +54,9 @@ export default function BookingGuide() {
         imageSrc="/images/bookingguide-hero.webp"
       />
 
-      <section className="py-12 sm:py-16 px-5 sm:px-6">
-        <div className="max-w-4xl mx-auto">
-          <AuthorByline />
-        </div>
-      </section>
-
-      <FinnishDivider />
-
-      <section className="py-16 sm:py-20 px-5 sm:px-6 bg-cream-2/60">
+      {/* 🔴 Sivu alkaa asiasta (Vesa 23.9.2026: "apua miten paska alku, jollain varoituksella alkaa?").
+          Tarkistusmerkintä ja komissioilmoitus ovat sivun lopussa suljettuna rivinä. */}
+      <section className="py-14 sm:py-20 px-5 sm:px-6 bg-cream-2/60">
         <div className="max-w-4xl mx-auto space-y-8">
           {b.sections.map((section, idx) => {
             const Icon = ICONS[idx] ?? Calendar;
@@ -118,6 +111,8 @@ export default function BookingGuide() {
           />
         </div>
       </section>
+
+      <SourcesDisclosure summary={t.authorByline.reviewed} note={t.authorByline.defaultNote.replace(/\s*(Lähteet ovat näkyvillä|Sources are visible|Sources are shown)\.?$/, '')} page="booking_guide" />
 
       <Newsletter />
     </>

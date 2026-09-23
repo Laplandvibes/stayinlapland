@@ -3,7 +3,7 @@ import { ArrowRight } from 'lucide-react';
 import PageHero from '../components/PageHero';
 import Newsletter from '../components/Newsletter';
 import FinnishDivider from '../components/FinnishDivider';
-import AuthorByline from '../components/AuthorByline';
+import SourcesDisclosure from '../components/SourcesDisclosure';
 import AffiliateCTA from '../components/AffiliateCTA';
 import {
   destinations,
@@ -176,8 +176,8 @@ export default function DestinationPage() {
 
       <section className="py-16 sm:py-20 px-5 sm:px-6">
         <div className="max-w-4xl mx-auto">
-          <AuthorByline note={d.authorNoteFor(destName)} />
-          <p className="mt-10 text-graphite text-[17px] leading-relaxed">{longStayAngle}</p>
+          {/* Tarkistusmerkintä sivun lopussa suljettuna rivinä (Vesa 23.9.2026), ei sisällön edellä. */}
+          <p className="text-graphite text-[17px] leading-relaxed">{longStayAngle}</p>
         </div>
       </section>
 
@@ -318,6 +318,8 @@ export default function DestinationPage() {
           </AffiliateCTA>
         </div>
       </section>
+
+      <SourcesDisclosure summary={t.authorByline.reviewed} note={d.authorNoteFor(destName)} page="destination" />
 
       <Newsletter />
     </>

@@ -62,7 +62,7 @@ const SRC = {
   mhMarjat: { url: 'https://www.luontoon.fi/fi/artikkelit/marjastusajat-ja-syotavat-marjat' },
   traficom: { url: 'https://traficom.fi/fi/liikenne/autoilijat/vinkkeja-liikenteeseen/auton-kesa-ja-talvirenkaat' },
   paliskunnat: { url: 'https://paliskunnat.fi/py/porovahingot/liikennevahingot/' },
-  tkMajoitus: { url: 'https://pxdata.stat.fi/PXWeb/pxweb/fi/StatFin/StatFin__matk/statfin_matk_pxt_11ix.px' },
+  tkMajoitus: { url: 'https://pxdata.stat.fi/PxWeb/pxweb/fi/StatFin/StatFin__matk/11ix.px/' },
   oph: { url: 'https://www.oph.fi/fi/uutiset/2026/koulujen-tyo-ja-loma-ajat-lukuvuonna-2026-2027' },
   visitFinland: { url: 'https://www.visitfinland.com/en/articles/the-best-times-to-see-northern-lights/' },
   das: { url: 'https://das.fi/fi/hakeminen/usein-kysyttya' },

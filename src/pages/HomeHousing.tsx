@@ -185,7 +185,8 @@ export default function HomeHousing() {
                   ) : (
                     <PlaceGraphic />
                   )}
-                  <div className="absolute inset-0 bg-gradient-to-t from-night/75 via-night/10 to-transparent" />
+                  {/* 23.9.2026: /75→/90 ja via /10→/30, kun Inarin talvikuvan hanki jäi otsikon alle (korttiteksti-portti 1,63:1). */}
+                  <div className="absolute inset-0 bg-gradient-to-t from-night/90 via-night/30 to-transparent" />
                   {/* Kortti on linkki ⇒ merkintä tekstinä; linkit sivun lopun kuvaluettelossa. */}
                   {/* Merkintä aina oikeaan alakulmaan (Vesa 23.9.2026), otsikko sen yläpuolella. */}
                   <PhotoCredit credit={creditFor(town.image)} label={ui.photo} linked={false} />

@@ -79,9 +79,9 @@ export const TOWN_IVALO_INARI: HousingCopyMap = {
       {
         id: 'asumistuki',
         kicker: 'Kelan asumistuki',
-        h2: 'Inari on kuntaryhmää III.',
+        h2: 'Inari on Kelan ryhmässä ”muut kunnat”.',
         table: {
-          caption: 'Enimmäisasumismenot 2026, €/kk, kuntaryhmä III',
+          caption: 'Enimmäisasumismenot 2026, €/kk, Kelan ryhmä ”muut kunnat”',
           head: ['Ruokakunnan koko', 'Enimmäisasumismenot'],
           rows: [
             ['1 henkilö', '394'],
@@ -199,9 +199,9 @@ export const TOWN_IVALO_INARI: HousingCopyMap = {
       {
         id: 'housing-allowance',
         kicker: 'Kela housing allowance',
-        h2: 'Inari is in group III.',
+        h2: 'Inari falls under Kela’s “other municipalities”.',
         table: {
-          caption: 'Maximum housing costs 2026, €/month, municipality group III',
+          caption: 'Maximum housing costs 2026, €/month, Kela group “other municipalities”',
           head: ['Household size', 'Maximum housing costs'],
           rows: [
             ['1 person', '394'],

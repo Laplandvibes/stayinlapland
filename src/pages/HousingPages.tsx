@@ -57,7 +57,11 @@ export function CostOfLiving() {
 const TOWN_HERO: Record<string, string | undefined> = {
   rovaniemi: '/images/housing-rovaniemi-hero-talvikatu.webp',
   'kemi-tornio': '/images/housing-kemi-hero-kaupungintalo.webp',
-  'kittila-levi': '/images/housing-kittila-levi-hero.webp',
+  // Oma kuva 18.7.2026 (kerrostalo ja vanha mänty Kemijärvellä), master D:/_puhelin_staging/kuvat/20260718_224029.jpg.
+  kemijarvi: '/images/housing-kemijarvi-hero-kerrostalo.webp',
+  // Sodankylän vanha kirkko (1689), Wikimedia Commons CC BY-SA 4.0 (EerikLehto). Vain pienennys, ei rajausta.
+  sodankyla: '/images/housing-sodankyla-hero-vanha-kirkko.webp',
+  'kittila-levi': '/images/housing-kittila-levi-hero-kyla.webp',
   // Ivalo ilmasta helmikuussa 2017, Wikimedia Commons CC BY-SA 4.0 (Markus Säynevirta). Tekijä piirtyy heroon
   // automaattisesti src/data/photoCredits.ts:stä.
   'ivalo-inari': '/images/housing-ivalo-ilmakuva.webp',

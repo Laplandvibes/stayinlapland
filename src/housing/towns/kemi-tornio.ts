@@ -1,7 +1,7 @@
 import type { HousingCopyMap } from '../types';
 import { pickSources } from '../sources';
 
-const SOURCES = ['tkVuokrat', 'tkVaesto', 'kela', 'kemi', 'keminmaa', 'tornio', 'ahvl', 'rakli'] as const;
+const SOURCES = ['tkVuokrat', 'tkVaesto', 'kela', 'kemi', 'itatuuli', 'keminmaa', 'keminmaaVuokra', 'tornio', 'ahvl', 'rakli'] as const;
 
 /** Mitattu kysyntä (OpenSEO 18.9.2026, fi/2246): "vuokra-asunnot kemi" 3 600/kk, "vuokra-asunnot tornio" 3 600/kk. */
 export const TOWN_KEMI_TORNIO: HousingCopyMap = {
@@ -18,10 +18,10 @@ export const TOWN_KEMI_TORNIO: HousingCopyMap = {
         'Rannikon kaksoiskaupunki, jossa kaupunkien omilla vuokrayhtiöillä on satoja asuntoja ja hakemus jätetään verkossa. Mistä aloittaa ja mitä vuokra maksaa.',
     },
     authorNote:
-      'Vuokrayhtiöiden asuntomäärät Kemin, Tornion ja Keminmaan kuntien omilta sivuilta, neliövuokrat Tilastokeskuksen vuokratilastosta (Lapin maakunta 2026Q2). Tarkistettu 17.9.2026.',
+      'Vuokrayhtiöiden asuntomäärät Kemin, Tornion ja Keminmaan kuntien omilta sivuilta, hakuehdot yhtiöiden omilta sivuilta, neliövuokrat Tilastokeskuksen vuokratilastosta (Lapin maakunta 2026Q2). Tarkistettu 23.9.2026.',
     intro: [
       'Kemissä asuu 19 339, Torniossa 20 823 ja Keminmaalla 7 576 ihmistä (Tilastokeskus 31.12.2025). Kolme kuntaa muodostavat yhden työssäkäyntialueen, jonka sisällä asunto voi olla eri kunnassa kuin työpaikka ilman että matka venyy.',
-      'Kaupunkien omat vuokrayhtiöt ovat ensimmäinen osoite: Kemin kaupungin vuokra-asunnoista vastaa Kiinteistö Oy Itätuuli, jolla on reilut 600 asuntoa keskustassa ja viiden kilometrin säteellä (kemi.fi). Keminmaan Vuokra-asunnot Oy:llä on 162 kerrostalo- ja 146 rivitaloasuntoa (keminmaa.fi), ja molempiin haetaan samalla sähköisellä hakemuksella. Torniossa kaupungin asuntoja hallinnoi Tornion Krunni Oy, jonka alle kuuluu Tornion Vuokra-asunnot Oy (tornio.fi).',
+      'Kaupunkien omat vuokrayhtiöt ovat ensimmäinen osoite: Kemin kaupungin vuokra-asunnoista vastaa Kiinteistö Oy Itätuuli, jolla on reilut 600 asuntoa keskustassa ja viiden kilometrin säteellä (kemi.fi). Keminmaan Vuokra-asunnot Oy:llä on 18 kiinteistöä ja reilut 300 asuntoa (keminmaa.fi). Kumpaankin haetaan omalla sähköisellä hakemuksellaan. Torniossa kaupungin asuntoja hallinnoi Tornion Krunni Oy, jonka alle kuuluu Tornion Vuokra-asunnot Oy (tornio.fi).',
       'Tilastokeskus ei julkaise Kemistä ja Torniosta omaa keskineliövuokraa, joten alla on Lapin maakunnan luku. Rovaniemen luvut löydät omalta sivultaan.',
     ],
     sections: [
@@ -47,9 +47,9 @@ export const TOWN_KEMI_TORNIO: HousingCopyMap = {
       {
         id: 'asumistuki',
         kicker: 'Kelan asumistuki',
-        h2: 'Kemi, Tornio ja Keminmaa ovat kuntaryhmää III.',
+        h2: 'Kemi, Tornio ja Keminmaa ovat Kelan ryhmässä ”muut kunnat”.',
         table: {
-          caption: 'Enimmäisasumismenot 2026, €/kk, kuntaryhmä III',
+          caption: 'Enimmäisasumismenot 2026, €/kk, Kelan ryhmä ”muut kunnat”',
           head: ['Ruokakunnan koko', 'Enimmäisasumismenot'],
           rows: [
             ['1 henkilö', '394'],
@@ -69,16 +69,16 @@ export const TOWN_KEMI_TORNIO: HousingCopyMap = {
         cards: [
           {
             title: 'Kemi: Kiinteistö Oy Itätuuli',
-            body: 'Kaupungin vuokra-asunnot, reilut 600 asuntoa keskustassa ja viiden kilometrin säteellä. Hakemus jätetään Kemi–Keminmaan yhteisellä sähköisellä lomakkeella. Kemin sivu listaa myös yksityiset välittäjät: Forenom, Habita Kemi, HVC Group, Kiinteistömaailma, KVP Group, OP Koti Kemi, Pihlajaniemi & Co ja Solecco.',
+            body: 'Kaupungin vuokra-asunnot, reilut 600 asuntoa keskustassa ja viiden kilometrin säteellä. Oma sähköinen hakemus on voimassa neljä kuukautta, eikä vakuutta peritä. Kemin sivu listaa myös yksityiset välittäjät: Forenom, Habita Kemi, HVC Group, Kiinteistömaailma, KVP Group, OP Koti Kemi, Pihlajaniemi & Co ja Solecco.',
             href: 'https://www.kemi.fi/asuminen-ja-ymparisto/asuminen/vuokra-asunnot/',
             linkLabel: 'kemi.fi: Vuokra-asunnot',
             event: 'kemi_city',
           },
           {
             title: 'Keminmaan Vuokra-asunnot Oy',
-            body: 'Kunnan omistama vuokrataloyhtiö: 18 kiinteistöä, joissa 162 kerrostalo- ja 146 rivitaloasuntoa. Sama sähköinen hakemus kuin Itätuulella.',
-            href: 'https://www.keminmaa.fi/asuminen-ja-ymparisto/asuminen/vuokra-asunnot/',
-            linkLabel: 'keminmaa.fi: Vuokra-asunnot',
+            body: 'Kunnan omistama vuokrataloyhtiö: 18 kiinteistöä ja reilut 300 asuntoa, ja vuokraan sisältyvät vesi ja lämmitys. Oma sähköinen hakemus on voimassa kolme kuukautta, ja vakuus on kuukauden vuokra.',
+            href: 'https://www.keminmaanvuokra-asunnot.fi/asunnonhaku.html',
+            linkLabel: 'Keminmaan Vuokra-asunnot: Asunnonhaku',
             event: 'keminmaa',
           },
           {
@@ -110,7 +110,7 @@ export const TOWN_KEMI_TORNIO: HousingCopyMap = {
     faqs: [
       {
         q: 'Miten Kemin kaupungin vuokra-asuntoa haetaan?',
-        a: 'Sähköisellä hakemuksella, joka on yhteinen Kiinteistö Oy Itätuulelle (Kemi) ja Keminmaan Vuokra-asunnot Oy:lle. Itätuulella on reilut 600 asuntoa keskustassa ja viiden kilometrin säteellä (kemi.fi).',
+        a: 'Kiinteistö Oy Itätuulen omalla sähköisellä hakemuksella, joka on voimassa neljä kuukautta. Itätuulella on reilut 600 asuntoa keskustassa ja viiden kilometrin säteellä (kemi.fi), ja se vuokraa kaikki asuntonsa ilman vakuutta (itatuuli.fi). Keminmaan Vuokra-asunnot Oy:llä on oma hakemuksensa.',
       },
       {
         q: 'Mitä vuokra maksaa Kemissä ja Torniossa?',
@@ -141,10 +141,10 @@ export const TOWN_KEMI_TORNIO: HousingCopyMap = {
         'The coastal twin towns, where the municipal housing companies hold hundreds of flats and applications are filed online. Where to start and what rent costs.',
     },
     authorNote:
-      'Housing-company flat counts from the municipalities’ own pages for Kemi, Tornio and Keminmaa, rents per m² from Statistics Finland (Lapland region 2026Q2). Checked 17 September 2026.',
+      'Housing-company flat counts from the municipalities’ own pages for Kemi, Tornio and Keminmaa, application terms from the companies’ own pages, rents per m² from Statistics Finland (Lapland region 2026Q2). Checked 23 September 2026.',
     intro: [
       'Kemi has 19,339 residents, Tornio 20,823 and Keminmaa 7,576 (Statistics Finland, 31 Dec 2025). The three municipalities form one commuting area, so the flat can sit in a different municipality from the job without a long drive.',
-      'The municipal housing companies are the first address: Kemi’s municipal flats are run by Kiinteistö Oy Itätuuli, with over 600 flats in the centre and within five kilometres of it (kemi.fi). Keminmaan Vuokra-asunnot Oy has 162 flats in apartment blocks and 146 in row houses (keminmaa.fi), and one online application covers both companies. In Tornio the city’s flats are managed by Tornion Krunni Oy, which includes Tornion Vuokra-asunnot Oy (tornio.fi).',
+      'The municipal housing companies are the first address: Kemi’s municipal flats are run by Kiinteistö Oy Itätuuli, with over 600 flats in the centre and within five kilometres of it (kemi.fi). Keminmaan Vuokra-asunnot Oy has 18 properties with just over 300 flats (keminmaa.fi). Each company has its own online application. In Tornio the city’s flats are managed by Tornion Krunni Oy, which includes Tornion Vuokra-asunnot Oy (tornio.fi).',
       'Statistics Finland does not publish a separate rent figure for Kemi and Tornio, so the Lapland regional figure is shown below. Rovaniemi’s figures are on its own page.',
     ],
     sections: [
@@ -170,9 +170,9 @@ export const TOWN_KEMI_TORNIO: HousingCopyMap = {
       {
         id: 'housing-allowance',
         kicker: 'Kela housing allowance',
-        h2: 'Kemi, Tornio and Keminmaa are in group III.',
+        h2: 'Kemi, Tornio and Keminmaa fall under Kela’s “other municipalities”.',
         table: {
-          caption: 'Maximum housing costs 2026, €/month, municipality group III',
+          caption: 'Maximum housing costs 2026, €/month, Kela group “other municipalities”',
           head: ['Household size', 'Maximum housing costs'],
           rows: [
             ['1 person', '394'],
@@ -192,16 +192,16 @@ export const TOWN_KEMI_TORNIO: HousingCopyMap = {
         cards: [
           {
             title: 'Kemi: Kiinteistö Oy Itätuuli',
-            body: 'The city’s rental flats, over 600 in the centre and within five kilometres. Applications go through the joint Kemi–Keminmaa online form. Kemi’s page also lists the private agencies: Forenom, Habita Kemi, HVC Group, Kiinteistömaailma, KVP Group, OP Koti Kemi, Pihlajaniemi & Co and Solecco.',
+            body: 'The city’s rental flats, over 600 in the centre and within five kilometres. Its own online application is valid for four months, and no deposit is charged. Kemi’s page also lists the private agencies: Forenom, Habita Kemi, HVC Group, Kiinteistömaailma, KVP Group, OP Koti Kemi, Pihlajaniemi & Co and Solecco.',
             href: 'https://www.kemi.fi/asuminen-ja-ymparisto/asuminen/vuokra-asunnot/',
             linkLabel: 'kemi.fi: Rental housing',
             event: 'kemi_city',
           },
           {
             title: 'Keminmaan Vuokra-asunnot Oy',
-            body: 'The municipality-owned housing company: 18 properties with 162 flats in apartment blocks and 146 in row houses. The same online application as Itätuuli.',
-            href: 'https://www.keminmaa.fi/asuminen-ja-ymparisto/asuminen/vuokra-asunnot/',
-            linkLabel: 'keminmaa.fi: Rental housing',
+            body: 'The municipality-owned housing company: 18 properties with just over 300 flats, and water and heating are included in the rent. Its own online application is valid for three months, and the deposit is one month’s rent.',
+            href: 'https://www.keminmaanvuokra-asunnot.fi/asunnonhaku.html',
+            linkLabel: 'Keminmaan Vuokra-asunnot: How to apply',
             event: 'keminmaa',
           },
           {
@@ -233,7 +233,7 @@ export const TOWN_KEMI_TORNIO: HousingCopyMap = {
     faqs: [
       {
         q: 'How do I apply for a municipal flat in Kemi?',
-        a: 'Through the online application shared by Kiinteistö Oy Itätuuli (Kemi) and Keminmaan Vuokra-asunnot Oy. Itätuuli has over 600 flats in the centre and within five kilometres of it (kemi.fi).',
+        a: 'With Kiinteistö Oy Itätuuli’s own online application, valid for four months. Itätuuli has over 600 flats in the centre and within five kilometres of it (kemi.fi), and lets all of them with no deposit (itatuuli.fi). Keminmaan Vuokra-asunnot Oy has its own application.',
       },
       {
         q: 'What does rent cost in Kemi and Tornio?',

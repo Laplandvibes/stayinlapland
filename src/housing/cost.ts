@@ -79,7 +79,7 @@ export const COST: HousingCopyMap = {
         h2: 'Mikä osa vuokrasta lasketaan mukaan.',
         table: {
           caption: 'Enimmäisasumismenot 2026, €/kk',
-          head: ['Ruokakunnan koko', 'Rovaniemi, ryhmä II', 'Muut Lapin kunnat, ryhmä III'],
+          head: ['Ruokakunnan koko', 'Rovaniemi', 'Muut Lapin kunnat'],
           rows: [
             ['1 henkilö', '447', '394'],
             ['2 henkilöä', '652', '574'],
@@ -212,7 +212,7 @@ export const COST: HousingCopyMap = {
         h2: 'How much of the rent counts.',
         table: {
           caption: 'Maximum housing costs 2026, €/month',
-          head: ['Household size', 'Rovaniemi, group II', 'Other Lapland municipalities, group III'],
+          head: ['Household size', 'Rovaniemi', 'Other Lapland municipalities'],
           rows: [
             ['1 person', '447', '394'],
             ['2 persons', '652', '574'],

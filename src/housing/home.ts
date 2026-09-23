@@ -67,10 +67,10 @@ const SOURCES = ['tkVaesto', 'tkVuokrat', 'kemi', 'sodankyla', 'inari', 'kesko20
  */
 const IMG = {
   hero: '/images/housing-home-hero-talo.webp',
-  rovaniemi: '/images/housing-card-rovaniemi-silta.webp',
+  rovaniemi: '/images/housing-card-rovaniemi-ounasvaara.webp',
   kemiTornio: '/images/housing-card-kemin-kirkko.webp',
   levi: '/images/housing-levi-uudet-talot.webp',
-  inari: '/images/housing-card-ivalojoki.webp',
+  inari: '/images/housing-card-inari-juutuanjoki.webp',
   seasonal: '/images/housing-seasonal-card-yllasjarvi.webp',
   moving: '/images/housing-moving-card-talvitie.webp',
   cost: '/images/housing-cost-card-polttopuut.webp',
@@ -78,7 +78,7 @@ const IMG = {
   work: '/images/housing-yllas-hiihtokeskus.webp',
   kaamos: '/images/housing-arki-revontulet.webp',
   kevat: '/images/housing-arki-pilkki.webp',
-  kesa: '/images/housing-arki-keskiyo-luiro.webp',
+  kesa: '/images/housing-arki-keskiyo-hetta.webp',
   syksy: '/images/housing-arki-ruska.webp',
 } as const;
 
@@ -121,7 +121,7 @@ export const HOME: Record<HousingLang, HousingHomeCopy> = {
           body: 'Lapin suurin vuokramarkkina. Yksiöt käyvät vähiin elo–syyskuussa, kun opiskelijat muuttavat kaupunkiin.',
           cta: 'Rovaniemen vuokra-asunnot',
           image: IMG.rovaniemi,
-          alt: 'Jätkänkynttilä-silta valaistuna Kemijoen yllä joulukuun iltana',
+          alt: 'Rovaniemi Ounasvaaralta: Kemijoki, Suutarinkorvan sillat ja asuinalueet kesäkuussa',
         },
         {
           slug: 'kemi-tornio',
@@ -157,10 +157,10 @@ export const HOME: Record<HousingLang, HousingHomeCopy> = {
           body: 'Kunnan oma Inarin Vuokra-asunnot Oy vuokraa asuntoja Ivalossa, Inarissa ja Saariselällä. Hae suoraan yhtiöltä.',
           cta: 'Ivalon ja Inarin vuokra-asunnot',
           image: IMG.inari,
-          alt: 'Jäätynyt Ivalojoki ja rannan koivut marraskuun matalassa auringossa',
+          alt: 'Taloja osin jäätyneen Juutuanjoen rannalla Inarin kylässä maaliskuussa',
         },
       ],
-      more: 'Kolari ja Ylläs, Sodankylä ja muut kunnat',
+      more: 'Kemijärvi, Sodankylä ja muut kunnat',
     },
     paths: {
       kicker: 'Tilanteesi mukaan',
@@ -236,7 +236,7 @@ export const HOME: Record<HousingLang, HousingHomeCopy> = {
           title: 'Yötön yö',
           body: 'Nuorgamissa aurinko ei laske 16.5.–29.7., ja Rovaniemellä napapiirillä se pysyy horisontin yläpuolella juhannuksen tienoilla (Ilmatieteen laitos). Illat vietetään ulkona, järvellä ja mökillä. Pimennysverhot ovat kesän tärkein hankinta.',
           image: IMG.kesa,
-          alt: 'Luirojoki ja kesäiset metsät keskiyön auringossa Savukoskella',
+          alt: 'Ounasjärvi ja Ounastunturi keskiyön auringossa Hetassa kesäkuussa, etualalla soutuvene',
           href: '/seasonal-worker-housing#kesa',
           linkLabel: 'Kesäkausi ja työ',
         },
@@ -329,7 +329,7 @@ export const HOME: Record<HousingLang, HousingHomeCopy> = {
           body: 'Lapland’s largest rental market. Studios run short in August and September, when students move to town.',
           cta: 'Renting in Rovaniemi',
           image: IMG.rovaniemi,
-          alt: 'The Jätkänkynttilä bridge lit up over the Kemijoki river on a December evening',
+          alt: 'Rovaniemi from Ounasvaara: the Kemijoki river, the Suutarinkorva bridges and homes in June',
         },
         {
           slug: 'kemi-tornio',
@@ -365,10 +365,10 @@ export const HOME: Record<HousingLang, HousingHomeCopy> = {
           body: 'The municipality’s own company, Inarin Vuokra-asunnot Oy, lets flats in Ivalo, Inari and Saariselkä. Apply to it directly.',
           cta: 'Renting in Ivalo and Inari',
           image: IMG.inari,
-          alt: 'The frozen Ivalo river and birches on the bank in low November sun',
+          alt: 'Houses by the partly frozen Juutuanjoki river in Inari village in March',
         },
       ],
-      more: 'Kolari and Ylläs, Sodankylä and the other municipalities',
+      more: 'Kemijärvi, Sodankylä and the other municipalities',
     },
     paths: {
       kicker: 'By situation',
@@ -444,7 +444,7 @@ export const HOME: Record<HousingLang, HousingHomeCopy> = {
           title: 'Midnight sun',
           body: 'In Nuorgam the sun does not set from 16 May to 29 July, and at the Arctic Circle in Rovaniemi it stays above the horizon around Midsummer (Finnish Meteorological Institute). Evenings are spent outdoors, on the lake and at the cottage. Blackout curtains are the key purchase of the summer.',
           image: IMG.kesa,
-          alt: 'The Luiro river and summer forests in the midnight sun in Savukoski',
+          alt: 'Lake Ounasjärvi and Ounastunturi fell in the midnight sun at Hetta in June, a rowing boat in front',
           href: '/seasonal-worker-housing#summer',
           linkLabel: 'Summer season and work',
         },

@@ -652,11 +652,11 @@
   "/rentals": {
     "en": {
       "title": "Rent an Apartment in Lapland: Rovaniemi, Levi, Kemi–Tornio",
-      "description": "Long-term rentals in Finnish Lapland: where the flats are in Rovaniemi, Levi, Ylläs, Kemi–Tornio, Sodankylä and Inari, what they cost per m² (Statistics Finland)"
+      "description": "Long-term rentals in Finnish Lapland: where the flats are in Rovaniemi, Kemi–Tornio, Kemijärvi, Sodankylä, Levi and Inari, what they cost per m² (Statistics"
     },
     "fi": {
       "title": "Vuokra-asunnot Lapissa: Rovaniemi, Levi, Kemi–Tornio, Inari",
-      "description": "Vuokra-asunto Rovaniemeltä, Leviltä, Ylläkseltä, Kemi–Torniosta, Sodankylästä tai Inarista: kuntien vuokrayhtiöt, portaalit, Tilastokeskuksen neliövuokrat ja Kelan"
+      "description": "Vuokra-asunto Rovaniemeltä, Kemi–Torniosta, Kemijärveltä, Sodankylästä, Leviltä tai Inarista: kuntien vuokrayhtiöt, portaalit, Tilastokeskuksen neliövuokrat ja"
     }
   },
   "/rentals/rovaniemi": {
@@ -677,6 +677,26 @@
     "fi": {
       "title": "Vuokra-asunnot Kemi, Tornio ja Keminmaa",
       "description": "Vuokra-asunnot Kemissä, Torniossa ja Keminmaalla: kaupunkien omat vuokrayhtiöt (Itätuuli, Tornion Krunni, Keminmaan Vuokra-asunnot), yksityiset välittäjät, Lapin"
+    }
+  },
+  "/rentals/kemijarvi": {
+    "en": {
+      "title": "Rentals in Kemijärvi: the City’s 560 Flats and How to Apply",
+      "description": "Renting in Kemijärvi: the city’s 560 rental flats, the online application, the 2026 rent increases, the Vuostimo row houses near Pyhä and Kela housing allowance."
+    },
+    "fi": {
+      "title": "Vuokra-asunnot Kemijärvi: kaupungin 560 asuntoa ja hakemus",
+      "description": "Vuokra-asunnot Kemijärvellä: kaupungin 560 asuntoa, hakemus verkossa, vuokrankorotukset 2026, Vuostimon rivitalot Pyhän lähellä ja Kelan asumistuki."
+    }
+  },
+  "/rentals/sodankyla": {
+    "en": {
+      "title": "Rentals in Sodankylä: 720 Municipal Flats and What They Cost",
+      "description": "Renting in Sodankylä: Asentopuulaaki Oy’s roughly 720 municipal flats, rents of €10–18 per m², the online application, free flats, the student loan pilot and Kela"
+    },
+    "fi": {
+      "title": "Vuokra-asunnot Sodankylä: kunnan 720 asuntoa ja vuokrat",
+      "description": "Vuokra-asunnot Sodankylässä: Asentopuulaaki Oy:n noin 720 asuntoa, vuokrat 10–18 €/m², hakemus verkossa, vapaat asunnot, opintolainan hyvitys ja Kelan asumistuki."
     }
   },
   "/rentals/kittila-levi": {

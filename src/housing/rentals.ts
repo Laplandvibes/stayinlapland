@@ -3,14 +3,15 @@ import { pickSources } from './sources';
 
 const SOURCES = [
   'tkVuokrat', 'kela', 'ahvl', 'rakli', 'yle2025das', 'lapinKansaDas', 'yle2023', 'rovaniemi', 'das',
-  'kittila', 'yle2026yllas', 'kesko2026', 'kemi', 'keminmaa', 'tornio', 'sodankyla', 'inari',
+  'kittila', 'kemi', 'keminmaa', 'tornio', 'kemijarvi', 'kemijarviHaku', 'kemijarviVuostimo', 'kemijarviTalousarvio',
+  'sodankyla', 'asentopuulaaki', 'asentopuulaakiVapaat', 'inari',
 ] as const;
 
 export const RENTALS: HousingCopyMap = {
   fi: {
     metaTitle: 'Vuokra-asunnot Lapissa: Rovaniemi, Levi, Kemi–Tornio, Inari',
     metaDescription:
-      'Vuokra-asunto Rovaniemeltä, Leviltä, Ylläkseltä, Kemi–Torniosta, Sodankylästä tai Inarista: kuntien vuokrayhtiöt, portaalit, Tilastokeskuksen neliövuokrat ja Kelan tuki.',
+      'Vuokra-asunto Rovaniemeltä, Kemi–Torniosta, Kemijärveltä, Sodankylästä, Leviltä tai Inarista: kuntien vuokrayhtiöt, portaalit, Tilastokeskuksen neliövuokrat ja Kelan tuki.',
     breadcrumb: 'Vuokra-asunnot',
     hero: {
       eyebrow: 'Vuokra-asunnot Lapissa',
@@ -19,12 +20,12 @@ export const RENTALS: HousingCopyMap = {
         'Mistä vuokra-asunnon löytää, mitä se maksaa ja paljonko Kela korvaa. Kunta kerrallaan.',
     },
     authorNote:
-      'Neliövuokrat: Tilastokeskuksen vuokratilasto, vapaarahoitteiset vuokra-asunnot, huhti–kesäkuu 2026. Kuntien vuokrayhtiöt tarkistettu kuntien omilta sivuilta 17.9.2026.',
+      'Neliövuokrat: Tilastokeskuksen vuokratilasto, vapaarahoitteiset vuokra-asunnot, huhti–kesäkuu 2026. Kuntien vuokrayhtiöt tarkistettu kuntien omilta sivuilta 17.9.2026, Kemijärvi ja Sodankylä 23.9.2026.',
     // 🔴 Johdanto kertoo, MISTÄ aloittaa (Vesa 23.9.2026: sivu "poukkoilee"). Aiemmat kolme kappaletta
     // olivat kolme eri aihetta (opiskelijat, Levin kausihinnat, kuntien yhtiöt) ennen kuin sivu kertoi
     // mistä asunto löytyy. Esimerkit asuvat nyt osioissa, joihin ne kuuluvat.
     intro: [
-      'Lapissa vuokra-asunto löytyy kolmesta paikasta: kunnan omalta vuokrayhtiöltä, valtakunnallisista portaaleista ja paikallisista ryhmistä. Aloita kunnasta. Kuntien yhtiöillä on satoja asuntoja, esimerkiksi Kemissä reilut 600, Sodankylässä noin 720 ja Inarissa yli 500, ja hakemuksen voi jättää, vaikka vapaata asuntoa ei juuri nyt olisi.',
+      'Lapissa vuokra-asunto löytyy kolmesta paikasta: kunnan omalta vuokrayhtiöltä, valtakunnallisista portaaleista ja paikallisista ryhmistä. Aloita kunnasta. Kuntien yhtiöillä on satoja asuntoja, esimerkiksi Kemissä reilut 600, Sodankylässä noin 720, Kemijärvellä 560 ja Inarissa yli 500, ja hakemuksen voi jättää, vaikka vapaata asuntoa ei juuri nyt olisi.',
       'Hinta riippuu siitä, minne muutat. Rovaniemellä 30 neliön yksiö maksaa keskimäärin noin 560 euroa kuukaudessa, muualla Lapissa vähemmän. Tunturikylissä vuokra vaihtelee kauden mukaan, joten talveksi kannattaa kysyä ensin työnantajan asuntoa.',
     ],
     sections: [
@@ -32,7 +33,7 @@ export const RENTALS: HousingCopyMap = {
         id: 'paikkakunnat',
         kicker: 'Mistä asunto löytyy',
         h2: 'Paikkakunta kerrallaan.',
-        lead: 'Ensin kunnan oma vuokrayhtiö, sitten portaalit, sitten ryhmät. Linkit vievät kuntien omille sivuille.',
+        lead: 'Jokaisesta paikkakunnasta on oma sivu: kunnan vuokrayhtiö ja sen hakemus, vuokrataso ja Kelan katto. Ylläksen työntekijäasunnoista kerrotaan kausityöntekijän sivulla.',
         band: true,
         cards: [
           {
@@ -40,54 +41,48 @@ export const RENTALS: HousingCopyMap = {
             image: { src: '/images/housing-rovaniemi-card-talvikatu.webp', alt: 'Kerrostaloja ja kävelijöitä lumisella kadulla Rovaniemellä tammikuussa' },
             body:
               'Kaupungin oma sivu ohjaa KAS asunnoille, M2-Kodeille, Tarveasunnoille, Avaralle ja Lumolle sekä hakupalveluihin Oikotie, Vuokraovi ja Qasa. Opiskelijalle Domus Arctica -säätiö DAS (noin 1 700 asuntoa, joista 700 yksiötä) ja 18–29-vuotiaille NAL Rovaniemi. DAS-hakemus on voimassa kolme kuukautta, ja uudet opiskelijat ovat etusijalla elo–syyskuussa.',
-            href: 'https://www.rovaniemi.fi/Asuminen-ja-ymparisto/Asuminen',
-            linkLabel: 'rovaniemi.fi: Asuminen',
-            event: 'rovaniemi',
-          },
-          {
-            title: 'Kittilä ja Levi',
-            image: { src: '/images/housing-kittila-levi-card.webp', alt: 'Levin kylätie joulukuussa, taustalla valaistu rinne' },
-            body:
-              'Kittilän Vuokratalot Oy välittää kunnan omistamia vuokra-asuntoja; toimisto on kunnantalon ala-aulassa (Valtatie 15). Hakemus on voimassa kolme kuukautta, ja sen voi jättää, vaikka vapaita asuntoja ei juuri nyt olisi. Levin vapaa-ajan asuntoja saa kuukausivuokralle lähinnä touko–marraskuussa; talvella sama asunto myydään viikoittain.',
-            href: 'https://kittila.fi/asuminen-ja-ymparisto/asuminen/vuokra-asunnot',
-            linkLabel: 'kittila.fi: Vuokra-asunnot',
-            event: 'kittila',
-          },
-          {
-            title: 'Kolari ja Ylläs',
-            image: { src: '/images/housing-rentals-card-akaslompolo.webp', alt: 'Luminen kylätie ja talot Äkäslompolossa tammikuussa' },
-            body:
-              'Äkäslompolossa K-Market Jounin Kaupan kauppiaat rakennuttavat kolme rivitaloa vakituisille ja kausityöntekijöilleen; talot valmistuvat marras–joulukuussa 2026 (Kesko 17.6.2026). Kunta vauhditti hanketta nopealla kaavoituksella, ja kylän ensimmäinen modulitalo valmistui lokakuussa 2025 (Yle 16.6.2026). Vapaat asunnot: Oikotie ja Vuokraovi hakusanalla Kolari.',
-            href: 'https://yle.fi/a/74-20231905',
-            linkLabel: 'Yle 16.6.2026: Ylläksen asuntohankkeet',
-            event: 'yllas',
+            href: '/rentals/rovaniemi',
+            linkLabel: 'Vuokra-asunnot Rovaniemi',
           },
           {
             title: 'Kemi, Keminmaa ja Tornio',
             image: { src: '/images/housing-kemi-card-kaupungintalo.webp', alt: 'Kemin kaupungintalo lumisena tammikuun aamuna' },
             body:
-              'Kemin kaupungin vuokra-asunnoista vastaa Kiinteistö Oy Itätuuli, jolla on reilut 600 asuntoa keskustassa ja viiden kilometrin säteellä. Keminmaan Vuokra-asunnot Oy:llä on 162 kerrostalo- ja 146 rivitaloasuntoa, ja molempiin haetaan samalla sähköisellä hakemuksella. Torniossa kaupungin asuntoja hallinnoi Tornion Krunni Oy (Tornion Vuokra-asunnot Oy).',
-            href: 'https://www.kemi.fi/asuminen-ja-ymparisto/asuminen/vuokra-asunnot/',
-            linkLabel: 'kemi.fi: Vuokra-asunnot',
-            event: 'kemi',
+              'Kemin kaupungin vuokra-asunnoista vastaa Kiinteistö Oy Itätuuli, jolla on reilut 600 asuntoa keskustassa ja viiden kilometrin säteellä. Keminmaan Vuokra-asunnot Oy:llä on reilut 300 asuntoa, ja kumpaankin haetaan omalla sähköisellä hakemuksellaan. Torniossa kaupungin asuntoja hallinnoi Tornion Krunni Oy (Tornion Vuokra-asunnot Oy).',
+            href: '/rentals/kemi-tornio',
+            linkLabel: 'Vuokra-asunnot Kemi, Tornio ja Keminmaa',
+          },
+          {
+            title: 'Kemijärvi',
+            image: { src: '/images/housing-kemijarvi-card-kerrostalo.webp', alt: 'Kerrostalo ja vanha mänty Kemijärvellä heinäkuun iltana' },
+            body:
+              'Kaupungin kahdella kiinteistöyhtiöllä on 560 vuokra-asuntoa, ja talousarviossa tavoitteena on, että niistä 80–85 prosenttia on vuokrattuna: tyhjiä asuntoja siis on. Hakemus on voimassa neljä kuukautta. Vuostimon rivitaloista on 14 km Pyhätunturille.',
+            href: '/rentals/kemijarvi',
+            linkLabel: 'Vuokra-asunnot Kemijärvi',
           },
           {
             title: 'Sodankylä',
             image: { src: '/images/housing-sodankyla-jaamerentie.webp', alt: 'Jäämerentie, Sodankylän kirkonkylän pääkatu, syyskuussa' },
             body:
-              'Kunta omistaa noin 720 vuokra-asuntoa, joita hallinnoi kunnan tytäryhtiö Asentopuulaaki Oy. Vapaat asunnot ja hakemus yhtiön omilla sivuilla; yksityiset ilmoitukset Oikotiellä ja Vuokraovella.',
-            href: 'https://www.sodankyla.fi/en/environment/municipal-rental-housing/',
-            linkLabel: 'sodankyla.fi: Kunnan vuokra-asunnot',
-            event: 'sodankyla',
+              'Kunnan noin 720 asuntoa vuokraa Asentopuulaaki Oy, ja 23.9.2026 vapaana tai vapautumassa oli 21. Vanhoissa taloissa vuokra on noin 10–12,50 €/m², vuonna 2025 valmistuneessa Käpyriihessä 18 €/m².',
+            href: '/rentals/sodankyla',
+            linkLabel: 'Vuokra-asunnot Sodankylä',
+          },
+          {
+            title: 'Kittilä ja Levi',
+            image: { src: '/images/housing-kittila-levi-card-kyla.webp', alt: 'Levin kylä Levitunturin laelta marraskuussa, taustalla järvi ja tunturit' },
+            body:
+              'Kittilän Vuokratalot Oy välittää kunnan omistamia vuokra-asuntoja; toimisto on kunnantalon ala-aulassa (Valtatie 15). Hakemus on voimassa kolme kuukautta, ja sen voi jättää, vaikka vapaita asuntoja ei juuri nyt olisi. Levin vapaa-ajan asuntoja saa kuukausivuokralle lähinnä touko–marraskuussa; talvella sama asunto myydään viikoittain.',
+            href: '/rentals/kittila-levi',
+            linkLabel: 'Vuokra-asunnot Kittilä ja Levi',
           },
           {
             title: 'Inari, Ivalo ja Saariselkä',
             image: { src: '/images/housing-ivalo-joki.webp', alt: 'Ivalo Ivalojoen yli kesäiltana' },
             body:
               'Inarin Vuokra-asunnot Oy:llä on yli 500 asuntoa Ivalossa, Inarissa, Saariselällä, Nellimissä ja Sevettijärvellä. Kunnan sivu listaa myös yksityiset vuokranantajat (Bilto, Ivalon vuokra-asunnot, IvaloCenter, Rakennusliike Holmberg, Uni Kodit) ja Sodankylä–Inari–Utsjoki-alueen vuokra-asuntoryhmän Facebookissa.',
-            href: 'https://www.inari.fi/fi/palvelut/asuminen.html',
-            linkLabel: 'inari.fi: Asuminen',
-            event: 'inari',
+            href: '/rentals/ivalo-inari',
+            linkLabel: 'Vuokra-asunnot Ivalo ja Inari',
           },
         ],
       },
@@ -136,10 +131,10 @@ export const RENTALS: HousingCopyMap = {
         kicker: 'Kelan asumistuki',
         h2: 'Katto on kunnan mukaan.',
         lead:
-          'Yleinen asumistuki on enintään 70 % hyväksyttävistä asumismenoista, ja hyväksyttävillä menoilla on yläraja, joka riippuu kunnasta ja ruokakunnan koosta. Rovaniemi kuuluu kuntaryhmään II, kaikki muut Lapin kunnat ryhmään III.',
+          'Yleinen asumistuki on enintään 70 % hyväksyttävistä asumismenoista, ja hyväksyttävillä menoilla on yläraja, joka riippuu kunnasta ja ruokakunnan koosta. Kela jakaa kunnat kolmeen ryhmään: Rovaniemi on 24 suuremman kunnan ryhmässä, kaikki muut Lapin kunnat ryhmässä ”muut kunnat”, jossa katto on matalampi.',
         table: {
           caption: 'Enimmäisasumismenot 2026, €/kk',
-          head: ['Ruokakunnan koko', 'Rovaniemi, ryhmä II', 'Muut Lapin kunnat, ryhmä III'],
+          head: ['Ruokakunnan koko', 'Rovaniemi', 'Muut Lapin kunnat'],
           rows: [
             ['1 henkilö', '447', '394'],
             ['2 henkilöä', '652', '574'],
@@ -212,7 +207,7 @@ export const RENTALS: HousingCopyMap = {
   en: {
     metaTitle: 'Rent an Apartment in Lapland: Rovaniemi, Levi, Kemi–Tornio, Inari',
     metaDescription:
-      'Long-term rentals in Finnish Lapland: where the flats are in Rovaniemi, Levi, Ylläs, Kemi–Tornio, Sodankylä and Inari, what they cost per m² (Statistics Finland), deposits and Kela housing allowance.',
+      'Long-term rentals in Finnish Lapland: where the flats are in Rovaniemi, Kemi–Tornio, Kemijärvi, Sodankylä, Levi and Inari, what they cost per m² (Statistics Finland), deposits and Kela housing allowance.',
     breadcrumb: 'Rentals',
     hero: {
       eyebrow: 'Renting in Lapland',
@@ -221,9 +216,9 @@ export const RENTALS: HousingCopyMap = {
         'Where to find a rental flat, what it costs and how much Kela covers. Town by town.',
     },
     authorNote:
-      'Rents per m²: Statistics Finland rent statistics, free-market rental flats, April–June 2026. Municipal housing companies checked on the municipalities’ own sites on 17 September 2026.',
+      'Rents per m²: Statistics Finland rent statistics, free-market rental flats, April–June 2026. Municipal housing companies checked on the municipalities’ own sites on 17 September 2026, Kemijärvi and Sodankylä on 23 September 2026.',
     intro: [
-      'In Lapland a rental flat comes from one of three places: the municipality’s own housing company, the national portals or local groups. Start with the municipality. Their companies own hundreds of flats, for example over 600 in Kemi, about 720 in Sodankylä and over 500 in Inari, and you can apply even when nothing is free right now.',
+      'In Lapland a rental flat comes from one of three places: the municipality’s own housing company, the national portals or local groups. Start with the municipality. Their companies own hundreds of flats, for example over 600 in Kemi, about 720 in Sodankylä, 560 in Kemijärvi and over 500 in Inari, and you can apply even when nothing is free right now.',
       'The price depends on where you move. In Rovaniemi a 30 m² studio averages about €560 a month, elsewhere in Lapland less. In the fell villages rent follows the season, so for the winter ask your employer about staff housing first.',
     ],
     sections: [
@@ -231,7 +226,7 @@ export const RENTALS: HousingCopyMap = {
         id: 'towns',
         kicker: 'Where the flats are',
         h2: 'Town by town.',
-        lead: 'First the municipal housing company, then the portals, then the groups. Links go to the municipalities’ own pages.',
+        lead: 'Each town has its own page: the municipal housing company and how to apply, the rent level and Kela’s ceiling. Staff housing at Ylläs is covered on the seasonal workers’ page.',
         band: true,
         cards: [
           {
@@ -239,54 +234,48 @@ export const RENTALS: HousingCopyMap = {
             image: { src: '/images/housing-rovaniemi-card-talvikatu.webp', alt: 'Apartment blocks and people walking on a snowy street in Rovaniemi in January' },
             body:
               'The city’s own page points to the landlords KAS asunnot, M2-Kodit, Tarveasunnot, Avara and Lumo, and to the search services Oikotie, Vuokraovi and Qasa. Students apply to the Domus Arctica Foundation DAS (about 1,700 flats, 700 of them studios); 18–29-year-olds to NAL Rovaniemi. A DAS application is valid for three months, and new students have priority in August and September.',
-            href: 'https://www.rovaniemi.fi/Asuminen-ja-ymparisto/Asuminen',
-            linkLabel: 'rovaniemi.fi: Housing',
-            event: 'rovaniemi',
-          },
-          {
-            title: 'Kittilä and Levi',
-            image: { src: '/images/housing-kittila-levi-card.webp', alt: 'The road through Levi village in December, the lit slope behind' },
-            body:
-              'Kittilän Vuokratalot Oy lets the municipality’s own rental flats; the office is on the ground floor of the municipal hall (Valtatie 15). An application is valid for three months and can be filed even when nothing is free right now. Levi’s holiday apartments go on monthly rent mainly from May to November; in winter the same flat is sold by the week.',
-            href: 'https://kittila.fi/asuminen-ja-ymparisto/asuminen/vuokra-asunnot',
-            linkLabel: 'kittila.fi: Rental housing',
-            event: 'kittila',
-          },
-          {
-            title: 'Kolari and Ylläs',
-            image: { src: '/images/housing-rentals-card-akaslompolo.webp', alt: 'A snowy village road and houses in Äkäslompolo in January' },
-            body:
-              'In Äkäslompolo the owners of K-Market Jounin Kauppa are building three row houses for their permanent and seasonal staff, due in November–December 2026 (Kesko, 17 Jun 2026). The municipality sped the project up with fast zoning, and the village’s first modular building was completed in October 2025 (Yle, 16 Jun 2026). Vacancies: Oikotie and Vuokraovi, search term Kolari.',
-            href: 'https://yle.fi/a/74-20231905',
-            linkLabel: 'Yle, 16 Jun 2026: housing projects at Ylläs',
-            event: 'yllas',
+            href: '/rentals/rovaniemi',
+            linkLabel: 'Rentals in Rovaniemi',
           },
           {
             title: 'Kemi, Keminmaa and Tornio',
             image: { src: '/images/housing-kemi-card-kaupungintalo.webp', alt: 'Kemi city hall on a snowy January morning' },
             body:
-              'Kemi’s municipal flats are run by Kiinteistö Oy Itätuuli, which has over 600 flats in the centre and within five kilometres of it. Keminmaan Vuokra-asunnot Oy has 162 flats in apartment blocks and 146 in row houses, and one online application covers both companies. In Tornio the city’s flats are managed by Tornion Krunni Oy (Tornion Vuokra-asunnot Oy).',
-            href: 'https://www.kemi.fi/asuminen-ja-ymparisto/asuminen/vuokra-asunnot/',
-            linkLabel: 'kemi.fi: Rental housing',
-            event: 'kemi',
+              'Kemi’s municipal flats are run by Kiinteistö Oy Itätuuli, which has over 600 flats in the centre and within five kilometres of it. Keminmaan Vuokra-asunnot Oy has just over 300 flats, and each company has its own online application. In Tornio the city’s flats are managed by Tornion Krunni Oy (Tornion Vuokra-asunnot Oy).',
+            href: '/rentals/kemi-tornio',
+            linkLabel: 'Rentals in Kemi, Tornio and Keminmaa',
+          },
+          {
+            title: 'Kemijärvi',
+            image: { src: '/images/housing-kemijarvi-card-kerrostalo.webp', alt: 'An apartment block and an old pine in Kemijärvi on a July evening' },
+            body:
+              'The city’s two property companies own 560 rental flats, and the budget aims for 80–85 percent of them to be let, so empty flats do exist. An application is valid for four months. The Vuostimo row houses are 14 km from Pyhätunturi.',
+            href: '/rentals/kemijarvi',
+            linkLabel: 'Rentals in Kemijärvi',
           },
           {
             title: 'Sodankylä',
             image: { src: '/images/housing-sodankyla-jaamerentie.webp', alt: 'Jäämerentie, the main street of Sodankylä village, in September' },
             body:
-              'The municipality owns about 720 rental flats, managed by its subsidiary Asentopuulaaki Oy. Vacancies and applications on the company’s own site; private listings on Oikotie and Vuokraovi.',
-            href: 'https://www.sodankyla.fi/en/environment/municipal-rental-housing/',
-            linkLabel: 'sodankyla.fi: Municipal rental housing',
-            event: 'sodankyla',
+              'Asentopuulaaki Oy lets the municipality’s roughly 720 flats, and on 23 September 2026 there were 21 free or coming free. Older buildings rent for about €10–12.50 per m², and Käpyriihi, completed in 2025, for €18.',
+            href: '/rentals/sodankyla',
+            linkLabel: 'Rentals in Sodankylä',
+          },
+          {
+            title: 'Kittilä and Levi',
+            image: { src: '/images/housing-kittila-levi-card-kyla.webp', alt: 'Levi village from the top of Levi fell in November, a lake and fells beyond' },
+            body:
+              'Kittilän Vuokratalot Oy lets the municipality’s own rental flats; the office is on the ground floor of the municipal hall (Valtatie 15). An application is valid for three months and can be filed even when nothing is free right now. Levi’s holiday apartments go on monthly rent mainly from May to November; in winter the same flat is sold by the week.',
+            href: '/rentals/kittila-levi',
+            linkLabel: 'Rentals in Kittilä and Levi',
           },
           {
             title: 'Inari, Ivalo and Saariselkä',
             image: { src: '/images/housing-ivalo-joki.webp', alt: 'Ivalo seen across the Ivalo river on a summer evening' },
             body:
               'Inarin Vuokra-asunnot Oy has over 500 flats in Ivalo, Inari, Saariselkä, Nellim and Sevettijärvi. The municipality’s page also lists the private landlords (Bilto, Ivalon vuokra-asunnot, IvaloCenter, Rakennusliike Holmberg, Uni Kodit) and the Sodankylä–Inari–Utsjoki rental group on Facebook.',
-            href: 'https://www.inari.fi/fi/palvelut/asuminen.html',
-            linkLabel: 'inari.fi: Housing',
-            event: 'inari',
+            href: '/rentals/ivalo-inari',
+            linkLabel: 'Rentals in Ivalo and Inari',
           },
         ],
       },
@@ -335,10 +324,10 @@ export const RENTALS: HousingCopyMap = {
         kicker: 'Kela housing allowance',
         h2: 'The ceiling depends on the municipality.',
         lead:
-          'General housing allowance covers at most 70 % of accepted housing costs, and accepted costs have a ceiling that depends on the municipality and household size. Rovaniemi is in municipality group II; every other Lapland municipality is in group III.',
+          'General housing allowance covers at most 70 % of accepted housing costs, and accepted costs have a ceiling that depends on the municipality and household size. Kela sorts municipalities into three groups: Rovaniemi is in the group of 24 larger municipalities, and every other Lapland municipality falls under “other municipalities”, which has a lower ceiling.',
         table: {
           caption: 'Maximum housing costs 2026, €/month',
-          head: ['Household size', 'Rovaniemi, group II', 'Other Lapland municipalities, group III'],
+          head: ['Household size', 'Rovaniemi', 'Other Lapland municipalities'],
           rows: [
             ['1 person', '447', '394'],
             ['2 persons', '652', '574'],

@@ -45,6 +45,30 @@
     "fallbackDescription": "Renting in Kemi, Tornio and Keminmaa: the municipal housing companies, private agencies, Lapland rents per m² and Kela support."
   },
   {
+    "path": "/rentals/kemijarvi",
+    "nativeLocales": [
+      "en",
+      "fi"
+    ],
+    "harvestFiles": [
+      "src/housing/towns/kemijarvi.ts"
+    ],
+    "fallbackTitle": "Rentals in Kemijärvi: the City’s 560 Flats and How to Apply",
+    "fallbackDescription": "Renting in Kemijärvi: the city’s 560 rental flats, the online application, the 2026 rent increases and Kela housing allowance."
+  },
+  {
+    "path": "/rentals/sodankyla",
+    "nativeLocales": [
+      "en",
+      "fi"
+    ],
+    "harvestFiles": [
+      "src/housing/towns/sodankyla.ts"
+    ],
+    "fallbackTitle": "Rentals in Sodankylä: 720 Municipal Flats and What They Cost",
+    "fallbackDescription": "Renting in Sodankylä: the municipal company’s roughly 720 flats, rents per m², free flats and Kela support."
+  },
+  {
     "path": "/rentals/kittila-levi",
     "nativeLocales": [
       "en",

@@ -9,6 +9,7 @@ import {
   CalendarDays,
   Car,
   Check,
+  GraduationCap,
   ClipboardCheck,
   FileSignature,
   HandCoins,
@@ -130,6 +131,9 @@ const SECTION_ICON: Record<string, LucideIcon> = {
   sahko: Zap, electricity: Zap,
   yhteenveto: Scale, summary: Scale,
   'kolme-tapaa': KeyRound, 'three-ways': KeyRound,
+  tyo: Briefcase, work: Briefcase,
+  arki: SunMoon, everyday: SunMoon,
+  opintolaina: GraduationCap, 'student-loan': GraduationCap,
 };
 
 /**

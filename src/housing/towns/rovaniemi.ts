@@ -47,11 +47,11 @@ export const TOWN_ROVANIEMI: HousingCopyMap = {
       {
         id: 'asumistuki',
         kicker: 'Kelan asumistuki',
-        h2: 'Rovaniemi on kuntaryhmää II.',
+        h2: 'Rovaniemellä katto on korkeampi.',
         lead:
-          'Yleinen asumistuki on enintään 70 % hyväksyttävistä asumismenoista. Rovaniemellä hyväksyttävien menojen katto on korkeampi kuin muissa Lapin kunnissa, koska kaupunki kuuluu kuntaryhmään II (Kela 2026).',
+          'Yleinen asumistuki on enintään 70 % hyväksyttävistä asumismenoista. Rovaniemellä hyväksyttävien menojen katto on korkeampi kuin muissa Lapin kunnissa, koska kaupunki on Kelan 24 suuremman kunnan ryhmässä (Kela 2026).',
         table: {
-          caption: 'Enimmäisasumismenot 2026, €/kk, kuntaryhmä II',
+          caption: 'Enimmäisasumismenot 2026, €/kk, Kelan 24 suuremman kunnan ryhmä',
           head: ['Ruokakunnan koko', 'Enimmäisasumismenot'],
           rows: [
             ['1 henkilö', '447'],
@@ -193,11 +193,11 @@ export const TOWN_ROVANIEMI: HousingCopyMap = {
       {
         id: 'housing-allowance',
         kicker: 'Kela housing allowance',
-        h2: 'Rovaniemi is in group II.',
+        h2: 'Rovaniemi has a higher ceiling.',
         lead:
-          'General housing allowance is at most 70 % of accepted housing costs. In Rovaniemi the ceiling on accepted costs is higher than in the other Lapland municipalities, because the city belongs to municipality group II (Kela 2026).',
+          'General housing allowance is at most 70 % of accepted housing costs. In Rovaniemi the ceiling on accepted costs is higher than in the other Lapland municipalities, because the city is in Kela’s group of 24 larger municipalities (Kela 2026).',
         table: {
-          caption: 'Maximum housing costs 2026, €/month, municipality group II',
+          caption: 'Maximum housing costs 2026, €/month, Kela’s group of 24 larger municipalities',
           head: ['Household size', 'Maximum housing costs'],
           rows: [
             ['1 person', '447'],

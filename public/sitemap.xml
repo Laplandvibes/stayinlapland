@@ -3259,7 +3259,7 @@
   </url>
   <url>
     <loc>https://stayinlapland.com/rentals/rovaniemi/</loc>
-    <lastmod>2026-09-18</lastmod>
+    <lastmod>2026-09-23</lastmod>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://stayinlapland.com/rentals/rovaniemi/" />
     <xhtml:link rel="alternate" hreflang="fi" href="https://stayinlapland.com/fi/rentals/rovaniemi/" />
@@ -3267,7 +3267,7 @@
   </url>
   <url>
     <loc>https://stayinlapland.com/fi/rentals/rovaniemi/</loc>
-    <lastmod>2026-09-18</lastmod>
+    <lastmod>2026-09-23</lastmod>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://stayinlapland.com/rentals/rovaniemi/" />
     <xhtml:link rel="alternate" hreflang="fi" href="https://stayinlapland.com/fi/rentals/rovaniemi/" />
@@ -3290,8 +3290,40 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://stayinlapland.com/rentals/kemi-tornio/" />
   </url>
   <url>
+    <loc>https://stayinlapland.com/rentals/kemijarvi/</loc>
+    <lastmod>2026-09-23</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://stayinlapland.com/rentals/kemijarvi/" />
+    <xhtml:link rel="alternate" hreflang="fi" href="https://stayinlapland.com/fi/rentals/kemijarvi/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://stayinlapland.com/rentals/kemijarvi/" />
+  </url>
+  <url>
+    <loc>https://stayinlapland.com/fi/rentals/kemijarvi/</loc>
+    <lastmod>2026-09-23</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://stayinlapland.com/rentals/kemijarvi/" />
+    <xhtml:link rel="alternate" hreflang="fi" href="https://stayinlapland.com/fi/rentals/kemijarvi/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://stayinlapland.com/rentals/kemijarvi/" />
+  </url>
+  <url>
+    <loc>https://stayinlapland.com/rentals/sodankyla/</loc>
+    <lastmod>2026-09-23</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://stayinlapland.com/rentals/sodankyla/" />
+    <xhtml:link rel="alternate" hreflang="fi" href="https://stayinlapland.com/fi/rentals/sodankyla/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://stayinlapland.com/rentals/sodankyla/" />
+  </url>
+  <url>
+    <loc>https://stayinlapland.com/fi/rentals/sodankyla/</loc>
+    <lastmod>2026-09-23</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://stayinlapland.com/rentals/sodankyla/" />
+    <xhtml:link rel="alternate" hreflang="fi" href="https://stayinlapland.com/fi/rentals/sodankyla/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://stayinlapland.com/rentals/sodankyla/" />
+  </url>
+  <url>
     <loc>https://stayinlapland.com/rentals/kittila-levi/</loc>
-    <lastmod>2026-09-17</lastmod>
+    <lastmod>2026-09-23</lastmod>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://stayinlapland.com/rentals/kittila-levi/" />
     <xhtml:link rel="alternate" hreflang="fi" href="https://stayinlapland.com/fi/rentals/kittila-levi/" />
@@ -3299,7 +3331,7 @@
   </url>
   <url>
     <loc>https://stayinlapland.com/fi/rentals/kittila-levi/</loc>
-    <lastmod>2026-09-18</lastmod>
+    <lastmod>2026-09-23</lastmod>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://stayinlapland.com/rentals/kittila-levi/" />
     <xhtml:link rel="alternate" hreflang="fi" href="https://stayinlapland.com/fi/rentals/kittila-levi/" />
@@ -3307,7 +3339,7 @@
   </url>
   <url>
     <loc>https://stayinlapland.com/rentals/ivalo-inari/</loc>
-    <lastmod>2026-09-17</lastmod>
+    <lastmod>2026-09-23</lastmod>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://stayinlapland.com/rentals/ivalo-inari/" />
     <xhtml:link rel="alternate" hreflang="fi" href="https://stayinlapland.com/fi/rentals/ivalo-inari/" />
@@ -3315,7 +3347,7 @@
   </url>
   <url>
     <loc>https://stayinlapland.com/fi/rentals/ivalo-inari/</loc>
-    <lastmod>2026-09-18</lastmod>
+    <lastmod>2026-09-23</lastmod>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://stayinlapland.com/rentals/ivalo-inari/" />
     <xhtml:link rel="alternate" hreflang="fi" href="https://stayinlapland.com/fi/rentals/ivalo-inari/" />

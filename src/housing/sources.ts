@@ -10,22 +10,22 @@ const DEFS = {
   tkVuokrat: {
     fi: 'Tilastokeskus: Vuokrat, vapaarahoitteiset vuokra-asunnot, keskineliövuokra 2026Q2 (taulukko 15fa, luettu 17.9.2026)',
     en: 'Statistics Finland: Rents of dwellings, free-market rental flats, average rent per m² 2026Q2 (table 15fa, read 17 Sep 2026)',
-    url: 'https://pxdata.stat.fi/PxWeb/pxweb/fi/StatFin/StatFin__asvu/statfin_asvu_pxt_15fa.px/',
+    url: 'https://pxdata.stat.fi/PxWeb/pxweb/fi/StatFin/StatFin__asvu/15fa.px/',
   },
   tkVaesto: {
     fi: 'Tilastokeskus: Väestörakenne, väestö 31.12.2025 kunnittain (taulukko 11ra)',
     en: 'Statistics Finland: Population structure, population on 31 Dec 2025 by municipality (table 11ra)',
-    url: 'https://pxdata.stat.fi/PxWeb/pxweb/fi/StatFin/StatFin__vaerak/statfin_vaerak_pxt_11ra.px/',
+    url: 'https://pxdata.stat.fi/PxWeb/pxweb/fi/StatFin/StatFin__vaerak/11ra.px/',
   },
   tkSahko: {
     fi: 'Tilastokeskus: Sähkön hinta kuluttajatyypeittäin, kokonaishinta maaliskuu 2026 (taulukko 13rb)',
     en: 'Statistics Finland: Price of electricity by type of consumer, total price March 2026 (table 13rb)',
-    url: 'https://pxdata.stat.fi/PxWeb/pxweb/fi/StatFin/StatFin__ehi/statfin_ehi_pxt_13rb.px/',
+    url: 'https://pxdata.stat.fi/PxWeb/pxweb/fi/StatFin/StatFin__ehi/13rb.px/',
   },
   tkPolttoaine: {
     fi: 'Tilastokeskus: Polttonesteiden kuluttajahinnat, maaliskuu 2026 (taulukko 12ge)',
     en: 'Statistics Finland: Consumer prices of liquid fuels, March 2026 (table 12ge)',
-    url: 'https://pxdata.stat.fi/PxWeb/pxweb/fi/StatFin/StatFin__ehi/statfin_ehi_pxt_12ge.px/',
+    url: 'https://pxdata.stat.fi/PxWeb/pxweb/fi/StatFin/StatFin__ehi/12ge.px/',
   },
   kela: {
     fi: 'Kela: Yleinen asumistuki, enimmäisasumismenot ja kuntaryhmät 2026',
@@ -147,6 +147,16 @@ const DEFS = {
     en: 'City of Kemi: Rental housing (Kiinteistö Oy Itätuuli)',
     url: 'https://www.kemi.fi/asuminen-ja-ymparisto/asuminen/vuokra-asunnot/',
   },
+  itatuuli: {
+    fi: 'Kiinteistö Oy Itätuuli: asuntohakemus (voimassa 4 kk) ja vuokraus 0 euron vakuudella (luettu 23.9.2026)',
+    en: 'Kiinteistö Oy Itätuuli: housing application (valid 4 months) and lets with a €0 deposit (read 23 Sep 2026)',
+    url: 'https://kiinteistoitatuuli.fi/asuntohakemus/',
+  },
+  keminmaaVuokra: {
+    fi: 'Keminmaan Vuokra-asunnot Oy: Asunnonhaku (hakemus voimassa 3 kk, vakuus 1 kk:n vuokra) ja kohdesivut (luettu 23.9.2026)',
+    en: 'Keminmaan Vuokra-asunnot Oy: How to apply (application valid 3 months, deposit one month’s rent) and property pages (read 23 Sep 2026)',
+    url: 'https://www.keminmaanvuokra-asunnot.fi/asunnonhaku.html',
+  },
   keminmaa: {
     fi: 'Keminmaan kunta: Keminmaan Vuokra-asunnot Oy',
     en: 'Municipality of Keminmaa: Keminmaan Vuokra-asunnot Oy',
@@ -161,6 +171,131 @@ const DEFS = {
     fi: 'Sodankylän kunta: Kunnan vuokra-asunnot (Asentopuulaaki Oy)',
     en: 'Municipality of Sodankylä: Municipal rental housing (Asentopuulaaki Oy)',
     url: 'https://www.sodankyla.fi/en/environment/municipal-rental-housing/',
+  },
+  tkVuokratPostinumero: {
+    fi: 'Tilastokeskus: Vapaarahoitteisten vuokra-asuntojen keskineliövuokrat postinumeroalueittain 2015Q1–2025Q4 (taulukko 13eb, arkisto, luettu 23.9.2026)',
+    en: 'Statistics Finland: Average rents of free-market rental flats by postal code area 2015Q1–2025Q4 (table 13eb, archive, read 23 Sep 2026)',
+    url: 'https://pxdata.stat.fi/PxWeb/pxweb/fi/StatFin_Passiivi/StatFin_Passiivi__asvu/statfinpas_asvu_pxt_13eb_2025q4.px/',
+  },
+  tkAvainluvut: {
+    fi: 'Tilastokeskus: Kuntien avainluvut (työttömien osuus työvoimasta 2024)',
+    en: 'Statistics Finland: Key figures on municipalities (unemployed share of the labour force, 2024)',
+    url: 'https://pxdata.stat.fi/PxWeb/pxweb/fi/Kuntien_avainluvut/Kuntien_avainluvut__uusin/kuntien_avainluvut_viimeisin.px/',
+  },
+  kemijarvi: {
+    fi: 'Kemijärven kaupunki: Kemijärven kaupungin vuokratalot (560 vuokra-asuntoa)',
+    en: 'City of Kemijärvi: The city’s rental housing (560 flats)',
+    url: 'https://kemijarvi.fi/asuminen-ja-ymparisto/asuminen/kemijarven-kaupungin-vuokratalot/',
+  },
+  kemijarviHaku: {
+    fi: 'Kemijärven kaupunki: Asunnon hakeminen (hakemus voimassa neljä kuukautta)',
+    en: 'City of Kemijärvi: Applying for a flat (application valid for four months)',
+    url: 'https://kemijarvi.fi/asuminen-ja-ymparisto/asuminen/kemijarven-kaupungin-vuokratalot/asunnon-hakeminen/',
+  },
+  kemijarviVuostimo: {
+    fi: 'Kemijärven kaupunki: Vuokratalokohteet, Vuostimo (rivitalot, 14 km Pyhätunturille)',
+    en: 'City of Kemijärvi: Rental properties, Vuostimo (row houses, 14 km from Pyhätunturi)',
+    url: 'https://kemijarvi.fi/asuminen-ja-ymparisto/asuminen/kemijarven-kaupungin-vuokratalot/vuokratalokohteet/vuostimo/',
+  },
+  kemijarviToihin: {
+    fi: 'Kemijärven kaupunki: Töihin Kemijärvelle',
+    en: 'City of Kemijärvi: Working in Kemijärvi',
+    url: 'https://kemijarvi.fi/tyo-ja-yrittaminen/toihin-kemijarvelle/',
+  },
+  kemijarviTietoa: {
+    fi: 'Kemijärven kaupunki: Tietoa Kemijärvestä',
+    en: 'City of Kemijärvi: About Kemijärvi',
+    url: 'https://kemijarvi.fi/kaupunki-ja-hallinto/tietoa-kemijarvesta/',
+  },
+  kemijarviTalousarvio: {
+    fi: 'Kemijärven kaupunki: Talousarvio 2026 ja taloussuunnitelma 2027–2028 (valtuusto 16.12.2025): vuokrankorotukset, käyttöastetavoitteet, työnantajat',
+    en: 'City of Kemijärvi: Budget 2026 and financial plan 2027–2028 (council, 16 Dec 2025): rent increases, occupancy targets, employers',
+    url: 'https://kemijarvi.fi/wp-content/uploads/2026/05/Kemijarven-kaupungin-talousarvio-2026-ja-taloussuunnitelma-2027-2028.pdf',
+  },
+  redu: {
+    fi: 'Lapin koulutuskeskus REDU: Asuminen (opiskelija-asuntolat Rovaniemellä, Kemijärvellä, Kittilässä ja Sodankylässä)',
+    en: 'Lapland Education Centre REDU: Housing (student dormitories in Rovaniemi, Kemijärvi, Kittilä and Sodankylä)',
+    url: 'https://redu.fi/fi/opiskelijalle/asuminen',
+  },
+  osrm: {
+    fi: 'OpenStreetMap: ajomatkat OSRM-reitittimellä (laskettu 23.9.2026)',
+    en: 'OpenStreetMap: driving distances with the OSRM router (calculated 23 Sep 2026)',
+    url: 'https://www.openstreetmap.org/',
+  },
+  asentopuulaaki: {
+    fi: 'Asentopuulaaki Oy: Asunnot, kohdelista ja huoneistojen vuokrat (luettu 23.9.2026)',
+    en: 'Asentopuulaaki Oy: Properties, with the rent of every flat (read 23 Sep 2026)',
+    url: 'https://www.asentopuulaaki.fi/asunnot/',
+  },
+  asentopuulaakiHaku: {
+    fi: 'Asentopuulaaki Oy: Asunnon hakeminen',
+    en: 'Asentopuulaaki Oy: Applying for a flat',
+    url: 'https://www.asentopuulaaki.fi/asunnon-hakeminen/',
+  },
+  asentopuulaakiVapaat: {
+    fi: 'Asentopuulaaki Oy: Asuntohaku, vapaat ja vapautuvat asunnot (luettu 23.9.2026)',
+    en: 'Asentopuulaaki Oy: Flat search, free and soon-free flats (read 23 Sep 2026)',
+    url: 'https://www.asentopuulaaki.fi/asuntohaku/',
+  },
+  asentopuulaakiMuutto: {
+    fi: 'Asentopuulaaki Oy: Muuttaminen (irtisanomisaika ja vakuuden palautus)',
+    en: 'Asentopuulaaki Oy: Moving out (notice period and deposit refund)',
+    url: 'https://www.asentopuulaaki.fi/muuttaminen/',
+  },
+  sodankyla2025: {
+    fi: 'Sodankylän kunta 2.7.2025: Sodankylään valmistui 36 uutta asuntoa – asuntotarjonta kasvaa ja monipuolistuu',
+    en: 'Municipality of Sodankylä, 2 Jul 2025: 36 new flats completed in Sodankylä as the housing supply grows',
+    url: 'https://www.sodankyla.fi/ajankohtaista/sodankylaan-valmistui-36-uutta-asuntoa-asuntotarjonta-kasvaa-ja-monipuolistuu/',
+  },
+  sodankylaAsuntola: {
+    fi: 'Sodankylän kunta 5.3.2026: Sodankylän kunta perustaa opiskelija-asuntolan',
+    en: 'Municipality of Sodankylä, 5 Mar 2026: The municipality sets up a student dormitory',
+    url: 'https://www.sodankyla.fi/ajankohtaista/sodankylan-kunta-perustaa-opiskelija-asuntolan/',
+  },
+  sodankylaOpintolaina: {
+    fi: 'Sodankylän kunta: Alueellinen opintolainan hyvityskokeilu',
+    en: 'Municipality of Sodankylä: Regional student loan compensation pilot',
+    url: 'https://www.sodankyla.fi/tyo-ja-elinkeinot/alueellinen-opintolainan-hyvityskokeilu/',
+  },
+  sodankylaMuuttajalle: {
+    fi: 'Sodankylän kunta: Muuttajalle',
+    en: 'Municipality of Sodankylä: For newcomers',
+    url: 'https://www.sodankyla.fi/kunta-ja-paatoksenteko/tietoa-sodankylasta/muuttajalle/',
+  },
+  yle2025sodankyla: {
+    fi: 'Yle 11.9.2025: Harvinainen ratkaisu asuntopulaan: sodankyläläiset saavat uusia omakotitaloja, joihin ei tarvitse lainaa',
+    en: 'Yle, 11 Sep 2025: A rare fix for the housing shortage: Sodankylä residents get new houses without a mortgage',
+    url: 'https://yle.fi/a/74-20173639',
+  },
+  yle2026kevitsa: {
+    fi: 'Yle 26.5.2026: Toimitusjohtaja Tom Söderman: Kevitsan miljardi-investointi perutaan, kaivos suljetaan, 77 työpaikkaa lähtee jo nyt',
+    en: 'Yle, 26 May 2026: Kevitsa’s billion-euro investment is cancelled, the mine will close, and 77 jobs go now',
+    url: 'https://yle.fi/a/74-20227970',
+  },
+  yle2026kasarmi: {
+    fi: 'Yle 2.4.2026: Sodankylän uutta jättikasarmia aletaan rakentaa kesällä',
+    en: 'Yle, 2 Apr 2026: Construction of Sodankylä’s new giant barracks starts in the summer',
+    url: 'https://yle.fi/a/74-20218630',
+  },
+  yle2026sakatti: {
+    fi: 'Yle 18.6.2026: Luonnonsuojeluliiton Lapin piiri valitti Sakatti-päätöksestä oikeuteen',
+    en: 'Yle, 18 Jun 2026: The Lapland district of the Finnish Association for Nature Conservation appeals the Sakatti decision',
+    url: 'https://yle.fi/a/74-20232387',
+  },
+  yle2026opintolaina: {
+    fi: 'Yle 1.9.2026: Opintolainan hyvitystä voi hakea kolmessa Lapin kunnassa',
+    en: 'Yle, 1 Sep 2026: Student loan compensation can be claimed in three Lapland municipalities',
+    url: 'https://yle.fi/a/74-20243960',
+  },
+  maavoimat: {
+    fi: 'Maavoimat: Jääkäriprikaati, tietoa meistä',
+    en: 'Finnish Army: Jaeger Brigade, about us',
+    url: 'https://maavoimat.fi/jaakariprikaati/tietoa-meista',
+  },
+  angloSakatti: {
+    fi: 'Anglo American Finland: Tietoa Sakatista',
+    en: 'Anglo American Finland: About Sakatti',
+    url: 'https://finland.angloamerican.com/fi-fi/tietoa-sakatista',
   },
   inari: {
     fi: 'Inarin kunta: Asuminen Inarin kunnassa (Inarin Vuokra-asunnot Oy ja yksityiset vuokranantajat)',

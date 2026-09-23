@@ -323,6 +323,8 @@ const HOUSING_META_FILES = {
   '/rentals': 'src/housing/rentals.ts',
   '/rentals/rovaniemi': 'src/housing/towns/rovaniemi.ts',
   '/rentals/kemi-tornio': 'src/housing/towns/kemi-tornio.ts',
+  '/rentals/kemijarvi': 'src/housing/towns/kemijarvi.ts',
+  '/rentals/sodankyla': 'src/housing/towns/sodankyla.ts',
   '/rentals/kittila-levi': 'src/housing/towns/kittila-levi.ts',
   '/rentals/ivalo-inari': 'src/housing/towns/ivalo-inari.ts',
   '/seasonal-worker-housing': 'src/housing/seasonal.ts',

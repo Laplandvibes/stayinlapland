@@ -82,9 +82,9 @@ export const TOWN_KITTILA_LEVI: HousingCopyMap = {
       {
         id: 'asumistuki',
         kicker: 'Kelan asumistuki',
-        h2: 'Kittilä on kuntaryhmää III.',
+        h2: 'Kittilä on Kelan ryhmässä ”muut kunnat”.',
         table: {
-          caption: 'Enimmäisasumismenot 2026, €/kk, kuntaryhmä III',
+          caption: 'Enimmäisasumismenot 2026, €/kk, Kelan ryhmä ”muut kunnat”',
           head: ['Ruokakunnan koko', 'Enimmäisasumismenot'],
           rows: [
             ['1 henkilö', '394'],
@@ -206,9 +206,9 @@ export const TOWN_KITTILA_LEVI: HousingCopyMap = {
       {
         id: 'housing-allowance',
         kicker: 'Kela housing allowance',
-        h2: 'Kittilä is in group III.',
+        h2: 'Kittilä falls under Kela’s “other municipalities”.',
         table: {
-          caption: 'Maximum housing costs 2026, €/month, municipality group III',
+          caption: 'Maximum housing costs 2026, €/month, Kela group “other municipalities”',
           head: ['Household size', 'Maximum housing costs'],
           rows: [
             ['1 person', '394'],

@@ -25,6 +25,8 @@ export default function PageBreadcrumb() {
     // Paikkakuntasivut → paikannimet (samat kaikilla kielillä).
     [`${HOUSING_ROUTES.rentals}/rovaniemi`]: 'Rovaniemi',
     [`${HOUSING_ROUTES.rentals}/kemi-tornio`]: 'Kemi – Tornio',
+    [`${HOUSING_ROUTES.rentals}/kemijarvi`]: 'Kemijärvi',
+    [`${HOUSING_ROUTES.rentals}/sodankyla`]: 'Sodankylä',
     [`${HOUSING_ROUTES.rentals}/kittila-levi`]: 'Kittilä – Levi',
     [`${HOUSING_ROUTES.rentals}/ivalo-inari`]: 'Ivalo – Inari',
     // Dynamic /destinations/:slug → static place names (locale-invariant proper nouns).

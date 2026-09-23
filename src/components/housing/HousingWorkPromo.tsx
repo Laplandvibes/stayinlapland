@@ -96,7 +96,8 @@ export default function HousingWorkPromo({ copy, placement, variant = 'banner' }
             <div className="relative aspect-[4/3] overflow-hidden rounded-2xl ring-[6px] ring-white bg-night shadow-xl">
               <img src={copy.image} alt={copy.alt} className="absolute inset-0 w-full h-full object-cover" loading="lazy" decoding="async" />
             </div>
-            <figcaption className="mt-3 text-snow/80 text-sm italic leading-relaxed">{copy.caption}</figcaption>
+            {/* "Ylläs heinäkuussa 2026: lumitykit odottavat kautta." on virke ⇒ 16 px (§33, Vesa 20.9.2026). */}
+            <figcaption className="mt-3 text-snow/80 text-base italic leading-relaxed">{copy.caption}</figcaption>
           </figure>
           <div>
             {/* 🔴 Sanamerkki ja lappu omille riveilleen (flex-col). Ennen molemmat olivat inline-elementtejä

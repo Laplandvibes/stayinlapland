@@ -37,7 +37,9 @@ export default function ImageBreak({ src, avifSrc, alt, caption, ratio = '3/1' }
         </picture>
       </div>
       {caption && (
-        <figcaption className="text-center text-stone text-xs sm:text-sm italic mt-3 max-w-2xl mx-auto px-4">
+        // Ei yhtään käyttöä 23.9.2026, mutta valmiiksi oikein: kuvateksti on virke ⇒ 16 px, ja figure on
+        // bg-night, joten muste on vaalea /80 eikä stone (3,9:1 tummalla). §33, Vesa 20.9.2026.
+        <figcaption className="text-center text-snow/80 text-base italic mt-3 max-w-2xl mx-auto px-4">
           {caption}
         </figcaption>
       )}

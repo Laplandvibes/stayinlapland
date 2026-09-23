@@ -361,7 +361,9 @@ function SectionBlock({ s, page, tone, accentKey, photoLabel }: { s: Section; pa
             <img src={s.image.src} alt={s.image.alt} className="absolute inset-0 w-full h-full object-cover" loading="lazy" decoding="async" />
             <PhotoCredit credit={creditFor(s.image.src)} label={photoLabel} />
           </div>
-          <figcaption className={`mt-3 text-xs sm:text-sm italic leading-relaxed ${night ? 'text-snow/70' : 'text-stone'}`}>{s.image.caption}</figcaption>
+          {/* Kuvateksti on virke ja lähdeviite ("Kesko 17.6.2026") ⇒ leipätekstiä: 16 px ja muste /80
+              kummallakin pohjalla, ei 12–14 px snow/70 tai stone (§33, Vesa 20.9.2026). */}
+          <figcaption className={`mt-3 text-base italic leading-relaxed ${night ? 'text-snow/80' : 'text-charcoal/80'}`}>{s.image.caption}</figcaption>
         </figure>
       )}
     </section>

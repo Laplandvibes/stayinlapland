@@ -4,6 +4,7 @@ import Nav from './components/Nav';
 import CookieBanner from './shared/CookieBanner';
 import Footer from './shared/Footer';
 import NewsletterPopup from './shared/NewsletterPopup';
+import { POPUP_THEME, POPUP_COPY } from './components/newsletterPopupSite';
 
 const Home = lazy(() => import('./pages/Home'))
 const HomeHousing = lazy(() => import('./pages/HomeHousing'))
@@ -215,6 +216,8 @@ function SiteChrome() {
         `#LAPLANDLAPLAND`.
       */}
       <NewsletterPopup
+        theme={POPUP_THEME}
+        copy={POPUP_COPY}
         siteId="stayinlapland"
         brandWord="VIBES"
         lang={lang}

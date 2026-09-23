@@ -14,6 +14,7 @@ import {
   stayCardImages,
 } from '../data/properties';
 import ImageBreak from '../components/ImageBreak';
+import { SiteLink } from '../lib/movedToStays';
 import type { Property } from '../data/properties';
 import { useLang, useLocalePath, useLocalPageUrl } from '../i18n/useLang';
 import { getCopy } from '../locales/copy';
@@ -266,12 +267,12 @@ export default function DestinationPage() {
                         >
                           {d.checkRates}
                         </AffiliateCTA>
-                        <Link
-                          to={localePath(`/${bucket}`)}
+                        <SiteLink
+                          path={`/${bucket}`}
                           className="text-vibe-pink text-[13px] font-semibold hover:underline"
                         >
                           {d.seeAll} {label}
-                        </Link>
+                        </SiteLink>
                       </div>
                     </div>
                   </div>
@@ -311,7 +312,7 @@ export default function DestinationPage() {
             partner="hotels"
             sid={`dest_${dest.slug}_browse_all`}
             destination={dest.searchQuery ?? destName}
-            className="inline-flex items-center gap-2 px-7 py-3.5 bg-vibe-pink hover:bg-vibe-pink/90 text-white rounded-full font-semibold transition-all"
+            className="inline-flex items-center gap-2 px-7 py-3.5 bg-[#DB2777] hover:bg-[#BE185D] text-white rounded-full font-semibold transition-all"
           >
             {d.browseInDest(destName)}
           </AffiliateCTA>

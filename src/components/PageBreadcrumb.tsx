@@ -15,9 +15,6 @@ export default function PageBreadcrumb() {
   const c = getCopy(lang);
   const labelMap: Record<string, string> = {
     '/long-stays': c.nav.longStays,
-    '/hotels': c.nav.hotels,
-    '/glass-igloos': c.nav.glassIgloos,
-    '/wilderness': c.nav.wilderness,
     '/when-to-go': c.nav.whenToGo,
     '/booking-guide': c.nav.bookingGuide,
     // Asumissivut (rooli §23): otsikot 12 kielellä labels.ts:stä.

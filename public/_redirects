@@ -1,0 +1,80 @@
+# Kanibalisaation purku, vaihe 2 (lv_permanent_rules §23, Vesa 16.9.2026).
+# Lomasivut hotellit, lasi-iglut ja erämaalodget siirtyivät laplandstays.comiin,
+# joka on verkoston virallinen hotellien ja mökkien hakupaikka. 301, kaikki 12 kieltä,
+# vinoviivalla ja ilman (Cloudflare Pages ei yhdistä niitä itse).
+# Kohteet ovat samat kuin src/lib/movedToStays.tsx:ssä. Jos muutat toista, muuta molemmat.
+# Cloudflare: ohjaus toteutetaan aina, vaikka polussa olisi tiedosto.
+# 🔴 Ei catch-allia (/* /index.html 200): sivusto käyttää prerenderin --emit404:ää.
+
+/hotels  https://laplandstays.com/  301
+/hotels/  https://laplandstays.com/  301
+/fi/hotels  https://laplandstays.com/fi/  301
+/fi/hotels/  https://laplandstays.com/fi/  301
+/de/hotels  https://laplandstays.com/de/  301
+/de/hotels/  https://laplandstays.com/de/  301
+/ja/hotels  https://laplandstays.com/ja/  301
+/ja/hotels/  https://laplandstays.com/ja/  301
+/es/hotels  https://laplandstays.com/es/  301
+/es/hotels/  https://laplandstays.com/es/  301
+/br/hotels  https://laplandstays.com/br/  301
+/br/hotels/  https://laplandstays.com/br/  301
+/cn/hotels  https://laplandstays.com/cn/  301
+/cn/hotels/  https://laplandstays.com/cn/  301
+/kr/hotels  https://laplandstays.com/kr/  301
+/kr/hotels/  https://laplandstays.com/kr/  301
+/fr/hotels  https://laplandstays.com/fr/  301
+/fr/hotels/  https://laplandstays.com/fr/  301
+/it/hotels  https://laplandstays.com/it/  301
+/it/hotels/  https://laplandstays.com/it/  301
+/nl/hotels  https://laplandstays.com/nl/  301
+/nl/hotels/  https://laplandstays.com/nl/  301
+/sv/hotels  https://laplandstays.com/sv/  301
+/sv/hotels/  https://laplandstays.com/sv/  301
+/glass-igloos  https://laplandstays.com/property-types/  301
+/glass-igloos/  https://laplandstays.com/property-types/  301
+/fi/glass-igloos  https://laplandstays.com/fi/iglumajoitus/  301
+/fi/glass-igloos/  https://laplandstays.com/fi/iglumajoitus/  301
+/de/glass-igloos  https://laplandstays.com/de/property-types/  301
+/de/glass-igloos/  https://laplandstays.com/de/property-types/  301
+/ja/glass-igloos  https://laplandstays.com/ja/glass-igloos/  301
+/ja/glass-igloos/  https://laplandstays.com/ja/glass-igloos/  301
+/es/glass-igloos  https://laplandstays.com/es/property-types/  301
+/es/glass-igloos/  https://laplandstays.com/es/property-types/  301
+/br/glass-igloos  https://laplandstays.com/br/property-types/  301
+/br/glass-igloos/  https://laplandstays.com/br/property-types/  301
+/cn/glass-igloos  https://laplandstays.com/cn/property-types/  301
+/cn/glass-igloos/  https://laplandstays.com/cn/property-types/  301
+/kr/glass-igloos  https://laplandstays.com/kr/property-types/  301
+/kr/glass-igloos/  https://laplandstays.com/kr/property-types/  301
+/fr/glass-igloos  https://laplandstays.com/fr/property-types/  301
+/fr/glass-igloos/  https://laplandstays.com/fr/property-types/  301
+/it/glass-igloos  https://laplandstays.com/it/property-types/  301
+/it/glass-igloos/  https://laplandstays.com/it/property-types/  301
+/nl/glass-igloos  https://laplandstays.com/nl/property-types/  301
+/nl/glass-igloos/  https://laplandstays.com/nl/property-types/  301
+/sv/glass-igloos  https://laplandstays.com/sv/property-types/  301
+/sv/glass-igloos/  https://laplandstays.com/sv/property-types/  301
+/wilderness  https://laplandstays.com/property-types/  301
+/wilderness/  https://laplandstays.com/property-types/  301
+/fi/wilderness  https://laplandstays.com/fi/property-types/  301
+/fi/wilderness/  https://laplandstays.com/fi/property-types/  301
+/de/wilderness  https://laplandstays.com/de/property-types/  301
+/de/wilderness/  https://laplandstays.com/de/property-types/  301
+/ja/wilderness  https://laplandstays.com/ja/property-types/  301
+/ja/wilderness/  https://laplandstays.com/ja/property-types/  301
+/es/wilderness  https://laplandstays.com/es/property-types/  301
+/es/wilderness/  https://laplandstays.com/es/property-types/  301
+/br/wilderness  https://laplandstays.com/br/property-types/  301
+/br/wilderness/  https://laplandstays.com/br/property-types/  301
+/cn/wilderness  https://laplandstays.com/cn/property-types/  301
+/cn/wilderness/  https://laplandstays.com/cn/property-types/  301
+/kr/wilderness  https://laplandstays.com/kr/property-types/  301
+/kr/wilderness/  https://laplandstays.com/kr/property-types/  301
+/fr/wilderness  https://laplandstays.com/fr/property-types/  301
+/fr/wilderness/  https://laplandstays.com/fr/property-types/  301
+/it/wilderness  https://laplandstays.com/it/property-types/  301
+/it/wilderness/  https://laplandstays.com/it/property-types/  301
+/nl/wilderness  https://laplandstays.com/nl/property-types/  301
+/nl/wilderness/  https://laplandstays.com/nl/property-types/  301
+/sv/wilderness  https://laplandstays.com/sv/property-types/  301
+/sv/wilderness/  https://laplandstays.com/sv/property-types/  301

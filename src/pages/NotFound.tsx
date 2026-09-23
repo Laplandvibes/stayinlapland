@@ -1,6 +1,7 @@
 import { useLang, useLocalePath } from '../i18n/useLang';
 import { getCopy } from '../locales/copy';
 import SharedNotFound from '../shared/NotFound';
+import { HOUSING_NAV, HOUSING_ROUTES } from '../housing/labels';
 
 // Thin wrapper around the shared LV-network 404 (see ../../../shared/NotFound.tsx
 // for the design contract). This site is the cream/Playfair editorial variant
@@ -25,9 +26,9 @@ export default function NotFound() {
       homeHref={to('/')}
       variant="light"
       links={[
+        { href: to(HOUSING_ROUTES.rentals), label: HOUSING_NAV.rentals[lang] },
+        { href: to(HOUSING_ROUTES.seasonal), label: HOUSING_NAV.seasonal[lang] },
         { href: to('/long-stays'), label: nav.longStays },
-        { href: to('/hotels'), label: nav.hotels },
-        { href: to('/wilderness'), label: nav.wilderness },
       ]}
     />
   );

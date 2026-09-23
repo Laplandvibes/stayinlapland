@@ -8,9 +8,6 @@ import NewsletterPopup from './shared/NewsletterPopup';
 const Home = lazy(() => import('./pages/Home'))
 const HomeHousing = lazy(() => import('./pages/HomeHousing'))
 const LongStays = lazy(() => import('./pages/LongStays'))
-const Hotels = lazy(() => import('./pages/Hotels'))
-const GlassIgloos = lazy(() => import('./pages/GlassIgloos'))
-const WildernessLodges = lazy(() => import('./pages/WildernessLodges'))
 const BookingGuide = lazy(() => import('./pages/BookingGuide'))
 const WhenToGo = lazy(() => import('./pages/WhenToGo'))
 const DestinationPage = lazy(() => import('./pages/DestinationPage'))
@@ -30,6 +27,7 @@ import { getCopy, isCopyLoaded, loadCopy } from './locales/copy';
 import LocaleHead from './components/LocaleHead';
 import { AppPromoNudge } from './components/AppPromo';
 import { HOUSING_NAV, HOUSING_ROUTES, isHousingLang } from './housing/labels';
+import { MovedToStays, staysHome } from './lib/movedToStays';
 
 /**
  * Non-EN copy lives in per-language lazy chunks (see locales/copy.ts).
@@ -111,8 +109,8 @@ function buildPillarLinks(lang: Lang) {
     { name: HOUSING_NAV.moving[lang], href: HOUSING_ROUTES.moving },
     { name: HOUSING_NAV.cost[lang], href: HOUSING_ROUTES.cost },
     { name: nav.longStays, href: '/long-stays' },
-    { name: nav.hotels, href: '/hotels' },
-    { name: nav.glassIgloos, href: '/glass-igloos' },
+    // Vaihe 2 (18.9.2026): hotellit ja iglut ovat laplandstays.comissa.
+    { name: HOUSING_NAV.staysSite[lang], href: staysHome(lang) },
     { name: nav.whenToGo, href: '/when-to-go' },
   ];
 }
@@ -151,15 +149,20 @@ export default function App() {
             <Route key={`${prefix}-root`} path={prefix || '/'} element={<HomeSwitch />} />
           ))}
           {LOCALE_PREFIXES.flatMap((prefix) => [
-            <Route key={`${prefix}-rt`} path={`${prefix}${HOUSING_ROUTES.rentals}`} element={<Rentals />} />,
-            <Route key={`${prefix}-rtt`} path={`${prefix}${HOUSING_ROUTES.rentals}/:town`} element={<RentalsTown />} />,
-            <Route key={`${prefix}-sw`} path={`${prefix}${HOUSING_ROUTES.seasonal}`} element={<SeasonalWorkerHousing />} />,
-            <Route key={`${prefix}-mv`} path={`${prefix}${HOUSING_ROUTES.moving}`} element={<MovingToLapland />} />,
-            <Route key={`${prefix}-cl`} path={`${prefix}${HOUSING_ROUTES.cost}`} element={<CostOfLiving />} />,
+            // 🔴 Asumisreitit kirjaimellisina (= HOUSING_ROUTES): scripts/audit_catchall_safety.mjs
+            // lukee template-literaalit ja pudottaa jokaisen ${…}:n kieliprefiksinä, jolloin
+            // `${HOUSING_ROUTES.rentals}/:town` näkyi sille muodossa /:town ja portti antoi UNSAFE (18.9.2026).
+            <Route key={`${prefix}-rt`} path={`${prefix}/rentals`} element={<Rentals />} />,
+            <Route key={`${prefix}-rtt`} path={`${prefix}/rentals/:town`} element={<RentalsTown />} />,
+            <Route key={`${prefix}-sw`} path={`${prefix}/seasonal-worker-housing`} element={<SeasonalWorkerHousing />} />,
+            <Route key={`${prefix}-mv`} path={`${prefix}/moving-to-lapland`} element={<MovingToLapland />} />,
+            <Route key={`${prefix}-cl`} path={`${prefix}/cost-of-living`} element={<CostOfLiving />} />,
             <Route key={`${prefix}-ls`} path={`${prefix}/long-stays`} element={<LongStays />} />,
-            <Route key={`${prefix}-ht`} path={`${prefix}/hotels`} element={<Hotels />} />,
-            <Route key={`${prefix}-gi`} path={`${prefix}/glass-igloos`} element={<GlassIgloos />} />,
-            <Route key={`${prefix}-wd`} path={`${prefix}/wilderness`} element={<WildernessLodges />} />,
+            // Vaihe 2 (18.9.2026): siirtyneet lomasivut. Palvelin ohjaa 301:llä (public/_redirects);
+            // tämä kattaa sovelluksen sisäisen navigoinnin.
+            <Route key={`${prefix}-ht`} path={`${prefix}/hotels`} element={<MovedToStays path="/hotels" />} />,
+            <Route key={`${prefix}-gi`} path={`${prefix}/glass-igloos`} element={<MovedToStays path="/glass-igloos" />} />,
+            <Route key={`${prefix}-wd`} path={`${prefix}/wilderness`} element={<MovedToStays path="/wilderness" />} />,
             <Route key={`${prefix}-wt`} path={`${prefix}/when-to-go`} element={<WhenToGo />} />,
             <Route key={`${prefix}-bg`} path={`${prefix}/booking-guide`} element={<BookingGuide />} />,
             <Route key={`${prefix}-ds`} path={`${prefix}/destinations/:slug`} element={<DestinationPage />} />,

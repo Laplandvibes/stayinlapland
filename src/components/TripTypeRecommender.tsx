@@ -1,6 +1,6 @@
-import { Link } from 'react-router-dom';
+import { SiteLink } from '../lib/movedToStays';
 import { ArrowRight } from 'lucide-react';
-import { useLang, useLocalePath } from '../i18n/useLang';
+import { useLang } from '../i18n/useLang';
 import { getCopy } from '../locales/copy';
 
 const IMAGE_DATA = [
@@ -11,7 +11,6 @@ const IMAGE_DATA = [
 
 export default function TripTypeRecommender() {
   const lang = useLang();
-  const localePath = useLocalePath();
   const t = getCopy(lang).tripRecommender;
   const items = t.items.map((item, i) => ({ ...item, ...IMAGE_DATA[i] }));
 
@@ -45,13 +44,13 @@ export default function TripTypeRecommender() {
             <p className="text-graphite text-[15px] leading-relaxed mb-5 flex-1">
               {tt.rationale}
             </p>
-            <Link
-              to={localePath(tt.to)}
+            <SiteLink
+              path={tt.to}
               className="lv-tap inline-flex items-center gap-1.5 text-vibe-pink hover:gap-2.5 text-sm font-semibold transition-all mt-auto"
             >
               {tt.ctaLabel}
               <ArrowRight className="w-4 h-4" />
-            </Link>
+            </SiteLink>
           </div>
         </article>
       ))}

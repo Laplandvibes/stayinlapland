@@ -2,6 +2,7 @@ import ProductRail, { type RailLang } from '../shared/ads/ProductRail'
 import finlaysonRail from '../shared/ads/rails/finlayson'
 import finlaysonPicks from '../shared/ads/data/finlaysonPicks'
 import { Link } from 'react-router-dom';
+import { SiteLink } from '../lib/movedToStays';
 import { ArrowRight } from 'lucide-react';
 import Hero from '../components/Hero';
 import Newsletter from '../components/Newsletter';
@@ -175,9 +176,9 @@ export default function Home() {
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 sm:gap-6">
             {localizedCategories.map((cat) => (
-              <Link
+              <SiteLink
                 key={cat.slug}
-                to={localePath(`/${cat.slug}`)}
+                path={`/${cat.slug}`}
                 className="group flex flex-col overflow-hidden rounded-2xl bg-white border border-charcoal/8 hover:border-charcoal/20 hover:shadow-md transition-all"
               >
                 <div className="relative aspect-[4/3] overflow-hidden bg-cream-2">
@@ -205,7 +206,7 @@ export default function Home() {
                     <ArrowRight className="w-4 h-4" />
                   </span>
                 </div>
-              </Link>
+              </SiteLink>
             ))}
           </div>
         </div>
@@ -328,13 +329,13 @@ export default function Home() {
                   {(FAQ_LINKS[faqIndex] ?? []).length > 0 && (
                     <div className="flex flex-wrap gap-x-5 gap-y-2 mt-4">
                       {FAQ_LINKS[faqIndex].map((l) => (
-                        <Link
+                        <SiteLink
                           key={l.route}
-                          to={localePath(l.route)}
+                          path={l.route}
                           className="lv-tap inline-flex items-center gap-1.5 text-xs sm:text-sm font-semibold uppercase tracking-wider text-charcoal hover:text-vibe-pink transition-colors"
                         >
                           {l.navKey ? t.nav[l.navKey] : l.literal} →
-                        </Link>
+                        </SiteLink>
                       ))}
                     </div>
                   )}

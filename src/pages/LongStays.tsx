@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+import { SiteLink } from '../lib/movedToStays';
 import PageHero from '../components/PageHero';
 import PropertyCard from '../components/PropertyCard';
 import Newsletter from '../components/Newsletter';
@@ -15,7 +15,7 @@ import LomarengasAd from '../components/LomarengasAd';
 import { longStays, stayCardImage } from '../data/properties';
 import type { Property } from '../data/properties';
 import { pageUrl } from '../lib/meta';
-import { useLang, useLocalePath, useLocalPageUrl } from '../i18n/useLang';
+import { useLang, useLocalPageUrl } from '../i18n/useLang';
 import { getCopy } from '../locales/copy';
 
 // PROPERTY_IMAGES poistettu 2026-08-17: se mappasi kaksi eri kohdetta SAMAAN
@@ -25,7 +25,6 @@ import { getCopy } from '../locales/copy';
 export default function LongStays() {
   const lang = useLang();
   const localUrl = useLocalPageUrl();
-  const localePath = useLocalePath();
   const t = getCopy(lang);
   const ls = t.longStays;
 
@@ -186,23 +185,23 @@ export default function LongStays() {
             <p>{ls.counterP3}</p>
           </div>
           <div className="mt-8 flex flex-wrap gap-3">
-            <Link
-              to={localePath('/hotels')}
+            <SiteLink
+              path="/hotels"
               className="px-5 py-2.5 bg-white hover:bg-charcoal hover:text-snow border border-charcoal/15 text-charcoal rounded-full text-sm font-semibold transition-colors"
             >
               {ls.seeHotels}
-            </Link>
-            <Link
-              to={localePath('/glass-igloos')}
+            </SiteLink>
+            <SiteLink
+              path="/glass-igloos"
               className="px-5 py-2.5 bg-white hover:bg-charcoal hover:text-snow border border-charcoal/15 text-charcoal rounded-full text-sm font-semibold transition-colors"
             >
               {ls.seeIgloos}
-            </Link>
+            </SiteLink>
             <AffiliateCTA
               partner="hotels"
               sid="ls_browse_all_cta"
               destination="Lapland, Finland"
-              className="px-5 py-2.5 bg-vibe-pink hover:bg-vibe-pink/90 text-white rounded-full text-sm font-semibold transition-all"
+              className="px-5 py-2.5 bg-[#DB2777] hover:bg-[#BE185D] text-white rounded-full text-sm font-semibold transition-all"
             >
               {ls.browseAll}
             </AffiliateCTA>

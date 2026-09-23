@@ -196,12 +196,12 @@ export const HOME: Record<HousingLang, HousingHomeCopy> = {
     holiday: {
       kicker: 'Lomalle Lappiin?',
       h2: 'Hotellit, mökit ja iglut.',
-      lead: 'Lomamajoituksen haku on sisarsivustollamme laplandstays.com. Omat lomasivumme löydät yhä täältä:',
+      lead: 'Hotellit, mökit ja lasi-iglut löytyvät sisarsivustoltamme laplandstays.com. Täällä ovat yhä viikon ja kuukauden jaksot sekä matkan ajoitus.',
       links: [
         { label: 'laplandstays.com', href: 'https://laplandstays.com/fi/', external: true },
-        { label: 'Hotellit', href: '/hotels' },
-        { label: 'Lasi-iglut', href: '/glass-igloos' },
-        { label: 'Erämaalodget', href: '/wilderness' },
+        { label: 'Lasi-iglut', href: 'https://laplandstays.com/fi/iglumajoitus/', external: true },
+        { label: 'Mökit', href: 'https://laplandstays.com/fi/cabins/', external: true },
+        { label: 'Pitkät jaksot', href: '/long-stays' },
         { label: 'Milloin matkustaa', href: '/when-to-go' },
       ],
     },
@@ -348,12 +348,12 @@ export const HOME: Record<HousingLang, HousingHomeCopy> = {
     holiday: {
       kicker: 'Coming on holiday?',
       h2: 'Hotels, cabins and igloos.',
-      lead: 'Holiday accommodation search lives on our sister site laplandstays.com. Our own holiday pages are still here too:',
+      lead: 'Hotels, cabins and glass igloos are on our sister site laplandstays.com. Weekly and monthly stays and trip timing are still here.',
       links: [
         { label: 'laplandstays.com', href: 'https://laplandstays.com/', external: true },
-        { label: 'Hotels', href: '/hotels' },
-        { label: 'Glass igloos', href: '/glass-igloos' },
-        { label: 'Wilderness lodges', href: '/wilderness' },
+        { label: 'Glass igloos', href: 'https://laplandstays.com/property-types/', external: true },
+        { label: 'Cabins', href: 'https://laplandstays.com/cabins/', external: true },
+        { label: 'Long stays', href: '/long-stays' },
         { label: 'When to go', href: '/when-to-go' },
       ],
     },

@@ -29,7 +29,7 @@ export const HOUSING_ROUTE_PATHS: readonly string[] = Object.values(HOUSING_ROUT
  * natiivisti, koska navi näkyy jokaisella kielellä vaikka sivun runko on
  * englanniksi. Sama kuvio kuin Nav.tsx:n DESTINATIONS_LABEL.
  */
-export const HOUSING_NAV: Record<HousingRouteKey | 'stays' | 'housingHome', Record<Lang, string>> = {
+export const HOUSING_NAV: Record<HousingRouteKey | 'stays' | 'housingHome' | 'staysSite', Record<Lang, string>> = {
   housingHome: {
     en: 'Living in Lapland', fi: 'Asuminen Lapissa', sv: 'Att bo i Lappland', de: 'Leben in Lappland',
     fr: 'Vivre en Laponie', es: 'Vivir en Laponia', it: 'Vivere in Lapponia', nl: 'Wonen in Lapland',
@@ -59,6 +59,13 @@ export const HOUSING_NAV: Record<HousingRouteKey | 'stays' | 'housingHome', Reco
     en: 'Stays', fi: 'Majoitus', sv: 'Boende', de: 'Unterkünfte',
     fr: 'Hébergements', es: 'Alojamiento', it: 'Alloggi', nl: 'Verblijven',
     'pt-BR': 'Hospedagem', ja: '宿泊', ko: '숙박', 'zh-CN': '住宿',
+  },
+  /** Vaihe 2 (18.9.2026): hotellit, iglut ja erämaalodget ovat laplandstays.comissa. */
+  staysSite: {
+    en: 'Hotels & cabins (LaplandStays)', fi: 'Hotellit ja mökit (LaplandStays)', sv: 'Hotell och stugor (LaplandStays)',
+    de: 'Hotels & Hütten (LaplandStays)', fr: 'Hôtels et chalets (LaplandStays)', es: 'Hoteles y cabañas (LaplandStays)',
+    it: 'Hotel e chalet (LaplandStays)', nl: 'Hotels en huisjes (LaplandStays)', 'pt-BR': 'Hotéis e chalés (LaplandStays)',
+    ja: 'ホテルとコテージ（LaplandStays）', ko: '호텔과 코티지 (LaplandStays)', 'zh-CN': '酒店与小木屋（LaplandStays）',
   },
 };
 

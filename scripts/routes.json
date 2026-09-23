@@ -106,9 +106,15 @@
   },
   {
     "path": "/long-stays",
-    "copyKey": "longStays",
-    "fallbackTitle": "Long Stays & Apartments in Lapland",
-    "fallbackDescription": "Weekly and monthly stays in Finnish Lapland: serviced apartments, cabins and villas built for slow travel and remote work in Rovaniemi, Levi and Ylläs."
+    "nativeLocales": [
+      "en",
+      "fi"
+    ],
+    "harvestFiles": [
+      "src/housing/longstays.ts"
+    ],
+    "fallbackTitle": "A Month or a Winter in Lapland: Flat, Cabin or Staff Housing",
+    "fallbackDescription": "Staying a month or a winter in Finnish Lapland: a furnished rental flat, a cabin by the week or staff housing. What the tenancy law covers and when to notify your address."
   },
   {
     "path": "/hotels",

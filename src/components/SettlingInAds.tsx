@@ -107,6 +107,12 @@ interface PartnerAdProps {
   trust: TrustPoint[];
   cta: string;
   poweredBy: string;
+  /**
+   * `stack` = pystykortti ruudukkoon (2–3 rinnakkain). `row` = yksi mainos tekstipalstan levyisenä:
+   * teksti vasemmalla, logo ja painike oikealla. 🔴 Vesa 23.9.2026 elinkustannussivun yksinäisestä
+   * pystykortista leveän alueen vasemmassa reunassa: "miksi tämä mainos on näin vinossa".
+   */
+  layout?: "stack" | "row";
 }
 
 
@@ -128,103 +134,116 @@ function PartnerAd({
   trust,
   cta,
   poweredBy,
+  layout = "stack",
 }: PartnerAdProps) {
-  return (
-    <article
-      className="relative flex h-full flex-col overflow-hidden rounded-2xl bg-white text-slate-900 shadow-[0_24px_60px_-28px_rgba(0,0,0,0.55)] ring-1 ring-black/5"
-      style={{ borderTop: `3px solid ${accent}` }}
-      aria-label={headline}
-    >
-      {/* Soft brand-tinted wash, top-right — keeps the white card warm. */}
+  const badge = (
+    <div className="flex items-center gap-3">
       <div
-        aria-hidden="true"
-        className="pointer-events-none absolute -top-24 -right-24 h-72 w-72 rounded-full"
-        style={{ background: `radial-gradient(closest-side, ${accent}1f, transparent)` }}
-      />
+        className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl ring-1"
+        style={{ backgroundColor: `${accent}1a`, borderColor: `${accent}40` }}
+      >
+        <IconBadge className="h-5 w-5" style={{ color: ctaColor }} aria-hidden="true" />
+      </div>
+      <div className="flex flex-col gap-1">
+        {/* 🔴 Mainosmerkinnän VÄRIÄ ei saa sitoa kumppanin brändiväriin.
+            Mitattu 2026-08-17: ctaColor omalla 10 %:n sävyllään (accent1a)
+            antaa 3,62:1, kun 10 px normaaliteksti vaatii 4,5:1 — ja tämä
+            on lakisääteinen tunniste, jonka on oltava selvästi erottuva,
+            ei pelkästään kaunis. Tausta jää brändisävyyn, joten lätkä näyttää
+            yhä kumppanin väriseltä. */}
+        <span
+          className="inline-flex w-fit items-center rounded-full px-2 py-0.5 text-[10px] font-semibold uppercase tracking-[0.16em] text-slate-800"
+          style={{ backgroundColor: `${accent}1a` }}
+        >
+          {adLabel}
+        </span>
+        <p className="text-xs font-semibold uppercase tracking-[0.2em]" style={{ color: ctaColor }}>
+          {eyebrow}
+        </p>
+      </div>
+    </div>
+  );
+  /* Real advertiser logo (official Adtraction media). */
+  const logo = (
+    <img src={logoSrc} alt={logoAlt} width={120} height={40} loading="lazy" decoding="async" className="h-8 w-auto shrink-0" />
+  );
+  const trustList = (
+    <ul className="mt-5 flex flex-wrap gap-x-5 gap-y-2.5">
+      {trust.map((t) => (
+        <li key={t.label} className="flex items-center gap-2 text-sm text-slate-700">
+          <t.icon className="h-4 w-4 shrink-0" style={{ color: ctaColor }} aria-hidden="true" />
+          <span>{t.label}</span>
+        </li>
+      ))}
+    </ul>
+  );
+  const ctaLink = (
+    <a
+      href={href}
+      target="_blank"
+      rel="sponsored nofollow noopener"
+      className="group inline-flex items-center justify-center gap-2 rounded-full px-6 py-3.5 font-semibold text-white no-underline shadow-lg transition-all duration-200 hover:-translate-y-0.5 active:translate-y-0"
+      style={{ backgroundColor: ctaColor, boxShadow: `0 14px 30px -12px ${ctaColor}99` }}
+    >
+      {cta}
+      <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5" aria-hidden="true" />
+    </a>
+  );
+  /* 🔴 slate-400 valkoisella = 2,49:1 (mitattu 2026-08-17), kun 11 px vaatii 4,5:1.
+     "Kumppani: X" kertoo kenen mainos tämä on, eli se on osa merkintää. slate-600 = 7,0:1. */
+  const powered = <span className="text-[11px] uppercase tracking-[0.12em] text-slate-600">{poweredBy}</span>;
+  const wash = (
+    <div
+      aria-hidden="true"
+      className="pointer-events-none absolute -top-24 -right-24 h-72 w-72 rounded-full"
+      style={{ background: `radial-gradient(closest-side, ${accent}1f, transparent)` }}
+    />
+  );
+  const shell = "relative overflow-hidden rounded-2xl bg-white text-slate-900 shadow-[0_24px_60px_-28px_rgba(0,0,0,0.55)] ring-1 ring-black/5";
 
-      <div className="relative flex h-full flex-col p-6 sm:p-7">
-        {/* Header row: icon badge + "Ad" label + eyebrow + real partner logo */}
-        <div className="mb-4 flex items-start justify-between gap-4">
-          <div className="flex items-center gap-3">
-            <div
-              className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl ring-1"
-              style={{ backgroundColor: `${accent}1a`, borderColor: `${accent}40` }}
-            >
-              <IconBadge className="h-5 w-5" style={{ color: ctaColor }} aria-hidden="true" />
-            </div>
-            <div className="flex flex-col gap-1">
-              {/* 🔴 Mainosmerkinnän VÄRIÄ ei saa sitoa kumppanin brändiväriin.
-                  Mitattu 2026-08-17: ctaColor omalla 10 %:n sävyllään (accent1a)
-                  antaa 3,62:1, kun 10 px normaaliteksti vaatii 4,5:1 — ja tämä
-                  on lakisääteinen tunniste, jonka on oltava selvästi erottuva,
-                  ei pelkästään kaunis. Sävyn vahvistaminen EI auta: teksti on
-                  sama väri kuin tausta, joten tummempi sävy laskisi kontrastia
-                  entisestään. Ainoa toimiva korjaus on irrottaa teksti
-                  aksentista. Tausta jää brändisävyyn, joten lätkä näyttää yhä
-                  kumppanin väriseltä. */}
-              <span
-                className="inline-flex w-fit items-center rounded-full px-2 py-0.5 text-[10px] font-semibold uppercase tracking-[0.16em] text-slate-800"
-                style={{ backgroundColor: `${accent}1a` }}
-              >
-                {adLabel}
-              </span>
-              <p
-                className="text-xs font-semibold uppercase tracking-[0.2em]"
-                style={{ color: ctaColor }}
-              >
-                {eyebrow}
-              </p>
+  if (layout === "row") {
+    return (
+      <article className={shell} style={{ borderTop: `3px solid ${accent}` }} aria-label={headline}>
+        {wash}
+        <div className="relative grid gap-6 p-6 sm:p-8 md:grid-cols-[minmax(0,1fr)_auto] md:gap-10">
+          <div className="min-w-0">
+            <div className="mb-4">{badge}</div>
+            <h3 className="mb-3 font-heading text-2xl leading-tight tracking-wide text-slate-900 sm:text-[1.7rem] [text-wrap:balance]">
+              {headline}
+            </h3>
+            <p className="text-sm leading-relaxed text-slate-600 [text-wrap:pretty]">{sub}</p>
+            {trustList}
+          </div>
+          <div className="flex flex-col items-start justify-center gap-5 border-t border-slate-200 pt-5 md:items-center md:border-l md:border-t-0 md:pl-10 md:pt-0">
+            {logo}
+            <div className="flex flex-col items-start gap-2 md:items-center">
+              {ctaLink}
+              {powered}
             </div>
           </div>
-          {/* Real advertiser logo (official Adtraction media). */}
-          <img
-            src={logoSrc}
-            alt={logoAlt}
-            width={120}
-            height={40}
-            loading="lazy"
-            decoding="async"
-            className="h-8 w-auto shrink-0"
-          />
         </div>
+      </article>
+    );
+  }
 
-        <h3 className="mb-3 max-w-xl font-heading text-2xl leading-tight tracking-wide text-slate-900 sm:text-[1.7rem]">
+  return (
+    <article className={`${shell} flex h-full flex-col`} style={{ borderTop: `3px solid ${accent}` }} aria-label={headline}>
+      {wash}
+      <div className="relative flex h-full flex-col p-6 sm:p-7">
+        <div className="mb-4 flex items-start justify-between gap-4">
+          {badge}
+          {logo}
+        </div>
+        <h3 className="mb-3 max-w-xl font-heading text-2xl leading-tight tracking-wide text-slate-900 sm:text-[1.7rem] [text-wrap:balance]">
           {headline}
         </h3>
-        <p className="max-w-xl text-sm leading-relaxed text-slate-600">{sub}</p>
-
-        {/* Trust points */}
-        <ul className="mt-5 flex flex-wrap gap-x-5 gap-y-2.5">
-          {trust.map((t) => (
-            <li key={t.label} className="flex items-center gap-2 text-sm text-slate-700">
-              <t.icon className="h-4 w-4 shrink-0" style={{ color: ctaColor }} aria-hidden="true" />
-              <span>{t.label}</span>
-            </li>
-          ))}
-        </ul>
-
-        {/* 🔴 mt-AUTO, ei mt-6. Kommentti lupasi jo ennestään "pinned to the
-            bottom so stacked cards line up", mutta mt-6 on kiinteä väli edeltävään
-            elementtiin — se ei työnnä mitään pohjaan. Kolmen mainoskortin CTA:t
-            päätyivät siksi eri korkeuksille sen mukaan montako riviä tekstiä
-            kortissa sattui olemaan (Vesa 2026-08-17: "nämä mainokset ei ole
-            tasaisesti"). Emo on `flex h-full flex-col`, joten mt-auto syö vapaan
-            tilan ja tasaa napit. pt-6 säilyttää entisen välin. */}
+        <p className="max-w-xl text-sm leading-relaxed text-slate-600 [text-wrap:pretty]">{sub}</p>
+        {trustList}
+        {/* 🔴 mt-AUTO, ei mt-6: emo on `flex h-full flex-col`, joten mt-auto tasaa rinnakkaisten
+            korttien napit samalle korkeudelle (Vesa 2026-08-17: "nämä mainokset ei ole tasaisesti"). */}
         <div className="mt-auto flex flex-wrap items-center gap-x-4 gap-y-2 pt-6">
-          <a
-            href={href}
-            target="_blank"
-            rel="sponsored nofollow noopener"
-            className="group inline-flex items-center justify-center gap-2 rounded-full px-6 py-3.5 font-semibold text-white no-underline shadow-lg transition-all duration-200 hover:-translate-y-0.5 active:translate-y-0"
-            style={{ backgroundColor: ctaColor, boxShadow: `0 14px 30px -12px ${ctaColor}99` }}
-          >
-            {cta}
-            <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5" aria-hidden="true" />
-          </a>
-          {/* 🔴 slate-400 valkoisella = 2,49:1 (mitattu 2026-08-17), kun 11 px
-              vaatii 4,5:1. "Kumppani: Airalo" kertoo kenen mainos tämä on, eli
-              se on osa merkintää eikä koriste. slate-600 = 7,0:1. */}
-          <span className="text-[11px] uppercase tracking-[0.12em] text-slate-600">{poweredBy}</span>
+          {ctaLink}
+          {powered}
         </div>
       </div>
     </article>
@@ -233,7 +252,7 @@ function PartnerAd({
 
 /* ── Fortum — electricity ─────────────────────────────────────────────── */
 
-function FortumAd({ sid = "stay_moving_electricity", lang: langProp }: { sid?: string; lang?: Lang }) {
+function FortumAd({ sid = "stay_moving_electricity", lang: langProp, layout }: { sid?: string; lang?: Lang; layout?: "stack" | "row" }) {
   const ctxLang = useLang();
   // Asumissivujen sisältö on fi/en; kortin kieli seuraa sisällön kieltä, ei osoitteen kieltä.
   const lang = langProp ?? ctxLang;
@@ -299,6 +318,7 @@ function FortumAd({ sid = "stay_moving_electricity", lang: langProp }: { sid?: s
   return (
     <PartnerAd
       partner="fortum"
+      layout={layout}
       href={href}
       sid={sid}
       accent="#3CB54A"
@@ -403,7 +423,7 @@ function FortumAd({ sid = "stay_moving_electricity", lang: langProp }: { sid?: s
 
 /* ── Telia — mobile / broadband ───────────────────────────────────────── */
 
-function TeliaAd({ sid = "stay_moving_telecom", lang: langProp }: { sid?: string; lang?: Lang }) {
+function TeliaAd({ sid = "stay_moving_telecom", lang: langProp, layout }: { sid?: string; lang?: Lang; layout?: "stack" | "row" }) {
   const ctxLang = useLang();
   // Asumissivujen sisältö on fi/en; kortin kieli seuraa sisällön kieltä, ei osoitteen kieltä.
   const lang = langProp ?? ctxLang;
@@ -469,6 +489,7 @@ function TeliaAd({ sid = "stay_moving_telecom", lang: langProp }: { sid?: string
   return (
     <PartnerAd
       partner="telia"
+      layout={layout}
       href={href}
       sid={sid}
       accent="#990AE3"
@@ -573,7 +594,7 @@ function TeliaAd({ sid = "stay_moving_telecom", lang: langProp }: { sid?: string
 
 /* ── Airalo — eSIM for the arrival gap ────────────────────────────────── */
 
-function AiraloAd({ sid = "stay_moving_esim", lang: langProp }: { sid?: string; lang?: Lang }) {
+function AiraloAd({ sid = "stay_moving_esim", lang: langProp, layout }: { sid?: string; lang?: Lang; layout?: "stack" | "row" }) {
   const ctxLang = useLang();
   // Asumissivujen sisältö on fi/en; kortin kieli seuraa sisällön kieltä, ei osoitteen kieltä.
   const lang = langProp ?? ctxLang;
@@ -642,6 +663,7 @@ function AiraloAd({ sid = "stay_moving_esim", lang: langProp }: { sid?: string; 
   return (
     <PartnerAd
       partner="airalo"
+      layout={layout}
       href={href}
       sid={sid}
       accent="#F76C5E"
@@ -814,19 +836,23 @@ export default function SettlingInAds({
 }) {
   const hl = housingLang(useLang());
   const t = WRAP_TEXT[context][hl];
-  const cols = kinds.length >= 3 ? "lg:grid-cols-3" : kinds.length === 2 ? "md:grid-cols-2" : "max-w-2xl";
+  // Yksi mainos: sivun tekstipalstan levyinen vaakakortti (sama max-w-3xl kuin osioilla), ei
+  // pystykortti leveän alueen vasempaan reunaan. Useampi: rinnakkain leveämmässä ruudukossa.
+  const single = kinds.length === 1;
+  const cols = kinds.length >= 3 ? "lg:grid-cols-3" : "md:grid-cols-2";
+  const layout = single ? "row" : "stack";
   return (
     <section className={`px-5 sm:px-6 py-12 sm:py-16 bg-cream-2/60 border-y border-charcoal/[0.06] ${className}`} aria-label={t.title}>
-      <div className="mx-auto max-w-6xl">
+      <div className={`mx-auto ${single ? "max-w-3xl" : "max-w-6xl"}`}>
         <p className="mb-3 inline-flex rounded-full bg-charcoal/[0.06] px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.18em] text-graphite">
           {t.kicker}
         </p>
         <h2 className="max-w-3xl font-heading text-3xl sm:text-4xl text-charcoal leading-tight tracking-wide">{t.title}</h2>
         <p className="mt-3 mb-8 max-w-2xl text-base leading-relaxed text-graphite">{t.lead}</p>
-        <div className={`grid items-stretch gap-5 ${cols}`}>
-          {kinds.includes("fortum") && <FortumAd sid={`${sidPrefix}_electricity`} lang={hl} />}
-          {kinds.includes("telia") && <TeliaAd sid={`${sidPrefix}_telecom`} lang={hl} />}
-          {kinds.includes("airalo") && <AiraloAd sid={`${sidPrefix}_esim`} lang={hl} />}
+        <div className={single ? "" : `grid items-stretch gap-5 ${cols}`}>
+          {kinds.includes("fortum") && <FortumAd sid={`${sidPrefix}_electricity`} lang={hl} layout={layout} />}
+          {kinds.includes("telia") && <TeliaAd sid={`${sidPrefix}_telecom`} lang={hl} layout={layout} />}
+          {kinds.includes("airalo") && <AiraloAd sid={`${sidPrefix}_esim`} lang={hl} layout={layout} />}
         </div>
         <p className="mt-5 max-w-3xl text-[13px] leading-relaxed text-graphite">{NOTE[hl]}</p>
       </div>

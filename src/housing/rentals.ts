@@ -13,7 +13,7 @@ export const RENTALS: HousingCopyMap = {
       'Vuokra-asunto Rovaniemeltä, Leviltä, Ylläkseltä, Kemi–Torniosta, Sodankylästä tai Inarista: kuntien vuokrayhtiöt, portaalit, Tilastokeskuksen neliövuokrat ja Kelan tuki.',
     breadcrumb: 'Vuokra-asunnot',
     hero: {
-      eyebrow: 'Vuokra-asunnot · Rovaniemi · Levi · Ylläs · Kemi–Tornio · Sodankylä · Inari',
+      eyebrow: 'Vuokra-asunnot Lapissa',
       title: 'Vuokra-asunnot Lapissa.',
       subtitle:
         'Mistä vuokra-asunnon löytää, mitä se maksaa ja paljonko Kela korvaa. Kunta kerrallaan.',
@@ -215,7 +215,7 @@ export const RENTALS: HousingCopyMap = {
       'Long-term rentals in Finnish Lapland: where the flats are in Rovaniemi, Levi, Ylläs, Kemi–Tornio, Sodankylä and Inari, what they cost per m² (Statistics Finland), deposits and Kela housing allowance.',
     breadcrumb: 'Rentals',
     hero: {
-      eyebrow: 'Rentals · Rovaniemi · Levi · Ylläs · Kemi–Tornio · Sodankylä · Inari',
+      eyebrow: 'Renting in Lapland',
       title: 'Renting a home in Lapland.',
       subtitle:
         'Where to find a rental flat, what it costs and how much Kela covers. Town by town.',

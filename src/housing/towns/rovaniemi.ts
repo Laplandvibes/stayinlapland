@@ -11,7 +11,7 @@ export const TOWN_ROVANIEMI: HousingCopyMap = {
       'Vuokra-asunnot Rovaniemellä: Tilastokeskuksen neliövuokrat 2026, kaupungin listaamat vuokranantajat, DAS opiskelijoille, Kelan asumistuen katto ja milloin kannattaa hakea.',
     breadcrumb: 'Rovaniemi',
     hero: {
-      eyebrow: 'Rovaniemi · 66 191 asukasta · Kelan kuntaryhmä II',
+      eyebrow: 'Rovaniemi, 66 191 asukasta',
       title: 'Vuokra-asunnot Rovaniemi.',
       subtitle:
         'Lapin suurin kaupunki, 66 191 asukasta. Mitä vuokra maksaa, keneltä asuntoa haetaan ja milloin.',
@@ -157,7 +157,7 @@ export const TOWN_ROVANIEMI: HousingCopyMap = {
       'Renting a flat in Rovaniemi: rent per m² from Statistics Finland 2026, the landlords listed by the city, DAS for students, the Kela housing allowance ceiling and when to apply.',
     breadcrumb: 'Rovaniemi',
     hero: {
-      eyebrow: 'Rovaniemi · 66,191 residents · Kela municipality group II',
+      eyebrow: 'Rovaniemi, 66,191 residents',
       title: 'Rentals in Rovaniemi.',
       subtitle:
         'Lapland’s largest city, 66,191 residents. What rent costs, who you apply to and when.',

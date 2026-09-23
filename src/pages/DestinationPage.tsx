@@ -262,7 +262,10 @@ export default function DestinationPage() {
                         <AffiliateCTA
                           partner="hotels"
                           sid={`dest_${dest.slug}_card`}
-                          destination={p.searchQuery ?? p.name}
+                          // 🔴 Kohteen aluelista, ei hotellin nimeä: kumppanihaku ei tunnista nimiä, ja nimi putosi
+                          // Sembon etusivulle tai Trip.comin yleiseen hakuun (mitattu 23.9.2026 Workerilta
+                          // X-LV-QA-otsakkeella; Vesa: "ei mitään syvälinkitystä"). Alue avaa aina oikean listan.
+                          destination={dest.searchQuery ?? dest.name}
                           className="inline-flex justify-center px-5 py-2.5 bg-charcoal hover:bg-vibe-pink text-snow rounded-full text-sm font-semibold transition-colors"
                         >
                           {d.checkRates}
@@ -311,7 +314,7 @@ export default function DestinationPage() {
           <AffiliateCTA
             partner="hotels"
             sid={`dest_${dest.slug}_browse_all`}
-            destination={dest.searchQuery ?? destName}
+            destination={dest.searchQuery ?? dest.name}
             className="inline-flex items-center gap-2 px-7 py-3.5 bg-[#DB2777] hover:bg-[#BE185D] text-white rounded-full font-semibold transition-all"
           >
             {d.browseInDest(destName)}

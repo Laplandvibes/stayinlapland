@@ -12,7 +12,7 @@ export const COST: HousingCopyMap = {
       'Mitä eläminen Lapissa maksaa: neliövuokrat Rovaniemellä ja Lapissa (Tilastokeskus 2026), sähkö ja polttoaine, Kelan asumistuen katot ja päiväkotimaksut. Lasketut esimerkit kaavoineen.',
     breadcrumb: 'Elinkustannukset',
     hero: {
-      eyebrow: 'Elinkustannukset · Tilastokeskus · Kela · Kuntaliitto',
+      eyebrow: 'Elinkustannukset Lapissa',
       title: 'Mitä eläminen Lapissa maksaa?',
       subtitle:
         'Vuokra on Lapissa halvempaa kuin muualla Suomessa, auto ja lämmitys kalliimpaa. Näin kuukauden menot koostuvat.',
@@ -145,7 +145,7 @@ export const COST: HousingCopyMap = {
       'What it costs to live in Finnish Lapland: rent per m² in Rovaniemi and Lapland (Statistics Finland 2026), electricity and fuel, Kela housing allowance ceilings and daycare fees, with worked examples.',
     breadcrumb: 'Cost of living',
     hero: {
-      eyebrow: 'Cost of living · Statistics Finland · Kela',
+      eyebrow: 'Cost of living in Lapland',
       title: 'What does living in Lapland cost?',
       subtitle:
         'Rent is cheaper in Lapland than in the rest of Finland; the car and the heating are dearer. This is how a monthly budget adds up.',

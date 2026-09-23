@@ -49,56 +49,6 @@
       "description": "Planera din vistelse i Lappland 2026, 16 verifierade boenden: stugor från 140 €/natt, designhotell i Rovaniemi, glasigloor 280 €+ och vildmarkslodger."
     }
   },
-  "/long-stays": {
-    "en": {
-      "title": "Long Stays in Finnish Lapland",
-      "description": "Five long-stay Lapland properties for week-plus rentals, Arctic TreeHouse suites, Levi penthouses, Ounasvaara chalets, Pyhä cabins and Lake Inari villas."
-    },
-    "fi": {
-      "title": "Pitkät jaksot Suomen Lapissa",
-      "description": "Viisi pitkän jakson Lapin kohdetta viikon+ vuokrauksiin, Arctic TreeHouse, Levin penthouset, Ounasvaaran chaletit, Pyhän hirsimökit ja Inarinjärven huvilat."
-    },
-    "de": {
-      "title": "Langzeitaufenthalte in Finnisch-Lappland",
-      "description": "Fünf Lappland-Objekte für Mieten ab einer Woche: Arctic-TreeHouse-Suiten, Levi-Residenzen, Ounasvaara-Chalets, Pyhä-Blockhütten, Inarisee-Villen."
-    },
-    "ja": {
-      "title": "フィンランド・ラップランドの長期滞在，1週間以上のレンタル",
-      "description": "1週間以上のレンタルにふさわしいラップランドの長期滞在物件5軒——Arctic TreeHouseのデザインスイート、Leviのペントハウスレジデンス、Ounasvaaraのシャレー、Pyhäのログコテージ、イナリ湖のヴィラ。週料金、専用サウナ、キッチネット完備。"
-    },
-    "es": {
-      "title": "Larga estancia en la Laponia finlandesa",
-      "description": "Cinco alojamientos de larga estancia en Laponia para una semana o más, Arctic TreeHouse, penthouses de Levi, Ounasvaara, cabañas de Pyhä y villas de Inari."
-    },
-    "pt-BR": {
-      "title": "Estadias longas na Lapônia finlandesa",
-      "description": "Cinco propriedades de estadia longa na Lapônia para uma semana ou mais, Arctic TreeHouse, penthouses Levi, chalés Ounasvaara, cabanas Pyhä e villas de Inari."
-    },
-    "zh-CN": {
-      "title": "StayInLapland，芬兰拉普兰长期入住，一周起的租住",
-      "description": "五处适合一周以上租住的拉普兰长住房源，Arctic TreeHouse 设计套房、Levi 顶层公寓、Ounasvaara 木屋、Pyhä 原木木屋、伊纳里湖畔别墅。周价、私人桑拿、独立厨房。"
-    },
-    "ko": {
-      "title": "핀란드 라플란드 장기 숙박, 일주일 이상 임대",
-      "description": "일주일 이상 임대를 위한 라플란드 장기 숙박 숙소 다섯 곳, Arctic TreeHouse 디자인 스위트, Levi 펜트하우스 레지던스, Ounasvaara 샬레, Pyhä 통나무 캐빈, 이나리 호숫가 빌라. 주 단위 요금, 전용 사우나, 주방 완비."
-    },
-    "fr": {
-      "title": "Séjours longue durée en Laponie finlandaise",
-      "description": "Cinq adresses longue durée en Laponie pour une semaine ou plus, Arctic TreeHouse, penthouses de Levi, chalets d’Ounasvaara, chalets de Pyhä et villas d’Inari."
-    },
-    "it": {
-      "title": "Soggiorni lunghi nella Lapponia finlandese",
-      "description": "Cinque strutture in Lapponia per soggiorni di una settimana o più, suite Arctic TreeHouse, attici a Levi, chalet di Ounasvaara, baite a Pyhä e ville a Inari."
-    },
-    "nl": {
-      "title": "Lange verblijven in Fins Lapland",
-      "description": "Vijf lange-verblijfsaccommodaties in Lapland voor een week of langer, Arctic TreeHouse, Levi penthouses, Ounasvaara-chalets, Pyhä-hutten en Inari-villa’s."
-    },
-    "sv": {
-      "title": "Långtidsvistelser i finska Lappland",
-      "description": "Fem långtidsboenden i Lappland för en vecka eller längre, Arctic TreeHouse, Levi-penthouse, Ounasvaara-stugor, Pyhä-stugor och Inari-villor."
-    }
-  },
   "/hotels": {
     "en": {
       "title": "Boutique & Design Hotels in Finnish Lapland",
@@ -771,11 +721,11 @@
   },
   "/rentals/kemi-tornio": {
     "en": {
-      "title": "Rentals in Kemi and Tornio: Municipal Flats and Portals",
+      "title": "Rentals in Kemi, Tornio and Keminmaa: Municipal Flats",
       "description": "Renting in Kemi, Tornio and Keminmaa on Lapland’s coast: the municipal housing companies (Itätuuli, Tornion Krunni, Keminmaan Vuokra-asunnot), private agencies"
     },
     "fi": {
-      "title": "Vuokra-asunnot Kemi ja Tornio: kaupungin asunnot ja portaalit",
+      "title": "Vuokra-asunnot Kemi, Tornio ja Keminmaa",
       "description": "Vuokra-asunnot Kemissä, Torniossa ja Keminmaalla: kaupunkien omat vuokrayhtiöt (Itätuuli, Tornion Krunni, Keminmaan Vuokra-asunnot), yksityiset välittäjät, Lapin"
     }
   },
@@ -827,6 +777,16 @@
     "fi": {
       "title": "Elinkustannukset Lapissa 2026: vuokra, sähkö, bensa, tuet",
       "description": "Mitä eläminen Lapissa maksaa: neliövuokrat Rovaniemellä ja Lapissa (Tilastokeskus 2026), sähkö ja polttoaine, Kelan asumistuen katot ja päiväkotimaksut. Lasketut"
+    }
+  },
+  "/long-stays": {
+    "en": {
+      "title": "A Month or a Winter in Lapland: Flat, Cabin or Staff Housing",
+      "description": "Staying a month or a winter in Finnish Lapland: a furnished rental flat, a cabin by the week or staff housing. What the tenancy law covers and when to notify your"
+    },
+    "fi": {
+      "title": "Kuukaudeksi Lappiin: kalustettu asunto vai mökki",
+      "description": "Kuukaudesta talveen Lapissa: kalustettu vuokra-asunto, mökki viikkovuokralla tai työnantajan asunto. Mitä vuokralaki kattaa ja milloin tehdään muuttoilmoitus."
     }
   }
 }

@@ -143,6 +143,7 @@ const SIBLING_ICON: Record<HousingRouteKey | 'home', LucideIcon> = {
   seasonal: Briefcase,
   moving: Truck,
   cost: Banknote,
+  longStays: CalendarDays,
 };
 
 const OUT_ATTRS = (page: string, target?: string) => ({

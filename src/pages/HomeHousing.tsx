@@ -189,11 +189,20 @@ export default function HomeHousing() {
                   {/* Kortti on linkki ⇒ merkintä tekstinä; linkit sivun lopun kuvaluettelossa. */}
                   {/* Merkintä aina oikeaan alakulmaan (Vesa 23.9.2026), otsikko sen yläpuolella. */}
                   <PhotoCredit credit={creditFor(town.image)} label={ui.photo} linked={false} />
-                  <h3 className="absolute bottom-5 left-5 right-5 font-heading text-2xl sm:text-3xl text-snow leading-tight tracking-wide drop-shadow">{town.name}</h3>
+                  <h3 className="absolute bottom-5 left-5 right-5 font-heading text-2xl sm:text-3xl text-snow leading-tight tracking-wide drop-shadow [text-wrap:balance]">{town.name}</h3>
                 </div>
                 <div className="p-6 flex flex-col flex-1">
-                  <p className="text-[11px] tracking-[0.16em] uppercase text-stone font-semibold mb-2">{town.fact}</p>
-                  <p className="text-graphite text-[15px] leading-relaxed mb-5 flex-1">{town.body}</p>
+                  {/* Kaksi lukua omille paikoilleen: ei " · "-riviä, joka katkeaa pisteen kohdalta. */}
+                  <dl className="grid grid-cols-2 gap-x-4 gap-y-1 pb-4 mb-4 border-b border-charcoal/10">
+                    {town.stats.map((st) => (
+                      <div key={st.label} className="min-w-0 flex flex-col-reverse justify-end">
+                        <dt className="mt-1 text-[12px] leading-snug text-stone [text-wrap:balance]">{st.label}</dt>
+                        <dd className="font-heading text-2xl text-charcoal leading-none tracking-wide whitespace-nowrap">{st.value}</dd>
+                      </div>
+                    ))}
+                  </dl>
+                  {/* text-wrap: pretty = ei yksinäistä sanaa viimeiselle riville (Vesa 23.9.2026). */}
+                  <p className="text-graphite text-[15px] leading-relaxed mb-5 flex-1 [text-wrap:pretty]">{town.body}</p>
                   <span className="inline-flex items-center gap-1.5 text-[#BE185D] group-hover:gap-2.5 text-sm font-semibold transition-all mt-auto">
                     {town.cta}
                     <ArrowRight className="w-4 h-4 shrink-0" />

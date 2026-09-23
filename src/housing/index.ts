@@ -4,6 +4,7 @@ import { RENTALS } from './rentals';
 import { SEASONAL } from './seasonal';
 import { MOVING } from './moving';
 import { COST } from './cost';
+import { LONG_STAYS } from './longstays';
 import { TOWN_ROVANIEMI } from './towns/rovaniemi';
 import { TOWN_KEMI_TORNIO } from './towns/kemi-tornio';
 import { TOWN_KITTILA_LEVI } from './towns/kittila-levi';
@@ -41,4 +42,4 @@ export function pickHousing(map: HousingCopyMap, lang: Lang): HousingPageCopy {
   return map[housingLang(lang)];
 }
 
-export const HOUSING_PAGES = { rentals: RENTALS, seasonal: SEASONAL, moving: MOVING, cost: COST } as const;
+export const HOUSING_PAGES = { rentals: RENTALS, seasonal: SEASONAL, moving: MOVING, cost: COST, longStays: LONG_STAYS } as const;

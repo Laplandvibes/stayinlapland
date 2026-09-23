@@ -6,13 +6,14 @@ const SOURCES = ['tkVuokrat', 'tkVaesto', 'kela', 'kemi', 'keminmaa', 'tornio', 
 /** Mitattu kysyntä (OpenSEO 18.9.2026, fi/2246): "vuokra-asunnot kemi" 3 600/kk, "vuokra-asunnot tornio" 3 600/kk. */
 export const TOWN_KEMI_TORNIO: HousingCopyMap = {
   fi: {
-    metaTitle: 'Vuokra-asunnot Kemi ja Tornio: kaupungin asunnot ja portaalit',
+    // 23.9.2026: Keminmaa otsikkoon (OpenSEO fi: vuokra-asunnot keminmaa 880/kk, sivu kattoi sen jo).
+    metaTitle: 'Vuokra-asunnot Kemi, Tornio ja Keminmaa',
     metaDescription:
       'Vuokra-asunnot Kemissä, Torniossa ja Keminmaalla: kaupunkien omat vuokrayhtiöt (Itätuuli, Tornion Krunni, Keminmaan Vuokra-asunnot), yksityiset välittäjät, Lapin neliövuokrat ja Kelan tuki.',
     breadcrumb: 'Kemi ja Tornio',
     hero: {
-      eyebrow: 'Kemi 19 339 · Tornio 20 823 · Keminmaa 7 576 asukasta',
-      title: 'Vuokra-asunnot Kemi ja Tornio.',
+      eyebrow: 'Meri-Lapin rannikko',
+      title: 'Vuokra-asunnot Kemi, Tornio ja Keminmaa.',
       subtitle:
         'Rannikon kaksoiskaupunki, jossa kaupunkien omilla vuokrayhtiöillä on satoja asuntoja ja hakemus jätetään verkossa. Mistä aloittaa ja mitä vuokra maksaa.',
     },
@@ -129,13 +130,13 @@ export const TOWN_KEMI_TORNIO: HousingCopyMap = {
     sources: pickSources('fi', SOURCES),
   },
   en: {
-    metaTitle: 'Rentals in Kemi and Tornio: Municipal Flats and Portals',
+    metaTitle: 'Rentals in Kemi, Tornio and Keminmaa: Municipal Flats',
     metaDescription:
       'Renting in Kemi, Tornio and Keminmaa on Lapland’s coast: the municipal housing companies (Itätuuli, Tornion Krunni, Keminmaan Vuokra-asunnot), private agencies, Lapland rents per m² and Kela support.',
     breadcrumb: 'Kemi and Tornio',
     hero: {
-      eyebrow: 'Kemi 19,339 · Tornio 20,823 · Keminmaa 7,576 residents',
-      title: 'Rentals in Kemi and Tornio.',
+      eyebrow: 'The coast of Sea Lapland',
+      title: 'Rentals in Kemi, Tornio and Keminmaa.',
       subtitle:
         'The coastal twin towns, where the municipal housing companies hold hundreds of flats and applications are filed online. Where to start and what rent costs.',
     },

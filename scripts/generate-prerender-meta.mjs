@@ -261,7 +261,8 @@ const destList = getDestinationList();
 // route path → top-level section key in copy.{lang}.ts (metaTitle/metaDescription).
 const SECTION_ROUTES = {
   '/': 'home',
-  '/long-stays': 'longStays',
+  // '/long-stays' poistettu 23.9.2026: sivu on nyt asumissivu (HOUSING_META_FILES, fi/en), eikä
+  // muiden kielten vanha lomasivun otsikko saa jäädä englanninkielisen sisällön päälle.
   '/hotels': 'hotels',
   '/glass-igloos': 'glassIgloos',
   '/wilderness': 'wilderness',
@@ -327,6 +328,8 @@ const HOUSING_META_FILES = {
   '/seasonal-worker-housing': 'src/housing/seasonal.ts',
   '/moving-to-lapland': 'src/housing/moving.ts',
   '/cost-of-living': 'src/housing/cost.ts',
+  // 23.9.2026: pitkät jaksot lomasivusta asumissivuksi (fi/en natiivi, muut kanonisoituvat englantiin).
+  '/long-stays': 'src/housing/longstays.ts',
 };
 for (const [path, rel] of Object.entries(HOUSING_META_FILES)) {
   const fp = resolve(ROOT, rel);

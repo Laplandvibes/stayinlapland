@@ -7,7 +7,7 @@ import NewsletterPopup from './shared/NewsletterPopup';
 
 const Home = lazy(() => import('./pages/Home'))
 const HomeHousing = lazy(() => import('./pages/HomeHousing'))
-const LongStays = lazy(() => import('./pages/LongStays'))
+const LongStays = lazy(() => import('./pages/HousingPages').then((m) => ({ default: m.LongStays })))
 const BookingGuide = lazy(() => import('./pages/BookingGuide'))
 const WhenToGo = lazy(() => import('./pages/WhenToGo'))
 const DestinationPage = lazy(() => import('./pages/DestinationPage'))

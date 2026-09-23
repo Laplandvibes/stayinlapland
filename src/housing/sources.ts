@@ -37,6 +37,21 @@ const DEFS = {
     en: 'Act on Residential Leases (481/1995), section 8 on deposits and section 52 on notice periods',
     url: 'https://www.finlex.fi/fi/laki/ajantasa/1995/19950481',
   },
+  ahvl531: {
+    fi: 'Laki asuinhuoneiston vuokrauksesta (481/1995), ajantasainen teksti muutoksineen 531/2026 (voimaan 1.10.2026): soveltamisala, määräaikainen sopimus, vakuus; luettu 23.9.2026',
+    en: 'Act on Residential Leases (481/1995), consolidated text incl. amendment 531/2026 (in force 1 Oct 2026): scope, fixed-term leases, deposit; read 23 Sep 2026',
+    url: 'https://www.finlex.fi/fi/lainsaadanto/1995/481',
+  },
+  kuluttajaliittoVuokra: {
+    fi: 'Kuluttajaliitto: Vuokra-asunnon irtisanominen ja pois muuttaminen',
+    en: 'Finnish Consumers’ Union (Kuluttajaliitto): Ending a lease and moving out',
+    url: 'https://www.kuluttajaliitto.fi/fis/materiaalit/vuokra-asunnon-irtisanominen-ja-pois-muuttaminen/',
+  },
+  dvvTilapainen: {
+    fi: 'Digi- ja väestötietovirasto: Usein kysyttyä Suomessa muuttamisesta (tilapäinen muutto, kolmen kuukauden sääntö)',
+    en: 'Digital and Population Data Services Agency (DVV): FAQ on moving in Finland (temporary moves, the three-month rule)',
+    url: 'https://dvv.fi/usein-kysyttya-muutoista',
+  },
   rakli: {
     fi: 'Rakli: Laki asuinhuoneiston vuokrauksesta uudistuu 1.10.2026: vakuuden 14 päivän palautusaika ja irtisanomisajat',
     en: 'Rakli (Finnish property owners’ association): Residential Leases Act reform on 1 Oct 2026: 14-day deposit return and notice periods',

@@ -1,6 +1,7 @@
 import { useParams } from 'react-router-dom';
 import HousingPage from '../components/housing/HousingPage';
 import SettlingInAds from '../components/SettlingInAds';
+import CabinCarousel from '../components/housing/CabinCarousel';
 import NotFound from './NotFound';
 import { HOUSING_PAGES, HOUSING_ROUTES, RENTAL_TOWNS, isRentalTownSlug } from '../housing';
 
@@ -26,6 +27,15 @@ const COST_ADS = {
 };
 const SEASONAL_ADS = {
   ask: <SettlingInAds context="arrival" sidPrefix="stay_seasonal" kinds={['airalo', 'telia']} />,
+};
+
+/*
+ * Pitkät jaksot: Lomarenkaan mökit kuvineen heti "kolme tapaa" -osion perään, koska toinen tapa on
+ * mökki viikkovuokralla (Vesa 23.9.2026: "tähän tietenkin karuselli kuvineen").
+ */
+const LONG_STAY_CABINS = {
+  'kolme-tapaa': <CabinCarousel hl="fi" sidPrefix="stay_longstay_cabin" id="mokit" />,
+  'three-ways': <CabinCarousel hl="en" sidPrefix="stay_longstay_cabin" id="cabins" />,
 };
 
 export function Rentals() {
@@ -66,4 +76,8 @@ export function RentalsTown() {
       workPromo="inline"
     />
   );
+}
+
+export function LongStays() {
+  return <HousingPage route={HOUSING_ROUTES.longStays} copy={HOUSING_PAGES.longStays} heroImage="/images/pillar-long-stays-hero-mokki.webp" current="longStays" workPromo="inline" inserts={LONG_STAY_CABINS} />;
 }

@@ -11,7 +11,7 @@ export const TOWN_KITTILA_LEVI: HousingCopyMap = {
       'Vuokra-asunnot Kittilässä ja Levillä: Kittilän Vuokratalot Oy, vapaa-ajan asuntojen kausivuokrat, työnantajan asunnot kausityöntekijöille, Lapin neliövuokrat ja Kelan tuki.',
     breadcrumb: 'Kittilä ja Levi',
     hero: {
-      eyebrow: 'Kittilä · 6 973 asukasta · +2,0 % vuonna 2025 · Kuntaryhmä III',
+      eyebrow: 'Kittilä, 6 973 asukasta',
       title: 'Vuokra-asunnot Kittilä ja Levi.',
       subtitle:
         'Lapin nopeimmin kasvava kunta ja sen hiihtokeskus, jossa sama asunto maksaa kesällä kuukausivuokran ja talvella viikkohinnan. Mistä asunto haetaan ja milloin.',
@@ -135,7 +135,7 @@ export const TOWN_KITTILA_LEVI: HousingCopyMap = {
       'Renting in Kittilä and Levi: the municipal company Kittilän Vuokratalot Oy, seasonal rents on holiday apartments, staff housing for seasonal workers, Lapland rents per m² and Kela support.',
     breadcrumb: 'Kittilä and Levi',
     hero: {
-      eyebrow: 'Kittilä · 6,973 residents · +2.0 % in 2025 · Group III',
+      eyebrow: 'Kittilä, 6,973 residents',
       title: 'Rentals in Kittilä and Levi.',
       subtitle:
         'Lapland’s fastest-growing municipality and its ski resort, where the same flat costs a monthly rent in summer and a weekly rate in winter. Where to apply and when.',

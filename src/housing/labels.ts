@@ -18,6 +18,8 @@ export const HOUSING_ROUTES = {
   seasonal: '/seasonal-worker-housing',
   moving: '/moving-to-lapland',
   cost: '/cost-of-living',
+  /** 23.9.2026: lomasivusta asumissivuksi (kuukaudesta talveen), Vesa: "miksi kerrotaan luxushuviloista täällä?" */
+  longStays: '/long-stays',
 } as const;
 
 export type HousingRouteKey = keyof typeof HOUSING_ROUTES;
@@ -54,6 +56,11 @@ export const HOUSING_NAV: Record<HousingRouteKey | 'stays' | 'housingHome' | 'st
     en: 'Cost of living', fi: 'Elinkustannukset', sv: 'Levnadskostnader', de: 'Lebenshaltungskosten',
     fr: 'Coût de la vie', es: 'Costo de vida', it: 'Costo della vita', nl: 'Kosten van levensonderhoud',
     'pt-BR': 'Custo de vida', ja: '生活費', ko: '생활비', 'zh-CN': '生活成本',
+  },
+  longStays: {
+    en: 'Long stays', fi: 'Pitkät jaksot', sv: 'Långtidsvistelser', de: 'Langzeitaufenthalte',
+    fr: 'Séjours longue durée', es: 'Larga estancia', it: 'Soggiorni lunghi', nl: 'Lange verblijven',
+    'pt-BR': 'Longa duração', ja: '長期滞在', ko: '장기 숙박', 'zh-CN': '长期入住',
   },
   stays: {
     en: 'Stays', fi: 'Majoitus', sv: 'Boende', de: 'Unterkünfte',
@@ -163,4 +170,6 @@ export const HOUSING_NAV_SHORT: Record<HousingRouteKey, Record<Lang, string>> = 
     fr: 'Coût de la vie', es: 'Costo de vida', it: 'Costo della vita', nl: 'Kosten',
     'pt-BR': 'Custo de vida', ja: '生活費', ko: '생활비', 'zh-CN': '生活成本',
   },
+  /** Ei ylärivillä (Majoitus-valikossa), mutta tyyppi vaatii jokaisen reitin. */
+  longStays: HOUSING_NAV.longStays,
 };

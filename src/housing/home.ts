@@ -25,7 +25,11 @@ export interface HousingHomeCopy {
     h2: string;
     lead: string;
     /** image tyhjä = paikasta ei ole omaa valokuvaa, kortti saa graafisen taustan (PlaceGraphic). */
-    items: { slug: RentalTownSlugLiteral; name: string; fact: string; body: string; cta: string; image: string; alt: string; pos?: string }[];
+    /**
+     * `stats`: kaksi lukua omille paikoilleen (arvo + selite). 🔴 Ennen yksi " · "-rivi, joka katkesi
+     * kapeassa kortissa pisteen kohdalta (Vesa 23.9.2026: "korteissa ei ole … katsottu rivityksiä").
+     */
+    items: { slug: RentalTownSlugLiteral; name: string; stats: { value: string; label: string }[]; body: string; cta: string; image: string; alt: string; pos?: string }[];
     more: string;
   };
   paths: {
@@ -110,8 +114,11 @@ export const HOME: Record<HousingLang, HousingHomeCopy> = {
         {
           slug: 'rovaniemi',
           name: 'Rovaniemi',
-          fact: '66 191 asukasta · yksiö n. 560 €/kk',
-          body: 'Yliopisto, lentokenttä ja työpaikat ympäri vuoden. Yksiöistä kilpailevat opiskelijat, matkailijat ja kausityöntekijät.',
+          stats: [
+            { value: '66 191', label: 'asukasta' },
+            { value: '≈ 560 €', label: 'yksiön vuokra kuussa' },
+          ],
+          body: 'Lapin suurin vuokramarkkina. Yksiöt käyvät vähiin elo–syyskuussa, kun opiskelijat muuttavat kaupunkiin.',
           cta: 'Rovaniemen vuokra-asunnot',
           image: IMG.rovaniemi,
           alt: 'Jätkänkynttilä-silta valaistuna Kemijoen yllä joulukuun iltana',
@@ -119,8 +126,11 @@ export const HOME: Record<HousingLang, HousingHomeCopy> = {
         {
           slug: 'kemi-tornio',
           name: 'Kemi ja Tornio',
-          fact: '19 339 + 20 823 asukasta',
-          body: 'Rannikon kaksoiskaupunki. Kaupunkien omilla vuokrayhtiöillä on satoja asuntoja, Itätuulella yli 600 Kemissä.',
+          stats: [
+            { value: '19 339', label: 'asukasta Kemissä' },
+            { value: '20 823', label: 'asukasta Torniossa' },
+          ],
+          body: 'Aloita kaupunkien omista vuokrayhtiöistä: Kemin Itätuulella on yli 600 asuntoa.',
           cta: 'Kemin ja Tornion vuokra-asunnot',
           image: IMG.kemiTornio,
           alt: 'Kemin kirkko lumisena talvi-iltana',
@@ -128,8 +138,11 @@ export const HOME: Record<HousingLang, HousingHomeCopy> = {
         {
           slug: 'kittila-levi',
           name: 'Kittilä ja Levi',
-          fact: '6 973 asukasta · +2,0 % vuonna 2025',
-          body: 'Lapin nopeimmin kasvava kunta hiihtokeskuksen ympärillä. Talvella asuntoja haetaan tuhansille kausityöntekijöille.',
+          stats: [
+            { value: '6 973', label: 'asukasta' },
+            { value: '+2,0 %', label: 'väestönkasvu 2025' },
+          ],
+          body: 'Lapin nopeimmin kasvava kunta. Talvella samoista asunnoista kilpailevat tuhannet kausityöntekijät.',
           cta: 'Kittilän ja Levin vuokra-asunnot',
           image: IMG.levi,
           alt: 'Uusia taloja rakenteilla Levillä, taustalla Levitunturi',
@@ -137,8 +150,11 @@ export const HOME: Record<HousingLang, HousingHomeCopy> = {
         {
           slug: 'ivalo-inari',
           name: 'Ivalo, Inari ja Saariselkä',
-          fact: '7 244 asukasta',
-          body: 'Kunnan Inarin Vuokra-asunnot Oy:llä on yli 500 asuntoa Ivalossa, Inarissa ja Saariselällä.',
+          stats: [
+            { value: '7 244', label: 'asukasta' },
+            { value: 'yli 500', label: 'kunnan vuokra-asuntoa' },
+          ],
+          body: 'Kunnan oma Inarin Vuokra-asunnot Oy vuokraa asuntoja Ivalossa, Inarissa ja Saariselällä. Hae suoraan yhtiöltä.',
           cta: 'Ivalon ja Inarin vuokra-asunnot',
           image: IMG.inari,
           alt: 'Jäätynyt Ivalojoki ja rannan koivut marraskuun matalassa auringossa',
@@ -175,7 +191,7 @@ export const HOME: Record<HousingLang, HousingHomeCopy> = {
         {
           key: 'longStays',
           title: 'Pitkät jaksot',
-          body: 'Viikosta kuukauteen: kalustetut asunnot ja mökit viikkohinnoin, kun tarvitset katon ennen omaa vuokrasopimusta.',
+          body: 'Kuukaudesta talveen: kalustettu vuokra-asunto, mökki viikkovuokralla vai työnantajan asunto, ja mitä vuokralaki kattaa.',
           image: IMG.longStays,
           alt: 'Punainen mökki huurteisten koivujen keskellä',
         },
@@ -306,8 +322,11 @@ export const HOME: Record<HousingLang, HousingHomeCopy> = {
         {
           slug: 'rovaniemi',
           name: 'Rovaniemi',
-          fact: '66,191 residents · studio about €560/mo',
-          body: 'A university, an airport and year-round jobs. Students, tourists and seasonal workers compete for the same studios.',
+          stats: [
+            { value: '66,191', label: 'residents' },
+            { value: '≈ €560', label: 'studio rent a month' },
+          ],
+          body: 'Lapland’s largest rental market. Studios run short in August and September, when students move to town.',
           cta: 'Renting in Rovaniemi',
           image: IMG.rovaniemi,
           alt: 'The Jätkänkynttilä bridge lit up over the Kemijoki river on a December evening',
@@ -315,8 +334,11 @@ export const HOME: Record<HousingLang, HousingHomeCopy> = {
         {
           slug: 'kemi-tornio',
           name: 'Kemi and Tornio',
-          fact: '19,339 + 20,823 residents',
-          body: 'The coastal twin towns. The municipal housing companies hold hundreds of flats; Itätuuli alone has over 600 in Kemi.',
+          stats: [
+            { value: '19,339', label: 'residents in Kemi' },
+            { value: '20,823', label: 'residents in Tornio' },
+          ],
+          body: 'Start with the towns’ own housing companies: Itätuuli alone has over 600 flats in Kemi.',
           cta: 'Renting in Kemi and Tornio',
           image: IMG.kemiTornio,
           alt: 'Kemi church in snow on a winter evening',
@@ -324,8 +346,11 @@ export const HOME: Record<HousingLang, HousingHomeCopy> = {
         {
           slug: 'kittila-levi',
           name: 'Kittilä and Levi',
-          fact: '6,973 residents · +2.0 % in 2025',
-          body: 'Lapland’s fastest-growing municipality, wrapped around a ski resort. In winter, homes are sought for thousands of seasonal workers.',
+          stats: [
+            { value: '6,973', label: 'residents' },
+            { value: '+2.0 %', label: 'population growth 2025' },
+          ],
+          body: 'Lapland’s fastest-growing municipality. In winter, thousands of seasonal workers compete for the same flats.',
           cta: 'Renting in Kittilä and Levi',
           image: IMG.levi,
           alt: 'New houses under construction in Levi with Levi fell behind',
@@ -333,8 +358,11 @@ export const HOME: Record<HousingLang, HousingHomeCopy> = {
         {
           slug: 'ivalo-inari',
           name: 'Ivalo, Inari and Saariselkä',
-          fact: '7,244 residents',
-          body: 'The municipal company Inarin Vuokra-asunnot Oy has over 500 flats in Ivalo, Inari and Saariselkä.',
+          stats: [
+            { value: '7,244', label: 'residents' },
+            { value: '500+', label: 'municipal rental flats' },
+          ],
+          body: 'The municipality’s own company, Inarin Vuokra-asunnot Oy, lets flats in Ivalo, Inari and Saariselkä. Apply to it directly.',
           cta: 'Renting in Ivalo and Inari',
           image: IMG.inari,
           alt: 'The frozen Ivalo river and birches on the bank in low November sun',
@@ -371,7 +399,7 @@ export const HOME: Record<HousingLang, HousingHomeCopy> = {
         {
           key: 'longStays',
           title: 'Long stays',
-          body: 'A week to a month: furnished apartments and cabins at weekly rates when you need a roof before your own lease.',
+          body: 'From a month to a winter: a furnished rental flat, a cabin by the week or staff housing, and what the tenancy law covers.',
           image: IMG.longStays,
           alt: 'A red cabin among frosted birches',
         },

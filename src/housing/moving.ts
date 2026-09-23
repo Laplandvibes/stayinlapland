@@ -13,7 +13,7 @@ export const MOVING: HousingCopyMap = {
       'Muuttoilmoitus, talvirenkaat, päiväkotimaksut, sähkö ja kaamos: mitä Lappiin muuttavan pitää hoitaa ensimmäisen kuukauden aikana. Määräajat ja luvut viranomaisilta.',
     breadcrumb: 'Muutto Lappiin',
     hero: {
-      eyebrow: 'Muutto Lappiin · Ensimmäiset 30 päivää',
+      eyebrow: 'Muutto Lappiin: ensimmäiset 30 päivää',
       title: 'Muutto Lappiin.',
       subtitle:
         'Muuttoilmoitus, talvirenkaat, päiväkoti, sähkösopimus ja kaamos: mitä hoidetaan ensimmäisen kuukauden aikana ja missä järjestyksessä.',
@@ -119,7 +119,7 @@ export const MOVING: HousingCopyMap = {
       'Address notification, winter tyres, daycare fees, electricity and the polar night: what to sort out in your first month in Finnish Lapland, with deadlines and figures from the authorities.',
     breadcrumb: 'Moving to Lapland',
     hero: {
-      eyebrow: 'Moving to Lapland · The first 30 days',
+      eyebrow: 'Moving to Lapland: the first 30 days',
       title: 'Moving to Lapland.',
       subtitle:
         'Change of address, winter tyres, daycare, the electricity contract and the polar night: what to sort out in the first month, and in what order.',

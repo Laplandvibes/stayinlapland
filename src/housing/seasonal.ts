@@ -13,7 +13,7 @@ export const SEASONAL: HousingCopyMap = {
       'Mihin kausityöntekijä asuu Levillä, Ylläksellä, Saariselällä ja Rovaniemellä: työnantajan asunto, kausivuokra vai kunnan asunto, ja mitä kysyä ennen sopimusta.',
     breadcrumb: 'Kausityöntekijälle',
     hero: {
-      eyebrow: 'Kausityö · Talvi ja kesä · Levi · Ylläs · Saariselkä · Ruka · Rovaniemi',
+      eyebrow: 'Kausityö talvella ja kesällä',
       title: 'Mihin kausityöntekijä\u00a0asuu?',
       subtitle:
         'Työnantajan solu, vapaa-ajan asunto kausivuokralla tai kunnan vuokra-asunto. Tunturikeskusten asuntopula on tosiasia, ja tästä näet, miten sen kanssa eletään.',
@@ -130,12 +130,6 @@ export const SEASONAL: HousingCopyMap = {
           'Miten pääset töihin ilman autoa: matka, bussi, hiihtobussi?',
           'Onko vakuus, ja milloin se palautetaan? Laki: 1.10.2026 alkaen viimeistään 14 päivän kuluessa vuokrasuhteen päättymisestä (Rakli).',
         ],
-        image: {
-          src: '/images/housing-levi-construction.webp',
-          alt: 'Uusi rakennus työmaalla Levillä kesäiltana',
-          caption: 'Uutta rakennetaan Levillä, heinäkuu 2026. Kuva: LaplandVibes.',
-          ratio: '4/3',
-        },
       },
     ],
     faqs: [
@@ -173,7 +167,7 @@ export const SEASONAL: HousingCopyMap = {
       'Where seasonal workers live at Levi, Ylläs, Saariselkä and Rovaniemi: staff housing, a holiday apartment on a seasonal lease or a municipal flat, and what to ask before you sign.',
     breadcrumb: 'Seasonal workers',
     hero: {
-      eyebrow: 'Seasonal work · Winter and summer · Levi · Ylläs · Saariselkä · Ruka · Rovaniemi',
+      eyebrow: 'Seasonal work, winter and summer',
       title: 'Where do seasonal workers live?',
       subtitle:
         'A shared staff flat, a holiday apartment on a seasonal lease or a municipal rental. The housing shortage in the ski resorts is real, and this is how people live with it.',
@@ -290,12 +284,6 @@ export const SEASONAL: HousingCopyMap = {
           'How do you get to work without a car: distance, bus, ski bus?',
           'Is there a deposit, and when is it returned? The law: from 1 October 2026 within 14 days of the tenancy ending (Rakli).',
         ],
-        image: {
-          src: '/images/housing-levi-construction.webp',
-          alt: 'A new building under construction at Levi on a summer evening',
-          caption: 'New construction at Levi, July 2026. Photo: LaplandVibes.',
-          ratio: '4/3',
-        },
       },
     ],
     faqs: [

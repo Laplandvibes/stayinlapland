@@ -9,25 +9,25 @@ import { HOUSING_PAGES, HOUSING_ROUTES, RENTAL_TOWNS, isRentalTownSlug } from '.
  * ajomatkalta (Rovaniemi, Levi, Ylläs, Tornio) — ei AI-kuvia (01-kuvat §0).
  */
 export function Rentals() {
-  return <HousingPage route={HOUSING_ROUTES.rentals} copy={HOUSING_PAGES.rentals} heroImage="/images/housing-rentals-hero.webp" current="rentals" workPromo="inline" />;
+  return <HousingPage route={HOUSING_ROUTES.rentals} copy={HOUSING_PAGES.rentals} heroImage="/images/housing-rentals-hero-talvikatu.webp" current="rentals" workPromo="inline" />;
 }
 
 export function SeasonalWorkerHousing() {
-  return <HousingPage route={HOUSING_ROUTES.seasonal} copy={HOUSING_PAGES.seasonal} heroImage="/images/housing-seasonal-hero.webp" current="seasonal" workPromo="full" />;
+  return <HousingPage route={HOUSING_ROUTES.seasonal} copy={HOUSING_PAGES.seasonal} heroImage="/images/housing-seasonal-hero-yllasjarvi.webp" current="seasonal" workPromo="full" />;
 }
 
 export function MovingToLapland() {
-  return <HousingPage route={HOUSING_ROUTES.moving} copy={HOUSING_PAGES.moving} heroImage="/images/housing-moving-hero.webp" current="moving" workPromo="inline" />;
+  return <HousingPage route={HOUSING_ROUTES.moving} copy={HOUSING_PAGES.moving} heroImage="/images/housing-moving-hero-talvitie.webp" current="moving" workPromo="inline" />;
 }
 
 export function CostOfLiving() {
-  return <HousingPage route={HOUSING_ROUTES.cost} copy={HOUSING_PAGES.cost} heroImage="/images/housing-cost-hero.webp" current="cost" workPromo="none" />;
+  return <HousingPage route={HOUSING_ROUTES.cost} copy={HOUSING_PAGES.cost} heroImage="/images/housing-cost-hero-polttopuut.webp" current="cost" workPromo="none" />;
 }
 
 const TOWN_HERO: Record<string, string | undefined> = {
-  rovaniemi: '/images/housing-rovaniemi-lappia.webp',
-  'kemi-tornio': '/images/housing-cost-hero.webp',
-  'kittila-levi': '/images/housing-home-hero.webp',
+  rovaniemi: '/images/housing-rovaniemi-hero-talvikatu.webp',
+  'kemi-tornio': '/images/housing-kemi-hero-kaupungintalo.webp',
+  'kittila-levi': '/images/housing-kittila-levi-hero.webp',
   // Ivalo ilmasta helmikuussa 2017, Wikimedia Commons CC BY-SA 4.0 (Markus Säynevirta). Tekijä piirtyy heroon
   // automaattisesti src/data/photoCredits.ts:stä.
   'ivalo-inari': '/images/housing-ivalo-ilmakuva.webp',

@@ -67,6 +67,11 @@ const DEFS = {
     en: 'Finnish Meteorological Institute: Astronomical seasons (polar night and midnight sun)',
     url: 'https://www.ilmatieteenlaitos.fi/tahtitieteelliset-vuodenajat',
   },
+  ounasvaara: {
+    fi: 'Ounasvaara: Rinteet ja ladut (noin 100 km latuja, joista 50 km valaistu; luettu 23.9.2026)',
+    en: 'Ounasvaara: Slopes and trails (about 100 km of ski trails, 50 km of them lit; read 23 Sep 2026)',
+    url: 'https://ounasvaara.fi/en/slopes/',
+  },
   foreca: {
     fi: 'Foreca, Sääpedia: Kaamos, aika jolloin aurinko ei nouse',
     en: 'Foreca weather encyclopaedia: Polar night in Finland',

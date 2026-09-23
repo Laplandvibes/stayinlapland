@@ -15,6 +15,7 @@ import { creditFor } from '../data/photoCredits';
 import HousingWorkPromo from '../components/housing/HousingWorkPromo';
 import { KickerChip, TwoTone } from '../components/housing/ui';
 import { HOME, HOUSING_ROUTES, HOUSING_UI, housingLang, type HousingRouteKey } from '../housing';
+import { HOME_HERO_IMAGE } from '../housing/home';
 
 /**
  * Etusivu asumisen roolissa (lv_permanent_rules §23, Vesa 16.9.2026), vain
@@ -29,9 +30,13 @@ import { HOME, HOUSING_ROUTES, HOUSING_UI, housingLang, type HousingRouteKey } f
  * lähteistään sivun alussa; tarkistusmerkintä on lähdelistan yhteydessä.
  * Älä palauta tekstikappaletta tai mainosta heron alle.
  *
- * Kuvat ovat omia valokuvia heinäkuun 2026 ajomatkalta (meta-lasit), ei AI:ta.
- * Inarista ei ole omaa kuvaa: kortissa on graafinen tausta (PlaceGraphic), ei
- * toisen paikan valokuvaa (Vesa 26.7.2026).
+ * 🔴 23.9.2026 (Vesa): "etusivun hero … liikaa overlaytä" + "tämän sivun pitäisi kertoa myös
+ * siitä asumisesta siellä pidemmän aikaa, mitä paikalliset tekee yleensä". Hero on nyt punainen
+ * puutalo lumisella pihalla (Pexels, kuitti photoCredits.ts). Teksti on isolla näytöllä VASEMMALLA
+ * ja tummennus vain tekstin puolella, joten talo jää näkyviin (01-kuvat §6.7: kirkas kuva +
+ * vaakapainotettu tummennus). Puhelimessa teksti keskellä ja tummennus pystysuunnassa.
+ * Uusi osio "Arki Lapissa" polkukorttien jälkeen: neljä vuodenaikaa, mitä täällä silloin tehdään.
+ * Kuvat: src/housing/home.ts IMG (lähteet ja lisenssit photoCredits.ts).
  */
 export default function HomeHousing() {
   const lang = useLang();
@@ -43,7 +48,10 @@ export default function HomeHousing() {
   const localUrl = useLocalPageUrl();
 
   const pathHref = (key: HousingRouteKey | 'longStays') => (key === 'longStays' ? '/long-stays' : HOUSING_ROUTES[key]);
-  const photoCredits = uniqueCredits([...h.towns.items.map((t) => t.image), ...h.paths.cards.map((c) => c.image), h.work.image], creditFor);
+  const photoCredits = uniqueCredits(
+    [...h.towns.items.map((t) => t.image), ...h.paths.cards.map((c) => c.image), ...h.life.cards.map((c) => c.image), h.work.image],
+    creditFor,
+  );
 
   return (
     <>
@@ -79,48 +87,57 @@ export default function HomeHousing() {
         }}
       />
 
-      {/* Hero — oma valokuva, Levin keskusta heinäkuussa 2026 */}
+      {/* Hero: punainen puutalo lumisella pihalla. Teksti vasemmalla isolla näytöllä, jotta talo näkyy. */}
       <section className="relative overflow-hidden bg-night">
-        <div className="relative min-h-[82svh] sm:min-h-[88svh] flex items-center justify-center">
-          <img
-            src="/images/housing-home-hero.webp"
-            alt={hl === 'fi' ? 'Levin keskusta ja tunturi kesäiltana' : 'Levi village centre and the fell on a summer evening'}
-            className="absolute inset-0 w-full h-full object-cover [object-position:50%_40%]"
-            fetchPriority="high"
-            decoding="async"
-          />
-          {/* Tummennus painotettu alas ja vasemmalle: teksti on keskellä, kirkas taivas ylhäällä. */}
-          {/* 🔴 Peite oli 55/45 %, ja mediaani tekstin alla oli 1,5-1,7:1 eli kuva
-              paistoi lapi lahes sellaisenaan. Kesainen Levin keskusta on kirkas. */}
-          <div className="absolute inset-0 bg-gradient-to-b from-night/78 via-night/70 to-night" />
-          <div className="absolute inset-0" style={{ background: 'radial-gradient(ellipse 72% 68% at 50% 55%, rgba(15,23,42,0.72) 0%, rgba(15,23,42,0) 78%)' }} />
+        <div className="relative lg:min-h-[88svh] lg:flex lg:items-center">
+          {/* 🔴 Tummennus vain tekstin kohdalla (Vesa 23.9.2026: "liikaa overlaytä"). Ennen 78 % → 70 % → 100 %
+              koko kuvan päällä + 72 %:n säde keskellä, jolloin kuva näkyi harmaana.
+              - lg+: kuva koko herona, tummennus vaakasuoraan vasemmalta tekstin alle, talo näkyy oikealla.
+              - alle lg: kuva OMANA KAISTANAAN ilman tummennusta ja teksti sen alla tummalla pohjalla
+                (01-kuvat, heron tarkistuslista). Korttitekstiportti mittasi 23.9. pinkin toisen rivin
+                kirkkaan lumen päällä 375 px:ssä 1,9–2,3:1 — tummennuksen lisääminen olisi palauttanut
+                harmaan kuvan, joten teksti siirtyi kuvan päältä sen alle. */}
+          <div className="relative h-[46svh] min-h-[260px] max-h-[520px] lg:max-h-none lg:h-auto lg:absolute lg:inset-0">
+            <img
+              src={HOME_HERO_IMAGE}
+              alt={hl === 'fi' ? 'Punainen puutalo lumisella pihalla ja koivut talvipäivänä' : 'A red wooden house in a snowy yard with birches on a winter day'}
+              className="absolute inset-0 w-full h-full object-cover [object-position:62%_60%] lg:[object-position:60%_55%]"
+              fetchPriority="high"
+              decoding="async"
+            />
+            <div className="absolute inset-x-0 bottom-0 h-20 bg-gradient-to-t from-night to-transparent lg:hidden" aria-hidden="true" />
+            <div
+              className="absolute inset-0 hidden lg:block"
+              style={{ background: 'linear-gradient(90deg, rgba(15,23,42,0.88) 0%, rgba(15,23,42,0.78) 32%, rgba(15,23,42,0.35) 55%, rgba(15,23,42,0) 70%)' }}
+            />
+            <div className="absolute inset-x-0 bottom-0 h-40 bg-gradient-to-t from-night/80 to-transparent hidden lg:block" aria-hidden="true" />
+          </div>
 
-          <div className="relative z-10 text-center px-5 sm:px-6 max-w-3xl mx-auto pt-28 pb-32">
-            {/* 🔴 11 px muste valokuvalla: varjo ei riita kirkkaalla taustalla (1,17:1).
-                Tumma laatta antaa musteelle taustan - sama ratkaisu kuin verkoston
-                muissa heroissa 21.9. */}
-            <p className="inline-flex items-center gap-2 rounded-full bg-night/80 px-3 py-1.5 text-vibe-pink uppercase tracking-[0.3em] text-[11px] sm:text-xs font-semibold mb-6">
-              <MapPin className="w-3.5 h-3.5" />
-              {h.hero.eyebrow}
-            </p>
-            <h1
-              className="font-heading font-medium text-snow leading-[1.05] tracking-wide text-[42px] sm:text-6xl lg:text-7xl xl:text-8xl mb-6 xl:text-[clamp(96px,1.5vw_+_76.8px,115.2px)]"
-              style={{ textShadow: '0 4px 30px rgba(0,0,0,0.85)' }}
-            >
-              {h.hero.h1a}
-              <br />
-              <span className="text-vibe-pink">{h.hero.h1b}</span>
-            </h1>
-            <p className="font-body text-snow text-base sm:text-lg lg:text-xl max-w-2xl xl:max-w-4xl mx-auto leading-relaxed" style={{ textShadow: '0 2px 14px rgba(0,0,0,0.8)' }}>
-              {h.hero.lead}
-            </p>
-            <div className="mt-10 flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center">
-              <Link to={localePath(HOUSING_ROUTES.rentals)} className="px-7 py-3.5 min-h-11 bg-[#DB2777] hover:bg-[#BE185D] text-white rounded-full font-semibold transition-all hover:scale-[1.02] shadow-lg shadow-vibe-pink/30 text-center">
-                {h.hero.ctaPrimary}
-              </Link>
-              <Link to={localePath(HOUSING_ROUTES.seasonal)} className="px-7 py-3.5 min-h-11 bg-night/55 backdrop-blur-sm border border-snow/35 text-snow rounded-full font-semibold hover:bg-night/75 hover:border-snow/55 transition-all text-center">
-                {h.hero.ctaSecondary}
-              </Link>
+          <div className="relative z-10 w-full max-w-7xl mx-auto px-5 sm:px-6 lg:px-8 pt-6 pb-28 lg:pt-28 lg:pb-32 text-center lg:text-left">
+            <div className="max-w-2xl mx-auto lg:mx-0 lg:max-w-[42rem]">
+              {/* 🔴 11 px muste valokuvalla: tumma laatta antaa musteelle taustan. */}
+              <p className="inline-flex items-center gap-2 rounded-full bg-night/80 px-3 py-1.5 text-[#F9A8D4] uppercase tracking-[0.24em] text-[11px] sm:text-xs font-semibold mb-6">
+                <MapPin className="w-3.5 h-3.5" />
+                {h.hero.eyebrow}
+              </p>
+              <h1
+                className="font-heading font-medium text-snow leading-[1.04] tracking-wide text-[42px] sm:text-6xl lg:text-7xl mb-6"
+                style={{ textShadow: '0 4px 24px rgba(0,0,0,0.55)' }}
+              >
+                {h.hero.h1a}
+                <span className="block text-vibe-pink text-[34px] sm:text-5xl lg:text-6xl mt-1">{h.hero.h1b}</span>
+              </h1>
+              <p className="font-body text-snow text-base sm:text-lg lg:text-xl max-w-xl mx-auto lg:mx-0 leading-relaxed" style={{ textShadow: '0 2px 12px rgba(0,0,0,0.6)' }}>
+                {h.hero.lead}
+              </p>
+              <div className="mt-10 flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center lg:justify-start">
+                <Link to={localePath(HOUSING_ROUTES.rentals)} className="px-7 py-3.5 min-h-11 bg-[#DB2777] hover:bg-[#BE185D] text-white rounded-full font-semibold transition-all hover:scale-[1.02] shadow-lg shadow-vibe-pink/30 text-center">
+                  {h.hero.ctaPrimary}
+                </Link>
+                <Link to={localePath(HOUSING_ROUTES.seasonal)} className="px-7 py-3.5 min-h-11 bg-night/55 backdrop-blur-sm border border-snow/35 text-snow rounded-full font-semibold hover:bg-night/75 hover:border-snow/55 transition-all text-center">
+                  {h.hero.ctaSecondary}
+                </Link>
+              </div>
             </div>
           </div>
         </div>
@@ -236,10 +253,59 @@ export default function HomeHousing() {
         </div>
       </section>
 
+      {/* 3. Arki Lapissa: neljä vuodenaikaa ja mitä täällä silloin tehdään (Vesa 23.9.2026). */}
+      <section className="py-16 sm:py-24 px-5 sm:px-6">
+        <div className="max-w-7xl mx-auto">
+          <div className="mb-10 sm:mb-12 max-w-2xl">
+            <div className="mb-4"><KickerChip tone="pink">{h.life.kicker}</KickerChip></div>
+            <h2 className="font-heading text-4xl sm:text-5xl md:text-6xl text-charcoal leading-[1.1] tracking-wide">{h.life.h2}</h2>
+            <div className="mt-4 h-1 w-14 rounded-full bg-vibe-pink" aria-hidden="true" />
+            <p className="text-graphite text-base sm:text-lg mt-5 leading-relaxed">{h.life.lead}</p>
+          </div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-5 sm:gap-6">
+            {h.life.cards.map((card) => (
+              <Link
+                key={card.title}
+                to={localePath(card.href)}
+                className="group flex flex-col overflow-hidden rounded-2xl bg-white border border-charcoal/10 shadow-sm hover:border-charcoal/20 hover:shadow-lg hover:-translate-y-0.5 transition-all duration-300"
+              >
+                <div className="relative aspect-[4/3] overflow-hidden bg-night">
+                  <img
+                    src={card.image}
+                    alt={card.alt}
+                    className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                  <span className="absolute top-3 left-3 inline-flex rounded-full bg-night/80 px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.14em] text-snow">
+                    {card.season}
+                  </span>
+                  <PhotoCredit credit={creditFor(card.image)} label={ui.photo} linked={false} />
+                </div>
+                <div className="p-6 flex flex-col flex-1">
+                  <h3 className="font-heading text-2xl sm:text-3xl text-charcoal leading-tight tracking-wide mb-3">{card.title}</h3>
+                  <p className="text-graphite text-[15px] leading-relaxed mb-5 flex-1">{card.body}</p>
+                  <span className="inline-flex items-center gap-1.5 text-[#BE185D] group-hover:gap-2.5 text-sm font-semibold transition-all mt-auto">
+                    {card.linkLabel}
+                    <ArrowRight className="w-4 h-4 shrink-0" />
+                  </span>
+                </div>
+              </Link>
+            ))}
+          </div>
+          <div className="mt-8">
+            <Link to={localePath(h.life.more.href)} className="lv-tap inline-flex items-center gap-1.5 text-[#BE185D] text-sm font-semibold">
+              {h.life.more.label}
+              <ArrowRight className="w-4 h-4 shrink-0" />
+            </Link>
+          </div>
+        </div>
+      </section>
+
       {/* Talon mainospaikka vasta sisällön jälkeen (Vesa 18.9.2026). */}
       <MainPartnerBanner config={AD_SLOTS} locale={lang} surface="light" />
 
-      {/* 3. Työ: kuva + yksi viesti, ei tekstilaatikoita. */}
+      {/* 4. Työ: laplandworkin sinivalkoinen paneeli. */}
       <HousingWorkPromo copy={h.work} placement="housing_home" />
 
       <FinnishDivider />

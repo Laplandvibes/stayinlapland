@@ -15,7 +15,7 @@ export const COST: HousingCopyMap = {
       eyebrow: 'Elinkustannukset · Tilastokeskus · Kela · Kuntaliitto',
       title: 'Mitä eläminen Lapissa maksaa?',
       subtitle:
-        'Vuokra on Lapissa halvempaa kuin muualla Suomessa, auto ja lämmitys kalliimpaa. Tässä ovat luvut, joista väite on laskettu.',
+        'Vuokra on Lapissa halvempaa kuin muualla Suomessa, auto ja lämmitys kalliimpaa. Näin kuukauden menot koostuvat.',
     },
     authorNote:
       'Kaikki luvut Tilastokeskuksen, Kelan ja Kuntaliiton julkaisuista; esimerkkilaskelmat on laskettu näistä luvuista ja kaava näkyy. Ei arvioita.',
@@ -148,7 +148,7 @@ export const COST: HousingCopyMap = {
       eyebrow: 'Cost of living · Statistics Finland · Kela',
       title: 'What does living in Lapland cost?',
       subtitle:
-        'Rent is cheaper in Lapland than in the rest of Finland; the car and the heating are dearer. These are the figures the claim is calculated from.',
+        'Rent is cheaper in Lapland than in the rest of Finland; the car and the heating are dearer. This is how a monthly budget adds up.',
     },
     authorNote:
       'Every figure is from Statistics Finland, Kela or the Association of Finnish Municipalities; the examples are calculated from those figures and show their formula. No estimates.',

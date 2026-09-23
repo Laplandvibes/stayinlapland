@@ -35,25 +35,50 @@ export interface HousingHomeCopy {
     cards: { key: HousingRouteKey | 'longStays'; title: string; body: string; image: string; alt: string; pos?: string }[];
   };
   work: { kicker: string; h2a: string; h2b: string; body: string; stripText: string; cta: string; image: string; alt: string; caption: string };
+  /**
+   * Arki Lapissa: mitä paikalliset tekevät vuoden mittaan (Vesa 23.9.2026: "tämän sivun pitäisi
+   * kertoa myös siitä asumisesta siellä pidemmän aikaa, mitä paikalliset tekee yleensä").
+   * Jokainen luku nimetystä lähteestä (fmi, traficom, ounasvaara, yle2025das).
+   */
+  life: {
+    kicker: string;
+    h2: string;
+    lead: string;
+    cards: { season: string; title: string; body: string; image: string; alt: string; href: string; linkLabel: string }[];
+    more: { label: string; href: string };
+  };
   faq: { kicker: string; h2: string; items: Faq[] };
   holiday: { kicker: string; h2: string; lead: string; links: { label: string; href: string; external?: boolean }[] };
   authorNote: string;
   sources: Source[];
 }
 
-const SOURCES = ['tkVaesto', 'tkVuokrat', 'kemi', 'sodankyla', 'inari', 'kesko2026', 'fmi', 'foreca'] as const;
+const SOURCES = ['tkVaesto', 'tkVuokrat', 'kemi', 'sodankyla', 'inari', 'kesko2026', 'fmi', 'foreca', 'traficom', 'ounasvaara', 'yle2025das'] as const;
 
+/**
+ * 🔴 Kuvat vaihdettu 23.9.2026 (Vesa: "kuvat ei ole parhaat mahdolliset … muutto lappiin on jokin
+ * työmaa kuva" + "käytät liikaa samoja kuvia useaan kertaan"). Polkukortti näyttää kohdesivunsa
+ * heron (sama kuva, kortin oma 4:3-rajaus), muuten jokainen kuva on käytössä yhdessä paikassa.
+ * Lähteet ja lisenssit: src/data/photoCredits.ts (PHOTO_CREDITS + STOCK_RECEIPTS).
+ */
 const IMG = {
-  rovaniemi: '/images/housing-rovaniemi-lappia-card.webp',
-  kemiTornio: '/images/housing-tornio-kerrostalo-card.webp',
+  hero: '/images/housing-home-hero-talo.webp',
+  rovaniemi: '/images/housing-card-rovaniemi-silta.webp',
+  kemiTornio: '/images/housing-card-kemin-kirkko.webp',
   levi: '/images/housing-levi-uudet-talot.webp',
-  inari: '/images/housing-ivalo-joki.webp',
-  seasonal: '/images/housing-levi-keskusta-card.webp',
-  moving: '/images/housing-tornionjoki-card.webp',
-  cost: '/images/housing-jouninkauppa.webp',
-  longStays: '/images/housing-pyha-huoneistot.webp',
+  inari: '/images/housing-card-ivalojoki.webp',
+  seasonal: '/images/housing-seasonal-card-yllasjarvi.webp',
+  moving: '/images/housing-moving-card-talvitie.webp',
+  cost: '/images/housing-cost-card-polttopuut.webp',
+  longStays: '/images/housing-longstay-card-mokki.webp',
   work: '/images/housing-yllas-hiihtokeskus.webp',
+  kaamos: '/images/housing-arki-revontulet.webp',
+  kevat: '/images/housing-arki-pilkki.webp',
+  kesa: '/images/housing-arki-keskiyo-luiro.webp',
+  syksy: '/images/housing-arki-ruska.webp',
 } as const;
+
+export const HOME_HERO_IMAGE = IMG.hero;
 
 export const HOME: Record<HousingLang, HousingHomeCopy> = {
   fi: {
@@ -62,10 +87,10 @@ export const HOME: Record<HousingLang, HousingHomeCopy> = {
       'Asuminen Lapissa: vuokra-asunnot Rovaniemeltä Ivaloon, kausityöntekijän asunto, muutto ja elinkustannukset. Yksiö Rovaniemellä noin 560 €/kk (Tilastokeskus).',
     schemaName: 'StayInLapland: asuminen Suomen Lapissa',
     hero: {
-      eyebrow: 'Suomen Lappi · Asuminen · Vuokraus · Kausityö',
-      h1a: 'Asetu Lappiin.',
-      h1b: 'Älä vain käy.',
-      lead: 'Vuokrat paikkakunnittain, kausityöntekijän asunto, muuton paperityöt ja arjen hinta. Yksiö Rovaniemellä maksaa noin 560 €/kk.',
+      eyebrow: 'Suomen Lappi · 176 215 asukasta',
+      h1a: 'Asuminen Lapissa.',
+      h1b: 'Kaamoksesta yöttömään yöhön.',
+      lead: 'Mistä vuokra-asunto löytyy, mitä arki maksaa ja miten täällä eletään läpi vuoden. Yksiö Rovaniemellä maksaa noin 560 euroa kuukaudessa.',
       ctaPrimary: 'Vuokra-asunnot',
       ctaSecondary: 'Kausityöntekijälle',
     },
@@ -89,7 +114,7 @@ export const HOME: Record<HousingLang, HousingHomeCopy> = {
           body: 'Yliopisto, lentokenttä ja työpaikat ympäri vuoden. Yksiöistä kilpailevat opiskelijat, matkailijat ja kausityöntekijät.',
           cta: 'Rovaniemen vuokra-asunnot',
           image: IMG.rovaniemi,
-          alt: 'Lappia-talo Rovaniemen keskustassa kesäpäivänä',
+          alt: 'Jätkänkynttilä-silta valaistuna Kemijoen yllä joulukuun iltana',
         },
         {
           slug: 'kemi-tornio',
@@ -98,7 +123,7 @@ export const HOME: Record<HousingLang, HousingHomeCopy> = {
           body: 'Rannikon kaksoiskaupunki. Kaupunkien omilla vuokrayhtiöillä on satoja asuntoja, Itätuulella yli 600 Kemissä.',
           cta: 'Kemin ja Tornion vuokra-asunnot',
           image: IMG.kemiTornio,
-          alt: 'Kerrostalo Tornion keskustassa',
+          alt: 'Kemin kirkko lumisena talvi-iltana',
         },
         {
           slug: 'kittila-levi',
@@ -116,7 +141,7 @@ export const HOME: Record<HousingLang, HousingHomeCopy> = {
           body: 'Kunnan Inarin Vuokra-asunnot Oy:llä on yli 500 asuntoa Ivalossa, Inarissa ja Saariselällä.',
           cta: 'Ivalon ja Inarin vuokra-asunnot',
           image: IMG.inari,
-          alt: 'Ivalo Ivalojoen yli kesäiltana',
+          alt: 'Jäätynyt Ivalojoki ja rannan koivut marraskuun matalassa auringossa',
         },
       ],
       more: 'Kolari ja Ylläs, Sodankylä ja muut kunnat',
@@ -131,28 +156,28 @@ export const HOME: Record<HousingLang, HousingHomeCopy> = {
           title: 'Kausityöntekijän asuminen',
           body: 'Työnantajan asunto, vapaa-ajan asunto kausivuokralla vai kunnan vuokra-asunto. Mitä kysyä ennen kuin allekirjoitat.',
           image: IMG.seasonal,
-          alt: 'Levin keskustan puurakennuksia kesäpäivänä',
+          alt: 'Ylläs ja lumiset metsät ilmasta talven auringonlaskussa',
         },
         {
           key: 'moving',
           title: 'Muutto Lappiin',
           body: 'Muuttoilmoitus, talvirenkaat, päiväkoti, sähkösopimus ja kaamos. Ensimmäisen kuukauden tarkistuslista.',
           image: IMG.moving,
-          alt: 'Laituri Tornionjoella kesäiltana',
+          alt: 'Luminen maantie kuusimetsän halki, tienreunassa aurausmerkit',
         },
         {
           key: 'cost',
           title: 'Elinkustannukset',
           body: 'Vuokra, sähkö, polttoaine ja asumistuki lukuina. Mikä täällä on halvempaa ja mikä ei.',
           image: IMG.cost,
-          alt: 'Jounin Kauppa Äkäslompolossa',
+          alt: 'Polttopuupino ja penkki hirsitalon seinustalla lumisena päivänä',
         },
         {
           key: 'longStays',
           title: 'Pitkät jaksot',
           body: 'Viikosta kuukauteen: kalustetut asunnot ja mökit viikkohinnoin, kun tarvitset katon ennen omaa vuokrasopimusta.',
           image: IMG.longStays,
-          alt: 'Huoneistorakennus Pyhän tunturikylässä kesällä',
+          alt: 'Punainen mökki huurteisten koivujen keskellä',
         },
       ],
     },
@@ -166,6 +191,50 @@ export const HOME: Record<HousingLang, HousingHomeCopy> = {
       image: IMG.work,
       alt: 'Ylläksen hiihtokeskuksen vuokraamo ja hiihtokoulu kesällä, lumitykit varastoituna katoksen alle',
       caption: 'Ylläs heinäkuussa 2026: lumitykit odottavat kautta. Kuva: LaplandVibes.',
+    },
+    life: {
+      kicker: 'Arki Lapissa',
+      h2: 'Neljä vuodenaikaa, neljä eri Lappia.',
+      lead: 'Täällä vuodenaika ei ole pelkkää säätä. Se ratkaisee, miten iltaisin liikutaan, mitä viikonloppuna tehdään ja milloin asuntoja haetaan.',
+      cards: [
+        {
+          season: 'Marras–tammikuu',
+          title: 'Kaamos',
+          body: 'Pohjoisimmassa Lapissa aurinko ei nouse lainkaan: Nuorgamissa kaamos kestää 25.11.–17.1. (Ilmatieteen laitos). Hiihto ei silti lopu. Rovaniemen Ounasvaaralla noin 50 kilometriä latuja on valaistu, ja selkeinä iltoina revontulet näkyvät kotipihalta.',
+          image: IMG.kaamos,
+          alt: 'Revontulet lumisen metsätien yllä talviyönä',
+          href: '/moving-to-lapland#valo',
+          linkLabel: 'Valo ja pimeä',
+        },
+        {
+          season: 'Maalis–huhtikuu',
+          title: 'Kevättalvi',
+          body: 'Valo palaa nopeasti, mutta järvet ovat vielä jäässä. Silloin pilkitään, hiihdetään hangen päällä ja ajetaan moottorikelkalla merkittyjä uria. Nastarenkaita saa käyttää maaliskuun jälkeenkin, jos keli sitä vaatii (Traficom).',
+          image: IMG.kevat,
+          alt: 'Kaksi pilkkijää jäällä auringonlaskussa',
+          href: '/moving-to-lapland#auto',
+          linkLabel: 'Auto ja välimatkat',
+        },
+        {
+          season: 'Kesä–heinäkuu',
+          title: 'Yötön yö',
+          body: 'Nuorgamissa aurinko ei laske 16.5.–29.7., ja Rovaniemellä napapiirillä se pysyy horisontin yläpuolella juhannuksen tienoilla (Ilmatieteen laitos). Illat vietetään ulkona, järvellä ja mökillä. Pimennysverhot ovat kesän tärkein hankinta.',
+          image: IMG.kesa,
+          alt: 'Luirojoki ja kesäiset metsät keskiyön auringossa Savukoskella',
+          href: '/seasonal-worker-housing#kesa',
+          linkLabel: 'Kesäkausi ja työ',
+        },
+        {
+          season: 'Syys–lokakuu',
+          title: 'Ruska',
+          body: 'Tunturikoivut ja varvut värittyvät, ja pimenevät illat tuovat revontulet takaisin. Syksy on myös muuttojen aikaa: Rovaniemelle tulee uusia opiskelijoita elo–syyskuussa, ja silloin yksiöistä kilpaillaan eniten (Yle 27.7.2025).',
+          image: IMG.syksy,
+          alt: 'Ruskan värittämä joenranta ja pieni aitta',
+          href: '/rentals',
+          linkLabel: 'Vuokra-asunnot',
+        },
+      ],
+      more: { label: 'Kuukausi kerrallaan: milloin Lappiin?', href: '/when-to-go' },
     },
     faq: {
       kicker: 'Kysytyimmät',
@@ -214,10 +283,10 @@ export const HOME: Record<HousingLang, HousingHomeCopy> = {
       'Living in Finnish Lapland: rentals from Rovaniemi to Ivalo, seasonal worker housing, moving and the cost of living. A studio in Rovaniemi is about €560 a month.',
     schemaName: 'StayInLapland: living in Finnish Lapland',
     hero: {
-      eyebrow: 'Finnish Lapland · Living · Renting · Seasonal work',
-      h1a: 'Settle into Lapland.',
-      h1b: 'Don’t just visit.',
-      lead: 'Rents town by town, seasonal worker housing, the paperwork of moving and what daily life costs. A studio in Rovaniemi is about €560 a month.',
+      eyebrow: 'Finnish Lapland · 176,215 residents',
+      h1a: 'Living in Lapland.',
+      h1b: 'From polar night to midnight sun.',
+      lead: 'Where to find a rental, what everyday life costs and how people here live through the year. A studio in Rovaniemi costs about €560 a month.',
       ctaPrimary: 'Rentals',
       ctaSecondary: 'Seasonal workers',
     },
@@ -241,7 +310,7 @@ export const HOME: Record<HousingLang, HousingHomeCopy> = {
           body: 'A university, an airport and year-round jobs. Students, tourists and seasonal workers compete for the same studios.',
           cta: 'Renting in Rovaniemi',
           image: IMG.rovaniemi,
-          alt: 'Lappia House in the centre of Rovaniemi on a summer day',
+          alt: 'The Jätkänkynttilä bridge lit up over the Kemijoki river on a December evening',
         },
         {
           slug: 'kemi-tornio',
@@ -250,7 +319,7 @@ export const HOME: Record<HousingLang, HousingHomeCopy> = {
           body: 'The coastal twin towns. The municipal housing companies hold hundreds of flats; Itätuuli alone has over 600 in Kemi.',
           cta: 'Renting in Kemi and Tornio',
           image: IMG.kemiTornio,
-          alt: 'An apartment block in the centre of Tornio',
+          alt: 'Kemi church in snow on a winter evening',
         },
         {
           slug: 'kittila-levi',
@@ -268,7 +337,7 @@ export const HOME: Record<HousingLang, HousingHomeCopy> = {
           body: 'The municipal company Inarin Vuokra-asunnot Oy has over 500 flats in Ivalo, Inari and Saariselkä.',
           cta: 'Renting in Ivalo and Inari',
           image: IMG.inari,
-          alt: 'Ivalo seen across the Ivalo river on a summer evening',
+          alt: 'The frozen Ivalo river and birches on the bank in low November sun',
         },
       ],
       more: 'Kolari and Ylläs, Sodankylä and the other municipalities',
@@ -283,28 +352,28 @@ export const HOME: Record<HousingLang, HousingHomeCopy> = {
           title: 'Seasonal worker housing',
           body: 'Staff housing, a holiday apartment on a seasonal lease or a municipal flat. What to ask before you sign.',
           image: IMG.seasonal,
-          alt: 'Wooden buildings in the centre of Levi on a summer day',
+          alt: 'Ylläs and snowy forests from the air at a winter sunset',
         },
         {
           key: 'moving',
           title: 'Moving to Lapland',
           body: 'Address notification, winter tyres, daycare, electricity contract and the polar night. The first-month checklist.',
           image: IMG.moving,
-          alt: 'A jetty on the Tornio river on a summer evening',
+          alt: 'A snowy main road through spruce forest, snow poles along the verge',
         },
         {
           key: 'cost',
           title: 'Cost of living',
           body: 'Rent, electricity, fuel and housing allowance in figures. What is cheaper here and what is not.',
           image: IMG.cost,
-          alt: 'The Jounin Kauppa grocery store in Äkäslompolo',
+          alt: 'A stack of firewood and a bench against a log house on a snowy day',
         },
         {
           key: 'longStays',
           title: 'Long stays',
           body: 'A week to a month: furnished apartments and cabins at weekly rates when you need a roof before your own lease.',
           image: IMG.longStays,
-          alt: 'An apartment building in the Pyhä fell village in summer',
+          alt: 'A red cabin among frosted birches',
         },
       ],
     },
@@ -318,6 +387,50 @@ export const HOME: Record<HousingLang, HousingHomeCopy> = {
       image: IMG.work,
       alt: 'The ski rental and ski school at the Ylläs resort in summer, snow cannons stored under the canopy',
       caption: 'Ylläs in July 2026: the snow cannons wait for the season. Photo: LaplandVibes.',
+    },
+    life: {
+      kicker: 'Everyday life in Lapland',
+      h2: 'Four seasons, four different Laplands.',
+      lead: 'Here a season is more than weather. It decides how you get around in the evening, what you do at the weekend and when people look for a flat.',
+      cards: [
+        {
+          season: 'November–January',
+          title: 'Polar night',
+          body: 'In the far north the sun does not rise at all: in Nuorgam the polar night lasts from 25 November to 17 January (Finnish Meteorological Institute). Skiing does not stop. About 50 kilometres of trails on Ounasvaara in Rovaniemi are lit, and on clear evenings the aurora shows from your own yard.',
+          image: IMG.kaamos,
+          alt: 'The aurora over a snowy forest road on a winter night',
+          href: '/moving-to-lapland#light',
+          linkLabel: 'Light and dark',
+        },
+        {
+          season: 'March–April',
+          title: 'Late winter',
+          body: 'The light returns fast, but the lakes are still frozen. This is when people ice-fish, ski on the crust of the snow and ride snowmobiles along marked trails. Studded tyres may stay on after March if the conditions require it (Traficom).',
+          image: IMG.kevat,
+          alt: 'Two people ice fishing on a lake at sunset',
+          href: '/moving-to-lapland#car',
+          linkLabel: 'Car and distances',
+        },
+        {
+          season: 'June–July',
+          title: 'Midnight sun',
+          body: 'In Nuorgam the sun does not set from 16 May to 29 July, and at the Arctic Circle in Rovaniemi it stays above the horizon around Midsummer (Finnish Meteorological Institute). Evenings are spent outdoors, on the lake and at the cottage. Blackout curtains are the key purchase of the summer.',
+          image: IMG.kesa,
+          alt: 'The Luiro river and summer forests in the midnight sun in Savukoski',
+          href: '/seasonal-worker-housing#summer',
+          linkLabel: 'Summer season and work',
+        },
+        {
+          season: 'September–October',
+          title: 'Autumn colours',
+          body: 'Fell birches and dwarf shrubs turn red and gold, and the darkening evenings bring the aurora back. Autumn is also moving season: new students arrive in Rovaniemi in August and September, and that is when competition for studios is at its fiercest (Yle, 27 Jul 2025).',
+          image: IMG.syksy,
+          alt: 'A riverbank in autumn colours and a small storehouse',
+          href: '/rentals',
+          linkLabel: 'Rentals',
+        },
+      ],
+      more: { label: 'Month by month: when to come to Lapland', href: '/when-to-go' },
     },
     faq: {
       kicker: 'Most asked',

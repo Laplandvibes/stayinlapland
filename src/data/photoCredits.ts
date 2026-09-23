@@ -34,7 +34,7 @@
 export type PhotoCredit = {
   /** Tekijä siinä muodossa kuin hän on sen Commonsiin merkinnyt (lyhennettynä). */
   author: string;
-  license: 'CC BY 2.0' | 'CC BY-SA 4.0' | 'CC0 1.0';
+  license: 'CC BY 2.0' | 'CC BY-SA 3.0' | 'CC BY-SA 4.0' | 'CC0 1.0';
   licenseUrl: string;
   /** Commonsin tiedostosivu: kuvaus, tekijä ja lisenssi alkuperäisessä muodossa. */
   sourceUrl: string;
@@ -44,7 +44,7 @@ export type PhotoCredit = {
   taken: string;
   /** Mitä kuvalle tehtiin. */
   changes: string;
-  fetched: '2026-09-18';
+  fetched: string;
   cost: '0 €';
 };
 
@@ -93,7 +93,109 @@ export const PHOTO_CREDITS: Record<string, PhotoCredit> = {
     fetched: '2026-09-18',
     cost: '0 €',
   },
+  // ── 23.9.2026: Vesan palaute ("kuvat ei ole parhaat mahdolliset", "käytät liikaa samoja kuvia").
+  // Tarkistettu Commonsin rajapinnasta 23.9.2026 (lisenssi, tekijä, päivä, koko). Vain pienennys.
+  '/images/housing-card-rovaniemi-silta.webp': {
+    author: 'Sadenäyttely',
+    license: 'CC BY-SA 4.0',
+    licenseUrl: 'https://creativecommons.org/licenses/by-sa/4.0/',
+    sourceUrl: 'https://commons.wikimedia.org/wiki/File:J%C3%A4tk%C3%A4nkynttil%C3%A4-silta.jpg',
+    title: 'Jätkänkynttilä-silta.jpg',
+    taken: '2020-12-25 18:50',
+    changes: 'Vain pienennys 6000 → 1200 px ja WebP-muunnos, ei rajausta.',
+    fetched: '2026-09-23',
+    cost: '0 €',
+  },
+  '/images/housing-rovaniemi-hero-talvikatu.webp': {
+    author: 'JIP',
+    license: 'CC BY-SA 4.0',
+    licenseUrl: 'https://creativecommons.org/licenses/by-sa/4.0/',
+    sourceUrl: 'https://commons.wikimedia.org/wiki/File:Lapinrinne_in_January.jpg',
+    title: 'Lapinrinne in January.jpg',
+    taken: '2021-01-16',
+    changes: 'Vain pienennys 4608 → 1920 px ja WebP-muunnos, ei rajausta.',
+    fetched: '2026-09-23',
+    cost: '0 €',
+  },
+  '/images/housing-rovaniemi-card-talvikatu.webp': {
+    author: 'JIP',
+    license: 'CC BY-SA 4.0',
+    licenseUrl: 'https://creativecommons.org/licenses/by-sa/4.0/',
+    sourceUrl: 'https://commons.wikimedia.org/wiki/File:Lapinrinne_in_January.jpg',
+    title: 'Lapinrinne in January.jpg',
+    taken: '2021-01-16',
+    changes: 'Vain pienennys 4608 → 1000 px ja WebP-muunnos, ei rajausta.',
+    fetched: '2026-09-23',
+    cost: '0 €',
+  },
+  '/images/housing-card-ivalojoki.webp': {
+    author: 'Ninara',
+    license: 'CC BY 2.0',
+    licenseUrl: 'https://creativecommons.org/licenses/by/2.0/',
+    sourceUrl: 'https://commons.wikimedia.org/wiki/File:Ivalojoki_20141112_y1a9510.jpg',
+    title: 'Ivalojoki 20141112 y1a9510.jpg',
+    taken: '2014-11-12 11:16',
+    changes: 'Vain pienennys 5760 → 1600 px ja WebP-muunnos, ei rajausta.',
+    fetched: '2026-09-23',
+    cost: '0 €',
+  },
+  '/images/housing-seasonal-card-yllas-tunturi.webp': {
+    author: 'Ximonic (Simo Räsänen)',
+    license: 'CC BY-SA 3.0',
+    licenseUrl: 'https://creativecommons.org/licenses/by-sa/3.0/',
+    sourceUrl: 'https://commons.wikimedia.org/wiki/File:%C3%84k%C3%A4slompolo_and_Yll%C3%A4s_in_Kolari,_Lapland,_Finland,_2018_September.jpg',
+    title: 'Äkäslompolo and Ylläs in Kolari, Lapland, Finland, 2018 September.jpg',
+    taken: '2018-09-19',
+    changes: 'Vain pienennys 2800 → 1200 px ja WebP-muunnos, ei rajausta.',
+    fetched: '2026-09-23',
+    cost: '0 €',
+  },
+  '/images/housing-arki-keskiyo-luiro.webp': {
+    author: 'Ximonic (Simo Räsänen)',
+    license: 'CC BY-SA 3.0',
+    licenseUrl: 'https://creativecommons.org/licenses/by-sa/3.0/',
+    sourceUrl: 'https://commons.wikimedia.org/wiki/File:Luiro_river_at_Tanhua_in_Savukoski,_Lapland,_Finland,_2021_June.jpg',
+    title: 'Luiro river at Tanhua in Savukoski, Lapland, Finland, 2021 June.jpg',
+    taken: '2021-06-16',
+    changes: 'Vain pienennys 3600 → 1200 px ja WebP-muunnos, ei rajausta.',
+    fetched: '2026-09-23',
+    cost: '0 €',
+  },
 };
+
+/**
+ * Kuitit kuville, jotka eivät vaadi näkyvää merkintää (Pexels-lisenssi, CC0, public domain).
+ * Ei renderöidä sivulle; kuitti on tässä, jotta lähde, lupa ja tehdyt tarkistukset löytyvät
+ * koodista (lv_permanent_rules §24: URL, tunnus, päivä, lisenssi).
+ *
+ * Tarkistukset per kuva 23.9.2026 (Pexels-lisenssi ei tarkista näitä puolestamme):
+ *   - katsottu 1600 px:nä: aito valokuva, ei AI-piirteitä; uudet (2024–2026) lataukset erikseen
+ *   - ei tunnistettavia kasvoja (pilkkijät ja tunturin laen kävijät siluetteina / pieninä)
+ *   - ei vieraita merkkejä eikä luettavia rekisterikilpiä (Kemin kadun auton merkki ja kilpi
+ *     sumennettu; Ylläsjärven kuvasta ravintolarakennus rajattu pois)
+ *   - paikka: alt-teksti väittää paikan vain, kun se on varmistettu (Kemin kirkko tunnistettava;
+ *     muissa alt ei nimeä paikkaa). Hylätty tarkistuksessa: 31126201 ja 31126199 (kuvaajan
+ *     tunnisteissa Norja), 34701725 (amerikkalainen pistorasia), 29290472 (keskieurooppalainen
+ *     maisema), 30855507 (todennäköisesti Oulu), 24738498 (Bodø).
+ * Yksi kuva = yksi sivusto: tunnukset haettu muiden LV-sivustojen src/-kansioista, 0 osumaa.
+ */
+export const STOCK_RECEIPTS = [
+  { file: 'housing-home-hero-talo.webp', source: 'Pexels', id: '17648895', url: 'https://www.pexels.com/photo/17648895/', author: 'Gu Bra', published: '2023-07-18', changes: 'Rajaus 16:9, 1920 px' },
+  { file: 'housing-rentals-hero-talvikatu.webp', source: 'Pexels', id: '20412426', url: 'https://www.pexels.com/photo/20412426/', author: 'Ahmet Yüksek', published: '2024-02-26', changes: 'Auton merkki ja rekisterikilpi sumennettu, 1920 px' },
+  { file: 'housing-seasonal-hero-yllasjarvi.webp + housing-seasonal-card-yllasjarvi.webp', source: 'Pexels', id: '19896963', url: 'https://www.pexels.com/photo/19896963/', author: 'Fanny Hagan-Södervall', published: '2024-01-17', changes: 'Rajattu yläosaan: ravintolarakennus nimikyltteineen pois' },
+  { file: 'housing-moving-hero-talvitie.webp + housing-moving-card-talvitie.webp', source: 'Pexels', id: '34803461', url: 'https://www.pexels.com/photo/34803461/', author: 'Manish Jain', published: '2025-11-19', changes: 'Rajaus 16:9 ja 4:3' },
+  { file: 'housing-cost-hero-polttopuut.webp + housing-cost-card-polttopuut.webp', source: 'Pexels', id: '14841536', url: 'https://www.pexels.com/photo/14841536/', author: 'Valentin Angel Fernandez', published: '2022-12-21', changes: 'Rajaus 16:9 ja 4:3' },
+  { file: 'pillar-long-stays-hero-mokki.webp + housing-longstay-card-mokki.webp', source: 'Pexels', id: '803270', url: 'https://www.pexels.com/photo/803270/', author: 'Baptiste Valthier', published: '2018-01-15', changes: 'Rajaus 4:3 kortille' },
+  { file: 'whentogo-hero-tykky.webp', source: 'Pexels', id: '28359749', url: 'https://www.pexels.com/photo/28359749/', author: 'Sergey Guk', published: '2024-09-11', changes: 'Rajaus 16:9; paikkaa ei väitetä (kuvaajan paikkatiedot epäluotettavia)' },
+  { file: 'bookingguide-hero-tunturi.webp', source: 'Pexels', id: '19896878', url: 'https://www.pexels.com/photo/19896878/', author: 'Fanny Hagan-Södervall', published: '2024-01-17', changes: 'Rajaus 16:9' },
+  { file: 'housing-card-kemin-kirkko.webp', source: 'Pexels', id: '37254048', url: 'https://www.pexels.com/photo/37254048/', author: 'Markku Soini', published: '2026-04-25', changes: 'Rajaus 4:3' },
+  { file: 'housing-arki-revontulet.webp', source: 'Pexels', id: '11747543', url: 'https://www.pexels.com/photo/11747543/', author: 'Jamo Images', published: '2022-04-08', changes: 'Rajaus 4:3' },
+  { file: 'housing-arki-pilkki.webp', source: 'Pexels', id: '3224109', url: 'https://www.pexels.com/photo/3224109/', author: 'Hert Niks', published: '2019-11-14', changes: 'Rajaus 4:3; paikkaa ei väitetä' },
+  { file: 'housing-arki-ruska.webp', source: 'Pexels', id: '15884211', url: 'https://www.pexels.com/photo/15884211/', author: 'Veli-Jussi Lietsala', published: '2023-03-10', changes: 'Rajaus 4:3; paikkaa eikä kuukautta väitetä' },
+  { file: 'housing-kemi-hero-kaupungintalo.webp + housing-kemi-card-kaupungintalo.webp', source: 'Wikimedia Commons', id: 'File:Kemin kaupungintalo Kemi 2026-01-06 01.jpg', url: 'https://commons.wikimedia.org/wiki/File:Kemin_kaupungintalo_Kemi_2026-01-06_01.jpg', author: 'Leonhard Lenz', published: '2026-01-06', changes: 'CC0: rajaus 16:9 ja 4:3' },
+  { file: 'housing-kittila-levi-hero.webp + housing-kittila-levi-card.webp', source: 'Wikimedia Commons', id: 'File:Levi center and piste number 1.JPG', url: 'https://commons.wikimedia.org/wiki/File:Levi_center_and_piste_number_1.JPG', author: 'Евгений Гранат', published: '2007-12-31', changes: 'Public domain: rajaus 16:9 ja 4:3' },
+  { file: 'housing-rentals-card-akaslompolo.webp', source: 'Wikimedia Commons', id: 'File:Winter in Äkäslompolo, Lapland (direction south).png', url: 'https://commons.wikimedia.org/wiki/File:Winter_in_%C3%84k%C3%A4slompolo,_Lapland_(direction_south).png', author: 'Rofraja', published: '2024-01-26', changes: 'CC0: rajaus 4:3' },
+] as const;
 
 /**
  * 🔴 `scripts/version-images.mjs` kirjoittaa buildissa jokaiseen kuvapolkuun

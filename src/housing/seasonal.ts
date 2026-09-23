@@ -65,7 +65,7 @@ export const SEASONAL: HousingCopyMap = {
           },
           {
             title: 'Ylläs: Äkäslompolo ja Ylläsjärvi',
-            image: { src: '/images/housing-yllas-hiihtokeskus.webp', alt: 'Ylläksen hiihtokeskuksen vuokraamo ja hiihtokoulu kesällä' },
+            image: { src: '/images/housing-seasonal-card-yllas-tunturi.webp', alt: 'Ylläs Äkäslompolon järven takaa syyskuun aamuna' },
             body:
               'Kauppiaat rakennuttavat itse: Jounin Kaupan kolme rivitaloa valmistuvat marras–joulukuussa 2026, ja niissä on yksiöitä, soluasunnoiksi suunniteltuja kaksioita ja perheille kolmioita, jokaisessa sauna (Kesko 17.6.2026). Kylän ensimmäinen modulitalo valmistui lokakuussa 2025 (Yle 16.6.2026).',
             href: 'https://www.kesko.fi/media/uutiset-ja-tiedotteet/uutiset/2026/lapin-asuntopulaa-ratkomassa-k-market-jounin-kaupan-kauppiaat-rakennuttavat-kolme-rivitaloa-tyontekijoilleen/',
@@ -225,7 +225,7 @@ export const SEASONAL: HousingCopyMap = {
           },
           {
             title: 'Ylläs: Äkäslompolo and Ylläsjärvi',
-            image: { src: '/images/housing-yllas-hiihtokeskus.webp', alt: 'The ski rental and ski school at the Ylläs resort in summer' },
+            image: { src: '/images/housing-seasonal-card-yllas-tunturi.webp', alt: 'Ylläs seen across the lake at Äkäslompolo on a September morning' },
             body:
               'Shopkeepers are building for themselves: Jounin Kauppa’s three row houses are due in November–December 2026 with studios, two-room flats designed for sharing and three-room family flats, each with a sauna (Kesko, 17 Jun 2026). The village’s first modular building was completed in October 2025 (Yle, 16 Jun 2026).',
             href: 'https://www.kesko.fi/media/uutiset-ja-tiedotteet/uutiset/2026/lapin-asuntopulaa-ratkomassa-k-market-jounin-kaupan-kauppiaat-rakennuttavat-kolme-rivitaloa-tyontekijoilleen/',

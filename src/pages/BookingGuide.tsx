@@ -51,7 +51,7 @@ export default function BookingGuide() {
         eyebrow={b.pageHero.eyebrow}
         title={b.pageHero.title}
         subtitle={b.pageHero.subtitle}
-        imageSrc="/images/bookingguide-hero.webp"
+        imageSrc="/images/bookingguide-hero-tunturi.webp"
       />
 
       {/* 🔴 Sivu alkaa asiasta (Vesa 23.9.2026: "apua miten paska alku, jollain varoituksella alkaa?").

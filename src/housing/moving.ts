@@ -16,7 +16,7 @@ export const MOVING: HousingCopyMap = {
       eyebrow: 'Muutto Lappiin · Ensimmäiset 30 päivää',
       title: 'Muutto Lappiin.',
       subtitle:
-        'Ei tunnelmakuvia vaan määräajat: milloin muuttoilmoitus, milloin talvirenkaat, mitä päiväkoti maksaa ja mitä kaamos tekee. Kaikki viranomaisten omista lähteistä.',
+        'Muuttoilmoitus, talvirenkaat, päiväkoti, sähkösopimus ja kaamos: mitä hoidetaan ensimmäisen kuukauden aikana ja missä järjestyksessä.',
     },
     authorNote:
       'Määräajat DVV:ltä, Traficomilta ja Kuntaliitolta, kaamoksen kesto Ilmatieteen laitokselta, välimatkat LaplandVibesin ajoreiteiltä. Tarkistettu 17.9.2026.',
@@ -122,7 +122,7 @@ export const MOVING: HousingCopyMap = {
       eyebrow: 'Moving to Lapland · The first 30 days',
       title: 'Moving to Lapland.',
       subtitle:
-        'No mood shots, just deadlines: when to file your address, when winter tyres are required, what daycare costs and what the polar night does. All from the authorities’ own sources.',
+        'Change of address, winter tyres, daycare, the electricity contract and the polar night: what to sort out in the first month, and in what order.',
     },
     authorNote:
       'Deadlines from DVV, Traficom and the Association of Finnish Municipalities, polar-night lengths from the Finnish Meteorological Institute, distances from LaplandVibes driving routes. Checked 17 September 2026.',

@@ -110,7 +110,7 @@ export default function WhenToGo() {
         }}
       />
 
-      <PageHero eyebrow={w.pageHero.eyebrow} title={w.pageHero.title} subtitle={w.pageHero.subtitle} imageSrc="/images/whentogo-hero.webp" />
+      <PageHero eyebrow={w.pageHero.eyebrow} title={w.pageHero.title} subtitle={w.pageHero.subtitle} imageSrc="/images/whentogo-hero-tykky.webp" />
 
       {/* Kuukaudet hyppylinkkeinä: kevyt rivi, ei korttiruudukkoa. */}
       <nav aria-label={w.pageHero.eyebrow} className="px-5 sm:px-6 pt-10 sm:pt-12">

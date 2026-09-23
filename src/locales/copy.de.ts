@@ -147,7 +147,7 @@ export const copyDE: SectionCopy = {
     ],
   },
   home: {
-    metaTitle: 'Unterkünfte in Finnisch-Lappland | StayInLapland',
+    metaTitle: 'Unterkünfte in Finnisch-Lappland',
     metaDescription:
       'Lassen Sie sich in Finnisch-Lappland nieder, Blockhütten zur Wochenmiete, Designhotels in Rovaniemi, ikonische Glasiglus und Wildnishütten im Norden.',
     schemaName: 'StayInLapland, Langzeitaufenthalte und Boutique-Hotels in Finnisch-Lappland',
@@ -266,7 +266,7 @@ export const copyDE: SectionCopy = {
     browseAll: 'Trip.com-Verfügbarkeit ansehen',
   },
   glassIgloos: {
-    metaTitle: 'Glasiglus in Finnisch-Lappland | StayInLapland',
+    metaTitle: 'Glasiglus in Finnisch-Lappland',
     metaDescription:
       'Glasiglu-Resorts in Finnisch-Lappland, die den Namen verdienen, Kakslauttanen, Levin Iglut, Aurora Village, Aurora Pyramids. Nach Himmelssicht bewertet.',
     breadcrumb: 'Glasiglus',
@@ -317,7 +317,7 @@ export const copyDE: SectionCopy = {
     browseAll: 'Trip.com-Verfügbarkeit ansehen',
   },
   wilderness: {
-    metaTitle: 'Wildnishütten in Finnisch-Lappland | StayInLapland',
+    metaTitle: 'Wildnishütten in Finnisch-Lappland',
     metaDescription:
       'Wildnishütten jenseits der letzten Straße, Iso-Syöte Eagle View Suites und Wilderness Hotel Muotka. Polarlichter oberhalb der Baumgrenze, Aurora-Weckdienst.',
     breadcrumb: 'Wildnis',
@@ -365,7 +365,7 @@ export const copyDE: SectionCopy = {
     browseAll: 'Trip.com-Verfügbarkeit ansehen',
   },
   longStays: {
-    metaTitle: 'Langzeitaufenthalte in Finnisch-Lappland | StayInLapland',
+    metaTitle: 'Langzeitaufenthalte in Finnisch-Lappland',
     metaDescription:
       'Fünf Lappland-Objekte für Mieten ab einer Woche: Arctic-TreeHouse-Suiten, Levi-Residenzen, Ounasvaara-Chalets, Pyhä-Blockhütten, Inarisee-Villen.',
     breadcrumb: 'Langzeitaufenthalte',
@@ -415,7 +415,7 @@ export const copyDE: SectionCopy = {
     browseAll: 'Trip.com-Verfügbarkeit ansehen',
   },
   bookingGuide: {
-    metaTitle: 'Lappland-Buchungsleitfaden | StayInLapland',
+    metaTitle: 'Lappland-Buchungsleitfaden',
     metaDescription:
       'Praktischer Lappland-Buchungsleitfaden: wann anreisen für die besten Polarlichter, Anreise, Packliste, echte Kosten, Stornobedingungen, Insider-Tipps.',
     breadcrumb: 'Buchungsleitfaden',
@@ -583,7 +583,7 @@ export const copyDE: SectionCopy = {
     seeLong: 'Langzeitaufenthalte ansehen',
   },
   destinationPage: {
-    metaTitleSuffix: 'Wo übernachten | StayInLapland',
+    metaTitleSuffix: 'Wo übernachten',
     pageHeroEyebrow: 'Lappland-Reiseziel',
     notFoundKicker: 'Seite nicht gefunden',
     notFoundTitle: 'Reiseziel nicht in der Liste.',

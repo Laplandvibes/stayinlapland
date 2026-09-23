@@ -212,7 +212,7 @@ export const copyEN: SectionCopy = {
     },
   },
   hotels: {
-    metaTitle: 'Boutique & Design Hotels in Finnish Lapland | StayInLapland',
+    metaTitle: 'Boutique & Design Hotels in Finnish Lapland',
     metaDescription:
       'Five Lapland hotels worth booking, Arctic TreeHouse, Arctic Light, Levi Spirit, Lapland Hotels Saaga and Star Arctic. Curated for short stays and work trips.',
     breadcrumb: 'Hotels',
@@ -259,7 +259,7 @@ export const copyEN: SectionCopy = {
     browseAll: 'Browse Trip.com inventory',
   },
   glassIgloos: {
-    metaTitle: 'Glass Igloos in Finnish Lapland | StayInLapland',
+    metaTitle: 'Glass Igloos in Finnish Lapland',
     metaDescription:
       'A guide to Finnish Lapland glass igloo resorts that earn the name, Kakslauttanen, Levin Iglut, Aurora Village, Aurora Pyramids. Ranked by sky and access.',
     breadcrumb: 'Glass Igloos',
@@ -309,7 +309,7 @@ export const copyEN: SectionCopy = {
     browseAll: 'Browse Trip.com inventory',
   },
   wilderness: {
-    metaTitle: 'Wilderness Lodges in Finnish Lapland | StayInLapland',
+    metaTitle: 'Wilderness Lodges in Finnish Lapland',
     metaDescription:
       'Wilderness lodges past the last road, Iso-Syöte Eagle View Suites and Wilderness Hotel Muotka. Above-treeline aurora viewing and on-site wake-up service.',
     breadcrumb: 'Wilderness',
@@ -356,7 +356,7 @@ export const copyEN: SectionCopy = {
     browseAll: 'Browse Trip.com inventory',
   },
   longStays: {
-    metaTitle: 'Long Stays in Finnish Lapland | StayInLapland',
+    metaTitle: 'Long Stays in Finnish Lapland',
     metaDescription:
       'Five long-stay Lapland properties for week-plus rentals, Arctic TreeHouse suites, Levi penthouses, Ounasvaara chalets, Pyhä cabins and Lake Inari villas.',
     breadcrumb: 'Long Stays',
@@ -406,7 +406,7 @@ export const copyEN: SectionCopy = {
     browseAll: 'Browse Trip.com inventory',
   },
   bookingGuide: {
-    metaTitle: 'Lapland Booking Guide | StayInLapland',
+    metaTitle: 'Lapland Booking Guide',
     metaDescription:
       'Practical Lapland booking guide, when to come for the best aurora, how to get there, what to pack, what it costs, and cancellation tips.',
     breadcrumb: 'Booking Guide',
@@ -474,7 +474,7 @@ export const copyEN: SectionCopy = {
     browseAll: 'Browse all Lapland accommodation',
   },
   whenToGo: {
-    metaTitle: 'When to Visit Lapland, month-by-month guide | StayInLapland',
+    metaTitle: 'When to Visit Lapland, month-by-month guide',
     metaDescription:
       'Month-by-month guide to visiting Finnish Lapland, when aurora is strongest, when snow stabilises, peak vs shoulder rates, and which weeks locals book.',
     breadcrumb: 'When to Go',
@@ -574,7 +574,7 @@ export const copyEN: SectionCopy = {
     seeLong: 'See long stays',
   },
   destinationPage: {
-    metaTitleSuffix: 'Where to Stay | StayInLapland',
+    metaTitleSuffix: 'Where to Stay',
     pageHeroEyebrow: 'Lapland destination',
     notFoundKicker: 'Page not found',
     notFoundTitle: 'Destination not on the list.',

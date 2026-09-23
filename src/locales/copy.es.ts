@@ -339,7 +339,7 @@ export const copyES: SectionCopy = {
     browseAll: 'Ver todos los alojamientos de Laponia',
   },
   whenToGo: {
-    metaTitle: 'Cuándo ir a Laponia, guía mes a mes | StayInLapland',
+    metaTitle: 'Cuándo ir a Laponia, guía mes a mes',
     metaDescription:
       'Guía mes a mes para visitar la Laponia finlandesa, cuándo son más fuertes las auroras, cuándo se asienta la nieve y qué semanas reservan los locales.',
     breadcrumb: 'Cuándo ir',
@@ -440,7 +440,7 @@ export const copyES: SectionCopy = {
   },
   destinationPage: {
     ...copyEN.destinationPage,
-    metaTitleSuffix: 'Dónde alojarse | StayInLapland',
+    metaTitleSuffix: 'Dónde alojarse',
     pageHeroEyebrow: 'Destino lapón',
     notFoundKicker: 'Página no encontrada',
     notFoundTitle: 'Destino no listado.',
@@ -468,7 +468,7 @@ export const copyES: SectionCopy = {
     },
   },
   glassIgloos: {
-    metaTitle: 'Iglús de cristal en la Laponia finlandesa | StayInLapland',
+    metaTitle: 'Iglús de cristal en la Laponia finlandesa',
     metaDescription:
       'Resorts de iglús de cristal en Laponia que merecen el nombre, Kakslauttanen, Levin Iglut, Aurora Village y Aurora Pyramids. Clasificados por cielo y acceso.',
     breadcrumb: 'Iglús de cristal',
@@ -518,7 +518,7 @@ export const copyES: SectionCopy = {
     browseAll: 'Buscar en Trip.com',
   },
   wilderness: {
-    metaTitle: 'Refugios silvestres en la Laponia finlandesa | StayInLapland',
+    metaTitle: 'Refugios silvestres en la Laponia finlandesa',
     metaDescription:
       'Refugios silvestres tras la última carretera, Iso-Syöte Eagle View y Wilderness Hotel Muotka. Auroras sobre el límite de los árboles y despertador aurora.',
     breadcrumb: 'Naturaleza',
@@ -565,7 +565,7 @@ export const copyES: SectionCopy = {
     browseAll: 'Buscar en Trip.com',
   },
   longStays: {
-    metaTitle: 'Larga estancia en la Laponia finlandesa | StayInLapland',
+    metaTitle: 'Larga estancia en la Laponia finlandesa',
     metaDescription:
       'Cinco alojamientos de larga estancia en Laponia para una semana o más, Arctic TreeHouse, penthouses de Levi, Ounasvaara, cabañas de Pyhä y villas de Inari.',
     breadcrumb: 'Larga estancia',

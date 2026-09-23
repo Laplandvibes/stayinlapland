@@ -205,7 +205,7 @@ export const copySV: SectionCopy = {
     },
   },
   hotels: {
-    metaTitle: 'Boutique- och designhotell i finska Lappland | StayInLapland',
+    metaTitle: 'Boutique- och designhotell i finska Lappland',
     metaDescription:
       'Fem Lapplandshotell värda att boka, Arctic TreeHouse, Arctic Light, Levi Spirit, Lapland Hotels Saaga och Star Arctic. För korta vistelser.',
     breadcrumb: 'Hotell',
@@ -253,7 +253,7 @@ export const copySV: SectionCopy = {
     browseAll: 'Se utbudet på Trip.com',
   },
   glassIgloos: {
-    metaTitle: 'Glasigloor i finska Lappland | StayInLapland',
+    metaTitle: 'Glasigloor i finska Lappland',
     metaDescription:
       'Glasiglooresorter i finska Lappland som lever upp till namnet, Kakslauttanen, Levin Iglut, Aurora Village och Aurora Pyramids. Rangordnade efter himmel.',
     breadcrumb: 'Glasigloor',
@@ -304,7 +304,7 @@ export const copySV: SectionCopy = {
     browseAll: 'Se utbudet på Trip.com',
   },
   wilderness: {
-    metaTitle: 'Vildmarkslodger i finska Lappland | StayInLapland',
+    metaTitle: 'Vildmarkslodger i finska Lappland',
     metaDescription:
       'Vildmarkslodger bortom sista vägen, Iso-Syöte Eagle View Suites och Wilderness Hotel Muotka. Norrsken ovanför trädgränsen och norrskensväckning.',
     breadcrumb: 'Vildmark',
@@ -352,7 +352,7 @@ export const copySV: SectionCopy = {
     browseAll: 'Se utbudet på Trip.com',
   },
   longStays: {
-    metaTitle: 'Långtidsvistelser i finska Lappland | StayInLapland',
+    metaTitle: 'Långtidsvistelser i finska Lappland',
     metaDescription:
       'Fem långtidsboenden i Lappland för en vecka eller längre, Arctic TreeHouse, Levi-penthouse, Ounasvaara-stugor, Pyhä-stugor och Inari-villor.',
     breadcrumb: 'Långtidsvistelser',
@@ -570,7 +570,7 @@ export const copySV: SectionCopy = {
     seeLong: 'Se långtidsvistelser',
   },
   destinationPage: {
-    metaTitleSuffix: 'Var du bor | StayInLapland',
+    metaTitleSuffix: 'Var du bor',
     pageHeroEyebrow: 'Lapplandsdestination',
     notFoundKicker: 'Sidan hittades inte',
     notFoundTitle: 'Destinationen finns inte med i listan.',

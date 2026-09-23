@@ -239,7 +239,7 @@ export const copyIT: SectionCopy = {
   },
   glassIgloos: {
     ...copyEN.glassIgloos,
-    metaTitle: 'Igloo di vetro nella Lapponia finlandese | StayInLapland',
+    metaTitle: 'Igloo di vetro nella Lapponia finlandese',
     metaDescription:
       'I resort di igloo di vetro in Lapponia che meritano il nome, Kakslauttanen, Levin Iglut, Aurora Village e Aurora Pyramids. Classificati per cielo e accesso.',
     breadcrumb: 'Igloo di vetro',
@@ -292,7 +292,7 @@ export const copyIT: SectionCopy = {
   },
   wilderness: {
     ...copyEN.wilderness,
-    metaTitle: 'Lodge nella natura in Lapponia | StayInLapland',
+    metaTitle: 'Lodge nella natura in Lapponia',
     metaDescription:
       'Lodge nella natura oltre l’ultima strada, Iso-Syöte Eagle View Suites e Wilderness Hotel Muotka. Aurora sopra la linea degli alberi e sveglia aurora in loco.',
     breadcrumb: 'Natura selvaggia',
@@ -342,7 +342,7 @@ export const copyIT: SectionCopy = {
   },
   longStays: {
     ...copyEN.longStays,
-    metaTitle: 'Soggiorni lunghi nella Lapponia finlandese | StayInLapland',
+    metaTitle: 'Soggiorni lunghi nella Lapponia finlandese',
     metaDescription:
       'Cinque strutture in Lapponia per soggiorni di una settimana o più, suite Arctic TreeHouse, attici a Levi, chalet di Ounasvaara, baite a Pyhä e ville a Inari.',
     breadcrumb: 'Soggiorni lunghi',
@@ -564,7 +564,7 @@ export const copyIT: SectionCopy = {
     ],
   },
   destinationPage: {
-    metaTitleSuffix: 'Dove alloggiare | StayInLapland',
+    metaTitleSuffix: 'Dove alloggiare',
     pageHeroEyebrow: 'Destinazione in Lapponia',
     notFoundKicker: 'Pagina non trovata',
     notFoundTitle: 'Destinazione non in elenco.',

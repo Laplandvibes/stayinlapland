@@ -212,7 +212,7 @@ export const copyJA: SectionCopy = {
     },
   },
   hotels: {
-    metaTitle: 'フィンランド・ラップランドのブティック&デザインホテル | StayInLapland',
+    metaTitle: 'フィンランド・ラップランドのブティック&デザインホテル',
     metaDescription:
       '予約する価値のあるラップランドのホテル5軒——Arctic TreeHouseのデザインスイート、Arctic Lightのブティック歴史建築、Levi Spiritのヴィラホテル、Lapland Hotels Saaga、Star Arctic Hotel。短期滞在、出張、長期滞在の合間の街時間に厳選しました。',
     breadcrumb: 'ホテル',
@@ -259,7 +259,7 @@ export const copyJA: SectionCopy = {
     browseAll: 'Trip.com の在庫を見る',
   },
   glassIgloos: {
-    metaTitle: 'フィンランド・ラップランドのグラスイグルー, 4リゾートをランキング | StayInLapland',
+    metaTitle: 'フィンランド・ラップランドのグラスイグルー, 4リゾートをランキング',
     metaDescription:
       'その名に値するフィンランド・ラップランドのグラスイグルーリゾート厳選ガイド——カクスラウッタネン、Levin Iglut、Aurora Village、Aurora Pyramids。空の視認性、暗空のロケーション、快適性、アクセスでランク付け。',
     breadcrumb: 'グラスイグルー',
@@ -309,7 +309,7 @@ export const copyJA: SectionCopy = {
     browseAll: 'Trip.com の在庫を見る',
   },
   wilderness: {
-    metaTitle: 'フィンランド・ラップランドのウィルダネスロッジ——本気のリトリート | StayInLapland',
+    metaTitle: 'フィンランド・ラップランドのウィルダネスロッジ——本気のリトリート',
     metaDescription:
       '最終道路の先のウィルダネスロッジ——Iso-Syöte Eagle View SuitesとWilderness Hotel Muotka。森林限界上のオーロラ観測と、オーロラの目覚ましサービス。',
     breadcrumb: 'ウィルダネスロッジ',
@@ -356,7 +356,7 @@ export const copyJA: SectionCopy = {
     browseAll: 'Trip.com の在庫を見る',
   },
   longStays: {
-    metaTitle: 'フィンランド・ラップランドの長期滞在，1週間以上のレンタル | StayInLapland',
+    metaTitle: 'フィンランド・ラップランドの長期滞在，1週間以上のレンタル',
     metaDescription:
       '1週間以上のレンタルにふさわしいラップランドの長期滞在物件5軒——Arctic TreeHouseのデザインスイート、Leviのペントハウスレジデンス、Ounasvaaraのシャレー、Pyhäのログコテージ、イナリ湖のヴィラ。週料金、専用サウナ、キッチネット完備。',
     breadcrumb: '長期滞在',
@@ -406,7 +406,7 @@ export const copyJA: SectionCopy = {
     browseAll: 'Trip.com の在庫を見る',
   },
   bookingGuide: {
-    metaTitle: 'ラップランド予約ガイド——いつ、どのように、何を持参するか | StayInLapland',
+    metaTitle: 'ラップランド予約ガイド——いつ、どのように、何を持参するか',
     metaDescription:
       '実用的なラップランドの予約ガイド——オーロラを楽しむ最適な時期、行き方、持ち物、実際の費用、キャンセルポリシー、インサイダーの情報まで。',
     breadcrumb: '予約ガイド',
@@ -474,7 +474,7 @@ export const copyJA: SectionCopy = {
     browseAll: 'ラップランドの全宿泊先を見る',
   },
   whenToGo: {
-    metaTitle: 'ラップランド訪問時期——月別ガイド | StayInLapland',
+    metaTitle: 'ラップランド訪問時期——月別ガイド',
     metaDescription:
       'フィンランド・ラップランドを訪れる月別の編集ガイド——オーロラが最も強い時期、雪が安定する時期、ピークとショルダーの料金、そして地元の方々が自分のために予約する週まで。',
     breadcrumb: 'おすすめの時期',
@@ -574,7 +574,7 @@ export const copyJA: SectionCopy = {
     seeLong: '長期滞在を見る',
   },
   destinationPage: {
-    metaTitleSuffix: '泊まる場所 | StayInLapland',
+    metaTitleSuffix: '泊まる場所',
     pageHeroEyebrow: 'ラップランドの目的地',
     notFoundKicker: 'ページが見つかりません',
     notFoundTitle: 'リストにない目的地です。',

@@ -153,7 +153,7 @@ export const copyPTBR: SectionCopy = {
   },
   home: {
     ...copyEN.home,
-    metaTitle: 'Onde ficar na Lapônia finlandesa | StayInLapland',
+    metaTitle: 'Onde ficar na Lapônia finlandesa',
     metaDescription:
       'Acomode-se na Lapônia finlandesa, cabanas por semana, hotéis de design em Rovaniemi, iglus de vidro icônicos e lodges silvestres depois da última estrada.',
     schemaName: 'StayInLapland, Estadias longas e hotéis boutique na Lapônia finlandesa',
@@ -271,7 +271,7 @@ export const copyPTBR: SectionCopy = {
     browseAll: 'Ver toda a oferta da Trip.com',
   },
   longStays: {
-    metaTitle: 'Estadias longas na Lapônia finlandesa | StayInLapland',
+    metaTitle: 'Estadias longas na Lapônia finlandesa',
     metaDescription:
       'Cinco propriedades de estadia longa na Lapônia para uma semana ou mais, Arctic TreeHouse, penthouses Levi, chalés Ounasvaara, cabanas Pyhä e villas de Inari.',
     breadcrumb: 'Estadias longas',
@@ -321,7 +321,7 @@ export const copyPTBR: SectionCopy = {
     browseAll: 'Ver toda a oferta da Trip.com',
   },
   glassIgloos: {
-    metaTitle: 'Iglus de vidro na Lapônia finlandesa | StayInLapland',
+    metaTitle: 'Iglus de vidro na Lapônia finlandesa',
     metaDescription:
       'Os resorts de iglu de vidro da Lapônia finlandesa à altura do nome, Kakslauttanen, Levin Iglut, Aurora Village e Aurora Pyramids. Ranqueados por céu e acesso.',
     breadcrumb: 'Iglus de vidro',
@@ -372,7 +372,7 @@ export const copyPTBR: SectionCopy = {
     browseAll: 'Ver toda a oferta da Trip.com',
   },
   wilderness: {
-    metaTitle: 'Lodges na natureza da Lapônia | StayInLapland',
+    metaTitle: 'Lodges na natureza da Lapônia',
     metaDescription:
       'Lodges na natureza depois da última estrada, suítes Iso-Syöte Eagle View e Wilderness Hotel Muotka. Aurora acima das árvores e serviço de despertar-aurora.',
     breadcrumb: 'Natureza',
@@ -488,7 +488,7 @@ export const copyPTBR: SectionCopy = {
     browseAll: 'Ver todas as hospedagens da Lapônia',
   },
   whenToGo: {
-    metaTitle: 'Quando visitar a Lapônia, guia mês a mês | StayInLapland',
+    metaTitle: 'Quando visitar a Lapônia, guia mês a mês',
     metaDescription:
       'Guia mês a mês para visitar a Lapônia finlandesa, quando a aurora é mais forte, quando a neve firma e quais semanas os locais reservam para si.',
     breadcrumb: 'Quando ir',
@@ -588,7 +588,7 @@ export const copyPTBR: SectionCopy = {
     seeLong: 'Ver estadias longas',
   },
   destinationPage: {
-    metaTitleSuffix: 'Onde ficar | StayInLapland',
+    metaTitleSuffix: 'Onde ficar',
     pageHeroEyebrow: 'Destino na Lapônia',
     notFoundKicker: 'Página não encontrada',
     notFoundTitle: 'Destino fora da lista.',

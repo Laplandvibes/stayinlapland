@@ -202,7 +202,7 @@ export const copyNL: SectionCopy = {
     },
   },
   hotels: {
-    metaTitle: 'Boutique- en designhotels in Fins Lapland | StayInLapland',
+    metaTitle: 'Boutique- en designhotels in Fins Lapland',
     metaDescription:
       'Vijf Lapland-hotels die de boeking waard zijn, Arctic TreeHouse, Arctic Light, Levi Spirit, Lapland Hotels Saaga en Star Arctic. Voor korte verblijven.',
     breadcrumb: 'Hotels',
@@ -250,7 +250,7 @@ export const copyNL: SectionCopy = {
     browseAll: 'Bekijk Trip.com-aanbod',
   },
   glassIgloos: {
-    metaTitle: 'Glasiglo’s in Fins Lapland | StayInLapland',
+    metaTitle: 'Glasiglo’s in Fins Lapland',
     metaDescription:
       'Glasiglo-resorts in Fins Lapland die hun naam waarmaken, Kakslauttanen, Levin Iglut, Aurora Village en Aurora Pyramids. Gerangschikt op hemelzicht.',
     breadcrumb: 'Glasiglo’s',
@@ -301,7 +301,7 @@ export const copyNL: SectionCopy = {
     browseAll: 'Bekijk Trip.com-aanbod',
   },
   wilderness: {
-    metaTitle: 'Wildernislodges in Fins Lapland | StayInLapland',
+    metaTitle: 'Wildernislodges in Fins Lapland',
     metaDescription:
       'Wildernislodges voorbij de laatste weg, Iso-Syöte Eagle View Suites en Wilderness Hotel Muotka. Noorderlicht boven de boomgrens en noorderlicht-wekservice.',
     breadcrumb: 'Wildernis',
@@ -349,7 +349,7 @@ export const copyNL: SectionCopy = {
     browseAll: 'Bekijk Trip.com-aanbod',
   },
   longStays: {
-    metaTitle: 'Lange verblijven in Fins Lapland | StayInLapland',
+    metaTitle: 'Lange verblijven in Fins Lapland',
     metaDescription:
       'Vijf lange-verblijfsaccommodaties in Lapland voor een week of langer, Arctic TreeHouse, Levi penthouses, Ounasvaara-chalets, Pyhä-hutten en Inari-villa’s.',
     breadcrumb: 'Lange verblijven',
@@ -567,7 +567,7 @@ export const copyNL: SectionCopy = {
     seeLong: 'Bekijk lange verblijven',
   },
   destinationPage: {
-    metaTitleSuffix: 'Waar te verblijven | StayInLapland',
+    metaTitleSuffix: 'Waar te verblijven',
     pageHeroEyebrow: 'Lapland-bestemming',
     notFoundKicker: 'Pagina niet gevonden',
     notFoundTitle: 'Bestemming niet in de lijst.',

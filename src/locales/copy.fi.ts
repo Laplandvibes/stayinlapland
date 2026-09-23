@@ -217,7 +217,7 @@ export const copyFI: SectionCopy = {
     },
   },
   hotels: {
-    metaTitle: 'Boutique- ja design-hotellit Suomen Lapissa | StayInLapland',
+    metaTitle: 'Boutique- ja design-hotellit Suomen Lapissa',
     metaDescription:
       'Viisi käsin valittua Lapin hotellia, Arctic TreeHouse, Arctic Light, Levi Spirit, Lapland Hotels Saaga ja Star Arctic. Lyhyihin jaksoihin ja työreissuihin.',
     breadcrumb: 'Hotellit',
@@ -266,7 +266,7 @@ export const copyFI: SectionCopy = {
     browseAll: 'Selaa Sembon tarjontaa',
   },
   glassIgloos: {
-    metaTitle: 'Lasi-iglut Suomen Lapissa | StayInLapland',
+    metaTitle: 'Lasi-iglut Suomen Lapissa',
     metaDescription:
       'Suomen Lapin lasi-igluresortit, jotka ansaitsevat nimen, Kakslauttanen, Levin Iglut, Aurora Village ja Aurora Pyramids. Järjestys taivaan mukaan.',
     breadcrumb: 'Lasi-iglut',
@@ -317,7 +317,7 @@ export const copyFI: SectionCopy = {
     browseAll: 'Selaa Sembon tarjontaa',
   },
   wilderness: {
-    metaTitle: 'Erämaalodget Suomen Lapissa | StayInLapland',
+    metaTitle: 'Erämaalodget Suomen Lapissa',
     metaDescription:
       'Erämaalodget viimeisen tien jälkeen, Iso-Syöte Eagle View -sviitit ja Wilderness Hotel Muotka. Revontulikatselu puurajan yltä ja revontulien herätyspalvelu.',
     breadcrumb: 'Erämaa',
@@ -365,7 +365,7 @@ export const copyFI: SectionCopy = {
     browseAll: 'Selaa Sembon tarjontaa',
   },
   longStays: {
-    metaTitle: 'Pitkät jaksot Suomen Lapissa | StayInLapland',
+    metaTitle: 'Pitkät jaksot Suomen Lapissa',
     metaDescription:
       'Viisi pitkän jakson Lapin kohdetta viikon+ vuokrauksiin, Arctic TreeHouse, Levin penthouset, Ounasvaaran chaletit, Pyhän hirsimökit ja Inarinjärven huvilat.',
     breadcrumb: 'Pitkät jaksot',
@@ -483,7 +483,7 @@ export const copyFI: SectionCopy = {
     browseAll: 'Selaa kaikkia Lapin majoituksia',
   },
   whenToGo: {
-    metaTitle: 'Milloin Lappiin, kuukausi kerrallaan -opas | StayInLapland',
+    metaTitle: 'Milloin Lappiin, kuukausi kerrallaan -opas',
     metaDescription:
       'Kuukausi kerrallaan -opas Suomen Lapissa vierailuun: milloin revontulet ovat vahvimpia, milloin lumi tasoittuu ja mitkä viikot paikalliset varaavat itselleen.',
     breadcrumb: 'Milloin matkustaa',
@@ -583,7 +583,7 @@ export const copyFI: SectionCopy = {
     seeLong: 'Katso pitkät jaksot',
   },
   destinationPage: {
-    metaTitleSuffix: 'Missä yöpyä | StayInLapland',
+    metaTitleSuffix: 'Missä yöpyä',
     pageHeroEyebrow: 'Lapin kohde',
     notFoundKicker: 'Sivua ei löytynyt',
     notFoundTitle: 'Kohde ei ole listalla.',

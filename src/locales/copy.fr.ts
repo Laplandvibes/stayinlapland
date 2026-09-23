@@ -269,7 +269,7 @@ export const copyFR: SectionCopy = {
     browseAll: 'Parcourir l’offre Trip.com',
   },
   glassIgloos: {
-    metaTitle: 'Igloos de verre en Laponie finlandaise | StayInLapland',
+    metaTitle: 'Igloos de verre en Laponie finlandaise',
     metaDescription:
       'Les igloos de verre de Laponie qui méritent ce nom, Kakslauttanen, Levin Iglut, Aurora Village et Aurora Pyramids. Classés selon le ciel et l’accès.',
     breadcrumb: 'Igloos de verre',
@@ -319,7 +319,7 @@ export const copyFR: SectionCopy = {
     browseAll: 'Parcourir l’offre Trip.com',
   },
   wilderness: {
-    metaTitle: 'Lodges en pleine nature en Laponie finlandaise | StayInLapland',
+    metaTitle: 'Lodges en pleine nature en Laponie finlandaise',
     metaDescription:
       'Des lodges au-delà de la dernière route, suites Iso-Syöte Eagle View et Wilderness Hotel Muotka. Aurore au-dessus des arbres et réveil aurore sur place.',
     breadcrumb: 'Pleine nature',
@@ -366,7 +366,7 @@ export const copyFR: SectionCopy = {
     browseAll: 'Parcourir l’offre Trip.com',
   },
   longStays: {
-    metaTitle: 'Séjours longue durée en Laponie finlandaise | StayInLapland',
+    metaTitle: 'Séjours longue durée en Laponie finlandaise',
     metaDescription:
       'Cinq adresses longue durée en Laponie pour une semaine ou plus, Arctic TreeHouse, penthouses de Levi, chalets d’Ounasvaara, chalets de Pyhä et villas d’Inari.',
     breadcrumb: 'Séjours longue durée',
@@ -584,7 +584,7 @@ export const copyFR: SectionCopy = {
     seeLong: 'Voir les séjours longue durée',
   },
   destinationPage: {
-    metaTitleSuffix: 'Où loger | StayInLapland',
+    metaTitleSuffix: 'Où loger',
     pageHeroEyebrow: 'Destination Laponie',
     notFoundKicker: 'Page introuvable',
     notFoundTitle: 'Destination absente de la liste.',

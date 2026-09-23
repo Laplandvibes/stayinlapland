@@ -3,62 +3,62 @@ import { useLang, type Lang, useLocalPageUrl } from '../i18n/useLang';
 
 const META: Record<Lang, { title: string; description: string }> = {
   en: {
-    title: 'Privacy Policy | StayInLapland',
+    title: 'Privacy Policy',
     description:
       'StayInLapland privacy policy: how we handle anonymous analytics, newsletter subscriptions, your GDPR rights, and our data controller (LaPeso Oy, Finland).',
   },
   fi: {
-    title: 'Tietosuojaseloste | StayInLapland',
+    title: 'Tietosuojaseloste',
     description:
       'StayInLaplandin tietosuojaseloste: anonyymi analytiikka, uutiskirjetilaukset, GDPR-oikeutesi ja rekisterinpitäjä (LaPeso Oy, Suomi).',
   },
   de: {
-    title: 'Datenschutzerklärung | StayInLapland',
+    title: 'Datenschutzerklärung',
     description:
       'Datenschutzerklärung von StayInLapland: anonyme Analytics, Newsletter-Abos, Ihre DSGVO-Rechte und der Verantwortliche (LaPeso Oy, Finnland).',
   },
   ja: {
-    title: 'プライバシーポリシー | StayInLapland',
+    title: 'プライバシーポリシー',
     description:
       'StayInLaplandのプライバシーポリシー：匿名アナリティクス、ニュースレター購読、GDPR上の権利、データ管理者（フィンランドのLaPeso Oy）について。',
   },
   es: {
-    title: 'Política de privacidad | StayInLapland',
+    title: 'Política de privacidad',
     description:
       'Política de privacidad de StayInLapland: analítica anónima, suscripciones al boletín, sus derechos RGPD y el responsable del tratamiento (LaPeso Oy, Finlandia).',
   },
   'pt-BR': {
-    title: 'Política de privacidade | StayInLapland',
+    title: 'Política de privacidade',
     description:
       'Política de privacidade do StayInLapland: analytics anônimo, assinaturas da newsletter, seus direitos GDPR e o controlador de dados (LaPeso Oy, Finlândia).',
   },
   'zh-CN': {
-    title: '隐私政策 | StayInLapland',
+    title: '隐私政策',
     description:
       'StayInLapland 隐私政策：匿名分析、新闻通讯订阅、您的 GDPR 权利及数据控制者（芬兰 LaPeso Oy）。',
   },
   ko: {
-    title: '개인정보 처리방침 | StayInLapland',
+    title: '개인정보 처리방침',
     description:
       'StayInLapland 개인정보 처리방침: 익명 분석, 뉴스레터 구독, GDPR 권리 및 데이터 관리자(핀란드 LaPeso Oy).',
   },
   fr: {
-    title: 'Politique de confidentialité | StayInLapland',
+    title: 'Politique de confidentialité',
     description:
       'Politique de confidentialité de StayInLapland: analytics anonymes, abonnements à la newsletter, vos droits RGPD et le responsable du traitement (LaPeso Oy, Finlande).',
   },
   it: {
-    title: 'Informativa sulla privacy | StayInLapland',
+    title: 'Informativa sulla privacy',
     description:
       'Informativa sulla privacy di StayInLapland: analytics anonimi, iscrizioni alla newsletter, i Suoi diritti GDPR e il titolare del trattamento (LaPeso Oy, Finlandia).',
   },
   nl: {
-    title: 'Privacybeleid | StayInLapland',
+    title: 'Privacybeleid',
     description:
       'Privacybeleid van StayInLapland: anonieme analytics, nieuwsbriefinschrijvingen, uw AVG-rechten en de verwerkingsverantwoordelijke (LaPeso Oy, Finland).',
   },
   sv: {
-    title: 'Integritetspolicy | StayInLapland',
+    title: 'Integritetspolicy',
     description:
       'StayInLaplands integritetspolicy: anonym analys, nyhetsbrevsprenumerationer, dina rättigheter enligt GDPR och personuppgiftsansvarig (LaPeso Oy, Finland).',
   },

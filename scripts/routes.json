@@ -2,7 +2,7 @@
   {
     "path": "/",
     "copyKey": "home",
-    "fallbackTitle": "Where to Stay in Finnish Lapland | StayInLapland",
+    "fallbackTitle": "Where to Stay in Finnish Lapland",
     "fallbackDescription": "Where to stay in Finnish Lapland: glass igloos under the aurora, design hotels, wilderness lodges and long-stay apartments in Rovaniemi, Levi and Inari.",
     "harvestFiles": [
       "src/housing/home.ts"
@@ -107,42 +107,42 @@
   {
     "path": "/long-stays",
     "copyKey": "longStays",
-    "fallbackTitle": "Long Stays & Apartments in Lapland | StayInLapland",
+    "fallbackTitle": "Long Stays & Apartments in Lapland",
     "fallbackDescription": "Weekly and monthly stays in Finnish Lapland: serviced apartments, cabins and villas built for slow travel and remote work in Rovaniemi, Levi and Ylläs."
   },
   {
     "path": "/hotels",
     "copyKey": "hotels",
-    "fallbackTitle": "Hotels in Finnish Lapland | StayInLapland",
+    "fallbackTitle": "Hotels in Finnish Lapland",
     "fallbackDescription": "Hotels across Finnish Lapland: design hotels in Rovaniemi, ski-in stays in Levi and Ylläs, and arctic resorts near Saariselkä and Inari."
   },
   {
     "path": "/glass-igloos",
     "copyKey": "glassIgloos",
-    "fallbackTitle": "Glass Igloos & Aurora Cabins | StayInLapland",
+    "fallbackTitle": "Glass Igloos & Aurora Cabins",
     "fallbackDescription": "Glass igloos and aurora cabins in Finnish Lapland. Sleep under the northern lights in heated glass-roof rooms near Saariselkä, Levi and Kakslauttanen."
   },
   {
     "path": "/wilderness",
     "copyKey": "wilderness",
-    "fallbackTitle": "Wilderness Lodges in Lapland | StayInLapland",
+    "fallbackTitle": "Wilderness Lodges in Lapland",
     "fallbackDescription": "Wilderness lodges and remote cabins in Finnish Lapland: off-grid stays by frozen lakes and national parks around Inari, Muonio and Saariselkä."
   },
   {
     "path": "/when-to-go",
     "copyKey": "whenToGo",
-    "fallbackTitle": "When to Visit Lapland | StayInLapland",
+    "fallbackTitle": "When to Visit Lapland",
     "fallbackDescription": "When to visit Finnish Lapland: month-by-month guide to aurora season, polar night, the midnight sun and the best time to book each type of stay."
   },
   {
     "path": "/booking-guide",
     "copyKey": "bookingGuide",
-    "fallbackTitle": "Lapland Accommodation Booking Guide | StayInLapland",
+    "fallbackTitle": "Lapland Accommodation Booking Guide",
     "fallbackDescription": "How to book accommodation in Finnish Lapland: when to reserve, how far ahead aurora cabins sell out, cancellation terms and what each stay type costs."
   },
   {
     "path": "/privacy",
-    "fallbackTitle": "Privacy Policy | StayInLapland",
+    "fallbackTitle": "Privacy Policy",
     "fallbackDescription": "How StayInLapland collects, uses and protects your data, including cookies, analytics and affiliate links across the site.",
     "harvestFiles": [
       "src/shared/Legal/PrivacyContent.tsx"
@@ -150,7 +150,7 @@
   },
   {
     "path": "/terms",
-    "fallbackTitle": "Terms of Use | StayInLapland",
+    "fallbackTitle": "Terms of Use",
     "fallbackDescription": "The terms governing your use of StayInLapland, including affiliate disclosures, accuracy of accommodation information and limitations of liability.",
     "harvestFiles": [
       "src/shared/Legal/TermsContent.tsx",
@@ -159,7 +159,7 @@
   },
   {
     "path": "/cookie-policy",
-    "fallbackTitle": "Cookie Policy | StayInLapland",
+    "fallbackTitle": "Cookie Policy",
     "fallbackDescription": "How StayInLapland uses cookies and similar technologies for analytics and affiliate tracking, and how you can manage your consent.",
     "harvestFiles": [
       "src/shared/Legal/CookieContent.tsx",
@@ -168,7 +168,7 @@
   },
   {
     "path": "/destinations/rovaniemi",
-    "fallbackTitle": "Where to Stay in Rovaniemi | StayInLapland",
+    "fallbackTitle": "Where to Stay in Rovaniemi",
     "fallbackDescription": "Where to stay in Rovaniemi: design hotels in the city centre, glass igloos on the outskirts and riverside cabins in the official hometown of Santa Claus.",
     "harvestRecord": [
       {
@@ -185,7 +185,7 @@
   },
   {
     "path": "/destinations/levi",
-    "fallbackTitle": "Where to Stay in Levi | StayInLapland",
+    "fallbackTitle": "Where to Stay in Levi",
     "fallbackDescription": "Where to stay in Levi: ski-in ski-out hotels, self-catering cabins and aurora-view chalets at Finland's largest ski resort in Kittilä, Lapland.",
     "harvestRecord": [
       {
@@ -202,7 +202,7 @@
   },
   {
     "path": "/destinations/saariselka",
-    "fallbackTitle": "Where to Stay in Saariselkä | StayInLapland",
+    "fallbackTitle": "Where to Stay in Saariselkä",
     "fallbackDescription": "Where to stay in Saariselkä: glass igloos, fell-side hotels and wilderness cabins next to Urho Kekkonen National Park in northern Finnish Lapland.",
     "harvestRecord": [
       {
@@ -219,7 +219,7 @@
   },
   {
     "path": "/destinations/inari",
-    "fallbackTitle": "Where to Stay in Inari | StayInLapland",
+    "fallbackTitle": "Where to Stay in Inari",
     "fallbackDescription": "Where to stay in Inari: lakeside cabins, Sámi-run lodges and aurora cabins in Finland's far north, on the shores of Lake Inari.",
     "harvestRecord": [
       {
@@ -236,7 +236,7 @@
   },
   {
     "path": "/destinations/yllas",
-    "fallbackTitle": "Where to Stay in Ylläs | StayInLapland",
+    "fallbackTitle": "Where to Stay in Ylläs",
     "fallbackDescription": "Where to stay in Ylläs: ski-in cabins, fell hotels and quiet villages of Äkäslompolo and Ylläsjärvi beside Pallas-Yllästunturi National Park.",
     "harvestRecord": [
       {

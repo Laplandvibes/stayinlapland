@@ -151,7 +151,7 @@ export const copyZHCN: SectionCopy = {
   },
   home: {
     ...copyEN.home,
-    metaTitle: '芬兰拉普兰的长期入住与精品酒店 | StayInLapland',
+    metaTitle: '芬兰拉普兰的长期入住与精品酒店',
     metaDescription:
       '在芬兰拉普兰住下来，按周入住的木屋、罗瓦涅米与萨利色尔卡的设计酒店、标志性的玻璃冰屋，以及最后一条公路尽头的荒野别墅。',
     schemaName: 'StayInLapland，芬兰拉普兰的长期入住与精品酒店',
@@ -584,7 +584,7 @@ export const copyZHCN: SectionCopy = {
     seeLong: '查看长期入住',
   },
   destinationPage: {
-    metaTitleSuffix: '住在哪里 | StayInLapland',
+    metaTitleSuffix: '住在哪里',
     pageHeroEyebrow: '拉普兰目的地',
     notFoundKicker: '页面未找到',
     notFoundTitle: '该目的地不在列表中。',

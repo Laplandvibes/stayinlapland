@@ -589,7 +589,7 @@ export const copyKO: SectionCopy = {
     seeLong: '장기 숙박 보기',
   },
   destinationPage: {
-    metaTitleSuffix: '머무를 곳 | StayInLapland',
+    metaTitleSuffix: '머무를 곳',
     pageHeroEyebrow: '라플란드 여행지',
     notFoundKicker: '페이지를 찾을 수 없습니다',
     notFoundTitle: '목록에 없는 여행지입니다.',

@@ -111,7 +111,9 @@ function buildPillarLinks(lang: Lang) {
     { name: HOUSING_NAV.cost[lang], href: HOUSING_ROUTES.cost },
     { name: nav.longStays, href: '/long-stays' },
     // Vaihe 2 (18.9.2026): hotellit ja iglut ovat laplandstays.comissa.
-    { name: HOUSING_NAV.staysSite[lang], href: staysHome(lang) },
+    // 🔴 Lyhyt nimi: alatunnisteen napit ovat puhelimessa kahdessa sarakkeessa ja white-space: nowrap, joten
+    // "Hotellit ja mökit (LaplandStays)" valui viereisen napin päälle 375 px:ssä (portti tekstipaallekkain 23.9.2026).
+    { name: HOUSING_NAV.stays[lang], href: staysHome(lang) },
     { name: nav.whenToGo, href: '/when-to-go' },
   ];
 }

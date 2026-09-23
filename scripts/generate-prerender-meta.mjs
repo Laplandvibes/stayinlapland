@@ -266,7 +266,7 @@ const SECTION_ROUTES = {
   '/hotels': 'hotels',
   '/glass-igloos': 'glassIgloos',
   '/wilderness': 'wilderness',
-  '/when-to-go': 'whenToGo',
+  // '/when-to-go' siirretty HOUSING_META_FILESiin 23.9.2026 (fi/en natiivi, src/housing/whentogo.ts).
   '/booking-guide': 'bookingGuide',
 };
 
@@ -330,6 +330,7 @@ const HOUSING_META_FILES = {
   '/cost-of-living': 'src/housing/cost.ts',
   // 23.9.2026: pitkät jaksot lomasivusta asumissivuksi (fi/en natiivi, muut kanonisoituvat englantiin).
   '/long-stays': 'src/housing/longstays.ts',
+  '/when-to-go': 'src/housing/whentogo.ts',
 };
 for (const [path, rel] of Object.entries(HOUSING_META_FILES)) {
   const fp = resolve(ROOT, rel);

@@ -24,7 +24,11 @@ export const HOUSING_ROUTES = {
 
 export type HousingRouteKey = keyof typeof HOUSING_ROUTES;
 
-export const HOUSING_ROUTE_PATHS: readonly string[] = Object.values(HOUSING_ROUTES);
+/**
+ * Reitit, joiden sisältö on kirjoitettu vain suomeksi ja englanniksi (hreflang = en, fi, x-default).
+ * /when-to-go ei ole asumissivu eikä sisarlinkeissä, mutta sen sisältö on 23.9.2026 alkaen fi/en natiivi.
+ */
+export const HOUSING_ROUTE_PATHS: readonly string[] = [...Object.values(HOUSING_ROUTES), '/when-to-go'];
 
 /**
  * Navin ja murupolun otsikot kaikilla 12 kielellä. Lyhyet nimet kirjoitetaan

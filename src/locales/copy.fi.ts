@@ -6,7 +6,7 @@ export const copyFI: SectionCopy = {
     hotels: 'Hotellit',
     glassIgloos: 'Lasi-iglut',
     wilderness: 'Erämaa',
-    whenToGo: 'Milloin matkustaa',
+    whenToGo: 'Lapin vuosi',
     bookingGuide: 'Varausopas',
     browseStays: 'Selaa majoituksia',
     homeAria: 'StayInLapland, etusivu',

@@ -287,7 +287,7 @@ export const HOME: Record<HousingLang, HousingHomeCopy> = {
         { label: 'Lasi-iglut', href: 'https://laplandstays.com/fi/iglumajoitus/', external: true },
         { label: 'Mökit', href: 'https://laplandstays.com/fi/cabins/', external: true },
         { label: 'Pitkät jaksot', href: '/long-stays' },
-        { label: 'Milloin matkustaa', href: '/when-to-go' },
+        { label: 'Lapin vuosi kuukausittain', href: '/when-to-go' },
       ],
     },
     authorNote: 'Luvut tarkistettu Tilastokeskuksen, Kelan ja kuntien omista lähteistä 17.9.2026. Päivitämme, kun seuraava neljännes julkaistaan.',

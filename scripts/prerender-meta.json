@@ -199,56 +199,6 @@
       "description": "Vildmarkslodger bortom sista vägen, Iso-Syöte Eagle View Suites och Wilderness Hotel Muotka. Norrsken ovanför trädgränsen och norrskensväckning."
     }
   },
-  "/when-to-go": {
-    "en": {
-      "title": "When to Visit Lapland, month-by-month guide",
-      "description": "Month-by-month guide to visiting Finnish Lapland, when aurora is strongest, when snow stabilises, peak vs shoulder rates, and which weeks locals book."
-    },
-    "fi": {
-      "title": "Milloin Lappiin, kuukausi kerrallaan -opas",
-      "description": "Kuukausi kerrallaan -opas Suomen Lapissa vierailuun: milloin revontulet ovat vahvimpia, milloin lumi tasoittuu ja mitkä viikot paikalliset varaavat itselleen."
-    },
-    "de": {
-      "title": "Reisezeit Lappland, Monat-für-Monat-Leitfaden",
-      "description": "Monat-für-Monat-Leitfaden für Finnisch-Lappland, wann die Polarlichter am stärksten sind, wann der Schnee hält und welche Wochen Einheimische selbst buchen."
-    },
-    "ja": {
-      "title": "ラップランド訪問時期——月別ガイド",
-      "description": "フィンランド・ラップランドを訪れる月別の編集ガイド——オーロラが最も強い時期、雪が安定する時期、ピークとショルダーの料金、そして地元の方々が自分のために予約する週まで。"
-    },
-    "es": {
-      "title": "Cuándo ir a Laponia, guía mes a mes",
-      "description": "Guía mes a mes para visitar la Laponia finlandesa, cuándo son más fuertes las auroras, cuándo se asienta la nieve y qué semanas reservan los locales."
-    },
-    "pt-BR": {
-      "title": "Quando visitar a Lapônia, guia mês a mês",
-      "description": "Guia mês a mês para visitar a Lapônia finlandesa, quando a aurora é mais forte, quando a neve firma e quais semanas os locais reservam para si."
-    },
-    "zh-CN": {
-      "title": "StayInLapland，拉普兰旅行时机，逐月指南",
-      "description": "芬兰拉普兰逐月编辑指南，极光何时最强、积雪何时稳定、旺季与过渡季价格，以及当地人留给自己的那几周。"
-    },
-    "ko": {
-      "title": "라플란드 여행 시기, 월별 가이드",
-      "description": "핀란드 라플란드 방문을 위한 월별 에디토리얼 가이드, 오로라가 가장 강한 때, 눈이 안정되는 때, 성수기 대 비수기 요금, 그리고 현지인이 스스로를 위해 잡는 주간들."
-    },
-    "fr": {
-      "title": "Quand visiter la Laponie, guide mois par mois",
-      "description": "Guide mois par mois pour visiter la Laponie, quand l’aurore est la plus forte, quand la neige se stabilise et les semaines que les locaux réservent pour eux."
-    },
-    "it": {
-      "title": "Quando visitare la Lapponia, guida mese per mese",
-      "description": "Guida mese per mese per visitare la Lapponia, quando l’aurora è più forte, quando la neve si stabilizza e le settimane che i locali prenotano per sé."
-    },
-    "nl": {
-      "title": "Wanneer Lapland bezoeken, maand-voor-maand-gids",
-      "description": "Maand-voor-maand-gids voor Fins Lapland, wanneer het noorderlicht het sterkst is, wanneer de sneeuw stabiliseert en welke weken de locals voor zichzelf boeken."
-    },
-    "sv": {
-      "title": "När du ska besöka Lappland, guide månad för månad",
-      "description": "Guide månad för månad för finska Lappland, när norrskenet är som starkast, när snön stabiliseras och vilka veckor lokalborna bokar åt sig själva."
-    }
-  },
   "/booking-guide": {
     "en": {
       "title": "Lapland Booking Guide",
@@ -787,6 +737,16 @@
     "fi": {
       "title": "Kuukaudeksi Lappiin: kalustettu asunto vai mökki",
       "description": "Kuukaudesta talveen Lapissa: kalustettu vuokra-asunto, mökki viikkovuokralla tai työnantajan asunto. Mitä vuokralaki kattaa ja milloin tehdään muuttoilmoitus."
+    }
+  },
+  "/when-to-go": {
+    "en": {
+      "title": "Best Time to Visit Lapland: Month-by-Month Guide",
+      "description": "When to visit Finnish Lapland, month by month: temperatures, daylight, snow, auroras, midnight sun, autumn colours and mosquitoes, with official figures."
+    },
+    "fi": {
+      "title": "Lapin vuosi kuukausittain: kaamos, yötön yö ja ruska",
+      "description": "Lapin vuosi kuukausi kerrallaan: lämpötilat, päivän pituus, lumi, revontulet, yötön yö, ruska ja räkkä Ilmatieteen laitoksen ja Tilastokeskuksen luvuilla."
     }
   }
 }

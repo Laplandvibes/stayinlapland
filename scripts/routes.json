@@ -136,9 +136,15 @@
   },
   {
     "path": "/when-to-go",
-    "copyKey": "whenToGo",
-    "fallbackTitle": "When to Visit Lapland",
-    "fallbackDescription": "When to visit Finnish Lapland: month-by-month guide to aurora season, polar night, the midnight sun and the best time to book each type of stay."
+    "nativeLocales": [
+      "en",
+      "fi"
+    ],
+    "harvestFiles": [
+      "src/housing/whentogo.ts"
+    ],
+    "fallbackTitle": "Best Time to Visit Lapland: Month-by-Month Guide",
+    "fallbackDescription": "When to visit Finnish Lapland, month by month: temperatures, daylight, snow, auroras, midnight sun, autumn colours and mosquitoes, with official figures."
   },
   {
     "path": "/booking-guide",

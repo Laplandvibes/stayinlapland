@@ -1,3 +1,4 @@
+import { Fragment, type ReactNode } from 'react';
 import { Link } from 'react-router-dom';
 import {
   ArrowRight,
@@ -90,6 +91,12 @@ interface HousingPageProps {
   /** Paikkakuntasivut: murupolun välitaso. */
   parent?: { route: string; key: HousingRouteKey };
   workPromo?: 'inline' | 'full' | 'none';
+  /**
+   * Osion perään tuleva lisälohko osion tunnisteen mukaan (esim. mainos sähköosion perään).
+   * Tunnisteet ovat kielikohtaisia (fi `sahko`, en `electricity`), joten lohko osuu vain
+   * sille kielelle, jonka osiota se koskee.
+   */
+  inserts?: Record<string, ReactNode>;
 }
 
 type Tone = 'plain' | 'tint' | 'night';
@@ -356,7 +363,7 @@ function SectionBlock({ s, page, tone, accentKey, photoLabel }: { s: Section; pa
   );
 }
 
-export default function HousingPage({ route, copy, heroImage, current, parent, workPromo = 'inline' }: HousingPageProps) {
+export default function HousingPage({ route, copy, heroImage, current, parent, workPromo = 'inline', inserts }: HousingPageProps) {
   const lang = useLang();
   const hl = housingLang(lang);
   const c = pickHousing(copy, lang);
@@ -459,7 +466,10 @@ export default function HousingPage({ route, copy, heroImage, current, parent, w
       </section>
 
       {c.sections.map((s, i) => (
-        <SectionBlock key={s.id} s={s} page={page} tone={tones[i]} accentKey={ACCENT_ORDER[i % 3]} photoLabel={ui.photo} />
+        <Fragment key={s.id}>
+          <SectionBlock s={s} page={page} tone={tones[i]} accentKey={ACCENT_ORDER[i % 3]} photoLabel={ui.photo} />
+          {inserts?.[s.id]}
+        </Fragment>
       ))}
 
       {c.cta && (

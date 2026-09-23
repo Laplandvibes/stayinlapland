@@ -1,3 +1,4 @@
+import { Fragment } from 'react';
 import PageHero from '../components/PageHero';
 import Newsletter from '../components/Newsletter';
 import AffiliateCTA from '../components/AffiliateCTA';
@@ -6,8 +7,7 @@ import { Calendar, Plane, Snowflake, Wallet, Compass, Lightbulb } from 'lucide-r
 import { pageUrl } from '../lib/meta';
 import { useLang, useLocalPageUrl } from '../i18n/useLang';
 import { getCopy } from '../locales/copy';
-import AdUnit from '../shared/ads/AdUnit';
-import omenaHotelsAd from '../shared/ads/advertisers/omenaHotels';
+import AirportCarAd from '../components/AirportCarAd';
 
 const ICONS = [Calendar, Plane, Snowflake, Wallet, Compass, Lightbulb];
 
@@ -61,10 +61,8 @@ export default function BookingGuide() {
           {b.sections.map((section, idx) => {
             const Icon = ICONS[idx] ?? Calendar;
             return (
-              <div
-                key={section.title}
-                className="bg-white border border-charcoal/8 rounded-2xl p-7 sm:p-9 shadow-sm"
-              >
+              <Fragment key={section.title}>
+              <div className="bg-white border border-charcoal/8 rounded-2xl p-7 sm:p-9 shadow-sm">
                 <div className="flex items-center gap-3 mb-5">
                   <div className="w-11 h-11 rounded-xl bg-vibe-pink/10 border border-vibe-pink/30 flex items-center justify-center">
                     <Icon className="w-5 h-5 text-vibe-pink" />
@@ -81,6 +79,9 @@ export default function BookingGuide() {
                   ))}
                 </div>
               </div>
+              {/* Osio 2 = "Miten päästä perille": kolme kenttää ⇒ automainos kenttävalinnoin (Vesa 23.9.2026). */}
+              {idx === 1 && <AirportCarAd lang={lang} />}
+              </Fragment>
             );
           })}
 
@@ -99,16 +100,6 @@ export default function BookingGuide() {
             </AffiliateCTA>
           </div>
 
-          {/* Omena Hotels ad — city-stopover angle complements Lapland stays
-              (shared/ads; different product than the site's own hotel-partner
-              routing: budget city hotels for the journey, not Lapland stays). */}
-          <AdUnit
-            spec={omenaHotelsAd}
-            sid="booking_guide_stopover"
-            lang={lang}
-            variant="light"
-            className="mt-12"
-          />
         </div>
       </section>
 

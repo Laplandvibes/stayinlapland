@@ -31,7 +31,7 @@ export const MOVING: HousingCopyMap = {
         h2: 'Neljä ilmoitusta, yksi määräaika.',
         bullets: [
           '<strong>Muuttoilmoitus DVV:lle</strong> aikaisintaan kuukautta ennen muuttopäivää ja viimeistään viikon kuluttua muutosta (DVV). Sama ilmoitus menee Postille. Kunnan palvelut (päiväkoti, koulu, terveysasema) seuraavat kotikuntaa, joten ilmoitus kannattaa tehdä heti.',
-          '<strong>Sähkösopimus.</strong> Sähkön kokonaishinta kotitaloudelle, joka kuluttaa 2 500–4 999 kWh vuodessa, oli maaliskuussa 2026 koko maassa keskimäärin 22,9 senttiä kilowattitunnilta ja sähkölämmitteisen talon kokoluokassa (5 000–15 000 kWh) 17,1 senttiä (Tilastokeskus). Lapissa lämmityskausi on pitkä, joten kulutusarvio kannattaa tehdä yläkanttiin.',
+          '<strong>Sähkösopimus.</strong> Sähkön kokonaishinta kotitaloudelle, joka kuluttaa 2 500–4 999 kWh vuodessa, oli maaliskuussa 2026 koko maassa keskimäärin 22,9 senttiä kilowattitunnilta ja yli 15 000 kWh:n luokassa, johon sähkölämmitteinen omakotitalo kuuluu, 14,1 senttiä (Tilastokeskus). Lapissa lämmityskausi on pitkä, joten kulutusarvio kannattaa tehdä yläkanttiin.',
           '<strong>Terveyspalvelut</strong> järjestää Lapin hyvinvointialue. Kiireetön hoito haetaan oman alueen terveysasemalta; katso lähin asema hyvinvointialueen sivuilta ja kirjaudu Omakantaan.',
           '<strong>Netti.</strong> Kysy kuidun saatavuutta taloyhtiöltä tai vuokranantajalta ennen sopimusta. Haja-asutusalueella mobiilireititin on usein ainoa vaihtoehto, ja etätyötä tekevän kannattaa testata yhteys asunnossa ennen allekirjoitusta.',
         ],
@@ -137,7 +137,7 @@ export const MOVING: HousingCopyMap = {
         h2: 'Four notifications, one deadline.',
         bullets: [
           '<strong>Change-of-address notification to DVV</strong>: at the earliest one month before moving day and at the latest one week after the move (DVV). The same notification goes to Posti. Municipal services (daycare, school, health centre) follow your registered home municipality, so file it right away.',
-          '<strong>Electricity contract.</strong> The total price of electricity for a household using 2,500–4,999 kWh a year averaged 22.9 cents per kWh across Finland in March 2026, and 17.1 cents in the electrically heated house class (5,000–15,000 kWh) (Statistics Finland). Lapland’s heating season is long, so estimate your consumption on the high side.',
+          '<strong>Electricity contract.</strong> The total price of electricity for a household using 2,500–4,999 kWh a year averaged 22.9 cents per kWh across Finland in March 2026, and 14.1 cents in the class above 15,000 kWh, where an electrically heated house belongs (Statistics Finland). Lapland’s heating season is long, so estimate your consumption on the high side.',
           '<strong>Health care</strong> is run by the wellbeing services county of Lapland (Lapha). Non-urgent care goes through your local health centre; find the nearest one on the county’s site and register with Omakanta.',
           '<strong>Internet.</strong> Ask the housing company or landlord about fibre before you sign. In sparsely populated areas a mobile router is often the only option, and anyone working remotely should test the connection in the flat first.',
         ],

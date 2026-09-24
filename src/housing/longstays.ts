@@ -81,7 +81,7 @@ export const LONG_STAYS: HousingCopyMap = {
         h2: 'Kolme kuukautta tai enemmän: ilmoita osoite.',
         paras: [
           'Digi- ja väestötietoviraston mukaan muuttoilmoitus tehdään aina, kun asuinosoite muuttuu ja asuminen kestää vähintään kolme kuukautta. Jos palaat alle vuoden kuluttua samaan vakinaiseen osoitteeseen, muutto on tilapäinen, ja vakinainen osoitteesi jää voimaan.',
-          'Ilmoitus tehdään aikaisintaan kuukautta ennen muuttopäivää ja viimeistään viikon kuluttua muutosta. Pysyvässä muutossa loput asiat, kuten talvirenkaat, sähkösopimus ja terveysasema, käydään läpi <a href="/fi/moving-to-lapland">muuttajan tarkistuslistalla</a>.',
+          'Ilmoitus tehdään aikaisintaan kuukautta ennen muuttopäivää ja viimeistään viikon kuluttua muutosta. Pysyvässä muutossa loput asiat, kuten talvirenkaat, sähkösopimus ja terveysasema, käydään läpi <a href="/fi/moving-to-lapland/">muuttajan tarkistuslistalla</a>.',
         ],
       },
     ],
@@ -160,7 +160,7 @@ export const LONG_STAYS: HousingCopyMap = {
         h2: 'Three months or more: notify your address.',
         paras: [
           'According to the Digital and Population Data Services Agency, you notify a move whenever your residential address changes and the stay lasts at least three months. If you return to the same permanent address within a year, the move is temporary and your permanent address stays in force.',
-          'The notification is made at the earliest one month before moving day and at the latest one week after the move. For a permanent move, the rest, such as winter tyres, the electricity contract and your health centre, is on the <a href="/moving-to-lapland">moving checklist</a>.',
+          'The notification is made at the earliest one month before moving day and at the latest one week after the move. For a permanent move, the rest, such as winter tyres, the electricity contract and your health centre, is on the <a href="/moving-to-lapland/">moving checklist</a>.',
         ],
       },
     ],

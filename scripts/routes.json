@@ -141,24 +141,6 @@
     "fallbackDescription": "Staying a month or a winter in Finnish Lapland: a furnished rental flat, a cabin by the week or staff housing. What the tenancy law covers and when to notify your address."
   },
   {
-    "path": "/hotels",
-    "copyKey": "hotels",
-    "fallbackTitle": "Hotels in Finnish Lapland",
-    "fallbackDescription": "Hotels across Finnish Lapland: design hotels in Rovaniemi, ski-in stays in Levi and Ylläs, and arctic resorts near Saariselkä and Inari."
-  },
-  {
-    "path": "/glass-igloos",
-    "copyKey": "glassIgloos",
-    "fallbackTitle": "Glass Igloos & Aurora Cabins",
-    "fallbackDescription": "Glass igloos and aurora cabins in Finnish Lapland. Sleep under the northern lights in heated glass-roof rooms near Saariselkä, Levi and Kakslauttanen."
-  },
-  {
-    "path": "/wilderness",
-    "copyKey": "wilderness",
-    "fallbackTitle": "Wilderness Lodges in Lapland",
-    "fallbackDescription": "Wilderness lodges and remote cabins in Finnish Lapland: off-grid stays by frozen lakes and national parks around Inari, Muonio and Saariselkä."
-  },
-  {
     "path": "/when-to-go",
     "nativeLocales": [
       "en",

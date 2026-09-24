@@ -1,5 +1,5 @@
 import type { Lang } from '../i18n/useLang';
-import type { HousingLang } from './types';
+import type { HomeLang, HousingLang } from './types';
 
 /** Kielet, joilla asumissisältö on kirjoitettu natiivisti. Laajennetaan vasta mitatun kysynnän mukaan (§25). */
 export const HOUSING_LANGS: readonly HousingLang[] = ['en', 'fi'];
@@ -11,6 +11,17 @@ export function isHousingLang(lang: Lang): lang is HousingLang {
 /** Lukijan kieli → sisällön kieli (englanti, kun omaa kieltä ei vielä ole). */
 export function housingLang(lang: Lang): HousingLang {
   return isHousingLang(lang) ? lang : 'en';
+}
+
+/** Kielet, joilla asumisen ETUSIVU on kirjoitettu (alasivuja enemmän, ks. HomeLang). */
+export const HOME_LANGS: readonly HomeLang[] = ['en', 'fi', 'fr', 'nl'];
+
+export function isHomeLang(lang: Lang): lang is HomeLang {
+  return (HOME_LANGS as readonly string[]).includes(lang);
+}
+
+export function homeLang(lang: Lang): HomeLang {
+  return isHomeLang(lang) ? lang : 'en';
 }
 
 export const HOUSING_ROUTES = {
@@ -97,7 +108,7 @@ export const HOUSING_LANG_NOTICE: Record<Lang, string> = {
 };
 
 /** Sivujen yhteiset pienet UI-merkkijonot (vain sisältökielillä). */
-export const HOUSING_UI: Record<HousingLang, {
+export const HOUSING_UI: Record<HomeLang, {
   sources: string;
   /** Avattavan lähderivin otsikko (SourcesDisclosure, 23.9.2026). */
   sourcesSummary: string;
@@ -148,6 +159,40 @@ export const HOUSING_UI: Record<HousingLang, {
     photo: 'Photo',
     photosHeading: 'Photos',
     photosLead: 'Openly licensed photos from Wikimedia Commons. All other photos: LaplandVibes.',
+  },
+  fr: {
+    sources: 'Sources',
+    sourcesSummary: 'Sources et photos',
+    sourcesLead: 'Chaque chiffre de cette page vient de l’une d’elles. Les chiffres calculés montrent leur formule.',
+    updated: 'Vérifié le 17 septembre 2026',
+    readMore: 'En savoir plus',
+    faqKicker: 'Les questions les plus posées',
+    faqH2: 'Avant de vous installer.',
+    siblingsKicker: 'Vivre en Laponie',
+    siblingsH2: 'Les autres pages sur le logement.',
+    photoCredit: 'Photo : LaplandVibes',
+    affiliateNote: 'Lien partenaire : une réservation nous rapporte une commission, le prix reste le même pour vous.',
+    onThisPage: 'Sur cette page',
+    photo: 'Photo',
+    photosHeading: 'Photos',
+    photosLead: 'Photos sous licence libre issues de Wikimedia Commons. Toutes les autres photos : LaplandVibes.',
+  },
+  nl: {
+    sources: 'Bronnen',
+    sourcesSummary: 'Bronnen en foto’s',
+    sourcesLead: 'Elk cijfer op deze pagina komt uit een van deze bronnen. Berekende cijfers laten hun formule zien.',
+    updated: 'Gecontroleerd op 17 september 2026',
+    readMore: 'Lees meer',
+    faqKicker: 'Meest gesteld',
+    faqH2: 'Voordat u verhuist.',
+    siblingsKicker: 'Wonen in Lapland',
+    siblingsH2: 'De andere pagina’s over wonen.',
+    photoCredit: 'Foto: LaplandVibes',
+    affiliateNote: 'Partnerlink: een boeking levert ons commissie op, u betaalt dezelfde prijs.',
+    onThisPage: 'Op deze pagina',
+    photo: 'Foto',
+    photosHeading: 'Foto’s',
+    photosLead: 'Foto’s met een vrije licentie van Wikimedia Commons. Alle andere foto’s: LaplandVibes.',
   },
 };
 

@@ -1,4 +1,4 @@
-import type { HousingLang, Source } from './types';
+import type { HomeLang, HousingLang, Source } from './types';
 
 /**
  * Nimetyt lähteet. Jokainen luku asumissivuilla osoittaa yhteen näistä
@@ -321,6 +321,14 @@ const DEFS = {
 
 export type SourceId = keyof typeof DEFS;
 
-export function pickSources(lang: HousingLang, ids: readonly SourceId[]): Source[] {
-  return ids.map((id) => ({ id, label: DEFS[id][lang], url: DEFS[id].url }));
+/**
+ * Lähdenimet ovat fi + en. Ranskan- ja hollanninkieliselle lukijalle näytetään
+ * ENGLANNINKIELINEN nimi, ei käännöstä: nimi on virallisen julkaisun nimi
+ * (Tilastokeskuksen taulukko 15fa, Kelan ohje, Finlexin laki), ja linkin takana
+ * oleva dokumentti on suomeksi tai englanniksi. Käännetty nimi ei auttaisi
+ * lukijaa löytämään sitä.
+ */
+export function pickSources(lang: HomeLang, ids: readonly SourceId[]): Source[] {
+  const l: HousingLang = lang === 'fi' ? 'fi' : 'en';
+  return ids.map((id) => ({ id, label: DEFS[id][l], url: DEFS[id].url }));
 }

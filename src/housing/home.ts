@@ -1,4 +1,4 @@
-import type { Faq, HousingLang, Source } from './types';
+import type { Faq, HomeLang, Source } from './types';
 import { pickSources } from './sources';
 import type { HousingRouteKey } from './labels';
 
@@ -84,7 +84,7 @@ const IMG = {
 
 export const HOME_HERO_IMAGE = IMG.hero;
 
-export const HOME: Record<HousingLang, HousingHomeCopy> = {
+export const HOME: Record<HomeLang, HousingHomeCopy> = {
   fi: {
     metaTitle: 'Asuminen Lapissa: vuokra-asunnot, kausityö ja muutto',
     metaDescription:
@@ -500,5 +500,442 @@ export const HOME: Record<HousingLang, HousingHomeCopy> = {
     },
     authorNote: 'Figures checked against Statistics Finland, Kela and the municipalities’ own sources on 17 September 2026. Updated when the next quarter is published.',
     sources: pickSources('en', SOURCES),
+  },
+  /**
+   * Ranska (24.9.2026). Mitattu kysyntä ENNEN kirjoittamista (OpenSEO, FR/2250):
+   * vivre en laponie 170/kk · travailler en laponie 70 · s’installer en laponie 10 ·
+   * emploi saisonnier laponie 10. Suomi-tason haut ovat isompia (vivre en finlande 390,
+   * coût de la vie finlande 320), mutta ne eivät ole Lappi-sivuston aihe.
+   * 🔴 "logement laponie" (320, kaupallinen) on majoitushaku = laplandstays.com (§23),
+   * ei tämän sivun kohde.
+   * Teksti on kirjoitettu ranskaksi, ei käännetty. Luvut ovat samat lähteistetyt luvut
+   * kuin fi/en-versiossa. Alasivut ovat yhä englanniksi, ja lukija näkee sen sivun
+   * omasta kielilapusta (HOUSING_LANG_NOTICE).
+   */
+  fr: {
+    metaTitle: 'Vivre en Laponie : logement, travail saisonnier et budget',
+    metaDescription:
+      'Vivre en Laponie finlandaise : trouver un logement de Rovaniemi à Ivalo, le logement des saisonniers, le coût de la vie et l’année au quotidien. Un studio à Rovaniemi coûte environ 560 € par mois.',
+    schemaName: 'StayInLapland : vivre en Laponie finlandaise',
+    hero: {
+      eyebrow: 'Laponie finlandaise · 176 215 habitants',
+      h1a: 'Vivre en Laponie.',
+      h1b: 'De la nuit polaire au soleil de minuit.',
+      lead: 'Où trouver un logement, ce que coûte le quotidien et comment on vit ici toute l’année. Un studio à Rovaniemi coûte environ 560 euros par mois.',
+      ctaPrimary: 'Locations',
+      ctaSecondary: 'Pour les saisonniers',
+    },
+    stats: [
+      { value: '560 €/mois', label: 'studio à Rovaniemi\u00a0: 30 m² × 18,66 €/m²' },
+      { value: '720 €/mois', label: 'deux-pièces à Rovaniemi\u00a0: 50 m² × 14,35 €/m²' },
+      { value: '66 191', label: 'habitants à Rovaniemi au 31 décembre 2025' },
+      { value: '+2,0 %', label: 'croissance de Kittilä en 2025' },
+    ],
+    statsSource: 'Tilastokeskus (office statistique finlandais)\u00a0: loyers au m² du parc privé, avril–juin 2026 (arrondis)\u00a0; population au 31 décembre 2025.',
+    towns: {
+      kicker: 'Les locations commune par commune',
+      h2: 'Où allez-vous vous installer\u00a0?',
+      lead:
+        'La Laponie compte 176 215 habitants (Tilastokeskus, 31 décembre 2025), plus d’un tiers à Rovaniemi. Chaque page donne le niveau des loyers, les bailleurs et où déposer un dossier.',
+      items: [
+        {
+          slug: 'rovaniemi',
+          name: 'Rovaniemi',
+          stats: [
+            { value: '66 191', label: 'habitants' },
+            { value: '≈ 560 €', label: 'loyer d’un studio par mois' },
+          ],
+          body: 'Le plus grand marché locatif de Laponie. Les studios se font rares en août et en septembre, quand les étudiants arrivent en ville.',
+          cta: 'Louer à Rovaniemi',
+          image: IMG.rovaniemi,
+          alt: 'Rovaniemi vu d’Ounasvaara : le fleuve Kemijoki, les ponts de Suutarinkorva et les quartiers d’habitation en juin',
+        },
+        {
+          slug: 'kemi-tornio',
+          name: 'Kemi et Tornio',
+          stats: [
+            { value: '19 339', label: 'habitants à Kemi' },
+            { value: '20 823', label: 'habitants à Tornio' },
+          ],
+          body: 'Commencez par les sociétés de logement des villes elles-mêmes : à Kemi, Itätuuli possède à elle seule plus de 600 appartements.',
+          cta: 'Louer à Kemi et Tornio',
+          image: IMG.kemiTornio,
+          alt: 'L’église de Kemi sous la neige, un soir d’hiver',
+        },
+        {
+          slug: 'kittila-levi',
+          name: 'Kittilä et Levi',
+          stats: [
+            { value: '6 973', label: 'habitants' },
+            { value: '+2,0 %', label: 'croissance en 2025' },
+          ],
+          body: 'La commune qui grandit le plus vite de Laponie. L’hiver, des milliers de saisonniers cherchent les mêmes appartements.',
+          cta: 'Louer à Kittilä et Levi',
+          image: IMG.levi,
+          alt: 'Maisons neuves en construction à Levi, le fjeld Levitunturi derrière',
+        },
+        {
+          slug: 'ivalo-inari',
+          name: 'Ivalo, Inari et Saariselkä',
+          stats: [
+            { value: '7 244', label: 'habitants' },
+            { value: 'plus de 500', label: 'logements communaux' },
+          ],
+          body: 'La société de la commune, Inarin Vuokra-asunnot Oy, loue des appartements à Ivalo, Inari et Saariselkä. Adressez-vous directement à elle.',
+          cta: 'Louer à Ivalo et Inari',
+          image: IMG.inari,
+          alt: 'Maisons au bord du Juutuanjoki en partie gelé, au village d’Inari, en mars',
+        },
+      ],
+      more: 'Kemijärvi, Sodankylä et les autres communes',
+    },
+    paths: {
+      kicker: 'Selon votre situation',
+      h2: 'Par où commencer\u00a0?',
+      lead: 'Vous venez pour une saison, vous vous installez pour de bon, ou vous cherchez un toit pour quelques semaines\u00a0?',
+      cards: [
+        {
+          key: 'seasonal',
+          title: 'Le logement des saisonniers',
+          body: 'Logement de l’employeur, chalet loué à la saison ou appartement communal. Les questions à poser avant de signer.',
+          image: IMG.seasonal,
+          alt: 'Ylläs et les forêts enneigées vues du ciel, au coucher du soleil en hiver',
+        },
+        {
+          key: 'moving',
+          title: 'S’installer en Laponie',
+          body: 'Déclaration d’adresse, pneus hiver, crèche, contrat d’électricité et nuit polaire. La liste du premier mois.',
+          image: IMG.moving,
+          alt: 'Route enneigée à travers une forêt d’épicéas, jalons de déneigement sur le bas-côté',
+        },
+        {
+          key: 'cost',
+          title: 'Le coût de la vie',
+          body: 'Loyer, électricité, carburant et allocation logement en chiffres. Ce qui coûte moins cher ici, et ce qui coûte plus.',
+          image: IMG.cost,
+          alt: 'Pile de bois de chauffage et banc contre une maison en rondins, un jour de neige',
+        },
+        {
+          key: 'longStays',
+          title: 'Séjours longue durée',
+          body: 'D’un mois à tout un hiver : appartement meublé, chalet à la semaine ou logement de l’employeur, et ce que couvre la loi sur les baux.',
+          image: IMG.longStays,
+          alt: 'Chalet rouge au milieu de bouleaux givrés',
+        },
+      ],
+    },
+    work: {
+      kicker: 'Site jumeau · LaplandWork.com',
+      h2a: 'D’abord le travail,',
+      h2b: 'le logement\u00a0suit.',
+      body: 'LaplandWork.com rassemble les offres d’emploi en Laponie : stations de ski, hôtels, prestataires d’activités et santé. En saison, le logement vient souvent avec le poste, alors regardez les offres avant de chercher un appartement.',
+      stripText: 'LaplandWork.com : les offres d’emploi en Laponie, dans les stations, les hôtels et la santé.',
+      cta: 'Voir les offres',
+      image: IMG.work,
+      alt: 'Le loueur de skis et l’école de ski de la station d’Ylläs en été, les canons à neige rangés sous l’auvent',
+      caption: 'Ylläs en juillet 2026 : les canons à neige attendent la saison. Photo : LaplandVibes.',
+    },
+    life: {
+      kicker: 'Le quotidien en Laponie',
+      h2: 'Quatre saisons, quatre Laponies.',
+      lead: 'Ici, la saison n’est pas qu’une affaire de météo. Elle décide comment on se déplace le soir, ce qu’on fait le week-end et à quel moment on cherche un logement.',
+      cards: [
+        {
+          season: 'Novembre–janvier',
+          title: 'La nuit polaire',
+          body: 'À l’extrême nord, le soleil ne se lève pas du tout : à Nuorgam, la nuit polaire dure du 25 novembre au 17 janvier (Institut météorologique finlandais). Le ski ne s’arrête pas pour autant. À Rovaniemi, une cinquantaine de kilomètres de pistes sont éclairées sur l’Ounasvaara, et les soirs clairs, l’aurore boréale se voit depuis la cour.',
+          image: IMG.kaamos,
+          alt: 'Aurore boréale au-dessus d’une route forestière enneigée, la nuit',
+          href: '/moving-to-lapland#light',
+          linkLabel: 'Lumière et obscurité',
+        },
+        {
+          season: 'Mars–avril',
+          title: 'La fin de l’hiver',
+          body: 'La lumière revient vite, mais les lacs sont encore gelés. C’est la saison de la pêche sur glace, du ski sur la neige durcie et de la motoneige sur les pistes balisées. Les pneus cloutés restent autorisés après le mois de mars si les conditions l’exigent (Traficom).',
+          image: IMG.kevat,
+          alt: 'Deux pêcheurs sur la glace au coucher du soleil',
+          href: '/moving-to-lapland#car',
+          linkLabel: 'Voiture et distances',
+        },
+        {
+          season: 'Juin–juillet',
+          title: 'Le soleil de minuit',
+          body: 'À Nuorgam, le soleil ne se couche pas du 16 mai au 29 juillet, et à Rovaniemi, sur le cercle polaire, il reste au-dessus de l’horizon autour de la Saint-Jean (Institut météorologique finlandais). Les soirées se passent dehors, sur le lac et au chalet. Les rideaux occultants sont l’achat de l’été.',
+          image: IMG.kesa,
+          alt: 'Le lac Ounasjärvi et le fjeld Ounastunturi sous le soleil de minuit à Hetta, en juin, une barque au premier plan',
+          href: '/seasonal-worker-housing#summer',
+          linkLabel: 'La saison d’été et le travail',
+        },
+        {
+          season: 'Septembre–octobre',
+          title: 'Les couleurs d’automne',
+          body: 'Les bouleaux des fjelds et les arbrisseaux virent au rouge et à l’or, et les soirées qui raccourcissent ramènent les aurores. L’automne est aussi la saison des déménagements : les nouveaux étudiants arrivent à Rovaniemi en août et en septembre, et c’est là que la concurrence pour les studios est la plus rude (Yle, 27 juillet 2025).',
+          image: IMG.syksy,
+          alt: 'Berge aux couleurs d’automne et petit grenier en bois',
+          href: '/rentals',
+          linkLabel: 'Locations',
+        },
+      ],
+      more: { label: 'Mois par mois : quand venir en Laponie', href: '/when-to-go' },
+    },
+    faq: {
+      kicker: 'Les questions les plus posées',
+      h2: 'Avant de vous installer.',
+      items: [
+        {
+          q: 'Peut-on vivre en Laponie toute l’année sans voiture\u00a0?',
+          a: 'À Rovaniemi, oui : le centre, l’université et les commerces sont accessibles à pied ou en bus. Dans les villages de fjeld et les petites communes, la voiture est en pratique indispensable, car les distances se comptent en dizaines de kilomètres et les bus sont rares.',
+        },
+        {
+          q: 'Combien coûte un logement en location à Rovaniemi\u00a0?',
+          a: 'Selon Tilastokeskus, le loyer moyen du parc privé à Rovaniemi était de 18,66 € par m² pour un studio en avril–juin 2026 et de 14,35 € par m² pour un deux-pièces. Multipliez par la surface : un studio de 30 m² revient à environ 560 € par mois et un deux-pièces de 50 m² à environ 720 €.',
+        },
+        {
+          q: 'L’employeur loge-t-il les saisonniers\u00a0?',
+          a: 'Souvent, mais pas toujours et pas gratuitement. Dans les stations, les employeurs louent des maisons mitoyennes et des chalets pour le personnel, et le loyer est en général retenu sur le salaire. Demandez le détail du logement par écrit dès l’offre d’emploi.',
+        },
+        {
+          q: 'La nuit polaire, c’est sombre à quel point\u00a0?',
+          a: 'D’après l’Institut météorologique finlandais, la nuit polaire dure presque deux mois à Nuorgam (du 25 novembre au 17 janvier) et seulement quatre jours à Sodankylä, juste avant Noël. Rovaniemi n’a pas de vraie nuit polaire, car sa limite passe un peu au nord du cercle polaire (Foreca) : le soleil d’hiver reste bas, mais il fait clair à midi, et la neige démultiplie le peu de lumière qu’il y a.',
+        },
+        {
+          q: 'Qui peut m’aider à venir de l’étranger\u00a0?',
+          a: 'Notre site jumeau laplandwork.com détaille les titres de séjour, le numéro d’identité finlandais, la carte d’impôt et le compte bancaire. Le logement et le quotidien sont sur la page S’installer en Laponie.',
+        },
+      ],
+    },
+    holiday: {
+      kicker: 'Vous venez en vacances\u00a0?',
+      h2: 'Hôtels, chalets et igloos.',
+      lead: 'Les hôtels, les chalets et les igloos de verre sont sur notre site jumeau laplandstays.com. Les séjours à la semaine ou au mois et le calendrier du voyage restent ici.',
+      links: [
+        { label: 'laplandstays.com', href: 'https://laplandstays.com/fr/', external: true },
+        { label: 'Igloos de verre', href: 'https://laplandstays.com/fr/property-types/', external: true },
+        { label: 'Chalets', href: 'https://laplandstays.com/fr/cabins/', external: true },
+        { label: 'Séjours longue durée', href: '/long-stays' },
+        { label: 'Quand venir', href: '/when-to-go' },
+      ],
+    },
+    authorNote: 'Chiffres vérifiés auprès de Tilastokeskus, de Kela et des communes le 17 septembre 2026. Mis à jour à la publication du trimestre suivant.',
+    sources: pickSources('fr', SOURCES),
+  },
+  /**
+   * Hollanti (24.9.2026). Mitattu kysyntä ENNEN kirjoittamista (OpenSEO, NL/2528):
+   * wonen in lapland 110/kk · werken in lapland 40 · leven in lapland 40 ·
+   * emigreren naar lapland 20. Suomi-tason haut ovat isompia (emigreren naar finland 140,
+   * wonen in finland 70), mutta ne eivät ole Lappi-sivuston aihe.
+   * 🔴 "huis huren finland" (90, kaupallinen) on majoitus-/lomavuokraushaku = stays (§23).
+   * Teksti on kirjoitettu hollanniksi, ei käännetty. Luvut ovat samat lähteistetyt luvut
+   * kuin fi/en-versiossa; hollannin lukumuoto (66.191 vs 66 191) ja €-merkin paikka
+   * ovat hollannin omat.
+   */
+  nl: {
+    metaTitle: 'Wonen in Lapland: huren, seizoenswerk en wat het kost',
+    metaDescription:
+      'Wonen in Fins Lapland: een huurwoning van Rovaniemi tot Ivalo, huisvesting voor seizoenswerkers, de kosten van het dagelijks leven en het jaar hierboven. Een studio in Rovaniemi kost ongeveer € 560 per maand.',
+    schemaName: 'StayInLapland: wonen in Fins Lapland',
+    hero: {
+      eyebrow: 'Fins Lapland · 176.215 inwoners',
+      h1a: 'Wonen in Lapland.',
+      h1b: 'Van poolnacht tot middernachtzon.',
+      lead: 'Waar u een huurwoning vindt, wat het dagelijks leven kost en hoe u hier het jaar doorkomt. Een studio in Rovaniemi kost ongeveer 560 euro per maand.',
+      ctaPrimary: 'Huurwoningen',
+      ctaSecondary: 'Voor seizoenswerkers',
+    },
+    stats: [
+      { value: '€ 560 p.m.', label: 'studio in Rovaniemi: 30 m² × € 18,66/m²' },
+      { value: '€ 720 p.m.', label: 'tweekamerwoning in Rovaniemi: 50 m² × € 14,35/m²' },
+      { value: '66.191', label: 'inwoners in Rovaniemi op 31 december 2025' },
+      { value: '+2,0 %', label: 'bevolkingsgroei van Kittilä in 2025' },
+    ],
+    statsSource: 'Tilastokeskus (het Finse statistiekbureau): huren per m² in de vrije sector, april–juni 2026 (afgerond); bevolking op 31 december 2025.',
+    towns: {
+      kicker: 'Huurwoningen per plaats',
+      h2: 'Waar gaat u wonen?',
+      lead:
+        'In Lapland wonen 176.215 mensen (Tilastokeskus, 31 december 2025), ruim een derde daarvan in Rovaniemi. Elke pagina geeft het huurniveau, de verhuurders en waar u zich inschrijft.',
+      items: [
+        {
+          slug: 'rovaniemi',
+          name: 'Rovaniemi',
+          stats: [
+            { value: '66.191', label: 'inwoners' },
+            { value: '± € 560', label: 'huur van een studio per maand' },
+          ],
+          body: 'De grootste huurmarkt van Lapland. Studio’s zijn schaars in augustus en september, als de studenten naar de stad komen.',
+          cta: 'Huren in Rovaniemi',
+          image: IMG.rovaniemi,
+          alt: 'Rovaniemi gezien vanaf Ounasvaara: de rivier Kemijoki, de Suutarinkorva-bruggen en woonwijken in juni',
+        },
+        {
+          slug: 'kemi-tornio',
+          name: 'Kemi en Tornio',
+          stats: [
+            { value: '19.339', label: 'inwoners in Kemi' },
+            { value: '20.823', label: 'inwoners in Tornio' },
+          ],
+          body: 'Begin bij de woningbedrijven van de steden zelf: Itätuuli heeft in Kemi alleen al ruim 600 woningen.',
+          cta: 'Huren in Kemi en Tornio',
+          image: IMG.kemiTornio,
+          alt: 'De kerk van Kemi in de sneeuw op een winteravond',
+        },
+        {
+          slug: 'kittila-levi',
+          name: 'Kittilä en Levi',
+          stats: [
+            { value: '6.973', label: 'inwoners' },
+            { value: '+2,0 %', label: 'bevolkingsgroei 2025' },
+          ],
+          body: 'De snelst groeiende gemeente van Lapland. In de winter zoeken duizenden seizoenswerkers dezelfde woningen.',
+          cta: 'Huren in Kittilä en Levi',
+          image: IMG.levi,
+          alt: 'Nieuwbouwhuizen in aanbouw in Levi, met de Levitunturi erachter',
+        },
+        {
+          slug: 'ivalo-inari',
+          name: 'Ivalo, Inari en Saariselkä',
+          stats: [
+            { value: '7.244', label: 'inwoners' },
+            { value: 'ruim 500', label: 'gemeentelijke huurwoningen' },
+          ],
+          body: 'Het gemeentelijke bedrijf Inarin Vuokra-asunnot Oy verhuurt woningen in Ivalo, Inari en Saariselkä. Meld u rechtstreeks bij dat bedrijf aan.',
+          cta: 'Huren in Ivalo en Inari',
+          image: IMG.inari,
+          alt: 'Huizen aan de deels bevroren rivier Juutuanjoki in het dorp Inari in maart',
+        },
+      ],
+      more: 'Kemijärvi, Sodankylä en de andere gemeenten',
+    },
+    paths: {
+      kicker: 'Naar situatie',
+      h2: 'Waar begint u?',
+      lead: 'Komt u voor één seizoen werken, verhuist u voorgoed, of zoekt u een dak voor een paar weken?',
+      cards: [
+        {
+          key: 'seasonal',
+          title: 'Huisvesting voor seizoenswerkers',
+          body: 'Een woning van de werkgever, een vakantiehuis voor het seizoen of een gemeentewoning. Wat u vraagt voordat u tekent.',
+          image: IMG.seasonal,
+          alt: 'Ylläs en besneeuwde bossen vanuit de lucht bij zonsondergang in de winter',
+        },
+        {
+          key: 'moving',
+          title: 'Verhuizen naar Lapland',
+          body: 'Adreswijziging, winterbanden, kinderopvang, energiecontract en de poolnacht. De checklist voor uw eerste maand.',
+          image: IMG.moving,
+          alt: 'Besneeuwde weg door een sparrenbos, sneeuwstokken langs de berm',
+        },
+        {
+          key: 'cost',
+          title: 'Kosten van levensonderhoud',
+          body: 'Huur, stroom, brandstof en huurtoeslag in cijfers. Wat hier goedkoper is en wat niet.',
+          image: IMG.cost,
+          alt: 'Stapel brandhout en een bank tegen een blokhut op een besneeuwde dag',
+        },
+        {
+          key: 'longStays',
+          title: 'Lange verblijven',
+          body: 'Van een maand tot een hele winter: een gemeubileerde huurwoning, een huisje per week of een woning van de werkgever, en wat de huurwet dekt.',
+          image: IMG.longStays,
+          alt: 'Rood huisje tussen berijpte berken',
+        },
+      ],
+    },
+    work: {
+      kicker: 'Zustersite · LaplandWork.com',
+      h2a: 'Eerst het werk,',
+      h2b: 'dan de\u00a0woning.',
+      body: 'LaplandWork.com verzamelt de vacatures in Lapland: skigebieden, hotels, activiteitenbedrijven en de zorg. Bij seizoenswerk hoort vaak een woning, kijk dus eerst naar de vacatures en pas daarna naar huurwoningen.',
+      stripText: 'LaplandWork.com: vacatures in Lapland, in de skigebieden, de hotels en de zorg.',
+      cta: 'Bekijk de vacatures',
+      image: IMG.work,
+      alt: 'De skiverhuur en skischool van skigebied Ylläs in de zomer, sneeuwkanonnen opgeslagen onder het afdak',
+      caption: 'Ylläs in juli 2026: de sneeuwkanonnen wachten op het seizoen. Foto: LaplandVibes.',
+    },
+    life: {
+      kicker: 'Het dagelijks leven in Lapland',
+      h2: 'Vier seizoenen, vier verschillende Laplanden.',
+      lead: 'Een seizoen is hier meer dan het weer. Het bepaalt hoe u ’s avonds reist, wat u in het weekend doet en wanneer mensen een woning zoeken.',
+      cards: [
+        {
+          season: 'November–januari',
+          title: 'De poolnacht',
+          body: 'In het uiterste noorden komt de zon helemaal niet op: in Nuorgam duurt de poolnacht van 25 november tot 17 januari (het Fins Meteorologisch Instituut). Toch wordt er gewoon geskied. Op de Ounasvaara bij Rovaniemi is zo’n vijftig kilometer loipe verlicht, en op heldere avonden ziet u het noorderlicht vanaf uw eigen erf.',
+          image: IMG.kaamos,
+          alt: 'Noorderlicht boven een besneeuwde bosweg in de winternacht',
+          href: '/moving-to-lapland#light',
+          linkLabel: 'Licht en donker',
+        },
+        {
+          season: 'Maart–april',
+          title: 'Het einde van de winter',
+          body: 'Het licht komt snel terug, maar de meren liggen nog dicht. Dit is de tijd van ijsvissen, skiën op de harde sneeuwkorst en sneeuwscooters op gemarkeerde routes. Spijkerbanden mogen ook na maart blijven zitten als de omstandigheden daarom vragen (Traficom).',
+          image: IMG.kevat,
+          alt: 'Twee ijsvissers op het ijs bij zonsondergang',
+          href: '/moving-to-lapland#car',
+          linkLabel: 'Auto en afstanden',
+        },
+        {
+          season: 'Juni–juli',
+          title: 'De middernachtzon',
+          body: 'In Nuorgam gaat de zon van 16 mei tot 29 juli niet onder, en in Rovaniemi, op de poolcirkel, blijft hij rond midzomer boven de horizon (het Fins Meteorologisch Instituut). De avonden brengt u buiten door, op het meer en bij het zomerhuisje. Verduisterende gordijnen zijn de belangrijkste aankoop van de zomer.',
+          image: IMG.kesa,
+          alt: 'Het meer Ounasjärvi en de Ounastunturi in de middernachtzon bij Hetta in juni, met een roeiboot op de voorgrond',
+          href: '/seasonal-worker-housing#summer',
+          linkLabel: 'Zomerseizoen en werk',
+        },
+        {
+          season: 'September–oktober',
+          title: 'De herfstkleuren',
+          body: 'De berken op de fjelden en de dwergstruiken kleuren rood en goud, en de donkerder avonden brengen het noorderlicht terug. De herfst is ook verhuistijd: in augustus en september komen de nieuwe studenten naar Rovaniemi, en dan is de strijd om studio’s het hevigst (Yle, 27 juli 2025).',
+          image: IMG.syksy,
+          alt: 'Rivieroever in herfstkleuren met een klein voorraadschuurtje',
+          href: '/rentals',
+          linkLabel: 'Huurwoningen',
+        },
+      ],
+      more: { label: 'Maand voor maand: wanneer naar Lapland?', href: '/when-to-go' },
+    },
+    faq: {
+      kicker: 'Meest gesteld',
+      h2: 'Voordat u verhuist.',
+      items: [
+        {
+          q: 'Kunt u in Lapland het hele jaar zonder auto wonen?',
+          a: 'In Rovaniemi wel: het centrum, de universiteit en de winkels liggen op loop- of busafstand. In de fjelddorpen en de kleinere gemeenten is een auto in de praktijk onmisbaar, want de afstanden lopen in tientallen kilometers en er rijden weinig bussen.',
+        },
+        {
+          q: 'Wat kost een huurwoning in Rovaniemi?',
+          a: 'Volgens Tilastokeskus was de gemiddelde vrijesectorhuur in Rovaniemi in april–juni 2026 € 18,66 per m² voor een studio en € 14,35 per m² voor een tweekamerwoning. Vermenigvuldig met de oppervlakte: een studio van 30 m² komt op ongeveer € 560 per maand en een tweekamerwoning van 50 m² op ongeveer € 720.',
+        },
+        {
+          q: 'Regelt de werkgever huisvesting voor seizoenswerkers?',
+          a: 'Vaak wel, maar niet altijd en niet gratis. In de skigebieden huren werkgevers rijtjeshuizen en vakantiewoningen voor hun personeel, en de huur wordt meestal op het loon ingehouden. Vraag bij het aanbod schriftelijk hoe de huisvesting geregeld is.',
+        },
+        {
+          q: 'Hoe donker is de poolnacht echt?',
+          a: 'Volgens het Fins Meteorologisch Instituut duurt de poolnacht in Nuorgam bijna twee maanden (25 november–17 januari) en in Sodankylä maar vier dagen, vlak voor Kerstmis. Rovaniemi heeft geen echte poolnacht, want die grens loopt net ten noorden van de poolcirkel (Foreca): de winterzon blijft laag, maar rond het middaguur is het licht, en de sneeuw versterkt het beetje licht dat er is.',
+        },
+        {
+          q: 'Waar krijg ik hulp bij een verhuizing vanuit het buitenland?',
+          a: 'Onze zustersite laplandwork.com behandelt verblijfsvergunningen, het Finse persoonsnummer, de belastingkaart en een bankrekening. De woning en het dagelijks leven staan op de pagina Verhuizen naar Lapland.',
+        },
+      ],
+    },
+    holiday: {
+      kicker: 'Komt u op vakantie?',
+      h2: 'Hotels, huisjes en iglo’s.',
+      lead: 'Hotels, huisjes en glazen iglo’s staan op onze zustersite laplandstays.com. Verblijven van een week of een maand en de timing van uw reis blijven hier.',
+      links: [
+        { label: 'laplandstays.com', href: 'https://laplandstays.com/nl/', external: true },
+        { label: 'Glazen iglo’s', href: 'https://laplandstays.com/nl/property-types/', external: true },
+        { label: 'Huisjes', href: 'https://laplandstays.com/nl/cabins/', external: true },
+        { label: 'Lange verblijven', href: '/long-stays' },
+        { label: 'De beste reistijd', href: '/when-to-go' },
+      ],
+    },
+    authorNote: 'Cijfers gecontroleerd bij Tilastokeskus, Kela en de gemeenten zelf op 17 september 2026. We werken ze bij zodra het volgende kwartaal verschijnt.',
+    sources: pickSources('nl', SOURCES),
   },
 };

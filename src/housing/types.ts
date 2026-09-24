@@ -11,6 +11,14 @@
  */
 export type HousingLang = 'en' | 'fi';
 
+/**
+ * Etusivun kielet. Asumisen ALASIVUT ovat en + fi; etusivu on lisäksi ranskaksi ja
+ * hollanniksi, koska niillä on mitattu kysyntä (OpenSEO 24.9.2026: vivre en laponie
+ * 170/kk, wonen in lapland 110/kk) ja etusivu on se sivu, jolla ne haut laskeutuvat.
+ * Laajennetaan sivu kerrallaan mitatun kysynnän mukaan (§25) — ei kerralla 12 kieltä.
+ */
+export type HomeLang = HousingLang | 'fr' | 'nl';
+
 export interface Source {
   /** Lyhyt tunniste, esim. "tk-vuokrat". */
   id: string;

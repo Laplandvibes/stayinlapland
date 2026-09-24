@@ -14,7 +14,7 @@ import PhotoCredit, { uniqueCredits } from '../components/PhotoCredit';
 import { creditFor } from '../data/photoCredits';
 import HousingWorkPromo from '../components/housing/HousingWorkPromo';
 import { KickerChip, TwoTone } from '../components/housing/ui';
-import { HOME, HOUSING_ROUTES, HOUSING_UI, housingLang, type HousingRouteKey } from '../housing';
+import { HOME, HOUSING_ROUTES, HOUSING_UI, homeLang, type HousingRouteKey } from '../housing';
 import { HOME_HERO_IMAGE } from '../housing/home';
 
 /**
@@ -40,7 +40,7 @@ import { HOME_HERO_IMAGE } from '../housing/home';
  */
 export default function HomeHousing() {
   const lang = useLang();
-  const hl = housingLang(lang);
+  const hl = homeLang(lang);
   const h = HOME[hl];
   const ui = HOUSING_UI[hl];
   const t = getCopy(lang);

@@ -27,7 +27,7 @@ import { useHtmlLang, useLang, type Lang } from './i18n/useLang';
 import { getCopy, isCopyLoaded, loadCopy } from './locales/copy';
 import LocaleHead from './components/LocaleHead';
 import { AppPromoNudge } from './components/AppPromo';
-import { HOUSING_NAV, HOUSING_ROUTES, isHousingLang } from './housing/labels';
+import { HOUSING_NAV, HOUSING_ROUTES, isHomeLang } from './housing/labels';
 import { MovedToStays, staysHome } from './lib/movedToStays';
 
 /**
@@ -92,7 +92,7 @@ function LocalisedCookieBanner() {
  */
 function HomeSwitch() {
   const lang = useLang();
-  return isHousingLang(lang) ? <HomeHousing /> : <Home />;
+  return isHomeLang(lang) ? <HomeHousing /> : <Home />;
 }
 
 const SIDE_STRIPE_BG =

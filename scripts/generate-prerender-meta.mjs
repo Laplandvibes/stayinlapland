@@ -338,7 +338,10 @@ for (const [path, rel] of Object.entries(HOUSING_META_FILES)) {
   const fp = resolve(ROOT, rel);
   if (!existsSync(fp)) { console.warn(`[gen-meta] WARN: ${rel} missing — ${path} skipped`); continue; }
   const src = readFileSync(fp, 'utf-8');
-  for (const lang of ['en', 'fi']) {
+  // 24.9.2026: etusivulla on myös fr ja nl (mitattu kysyntä, §25). Muissa
+  // tiedostoissa niitä lohkoja ei ole, jolloin findSectionBlock palauttaa nullin
+  // ja reitti jää EN-fallbackiin — juuri niin kuin pitääkin.
+  for (const lang of ['en', 'fi', 'fr', 'nl']) {
     const block = findSectionBlock(src, lang);
     if (!block) continue;
     const title = readString(block, 'metaTitle');

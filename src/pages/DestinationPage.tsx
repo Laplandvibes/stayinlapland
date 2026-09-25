@@ -73,6 +73,9 @@ export default function DestinationPage() {
   const destName = destCopy?.name ?? dest.name;
   const pitch = destCopy?.pitch ?? dest.pitch;
   const longStayAngle = destCopy?.longStayAngle ?? dest.longStayAngle;
+  // ja/zh eivät välistä virkkeitä: täysleveän 。！？ jälkeen ei välilyöntiä
+  // (sama sääntö kuin scripts/generate-prerender-meta.mjs [LV-CJK-JOIN]).
+  const liitos = /^(ja|zh)/.test(lang) && /[。！？]$/.test(pitch.trim()) ? '' : ' ';
 
   const facts = getDestinationFacts(dest.slug);
   const areas = getDestinationStaying(dest.slug);
@@ -107,7 +110,7 @@ export default function DestinationPage() {
   return (
     <>
       <title>{`${destName}: ${d.metaTitleSuffix}`}</title>
-      <meta name="description" content={`${pitch} ${longStayAngle}`.slice(0, 160)} />
+      <meta name="description" content={`${pitch}${liitos}${longStayAngle}`.slice(0, 160)} />
       <link rel="canonical" href={localUrl(`/destinations/${dest.slug}`)} />
       <meta name="robots" content="index, follow" />
       <script

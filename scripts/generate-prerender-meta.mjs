@@ -294,8 +294,13 @@ for (const loc of LOCALES) {
     // Title: "<Name> — <localized suffix>"  (mirrors DestinationPage.tsx line 101)
     const title = suffix ? `${(dd && dd.name) || name}: ${suffix}` : null;
     // Description: "<pitch> <longStayAngle>" sliced to 160 (mirrors line 102).
+    // [LV-CJK-JOIN 2026-09-25] ja/zh eivat valista virkkeita: taysleveän 。！？
+    // jalkeen ei valilyontia (live /cn/destinations/rovaniemi: "…设计文化的拉普兰城市。 若您…").
+    // Korea ja latinalaiset kielet valistavat, joten ne pitavat valilyonnin.
+    const liitos =
+      dd && /^(ja|zh)/.test(loc.lang) && /[。！？]$/.test(String(dd.pitch || '').trim()) ? '' : ' ';
     const description = dd
-      ? clip([dd.pitch, dd.longStayAngle].filter(Boolean).join(' '), MAX_DESC)
+      ? clip([dd.pitch, dd.longStayAngle].filter(Boolean).join(liitos), MAX_DESC)
       : null;
     set(`/destinations/${slug}`, loc.lang, title, description);
   }

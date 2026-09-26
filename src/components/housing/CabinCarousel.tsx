@@ -74,7 +74,7 @@ const TEXT: Record<HousingLang, {
     size: 'Pinta-ala',
     view: 'Katso mökki',
     browseAll: 'Kaikki {count} mökkiä: {area}',
-    note: 'Kumppanilinkkejä: jos varaat Lomarenkaan kautta, saamme pienen palkkion. Sinulle hinta on sama. Hinta on viikon alkaen-hinta, ja varsinainen hinta riippuu viikosta.',
+    note: 'Kumppanilinkkejä: jos varaat Lomarenkaan kautta, saamme pienen palkkion. Sinulle hinta on sama. Avaa mökki, niin näet vapaat viikot ja oman viikkosi hinnan.',
     updated: 'Syöte päivitetty',
   },
   en: {
@@ -89,7 +89,7 @@ const TEXT: Record<HousingLang, {
     size: 'Size',
     view: 'View cabin',
     browseAll: 'All {count} cabins: {area}',
-    note: 'Affiliate links: if you book through Lomarengas we earn a small commission. Your price is the same. The price is a from-price for one week; the actual price depends on the week.',
+    note: 'Affiliate links: if you book through Lomarengas we earn a small commission. Your price is the same. Open a cabin to see its free weeks and the price for your week.',
     updated: 'Feed updated',
   },
 };

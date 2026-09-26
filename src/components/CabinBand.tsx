@@ -47,7 +47,7 @@ const COPY: Record<Lang, BandCopy> = {
     sizeLabel: 'size',
     viewCabin: 'View cabin',
     browseAll: 'Browse all {count} cabins in the area',
-    dataNote: 'Photos and prices from Lomarengas product data, refreshed daily. Weekly from-prices; the final price depends on the week.',
+    dataNote: 'Photos from Lomarengas product data, refreshed daily. Open a cabin to see its free weeks and the price for your week.',
   },
   fi: {
     eyebrow: 'Suoraan valikoimasta',
@@ -62,7 +62,7 @@ const COPY: Record<Lang, BandCopy> = {
     sizeLabel: 'koko',
     viewCabin: 'Katso mökki',
     browseAll: 'Selaa alueen kaikkia {count} mökkiä',
-    dataNote: 'Kuvat ja hinnat Lomarenkaan tuotetiedoista, päivittyvät päivittäin. Viikkohinnat alkaen; lopullinen hinta riippuu viikosta.',
+    dataNote: 'Kuvat Lomarenkaan tuotetiedoista, päivittyvät päivittäin. Avaa mökki, niin näet vapaat viikot ja oman viikkosi hinnan.',
   },
   sv: {
     eyebrow: 'Direkt ur utbudet',
@@ -74,7 +74,7 @@ const COPY: Record<Lang, BandCopy> = {
     sizeLabel: 'storlek',
     viewCabin: 'Se stugan',
     browseAll: 'Bläddra bland områdets alla {count} stugor',
-    dataNote: 'Bilder och priser från Lomarengas produktdata, uppdateras dagligen. Veckopriser från; slutpriset beror på veckan.',
+    dataNote: 'Bilder från Lomarengas produktdata, uppdateras dagligen. Öppna en stuga för att se lediga veckor och priset för din vecka.',
   },
   de: {
     eyebrow: 'Direkt aus dem Angebot',
@@ -86,7 +86,7 @@ const COPY: Record<Lang, BandCopy> = {
     sizeLabel: 'Größe',
     viewCabin: 'Hütte ansehen',
     browseAll: 'Alle {count} Hütten der Region ansehen',
-    dataNote: 'Fotos und Preise aus den Lomarengas-Produktdaten, täglich aktualisiert. Wochenpreise ab; der Endpreis hängt von der Woche ab.',
+    dataNote: 'Fotos aus den Lomarengas-Produktdaten, täglich aktualisiert. Öffnen Sie eine Hütte, um freie Wochen und den Preis für Ihre Woche zu sehen.',
   },
   fr: {
     eyebrow: 'Directement du catalogue',
@@ -98,7 +98,7 @@ const COPY: Record<Lang, BandCopy> = {
     sizeLabel: 'surface',
     viewCabin: 'Voir le chalet',
     browseAll: 'Voir les {count} chalets de la région',
-    dataNote: 'Photos et prix issus des données produit Lomarengas, actualisés chaque jour. Prix hebdomadaires à partir de ; le prix final dépend de la semaine.',
+    dataNote: 'Photos issues des données produit Lomarengas, actualisées chaque jour. Ouvrez un chalet pour voir les semaines libres et le prix de votre semaine.',
   },
   es: {
     eyebrow: 'Directo del catálogo',
@@ -110,7 +110,7 @@ const COPY: Record<Lang, BandCopy> = {
     sizeLabel: 'tamaño',
     viewCabin: 'Ver cabaña',
     browseAll: 'Ver las {count} cabañas de la zona',
-    dataNote: 'Fotos y precios de los datos de producto de Lomarengas, actualizados a diario. Precios semanales desde; el precio final depende de la semana.',
+    dataNote: 'Fotos de los datos de producto de Lomarengas, actualizadas a diario. Abra una cabaña para ver las semanas libres y el precio de su semana.',
   },
   it: {
     eyebrow: 'Direttamente dal catalogo',
@@ -122,7 +122,7 @@ const COPY: Record<Lang, BandCopy> = {
     sizeLabel: 'dimensione',
     viewCabin: 'Veda la baita',
     browseAll: 'Sfogli tutte le {count} baite della zona',
-    dataNote: 'Foto e prezzi dai dati di prodotto Lomarengas, aggiornati ogni giorno. Prezzi settimanali a partire da; il prezzo finale dipende dalla settimana.',
+    dataNote: 'Foto dai dati di prodotto Lomarengas, aggiornate ogni giorno. Apra una baita per vedere le settimane libere e il prezzo della Sua settimana.',
   },
   nl: {
     eyebrow: 'Rechtstreeks uit het aanbod',
@@ -134,7 +134,7 @@ const COPY: Record<Lang, BandCopy> = {
     sizeLabel: 'oppervlakte',
     viewCabin: 'Bekijk huisje',
     browseAll: 'Bekijk alle {count} huisjes in de omgeving',
-    dataNote: 'Foto’s en prijzen uit de Lomarengas-productgegevens, dagelijks bijgewerkt. Weekprijzen vanaf; de uiteindelijke prijs hangt af van de week.',
+    dataNote: 'Foto’s uit de Lomarengas-productgegevens, dagelijks bijgewerkt. Open een huisje om de vrije weken en de prijs voor uw week te zien.',
   },
   'pt-BR': {
     eyebrow: 'Direto do catálogo',
@@ -146,7 +146,7 @@ const COPY: Record<Lang, BandCopy> = {
     sizeLabel: 'tamanho',
     viewCabin: 'Ver chalé',
     browseAll: 'Ver todos os {count} chalés da região',
-    dataNote: 'Fotos e preços dos dados de produto da Lomarengas, atualizados diariamente. Preços semanais a partir de; o valor final depende da semana.',
+    dataNote: 'Fotos dos dados de produto da Lomarengas, atualizadas diariamente. Abra um chalé para ver as semanas livres e o preço da sua semana.',
   },
   ja: {
     eyebrow: '取扱い在庫から',
@@ -158,7 +158,7 @@ const COPY: Record<Lang, BandCopy> = {
     sizeLabel: '広さ',
     viewCabin: 'コテージを見る',
     browseAll: 'このエリアの{count}軒すべてを見る',
-    dataNote: '写真と料金は Lomarengas の商品データより、毎日更新。週料金は「〜から」の表示で、最終料金は週によって異なります。',
+    dataNote: '写真は Lomarengas の商品データより、毎日更新。コテージを開くと、空いている週とご希望の週の料金を確認できます。',
   },
   ko: {
     eyebrow: '보유 물량에서 바로',
@@ -170,7 +170,7 @@ const COPY: Record<Lang, BandCopy> = {
     sizeLabel: '면적',
     viewCabin: '통나무집 보기',
     browseAll: '이 지역의 {count}곳 모두 보기',
-    dataNote: '사진과 요금은 Lomarengas 상품 데이터 기준이며 매일 갱신됩니다. 주간 요금은 최저가 표시이고, 최종 요금은 주에 따라 달라집니다.',
+    dataNote: '사진은 Lomarengas 상품 데이터 기준이며 매일 갱신됩니다. 통나무집을 열면 예약 가능한 주와 원하는 주의 요금을 확인할 수 있습니다.',
   },
   'zh-CN': {
     eyebrow: '直接来自在租房源',
@@ -182,7 +182,7 @@ const COPY: Record<Lang, BandCopy> = {
     sizeLabel: '面积',
     viewCabin: '查看木屋',
     browseAll: '浏览本区域全部 {count} 处木屋',
-    dataNote: '照片与价格来自 Lomarengas 商品数据，每日更新。周价为起价，最终价格视具体周次而定。',
+    dataNote: '照片来自 Lomarengas 商品数据，每日更新。打开木屋即可查看可订周次以及您所选周次的价格。',
   },
 };
 

@@ -327,7 +327,7 @@ export const copyFR: SectionCopy = {
       eyebrow: 'Au-delà de la dernière route',
       title: 'Lodges en pleine nature.',
       subtitle:
-        'La nouvelle tradition lapone, des retraites signées par des architectes, bâties depuis les années 2010 là où la route touristique s’arrête. Deux lodges, deux définitions de la nature sauvage.',
+        'La nouvelle tradition de Laponie, des retraites signées par des architectes, bâties depuis les années 2010 là où la route touristique s’arrête. Deux lodges, deux définitions de la nature sauvage.',
     },
     authorNote: 'Les informations des deux adresses sont vérifiées à partir des données publiées par les exploitants et d\'avis récents de voyageurs.',
     pickWhy: [
@@ -438,7 +438,7 @@ export const copyFR: SectionCopy = {
       {
         title: 'Comment s’y rendre',
         body: [
-          'Trois aéroports lapons couvrent l’essentiel de ce que vous réserverez. Rovaniemi (RVN) pour le village du Père Noël et le sud, Kittilä (KTT) pour Levi et Ylläs, Ivalo (IVL) pour Saariselkä, Inari et le nord.',
+          'Trois aéroports de Laponie couvrent l’essentiel de ce que vous réserverez. Rovaniemi (RVN) pour le village du Père Noël et le sud, Kittilä (KTT) pour Levi et Ylläs, Ivalo (IVL) pour Saariselkä, Inari et le nord.',
           'Helsinki (HEL) → Laponie, c’est un vol intérieur de 90 minutes. Des vols directs depuis Londres, Berlin et Paris existent aussi de décembre à mars.',
           'Trains : le train de nuit Helsinki–Rovaniemi est lent, mais la remontée de la côte du golfe de Botnie par Kemi est franchement belle et la voiture est pleine de locaux qui font le même trajet.',
         ],
@@ -464,7 +464,7 @@ export const copyFR: SectionCopy = {
       {
         title: 'Conditions d’annulation',
         body: [
-          'La plupart des adresses lapones sont passées à des tarifs non remboursables pour les semaines de pointe. Lisez les petites lignes avant de cliquer sur « réserver ».',
+          'La plupart des adresses de Laponie sont passées à des tarifs non remboursables pour les semaines de pointe. Lisez les petites lignes avant de cliquer sur « réserver ».',
           'Une assurance voyage avec annulation pour motif libre vaut vraiment le coup pour les voyages au-delà de 2 000 €. Les chasseurs d’aurores annulent sans cesse pour la météo.',
           'Nos partenaires de réservation respectent les conditions d’annulation affichées au moment de la réservation, réservez via la redirection de ce site pour garder un tarif visible et cohérent.',
         ],
@@ -522,7 +522,7 @@ export const copyFR: SectionCopy = {
         name: 'Novembre',
         pitch: 'La nuit polaire commence, la neige se stabilise',
         body:
-          'Le début d’hiver lapon le plus froid. Dans l’extrême nord (Utsjoki), la nuit polaire s’installe dans les derniers jours du mois. La neige commence à tenir fin novembre, d’ici la fin du mois, la plupart des stations et hôtels de neige ouvrent. Fin novembre, c’est le meilleur rapport qualité-prix absolu pour un long séjour.',
+          'Le début d’hiver le plus froid en Laponie. Dans l’extrême nord (Utsjoki), la nuit polaire s’installe dans les derniers jours du mois. La neige commence à tenir fin novembre, d’ici la fin du mois, la plupart des stations et hôtels de neige ouvrent. Fin novembre, c’est le meilleur rapport qualité-prix absolu pour un long séjour.',
         bestFor: ['Longs séjours à −50 % du tarif', 'Habitués qui connaissent le froid'],
         avoidIf: ['Premier voyage (neige irrégulière)'],
       },
@@ -735,7 +735,7 @@ export const copyFR: SectionCopy = {
     {
       slug: 'rovaniemi',
       pitch:
-        'La capitale de la Laponie finlandaise, la seule ville lapone à avoir une vraie scène gastronomique hivernale, un hub aéroportuaire en activité et une culture du design toute l’année.',
+        'La capitale de la Laponie finlandaise, la seule ville de Laponie à avoir une vraie scène gastronomique hivernale, un hub aéroportuaire en activité et une culture du design toute l’année.',
       longStayAngle:
         'La bonne base si votre long séjour mêle télétravail en semaine et escapades vers le nord le week-end, wifi rapide, vols directs vers Stockholm, restaurants ouverts en saison charnière.',
     },
@@ -749,7 +749,7 @@ export const copyFR: SectionCopy = {
     {
       slug: 'saariselka',
       pitch:
-        'Latitude plus haute que Rovaniemi, neige plus dure, ciel plus sombre. Le village lapon qui prend l’hiver le plus au sérieux.',
+        'Latitude plus haute que Rovaniemi, neige plus dure, ciel plus sombre. Le village de Laponie qui prend l’hiver le plus au sérieux.',
       longStayAngle:
         'Logique longue durée : louez un chalet en haut de colline et écrivez un livre. Peu de distractions. Excellent réseau de ski de fond, chenils de huskies à proximité, aucune distraction urbaine.',
     },

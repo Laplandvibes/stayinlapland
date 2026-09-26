@@ -441,7 +441,7 @@ export const copyES: SectionCopy = {
   destinationPage: {
     ...copyEN.destinationPage,
     metaTitleSuffix: 'Dónde alojarse',
-    pageHeroEyebrow: 'Destino lapón',
+    pageHeroEyebrow: 'Destino en Laponia',
     notFoundKicker: 'Página no encontrada',
     notFoundTitle: 'Destino no listado.',
     notFoundBody: 'De momento cubrimos Rovaniemi, Levi, Saariselkä, Inari y la zona de Ylläs.',
@@ -526,7 +526,7 @@ export const copyES: SectionCopy = {
       eyebrow: 'Más allá de la última carretera',
       title: 'Refugios silvestres.',
       subtitle:
-        'La nueva tradición lapona, retiros diseñados por arquitectos, levantados desde la década de 2010 allí donde termina la carretera turística. Dos refugios, dos definiciones distintas de naturaleza salvaje.',
+        'La nueva tradición de Laponia: retiros diseñados por arquitectos, levantados desde la década de 2010 allí donde termina la carretera turística. Dos refugios, dos definiciones distintas de naturaleza salvaje.',
     },
     authorNote: 'Los datos de ambos alojamientos se han verificado con la información publicada por los operadores y reseñas recientes de huéspedes.',
     pickWhy: [
@@ -738,7 +738,7 @@ export const copyES: SectionCopy = {
     {
       slug: 'rovaniemi',
       pitch:
-        'La capital de la Laponia finlandesa, la única ciudad lapona con una verdadera escena gastronómica de invierno, un aeropuerto con conexiones de verdad y cultura del diseño todo el año.',
+        'La capital de la Laponia finlandesa, la única ciudad de Laponia con una verdadera escena gastronómica de invierno, un aeropuerto con conexiones de verdad y cultura del diseño todo el año.',
       longStayAngle:
         'La base adecuada si su larga estancia combina teletrabajo entre semana y escapadas al norte el fin de semana, wifi rápido, vuelos directos a Estocolmo, restaurantes abiertos en temporada media.',
     },
@@ -752,7 +752,7 @@ export const copyES: SectionCopy = {
     {
       slug: 'saariselka',
       pitch:
-        'Latitud más alta que Rovaniemi, nieve más dura, cielo más oscuro. El pueblo lapón que se toma el invierno más en serio.',
+        'Latitud más alta que Rovaniemi, nieve más dura, cielo más oscuro. El pueblo de Laponia que se toma el invierno más en serio.',
       longStayAngle:
         'Lógica de larga estancia: alquile una cabaña en lo alto y escriba un libro. Pocas distracciones. Excelente red de esquí de fondo, criaderos de huskies cerca, ninguna distracción urbana.',
     },

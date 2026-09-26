@@ -160,7 +160,7 @@ export const copyES: SectionCopy = {
     breadcrumbHome: 'Inicio',
     stats: { stays: 'Alojamientos escogidos', bases: 'Bases en Laponia', categories: 'Formas de alojarse', months: 'Meses evaluados' },
     intro: {
-      p1: 'Las listas de «los mejores alojamientos de Laponia» casi siempre arrancan con un iglú de cristal, y siguen con la misma fórmula. Esta guía está hecha de otra forma: noches probadas por nosotros, recomendaciones locales y solo los alojamientos que se quedan grabados después del viaje.',
+      p1: 'Un buen viaje a Laponia suele combinar más de un tipo de alojamiento. Esta guía le ayuda a elegir el adecuado para cada parte del viaje.',
       p2: 'Hemos dividido los alojamientos de Laponia en cuatro categorías claras: larga estancia, hoteles, iglús de cristal y refugios silvestres. 16 alojamientos seleccionados, todos visitados. La ruta favorita: una semana en cabaña en Levi, dos noches en un hotel de diseño en Rovaniemi, una última noche en un iglú de cristal. Combinadas, son la Laponia por la que se vuelve.',
       p3: 'Esta guía no agrega precios ni recicla reseñas. Las fuentes están a la vista, las relaciones de afiliación, abiertas.',
     },

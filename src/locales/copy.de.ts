@@ -154,7 +154,7 @@ export const copyDE: SectionCopy = {
     breadcrumbHome: 'Startseite',
     stats: { stays: 'Kuratierte Unterkünfte', bases: 'Standorte in Lappland', categories: 'Arten zu wohnen', months: 'Bewertete Monate' },
     intro: {
-      p1: 'Die meisten Listen „Beste Unterkünfte in Lappland“ setzen ein Glasiglu an die Spitze, zwanzig weitere Glasiglus folgen in ähnlicher Reihenfolge, und kein einziger Satz dazu, ob die Verfasser je länger als zwei Nächte dort übernachtet haben. Dieser Leitfaden geht den umgekehrten Weg.',
+      p1: 'Eine gute Lappland-Reise verbindet oft mehr als eine Art von Unterkunft. Dieser Leitfaden hilft Ihnen, für jeden Teil Ihrer Reise die passende zu wählen.',
       p2: 'Lappland-Unterkünfte werden in vier Kategorien gegliedert, Langzeitmieten, Hotels, Glasiglus und Wildnishütten, und unten sind die sechzehn Häuser aufgeführt, die ihren Platz verdienen. Daraus lässt sich eine Reise zusammenstellen: eine Woche Blockhütte bei Levi, zwei Stadtnächte in einem Designhotel in Rovaniemi, eine einzige Glasiglu-Nacht vor dem Heimflug. So belohnt Lappland einen längeren Aufenthalt wirklich.',
       p3: 'Drei Dinge tut dieser Leitfaden nicht: Preise aggregieren, Bewertungen recyceln oder so tun, als deckten wir Orte ab, an denen niemand aus dem Netzwerk je wirklich übernachtet hat.',
     },

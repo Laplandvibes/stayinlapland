@@ -160,7 +160,7 @@ export const copyPTBR: SectionCopy = {
     breadcrumbHome: 'Início',
     stats: { stays: 'Hospedagens escolhidas', bases: 'Bases na Lapônia', categories: 'Formas de se hospedar', months: 'Meses avaliados' },
     intro: {
-      p1: 'As listas de "melhores hospedagens da Lapônia" quase sempre começam por um iglu de vidro, e seguem nessa fórmula. Este guia foi feito de outro jeito: noites realmente dormidas, indicações de quem mora aqui e só os lugares que ficam na memória depois da viagem.',
+      p1: 'Uma boa viagem à Lapônia costuma combinar mais de um tipo de hospedagem. Este guia ajuda você a escolher a certa para cada parte da viagem.',
       p2: 'Dividimos as hospedagens da Lapônia em quatro categorias claras: estadias longas, hotéis, iglus de vidro e lodges na natureza. 16 propriedades selecionadas, todas visitadas pessoalmente. O roteiro mais comum: uma semana de cabana em Levi, duas noites em hotel de design em Rovaniemi e a última noite num iglu de vidro. Combinados, esses três formatos formam a Lapônia que faz a gente voltar.',
       p3: 'Este guia não agrega preços nem recicla avaliações. Fontes à vista, parcerias declaradas.',
     },

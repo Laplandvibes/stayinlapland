@@ -138,7 +138,7 @@ export const copyNL: SectionCopy = {
     breadcrumbHome: 'Home',
     stats: { stays: 'Gekozen verblijven', bases: 'Bases in Lapland', categories: 'Manieren van verblijven', months: 'Beoordeelde maanden' },
     intro: {
-      p1: 'De meeste lijstjes met „beste accommodatie in Lapland” beginnen met een glasiglo bovenaan, zetten daaronder twintig andere glazen iglo’s in ongeveer dezelfde volgorde, en bevatten geen enkele zin over de vraag of de schrijver er ooit meer dan twee nachten heeft doorgebracht. Deze gids is het tegenovergestelde.',
+      p1: 'Een goede reis naar Lapland combineert vaak meer dan één soort verblijf. Deze gids helpt u voor elk deel van de reis het juiste te kiezen.',
       p2: 'Lapland-accommodatie valt uiteen in vier categorieën: lange-verblijfshuur, hotels, glasiglo’s en wildernislodges, en de zestien accommodaties die hun plek verdienen, staan hieronder. Daarmee kunt u een reis bouwen die begint met een week in een hut bij Levi, doorgaat naar een designhotel in Rovaniemi voor twee stadse nachten, en eindigt met één glasiglonacht voor de terugvlucht. Zo beloont Lapland een langer verblijf.',
       p3: 'Drie dingen die deze gids niet doet: prijzen aggregeren, beoordelingen recyclen, of doen alsof we plekken behandelen waar geen partner in het netwerk ooit een echte nacht heeft doorgebracht.',
     },

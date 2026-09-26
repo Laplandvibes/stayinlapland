@@ -141,7 +141,7 @@ export const copySV: SectionCopy = {
     breadcrumbHome: 'Hem',
     stats: { stays: 'Utvalda boenden', bases: 'Baser i Lappland', categories: 'Sätt att bo', months: 'Betygsatta månader' },
     intro: {
-      p1: 'De flesta listor med ”bästa boende i Lappland” börjar med en glasigloo överst, radar upp tjugo andra glasigloor i ungefär samma ordning under den, och innehåller inte en enda mening om huruvida skribenten någonsin tillbringat mer än två nätter där. Den här guiden är motsatsen.',
+      p1: 'En bra resa till Lappland kombinerar ofta mer än en sorts boende. Den här guiden hjälper dig att välja rätt boende för varje del av resan.',
       p2: 'Boende i Lappland delas in i fyra kategorier: långtidshyra, hotell, glasigloor och vildmarkslodger, och de sexton boenden som förtjänar sin plats står nedan. Med det kan du bygga en resa som börjar med en vecka i en stuga vid Levi, fortsätter till ett designhotell i Rovaniemi för två stadsnätter och avslutas med en glasigloonatt före hemresan. Så belönar Lappland en längre vistelse.',
       p3: 'Tre saker den här guiden inte gör: aggregerar priser, återvinner recensioner eller låtsas täcka platser där ingen partner i nätverket någonsin tillbringat en riktig natt.',
     },

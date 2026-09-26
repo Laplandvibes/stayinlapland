@@ -126,7 +126,7 @@ export const copyIT: SectionCopy = {
     breadcrumbHome: 'Home',
     stats: { stays: 'Strutture scelte', bases: 'Basi in Lapponia', categories: 'Modi di soggiornare', months: 'Mesi valutati' },
     intro: {
-      p1: 'La maggior parte delle liste "migliori alloggi in Lapponia" mette un igloo di vetro in cima, venti altri igloo di vetro più o meno nello stesso ordine, e neanche una frase sul fatto che chi scrive abbia mai passato più di due notti in uno di essi. Questa guida è l’opposto.',
+      p1: 'Un buon viaggio in Lapponia combina spesso più di un tipo di alloggio. Questa guida La aiuta a scegliere quello giusto per ogni parte del viaggio.',
       p2: 'L’alloggio in Lapponia si divide in quattro categorie: affitti a soggiorno lungo, hotel, igloo di vetro e lodge nella natura, e le sedici strutture che meritano il loro posto sono elencate qui sotto. Tra esse può costruire un viaggio che inizia con una settimana in una baita base vicino a Levi, prosegue con due notti in un design hotel a Rovaniemi e finisce con una notte in igloo di vetro prima del volo di ritorno. Così la Lapponia premia davvero un soggiorno più lungo.',
       p3: 'Tre cose che questa guida non fa: aggregare prezzi, riciclare recensioni, o fingere di coprire luoghi dove nessun partner della rete ha mai trascorso una vera notte.',
     },

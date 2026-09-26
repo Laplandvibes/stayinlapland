@@ -160,7 +160,7 @@ export const copyFR: SectionCopy = {
     breadcrumbHome: 'Accueil',
     stats: { stays: 'Adresses choisies', bases: 'Bases en Laponie', categories: 'Façons de séjourner', months: 'Mois évalués' },
     intro: {
-      p1: 'La plupart des classements « meilleurs hébergements de Laponie » placent un igloo de verre en tête, puis vingt autres igloos de verre dans à peu près le même ordre, sans une seule phrase indiquant si l’auteur y a déjà passé plus de deux nuits. Ce guide fait l’inverse.',
+      p1: 'Un bon voyage en Laponie combine souvent plusieurs types d’hébergement. Ce guide vous aide à choisir le bon pour chaque étape du voyage.',
       p2: 'Les hébergements de Laponie se répartissent en quatre catégories : locations longue durée, hôtels, igloos de verre et lodges en pleine nature, et les seize adresses qui méritent leur place sont listées ci-dessous. On peut construire à partir d’elles un voyage qui commence par une semaine en chalet près de Levi, se poursuit par deux nuits en hôtel design à Rovaniemi, puis se termine par une seule nuit en igloo de verre avant le retour. C’est ainsi que la Laponie récompense vraiment un séjour prolongé.',
       p3: 'Trois choses que ce guide ne fait pas : agréger des prix, recycler des avis, ni prétendre couvrir des lieux où aucun partenaire du réseau n’a réellement passé la nuit.',
     },

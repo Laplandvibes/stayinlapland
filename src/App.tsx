@@ -2,7 +2,7 @@ import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom';
 import { useEffect, useReducer, lazy, Suspense, type ReactNode } from 'react';
 import Nav from './components/Nav';
 import CookieBanner from './shared/CookieBanner';
-import Footer from './shared/Footer';
+import Footer from './components/Footer';
 import NewsletterPopup from './shared/NewsletterPopup';
 import { POPUP_THEME, POPUP_COPY } from './components/newsletterPopupSite';
 

@@ -232,7 +232,13 @@ export default function AdUnit({
             />
           </div>
         )}
-      <div className="relative p-6 sm:p-8">
+      {/* Bottom padding 3rem at every width, inline for the same reason as the wash above:
+          the ad label is absolute in the card's bottom-right corner (14 px up, ~19 px tall),
+          so the last row of the content — the "powered by" line or the disclosure — needs
+          room above it. With the default p-6 / sm:p-8 a wrapped last line ran into the
+          label: "Nouto Welcome Pickupsin kautta" (fi, 375 px) and "Autovermietung über
+          EconomyBookings" (de, 390 px) touched or went under MAINOS / ANZEIGE. */}
+      <div className="relative p-6 sm:p-8" style={{ paddingBottom: '3rem' }}>
         {/* Header: icon badge + eyebrow left, BIG real partner logo right.
             🔴 MOBILE (Vesa 2026-07-26: "logo näkyy vain puoliksi"): side by side,
             a wide wordmark (`shrink-0`) plus a long uppercase eyebrow with

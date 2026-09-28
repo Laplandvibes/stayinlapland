@@ -4,17 +4,22 @@ import type { HomeLang, HousingLang, Source } from './types';
  * Nimetyt lähteet. Jokainen luku asumissivuilla osoittaa yhteen näistä
  * (numeroportti). Päivitä `label`in päivämäärä, kun luku päivitetään.
  */
-type SourceDef = Record<HousingLang, string> & { url: string };
+/** fr/nl vain etusivun lähteille: asumisen alasivut ovat en + fi (types.ts, §25). */
+type SourceDef = Record<HousingLang, string> & Partial<Record<'fr' | 'nl', string>> & { url: string };
 
 const DEFS = {
   tkVuokrat: {
     fi: 'Tilastokeskus: Vuokrat, vapaarahoitteiset vuokra-asunnot, keskineliövuokra 2026Q2 (taulukko 15fa, luettu 17.9.2026)',
     en: 'Statistics Finland: Rents of dwellings, free-market rental flats, average rent per m² 2026Q2 (table 15fa, read 17 Sep 2026)',
+    fr: 'Statistics Finland : loyers des logements, logements locatifs du marché libre, loyer moyen au m² 2026Q2 (tableau 15fa, consulté le 17 septembre 2026)',
+    nl: 'Statistics Finland: huren van woningen, vrije-sectorhuurwoningen, gemiddelde huur per m² 2026Q2 (tabel 15fa, geraadpleegd op 17 september 2026)',
     url: 'https://pxdata.stat.fi/PxWeb/pxweb/fi/StatFin/StatFin__asvu/15fa.px/',
   },
   tkVaesto: {
     fi: 'Tilastokeskus: Väestörakenne, väestö 31.12.2025 kunnittain (taulukko 11ra)',
     en: 'Statistics Finland: Population structure, population on 31 Dec 2025 by municipality (table 11ra)',
+    fr: 'Statistics Finland : structure de la population, population au 31 décembre 2025 par commune (tableau 11ra)',
+    nl: 'Statistics Finland: bevolkingsopbouw, bevolking op 31 december 2025 per gemeente (tabel 11ra)',
     url: 'https://pxdata.stat.fi/PxWeb/pxweb/fi/StatFin/StatFin__vaerak/11ra.px/',
   },
   tkSahko: {
@@ -60,6 +65,8 @@ const DEFS = {
   traficom: {
     fi: 'Traficom: Auton kesä- ja talvirenkaat (talvirengasaika, nastat, urasyvyys)',
     en: 'Traficom (Finnish Transport and Communications Agency): Summer and winter tyres',
+    fr: 'Traficom (Agence finlandaise des transports et des communications) : pneus été et hiver',
+    nl: 'Traficom (Fins agentschap voor vervoer en communicatie): zomer- en winterbanden',
     url: 'https://traficom.fi/fi/liikenne/autoilijat/vinkkeja-liikenteeseen/auton-kesa-ja-talvirenkaat',
   },
   dvv: {
@@ -80,16 +87,22 @@ const DEFS = {
   fmi: {
     fi: 'Ilmatieteen laitos: Tähtitieteelliset vuodenajat (kaamos ja yötön yö)',
     en: 'Finnish Meteorological Institute: Astronomical seasons (polar night and midnight sun)',
+    fr: 'Institut météorologique finlandais : saisons astronomiques (nuit polaire et soleil de minuit)',
+    nl: 'Fins Meteorologisch Instituut: astronomische seizoenen (poolnacht en middernachtzon)',
     url: 'https://www.ilmatieteenlaitos.fi/tahtitieteelliset-vuodenajat',
   },
   ounasvaara: {
     fi: 'Ounasvaara: Rinteet ja ladut (noin 100 km latuja, joista 50 km valaistu; luettu 23.9.2026)',
     en: 'Ounasvaara: Slopes and trails (about 100 km of ski trails, 50 km of them lit; read 23 Sep 2026)',
+    fr: 'Ounasvaara : pistes de ski alpin et de fond (environ 100 km de pistes de fond, dont 50 km éclairées ; consulté le 23 septembre 2026)',
+    nl: 'Ounasvaara: pistes en langlaufloipes (ongeveer 100 km langlaufloipes, waarvan 50 km verlicht; geraadpleegd op 23 september 2026)',
     url: 'https://ounasvaara.fi/en/slopes/',
   },
   foreca: {
     fi: 'Foreca, Sääpedia: Kaamos, aika jolloin aurinko ei nouse',
     en: 'Foreca weather encyclopaedia: Polar night in Finland',
+    fr: 'Encyclopédie météo de Foreca : la nuit polaire en Finlande',
+    nl: 'Weerencyclopedie van Foreca: de poolnacht in Finland',
     url: 'https://www.foreca.fi/s%C3%A4%C3%A4pedia/rcx1rpir',
   },
   yle2017: {
@@ -105,6 +118,8 @@ const DEFS = {
   yle2025das: {
     fi: 'Yle 27.7.2025: Rovaniemellä asuntopula on edelleen paha – sadat opiskelijat etsivät kattoa pään päälle',
     en: 'Yle, 27 Jul 2025: Rovaniemi’s housing shortage is still severe – hundreds of students looking for a home',
+    fr: 'Yle, 27 juillet 2025 : à Rovaniemi, la pénurie de logements reste grave et des centaines d’étudiants cherchent un toit',
+    nl: 'Yle, 27 juli 2025: woningnood in Rovaniemi nog altijd groot: honderden studenten zoeken een dak boven hun hoofd',
     url: 'https://yle.fi/a/74-20238146',
   },
   lapinKansaDas: {
@@ -120,6 +135,8 @@ const DEFS = {
   kesko2026: {
     fi: 'Kesko 17.6.2026: K-Market Jounin Kaupan kauppiaat rakennuttavat kolme rivitaloa työntekijöilleen',
     en: 'Kesko, 17 Jun 2026: K-Market Jounin Kauppa’s owners build three row houses for their staff',
+    fr: 'Kesko, 17 juin 2026 : les commerçants du K-Market Jounin Kauppa font construire trois maisons en bande pour leurs employés',
+    nl: 'Kesko, 17 juni 2026: de ondernemers van K-Market Jounin Kauppa laten drie rijtjeshuizen bouwen voor hun personeel',
     url: 'https://www.kesko.fi/media/uutiset-ja-tiedotteet/uutiset/2026/lapin-asuntopulaa-ratkomassa-k-market-jounin-kaupan-kauppiaat-rakennuttavat-kolme-rivitaloa-tyontekijoilleen/',
   },
   yle2026rovaniemi: {
@@ -145,6 +162,8 @@ const DEFS = {
   kemi: {
     fi: 'Kemin kaupunki: Vuokra-asunnot (Kiinteistö Oy Itätuuli)',
     en: 'City of Kemi: Rental housing (Kiinteistö Oy Itätuuli)',
+    fr: 'Ville de Kemi : logements locatifs (Kiinteistö Oy Itätuuli)',
+    nl: 'Stad Kemi: huurwoningen (Kiinteistö Oy Itätuuli)',
     url: 'https://www.kemi.fi/asuminen-ja-ymparisto/asuminen/vuokra-asunnot/',
   },
   itatuuli: {
@@ -170,6 +189,8 @@ const DEFS = {
   sodankyla: {
     fi: 'Sodankylän kunta: Kunnan vuokra-asunnot (Asentopuulaaki Oy)',
     en: 'Municipality of Sodankylä: Municipal rental housing (Asentopuulaaki Oy)',
+    fr: 'Commune de Sodankylä : logements locatifs communaux (Asentopuulaaki Oy)',
+    nl: 'Gemeente Sodankylä: gemeentelijke huurwoningen (Asentopuulaaki Oy)',
     url: 'https://www.sodankyla.fi/en/environment/municipal-rental-housing/',
   },
   tkVuokratPostinumero: {
@@ -300,6 +321,8 @@ const DEFS = {
   inari: {
     fi: 'Inarin kunta: Asuminen Inarin kunnassa (Inarin Vuokra-asunnot Oy ja yksityiset vuokranantajat)',
     en: 'Municipality of Inari: Housing in Inari (Inarin Vuokra-asunnot Oy and private landlords)',
+    fr: 'Commune d’Inari : se loger à Inari (Inarin Vuokra-asunnot Oy et propriétaires privés)',
+    nl: 'Gemeente Inari: wonen in Inari (Inarin Vuokra-asunnot Oy en particuliere verhuurders)',
     url: 'https://www.inari.fi/fi/palvelut/asuminen.html',
   },
   lvDrive: {
@@ -329,6 +352,12 @@ export type SourceId = keyof typeof DEFS;
  * lukijaa löytämään sitä.
  */
 export function pickSources(lang: HomeLang, ids: readonly SourceId[]): Source[] {
-  const l: HousingLang = lang === 'fi' ? 'fi' : 'en';
-  return ids.map((id) => ({ id, label: DEFS[id][l], url: DEFS[id].url }));
+  return ids.map((id) => {
+    const d: SourceDef = DEFS[id];
+    if (lang === 'fi') return { id, label: d.fi, url: d.url };
+    const oma = lang === 'fr' || lang === 'nl' ? d[lang] : undefined;
+    if (lang === 'en' || oma) return { id, label: oma ?? d.en, url: d.url };
+    // Ei käännöstä tälle kielelle: englanninkielinen nimi merkitään, ettei sivu väitä sitä omaksi kielekseen.
+    return { id, label: d.en, url: d.url, lang: 'en' };
+  });
 }

@@ -24,6 +24,8 @@ export interface Source {
   id: string;
   label: string;
   url: string;
+  /** Nimen kieli, kun se eroaa sivun kielestä (englanninkielinen varakieli). */
+  lang?: string;
 }
 
 export interface FactTable {

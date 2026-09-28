@@ -23,6 +23,8 @@ export interface SourceLink {
   id: string;
   label: string;
   url: string;
+  /** Label language when it differs from the page (English fallback). */
+  lang?: string;
 }
 
 export default function SourcesDisclosure({
@@ -76,6 +78,7 @@ export default function SourcesDisclosure({
                   <li key={s.id} className="text-charcoal">
                     <a
                       href={s.url}
+                      lang={s.lang}
                       target="_blank"
                       rel="noopener"
                       className="lv-tap underline underline-offset-2 decoration-charcoal/30 hover:text-[#BE185D] hover:decoration-[#BE185D]"

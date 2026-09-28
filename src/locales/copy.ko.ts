@@ -723,7 +723,7 @@ export const copyKO: SectionCopy = {
   wildernessData: [
     {
       name: 'Iso-Syöte Eagle View Suites',
-      location: 'Iso-Syöte (푸다스예르비, 라플란드 바로 남쪽)',
+      location: 'Iso-Syöte (푸다스야르비, 라플란드 바로 남쪽)',
       highlight: '수목한계선 위 · 오울루에서 접근 가능',
       description:
         'Iso-Syöte 산 해발 432미터에 지은 소나무 스위트, 핀란드에서 가장 남쪽에 있는 진짜 산입니다. 사리셀카까지의 긴 비행 없이 수목한계선 위에서 오로라를 보며, 오울루 공항에서 90분 거리입니다.',

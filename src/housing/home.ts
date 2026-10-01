@@ -17,9 +17,7 @@ export interface HousingHomeCopy {
   metaTitle: string;
   metaDescription: string;
   schemaName: string;
-  hero: { eyebrow: string; h1a: string; h1b: string; lead: string; ctaPrimary: string; ctaSecondary: string };
-  stats: { value: string; label: string }[];
-  statsSource: string;
+  hero: { h1a: string; h1b: string; lead: string; ctaPrimary: string; ctaSecondary: string };
   towns: {
     kicker: string;
     h2: string;
@@ -91,25 +89,17 @@ export const HOME: Record<HomeLang, HousingHomeCopy> = {
       'Asuminen Lapissa: vuokra-asunnot Rovaniemeltä Ivaloon, kausityöntekijän asunto, muutto ja elinkustannukset. Yksiö Rovaniemellä noin 560 €/kk (Tilastokeskus).',
     schemaName: 'StayInLapland: asuminen Suomen Lapissa',
     hero: {
-      eyebrow: 'Suomen Lappi · 176 215 asukasta',
       h1a: 'Asuminen Lapissa.',
       h1b: 'Kaamoksesta yöttömään yöhön.',
       lead: 'Mistä vuokra-asunto löytyy, mitä arki maksaa ja miten täällä eletään läpi vuoden. Yksiö Rovaniemellä maksaa noin 560 euroa kuukaudessa.',
       ctaPrimary: 'Vuokra-asunnot',
       ctaSecondary: 'Kausityöntekijälle',
     },
-    stats: [
-      { value: '560 €/kk', label: 'yksiö Rovaniemellä: 30 m² × 18,66 €/m²' },
-      { value: '720 €/kk', label: 'kaksio Rovaniemellä: 50 m² × 14,35 €/m²' },
-      { value: '66 191', label: 'asukasta Rovaniemellä 31.12.2025' },
-      { value: '+2,0 %', label: 'Kittilän väestönkasvu vuonna 2025' },
-    ],
-    statsSource: 'Tilastokeskus: vapaarahoitteiset neliövuokrat huhti–kesäkuu 2026 (pyöristetty), väestörakenne 31.12.2025.',
     towns: {
       kicker: 'Vuokra-asunnot paikkakunnittain',
       h2: 'Minne olet muuttamassa?',
       lead:
-        'Lapissa asuu 176 215 ihmistä (Tilastokeskus 31.12.2025), yli kolmannes heistä Rovaniemellä. Joka sivulla on paikkakunnan vuokrataso, vuokranantajat ja hakukanavat.',
+        'Lapissa asuu 176 215 ihmistä, yli kolmannes heistä Rovaniemellä. Joka sivulla on paikkakunnan vuokrataso, vuokranantajat ja hakukanavat.',
       items: [
         {
           slug: 'rovaniemi',
@@ -216,7 +206,7 @@ export const HOME: Record<HomeLang, HousingHomeCopy> = {
         {
           season: 'Marras–tammikuu',
           title: 'Kaamos',
-          body: 'Pohjoisimmassa Lapissa aurinko ei nouse lainkaan: Nuorgamissa kaamos kestää 25.11.–17.1. (Ilmatieteen laitos). Hiihto ei silti lopu. Rovaniemen Ounasvaaralla noin 50 kilometriä latuja on valaistu, ja selkeinä iltoina revontulet näkyvät kotipihalta.',
+          body: 'Pohjoisimmassa Lapissa aurinko ei nouse lainkaan: Nuorgamissa kaamos kestää 25.11.–17.1. Hiihto ei silti lopu. Rovaniemen Ounasvaaralla noin 50 kilometriä latuja on valaistu, ja selkeinä iltoina revontulet näkyvät kotipihalta.',
           image: IMG.kaamos,
           alt: 'Revontulet lumisen metsätien yllä talviyönä',
           href: '/moving-to-lapland#valo',
@@ -225,7 +215,7 @@ export const HOME: Record<HomeLang, HousingHomeCopy> = {
         {
           season: 'Maalis–huhtikuu',
           title: 'Kevättalvi',
-          body: 'Valo palaa nopeasti, mutta järvet ovat vielä jäässä. Silloin pilkitään, hiihdetään hangen päällä ja ajetaan moottorikelkalla merkittyjä uria. Nastarenkaita saa käyttää maaliskuun jälkeenkin, jos keli sitä vaatii (Traficom).',
+          body: 'Valo palaa nopeasti, mutta järvet ovat vielä jäässä. Silloin pilkitään, hiihdetään hangen päällä ja ajetaan moottorikelkalla merkittyjä uria. Nastarenkaita saa käyttää maaliskuun jälkeenkin, jos keli sitä vaatii.',
           image: IMG.kevat,
           alt: 'Kaksi pilkkijää jäällä auringonlaskussa',
           href: '/moving-to-lapland#auto',
@@ -234,7 +224,7 @@ export const HOME: Record<HomeLang, HousingHomeCopy> = {
         {
           season: 'Kesä–heinäkuu',
           title: 'Yötön yö',
-          body: 'Nuorgamissa aurinko ei laske 16.5.–29.7., ja Rovaniemellä napapiirillä se pysyy horisontin yläpuolella juhannuksen tienoilla (Ilmatieteen laitos). Illat vietetään ulkona, järvellä ja mökillä. Pimennysverhot ovat kesän tärkein hankinta.',
+          body: 'Nuorgamissa aurinko ei laske 16.5.–29.7., ja Rovaniemellä napapiirillä se pysyy horisontin yläpuolella juhannuksen tienoilla. Illat vietetään ulkona, järvellä ja mökillä. Pimennysverhot ovat kesän tärkein hankinta.',
           image: IMG.kesa,
           alt: 'Ounasjärvi ja Ounastunturi keskiyön auringossa Hetassa kesäkuussa, etualalla soutuvene',
           href: '/seasonal-worker-housing#kesa',
@@ -243,7 +233,7 @@ export const HOME: Record<HomeLang, HousingHomeCopy> = {
         {
           season: 'Syys–lokakuu',
           title: 'Ruska',
-          body: 'Tunturikoivut ja varvut värittyvät, ja pimenevät illat tuovat revontulet takaisin. Syksy on myös muuttojen aikaa: Rovaniemelle tulee uusia opiskelijoita elo–syyskuussa, ja silloin yksiöistä kilpaillaan eniten (Yle 27.7.2025).',
+          body: 'Tunturikoivut ja varvut värittyvät, ja pimenevät illat tuovat revontulet takaisin. Syksy on myös muuttojen aikaa: Rovaniemelle tulee uusia opiskelijoita elo–syyskuussa, ja silloin yksiöistä kilpaillaan eniten.',
           image: IMG.syksy,
           alt: 'Ruskan värittämä joenranta ja pieni aitta',
           href: '/rentals',
@@ -270,7 +260,7 @@ export const HOME: Record<HomeLang, HousingHomeCopy> = {
         },
         {
           q: 'Kuinka pimeää kaamos oikeasti on?',
-          a: 'Ilmatieteen laitoksen mukaan kaamos kestää Nuorgamissa lähes kaksi kuukautta (25.11.–17.1.) ja Sodankylässä vain neljä päivää juuri ennen joulua. Rovaniemellä varsinaista kaamosta ei ole, koska sen raja kulkee hieman napapiirin pohjoispuolella (Foreca): aurinko käy talvella matalalla, mutta keskipäivällä on valoisaa, ja lumi moninkertaistaa sen vähän valon, joka on.',
+          a: 'Ilmatieteen laitoksen mukaan kaamos kestää Nuorgamissa lähes kaksi kuukautta (25.11.–17.1.) ja Sodankylässä vain neljä päivää juuri ennen joulua. Rovaniemellä varsinaista kaamosta ei ole, koska sen raja kulkee hieman napapiirin pohjoispuolella: aurinko käy talvella matalalla, mutta keskipäivällä on valoisaa, ja lumi moninkertaistaa sen vähän valon, joka on.',
         },
         {
           q: 'Mistä saan apua muuttoon ulkomailta?',
@@ -290,7 +280,8 @@ export const HOME: Record<HomeLang, HousingHomeCopy> = {
         { label: 'Lapin vuosi kuukausittain', href: '/when-to-go' },
       ],
     },
-    authorNote: 'Luvut tarkistettu Tilastokeskuksen, Kelan ja kuntien omista lähteistä 17.9.2026. Päivitämme, kun seuraava neljännes julkaistaan.',
+    authorNote:
+      'Vuokrat ovat Tilastokeskuksen vapaarahoitteisia keskineliövuokria huhti–kesäkuulta 2026 pyöristettyinä, asukasluvut tilanteesta 31.12.2025. Jokainen luku on tarkistettu alla luetellusta lähteestä syyskuussa 2026, ja päivitämme vuokrat, kun seuraava neljännes julkaistaan.',
     sources: pickSources('fi', SOURCES),
   },
   en: {
@@ -299,25 +290,17 @@ export const HOME: Record<HomeLang, HousingHomeCopy> = {
       'Living in Finnish Lapland: rentals from Rovaniemi to Ivalo, seasonal worker housing, moving and the cost of living. A studio in Rovaniemi is about €560 a month.',
     schemaName: 'StayInLapland: living in Finnish Lapland',
     hero: {
-      eyebrow: 'Finnish Lapland · 176,215 residents',
       h1a: 'Living in Lapland.',
       h1b: 'From polar night to midnight sun.',
       lead: 'Where to find a rental, what everyday life costs and how people here live through the year. A studio in Rovaniemi costs about €560 a month.',
       ctaPrimary: 'Rentals',
       ctaSecondary: 'Seasonal workers',
     },
-    stats: [
-      { value: '€560/mo', label: 'studio in Rovaniemi: 30 m² × €18.66/m²' },
-      { value: '€720/mo', label: 'two-room flat in Rovaniemi: 50 m² × €14.35/m²' },
-      { value: '66,191', label: 'residents in Rovaniemi, 31 Dec 2025' },
-      { value: '+2.0 %', label: 'Kittilä population growth in 2025' },
-    ],
-    statsSource: 'Statistics Finland: free-market rents per m², April–June 2026 (rounded); population structure 31 Dec 2025.',
     towns: {
       kicker: 'Rentals town by town',
       h2: 'Where are you moving to?',
       lead:
-        'Lapland has 176,215 residents (Statistics Finland, 31 Dec 2025), more than a third of them in Rovaniemi. Each page covers the local rent level, the landlords and where to apply.',
+        'Lapland has 176,215 residents, more than a third of them in Rovaniemi. Each page covers the local rent level, the landlords and where to apply.',
       items: [
         {
           slug: 'rovaniemi',
@@ -424,7 +407,7 @@ export const HOME: Record<HomeLang, HousingHomeCopy> = {
         {
           season: 'November–January',
           title: 'Polar night',
-          body: 'In the far north the sun does not rise at all: in Nuorgam the polar night lasts from 25 November to 17 January (Finnish Meteorological Institute). Skiing does not stop. About 50 kilometres of trails on Ounasvaara in Rovaniemi are lit, and on clear evenings the aurora shows from your own yard.',
+          body: 'In the far north the sun does not rise at all: in Nuorgam the polar night lasts from 25 November to 17 January. Skiing does not stop. About 50 kilometres of trails on Ounasvaara in Rovaniemi are lit, and on clear evenings the aurora shows from your own yard.',
           image: IMG.kaamos,
           alt: 'The aurora over a snowy forest road on a winter night',
           href: '/moving-to-lapland#light',
@@ -433,7 +416,7 @@ export const HOME: Record<HomeLang, HousingHomeCopy> = {
         {
           season: 'March–April',
           title: 'Late winter',
-          body: 'The light returns fast, but the lakes are still frozen. This is when people ice-fish, ski on the crust of the snow and ride snowmobiles along marked trails. Studded tyres may stay on after March if the conditions require it (Traficom).',
+          body: 'The light returns fast, but the lakes are still frozen. This is when people ice-fish, ski on the crust of the snow and ride snowmobiles along marked trails. Studded tyres may stay on after March if the conditions require it.',
           image: IMG.kevat,
           alt: 'Two people ice fishing on a lake at sunset',
           href: '/moving-to-lapland#car',
@@ -442,7 +425,7 @@ export const HOME: Record<HomeLang, HousingHomeCopy> = {
         {
           season: 'June–July',
           title: 'Midnight sun',
-          body: 'In Nuorgam the sun does not set from 16 May to 29 July, and at the Arctic Circle in Rovaniemi it stays above the horizon around Midsummer (Finnish Meteorological Institute). Evenings are spent outdoors, on the lake and at the cottage. Blackout curtains are the key purchase of the summer.',
+          body: 'In Nuorgam the sun does not set from 16 May to 29 July, and at the Arctic Circle in Rovaniemi it stays above the horizon around Midsummer. Evenings are spent outdoors, on the lake and at the cottage. Blackout curtains are the key purchase of the summer.',
           image: IMG.kesa,
           alt: 'Lake Ounasjärvi and Ounastunturi fell in the midnight sun at Hetta in June, a rowing boat in front',
           href: '/seasonal-worker-housing#summer',
@@ -451,7 +434,7 @@ export const HOME: Record<HomeLang, HousingHomeCopy> = {
         {
           season: 'September–October',
           title: 'Autumn colours',
-          body: 'Fell birches and dwarf shrubs turn red and gold, and the darkening evenings bring the aurora back. Autumn is also moving season: new students arrive in Rovaniemi in August and September, and that is when competition for studios is at its fiercest (Yle, 27 Jul 2025).',
+          body: 'Fell birches and dwarf shrubs turn red and gold, and the darkening evenings bring the aurora back. Autumn is also moving season: new students arrive in Rovaniemi in August and September, and that is when competition for studios is at its fiercest.',
           image: IMG.syksy,
           alt: 'A riverbank in autumn colours and a small storehouse',
           href: '/rentals',
@@ -478,7 +461,7 @@ export const HOME: Record<HomeLang, HousingHomeCopy> = {
         },
         {
           q: 'How dark is the polar night, really?',
-          a: 'According to the Finnish Meteorological Institute the polar night lasts almost two months in Nuorgam (25 Nov–17 Jan) and only four days just before Christmas in Sodankylä. Rovaniemi has no true polar night, because the line runs slightly north of the Arctic Circle (Foreca): the winter sun stays low, but midday is light, and snow multiplies what little light there is.',
+          a: 'According to the Finnish Meteorological Institute the polar night lasts almost two months in Nuorgam (25 Nov–17 Jan) and only four days just before Christmas in Sodankylä. Rovaniemi has no true polar night, because the line runs slightly north of the Arctic Circle: the winter sun stays low, but midday is light, and snow multiplies what little light there is.',
         },
         {
           q: 'Where do I get help moving from abroad?',
@@ -498,7 +481,8 @@ export const HOME: Record<HomeLang, HousingHomeCopy> = {
         { label: 'When to go', href: '/when-to-go' },
       ],
     },
-    authorNote: 'Figures checked against Statistics Finland, Kela and the municipalities’ own sources on 17 September 2026. Updated when the next quarter is published.',
+    authorNote:
+      'Rents are Statistics Finland’s average free-market rents per m² for April–June 2026, rounded; population figures are for 31 December 2025. Every figure was checked against the source listed below in September 2026, and the rents are updated when the next quarter is published.',
     sources: pickSources('en', SOURCES),
   },
   /**
@@ -518,25 +502,17 @@ export const HOME: Record<HomeLang, HousingHomeCopy> = {
       'Vivre en Laponie finlandaise : trouver un logement de Rovaniemi à Ivalo, le logement des saisonniers, le coût de la vie et l’année au quotidien. Un studio à Rovaniemi coûte environ 560 € par mois.',
     schemaName: 'StayInLapland : vivre en Laponie finlandaise',
     hero: {
-      eyebrow: 'Laponie finlandaise · 176 215 habitants',
       h1a: 'Vivre en Laponie.',
       h1b: 'De la nuit polaire au soleil de minuit.',
       lead: 'Où trouver un logement, ce que coûte le quotidien et comment on vit ici toute l’année. Un studio à Rovaniemi coûte environ 560 euros par mois.',
       ctaPrimary: 'Locations',
       ctaSecondary: 'Pour les saisonniers',
     },
-    stats: [
-      { value: '560 €/mois', label: 'studio à Rovaniemi\u00a0: 30 m² × 18,66 €/m²' },
-      { value: '720 €/mois', label: 'deux-pièces à Rovaniemi\u00a0: 50 m² × 14,35 €/m²' },
-      { value: '66 191', label: 'habitants à Rovaniemi au 31 décembre 2025' },
-      { value: '+2,0 %', label: 'croissance de Kittilä en 2025' },
-    ],
-    statsSource: 'Tilastokeskus (office statistique finlandais)\u00a0: loyers au m² du parc privé, avril–juin 2026 (arrondis)\u00a0; population au 31 décembre 2025.',
     towns: {
       kicker: 'Les locations commune par commune',
       h2: 'Où allez-vous vous installer\u00a0?',
       lead:
-        'La Laponie compte 176 215 habitants (Tilastokeskus, 31 décembre 2025), plus d’un tiers à Rovaniemi. Chaque page donne le niveau des loyers, les bailleurs et où déposer un dossier.',
+        'La Laponie compte 176 215 habitants, dont plus d’un tiers à Rovaniemi. Chaque page donne le niveau des loyers, les bailleurs et où déposer un dossier.',
       items: [
         {
           slug: 'rovaniemi',
@@ -643,7 +619,7 @@ export const HOME: Record<HomeLang, HousingHomeCopy> = {
         {
           season: 'Novembre–janvier',
           title: 'La nuit polaire',
-          body: 'À l’extrême nord, le soleil ne se lève pas du tout : à Nuorgam, la nuit polaire dure du 25 novembre au 17 janvier (Institut météorologique finlandais). Le ski ne s’arrête pas pour autant. À Rovaniemi, une cinquantaine de kilomètres de pistes sont éclairées sur l’Ounasvaara, et les soirs clairs, l’aurore boréale se voit depuis la cour.',
+          body: 'À l’extrême nord, le soleil ne se lève pas du tout : à Nuorgam, la nuit polaire dure du 25 novembre au 17 janvier. Le ski ne s’arrête pas pour autant. À Rovaniemi, une cinquantaine de kilomètres de pistes sont éclairées sur l’Ounasvaara, et les soirs clairs, l’aurore boréale se voit depuis la cour.',
           image: IMG.kaamos,
           alt: 'Aurore boréale au-dessus d’une route forestière enneigée, la nuit',
           href: '/moving-to-lapland#light',
@@ -652,7 +628,7 @@ export const HOME: Record<HomeLang, HousingHomeCopy> = {
         {
           season: 'Mars–avril',
           title: 'La fin de l’hiver',
-          body: 'La lumière revient vite, mais les lacs sont encore gelés. C’est la saison de la pêche sur glace, du ski sur la neige durcie et de la motoneige sur les pistes balisées. Les pneus cloutés restent autorisés après le mois de mars si les conditions l’exigent (Traficom).',
+          body: 'La lumière revient vite, mais les lacs sont encore gelés. C’est la saison de la pêche sur glace, du ski sur la neige durcie et de la motoneige sur les pistes balisées. Les pneus cloutés restent autorisés après le mois de mars si les conditions l’exigent.',
           image: IMG.kevat,
           alt: 'Deux pêcheurs sur la glace au coucher du soleil',
           href: '/moving-to-lapland#car',
@@ -661,7 +637,7 @@ export const HOME: Record<HomeLang, HousingHomeCopy> = {
         {
           season: 'Juin–juillet',
           title: 'Le soleil de minuit',
-          body: 'À Nuorgam, le soleil ne se couche pas du 16 mai au 29 juillet, et à Rovaniemi, sur le cercle polaire, il reste au-dessus de l’horizon autour de la Saint-Jean (Institut météorologique finlandais). Les soirées se passent dehors, sur le lac et au chalet. Les rideaux occultants sont l’achat de l’été.',
+          body: 'À Nuorgam, le soleil ne se couche pas du 16 mai au 29 juillet, et à Rovaniemi, sur le cercle polaire, il reste au-dessus de l’horizon autour de la Saint-Jean. Les soirées se passent dehors, sur le lac et au chalet. Les rideaux occultants sont l’achat de l’été.',
           image: IMG.kesa,
           alt: 'Le lac Ounasjärvi et le fjeld Ounastunturi sous le soleil de minuit à Hetta, en juin, une barque au premier plan',
           href: '/seasonal-worker-housing#summer',
@@ -670,7 +646,7 @@ export const HOME: Record<HomeLang, HousingHomeCopy> = {
         {
           season: 'Septembre–octobre',
           title: 'Les couleurs d’automne',
-          body: 'Les bouleaux des fjelds et les arbrisseaux virent au rouge et à l’or, et les soirées qui raccourcissent ramènent les aurores. L’automne est aussi la saison des déménagements : les nouveaux étudiants arrivent à Rovaniemi en août et en septembre, et c’est là que la concurrence pour les studios est la plus rude (Yle, 27 juillet 2025).',
+          body: 'Les bouleaux des fjelds et les arbrisseaux virent au rouge et à l’or, et les soirées qui raccourcissent ramènent les aurores. L’automne est aussi la saison des déménagements : les nouveaux étudiants arrivent à Rovaniemi en août et en septembre, et c’est là que la concurrence pour les studios est la plus rude.',
           image: IMG.syksy,
           alt: 'Berge aux couleurs d’automne et petit grenier en bois',
           href: '/rentals',
@@ -697,7 +673,7 @@ export const HOME: Record<HomeLang, HousingHomeCopy> = {
         },
         {
           q: 'La nuit polaire, c’est sombre à quel point\u00a0?',
-          a: 'D’après l’Institut météorologique finlandais, la nuit polaire dure presque deux mois à Nuorgam (du 25 novembre au 17 janvier) et seulement quatre jours à Sodankylä, juste avant Noël. Rovaniemi n’a pas de vraie nuit polaire, car sa limite passe un peu au nord du cercle polaire (Foreca) : le soleil d’hiver reste bas, mais il fait clair à midi, et la neige démultiplie le peu de lumière qu’il y a.',
+          a: 'D’après l’Institut météorologique finlandais, la nuit polaire dure presque deux mois à Nuorgam (du 25 novembre au 17 janvier) et seulement quatre jours à Sodankylä, juste avant Noël. Rovaniemi n’a pas de vraie nuit polaire, car sa limite passe un peu au nord du cercle polaire : le soleil d’hiver reste bas, mais il fait clair à midi, et la neige démultiplie le peu de lumière qu’il y a.',
         },
         {
           q: 'Qui peut m’aider à venir de l’étranger\u00a0?',
@@ -717,7 +693,8 @@ export const HOME: Record<HomeLang, HousingHomeCopy> = {
         { label: 'Quand venir', href: '/when-to-go' },
       ],
     },
-    authorNote: 'Chiffres vérifiés auprès de Tilastokeskus, de Kela et des communes le 17 septembre 2026. Mis à jour à la publication du trimestre suivant.',
+    authorNote:
+      'Les loyers sont les loyers moyens au m² du parc privé publiés par Statistics Finland (Tilastokeskus) pour avril–juin 2026, arrondis\u00a0; la population est celle du 31 décembre 2025. Chaque chiffre a été vérifié en septembre 2026 auprès de la source indiquée ci-dessous, et les loyers sont mis à jour à la publication du trimestre suivant.',
     sources: pickSources('fr', SOURCES),
   },
   /**
@@ -736,25 +713,17 @@ export const HOME: Record<HomeLang, HousingHomeCopy> = {
       'Wonen in Fins Lapland: een huurwoning van Rovaniemi tot Ivalo, huisvesting voor seizoenswerkers, de kosten van het dagelijks leven en het jaar hierboven. Een studio in Rovaniemi kost ongeveer € 560 per maand.',
     schemaName: 'StayInLapland: wonen in Fins Lapland',
     hero: {
-      eyebrow: 'Fins Lapland · 176.215 inwoners',
       h1a: 'Wonen in Lapland.',
       h1b: 'Van poolnacht tot middernachtzon.',
       lead: 'Waar u een huurwoning vindt, wat het dagelijks leven kost en hoe u hier het jaar doorkomt. Een studio in Rovaniemi kost ongeveer 560 euro per maand.',
       ctaPrimary: 'Huurwoningen',
       ctaSecondary: 'Voor seizoenswerkers',
     },
-    stats: [
-      { value: '€ 560 p.m.', label: 'studio in Rovaniemi: 30 m² × € 18,66/m²' },
-      { value: '€ 720 p.m.', label: 'tweekamerwoning in Rovaniemi: 50 m² × € 14,35/m²' },
-      { value: '66.191', label: 'inwoners in Rovaniemi op 31 december 2025' },
-      { value: '+2,0 %', label: 'bevolkingsgroei van Kittilä in 2025' },
-    ],
-    statsSource: 'Tilastokeskus (het Finse statistiekbureau): huren per m² in de vrije sector, april–juni 2026 (afgerond); bevolking op 31 december 2025.',
     towns: {
       kicker: 'Huurwoningen per plaats',
       h2: 'Waar gaat u wonen?',
       lead:
-        'In Lapland wonen 176.215 mensen (Tilastokeskus, 31 december 2025), ruim een derde daarvan in Rovaniemi. Elke pagina geeft het huurniveau, de verhuurders en waar u zich inschrijft.',
+        'In Lapland wonen 176.215 mensen, ruim een derde daarvan in Rovaniemi. Elke pagina geeft het huurniveau, de verhuurders en waar u zich inschrijft.',
       items: [
         {
           slug: 'rovaniemi',
@@ -861,7 +830,7 @@ export const HOME: Record<HomeLang, HousingHomeCopy> = {
         {
           season: 'November–januari',
           title: 'De poolnacht',
-          body: 'In het uiterste noorden komt de zon helemaal niet op: in Nuorgam duurt de poolnacht van 25 november tot 17 januari (het Fins Meteorologisch Instituut). Toch wordt er gewoon geskied. Op de Ounasvaara bij Rovaniemi is zo’n vijftig kilometer loipe verlicht, en op heldere avonden ziet u het noorderlicht vanaf uw eigen erf.',
+          body: 'In het uiterste noorden komt de zon helemaal niet op: in Nuorgam duurt de poolnacht van 25 november tot 17 januari. Toch wordt er gewoon geskied. Op de Ounasvaara bij Rovaniemi is zo’n vijftig kilometer loipe verlicht, en op heldere avonden ziet u het noorderlicht vanaf uw eigen erf.',
           image: IMG.kaamos,
           alt: 'Noorderlicht boven een besneeuwde bosweg in de winternacht',
           href: '/moving-to-lapland#light',
@@ -870,7 +839,7 @@ export const HOME: Record<HomeLang, HousingHomeCopy> = {
         {
           season: 'Maart–april',
           title: 'Het einde van de winter',
-          body: 'Het licht komt snel terug, maar de meren liggen nog dicht. Dit is de tijd van ijsvissen, skiën op de harde sneeuwkorst en sneeuwscooters op gemarkeerde routes. Spijkerbanden mogen ook na maart blijven zitten als de omstandigheden daarom vragen (Traficom).',
+          body: 'Het licht komt snel terug, maar de meren liggen nog dicht. Dit is de tijd van ijsvissen, skiën op de harde sneeuwkorst en sneeuwscooters op gemarkeerde routes. Spijkerbanden mogen ook na maart blijven zitten als de omstandigheden daarom vragen.',
           image: IMG.kevat,
           alt: 'Twee ijsvissers op het ijs bij zonsondergang',
           href: '/moving-to-lapland#car',
@@ -879,7 +848,7 @@ export const HOME: Record<HomeLang, HousingHomeCopy> = {
         {
           season: 'Juni–juli',
           title: 'De middernachtzon',
-          body: 'In Nuorgam gaat de zon van 16 mei tot 29 juli niet onder, en in Rovaniemi, op de poolcirkel, blijft hij rond midzomer boven de horizon (het Fins Meteorologisch Instituut). De avonden brengt u buiten door, op het meer en bij het zomerhuisje. Verduisterende gordijnen zijn de belangrijkste aankoop van de zomer.',
+          body: 'In Nuorgam gaat de zon van 16 mei tot 29 juli niet onder, en in Rovaniemi, op de poolcirkel, blijft hij rond midzomer boven de horizon. De avonden brengt u buiten door, op het meer en bij het zomerhuisje. Verduisterende gordijnen zijn de belangrijkste aankoop van de zomer.',
           image: IMG.kesa,
           alt: 'Het meer Ounasjärvi en de Ounastunturi in de middernachtzon bij Hetta in juni, met een roeiboot op de voorgrond',
           href: '/seasonal-worker-housing#summer',
@@ -888,7 +857,7 @@ export const HOME: Record<HomeLang, HousingHomeCopy> = {
         {
           season: 'September–oktober',
           title: 'De herfstkleuren',
-          body: 'De berken op de fjelden en de dwergstruiken kleuren rood en goud, en de donkerder avonden brengen het noorderlicht terug. De herfst is ook verhuistijd: in augustus en september komen de nieuwe studenten naar Rovaniemi, en dan is de strijd om studio’s het hevigst (Yle, 27 juli 2025).',
+          body: 'De berken op de fjelden en de dwergstruiken kleuren rood en goud, en de donkerder avonden brengen het noorderlicht terug. De herfst is ook verhuistijd: in augustus en september komen de nieuwe studenten naar Rovaniemi, en dan is de strijd om studio’s het hevigst.',
           image: IMG.syksy,
           alt: 'Rivieroever in herfstkleuren met een klein voorraadschuurtje',
           href: '/rentals',
@@ -915,7 +884,7 @@ export const HOME: Record<HomeLang, HousingHomeCopy> = {
         },
         {
           q: 'Hoe donker is de poolnacht echt?',
-          a: 'Volgens het Fins Meteorologisch Instituut duurt de poolnacht in Nuorgam bijna twee maanden (25 november–17 januari) en in Sodankylä maar vier dagen, vlak voor Kerstmis. Rovaniemi heeft geen echte poolnacht, want die grens loopt net ten noorden van de poolcirkel (Foreca): de winterzon blijft laag, maar rond het middaguur is het licht, en de sneeuw versterkt het beetje licht dat er is.',
+          a: 'Volgens het Fins Meteorologisch Instituut duurt de poolnacht in Nuorgam bijna twee maanden (25 november–17 januari) en in Sodankylä maar vier dagen, vlak voor Kerstmis. Rovaniemi heeft geen echte poolnacht, want die grens loopt net ten noorden van de poolcirkel: de winterzon blijft laag, maar rond het middaguur is het licht, en de sneeuw versterkt het beetje licht dat er is.',
         },
         {
           q: 'Waar krijg ik hulp bij een verhuizing vanuit het buitenland?',
@@ -935,7 +904,8 @@ export const HOME: Record<HomeLang, HousingHomeCopy> = {
         { label: 'De beste reistijd', href: '/when-to-go' },
       ],
     },
-    authorNote: 'Cijfers gecontroleerd bij Tilastokeskus, Kela en de gemeenten zelf op 17 september 2026. We werken ze bij zodra het volgende kwartaal verschijnt.',
+    authorNote:
+      'De huren zijn de gemiddelde vrijesectorhuren per m² van Statistics Finland (Tilastokeskus) over april–juni 2026, afgerond; de inwonertallen gelden op 31 december 2025. Elk cijfer is in september 2026 gecontroleerd bij de bron die hieronder staat, en we werken de huren bij zodra het volgende kwartaal verschijnt.',
     sources: pickSources('nl', SOURCES),
   },
 };

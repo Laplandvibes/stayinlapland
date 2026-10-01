@@ -34,7 +34,7 @@ import Newsletter from '../Newsletter';
 import AffiliateCTA from '../AffiliateCTA';
 import HousingWorkPromo from './HousingWorkPromo';
 import PlaceGraphic from './PlaceGraphic';
-import { TwoTone } from './ui';
+import { CHIP_BASE, TwoTone } from './ui';
 import PhotoCredit, { uniqueCredits } from '../PhotoCredit';
 import { creditFor } from '../../data/photoCredits';
 import { pageUrl } from '../../lib/meta';
@@ -311,7 +311,7 @@ function SectionBlock({ s, page, tone, accentKey, photoLabel }: { s: Section; pa
             <Icon className="w-5 h-5" />
           </span>
           {s.kicker && (
-            <p className={`inline-flex px-3 py-1 rounded-full text-[11px] font-semibold tracking-[0.18em] uppercase ${night ? 'bg-white/10 text-[#F9A8D4]' : accent.chip}`}>
+            <p className={`${CHIP_BASE} ${night ? 'bg-white/10 text-[#F9A8D4]' : accent.chip}`}>
               {s.kicker}
             </p>
           )}
@@ -483,7 +483,7 @@ export default function HousingPage({ route, copy, heroImage, current, parent, w
         <section className="relative overflow-hidden py-14 sm:py-20 px-5 sm:px-6 bg-finland-blue text-snow">
           <div className="pointer-events-none absolute -top-24 -right-16 w-[26rem] h-[26rem] rounded-full bg-vibe-pink/25 blur-3xl" aria-hidden="true" />
           <div className="relative max-w-3xl mx-auto">
-            <p className="inline-flex px-3 py-1 rounded-full bg-white/12 text-snow text-[11px] font-semibold tracking-[0.18em] uppercase mb-4">{c.cta.kicker}</p>
+            <p className={`${CHIP_BASE} bg-white/12 text-snow mb-4`}>{c.cta.kicker}</p>
             <h2 className="font-heading text-3xl sm:text-4xl md:text-5xl text-snow leading-tight tracking-wide">
               <TwoTone text={c.cta.h2} />
             </h2>
@@ -513,7 +513,7 @@ export default function HousingPage({ route, copy, heroImage, current, parent, w
       {c.faqs && c.faqs.length > 0 && (
         <section className="py-14 sm:py-20 px-5 sm:px-6">
           <div className="max-w-3xl mx-auto">
-            <p className="inline-flex px-3 py-1 rounded-full bg-vibe-pink/10 text-[#BE185D] text-[11px] font-semibold tracking-[0.18em] uppercase mb-4">{ui.faqKicker}</p>
+            <p className={`${CHIP_BASE} bg-vibe-pink/10 text-[#BE185D] mb-4`}>{ui.faqKicker}</p>
             <h2 className="font-heading text-3xl sm:text-4xl md:text-5xl text-charcoal leading-tight tracking-wide mb-8">
               <TwoTone text={ui.faqH2} />
             </h2>
@@ -539,7 +539,7 @@ export default function HousingPage({ route, copy, heroImage, current, parent, w
       {/* Muut asumisen sivut: kuvakkeelliset linkit (ei toistuvia valokuvia) */}
       <section className="py-12 sm:py-16 px-5 sm:px-6 bg-cream-2/70">
         <div className="max-w-6xl mx-auto">
-          <p className="inline-flex px-3 py-1 rounded-full bg-finland-blue/10 text-finland-blue text-[11px] font-semibold tracking-[0.18em] uppercase mb-4">{ui.siblingsKicker}</p>
+          <p className={`${CHIP_BASE} bg-finland-blue/10 text-finland-blue mb-4`}>{ui.siblingsKicker}</p>
           <h2 className="font-heading text-3xl sm:text-4xl text-charcoal leading-tight tracking-wide mb-7">
             <TwoTone text={ui.siblingsH2} />
           </h2>

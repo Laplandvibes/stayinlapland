@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { ArrowRight, ArrowUpRight, MapPin } from 'lucide-react';
+import { ArrowRight, ArrowUpRight } from 'lucide-react';
 import Newsletter from '../components/Newsletter';
 import FinnishDivider from '../components/FinnishDivider';
 import SourcesDisclosure from '../components/SourcesDisclosure';
@@ -13,7 +13,7 @@ import PlaceGraphic from '../components/housing/PlaceGraphic';
 import PhotoCredit, { uniqueCredits } from '../components/PhotoCredit';
 import { creditFor } from '../data/photoCredits';
 import HousingWorkPromo from '../components/housing/HousingWorkPromo';
-import { KickerChip, TwoTone } from '../components/housing/ui';
+import { CHIP_BASE, KickerChip, TwoTone } from '../components/housing/ui';
 import { HOME, HOUSING_ROUTES, HOUSING_UI, homeLang, type HousingRouteKey } from '../housing';
 import { HOME_HERO_IMAGE } from '../housing/home';
 
@@ -22,13 +22,18 @@ import { HOME_HERO_IMAGE } from '../housing/home';
  * suomeksi ja englanniksi. Muut kielet näkevät vanhan etusivun, kunnes niiden
  * asumissisältö on kirjoitettu ja kysyntä mitattu (§25).
  *
- * 🔴 JÄRJESTYS (Vesa 18.9.2026: "eihän tällaista voi olla etusivun parhaalla
- * paikalla"): heron ja lukukaistan jälkeen tulee HETI sisältö, jota lukija
- * haki: paikkakuntakortit kuvilla, sitten polut kuvilla. Talon mainospaikka
+ * JÄRJESTYS (Vesa 18.9.2026: "eihän tällaista voi olla etusivun parhaalla
+ * paikalla"): heron jälkeen tulee HETI sisältö, jota lukija haki:
+ * paikkakuntakortit kuvilla, sitten polut kuvilla. Talon mainospaikka
  * (MainPartnerBanner) vasta näiden jälkeen, appimainos UKK:n jälkeen. Sama
  * linja kuin laplandstaysilla 17.9. (ef91439). Sivusto ei puhu itsestään eikä
- * lähteistään sivun alussa; tarkistusmerkintä on lähdelistan yhteydessä.
- * Älä palauta tekstikappaletta tai mainosta heron alle.
+ * lähteistään sivun alussa. Älä palauta tekstikappaletta tai mainosta heron alle.
+ *
+ * Luvut ja lähteet (Vesa 1.10.2026: "noi lähteet ja tilastot, eikö ne ole parempi
+ * listata jonnekin sivun alalaitaan"): heron alla ei ole erillistä lukukaistaa eikä
+ * lähderiviä. Vuokrat ja asukasluvut ovat paikkakuntakorteissa, joissa lukija niitä
+ * käyttää, ja kaikki lähteet menetelmineen sivun lopun lähdeluettelossa
+ * (SourcesDisclosure). Tekstissä ei ole lähdesulkeita.
  *
  * 🔴 23.9.2026 (Vesa): "etusivun hero … liikaa overlaytä" + "tämän sivun pitäisi kertoa myös
  * siitä asumisesta siellä pidemmän aikaa, mitä paikalliset tekee yleensä". Hero on nyt punainen
@@ -113,13 +118,8 @@ export default function HomeHousing() {
             <div className="absolute inset-x-0 bottom-0 h-40 bg-gradient-to-t from-night/80 to-transparent hidden lg:block" aria-hidden="true" />
           </div>
 
-          <div className="relative z-10 w-full max-w-7xl mx-auto px-5 sm:px-6 lg:px-8 pt-6 pb-28 lg:pt-28 lg:pb-32 text-center lg:text-left">
+          <div className="relative z-10 w-full max-w-7xl mx-auto px-5 sm:px-6 lg:px-8 pt-6 pb-14 sm:pb-16 lg:pt-28 lg:pb-28 text-center lg:text-left">
             <div className="max-w-2xl mx-auto lg:mx-0 lg:max-w-[42rem]">
-              {/* 🔴 11 px muste valokuvalla: tumma laatta antaa musteelle taustan. */}
-              <p className="inline-flex items-center gap-2 rounded-full bg-night/80 px-3 py-1.5 text-[#F9A8D4] uppercase tracking-[0.24em] text-[11px] sm:text-xs font-semibold mb-6">
-                <MapPin className="w-3.5 h-3.5" />
-                {h.hero.eyebrow}
-              </p>
               <h1
                 className="font-heading font-medium text-snow leading-[1.04] tracking-wide text-[42px] sm:text-6xl lg:text-7xl mb-6"
                 style={{ textShadow: '0 4px 24px rgba(0,0,0,0.55)' }}
@@ -141,19 +141,6 @@ export default function HomeHousing() {
             </div>
           </div>
         </div>
-      </section>
-
-      {/* Lukukaista — vuokra euroina ensin; lähde rivin alla. */}
-      <section className="relative z-10 -mt-14 sm:-mt-16 px-5 sm:px-6" aria-label={h.statsSource}>
-        <div className="max-w-5xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-4">
-          {h.stats.map((s) => (
-            <div key={s.label} className="rounded-2xl border border-white/10 bg-night/85 backdrop-blur-md p-4 md:p-5 text-center shadow-[0_8px_30px_rgba(0,0,0,0.35)]">
-              <p className="font-heading text-3xl md:text-4xl text-vibe-pink leading-none">{s.value}</p>
-              <p className="mt-2 text-[10px] md:text-[11px] uppercase tracking-[0.14em] text-snow/75 font-semibold leading-snug">{s.label}</p>
-            </div>
-          ))}
-        </div>
-        <p className="max-w-5xl mx-auto mt-3 text-right text-stone text-[11px]">{h.statsSource}</p>
       </section>
 
       {/* 1. Paikkakunnat kuvakortteina: se, mitä haetaan eniten, heti heron alle. */}
@@ -287,7 +274,7 @@ export default function HomeHousing() {
                     loading="lazy"
                     decoding="async"
                   />
-                  <span className="absolute top-3 left-3 inline-flex rounded-full bg-night/80 px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.14em] text-snow">
+                  <span className={`${CHIP_BASE} absolute top-3 left-3 bg-night/80 text-snow`}>
                     {card.season}
                   </span>
                   <PhotoCredit credit={creditFor(card.image)} label={ui.photo} linked={false} />
@@ -356,7 +343,7 @@ export default function HomeHousing() {
       <section className="relative overflow-hidden py-14 sm:py-20 px-5 sm:px-6 bg-finland-blue text-snow">
         <div className="pointer-events-none absolute -top-24 -right-16 w-[26rem] h-[26rem] rounded-full bg-vibe-pink/25 blur-3xl" aria-hidden="true" />
         <div className="relative max-w-3xl mx-auto">
-          <p className="inline-flex px-3 py-1 rounded-full bg-white/12 text-snow text-[11px] font-semibold tracking-[0.18em] uppercase mb-4">{h.holiday.kicker}</p>
+          <p className={`${CHIP_BASE} bg-white/12 text-snow mb-4`}>{h.holiday.kicker}</p>
           <h2 className="font-heading text-3xl sm:text-4xl md:text-5xl text-snow leading-tight tracking-wide">{h.holiday.h2}</h2>
           <p className="text-snow/90 text-base sm:text-lg mt-4 leading-relaxed">{h.holiday.lead}</p>
           <div className="mt-6 flex flex-wrap gap-3">

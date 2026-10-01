@@ -1,5 +1,6 @@
 import { ArrowUpRight, Briefcase } from 'lucide-react';
 import type { HousingHomeCopy } from '../../housing/home';
+import { CHIP_BASE } from './ui';
 
 interface HousingWorkPromoProps {
   copy: HousingHomeCopy['work'];
@@ -105,7 +106,7 @@ export default function HousingWorkPromo({ copy, placement, variant = 'banner' }
                 (Vesa 23.9.2026: "sisarsivusto on logon päällä"). */}
             <div className="flex flex-col items-start gap-3">
               <WorkWordmark className="text-3xl sm:text-4xl" />
-              <p className="inline-flex px-3 py-1 rounded-full bg-white/12 text-snow text-[11px] font-semibold tracking-[0.18em] uppercase">{copy.kicker}</p>
+              <p className={`${CHIP_BASE} bg-white/12 text-snow`}>{copy.kicker}</p>
             </div>
             <h2 className="font-heading text-4xl sm:text-5xl md:text-6xl text-snow leading-[1.05] tracking-wide mt-5 mb-5">
               {copy.h2a} <span className="text-[#BFD7FF]">{copy.h2b}</span>

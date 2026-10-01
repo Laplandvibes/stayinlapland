@@ -13,6 +13,13 @@ export function TwoTone({ text }: { text: string }) {
   );
 }
 
+/**
+ * Otsikkolapun perusluokat. Lappu on värikorostus (pinkki, sininen, kulta tai tumma kaista),
+ * teksti tavallisella kirjainkoolla ja ilman harvennusta: 11 px:n harvennettu versaali luki
+ * puhelimessa koristeena eikä tekstinä (Vesa 1.10.2026).
+ */
+export const CHIP_BASE = 'inline-flex px-3 py-1 rounded-full text-[13px] font-semibold leading-snug';
+
 /** Otsikkolappu. tone: vaalean pohjan aksentti tai tumma kaista. */
 export function KickerChip({ children, tone = 'pink' }: { children: React.ReactNode; tone?: 'pink' | 'blue' | 'gold' | 'night' }) {
   const cls = {
@@ -21,5 +28,5 @@ export function KickerChip({ children, tone = 'pink' }: { children: React.ReactN
     gold: 'bg-gold-soft/70 text-[#7A5C1E]',
     night: 'bg-white/10 text-[#F9A8D4]',
   }[tone];
-  return <p className={`inline-flex px-3 py-1 rounded-full text-[11px] font-semibold tracking-[0.18em] uppercase ${cls}`}>{children}</p>;
+  return <p className={`${CHIP_BASE} ${cls}`}>{children}</p>;
 }

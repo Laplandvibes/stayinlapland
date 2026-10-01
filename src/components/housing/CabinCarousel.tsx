@@ -1,6 +1,7 @@
 import { useEffect, useMemo, useState } from 'react';
 import { ArrowRight, ArrowUpRight, BedDouble, Ruler, Users } from 'lucide-react';
 import type { HousingLang } from '../../housing/types';
+import { CHIP_BASE } from './ui';
 
 /**
  * Lomarenkaan mökit kuvineen pitkät jaksot -sivulle.
@@ -152,7 +153,7 @@ export default function CabinCarousel({ hl, sidPrefix, id }: { hl: HousingLang; 
       <div className="max-w-6xl mx-auto">
         <div className="flex flex-wrap items-end justify-between gap-4 mb-4">
           <div className="min-w-0">
-            <p className="mb-3 inline-flex rounded-full bg-charcoal/[0.06] px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.18em] text-graphite">
+            <p className={`${CHIP_BASE} mb-3 bg-charcoal/[0.06] text-graphite`}>
               {t.ad} · {t.kicker}
             </p>
             <h2 className="font-heading text-3xl sm:text-4xl md:text-5xl text-charcoal leading-tight tracking-wide [text-wrap:balance]">{t.h2}</h2>

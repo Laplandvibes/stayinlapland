@@ -46,15 +46,9 @@ export default function Hero() {
           }}
         />
 
-        <div className="relative z-10 text-center px-5 sm:px-6 max-w-3xl mx-auto pt-28 pb-32">
-          <p
-            className="inline-flex items-center gap-2 text-vibe-pink uppercase tracking-[0.3em] text-[11px] sm:text-xs font-semibold mb-6"
-            style={{ textShadow: '0 2px 12px rgba(0,0,0,0.85)' }}
-          >
-            <MapPin className="w-3.5 h-3.5" />
-            {t.eyebrow}
-          </p>
-
+        <div className="relative z-10 text-center px-5 sm:px-6 max-w-3xl mx-auto pt-28 pb-28">
+          {/* Ei yläotsikkoa ("Finnisch-Lappland · Redaktioneller Leitfaden"): sivusto ei
+              esittele itseään heron päällä (Vesa 18.9.2026, etusivun kärki). */}
           <h1
             className="font-heading font-medium text-snow leading-[1.05] tracking-wide text-[42px] sm:text-6xl lg:text-7xl xl:text-8xl mb-6 xl:text-[clamp(96px,1.5vw_+_76.8px,115.2px)]"
             style={{ textShadow: '0 4px 30px rgba(0,0,0,0.85)' }}

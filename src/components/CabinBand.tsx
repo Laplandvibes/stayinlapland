@@ -9,6 +9,7 @@ import {
   type CabinsApiData,
 } from '../lib/lomarengas';
 import { useLang, type Lang } from '../i18n/useLang';
+import { KickerChip } from './housing/ui';
 
 /**
  * Real, bookable cabins for one destination — the only imagery on this site
@@ -261,9 +262,7 @@ export default function CabinBand({
       <div className="max-w-6xl mx-auto">
         <div className="flex flex-wrap items-end justify-between gap-4 mb-4">
           <div className="min-w-0">
-            <p className="text-vibe-pink text-[11px] font-semibold tracking-[0.28em] uppercase mb-3">
-              {c.eyebrow}
-            </p>
+            <div className="mb-3"><KickerChip tone="pink">{c.eyebrow}</KickerChip></div>
             <h2 className="font-heading text-4xl sm:text-5xl text-charcoal leading-tight tracking-wide">
               {c.h2(activeName)}
             </h2>

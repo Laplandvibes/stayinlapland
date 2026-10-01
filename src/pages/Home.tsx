@@ -8,7 +8,7 @@ import Hero from '../components/Hero';
 import Newsletter from '../components/Newsletter';
 import FinnishDivider from '../components/FinnishDivider';
 import AuthorByline from '../components/AuthorByline';
-import PullQuote from '../components/PullQuote';
+import { KickerChip } from '../components/housing/ui';
 import TripTypeRecommender from '../components/TripTypeRecommender';
 import WorkInLaplandPromo from '../components/WorkInLaplandPromo';
 import CabinBand from '../components/CabinBand';
@@ -55,10 +55,6 @@ export default function Home() {
     return { ...d, pitch: dl?.pitch ?? d.pitch };
   });
 
-  // Real counts from the data layer — the stat band must never drift from the
-  // actual inventory (the old hardcoded "17" survived a property removal).
-  const totalStays = allCategoriesSummary.reduce((n, c) => n + c.count, 0);
-
   return (
     <>
       <title>{h.metaTitle}</title>
@@ -101,56 +97,15 @@ export default function Home() {
 
       <Hero />
 
-      {/* Stat band — glass tiles straddling the hero/cream edge. The negative
-          margin only works against the Hero: while AppPromoHero sat between
-          the two, these tiles were pulled on top of the app card and covered
-          its last line (Vesa 2026-08-17, "miksi trust ikonit on apin päällä").
-          Keep the stat band adjacent to the Hero and the app block after it.
-          Numbers are REAL counts from the data layer (never hardcode). */}
-      <section className="relative z-10 -mt-14 sm:-mt-16 px-5 sm:px-6" aria-label={`${totalStays} ${h.stats.stays}`}>
-        <div className="max-w-5xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-4">
-          {[
-            { n: totalStays, label: h.stats.stays },
-            { n: destinations.length, label: h.stats.bases },
-            { n: allCategoriesSummary.length, label: h.stats.categories },
-            { n: t.whenToGo.months.length, label: h.stats.months },
-          ].map((s) => (
-            <div
-              key={s.label}
-              className="rounded-2xl border border-white/10 bg-night/85 backdrop-blur-md p-4 md:p-5 text-center shadow-[0_8px_30px_rgba(0,0,0,0.35)]"
-            >
-              <p className="font-heading text-4xl md:text-5xl text-vibe-pink leading-none">{s.n}</p>
-              <p className="mt-2 text-[10px] md:text-[11px] uppercase tracking-[0.18em] text-snow/75 font-semibold leading-snug">
-                {s.label}
-              </p>
-            </div>
-          ))}
-        </div>
-      </section>
-
-      {/* App launch block, high on the page. At the foot of the page it measured
-          81 % down a 33,000 px front page, and an announcement nobody scrolls
-          to is not an announcement. */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-14 sm:mt-16">
-        <AppPromoHero />
-      </div>
-
-      {/* LV Media — PÄÄKUMPPANI-banneri heti heron alla */}
-      <MainPartnerBanner config={AD_SLOTS} locale={lang} surface="light" />
-
-      {/* Editor intro */}
-      <section className="pt-14 pb-12 sm:pt-16 sm:pb-16 px-5 sm:px-6">
-        <div className="max-w-3xl mx-auto">
-          <AuthorByline note={h.authorNote} />
-
-          <div className="mt-8 space-y-5 text-graphite text-base sm:text-[17px] leading-relaxed">
-            <p>{h.intro.p1}</p>
-            <p>{h.intro.p2}</p>
-            <p className="text-stone italic">{h.intro.p3}</p>
-          </div>
-        </div>
-      </section>
-
+      {/* JÄRJESTYS (Vesa 18.9.2026, tällä sivulla 1.10.2026, sama linja kuin
+          asumisetusivulla HomeHousing.tsx): heron alla heti sisältö kuvakortteina
+          (aidot mökit, majoitustavat, kohteet). Pääkumppanin paikka vasta näiden
+          jälkeen, appimainos ja kumppanipaikat UKK:n jälkeen, tarkistusmerkintä
+          sivun lopussa. Heron alla ei lukukaistaa ("16 kuratoitua majoitusta ·
+          5 tukikohtaa · 4 tapaa · 8 kuukautta"): luvut ovat korteissa, joissa
+          lukija niitä käyttää (majoitusmäärä tapakortissa, kohteet omina
+          kortteinaan). Johdantokappaleet, joissa opas kertoi itsestään, eivät
+          ole etusivulla. */}
       {/* Real, bookable cabins BEFORE the category grid. These are the only
           photographs on the site of actual, bookable properties; the
           category cards below are generated imagery. Showing the generated set
@@ -163,9 +118,7 @@ export default function Home() {
       <section className="py-20 sm:py-28 px-5 sm:px-6 bg-cream-2/60">
         <div className="max-w-6xl mx-auto">
           <div className="mb-12 sm:mb-16 max-w-2xl">
-            <p className="text-vibe-pink text-[11px] font-semibold tracking-[0.28em] uppercase mb-3">
-              {h.fourWays.kicker}
-            </p>
+            <div className="mb-4"><KickerChip tone="pink">{h.fourWays.kicker}</KickerChip></div>
             <h2 className="font-heading text-4xl sm:text-5xl md:text-6xl text-charcoal leading-[1.1] tracking-wide">
               {h.fourWays.h2A} <span className="text-vibe-pink">{h.fourWays.h2B}</span>
             </h2>
@@ -192,7 +145,7 @@ export default function Home() {
                   <div className="absolute inset-0 bg-gradient-to-t from-night/55 via-transparent to-transparent" />
                 </div>
                 <div className="p-6 sm:p-7 flex flex-col flex-1">
-                  <p className="text-[11px] tracking-[0.22em] uppercase text-stone font-semibold mb-2">
+                  <p className="text-[13px] text-stone font-semibold mb-2">
                     {cat.count} {cat.count === 1 ? h.propertyWord : h.propertiesWord}
                   </p>
                   <h3 className="font-heading text-3xl text-charcoal leading-tight mb-3">
@@ -212,46 +165,11 @@ export default function Home() {
         </div>
       </section>
 
-      {/* LV Media — kumppaniosio ylhäällä: kakkospääkumppani + 6 premium-
-          kohdepaikkaa. Cream-pinta → surface="light". */}
-      <HomeAdSlots config={AD_SLOTS} locale={lang} surface="light" />
-      {/* Oikea tuoterivi tyhjän house-ad-kortin tilalle (Vesa 4.9.). */}
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 py-8">
-        <ProductRail partner={finlaysonRail} snapshot={finlaysonPicks} lang={lang as RailLang} sid="home_bed_linen" variant="light" />
-      </div>
-
-      <PullQuote attribution={h.pullQuote.attr}>{h.pullQuote.text}</PullQuote>
-
-      <FinnishDivider />
-
-      {/* Trip-type recommender */}
+      {/* Destinations. Kermapohja: tapakortit yllä ovat sävytetyllä kaistalla. */}
       <section className="py-20 sm:py-28 px-5 sm:px-6">
         <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-12 sm:mb-14 max-w-2xl mx-auto">
-            <p className="text-vibe-pink text-[11px] font-semibold tracking-[0.28em] uppercase mb-3">
-              {h.tripKicker}
-            </p>
-            <h2 className="font-heading text-4xl sm:text-5xl md:text-6xl text-charcoal leading-[1.1] tracking-wide">
-              {h.tripH2}
-            </h2>
-          </div>
-          <TripTypeRecommender />
-        </div>
-      </section>
-
-      <FinnishDivider />
-
-      <WorkInLaplandPromo placement="home_below_trips" />
-
-      <FinnishDivider />
-
-      {/* Destinations */}
-      <section className="py-20 sm:py-28 px-5 sm:px-6 bg-cream-2/60">
-        <div className="max-w-6xl mx-auto">
           <div className="mb-12 sm:mb-14 max-w-2xl">
-            <p className="text-vibe-pink text-[11px] font-semibold tracking-[0.28em] uppercase mb-3">
-              {h.destKicker}
-            </p>
+            <div className="mb-4"><KickerChip tone="pink">{h.destKicker}</KickerChip></div>
             <h2 className="font-heading text-4xl sm:text-5xl md:text-6xl text-charcoal leading-[1.1] tracking-wide">
               {h.destH2}
             </h2>
@@ -295,15 +213,33 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Pääkumppanin paikka sisällön jälkeen, ei heron alla. */}
+      <MainPartnerBanner config={AD_SLOTS} locale={lang} surface="light" />
+
+      {/* Trip-type recommender */}
+      <section className="py-20 sm:py-28 px-5 sm:px-6">
+        <div className="max-w-6xl mx-auto">
+          <div className="text-center mb-12 sm:mb-14 max-w-2xl mx-auto">
+            <div className="mb-4"><KickerChip tone="pink">{h.tripKicker}</KickerChip></div>
+            <h2 className="font-heading text-4xl sm:text-5xl md:text-6xl text-charcoal leading-[1.1] tracking-wide">
+              {h.tripH2}
+            </h2>
+          </div>
+          <TripTypeRecommender />
+        </div>
+      </section>
+
+      <FinnishDivider />
+
+      <WorkInLaplandPromo placement="home_below_trips" />
+
       <FinnishDivider />
 
       {/* FAQ */}
       <section className="py-20 sm:py-28 px-5 sm:px-6">
         <div className="max-w-3xl mx-auto">
           <div className="mb-10">
-            <p className="text-vibe-pink text-[11px] font-semibold tracking-[0.28em] uppercase mb-3">
-              {h.faqKicker}
-            </p>
+            <div className="mb-4"><KickerChip tone="pink">{h.faqKicker}</KickerChip></div>
             <h2 className="font-heading text-4xl sm:text-5xl md:text-6xl text-charcoal leading-[1.1] tracking-wide">
               {h.faqH2}
             </h2>
@@ -352,6 +288,26 @@ export default function Home() {
               <ArrowRight className="w-4 h-4" />
             </Link>
           </div>
+        </div>
+      </section>
+
+      {/* Appimainos ja kumppanipaikat sisällön jälkeen. */}
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-4">
+        <AppPromoHero />
+      </div>
+
+      {/* LV Media: kakkospääkumppani + 6 premium-kohdepaikkaa sisällön jälkeen.
+          Cream-pinta → surface="light". */}
+      <HomeAdSlots config={AD_SLOTS} locale={lang} surface="light" />
+      {/* Oikea tuoterivi tyhjän house-ad-kortin tilalle (Vesa 4.9.). */}
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 py-8">
+        <ProductRail partner={finlaysonRail} snapshot={finlaysonPicks} lang={lang as RailLang} sid="home_bed_linen" variant="light" />
+      </div>
+
+      {/* Tarkistusmerkintä sivun lopussa. */}
+      <section className="px-5 sm:px-6 py-10 sm:py-12">
+        <div className="max-w-3xl mx-auto">
+          <AuthorByline note={h.authorNote} />
         </div>
       </section>
 

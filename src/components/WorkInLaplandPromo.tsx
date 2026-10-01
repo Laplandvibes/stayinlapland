@@ -1,6 +1,7 @@
 import { ArrowUpRight, Briefcase } from 'lucide-react';
 import { useLang } from '../i18n/useLang';
 import { getCopy } from '../locales/copy';
+import { KickerChip } from './housing/ui';
 
 interface WorkInLaplandPromoProps {
   placement: string;
@@ -46,9 +47,7 @@ export default function WorkInLaplandPromo({ placement, variant = 'full' }: Work
       <div className="max-w-5xl mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
           <div className="lg:col-span-7">
-            <p className="text-vibe-pink text-[11px] font-semibold tracking-[0.28em] uppercase mb-3">
-              {t.fullEyebrow}
-            </p>
+            <div className="mb-3"><KickerChip tone="pink">{t.fullEyebrow}</KickerChip></div>
             <h2 className="font-heading text-4xl sm:text-5xl md:text-6xl text-charcoal leading-[1.1] tracking-wide mb-5">
               {t.fullH2A} <span className="text-vibe-pink">{t.fullH2B}</span>
             </h2>

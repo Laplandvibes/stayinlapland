@@ -154,12 +154,14 @@ export default function Nav() {
     // bg-cream/85 + blur muuttui tumman osion päällä harmaaksi (~#D7D8D9), ja pinkki aktiivilinkki
     // jäi siinä noin 2,5:1:een. Kiinteä kerma + varjo pitää palkin samana joka osion päällä.
     <header className="fixed top-0 left-0 right-0 z-40 bg-cream border-b border-charcoal/10 shadow-[0_2px_12px_rgba(15,23,42,0.08)]">
-      <div className="max-w-screen-2xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between gap-4">
-        <div className="flex items-center gap-3 sm:gap-4 shrink-0">
+      <div className={`lv-navrivi ${wideNav ? ' lv-nav-myoh' : ''} max-w-screen-2xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between gap-4`}>
+        <div className="lv-navvasen flex items-center gap-3 sm:gap-4 shrink-0">
           <EcosystemMenu lang={lang} currentDomain="stayinlapland.com" variant="light" />
-          <Link to={localePath('/')} className="shrink-0 mr-2 inline-flex items-center min-h-11" aria-label={t.nav.homeAria}>
-            <Logo size="sm" />
-          </Link>
+          <div className="lv-wm-paikka">
+            <Link to={localePath('/')} className={`shrink-0 ${wideNav ? '2xl:mr-2' : 'xl:mr-2'} inline-flex items-center min-h-11`} aria-label={t.nav.homeAria}>
+              <Logo size="sm" nav />
+            </Link>
+          </div>
         </div>
 
         <nav className={`hidden ${wideNav ? '2xl:flex' : 'xl:flex'} items-center gap-3`}>

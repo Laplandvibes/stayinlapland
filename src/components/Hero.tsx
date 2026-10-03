@@ -4,7 +4,7 @@ import { MapPin, ChevronRight } from 'lucide-react';
 import AffiliateCTA from './AffiliateCTA';
 import { useLang, useLocalePath } from '../i18n/useLang';
 import { getCopy } from '../locales/copy';
-import { emWidth } from '../lib/headingFit';
+import { emWidth, hasCjk } from '../lib/headingFit';
 
 const destinations = [
   { name: 'Rovaniemi', sid: 'hero_dest_rovaniemi' },
@@ -30,11 +30,16 @@ export default function Hero() {
    * (max-w-3xl) with photograph on both sides. From xl the copy column widens to 976 px, and from lg the size is
    * the smaller of the designed size and the size at which the longer of the two authored lines fits the column
    * (100cqi / em). The lead and the destination chips keep their old 720 px measure.
-   * 🔴 ja is left exactly as it was. Fitted to two lines (61 px) its pink second line moved up into the
-   * brighter middle of the photograph: heroteksti-portti 0 → 2 findings at 1440/2000 px (92 % of pixels under
-   * 3:1). The pink line fails there in de/es/zh/ko already today; ja only passed because its five-line wrap
-   * pushed the pink line down. Fixing ja needs the pink-on-photo decision first (#F9A8D4 as on the hub). */
-  const fit = lang !== 'ja';
+   * 🔴 Fitted to two lines (61 px) the ja pink second line moved up into the brighter middle of the photograph:
+   * heroteksti-portti 0 → 2 findings at 1440/2000 px (92 % of pixels under 3:1); the same line already failed in
+   * de/es/zh/ko. The pink on this photograph is therefore #F9A8D4, as on the hub, skiresorts, hoteldeals and tours
+   * hero since 2.10.2026: vibe-pink is a mid tone (luminance 0.25) and needs a near-black ground for 3:1, #F9A8D4
+   * (0.53) does not. vibe-pink stays on the flat night sections. */
+  const fit = true;
+  const cjk = hasCjk(t.h1Line1);
+  // ko: keep-all at every width (words split at spaces, "이상입니 / 다." before). ja/zh only from lg, where the fit
+  // guarantees the line fits: on a phone keep-all left "、" and "。" alone on lines (measured 375 px 3.10.).
+  const cjkWrap = !cjk ? '' : lang === 'ko' ? ' [word-break:keep-all]' : ' lg:[word-break:keep-all] lg:[overflow-wrap:anywhere]';
   const h1Em = Math.max(emWidth(t.h1Line1, 0.025), emWidth(t.h1Line2, 0.025));
   const heroBase = summer ? 'home-hero-summer' : 'hero-aurora-cabins';
   const heroAlt = summer
@@ -65,7 +70,7 @@ export default function Hero() {
           {/* Ei yläotsikkoa ("Finnisch-Lappland · Redaktioneller Leitfaden"): sivusto ei
               esittele itseään heron päällä (Vesa 18.9.2026, etusivun kärki). */}
           <h1
-            className={`font-heading font-medium text-snow leading-[1.05] tracking-wide text-[42px] sm:text-6xl mb-6 ${
+            className={`font-heading font-medium text-snow leading-[1.05] tracking-wide text-[42px] sm:text-6xl mb-6${cjkWrap} ${
               fit
                 ? 'lg:[--h1-max:4.5rem] xl:[--h1-max:clamp(96px,1.5vw_+_76.8px,115.2px)] lg:[font-size:min(var(--h1-max),calc(100cqi/var(--h1-em)))]'
                 : 'lg:text-7xl xl:text-8xl xl:text-[clamp(96px,1.5vw_+_76.8px,115.2px)]'
@@ -74,7 +79,7 @@ export default function Hero() {
           >
             {t.h1Line1}
             <br />
-            <span className="text-vibe-pink">{t.h1Line2}</span>
+            <span className="text-[#F9A8D4]">{t.h1Line2}</span>
           </h1>
 
           <p

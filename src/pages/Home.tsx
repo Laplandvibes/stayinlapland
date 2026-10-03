@@ -117,12 +117,15 @@ export default function Home() {
       {/* Four-bucket overview */}
       <section className="py-20 sm:py-28 px-5 sm:px-6 bg-cream-2/60">
         <div className="max-w-6xl mx-auto">
-          <div className="mb-12 sm:mb-16 max-w-2xl">
+          {/* lg: the heading gets 896 px and each sentence is its own unit (3.10.2026). In the 672 px column the
+              ja heading ran to three lines and broke inside a word ("一つに腰を据え / る。 または2つを / 組み合わせる。");
+              de now reads "WÄHLEN SIE EINE. / ODER VERBINDEN SIE ZWEI." The lead keeps its 672 px measure. */}
+          <div className="mb-12 sm:mb-16 max-w-2xl lg:max-w-4xl">
             <div className="mb-4"><KickerChip tone="pink">{h.fourWays.kicker}</KickerChip></div>
             <h2 className="font-heading text-4xl sm:text-5xl md:text-6xl text-charcoal leading-[1.1] tracking-wide">
-              {h.fourWays.h2A} <span className="text-vibe-pink">{h.fourWays.h2B}</span>
+              <span className="lg:inline-block">{h.fourWays.h2A}</span> <span className="lg:inline-block text-vibe-pink">{h.fourWays.h2B}</span>
             </h2>
-            <p className="text-graphite text-base sm:text-lg mt-5 leading-relaxed">
+            <p className="text-graphite text-base sm:text-lg mt-5 leading-relaxed max-w-2xl">
               {h.fourWays.lead}
             </p>
           </div>

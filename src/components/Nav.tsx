@@ -174,7 +174,7 @@ export default function Nav() {
                 to={localized}
                 // 🔴 Kosketuskorkeus 44 px: linkit olivat 20 px korkeita (pelkka tekstirivi),
                 // 12 kielta x 3 leveytta = 112 loydosta. Logolinkki kaytti jo min-h-11:ta.
-                className={`inline-flex items-center min-h-11 whitespace-nowrap text-[13px] font-medium transition-colors ${
+                className={`inline-flex items-center min-h-11 whitespace-nowrap text-sm font-medium transition-colors ${
                   active ? NAV_ACTIVE : NAV_IDLE
                 }`}
               >
@@ -190,7 +190,7 @@ export default function Nav() {
               onClick={() => setStaysOpen((o) => !o)}
               aria-haspopup="true"
               aria-expanded={staysOpen}
-              className={`inline-flex items-center min-h-11 gap-1 whitespace-nowrap text-[13px] font-medium transition-colors ${
+              className={`inline-flex items-center min-h-11 gap-1 whitespace-nowrap text-sm font-medium transition-colors ${
                 staysActive ? NAV_ACTIVE : NAV_IDLE
               }`}
             >
@@ -230,7 +230,7 @@ export default function Nav() {
               onClick={() => setDestOpen((o) => !o)}
               aria-haspopup="true"
               aria-expanded={destOpen}
-              className={`inline-flex items-center min-h-11 gap-1 whitespace-nowrap text-[13px] font-medium transition-colors ${
+              className={`inline-flex items-center min-h-11 gap-1 whitespace-nowrap text-sm font-medium transition-colors ${
                 pathname.includes('/destinations/') ? NAV_ACTIVE : NAV_IDLE
               }`}
             >

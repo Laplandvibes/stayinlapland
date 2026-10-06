@@ -274,7 +274,13 @@ export type SectionCopy = {
   longStaysData: { name: string; highlight: string; description: string; location: string }[];
   glassIgloosData: { name: string; highlight: string; description: string; location: string }[];
   wildernessData: { name: string; highlight: string; description: string; location: string }[];
-  destinationsData: { slug: string; name?: string; pitch: string; longStayAngle: string }[];
+  /**
+   * `metaDescription` (valinnainen): käsin kirjoitettu hakutuloskuvaus, kun pitch yksin on
+   * esirenderöinnin ikkunan ulkopuolella (70–160 merkkiä / CJK 100–200 leveysyksikköä) tai
+   * koottu kuvaus toistaisi itseään. Muuten kuvaus kootaan pitchistä ja longStayAnglen
+   * kokonaisista virkkeistä (src/data/destMeta.mjs).
+   */
+  destinationsData: { slug: string; name?: string; pitch: string; longStayAngle: string; metaDescription?: string }[];
   allCategoriesSummary: { slug: string; description: string }[];
 };
 

@@ -9,7 +9,7 @@ export const TOWN_KEMI_TORNIO: HousingCopyMap = {
     // 23.9.2026: Keminmaa otsikkoon (OpenSEO fi: vuokra-asunnot keminmaa 880/kk, sivu kattoi sen jo).
     metaTitle: 'Vuokra-asunnot Kemi, Tornio ja Keminmaa',
     metaDescription:
-      'Vuokra-asunnot Kemissä, Torniossa ja Keminmaalla: kaupunkien omat vuokrayhtiöt (Itätuuli, Tornion Krunni, Keminmaan Vuokra-asunnot), yksityiset välittäjät, Lapin neliövuokrat ja Kelan tuki.',
+      'Vuokra-asunnot Kemissä, Torniossa ja Keminmaalla: kuntien vuokrayhtiöt (Itätuuli, Tornion Krunni, Keminmaan Vuokra-asunnot), välittäjät ja Kelan tuki.',
     breadcrumb: 'Kemi ja Tornio',
     hero: {
       eyebrow: 'Meri-Lapin rannikko',
@@ -132,7 +132,7 @@ export const TOWN_KEMI_TORNIO: HousingCopyMap = {
   en: {
     metaTitle: 'Rentals in Kemi, Tornio and Keminmaa: Municipal Flats',
     metaDescription:
-      'Renting in Kemi, Tornio and Keminmaa on Lapland’s coast: the municipal housing companies (Itätuuli, Tornion Krunni, Keminmaan Vuokra-asunnot), private agencies, Lapland rents per m² and Kela support.',
+      'Renting in Kemi, Tornio and Keminmaa on Lapland’s coast: municipal housing companies such as Itätuuli and Tornion Krunni, private agencies and Kela support.',
     breadcrumb: 'Kemi and Tornio',
     hero: {
       eyebrow: 'The coast of Sea Lapland',

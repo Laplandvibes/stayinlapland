@@ -6,30 +6,39 @@
  * first). It covers ONLY the routes whose first-byte meta the generic readers can't
  * express from a single copyKey:
  *
- *   1. /destinations/<slug>  — title/description are COMPOSED at runtime in
- *      DestinationPage.tsx as `${dest.name} — ${metaTitleSuffix}` and
- *      `${pitch} ${longStayAngle}`. We reproduce that here, per locale, from the
- *      already-localized copy.{lang}.ts (destinationsData + destinationPage.metaTitleSuffix)
- *      and the proper-noun names in src/data/properties.ts.
+ *   1. /destinations/<slug>  — title and description are composed by
+ *      src/data/destMeta.mjs (destTitle, destDescription), the same functions
+ *      DestinationPage.tsx calls in the browser, from the already-localized
+ *      copy.{lang}.ts (destinationsData + destinationPage.metaTitleSuffix) and the
+ *      proper-noun names in src/data/properties.ts.
  *
  *   2. /privacy, /terms, /cookie-policy — meta lives in an inline
  *      `const META: Record<Lang, {title, description}>` block inside each page .tsx,
  *      keyed by lang (en/fi/…); the generic per-lang/nested readers key by section
  *      name, not by a META map, so they miss it.
  *
- * The HOME route and the six section pages (/hotels, /glass-igloos, /wilderness,
- * /long-stays, /booking-guide, /when-to-go) are NOT emitted here — they resolve via
- * `copyKey` in routes.json (per-lang reader reads metaTitle/metaDescription straight
- * from copy.{lang}.ts), so there is a single source of truth and no duplication.
+ *   3. The home route and /booking-guide (SECTION_ROUTES: metaTitle/metaDescription
+ *      of a copy.{lang}.ts section) and the housing pages (HOUSING_META_FILES:
+ *      src/housing/*.ts). The page components render the same fields.
  *
  * Idempotent. Reads source only; writes scripts/prerender-meta.json. If a source
  * string is missing for a locale it is simply omitted, so the prerenderer falls back
  * to its EN/copyKey chain rather than shipping a wrong string.
+ *
+ * Nothing is shortened here (2026-10-06). The browser renders the source text as it
+ * is, so a text this script clipped, or one the prerender then extends or cuts, put a
+ * different title or description in the HTML than the browser shows
+ * (gate:meta-hydraatio in lv-ops: 83 of 144 pages). The build STOPS (exit 1) when a
+ * title is over MAX_TITLE characters or a description is outside the prerender window
+ * (../_prerender_routes.mjs ensureDescriptionLength + clampDescription: 70–160
+ * characters, or 100–200 width units where a CJK character counts as 2). Fix the text
+ * in the source, never the prerender.
  */
 
 import { readFileSync, writeFileSync, existsSync } from 'node:fs';
 import { resolve, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { destTitle, destDescription, descriptionWindowProblem } from '../src/data/destMeta.mjs';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const ROOT = resolve(__dirname, '..');
@@ -52,8 +61,10 @@ const LOCALES = [
   { lang: 'sv', file: 'copy.sv.ts' },
 ];
 
+// Longest title the build lets through. It used to be clipped to this on a word
+// boundary ("Rentals in Ivalo and Inari: Municipal Company and Private"), while the
+// browser showed the full title; now the build stops instead.
 const MAX_TITLE = 62;
-const MAX_DESC = 165;
 
 // ---------- shared TS-source extraction helpers (ported from _prerender_routes.mjs) ----------
 function unescapeJsString(s) {
@@ -86,14 +97,6 @@ function readString(block, key) {
   const re = new RegExp(`(?:^|[\\s,{])${key}\\s*:\\s*(['"\`])((?:\\\\.|(?!\\1).)*)\\1`, 's');
   const m = block.match(re);
   return m ? unescapeJsString(m[2]) : null;
-}
-
-function clip(s, max) {
-  if (!s) return s;
-  const t = s.trim();
-  if (t.length <= max) return t;
-  // Clip on a word boundary, drop trailing punctuation/space.
-  return t.slice(0, max).replace(/\s+\S*$/, '').replace(/[\s,.;:—–-]+$/, '').trim();
 }
 
 /** All `<key>: { … }` inner blocks in src (balanced-brace aware). */
@@ -143,8 +146,8 @@ function getMetaTitleSuffix(src) {
 }
 
 /**
- * destinationsData: [ { slug, pitch, longStayAngle }, … ] for a locale →
- * Map(slug → { pitch, longStayAngle }).
+ * destinationsData: [ { slug, pitch, longStayAngle, metaDescription? }, … ] for a locale →
+ * Map(slug → { pitch, longStayAngle, metaDescription }).
  */
 function getDestinationsData(src) {
   const out = new Map();
@@ -172,7 +175,8 @@ function getDestinationsData(src) {
     const locName = readString(inner, 'name');
     const pitch = readString(inner, 'pitch');
     const longStayAngle = readString(inner, 'longStayAngle');
-    if (slug) out.set(slug, { pitch, longStayAngle, name: locName });
+    const metaDescription = readString(inner, 'metaDescription');
+    if (slug) out.set(slug, { pitch, longStayAngle, metaDescription, name: locName });
     // advance cursor past this object
     cursor = open + inner.length + 1;
   }
@@ -247,12 +251,14 @@ function getLegalMeta(pageFile) {
 // ---------- build the map ----------
 const META = {}; // { "<path>": { "<lang>": { title, description } } }
 
+// Values go in exactly as the page components render them: no clipping (see the
+// header and the window check at the end).
 function set(path, lang, title, description) {
   if (!title && !description) return;
   META[path] ??= {};
   const entry = {};
-  if (title) entry.title = clip(title, MAX_TITLE);
-  if (description) entry.description = clip(description, MAX_DESC);
+  if (title) entry.title = title.trim();
+  if (description) entry.description = description.trim();
   META[path][lang] = entry;
 }
 
@@ -263,9 +269,9 @@ const SECTION_ROUTES = {
   '/': 'home',
   // '/long-stays' poistettu 23.9.2026: sivu on nyt asumissivu (HOUSING_META_FILES, fi/en), eikä
   // muiden kielten vanha lomasivun otsikko saa jäädä englanninkielisen sisällön päälle.
-  '/hotels': 'hotels',
-  '/glass-igloos': 'glassIgloos',
-  '/wilderness': 'wilderness',
+  // '/hotels', '/glass-igloos' ja '/wilderness' poistettu 6.10.2026: sivut siirtyivät
+  // laplandstaysille (public/_redirects 301, §23 vaihe 2), eivätkä ne ole routes.jsonissa,
+  // joten esirenderöinti ei lukenut niiden riviä.
   // '/when-to-go' siirretty HOUSING_META_FILESiin 23.9.2026 (fi/en natiivi, src/housing/whentogo.ts).
   '/booking-guide': 'bookingGuide',
 };
@@ -288,19 +294,20 @@ for (const loc of LOCALES) {
   const suffix = getMetaTitleSuffix(src);
   const destData = getDestinationsData(src);
 
-  // /destinations/<slug>
+  // /destinations/<slug> — src/data/destMeta.mjs, the same composer DestinationPage.tsx
+  // calls: "<Name>: <suffix>", and the pitch plus whole longStayAngle sentences that fit
+  // the window (ja/zh joined without a space after 。！？, [LV-CJK-JOIN 2026-09-25]), or
+  // the entry's hand-written metaDescription.
   for (const { slug, name } of destList) {
     const dd = destData.get(slug);
-    // Title: "<Name> — <localized suffix>"  (mirrors DestinationPage.tsx line 101)
-    const title = suffix ? `${(dd && dd.name) || name}: ${suffix}` : null;
-    // Description: "<pitch> <longStayAngle>" sliced to 160 (mirrors line 102).
-    // [LV-CJK-JOIN 2026-09-25] ja/zh eivat valista virkkeita: taysleveän 。！？
-    // jalkeen ei valilyontia (live /cn/destinations/rovaniemi: "…设计文化的拉普兰城市。 若您…").
-    // Korea ja latinalaiset kielet valistavat, joten ne pitavat valilyonnin.
-    const liitos =
-      dd && /^(ja|zh)/.test(loc.lang) && /[。！？]$/.test(String(dd.pitch || '').trim()) ? '' : ' ';
-    const description = dd
-      ? clip([dd.pitch, dd.longStayAngle].filter(Boolean).join(liitos), MAX_DESC)
+    const title = suffix ? destTitle((dd && dd.name) || name, suffix) : null;
+    const description = dd && dd.pitch
+      ? destDescription({
+          pitch: dd.pitch,
+          longStayAngle: dd.longStayAngle || '',
+          metaDescription: dd.metaDescription || undefined,
+          lang: loc.lang,
+        })
       : null;
     set(`/destinations/${slug}`, loc.lang, title, description);
   }
@@ -370,4 +377,32 @@ const enRoutes = Object.keys(META).filter((p) => META[p].en).length;
 for (const loc of LOCALES) {
   const got = localeCounts[loc.lang] || 0;
   if (got < enRoutes) console.warn(`[gen-meta] WARN: locale ${loc.lang} covers ${got}/${enRoutes} routes — some will EN-fallback`);
+}
+
+// ---------- window check (2026-10-06): stop the build instead of publishing two texts ----------
+// A title over MAX_TITLE or a description outside the prerender window would reach the
+// HTML in a different form than the browser renders it (gate:meta-hydraatio).
+const outside = [];
+for (const [path, byLang] of Object.entries(META)) {
+  for (const [lang, m] of Object.entries(byLang)) {
+    if (m.title && m.title.length > MAX_TITLE) {
+      outside.push(`  ${lang.padEnd(5)} ${path}: title over ${MAX_TITLE} characters (${m.title.length})\n        ${m.title}`);
+    }
+    const problem = m.description ? descriptionWindowProblem(m.description) : null;
+    if (problem) outside.push(`  ${lang.padEnd(5)} ${path}: description ${problem}\n        ${m.description}`);
+  }
+}
+if (outside.length) {
+  console.error(
+    `\n[gen-meta] ${outside.length} title(s) or description(s) outside the window: the prerendered HTML ` +
+      'would show a different text than the browser.',
+  );
+  console.error(outside.join('\n'));
+  console.error(
+    `[gen-meta] Write the text in the source: titles up to ${MAX_TITLE} characters, descriptions 70–160 ` +
+      'characters (or 100–200 width units, a CJK character = 2). Sources: src/locales/copy.<lang>.ts ' +
+      '(sections, destinationsData pitch/longStayAngle/metaDescription), src/housing/*.ts, the META ' +
+      'block of src/pages/{PrivacyPolicy,Terms,CookiePolicy}.tsx.\n',
+  );
+  process.exit(1);
 }

@@ -151,7 +151,7 @@ export const TOWN_KEMIJARVI: HousingCopyMap = {
   en: {
     metaTitle: 'Rentals in Kemijärvi: the City’s 560 Flats and How to Apply',
     metaDescription:
-      'Renting in Kemijärvi: the city’s 560 rental flats, the online application, the 2026 rent increases, the Vuostimo row houses near Pyhä and Kela housing allowance.',
+      'Renting in Kemijärvi: the city’s 560 rental flats, the online application, 2026 rent increases, the Vuostimo row houses near Pyhä and Kela housing allowance.',
     breadcrumb: 'Kemijärvi',
     hero: {
       eyebrow: 'Kemijärvi, 6,919 residents',

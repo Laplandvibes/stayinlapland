@@ -8,7 +8,7 @@ export const TOWN_IVALO_INARI: HousingCopyMap = {
   fi: {
     metaTitle: 'Vuokra-asunnot Ivalo ja Inari: kunnan yhtiö ja yksityiset',
     metaDescription:
-      'Vuokra-asunnot Ivalossa, Inarissa ja Saariselällä: Inarin Vuokra-asunnot Oy:n yli 500 asuntoa, kunnan listaamat yksityiset vuokranantajat, Lapin neliövuokrat ja Kelan tuki.',
+      'Vuokra-asunnot Ivalossa, Inarissa ja Saariselällä: Inarin Vuokra-asunnot Oy:n yli 500 asuntoa, kunnan listaamat yksityiset vuokranantajat ja Kelan tuki.',
     breadcrumb: 'Ivalo ja Inari',
     hero: {
       eyebrow: 'Inarin kunta, 7 244 asukasta',
@@ -126,9 +126,9 @@ export const TOWN_IVALO_INARI: HousingCopyMap = {
     sources: pickSources('fi', SOURCES),
   },
   en: {
-    metaTitle: 'Rentals in Ivalo and Inari: Municipal Company and Private Landlords',
+    metaTitle: 'Rentals in Ivalo and Inari: Municipal and Private Landlords',
     metaDescription:
-      'Renting in Ivalo, Inari and Saariselkä: the municipal company Inarin Vuokra-asunnot Oy with over 500 flats, the private landlords listed by the municipality, Lapland rents per m² and Kela support.',
+      'Renting in Ivalo, Inari and Saariselkä: over 500 municipal flats (Inarin Vuokra-asunnot Oy), private landlords listed by the municipality and Kela support.',
     breadcrumb: 'Ivalo and Inari',
     hero: {
       eyebrow: 'Municipality of Inari, 7,244 residents',

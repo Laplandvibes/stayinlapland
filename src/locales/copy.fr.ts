@@ -738,6 +738,8 @@ export const copyFR: SectionCopy = {
         'La capitale de la Laponie finlandaise, la seule ville de Laponie à avoir une vraie scène gastronomique hivernale, un hub aéroportuaire en activité et une culture du design toute l’année.',
       longStayAngle:
         'La bonne base si votre long séjour mêle télétravail en semaine et escapades vers le nord le week-end, wifi rapide, vols directs vers Stockholm, restaurants ouverts en saison charnière.',
+      metaDescription:
+        'Capitale de la Laponie finlandaise, seule ville de Laponie avec une vraie scène gastronomique hivernale, un aéroport bien desservi et une culture du design.',
     },
     {
       slug: 'levi',

@@ -104,7 +104,7 @@ export const LONG_STAYS: HousingCopyMap = {
   en: {
     metaTitle: 'A Month or a Winter in Lapland: Flat, Cabin or Staff Housing',
     metaDescription:
-      'Staying a month or a winter in Finnish Lapland: a furnished rental flat, a cabin by the week or staff housing. What the tenancy law covers and when to notify your address.',
+      'Staying a month or a winter in Finnish Lapland: a furnished rental flat, a cabin by the week or staff housing.',
     breadcrumb: 'Long stays',
     hero: {
       eyebrow: 'From a month to a winter',

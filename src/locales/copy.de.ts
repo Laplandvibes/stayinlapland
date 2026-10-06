@@ -737,6 +737,8 @@ export const copyDE: SectionCopy = {
         'Die Hauptstadt Finnisch-Lapplands, die einzige Lappland-Stadt mit echter Wintergastronomie, einem funktionierenden Flughafenknoten und ganzjähriger Designkultur.',
       longStayAngle:
         'Die richtige Basis, wenn Ihr Langzeitaufenthalt Werktags-Remote-Work und Wochenendtouren in den Norden einschließt, schnelles WLAN, Direktflüge nach Stockholm, Restaurants auch in der Nebensaison geöffnet.',
+      metaDescription:
+        'Die Hauptstadt Finnisch-Lapplands, die einzige Lappland-Stadt mit echter Wintergastronomie, funktionierendem Flughafenknoten und ganzjähriger Designkultur.',
     },
     {
       slug: 'levi',

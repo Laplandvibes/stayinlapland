@@ -11,7 +11,7 @@ export const RENTALS: HousingCopyMap = {
   fi: {
     metaTitle: 'Vuokra-asunnot Lapissa: Rovaniemi, Levi, Kemi–Tornio, Inari',
     metaDescription:
-      'Vuokra-asunto Rovaniemeltä, Kemi–Torniosta, Kemijärveltä, Sodankylästä, Leviltä tai Inarista: kuntien vuokrayhtiöt, portaalit, Tilastokeskuksen neliövuokrat ja Kelan tuki.',
+      'Vuokra-asunto Rovaniemeltä, Kemi–Torniosta, Kemijärveltä, Sodankylästä, Leviltä tai Inarista: kuntien vuokrayhtiöt, portaalit, neliövuokrat ja Kelan tuki.',
     breadcrumb: 'Vuokra-asunnot',
     hero: {
       eyebrow: 'Vuokra-asunnot Lapissa',
@@ -205,9 +205,9 @@ export const RENTALS: HousingCopyMap = {
     sources: pickSources('fi', SOURCES),
   },
   en: {
-    metaTitle: 'Rent an Apartment in Lapland: Rovaniemi, Levi, Kemi–Tornio, Inari',
+    metaTitle: 'Rent an Apartment in Lapland: Rovaniemi, Levi, Kemi–Tornio',
     metaDescription:
-      'Long-term rentals in Finnish Lapland: where the flats are in Rovaniemi, Kemi–Tornio, Kemijärvi, Sodankylä, Levi and Inari, what they cost per m² (Statistics Finland), deposits and Kela housing allowance.',
+      'Long-term rentals in Finnish Lapland, from Rovaniemi and Kemi–Tornio to Levi and Inari: rent per m² (Statistics Finland), deposits and Kela housing allowance.',
     breadcrumb: 'Rentals',
     hero: {
       eyebrow: 'Renting in Lapland',

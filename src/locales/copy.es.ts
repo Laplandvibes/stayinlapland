@@ -741,6 +741,8 @@ export const copyES: SectionCopy = {
         'La capital de la Laponia finlandesa, la única ciudad de Laponia con una verdadera escena gastronómica de invierno, un aeropuerto con conexiones de verdad y cultura del diseño todo el año.',
       longStayAngle:
         'La base adecuada si su larga estancia combina teletrabajo entre semana y escapadas al norte el fin de semana, wifi rápido, vuelos directos a Estocolmo, restaurantes abiertos en temporada media.',
+      metaDescription:
+        'La capital de la Laponia finlandesa: la única ciudad de Laponia con gastronomía invernal de verdad, aeropuerto bien conectado y cultura del diseño todo el año.',
     },
     {
       slug: 'levi',

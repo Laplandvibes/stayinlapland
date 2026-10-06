@@ -499,7 +499,7 @@ export const HOME: Record<HomeLang, HousingHomeCopy> = {
   fr: {
     metaTitle: 'Vivre en Laponie : logement, travail saisonnier et budget',
     metaDescription:
-      'Vivre en Laponie finlandaise : trouver un logement de Rovaniemi à Ivalo, le logement des saisonniers, le coût de la vie et l’année au quotidien. Un studio à Rovaniemi coûte environ 560 € par mois.',
+      'Vivre en Laponie finlandaise : trouver un logement de Rovaniemi à Ivalo, le logement des saisonniers, le coût de la vie et l’année au quotidien.',
     schemaName: 'StayInLapland : vivre en Laponie finlandaise',
     hero: {
       h1a: 'Vivre en Laponie.',
@@ -710,7 +710,7 @@ export const HOME: Record<HomeLang, HousingHomeCopy> = {
   nl: {
     metaTitle: 'Wonen in Lapland: huren, seizoenswerk en wat het kost',
     metaDescription:
-      'Wonen in Fins Lapland: een huurwoning van Rovaniemi tot Ivalo, huisvesting voor seizoenswerkers, de kosten van het dagelijks leven en het jaar hierboven. Een studio in Rovaniemi kost ongeveer € 560 per maand.',
+      'Wonen in Fins Lapland: een huurwoning van Rovaniemi tot Ivalo, huisvesting voor seizoenswerkers, de kosten van het dagelijks leven en het jaar hierboven.',
     schemaName: 'StayInLapland: wonen in Fins Lapland',
     hero: {
       h1a: 'Wonen in Lapland.',

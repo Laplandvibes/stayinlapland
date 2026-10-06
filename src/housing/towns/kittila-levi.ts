@@ -8,7 +8,7 @@ export const TOWN_KITTILA_LEVI: HousingCopyMap = {
   fi: {
     metaTitle: 'Vuokra-asunnot Kittilä ja Levi: kunnan asunnot ja kausivuokra',
     metaDescription:
-      'Vuokra-asunnot Kittilässä ja Levillä: Kittilän Vuokratalot Oy, vapaa-ajan asuntojen kausivuokrat, työnantajan asunnot kausityöntekijöille, Lapin neliövuokrat ja Kelan tuki.',
+      'Vuokra-asunnot Kittilässä ja Levillä: Kittilän Vuokratalot Oy, vapaa-ajan asuntojen kausivuokrat, työnantajan asunnot kausityöntekijöille ja Kelan tuki.',
     breadcrumb: 'Kittilä ja Levi',
     hero: {
       eyebrow: 'Kittilä, 6 973 asukasta',
@@ -130,9 +130,9 @@ export const TOWN_KITTILA_LEVI: HousingCopyMap = {
     sources: pickSources('fi', SOURCES),
   },
   en: {
-    metaTitle: 'Rentals in Kittilä and Levi: Municipal Flats and Seasonal Leases',
+    metaTitle: 'Rentals in Kittilä and Levi: Municipal Flats, Seasonal Leases',
     metaDescription:
-      'Renting in Kittilä and Levi: the municipal company Kittilän Vuokratalot Oy, seasonal rents on holiday apartments, staff housing for seasonal workers, Lapland rents per m² and Kela support.',
+      'Renting in Kittilä and Levi: the municipal Kittilän Vuokratalot Oy, seasonal rents on holiday apartments, staff housing for seasonal workers and Kela support.',
     breadcrumb: 'Kittilä and Levi',
     hero: {
       eyebrow: 'Kittilä, 6,973 residents',

@@ -18,7 +18,7 @@ export const TOWN_SODANKYLA: HousingCopyMap = {
   fi: {
     metaTitle: 'Vuokra-asunnot Sodankylä: kunnan 720 asuntoa ja vuokrat',
     metaDescription:
-      'Vuokra-asunnot Sodankylässä: Asentopuulaaki Oy:n noin 720 asuntoa, vuokrat 10–18 €/m², hakemus verkossa, vapaat asunnot, opintolainan hyvitys ja Kelan asumistuki.',
+      'Vuokra-asunnot Sodankylässä: Asentopuulaaki Oy:n noin 720 asuntoa, vuokrat 10–18 €/m², hakemus verkossa, opintolainan hyvitys ja Kelan asumistuki.',
     breadcrumb: 'Sodankylä',
     hero: {
       eyebrow: 'Sodankylä, 8 095 asukasta',
@@ -175,7 +175,7 @@ export const TOWN_SODANKYLA: HousingCopyMap = {
   en: {
     metaTitle: 'Rentals in Sodankylä: 720 Municipal Flats and What They Cost',
     metaDescription:
-      'Renting in Sodankylä: Asentopuulaaki Oy’s roughly 720 municipal flats, rents of €10–18 per m², the online application, free flats, the student loan pilot and Kela support.',
+      'Renting in Sodankylä: Asentopuulaaki Oy’s roughly 720 municipal flats, rents of €10–18 per m², the online application, the student loan pilot and Kela support.',
     breadcrumb: 'Sodankylä',
     hero: {
       eyebrow: 'Sodankylä, 8,095 residents',

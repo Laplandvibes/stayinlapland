@@ -8,7 +8,7 @@ export const TOWN_ROVANIEMI: HousingCopyMap = {
   fi: {
     metaTitle: 'Vuokra-asunnot Rovaniemi: hinnat, hakukanavat, vuokranantajat',
     metaDescription:
-      'Vuokra-asunnot Rovaniemellä: Tilastokeskuksen neliövuokrat 2026, kaupungin listaamat vuokranantajat, DAS opiskelijoille, Kelan asumistuen katto ja milloin kannattaa hakea.',
+      'Vuokra-asunnot Rovaniemellä: neliövuokrat 2026, kaupungin listaamat vuokranantajat, DAS opiskelijoille, Kelan asumistuen katto ja milloin kannattaa hakea.',
     breadcrumb: 'Rovaniemi',
     hero: {
       eyebrow: 'Rovaniemi, 66 191 asukasta',
@@ -154,7 +154,7 @@ export const TOWN_ROVANIEMI: HousingCopyMap = {
   en: {
     metaTitle: 'Rentals in Rovaniemi: Rents, Landlords and How to Apply',
     metaDescription:
-      'Renting a flat in Rovaniemi: rent per m² from Statistics Finland 2026, the landlords listed by the city, DAS for students, the Kela housing allowance ceiling and when to apply.',
+      'Renting a flat in Rovaniemi: rent per m² (Statistics Finland 2026), landlords listed by the city, DAS for students, Kela housing allowance and when to apply.',
     breadcrumb: 'Rovaniemi',
     hero: {
       eyebrow: 'Rovaniemi, 66,191 residents',

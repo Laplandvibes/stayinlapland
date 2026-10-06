@@ -35,22 +35,22 @@ const META: Record<Lang, { title: string; description: string }> = {
   'zh-CN': {
     title: '使用条款',
     description:
-      'StayInLapland 使用条款：编辑范围、联盟披露、第三方预订链接、知识产权及芬兰司法管辖。',
+      'StayInLapland 使用条款：编辑范围、联盟披露、第三方预订链接、知识产权及芬兰司法管辖。访问或使用本网站，即表示您同意本条款。',
   },
   ko: {
     title: '이용약관',
     description:
-      'StayInLapland 이용약관: 에디토리얼 범위, 제휴 고지, 제3자 예약 링크, 지적 재산권, 핀란드 관할.',
+      'StayInLapland 이용약관: 에디토리얼 범위, 제휴 고지, 제3자 예약 링크, 지적 재산권, 핀란드 관할. 본 웹사이트에 접속하거나 이용하시는 것은 본 약관에 동의하시는 것입니다.',
   },
   fr: {
     title: "Conditions d'utilisation",
     description:
-      "Conditions d'utilisation de StayInLapland: périmètre éditorial, divulgation d'affiliation, liens de réservation tiers, propriété intellectuelle et juridiction finlandaise.",
+      "Conditions d'utilisation de StayInLapland : périmètre éditorial, affiliation, liens de réservation tiers, propriété intellectuelle et juridiction finlandaise.",
   },
   it: {
     title: 'Termini di utilizzo',
     description:
-      'Termini di utilizzo di StayInLapland: ambito editoriale, informativa di affiliazione, link di prenotazione di terzi, proprietà intellettuale e giurisdizione finlandese.',
+      'Termini di utilizzo di StayInLapland: ambito editoriale, affiliazione, link di prenotazione di terzi, proprietà intellettuale e giurisdizione finlandese.',
   },
   nl: {
     title: 'Gebruiksvoorwaarden',

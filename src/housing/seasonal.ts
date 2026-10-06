@@ -164,7 +164,7 @@ export const SEASONAL: HousingCopyMap = {
   en: {
     metaTitle: 'Seasonal Worker Housing in Lapland: Levi, Ylläs, Saariselkä',
     metaDescription:
-      'Where seasonal workers live at Levi, Ylläs, Saariselkä and Rovaniemi: staff housing, a holiday apartment on a seasonal lease or a municipal flat, and what to ask before you sign.',
+      'Where seasonal workers live at Levi, Ylläs, Saariselkä and Rovaniemi: staff housing, a seasonal lease or a municipal flat, and what to ask before you sign.',
     breadcrumb: 'Seasonal workers',
     hero: {
       eyebrow: 'Seasonal work, winter and summer',

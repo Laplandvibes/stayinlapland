@@ -752,6 +752,8 @@ export const copyIT: SectionCopy = {
         'La capitale della Lapponia finlandese, l’unica città della Lapponia con una vera scena gastronomica invernale, un hub aeroportuale funzionante e una cultura del design tutto l’anno.',
       longStayAngle:
         'La base giusta se il Suo soggiorno lungo prevede giornate lavorative da remoto in Lapponia e weekend a nord, wifi veloce, voli diretti per Stoccolma, ristoranti aperti in bassa stagione.',
+      metaDescription:
+        'Capitale della Lapponia finlandese, l’unica città della Lapponia con una vera scena gastronomica invernale, un aeroporto ben collegato e una cultura del design.',
     },
     {
       slug: 'levi',

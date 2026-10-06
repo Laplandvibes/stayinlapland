@@ -24,6 +24,7 @@ import { getDestinationFacts } from '../data/destinationFacts';
 import DestinationAreas from '../components/DestinationAreas';
 import { getDestinationStaying } from '../data/destinationStaying';
 import { isCabinArea } from '../lib/lomarengas';
+import { destTitle, destDescription } from '../data/destMeta.mjs';
 
 type Bucket = 'long-stays' | 'hotels' | 'glass-igloos' | 'wilderness';
 
@@ -73,9 +74,12 @@ export default function DestinationPage() {
   const destName = destCopy?.name ?? dest.name;
   const pitch = destCopy?.pitch ?? dest.pitch;
   const longStayAngle = destCopy?.longStayAngle ?? dest.longStayAngle;
-  // ja/zh eivät välistä virkkeitä: täysleveän 。！？ jälkeen ei välilyöntiä
-  // (sama sääntö kuin scripts/generate-prerender-meta.mjs [LV-CJK-JOIN]).
-  const liitos = /^(ja|zh)/.test(lang) && /[。！？]$/.test(pitch.trim()) ? '' : ' ';
+  // Otsikko ja kuvaus src/data/destMeta.mjs:stä, samasta koostajasta jolla
+  // scripts/generate-prerender-meta.mjs kirjoittaa esirenderöidyn HTML:n: palvelin ja
+  // selain näyttävät saman tekstin (ennen 6.10.2026 tämä leikkasi 160 merkkiin kesken
+  // sanan ja generaattori 165 merkkiin, ks. destMeta.mjs).
+  const metaTitle = destTitle(destName, d.metaTitleSuffix);
+  const metaDescription = destDescription({ pitch, longStayAngle, metaDescription: destCopy?.metaDescription, lang });
 
   const facts = getDestinationFacts(dest.slug);
   const areas = getDestinationStaying(dest.slug);
@@ -109,8 +113,8 @@ export default function DestinationPage() {
 
   return (
     <>
-      <title>{`${destName}: ${d.metaTitleSuffix}`}</title>
-      <meta name="description" content={`${pitch}${liitos}${longStayAngle}`.slice(0, 160)} />
+      <title>{metaTitle}</title>
+      <meta name="description" content={metaDescription} />
       <link rel="canonical" href={localUrl(`/destinations/${dest.slug}`)} />
       <meta name="robots" content="index, follow" />
       <script

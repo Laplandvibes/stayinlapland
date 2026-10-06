@@ -25,12 +25,12 @@ const META: Record<Lang, { title: string; description: string }> = {
   es: {
     title: 'Política de cookies y consentimiento',
     description:
-      'Política de cookies de StayInLapland: qué cookies establecemos (Google Analytics 4, estado de consentimiento, popup del boletín), cómo rechazarlas y sus derechos RGPD.',
+      'Política de cookies de StayInLapland: qué cookies utilizamos (Google Analytics 4, consentimiento, popup del boletín), cómo rechazarlas y sus derechos RGPD.',
   },
   'pt-BR': {
     title: 'Política de cookies',
     description:
-      'Política de cookies do StayInLapland: quais cookies definimos (Google Analytics 4, estado de consentimento, popup da newsletter), como recusar e seus direitos GDPR.',
+      'Política de cookies do StayInLapland: quais cookies usamos (Google Analytics 4, consentimento, popup da newsletter), como recusá-los e seus direitos GDPR.',
   },
   'zh-CN': {
     title: 'Cookie 政策',
@@ -45,12 +45,12 @@ const META: Record<Lang, { title: string; description: string }> = {
   fr: {
     title: 'Politique de cookies',
     description:
-      'Politique de cookies de StayInLapland: quels cookies nous déposons (Google Analytics 4, état du consentement, popup newsletter), comment les refuser et vos droits RGPD.',
+      'Politique de cookies de StayInLapland : les cookies déposés (Google Analytics 4, consentement, popup newsletter), comment les refuser et vos droits RGPD.',
   },
   it: {
     title: 'Informativa sui cookie',
     description:
-      'Informativa sui cookie di StayInLapland: quali cookie impostiamo (Google Analytics 4, stato del consenso, popup newsletter), come rifiutarli e i Suoi diritti GDPR.',
+      'Informativa sui cookie di StayInLapland: quali cookie utilizziamo (Google Analytics 4, consenso, popup newsletter), come rifiutarli e i Suoi diritti GDPR.',
   },
   nl: {
     title: 'Cookiebeleid',
@@ -60,7 +60,7 @@ const META: Record<Lang, { title: string; description: string }> = {
   sv: {
     title: 'Cookiepolicy',
     description:
-      'StayInLaplands cookiepolicy: vilka cookies vi sätter (Google Analytics 4, samtyckesstatus, status för nyhetsbrevspopup), hur du tackar nej och dina rättigheter enligt GDPR.',
+      'StayInLaplands cookiepolicy: vilka cookies vi sätter (Google Analytics 4, samtycke, nyhetsbrevspopup), hur du tackar nej och dina rättigheter enligt GDPR.',
   },
 };
 

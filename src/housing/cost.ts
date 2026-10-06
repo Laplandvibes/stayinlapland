@@ -9,7 +9,7 @@ export const COST: HousingCopyMap = {
   fi: {
     metaTitle: 'Elinkustannukset Lapissa 2026: vuokra, sähkö, bensa, tuet',
     metaDescription:
-      'Mitä eläminen Lapissa maksaa: neliövuokrat Rovaniemellä ja Lapissa (Tilastokeskus 2026), sähkö ja polttoaine, Kelan asumistuen katot ja päiväkotimaksut. Lasketut esimerkit kaavoineen.',
+      'Mitä eläminen Lapissa maksaa: neliövuokrat Rovaniemellä ja Lapissa (Tilastokeskus 2026), sähkö ja polttoaine, Kelan asumistuen katot ja päiväkotimaksut.',
     breadcrumb: 'Elinkustannukset',
     hero: {
       eyebrow: 'Elinkustannukset Lapissa',
@@ -140,9 +140,9 @@ export const COST: HousingCopyMap = {
     sources: pickSources('fi', SOURCES),
   },
   en: {
-    metaTitle: 'Cost of Living in Lapland 2026: Rent, Electricity, Fuel, Benefits',
+    metaTitle: 'Cost of Living in Lapland 2026: Rent, Electricity, Fuel',
     metaDescription:
-      'What it costs to live in Finnish Lapland: rent per m² in Rovaniemi and Lapland (Statistics Finland 2026), electricity and fuel, Kela housing allowance ceilings and daycare fees, with worked examples.',
+      'What living in Finnish Lapland costs: rent per m² (Statistics Finland 2026), electricity, fuel, Kela housing allowance and daycare fees, with worked examples.',
     breadcrumb: 'Cost of living',
     hero: {
       eyebrow: 'Cost of living in Lapland',

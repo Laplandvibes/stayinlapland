@@ -116,7 +116,6 @@ export default function DestinationPage() {
       <title>{metaTitle}</title>
       <meta name="description" content={metaDescription} />
       <link rel="canonical" href={localUrl(`/destinations/${dest.slug}`)} />
-      <meta name="robots" content="index, follow" />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{

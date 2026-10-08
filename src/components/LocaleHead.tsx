@@ -1,5 +1,5 @@
 // 2026-05-21: Locale-aware head augmentation — emits hreflang × 11 + og:locale
-// + og:locale:alternate × 10 + html lang on every route change. Sits inside
+// + html lang on every route change. Sits inside
 // <BrowserRouter> alongside ScrollToTop. Pages still emit their own
 // <title>/<meta description>/<link canonical> inline (React 19 head hoisting).
 //
@@ -77,15 +77,8 @@ export default function LocaleHead() {
     }
     og.setAttribute('content', OG_LOCALE[lang]);
 
-    // og:locale:alternate × (N-1)
-    document.head.querySelectorAll('meta[property="og:locale:alternate"][data-seo-alt]').forEach((el) => el.remove());
-    langs.filter((l) => l !== lang).forEach((l) => {
-      const m = document.createElement('meta');
-      m.setAttribute('property', 'og:locale:alternate');
-      m.setAttribute('content', OG_LOCALE[l]);
-      m.setAttribute('data-seo-alt', 'true');
-      document.head.appendChild(m);
-    });
+    // og:locale:alternate EI täällä (8.10.2026): esirenderöity HTML ei kirjoita sitä, ja Facebook lukee vain
+    // staattisen HTML:n, joten tämän hookin lisäämällä tagilla ei ollut lukijaa (gate:og-js "vain-js" joka sivulla).
   }, [lang, pathname]);
 
   return null;

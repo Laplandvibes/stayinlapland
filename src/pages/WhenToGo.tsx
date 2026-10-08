@@ -85,7 +85,6 @@ export default function WhenToGo() {
       <title>{w.metaTitle}</title>
       <meta name="description" content={w.metaDescription} />
       <link rel="canonical" href={canonical} />
-      <meta name="robots" content="index, follow" />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{

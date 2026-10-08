@@ -73,7 +73,6 @@ export default function Terms() {
       <title>{meta.title}</title>
       <meta name="description" content={meta.description} />
       <link rel="canonical" href={localUrl('/terms')} />
-      <meta name="robots" content="index, follow" />
       <TermsContent siteName="StayInLapland" siteUrl="stayinlapland.com" lang={lang} />
     </>
   );

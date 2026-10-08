@@ -73,7 +73,6 @@ export default function CookiePolicy() {
       <title>{meta.title}</title>
       <meta name="description" content={meta.description} />
       <link rel="canonical" href={localUrl('/cookie-policy')} />
-      <meta name="robots" content="index, follow" />
       <CookieContent siteId="stayinlapland" siteName="StayInLapland" lang={lang} />
     </>
   );

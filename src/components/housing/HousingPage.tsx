@@ -430,7 +430,6 @@ export default function HousingPage({ route, copy, heroImage, current, parent, w
       <title>{c.metaTitle}</title>
       <meta name="description" content={c.metaDescription} />
       <link rel="canonical" href={canonical} />
-      <meta name="robots" content="index, follow" />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({ '@context': 'https://schema.org', '@graph': graph }) }} />
 
       <PageHero eyebrow={c.hero.eyebrow} title={c.hero.title} subtitle={c.hero.subtitle} imageSrc={heroImage} />

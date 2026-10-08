@@ -63,7 +63,6 @@ export default function HomeHousing() {
       <title>{h.metaTitle}</title>
       <meta name="description" content={h.metaDescription} />
       <link rel="canonical" href={localUrl('/')} />
-      <meta name="robots" content="index, follow" />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{

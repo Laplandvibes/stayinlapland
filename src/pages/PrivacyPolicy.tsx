@@ -73,7 +73,6 @@ export default function PrivacyPolicy() {
       <title>{meta.title}</title>
       <meta name="description" content={meta.description} />
       <link rel="canonical" href={localUrl('/privacy')} />
-      <meta name="robots" content="index, follow" />
       <PrivacyContent siteName="StayInLapland" lang={lang} />
     </>
   );

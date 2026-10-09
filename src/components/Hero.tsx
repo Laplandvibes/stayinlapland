@@ -41,26 +41,39 @@ export default function Hero() {
   // guarantees the line fits: on a phone keep-all left "、" and "。" alone on lines (measured 375 px 3.10.).
   const cjkWrap = !cjk ? '' : lang === 'ko' ? ' [word-break:keep-all]' : ' lg:[word-break:keep-all] lg:[overflow-wrap:anywhere]';
   const h1Em = Math.max(emWidth(t.h1Line1, 0.025), emWidth(t.h1Line2, 0.025));
-  const heroBase = summer ? 'home-hero-summer' : 'hero-aurora-cabins';
-  const heroAlt = summer
-    ? 'Lakeside log cabin in the Finnish Lapland summer'
-    : 'Aurora over a snow-covered log cabin in Finnish Lapland';
+  // 9.10.2026: aidot valokuvat tekoälykuvien tilalle (Pexels, kuitit src/data/photoCredits.ts STOCK_RECEIPTS).
+  // Kolme kokoa (1200/1920/2560), koska ruudulle piirtyy koko leveys; polut kirjoitettu auki, jotta
+  // version-images.mjs leimaa ne (mallipohjaiseen polkuun se ei yllä). Alt kuvaa kuvan, ei väitä paikkaa.
+  const hero = summer
+    ? {
+        avif: '/images/hero-summer-1200.avif 1200w, /images/hero-summer-1920.avif 1920w, /images/hero-summer-2560.avif 2560w',
+        webp: '/images/hero-summer-1200.webp 1200w, /images/hero-summer-1920.webp 1920w, /images/hero-summer-2560.webp 2560w',
+        src: '/images/hero-summer-1920.webp',
+        alt: 'A red wooden cottage and boathouse on a calm lake, pines and birches mirrored in the water',
+      }
+    : {
+        avif: '/images/hero-winter-1200.avif 1200w, /images/hero-winter-1920.avif 1920w, /images/hero-winter-2560.avif 2560w',
+        webp: '/images/hero-winter-1200.webp 1200w, /images/hero-winter-1920.webp 1920w, /images/hero-winter-2560.webp 2560w',
+        src: '/images/hero-winter-1920.webp',
+        alt: 'Green northern lights arching over a pine forest at night',
+      };
   return (
     <section className="relative overflow-hidden bg-night">
       <div className="relative min-h-[88svh] sm:min-h-[94svh] flex items-center justify-center">
-        <picture><source srcSet={`/images/${heroBase}.avif`} type="image/avif" /><source srcSet={`/images/${heroBase}.webp`} type="image/webp" /><img
-          src={`/images/${heroBase}.webp`}
-          alt={heroAlt}
+        <picture><source srcSet={hero.avif} sizes="100vw" type="image/avif" /><source srcSet={hero.webp} sizes="100vw" type="image/webp" /><img
+          src={hero.src}
+          alt={hero.alt}
           className="absolute inset-0 w-full h-full object-cover [object-position:50%_42%]"
           fetchPriority="high"
           decoding="async" /></picture>
 
-        <div className="absolute inset-0 bg-gradient-to-b from-night/60 via-night/30 to-night" />
+        {/* Kesähero on vaalea valokuva (9.10.2026): vahvempi tummennus, mitattu heroteksti-portilla (talvihero ei tarvitse). */}
+        <div className={`absolute inset-0 bg-gradient-to-b ${summer ? 'from-night/70 via-night/52 to-night' : 'from-night/60 via-night/30 to-night'}`} />
         <div
           className="absolute inset-0"
           style={{
             background:
-              'radial-gradient(ellipse 70% 65% at 50% 55%, rgba(15,23,42,0.45) 0%, rgba(15,23,42,0.0) 70%)',
+              `radial-gradient(ellipse 70% 65% at 50% 55%, rgba(15,23,42,${summer ? 0.65 : 0.45}) 0%, rgba(15,23,42,0.0) 70%)`,
           }}
         />
 

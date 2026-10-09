@@ -471,6 +471,13 @@ export const STOCK_RECEIPTS = [
   { file: 'housing-arki-pilkki.webp', source: 'Pexels', id: '3224109', url: 'https://www.pexels.com/photo/3224109/', author: 'Hert Niks', published: '2019-11-14', changes: 'Rajaus 4:3; paikkaa ei väitetä' },
   { file: 'housing-arki-ruska.webp', source: 'Pexels', id: '15884211', url: 'https://www.pexels.com/photo/15884211/', author: 'Veli-Jussi Lietsala', published: '2023-03-10', changes: 'Rajaus 4:3; paikkaa eikä kuukautta väitetä' },
   { file: 'housing-kemi-hero-kaupungintalo.webp + housing-kemi-card-kaupungintalo.webp', source: 'Wikimedia Commons', id: 'File:Kemin kaupungintalo Kemi 2026-01-06 01.jpg', url: 'https://commons.wikimedia.org/wiki/File:Kemin_kaupungintalo_Kemi_2026-01-06_01.jpg', author: 'Leonhard Lenz', published: '2026-01-06', changes: 'CC0: rajaus 16:9 ja 4:3' },
+  // 9.10.2026 ilta: Home.tsx (de/ja/es/br/cn/kr/it/sv) tekoälykuvat aidoiksi. Katsottu täysikokoisena (aito valokuva, ei tunnistettavia
+  // kasvoja), verkoston tunniste-, kuvaaja- ja 64x36-pikselihaku: ei muualla. Pexelsin paikkatieto on kuvaajan kotipaikka, ei kuvauspaikka,
+  // eikä kuvauksen "Finland" ole kuvaajan oma: alt ei väitä paikkaa.
+  { file: 'hero-winter-1200/1920/2560.webp + .avif', source: 'Pexels', id: '12736972', url: 'https://www.pexels.com/photo/12736972/', author: 'Joni Tuohimaa', published: '2022-07-07', changes: 'Pienennys 1200/1920/2560 px, ei rajausta; paikkaa ei väitetä (Home.tsx talvihero, lokakuu–huhtikuu)' },
+  { file: 'hero-summer-1200/1920/2560.webp + .avif', source: 'Pexels', id: '3109271', url: 'https://www.pexels.com/photo/3109271/', author: 'Olivier Darny', published: '2019-10-20', changes: 'Pienennys 1200/1920/2560 px, ei rajausta; paikkaa ei väitetä (Home.tsx kesähero, toukokuu–syyskuu; syksyn alun värit)' },
+  { file: 'pillar-long-stays-card.webp', source: 'Pexels', id: '6672145', url: 'https://www.pexels.com/photo/6672145/', author: 'LePei Visual', published: '2021-02-01', changes: 'Rajaus 16:10 (5184x3240, ylhäältä 216 px pois), 960x600 px WebP; paikkaa ei väitetä' },
+  { file: 'pillar-wilderness-card.webp', source: 'Pexels', id: '5841636', url: 'https://www.pexels.com/photo/5841636/', author: 'Cristian Manieri', published: '2020-11-09', changes: 'Rajaus 16:10 (5040x3150, x 280), 960x600 px WebP; kaksi pientä hahmoa mökin katoksen alla, ei tunnistettavissa; kuvaajan oma otsikko "Snow Covered Lapland in Finland", alt ei väitä paikkaa' },
 ] as const;
 
 /**

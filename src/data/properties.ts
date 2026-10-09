@@ -339,8 +339,8 @@ export const stayCardImages: Record<string, string> = {
 };
 
 export const allCategoriesSummary = [
-  { slug: 'long-stays',   name: 'Long Stays',        count: longStays.length,   description: 'Weekly + monthly rentals: villas, design cabins, ski apartments.', imageSrc: '/images/pillar-long-stays-card.webp' },
-  { slug: 'hotels',       name: 'Hotels',            count: hotels.length,      description: 'Boutique, design and classic Lapland hotels for short stays.',     imageSrc: '/images/pillar-hotels-card.webp' },
-  { slug: 'glass-igloos', name: 'Glass Igloos',      count: glassIgloos.length, description: 'The iconic Lapland format: four resorts that earn the name.',     imageSrc: '/images/pillar-glass-igloos-card.webp' },
-  { slug: 'wilderness',   name: 'Wilderness Lodges', count: wilderness.length,  description: 'Past the last road: remote retreats for serious travellers.',      imageSrc: '/images/pillar-wilderness-card.webp' },
+  { slug: 'long-stays',   name: 'Long Stays',        count: longStays.length,   description: 'Weekly + monthly rentals: villas, design cabins, ski apartments.', imageSrc: '/images/pillar-long-stays-card.webp', imageAlt: 'Two log cabins under heavy snow beneath a deep blue sky' },
+  { slug: 'hotels',       name: 'Hotels',            count: hotels.length,      description: 'Boutique, design and classic Lapland hotels for short stays.',     imageSrc: '/images/pillar-hotels-card.webp', imageAlt: 'A low timber hotel with glowing glass walls on a snowy plot at dusk' },
+  { slug: 'glass-igloos', name: 'Glass Igloos',      count: glassIgloos.length, description: 'The iconic Lapland format: four resorts that earn the name.',     imageSrc: '/images/pillar-glass-igloos-card.webp', imageAlt: 'A glass igloo in deep snow beneath green northern lights' },
+  { slug: 'wilderness',   name: 'Wilderness Lodges', count: wilderness.length,  description: 'Past the last road: remote retreats for serious travellers.',      imageSrc: '/images/pillar-wilderness-card.webp', imageAlt: 'Aerial view of a small log cabin among snow-laden spruces in low winter sun' },
 ] as const;

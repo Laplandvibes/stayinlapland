@@ -269,6 +269,7 @@ export type SectionCopy = {
     imageNote: string;
     /** Alt text for the hero + wide landscape band. */
     landscapeAlt: (n: string) => string;
+    landscapeAltGeneric: string;
   };
   hotelsData: { name: string; highlight: string; description: string; location: string }[];
   longStaysData: { name: string; highlight: string; description: string; location: string }[];

@@ -1,8 +1,6 @@
 import type { ReactNode } from 'react';
 import PageBreadcrumb from './PageBreadcrumb';
-import PhotoCredit from './PhotoCredit';
-import { creditFor } from '../data/photoCredits';
-import { useLang } from '../i18n/useLang';
+import { PhotoCreditFor } from './PhotoCredit';
 
 interface PageHeroProps {
   eyebrow: string;
@@ -13,6 +11,8 @@ interface PageHeroProps {
    *  404 inside <source> does NOT fall back to the <img>, it just breaks. */
   avifSrc?: string;
   imageAlt?: string;
+  /** 'strong' = tummempi himmennys vaaleille valokuville (heroteksti-portti, kuvavaihto 9.10.2026). */
+  scrim?: 'default' | 'strong';
   children?: ReactNode;
 }
 
@@ -27,11 +27,10 @@ export default function PageHero({
   imageSrc,
   avifSrc,
   imageAlt,
+  scrim = 'default',
   children,
 }: PageHeroProps) {
-  const lang = useLang();
-  // Avoimen lisenssin kuva (Commons) ⇒ tekijä + lisenssi kuvan päälle (src/data/photoCredits.ts).
-  const credit = creditFor(imageSrc);
+  const strong = scrim === 'strong';
   return (
     <>
     <section className="relative overflow-hidden bg-night">
@@ -49,12 +48,14 @@ export default function PageHero({
                 decoding="async"
               />
             </picture>
-            <div className="absolute inset-0 bg-gradient-to-b from-night/55 via-night/35 to-night" />
+            <div className={`absolute inset-0 bg-gradient-to-b ${strong ? 'from-night/75 via-night/60' : 'from-night/55 via-night/35'} to-night`} />
             <div
               className="absolute inset-0"
               style={{
                 background:
-                  'radial-gradient(ellipse 65% 60% at 50% 55%, rgba(15,23,42,0.40) 0%, transparent 70%)',
+                  strong
+                    ? 'radial-gradient(ellipse 80% 70% at 50% 55%, rgba(15,23,42,0.55) 0%, transparent 75%)'
+                    : 'radial-gradient(ellipse 65% 60% at 50% 55%, rgba(15,23,42,0.40) 0%, transparent 70%)',
               }}
             />
           </>
@@ -128,7 +129,8 @@ export default function PageHero({
           </p>
           {children && <div className="mt-8">{children}</div>}
         </div>
-        <PhotoCredit credit={credit} label={lang === 'fi' ? 'Kuva' : 'Photo'} />
+        {/* Avoimen lisenssin kuva (Commons) ⇒ tekijä + lisenssi, varmistettu paikka ⇒ "Kuvassa: …" (src/data/photoCredits.ts). */}
+        <PhotoCreditFor src={imageSrc} />
       </div>
     </section>
     <PageBreadcrumb />

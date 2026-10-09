@@ -609,6 +609,8 @@ export const copyKO: SectionCopy = {
     imageNote:
       '사진은 이미지 컷입니다. 숙소 유형과 주변 풍경을 보여 주며, 해당 숙소의 실제 객실은 아닙니다.',
     landscapeAlt: (n) => `${n}의 겨울 풍경, 핀란드 라플란드`,
+    // Paikaton aito talvikuva (Pexels): alt ei nimeä paikkaa (kuvavaihto 9.10.2026).
+    landscapeAltGeneric: '겨울 풍경',
     bucketLabels: {
       'long-stays': '장기 숙박',
       'hotels': '호텔',

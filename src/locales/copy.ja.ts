@@ -594,6 +594,8 @@ export const copyJA: SectionCopy = {
     imageNote:
       '写真はイメージです。宿泊タイプと周辺の風景を示すもので、各施設の実際の客室ではありません。',
     landscapeAlt: (n) => `${n}の冬の風景、フィンランド・ラップランド`,
+    // Paikaton aito talvikuva (Pexels): alt ei nimeä paikkaa (kuvavaihto 9.10.2026).
+    landscapeAltGeneric: '冬の風景',
     bucketLabels: {
       'long-stays': '長期滞在',
       'hotels': 'ホテル',

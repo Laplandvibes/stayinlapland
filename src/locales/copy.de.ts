@@ -603,6 +603,8 @@ export const copyDE: SectionCopy = {
     imageNote:
       'Die Bilder sind Illustrationen: Sie zeigen die Art der Unterkunft und die Landschaft der Region, nicht die Räume des jeweiligen Hauses.',
     landscapeAlt: (n) => `Winterlandschaft in ${n}, Finnisch-Lappland`,
+    // Paikaton aito talvikuva (Pexels): alt ei nimeä paikkaa (kuvavaihto 9.10.2026).
+    landscapeAltGeneric: 'Winterlandschaft',
     bucketLabels: {
       'long-stays': 'Langzeitaufenthalte',
       'hotels': 'Hotels',

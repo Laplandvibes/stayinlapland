@@ -1,3 +1,5 @@
+import { PhotoCreditFor } from './PhotoCredit';
+
 interface ImageBreakProps {
   src: string;
   /** AVIF sibling of src. Pass it only when the file exists — a 404 inside
@@ -6,6 +8,8 @@ interface ImageBreakProps {
   alt: string;
   caption?: string;
   ratio?: '3/1' | '21/9' | '16/9' | 'band';
+  /** CSS object-position, kun kuvan aihe ei ole keskellä (BY-SA-kuvaa ei rajata tiedostossa, vain näytöllä). */
+  objectPosition?: string;
 }
 
 const RATIO_CLS: Record<NonNullable<ImageBreakProps['ratio']>, string> = {
@@ -16,7 +20,7 @@ const RATIO_CLS: Record<NonNullable<ImageBreakProps['ratio']>, string> = {
   'band': 'aspect-[16/9] sm:aspect-[21/9] lg:aspect-[3/1]',
 };
 
-export default function ImageBreak({ src, avifSrc, alt, caption, ratio = '3/1' }: ImageBreakProps) {
+export default function ImageBreak({ src, avifSrc, alt, caption, ratio = '3/1', objectPosition }: ImageBreakProps) {
   // 🔴 The ratio is relative to viewport WIDTH, so "3:1 cinematic strip" became
   // a 665 px wall of forest on a 1994 px window — Vesa 2026-08-17: "keskellä on
   // täysi leveä metsäkuva ilman mitään funktiota". Cap the height so a strip
@@ -31,10 +35,12 @@ export default function ImageBreak({ src, avifSrc, alt, caption, ratio = '3/1' }
             src={src}
             alt={alt}
             className="absolute inset-0 w-full h-full object-cover"
+            style={objectPosition ? { objectPosition } : undefined}
             loading="lazy"
             decoding="async"
           />
         </picture>
+        <PhotoCreditFor src={src} />
       </div>
       {caption && (
         // Ei yhtään käyttöä 23.9.2026, mutta valmiiksi oikein: kuvateksti on virke ⇒ 16 px, ja figure on

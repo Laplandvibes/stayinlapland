@@ -590,6 +590,8 @@ export const copySV: SectionCopy = {
     imageNote:
       'Bilderna är illustrationer: de visar boendetypen och landskapet i området, inte husets egna rum.',
     landscapeAlt: (n) => `Vinterlandskap i ${n}, finska Lappland`,
+    // Paikaton aito talvikuva (Pexels): alt ei nimeä paikkaa (kuvavaihto 9.10.2026).
+    landscapeAltGeneric: 'Vinterlandskap',
     bucketLabels: {
       'long-stays': 'långtidsvistelser',
       'hotels': 'hotell',

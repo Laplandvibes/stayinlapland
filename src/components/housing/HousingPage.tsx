@@ -432,7 +432,7 @@ export default function HousingPage({ route, copy, heroImage, current, parent, w
       <link rel="canonical" href={canonical} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({ '@context': 'https://schema.org', '@graph': graph }) }} />
 
-      <PageHero eyebrow={c.hero.eyebrow} title={c.hero.title} subtitle={c.hero.subtitle} imageSrc={heroImage} />
+      <PageHero eyebrow={c.hero.eyebrow} title={c.hero.title} subtitle={c.hero.subtitle} imageSrc={heroImage} scrim={heroImage?.includes('-talvi.') ? 'strong' : 'default'} />
 
       {!native && (
         <div className="bg-finland-blue text-snow px-5 sm:px-6 py-3">

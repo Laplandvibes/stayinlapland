@@ -594,6 +594,8 @@ export const copyEN: SectionCopy = {
     imageNote:
       'The pictures are illustrative: they show the type of stay and the surrounding landscape, not the property’s own rooms.',
     landscapeAlt: (n) => `Winter landscape around ${n}, Finnish Lapland`,
+    // Paikaton aito talvikuva (Pexels): alt ei nimeä paikkaa (kuvavaihto 9.10.2026).
+    landscapeAltGeneric: 'Winter landscape',
     bucketLabels: {
       'long-stays': 'long stays',
       'hotels': 'hotels',

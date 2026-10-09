@@ -19,6 +19,8 @@ import { pageUrl } from '../lib/meta';
 import { useLang, useLocalePath, useLocalPageUrl } from '../i18n/useLang';
 import { getCopy } from '../locales/copy';
 import { AppPromoHero } from '../components/AppPromo';
+import { PhotoCreditFor, PhotoCreditList, uniqueCredits } from '../components/PhotoCredit';
+import { creditFor, PHOTO_LIST_TEXT } from '../data/photoCredits';
 
 // Per-question links to the pages that back each FAQ answer (Vesa 2026-07-07:
 // FAQ answers must point to our own supporting content). Labels reuse the
@@ -199,6 +201,8 @@ export default function Home() {
                   <h3 className="absolute bottom-4 left-5 right-5 font-heading text-3xl text-snow leading-tight drop-shadow">
                     {d.name}
                   </h3>
+                  {/* Kortti on linkki ⇒ vain teksti; linkit ovat kuvaluettelossa korttien alla. */}
+                  <PhotoCreditFor src={d.imageSrc} linked={false} />
                 </div>
                 <div className="p-6 sm:p-7 flex flex-col flex-1">
                   <p className="text-graphite text-[15px] leading-relaxed mb-5 flex-1">
@@ -212,6 +216,11 @@ export default function Home() {
               </Link>
             ))}
           </div>
+          <PhotoCreditList
+            credits={uniqueCredits(dests.map((x) => x.imageSrc), creditFor)}
+            heading={PHOTO_LIST_TEXT[lang].heading}
+            lead={PHOTO_LIST_TEXT[lang].lead}
+          />
         </div>
       </section>
 

@@ -14,6 +14,7 @@ import {
   stayCardImages,
 } from '../data/properties';
 import ImageBreak from '../components/ImageBreak';
+import { PhotoCreditFor } from '../components/PhotoCredit';
 import { SiteLink } from '../lib/movedToStays';
 import type { Property } from '../data/properties';
 import { useLang, useLocalePath, useLocalPageUrl } from '../i18n/useLang';
@@ -41,6 +42,15 @@ function findProperty(name: string): { p: Property; bucket: Bucket; index: numbe
   }
   return null;
 }
+
+/**
+ * Kuvavaihto 9.10.2026 (Vesa 4.10.: tekoälykuvat aidoiksi). Kohteiden herot, bandit ja kortit ovat nyt valokuvia.
+ * Inarin ja Levin kuvat ovat paikattomia Pexels-kuvia (kuvaajan paikkatieto ei todista paikkaa), joten niiden alt
+ * ei nimeä paikkaa. Muilla kuva on varmistettu kohteesta ja merkintä "Kuvassa: …" tulee src/data/photoCredits.ts:stä.
+ */
+const PLACELESS_PHOTO = new Set(['inari', 'levi']);
+/** Bandin näyttörajaus: ravintolalaivan kuva on neliö ja laiva on sen alaosassa (BY-SA-tiedostoa ei rajata). */
+const BAND_POSITION: Record<string, string | undefined> = { rovaniemi: '50% 62%' };
 
 export default function DestinationPage() {
   const { slug = '' } = useParams<{ slug: string }>();
@@ -82,6 +92,7 @@ export default function DestinationPage() {
   const metaDescription = destDescription({ pitch, longStayAngle, metaDescription: destCopy?.metaDescription, lang });
 
   const facts = getDestinationFacts(dest.slug);
+  const landscapeAlt = PLACELESS_PHOTO.has(dest.slug) ? d.landscapeAltGeneric : d.landscapeAlt(destName);
   const areas = getDestinationStaying(dest.slug);
 
   const dataForBucket: Record<Bucket, typeof t.hotelsData> = {
@@ -140,17 +151,16 @@ export default function DestinationPage() {
         }}
       />
 
-      {/* One generated winter landscape per destination (2026-08-17, Vesa: the
-          gradient backdrop read as unfinished). The alt text calls it a winter
-          landscape of the area rather than a photograph of a named landmark,
-          and `imageNote` further down says the imagery is illustrative. Base
+      {/* One winter photograph per destination (hero, home card and band). Since 9.10.2026 these are real photographs
+          (Commons with a verified place, or placeless Pexels for Inari and Levi), not the 17.8.2026 AI renders. Base
           name is derived from the slug so hero and Home card cannot drift. */}
       <PageHero
         eyebrow={d.pageHeroEyebrow}
         title={destName}
         subtitle={pitch}
         imageSrc={`/images/dest-${dest.slug}-hero.webp`}
-        imageAlt={d.landscapeAlt(destName)}
+        imageAlt={landscapeAlt}
+        scrim="strong"
       >
         {facts && (
           <dl className="flex flex-wrap justify-center gap-x-3 gap-y-2.5">
@@ -241,6 +251,7 @@ export default function DestinationPage() {
                     <span className="absolute top-4 left-4 inline-flex px-3 py-1.5 rounded-full bg-night/70 backdrop-blur-sm text-snow text-[10px] font-semibold tracking-[0.18em] uppercase">
                       {label}
                     </span>
+                    {imageBase && <PhotoCreditFor src={`/images/${imageBase}.webp`} />}
                   </div>
 
                   <div className="md:col-span-7 p-6 sm:p-8 flex flex-col">
@@ -299,8 +310,9 @@ export default function DestinationPage() {
           two pages was text only. */}
       <ImageBreak
         src={`/images/dest-${dest.slug}-band.webp`}
-        alt={d.landscapeAlt(destName)}
+        alt={landscapeAlt}
         ratio="band"
+        objectPosition={BAND_POSITION[dest.slug]}
       />
 
       {facts && <DestinationFacts facts={facts} />}

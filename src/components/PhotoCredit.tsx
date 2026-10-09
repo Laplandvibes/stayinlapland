@@ -1,4 +1,5 @@
-import type { PhotoCredit as Credit } from '../data/photoCredits';
+import { creditFor, placeFor, PICTURED, PHOTO_BY, type PhotoCredit as Credit } from '../data/photoCredits';
+import { useLang } from '../i18n/useLang';
 
 /**
  * Tekijä ja lisenssi kuvan päälle — vain avoimen lisenssin kuville
@@ -21,34 +22,55 @@ export default function PhotoCredit({
   credit,
   label,
   linked = true,
+  place,
 }: {
   credit?: Credit;
   label: string;
   linked?: boolean;
+  /** Valmis "Kuvassa: …" -rivi (PhotoCreditFor rakentaa sen kielelle). */
+  place?: string;
 }) {
-  if (!credit) return null;
+  if (!credit && !place) return null;
   // 🔴 Aina oikea alakulma (Vesa 23.9.2026: "kuvatiedot pitää olla aina oikea alalaita, ei me
   // mainosteta sitä"). Yläkulmavaihtoehto poistettu, ettei se palaa korttiin.
   return (
-    <span className={`absolute bottom-0 right-0 rounded-tl z-10 max-w-full bg-black/55 px-1.5 py-[2px] text-[9px] sm:text-[10px] leading-tight text-white`}>
-      {label}:{' '}
-      {linked ? (
-        <>
-          <a href={credit.sourceUrl} target="_blank" rel="noopener" className="lv-tap underline decoration-white/50 underline-offset-2 hover:decoration-white">
-            {credit.author}
-          </a>
-          {', '}
-          <a href={credit.licenseUrl} target="_blank" rel="license noopener" className="lv-tap underline decoration-white/50 underline-offset-2 hover:decoration-white">
-            {credit.license}
-          </a>
-        </>
-      ) : (
-        <>
-          {credit.author}, {credit.license}
-        </>
+    <span className={`absolute bottom-0 right-0 rounded-tl z-10 max-w-full bg-black/55 px-1.5 py-[2px] text-[9px] sm:text-[10px] leading-tight text-white${place ? ' text-right' : ''}`}>
+      {place && <span className="block">{place}</span>}
+      {credit && (
+        <span className={place ? 'block' : undefined}>
+          {label}:{' '}
+          {linked ? (
+            <>
+              <a href={credit.sourceUrl} target="_blank" rel="noopener" className="lv-tap underline decoration-white/50 underline-offset-2 hover:decoration-white">
+                {credit.author}
+              </a>
+              {', '}
+              <a href={credit.licenseUrl} target="_blank" rel="license noopener" className="lv-tap underline decoration-white/50 underline-offset-2 hover:decoration-white">
+                {credit.license}
+              </a>
+            </>
+          ) : (
+            <>
+              {credit.author}, {credit.license}
+            </>
+          )}
+        </span>
       )}
     </span>
   );
+}
+
+/**
+ * Kuvan merkintä polun perusteella, lukijan kielellä (kuvavaihto 9.10.2026): "Kuvassa: paikka" kun paikka on
+ * varmistettu ja "Kuva: tekijä, lisenssi" avoimen lisenssin kuvista. Kuvilla ilman merkintää (omat, Pexels)
+ * ei renderöi mitään. Aina kuvan oikeassa alakulmassa; kutsupaikan pitää olla `relative`.
+ */
+export function PhotoCreditFor({ src, linked = true }: { src?: string; linked?: boolean }) {
+  const lang = useLang();
+  const credit = creditFor(src);
+  if (!credit) return null;
+  const place = placeFor(src, lang);
+  return <PhotoCredit credit={credit} label={PHOTO_BY[lang]} linked={linked} place={place ? PICTURED[lang] + place : undefined} />;
 }
 
 /** Sivun lopun kuvaluettelo: jokaisesta avoimen lisenssin kuvasta tiedostosivu + lisenssi linkkeinä. */

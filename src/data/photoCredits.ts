@@ -31,10 +31,15 @@
  *
  * Kuitti: lähde, tunniste, lisenssi, päivä, hinta 0 €.
  */
+import type { Lang } from '../i18n/useLang';
+
+/** Paikan nimi kielittäin; puuttuva kieli käyttää englantia. */
+export type PlaceNames = { en: string } & Partial<Record<Lang, string>>;
+
 export type PhotoCredit = {
   /** Tekijä siinä muodossa kuin hän on sen Commonsiin merkinnyt (lyhennettynä). */
   author: string;
-  license: 'CC BY 2.0' | 'CC BY 3.0' | 'CC BY-SA 3.0' | 'CC BY-SA 4.0' | 'CC0 1.0';
+  license: 'CC BY 2.0' | 'CC BY 3.0' | 'CC BY-SA 2.0' | 'CC BY-SA 3.0' | 'CC BY-SA 4.0' | 'CC0 1.0';
   licenseUrl: string;
   /** Commonsin tiedostosivu: kuvaus, tekijä ja lisenssi alkuperäisessä muodossa. */
   sourceUrl: string;
@@ -46,6 +51,8 @@ export type PhotoCredit = {
   changes: string;
   fetched: string;
   cost: '0 €';
+  /** "Kuvassa: …" -rivi kuvan päällä, vain kun paikka on varmistettu Commonsin GPS:stä, luokista tai kuvauksesta. */
+  place?: PlaceNames;
 };
 
 export const PHOTO_CREDITS: Record<string, PhotoCredit> = {
@@ -199,6 +206,233 @@ export const PHOTO_CREDITS: Record<string, PhotoCredit> = {
     fetched: '2026-09-23',
     cost: '0 €',
   },
+  // ───────────────────────────────────────────────────────────────────────────────────────────────────────────────
+  // Kuvavaihto 9.10.2026 (Vesa 4.10.: tekoälykuvat aidoiksi). Kohteiden herot, bandit, etusivun kortit ja kolme
+  // majoituskorttia. Tarkistukset per kuva: katsottu isona (aito valokuva, ei tunnistettavia kasvoja, ei luettavia
+  // rekisterikilpiä, ei kolmannen osapuolen logoa pääaiheena); paikka vain Commonsin kuvauksesta, GPS:stä tai
+  // luokista; verkoston nimi-, tekijä- ja pikselihaku (claim.mjs) + sisarruututarkistus (sibling_check.mjs):
+  // ei muulla LV-sivustolla 9.10.2026. Kuvat ovat vain pienennetty, ei rajausta (BY-SA).
+  // ───────────────────────────────────────────────────────────────────────────────────────────────────────────────
+  '/images/dest-rovaniemi-hero.webp': {
+    author: 'Tejasello',
+    license: 'CC BY-SA 3.0',
+    licenseUrl: 'https://creativecommons.org/licenses/by-sa/3.0/',
+    sourceUrl: 'https://commons.wikimedia.org/wiki/File:Salmij%C3%A4rvi.jpg',
+    title: 'Salmijärvi.jpg',
+    taken: '2010-03-04',
+    changes: 'Vain pienennys 3264 → 1920 px ja WebP-muunnos, ei rajausta.',
+    fetched: '2026-10-09',
+    cost: '0 €',
+    place: {
+      en: 'Salmijärvi, Rovaniemi',
+      ja: 'サルミヤルヴィ、ロヴァニエミ',
+      ko: '살미예르비, 로바니에미',
+      'zh-CN': '萨尔米耶尔维，罗瓦涅米',
+    },
+  },
+  '/images/dest-rovaniemi-card.webp': {
+    author: 'Tejasello',
+    license: 'CC BY-SA 3.0',
+    licenseUrl: 'https://creativecommons.org/licenses/by-sa/3.0/',
+    sourceUrl: 'https://commons.wikimedia.org/wiki/File:Salmij%C3%A4rvi.jpg',
+    title: 'Salmijärvi.jpg',
+    taken: '2010-03-04',
+    changes: 'Vain pienennys 3264 → 800 px ja WebP-muunnos, ei rajausta.',
+    fetched: '2026-10-09',
+    cost: '0 €',
+    place: {
+      en: 'Salmijärvi, Rovaniemi',
+      ja: 'サルミヤルヴィ、ロヴァニエミ',
+      ko: '살미예르비, 로바니에미',
+      'zh-CN': '萨尔米耶尔维，罗瓦涅米',
+    },
+  },
+  '/images/dest-rovaniemi-band.webp': {
+    author: 'Pom\' from France',
+    license: 'CC BY-SA 2.0',
+    licenseUrl: 'https://creativecommons.org/licenses/by-sa/2.0/',
+    sourceUrl: 'https://commons.wikimedia.org/wiki/File:P%C3%B6ykk%C3%B6l%C3%A4,_Lapland,_Finland_-_Flickr_-_pom%27..jpg',
+    title: 'Pöykkölä, Lapland, Finland - Flickr - pom\'..jpg',
+    taken: '2014-02-14',
+    changes: 'Vain pienennys 3000 → 1600 px ja WebP-muunnos, ei rajausta.',
+    fetched: '2026-10-09',
+    cost: '0 €',
+    place: {
+      en: 'Ounasjoki, Rovaniemi',
+      ja: 'オウナス川、ロヴァニエミ',
+      ko: '오우나스강, 로바니에미',
+      'zh-CN': '奥纳斯河，罗瓦涅米',
+    },
+  },
+  '/images/dest-yllas-hero.webp': {
+    author: 'Antti Simonen',
+    license: 'CC BY 3.0',
+    licenseUrl: 'https://creativecommons.org/licenses/by/3.0/',
+    sourceUrl: 'https://commons.wikimedia.org/wiki/File:Sunset_In_Winter_Wonderland_(241499495).jpeg',
+    title: 'Sunset In Winter Wonderland (241499495).jpeg',
+    taken: '2017-12-26',
+    changes: 'Vain pienennys 2048 → 1920 px ja WebP-muunnos, ei rajausta.',
+    fetched: '2026-10-09',
+    cost: '0 €',
+    place: {
+      en: 'Äkäslompolo, Kolari',
+      ja: 'アカスロンポロ、コラリ',
+      ko: '아캬슬롬폴로, 콜라리',
+      'zh-CN': '阿卡斯隆波洛，科拉里',
+    },
+  },
+  '/images/dest-yllas-card.webp': {
+    author: 'Antti Simonen',
+    license: 'CC BY 3.0',
+    licenseUrl: 'https://creativecommons.org/licenses/by/3.0/',
+    sourceUrl: 'https://commons.wikimedia.org/wiki/File:Sunset_In_Winter_Wonderland_(241499495).jpeg',
+    title: 'Sunset In Winter Wonderland (241499495).jpeg',
+    taken: '2017-12-26',
+    changes: 'Vain pienennys 2048 → 800 px ja WebP-muunnos, ei rajausta.',
+    fetched: '2026-10-09',
+    cost: '0 €',
+    place: {
+      en: 'Äkäslompolo, Kolari',
+      ja: 'アカスロンポロ、コラリ',
+      ko: '아캬슬롬폴로, 콜라리',
+      'zh-CN': '阿卡斯隆波洛，科拉里',
+    },
+  },
+  '/images/dest-yllas-band.webp': {
+    author: 'Markus Trienke',
+    license: 'CC BY-SA 3.0',
+    licenseUrl: 'https://creativecommons.org/licenses/by-sa/3.0/',
+    sourceUrl: 'https://commons.wikimedia.org/wiki/File:Misty_Morning_in_Pallas-Yll%C3%A4stunturi_National_Park_(148429695).jpg',
+    title: 'Misty Morning in Pallas-Yllästunturi National Park (148429695).jpg',
+    taken: '2016-03-24',
+    changes: 'Vain pienennys 2048 → 1800 px ja WebP-muunnos, ei rajausta.',
+    fetched: '2026-10-09',
+    cost: '0 €',
+    place: {
+      en: 'Pallas-Yllästunturi National Park',
+      fi: 'Pallas-Yllästunturin kansallispuisto',
+      sv: 'Pallas-Yllästunturi nationalpark',
+      de: 'Nationalpark Pallas-Yllästunturi',
+      fr: 'parc national de Pallas-Yllästunturi',
+      es: 'Parque Nacional Pallas-Yllästunturi',
+      it: 'Parco nazionale Pallas-Yllästunturi',
+      nl: 'Nationaal Park Pallas-Yllästunturi',
+      'pt-BR': 'Parque Nacional Pallas-Yllästunturi',
+      ja: 'パッラス＝ユッラストゥントゥリ国立公園',
+      ko: '팔라스-윌라스툰투리 국립공원',
+      'zh-CN': '帕拉斯-于拉斯通图里国家公园',
+    },
+  },
+  '/images/dest-saariselka-hero.webp': {
+    author: 'Ninara',
+    license: 'CC BY 2.0',
+    licenseUrl: 'https://creativecommons.org/licenses/by/2.0/',
+    sourceUrl: 'https://commons.wikimedia.org/wiki/File:Y1A9737_Lapland_(15621124787).jpg',
+    title: 'Y1A9737 Lapland (15621124787).jpg',
+    taken: '2014-11-13',
+    changes: 'Vain pienennys 5760 → 1920 px ja WebP-muunnos, ei rajausta.',
+    fetched: '2026-10-09',
+    cost: '0 €',
+    place: {
+      en: 'Saariselkä',
+      ja: 'サーリセルカ',
+      ko: '사리셀카',
+      'zh-CN': '萨利色尔卡',
+    },
+  },
+  '/images/dest-saariselka-card.webp': {
+    author: 'Ninara',
+    license: 'CC BY 2.0',
+    licenseUrl: 'https://creativecommons.org/licenses/by/2.0/',
+    sourceUrl: 'https://commons.wikimedia.org/wiki/File:Y1A9737_Lapland_(15621124787).jpg',
+    title: 'Y1A9737 Lapland (15621124787).jpg',
+    taken: '2014-11-13',
+    changes: 'Vain pienennys 5760 → 800 px ja WebP-muunnos, ei rajausta.',
+    fetched: '2026-10-09',
+    cost: '0 €',
+    place: {
+      en: 'Saariselkä',
+      ja: 'サーリセルカ',
+      ko: '사리셀카',
+      'zh-CN': '萨利色尔卡',
+    },
+  },
+  '/images/dest-saariselka-band.webp': {
+    author: 'Nicolas Buffler',
+    license: 'CC BY-SA 2.0',
+    licenseUrl: 'https://creativecommons.org/licenses/by-sa/2.0/',
+    sourceUrl: 'https://commons.wikimedia.org/wiki/File:Laponie_2019_(46344164685).jpg',
+    title: 'Laponie 2019 (46344164685).jpg',
+    taken: '2019-02-21',
+    changes: 'Vain pienennys 3008 → 1800 px ja WebP-muunnos, ei rajausta.',
+    fetched: '2026-10-09',
+    cost: '0 €',
+    place: {
+      en: 'Kaunispää, Saariselkä',
+      ja: 'カウニスパー、サーリセルカ',
+      ko: '카우니스패, 사리셀카',
+      'zh-CN': '考尼斯帕，萨利色尔卡',
+    },
+  },
+  '/images/stay-rovaniemi-treehouse.webp': {
+    author: 'Leonhard Lenz',
+    license: 'CC0 1.0',
+    licenseUrl: 'https://creativecommons.org/publicdomain/zero/1.0/',
+    sourceUrl: 'https://commons.wikimedia.org/wiki/File:Arctic_TreeHouse_Hotel_Rovaniemi_2022-09-15_01.jpg',
+    title: 'Arctic TreeHouse Hotel Rovaniemi 2022-09-15 01.jpg',
+    taken: '2022-09-15',
+    changes: 'Vain pienennys 8384 → 960 px ja WebP-muunnos, ei rajausta.',
+    fetched: '2026-10-09',
+    cost: '0 €',
+    place: {
+      en: 'Arctic TreeHouse Hotel, Rovaniemi',
+      ja: 'Arctic TreeHouse Hotel、ロヴァニエミ',
+      ko: 'Arctic TreeHouse Hotel, 로바니에미',
+      'zh-CN': 'Arctic TreeHouse Hotel，罗瓦涅米',
+    },
+  },
+  '/images/stay-rovaniemi-chalet.webp': {
+    author: 'Pom\' from France',
+    license: 'CC BY-SA 2.0',
+    licenseUrl: 'https://creativecommons.org/licenses/by-sa/2.0/',
+    sourceUrl: 'https://commons.wikimedia.org/wiki/File:Rovaniemi,_Lapland,_Finland.jpg',
+    title: 'Rovaniemi, Lapland, Finland.jpg',
+    taken: '2014-02-15',
+    changes: 'Vain pienennys 3024 → 960 px ja WebP-muunnos, ei rajausta.',
+    fetched: '2026-10-09',
+    cost: '0 €',
+    place: {
+      en: 'Rovaniemi',
+      ja: 'ロヴァニエミ',
+      ko: '로바니에미',
+      'zh-CN': '罗瓦涅米',
+    },
+  },
+  '/images/stay-saariselka-wilderness.webp': {
+    author: 'Kospo75',
+    license: 'CC BY-SA 4.0',
+    licenseUrl: 'https://creativecommons.org/licenses/by-sa/4.0/',
+    sourceUrl: 'https://commons.wikimedia.org/wiki/File:Vellins%C3%A4rpim%C3%A4ojan_autiotupa.jpg',
+    title: 'Vellinsärpimäojan autiotupa.jpg',
+    taken: '2014-09-14',
+    changes: 'Vain pienennys 3072 → 960 px ja WebP-muunnos, ei rajausta.',
+    fetched: '2026-10-09',
+    cost: '0 €',
+    place: {
+      en: 'Vellinsärpimäoja wilderness hut, Saariselkä',
+      fi: 'Vellinsärpimäojan autiotupa, Saariselkä',
+      de: 'Wildnishütte Vellinsärpimäoja, Saariselkä',
+      sv: 'Vellinsärpimäoja vildmarksstuga, Saariselkä',
+      fr: 'refuge Vellinsärpimäoja, Saariselkä',
+      es: 'refugio Vellinsärpimäoja, Saariselkä',
+      it: 'rifugio Vellinsärpimäoja, Saariselkä',
+      nl: 'wildernishut Vellinsärpimäoja, Saariselkä',
+      'pt-BR': 'refúgio Vellinsärpimäoja, Saariselkä',
+      ja: 'Vellinsärpimäoja の無人小屋、サーリセルカ',
+      ko: 'Vellinsärpimäoja 무인 오두막, 사리셀카',
+      'zh-CN': 'Vellinsärpimäoja 荒野小屋，萨利色尔卡',
+    },
+  },
 };
 
 /**
@@ -218,6 +452,12 @@ export const PHOTO_CREDITS: Record<string, PhotoCredit> = {
  * Yksi kuva = yksi sivusto: tunnukset haettu muiden LV-sivustojen src/-kansioista, 0 osumaa.
  */
 export const STOCK_RECEIPTS = [
+  { file: 'dest-inari-hero.webp + dest-inari-card.webp', source: 'Pexels', id: '30654164', url: 'https://www.pexels.com/photo/30654164/', author: 'Michelle Chadwick', published: '2025-02-10', changes: 'Pienennys 1920/800 px, ei rajausta; paikkaa ei väitetä (alt ei nimeä paikkaa)' },
+  { file: 'dest-inari-band.webp', source: 'Pexels', id: '6601867', url: 'https://www.pexels.com/photo/6601867/', author: 'Joni Tuohimaa', published: '2021-01-26', changes: 'Pienennys 1800 px, ei rajausta; paikkaa ei väitetä' },
+  { file: 'dest-levi-hero.webp + dest-levi-card.webp', source: 'Pexels', id: '36628122', url: 'https://www.pexels.com/photo/36628122/', author: 'Markku Soini', published: '2026-03-18', changes: 'Pienennys 1920/800 px, ei rajausta; paikkaa ei väitetä' },
+  { file: 'dest-levi-band.webp', source: 'Pexels', id: '19744151', url: 'https://www.pexels.com/photo/19744151/', author: 'Teemu Sironen', published: '2024-01-04', changes: 'Pienennys 1800 px, ei rajausta; paikkaa ei väitetä' },
+  { file: 'housing-sodankyla-hero-talvi.webp', source: 'Pexels', id: '30668141', url: 'https://www.pexels.com/photo/30668141/', author: 'Michelle Chadwick', published: '2025-02-10', changes: 'Pienennys 1920 px, ei rajausta; paikkaa ei väitetä (talvikauden hero, kesällä vanha kirkko)' },
+  { file: 'housing-kemijarvi-hero-talvi.webp', source: 'Pexels', id: '35874614', url: 'https://www.pexels.com/photo/35874614/', author: 'Markku Soini', published: '2026-01-28', changes: 'Pienennys 1920 px, ei rajausta; paikkaa ei väitetä (talvikauden hero, kesällä oma kuva)' },
   { file: 'housing-home-hero-talo.webp', source: 'Pexels', id: '17648895', url: 'https://www.pexels.com/photo/17648895/', author: 'Gu Bra', published: '2023-07-18', changes: 'Rajaus 16:9, 1920 px' },
   { file: 'housing-rentals-hero-talvikatu.webp', source: 'Pexels', id: '20412426', url: 'https://www.pexels.com/photo/20412426/', author: 'Ahmet Yüksek', published: '2024-02-26', changes: 'Auton merkki ja rekisterikilpi sumennettu, 1920 px' },
   { file: 'housing-seasonal-hero-yllasjarvi.webp + housing-seasonal-card-yllasjarvi.webp', source: 'Pexels', id: '19896963', url: 'https://www.pexels.com/photo/19896963/', author: 'Fanny Hagan-Södervall', published: '2024-01-17', changes: 'Rajattu yläosaan: ravintolarakennus nimikyltteineen pois' },
@@ -249,3 +489,38 @@ export function creditFor(src?: string): PhotoCredit | undefined {
   if (!src) return undefined;
   return BY_PATH[bare(src)];
 }
+
+/**
+ * "Kuvassa: …" ja tekijärivin etuliite kaikilla 12 kielellä (kuvavaihto 9.10.2026, Vesa 4.10.: tekoälykuvat aidoiksi).
+ * Paikka näytetään vain kun se on varmistettu (PHOTO_CREDITS[..].place); Pexels-kuvilla ei väitetä paikkaa.
+ */
+export const PICTURED: Record<Lang, string> = {
+  en: 'Pictured: ', fi: 'Kuvassa: ', de: 'Im Bild: ', ja: '写真：', es: 'En la foto: ', 'pt-BR': 'Na foto: ',
+  'zh-CN': '图：', ko: '사진: ', fr: 'Sur la photo : ', it: 'Nella foto: ', nl: 'Op de foto: ', sv: 'På bilden: ',
+};
+export const PHOTO_BY: Record<Lang, string> = {
+  en: 'Photo', fi: 'Kuva', de: 'Foto', ja: '撮影', es: 'Foto', 'pt-BR': 'Foto',
+  'zh-CN': '摄影', ko: '촬영', fr: 'Photo', it: 'Foto', nl: 'Foto', sv: 'Foto',
+};
+
+/** Varmistettu paikka kuvalle, kielellä `lang` (puuttuva kieli: englanti). */
+export function placeFor(src: string | undefined, lang: Lang): string | undefined {
+  const p = creditFor(src)?.place;
+  return p ? (p[lang] ?? p.en) : undefined;
+}
+
+/** Kuvaluettelon otsikko ja johdanto (Home.tsx:n korttikuvat, 12 kieltä). */
+export const PHOTO_LIST_TEXT: Record<Lang, { heading: string; lead: string }> = {
+  en: { heading: 'Photos', lead: 'Openly licensed photos from Wikimedia Commons.' },
+  fi: { heading: 'Kuvat', lead: 'Avoimella lisenssillä käytetyt kuvat Wikimedia Commonsista.' },
+  de: { heading: 'Fotos', lead: 'Frei lizenzierte Fotos von Wikimedia Commons.' },
+  ja: { heading: '写真', lead: 'Wikimedia Commonsのオープンライセンス写真。' },
+  es: { heading: 'Fotos', lead: 'Fotos con licencia abierta de Wikimedia Commons.' },
+  'pt-BR': { heading: 'Fotos', lead: 'Fotos com licença aberta do Wikimedia Commons.' },
+  'zh-CN': { heading: '照片', lead: '来自维基共享资源（Wikimedia Commons）的开放许可照片。' },
+  ko: { heading: '사진', lead: '위키미디어 커먼즈의 오픈 라이선스 사진.' },
+  fr: { heading: 'Photos', lead: 'Photos sous licence libre issues de Wikimedia Commons.' },
+  it: { heading: 'Foto', lead: 'Foto con licenza aperta da Wikimedia Commons.' },
+  nl: { heading: 'Foto’s', lead: 'Foto’s met een open licentie van Wikimedia Commons.' },
+  sv: { heading: 'Foton', lead: 'Öppet licensierade foton från Wikimedia Commons.' },
+};

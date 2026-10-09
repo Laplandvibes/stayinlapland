@@ -67,6 +67,21 @@ const TOWN_HERO: Record<string, string | undefined> = {
   'ivalo-inari': '/images/housing-ivalo-ilmakuva.webp',
 };
 
+/*
+ * Talvikauden hero (kuvavaihto 9.10.2026, Vesa 4.10.: sivut joilla on talvella kesäkuva). Sodankylän ja Kemijärven
+ * hero on kesäkuva (vanha kirkko, oma heinäkuun kuva); syys–huhtikuussa näytetään talvikuva, toukokuussa kesäkuva palaa.
+ * Sama kausiraja kuin etusivun herossa (Hero.tsx isSummerSeason: toukokuu–syyskuu). Talvikuvat ovat paikattomia
+ * Pexels-kuvia (kuvaajan paikkatieto ei todista paikkaa), joten heroille ei väitetä paikkaa. Kuitit: STOCK_RECEIPTS.
+ */
+const TOWN_HERO_WINTER: Record<string, string | undefined> = {
+  sodankyla: '/images/housing-sodankyla-hero-talvi.webp',
+  kemijarvi: '/images/housing-kemijarvi-hero-talvi.webp',
+};
+const isSummerSeason = () => {
+  const m = new Date().getMonth() + 1;
+  return m >= 5 && m <= 9;
+};
+
 export function RentalsTown() {
   const { town } = useParams<{ town: string }>();
   if (!town || !isRentalTownSlug(town)) return <NotFound />;
@@ -74,7 +89,7 @@ export function RentalsTown() {
     <HousingPage
       route={`${HOUSING_ROUTES.rentals}/${town}`}
       copy={RENTAL_TOWNS[town]}
-      heroImage={TOWN_HERO[town]}
+      heroImage={(!isSummerSeason() && TOWN_HERO_WINTER[town]) || TOWN_HERO[town]}
       current="rentals"
       parent={{ route: HOUSING_ROUTES.rentals, key: 'rentals' }}
       workPromo="inline"

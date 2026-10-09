@@ -604,6 +604,8 @@ export const copyZHCN: SectionCopy = {
     imageNote:
       '图片仅为示意：展示的是住宿类型与当地风景，并非该住处本身的房间。',
     landscapeAlt: (n) => `${n}的冬季风景，芬兰拉普兰`,
+    // Paikaton aito talvikuva (Pexels): alt ei nimeä paikkaa (kuvavaihto 9.10.2026).
+    landscapeAltGeneric: '冬季风景',
     bucketLabels: {
       'long-stays': '长期入住',
       'hotels': '酒店',

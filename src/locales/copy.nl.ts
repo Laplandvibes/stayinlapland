@@ -587,6 +587,8 @@ export const copyNL: SectionCopy = {
     imageNote:
       'De beelden zijn illustratief: ze tonen het type verblijf en het landschap van de streek, niet de kamers van het huis zelf.',
     landscapeAlt: (n) => `Winterlandschap bij ${n}, Fins Lapland`,
+    // Paikaton aito talvikuva (Pexels): alt ei nimeä paikkaa (kuvavaihto 9.10.2026).
+    landscapeAltGeneric: 'Winterlandschap',
     bucketLabels: {
       'long-stays': 'lange verblijven',
       'hotels': 'hotels',

@@ -603,6 +603,8 @@ export const copyFI: SectionCopy = {
     imageNote:
       'Kuvat ovat kuvituskuvia: ne esittävät majoitustyyppiä ja seudun maisemaa, eivät kohteen omia tiloja.',
     landscapeAlt: (n) => `Talvimaisemaa kohteessa ${n}, Suomen Lappi`,
+    // Paikaton aito talvikuva (Pexels): alt ei nimeä paikkaa (kuvavaihto 9.10.2026).
+    landscapeAltGeneric: 'Talvimaisema',
     bucketLabels: {
       'long-stays': 'pitkät jaksot',
       'hotels': 'hotellit',

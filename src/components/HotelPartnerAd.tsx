@@ -6,11 +6,12 @@ import { useLang, type Lang } from '../i18n/useLang';
 /**
  * Affiliate ad — hotel partner card (via the go.laplandvibes.com redirect Worker).
  *
- * CJ-EXIT 2026-07-24: the Worker now routes go/hotels by locale — `fi_FI` goes
- * to Sembo (Adtraction), every other locale to Trip.com. This card is skinned
- * per locale to match: FI visitors see a Sembo unit, everyone else a Trip.com
- * unit. The href already carries `locale=<code>` per language, so brand and
- * landing page always agree.
+ * CJ-EXIT 2026-07-24: the Worker routes go/hotels by locale. Since 2026-10-17
+ * (LV-SEMBO-UK) `fi_FI`, `sv_SE`, `de_DE` and `en_US` go to Sembo (Adtraction,
+ * one approved channel per market), every other locale to Trip.com. This card
+ * is skinned per locale to match (`SEMBO_LANGS`). The href already carries
+ * `locale=<code>` per language, so brand and landing page always agree; if the
+ * Worker's SEMBO_MARKETS changes, change `SEMBO_LANGS` with it.
  *
  * The hotel partner is the broad inventory side of this site: where Lomarengas
  * covers privately-owned weekly cottages, the partner covers the design hotels,
@@ -39,7 +40,8 @@ import { useLang, type Lang } from '../i18n/useLang';
  * Animation is pure CSS/Tailwind (one-shot scroll reveal). No Framer Motion.
  */
 
-/** Per-locale partner brand: FI → Sembo, all other locales → Trip.com. */
+/** Per-locale partner brand: the Worker's Sembo markets → Sembo, the rest → Trip.com. */
+const SEMBO_LANGS: ReadonlySet<Lang> = new Set<Lang>(['fi', 'sv', 'de', 'en']);
 const BRAND_SEMBO = { name: 'Sembo', accent: '#0EA5E9', deep: '#0369A1' } as const;
 const BRAND_TRIP = { name: 'Trip.com', accent: '#3264FF', deep: '#2449B8' } as const;
 
@@ -94,7 +96,7 @@ export default function HotelPartnerAd({
   className?: string;
 }) {
   const lang = useLang();
-  const brand = lang === 'fi' ? BRAND_SEMBO : BRAND_TRIP;
+  const brand = SEMBO_LANGS.has(lang) ? BRAND_SEMBO : BRAND_TRIP;
 
   // One-shot scroll reveal (progressive enhancement; content never gated).
   // `armed` = the animation runs at all; `revealed` = show the final state.
@@ -169,9 +171,9 @@ export default function HotelPartnerAd({
   });
 
   const sub = pick({
-    en: 'For the hotel nights, the design rooms in Rovaniemi, the ski-in places at Levi and Ylläs, the apartment-hotels, Trip.com lists a wide choice of rooms with live prices. Handy for the start and end of a trip, or any night you just want a desk, a shower and breakfast downstairs.',
+    en: 'For the hotel nights, Sembo lists a wide choice of rooms with live prices: the design rooms in Rovaniemi, the ski-in places at Levi and Ylläs, the apartment-hotels. Handy for the start and end of a trip, or any night you just want a desk, a shower and breakfast downstairs.',
     fi: 'Hotelliöitä varten Sembo listaa laajan valikoiman huoneita ajantasaisin hinnoin: design-huoneet Rovaniemellä, rinteeseen pääsevät paikat Levillä ja Ylläksellä, huoneistohotellit. Kätevä matkan alkuun ja loppuun, tai mille tahansa yölle kun haluat vain työpöydän, suihkun ja aamupalan alakerrasta.',
-    de: 'Für die Hotelnächte listet Trip.com eine große Auswahl an Zimmern mit Live-Preisen: die Designzimmer in Rovaniemi, die Ski-in-Häuser in Levi und Ylläs, die Apartmenthotels. Praktisch für Anfang und Ende einer Reise, oder jede Nacht, in der Sie einfach Schreibtisch, Dusche und Frühstück unten wollen.',
+    de: 'Für die Hotelnächte listet Sembo eine große Auswahl an Zimmern mit Live-Preisen: die Designzimmer in Rovaniemi, die Ski-in-Häuser in Levi und Ylläs, die Apartmenthotels. Praktisch für Anfang und Ende einer Reise, oder jede Nacht, in der Sie einfach Schreibtisch, Dusche und Frühstück unten wollen.',
     ja: 'ホテルに泊まる夜には。ロヴァニエミのデザインルーム、レヴィやユッラスのスキーイン、アパートメントホテルまで、Trip.com は幅広い部屋を最新価格で載せています。旅の始めと終わり、あるいは机とシャワーと朝食さえあればいい夜に便利です。',
     es: 'Para las noches de hotel: las habitaciones de diseño de Rovaniemi, los alojamientos a pie de pista en Levi y Ylläs, los apartahoteles. En Trip.com encontrará una amplia selección de habitaciones con precios al momento. Va bien para el principio y el final del viaje, o cualquier noche en que solo quiera un escritorio, una ducha y desayuno abajo.',
     'pt-BR': 'Para as noites de hotel: os quartos de design em Rovaniemi, os lugares com acesso à pista em Levi e Ylläs, os apart-hotéis. Na Trip.com aparece uma ampla seleção de quartos com preços na hora. Bom para o começo e o fim da viagem, ou qualquer noite em que você só quer uma mesa, um chuveiro e café da manhã embaixo.',
@@ -180,7 +182,7 @@ export default function HotelPartnerAd({
     fr: 'Pour les nuits à l’hôtel : les chambres design de Rovaniemi, les adresses au pied des pistes à Levi et Ylläs, les apparthôtels. Trip.com propose un large choix de chambres aux prix du moment. Pratique au début et à la fin d’un voyage, ou n’importe quelle nuit où vous voulez juste un bureau, une douche et le petit-déjeuner en bas.',
     it: 'Per le notti in hotel: le camere di design a Rovaniemi, gli alloggi ski-in a Levi e Ylläs, gli aparthotel. Su Trip.com trova un’ampia scelta di camere con prezzi aggiornati. Comodo per l’inizio e la fine di un viaggio, o per qualsiasi notte in cui Le basta una scrivania, una doccia e la colazione di sotto.',
     nl: 'Voor de hotelnachten: de designkamers in Rovaniemi, de ski-in adressen in Levi en Ylläs, de aparthotels. Op Trip.com vindt u een ruime keuze aan kamers met actuele prijzen. Handig voor het begin en eind van een reis, of elke nacht dat u gewoon een bureau, een douche en ontbijt beneden wilt.',
-    sv: 'För hotellnätterna: designrummen i Rovaniemi, ski-in-boendena i Levi och Ylläs, lägenhetshotellen. Trip.com listar ett brett urval rum med aktuella priser. Bra för början och slutet av en resa, eller vilken natt som helst då du bara vill ha ett skrivbord, en dusch och frukost en trappa ner.',
+    sv: 'För hotellnätterna: designrummen i Rovaniemi, ski-in-boendena i Levi och Ylläs, lägenhetshotellen. Sembo listar ett brett urval rum med aktuella priser. Bra för början och slutet av en resa, eller vilken natt som helst då du bara vill ha ett skrivbord, en dusch och frukost en trappa ner.',
   });
 
   const trust: { icon: typeof BedDouble; label: string }[] = [
@@ -238,9 +240,9 @@ export default function HotelPartnerAd({
   ];
 
   const cta = pick({
-    en: 'Check prices on Trip.com',
+    en: 'Check prices on Sembo',
     fi: 'Katso hinnat Sembosta',
-    de: 'Preise auf Trip.com ansehen',
+    de: 'Preise bei Sembo ansehen',
     ja: 'Trip.com で料金を見る',
     es: 'Ver precios en Trip.com',
     'pt-BR': 'Ver preços na Trip.com',
@@ -249,13 +251,13 @@ export default function HotelPartnerAd({
     fr: 'Voir les prix sur Trip.com',
     it: 'Veda i prezzi su Trip.com',
     nl: 'Bekijk prijzen op Trip.com',
-    sv: 'Se priser på Trip.com',
+    sv: 'Se priser på Sembo',
   });
 
   const poweredBy = pick({
-    en: 'Booking with Trip.com',
+    en: 'Booking with Sembo',
     fi: 'Varaus Sembon kautta',
-    de: 'Buchung über Trip.com',
+    de: 'Buchung über Sembo',
     ja: '予約は Trip.com 経由',
     es: 'Reserva con Trip.com',
     'pt-BR': 'Reserva com a Trip.com',
@@ -264,7 +266,7 @@ export default function HotelPartnerAd({
     fr: 'Réservation via Trip.com',
     it: 'Prenotazione con Trip.com',
     nl: 'Boeking via Trip.com',
-    sv: 'Bokning via Trip.com',
+    sv: 'Bokning via Sembo',
   });
 
   return (

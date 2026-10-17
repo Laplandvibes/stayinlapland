@@ -19,7 +19,7 @@ export const copyEN: SectionCopy = {
     h1Line2: "Don’t just visit.",
     lead: 'Cabins by the week, design hotels in Rovaniemi, glass igloos for the bucket-list nights, and the wilderness lodges past the last road. Verified rates from',
     leadPriceRange: '€140 to €1,500',
-    liveLabel: 'Live availability · Trip.com search',
+    liveLabel: 'Live availability · Sembo search',
     browseLongStays: 'Browse long stays',
     seeHotels: 'See hotels',
   },
@@ -256,7 +256,7 @@ export const copyEN: SectionCopy = {
     counterP2: 'For a single aurora-bucket-list night, glass igloos win. None of the hotels above have a glass roof.',
     seeLong: 'See long stays',
     seeIgloos: 'See glass igloos',
-    browseAll: 'Browse Trip.com inventory',
+    browseAll: 'Browse stays on Sembo',
   },
   glassIgloos: {
     metaTitle: 'Glass Igloos in Finnish Lapland',
@@ -306,7 +306,7 @@ export const copyEN: SectionCopy = {
       'For Christmas (Dec 22 → Jan 2), prices triple and 90% of inventory goes to UK package tours by spring. Move dates to the second half of January if possible, colder, darker, half the price, better aurora.',
     seeLong: 'See long stays',
     bookingGuideBtn: 'Booking guide',
-    browseAll: 'Browse Trip.com inventory',
+    browseAll: 'Browse stays on Sembo',
   },
   wilderness: {
     metaTitle: 'Wilderness Lodges in Finnish Lapland',
@@ -326,7 +326,7 @@ export const copyEN: SectionCopy = {
       'And it is the easiest serious wilderness lodge to reach: 90 minutes from Oulu airport, which makes it the rare retreat that works even for a short trip.',
     ],
     pickCaveat:
-      "The ‘check rates’ button on this site routes to Trip.com search for the nearest bookable inventory. Eagle View Suites sell out fastest on clear-sky weekends, book the dates, not the forecast.",
+      "The ‘check rates’ button on this site opens a Sembo search for the nearest bookable stays. Eagle View Suites sell out fastest on clear-sky weekends, so book the dates, not the forecast.",
     pullQuote: {
       text:
         'The word “remote” is usually marketing language. It is true up here. The road runs out, the treeline drops below you, and the only light left is whatever the sky decides to make. You do not drop in to a place like this, you commit to it.',
@@ -353,7 +353,7 @@ export const copyEN: SectionCopy = {
     counterP2:
       'For first-time Arctic travellers: do a Rovaniemi or Saariselkä trip first. A full-buyout wilderness lodge is wasted on someone still figuring out -25°C.',
     seeLong: 'See long stays',
-    browseAll: 'Browse Trip.com inventory',
+    browseAll: 'Browse stays on Sembo',
   },
   longStays: {
     metaTitle: 'Long Stays in Finnish Lapland',
@@ -403,7 +403,7 @@ export const copyEN: SectionCopy = {
       'For mixed-mobility groups, call the property directly before booking, most long-stay cabins are not step-free and the saunas in particular sit in the basement on a wood floor.',
     seeHotels: 'See hotels',
     seeIgloos: 'See glass igloos',
-    browseAll: 'Browse Trip.com inventory',
+    browseAll: 'Browse stays on Sembo',
   },
   bookingGuide: {
     metaTitle: 'Lapland Booking Guide',
@@ -470,7 +470,7 @@ export const copyEN: SectionCopy = {
     ],
     readyTitle: 'Ready to book?',
     readyLead:
-      'Browse hand-picked properties by category, or jump straight to live availability on Trip.com.',
+      'Browse hand-picked properties by category, or jump straight to live availability on Sembo.',
     browseAll: 'Browse all Lapland accommodation',
   },
   whenToGo: {
@@ -588,9 +588,9 @@ export const copyEN: SectionCopy = {
     checkRates: 'Check rates',
     seeAll: 'See all',
     liveAvailabilityIn: (n) => `Searching live availability in ${n}?`,
-    networkLeadA: 'The network ranks only 16 properties. Trip.com lists everything else operating in ',
-    networkLeadB: ' this winter, flex dates, filter by amenity, see the full inventory.',
-    browseInDest: (n) => `Browse Trip.com, ${n}`,
+    networkLeadA: 'The network ranks only 16 properties. Sembo lists many more stays in ',
+    networkLeadB: ' this winter, with flexible dates and filters by amenity.',
+    browseInDest: (n) => `Browse ${n} on Sembo`,
     imageNote:
       'The pictures are illustrative: they show the type of stay and the surrounding landscape, not the property’s own rooms.',
     landscapeAlt: (n) => `Winter landscape around ${n}, Finnish Lapland`,

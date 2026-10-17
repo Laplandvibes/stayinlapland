@@ -27,7 +27,7 @@ export const copySV: SectionCopy = {
     lead:
       'Stugor per vecka, designhotell i Rovaniemi, glasigloor för bucketlist-nätterna och vildmarkslodgerna bortom sista vägen. Verifierade priser från',
     leadPriceRange: '140 € till 1 500 €',
-    liveLabel: 'Live tillgänglighet · Trip.com-sökning',
+    liveLabel: 'Live tillgänglighet · Sembo-sökning',
     browseLongStays: 'Se långtidsvistelser',
     seeHotels: 'Se hotell',
   },
@@ -250,7 +250,7 @@ export const copySV: SectionCopy = {
     counterP2: 'För en enda bucketlist-natt med norrsken vinner glasigloor. Inget av hotellen ovan har glastak.',
     seeLong: 'Se långtidsvistelser',
     seeIgloos: 'Se glasigloor',
-    browseAll: 'Se utbudet på Trip.com',
+    browseAll: 'Se utbudet på Sembo',
   },
   glassIgloos: {
     metaTitle: 'Glasigloor i finska Lappland',
@@ -301,7 +301,7 @@ export const copySV: SectionCopy = {
       'Kring jul (22 dec → 2 jan) tredubblas priserna och 90 % av utbudet går till brittiska paketresor till våren. Flytta dina datum om möjligt till andra halvan av januari, kallare, mörkare, hälften så dyrt, bättre norrsken.',
     seeLong: 'Se långtidsvistelser',
     bookingGuideBtn: 'Bokningsguide',
-    browseAll: 'Se utbudet på Trip.com',
+    browseAll: 'Se utbudet på Sembo',
   },
   wilderness: {
     metaTitle: 'Vildmarkslodger i finska Lappland',
@@ -322,7 +322,7 @@ export const copySV: SectionCopy = {
       'Och det är den lättast nåbara seriösa vildmarkslodgen: 90 minuter från flygplatsen i Uleåborg, vilket gör den till den ovanliga retreat som fungerar även för en kort resa.',
     ],
     pickCaveat:
-      'Knappen ”se priser” på den här sidan leder till en Trip.com-sökning för närmaste bokningsbara utbud. Eagle View Suites blir snabbast slutsålda på helger med klar himmel, boka datumen, inte väderprognosen.',
+      'Knappen ”se priser” på den här sidan leder till en Sembo-sökning efter närmaste bokningsbara boende. Eagle View Suites blir snabbast slutsålda på helger med klar himmel, så boka datumen, inte väderprognosen.',
     pullQuote: {
       text:
         'Ordet ”avlägset” är oftast marknadsföring. Häruppe är det sant. Vägen tar slut, trädgränsen sjunker under dig, och det enda ljus som återstår är det himlen väljer att skapa. På en sådan plats tittar man inte bara förbi, man förbinder sig.',
@@ -349,7 +349,7 @@ export const copySV: SectionCopy = {
     counterP2:
       'För den som reser till Arktis för första gången: gör en resa till Rovaniemi eller Saariselkä först. En vildmarkslodge bokad i sin helhet är bortkastad på någon som fortfarande försöker förstå vad −25 °C innebär.',
     seeLong: 'Se långtidsvistelser',
-    browseAll: 'Se utbudet på Trip.com',
+    browseAll: 'Se utbudet på Sembo',
   },
   longStays: {
     metaTitle: 'Långtidsvistelser i finska Lappland',
@@ -399,7 +399,7 @@ export const copySV: SectionCopy = {
       'För grupper med blandad rörlighet ringer du boendet direkt i förväg, de flesta långtidsstugor är inte tröskelfria, och just bastun ligger ofta i källaren på ett trägolv.',
     seeHotels: 'Se hotell',
     seeIgloos: 'Se glasigloor',
-    browseAll: 'Se utbudet på Trip.com',
+    browseAll: 'Se utbudet på Sembo',
   },
   bookingGuide: {
     metaTitle: 'Lapplands bokningsguide, när, hur, vad du packar',
@@ -466,7 +466,7 @@ export const copySV: SectionCopy = {
     ],
     readyTitle: 'Redo att boka?',
     readyLead:
-      'Se noga utvalda boenden per kategori, eller hoppa direkt till live tillgänglighet på Trip.com.',
+      'Se noga utvalda boenden per kategori, eller hoppa direkt till live tillgänglighet på Sembo.',
     browseAll: 'Se alla boenden i Lappland',
   },
   whenToGo: {
@@ -584,9 +584,9 @@ export const copySV: SectionCopy = {
     checkRates: 'Se priser',
     seeAll: 'Se alla',
     liveAvailabilityIn: (n) => `Söka live tillgänglighet i ${n}?`,
-    networkLeadA: 'Vårt nätverk rangordnar bara 16 boenden. Trip.com visar allt annat som är i drift i vinter i ',
-    networkLeadB: ', flexibla datum, filtrera på bekvämlighet, hela utbudet.',
-    browseInDest: (n) => `Se Trip.com, ${n}`,
+    networkLeadA: 'Vårt nätverk rangordnar bara 16 boenden. Sembo visar många fler boenden som är öppna i vinter i ',
+    networkLeadB: ', med flexibla datum och filter för bekvämligheter.',
+    browseInDest: (n) => `Se boenden i ${n} på Sembo`,
     imageNote:
       'Bilderna är illustrationer: de visar boendetypen och landskapet i området, inte husets egna rum.',
     landscapeAlt: (n) => `Vinterlandskap i ${n}, finska Lappland`,

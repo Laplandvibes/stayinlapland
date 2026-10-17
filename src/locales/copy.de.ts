@@ -20,7 +20,7 @@ export const copyDE: SectionCopy = {
     lead:
       'Blockhütten zur Wochenmiete, Designhotels in Rovaniemi, Glasiglus für die Nächte auf der Wunschliste und Wildnishütten jenseits der letzten Straße. Geprüfte Preise von',
     leadPriceRange: '140 € bis 1 500 €',
-    liveLabel: 'Live-Verfügbarkeit · Trip.com-Suche',
+    liveLabel: 'Live-Verfügbarkeit · Sembo-Suche',
     browseLongStays: 'Langzeitaufenthalte ansehen',
     seeHotels: 'Hotels anzeigen',
   },
@@ -263,7 +263,7 @@ export const copyDE: SectionCopy = {
       'Für die eine Wunsch-Polarlicht-Nacht gewinnen Glasiglus. Keines der obigen Hotels hat ein Glasdach.',
     seeLong: 'Langzeitaufenthalte ansehen',
     seeIgloos: 'Glasiglus ansehen',
-    browseAll: 'Trip.com-Verfügbarkeit ansehen',
+    browseAll: 'Unterkünfte bei Sembo ansehen',
   },
   glassIgloos: {
     metaTitle: 'Glasiglus in Finnisch-Lappland',
@@ -314,7 +314,7 @@ export const copyDE: SectionCopy = {
       'An Weihnachten (22.12. → 02.01.) verdreifachen sich die Preise und 90 % des Kontingents gehen bis zum Frühjahr an britische Pauschalveranstalter. Verschieben Sie die Daten nach Möglichkeit in die zweite Januarhälfte, kälter, dunkler, halber Preis, bessere Polarlichter.',
     seeLong: 'Langzeitaufenthalte ansehen',
     bookingGuideBtn: 'Buchungsleitfaden',
-    browseAll: 'Trip.com-Verfügbarkeit ansehen',
+    browseAll: 'Unterkünfte bei Sembo ansehen',
   },
   wilderness: {
     metaTitle: 'Wildnishütten in Finnisch-Lappland',
@@ -335,7 +335,7 @@ export const copyDE: SectionCopy = {
       'Und es ist die am einfachsten erreichbare ernsthafte Wildnishütte: 90 Minuten vom Flughafen Oulu, was sie zum seltenen Refugium macht, das sogar für eine kurze Reise funktioniert.',
     ],
     pickCaveat:
-      'Der Button „Preise prüfen“ auf dieser Seite leitet zur Trip.com-Suche nach der nächstgelegenen buchbaren Verfügbarkeit. Die Eagle View Suites sind an klaren Wochenenden am schnellsten ausverkauft, buchen Sie die Daten, nicht die Wettervorhersage.',
+      'Der Button „Preise prüfen“ auf dieser Seite führt zur Sembo-Suche nach der nächstgelegenen buchbaren Unterkunft. Die Eagle View Suites sind an klaren Wochenenden am schnellsten ausverkauft, buchen Sie die Daten, nicht die Wettervorhersage.',
     pullQuote: {
       text:
         'Das Wort „abgelegen“ ist meist Marketingsprache. Hier oben ist es zutreffend. Die Straße endet, die Baumgrenze fällt unter Sie ab, und das einzige Licht ist das, was der Himmel zu machen beschließt. An einen solchen Ort schaut man nicht einfach vorbei, man lässt sich auf ihn ein.',
@@ -362,7 +362,7 @@ export const copyDE: SectionCopy = {
     counterP2:
       'Für Erstreisende in der Arktis: Erst eine Tour nach Rovaniemi oder Saariselkä. Eine Wildnishütte, exklusiv für die eigene Gruppe gebucht, ist an jemanden verschwendet, der -25 °C-Kleidung erst noch lernen muss.',
     seeLong: 'Langzeitaufenthalte ansehen',
-    browseAll: 'Trip.com-Verfügbarkeit ansehen',
+    browseAll: 'Unterkünfte bei Sembo ansehen',
   },
   longStays: {
     metaTitle: 'Langzeitaufenthalte in Finnisch-Lappland',
@@ -412,7 +412,7 @@ export const copyDE: SectionCopy = {
       'Bei Gruppen mit gemischter Mobilität rufen Sie vor der Buchung direkt im Haus an, die meisten Langzeithütten sind nicht stufenfrei, und insbesondere die Saunen befinden sich im Untergeschoss auf Holzboden.',
     seeHotels: 'Hotels anzeigen',
     seeIgloos: 'Glasiglus ansehen',
-    browseAll: 'Trip.com-Verfügbarkeit ansehen',
+    browseAll: 'Unterkünfte bei Sembo ansehen',
   },
   bookingGuide: {
     metaTitle: 'Lappland-Buchungsleitfaden',
@@ -479,7 +479,7 @@ export const copyDE: SectionCopy = {
     ],
     readyTitle: 'Bereit zur Buchung?',
     readyLead:
-      'Durchsuchen Sie handverlesene Objekte nach Kategorie oder springen Sie direkt zur Live-Verfügbarkeit auf Trip.com.',
+      'Durchsuchen Sie handverlesene Objekte nach Kategorie oder springen Sie direkt zur Live-Verfügbarkeit bei Sembo.',
     browseAll: 'Alle Lappland-Unterkünfte ansehen',
   },
   whenToGo: {
@@ -597,9 +597,9 @@ export const copyDE: SectionCopy = {
     checkRates: 'Preise prüfen',
     seeAll: 'Alle anzeigen',
     liveAvailabilityIn: (n) => `Live-Verfügbarkeit in ${n} suchen?`,
-    networkLeadA: 'Unser Netzwerk bewertet nur 16 Objekte. Trip.com listet alles weitere in ',
-    networkLeadB: ' in diesem Winter, flexible Daten, nach Ausstattung filtern, das gesamte Angebot.',
-    browseInDest: (n) => `Trip.com durchsuchen, ${n}`,
+    networkLeadA: 'Unser Netzwerk bewertet nur 16 Objekte. Sembo listet viele weitere Unterkünfte in ',
+    networkLeadB: ' in diesem Winter, mit flexiblen Daten und Filtern nach Ausstattung.',
+    browseInDest: (n) => `Unterkünfte in ${n} bei Sembo`,
     imageNote:
       'Die Bilder sind Illustrationen: Sie zeigen die Art der Unterkunft und die Landschaft der Region, nicht die Räume des jeweiligen Hauses.',
     landscapeAlt: (n) => `Winterlandschaft in ${n}, Finnisch-Lappland`,

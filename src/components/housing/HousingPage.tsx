@@ -98,6 +98,11 @@ interface HousingPageProps {
    * sille kielelle, jonka osiota se koskee.
    */
   inserts?: Record<string, ReactNode>;
+  /**
+   * Vaalea valokuva ⇒ 'strong' (PageHero, kuvavaihto 9.10.2026). Oletus päätellään tiedostonimestä ('-talvi.').
+   * Päätetään siellä missä kuva valitaan, koska vain kuvan valitsija tietää kuvan kirkkauden.
+   */
+  heroScrim?: 'default' | 'strong';
 }
 
 type Tone = 'plain' | 'tint' | 'night';
@@ -370,7 +375,7 @@ function SectionBlock({ s, page, tone, accentKey, photoLabel }: { s: Section; pa
   );
 }
 
-export default function HousingPage({ route, copy, heroImage, current, parent, workPromo = 'inline', inserts }: HousingPageProps) {
+export default function HousingPage({ route, copy, heroImage, current, parent, workPromo = 'inline', inserts, heroScrim }: HousingPageProps) {
   const lang = useLang();
   const hl = housingLang(lang);
   const c = pickHousing(copy, lang);
@@ -432,7 +437,7 @@ export default function HousingPage({ route, copy, heroImage, current, parent, w
       <link rel="canonical" href={canonical} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({ '@context': 'https://schema.org', '@graph': graph }) }} />
 
-      <PageHero eyebrow={c.hero.eyebrow} title={c.hero.title} subtitle={c.hero.subtitle} imageSrc={heroImage} scrim={heroImage?.includes('-talvi.') ? 'strong' : 'default'} />
+      <PageHero eyebrow={c.hero.eyebrow} title={c.hero.title} subtitle={c.hero.subtitle} imageSrc={heroImage} scrim={heroScrim ?? (heroImage?.includes('-talvi.') ? 'strong' : 'default')} />
 
       {!native && (
         <div className="bg-finland-blue text-snow px-5 sm:px-6 py-3">

@@ -116,7 +116,7 @@ export default function WhenToGo() {
         }}
       />
 
-      <PageHero eyebrow={w.hero.eyebrow} title={w.hero.title} subtitle={w.hero.subtitle} imageSrc="/images/whentogo-hero-tykky.webp" />
+      <PageHero eyebrow={w.hero.eyebrow} title={w.hero.title} subtitle={w.hero.subtitle} imageSrc="/images/whentogo-hero-tykky.webp" scrim="strong" />
 
       {!native && (
         <div className="bg-finland-blue text-snow px-5 sm:px-6 py-3">

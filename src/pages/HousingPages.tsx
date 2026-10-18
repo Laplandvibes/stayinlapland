@@ -47,7 +47,7 @@ export function SeasonalWorkerHousing() {
 }
 
 export function MovingToLapland() {
-  return <HousingPage route={HOUSING_ROUTES.moving} copy={HOUSING_PAGES.moving} heroImage="/images/housing-moving-hero-talvitie.webp" current="moving" workPromo="inline" inserts={MOVING_ADS} />;
+  return <HousingPage route={HOUSING_ROUTES.moving} copy={HOUSING_PAGES.moving} heroImage="/images/housing-moving-hero-talvitie.webp" heroScrim="strong" current="moving" workPromo="inline" inserts={MOVING_ADS} />;
 }
 
 export function CostOfLiving() {
@@ -77,6 +77,8 @@ const TOWN_HERO_WINTER: Record<string, string | undefined> = {
   sodankyla: '/images/housing-sodankyla-hero-talvi.webp',
   kemijarvi: '/images/housing-kemijarvi-hero-talvi.webp',
 };
+/* Vaaleat kaupunkiherot (heroteksti-portti 18.10.2026: Kemin kaupungintalon lumikuvan päällä ingressi 2.81:1). */
+const STRONG_SCRIM_TOWNS = new Set(['kemi-tornio']);
 const isSummerSeason = () => {
   const m = new Date().getMonth() + 1;
   return m >= 5 && m <= 9;
@@ -90,6 +92,7 @@ export function RentalsTown() {
       route={`${HOUSING_ROUTES.rentals}/${town}`}
       copy={RENTAL_TOWNS[town]}
       heroImage={(!isSummerSeason() && TOWN_HERO_WINTER[town]) || TOWN_HERO[town]}
+      heroScrim={STRONG_SCRIM_TOWNS.has(town) ? 'strong' : undefined}
       current="rentals"
       parent={{ route: HOUSING_ROUTES.rentals, key: 'rentals' }}
       workPromo="inline"
@@ -98,5 +101,5 @@ export function RentalsTown() {
 }
 
 export function LongStays() {
-  return <HousingPage route={HOUSING_ROUTES.longStays} copy={HOUSING_PAGES.longStays} heroImage="/images/pillar-long-stays-hero-mokki.webp" current="longStays" workPromo="inline" inserts={LONG_STAY_CABINS} />;
+  return <HousingPage route={HOUSING_ROUTES.longStays} copy={HOUSING_PAGES.longStays} heroImage="/images/pillar-long-stays-hero-mokki.webp" heroScrim="strong" current="longStays" workPromo="inline" inserts={LONG_STAY_CABINS} />;
 }

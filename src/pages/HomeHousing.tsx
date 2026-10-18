@@ -118,13 +118,20 @@ export default function HomeHousing() {
           </div>
 
           <div className="relative z-10 w-full max-w-7xl mx-auto px-5 sm:px-6 lg:px-8 pt-6 pb-14 sm:pb-16 lg:pt-28 lg:pb-28 text-center lg:text-left">
-            <div className="max-w-2xl mx-auto lg:mx-0 lg:max-w-[42rem]">
+            {/* 18.10.2026 (Vesa: "eikö täällä ole tietokoneella liian pienellä H1?"): koko pysähtyi 72 px:iin 1024 px:stä
+                ylöspäin ja pinkki rivi oli 60 px eli sama kuin sivun H2:t. Nyt kasvaa leveyden mukana: H1 72→104 px,
+                pinkki rivi 60→88 px. Alle 1440 px koot ennallaan.
+                🔴 Palsta pysyy 42rem:ssä (2xl:stä 44rem, jotta 104 px H1 mahtuu yhdelle riville): kuvan tumma liukuväri (0.78 → 32 %, 0.35 → 55 %) peittää vain sen. Kokeiltu
+                60rem-palsta vei pinkin rivin lumen päälle, heroteksti-portti 1 → 3 löydöstä (1440/1920/2560 px).
+                Pinkki on lg:stä alkaen #F9A8D4 kuten Hero.tsx:ssä ja hubissa (2.10.2026): vibe-pink on keskisävy ja
+                vaatii lähes mustan pohjan. Puhelimella teksti on kuvan alla tummalla, vibe-pink pysyy. */}
+            <div className="max-w-2xl mx-auto lg:mx-0 lg:max-w-[42rem] 2xl:max-w-[44rem]">
               <h1
-                className="font-heading font-medium text-snow leading-[1.04] tracking-wide text-[42px] sm:text-6xl lg:text-7xl mb-6"
+                className="font-heading font-medium text-snow leading-[1.04] tracking-wide text-[42px] sm:text-6xl lg:text-[length:clamp(4.5rem,5vw,6.5rem)] mb-6"
                 style={{ textShadow: '0 4px 24px rgba(0,0,0,0.55)' }}
               >
                 {h.hero.h1a}
-                <span className="block text-vibe-pink text-[34px] sm:text-5xl lg:text-6xl mt-1">{h.hero.h1b}</span>
+                <span className="block text-vibe-pink lg:text-[#F9A8D4] text-[34px] sm:text-5xl lg:text-[length:clamp(3.75rem,4vw,5.5rem)] mt-1">{h.hero.h1b}</span>
               </h1>
               <p className="font-body text-snow text-base sm:text-lg lg:text-xl max-w-xl mx-auto lg:mx-0 leading-relaxed" style={{ textShadow: '0 2px 12px rgba(0,0,0,0.6)' }}>
                 {h.hero.lead}

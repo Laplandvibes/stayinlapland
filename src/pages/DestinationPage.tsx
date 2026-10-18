@@ -162,31 +162,39 @@ export default function DestinationPage() {
         imageAlt={landscapeAlt}
         scrim="strong"
       >
+        {/* 18.10.2026 (Vesa: "nämä numerot hero-osiossa ovat todella geneerisen ja AI:n tekemän näköiset"):
+            neljä lasikorttia, numero ja 11 px selite eri riveillä, tilalle lauseen pätkät. Selitteet on kirjoitettu
+            numeron jatkoksi ("11 rinnettä", "140 m pudotusta"), joten ne istuvat numeron kanssa samalla perusviivalla.
+            Yksikkö siirtyy DM Sansiin: Bebas on pelkkiä versaaleja, ja "140 M" luettiin miljooniksi.
+            Faktat rivittyvät pareittain (4 tai 2+2): yksi yhteinen flex-rivi jätti 1440 px:ssä Rovaniemen
+            "140 m pudotusta" yksin toiselle riville, ja Inarin pitkät selitteet mahtuvat yhdelle riville vasta 1260 px:ssä. */}
         {facts && (
-          <dl className="flex flex-wrap justify-center gap-x-3 gap-y-2.5">
-            {facts.stats.map((s) => {
-              /* A figure with a thousands separator is written differently in
-                 every language, so `value` may be an L12 map — never render it
-                 as one shared string. */
-              const value = typeof s.value === 'string' ? s.value : (s.value[lang] ?? s.value.en);
-              return (
-                <div
-                  key={value + (s.label.en ?? '')}
-                  className="rounded-2xl bg-snow/10 border border-snow/20 backdrop-blur-sm px-4 py-2.5 text-center min-w-[104px]"
-                >
-                  <dt className="sr-only">{s.label[lang] ?? s.label.en}</dt>
-                  <dd>
-                    <span className="block font-heading text-snow text-2xl sm:text-3xl leading-none">
-                      {value}
-                    </span>
-                    <span className="block font-body text-snow/70 text-[11px] mt-1.5 leading-tight">
-                      {s.label[lang] ?? s.label.en}
-                    </span>
-                  </dd>
-                </div>
-              );
-            })}
-          </dl>
+          <div role="list" className="flex flex-wrap justify-center items-baseline gap-x-9 gap-y-3 max-w-4xl mx-auto">
+            {[facts.stats.slice(0, 2), facts.stats.slice(2)].map((pair, i) => (
+              <div key={i} className="flex flex-wrap justify-center items-baseline gap-x-9 gap-y-3">
+                {pair.map((s) => {
+                  /* A figure with a thousands separator is written differently in
+                     every language, so `value` may be an L12 map — never render it
+                     as one shared string. */
+                  const value = typeof s.value === 'string' ? s.value : (s.value[lang] ?? s.value.en);
+                  const unit = /^(.*\S)[  ](km|m|%)$/.exec(value);
+                  return (
+                    <div
+                      role="listitem"
+                      key={value + (s.label.en ?? '')}
+                      className="sm:whitespace-nowrap text-snow/85 font-body text-[15px] sm:text-base lg:text-lg"
+                      style={{ textShadow: '0 2px 14px rgba(0,0,0,0.8)' }}
+                    >
+                      <span className="font-heading text-snow text-[34px] sm:text-[40px] lg:text-5xl leading-none tracking-wide">
+                        {unit ? unit[1] : value}
+                      </span>{' '}
+                      {unit ? `${unit[2]} ` : ''}{s.label[lang] ?? s.label.en}
+                    </div>
+                  );
+                })}
+              </div>
+            ))}
+          </div>
         )}
       </PageHero>
 

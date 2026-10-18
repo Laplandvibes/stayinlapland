@@ -30,12 +30,12 @@
 /nl/hotels/  https://laplandstays.com/nl/  301
 /sv/hotels  https://laplandstays.com/sv/  301
 /sv/hotels/  https://laplandstays.com/sv/  301
-/glass-igloos  https://laplandstays.com/property-types/  301
-/glass-igloos/  https://laplandstays.com/property-types/  301
+/glass-igloos  https://laplandstays.com/glass-igloos/  301
+/glass-igloos/  https://laplandstays.com/glass-igloos/  301
 /fi/glass-igloos  https://laplandstays.com/fi/iglumajoitus/  301
 /fi/glass-igloos/  https://laplandstays.com/fi/iglumajoitus/  301
-/de/glass-igloos  https://laplandstays.com/de/property-types/  301
-/de/glass-igloos/  https://laplandstays.com/de/property-types/  301
+/de/glass-igloos  https://laplandstays.com/de/glass-igloos/  301
+/de/glass-igloos/  https://laplandstays.com/de/glass-igloos/  301
 /ja/glass-igloos  https://laplandstays.com/ja/glass-igloos/  301
 /ja/glass-igloos/  https://laplandstays.com/ja/glass-igloos/  301
 /es/glass-igloos  https://laplandstays.com/es/property-types/  301

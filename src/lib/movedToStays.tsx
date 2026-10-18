@@ -45,10 +45,10 @@ export function staysHome(lang: Lang): string {
 export function staysUrl(path: MovedPath, lang: Lang): string {
   if (path === '/hotels') return staysHome(lang);
   if (path === '/glass-igloos') {
-    // Staysilla oma iglusivu on vain suomeksi ja japaniksi; muilla kielillä
-    // majoitustyyppisivu, jonka ensimmäinen osio on lasi-iglut.
+    // Staysin oma iglusivu: fi /fi/iglumajoitus, en/de/ja /glass-igloos (en + de 18.10.2026);
+    // muilla kielillä majoitustyyppisivu, jonka ensimmäinen osio on lasi-iglut.
     if (lang === 'fi') return `${STAYS_ORIGIN}/fi/iglumajoitus/`;
-    if (lang === 'ja') return `${STAYS_ORIGIN}/ja/glass-igloos/`;
+    if (lang === 'en' || lang === 'de' || lang === 'ja') return `${STAYS_ORIGIN}${PREFIX[lang]}/glass-igloos/`;
   }
   return `${STAYS_ORIGIN}${PREFIX[lang]}/property-types/`;
 }

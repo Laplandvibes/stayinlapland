@@ -422,7 +422,7 @@ export const PHOTO_CREDITS: Record<string, PhotoCredit> = {
       en: 'Vellinsärpimäoja wilderness hut, Saariselkä',
       fi: 'Vellinsärpimäojan autiotupa, Saariselkä',
       de: 'Wildnishütte Vellinsärpimäoja, Saariselkä',
-      sv: 'Vellinsärpimäoja vildmarksstuga, Saariselkä',
+      sv: 'Vellinsärpimäoja ödestuga, Saariselkä',
       fr: 'refuge Vellinsärpimäoja, Saariselkä',
       es: 'refugio Vellinsärpimäoja, Saariselkä',
       it: 'rifugio Vellinsärpimäoja, Saariselkä',

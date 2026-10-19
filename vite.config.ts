@@ -9,8 +9,9 @@ import compression from 'vite-plugin-compression2'
 // returns null because React is bundled twice — once for site code and once
 // for shared/). See memory/lv_critical_react_dedupe.md.
 import { trailingSlashLinks } from "./src/shared/router/trailingSlashPlugin";
+import { cjkOtsikot } from "./src/shared/cjk/cjkOtsikotPlugin";
 export default defineConfig({
-  plugins: [trailingSlashLinks(), react(), tailwindcss(), compression({ algorithms: ['brotliCompress'], threshold: 1024 })],
+  plugins: [cjkOtsikot(), trailingSlashLinks(), react(), tailwindcss(), compression({ algorithms: ['brotliCompress'], threshold: 1024 })],
   resolve: {
     dedupe: ['react', 'react-dom', 'react-router', 'react-router-dom'],
   },

@@ -64,7 +64,7 @@ const omenaHotels: AdSpec = {
     es: {
       eyebrow: 'Parada en la ciudad',
       headline: 'Omena Hotels, habitación céntrica con código de puerta, precio por habitación',
-      sub: 'Una parada práctica de camino al norte o antes de un vuelo temprano: habitación en el centro de Helsinki, Tampere o Turku sin cola de recepción. El código llega a su móvil y entra directamente. El precio es por toda la habitación, no por persona.',
+      sub: 'Una parada práctica de camino al norte o antes de un vuelo temprano: habitación en el centro de Helsinki, Tampere o Turku sin cola de recepción. El código llega a su móvil y usted entra directamente. El precio es por toda la habitación, no por persona.',
       trust: ['Entrada con código', 'Ubicaciones céntricas', 'Precio por habitación'],
       cta: 'Ver precios de habitaciones',
       poweredBy: 'Reserva con Omena Hotels',
@@ -104,7 +104,7 @@ const omenaHotels: AdSpec = {
     it: {
       eyebrow: 'Sosta in città',
       headline: 'Omena Hotels, camera in centro con codice porta, prezzo a camera',
-      sub: 'Una sosta comoda verso nord o prima di un volo all’alba: una camera in centro a Helsinki, Tampere o Turku senza coda alla reception. Il codice arriva sul telefono ed entri direttamente. Il prezzo è per l’intera camera, non a persona.',
+      sub: 'Una sosta comoda verso nord o prima di un volo all’alba: una camera in centro a Helsinki, Tampere o Turku senza coda alla reception. Il codice Le arriva sul telefono e Lei entra direttamente. Il prezzo è per l’intera camera, non a persona.',
       trust: ['Ingresso con codice', 'Posizioni centrali', 'Prezzo a camera'],
       cta: 'Vedi i prezzi delle camere',
       poweredBy: 'Prenotazione con Omena Hotels',

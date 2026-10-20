@@ -101,9 +101,9 @@ const cars: AdSpec = {
     },
     it: {
       eyebrow: 'Il Suo ritmo in Lapponia',
-      headline: 'Un’auto a noleggio dall’aeroporto, verso i fjäll e l’aurora quando vuoi',
+      headline: 'Un’auto a noleggio dall’aeroporto, verso i fjäll e l’aurora quando vuole Lei',
       sub: 'In Lapponia le distanze sono lunghe e i mezzi pubblici scarsi. Con un’auto propria raggiunge dall’hotel la stazione sciistica, la fattoria degli husky e i punti migliori per l’aurora senza aspettare il bus. Ritiro direttamente in aeroporto, pneumatici invernali di serie in Finlandia.',
-      trust: ['Ritiro in aeroporto', 'Pneumatici invernali inclusi', 'Confronta gli autonoleggi'],
+      trust: ['Ritiro in aeroporto', 'Pneumatici invernali inclusi', 'Confronti gli autonoleggi'],
       cta: 'Vedi le auto a noleggio',
       poweredBy: 'Autonoleggio tramite EconomyBookings',
     },

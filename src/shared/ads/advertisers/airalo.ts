@@ -63,8 +63,8 @@ const airalo: AdSpec = {
     },
     es: {
       eyebrow: 'Conectado al aterrizar',
-      headline: 'Airalo, instala una eSIM de Finlandia antes de embarcar',
-      sub: 'Sin cola en el quiosco ni sorpresas de roaming en la factura. Compra la eSIM en línea, la instala con un código QR en minutos y los datos funcionan en cuanto el avión toca pista. Su número de siempre sigue activo todo el viaje.',
+      headline: 'Airalo, instale una eSIM de Finlandia antes de embarcar',
+      sub: 'Sin cola en el quiosco ni sorpresas de roaming en la factura. Usted compra la eSIM en línea, la instala con un código QR en minutos y los datos funcionan en cuanto el avión toca pista. Su número de siempre sigue activo todo el viaje.',
       trust: ['Se instala con código QR', 'Sin sorpresas de roaming', 'Conserva su número'],
       cta: 'Ver eSIM de Finlandia',
       poweredBy: 'eSIM con Airalo',

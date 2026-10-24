@@ -226,7 +226,7 @@ export const PHOTO_CREDITS: Record<string, PhotoCredit> = {
     place: {
       en: 'Salmijärvi, Rovaniemi',
       ja: 'サルミヤルヴィ、ロヴァニエミ',
-      ko: '살미예르비, 로바니에미',
+      ko: '살미야르비, 로바니에미',
       'zh-CN': '萨尔米耶尔维，罗瓦涅米',
     },
   },
@@ -243,7 +243,7 @@ export const PHOTO_CREDITS: Record<string, PhotoCredit> = {
     place: {
       en: 'Salmijärvi, Rovaniemi',
       ja: 'サルミヤルヴィ、ロヴァニエミ',
-      ko: '살미예르비, 로바니에미',
+      ko: '살미야르비, 로바니에미',
       'zh-CN': '萨尔米耶尔维，罗瓦涅米',
     },
   },
@@ -319,7 +319,7 @@ export const PHOTO_CREDITS: Record<string, PhotoCredit> = {
       nl: 'Nationaal Park Pallas-Yllästunturi',
       'pt-BR': 'Parque Nacional Pallas-Yllästunturi',
       ja: 'パッラス＝ユッラストゥントゥリ国立公園',
-      ko: '팔라스-윌라스툰투리 국립공원',
+      ko: '팔라스-윌래스툰투리 국립공원',
       'zh-CN': '帕拉斯-于拉斯通图里国家公园',
     },
   },

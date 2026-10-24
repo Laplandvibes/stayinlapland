@@ -34,6 +34,22 @@ const NEWSLETTER_ENDPOINT = '/api/newsletter';
 
 type Status = 'idle' | 'loading' | 'success' | 'error';
 
+// Sähköpostikentän ruudunlukijanimi (gate:a11y-nimet 24.10.2026).
+const EMAIL_LABEL: Record<string, string> = {
+  en: 'Email address',
+  fi: 'Sähköpostiosoite',
+  sv: 'E-postadress',
+  de: 'E-Mail-Adresse',
+  es: 'Correo electrónico',
+  fr: 'Adresse e-mail',
+  it: 'Indirizzo email',
+  nl: 'E-mailadres',
+  'pt-BR': 'Endereço de e-mail',
+  ja: 'メールアドレス',
+  ko: '이메일 주소',
+  'zh-CN': '电子邮箱地址',
+};
+
 const CONSENT_COPY = {
   en: {
     consent:
@@ -232,7 +248,7 @@ export default function Newsletter() {
                 onFocus={trackStart}
                 onChange={(e) => setEmail(e.target.value)}
                 placeholder={t.placeholder}
-                aria-label="Email address"
+                aria-label={EMAIL_LABEL[lang] ?? EMAIL_LABEL.en}
                 className="flex-1 px-6 py-4 rounded-full bg-snow/12 backdrop-blur-sm text-snow placeholder:text-snow/80 border border-snow/30 focus:outline-none focus:ring-2 focus:ring-gold/60 text-base"
               />
               {/* 🔴 Nappi #BE185D (pinkkiramppi 700), ei #EC4899: snow-teksti #EC4899:llä on 3,4:1 ja #DB2777:llä 4,4:1, molemmat kaatuvat lomakeportin (audit_lomakkeet 18.9.2026). Valkoinen #BE185D:llä on 5,8:1. */}

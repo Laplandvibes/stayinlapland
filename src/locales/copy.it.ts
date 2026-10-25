@@ -576,7 +576,7 @@ export const copyIT: SectionCopy = {
     minStayLabel: 'Soggiorno min.:',
     perNight: '/ notte',
     checkRates: 'Verifichi le tariffe',
-    seeAll: 'Veda tutto',
+    seeAll: 'Vedi tutto',
     liveAvailabilityIn: (n) => `In cerca di disponibilità in tempo reale a ${n}?`,
     networkLeadA: 'La nostra rete classifica solo 16 strutture. Trip.com elenca tutto il resto che opera a ',
     networkLeadB: ' quest’inverno, date flessibili, filtri per servizio, l’offerta completa.',

@@ -1,3 +1,13 @@
+function newsletterEmailLabel(): string {
+  const lang = typeof document === 'undefined' ? 'en' : document.documentElement.lang.toLowerCase().split('-')[0];
+  return ({fi:'Sähköpostiosoite',en:'Email address',de:'E-Mail-Adresse',es:'Correo electrónico',fr:'Adresse e-mail',it:'Indirizzo email',nl:'E-mailadres',sv:'E-postadress',ja:'メールアドレス',ko:'이메일 주소',pt:'Endereço de e-mail',zh:'电子邮箱'} as Record<string,string>)[lang] || 'Email address';
+}
+
+function newsletterLanguageNotice(): string {
+  const lang = typeof document === 'undefined' ? 'en' : document.documentElement.lang.toLowerCase().split('-')[0];
+  const notes: Record<string, string> = {"fi":"Uutiskirjeet ovat suomeksi.","en":"Newsletters are in English.","de":"Die Newsletter werden auf Englisch versendet.","ja":"ニュースレターは英語でお届けします。","ko":"뉴스레터는 영어로 발송됩니다.","fr":"Les newsletters sont envoyées en anglais.","it":"Le newsletter sono inviate in inglese.","nl":"De nieuwsbrieven zijn in het Engels.","sv":"Nyhetsbreven skickas på engelska.","es":"Los boletines se envían en inglés.","pt":"As newsletters são enviadas em inglês.","zh":"订阅邮件以英语发送。"};
+  return notes[lang] || notes.en;
+}
 import { useEffect, useRef, useState } from 'react';
 import { Send } from 'lucide-react';
 import { useLang, useLocalePath } from '../i18n/useLang';
@@ -215,8 +225,7 @@ export default function Newsletter() {
           </div>
         ) : (
           <><FounderByline tone="pink" />
-          <form
-            onSubmit={handleSubmit}
+          <form style={{ background: '#0F172A', color: '#F9FAFB', padding: 16, borderRadius: 16 }} onSubmit={handleSubmit}
             onInvalidCapture={(e) => {
               if (blockedTracked.current) return;
               blockedTracked.current = true;
@@ -241,7 +250,7 @@ export default function Newsletter() {
               style={{ position: 'absolute', left: '-9999px', width: '1px', height: '1px', opacity: 0 }}
             />
             <div className="flex flex-col sm:flex-row gap-3">
-              <input
+              <label style={{display:'flex',flexDirection:'column',gap:8,flex:'1 1 0%',minWidth:0,textAlign:'left',fontSize:14,color:'#F9FAFB'}}><span>{newsletterEmailLabel()}</span><span style={{fontSize:13,lineHeight:1.5}}>{newsletterLanguageNotice()}</span><input autoComplete="email" style={{ background: '#FFFFFF', color: '#1F2937', WebkitTextFillColor: '#1F2937', border: '1px solid #64748B' }}
                 type="email"
                 required
                 value={email}
@@ -249,10 +258,10 @@ export default function Newsletter() {
                 onChange={(e) => setEmail(e.target.value)}
                 placeholder={t.placeholder}
                 aria-label={EMAIL_LABEL[lang] ?? EMAIL_LABEL.en}
-                className="flex-1 px-6 py-4 rounded-full bg-snow/12 backdrop-blur-sm text-snow placeholder:text-snow/80 border border-snow/30 focus:outline-none focus:ring-2 focus:ring-gold/60 text-base"
-              />
+                className="flex-1 px-6 py-4 rounded-full bg-snow/12 backdrop-blur-sm text-snow placeholder:text-slate-600 border border-snow/30 focus:outline-none focus:ring-2 focus:ring-gold/60 text-base"
+              /></label>
               {/* 🔴 Nappi #BE185D (pinkkiramppi 700), ei #EC4899: snow-teksti #EC4899:llä on 3,4:1 ja #DB2777:llä 4,4:1, molemmat kaatuvat lomakeportin (audit_lomakkeet 18.9.2026). Valkoinen #BE185D:llä on 5,8:1. */}
-              <button
+              <button style={{ backgroundColor: '#BE185D', color: '#FFFFFF', alignSelf: 'end', minHeight: 48 }}
                 type="submit"
                 disabled={status === 'loading'}
                 className="px-8 py-4 rounded-full bg-[#BE185D] text-white font-semibold hover:bg-[#9D174D] transition-colors flex items-center justify-center gap-2 disabled:opacity-60"
@@ -262,7 +271,7 @@ export default function Newsletter() {
               </button>
             </div>
 
-            <label className="mt-4 flex items-start gap-3 text-left text-xs leading-relaxed text-snow/75 cursor-pointer">
+            <label style={{color:"#F9FAFB"}} className="mt-4 flex items-start gap-3 text-left text-xs leading-relaxed text-snow/75 cursor-pointer">
               <input
                 type="checkbox"
                 checked={consented}
@@ -271,9 +280,9 @@ export default function Newsletter() {
                 required
                 className="mt-0.5 h-4 w-4 shrink-0 rounded border border-snow/40 bg-snow/12 accent-vibe-pink focus:outline-none focus:ring-2 focus:ring-gold/60"
               />
-              <span>
+              <span style={{color:"#F9FAFB"}}>
                 {c.consent}{' '}
-                <a
+                <a style={{color:"#BAE6FD",textDecoration:"underline"}} 
                   href={localePath('/privacy/')}
                   target="_blank"
                   rel="noopener"

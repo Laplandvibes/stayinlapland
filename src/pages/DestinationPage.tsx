@@ -5,6 +5,7 @@ import Newsletter from '../components/Newsletter';
 import FinnishDivider from '../components/FinnishDivider';
 import SourcesDisclosure from '../components/SourcesDisclosure';
 import AffiliateCTA from '../components/AffiliateCTA';
+import SemboUkCodeStrip from '../components/SemboUkCodeStrip';
 import {
   destinations,
   longStays,
@@ -308,6 +309,8 @@ export default function DestinationPage() {
               );
             })}
           </div>
+          {/* English "check rates" buttons above open sembo.co.uk: Sembo UK's code for November bookings. */}
+          <SemboUkCodeStrip lang={lang} surface={`dest_${dest.slug}`} className="mt-10 max-w-xl mx-auto" />
         </div>
       </section>
 

@@ -33,6 +33,7 @@ import SourcesDisclosure from '../SourcesDisclosure';
 import Newsletter from '../Newsletter';
 import AffiliateCTA from '../AffiliateCTA';
 import HousingWorkPromo from './HousingWorkPromo';
+import SemboUkCodeStrip from '../SemboUkCodeStrip';
 import PlaceGraphic from './PlaceGraphic';
 import { CHIP_BASE, TwoTone } from './ui';
 import PhotoCredit, { uniqueCredits } from '../PhotoCredit';
@@ -506,6 +507,8 @@ export default function HousingPage({ route, copy, heroImage, current, parent, w
                 </AffiliateCTA>
               ))}
             </div>
+            {/* English hotel chips open sembo.co.uk: Sembo UK's code for November bookings. */}
+            {c.cta.partner === 'hotels' && <SemboUkCodeStrip lang={lang} surface={`housing_${current}`} className="mt-6 max-w-xl" />}
             <p className="mt-5 text-snow/75 text-[12px]">{ui.affiliateNote}</p>
           </div>
         </section>

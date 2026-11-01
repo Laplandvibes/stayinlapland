@@ -33,9 +33,7 @@ export type SectionCopy = {
     success: string;
     errorPrefix: string;
     pleaseTryAgain: string;
-    footnotePart1: string;
-    footnoteLink: string;
-    footnotePart2: string;
+    footnote: string;
   };
   authorByline: {
     reviewed: string;

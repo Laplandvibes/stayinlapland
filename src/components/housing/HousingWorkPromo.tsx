@@ -12,7 +12,7 @@ interface HousingWorkPromoProps {
 /** Sisarsivuston sanamerkki verkoston kaavalla: pinkki #, valkoinen LAPLAND, pinkki WORK (Bebas). */
 function WorkWordmark({ className = '' }: { className?: string }) {
   return (
-    <span className={`font-logo tracking-wide leading-none ${className}`} aria-label="#LAPLANDWORK">
+    <span translate="no" className={`notranslate font-logo tracking-wide leading-none ${className}`} aria-label="#LAPLANDWORK">
       <span className="text-vibe-pink">#</span>
       <span className="text-snow">LAPLAND</span>
       <span className="text-vibe-pink">WORK</span>

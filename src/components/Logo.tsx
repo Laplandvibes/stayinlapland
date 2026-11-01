@@ -27,7 +27,7 @@ export default function Logo({ size = 'sm', light = false, nav = false }: LogoPr
   const heavy = light ? 'text-snow' : 'text-charcoal';
 
   return (
-    <span className={`font-logo tracking-wide leading-none ${textSize}${nav ? ' lv-wm' : ''}`} data-lv-sanamerkki={nav ? '' : undefined} style={nav ? WM_STYLE : undefined}>
+    <span translate="no" className={`notranslate font-logo tracking-wide leading-none ${textSize}${nav ? ' lv-wm' : ''}`} data-lv-sanamerkki={nav ? '' : undefined} style={nav ? WM_STYLE : undefined}>
       <span className="text-vibe-pink">#</span>
       <span className={heavy}>STAYIN</span>
       <span className="text-vibe-pink">LAPLAND</span>

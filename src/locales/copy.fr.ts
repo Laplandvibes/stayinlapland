@@ -42,9 +42,7 @@ export const copyFR: SectionCopy = {
     success: 'Presque fini : confirmez votre inscription depuis l\'e-mail que nous venons de vous envoyer.',
     errorPrefix: 'Inscription impossible, ',
     pleaseTryAgain: 'merci de réessayer',
-    footnotePart1: 'Pas de spam. Désinscription en un clic. Voir notre ',
-    footnoteLink: 'Politique de confidentialité',
-    footnotePart2: '.',
+    footnote: 'Pas de spam. Désinscription en un clic.',
   },
   authorByline: {
     reviewed: 'Relu par le réseau éditorial LaplandVibes',

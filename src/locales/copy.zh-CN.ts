@@ -40,9 +40,7 @@ export const copyZHCN: SectionCopy = {
     success: '就快好了：请在我们刚发送的邮件中确认订阅。',
     errorPrefix: '订阅未成功，',
     pleaseTryAgain: '请重试',
-    footnotePart1: '我们绝不发垃圾邮件。一键退订。详见我们的',
-    footnoteLink: '隐私政策',
-    footnotePart2: '。',
+    footnote: '我们绝不发垃圾邮件。一键退订。',
   },
   authorByline: {
     reviewed: '由 LaplandVibes 编辑网络审核',

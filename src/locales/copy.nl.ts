@@ -42,8 +42,7 @@ export const copyNL: SectionCopy = {
       'Bijna klaar: bevestig uw aanmelding via de e-mail die we net hebben gestuurd.',
     errorPrefix: 'Inschrijven niet gelukt, ',
     pleaseTryAgain: 'probeer het opnieuw',
-    footnotePart1: 'Wij sturen nooit spam. Met één klik uitschrijven. Zie ons ',
-    footnoteLink: 'Privacybeleid',
+    footnote: 'Wij sturen nooit spam. Met één klik uitschrijven.',
   },
   authorByline: {
     reviewed: 'Beoordeeld door het redactienetwerk van LaplandVibes',

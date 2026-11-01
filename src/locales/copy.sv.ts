@@ -44,9 +44,7 @@ export const copySV: SectionCopy = {
       'Nästan klart: bekräfta din prenumeration i mejlet vi just skickade.',
     errorPrefix: 'Prenumerationen misslyckades, ',
     pleaseTryAgain: 'försök igen',
-    footnotePart1: 'Vi skickar aldrig skräppost. Avsluta med ett klick. Se vår ',
-      footnotePart2: '.',
-    footnoteLink: 'integritetspolicy',
+    footnote: 'Vi skickar aldrig skräppost. Avsluta med ett klick.',
   },
   authorByline: {
     reviewed: 'Granskad av LaplandVibes redaktionsnätverk',

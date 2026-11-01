@@ -36,9 +36,7 @@ export const copyFI: SectionCopy = {
       'Melkein valmista: käy vahvistamassa tilaus sähköpostiisi tulleesta viestistä.',
     errorPrefix: 'Tilaus ei onnistunut, ',
     pleaseTryAgain: 'yritä uudelleen',
-    footnotePart1: 'Emme lähetä roskapostia. Peruuta yhdellä klikkauksella. Katso ',
-    footnoteLink: 'tietosuojaseloste',
-    footnotePart2: '.',
+    footnote: 'Emme lähetä roskapostia. Peruuta yhdellä klikkauksella.',
   },
   authorByline: {
     reviewed: 'Tarkastettu LaplandVibesin toimitusverkostossa',

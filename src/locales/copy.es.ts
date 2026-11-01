@@ -41,9 +41,7 @@ export const copyES: SectionCopy = {
     success: 'Ya casi: confirme su suscripción desde el correo que acabamos de enviarle.',
     errorPrefix: 'No se ha podido suscribir, ',
     pleaseTryAgain: 'inténtelo de nuevo',
-    footnotePart1: 'Nada de spam. Cancele con un clic. Consulte nuestra ',
-    footnoteLink: 'política de privacidad',
-    footnotePart2: '.',
+    footnote: 'Nada de spam. Cancele con un clic.',
   },
   authorByline: {
     reviewed: 'Revisado por la red editorial de LaplandVibes',

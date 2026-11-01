@@ -33,9 +33,7 @@ export const copyEN: SectionCopy = {
     success: 'Almost there: confirm your subscription from the email we just sent you.',
     errorPrefix: 'Could not subscribe, ',
     pleaseTryAgain: 'please try again',
-    footnotePart1: 'We never spam. Unsubscribe with one click. See our ',
-    footnoteLink: 'Privacy Policy',
-    footnotePart2: '.',
+    footnote: 'We never spam. Unsubscribe with one click.',
   },
   authorByline: {
     reviewed: 'Reviewed by the LaplandVibes editorial network',

@@ -139,9 +139,7 @@ export const copyKO: SectionCopy = {
     success: '거의 다 됐습니다. 방금 보내드린 이메일에서 구독을 확인해 주세요.',
     errorPrefix: '구독에 실패했습니다.',
     pleaseTryAgain: '다시 시도해 주세요',
-    footnotePart1: '스팸은 보내지 않습니다. 한 번의 클릭으로 해지하실 수 있습니다. ',
-    footnoteLink: '개인정보 처리방침',
-    footnotePart2: '을 확인해 주세요.',
+    footnote: '스팸은 보내지 않습니다. 한 번의 클릭으로 해지하실 수 있습니다.',
   },
   authorByline: {
     reviewed: 'LaplandVibes 에디토리얼 네트워크 감수',

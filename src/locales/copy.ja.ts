@@ -33,9 +33,7 @@ export const copyJA: SectionCopy = {
     success: 'あと少しです。いまお送りしたメールから登録を確認してください。',
     errorPrefix: '登録できませんでした, ',
     pleaseTryAgain: 'もう一度お試しください',
-    footnotePart1: 'スパムは一切送りません。ワンクリックで配信解除できます。詳しくは',
-    footnoteLink: 'プライバシーポリシー',
-    footnotePart2: 'をご覧ください。',
+    footnote: 'スパムは一切送りません。ワンクリックで配信解除できます。',
   },
   authorByline: {
     reviewed: 'LaplandVibes 編集ネットワークが確認',

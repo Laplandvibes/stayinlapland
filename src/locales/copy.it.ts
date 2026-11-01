@@ -30,8 +30,7 @@ export const copyIT: SectionCopy = {
       'Ci siamo quasi: confermi l\'iscrizione dall\'e-mail che Le abbiamo appena inviato.',
     errorPrefix: 'Iscrizione non riuscita, ',
     pleaseTryAgain: 'riprovi',
-    footnotePart1: 'Niente spam. Disiscrizione con un clic. Veda la nostra ',
-    footnoteLink: 'Informativa sulla privacy',
+    footnote: 'Niente spam. Disiscrizione con un clic.',
   },
   authorByline: {
     reviewed: 'Verificato dalla rete editoriale di LaplandVibes',

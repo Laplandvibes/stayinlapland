@@ -41,9 +41,7 @@ export const copyPTBR: SectionCopy = {
     success: 'Quase lá: confirme sua inscrição no e-mail que acabamos de enviar.',
     errorPrefix: 'Não foi possível se inscrever, ',
     pleaseTryAgain: 'tente novamente',
-    footnotePart1: 'Nunca enviamos spam. Cancele com um clique. Veja nossa ',
-    footnoteLink: 'política de privacidade',
-    footnotePart2: '.',
+    footnote: 'Nunca enviamos spam. Cancele com um clique.',
   },
   authorByline: {
     reviewed: 'Revisado pela rede editorial LaplandVibes',

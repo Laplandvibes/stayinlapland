@@ -306,11 +306,7 @@ export default function Newsletter() {
         )}
 
         <p className="mt-7 text-xs text-snow/75">
-          {t.footnotePart1}
-          <a href={localePath('/privacy/')} className="underline hover:text-snow">
-            {t.footnoteLink}
-          </a>
-          {t.footnotePart2}
+          {t.footnote}
         </p>
       </div>
     </section>

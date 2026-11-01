@@ -36,9 +36,7 @@ export const copyDE: SectionCopy = {
       'Fast geschafft: Bestätigen Sie Ihr Abo über die E-Mail, die wir Ihnen gerade geschickt haben.',
     errorPrefix: 'Abonnement nicht möglich, ',
     pleaseTryAgain: 'bitte erneut versuchen',
-    footnotePart1: 'Wir versenden niemals Spam. Mit einem Klick abbestellbar. Siehe ',
-    footnoteLink: 'Datenschutzerklärung',
-    footnotePart2: '.',
+    footnote: 'Wir versenden niemals Spam. Mit einem Klick abbestellbar.',
   },
   authorByline: {
     reviewed: 'Geprüft vom redaktionellen Netzwerk von LaplandVibes',

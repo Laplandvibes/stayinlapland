@@ -1,18 +1,22 @@
-function newsletterEmailLabel(): string {
-  const lang = typeof document === 'undefined' ? 'en' : document.documentElement.lang.toLowerCase().split('-')[0];
-  return ({fi:'Sähköpostiosoite',en:'Email address',de:'E-Mail-Adresse',es:'Correo electrónico',fr:'Adresse e-mail',it:'Indirizzo email',nl:'E-mailadres',sv:'E-postadress',ja:'メールアドレス',ko:'이메일 주소',pt:'Endereço de e-mail',zh:'电子邮箱'} as Record<string,string>)[lang] || 'Email address';
-}
-
-function newsletterLanguageNotice(): string {
-  const lang = typeof document === 'undefined' ? 'en' : document.documentElement.lang.toLowerCase().split('-')[0];
-  const notes: Record<string, string> = {"fi":"Uutiskirjeet ovat suomeksi.","en":"Newsletters are in English.","de":"Die Newsletter werden auf Englisch versendet.","ja":"ニュースレターは英語でお届けします。","ko":"뉴스레터는 영어로 발송됩니다.","fr":"Les newsletters sont envoyées en anglais.","it":"Le newsletter sono inviate in inglese.","nl":"De nieuwsbrieven zijn in het Engels.","sv":"Nyhetsbreven skickas på engelska.","es":"Los boletines se envían en inglés.","pt":"As newsletters são enviadas em inglês.","zh":"订阅邮件以英语发送。"};
-  return notes[lang] || notes.en;
-}
 import { useEffect, useRef, useState } from 'react';
 import { Send } from 'lucide-react';
 import { useLang, useLocalePath } from '../i18n/useLang';
 import { getCopy } from '../locales/copy';
 import FounderByline from '../shared/FounderByline';
+
+// Uutiskirjeen kieliohje sivun kielestä (ei <html lang>:sta, joka on esirenderöinnissä aina 'en').
+// Kirjeitä lähtee vain suomeksi ja englanniksi, joten fi/en-sivulla ohje toistaisi itsestäänselvää
+// eikä näy. Vesa 1.11.2026: "kuinka monta kertaa lukee sähköpostiosoite" (sama kuin skiresorts 92e9878).
+const NL_LANG_NOTICE: Record<string, string> = {
+  de: 'Die Newsletter werden auf Englisch versendet.', ja: 'ニュースレターは英語でお届けします。',
+  es: 'Los boletines se envían en inglés.', pt: 'As newsletters são enviadas em inglês.', zh: '订阅邮件以英语发送。',
+  ko: '뉴스레터는 영어로 발송됩니다.', fr: 'Les newsletters sont envoyées en anglais.', it: 'Le newsletter sono inviate in inglese.',
+  nl: 'De nieuwsbrieven zijn in het Engels.', sv: 'Nyhetsbreven skickas på engelska.',
+};
+const nlLang = (l?: string): string => {
+  const x = (l || 'en').toLowerCase();
+  return x === 'br' ? 'pt' : x === 'cn' ? 'zh' : x === 'kr' ? 'ko' : x === 'jp' ? 'ja' : x.split('-')[0];
+};
 
 /**
  * [LV-FUNNEL 2026-08-21] Lomakesuppilon eventit Umamiin — paikallinen apuri,
@@ -250,16 +254,16 @@ export default function Newsletter() {
               style={{ position: 'absolute', left: '-9999px', width: '1px', height: '1px', opacity: 0 }}
             />
             <div className="flex flex-col sm:flex-row gap-3">
-              <label style={{display:'flex',flexDirection:'column',gap:8,flex:'1 1 0%',minWidth:0,textAlign:'left',fontSize:14,color:'#F9FAFB'}}><span>{newsletterEmailLabel()}</span><span style={{fontSize:13,lineHeight:1.5}}>{newsletterLanguageNotice()}</span><input autoComplete="email" style={{ background: '#FFFFFF', color: '#1F2937', WebkitTextFillColor: '#1F2937', border: '1px solid #64748B' }}
+              <div style={{display:'flex',flexDirection:'column',gap:8,flex:'1 1 0%',minWidth:0,textAlign:'left',fontSize:14,color:'#F9FAFB'}}><label htmlFor="nl-inline-email">{EMAIL_LABEL[lang] ?? EMAIL_LABEL.en}</label>{NL_LANG_NOTICE[nlLang(lang)] && <span id="nl-inline-email-lang" style={{fontSize:13,lineHeight:1.5}}>{NL_LANG_NOTICE[nlLang(lang)]}</span>}<input
+                id="nl-inline-email"
+                aria-describedby={NL_LANG_NOTICE[nlLang(lang)] ? 'nl-inline-email-lang' : undefined} autoComplete="email" style={{ background: '#FFFFFF', color: '#1F2937', WebkitTextFillColor: '#1F2937', border: '1px solid #64748B' }}
                 type="email"
                 required
                 value={email}
                 onFocus={trackStart}
                 onChange={(e) => setEmail(e.target.value)}
-                placeholder={t.placeholder}
-                aria-label={EMAIL_LABEL[lang] ?? EMAIL_LABEL.en}
                 className="flex-1 px-6 py-4 rounded-full bg-snow/12 backdrop-blur-sm text-snow placeholder:text-slate-600 border border-snow/30 focus:outline-none focus:ring-2 focus:ring-gold/60 text-base"
-              /></label>
+              /></div>
               {/* 🔴 Nappi #BE185D (pinkkiramppi 700), ei #EC4899: snow-teksti #EC4899:llä on 3,4:1 ja #DB2777:llä 4,4:1, molemmat kaatuvat lomakeportin (audit_lomakkeet 18.9.2026). Valkoinen #BE185D:llä on 5,8:1. */}
               <button style={{ backgroundColor: '#BE185D', color: '#FFFFFF', alignSelf: 'end', minHeight: 48 }}
                 type="submit"

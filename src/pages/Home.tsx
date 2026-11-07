@@ -121,12 +121,12 @@ export default function Home() {
           {/* lg: the heading gets 896 px and each sentence is its own unit (3.10.2026). In the 672 px column the
               ja heading ran to three lines and broke inside a word ("一つに腰を据え / る。 または2つを / 組み合わせる。");
               de now reads "WÄHLEN SIE EINE. / ODER VERBINDEN SIE ZWEI." The lead keeps its 672 px measure. */}
-          <div className="mb-12 sm:mb-16 max-w-2xl lg:max-w-4xl">
+          <div className="mb-12 sm:mb-16 max-w-2xl mx-auto text-center lg:mx-0 lg:text-left lg:max-w-4xl">
             <div className="mb-4"><KickerChip tone="pink">{h.fourWays.kicker}</KickerChip></div>
             <h2 className="font-heading text-4xl sm:text-5xl md:text-6xl text-charcoal leading-[1.1] tracking-wide">
               <span className="lg:inline-block">{h.fourWays.h2A}</span> <span className="lg:inline-block text-vibe-pink">{h.fourWays.h2B}</span>
             </h2>
-            <p className="text-graphite text-base sm:text-lg mt-5 leading-relaxed max-w-2xl">
+            <p className="text-graphite text-base sm:text-lg mt-5 leading-relaxed max-w-2xl mx-auto w-fit text-left lg:mx-0 lg:w-auto">
               {h.fourWays.lead}
             </p>
           </div>
@@ -172,17 +172,17 @@ export default function Home() {
       {/* Destinations. Kermapohja: tapakortit yllä ovat sävytetyllä kaistalla. */}
       <section className="py-20 sm:py-28 px-5 sm:px-6">
         <div className="max-w-6xl mx-auto">
-          <div className="mb-12 sm:mb-14 max-w-2xl">
+          <div className="mb-12 sm:mb-14 max-w-2xl mx-auto text-center lg:mx-0 lg:text-left">
             <div className="mb-4"><KickerChip tone="pink">{h.destKicker}</KickerChip></div>
             <h2 className="font-heading text-4xl sm:text-5xl md:text-6xl text-charcoal leading-[1.1] tracking-wide">
               {h.destH2}
             </h2>
-            <p className="text-graphite text-base sm:text-lg mt-5 leading-relaxed">
+            <p className="text-graphite text-base sm:text-lg mt-5 leading-relaxed mx-auto w-fit text-left lg:mx-0 lg:w-auto">
               {h.destLead}
             </p>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6 sm:max-lg:[&>*:last-child:nth-child(odd)]:col-span-2 sm:max-lg:[&>*:last-child:nth-child(odd)]:justify-self-center sm:max-lg:[&>*:last-child:nth-child(odd)]:w-[calc(50%-0.75rem)]">
             {dests.map((d) => (
               <Link
                 key={d.slug}
@@ -249,7 +249,7 @@ export default function Home() {
       {/* FAQ */}
       <section className="py-20 sm:py-28 px-5 sm:px-6">
         <div className="max-w-3xl mx-auto">
-          <div className="mb-10">
+          <div className="mb-10 text-center lg:text-left">
             <div className="mb-4"><KickerChip tone="pink">{h.faqKicker}</KickerChip></div>
             <h2 className="font-heading text-4xl sm:text-5xl md:text-6xl text-charcoal leading-[1.1] tracking-wide">
               {h.faqH2}

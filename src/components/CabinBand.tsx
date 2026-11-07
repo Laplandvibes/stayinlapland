@@ -260,7 +260,7 @@ export default function CabinBand({
   return (
     <section className="py-16 sm:py-24 px-5 sm:px-6 bg-cream-2/60">
       <div className="max-w-6xl mx-auto">
-        <div className="flex flex-wrap items-end justify-between gap-4 mb-4">
+        <div className="flex flex-col items-center text-center gap-4 mb-4 lg:flex-row lg:flex-wrap lg:items-end lg:justify-between lg:text-left">
           <div className="min-w-0">
             <div className="mb-3"><KickerChip tone="pink">{c.eyebrow}</KickerChip></div>
             <h2 className="font-heading text-4xl sm:text-5xl text-charcoal leading-tight tracking-wide">
@@ -280,10 +280,10 @@ export default function CabinBand({
             />
           </span>
         </div>
-        <p className="text-graphite text-[16px] leading-relaxed mb-7 max-w-3xl">{c.lead}</p>
+        <p className="text-graphite text-[16px] leading-relaxed mb-7 max-w-3xl mx-auto w-fit text-left lg:mx-0 lg:w-auto">{c.lead}</p>
 
         {tabs && (
-          <div className="flex flex-wrap gap-2 mb-8" role="tablist" aria-label={c.eyebrow}>
+          <div className="flex flex-wrap justify-center lg:justify-start gap-2 mb-8" role="tablist" aria-label={c.eyebrow}>
             {tabs.map((key) => (
               <button
                 key={key}
@@ -396,7 +396,7 @@ export default function CabinBand({
         </div>
 
         {data && total > 0 && (
-          <div className="mt-8 flex flex-col sm:flex-row sm:items-center gap-4 sm:justify-between">
+          <div className="mt-8 flex flex-col items-center text-center gap-4 lg:flex-row lg:items-center lg:justify-between lg:text-left">
             <a
               href={moreHref}
               target="_blank"

@@ -28,10 +28,10 @@ export default function DestinationFacts({ facts }: { facts: Facts }) {
   return (
     <section className="py-16 sm:py-24 px-5 sm:px-6">
       <div className="max-w-5xl mx-auto">
-        <p className="text-vibe-pink text-[11px] font-semibold tracking-[0.28em] uppercase mb-3">
+        <p className="text-vibe-pink text-[11px] font-semibold tracking-[0.28em] uppercase mb-3 text-center lg:text-left">
           {t(factsUi.highlightsKicker)}
         </p>
-        <h2 className="font-heading text-4xl sm:text-5xl text-charcoal leading-tight tracking-wide mb-10">
+        <h2 className="font-heading text-4xl sm:text-5xl text-charcoal leading-tight tracking-wide mb-10 text-center lg:text-left">
           {t(factsUi.highlightsH2)}
         </h2>
 
@@ -54,13 +54,13 @@ export default function DestinationFacts({ facts }: { facts: Facts }) {
         </div>
 
         <div className="border-t border-charcoal/10 pt-12">
-          <p className="text-vibe-pink text-[11px] font-semibold tracking-[0.28em] uppercase mb-3">
+          <p className="text-vibe-pink text-[11px] font-semibold tracking-[0.28em] uppercase mb-3 text-center lg:text-left">
             {t(factsUi.placesKicker)}
           </p>
-          <h2 className="font-heading text-3xl sm:text-4xl text-charcoal leading-tight tracking-wide mb-4">
+          <h2 className="font-heading text-3xl sm:text-4xl text-charcoal leading-tight tracking-wide mb-4 text-center lg:text-left">
             {t(factsUi.placesH2)}
           </h2>
-          <p className="text-graphite text-[15px] leading-relaxed max-w-3xl mb-8">{t(factsUi.placesNote)}</p>
+          <p className="text-graphite text-[15px] leading-relaxed max-w-3xl mb-8 mx-auto w-fit lg:mx-0 lg:w-auto">{t(factsUi.placesNote)}</p>
 
           {/* Was a bare bulleted list of links — Vesa 2026-08-17. Same links, but
               grouped into cards with a category icon so the section reads as
@@ -110,10 +110,10 @@ export default function DestinationFacts({ facts }: { facts: Facts }) {
 
           {facts.networkLinks.length > 0 && (
             <div className="mt-10 pt-8 border-t border-charcoal/10">
-              <h3 className="font-body text-[13px] font-semibold text-stone uppercase tracking-[0.16em] mb-4">
+              <h3 className="font-body text-[13px] font-semibold text-stone uppercase tracking-[0.16em] mb-4 text-center lg:text-left">
                 {t(factsUi.networkH3)}
               </h3>
-              <div className="flex flex-wrap gap-3">
+              <div className="flex flex-wrap justify-center lg:justify-start gap-3">
                 {facts.networkLinks.map((l) => (
                   <a
                     key={l.href}

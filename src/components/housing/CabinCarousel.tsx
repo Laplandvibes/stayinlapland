@@ -151,7 +151,7 @@ export default function CabinCarousel({ hl, sidPrefix, id }: { hl: HousingLang; 
   return (
     <section id={id} className="scroll-mt-24 py-14 sm:py-20 px-5 sm:px-6 bg-white border-y border-charcoal/[0.06]" aria-label={t.h2}>
       <div className="max-w-6xl mx-auto">
-        <div className="flex flex-wrap items-end justify-between gap-4 mb-4">
+        <div className="flex flex-col items-center text-center gap-4 mb-4 lg:flex-row lg:flex-wrap lg:items-end lg:justify-between lg:text-left">
           <div className="min-w-0">
             <p className={`${CHIP_BASE} mb-3 bg-charcoal/[0.06] text-graphite`}>
               {t.ad} · {t.kicker}
@@ -161,9 +161,9 @@ export default function CabinCarousel({ hl, sidPrefix, id }: { hl: HousingLang; 
           {/* Lomarenkaan sanamerkki näkyvissä sijoittelussa (ohjelman ehto). */}
           <img src="/images/partners/lomarengas.png" alt="Lomarengas" width={472} height={150} loading="lazy" decoding="async" className="h-8 sm:h-10 w-auto shrink-0" />
         </div>
-        <p className="text-graphite text-base sm:text-lg leading-relaxed mb-7 max-w-3xl [text-wrap:pretty]">{t.lead}</p>
+        <p className="text-graphite text-base sm:text-lg leading-relaxed mb-7 max-w-3xl mx-auto w-fit lg:mx-0 lg:w-auto [text-wrap:pretty]">{t.lead}</p>
 
-        <div className="flex flex-wrap gap-2 mb-6" role="tablist" aria-label={t.h2}>
+        <div className="flex flex-wrap justify-center lg:justify-start gap-2 mb-6" role="tablist" aria-label={t.h2}>
           {TABS.map((key) => (
             <button
               key={key}
@@ -263,7 +263,7 @@ export default function CabinCarousel({ hl, sidPrefix, id }: { hl: HousingLang; 
         </div>
 
         {data && total > 0 && (
-          <div className="mt-7 flex flex-col sm:flex-row sm:items-center gap-3 sm:justify-between">
+          <div className="mt-7 flex flex-col items-center text-center gap-3 lg:flex-row lg:items-center lg:justify-between lg:text-left">
             <a
               href={moreHref}
               target="_blank"

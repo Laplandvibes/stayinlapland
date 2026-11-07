@@ -46,15 +46,15 @@ export default function WorkInLaplandPromo({ placement, variant = 'full' }: Work
     <section className="py-20 sm:py-24 px-5 sm:px-6 bg-cream-2/60">
       <div className="max-w-5xl mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
-          <div className="lg:col-span-7">
+          <div className="lg:col-span-7 text-center lg:text-left">
             <div className="mb-3"><KickerChip tone="pink">{t.fullEyebrow}</KickerChip></div>
             <h2 className="font-heading text-4xl sm:text-5xl md:text-6xl text-charcoal leading-[1.1] tracking-wide mb-5">
               {t.fullH2A} <span className="text-vibe-pink">{t.fullH2B}</span>
             </h2>
-            <p className="text-graphite text-base sm:text-lg leading-relaxed mb-4">
+            <p className="text-graphite text-base sm:text-lg leading-relaxed mb-4 max-w-2xl mx-auto text-left lg:max-w-none lg:mx-0">
               {t.fullP1}
             </p>
-            <p className="text-graphite text-base sm:text-lg leading-relaxed mb-7">
+            <p className="text-graphite text-base sm:text-lg leading-relaxed mb-7 max-w-2xl mx-auto text-left lg:max-w-none lg:mx-0">
               <span className="font-semibold text-charcoal">{t.fullP2A}</span>
               {t.fullP2B}
             </p>

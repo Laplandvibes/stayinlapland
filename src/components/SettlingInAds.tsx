@@ -843,18 +843,18 @@ export default function SettlingInAds({
   const layout = single ? "row" : "stack";
   return (
     <section className={`px-5 sm:px-6 py-12 sm:py-16 bg-cream-2/60 border-y border-charcoal/[0.06] ${className}`} aria-label={t.title}>
-      <div className={`mx-auto ${single ? "max-w-3xl" : "max-w-6xl"}`}>
+      <div className={`mx-auto text-center lg:text-left ${single ? "max-w-3xl" : "max-w-6xl"}`}>
         <p className="mb-3 inline-flex rounded-full bg-charcoal/[0.06] px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.18em] text-graphite">
           {t.kicker}
         </p>
-        <h2 className="max-w-3xl font-heading text-3xl sm:text-4xl text-charcoal leading-tight tracking-wide">{t.title}</h2>
-        <p className="mt-3 mb-8 max-w-2xl text-base leading-relaxed text-graphite">{t.lead}</p>
-        <div className={single ? "" : `grid items-stretch gap-5 ${cols}`}>
+        <h2 className="max-w-3xl mx-auto lg:mx-0 font-heading text-3xl sm:text-4xl text-charcoal leading-tight tracking-wide">{t.title}</h2>
+        <p className="mt-3 mb-8 max-w-2xl mx-auto w-fit text-left lg:mx-0 lg:w-auto text-base leading-relaxed text-graphite">{t.lead}</p>
+        <div className={single ? "text-left" : `grid items-stretch gap-5 text-left ${cols}`}>
           {kinds.includes("fortum") && <FortumAd sid={`${sidPrefix}_electricity`} lang={hl} layout={layout} />}
           {kinds.includes("telia") && <TeliaAd sid={`${sidPrefix}_telecom`} lang={hl} layout={layout} />}
           {kinds.includes("airalo") && <AiraloAd sid={`${sidPrefix}_esim`} lang={hl} layout={layout} />}
         </div>
-        <p className="mt-5 max-w-3xl text-[13px] leading-relaxed text-graphite">{NOTE[hl]}</p>
+        <p className="mt-5 max-w-3xl mx-auto text-left lg:mx-0 text-[13px] leading-relaxed text-graphite">{NOTE[hl]}</p>
       </div>
     </section>
   );

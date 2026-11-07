@@ -225,7 +225,7 @@ export default function Newsletter() {
         <h2 className="font-heading font-medium text-snow leading-[1.1] text-4xl sm:text-5xl md:text-6xl mb-5">
           {t.h2}
         </h2>
-        <p className="text-snow/75 text-base sm:text-lg leading-relaxed max-w-2xl mx-auto mb-9">
+        <p className="text-snow/75 text-base sm:text-lg leading-relaxed max-w-2xl mx-auto max-lg:w-fit max-lg:text-left mb-9">
           {t.lead}
         </p>
 

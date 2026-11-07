@@ -133,7 +133,7 @@ export default function HomeHousing() {
                 {h.hero.h1a}
                 <span className="block text-vibe-pink lg:text-[#F9A8D4] text-[34px] sm:text-5xl lg:text-[length:clamp(3.75rem,4vw,5.5rem)] mt-1">{h.hero.h1b}</span>
               </h1>
-              <p className="font-body text-snow text-base sm:text-lg lg:text-xl max-w-xl mx-auto lg:mx-0 leading-relaxed" style={{ textShadow: '0 2px 12px rgba(0,0,0,0.6)' }}>
+              <p className="font-body text-snow text-base sm:text-lg lg:text-xl max-w-xl mx-auto lg:mx-0 max-lg:w-fit max-lg:text-left leading-relaxed" style={{ textShadow: '0 2px 12px rgba(0,0,0,0.6)' }}>
                 {h.hero.lead}
               </p>
               <div className="mt-10 flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center lg:justify-start">
@@ -152,11 +152,11 @@ export default function HomeHousing() {
       {/* 1. Paikkakunnat kuvakortteina: se, mitä haetaan eniten, heti heron alle. */}
       <section className="pt-14 pb-16 sm:pt-20 sm:pb-24 px-5 sm:px-6">
         <div className="max-w-7xl mx-auto">
-          <div className="mb-10 sm:mb-12 max-w-2xl">
+          <div className="mb-10 sm:mb-12 max-w-2xl mx-auto text-center lg:mx-0 lg:text-left">
             <div className="mb-4"><KickerChip tone="pink">{h.towns.kicker}</KickerChip></div>
             <h2 className="font-heading text-4xl sm:text-5xl md:text-6xl text-charcoal leading-[1.1] tracking-wide">{h.towns.h2}</h2>
-            <div className="mt-4 h-1 w-14 rounded-full bg-vibe-pink" aria-hidden="true" />
-            <p className="text-graphite text-base sm:text-lg mt-5 leading-relaxed">{h.towns.lead}</p>
+            <div className="mt-4 h-1 w-14 rounded-full bg-vibe-pink mx-auto lg:mx-0" aria-hidden="true" />
+            <p className="text-graphite text-base sm:text-lg mt-5 leading-relaxed mx-auto w-fit text-left lg:mx-0 lg:w-auto">{h.towns.lead}</p>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-5 sm:gap-6">
             {h.towns.items.map((town) => (
@@ -205,7 +205,7 @@ export default function HomeHousing() {
               </Link>
             ))}
           </div>
-          <div className="mt-8">
+          <div className="mt-8 text-center lg:text-left">
             <Link to={localePath(HOUSING_ROUTES.rentals)} className="lv-tap inline-flex items-center gap-1.5 text-[#BE185D] text-sm font-semibold">
               {h.towns.more}
               <ArrowRight className="w-4 h-4 shrink-0" />
@@ -219,11 +219,11 @@ export default function HomeHousing() {
         <div className="pointer-events-none absolute -top-32 -left-24 w-[28rem] h-[28rem] rounded-full bg-vibe-pink/20 blur-3xl" aria-hidden="true" />
         <div className="pointer-events-none absolute -bottom-40 -right-24 w-[32rem] h-[32rem] rounded-full bg-arctic-cyan/10 blur-3xl" aria-hidden="true" />
         <div className="relative max-w-7xl mx-auto">
-          <div className="mb-10 sm:mb-12 max-w-2xl">
+          <div className="mb-10 sm:mb-12 max-w-2xl mx-auto text-center lg:mx-0 lg:text-left">
             <div className="mb-4"><KickerChip tone="night">{h.paths.kicker}</KickerChip></div>
             <h2 className="font-heading text-4xl sm:text-5xl md:text-6xl text-snow leading-[1.1] tracking-wide">{h.paths.h2}</h2>
-            <div className="mt-4 h-1 w-14 rounded-full bg-vibe-pink" aria-hidden="true" />
-            <p className="text-snow text-base sm:text-lg mt-5 leading-relaxed">{h.paths.lead}</p>
+            <div className="mt-4 h-1 w-14 rounded-full bg-vibe-pink mx-auto lg:mx-0" aria-hidden="true" />
+            <p className="text-snow text-base sm:text-lg mt-5 leading-relaxed mx-auto w-fit text-left lg:mx-0 lg:w-auto">{h.paths.lead}</p>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-5 sm:gap-6">
             {h.paths.cards.map((c) => (
@@ -259,11 +259,11 @@ export default function HomeHousing() {
       {/* 3. Arki Lapissa: neljä vuodenaikaa ja mitä täällä silloin tehdään (Vesa 23.9.2026). */}
       <section className="py-16 sm:py-24 px-5 sm:px-6">
         <div className="max-w-7xl mx-auto">
-          <div className="mb-10 sm:mb-12 max-w-2xl">
+          <div className="mb-10 sm:mb-12 max-w-2xl mx-auto text-center lg:mx-0 lg:text-left">
             <div className="mb-4"><KickerChip tone="pink">{h.life.kicker}</KickerChip></div>
             <h2 className="font-heading text-4xl sm:text-5xl md:text-6xl text-charcoal leading-[1.1] tracking-wide">{h.life.h2}</h2>
-            <div className="mt-4 h-1 w-14 rounded-full bg-vibe-pink" aria-hidden="true" />
-            <p className="text-graphite text-base sm:text-lg mt-5 leading-relaxed">{h.life.lead}</p>
+            <div className="mt-4 h-1 w-14 rounded-full bg-vibe-pink mx-auto lg:mx-0" aria-hidden="true" />
+            <p className="text-graphite text-base sm:text-lg mt-5 leading-relaxed mx-auto w-fit text-left lg:mx-0 lg:w-auto">{h.life.lead}</p>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-5 sm:gap-6">
             {h.life.cards.map((card) => (
@@ -296,7 +296,7 @@ export default function HomeHousing() {
               </Link>
             ))}
           </div>
-          <div className="mt-8">
+          <div className="mt-8 text-center lg:text-left">
             <Link to={localePath(h.life.more.href)} className="lv-tap inline-flex items-center gap-1.5 text-[#BE185D] text-sm font-semibold">
               {h.life.more.label}
               <ArrowRight className="w-4 h-4 shrink-0" />
@@ -316,7 +316,7 @@ export default function HomeHousing() {
       {/* UKK */}
       <section className="py-16 sm:py-24 px-5 sm:px-6">
         <div className="max-w-3xl mx-auto">
-          <div className="mb-10">
+          <div className="mb-10 text-center lg:text-left">
             <div className="mb-4"><KickerChip tone="pink">{h.faq.kicker}</KickerChip></div>
             <h2 className="font-heading text-4xl sm:text-5xl md:text-6xl text-charcoal leading-[1.1] tracking-wide"><TwoTone text={h.faq.h2} /></h2>
           </div>
@@ -348,11 +348,11 @@ export default function HomeHousing() {
       {/* Lomalle Lappiin → laplandstays + omat lomasivut (vaihe 2 ohjaa nämä staysille) */}
       <section className="relative overflow-hidden py-14 sm:py-20 px-5 sm:px-6 bg-finland-blue text-snow">
         <div className="pointer-events-none absolute -top-24 -right-16 w-[26rem] h-[26rem] rounded-full bg-vibe-pink/25 blur-3xl" aria-hidden="true" />
-        <div className="relative max-w-3xl mx-auto">
+        <div className="relative max-w-3xl mx-auto text-center lg:text-left">
           <p className={`${CHIP_BASE} bg-white/12 text-snow mb-4`}>{h.holiday.kicker}</p>
           <h2 className="font-heading text-3xl sm:text-4xl md:text-5xl text-snow leading-tight tracking-wide">{h.holiday.h2}</h2>
-          <p className="text-snow/90 text-base sm:text-lg mt-4 leading-relaxed">{h.holiday.lead}</p>
-          <div className="mt-6 flex flex-wrap gap-3">
+          <p className="text-snow/90 text-base sm:text-lg mt-4 leading-relaxed mx-auto w-fit text-left lg:mx-0 lg:w-auto">{h.holiday.lead}</p>
+          <div className="mt-6 flex flex-wrap justify-center lg:justify-start gap-3">
             {h.holiday.links.map((l) =>
               l.external ? (
                 <a key={l.href} href={l.href} target="_blank" rel="noopener" className="lv-tap inline-flex items-center gap-1.5 px-4 py-2.5 min-h-11 rounded-full bg-[#DB2777] hover:bg-[#BE185D] text-white text-sm font-semibold transition-colors" data-umami-event="housing_out" data-umami-event-page="home" data-umami-event-target="laplandstays">

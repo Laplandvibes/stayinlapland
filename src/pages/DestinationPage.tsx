@@ -212,7 +212,7 @@ export default function DestinationPage() {
 
       <section className="py-16 sm:py-24 px-5 sm:px-6 bg-cream-2/60">
         <div className="max-w-5xl mx-auto">
-          <div className="mb-10 max-w-2xl">
+          <div className="mb-10 max-w-2xl mx-auto text-center lg:mx-0 lg:text-left">
             <p className="text-vibe-pink text-[11px] font-semibold tracking-[0.28em] uppercase mb-3">
               {d.recommendedIn(destName)}
             </p>

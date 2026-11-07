@@ -21,13 +21,13 @@ export default function DestinationAreas({ notes }: { notes: Record<string, Stay
   return (
     <section className="py-16 sm:py-24 px-5 sm:px-6">
       <div className="max-w-5xl mx-auto">
-        <p className="text-vibe-pink text-[11px] font-semibold tracking-[0.28em] uppercase mb-3">
+        <p className="text-vibe-pink text-[11px] font-semibold tracking-[0.28em] uppercase mb-3 text-center lg:text-left">
           {t(stayingUi.kicker)}
         </p>
-        <h2 className="font-heading text-4xl sm:text-5xl text-charcoal leading-tight tracking-wide mb-4">
+        <h2 className="font-heading text-4xl sm:text-5xl text-charcoal leading-tight tracking-wide mb-4 text-center lg:text-left">
           {t(stayingUi.h2)}
         </h2>
-        <p className="text-graphite text-[15px] leading-relaxed max-w-3xl mb-10">
+        <p className="text-graphite text-[15px] leading-relaxed max-w-3xl mb-10 mx-auto w-fit lg:mx-0 lg:w-auto">
           {t(stayingUi.note)}
         </p>
 

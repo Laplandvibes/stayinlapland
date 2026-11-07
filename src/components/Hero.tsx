@@ -96,7 +96,7 @@ export default function Hero() {
           </h1>
 
           <p
-            className="font-body text-snow/85 text-base sm:text-lg lg:text-xl max-w-2xl xl:max-w-[45rem] mx-auto leading-relaxed xl:text-2xl"
+            className="font-body text-snow/85 text-base sm:text-lg lg:text-xl max-w-2xl xl:max-w-[45rem] mx-auto max-lg:w-fit max-lg:text-left leading-relaxed xl:text-2xl"
             style={{ textShadow: '0 2px 14px rgba(0,0,0,0.8)' }}
           >
             {t.lead} <span className="text-snow">{t.leadPriceRange}</span>.

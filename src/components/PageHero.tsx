@@ -122,7 +122,7 @@ export default function PageHero({
             {title}
           </h1>
           <p
-            className="font-body text-snow/85 text-base sm:text-lg lg:text-xl max-w-2xl mx-auto leading-relaxed"
+            className="font-body text-snow/85 text-base sm:text-lg lg:text-xl max-w-2xl mx-auto max-lg:w-fit max-lg:text-left leading-relaxed"
             style={{ textShadow: '0 2px 14px rgba(0,0,0,0.8)' }}
           >
             {subtitle}

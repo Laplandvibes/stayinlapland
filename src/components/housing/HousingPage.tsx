@@ -212,8 +212,9 @@ function CardGrid({ cards, page, tone, photoLabel }: { cards: Card[]; page: stri
   const localePath = useLocalePath();
   const night = tone === 'night';
   const anyImage = cards.some((c) => c.image);
+  // Tabletilla (2 saraketta) pariton viimeinen kortti keskelle, ei yksin vasempaan sarakkeeseen (gate:tabletti 7.11.2026).
   return (
-    <div className="relative max-w-6xl mx-auto mt-9 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-5">
+    <div className="relative max-w-6xl mx-auto mt-9 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-5 sm:max-lg:[&>*:last-child:nth-child(odd)]:col-span-2 sm:max-lg:[&>*:last-child:nth-child(odd)]:justify-self-center sm:max-lg:[&>*:last-child:nth-child(odd)]:w-[calc(50%-0.625rem)]">
       {cards.map((c, i) => {
         const internal = !!c.href && c.href.startsWith('/');
         const numbered = c.title.match(/^(\d+)\.\s+(.+)$/);
@@ -312,7 +313,7 @@ function SectionBlock({ s, page, tone, accentKey, photoLabel }: { s: Section; pa
         </>
       )}
       <div className={`relative mx-auto ${s.cards ? 'max-w-6xl' : 'max-w-3xl'}`}>
-        <div className="flex items-center gap-3 mb-4">
+        <div className="flex items-center justify-center lg:justify-start gap-3 mb-4">
           <span className={`inline-flex w-10 h-10 shrink-0 items-center justify-center rounded-xl shadow-sm ${night ? 'bg-[#DB2777] text-white' : accent.icon}`} aria-hidden="true">
             <Icon className="w-5 h-5" />
           </span>
@@ -322,10 +323,10 @@ function SectionBlock({ s, page, tone, accentKey, photoLabel }: { s: Section; pa
             </p>
           )}
         </div>
-        <h2 className={`font-heading text-3xl sm:text-4xl md:text-5xl leading-tight tracking-wide ${night ? 'text-snow' : 'text-charcoal'}`}>
+        <h2 className={`font-heading text-3xl sm:text-4xl md:text-5xl leading-tight tracking-wide text-center lg:text-left ${night ? 'text-snow' : 'text-charcoal'}`}>
           <TwoTone text={s.h2} />
         </h2>
-        <div className={`mt-4 h-1 w-14 rounded-full ${night ? 'bg-vibe-pink' : accent.bar}`} aria-hidden="true" />
+        <div className={`mt-4 h-1 w-14 rounded-full mx-auto lg:mx-0 ${night ? 'bg-vibe-pink' : accent.bar}`} aria-hidden="true" />
         {s.lead && <p className={`max-w-3xl text-base sm:text-lg mt-5 leading-relaxed ${night ? 'text-snow/85' : 'text-graphite'}`}>{s.lead}</p>}
         {s.table && <Table t={s.table} />}
         {s.paras && (
@@ -487,13 +488,13 @@ export default function HousingPage({ route, copy, heroImage, current, parent, w
       {c.cta && (
         <section className="relative overflow-hidden py-14 sm:py-20 px-5 sm:px-6 bg-finland-blue text-snow">
           <div className="pointer-events-none absolute -top-24 -right-16 w-[26rem] h-[26rem] rounded-full bg-vibe-pink/25 blur-3xl" aria-hidden="true" />
-          <div className="relative max-w-3xl mx-auto">
+          <div className="relative max-w-3xl mx-auto text-center lg:text-left">
             <p className={`${CHIP_BASE} bg-white/12 text-snow mb-4`}>{c.cta.kicker}</p>
             <h2 className="font-heading text-3xl sm:text-4xl md:text-5xl text-snow leading-tight tracking-wide">
               <TwoTone text={c.cta.h2} />
             </h2>
-            <p className="text-snow/90 text-base sm:text-lg mt-4 leading-relaxed">{c.cta.lead}</p>
-            <div className="mt-7 flex flex-wrap gap-3">
+            <p className="text-snow/90 text-base sm:text-lg mt-4 leading-relaxed mx-auto w-fit text-left lg:mx-0 lg:w-auto">{c.cta.lead}</p>
+            <div className="mt-7 flex flex-wrap justify-center lg:justify-start gap-3">
               {c.cta.chips.map((chip) => (
                 <AffiliateCTA
                   key={chip.sid}
@@ -508,7 +509,7 @@ export default function HousingPage({ route, copy, heroImage, current, parent, w
               ))}
             </div>
             {/* English hotel chips open sembo.co.uk: Sembo UK's code for November bookings. */}
-            {c.cta.partner === 'hotels' && <SemboUkCodeStrip lang={lang} surface={`housing_${current}`} className="mt-6 max-w-xl" />}
+            {c.cta.partner === 'hotels' && <SemboUkCodeStrip lang={lang} surface={`housing_${current}`} className="mt-6 max-w-xl mx-auto lg:mx-0" />}
             <p className="mt-5 text-snow/75 text-[12px]">{ui.affiliateNote}</p>
           </div>
         </section>
@@ -519,12 +520,12 @@ export default function HousingPage({ route, copy, heroImage, current, parent, w
 
       {c.faqs && c.faqs.length > 0 && (
         <section className="py-14 sm:py-20 px-5 sm:px-6">
-          <div className="max-w-3xl mx-auto">
+          <div className="max-w-3xl mx-auto text-center lg:text-left">
             <p className={`${CHIP_BASE} bg-vibe-pink/10 text-[#BE185D] mb-4`}>{ui.faqKicker}</p>
             <h2 className="font-heading text-3xl sm:text-4xl md:text-5xl text-charcoal leading-tight tracking-wide mb-8">
               <TwoTone text={ui.faqH2} />
             </h2>
-            <div className="space-y-3">
+            <div className="space-y-3 text-left">
               {c.faqs.map((f) => (
                 <details key={f.q} className="group rounded-2xl bg-white border border-charcoal/10 shadow-sm open:border-vibe-pink/50 open:shadow-md transition-all">
                   <summary className="cursor-pointer list-none px-6 py-5 flex items-start justify-between gap-4 min-h-11">
@@ -545,12 +546,12 @@ export default function HousingPage({ route, copy, heroImage, current, parent, w
 
       {/* Muut asumisen sivut: kuvakkeelliset linkit (ei toistuvia valokuvia) */}
       <section className="py-12 sm:py-16 px-5 sm:px-6 bg-cream-2/70">
-        <div className="max-w-6xl mx-auto">
+        <div className="max-w-6xl mx-auto text-center lg:text-left">
           <p className={`${CHIP_BASE} bg-finland-blue/10 text-finland-blue mb-4`}>{ui.siblingsKicker}</p>
           <h2 className="font-heading text-3xl sm:text-4xl text-charcoal leading-tight tracking-wide mb-7">
             <TwoTone text={ui.siblingsH2} />
           </h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4 text-left">
             {(['home', ...siblings] as (HousingRouteKey | 'home')[]).map((k) => (
               <Link
                 key={k}

@@ -3,6 +3,7 @@ import { Send, Mail } from 'lucide-react';
 import { useLang, useLocalePath } from '../i18n/useLang';
 import { getCopy } from '../locales/copy';
 import FounderByline from '../shared/FounderByline';
+import { Pinorivi } from '../shared/Erotin';
 
 // Uutiskirjeen kieliohje sivun kielestä (ei <html lang>:sta, joka on esirenderöinnissä aina 'en').
 // Kirjeitä lähtee vain suomeksi ja englanniksi, joten fi/en-sivulla ohje toistaisi itsestäänselvää
@@ -220,7 +221,7 @@ export default function Newsletter() {
 
       <div className="relative max-w-3xl mx-auto px-5 py-24 sm:py-28 text-center">
         <p className="text-gold uppercase tracking-[0.28em] text-[11px] font-semibold mb-5">
-          {t.eyebrow}
+          <Pinorivi text={t.eyebrow} />
         </p>
         <h2 className="font-heading font-medium text-snow leading-[1.1] text-4xl sm:text-5xl md:text-6xl mb-5">
           {t.h2}

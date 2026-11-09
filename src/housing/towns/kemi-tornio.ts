@@ -41,7 +41,7 @@ export const TOWN_KEMI_TORNIO: HousingCopyMap = {
           foot: 'Tilastokeskus, vuokrat 2026Q2, taulukko 15fa. Lapin maakunnan luku sisältää Rovaniemen, joten Kemi–Tornion oma taso on todennäköisesti tämän alapuolella; sitä ei julkaista erikseen.',
         },
         paras: [
-          '<strong>Esimerkit maakunnan keskihinnalla:</strong> 30 m²:n yksiö noin 520 €/kk (17,30 × 30) · 50 m²:n kaksio noin 640 €/kk (12,85 × 50) · 75 m²:n kolmio noin 820 €/kk (10,97 × 75).',
+          '<strong>Esimerkit maakunnan keskihinnalla:</strong> 30 m²:n yksiö noin 520 €/kk (17,30 × 30); 50 m²:n kaksio noin 640 €/kk (12,85 × 50); 75 m²:n kolmio noin 820 €/kk (10,97 × 75).',
         ],
       },
       {
@@ -164,7 +164,7 @@ export const TOWN_KEMI_TORNIO: HousingCopyMap = {
           foot: 'Statistics Finland, rents 2026Q2, table 15fa. The regional figure includes Rovaniemi, so the Kemi–Tornio level is probably below it; it is not published separately.',
         },
         paras: [
-          '<strong>Examples at the regional average:</strong> a 30 m² studio about €520 a month (17.30 × 30) · a 50 m² two-room flat about €640 (12.85 × 50) · a 75 m² three-room flat about €820 (10.97 × 75).',
+          '<strong>Examples at the regional average:</strong> a 30 m² studio about €520 a month (17.30 × 30); a 50 m² two-room flat about €640 (12.85 × 50); a 75 m² three-room flat about €820 (10.97 × 75).',
         ],
       },
       {

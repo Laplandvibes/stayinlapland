@@ -40,7 +40,7 @@ export const COST: HousingCopyMap = {
           foot: 'Tilastokeskus, vuokrat 2026Q2, taulukko 15fa.',
         },
         paras: [
-          '<strong>Esimerkit:</strong> 30 m²:n yksiö Rovaniemellä noin 560 €/kk (18,66 × 30) · 50 m²:n kaksio Rovaniemellä noin 720 €/kk (14,35 × 50) · 75 m²:n kolmio Lapin maakunnan keskihinnalla noin 820 €/kk (10,97 × 75).',
+          '<strong>Esimerkit:</strong> 30 m²:n yksiö Rovaniemellä noin 560 €/kk (18,66 × 30); 50 m²:n kaksio Rovaniemellä noin 720 €/kk (14,35 × 50); 75 m²:n kolmio Lapin maakunnan keskihinnalla noin 820 €/kk (10,97 × 75).',
           'Poikkeus on tunturikeskusten talvi: Levillä 80 m²:n alppimökki maksoi 750 €/kk touko–marraskuussa mutta 2 000 €/viikko sesongissa (Yle 25.5.2023). Ympärivuotinen sopimus samaan asuntoon oli 1 650 €/kk. Mökkikylän hinta ei ole Lapin hinta.',
         ],
       },
@@ -60,7 +60,7 @@ export const COST: HousingCopyMap = {
           foot: 'Tilastokeskus, sähkön hinta kuluttajatyypeittäin, taulukko 13rb. Hinta sisältää energian, siirron ja verot.',
         },
         paras: [
-          '<strong>Esimerkit:</strong> kerrostalokaksio 3 500 kWh/v: 3 500 × 0,229 = noin 800 €/v eli 67 €/kk · sähkölämmitteinen omakotitalo 18 000 kWh/v: 18 000 × 0,141 = noin 2 540 €/v eli 212 €/kk.',
+          '<strong>Esimerkit:</strong> kerrostalokaksio 3 500 kWh/v: 3 500 × 0,229 = noin 800 €/v eli 67 €/kk; sähkölämmitteinen omakotitalo 18 000 kWh/v: 18 000 × 0,141 = noin 2 540 €/v eli 212 €/kk.',
           'Hinta on valtakunnallinen keskiarvo. Lapin lämmityskausi on etelää pidempi, joten sama talo kuluttaa täällä enemmän kilowattitunteja; kysy edelliseltä asukkaalta tai vuokranantajalta viime vuoden kulutus, se on paras arvio.',
         ],
       },
@@ -173,7 +173,7 @@ export const COST: HousingCopyMap = {
           foot: 'Statistics Finland, rents 2026Q2, table 15fa.',
         },
         paras: [
-          '<strong>Examples:</strong> a 30 m² studio in Rovaniemi about €560 a month (18.66 × 30) · a 50 m² two-room flat in Rovaniemi about €720 (14.35 × 50) · a 75 m² three-room flat at the Lapland regional average about €820 (10.97 × 75).',
+          '<strong>Examples:</strong> a 30 m² studio in Rovaniemi about €560 a month (18.66 × 30); a 50 m² two-room flat in Rovaniemi about €720 (14.35 × 50); a 75 m² three-room flat at the Lapland regional average about €820 (10.97 × 75).',
           'The exception is winter in the ski resorts: at Levi an 80 m² alpine cabin cost €750 a month from May to November but €2,000 a week in high season (Yle, 25 May 2023). A year-round lease on the same flat was €1,650 a month. The resort price is not the Lapland price.',
         ],
       },
@@ -193,7 +193,7 @@ export const COST: HousingCopyMap = {
           foot: 'Statistics Finland, price of electricity by type of consumer, table 13rb. Price includes energy, transmission and taxes.',
         },
         paras: [
-          '<strong>Examples:</strong> a two-room flat using 3,500 kWh a year: 3,500 × 0.229 = about €800 a year, or €67 a month · an electrically heated detached house using 18,000 kWh: 18,000 × 0.141 = about €2,540 a year, or €212 a month.',
+          '<strong>Examples:</strong> a two-room flat using 3,500 kWh a year: 3,500 × 0.229 = about €800 a year, or €67 a month; an electrically heated detached house using 18,000 kWh: 18,000 × 0.141 = about €2,540 a year, or €212 a month.',
           'The price is a national average. Lapland’s heating season is longer than the south’s, so the same house burns more kilowatt-hours here; ask the previous tenant or the landlord for last year’s consumption, it is the best estimate you will get.',
         ],
       },

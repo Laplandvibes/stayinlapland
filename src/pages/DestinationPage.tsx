@@ -27,6 +27,7 @@ import DestinationAreas from '../components/DestinationAreas';
 import { getDestinationStaying } from '../data/destinationStaying';
 import { isCabinArea } from '../lib/lomarengas';
 import { destTitle, destDescription } from '../data/destMeta.mjs';
+import { Erotinrivi, erotinOsat } from '../shared/Erotin';
 
 type Bucket = 'long-stays' | 'hotels' | 'glass-igloos' | 'wilderness';
 
@@ -264,9 +265,7 @@ export default function DestinationPage() {
                   </div>
 
                   <div className="md:col-span-7 p-6 sm:p-8 flex flex-col">
-                    <p className="text-vibe-pink text-[11px] tracking-[0.18em] uppercase font-semibold mb-2">
-                      {p.highlight}
-                    </p>
+                    <Erotinrivi className="text-vibe-pink text-[11px] tracking-[0.18em] uppercase font-semibold mb-2" osat={erotinOsat(p.highlight)} />
                     <h3 className="font-heading text-3xl sm:text-4xl text-charcoal leading-[1.05] tracking-wide mb-3">
                       {p.name}
                     </h3>

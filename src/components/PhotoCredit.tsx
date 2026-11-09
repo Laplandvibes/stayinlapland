@@ -1,5 +1,6 @@
 import { creditFor, placeFor, PICTURED, PHOTO_BY, type PhotoCredit as Credit } from '../data/photoCredits';
 import { useLang } from '../i18n/useLang';
+import { Erotinrivi } from '../shared/Erotin';
 
 /**
  * Tekijä ja lisenssi kuvan päälle — vain avoimen lisenssin kuville
@@ -91,15 +92,15 @@ export function PhotoCreditList({
       <ul className="space-y-1.5 text-[15px] leading-relaxed">
         {credits.map((c) => (
           <li key={c.sourceUrl} className="text-graphite">
-            <a href={c.sourceUrl} target="_blank" rel="noopener" className="text-charcoal underline underline-offset-2 hover:text-[#BE185D]">
-              {c.title}
-            </a>
-            {' · '}
-            {c.author}
-            {' · '}
-            <a href={c.licenseUrl} target="_blank" rel="license noopener" className="underline underline-offset-2 hover:text-[#BE185D]">
-              {c.license}
-            </a>
+            <Erotinrivi as="span" osat={[
+              <a href={c.sourceUrl} target="_blank" rel="noopener" className="text-charcoal underline underline-offset-2 hover:text-[#BE185D]">
+                {c.title}
+              </a>,
+              c.author,
+              <a href={c.licenseUrl} target="_blank" rel="license noopener" className="underline underline-offset-2 hover:text-[#BE185D]">
+                {c.license}
+              </a>,
+            ]} />
           </li>
         ))}
       </ul>

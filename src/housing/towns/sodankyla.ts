@@ -51,7 +51,7 @@ export const TOWN_SODANKYLA: HousingCopyMap = {
           foot: 'Laskettu Asentopuulaaki Oy:n kohdelistan huoneistokohtaisista vuokrista 23.9.2026: 42 taloa, 597 asuntoa. Vakuus on kuukauden vuokra, vesimaksu peritään ennakkona ja taloussähkön maksaa vuokralainen. Sivukylien sähkölämmitteisissä taloissa vuokralainen maksaa myös lämmityssähkön, yhtiön arvion mukaan noin 100 €/kk kesällä ja 200 €/kk talvella.',
         },
         paras: [
-          '<strong>Esimerkit:</strong> 62 m²:n kaksio keskustan kerrostalossa 632 €/kk · 42 m²:n kaksio Käpyriihessä 756 €/kk · 80 m²:n kolmio Kaanaanmaan rivitalossa 800 €/kk.',
+          '<strong>Esimerkit:</strong> 62 m²:n kaksio keskustan kerrostalossa 632 €/kk; 42 m²:n kaksio Käpyriihessä 756 €/kk; 80 m²:n kolmio Kaanaanmaan rivitalossa 800 €/kk.',
           '<strong>Yksityiset vuokrat:</strong> vapaarahoitteisten kaksioiden keskivuokra oli Sodankylän keskustan postinumeroalueella 11,73 €/m² loka–joulukuussa 2025 (Tilastokeskus, taulukko 13eb). Uudempaa kuntakohtaista lukua ei ole, sillä Sodankylä puuttuu Tilastokeskuksen nykyisestä vuokrataulukosta.',
         ],
       },
@@ -208,7 +208,7 @@ export const TOWN_SODANKYLA: HousingCopyMap = {
           foot: 'Calculated from the rent of every flat on Asentopuulaaki Oy’s property list, 23 Sep 2026: 42 buildings, 597 flats. The deposit is one month’s rent, water is charged in advance and the tenant pays for household electricity. In the electrically heated village houses the tenant also pays for heating, which the company puts at about €100 a month in summer and €200 in winter.',
         },
         paras: [
-          '<strong>Examples:</strong> a 62 m² two-room flat in a central apartment block €632 a month · a 42 m² two-room flat at Käpyriihi €756 · an 80 m² three-room row house in Kaanaanmaa €800.',
+          '<strong>Examples:</strong> a 62 m² two-room flat in a central apartment block €632 a month; a 42 m² two-room flat at Käpyriihi €756; an 80 m² three-room row house in Kaanaanmaa €800.',
           '<strong>Private rents:</strong> free-market two-room flats averaged €11.73 per m² in the Sodankylä centre postal area in October–December 2025 (Statistics Finland, table 13eb). There is no newer municipal figure: Sodankylä is not in Statistics Finland’s current rent table.',
         ],
       },

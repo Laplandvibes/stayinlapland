@@ -40,7 +40,7 @@ export const TOWN_ROVANIEMI: HousingCopyMap = {
           foot: 'Tilastokeskus, vuokrat 2026Q2, taulukko 15fa. Uudet vuokrasuhteet = neljänneksellä alkaneet sopimukset eli se, mitä vapaista asunnoista juuri nyt pyydetään.',
         },
         paras: [
-          '<strong>Esimerkit:</strong> 30 m²:n yksiö noin 560 €/kk (18,66 × 30), uudessa sopimuksessa noin 635 €/kk (21,17 × 30) · 50 m²:n kaksio noin 720 €/kk (14,35 × 50) · 75 m²:n kolmio noin 910 €/kk (12,09 × 75). Vesi ja sähkö tulevat yleensä päälle.',
+          '<strong>Esimerkit:</strong> 30 m²:n yksiö noin 560 €/kk (18,66 × 30), uudessa sopimuksessa noin 635 €/kk (21,17 × 30); 50 m²:n kaksio noin 720 €/kk (14,35 × 50); 75 m²:n kolmio noin 910 €/kk (12,09 × 75). Vesi ja sähkö tulevat yleensä päälle.',
           'Uusien vuokrasuhteiden yksiöhinta 21,17 €/m² on korkeampi kuin koko maan keskiarvo 20,46: juuri nyt vapautuva yksiö Rovaniemellä maksaa enemmän kuin keskimääräinen yksiö Suomessa. Kaksioissa ja kolmioissa Rovaniemi on koko maata halvempi.',
         ],
       },
@@ -186,7 +186,7 @@ export const TOWN_ROVANIEMI: HousingCopyMap = {
           foot: 'Statistics Finland, rents 2026Q2, table 15fa. New tenancies = contracts that started during the quarter, i.e. what free flats are being asked right now.',
         },
         paras: [
-          '<strong>Examples:</strong> a 30 m² studio about €560 a month (18.66 × 30), in a new tenancy about €635 (21.17 × 30) · a 50 m² two-room flat about €720 (14.35 × 50) · a 75 m² three-room flat about €910 (12.09 × 75). Water and electricity usually come on top.',
+          '<strong>Examples:</strong> a 30 m² studio about €560 a month (18.66 × 30), in a new tenancy about €635 (21.17 × 30); a 50 m² two-room flat about €720 (14.35 × 50); a 75 m² three-room flat about €910 (12.09 × 75). Water and electricity usually come on top.',
           'The new-tenancy studio price of €21.17 per m² is above the national average of €20.46: a studio coming free in Rovaniemi right now costs more than the average studio in Finland. In two- and three-room flats Rovaniemi is cheaper than the country as a whole.',
         ],
       },

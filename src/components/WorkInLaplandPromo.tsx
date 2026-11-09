@@ -2,6 +2,7 @@ import { ArrowUpRight, Briefcase } from 'lucide-react';
 import { useLang } from '../i18n/useLang';
 import { getCopy } from '../locales/copy';
 import { KickerChip } from './housing/ui';
+import { Erotinrivi, erotinOsat } from '../shared/Erotin';
 
 interface WorkInLaplandPromoProps {
   placement: string;
@@ -79,7 +80,7 @@ export default function WorkInLaplandPromo({ placement, variant = 'full' }: Work
                   <p className="font-heading text-lg text-charcoal leading-tight mb-1">
                     {b.label}
                   </p>
-                  <p className="text-stone text-[12px]">{b.tag}</p>
+                  <Erotinrivi className="text-stone text-[12px]" osat={erotinOsat(b.tag)} />
                 </div>
               ))}
             </div>

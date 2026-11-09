@@ -2,6 +2,7 @@ import { SiteLink } from '../lib/movedToStays';
 import { ArrowRight } from 'lucide-react';
 import { useLang } from '../i18n/useLang';
 import { getCopy } from '../locales/copy';
+import { Erotinrivi, erotinOsat } from '../shared/Erotin';
 
 const IMAGE_DATA = [
   { imageSrc: '/images/trip-first-timer.webp', imageAlt: 'Family arriving at boutique hotel near Rovaniemi', to: '/hotels' },
@@ -30,9 +31,7 @@ export default function TripTypeRecommender() {
               decoding="async"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-night/65 via-transparent to-transparent" />
-            <p className="absolute bottom-3 left-4 right-4 text-snow text-xs sm:text-sm font-medium leading-tight">
-              {tt.forWho}
-            </p>
+            <Erotinrivi className="absolute bottom-3 left-4 right-4 text-snow text-xs sm:text-sm font-medium leading-tight" osat={erotinOsat(tt.forWho)} />
           </div>
           <div className="p-6 sm:p-7 flex flex-col flex-1">
             <p className="text-vibe-pink text-[11px] font-semibold tracking-[0.22em] uppercase mb-2">

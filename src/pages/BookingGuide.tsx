@@ -88,7 +88,7 @@ export default function BookingGuide() {
             <h2 className="font-heading text-3xl sm:text-4xl text-charcoal mb-3 leading-tight tracking-wide">
               {b.readyTitle}
             </h2>
-            <p className="text-graphite max-w-xl mx-auto mb-6 leading-relaxed">{b.readyLead}</p>
+            <p className="text-graphite max-w-xl mx-auto mb-6 leading-relaxed max-lg:w-fit max-lg:text-left">{b.readyLead}</p>
             <AffiliateCTA
               partner="hotels"
               sid="bg_browse_all_cta"

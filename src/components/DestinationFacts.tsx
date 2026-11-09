@@ -113,12 +113,12 @@ export default function DestinationFacts({ facts }: { facts: Facts }) {
               <h3 className="font-body text-[13px] font-semibold text-stone uppercase tracking-[0.16em] mb-4 text-center lg:text-left">
                 {t(factsUi.networkH3)}
               </h3>
-              <div className="flex flex-wrap justify-center lg:justify-start gap-3">
+              <div className="flex flex-col items-stretch gap-3 max-w-sm mx-auto sm:max-w-none sm:flex-row sm:flex-wrap sm:justify-center lg:justify-start lg:mx-0">
                 {facts.networkLinks.map((l) => (
                   <a
                     key={l.href}
                     href={l.href}
-                    className="inline-flex items-center gap-1.5 px-4 py-2 rounded-full bg-white border border-charcoal/15 text-charcoal text-sm font-semibold hover:border-vibe-pink hover:text-vibe-pink transition-colors"
+                    className="inline-flex items-center justify-center gap-1.5 px-4 py-2 rounded-full bg-white border border-charcoal/15 text-charcoal text-sm font-semibold hover:border-vibe-pink hover:text-vibe-pink transition-colors"
                   >
                     {t(l.label)}
                     <ArrowUpRight className="w-3.5 h-3.5 shrink-0" />

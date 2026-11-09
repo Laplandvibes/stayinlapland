@@ -335,7 +335,7 @@ export default function DestinationPage() {
           <h2 className="font-heading text-3xl sm:text-4xl md:text-5xl text-charcoal mb-5 leading-tight tracking-wide">
             {d.liveAvailabilityIn(destName)}
           </h2>
-          <p className="text-graphite mb-7 leading-relaxed">
+          <p className="text-graphite mb-7 leading-relaxed max-lg:mx-auto max-lg:w-fit max-lg:text-left">
             {d.networkLeadA}
             {destName}
             {d.networkLeadB}

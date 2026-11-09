@@ -163,7 +163,7 @@ export default function CabinCarousel({ hl, sidPrefix, id }: { hl: HousingLang; 
         </div>
         <p className="text-graphite text-base sm:text-lg leading-relaxed mb-7 max-w-3xl mx-auto w-fit lg:mx-0 lg:w-auto [text-wrap:pretty]">{t.lead}</p>
 
-        <div className="flex flex-wrap justify-center lg:justify-start gap-2 mb-6" role="tablist" aria-label={t.h2}>
+        <div className="grid grid-cols-2 sm:flex sm:flex-wrap sm:justify-center lg:justify-start gap-2 mb-6" role="tablist" aria-label={t.h2}>
           {TABS.map((key) => (
             <button
               key={key}

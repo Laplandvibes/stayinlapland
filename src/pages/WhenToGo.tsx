@@ -159,9 +159,9 @@ export default function WhenToGo() {
       {/* Koko vuosi yhdessä taulukossa (Ilmatieteen laitos 1991–2020 + päivän pituus). */}
       <section className="px-5 sm:px-6 py-12 sm:py-16">
         <div className="max-w-5xl mx-auto">
-          <p className="inline-flex px-3 py-1 rounded-full bg-finland-blue/10 text-finland-blue text-[11px] font-semibold tracking-[0.18em] uppercase mb-4">{w.tableKicker}</p>
-          <h2 className="font-heading text-4xl sm:text-5xl text-charcoal leading-tight tracking-wide">{w.tableH2}</h2>
-          <div className="mt-4 h-1 w-14 rounded-full bg-finland-blue" aria-hidden="true" />
+          <p className="inline-flex px-3 py-1 rounded-full bg-finland-blue/10 text-finland-blue text-[11px] font-semibold tracking-[0.18em] uppercase mb-4 max-lg:flex max-lg:w-fit max-lg:mx-auto">{w.tableKicker}</p>
+          <h2 className="font-heading text-4xl sm:text-5xl text-charcoal leading-tight tracking-wide text-center lg:text-left">{w.tableH2}</h2>
+          <div className="mt-4 h-1 w-14 rounded-full bg-finland-blue mx-auto lg:mx-0" aria-hidden="true" />
           <p className="mt-6 pb-2.5 text-[11px] font-semibold uppercase tracking-[0.18em] text-graphite">{w.table.caption}</p>
           {/* Puhelimessa taulukko vierii sivusuunnassa: oikean reunan häivytys kertoo, että sitä voi vierittää
               (asetteluportti mobile_wrap_audit: vieritysrivi ilman häivytystä = katkaistu rivi). */}
@@ -214,7 +214,7 @@ export default function WhenToGo() {
         return (
           <section key={g.start} className={`px-5 sm:px-6 py-12 sm:py-16 ${gi % 2 === 0 ? 'bg-cream-2/70' : ''}`}>
             <div className="max-w-6xl mx-auto">
-              <h2 className="font-heading text-4xl sm:text-5xl text-charcoal leading-tight tracking-wide mb-2">
+              <h2 className="font-heading text-4xl sm:text-5xl text-charcoal leading-tight tracking-wide mb-2 text-center lg:text-left">
                 {first.name}
                 {last !== first && (
                   <>
@@ -223,7 +223,7 @@ export default function WhenToGo() {
                   </>
                 )}
               </h2>
-              <div className="h-1 w-14 rounded-full bg-vibe-pink mb-8" aria-hidden="true" />
+              <div className="h-1 w-14 rounded-full bg-vibe-pink mb-8 mx-auto lg:mx-0" aria-hidden="true" />
               <div className="grid grid-cols-1 md:grid-cols-2 gap-5 sm:gap-6">{g.months.map((m, j) => renderMonth(m, g.start + j))}</div>
             </div>
           </section>
@@ -234,14 +234,14 @@ export default function WhenToGo() {
       <section className="py-14 sm:py-20 px-5 sm:px-6 bg-night text-snow relative overflow-hidden">
         <div className="pointer-events-none absolute -top-32 -left-24 w-[28rem] h-[28rem] rounded-full bg-vibe-pink/20 blur-3xl" aria-hidden="true" />
         <div className="relative max-w-3xl mx-auto">
-          <p className="inline-flex px-3 py-1 rounded-full bg-white/10 text-[#F9A8D4] text-[11px] font-semibold tracking-[0.18em] uppercase mb-4">{w.living.kicker}</p>
-          <h2 className="font-heading text-3xl sm:text-4xl md:text-5xl text-snow mb-7 leading-tight tracking-wide">{w.living.h2}</h2>
+          <p className="inline-flex px-3 py-1 rounded-full bg-white/10 text-[#F9A8D4] text-[11px] font-semibold tracking-[0.18em] uppercase mb-4 max-lg:flex max-lg:w-fit max-lg:mx-auto">{w.living.kicker}</p>
+          <h2 className="font-heading text-3xl sm:text-4xl md:text-5xl text-snow mb-7 leading-tight tracking-wide text-center lg:text-left">{w.living.h2}</h2>
           <ul className="space-y-5 text-snow/85 text-[16px] leading-relaxed [&_strong]:text-snow">
             {w.living.items.map((it, i) => (
               <li key={i} className="[text-wrap:pretty]" dangerouslySetInnerHTML={{ __html: it }} />
             ))}
           </ul>
-          <div className="mt-9 flex flex-wrap gap-3">
+          <div className="mt-9 flex flex-wrap justify-center gap-3 lg:justify-start">
             {w.links.map((l) => (
               <Link
                 key={l.href}
@@ -259,8 +259,8 @@ export default function WhenToGo() {
       {/* Usein kysytyt */}
       <section className="py-14 sm:py-20 px-5 sm:px-6">
         <div className="max-w-3xl mx-auto">
-          <p className="inline-flex px-3 py-1 rounded-full bg-vibe-pink/10 text-[#BE185D] text-[11px] font-semibold tracking-[0.18em] uppercase mb-4">{w.faqKicker}</p>
-          <h2 className="font-heading text-4xl sm:text-5xl text-charcoal leading-tight tracking-wide mb-8">{w.faqH2}</h2>
+          <p className="inline-flex px-3 py-1 rounded-full bg-vibe-pink/10 text-[#BE185D] text-[11px] font-semibold tracking-[0.18em] uppercase mb-4 max-lg:flex max-lg:w-fit max-lg:mx-auto">{w.faqKicker}</p>
+          <h2 className="font-heading text-4xl sm:text-5xl text-charcoal leading-tight tracking-wide mb-8 text-center lg:text-left">{w.faqH2}</h2>
           <div className="space-y-3">
             {w.faqs.map((f) => (
               <details key={f.q} className="group rounded-2xl bg-white border border-charcoal/10 shadow-sm open:border-vibe-pink/50 open:shadow-md transition-all">

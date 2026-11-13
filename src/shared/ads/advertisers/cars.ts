@@ -60,10 +60,10 @@ const cars: AdSpec = {
       poweredBy: 'レンタカーはEconomyBookings経由',
     },
     es: {
-      eyebrow: 'Tu propio ritmo en Laponia',
-      headline: 'Un coche de alquiler desde el aeropuerto, a los montes y las auroras cuando quieras',
+      eyebrow: 'A su propio ritmo por Laponia',
+      headline: 'Un auto de alquiler desde el aeropuerto, a los montes y las auroras cuando quiera',
       sub: 'En Laponia las distancias son largas y el transporte público escaso. Con su propio coche va del hotel a la estación de esquí, a la granja de huskies y a los mejores puntos para ver auroras sin esperar el autobús. Recogida en el aeropuerto y neumáticos de invierno de serie en Finlandia.',
-      trust: ['Recogida en el aeropuerto', 'Neumáticos de invierno incluidos', 'Compara empresas de alquiler'],
+      trust: ['Recogida en el aeropuerto', 'Neumáticos de invierno incluidos', 'Compare empresas de alquiler'],
       cta: 'Ver coches de alquiler',
       poweredBy: 'Alquiler de coches vía EconomyBookings',
     },

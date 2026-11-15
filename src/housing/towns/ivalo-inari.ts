@@ -17,7 +17,7 @@ export const TOWN_IVALO_INARI: HousingCopyMap = {
         'Suomen pohjoisin vuokramarkkina: kunnan oma yhtiö, muutama yksityinen vuokranantaja ja Saariselän kausi. Mistä aloittaa.',
     },
     authorNote:
-      'Inarin Vuokra-asunnot Oy:n ja yksityisten vuokranantajien tiedot Inarin kunnan omalta Asuminen-sivulta, väkiluku Tilastokeskukselta, neliövuokrat Tilastokeskuksen vuokratilastosta (Lapin maakunta 2026Q2). Tarkistettu 17.9.2026.',
+      'Inarin Vuokra-asunnot Oy:n ja yksityisten vuokranantajien tiedot Inarin kunnan omalta Asuminen-sivulta, väkiluku Tilastokeskukselta, neliövuokrat Tilastokeskuksen vuokratilastosta (Lapin maakunta 2026Q3). Tarkistettu 15.11.2026.',
     intro: [
       'Inarin kunnassa asuu 7 244 ihmistä (Tilastokeskus 31.12.2025), ja kunnan mukaan kiinnostus asumiseen kunnassa on lisääntynyt: siksi kunta on koonnut sivulleen listan vuokra-asuntoja tarjoavista toimijoista (inari.fi).',
       'Kunnan oma yhtiö Inarin Vuokra-asunnot Oy vuokraa yli 500 asuntoa Ivalossa, Inarissa, Saariselällä, Nellimissä ja Sevettijärvellä, yksiöistä perheasuntoihin. Yksityisiä vuokranantajia kunnan listalla ovat Bilto Oy, Ivalon vuokra-asunnot, IvaloCenter, Rakennusliike Holmberg Oy ja Uni Kodit (inari.fi).',
@@ -63,17 +63,17 @@ export const TOWN_IVALO_INARI: HousingCopyMap = {
       {
         id: 'hinnat',
         kicker: 'Mitä vuokra maksaa',
-        h2: 'Lapin maakunnan neliövuokrat, huhti–kesäkuu 2026.',
+        h2: 'Lapin maakunnan neliövuokrat, heinä–syyskuu 2026.',
         table: {
-          caption: 'Keskineliövuokra €/m²/kk, vapaarahoitteiset vuokra-asunnot, 2026Q2',
+          caption: 'Keskineliövuokra €/m²/kk, vapaarahoitteiset vuokra-asunnot, 2026Q3',
           head: ['', 'Lappi (maakunta)', 'Koko maa'],
           rows: [
-            ['Yksiöt', '17,30', '20,46'],
-            ['Kaksiot', '12,85', '15,04'],
-            ['Kolmiot ja isommat', '10,97', '13,92'],
-            ['Kaikki asunnot', '13,10', '15,94'],
+            ['Yksiöt', '17,25', '20,49'],
+            ['Kaksiot', '12,87', '15,07'],
+            ['Kolmiot ja isommat', '11,08', '13,98'],
+            ['Kaikki asunnot', '13,14', '15,99'],
           ],
-          foot: 'Tilastokeskus, vuokrat 2026Q2, taulukko 15fa. Inarista ei julkaista omaa lukua.',
+          foot: 'Tilastokeskus, vuokrat 2026Q3, taulukko 15fa. Inarista ei julkaista omaa lukua.',
         },
       },
       {
@@ -137,7 +137,7 @@ export const TOWN_IVALO_INARI: HousingCopyMap = {
         'Finland’s northernmost rental market: one municipal company, a few private landlords and the Saariselkä season. Where to start.',
     },
     authorNote:
-      'Inarin Vuokra-asunnot Oy and the private landlords from the Municipality of Inari’s own housing page, population from Statistics Finland, rents per m² from Statistics Finland (Lapland region 2026Q2). Checked 17 September 2026.',
+      'Inarin Vuokra-asunnot Oy and the private landlords from the Municipality of Inari’s own housing page, population from Statistics Finland, rents per m² from Statistics Finland (Lapland region 2026Q3). Checked 15 November 2026.',
     intro: [
       'The municipality of Inari has 7,244 residents (Statistics Finland, 31 Dec 2025), and according to the municipality interest in living there has grown, which is why it has compiled a list of rental providers on its page (inari.fi).',
       'The municipal company Inarin Vuokra-asunnot Oy lets over 500 flats in Ivalo, Inari, Saariselkä, Nellim and Sevettijärvi, from studios to family flats. The private landlords on the municipality’s list are Bilto Oy, Ivalon vuokra-asunnot, IvaloCenter, Rakennusliike Holmberg Oy and Uni Kodit (inari.fi).',
@@ -153,7 +153,7 @@ export const TOWN_IVALO_INARI: HousingCopyMap = {
           {
             title: 'Inarin Vuokra-asunnot Oy',
             body: 'The municipal housing company: over 500 flats in Ivalo, Inari, Saariselkä, Nellim and Sevettijärvi, within easy reach of basic services. Vacancies and applications on the company’s own site.',
-            href: 'https://inarinvuokra-asunnot.fi/en/home/',
+            href: 'https://inarinvuokra-asunnot.fi/',
             linkLabel: 'inarinvuokra-asunnot.fi',
             event: 'inari_company',
           },
@@ -183,17 +183,17 @@ export const TOWN_IVALO_INARI: HousingCopyMap = {
       {
         id: 'prices',
         kicker: 'What rent costs',
-        h2: 'Lapland regional rents per m², April–June 2026.',
+        h2: 'Lapland regional rents per m², July–September 2026.',
         table: {
-          caption: 'Average rent €/m²/month, free-market rental flats, 2026Q2',
+          caption: 'Average rent €/m²/month, free-market rental flats, 2026Q3',
           head: ['', 'Lapland (region)', 'Whole country'],
           rows: [
-            ['Studios', '17.30', '20.46'],
-            ['Two-room flats', '12.85', '15.04'],
-            ['Three rooms and larger', '10.97', '13.92'],
-            ['All flats', '13.10', '15.94'],
+            ['Studios', '17.25', '20.49'],
+            ['Two-room flats', '12.87', '15.07'],
+            ['Three rooms and larger', '11.08', '13.98'],
+            ['All flats', '13.14', '15.99'],
           ],
-          foot: 'Statistics Finland, rents 2026Q2, table 15fa. No separate figure is published for Inari.',
+          foot: 'Statistics Finland, rents 2026Q3, table 15fa. No separate figure is published for Inari.',
         },
       },
       {

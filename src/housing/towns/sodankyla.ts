@@ -18,7 +18,7 @@ export const TOWN_SODANKYLA: HousingCopyMap = {
   fi: {
     metaTitle: 'Vuokra-asunnot Sodankylä: kunnan 720 asuntoa ja vuokrat',
     metaDescription:
-      'Vuokra-asunnot Sodankylässä: Asentopuulaaki Oy:n noin 720 asuntoa, vuokrat 10–18 €/m², hakemus verkossa, opintolainan hyvitys ja Kelan asumistuki.',
+      'Vuokra-asunnot Sodankylässä: Asentopuulaaki Oy:n noin 720 asuntoa, vuokrat noin 7,40–18 €/m², hakemus verkossa, opintolainan hyvitys ja Kelan asumistuki.',
     breadcrumb: 'Sodankylä',
     hero: {
       eyebrow: 'Sodankylä, 8 095 asukasta',
@@ -27,10 +27,10 @@ export const TOWN_SODANKYLA: HousingCopyMap = {
         'Varuskunta, kaivos ja tiedeyhteisö samassa kunnassa, jonka kirkonkylän pitkä asuntopula on uusien talojen myötä helpottanut. Mistä asunto haetaan ja mitä se maksaa.',
     },
     authorNote:
-      'Väkiluku Tilastokeskukselta, asuntomäärä kunnan sivulta, vuokrat, ehdot ja vapaat asunnot Asentopuulaaki Oy:n omilta sivuilta, työpaikat Maavoimilta, Yleltä ja yrityksiltä. Tarkistettu 23.9.2026.',
+      'Väkiluku Tilastokeskukselta, asuntomäärä kunnan sivulta, vuokrat, ehdot ja vapaat asunnot Asentopuulaaki Oy:n omilta sivuilta, työpaikat Maavoimilta, Yleltä ja yrityksiltä. Tarkistettu 15.11.2026.',
     intro: [
       'Sodankylässä asui 8 095 ihmistä vuoden 2025 lopussa (Tilastokeskus). Kunnalla on noin 720 vuokra-asuntoa, joita vuokraa sen tytäryhtiö Asentopuulaaki Oy (sodankyla.fi). Yhtiön kohdelistan asunnoista lähes kaikki ovat kirkonkylässä; loput ovat Askassa, Orajärvellä, Riipissä, Torvisessa ja Vaalajärvellä.',
-      'Kunnan mukaan Sodankylää pitkään vaivannut asuntopula on helpottanut: kesällä 2025 Jeesiöjoen varteen valmistui Käpyriihi, jossa on 36 uutta asuntoa (Sodankylän kunta 2.7.2025). 23.9.2026 yhtiön asuntohaussa oli 21 vapaata tai vapautumassa olevaa asuntoa, suurin osa kolmioita tai isompia (Asentopuulaaki).',
+      'Kunnan mukaan Sodankylää pitkään vaivannut asuntopula on helpottanut: kesällä 2025 Jeesiöjoen varteen valmistui Käpyriihi, jossa on 36 uutta asuntoa (Sodankylän kunta 2.7.2025). Yhtiön asuntohaussa näkyvät kulloinkin vapaat ja vapautumassa olevat asunnot vuokrineen ja vapautumispäivineen (Asentopuulaaki).',
       'Pula ei ole kokonaan ohi. Syyskuussa 2025 kunnan tekninen johtaja kertoi Ylelle, että asuntopula vaikeuttaa työntekijöiden saamista Sodankylään, vaikka työpaikkoja on tarjolla (Yle 11.9.2025).',
     ],
     sections: [
@@ -39,7 +39,7 @@ export const TOWN_SODANKYLA: HousingCopyMap = {
         kicker: 'Mitä vuokra maksaa',
         h2: 'Vanhassa talossa 10 €/m², uudessa 18 €/m².',
         table: {
-          caption: 'Asentopuulaaki Oy:n vuokrat €/m²/kk, kohdelista 23.9.2026',
+          caption: 'Asentopuulaaki Oy:n vuokrat €/m²/kk, kohdelista 15.11.2026',
           head: ['Talot', '€/m²/kk'],
           rows: [
             ['Käpyriihi, valmistui 2025', '18,00'],
@@ -48,10 +48,10 @@ export const TOWN_SODANKYLA: HousingCopyMap = {
             ['Keskustan kerrostalot 1968–1970', '10,20'],
             ['Sivukylien rivitalot', '7,40–10,90'],
           ],
-          foot: 'Laskettu Asentopuulaaki Oy:n kohdelistan huoneistokohtaisista vuokrista 23.9.2026: 42 taloa, 597 asuntoa. Vakuus on kuukauden vuokra, vesimaksu peritään ennakkona ja taloussähkön maksaa vuokralainen. Sivukylien sähkölämmitteisissä taloissa vuokralainen maksaa myös lämmityssähkön, yhtiön arvion mukaan noin 100 €/kk kesällä ja 200 €/kk talvella.',
+          foot: 'Laskettu Asentopuulaaki Oy:n kohdelistan huoneistokohtaisista vuokrista 15.11.2026: 42 taloa, 597 asuntoa. Vakuus on kuukauden vuokra, vesimaksu peritään ennakkona ja taloussähkön maksaa vuokralainen. Sivukylien sähkölämmitteisissä taloissa vuokralainen maksaa myös lämmityssähkön, yhtiön arvion mukaan noin 100 €/kk kesällä ja 200 €/kk talvella.',
         },
         paras: [
-          '<strong>Esimerkit:</strong> 62 m²:n kaksio keskustan kerrostalossa 632 €/kk; 42 m²:n kaksio Käpyriihessä 756 €/kk; 80 m²:n kolmio Kaanaanmaan rivitalossa 800 €/kk.',
+          '<strong>Esimerkit:</strong> 55 m²:n kaksio keskustan kerrostalossa 632 €/kk; 42 m²:n kaksio Käpyriihessä 756 €/kk; 80 m²:n kolmio Kaanaanmaan rivitalossa 800 €/kk.',
           '<strong>Yksityiset vuokrat:</strong> vapaarahoitteisten kaksioiden keskivuokra oli Sodankylän keskustan postinumeroalueella 11,73 €/m² loka–joulukuussa 2025 (Tilastokeskus, taulukko 13eb). Uudempaa kuntakohtaista lukua ei ole, sillä Sodankylä puuttuu Tilastokeskuksen nykyisestä vuokrataulukosta.',
         ],
       },
@@ -70,7 +70,7 @@ export const TOWN_SODANKYLA: HousingCopyMap = {
           },
           {
             title: 'Vapaat asunnot',
-            body: 'Yhtiön asuntohaku näyttää vapaat ja vapautuvat asunnot vuokrineen ja vapautumispäivineen. 23.9.2026 niitä oli 21, ja monta rivitalokolmiota oli heti vapaana.',
+            body: 'Yhtiön asuntohaku näyttää vapaat ja vapautuvat asunnot vuokrineen ja vapautumispäivineen. Lista päivittyy yhtiön omalla sivulla, joten tarkista se ennen hakemusta.',
             href: 'https://www.asentopuulaaki.fi/asuntohaku/',
             linkLabel: 'asentopuulaaki.fi: Asuntohaku',
             event: 'asentopuulaaki_vapaat',
@@ -149,11 +149,11 @@ export const TOWN_SODANKYLA: HousingCopyMap = {
       },
       {
         q: 'Mitä vuokra-asunto maksaa Sodankylässä?',
-        a: 'Kunnan yhtiön vanhoissa kerrostaloissa noin 10 €/m², rivi- ja luhtitaloissa pääosin 10–12,50 €/m² ja vuonna 2025 valmistuneessa Käpyriihessä 18 €/m², jolloin 42 m²:n kaksio maksaa 756 € kuussa (Asentopuulaaki 23.9.2026). Vapaiden markkinoiden kaksioiden keskivuokra keskustassa oli 11,73 €/m² loka–joulukuussa 2025 (Tilastokeskus).',
+        a: 'Kunnan yhtiön vanhoissa kerrostaloissa noin 10 €/m², rivi- ja luhtitaloissa pääosin 10–12,50 €/m² ja vuonna 2025 valmistuneessa Käpyriihessä 18 €/m², jolloin 42 m²:n kaksio maksaa 756 € kuussa (Asentopuulaaki 15.11.2026). Vapaiden markkinoiden kaksioiden keskivuokra keskustassa oli 11,73 €/m² loka–joulukuussa 2025 (Tilastokeskus).',
       },
       {
         q: 'Onko Sodankylässä asuntopula?',
-        a: 'Oli pitkään. Kunnan mukaan pula on helpottanut uusien kohteiden valmistuttua (2.7.2025), ja 23.9.2026 kunnan yhtiöllä oli 21 vapaata tai vapautumassa olevaa asuntoa, suurin osa kolmioita tai isompia (Asentopuulaaki).',
+        a: 'Oli pitkään. Kunnan mukaan pula on helpottanut uusien kohteiden valmistuttua (2.7.2025), ja kunnan yhtiön asuntohaussa näkyy vapaita ja vapautumassa olevia asuntoja (Asentopuulaaki).',
       },
       {
         q: 'Kuka voi saada opintolainan hyvityksen?',
@@ -175,7 +175,7 @@ export const TOWN_SODANKYLA: HousingCopyMap = {
   en: {
     metaTitle: 'Rentals in Sodankylä: 720 Municipal Flats and What They Cost',
     metaDescription:
-      'Renting in Sodankylä: Asentopuulaaki Oy’s roughly 720 municipal flats, rents of €10–18 per m², the online application, the student loan pilot and Kela support.',
+      'Renting in Sodankylä: Asentopuulaaki Oy’s roughly 720 municipal flats, rents of about €7.40–18 per m², the online application, the student loan pilot and Kela support.',
     breadcrumb: 'Sodankylä',
     hero: {
       eyebrow: 'Sodankylä, 8,095 residents',
@@ -184,10 +184,10 @@ export const TOWN_SODANKYLA: HousingCopyMap = {
         'A garrison, a mine and a science community in one municipality, where the main village’s long housing shortage has eased as new buildings went up. Where to apply and what it costs.',
     },
     authorNote:
-      'Population from Statistics Finland, the flat count from the municipality’s page, rents, terms and free flats from Asentopuulaaki Oy’s own pages, jobs from the Finnish Army, Yle and the companies. Checked 23 September 2026.',
+      'Population from Statistics Finland, the flat count from the municipality’s page, rents, terms and free flats from Asentopuulaaki Oy’s own pages, jobs from the Finnish Army, Yle and the companies. Checked 15 November 2026.',
     intro: [
       'Sodankylä had 8,095 residents at the end of 2025 (Statistics Finland). The municipality owns roughly 720 rental flats, let by its subsidiary Asentopuulaaki Oy (sodankyla.fi). Almost every flat on the company’s list is in the main village; the rest are in Aska, Orajärvi, Riipi, Torvinen and Vaalajärvi.',
-      'According to the municipality, the housing shortage that dogged Sodankylä for years has eased: in summer 2025 Käpyriihi, with 36 new flats, was completed by the Jeesiöjoki river (Municipality of Sodankylä, 2 Jul 2025). On 23 September 2026 the company’s search listed 21 flats free or coming free, most of them with three rooms or more (Asentopuulaaki).',
+      'According to the municipality, the housing shortage that dogged Sodankylä for years has eased: in summer 2025 Käpyriihi, with 36 new flats, was completed by the Jeesiöjoki river (Municipality of Sodankylä, 2 Jul 2025). The company’s flat search lists the flats that are free or coming free at any given time, with their rent and the date they come free (Asentopuulaaki).',
       'The shortage is not entirely over. In September 2025 the municipality’s technical director told Yle that it still makes it hard to bring workers to Sodankylä, even though there are jobs (Yle, 11 Sep 2025).',
     ],
     sections: [
@@ -196,7 +196,7 @@ export const TOWN_SODANKYLA: HousingCopyMap = {
         kicker: 'What rent costs',
         h2: 'About €10 per m² in an old building, €18 in a new one.',
         table: {
-          caption: 'Asentopuulaaki Oy rents, €/m²/month, property list 23 Sep 2026',
+          caption: 'Asentopuulaaki Oy rents, €/m²/month, property list 15 Nov 2026',
           head: ['Buildings', '€/m²/month'],
           rows: [
             ['Käpyriihi, completed 2025', '18.00'],
@@ -205,10 +205,10 @@ export const TOWN_SODANKYLA: HousingCopyMap = {
             ['Apartment blocks in the centre, 1968–1970', '10.20'],
             ['Row houses in the outlying villages', '7.40–10.90'],
           ],
-          foot: 'Calculated from the rent of every flat on Asentopuulaaki Oy’s property list, 23 Sep 2026: 42 buildings, 597 flats. The deposit is one month’s rent, water is charged in advance and the tenant pays for household electricity. In the electrically heated village houses the tenant also pays for heating, which the company puts at about €100 a month in summer and €200 in winter.',
+          foot: 'Calculated from the rent of every flat on Asentopuulaaki Oy’s property list, 15 Nov 2026: 42 buildings, 597 flats. The deposit is one month’s rent, water is charged in advance and the tenant pays for household electricity. In the electrically heated village houses the tenant also pays for heating, which the company puts at about €100 a month in summer and €200 in winter.',
         },
         paras: [
-          '<strong>Examples:</strong> a 62 m² two-room flat in a central apartment block €632 a month; a 42 m² two-room flat at Käpyriihi €756; an 80 m² three-room row house in Kaanaanmaa €800.',
+          '<strong>Examples:</strong> a 55 m² two-room flat in a central apartment block €632 a month; a 42 m² two-room flat at Käpyriihi €756; an 80 m² three-room row house in Kaanaanmaa €800.',
           '<strong>Private rents:</strong> free-market two-room flats averaged €11.73 per m² in the Sodankylä centre postal area in October–December 2025 (Statistics Finland, table 13eb). There is no newer municipal figure: Sodankylä is not in Statistics Finland’s current rent table.',
         ],
       },
@@ -227,7 +227,7 @@ export const TOWN_SODANKYLA: HousingCopyMap = {
           },
           {
             title: 'Free flats',
-            body: 'The company’s flat search shows free and soon-free flats with their rent and the date they come free. On 23 September 2026 there were 21, and several three-room row houses were free at once.',
+            body: 'The company’s flat search shows free and soon-free flats with their rent and the date they come free. The list is updated on the company’s own site, so check it before you apply.',
             href: 'https://www.asentopuulaaki.fi/asuntohaku/',
             linkLabel: 'asentopuulaaki.fi: Flat search',
             event: 'asentopuulaaki_vapaat',
@@ -306,11 +306,11 @@ export const TOWN_SODANKYLA: HousingCopyMap = {
       },
       {
         q: 'What does a rental flat cost in Sodankylä?',
-        a: 'In the municipal company’s old apartment blocks about €10 per m², in row and access-balcony houses mostly €10–12.50, and at Käpyriihi, completed in 2025, €18, which makes a 42 m² two-room flat €756 a month (Asentopuulaaki, 23 Sep 2026). Free-market two-room flats in the centre averaged €11.73 per m² in October–December 2025 (Statistics Finland).',
+        a: 'In the municipal company’s old apartment blocks about €10 per m², in row and access-balcony houses mostly €10–12.50, and at Käpyriihi, completed in 2025, €18, which makes a 42 m² two-room flat €756 a month (Asentopuulaaki, 15 Nov 2026). Free-market two-room flats in the centre averaged €11.73 per m² in October–December 2025 (Statistics Finland).',
       },
       {
         q: 'Is there a housing shortage in Sodankylä?',
-        a: 'There was for years. According to the municipality it has eased as new buildings were completed (2 Jul 2025), and on 23 September 2026 the municipal company had 21 flats free or coming free, most of them with three rooms or more (Asentopuulaaki).',
+        a: 'There was for years. According to the municipality it has eased as new buildings were completed (2 Jul 2025), and the municipal company’s flat search lists free and soon-free flats (Asentopuulaaki).',
       },
       {
         q: 'Who can get the student loan compensation?',

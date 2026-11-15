@@ -18,30 +18,30 @@ export const TOWN_KEMI_TORNIO: HousingCopyMap = {
         'Rannikon kaksoiskaupunki, jossa kaupunkien omilla vuokrayhtiöillä on satoja asuntoja ja hakemus jätetään verkossa. Mistä aloittaa ja mitä vuokra maksaa.',
     },
     authorNote:
-      'Vuokrayhtiöiden asuntomäärät Kemin, Tornion ja Keminmaan kuntien omilta sivuilta, hakuehdot yhtiöiden omilta sivuilta, neliövuokrat Tilastokeskuksen vuokratilastosta (Lapin maakunta 2026Q2). Tarkistettu 23.9.2026.',
+      'Vuokrayhtiöiden asuntomäärät Kemin, Tornion ja Keminmaan kuntien omilta sivuilta, hakuehdot yhtiöiden omilta sivuilta, neliövuokrat Tilastokeskuksen vuokratilastosta (Lapin maakunta 2026Q3). Tarkistettu 15.11.2026.',
     intro: [
-      'Kemissä asuu 19 339, Torniossa 20 823 ja Keminmaalla 7 576 ihmistä (Tilastokeskus 31.12.2025). Kolme kuntaa muodostavat yhden työssäkäyntialueen, jonka sisällä asunto voi olla eri kunnassa kuin työpaikka ilman että matka venyy.',
-      'Kaupunkien omat vuokrayhtiöt ovat ensimmäinen osoite: Kemin kaupungin vuokra-asunnoista vastaa Kiinteistö Oy Itätuuli, jolla on reilut 600 asuntoa keskustassa ja viiden kilometrin säteellä (kemi.fi). Keminmaan Vuokra-asunnot Oy:llä on 18 kiinteistöä ja reilut 300 asuntoa (keminmaa.fi). Kumpaankin haetaan omalla sähköisellä hakemuksellaan. Torniossa kaupungin asuntoja hallinnoi Tornion Krunni Oy, jonka alle kuuluu Tornion Vuokra-asunnot Oy (tornio.fi).',
-      'Tilastokeskus ei julkaise Kemistä ja Torniosta omaa keskineliövuokraa, joten alla on Lapin maakunnan luku. Rovaniemen luvut löydät omalta sivultaan.',
+      'Kemissä asuu 19 339, Torniossa 20 823 ja Keminmaalla 7 576 ihmistä (Tilastokeskus 31.12.2025). Kolme kuntaa ovat toistensa naapureita, ja asunto voi olla eri kunnassa kuin työpaikka.',
+      'Kaupunkien omat vuokrayhtiöt ovat ensimmäinen osoite: Kemin kaupungin vuokra-asunnoista vastaa Kiinteistö Oy Itätuuli (kemi.fi), joka on Kemin suurin vuokra-asuntotoimija ja tarjoaa asuntoja viiden kilometrin säteellä keskustasta (itatuuli.fi). Keminmaan Vuokra-asunnot Oy:llä on 18 kiinteistöä ja reilut 300 asuntoa (keminmaa.fi). Kumpaankin haetaan omalla sähköisellä hakemuksellaan. Torniossa kaupungin asuntoja hallinnoi Tornion Krunni Oy, jonka alle kuuluu Tornion Vuokra-asunnot Oy (tornio.fi).',
+      'Tilastokeskuksen tuoreessa vuokrataulukossa Kemillä ja Torniolla ei ole omaa riviä, joten alla on Lapin maakunnan luku. Rovaniemen luvut löydät omalta sivultaan.',
     ],
     sections: [
       {
         id: 'hinnat',
         kicker: 'Mitä vuokra maksaa',
-        h2: 'Lapin maakunnan neliövuokrat, huhti–kesäkuu 2026.',
+        h2: 'Lapin maakunnan neliövuokrat, heinä–syyskuu 2026.',
         table: {
-          caption: 'Keskineliövuokra €/m²/kk, vapaarahoitteiset vuokra-asunnot, 2026Q2',
+          caption: 'Keskineliövuokra €/m²/kk, vapaarahoitteiset vuokra-asunnot, 2026Q3',
           head: ['', 'Lappi (maakunta)', 'Rovaniemi', 'Koko maa'],
           rows: [
-            ['Yksiöt', '17,30', '18,66', '20,46'],
-            ['Kaksiot', '12,85', '14,35', '15,04'],
-            ['Kolmiot ja isommat', '10,97', '12,09', '13,92'],
-            ['Kaikki asunnot', '13,10', '14,55', '15,94'],
+            ['Yksiöt', '17,25', '18,63', '20,49'],
+            ['Kaksiot', '12,87', '14,40', '15,07'],
+            ['Kolmiot ja isommat', '11,08', '12,29', '13,98'],
+            ['Kaikki asunnot', '13,14', '14,63', '15,99'],
           ],
-          foot: 'Tilastokeskus, vuokrat 2026Q2, taulukko 15fa. Lapin maakunnan luku sisältää Rovaniemen, joten Kemi–Tornion oma taso on todennäköisesti tämän alapuolella; sitä ei julkaista erikseen.',
+          foot: 'Tilastokeskus, vuokrat 2026Q3, taulukko 15fa. Lapin maakunnan luku sisältää Rovaniemen, joten Kemi–Tornion oma taso on todennäköisesti tämän alapuolella; sitä ei julkaista tuoreessa taulukossa erikseen.',
         },
         paras: [
-          '<strong>Esimerkit maakunnan keskihinnalla:</strong> 30 m²:n yksiö noin 520 €/kk (17,30 × 30); 50 m²:n kaksio noin 640 €/kk (12,85 × 50); 75 m²:n kolmio noin 820 €/kk (10,97 × 75).',
+          '<strong>Esimerkit maakunnan keskihinnalla:</strong> 30 m²:n yksiö noin 520 €/kk (17,25 × 30); 50 m²:n kaksio noin 640 €/kk (12,87 × 50); 75 m²:n kolmio noin 830 €/kk (11,08 × 75).',
         ],
       },
       {
@@ -69,7 +69,7 @@ export const TOWN_KEMI_TORNIO: HousingCopyMap = {
         cards: [
           {
             title: 'Kemi: Kiinteistö Oy Itätuuli',
-            body: 'Kaupungin vuokra-asunnot, reilut 600 asuntoa keskustassa ja viiden kilometrin säteellä. Oma sähköinen hakemus on voimassa neljä kuukautta, eikä vakuutta peritä. Kemin sivu listaa myös yksityiset välittäjät: Forenom, Habita Kemi, HVC Group, Kiinteistömaailma, KVP Group, OP Koti Kemi, Pihlajaniemi & Co ja Solecco.',
+            body: 'Kaupungin vuokra-asunnot. Itätuuli on Kemin suurin vuokra-asuntotoimija, ja sen asunnot ovat viiden kilometrin säteellä keskustasta. Oma sähköinen hakemus on voimassa neljä kuukautta, eikä vakuutta peritä. Visit Kemin yritysinfo-sivu listaa myös yksityiset välittäjät: Forenom, Habita Kemi, HVC Group, Kiinteistömaailma, KVP Group, OP Koti Kemi, Pihlajaniemi & Co, Solecco ja AJK Asunnot.',
             href: 'https://www.kemi.fi/asuminen-ja-ymparisto/asuminen/vuokra-asunnot/',
             linkLabel: 'kemi.fi: Vuokra-asunnot',
             event: 'kemi_city',
@@ -90,7 +90,7 @@ export const TOWN_KEMI_TORNIO: HousingCopyMap = {
           },
           {
             title: 'Oikotie ja Vuokraovi',
-            body: 'Yksityisten ja välittäjien ilmoitukset. Hae kunnalla Kemi, Tornio ja Keminmaa erikseen, sillä alue on yhtä työssäkäyntialuetta mutta kolme eri kuntahakua.',
+            body: 'Yksityisten ja välittäjien ilmoitukset. Hae kunnalla Kemi, Tornio ja Keminmaa erikseen, sillä ne ovat kolme eri kuntahakua.',
             href: 'https://asunnot.oikotie.fi/vuokra-asunnot/kemi',
             linkLabel: 'Oikotie: vuokra-asunnot Kemi',
             event: 'oikotie',
@@ -110,11 +110,11 @@ export const TOWN_KEMI_TORNIO: HousingCopyMap = {
     faqs: [
       {
         q: 'Miten Kemin kaupungin vuokra-asuntoa haetaan?',
-        a: 'Kiinteistö Oy Itätuulen omalla sähköisellä hakemuksella, joka on voimassa neljä kuukautta. Itätuulella on reilut 600 asuntoa keskustassa ja viiden kilometrin säteellä (kemi.fi), ja se vuokraa kaikki asuntonsa ilman vakuutta (itatuuli.fi). Keminmaan Vuokra-asunnot Oy:llä on oma hakemuksensa.',
+        a: 'Kiinteistö Oy Itätuulen omalla sähköisellä hakemuksella, joka on voimassa neljä kuukautta. Itätuuli on Kemin suurin vuokra-asuntotoimija ja tarjoaa asuntoja viiden kilometrin säteellä keskustasta, ja se vuokraa kaikki asuntonsa ilman vakuutta (itatuuli.fi). Keminmaan Vuokra-asunnot Oy:llä on oma hakemuksensa.',
       },
       {
         q: 'Mitä vuokra maksaa Kemissä ja Torniossa?',
-        a: 'Tilastokeskus ei julkaise kaupungeille omaa keskineliövuokraa. Lapin maakunnan keskineliövuokra oli 13,10 €/m² huhti–kesäkuussa 2026 (yksiöt 17,30, kaksiot 12,85), ja luku sisältää kalliimman Rovaniemen.',
+        a: 'Tilastokeskuksen tuoreessa taulukossa kaupungeilla ei ole omaa keskineliövuokrariviä. Lapin maakunnan keskineliövuokra oli 13,14 €/m² heinä–syyskuussa 2026 (yksiöt 17,25, kaksiot 12,87), ja luku sisältää kalliimman Rovaniemen.',
       },
     ],
     cta: {
@@ -141,30 +141,30 @@ export const TOWN_KEMI_TORNIO: HousingCopyMap = {
         'The coastal twin towns, where the municipal housing companies hold hundreds of flats and applications are filed online. Where to start and what rent costs.',
     },
     authorNote:
-      'Housing-company flat counts from the municipalities’ own pages for Kemi, Tornio and Keminmaa, application terms from the companies’ own pages, rents per m² from Statistics Finland (Lapland region 2026Q2). Checked 23 September 2026.',
+      'Housing-company flat counts from the municipalities’ own pages for Kemi, Tornio and Keminmaa, application terms from the companies’ own pages, rents per m² from Statistics Finland (Lapland region 2026Q3). Checked 15 November 2026.',
     intro: [
-      'Kemi has 19,339 residents, Tornio 20,823 and Keminmaa 7,576 (Statistics Finland, 31 Dec 2025). The three municipalities form one commuting area, so the flat can sit in a different municipality from the job without a long drive.',
-      'The municipal housing companies are the first address: Kemi’s municipal flats are run by Kiinteistö Oy Itätuuli, with over 600 flats in the centre and within five kilometres of it (kemi.fi). Keminmaan Vuokra-asunnot Oy has 18 properties with just over 300 flats (keminmaa.fi). Each company has its own online application. In Tornio the city’s flats are managed by Tornion Krunni Oy, which includes Tornion Vuokra-asunnot Oy (tornio.fi).',
-      'Statistics Finland does not publish a separate rent figure for Kemi and Tornio, so the Lapland regional figure is shown below. Rovaniemi’s figures are on its own page.',
+      'Kemi has 19,339 residents, Tornio 20,823 and Keminmaa 7,576 (Statistics Finland, 31 Dec 2025). The three municipalities border one another, so the flat can sit in a different municipality from the job.',
+      'The municipal housing companies are the first address: Kemi’s municipal flats are run by Kiinteistö Oy Itätuuli (kemi.fi), the town’s largest rental housing provider, with flats within five kilometres of the centre (itatuuli.fi). Keminmaan Vuokra-asunnot Oy has 18 properties with just over 300 flats (keminmaa.fi). Each company has its own online application. In Tornio the city’s flats are managed by Tornion Krunni Oy, which includes Tornion Vuokra-asunnot Oy (tornio.fi).',
+      'Statistics Finland’s current rent table has no separate row for Kemi or Tornio, so the Lapland regional figure is shown below. Rovaniemi’s figures are on its own page.',
     ],
     sections: [
       {
         id: 'prices',
         kicker: 'What rent costs',
-        h2: 'Lapland regional rents per m², April–June 2026.',
+        h2: 'Lapland regional rents per m², July–September 2026.',
         table: {
-          caption: 'Average rent €/m²/month, free-market rental flats, 2026Q2',
+          caption: 'Average rent €/m²/month, free-market rental flats, 2026Q3',
           head: ['', 'Lapland (region)', 'Rovaniemi', 'Whole country'],
           rows: [
-            ['Studios', '17.30', '18.66', '20.46'],
-            ['Two-room flats', '12.85', '14.35', '15.04'],
-            ['Three rooms and larger', '10.97', '12.09', '13.92'],
-            ['All flats', '13.10', '14.55', '15.94'],
+            ['Studios', '17.25', '18.63', '20.49'],
+            ['Two-room flats', '12.87', '14.40', '15.07'],
+            ['Three rooms and larger', '11.08', '12.29', '13.98'],
+            ['All flats', '13.14', '14.63', '15.99'],
           ],
-          foot: 'Statistics Finland, rents 2026Q2, table 15fa. The regional figure includes Rovaniemi, so the Kemi–Tornio level is probably below it; it is not published separately.',
+          foot: 'Statistics Finland, rents 2026Q3, table 15fa. The regional figure includes Rovaniemi, so the Kemi–Tornio level is probably below it; the current table does not show it separately.',
         },
         paras: [
-          '<strong>Examples at the regional average:</strong> a 30 m² studio about €520 a month (17.30 × 30); a 50 m² two-room flat about €640 (12.85 × 50); a 75 m² three-room flat about €820 (10.97 × 75).',
+          '<strong>Examples at the regional average:</strong> a 30 m² studio about €520 a month (17.25 × 30); a 50 m² two-room flat about €640 (12.87 × 50); a 75 m² three-room flat about €830 (11.08 × 75).',
         ],
       },
       {
@@ -192,7 +192,7 @@ export const TOWN_KEMI_TORNIO: HousingCopyMap = {
         cards: [
           {
             title: 'Kemi: Kiinteistö Oy Itätuuli',
-            body: 'The city’s rental flats, over 600 in the centre and within five kilometres. Its own online application is valid for four months, and no deposit is charged. Kemi’s page also lists the private agencies: Forenom, Habita Kemi, HVC Group, Kiinteistömaailma, KVP Group, OP Koti Kemi, Pihlajaniemi & Co and Solecco.',
+            body: 'The city’s rental flats. Itätuuli is Kemi’s largest rental housing provider, and its flats are within five kilometres of the centre. Its own online application is valid for four months, and no deposit is charged. Visit Kemi’s business info page also lists the private agencies: Forenom, Habita Kemi, HVC Group, Kiinteistömaailma, KVP Group, OP Koti Kemi, Pihlajaniemi & Co, Solecco and AJK Asunnot.',
             href: 'https://www.kemi.fi/asuminen-ja-ymparisto/asuminen/vuokra-asunnot/',
             linkLabel: 'kemi.fi: Rental housing',
             event: 'kemi_city',
@@ -213,7 +213,7 @@ export const TOWN_KEMI_TORNIO: HousingCopyMap = {
           },
           {
             title: 'Oikotie and Vuokraovi',
-            body: 'Private and agency listings. Search Kemi, Tornio and Keminmaa as separate municipalities: one commuting area, three municipal searches.',
+            body: 'Private and agency listings. Search Kemi, Tornio and Keminmaa as separate municipalities: they are three separate municipal searches.',
             href: 'https://asunnot.oikotie.fi/vuokra-asunnot/kemi',
             linkLabel: 'Oikotie: rentals in Kemi',
             event: 'oikotie',
@@ -233,11 +233,11 @@ export const TOWN_KEMI_TORNIO: HousingCopyMap = {
     faqs: [
       {
         q: 'How do I apply for a municipal flat in Kemi?',
-        a: 'With Kiinteistö Oy Itätuuli’s own online application, valid for four months. Itätuuli has over 600 flats in the centre and within five kilometres of it (kemi.fi), and lets all of them with no deposit (itatuuli.fi). Keminmaan Vuokra-asunnot Oy has its own application.',
+        a: 'With Kiinteistö Oy Itätuuli’s own online application, valid for four months. Itätuuli is Kemi’s largest rental housing provider with flats within five kilometres of the centre, and lets all of them with no deposit (itatuuli.fi). Keminmaan Vuokra-asunnot Oy has its own application.',
       },
       {
         q: 'What does rent cost in Kemi and Tornio?',
-        a: 'Statistics Finland publishes no separate figure for the towns. The Lapland regional average was €13.10 per m² in April–June 2026 (studios 17.30, two-room flats 12.85), and that figure includes the dearer Rovaniemi.',
+        a: 'Statistics Finland’s current table has no separate row for the towns. The Lapland regional average was €13.14 per m² in July–September 2026 (studios 17.25, two-room flats 12.87), and that figure includes the dearer Rovaniemi.',
       },
     ],
     cta: {

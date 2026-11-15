@@ -9,10 +9,10 @@ type SourceDef = Record<HousingLang, string> & Partial<Record<'fr' | 'nl', strin
 
 const DEFS = {
   tkVuokrat: {
-    fi: 'Tilastokeskus: Vuokrat, vapaarahoitteiset vuokra-asunnot, keskineliövuokra 2026Q2 (taulukko 15fa, luettu 17.9.2026)',
-    en: 'Statistics Finland: Rents of dwellings, free-market rental flats, average rent per m² 2026Q2 (table 15fa, read 17 Sep 2026)',
-    fr: 'Statistics Finland : loyers des logements, logements locatifs du marché libre, loyer moyen au m² 2026Q2 (tableau 15fa, consulté le 17 septembre 2026)',
-    nl: 'Statistics Finland: huren van woningen, vrije-sectorhuurwoningen, gemiddelde huur per m² 2026Q2 (tabel 15fa, geraadpleegd op 17 september 2026)',
+    fi: 'Tilastokeskus: Vuokrat, vapaarahoitteiset vuokra-asunnot, keskineliövuokra 2026Q3 (taulukko 15fa, luettu 15.11.2026)',
+    en: 'Statistics Finland: Rents of dwellings, free-market rental flats, average rent per m² 2026Q3 (table 15fa, read 15 Nov 2026)',
+    fr: 'Statistics Finland : loyers des logements, logements locatifs du marché libre, loyer moyen au m² 2026Q3 (tableau 15fa, consulté le 15 novembre 2026)',
+    nl: 'Statistics Finland: huren van woningen, vrije-sectorhuurwoningen, gemiddelde huur per m² 2026Q3 (tabel 15fa, geraadpleegd op 15 november 2026)',
     url: 'https://pxdata.stat.fi/PxWeb/pxweb/fi/StatFin/StatFin__asvu/15fa.px/',
   },
   tkVaesto: {
@@ -23,13 +23,13 @@ const DEFS = {
     url: 'https://pxdata.stat.fi/PxWeb/pxweb/fi/StatFin/StatFin__vaerak/11ra.px/',
   },
   tkSahko: {
-    fi: 'Tilastokeskus: Sähkön hinta kuluttajatyypeittäin, kokonaishinta maaliskuu 2026 (taulukko 13rb)',
-    en: 'Statistics Finland: Price of electricity by type of consumer, total price March 2026 (table 13rb)',
+    fi: 'Tilastokeskus: Sähkön hinta kuluttajatyypeittäin, kokonaishinta kesäkuu 2026 (taulukko 13rb, luettu 15.11.2026)',
+    en: 'Statistics Finland: Price of electricity by type of consumer, total price June 2026 (table 13rb, read 15 Nov 2026)',
     url: 'https://pxdata.stat.fi/PxWeb/pxweb/fi/StatFin/StatFin__ehi/13rb.px/',
   },
   tkPolttoaine: {
-    fi: 'Tilastokeskus: Polttonesteiden kuluttajahinnat, maaliskuu 2026 (taulukko 12ge)',
-    en: 'Statistics Finland: Consumer prices of liquid fuels, March 2026 (table 12ge)',
+    fi: 'Tilastokeskus: Polttonesteiden kuluttajahinnat, kesäkuu 2026 (taulukko 12ge, luettu 15.11.2026)',
+    en: 'Statistics Finland: Consumer prices of liquid fuels, June 2026 (table 12ge, read 15 Nov 2026)',
     url: 'https://pxdata.stat.fi/PxWeb/pxweb/fi/StatFin/StatFin__ehi/12ge.px/',
   },
   kela: {
@@ -40,17 +40,17 @@ const DEFS = {
   ahvl: {
     fi: 'Laki asuinhuoneiston vuokrauksesta (481/1995), 8 § vakuus ja 52 § irtisanomisajat',
     en: 'Act on Residential Leases (481/1995), section 8 on deposits and section 52 on notice periods',
-    url: 'https://www.finlex.fi/fi/laki/ajantasa/1995/19950481',
+    url: 'https://www.finlex.fi/fi/lainsaadanto/1995/481',
   },
   ahvl531: {
-    fi: 'Laki asuinhuoneiston vuokrauksesta (481/1995), ajantasainen teksti muutoksineen 531/2026 (voimaan 1.10.2026): soveltamisala, määräaikainen sopimus, vakuus; luettu 23.9.2026',
-    en: 'Act on Residential Leases (481/1995), consolidated text incl. amendment 531/2026 (in force 1 Oct 2026): scope, fixed-term leases, deposit; read 23 Sep 2026',
+    fi: 'Laki asuinhuoneiston vuokrauksesta (481/1995), ajantasainen teksti muutoksineen 531/2026 (voimaan 1.10.2026): soveltamisala, määräaikainen sopimus, vakuus; luettu 15.11.2026',
+    en: 'Act on Residential Leases (481/1995), consolidated text incl. amendment 531/2026 (in force 1 Oct 2026): scope, fixed-term leases, deposit; read 15 Nov 2026',
     url: 'https://www.finlex.fi/fi/lainsaadanto/1995/481',
   },
   kuluttajaliittoVuokra: {
-    fi: 'Kuluttajaliitto: Vuokra-asunnon irtisanominen ja pois muuttaminen',
-    en: 'Finnish Consumers’ Union (Kuluttajaliitto): Ending a lease and moving out',
-    url: 'https://www.kuluttajaliitto.fi/fis/materiaalit/vuokra-asunnon-irtisanominen-ja-pois-muuttaminen/',
+    fi: 'Kuluttajaliitto: Vuokra-asumisen opas (määräaikainen sopimus, irtisanomisajat ja vakuus; päivitetty 7.10.2026)',
+    en: 'Finnish Consumers’ Union (Kuluttajaliitto): Guide to renting (fixed-term leases, notice periods and deposits; updated 7 Oct 2026)',
+    url: 'https://www.kuluttajaliitto.fi/materiaalit/vuokra-asumisen-opas/',
   },
   dvvTilapainen: {
     fi: 'Digi- ja väestötietovirasto: Usein kysyttyä Suomessa muuttamisesta (tilapäinen muutto, kolmen kuukauden sääntö)',
@@ -82,7 +82,7 @@ const DEFS = {
   perusopetuslaki: {
     fi: 'Perusopetuslaki (628/1998): opetuksen maksuttomuus 31 § ja koulumatkat 32 §',
     en: 'Basic Education Act (628/1998): free education (section 31) and school transport (section 32)',
-    url: 'https://www.finlex.fi/fi/laki/ajantasa/1998/19980628',
+    url: 'https://www.finlex.fi/fi/lainsaadanto/1998/628',
   },
   fmi: {
     fi: 'Ilmatieteen laitos: Tähtitieteelliset vuodenajat (kaamos ja yötön yö)',
@@ -116,15 +116,15 @@ const DEFS = {
     url: 'https://yle.fi/a/74-20033357',
   },
   yle2025das: {
-    fi: 'Yle 27.7.2025: Rovaniemellä asuntopula on edelleen paha – sadat opiskelijat etsivät kattoa pään päälle',
-    en: 'Yle, 27 Jul 2025: Rovaniemi’s housing shortage is still severe – hundreds of students looking for a home',
-    fr: 'Yle, 27 juillet 2025 : à Rovaniemi, la pénurie de logements reste grave et des centaines d’étudiants cherchent un toit',
-    nl: 'Yle, 27 juli 2025: woningnood in Rovaniemi nog altijd groot: honderden studenten zoeken een dak boven hun hoofd',
+    fi: 'Yle 27.7.2026: Rovaniemellä asuntopula on edelleen paha: sadat opiskelijat etsivät kattoa pään päälle turistien viedessä yksiöt',
+    en: 'Yle, 27 Jul 2026: Rovaniemi’s housing shortage is still severe: hundreds of students looking for a home as tourists take the studios',
+    fr: 'Yle, 27 juillet 2026 : à Rovaniemi, la pénurie de logements reste grave et des centaines d’étudiants cherchent un toit',
+    nl: 'Yle, 27 juli 2026: woningnood in Rovaniemi nog altijd groot: honderden studenten zoeken een dak boven hun hoofd',
     url: 'https://yle.fi/a/74-20238146',
   },
   lapinKansaDas: {
-    fi: 'Lapin Kansa: Kilpajuoksu koteihin käynnissä – DAS:lla on tarjota paikka vain 30 prosentille hakijoista',
-    en: 'Lapin Kansa: The race for homes is on – DAS can house only 30 percent of applicants',
+    fi: 'Lapin Kansa 12.7.2017: Kilpajuoksu koteihin käynnissä: DAS:lla on tarjota paikka vain 30 prosentille hakijoista',
+    en: 'Lapin Kansa, 12 Jul 2017: The race for homes is on: DAS can house only 30 percent of applicants',
     url: 'https://www.lapinkansa.fi/kilpajuoksu-koteihin-kaynnissa-opiskelijat-etsivat/87484',
   },
   yle2026yllas: {
@@ -167,13 +167,13 @@ const DEFS = {
     url: 'https://www.kemi.fi/asuminen-ja-ymparisto/asuminen/vuokra-asunnot/',
   },
   itatuuli: {
-    fi: 'Kiinteistö Oy Itätuuli: asuntohakemus (voimassa 4 kk) ja vuokraus 0 euron vakuudella (luettu 23.9.2026)',
-    en: 'Kiinteistö Oy Itätuuli: housing application (valid 4 months) and lets with a €0 deposit (read 23 Sep 2026)',
+    fi: 'Kiinteistö Oy Itätuuli: asuntohakemus (voimassa 4 kk) ja vuokraus 0 euron vakuudella (luettu 15.11.2026)',
+    en: 'Kiinteistö Oy Itätuuli: housing application (valid 4 months) and lets with a €0 deposit (read 15 Nov 2026)',
     url: 'https://kiinteistoitatuuli.fi/asuntohakemus/',
   },
   keminmaaVuokra: {
-    fi: 'Keminmaan Vuokra-asunnot Oy: Asunnonhaku (hakemus voimassa 3 kk, vakuus 1 kk:n vuokra) ja kohdesivut (luettu 23.9.2026)',
-    en: 'Keminmaan Vuokra-asunnot Oy: How to apply (application valid 3 months, deposit one month’s rent) and property pages (read 23 Sep 2026)',
+    fi: 'Keminmaan Vuokra-asunnot Oy: Asunnonhaku (hakemus voimassa 3 kk, vakuus 1 kk:n vuokra) ja kohdesivut (luettu 15.11.2026)',
+    en: 'Keminmaan Vuokra-asunnot Oy: How to apply (application valid 3 months, deposit one month’s rent) and property pages (read 15 Nov 2026)',
     url: 'https://www.keminmaanvuokra-asunnot.fi/asunnonhaku.html',
   },
   keminmaa: {
@@ -194,8 +194,8 @@ const DEFS = {
     url: 'https://www.sodankyla.fi/en/environment/municipal-rental-housing/',
   },
   tkVuokratPostinumero: {
-    fi: 'Tilastokeskus: Vapaarahoitteisten vuokra-asuntojen keskineliövuokrat postinumeroalueittain 2015Q1–2025Q4 (taulukko 13eb, arkisto, luettu 23.9.2026)',
-    en: 'Statistics Finland: Average rents of free-market rental flats by postal code area 2015Q1–2025Q4 (table 13eb, archive, read 23 Sep 2026)',
+    fi: 'Tilastokeskus: Vapaarahoitteisten vuokra-asuntojen keskineliövuokrat postinumeroalueittain 2015Q1–2025Q4 (taulukko 13eb, arkisto, luettu 15.11.2026)',
+    en: 'Statistics Finland: Average rents of free-market rental flats by postal code area 2015Q1–2025Q4 (table 13eb, archive, read 15 Nov 2026)',
     url: 'https://pxdata.stat.fi/PxWeb/pxweb/fi/StatFin_Passiivi/StatFin_Passiivi__asvu/statfinpas_asvu_pxt_13eb_2025q4.px/',
   },
   tkAvainluvut: {
@@ -239,13 +239,13 @@ const DEFS = {
     url: 'https://redu.fi/fi/opiskelijalle/asuminen',
   },
   osrm: {
-    fi: 'OpenStreetMap: ajomatkat OSRM-reitittimellä (laskettu 23.9.2026)',
-    en: 'OpenStreetMap: driving distances with the OSRM router (calculated 23 Sep 2026)',
+    fi: 'OpenStreetMap: ajomatkat OSRM-reitittimellä (laskettu 15.11.2026)',
+    en: 'OpenStreetMap: driving distances with the OSRM router (calculated 15 Nov 2026)',
     url: 'https://www.openstreetmap.org/',
   },
   asentopuulaaki: {
-    fi: 'Asentopuulaaki Oy: Asunnot, kohdelista ja huoneistojen vuokrat (luettu 23.9.2026)',
-    en: 'Asentopuulaaki Oy: Properties, with the rent of every flat (read 23 Sep 2026)',
+    fi: 'Asentopuulaaki Oy: Asunnot, kohdelista ja huoneistojen vuokrat (luettu 15.11.2026)',
+    en: 'Asentopuulaaki Oy: Properties, with the rent of every flat (read 15 Nov 2026)',
     url: 'https://www.asentopuulaaki.fi/asunnot/',
   },
   asentopuulaakiHaku: {
@@ -254,8 +254,8 @@ const DEFS = {
     url: 'https://www.asentopuulaaki.fi/asunnon-hakeminen/',
   },
   asentopuulaakiVapaat: {
-    fi: 'Asentopuulaaki Oy: Asuntohaku, vapaat ja vapautuvat asunnot (luettu 23.9.2026)',
-    en: 'Asentopuulaaki Oy: Flat search, free and soon-free flats (read 23 Sep 2026)',
+    fi: 'Asentopuulaaki Oy: Asuntohaku, vapaat ja vapautuvat asunnot (luettu 15.11.2026)',
+    en: 'Asentopuulaaki Oy: Flat search, free and soon-free flats (read 15 Nov 2026)',
     url: 'https://www.asentopuulaaki.fi/asuntohaku/',
   },
   asentopuulaakiMuutto: {

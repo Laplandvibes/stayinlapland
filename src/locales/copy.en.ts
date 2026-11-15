@@ -149,7 +149,7 @@ export const copyEN: SectionCopy = {
     stats: { stays: 'Hand-picked stays', bases: 'Lapland bases', categories: 'Ways to stay', months: 'Months rated' },
     intro: {
       p1: 'Lapland has 176,215 residents (Statistics Finland, 31 Dec 2025), more than a third of them in Rovaniemi. The rest are spread along the coast, the river valleys and the fell villages, where the season sets the rental market.',
-      p2: 'The average free-market rent for a studio in Rovaniemi was €18.66 per m² in April–June 2026 (Statistics Finland), so a 30 m² studio costs about €560 a month. In Kemi and Inari the municipality’s own housing company rents out flats: Itätuuli has over 600 in Kemi and Inarin Vuokra-asunnot over 500.',
+      p2: 'The average free-market rent for a studio in Rovaniemi was €18.63 per m² in July–September 2026 (Statistics Finland), so a 30 m² studio costs about €560 a month. In Kemi and Inari the municipality’s own housing company rents out flats: Itätuuli in Kemi, and Inarin Vuokra-asunnot, with over 500 flats, in Inari.',
       p3: 'In seasonal work the home often comes from the employer and the rent comes off your pay. Ask about housing in writing when you get the job offer.',
     },
     authorNote: 'A curated short-list, written and fact-checked with on-the-ground partners across Finnish Lapland.',
@@ -184,7 +184,7 @@ export const copyEN: SectionCopy = {
       },
       {
         q: 'How much does a rental flat cost in Rovaniemi?',
-        a: 'According to Statistics Finland the average free-market rent for a studio in Rovaniemi was €18.66 per m² in April–June 2026 and €14.35 for a two-room flat. Multiply by the floor area: a 30 m² studio is about €560 a month and a 50 m² two-room flat about €720.',
+        a: 'According to Statistics Finland the average free-market rent for a studio in Rovaniemi was €18.63 per m² in July–September 2026 and €14.40 for a two-room flat. Multiply by the floor area: a 30 m² studio is about €560 a month and a 50 m² two-room flat about €720.',
       },
       {
         q: 'Does the employer house seasonal workers?',

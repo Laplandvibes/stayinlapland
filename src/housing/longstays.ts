@@ -34,7 +34,7 @@ export const LONG_STAYS: HousingCopyMap = {
         'Kalustettu vuokra-asunto, mökki viikkovuokralla vai työnantajan asunto: kolme tapaa asua Lapissa kuukaudesta koko talveen, ja mitä kukin sopimus sinulta vaatii.',
     },
     authorNote:
-      'Lainsäädäntö Finlexistä (laki asuinhuoneiston vuokrauksesta 481/1995, muutos 531/2026), muuttoilmoitus Digi- ja väestötietovirastolta, mökkien tiedot Lomarenkaan tuotesyötteestä. Tarkistettu 23.9.2026.',
+      'Lainsäädäntö Finlexistä (laki asuinhuoneiston vuokrauksesta 481/1995, muutos 531/2026), muuttoilmoitus Digi- ja väestötietovirastolta, mökkien tiedot Lomarenkaan tuotesyötteestä. Tarkistettu 15.11.2026.',
     intro: [
       'Kuukausi etätöitä Levillä, talvi Rovaniemellä tai kausi hiihtokeskuksessa: pidempi oleskelu Lapissa ratkeaa yleensä yhdellä kolmesta tavasta. Ne eroavat hinnaltaan, mutta vielä enemmän siinä, millainen sopimus niistä syntyy ja mitä laki silloin turvaa.',
       'Jos tulet lomalle etkä asumaan, hotellit ja mökit löytyvät sisarsivustoltamme <a href="https://laplandstays.com/fi/" target="_blank" rel="noopener">laplandstays.com</a> ja huvilat sivustolta <a href="https://laplandluxuryvillas.com/fi/" target="_blank" rel="noopener">laplandluxuryvillas.com</a>.',
@@ -53,7 +53,7 @@ export const LONG_STAYS: HousingCopyMap = {
           },
           {
             title: 'Mökki viikkovuokralla',
-            body: 'Lomamökki vuokrataan viikoittain välittäjän kautta. Vuokralakia ei sovelleta lyhytaikaiseen ja tilapäiseen asumiseen, joten ehdot ovat välittäjän varaus- ja peruutusehdot. Vapaat mökit kuvineen alla.',
+            body: 'Lomamökki vuokrataan viikoittain välittäjän kautta, ja ehdot ovat yleensä välittäjän varaus- ja peruutusehdot. Vuokralaki koskee asumiseen vuokrattua huoneistoa, ei majoitusliikkeiden toimintaa. Vapaat mökit kuvineen alla.',
           },
           {
             title: 'Työnantajan asunto',
@@ -71,7 +71,7 @@ export const LONG_STAYS: HousingCopyMap = {
           '<strong>Määräaikainen sopimus on voimassa siihen päivään asti, joka siinä lukee.</strong> Vuokralainen ei voi irtisanoa sitä kesken kauden. Sen voi päättää aiemmin sopimalla vuokranantajan kanssa tai laissa erikseen mainituissa tilanteissa (Kuluttajaliitto, vuokralaki).',
           '<strong>Jos et tiedä, kauanko jäät,</strong> kysy toistaiseksi voimassa olevaa sopimusta. Sen vuokralainen voi irtisanoa, ja vuokralaisen irtisanomisaika ei muutu 1.10.2026 lakiuudistuksessa (Rakli).',
           '<strong>Lyhyet sopimukset peräkkäin:</strong> jos samalle vuokralaiselle tehdään useammin kuin kahdesti peräkkäin enintään kolmen kuukauden määräaikainen sopimus, sopimus on toistaiseksi voimassa oleva, vaikka siihen olisi kirjattu määräaika.',
-          '<strong>Vuokralaki ei koske kaikkea.</strong> Sitä ei sovelleta lyhytaikaiseen ja tilapäiseen asumiseen eikä majoitusliikkeisiin. Kysy siksi ennen allekirjoitusta, tehdäänkö asuinhuoneiston vuokrasopimus vai majoitussopimus.',
+          '<strong>Vuokralaki ei koske kaikkea.</strong> Sitä sovelletaan asumiseen vuokrattuun huoneistoon, mutta ei majoitusliikkeiden toimintaan (vuokralaki 1 ja 2 §). Kysy siksi ennen allekirjoitusta, tehdäänkö asuinhuoneiston vuokrasopimus vai majoitussopimus.',
           '<strong>Vakuus</strong> on enintään kolmen kuukauden vuokra. 1.10.2026 alkaen se on palautettava tai sen pidättämisestä ilmoitettava viimeistään 14 päivän kuluessa vuokrasuhteen päättymisestä.',
         ],
       },
@@ -113,7 +113,7 @@ export const LONG_STAYS: HousingCopyMap = {
         'A furnished rental flat, a cabin by the week or housing from your employer: three ways to live in Lapland from a month to a whole winter, and what each contract asks of you.',
     },
     authorNote:
-      'Legislation from Finlex (Act on Residential Leases 481/1995, amendment 531/2026), address notification from the Digital and Population Data Services Agency, cabin details from the Lomarengas product feed. Checked 23 Sep 2026.',
+      'Legislation from Finlex (Act on Residential Leases 481/1995, amendment 531/2026), address notification from the Digital and Population Data Services Agency, cabin details from the Lomarengas product feed. Checked 15 Nov 2026.',
     intro: [
       'A month of remote work in Levi, a winter in Rovaniemi or a season at a ski resort: a longer stay in Lapland usually comes down to one of three options. They differ in price, but even more in what kind of contract you end up with and what the law then protects.',
       'If you are coming on holiday rather than to live, hotels and cabins are on our sister site <a href="https://laplandstays.com/" target="_blank" rel="noopener">laplandstays.com</a> and villas on <a href="https://laplandluxuryvillas.com/" target="_blank" rel="noopener">laplandluxuryvillas.com</a>.',
@@ -132,7 +132,7 @@ export const LONG_STAYS: HousingCopyMap = {
           },
           {
             title: 'Cabin by the week',
-            body: 'Holiday cabins are let by the week through an agency. The tenancy law does not apply to short-term and temporary accommodation, so the agency’s booking and cancellation terms apply instead. Available cabins with photos below.',
+            body: 'Holiday cabins are let by the week through an agency, and the terms are usually the agency’s booking and cancellation terms. The tenancy law covers a flat rented for living in, not the activities of accommodation businesses. Available cabins with photos below.',
           },
           {
             title: 'Staff housing',
@@ -150,7 +150,7 @@ export const LONG_STAYS: HousingCopyMap = {
           '<strong>A fixed-term lease runs until the date written in it.</strong> The tenant cannot give notice mid-term. It can end earlier only by agreement with the landlord or in the specific situations set out in the law (Finnish Consumers’ Union, tenancy law).',
           '<strong>If you do not know how long you will stay,</strong> ask for an open-ended lease instead. The tenant can give notice on it, and the tenant’s notice period does not change in the reform of 1 October 2026 (Rakli).',
           '<strong>Short leases back to back:</strong> if the same tenant is given a fixed-term lease of three months or less more than twice in a row, the lease counts as open-ended, whatever end date it carries.',
-          '<strong>The tenancy law does not cover everything.</strong> It does not apply to short-term and temporary accommodation or to accommodation businesses. Before you sign, ask whether you are getting a residential lease or an accommodation contract.',
+          '<strong>The tenancy law does not cover everything.</strong> It applies to a flat rented for living in, but not to the activities of accommodation businesses (Act on Residential Leases, sections 1 and 2). Before you sign, ask whether you are getting a residential lease or an accommodation contract.',
           '<strong>The deposit</strong> is at most three months’ rent. From 1 October 2026 it must be returned, or its retention notified, within 14 days of the end of the tenancy.',
         ],
       },

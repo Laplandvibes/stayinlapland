@@ -153,7 +153,7 @@ export const copyFI: SectionCopy = {
     stats: { stays: 'Valittua kohdetta', bases: 'Lapin tukikohtaa', categories: 'Tapaa majoittua', months: 'Arvioitua kuukautta' },
     intro: {
       p1: 'Lapissa asuu 176 215 ihmistä (Tilastokeskus 31.12.2025), ja yli kolmannes heistä Rovaniemellä. Loput jakautuvat rannikolle, jokivarsiin ja tunturikyliin, joissa kausi määrää vuokramarkkinan.',
-      p2: 'Vapaarahoitteisen yksiön keskineliövuokra Rovaniemellä oli 18,66 €/m² huhti–kesäkuussa 2026 (Tilastokeskus), eli 30 m²:n yksiö maksaa noin 560 €/kk. Kemissä ja Inarissa vuokra-asuntoja tarjoaa kunnan oma vuokrayhtiö: Itätuulella on yli 600 asuntoa Kemissä ja Inarin Vuokra-asunnoilla yli 500.',
+      p2: 'Vapaarahoitteisen yksiön keskineliövuokra Rovaniemellä oli 18,63 €/m² heinä–syyskuussa 2026 (Tilastokeskus), eli 30 m²:n yksiö maksaa noin 560 €/kk. Kemissä ja Inarissa vuokra-asuntoja tarjoaa kunnan oma vuokrayhtiö: Kemissä Itätuuli ja Inarissa Inarin Vuokra-asunnot, jolla on yli 500 asuntoa.',
       p3: 'Kausityössä asunto tulee usein työnantajalta ja vuokra vähennetään palkasta. Kysy asumisesta kirjallisesti jo työtarjouksen yhteydessä.',
     },
     authorNote:
@@ -189,7 +189,7 @@ export const copyFI: SectionCopy = {
       },
       {
         q: 'Mitä vuokra-asunto maksaa Rovaniemellä?',
-        a: 'Tilastokeskuksen mukaan vapaarahoitteisen yksiön keskineliövuokra Rovaniemellä oli 18,66 €/m² huhti–kesäkuussa 2026 ja kaksion 14,35 €/m². Kerro luku neliöillä: 30 m²:n yksiö on noin 560 €/kk ja 50 m²:n kaksio noin 720 €/kk.',
+        a: 'Tilastokeskuksen mukaan vapaarahoitteisen yksiön keskineliövuokra Rovaniemellä oli 18,63 €/m² heinä–syyskuussa 2026 ja kaksion 14,40 €/m². Kerro luku neliöillä: 30 m²:n yksiö on noin 560 €/kk ja 50 m²:n kaksio noin 720 €/kk.',
       },
       {
         q: 'Järjestääkö työnantaja kausityöntekijälle asunnon?',

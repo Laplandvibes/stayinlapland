@@ -120,7 +120,7 @@ export const HOME: Record<HomeLang, HousingHomeCopy> = {
             { value: '19 339', label: 'asukasta Kemissä' },
             { value: '20 823', label: 'asukasta Torniossa' },
           ],
-          body: 'Aloita kaupunkien omista vuokrayhtiöistä: Kemin Itätuulella on yli 600 asuntoa.',
+          body: 'Aloita kaupunkien omista vuokrayhtiöistä: Kemissä kaupungin vuokra-asunnoista vastaa Itätuuli.',
           cta: 'Kemin ja Tornion vuokra-asunnot',
           image: IMG.kemiTornio,
           alt: 'Kemin kirkko lumisena talvi-iltana',
@@ -132,7 +132,7 @@ export const HOME: Record<HomeLang, HousingHomeCopy> = {
             { value: '6 973', label: 'asukasta' },
             { value: '+2,0 %', label: 'väestönkasvu 2025' },
           ],
-          body: 'Lapin nopeimmin kasvava kunta. Talvella samoista asunnoista kilpailevat tuhannet kausityöntekijät.',
+          body: 'Lapin toiseksi nopeimmin kasvava kunta. Talvella samoista asunnoista kilpailevat tuhannet kausityöntekijät.',
           cta: 'Kittilän ja Levin vuokra-asunnot',
           image: IMG.levi,
           alt: 'Uusia taloja rakenteilla Levillä, taustalla Levitunturi',
@@ -252,7 +252,7 @@ export const HOME: Record<HomeLang, HousingHomeCopy> = {
         },
         {
           q: 'Mitä vuokra-asunto maksaa Rovaniemellä?',
-          a: 'Tilastokeskuksen mukaan vapaarahoitteisen yksiön keskineliövuokra Rovaniemellä oli 18,66 €/m² huhti–kesäkuussa 2026 ja kaksion 14,35 €/m². Kerro luku neliöillä: 30 m²:n yksiö on noin 560 €/kk ja 50 m²:n kaksio noin 720 €/kk.',
+          a: 'Tilastokeskuksen mukaan vapaarahoitteisen yksiön keskineliövuokra Rovaniemellä oli 18,63 €/m² heinä–syyskuussa 2026 ja kaksion 14,40 €/m². Kerro luku neliöillä: 30 m²:n yksiö on noin 560 €/kk ja 50 m²:n kaksio noin 720 €/kk.',
         },
         {
           q: 'Järjestääkö työnantaja kausityöntekijälle asunnon?',
@@ -281,7 +281,7 @@ export const HOME: Record<HomeLang, HousingHomeCopy> = {
       ],
     },
     authorNote:
-      'Vuokrat ovat Tilastokeskuksen vapaarahoitteisia keskineliövuokria huhti–kesäkuulta 2026 pyöristettyinä, asukasluvut tilanteesta 31.12.2025. Jokainen luku on tarkistettu alla luetellusta lähteestä syyskuussa 2026, ja päivitämme vuokrat, kun seuraava neljännes julkaistaan.',
+      'Vuokrat ovat Tilastokeskuksen vapaarahoitteisia keskineliövuokria heinä–syyskuulta 2026 pyöristettyinä, asukasluvut tilanteesta 31.12.2025. Jokainen luku on tarkistettu alla luetellusta lähteestä marraskuussa 2026, ja päivitämme vuokrat, kun seuraava neljännes julkaistaan.',
     sources: pickSources('fi', SOURCES),
   },
   en: {
@@ -321,7 +321,7 @@ export const HOME: Record<HomeLang, HousingHomeCopy> = {
             { value: '19,339', label: 'residents in Kemi' },
             { value: '20,823', label: 'residents in Tornio' },
           ],
-          body: 'Start with the towns’ own housing companies: Itätuuli alone has over 600 flats in Kemi.',
+          body: 'Start with the towns’ own housing companies: in Kemi the city’s rental flats are run by Itätuuli.',
           cta: 'Renting in Kemi and Tornio',
           image: IMG.kemiTornio,
           alt: 'Kemi church in snow on a winter evening',
@@ -333,7 +333,7 @@ export const HOME: Record<HomeLang, HousingHomeCopy> = {
             { value: '6,973', label: 'residents' },
             { value: '+2.0 %', label: 'population growth 2025' },
           ],
-          body: 'Lapland’s fastest-growing municipality. In winter, thousands of seasonal workers compete for the same flats.',
+          body: 'Lapland’s second-fastest-growing municipality. In winter, thousands of seasonal workers compete for the same flats.',
           cta: 'Renting in Kittilä and Levi',
           image: IMG.levi,
           alt: 'New houses under construction in Levi with Levi fell behind',
@@ -453,7 +453,7 @@ export const HOME: Record<HomeLang, HousingHomeCopy> = {
         },
         {
           q: 'How much does a rental flat cost in Rovaniemi?',
-          a: 'According to Statistics Finland the average free-market rent for a studio in Rovaniemi was €18.66 per m² in April–June 2026 and €14.35 for a two-room flat. Multiply by the floor area: a 30 m² studio is about €560 a month and a 50 m² two-room flat about €720.',
+          a: 'According to Statistics Finland the average free-market rent for a studio in Rovaniemi was €18.63 per m² in July–September 2026 and €14.40 for a two-room flat. Multiply by the floor area: a 30 m² studio is about €560 a month and a 50 m² two-room flat about €720.',
         },
         {
           q: 'Does the employer house seasonal workers?',
@@ -482,7 +482,7 @@ export const HOME: Record<HomeLang, HousingHomeCopy> = {
       ],
     },
     authorNote:
-      'Rents are Statistics Finland’s average free-market rents per m² for April–June 2026, rounded; population figures are for 31 December 2025. Every figure was checked against the source listed below in September 2026, and the rents are updated when the next quarter is published.',
+      'Rents are Statistics Finland’s average free-market rents per m² for July–September 2026, rounded; population figures are for 31 December 2025. Every figure was checked against the source listed below in November 2026, and the rents are updated when the next quarter is published.',
     sources: pickSources('en', SOURCES),
   },
   /**
@@ -533,7 +533,7 @@ export const HOME: Record<HomeLang, HousingHomeCopy> = {
             { value: '19 339', label: 'habitants à Kemi' },
             { value: '20 823', label: 'habitants à Tornio' },
           ],
-          body: 'Commencez par les sociétés de logement des villes elles-mêmes : à Kemi, Itätuuli possède à elle seule plus de 600 appartements.',
+          body: 'Commencez par les sociétés de logement des villes elles-mêmes : à Kemi, c’est Itätuuli qui gère les logements locatifs de la ville.',
           cta: 'Louer à Kemi et Tornio',
           image: IMG.kemiTornio,
           alt: 'L’église de Kemi sous la neige, un soir d’hiver',
@@ -545,7 +545,7 @@ export const HOME: Record<HomeLang, HousingHomeCopy> = {
             { value: '6 973', label: 'habitants' },
             { value: '+2,0 %', label: 'croissance en 2025' },
           ],
-          body: 'La commune qui grandit le plus vite de Laponie. L’hiver, des milliers de saisonniers cherchent les mêmes appartements.',
+          body: 'La deuxième commune de Laponie pour la croissance démographique. L’hiver, des milliers de saisonniers cherchent les mêmes appartements.',
           cta: 'Louer à Kittilä et Levi',
           image: IMG.levi,
           alt: 'Maisons neuves en construction à Levi, le fjeld Levitunturi derrière',
@@ -665,7 +665,7 @@ export const HOME: Record<HomeLang, HousingHomeCopy> = {
         },
         {
           q: 'Combien coûte un logement en location à Rovaniemi\u00a0?',
-          a: 'Selon Tilastokeskus, le loyer moyen du parc privé à Rovaniemi était de 18,66 € par m² pour un studio en avril–juin 2026 et de 14,35 € par m² pour un deux-pièces. Multipliez par la surface : un studio de 30 m² revient à environ 560 € par mois et un deux-pièces de 50 m² à environ 720 €.',
+          a: 'Selon Tilastokeskus, le loyer moyen du parc privé à Rovaniemi était de 18,63 € par m² pour un studio en juillet–septembre 2026 et de 14,40 € par m² pour un deux-pièces. Multipliez par la surface : un studio de 30 m² revient à environ 560 € par mois et un deux-pièces de 50 m² à environ 720 €.',
         },
         {
           q: 'L’employeur loge-t-il les saisonniers\u00a0?',
@@ -694,7 +694,7 @@ export const HOME: Record<HomeLang, HousingHomeCopy> = {
       ],
     },
     authorNote:
-      'Les loyers sont les loyers moyens au m² du parc privé publiés par Statistics Finland (Tilastokeskus) pour avril–juin 2026, arrondis\u00a0; la population est celle du 31 décembre 2025. Chaque chiffre a été vérifié en septembre 2026 auprès de la source indiquée ci-dessous, et les loyers sont mis à jour à la publication du trimestre suivant.',
+      'Les loyers sont les loyers moyens au m² du parc privé publiés par Statistics Finland (Tilastokeskus) pour juillet–septembre 2026, arrondis\u00a0; la population est celle du 31 décembre 2025. Chaque chiffre a été vérifié en novembre 2026 auprès de la source indiquée ci-dessous, et les loyers sont mis à jour à la publication du trimestre suivant.',
     sources: pickSources('fr', SOURCES),
   },
   /**
@@ -744,7 +744,7 @@ export const HOME: Record<HomeLang, HousingHomeCopy> = {
             { value: '19.339', label: 'inwoners in Kemi' },
             { value: '20.823', label: 'inwoners in Tornio' },
           ],
-          body: 'Begin bij de woningbedrijven van de steden zelf: Itätuuli heeft in Kemi alleen al ruim 600 woningen.',
+          body: 'Begin bij de woningbedrijven van de steden zelf: in Kemi beheert Itätuuli de huurwoningen van de stad.',
           cta: 'Huren in Kemi en Tornio',
           image: IMG.kemiTornio,
           alt: 'De kerk van Kemi in de sneeuw op een winteravond',
@@ -756,7 +756,7 @@ export const HOME: Record<HomeLang, HousingHomeCopy> = {
             { value: '6.973', label: 'inwoners' },
             { value: '+2,0 %', label: 'bevolkingsgroei 2025' },
           ],
-          body: 'De snelst groeiende gemeente van Lapland. In de winter zoeken duizenden seizoenswerkers dezelfde woningen.',
+          body: 'De op één na snelst groeiende gemeente van Lapland. In de winter zoeken duizenden seizoenswerkers dezelfde woningen.',
           cta: 'Huren in Kittilä en Levi',
           image: IMG.levi,
           alt: 'Nieuwbouwhuizen in aanbouw in Levi, met de Levitunturi erachter',
@@ -876,7 +876,7 @@ export const HOME: Record<HomeLang, HousingHomeCopy> = {
         },
         {
           q: 'Wat kost een huurwoning in Rovaniemi?',
-          a: 'Volgens Tilastokeskus was de gemiddelde vrijesectorhuur in Rovaniemi in april–juni 2026 € 18,66 per m² voor een studio en € 14,35 per m² voor een tweekamerwoning. Vermenigvuldig met de oppervlakte: een studio van 30 m² komt op ongeveer € 560 per maand en een tweekamerwoning van 50 m² op ongeveer € 720.',
+          a: 'Volgens Tilastokeskus was de gemiddelde vrijesectorhuur in Rovaniemi in juli–september 2026 € 18,63 per m² voor een studio en € 14,40 per m² voor een tweekamerwoning. Vermenigvuldig met de oppervlakte: een studio van 30 m² komt op ongeveer € 560 per maand en een tweekamerwoning van 50 m² op ongeveer € 720.',
         },
         {
           q: 'Regelt de werkgever huisvesting voor seizoenswerkers?',
@@ -905,7 +905,7 @@ export const HOME: Record<HomeLang, HousingHomeCopy> = {
       ],
     },
     authorNote:
-      'De huren zijn de gemiddelde vrijesectorhuren per m² van Statistics Finland (Tilastokeskus) over april–juni 2026, afgerond; de inwonertallen gelden op 31 december 2025. Elk cijfer is in september 2026 gecontroleerd bij de bron die hieronder staat, en we werken de huren bij zodra het volgende kwartaal verschijnt.',
+      'De huren zijn de gemiddelde vrijesectorhuren per m² van Statistics Finland (Tilastokeskus) over juli–september 2026, afgerond; de inwonertallen gelden op 31 december 2025. Elk cijfer is in november 2026 gecontroleerd bij de bron die hieronder staat, en we werken de huren bij zodra het volgende kwartaal verschijnt.',
     sources: pickSources('nl', SOURCES),
   },
 };

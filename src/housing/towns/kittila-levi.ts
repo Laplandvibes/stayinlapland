@@ -14,14 +14,14 @@ export const TOWN_KITTILA_LEVI: HousingCopyMap = {
       eyebrow: 'Kittilä, 6 973 asukasta',
       title: 'Vuokra-asunnot Kittilä ja Levi.',
       subtitle:
-        'Lapin nopeimmin kasvava kunta ja sen hiihtokeskus, jossa sama asunto maksaa kesällä kuukausivuokran ja talvella viikkohinnan. Mistä asunto haetaan ja milloin.',
+        'Yksi Lapin nopeimmin kasvavista kunnista ja sen hiihtokeskus, jossa sama asunto maksaa kesällä kuukausivuokran ja talvella viikkohinnan. Mistä asunto haetaan ja milloin.',
     },
     authorNote:
-      'Väkiluku ja kasvu Tilastokeskukselta, Kittilän Vuokratalot Oy kunnan omalta sivulta, Levin kausihinnat Ylen uutisesta 25.5.2023. Tarkistettu 17.9.2026.',
+      'Väkiluku ja kasvu Tilastokeskukselta, Kittilän Vuokratalot Oy kunnan ja yhtiön omilta sivuilta, Levin kausihinnat Ylen uutisesta 25.5.2023. Tarkistettu 15.11.2026.',
     intro: [
-      'Kittilän väkiluku oli 6 973 vuoden 2025 lopussa, ja se kasvoi 2,0 prosenttia vuodessa, eniten Lapin kunnista (Tilastokeskus). Kasvun moottori on Levi, jonne palkataan talvikaudeksi runsaat 2 000 kausityöntekijää (Levin Matkailu Oy:n arvio, Yle 25.10.2017).',
-      'Levin vuokramarkkina elää kauden mukaan: 80 neliön alppimökki lähellä keskustaa maksoi 750 euroa kuukaudessa touko–marraskuussa, 2 000 euroa viikossa sesongissa ja ympärivuotisena 1 650 euroa kuukaudessa (Yle 25.5.2023). Majoituskäyttöön kaavoitettuun vapaa-ajan asuntoon ei myöskään voi rekisteröidä osoitetta.',
-      'Vakituinen vuokra-asunto löytyy todennäköisemmin Kittilän kirkonkylästä kuin Levin keskustasta. Kunnan omistamia asuntoja välittää Kittilän Vuokratalot Oy, ja hakemus on voimassa kolme kuukautta (kittila.fi).',
+      'Kittilän väkiluku oli 6 973 vuoden 2025 lopussa, ja se kasvoi 2,0 prosenttia vuodessa, Lapin kunnista toiseksi eniten: vain Pelkosenniemi kasvoi nopeammin, 2,4 prosenttia (Tilastokeskus). Kasvun moottori on Levi: Levin Matkailu Oy arvioi vuonna 2017, että matkailualueelle palkataan talvikaudeksi reilut 2 000 kausityöntekijää (Yle 25.10.2017).',
+      'Levin vuokramarkkina elää kauden mukaan: 80 neliön alppitaloasunto lähellä keskustaa maksoi 750 euroa kuukaudessa touko–marraskuussa, 2 000 euroa viikossa sesongissa ja ympärivuotisena 1 650 euroa kuukaudessa (Yle 25.5.2023). Lomahuoneistoon ei myöskään välttämättä saa virallista osoitetta.',
+      'Vakituinen vuokra-asunto löytyy todennäköisemmin Kittilän kirkonkylästä kuin Levin keskustasta. Kunnan omistamia asuntoja välittää Kittilän Vuokratalot Oy, ja hakemus tehdään sähköisesti yhtiön sivuilla (kittila.fi, Kittilän Vuokratalot).',
     ],
     sections: [
       {
@@ -32,7 +32,7 @@ export const TOWN_KITTILA_LEVI: HousingCopyMap = {
         cards: [
           {
             title: 'Kittilän Vuokratalot Oy',
-            body: 'Välittää kunnan omistamia vuokra-asuntoja. Toimisto on kunnantalon ala-aulassa (Valtatie 15, 99100 Kittilä). Hakemus on voimassa kolme kuukautta, ja sen voi jättää, vaikka vapaita asuntoja ei juuri nyt olisi: yhtiö ottaa yhteyttä, kun sopiva asunto vapautuu.',
+            body: 'Välittää kunnan omistamia vuokra-asuntoja. Toimisto on kunnantalon ala-aulassa (Valtatie 15, 99100 Kittilä). Yhtiö käsittelee vain kotisivujensa kautta tehtyjä sähköisiä hakemuksia, joissa vaaditut liitteet ovat mukana. Hakemuksen voimassaoloaikaa sivuilla ei kerrota, joten kysy se yhtiöltä.',
             href: 'https://kittila.fi/asuminen-ja-ymparisto/asuminen/vuokra-asunnot',
             linkLabel: 'kittila.fi: Vuokra-asunnot',
             event: 'kittila_city',
@@ -54,9 +54,6 @@ export const TOWN_KITTILA_LEVI: HousingCopyMap = {
           {
             title: 'Levin asuntohaku Facebookissa',
             body: 'Nopein kanava tunturikylässä ja se, josta kausityöntekijät asuntonsa usein löytävät. Ei kenenkään takuuta: älä maksa vakuutta ennen näyttöä, ja pyydä sopimus kirjallisena.',
-            href: 'https://www.facebook.com/',
-            linkLabel: 'Facebook: hae ryhmää "Levi asunnot"',
-            event: 'facebook',
           },
         ],
       },
@@ -65,18 +62,18 @@ export const TOWN_KITTILA_LEVI: HousingCopyMap = {
         kicker: 'Mitä vuokra maksaa',
         h2: 'Maakunnan luku ja Levin poikkeus.',
         table: {
-          caption: 'Keskineliövuokra €/m²/kk, vapaarahoitteiset vuokra-asunnot, 2026Q2',
+          caption: 'Keskineliövuokra €/m²/kk, vapaarahoitteiset vuokra-asunnot, 2026Q3',
           head: ['', 'Lappi (maakunta)', 'Koko maa'],
           rows: [
-            ['Yksiöt', '17,30', '20,46'],
-            ['Kaksiot', '12,85', '15,04'],
-            ['Kolmiot ja isommat', '10,97', '13,92'],
-            ['Kaikki asunnot', '13,10', '15,94'],
+            ['Yksiöt', '17,25', '20,49'],
+            ['Kaksiot', '12,87', '15,07'],
+            ['Kolmiot ja isommat', '11,08', '13,98'],
+            ['Kaikki asunnot', '13,14', '15,99'],
           ],
-          foot: 'Tilastokeskus, vuokrat 2026Q2, taulukko 15fa. Kittilästä ei julkaista omaa lukua, ja Levin kausivuokrat eivät ole tilastossa lainkaan.',
+          foot: 'Tilastokeskus, vuokrat 2026Q3, taulukko 15fa. Kittilästä ei julkaista omaa lukua, ja Levin kausivuokrat eivät ole tilastossa lainkaan.',
         },
         paras: [
-          '<strong>Levin esimerkki (Yle 25.5.2023):</strong> 80 m² alppimökki 750 €/kk touko–marraskuussa = 9,40 €/m², sesongissa 2 000 €/viikko, ympärivuotisena 1 650 €/kk = 20,60 €/m². Sama asunto on kesällä maakunnan keskiarvoa halvempi ja ympärivuotisena koko maan yksiöhintaa kalliimpi.',
+          '<strong>Levin esimerkki (Yle 25.5.2023):</strong> 80 m²:n alppitaloasunto 750 €/kk touko–marraskuussa = 9,38 €/m², sesongissa 2 000 €/viikko, ympärivuotisena 1 650 €/kk = 20,63 €/m². Sama asunto on kesällä maakunnan keskiarvoa halvempi ja ympärivuotisena koko maan yksiöhintaa kalliimpi.',
         ],
       },
       {
@@ -99,10 +96,10 @@ export const TOWN_KITTILA_LEVI: HousingCopyMap = {
       {
         id: 'milloin',
         kicker: 'Milloin hakea',
-        h2: 'Kesällä, ennen kuin viikkomyynti alkaa.',
+        h2: 'Kesällä, ennen kuin viikkovuokrat alkavat.',
         bullets: [
-          'Vapaa-ajan asuntojen kuukausivuokraus loppuu marraskuussa, kun viikkomyynti alkaa (Yle 25.5.2023). Talvikaudeksi asunto haetaan kesällä.',
-          'Kunnan vuokrayhtiön hakemus on voimassa kolme kuukautta (kittila.fi); jätä se ennen kauden alkua ja uusi tarvittaessa.',
+          'Vapaa-ajan asunnon kuukausivuokra on tarjolla vain touko–marraskuussa, ja sesongin ajaksi hinta on viikkovuokra (Yle 25.5.2023). Talvikaudeksi asunto haetaan kesällä.',
+          'Jätä kunnan vuokrayhtiön hakemus ennen kauden alkua ja kysy yhtiöltä, kuinka kauan se on voimassa.',
           'Vakuus on enintään kolmen kuukauden vuokra (laki asuinhuoneiston vuokrauksesta 8 §), ja 1.10.2026 alkaen se palautetaan viimeistään 14 päivässä vuokrasuhteen päättymisestä (Rakli).',
         ],
       },
@@ -110,11 +107,11 @@ export const TOWN_KITTILA_LEVI: HousingCopyMap = {
     faqs: [
       {
         q: 'Mistä Leviltä saa vuokra-asunnon talveksi?',
-        a: 'Todennäköisimmin työnantajalta: hiihtokeskuksen yritykset vuokraavat rivitaloja ja vapaa-ajan asuntoja henkilökunnalle koko kaudeksi. Vapailta markkinoilta Levin asunnot myydään talvella viikoittain matkailijoille (Yle 25.5.2023), joten kuukausivuokralle pääsee lähinnä touko–marraskuussa. Kunnan asuntoja on Kittilän kirkonkylässä.',
+        a: 'Todennäköisimmin työnantajalta: hiihtokeskuksen yritykset vuokraavat rivitaloja ja vapaa-ajan asuntoja henkilökunnalle koko kaudeksi. Vapailla markkinoilla Levin asunnot vuokrataan talvella viikkohintaan (Yle 25.5.2023), joten kuukausivuokralle pääsee lähinnä touko–marraskuussa. Kunnan yhtiöllä on asuntoja sekä Kittilän kirkonkylässä että Sirkassa Levillä (Kittilän Vuokratalot).',
       },
       {
         q: 'Miten Kittilän kunnan vuokra-asuntoa haetaan?',
-        a: 'Kittilän Vuokratalot Oy:n hakemuksella, joka on voimassa kolme kuukautta. Toimisto on kunnantalon ala-aulassa, Valtatie 15. Hakemuksen voi jättää, vaikka vapaita asuntoja ei juuri nyt olisi (kittila.fi).',
+        a: 'Kittilän Vuokratalot Oy:n sähköisellä hakemuksella yhtiön sivuilla. Puutteellisia hakemuksia, joista vaaditut liitteet puuttuvat, ei käsitellä. Toimisto on kunnantalon ala-aulassa, Valtatie 15 (kittila.fi, Kittilän Vuokratalot).',
       },
     ],
     cta: {
@@ -138,14 +135,14 @@ export const TOWN_KITTILA_LEVI: HousingCopyMap = {
       eyebrow: 'Kittilä, 6,973 residents',
       title: 'Rentals in Kittilä and Levi.',
       subtitle:
-        'Lapland’s fastest-growing municipality and its ski resort, where the same flat costs a monthly rent in summer and a weekly rate in winter. Where to apply and when.',
+        'One of Lapland’s fastest-growing municipalities and its ski resort, where the same flat costs a monthly rent in summer and a weekly rate in winter. Where to apply and when.',
     },
     authorNote:
-      'Population and growth from Statistics Finland, Kittilän Vuokratalot Oy from the municipality’s own page, Levi seasonal prices from Yle, 25 May 2023. Checked 17 September 2026.',
+      'Population and growth from Statistics Finland, Kittilän Vuokratalot Oy from the municipality’s and the company’s own pages, Levi seasonal prices from Yle, 25 May 2023. Checked 15 November 2026.',
     intro: [
-      'Kittilä had 6,973 residents at the end of 2025 and grew 2.0 percent in a year, the most of any Lapland municipality (Statistics Finland). The engine is Levi, which hires well over 2,000 seasonal workers for the winter season (Levin Matkailu Oy’s estimate, Yle, 25 Oct 2017).',
-      'Levi’s rental market follows the season: an 80 m² alpine cabin near the centre cost €750 a month from May to November, €2,000 a week in high season and €1,650 a month year-round (Yle, 25 May 2023). You also cannot register your address at a holiday apartment zoned for accommodation.',
-      'A permanent rental is likelier in Kittilä village than in Levi centre. The municipality’s flats are let by Kittilän Vuokratalot Oy, and an application is valid for three months (kittila.fi).',
+      'Kittilä had 6,973 residents at the end of 2025 and grew 2.0 percent in a year, the second fastest of Lapland’s municipalities: only Pelkosenniemi grew faster, at 2.4 percent (Statistics Finland). The engine is Levi: in 2017 Levin Matkailu Oy estimated that the resort area would hire just over 2,000 seasonal workers for the winter season (Yle, 25 Oct 2017).',
+      'Levi’s rental market follows the season: an 80 m² alpine-house flat near the centre cost €750 a month from May to November, €2,000 a week in high season and €1,650 a month year-round (Yle, 25 May 2023). A holiday apartment may not get an official address either.',
+      'A permanent rental is likelier in Kittilä village than in Levi centre. The municipality’s flats are let by Kittilän Vuokratalot Oy, and you apply electronically on the company’s site (kittila.fi, Kittilän Vuokratalot).',
     ],
     sections: [
       {
@@ -156,7 +153,7 @@ export const TOWN_KITTILA_LEVI: HousingCopyMap = {
         cards: [
           {
             title: 'Kittilän Vuokratalot Oy',
-            body: 'Lets the municipality’s own rental flats. The office is on the ground floor of the municipal hall (Valtatie 15, 99100 Kittilä). An application is valid for three months and can be filed even when nothing is free right now: the company gets in touch when a suitable flat comes up.',
+            body: 'Lets the municipality’s own rental flats. The office is on the ground floor of the municipal hall (Valtatie 15, 99100 Kittilä). The company processes only electronic applications made through its website, with the required attachments. Its pages do not say how long an application stays valid, so ask the company.',
             href: 'https://kittila.fi/asuminen-ja-ymparisto/asuminen/vuokra-asunnot',
             linkLabel: 'kittila.fi: Rental housing',
             event: 'kittila_city',
@@ -178,9 +175,6 @@ export const TOWN_KITTILA_LEVI: HousingCopyMap = {
           {
             title: 'The Levi housing group on Facebook',
             body: 'The fastest channel in the fell village and where seasonal workers often find their flat. Nobody vouches for it: never pay a deposit before a viewing, and get the contract in writing.',
-            href: 'https://www.facebook.com/',
-            linkLabel: 'Facebook: search for the Levi housing group',
-            event: 'facebook',
           },
         ],
       },
@@ -189,18 +183,18 @@ export const TOWN_KITTILA_LEVI: HousingCopyMap = {
         kicker: 'What rent costs',
         h2: 'The regional figure and the Levi exception.',
         table: {
-          caption: 'Average rent €/m²/month, free-market rental flats, 2026Q2',
+          caption: 'Average rent €/m²/month, free-market rental flats, 2026Q3',
           head: ['', 'Lapland (region)', 'Whole country'],
           rows: [
-            ['Studios', '17.30', '20.46'],
-            ['Two-room flats', '12.85', '15.04'],
-            ['Three rooms and larger', '10.97', '13.92'],
-            ['All flats', '13.10', '15.94'],
+            ['Studios', '17.25', '20.49'],
+            ['Two-room flats', '12.87', '15.07'],
+            ['Three rooms and larger', '11.08', '13.98'],
+            ['All flats', '13.14', '15.99'],
           ],
-          foot: 'Statistics Finland, rents 2026Q2, table 15fa. No separate figure is published for Kittilä, and Levi’s seasonal rents are not in the statistics at all.',
+          foot: 'Statistics Finland, rents 2026Q3, table 15fa. No separate figure is published for Kittilä, and Levi’s seasonal rents are not in the statistics at all.',
         },
         paras: [
-          '<strong>The Levi example (Yle, 25 May 2023):</strong> an 80 m² alpine cabin at €750 a month from May to November = €9.40 per m², €2,000 a week in high season, €1,650 a month year-round = €20.60 per m². The same flat is cheaper than the regional average in summer and dearer than the national studio price year-round.',
+          '<strong>The Levi example (Yle, 25 May 2023):</strong> an 80 m² alpine-house flat at €750 a month from May to November = €9.38 per m², €2,000 a week in high season, €1,650 a month year-round = €20.63 per m². The same flat is cheaper than the regional average in summer and dearer than the national studio price year-round.',
         ],
       },
       {
@@ -223,10 +217,10 @@ export const TOWN_KITTILA_LEVI: HousingCopyMap = {
       {
         id: 'when',
         kicker: 'When to apply',
-        h2: 'In summer, before weekly sales begin.',
+        h2: 'In summer, before weekly rates begin.',
         bullets: [
-          'Monthly lets of holiday apartments end in November when weekly sales begin (Yle, 25 May 2023). For the winter season, find the flat in summer.',
-          'The municipal company’s application is valid for three months (kittila.fi); file it before the season and renew if needed.',
+          'Monthly lets of holiday apartments are available only from May to November, and in high season the price is a weekly rate (Yle, 25 May 2023). For the winter season, find the flat in summer.',
+          'File the municipal company’s application before the season and ask the company how long it stays valid.',
           'The deposit is at most three months’ rent (Act on Residential Leases, section 8), and from 1 October 2026 it is returned within 14 days of the tenancy ending (Rakli).',
         ],
       },
@@ -234,11 +228,11 @@ export const TOWN_KITTILA_LEVI: HousingCopyMap = {
     faqs: [
       {
         q: 'Where do I find a winter rental at Levi?',
-        a: 'Most likely from your employer: resort companies rent row houses and holiday apartments for staff for the whole season. On the open market Levi’s flats are sold by the week to tourists in winter (Yle, 25 May 2023), so monthly rent is mainly possible from May to November. Municipal flats are in Kittilä village.',
+        a: 'Most likely from your employer: resort companies rent row houses and holiday apartments for staff for the whole season. On the open market Levi’s flats are let by the week in winter (Yle, 25 May 2023), so monthly rent is mainly possible from May to November. The municipal company has flats both in Kittilä village and in Sirkka at Levi (Kittilän Vuokratalot).',
       },
       {
         q: 'How do I apply for a municipal flat in Kittilä?',
-        a: 'With the Kittilän Vuokratalot Oy application, valid for three months. The office is on the ground floor of the municipal hall, Valtatie 15. You can apply even when nothing is free right now (kittila.fi).',
+        a: 'With Kittilän Vuokratalot Oy’s electronic application on the company’s site. Incomplete applications without the required attachments are not processed. The office is on the ground floor of the municipal hall, Valtatie 15 (kittila.fi, Kittilän Vuokratalot).',
       },
     ],
     cta: {

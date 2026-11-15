@@ -19,7 +19,7 @@ export const MOVING: HousingCopyMap = {
         'Muuttoilmoitus, talvirenkaat, päiväkoti, sähkösopimus ja kaamos: mitä hoidetaan ensimmäisen kuukauden aikana ja missä järjestyksessä.',
     },
     authorNote:
-      'Määräajat DVV:ltä, Traficomilta ja Kuntaliitolta, kaamoksen kesto Ilmatieteen laitokselta, välimatkat LaplandVibesin ajoreiteiltä. Tarkistettu 17.9.2026.',
+      'Määräajat DVV:ltä, Traficomilta ja Kuntaliitolta, kaamoksen kesto Ilmatieteen laitokselta, välimatkat LaplandVibesin ajoreiteiltä. Tarkistettu 15.11.2026.',
     intro: [
       'Muutto Lappiin ei eroa paperitöiltään muusta Suomesta, mutta kolme asiaa on täällä painavampia kuin etelässä: talvi kestää puoli vuotta, välimatkat mitataan sadoissa kilometreissä ja pienissä kunnissa palvelut ovat yhdessä paikassa. Tämä sivu on tarkistuslista siinä järjestyksessä, jossa asiat pitää hoitaa.',
       'Jos muutat Suomeen ulkomailta, oleskelulupa, henkilötunnus, verokortti ja pankkitili käydään läpi sisarsivustollamme <a href="https://laplandwork.com/moving-to-finland" target="_blank" rel="noopener">laplandwork.com</a>. Tämä sivu alkaa siitä, kun avaimet ovat kädessä.',
@@ -31,7 +31,7 @@ export const MOVING: HousingCopyMap = {
         h2: 'Neljä ilmoitusta, yksi määräaika.',
         bullets: [
           '<strong>Muuttoilmoitus DVV:lle</strong> aikaisintaan kuukautta ennen muuttopäivää ja viimeistään viikon kuluttua muutosta (DVV). Sama ilmoitus menee Postille. Kunnan palvelut (päiväkoti, koulu, terveysasema) seuraavat kotikuntaa, joten ilmoitus kannattaa tehdä heti.',
-          '<strong>Sähkösopimus.</strong> Sähkön kokonaishinta kotitaloudelle, joka kuluttaa 2 500–4 999 kWh vuodessa, oli maaliskuussa 2026 koko maassa keskimäärin 22,9 senttiä kilowattitunnilta ja yli 15 000 kWh:n luokassa, johon sähkölämmitteinen omakotitalo kuuluu, 14,1 senttiä (Tilastokeskus). Lapissa lämmityskausi on pitkä, joten kulutusarvio kannattaa tehdä yläkanttiin.',
+          '<strong>Sähkösopimus.</strong> Sähkön kokonaishinta kotitaloudelle, joka kuluttaa 2 500–4 999 kWh vuodessa, oli kesäkuussa 2026 koko maassa keskimäärin 23,7 senttiä kilowattitunnilta ja yli 15 000 kWh:n luokassa, johon sähkölämmitteinen omakotitalo kuuluu, 14,9 senttiä (Tilastokeskus). Lapissa lämmityskausi on pitkä, joten kulutusarvio kannattaa tehdä yläkanttiin.',
           '<strong>Terveyspalvelut</strong> järjestää Lapin hyvinvointialue. Kiireetön hoito haetaan oman alueen terveysasemalta; katso lähin asema hyvinvointialueen sivuilta ja kirjaudu Omakantaan.',
           '<strong>Netti.</strong> Kysy kuidun saatavuutta taloyhtiöltä tai vuokranantajalta ennen sopimusta. Haja-asutusalueella mobiilireititin on usein ainoa vaihtoehto, ja etätyötä tekevän kannattaa testata yhteys asunnossa ennen allekirjoitusta.',
         ],
@@ -41,8 +41,8 @@ export const MOVING: HousingCopyMap = {
         kicker: 'Auto ja talvi',
         h2: 'Ilman autoa pärjää Rovaniemellä. Muualla ei.',
         bullets: [
-          '<strong>Talvirenkaat:</strong> Suomessa on käytettävä talvirenkaita 1.11.–31.3., jos sää tai keli sitä vaatii. Nastarenkaat ovat sallittuja samana aikana ja muulloinkin, jos olosuhteet sitä vaativat. Talvirenkaan pääurien syvyyden on oltava vähintään 3,0 mm (Traficom). Lapissa ”jos keli vaatii” tarkoittaa käytännössä lokakuun lopusta huhtikuuhun.',
-          '<strong>Polttoaine:</strong> 95E10-bensiini maksoi maaliskuussa 2026 koko maassa keskimäärin 1,93 €/l ja diesel 2,08 €/l (Tilastokeskus). Pitkät välimatkat tekevät tästä Lapissa suuremman menoerän kuin etelässä.',
+          '<strong>Talvirenkaat:</strong> Suomessa on käytettävä talvirenkaita 1.11.–31.3., jos sää tai keli sitä vaatii. Nastarenkaat ovat sallittuja samana aikana ja muulloinkin, jos olosuhteet sitä vaativat. Talvirenkaan pääurien syvyyden on oltava vähintään 3,0 mm (Traficom).',
+          '<strong>Polttoaine:</strong> 95E10-bensiini maksoi kesäkuussa 2026 koko maassa keskimäärin 2,09 €/l ja diesel 2,15 €/l (Tilastokeskus). Pitkät välimatkat tekevät tästä Lapissa suuremman menoerän kuin etelässä.',
           '<strong>Välimatkat</strong> LaplandVibesin ajoreiteiltä: Oulu–Kemi 105 km, Kemi–Rovaniemi 118 km, Rovaniemi–Ylläs (Äkäslompolo) 175 km, Sodankylä–Saariselkä 130 km, Levi–Kilpisjärvi 258 km. Lappi on isompi kuin kartalta näyttää.',
           '<strong>Lohkolämmitin ja sisätilanlämmitin.</strong> Pakkasella auto lämmitetään ennen lähtöä; taloyhtiön lämmitystolppa on Lapissa vakiovaruste. Kysy autopaikka tolpalla vuokrasopimukseen.',
         ],
@@ -91,7 +91,7 @@ export const MOVING: HousingCopyMap = {
       },
       {
         q: 'Milloin Lapissa tarvitsee talvirenkaat?',
-        a: 'Laki sanoo 1.11.–31.3., jos sää tai keli vaatii, ja nastat ovat sallittuja samana aikana ja muulloinkin olosuhteiden vaatiessa (Traficom). Lapissa lumi tulee usein ennen marraskuuta ja lähtee huhtikuussa, joten renkaat vaihdetaan kelin, ei kalenterin mukaan.',
+        a: 'Laki sanoo 1.11.–31.3., jos sää tai keli vaatii, ja nastat ovat sallittuja samana aikana ja muulloinkin olosuhteiden vaatiessa (Traficom). Renkaat vaihdetaan siis kelin, ei kalenterin mukaan.',
       },
       {
         q: 'Onko Rovaniemellä kaamos?',
@@ -125,7 +125,7 @@ export const MOVING: HousingCopyMap = {
         'Change of address, winter tyres, daycare, the electricity contract and the polar night: what to sort out in the first month, and in what order.',
     },
     authorNote:
-      'Deadlines from DVV, Traficom and the Association of Finnish Municipalities, polar-night lengths from the Finnish Meteorological Institute, distances from LaplandVibes driving routes. Checked 17 September 2026.',
+      'Deadlines from DVV, Traficom and the Association of Finnish Municipalities, polar-night lengths from the Finnish Meteorological Institute, distances from LaplandVibes driving routes. Checked 15 November 2026.',
     intro: [
       'The paperwork of moving to Lapland is the same as anywhere in Finland, but three things weigh more here than in the south: winter lasts half the year, distances are measured in hundreds of kilometres, and in small municipalities the services sit in one place. This page is a checklist in the order things need doing.',
       'If you are moving to Finland from abroad, residence permits, the personal identity code, the tax card and a bank account are covered on our sister site <a href="https://laplandwork.com/moving-to-finland" target="_blank" rel="noopener">laplandwork.com</a>. This page starts when the keys are in your hand.',
@@ -137,7 +137,7 @@ export const MOVING: HousingCopyMap = {
         h2: 'Four notifications, one deadline.',
         bullets: [
           '<strong>Change-of-address notification to DVV</strong>: at the earliest one month before moving day and at the latest one week after the move (DVV). The same notification goes to Posti. Municipal services (daycare, school, health centre) follow your registered home municipality, so file it right away.',
-          '<strong>Electricity contract.</strong> The total price of electricity for a household using 2,500–4,999 kWh a year averaged 22.9 cents per kWh across Finland in March 2026, and 14.1 cents in the class above 15,000 kWh, where an electrically heated house belongs (Statistics Finland). Lapland’s heating season is long, so estimate your consumption on the high side.',
+          '<strong>Electricity contract.</strong> The total price of electricity for a household using 2,500–4,999 kWh a year averaged 23.7 cents per kWh across Finland in June 2026, and 14.9 cents in the class above 15,000 kWh, where an electrically heated house belongs (Statistics Finland). Lapland’s heating season is long, so estimate your consumption on the high side.',
           '<strong>Health care</strong> is run by the wellbeing services county of Lapland (Lapha). Non-urgent care goes through your local health centre; find the nearest one on the county’s site and register with Omakanta.',
           '<strong>Internet.</strong> Ask the housing company or landlord about fibre before you sign. In sparsely populated areas a mobile router is often the only option, and anyone working remotely should test the connection in the flat first.',
         ],
@@ -147,8 +147,8 @@ export const MOVING: HousingCopyMap = {
         kicker: 'Car and winter',
         h2: 'You can manage without a car in Rovaniemi. Not elsewhere.',
         bullets: [
-          '<strong>Winter tyres:</strong> in Finland winter tyres must be used from 1 November to 31 March if weather or road conditions require it. Studded tyres are allowed in the same period and at other times when conditions demand. The main grooves of a winter tyre must be at least 3.0 mm deep (Traficom). In Lapland “if conditions require” means, in practice, from late October to April.',
-          '<strong>Fuel:</strong> 95E10 petrol averaged €1.93 a litre across Finland in March 2026 and diesel €2.08 (Statistics Finland). Long distances make this a bigger line in Lapland than in the south.',
+          '<strong>Winter tyres:</strong> in Finland winter tyres must be used from 1 November to 31 March if weather or road conditions require it. Studded tyres are allowed in the same period and at other times when conditions demand. The main grooves of a winter tyre must be at least 3.0 mm deep (Traficom).',
+          '<strong>Fuel:</strong> 95E10 petrol averaged €2.09 a litre across Finland in June 2026 and diesel €2.15 (Statistics Finland). Long distances make this a bigger line in Lapland than in the south.',
           '<strong>Distances</strong> from the LaplandVibes driving routes: Oulu–Kemi 105 km, Kemi–Rovaniemi 118 km, Rovaniemi–Ylläs (Äkäslompolo) 175 km, Sodankylä–Saariselkä 130 km, Levi–Kilpisjärvi 258 km. Lapland is bigger than it looks on the map.',
           '<strong>Engine block heater and cabin heater.</strong> In hard frost the car is warmed before you leave; a heating post in the car park is standard equipment in Lapland. Get a parking space with a post written into the lease.',
         ],
@@ -197,7 +197,7 @@ export const MOVING: HousingCopyMap = {
       },
       {
         q: 'When are winter tyres required in Lapland?',
-        a: 'The law says 1 November to 31 March if weather or road conditions require it, and studs are allowed in the same period and at other times when conditions demand (Traficom). In Lapland snow often arrives before November and leaves in April, so tyres are changed by the conditions, not the calendar.',
+        a: 'The law says 1 November to 31 March if weather or road conditions require it, and studs are allowed in the same period and at other times when conditions demand (Traficom). So tyres are changed by the conditions, not the calendar.',
       },
       {
         q: 'Does Rovaniemi have a polar night?',

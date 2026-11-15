@@ -24,7 +24,7 @@ export const TOWN_KEMIJARVI: HousingCopyMap = {
         'Suomen pohjoisin kaupunki, jossa kaupungilla on 560 vuokra-asuntoa ja osa niistä on tyhjillään. Mistä asunto haetaan ja mitä kannattaa tietää ennen muuttoa.',
     },
     authorNote:
-      'Väkiluku Tilastokeskukselta, asuntomäärä ja hakuohje Kemijärven kaupungin sivuilta, vuokrankorotukset ja käyttöastetavoitteet kaupungin talousarviosta 2026. Tarkistettu 23.9.2026.',
+      'Väkiluku Tilastokeskukselta, asuntomäärä ja hakuohje Kemijärven kaupungin sivuilta, vuokrankorotukset ja käyttöastetavoitteet kaupungin talousarviosta 2026. Tarkistettu 15.11.2026.',
     intro: [
       'Kemijärvellä asui 6 919 ihmistä vuoden 2025 lopussa, 35 vähemmän kuin vuotta aiemmin (Tilastokeskus). Kaupunki kutsuu itseään Suomen pohjoisimmaksi kaupungiksi, ja sen mukaan keskustan palvelut ovat kävelymatkan päässä (kemijarvi.fi).',
       'Kaupungin kahdella kiinteistöyhtiöllä, Kemijärven Vuokrataloilla ja Kemijärven Tövelillä, on 560 vuokra-asuntoa (kemijarvi.fi). Kaupungin talousarviossa realistisena tavoitteena pidetään, että yhtiöiden asunnoista 80–85 prosenttia on vuokrattuna. Tyhjiä asuntoja siis on.',
@@ -65,18 +65,18 @@ export const TOWN_KEMIJARVI: HousingCopyMap = {
         kicker: 'Mitä vuokra maksaa',
         h2: 'Kaupungin yhtiöt eivät julkaise vuokriaan.',
         table: {
-          caption: 'Keskineliövuokra €/m²/kk, vapaarahoitteiset vuokra-asunnot, 2026Q2',
+          caption: 'Keskineliövuokra €/m²/kk, vapaarahoitteiset vuokra-asunnot, 2026Q3',
           head: ['', 'Lappi (maakunta)', 'Koko maa'],
           rows: [
-            ['Yksiöt', '17,30', '20,46'],
-            ['Kaksiot', '12,85', '15,04'],
-            ['Kolmiot ja isommat', '10,97', '13,92'],
-            ['Kaikki asunnot', '13,10', '15,94'],
+            ['Yksiöt', '17,25', '20,49'],
+            ['Kaksiot', '12,87', '15,07'],
+            ['Kolmiot ja isommat', '11,08', '13,98'],
+            ['Kaikki asunnot', '13,14', '15,99'],
           ],
-          foot: 'Tilastokeskus, vuokrat 2026Q2, taulukko 15fa. Kemijärvestä ei julkaista omaa lukua, ja maakunnan luku sisältää kalliimman Rovaniemen.',
+          foot: 'Tilastokeskus, vuokrat 2026Q3, taulukko 15fa. Kemijärvestä ei julkaista omaa lukua, ja maakunnan luku sisältää kalliimman Rovaniemen.',
         },
         paras: [
-          '<strong>Kemijärven oma luku on vuodelta 2022.</strong> Keskustan postinumeroalueella 98100 vapaarahoitteiset yksiöt maksoivat tammi–maaliskuussa 2022 keskimäärin 12,15 €/m² ja kaksiot 9,10 €/m². Sen jälkeen luku on peitetty joka neljännes, koska Tilastokeskus peittää postinumeroalueen luvun, jos havaintoja on alle 20 tai vuokrataloyhtiöiden osuus on suuri (taulukko 13eb).',
+          '<strong>Kemijärven oma luku on vuodelta 2022.</strong> Keskustan postinumeroalueella 98100 vapaarahoitteiset yksiöt maksoivat tammi–maaliskuussa 2022 keskimäärin 12,15 €/m² ja kaksiot 9,10 €/m². Sen jälkeen luku on peitetty joka neljännes, koska Tilastokeskus ei julkaise postinumeroalueen lukua, jos havaintoja on liian vähän (taulukko 13eb).',
           'Kaupungin yhtiöiden vuokria ei ole verkossa. Kysy asunnon vuokra asuntosihteeriltä ennen kuin hyväksyt tarjouksen, ja muista, että vuokriin tuli vuonna 2026 korotus: 4,5 prosenttia Vuokrataloissa ja 5 prosenttia Tövelissä.',
         ],
       },
@@ -129,7 +129,7 @@ export const TOWN_KEMIJARVI: HousingCopyMap = {
       },
       {
         q: 'Mitä vuokra-asunto maksaa Kemijärvellä?',
-        a: 'Tuoretta keskivuokraa ei julkaista. Keskustan postinumeroalueen viimeisin luku on alkuvuodelta 2022: yksiöt 12,15 €/m² ja kaksiot 9,10 €/m². Lapin maakunnan keskiarvo oli 13,10 €/m² huhti–kesäkuussa 2026, ja se sisältää kalliimman Rovaniemen (Tilastokeskus).',
+        a: 'Tuoretta keskivuokraa ei julkaista. Keskustan postinumeroalueen viimeisin luku on alkuvuodelta 2022: yksiöt 12,15 €/m² ja kaksiot 9,10 €/m². Lapin maakunnan keskiarvo oli 13,14 €/m² heinä–syyskuussa 2026, ja se sisältää kalliimman Rovaniemen (Tilastokeskus).',
       },
       {
         q: 'Onko Kemijärvellä opiskelija-asuntoja?',
@@ -160,7 +160,7 @@ export const TOWN_KEMIJARVI: HousingCopyMap = {
         'Finland’s northernmost town, where the city owns 560 rental flats and some of them stand empty. Where to apply and what to know before you move.',
     },
     authorNote:
-      'Population from Statistics Finland, flat numbers and how to apply from the City of Kemijärvi’s pages, rent increases and occupancy targets from the city’s 2026 budget. Checked 23 September 2026.',
+      'Population from Statistics Finland, flat numbers and how to apply from the City of Kemijärvi’s pages, rent increases and occupancy targets from the city’s 2026 budget. Checked 15 November 2026.',
     intro: [
       'Kemijärvi had 6,919 residents at the end of 2025, 35 fewer than a year earlier (Statistics Finland). The city calls itself Finland’s northernmost town and says the services in the centre are within walking distance (kemijarvi.fi).',
       'The city’s two property companies, Kemijärven Vuokratalot and Kemijärven Töveli, own 560 rental flats (kemijarvi.fi). The city budget treats having 80–85 percent of those flats let as a realistic target, so empty flats do exist.',
@@ -201,18 +201,18 @@ export const TOWN_KEMIJARVI: HousingCopyMap = {
         kicker: 'What rent costs',
         h2: 'The city companies do not publish their rents.',
         table: {
-          caption: 'Average rent €/m²/month, free-market rental flats, 2026Q2',
+          caption: 'Average rent €/m²/month, free-market rental flats, 2026Q3',
           head: ['', 'Lapland (region)', 'Whole country'],
           rows: [
-            ['Studios', '17.30', '20.46'],
-            ['Two-room flats', '12.85', '15.04'],
-            ['Three rooms and larger', '10.97', '13.92'],
-            ['All flats', '13.10', '15.94'],
+            ['Studios', '17.25', '20.49'],
+            ['Two-room flats', '12.87', '15.07'],
+            ['Three rooms and larger', '11.08', '13.98'],
+            ['All flats', '13.14', '15.99'],
           ],
-          foot: 'Statistics Finland, rents 2026Q2, table 15fa. No separate figure is published for Kemijärvi, and the regional figure includes the dearer Rovaniemi.',
+          foot: 'Statistics Finland, rents 2026Q3, table 15fa. No separate figure is published for Kemijärvi, and the regional figure includes the dearer Rovaniemi.',
         },
         paras: [
-          '<strong>Kemijärvi’s own figure dates from 2022.</strong> In the town-centre postal area 98100, free-market studios averaged €12.15 per m² and two-room flats €9.10 per m² in January–March 2022. Every quarter since has been suppressed: Statistics Finland hides a postal area’s figure when there are fewer than 20 observations or the share of housing companies is large (table 13eb).',
+          '<strong>Kemijärvi’s own figure dates from 2022.</strong> In the town-centre postal area 98100, free-market studios averaged €12.15 per m² and two-room flats €9.10 per m² in January–March 2022. Every quarter since has been suppressed: Statistics Finland does not publish a postal area’s figure when there are too few observations (table 13eb).',
           'The city companies’ rents are not online. Ask the housing secretary for the rent before you accept an offer, and remember that rents went up in 2026: 4.5 percent at Vuokratalot and 5 percent at Töveli.',
         ],
       },
@@ -265,7 +265,7 @@ export const TOWN_KEMIJARVI: HousingCopyMap = {
       },
       {
         q: 'What does a rental flat cost in Kemijärvi?',
-        a: 'No current average is published. The latest figure for the town-centre postal area is from early 2022: studios €12.15 per m² and two-room flats €9.10 per m². The Lapland average was €13.10 per m² in April–June 2026, and it includes the dearer Rovaniemi (Statistics Finland).',
+        a: 'No current average is published. The latest figure for the town-centre postal area is from early 2022: studios €12.15 per m² and two-room flats €9.10 per m². The Lapland average was €13.14 per m² in July–September 2026, and it includes the dearer Rovaniemi (Statistics Finland).',
       },
       {
         q: 'Is there student housing in Kemijärvi?',

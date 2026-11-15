@@ -29,19 +29,19 @@ export const COST: HousingCopyMap = {
         kicker: 'Vuokra',
         h2: 'Halvempaa kuin koko maassa, paitsi kun ei ole.',
         table: {
-          caption: 'Keskineliövuokra €/m²/kk, vapaarahoitteiset vuokra-asunnot, 2026Q2',
+          caption: 'Keskineliövuokra €/m²/kk, vapaarahoitteiset vuokra-asunnot, 2026Q3',
           head: ['', 'Rovaniemi', 'Lappi (maakunta)', 'Koko maa'],
           rows: [
-            ['Yksiöt', '18,66', '17,30', '20,46'],
-            ['Kaksiot', '14,35', '12,85', '15,04'],
-            ['Kolmiot ja isommat', '12,09', '10,97', '13,92'],
-            ['Kaikki asunnot', '14,55', '13,10', '15,94'],
+            ['Yksiöt', '18,63', '17,25', '20,49'],
+            ['Kaksiot', '14,40', '12,87', '15,07'],
+            ['Kolmiot ja isommat', '12,29', '11,08', '13,98'],
+            ['Kaikki asunnot', '14,63', '13,14', '15,99'],
           ],
-          foot: 'Tilastokeskus, vuokrat 2026Q2, taulukko 15fa.',
+          foot: 'Tilastokeskus, vuokrat 2026Q3, taulukko 15fa.',
         },
         paras: [
-          '<strong>Esimerkit:</strong> 30 m²:n yksiö Rovaniemellä noin 560 €/kk (18,66 × 30); 50 m²:n kaksio Rovaniemellä noin 720 €/kk (14,35 × 50); 75 m²:n kolmio Lapin maakunnan keskihinnalla noin 820 €/kk (10,97 × 75).',
-          'Poikkeus on tunturikeskusten talvi: Levillä 80 m²:n alppimökki maksoi 750 €/kk touko–marraskuussa mutta 2 000 €/viikko sesongissa (Yle 25.5.2023). Ympärivuotinen sopimus samaan asuntoon oli 1 650 €/kk. Mökkikylän hinta ei ole Lapin hinta.',
+          '<strong>Esimerkit:</strong> 30 m²:n yksiö Rovaniemellä noin 560 €/kk (18,63 × 30); 50 m²:n kaksio Rovaniemellä noin 720 €/kk (14,40 × 50); 75 m²:n kolmio Lapin maakunnan keskihinnalla noin 830 €/kk (11,08 × 75).',
+          'Poikkeus on tunturikeskusten talvi: Levin keskustan lähellä 80 m²:n alppitaloasunto maksoi 750 €/kk touko–marraskuussa mutta 2 000 €/viikko sesongissa (Yle 25.5.2023). Ympärivuotinen sopimus samaan asuntoon oli 1 650 €/kk. Mökkikylän hinta ei ole Lapin hinta.',
         ],
       },
       {
@@ -49,18 +49,18 @@ export const COST: HousingCopyMap = {
         kicker: 'Sähkö ja lämmitys',
         h2: 'Kilowattitunti maksaa saman, mutta niitä kuluu enemmän.',
         table: {
-          caption: 'Sähkön kokonaishinta kotitalouksille, snt/kWh, maaliskuu 2026, koko maa',
+          caption: 'Sähkön kokonaishinta kotitalouksille, snt/kWh, kesäkuu 2026, koko maa',
           head: ['Vuosikulutus', 'Kokonaishinta'],
           rows: [
-            ['1 000–2 499 kWh (pieni kerrostaloasunto)', '27,0'],
-            ['2 500–4 999 kWh (kerrostalo- tai rivitaloasunto)', '22,9'],
-            ['5 000–15 000 kWh (omakotitalo, ei sähkölämmitystä)', '17,1'],
-            ['yli 15 000 kWh (sähkölämmitteinen talo)', '14,1'],
+            ['1 000–2 499 kWh (pieni kerrostaloasunto)', '28,2'],
+            ['2 500–4 999 kWh (kerrostalo- tai rivitaloasunto)', '23,7'],
+            ['5 000–15 000 kWh (omakotitalo, ei sähkölämmitystä)', '17,9'],
+            ['yli 15 000 kWh (sähkölämmitteinen talo)', '14,9'],
           ],
           foot: 'Tilastokeskus, sähkön hinta kuluttajatyypeittäin, taulukko 13rb. Hinta sisältää energian, siirron ja verot.',
         },
         paras: [
-          '<strong>Esimerkit:</strong> kerrostalokaksio 3 500 kWh/v: 3 500 × 0,229 = noin 800 €/v eli 67 €/kk; sähkölämmitteinen omakotitalo 18 000 kWh/v: 18 000 × 0,141 = noin 2 540 €/v eli 212 €/kk.',
+          '<strong>Esimerkit:</strong> kerrostalokaksio 3 500 kWh/v: 3 500 × 0,237 = noin 830 €/v eli 69 €/kk; sähkölämmitteinen omakotitalo 18 000 kWh/v: 18 000 × 0,149 = noin 2 680 €/v eli 223 €/kk.',
           'Hinta on valtakunnallinen keskiarvo. Lapin lämmityskausi on etelää pidempi, joten sama talo kuluttaa täällä enemmän kilowattitunteja; kysy edelliseltä asukkaalta tai vuokranantajalta viime vuoden kulutus, se on paras arvio.',
         ],
       },
@@ -69,8 +69,8 @@ export const COST: HousingCopyMap = {
         kicker: 'Liikkuminen',
         h2: 'Tämä on se erä, joka Lapissa on isompi.',
         paras: [
-          '95E10-bensiini maksoi maaliskuussa 2026 koko maassa keskimäärin 1,93 €/l ja diesel 2,08 €/l (Tilastokeskus). Välimatkat LaplandVibesin ajoreiteiltä: Kemi–Rovaniemi 118 km, Rovaniemi–Ylläs 175 km, Sodankylä–Saariselkä 130 km.',
-          '<strong>Esimerkki:</strong> työmatka 40 km päivässä, 22 työpäivää, kulutus 7 l/100 km: 880 km × 0,07 l/km × 1,93 €/l = noin 119 €/kk bensiiniä. Rovaniemen keskustassa asuva pärjää ilman autoa; tunturikylässä auto on osa vuokraa, vaikka se ei sopimuksessa lue.',
+          '95E10-bensiini maksoi kesäkuussa 2026 koko maassa keskimäärin 2,09 €/l ja diesel 2,15 €/l (Tilastokeskus). Välimatkat LaplandVibesin ajoreiteiltä: Kemi–Rovaniemi 118 km, Rovaniemi–Ylläs 175 km, Sodankylä–Saariselkä 130 km.',
+          '<strong>Esimerkki:</strong> työmatka 40 km päivässä, 22 työpäivää, kulutus 7 l/100 km: 880 km × 0,07 l/km × 2,09 €/l = noin 129 €/kk bensiiniä. Rovaniemen keskustassa asuva pärjää ilman autoa; tunturikylässä auto on osa vuokraa, vaikka se ei sopimuksessa lue.',
         ],
       },
       {
@@ -110,7 +110,7 @@ export const COST: HousingCopyMap = {
         cards: [
           {
             title: 'Halvempaa: vuokra',
-            body: 'Lapin keskineliövuokra 13,10 €/m² vastaan koko maan 15,94 €/m² (Tilastokeskus 2026Q2). Rovaniemi 14,55 on näiden välissä.',
+            body: 'Lapin keskineliövuokra 13,14 €/m² vastaan koko maan 15,99 €/m² (Tilastokeskus 2026Q3). Rovaniemi 14,63 on näiden välissä.',
           },
           {
             title: 'Kalliimpaa: liikkuminen ja lämmitys',
@@ -126,11 +126,11 @@ export const COST: HousingCopyMap = {
     faqs: [
       {
         q: 'Onko Rovaniemi kallis kaupunki asua?',
-        a: 'Vuokrilla mitattuna ei: keskineliövuokra 14,55 €/m² on alle koko maan keskiarvon 15,94 (Tilastokeskus 2026Q2). Yksiöissä ero on pieni (18,66 vastaan 20,46), ja uusissa vuokrasuhteissa Rovaniemen yksiö maksaa 21,17 €/m² eli koko maan tasoa.',
+        a: 'Vuokrilla mitattuna ei: keskineliövuokra 14,63 €/m² on alle koko maan keskiarvon 15,99 (Tilastokeskus 2026Q3), ja Rovaniemi on koko maata halvempi kaikissa asuntokooissa, myös yksiöissä (18,63 vastaan 20,49). Uusissa vuokrasuhteissa Rovaniemen yksiö maksaa 20,14 €/m²: juuri vapautuva yksiö on noin 8 % kalliimpi kuin jo vuokralla oleva, mutta yhä halvempi kuin koko maan uusien vuokrasuhteiden yksiö, 21,11 €/m².',
       },
       {
         q: 'Paljonko yksin asuva tarvitsee kuukaudessa Rovaniemellä?',
-        a: 'Laskemme vain sen, mihin on lähde: 30 m²:n yksiö noin 560 €/kk (18,66 × 30) ja sähkö 1 800 kWh:n vuosikulutuksella noin 41 €/kk (1 800 × 0,270 / 12). Ruoka, netti, vakuutukset ja liikkuminen tulevat päälle omien tottumustesi mukaan.',
+        a: 'Laskemme vain sen, mihin on lähde: 30 m²:n yksiö noin 560 €/kk (18,63 × 30) ja sähkö 1 800 kWh:n vuosikulutuksella noin 42 €/kk (1 800 × 0,282 / 12). Ruoka, netti, vakuutukset ja liikkuminen tulevat päälle omien tottumustesi mukaan.',
       },
       {
         q: 'Saanko asumistukea Lapissa?',
@@ -162,19 +162,19 @@ export const COST: HousingCopyMap = {
         kicker: 'Rent',
         h2: 'Cheaper than the national average, except when it is not.',
         table: {
-          caption: 'Average rent €/m²/month, free-market rental flats, 2026Q2',
+          caption: 'Average rent €/m²/month, free-market rental flats, 2026Q3',
           head: ['', 'Rovaniemi', 'Lapland (region)', 'Whole country'],
           rows: [
-            ['Studios', '18.66', '17.30', '20.46'],
-            ['Two-room flats', '14.35', '12.85', '15.04'],
-            ['Three rooms and larger', '12.09', '10.97', '13.92'],
-            ['All flats', '14.55', '13.10', '15.94'],
+            ['Studios', '18.63', '17.25', '20.49'],
+            ['Two-room flats', '14.40', '12.87', '15.07'],
+            ['Three rooms and larger', '12.29', '11.08', '13.98'],
+            ['All flats', '14.63', '13.14', '15.99'],
           ],
-          foot: 'Statistics Finland, rents 2026Q2, table 15fa.',
+          foot: 'Statistics Finland, rents 2026Q3, table 15fa.',
         },
         paras: [
-          '<strong>Examples:</strong> a 30 m² studio in Rovaniemi about €560 a month (18.66 × 30); a 50 m² two-room flat in Rovaniemi about €720 (14.35 × 50); a 75 m² three-room flat at the Lapland regional average about €820 (10.97 × 75).',
-          'The exception is winter in the ski resorts: at Levi an 80 m² alpine cabin cost €750 a month from May to November but €2,000 a week in high season (Yle, 25 May 2023). A year-round lease on the same flat was €1,650 a month. The resort price is not the Lapland price.',
+          '<strong>Examples:</strong> a 30 m² studio in Rovaniemi about €560 a month (18.63 × 30); a 50 m² two-room flat in Rovaniemi about €720 (14.40 × 50); a 75 m² three-room flat at the Lapland regional average about €830 (11.08 × 75).',
+          'The exception is winter in the ski resorts: near the centre of Levi an 80 m² alpine-house flat cost €750 a month from May to November but €2,000 a week in high season (Yle, 25 May 2023). A year-round lease on the same flat was €1,650 a month. The resort price is not the Lapland price.',
         ],
       },
       {
@@ -182,18 +182,18 @@ export const COST: HousingCopyMap = {
         kicker: 'Electricity and heating',
         h2: 'A kilowatt-hour costs the same, you just use more of them.',
         table: {
-          caption: 'Total price of electricity for households, cents/kWh, March 2026, whole country',
+          caption: 'Total price of electricity for households, cents/kWh, June 2026, whole country',
           head: ['Annual consumption', 'Total price'],
           rows: [
-            ['1,000–2,499 kWh (small flat)', '27.0'],
-            ['2,500–4,999 kWh (flat or row house)', '22.9'],
-            ['5,000–15,000 kWh (detached house, no electric heating)', '17.1'],
-            ['over 15,000 kWh (electrically heated house)', '14.1'],
+            ['1,000–2,499 kWh (small flat)', '28.2'],
+            ['2,500–4,999 kWh (flat or row house)', '23.7'],
+            ['5,000–15,000 kWh (detached house, no electric heating)', '17.9'],
+            ['over 15,000 kWh (electrically heated house)', '14.9'],
           ],
           foot: 'Statistics Finland, price of electricity by type of consumer, table 13rb. Price includes energy, transmission and taxes.',
         },
         paras: [
-          '<strong>Examples:</strong> a two-room flat using 3,500 kWh a year: 3,500 × 0.229 = about €800 a year, or €67 a month; an electrically heated detached house using 18,000 kWh: 18,000 × 0.141 = about €2,540 a year, or €212 a month.',
+          '<strong>Examples:</strong> a two-room flat using 3,500 kWh a year: 3,500 × 0.237 = about €830 a year, or €69 a month; an electrically heated detached house using 18,000 kWh: 18,000 × 0.149 = about €2,680 a year, or €223 a month.',
           'The price is a national average. Lapland’s heating season is longer than the south’s, so the same house burns more kilowatt-hours here; ask the previous tenant or the landlord for last year’s consumption, it is the best estimate you will get.',
         ],
       },
@@ -202,8 +202,8 @@ export const COST: HousingCopyMap = {
         kicker: 'Getting around',
         h2: 'This is the line that is bigger in Lapland.',
         paras: [
-          '95E10 petrol averaged €1.93 a litre across Finland in March 2026 and diesel €2.08 (Statistics Finland). Distances from the LaplandVibes driving routes: Kemi–Rovaniemi 118 km, Rovaniemi–Ylläs 175 km, Sodankylä–Saariselkä 130 km.',
-          '<strong>Example:</strong> a 40 km daily commute, 22 working days, 7 l/100 km: 880 km × 0.07 l/km × €1.93 = about €119 a month in petrol. In central Rovaniemi you can live without a car; in a fell village the car is part of the rent even if the lease does not say so.',
+          '95E10 petrol averaged €2.09 a litre across Finland in June 2026 and diesel €2.15 (Statistics Finland). Distances from the LaplandVibes driving routes: Kemi–Rovaniemi 118 km, Rovaniemi–Ylläs 175 km, Sodankylä–Saariselkä 130 km.',
+          '<strong>Example:</strong> a 40 km daily commute, 22 working days, 7 l/100 km: 880 km × 0.07 l/km × €2.09 = about €129 a month in petrol. In central Rovaniemi you can live without a car; in a fell village the car is part of the rent even if the lease does not say so.',
         ],
       },
       {
@@ -243,7 +243,7 @@ export const COST: HousingCopyMap = {
         cards: [
           {
             title: 'Cheaper: rent',
-            body: 'Lapland’s average rent is €13.10 per m² against €15.94 nationally (Statistics Finland 2026Q2). Rovaniemi at €14.55 sits between the two.',
+            body: 'Lapland’s average rent is €13.14 per m² against €15.99 nationally (Statistics Finland 2026Q3). Rovaniemi at €14.63 sits between the two.',
           },
           {
             title: 'Dearer: getting around and heating',
@@ -259,11 +259,11 @@ export const COST: HousingCopyMap = {
     faqs: [
       {
         q: 'Is Rovaniemi an expensive city to live in?',
-        a: 'Not by rents: the average €14.55 per m² is below the national €15.94 (Statistics Finland 2026Q2). In studios the gap is small (18.66 against 20.46), and in new tenancies a Rovaniemi studio costs €21.17 per m², roughly the national level.',
+        a: 'Not by rents: the average €14.63 per m² is below the national €15.99 (Statistics Finland 2026Q3), and Rovaniemi is cheaper than the country as a whole in every flat size, studios included (18.63 against 20.49). In new tenancies a Rovaniemi studio costs €20.14 per m²: a studio coming free now costs about 8 % more than one already let, but still less than a new-tenancy studio nationally, €21.11 per m².',
       },
       {
         q: 'How much does a single person need per month in Rovaniemi?',
-        a: 'We only calculate what has a source: a 30 m² studio about €560 a month (18.66 × 30) and electricity at 1,800 kWh a year about €41 a month (1,800 × 0.270 / 12). Food, internet, insurance and transport come on top according to your own habits.',
+        a: 'We only calculate what has a source: a 30 m² studio about €560 a month (18.63 × 30) and electricity at 1,800 kWh a year about €42 a month (1,800 × 0.282 / 12). Food, internet, insurance and transport come on top according to your own habits.',
       },
       {
         q: 'Can I get housing allowance in Lapland?',

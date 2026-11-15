@@ -10,9 +10,9 @@ import common from './common';
 const SOURCES = ['tkVuokrat', 'tkVaesto', 'kela', 'kemi', 'itatuuli', 'keminmaa', 'keminmaaVuokra', 'tornio', 'ahvl', 'rakli'] as const;
 
 const copy: HousingPageCopy = {
-  metaTitle: 'Louer à Kemi, Tornio et Keminmaa : logements communaux',
+  metaTitle: 'Louer à Kemi, Tornio et Keminmaa : logements communaux',
   metaDescription:
-    'Louer à Kemi, Tornio et Keminmaa, sur la côte de la Laponie : sociétés communales (Itätuuli, Tornion Krunni), agences privées et aides de Kela.',
+    'Louer à Kemi, Tornio et Keminmaa, sur la côte de la Laponie : sociétés communales (Itätuuli, Tornion Krunni), agences privées et aides de Kela.',
   breadcrumb: 'Kemi et Tornio',
   hero: {
     eyebrow: 'La côte de la Laponie maritime',

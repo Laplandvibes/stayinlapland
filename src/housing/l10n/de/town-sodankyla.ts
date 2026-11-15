@@ -17,7 +17,7 @@ const SOURCES = [
 const copy: HousingPageCopy = {
   metaTitle: 'Mieten in Sodankylä: 720 kommunale Wohnungen und ihre Kosten',
   metaDescription:
-    'Mieten in Sodankylä: rund 720 kommunale Wohnungen von Asentopuulaaki Oy, Mieten von etwa 7,40–18 € pro m², Online-Bewerbung, Studienkredit-Pilot und Wohngeld.',
+    'Mieten in Sodankylä: rund 720 kommunale Wohnungen von Asentopuulaaki Oy, Mieten von etwa 7,40–18 € pro m², Online-Bewerbung, Studienkredit-Pilot und Wohngeld.',
   breadcrumb: 'Sodankylä',
   hero: {
     eyebrow: 'Sodankylä, 8.095 Einwohner',

@@ -10,9 +10,9 @@ import common from './common';
 const SOURCES = ['tkVuokrat', 'tkVaesto', 'kela', 'inari', 'ahvl', 'rakli'] as const;
 
 const copy: HousingPageCopy = {
-  metaTitle: 'Louer à Ivalo et Inari : bailleurs communaux et privés',
+  metaTitle: 'Louer à Ivalo et Inari : bailleurs communaux et privés',
   metaDescription:
-    'Louer à Ivalo, Inari et Saariselkä : plus de 500 logements communaux (Inarin Vuokra-asunnot Oy), bailleurs privés recensés par la commune et aides de Kela.',
+    'Louer à Ivalo, Inari et Saariselkä : plus de 500 logements communaux (Inarin Vuokra-asunnot Oy), bailleurs privés recensés par la commune et aides de Kela.',
   breadcrumb: 'Ivalo et Inari',
   hero: {
     eyebrow: 'Commune d’Inari, 7 244 habitants',

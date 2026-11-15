@@ -10,9 +10,9 @@ import common from './common';
 const SOURCES = ['tkVuokrat', 'tkVaesto', 'kela', 'rovaniemi', 'das', 'yle2025das', 'yle2026rovaniemi', 'ahvl', 'rakli'] as const;
 
 const copy: HousingPageCopy = {
-  metaTitle: 'Louer à Rovaniemi : loyers, bailleurs et marche à suivre',
+  metaTitle: 'Louer à Rovaniemi : loyers, bailleurs et marche à suivre',
   metaDescription:
-    'Louer à Rovaniemi : loyer au m² (Statistics Finland 2026), bailleurs recensés par la ville, DAS pour les étudiants, allocation de Kela et quand déposer.',
+    'Louer à Rovaniemi : loyer au m² (Statistics Finland 2026), bailleurs recensés par la ville, DAS pour les étudiants, allocation de Kela et quand déposer.',
   breadcrumb: 'Rovaniemi',
   hero: {
     eyebrow: 'Rovaniemi, 66 191 habitants',

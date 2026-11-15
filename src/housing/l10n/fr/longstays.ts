@@ -10,9 +10,9 @@ import common from './common';
 const SOURCES = ['ahvl531', 'kuluttajaliittoVuokra', 'rakli', 'dvvTilapainen', 'dvv'] as const;
 
 const copy: HousingPageCopy = {
-  metaTitle: 'Un mois ou un hiver en Laponie : appartement ou chalet',
+  metaTitle: 'Un mois ou un hiver en Laponie : appartement ou chalet',
   metaDescription:
-    'Séjourner un mois ou un hiver en Laponie finlandaise : appartement meublé en location, chalet à la semaine ou logement fourni par l’employeur.',
+    'Séjourner un mois ou un hiver en Laponie finlandaise : appartement meublé en location, chalet à la semaine ou logement fourni par l’employeur.',
   breadcrumb: 'Séjours longue durée',
   hero: {
     eyebrow: 'D’un mois à tout un hiver',

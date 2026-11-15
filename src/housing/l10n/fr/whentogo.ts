@@ -7,9 +7,9 @@ import { whenToGoSources, type WhenToGoCopy } from '../../whentogo';
 import common from './common';
 
 const copy: WhenToGoCopy = {
-  metaTitle: 'Quand partir en Laponie : le guide mois par mois',
+  metaTitle: 'Quand partir en Laponie : le guide mois par mois',
   metaDescription:
-    'Quand partir en Laponie, mois par mois : températures, lumière, neige, aurores boréales, soleil de minuit, couleurs d’automne et moustiques.',
+    'Quand partir en Laponie, mois par mois : températures, lumière, neige, aurores boréales, soleil de minuit, couleurs d’automne et moustiques.',
   breadcrumb: 'Quand venir',
   hero: {
     eyebrow: 'De janvier à décembre',

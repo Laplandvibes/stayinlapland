@@ -10,9 +10,9 @@ import common from './common';
 const SOURCES = ['tkVuokrat', 'tkVaesto', 'kela', 'kittila', 'yle2023', 'yle2017', 'ahvl', 'rakli'] as const;
 
 const copy: HousingPageCopy = {
-  metaTitle: 'Louer à Kittilä et Levi : logements communaux et saisonniers',
+  metaTitle: 'Louer à Kittilä et Levi : logements communaux et saisonniers',
   metaDescription:
-    'Louer à Kittilä et Levi : la société communale Kittilän Vuokratalot Oy, loyers saisonniers, logement des saisonniers et aides de Kela.',
+    'Louer à Kittilä et Levi : la société communale Kittilän Vuokratalot Oy, loyers saisonniers, logement des saisonniers et aides de Kela.',
   breadcrumb: 'Kittilä et Levi',
   hero: {
     eyebrow: 'Kittilä, 6 973 habitants',

@@ -13,9 +13,9 @@ const SOURCES = [
 ] as const;
 
 const copy: HousingPageCopy = {
-  metaTitle: 'Louer à Kemijärvi : les 560 logements de la ville',
+  metaTitle: 'Louer à Kemijärvi : les 560 logements de la ville',
   metaDescription:
-    'Louer à Kemijärvi : les 560 logements de la ville, la demande en ligne, les hausses de loyer 2026, les maisons de Vuostimo près de Pyhä et l’allocation de Kela.',
+    'Louer à Kemijärvi : les 560 logements de la ville, la demande en ligne, les hausses de loyer 2026, les maisons de Vuostimo près de Pyhä et l’allocation de Kela.',
   breadcrumb: 'Kemijärvi',
   hero: {
     eyebrow: 'Kemijärvi, 6 919 habitants',

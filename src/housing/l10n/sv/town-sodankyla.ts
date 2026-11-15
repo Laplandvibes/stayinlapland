@@ -17,7 +17,7 @@ const SOURCES = [
 const copy: HousingPageCopy = {
   metaTitle: 'Hyra bostad i Sodankylä: 720 kommunala lägenheter och priser',
   metaDescription:
-    'Hyra bostad i Sodankylä: Asentopuulaaki Oy:s omkring 720 kommunala bostäder, hyror på cirka 7,40–18 € per m², webbansökan, studielånspiloten och stöd från Kela.',
+    'Hyra bostad i Sodankylä: Asentopuulaaki Oy:s omkring 720 kommunala bostäder, hyror på cirka 7,40–18 € per m², webbansökan, studielånspiloten och stöd från Kela.',
   breadcrumb: 'Sodankylä',
   hero: {
     eyebrow: 'Sodankylä, 8 095 invånare',

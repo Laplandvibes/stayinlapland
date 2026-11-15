@@ -17,7 +17,7 @@ const SOURCES = [
 const copy: HousingPageCopy = {
   metaTitle: 'Alquiler en Sodankylä: 720 viviendas municipales y su precio',
   metaDescription:
-    'Alquilar en Sodankylä: unas 720 viviendas municipales de Asentopuulaaki Oy, alquileres de unos 7,40–18 € por m², solicitud en línea y ayudas de Kela.',
+    'Alquilar en Sodankylä: unas 720 viviendas municipales de Asentopuulaaki Oy, alquileres de unos 7,40–18 € por m², solicitud en línea y ayudas de Kela.',
   breadcrumb: 'Sodankylä',
   hero: {
     eyebrow: 'Sodankylä, 8095 habitantes',

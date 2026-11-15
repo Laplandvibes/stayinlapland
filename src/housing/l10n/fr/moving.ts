@@ -13,9 +13,9 @@ const SOURCES = [
 ] as const;
 
 const copy: HousingPageCopy = {
-  metaTitle: 'S’installer en Laponie : guide pratique du premier mois',
+  metaTitle: 'S’installer en Laponie : guide pratique du premier mois',
   metaDescription:
-    'Déclaration d’adresse, pneus hiver, frais de crèche, électricité et nuit polaire : ce qu’il faut régler pendant le premier mois en Laponie finlandaise.',
+    'Déclaration d’adresse, pneus hiver, frais de crèche, électricité et nuit polaire : ce qu’il faut régler pendant le premier mois en Laponie finlandaise.',
   breadcrumb: 'S’installer en Laponie',
   hero: {
     eyebrow: 'S’installer en Laponie : les 30 premiers jours',

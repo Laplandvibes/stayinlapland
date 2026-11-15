@@ -14,9 +14,9 @@ const SOURCES = [
 ] as const;
 
 const copy: HousingPageCopy = {
-  metaTitle: 'Louer un logement en Laponie : Rovaniemi, Levi, Kemi–Tornio',
+  metaTitle: 'Louer un logement en Laponie : Rovaniemi, Levi, Kemi–Tornio',
   metaDescription:
-    'Louer en Laponie finlandaise, de Rovaniemi à Inari : loyer au m² (Statistics Finland), dépôt de garantie et allocation logement de Kela.',
+    'Louer en Laponie finlandaise, de Rovaniemi à Inari : loyer au m² (Statistics Finland), dépôt de garantie et allocation logement de Kela.',
   breadcrumb: 'Locations',
   hero: {
     eyebrow: 'Louer en Laponie',

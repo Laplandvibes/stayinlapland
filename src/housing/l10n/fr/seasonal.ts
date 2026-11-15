@@ -13,9 +13,9 @@ const SOURCES = [
 ] as const;
 
 const copy: HousingPageCopy = {
-  metaTitle: 'Logement des saisonniers en Laponie : Levi, Ylläs, Saariselkä',
+  metaTitle: 'Logement des saisonniers en Laponie : Levi, Ylläs, Saariselkä',
   metaDescription:
-    'Où logent les saisonniers à Levi, Ylläs, Saariselkä et Rovaniemi : logement de l’employeur, bail saisonnier ou communal ; que demander avant de signer.',
+    'Où logent les saisonniers à Levi, Ylläs, Saariselkä et Rovaniemi : logement de l’employeur, bail saisonnier ou communal ; que demander avant de signer.',
   breadcrumb: 'Saisonniers',
   hero: {
     eyebrow: 'Travail saisonnier, l’hiver et l’été',

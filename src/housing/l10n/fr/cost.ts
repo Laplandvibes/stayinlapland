@@ -12,9 +12,9 @@ const SOURCES = [
 ] as const;
 
 const copy: HousingPageCopy = {
-  metaTitle: 'Coût de la vie en Laponie 2026 : loyer, électricité, carburant',
+  metaTitle: 'Coût de la vie en Laponie 2026 : loyer, électricité, carburant',
   metaDescription:
-    'Ce que coûte la vie en Laponie finlandaise : loyer au m² (Statistics Finland 2026), électricité, carburant, allocation de Kela et crèche, avec des exemples.',
+    'Ce que coûte la vie en Laponie finlandaise : loyer au m² (Statistics Finland 2026), électricité, carburant, allocation de Kela et crèche, avec des exemples.',
   breadcrumb: 'Coût de la vie',
   hero: {
     eyebrow: 'Le coût de la vie en Laponie',

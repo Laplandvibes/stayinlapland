@@ -15,9 +15,9 @@ const SOURCES = [
 ] as const;
 
 const copy: HousingPageCopy = {
-  metaTitle: 'Louer à Sodankylä : 720 logements communaux et leurs prix',
+  metaTitle: 'Louer à Sodankylä : 720 logements communaux et leurs prix',
   metaDescription:
-    'Louer à Sodankylä : les quelque 720 logements d’Asentopuulaaki Oy, loyers de 7,40–18 € le m², demande en ligne, prêts étudiants et aides de Kela.',
+    'Louer à Sodankylä : les quelque 720 logements d’Asentopuulaaki Oy, loyers de 7,40–18 € le m², demande en ligne, prêts étudiants et aides de Kela.',
   breadcrumb: 'Sodankylä',
   hero: {
     eyebrow: 'Sodankylä, 8 095 habitants',

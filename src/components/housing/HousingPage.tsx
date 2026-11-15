@@ -164,8 +164,17 @@ const OUT_ATTRS = (page: string, target?: string) => ({
 
 const LINK_LIGHT = '[&_a]:text-[#BE185D] [&_a]:font-medium [&_a]:underline [&_a]:underline-offset-2 hover:[&_a]:text-[#9D174D]';
 
+// Kielellä, jolle sivua ei ole käännetty, näytetään englanninkielinen teksti. Sen sisäiset linkit
+// (esim. /moving-to-lapland/) viedään lukijan omaan kielipuuhun kuten navigaatiossa (gate:kielietuliite).
+// Valmiiksi kielietuliitteinen linkki (suomenkielisen tekstin /fi/…) ja //-alkuinen jäävät ennalleen.
+const LOCALE_SEGMENT = /^\/(fi|de|ja|es|br|cn|kr|fr|it|nl|sv)(\/|$)/;
+
 function Html({ html, className }: { html: string; className?: string }) {
-  return <p className={className} dangerouslySetInnerHTML={{ __html: html }} />;
+  const localePath = useLocalePath();
+  const localized = html.replace(/href="(\/[^"]*)"/g, (whole, path: string) =>
+    path.startsWith('//') || LOCALE_SEGMENT.test(path) ? whole : `href="${localePath(path)}"`,
+  );
+  return <p className={className} dangerouslySetInnerHTML={{ __html: localized }} />;
 }
 
 function Table({ t }: { t: FactTable }) {
@@ -445,9 +454,11 @@ export default function HousingPage({ route, copy, heroImage, current, parent, w
         <div className="bg-finland-blue text-snow px-5 sm:px-6 py-3">
           <p className="max-w-4xl mx-auto text-sm leading-relaxed">
             {HOUSING_LANG_NOTICE[lang]}{' '}
-            <a href={route} className="underline underline-offset-2 font-semibold">English</a>
+            {/* Kieliversiolinkit: sivu on vain englanniksi ja suomeksi, joten nämä vievät toiseen kieleen tarkoituksella.
+                hreflang + lang kertovat sen selaimelle, ruudunlukijalle ja gate:kielietuliitteelle (15.11.2026). */}
+            <a href={route} hrefLang="en" lang="en" className="underline underline-offset-2 font-semibold">English</a>
             {' · '}
-            <a href={`/fi${route}`} className="underline underline-offset-2 font-semibold">Suomi</a>
+            <a href={`/fi${route}`} hrefLang="fi" lang="fi" className="underline underline-offset-2 font-semibold">Suomi</a>
           </p>
         </div>
       )}

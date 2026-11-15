@@ -122,9 +122,10 @@ export default function WhenToGo() {
         <div className="bg-finland-blue text-snow px-5 sm:px-6 py-3">
           <p className="max-w-4xl mx-auto text-sm leading-relaxed">
             {HOUSING_LANG_NOTICE[lang]}{' '}
-            <a href="/when-to-go" className="underline underline-offset-2 font-semibold">English</a>
+            {/* Kieliversiolinkit vievät toiseen kieleen tarkoituksella (sivu on vain en + fi): hreflang + lang (15.11.2026). */}
+            <a href="/when-to-go" hrefLang="en" lang="en" className="underline underline-offset-2 font-semibold">English</a>
             {' · '}
-            <a href="/fi/when-to-go" className="underline underline-offset-2 font-semibold">Suomi</a>
+            <a href="/fi/when-to-go" hrefLang="fi" lang="fi" className="underline underline-offset-2 font-semibold">Suomi</a>
           </p>
         </div>
       )}

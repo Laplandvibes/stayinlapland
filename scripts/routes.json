@@ -10,144 +10,108 @@
   },
   {
     "path": "/rentals",
-    "nativeLocales": [
-      "en",
-      "fi"
-    ],
     "harvestFiles": [
-      "src/housing/rentals.ts"
+      "src/housing/rentals.ts",
+      "src/housing/l10n/{lang}/rentals.ts"
     ],
     "fallbackTitle": "Rent an Apartment in Lapland: Rovaniemi, Levi, Kemi–Tornio, Inari",
     "fallbackDescription": "Long-term rentals in Finnish Lapland: where the flats are, what they cost per m² (Statistics Finland), deposits and Kela housing allowance."
   },
   {
     "path": "/rentals/rovaniemi",
-    "nativeLocales": [
-      "en",
-      "fi"
-    ],
     "harvestFiles": [
-      "src/housing/towns/rovaniemi.ts"
+      "src/housing/towns/rovaniemi.ts",
+      "src/housing/l10n/{lang}/town-rovaniemi.ts"
     ],
     "fallbackTitle": "Rentals in Rovaniemi: Rents, Landlords and How to Apply",
     "fallbackDescription": "Renting a flat in Rovaniemi: rent per m² from Statistics Finland 2026, the landlords listed by the city, DAS for students and when to apply."
   },
   {
     "path": "/rentals/kemi-tornio",
-    "nativeLocales": [
-      "en",
-      "fi"
-    ],
     "harvestFiles": [
-      "src/housing/towns/kemi-tornio.ts"
+      "src/housing/towns/kemi-tornio.ts",
+      "src/housing/l10n/{lang}/town-kemi-tornio.ts"
     ],
     "fallbackTitle": "Rentals in Kemi and Tornio: Municipal Flats and Portals",
     "fallbackDescription": "Renting in Kemi, Tornio and Keminmaa: the municipal housing companies, private agencies, Lapland rents per m² and Kela support."
   },
   {
     "path": "/rentals/kemijarvi",
-    "nativeLocales": [
-      "en",
-      "fi"
-    ],
     "harvestFiles": [
-      "src/housing/towns/kemijarvi.ts"
+      "src/housing/towns/kemijarvi.ts",
+      "src/housing/l10n/{lang}/town-kemijarvi.ts"
     ],
     "fallbackTitle": "Rentals in Kemijärvi: the City’s 560 Flats and How to Apply",
     "fallbackDescription": "Renting in Kemijärvi: the city’s 560 rental flats, the online application, the 2026 rent increases and Kela housing allowance."
   },
   {
     "path": "/rentals/sodankyla",
-    "nativeLocales": [
-      "en",
-      "fi"
-    ],
     "harvestFiles": [
-      "src/housing/towns/sodankyla.ts"
+      "src/housing/towns/sodankyla.ts",
+      "src/housing/l10n/{lang}/town-sodankyla.ts"
     ],
     "fallbackTitle": "Rentals in Sodankylä: 720 Municipal Flats and What They Cost",
     "fallbackDescription": "Renting in Sodankylä: the municipal company’s roughly 720 flats, rents per m², free flats and Kela support."
   },
   {
     "path": "/rentals/kittila-levi",
-    "nativeLocales": [
-      "en",
-      "fi"
-    ],
     "harvestFiles": [
-      "src/housing/towns/kittila-levi.ts"
+      "src/housing/towns/kittila-levi.ts",
+      "src/housing/l10n/{lang}/town-kittila-levi.ts"
     ],
     "fallbackTitle": "Rentals in Kittilä and Levi: Municipal Flats and Seasonal Leases",
     "fallbackDescription": "Renting in Kittilä and Levi: the municipal company, seasonal rents on holiday apartments, staff housing and Kela support."
   },
   {
     "path": "/rentals/ivalo-inari",
-    "nativeLocales": [
-      "en",
-      "fi"
-    ],
     "harvestFiles": [
-      "src/housing/towns/ivalo-inari.ts"
+      "src/housing/towns/ivalo-inari.ts",
+      "src/housing/l10n/{lang}/town-ivalo-inari.ts"
     ],
     "fallbackTitle": "Rentals in Ivalo and Inari: Municipal Company and Private Landlords",
     "fallbackDescription": "Renting in Ivalo, Inari and Saariselkä: the municipal company with over 500 flats, private landlords and Kela support."
   },
   {
     "path": "/seasonal-worker-housing",
-    "nativeLocales": [
-      "en",
-      "fi"
-    ],
     "harvestFiles": [
-      "src/housing/seasonal.ts"
+      "src/housing/seasonal.ts",
+      "src/housing/l10n/{lang}/seasonal.ts"
     ],
     "fallbackTitle": "Seasonal Worker Housing in Lapland: Levi, Ylläs, Saariselkä",
     "fallbackDescription": "Where seasonal workers live at Levi, Ylläs, Saariselkä and Rovaniemi: staff housing, seasonal leases or a municipal flat, and what to ask before you sign."
   },
   {
     "path": "/moving-to-lapland",
-    "nativeLocales": [
-      "en",
-      "fi"
-    ],
     "harvestFiles": [
-      "src/housing/moving.ts"
+      "src/housing/moving.ts",
+      "src/housing/l10n/{lang}/moving.ts"
     ],
     "fallbackTitle": "Moving to Lapland: A Practical Guide to the First Month",
     "fallbackDescription": "Address notification, winter tyres, daycare fees, electricity and the polar night: what to sort out in your first month in Finnish Lapland."
   },
   {
     "path": "/cost-of-living",
-    "nativeLocales": [
-      "en",
-      "fi"
-    ],
     "harvestFiles": [
-      "src/housing/cost.ts"
+      "src/housing/cost.ts",
+      "src/housing/l10n/{lang}/cost.ts"
     ],
     "fallbackTitle": "Cost of Living in Lapland 2026: Rent, Electricity, Fuel, Benefits",
     "fallbackDescription": "What it costs to live in Finnish Lapland: rent per m², electricity and fuel, Kela housing allowance ceilings and daycare fees, with worked examples."
   },
   {
     "path": "/long-stays",
-    "nativeLocales": [
-      "en",
-      "fi"
-    ],
     "harvestFiles": [
-      "src/housing/longstays.ts"
+      "src/housing/longstays.ts",
+      "src/housing/l10n/{lang}/longstays.ts"
     ],
     "fallbackTitle": "A Month or a Winter in Lapland: Flat, Cabin or Staff Housing",
     "fallbackDescription": "Staying a month or a winter in Finnish Lapland: a furnished rental flat, a cabin by the week or staff housing. What the tenancy law covers and when to notify your address."
   },
   {
     "path": "/when-to-go",
-    "nativeLocales": [
-      "en",
-      "fi"
-    ],
     "harvestFiles": [
-      "src/housing/whentogo.ts"
+      "src/housing/whentogo.ts",
+      "src/housing/l10n/{lang}/whentogo.ts"
     ],
     "fallbackTitle": "Best Time to Visit Lapland: Month-by-Month Guide",
     "fallbackDescription": "When to visit Finnish Lapland, month by month: temperatures, daylight, snow, auroras, midnight sun, autumn colours and mosquitoes, with official figures."

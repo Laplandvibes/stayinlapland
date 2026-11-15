@@ -327,9 +327,9 @@ for (const { path, file } of LEGAL) {
 }
 
 // ---------- asumissivut (rooli §23, 18.9.2026) ----------
-// Meta luetaan suoraan src/housing/*.ts:n `en: {` / `fi: {` -lohkoista. Muut
-// lokaalit jäävät pois kartasta tarkoituksella: prerender pudottaa ne EN-metaan
-// ja routes.json `nativeLocales` kanonisoi ne englantiin.
+// Meta luetaan suoraan src/housing/*.ts:n `en: {` / `fi: {` -lohkoista (etusivulla myös fr/nl).
+// 15.11.2026 alkaen alasivujen muut kymmenen kieltä ovat src/housing/l10n/<kieli>/<sivu>.ts
+// -tiedostoissa (HOUSING_L10N_FILES alla), joista luetaan tiedoston metaTitle/metaDescription.
 const HOUSING_META_FILES = {
   '/': 'src/housing/home.ts',
   '/rentals': 'src/housing/rentals.ts',
@@ -360,6 +360,39 @@ for (const [path, rel] of Object.entries(HOUSING_META_FILES)) {
     const description = readString(block, 'metaDescription');
     if (title) set(path, lang, title, description);
   }
+}
+
+const HOUSING_L10N_FILES = {
+  '/rentals': 'rentals',
+  '/rentals/rovaniemi': 'town-rovaniemi',
+  '/rentals/kemi-tornio': 'town-kemi-tornio',
+  '/rentals/kemijarvi': 'town-kemijarvi',
+  '/rentals/sodankyla': 'town-sodankyla',
+  '/rentals/kittila-levi': 'town-kittila-levi',
+  '/rentals/ivalo-inari': 'town-ivalo-inari',
+  '/seasonal-worker-housing': 'seasonal',
+  '/moving-to-lapland': 'moving',
+  '/cost-of-living': 'cost',
+  '/long-stays': 'longstays',
+  '/when-to-go': 'whentogo',
+};
+const L10N_LANGS = ['sv', 'de', 'fr', 'es', 'it', 'nl', 'pt-BR', 'ja', 'ko', 'zh-CN'];
+const l10nMissing = [];
+for (const [path, key] of Object.entries(HOUSING_L10N_FILES)) {
+  for (const lang of L10N_LANGS) {
+    const fp = resolve(ROOT, `src/housing/l10n/${lang}/${key}.ts`);
+    if (!existsSync(fp)) { l10nMissing.push(`${lang}/${key}.ts`); continue; }
+    const src = readFileSync(fp, 'utf-8');
+    const title = readString(src, 'metaTitle');
+    const description = readString(src, 'metaDescription');
+    if (!title || !description) { l10nMissing.push(`${lang}/${key}.ts (metaTitle/metaDescription ei luettavissa)`); continue; }
+    set(path, lang, title, description);
+  }
+}
+if (l10nMissing.length) {
+  // Puuttuva käännös = selain näyttäisi englantia oman kielen osoitteessa. Pysäytä build.
+  console.error(`[gen-meta] asumissivujen käännös puuttuu: ${l10nMissing.join(', ')}`);
+  process.exit(1);
 }
 
 writeFileSync(OUT, JSON.stringify(META, null, 2) + '\n', 'utf-8');

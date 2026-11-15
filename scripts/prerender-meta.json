@@ -507,6 +507,46 @@
     "fi": {
       "title": "Vuokra-asunnot Lapissa: Rovaniemi, Levi, Kemi–Tornio, Inari",
       "description": "Vuokra-asunto Rovaniemeltä, Kemi–Torniosta, Kemijärveltä, Sodankylästä, Leviltä tai Inarista: kuntien vuokrayhtiöt, portaalit, neliövuokrat ja Kelan tuki."
+    },
+    "sv": {
+      "title": "Hyra lägenhet i finska Lappland: Rovaniemi, Levi, Kemi–Torneå",
+      "description": "Långtidshyra i finska Lappland, från Rovaniemi och Kemi–Torneå till Levi och Inari: hyra per m² (Statistikcentralen), deposition och bostadsbidrag från Kela."
+    },
+    "de": {
+      "title": "Wohnung mieten in Lappland: Rovaniemi, Levi, Kemi–Tornio",
+      "description": "Langzeitmiete in Finnisch-Lappland, von Rovaniemi und Kemi–Tornio bis Levi und Inari: Miete pro m² (Statistik Finnland), Kaution und Wohngeld von Kela."
+    },
+    "fr": {
+      "title": "Louer un logement en Laponie : Rovaniemi, Levi, Kemi–Tornio",
+      "description": "Louer en Laponie finlandaise, de Rovaniemi à Inari : loyer au m² (Statistics Finland), dépôt de garantie et allocation logement de Kela."
+    },
+    "es": {
+      "title": "Alquiler en Laponia finlandesa: Rovaniemi, Levi, Kemi–Tornio",
+      "description": "Alquiler de larga duración en la Laponia finlandesa, de Rovaniemi a Levi e Inari: precio por m² (Statistics Finland), fianza y ayuda a la vivienda de Kela."
+    },
+    "it": {
+      "title": "Affittare casa in Lapponia: Rovaniemi, Levi, Kemi–Tornio",
+      "description": "Affitti a lungo termine nella Lapponia finlandese, da Rovaniemi e Kemi–Tornio a Levi e Inari: affitto al m² (Statistics Finland), deposito e sussidio Kela."
+    },
+    "nl": {
+      "title": "Huurwoning in Lapland: Rovaniemi, Levi, Kemi–Tornio",
+      "description": "Langdurig huren in Fins Lapland, van Rovaniemi en Kemi–Tornio tot Levi en Inari: huur per m² (Statistics Finland), waarborgsom en de huurtoeslag van Kela."
+    },
+    "pt-BR": {
+      "title": "Alugar na Lapônia: Rovaniemi, Levi, Kemi–Tornio",
+      "description": "Aluguel de longa duração na Lapônia finlandesa, de Rovaniemi e Kemi–Tornio a Levi e Inari: preço por m² (Statistics Finland), caução e auxílio-moradia da Kela."
+    },
+    "ja": {
+      "title": "ラップランドで部屋を借りる：ロヴァニエミ、レヴィ、ケミ・トルニオ",
+      "description": "ロヴァニエミ、ケミ・トルニオ、レヴィ、イナリなど、フィンランド・ラップランドで長期の賃貸を探す方へ。m²あたりの家賃（フィンランド統計局）、敷金、Kelaの住宅手当を解説します。"
+    },
+    "ko": {
+      "title": "라플란드 월세 구하기: 로바니에미, 레비, 케미–토르니오",
+      "description": "핀란드 라플란드의 장기 임대 안내. 로바니에미, 케미–토르니오, 레비, 이나리의 ㎡당 월세(핀란드 통계청), 보증금, Kela 주거수당을 정리했습니다."
+    },
+    "zh-CN": {
+      "title": "芬兰拉普兰租房：罗瓦涅米、莱维、凯米与托尔尼奥",
+      "description": "芬兰拉普兰长期租房指南，涵盖罗瓦涅米、凯米与托尔尼奥、莱维和伊纳里：每平方米租金（芬兰统计局）、押金与 Kela 住房补贴。"
     }
   },
   "/rentals/rovaniemi": {
@@ -517,6 +557,46 @@
     "fi": {
       "title": "Vuokra-asunnot Rovaniemi: hinnat, hakukanavat, vuokranantajat",
       "description": "Vuokra-asunnot Rovaniemellä: neliövuokrat 2026, kaupungin listaamat vuokranantajat, DAS opiskelijoille, Kelan asumistuen katto ja milloin kannattaa hakea."
+    },
+    "sv": {
+      "title": "Hyra bostad i Rovaniemi: hyror, hyresvärdar och ansökan",
+      "description": "Hyra lägenhet i Rovaniemi: hyra per m² (Statistikcentralen 2026), stadens hyresvärdar, DAS för studerande, bostadsbidrag från Kela och när du ska söka."
+    },
+    "de": {
+      "title": "Wohnung mieten in Rovaniemi: Mieten, Vermieter, Bewerbung",
+      "description": "Wohnung in Rovaniemi mieten: Miete pro m² (Statistik Finnland 2026), Vermieter laut Stadt, DAS für Studierende, Wohngeld von Kela und wann Sie sich bewerben."
+    },
+    "fr": {
+      "title": "Louer à Rovaniemi : loyers, bailleurs et marche à suivre",
+      "description": "Louer à Rovaniemi : loyer au m² (Statistics Finland 2026), bailleurs recensés par la ville, DAS pour les étudiants, allocation de Kela et quand déposer."
+    },
+    "es": {
+      "title": "Alquiler en Rovaniemi: precios, arrendadores y cómo solicitar",
+      "description": "Alquilar en Rovaniemi: precio por m² (Statistics Finland 2026), arrendadores de la ciudad, DAS para estudiantes, ayuda de Kela y cuándo solicitar."
+    },
+    "it": {
+      "title": "Affitti a Rovaniemi: prezzi, locatori e come fare domanda",
+      "description": "Appartamento in affitto a Rovaniemi: affitto al m² (Statistics Finland 2026), locatori della città, DAS per gli studenti, sussidio Kela e quando fare domanda."
+    },
+    "nl": {
+      "title": "Huren in Rovaniemi: huurprijzen, verhuurders en aanmelden",
+      "description": "Een woning huren in Rovaniemi: huur per m² (Statistics Finland 2026), verhuurders, DAS voor studenten, huurtoeslag van Kela en wanneer u zich aanmeldt."
+    },
+    "pt-BR": {
+      "title": "Aluguel em Rovaniemi: preços, locadores e como se candidatar",
+      "description": "Alugar em Rovaniemi: aluguel por m² (Statistics Finland 2026), locadores listados pela cidade, DAS para estudantes, auxílio-moradia da Kela e prazos."
+    },
+    "ja": {
+      "title": "ロヴァニエミの賃貸：家賃、貸主、申込み方法",
+      "description": "ロヴァニエミで部屋を借りる方へ。m²あたりの家賃（フィンランド統計局 2026年）、市が掲載する貸主、学生向けのDAS、Kelaの住宅手当、申込みの時期をまとめました。"
+    },
+    "ko": {
+      "title": "로바니에미 임대: 월세 시세, 집주인, 신청 방법",
+      "description": "로바니에미에서 집 구하기. ㎡당 월세(핀란드 통계청 2026), 시가 안내하는 집주인, 학생용 DAS, Kela 주거수당과 신청 시기를 정리했습니다."
+    },
+    "zh-CN": {
+      "title": "罗瓦涅米租房：租金、房东与申请方式",
+      "description": "在罗瓦涅米租公寓：每平方米租金（芬兰统计局2026年）、市政府列出的房东、面向学生的 DAS、Kela 住房补贴，以及什么时候申请。"
     }
   },
   "/rentals/kemi-tornio": {
@@ -527,6 +607,46 @@
     "fi": {
       "title": "Vuokra-asunnot Kemi, Tornio ja Keminmaa",
       "description": "Vuokra-asunnot Kemissä, Torniossa ja Keminmaalla: kuntien vuokrayhtiöt (Itätuuli, Tornion Krunni, Keminmaan Vuokra-asunnot), välittäjät ja Kelan tuki."
+    },
+    "sv": {
+      "title": "Hyra bostad i Kemi, Torneå och Keminmaa: kommunala bostäder",
+      "description": "Hyra bostad i Kemi, Torneå och Keminmaa vid Lapplands kust: kommunala hyresbolag som Itätuuli och Tornion Krunni, privata förmedlare och stöd från Kela."
+    },
+    "de": {
+      "title": "Mieten in Kemi, Tornio und Keminmaa: kommunale Wohnungen",
+      "description": "Mieten in Kemi, Tornio und Keminmaa an Lapplands Küste: kommunale Gesellschaften wie Itätuuli und Tornion Krunni, private Agenturen und Wohngeld von Kela."
+    },
+    "fr": {
+      "title": "Louer à Kemi, Tornio et Keminmaa : logements communaux",
+      "description": "Louer à Kemi, Tornio et Keminmaa, sur la côte de la Laponie : sociétés communales (Itätuuli, Tornion Krunni), agences privées et aides de Kela."
+    },
+    "es": {
+      "title": "Alquiler en Kemi, Tornio y Keminmaa: viviendas municipales",
+      "description": "Alquilar en Kemi, Tornio y Keminmaa, en la costa de Laponia: empresas municipales como Itätuuli y Tornion Krunni, agencias privadas y ayudas de Kela."
+    },
+    "it": {
+      "title": "Affitti a Kemi, Tornio e Keminmaa: appartamenti comunali",
+      "description": "Affittare a Kemi, Tornio e Keminmaa sulla costa della Lapponia: società comunali di alloggi come Itätuuli e Tornion Krunni, agenzie private e sostegno di Kela."
+    },
+    "nl": {
+      "title": "Huren in Kemi, Tornio en Keminmaa: gemeentelijke woningen",
+      "description": "Huren in Kemi, Tornio en Keminmaa aan de kust van Lapland: gemeentelijke woningbedrijven als Itätuuli en Tornion Krunni, makelaars en steun van Kela."
+    },
+    "pt-BR": {
+      "title": "Aluguel em Kemi, Tornio e Keminmaa: apartamentos municipais",
+      "description": "Alugar em Kemi, Tornio e Keminmaa, no litoral da Lapônia: empresas municipais como Itätuuli e Tornion Krunni, imobiliárias e apoio da Kela."
+    },
+    "ja": {
+      "title": "ケミ、トルニオ、ケミンマーの賃貸：自治体の住宅",
+      "description": "ラップランドの海沿い、ケミ、トルニオ、ケミンマーで部屋を借りる方へ。ItätuuliやTornion Krunniなどの自治体住宅会社、民間の仲介会社、Kelaの支援をご案内します。"
+    },
+    "ko": {
+      "title": "케미, 토르니오, 케민마 임대: 지자체 주택 안내",
+      "description": "라플란드 해안 케미, 토르니오, 케민마의 임대 안내. Itätuuli와 Tornion Krunni 같은 지자체 주택회사, 민간 중개업체, Kela 지원을 정리했습니다."
+    },
+    "zh-CN": {
+      "title": "凯米、托尔尼奥与凯米恩玛租房：市政公寓",
+      "description": "在拉普兰海岸的凯米、托尔尼奥和凯米恩玛租房：Itätuuli、Tornion Krunni 等市政住房公司、私人中介，以及 Kela 的补贴。"
     }
   },
   "/rentals/kemijarvi": {
@@ -537,16 +657,96 @@
     "fi": {
       "title": "Vuokra-asunnot Kemijärvi: kaupungin 560 asuntoa ja hakemus",
       "description": "Vuokra-asunnot Kemijärvellä: kaupungin 560 asuntoa, hakemus verkossa, vuokrankorotukset 2026, Vuostimon rivitalot Pyhän lähellä ja Kelan asumistuki."
+    },
+    "sv": {
+      "title": "Hyra bostad i Kemijärvi: stadens 560 lägenheter och ansökan",
+      "description": "Hyra bostad i Kemijärvi: stadens 560 hyresbostäder, webbansökan, hyreshöjningarna 2026, radhusen i Vuostimo nära Pyhä och bostadsbidrag från Kela."
+    },
+    "de": {
+      "title": "Mieten in Kemijärvi: 560 städtische Wohnungen und Bewerbung",
+      "description": "Mieten in Kemijärvi: 560 städtische Mietwohnungen, Online-Bewerbung, Mieterhöhungen 2026, die Reihenhäuser von Vuostimo nahe Pyhä und Wohngeld von Kela."
+    },
+    "fr": {
+      "title": "Louer à Kemijärvi : les 560 logements de la ville",
+      "description": "Louer à Kemijärvi : les 560 logements de la ville, la demande en ligne, les hausses de loyer 2026, les maisons de Vuostimo près de Pyhä et l’allocation de Kela."
+    },
+    "es": {
+      "title": "Alquiler en Kemijärvi: las 560 viviendas de la ciudad",
+      "description": "Alquilar en Kemijärvi: las 560 viviendas de la ciudad, la solicitud en línea, las subidas de 2026, las casas adosadas de Vuostimo y la ayuda de Kela."
+    },
+    "it": {
+      "title": "Affitti a Kemijärvi: 560 appartamenti comunali e domanda",
+      "description": "Affittare a Kemijärvi: i 560 appartamenti della città, la domanda online, gli aumenti del 2026, le case a schiera di Vuostimo vicino a Pyhä e il sussidio Kela."
+    },
+    "nl": {
+      "title": "Huren in Kemijärvi: de 560 woningen van de stad en aanmelden",
+      "description": "Huren in Kemijärvi: de 560 huurwoningen van de stad, de onlineaanvraag, huurverhogingen in 2026, de rijtjeshuizen van Vuostimo bij Pyhä en huurtoeslag van Kela."
+    },
+    "pt-BR": {
+      "title": "Aluguel em Kemijärvi: os 560 apartamentos da cidade",
+      "description": "Alugar em Kemijärvi: os 560 apartamentos da cidade, candidatura on-line, reajustes de 2026, casas de Vuostimo perto de Pyhä e auxílio-moradia da Kela."
+    },
+    "ja": {
+      "title": "ケミヤルヴィの賃貸：市営560戸と申込み方法",
+      "description": "ケミヤルヴィの賃貸住宅。市が持つ560戸、オンライン申込み、2026年の家賃引き上げ、ピュハ近くのVuostimoの長屋、Kelaの住宅手当をまとめました。"
+    },
+    "ko": {
+      "title": "케미야르비 임대: 시 소유 주택 560채와 신청 방법",
+      "description": "케미야르비의 임대 안내. 시 소유 임대 주택 560채, 온라인 신청, 2026년 임대료 인상, 퓌해 인근 Vuostimo 연립주택, Kela 주거수당을 정리했습니다."
+    },
+    "zh-CN": {
+      "title": "凯米耶尔维租房：市属560套住房及申请方式",
+      "description": "在凯米耶尔维租房：市属560套出租住房、在线申请、2026年的租金上调、皮哈附近的 Vuostimo 联排住宅，以及 Kela 住房补贴。"
     }
   },
   "/rentals/sodankyla": {
     "en": {
       "title": "Rentals in Sodankylä: 720 Municipal Flats and What They Cost",
-      "description": "Renting in Sodankylä: Asentopuulaaki Oy’s roughly 720 municipal flats, rents of €10–18 per m², the online application, the student loan pilot and Kela support."
+      "description": "Sodankylä rentals: Asentopuulaaki Oy’s roughly 720 municipal flats, rents of about €7.40–18 per m², the online application, the student loan pilot and Kela."
     },
     "fi": {
       "title": "Vuokra-asunnot Sodankylä: kunnan 720 asuntoa ja vuokrat",
-      "description": "Vuokra-asunnot Sodankylässä: Asentopuulaaki Oy:n noin 720 asuntoa, vuokrat 10–18 €/m², hakemus verkossa, opintolainan hyvitys ja Kelan asumistuki."
+      "description": "Vuokra-asunnot Sodankylässä: Asentopuulaaki Oy:n noin 720 asuntoa, vuokrat noin 7,40–18 €/m², hakemus verkossa, opintolainan hyvitys ja Kelan asumistuki."
+    },
+    "sv": {
+      "title": "Hyra bostad i Sodankylä: 720 kommunala lägenheter och priser",
+      "description": "Hyra bostad i Sodankylä: Asentopuulaaki Oy:s omkring 720 kommunala bostäder, hyror på cirka 7,40–18 € per m², webbansökan, studielånspiloten och stöd från Kela."
+    },
+    "de": {
+      "title": "Mieten in Sodankylä: 720 kommunale Wohnungen und ihre Kosten",
+      "description": "Mieten in Sodankylä: rund 720 kommunale Wohnungen von Asentopuulaaki Oy, Mieten von etwa 7,40–18 € pro m², Online-Bewerbung, Studienkredit-Pilot und Wohngeld."
+    },
+    "fr": {
+      "title": "Louer à Sodankylä : 720 logements communaux et leurs prix",
+      "description": "Louer à Sodankylä : les quelque 720 logements d’Asentopuulaaki Oy, loyers de 7,40–18 € le m², demande en ligne, prêts étudiants et aides de Kela."
+    },
+    "es": {
+      "title": "Alquiler en Sodankylä: 720 viviendas municipales y su precio",
+      "description": "Alquilar en Sodankylä: unas 720 viviendas municipales de Asentopuulaaki Oy, alquileres de unos 7,40–18 € por m², solicitud en línea y ayudas de Kela."
+    },
+    "it": {
+      "title": "Affitti a Sodankylä: 720 appartamenti comunali e costi",
+      "description": "Affittare a Sodankylä: i circa 720 appartamenti comunali di Asentopuulaaki Oy, affitti da 7,40 a 18 € al m², domanda online e sussidio Kela."
+    },
+    "nl": {
+      "title": "Huren in Sodankylä: 720 gemeentewoningen en wat ze kosten",
+      "description": "Huren in Sodankylä: ongeveer 720 gemeentewoningen van Asentopuulaaki Oy, huren van € 7,40–18 per m², onlineaanvraag, compensatie voor studielening en Kela."
+    },
+    "pt-BR": {
+      "title": "Aluguel em Sodankylä: 720 apartamentos municipais e preços",
+      "description": "Alugar em Sodankylä: cerca de 720 apartamentos municipais da Asentopuulaaki Oy, aluguel de cerca de 7,40–18 € por m², candidatura on-line e apoio da Kela."
+    },
+    "ja": {
+      "title": "ソダンキュラの賃貸：町営約720戸と家賃の目安",
+      "description": "ソダンキュラで部屋を借りる方へ。Asentopuulaaki Oyが貸す約720戸の自治体住宅、m²あたり約€7.40〜18の家賃、オンライン申込み、学生ローンの試行事業、Kelaの支援をご案内します。"
+    },
+    "ko": {
+      "title": "소단퀼래 임대: 지자체 주택 720채와 월세 수준",
+      "description": "소단퀼래의 임대 안내. Asentopuulaaki Oy의 지자체 주택 약 720채, ㎡당 약 €7.40–18의 월세, 온라인 신청, 학자금 대출 시범 사업과 Kela 지원을 정리했습니다."
+    },
+    "zh-CN": {
+      "title": "索丹屈莱租房：720套市政住房及其租金",
+      "description": "在索丹屈莱租房：Asentopuulaaki Oy 约720套市政住房、每平方米约7.40–18欧元的租金、在线申请、学生贷款补偿试点以及 Kela 的补贴。"
     }
   },
   "/rentals/kittila-levi": {
@@ -557,6 +757,46 @@
     "fi": {
       "title": "Vuokra-asunnot Kittilä ja Levi: kunnan asunnot ja kausivuokra",
       "description": "Vuokra-asunnot Kittilässä ja Levillä: Kittilän Vuokratalot Oy, vapaa-ajan asuntojen kausivuokrat, työnantajan asunnot kausityöntekijöille ja Kelan tuki."
+    },
+    "sv": {
+      "title": "Hyra i Kittilä och Levi: kommunala bostäder och säsongshyra",
+      "description": "Hyra bostad i Kittilä och Levi: kommunala Kittilän Vuokratalot Oy, säsongshyror på semesterlägenheter, personalbostäder och stöd från Kela."
+    },
+    "de": {
+      "title": "Mieten in Kittilä und Levi: kommunale Wohnungen, Saisonmiete",
+      "description": "Mieten in Kittilä und Levi: die kommunale Kittilän Vuokratalot Oy, Saisonmieten für Ferienwohnungen, Personalunterkunft für Saisonkräfte und Wohngeld von Kela."
+    },
+    "fr": {
+      "title": "Louer à Kittilä et Levi : logements communaux et saisonniers",
+      "description": "Louer à Kittilä et Levi : la société communale Kittilän Vuokratalot Oy, loyers saisonniers, logement des saisonniers et aides de Kela."
+    },
+    "es": {
+      "title": "Alquiler en Kittilä y Levi: vivienda municipal y de temporada",
+      "description": "Alquilar en Kittilä y Levi: la empresa municipal Kittilän Vuokratalot Oy, alquileres de temporada, vivienda laboral y ayudas de Kela."
+    },
+    "it": {
+      "title": "Affitti a Kittilä e Levi: alloggi comunali, affitti stagionali",
+      "description": "Affittare a Kittilä e Levi: la società comunale Kittilän Vuokratalot Oy, affitti stagionali di appartamenti vacanza, alloggio per il personale e sussidio Kela."
+    },
+    "nl": {
+      "title": "Huren in Kittilä en Levi: gemeentewoningen, seizoenshuur",
+      "description": "Huren in Kittilä en Levi: het gemeentelijke Kittilän Vuokratalot Oy, seizoenshuur van vakantieappartementen, personeelshuisvesting en steun van Kela."
+    },
+    "pt-BR": {
+      "title": "Aluguel em Kittilä e Levi: apartamentos municipais e sazonais",
+      "description": "Alugar em Kittilä e Levi: a empresa municipal Kittilän Vuokratalot Oy, aluguel de temporada, moradia para trabalhadores sazonais e apoio da Kela."
+    },
+    "ja": {
+      "title": "キッティラとレヴィの賃貸：自治体の住宅と季節契約",
+      "description": "キッティラとレヴィで部屋を借りる方へ。自治体のKittilän Vuokratalot Oy、休暇用アパートメントの季節家賃、季節労働者の従業員用住宅、Kelaの支援をご案内します。"
+    },
+    "ko": {
+      "title": "키틸래와 레비 임대: 지자체 주택과 시즌 임대",
+      "description": "키틸래와 레비의 임대 안내. 지자체 소유 Kittilän Vuokratalot Oy, 휴가용 아파트의 시즌 월세, 시즌 근로자 직원 숙소와 Kela 지원을 정리했습니다."
+    },
+    "zh-CN": {
+      "title": "基蒂莱与莱维租房：市政公寓、季节性租约",
+      "description": "在基蒂莱和莱维租房：市政的 Kittilän Vuokratalot Oy、度假公寓的季节性租金、季节工的员工住房，以及 Kela 的补贴。"
     }
   },
   "/rentals/ivalo-inari": {
@@ -567,6 +807,46 @@
     "fi": {
       "title": "Vuokra-asunnot Ivalo ja Inari: kunnan yhtiö ja yksityiset",
       "description": "Vuokra-asunnot Ivalossa, Inarissa ja Saariselällä: Inarin Vuokra-asunnot Oy:n yli 500 asuntoa, kunnan listaamat yksityiset vuokranantajat ja Kelan tuki."
+    },
+    "sv": {
+      "title": "Hyra bostad i Ivalo och Inari: kommunalt och privat",
+      "description": "Hyra bostad i Ivalo, Inari och Saariselkä: över 500 kommunala bostäder (Inarin Vuokra-asunnot Oy), privata hyresvärdar som kommunen listar och stöd från Kela."
+    },
+    "de": {
+      "title": "Mieten in Ivalo und Inari: kommunale und private Vermieter",
+      "description": "Mieten in Ivalo, Inari und Saariselkä: über 500 kommunale Wohnungen (Inarin Vuokra-asunnot Oy), private Vermieter laut Gemeinde und Wohngeld von Kela."
+    },
+    "fr": {
+      "title": "Louer à Ivalo et Inari : bailleurs communaux et privés",
+      "description": "Louer à Ivalo, Inari et Saariselkä : plus de 500 logements communaux (Inarin Vuokra-asunnot Oy), bailleurs privés recensés par la commune et aides de Kela."
+    },
+    "es": {
+      "title": "Alquiler en Ivalo e Inari: arrendadores municipales y privados",
+      "description": "Alquilar en Ivalo, Inari y Saariselkä: más de 500 viviendas municipales (Inarin Vuokra-asunnot Oy), arrendadores privados del municipio y ayudas de Kela."
+    },
+    "it": {
+      "title": "Affitti a Ivalo e Inari: società comunale e locatori privati",
+      "description": "Affittare a Ivalo, Inari e Saariselkä: oltre 500 appartamenti comunali (Inarin Vuokra-asunnot Oy), locatori privati elencati dal comune e sostegno di Kela."
+    },
+    "nl": {
+      "title": "Huren in Ivalo en Inari: gemeente en particulieren",
+      "description": "Huren in Ivalo, Inari en Saariselkä: ruim 500 gemeentewoningen (Inarin Vuokra-asunnot Oy), particuliere verhuurders van de gemeente en steun van Kela."
+    },
+    "pt-BR": {
+      "title": "Aluguel em Ivalo e Inari: locadores municipais e particulares",
+      "description": "Alugar em Ivalo, Inari e Saariselkä: mais de 500 apartamentos municipais (Inarin Vuokra-asunnot Oy), locadores particulares e apoio da Kela."
+    },
+    "ja": {
+      "title": "イヴァロとイナリの賃貸：自治体と民間の貸主",
+      "description": "イヴァロ、イナリ、サーリセルカで部屋を借りる方へ。500戸超の自治体住宅（Inarin Vuokra-asunnot Oy）、町が紹介する民間の貸主、Kelaの支援をご案内します。"
+    },
+    "ko": {
+      "title": "이발로와 이나리 임대: 지자체와 민간 집주인",
+      "description": "이발로, 이나리, 사리셀카의 임대 안내. 지자체 주택 500채 이상(Inarin Vuokra-asunnot Oy), 지자체가 안내하는 민간 집주인, Kela 지원을 정리했습니다."
+    },
+    "zh-CN": {
+      "title": "伊瓦洛与伊纳里租房：市政与私人房东",
+      "description": "在伊瓦洛、伊纳里和萨利色尔卡租房：500多套市政住房（Inarin Vuokra-asunnot Oy）、市镇列出的私人房东，以及 Kela 的补贴。"
     }
   },
   "/seasonal-worker-housing": {
@@ -577,6 +857,46 @@
     "fi": {
       "title": "Kausityö Lapissa: asuminen Levillä, Ylläksellä, Saariselällä",
       "description": "Mihin kausityöntekijä asuu Levillä, Ylläksellä, Saariselällä ja Rovaniemellä: työnantajan asunto, kausivuokra vai kunnan asunto, ja mitä kysyä ennen sopimusta."
+    },
+    "sv": {
+      "title": "Boende för säsongsarbetare i finska Lappland: Levi, Ylläs",
+      "description": "Var säsongsarbetare bor i Levi, Ylläs, Saariselkä och Rovaniemi: personalbostad, säsongshyra eller kommunal bostad, och vad du bör fråga innan du skriver under."
+    },
+    "de": {
+      "title": "Saisonarbeit in Lappland: Wohnen in Levi, Ylläs, Saariselkä",
+      "description": "Wo Saisonkräfte in Levi, Ylläs, Saariselkä und Rovaniemi wohnen: Personalunterkunft, Saisonmiete oder kommunale Wohnung, und was Sie vorab klären sollten."
+    },
+    "fr": {
+      "title": "Logement des saisonniers en Laponie : Levi, Ylläs, Saariselkä",
+      "description": "Où logent les saisonniers à Levi, Ylläs, Saariselkä et Rovaniemi : logement de l’employeur, bail saisonnier ou communal ; que demander avant de signer."
+    },
+    "es": {
+      "title": "Vivienda para trabajadores de temporada en Laponia",
+      "description": "Dónde viven los trabajadores de temporada en Levi, Ylläs, Saariselkä y Rovaniemi: alojamiento del empleador, alquiler de temporada o apartamento municipal."
+    },
+    "it": {
+      "title": "Alloggio per lavoratori stagionali in Lapponia: Levi, Ylläs",
+      "description": "Dove vivono i lavoratori stagionali a Levi, Ylläs, Saariselkä e Rovaniemi: alloggio aziendale, affitto stagionale o appartamento comunale, e che cosa chiedere."
+    },
+    "nl": {
+      "title": "Huisvesting voor seizoenswerkers in Lapland: Levi, Ylläs",
+      "description": "Waar seizoenswerkers wonen in Levi, Ylläs, Saariselkä en Rovaniemi: personeelshuisvesting, seizoenshuur of gemeentewoning, en wat u vraagt voordat u tekent."
+    },
+    "pt-BR": {
+      "title": "Moradia para trabalhador sazonal na Lapônia: Levi, Ylläs",
+      "description": "Onde moram os trabalhadores sazonais em Levi, Ylläs, Saariselkä e Rovaniemi: alojamento da empresa, aluguel de temporada ou apartamento municipal."
+    },
+    "ja": {
+      "title": "ラップランドの季節労働者の住まい：レヴィ、ユッラス、サーリセルカ",
+      "description": "レヴィ、ユッラス、サーリセルカ、ロヴァニエミで季節労働者はどこに住むのか。従業員用住宅、季節契約、自治体の賃貸住宅と、契約前に確認すべきことを解説します。"
+    },
+    "ko": {
+      "title": "라플란드 시즌 근로자 숙소: 레비, 윌래스, 사리셀카",
+      "description": "레비, 윌래스, 사리셀카, 로바니에미의 시즌 근로자는 어디서 살까요? 직원 숙소, 시즌 임대, 지자체 임대 주택과 계약 전 확인 사항을 안내합니다."
+    },
+    "zh-CN": {
+      "title": "拉普兰季节工住房：莱维、于拉斯、萨利色尔卡",
+      "description": "季节工在莱维、于拉斯、萨利色尔卡和罗瓦涅米住在哪里：员工住房、季节性租约或市政公寓，以及签约前该问什么。"
     }
   },
   "/moving-to-lapland": {
@@ -587,6 +907,46 @@
     "fi": {
       "title": "Muutto Lappiin: käytännön opas ensimmäiseen kuukauteen",
       "description": "Muuttoilmoitus, talvirenkaat, päiväkotimaksut, sähkö ja kaamos: mitä Lappiin muuttavan pitää hoitaa ensimmäisen kuukauden aikana."
+    },
+    "sv": {
+      "title": "Flytta till finska Lappland: guide för den första månaden",
+      "description": "Flyttanmälan, vinterdäck, barnomsorgsavgifter, el och polarnatten: vad du bör ordna under din första månad i finska Lappland."
+    },
+    "de": {
+      "title": "Umzug nach Lappland: Leitfaden für den ersten Monat",
+      "description": "Adressänderung, Winterreifen, Kita-Gebühren, Strom und Polarnacht: Was Sie in Ihrem ersten Monat in Finnisch-Lappland erledigen sollten."
+    },
+    "fr": {
+      "title": "S’installer en Laponie : guide pratique du premier mois",
+      "description": "Déclaration d’adresse, pneus hiver, frais de crèche, électricité et nuit polaire : ce qu’il faut régler pendant le premier mois en Laponie finlandaise."
+    },
+    "es": {
+      "title": "Mudarse a Laponia: guía práctica del primer mes",
+      "description": "Cambio de domicilio, neumáticos de invierno, guardería, electricidad y noche polar: qué resolver en su primer mes en la Laponia finlandesa."
+    },
+    "it": {
+      "title": "Trasferirsi in Lapponia: guida pratica al primo mese",
+      "description": "Cambio di indirizzo, pneumatici invernali, rette dell’asilo, elettricità e notte polare: che cosa sistemare nel primo mese nella Lapponia finlandese."
+    },
+    "nl": {
+      "title": "Verhuizen naar Lapland: praktische gids voor de eerste maand",
+      "description": "Adreswijziging, winterbanden, kinderopvang, elektriciteit en de poolnacht: wat u in de eerste maand in Fins Lapland moet regelen."
+    },
+    "pt-BR": {
+      "title": "Mudar para a Lapônia: guia prático do primeiro mês",
+      "description": "Mudança de endereço, pneus de inverno, creche, eletricidade e noite polar: o que resolver no primeiro mês ao morar na Lapônia finlandesa."
+    },
+    "ja": {
+      "title": "ラップランドへ移住する：最初の一か月の実践ガイド",
+      "description": "住所変更の届出、冬タイヤ、保育料、電気、そして極夜。フィンランド・ラップランドでの最初の一か月に済ませておきたい手続きをまとめました。"
+    },
+    "ko": {
+      "title": "라플란드로 이사하기: 첫 한 달 실용 가이드",
+      "description": "주소 변경 신고, 겨울 타이어, 어린이집 비용, 전기 요금, 극야까지. 핀란드 라플란드에서 첫 한 달 안에 처리할 일을 정리했습니다."
+    },
+    "zh-CN": {
+      "title": "搬到拉普兰：头一个月的实用指南",
+      "description": "迁居登记、冬季轮胎、日托费用、电费和极夜：搬到芬兰拉普兰后的第一个月，需要办妥哪些事、按什么顺序办，附 DVV 和 Traficom 的期限。"
     }
   },
   "/cost-of-living": {
@@ -597,6 +957,46 @@
     "fi": {
       "title": "Elinkustannukset Lapissa 2026: vuokra, sähkö, bensa, tuet",
       "description": "Mitä eläminen Lapissa maksaa: neliövuokrat Rovaniemellä ja Lapissa (Tilastokeskus 2026), sähkö ja polttoaine, Kelan asumistuen katot ja päiväkotimaksut."
+    },
+    "sv": {
+      "title": "Levnadskostnader i finska Lappland 2026: hyra, el, bränsle",
+      "description": "Vad det kostar att bo i finska Lappland: hyra per m² (Statistikcentralen 2026), el, bränsle, bostadsbidrag från Kela och barnomsorgsavgifter, med räkneexempel."
+    },
+    "de": {
+      "title": "Lebenshaltungskosten Lappland 2026: Miete, Strom, Kraftstoff",
+      "description": "Was das Leben in Finnisch-Lappland kostet: Miete pro m² (Statistik Finnland 2026), Strom, Kraftstoff, Wohngeld von Kela und Kita-Gebühren, mit Rechenbeispielen."
+    },
+    "fr": {
+      "title": "Coût de la vie en Laponie 2026 : loyer, électricité, carburant",
+      "description": "Ce que coûte la vie en Laponie finlandaise : loyer au m² (Statistics Finland 2026), électricité, carburant, allocation de Kela et crèche, avec des exemples."
+    },
+    "es": {
+      "title": "Costo de vida en Laponia 2026: alquiler, luz y combustible",
+      "description": "Cuánto cuesta vivir en la Laponia finlandesa: alquiler por m² (Statistics Finland 2026), electricidad, combustible, ayuda de Kela y guardería, con ejemplos."
+    },
+    "it": {
+      "title": "Costo della vita in Lapponia 2026: affitto, luce e carburante",
+      "description": "Quanto costa vivere nella Lapponia finlandese: affitto al m² (Statistics Finland 2026), elettricità, carburante, sussidio Kela e rette dell’asilo."
+    },
+    "nl": {
+      "title": "Kosten van levensonderhoud in Lapland 2026: huur, stroom",
+      "description": "Wat wonen in Fins Lapland kost: huur per m² (Statistics Finland 2026), stroom, brandstof, huurtoeslag van Kela en kinderopvang, met rekenvoorbeelden."
+    },
+    "pt-BR": {
+      "title": "Custo de vida na Lapônia 2026: aluguel, luz e combustível",
+      "description": "Quanto custa morar na Lapônia finlandesa: aluguel por m² (Statistics Finland 2026), eletricidade, combustível, auxílio-moradia da Kela e creche."
+    },
+    "ja": {
+      "title": "ラップランドの物価と生活費 2026：家賃、電気、燃料",
+      "description": "フィンランド・ラップランドで暮らすと、いくらかかるのか。m²あたりの家賃（フィンランド統計局 2026年）、電気、燃料、Kelaの住宅手当、保育料を、計算例つきで解説します。"
+    },
+    "ko": {
+      "title": "핀란드 라플란드 물가와 생활비 2026: 월세, 전기, 연료",
+      "description": "핀란드 라플란드의 물가와 생활비. ㎡당 월세(핀란드 통계청 2026), 전기·연료 요금, Kela 주거수당, 어린이집 비용을 계산 예시와 함께 정리했습니다."
+    },
+    "zh-CN": {
+      "title": "拉普兰生活成本2026：房租、电费、燃油",
+      "description": "在芬兰拉普兰生活要花多少钱：每平方米租金（芬兰统计局2026年）、电费、燃油、Kela 住房补贴和日托费用，附算例。"
     }
   },
   "/long-stays": {
@@ -607,6 +1007,46 @@
     "fi": {
       "title": "Kuukaudeksi Lappiin: kalustettu asunto vai mökki",
       "description": "Kuukaudesta talveen Lapissa: kalustettu vuokra-asunto, mökki viikkovuokralla tai työnantajan asunto. Mitä vuokralaki kattaa ja milloin tehdään muuttoilmoitus."
+    },
+    "sv": {
+      "title": "Bo en månad eller en vinter i finska Lappland",
+      "description": "Bo en månad eller en vinter i finska Lappland: en möblerad hyreslägenhet, en stuga per vecka eller personalbostad."
+    },
+    "de": {
+      "title": "Monat oder Winter in Lappland: Wohnung, Hütte, Personalwohnung",
+      "description": "Einen Monat oder einen Winter in Finnisch-Lappland bleiben: möblierte Mietwohnung, Hütte zur Wochenmiete oder Personalunterkunft."
+    },
+    "fr": {
+      "title": "Un mois ou un hiver en Laponie : appartement ou chalet",
+      "description": "Séjourner un mois ou un hiver en Laponie finlandaise : appartement meublé en location, chalet à la semaine ou logement fourni par l’employeur."
+    },
+    "es": {
+      "title": "Un mes o un invierno en Laponia: dónde alojarse",
+      "description": "Pasar un mes o un invierno en la Laponia finlandesa: un apartamento de alquiler amueblado, una cabaña por semanas o el alojamiento del empleador."
+    },
+    "it": {
+      "title": "Un mese o un inverno in Lapponia: casa, baita o alloggio",
+      "description": "Restare un mese o un inverno nella Lapponia finlandese: un appartamento arredato in affitto, una baita a settimana o l’alloggio del datore di lavoro."
+    },
+    "nl": {
+      "title": "Een maand of een winter in Lapland: woning of huisje",
+      "description": "Een maand of een winter in Fins Lapland verblijven: een gemeubileerde huurwoning, een huisje per week of personeelshuisvesting."
+    },
+    "pt-BR": {
+      "title": "Um mês ou um inverno na Lapônia: apartamento ou cabana",
+      "description": "Ficar um mês ou um inverno na Lapônia finlandesa: apartamento mobiliado para alugar, cabana por semana ou moradia oferecida pelo empregador."
+    },
+    "ja": {
+      "title": "ラップランドで一か月か一冬を過ごす：アパート、コテージ、従業員用住宅",
+      "description": "フィンランド・ラップランドで一か月または一冬を過ごす方へ。家具付きの賃貸アパート、週単位のコテージ、従業員用住宅を比べます。"
+    },
+    "ko": {
+      "title": "라플란드 한 달 살기와 겨울 체류: 아파트, 캐빈, 직원 숙소",
+      "description": "핀란드 라플란드에서 한 달 또는 한 겨울을 머무는 방법. 가구가 갖춰진 임대 아파트, 주 단위 캐빈, 직원 숙소를 비교합니다."
+    },
+    "zh-CN": {
+      "title": "在拉普兰住一个月或一整个冬天：公寓、木屋或员工住房",
+      "description": "在芬兰拉普兰住一个月或一整个冬天：带家具的出租公寓、按周出租的木屋，或雇主提供的员工住房，以及各种合同的押金、期限和迁居登记要求。"
     }
   },
   "/when-to-go": {
@@ -617,6 +1057,46 @@
     "fi": {
       "title": "Lapin vuosi kuukausittain: kaamos, yötön yö ja ruska",
       "description": "Lapin vuosi kuukausi kerrallaan: lämpötilat, päivän pituus, lumi, revontulet, yötön yö, ruska ja räkkä Ilmatieteen laitoksen ja Tilastokeskuksen luvuilla."
+    },
+    "sv": {
+      "title": "Finska Lappland månad för månad: bästa tiden att åka",
+      "description": "När du ska åka till finska Lappland, månad för månad: temperatur, dagsljus, snö, norrsken, midnattssol, höstfärger och myggor, med officiella siffror."
+    },
+    "de": {
+      "title": "Beste Reisezeit für Lappland: Monat für Monat",
+      "description": "Beste Reisezeit für Lappland, Monat für Monat: Lappland im Winter und im Sommer, Temperaturen, Licht, Schnee, Polarlichter, Mitternachtssonne, Ruska."
+    },
+    "fr": {
+      "title": "Quand partir en Laponie : le guide mois par mois",
+      "description": "Quand partir en Laponie, mois par mois : températures, lumière, neige, aurores boréales, soleil de minuit, couleurs d’automne et moustiques."
+    },
+    "es": {
+      "title": "Mejor época para viajar a Laponia: guía mes a mes",
+      "description": "Cuándo ir a la Laponia finlandesa, mes a mes: temperaturas, luz, nieve, auroras, sol de medianoche, colores del otoño y mosquitos, con cifras oficiales."
+    },
+    "it": {
+      "title": "Quando andare in Lapponia: guida mese per mese",
+      "description": "Quando visitare la Lapponia finlandese, mese per mese: temperature, luce, neve, aurora boreale, sole di mezzanotte, colori d’autunno e zanzare. Dati ufficiali."
+    },
+    "nl": {
+      "title": "Beste reistijd voor Lapland: maand voor maand",
+      "description": "Wanneer naar Fins Lapland? Maand voor maand: weer, temperatuur, daglicht, sneeuw, noorderlicht, middernachtzon, herfstkleuren en muggen, met officiële cijfers."
+    },
+    "pt-BR": {
+      "title": "Melhor época para ir à Lapônia: guia mês a mês",
+      "description": "Quando ir à Lapônia finlandesa, mês a mês: temperaturas, luz do dia, neve, aurora boreal, sol da meia-noite, cores do outono e mosquitos, com dados oficiais."
+    },
+    "ja": {
+      "title": "ラップランドのベストシーズン：月ごとの天気・オーロラ・白夜ガイド",
+      "description": "フィンランド・ラップランドを訪れる時期を月ごとに解説。ロヴァニエミなどの気温、日照時間、積雪、オーロラが見られる時期、白夜、紅葉、蚊の季節を公的な数字で確認できます。"
+    },
+    "ko": {
+      "title": "핀란드 라플란드 여행 시기: 월별 날씨, 오로라, 백야, 극야",
+      "description": "핀란드 라플란드 여행 시기를 월별로 정리했습니다. 기온, 낮 길이, 적설, 오로라 시기, 백야와 극야, 단풍과 모기까지 공식 수치로 안내합니다."
+    },
+    "zh-CN": {
+      "title": "芬兰拉普兰最佳旅行时间：逐月指南（极光、午夜太阳）",
+      "description": "芬兰拉普兰何时去最好，逐月说明：罗瓦涅米等地的天气与气温、日照、积雪、极光、午夜太阳（极昼）、秋色和蚊子，附芬兰气象研究所和芬兰统计局的官方数据。"
     }
   }
 }

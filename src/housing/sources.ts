@@ -1,10 +1,11 @@
-import type { HomeLang, HousingLang, Source } from './types';
+import type { Lang } from '../i18n/useLang';
+import type { HousingLang, Source } from './types';
 
 /**
  * Nimetyt lähteet. Jokainen luku asumissivuilla osoittaa yhteen näistä
  * (numeroportti). Päivitä `label`in päivämäärä, kun luku päivitetään.
  */
-/** fr/nl vain etusivun lähteille: asumisen alasivut ovat en + fi (types.ts, §25). */
+/** fr/nl etusivun lähteille; asumissivujen muut kielet: `l10n/<kieli>/common.ts` `sourceLabels`. */
 type SourceDef = Record<HousingLang, string> & Partial<Record<'fr' | 'nl', string>> & { url: string };
 
 const DEFS = {
@@ -351,13 +352,28 @@ export type SourceId = keyof typeof DEFS;
  * oleva dokumentti on suomeksi tai englanniksi. Käännetty nimi ei auttaisi
  * lukijaa löytämään sitä.
  */
-export function pickSources(lang: HomeLang, ids: readonly SourceId[]): Source[] {
+/**
+ * Lähteet lukijan kielellä. Englanti ja suomi DEFS:stä, ranska ja hollanti DEFS:stä kun nimi on kirjoitettu
+ * (etusivu), muut kielet sivun omasta `l10n/<kieli>/common.ts`:n `sourceLabels`-kartasta. Jos nimeä ei ole,
+ * englanninkielinen nimi merkitään `lang: 'en'`, ettei sivu väitä sitä omaksi kielekseen.
+ */
+export function pickSources(
+  lang: Lang,
+  ids: readonly SourceId[],
+  labels?: Partial<Record<SourceId, string>>,
+): Source[] {
   return ids.map((id) => {
     const d: SourceDef = DEFS[id];
     if (lang === 'fi') return { id, label: d.fi, url: d.url };
-    const oma = lang === 'fr' || lang === 'nl' ? d[lang] : undefined;
-    if (lang === 'en' || oma) return { id, label: oma ?? d.en, url: d.url };
-    // Ei käännöstä tälle kielelle: englanninkielinen nimi merkitään, ettei sivu väitä sitä omaksi kielekseen.
+    if (lang === 'en') return { id, label: d.en, url: d.url };
+    const oma = labels?.[id] ?? (lang === 'fr' || lang === 'nl' ? d[lang] : undefined);
+    if (oma) return { id, label: oma, url: d.url };
     return { id, label: d.en, url: d.url, lang: 'en' };
   });
+}
+
+/** Kaikki lähdetunnukset ja englanninkieliset nimet (käännöspohjien generointiin ja tarkistukseen). */
+export const SOURCE_IDS = Object.keys(DEFS) as SourceId[];
+export function sourceLabelEn(id: SourceId): string {
+  return DEFS[id].en;
 }

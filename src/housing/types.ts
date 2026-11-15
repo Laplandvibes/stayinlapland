@@ -2,13 +2,16 @@
  * Asumissisällön (rooli §23, Vesa 16.9.2026) tyypit.
  *
  * Sivut kirjoitetaan suomeksi ja englanniksi (Vesan linja: käännetty suomi ei ole
- * suomea; muut kielet vasta mitatun kysynnän mukaan, lv_permanent_rules §25).
- * Muut kymmenen lokaalia näyttävät englannin ja kanonisoituvat englanninkieliseen
- * osoitteeseen (routes.json `nativeLocales`), joten Google ei näe kymmentä kopiota.
+ * suomea). Englanti on muiden kymmenen kielen käännösten lähde: ne ovat 15.11.2026
+ * alkaen `src/housing/l10n/<kieli>/`-tiedostoissa natiivilukijan tarkistamina, ja
+ * jokainen kielisivu kanonisoituu omaan osoitteeseensa (Vesa 18.10.2026: kieliversio
+ * on sivulla jo olevaa lukijaa varten, ei vain hakukonetta).
  *
  * 🔴 Numeroportti: jokainen luku tekstissä on `sources`-listan lähteestä, ja
- * laskettu luku näyttää kaavansa ("18,66 × 30"). Ei arvioita.
+ * laskettu luku näyttää kaavansa ("18,66 × 30"). Ei arvioita. Käännös ei tuo
+ * yhtään lukua, jota englannissa ei ole.
  */
+/** Perustekstien kielet (sivutiedostoissa). Muut kielet: `l10n/`. */
 export type HousingLang = 'en' | 'fi';
 
 /**

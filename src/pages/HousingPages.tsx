@@ -13,7 +13,8 @@ import { HOUSING_PAGES, HOUSING_ROUTES, RENTAL_TOWNS, isRentalTownSlug } from '.
 /*
  * Mainokset osion perään, sivun aiheesta käsin (Vesa 23.9.2026: "muuten en näe sivulla juurikaan
  * mainoksia"; CLAUDE.md "Mainos rakennetaan sivun aiheesta käsin"). Tunnisteet ovat kielikohtaisia:
- * suomenkielinen muuttaja tulee yleensä etelästä, joten matka-eSIM (Airalo) vain englanniksi.
+ * suomenkielinen muuttaja tulee yleensä etelästä, joten matka-eSIM (Airalo) vain englanniksi ja käännöksille
+ * (ne käyttävät englannin osiotunnisteita: lukija tulee ulkomailta).
  * Kausityösivulla suomenkieliselle ei mainosta: työnantajan asunnossa sähkö on yleensä vuokrassa
  * ja oma liittymä on jo olemassa.
  */
@@ -33,25 +34,26 @@ const SEASONAL_ADS = {
  * Pitkät jaksot: Lomarenkaan mökit kuvineen heti "kolme tapaa" -osion perään, koska toinen tapa on
  * mökki viikkovuokralla (Vesa 23.9.2026: "tähän tietenkin karuselli kuvineen").
  */
+// Käännökset (l10n/) käyttävät englannin osiotunnisteita, joten 'three-ways' osuu kaikille muille kielille.
 const LONG_STAY_CABINS = {
-  'kolme-tapaa': <CabinCarousel hl="fi" sidPrefix="stay_longstay_cabin" id="mokit" />,
-  'three-ways': <CabinCarousel hl="en" sidPrefix="stay_longstay_cabin" id="cabins" />,
+  'kolme-tapaa': <CabinCarousel sidPrefix="stay_longstay_cabin" id="mokit" />,
+  'three-ways': <CabinCarousel sidPrefix="stay_longstay_cabin" id="cabins" />,
 };
 
 export function Rentals() {
-  return <HousingPage route={HOUSING_ROUTES.rentals} copy={HOUSING_PAGES.rentals} heroImage="/images/housing-rentals-hero-talvikatu.webp" current="rentals" workPromo="inline" />;
+  return <HousingPage route={HOUSING_ROUTES.rentals} copy={HOUSING_PAGES.rentals} copyKey="rentals" heroImage="/images/housing-rentals-hero-talvikatu.webp" current="rentals" workPromo="inline" />;
 }
 
 export function SeasonalWorkerHousing() {
-  return <HousingPage route={HOUSING_ROUTES.seasonal} copy={HOUSING_PAGES.seasonal} heroImage="/images/housing-seasonal-hero-yllasjarvi.webp" current="seasonal" workPromo="full" inserts={SEASONAL_ADS} />;
+  return <HousingPage route={HOUSING_ROUTES.seasonal} copy={HOUSING_PAGES.seasonal} copyKey="seasonal" heroImage="/images/housing-seasonal-hero-yllasjarvi.webp" current="seasonal" workPromo="full" inserts={SEASONAL_ADS} />;
 }
 
 export function MovingToLapland() {
-  return <HousingPage route={HOUSING_ROUTES.moving} copy={HOUSING_PAGES.moving} heroImage="/images/housing-moving-hero-talvitie.webp" heroScrim="strong" current="moving" workPromo="inline" inserts={MOVING_ADS} />;
+  return <HousingPage route={HOUSING_ROUTES.moving} copy={HOUSING_PAGES.moving} copyKey="moving" heroImage="/images/housing-moving-hero-talvitie.webp" heroScrim="strong" current="moving" workPromo="inline" inserts={MOVING_ADS} />;
 }
 
 export function CostOfLiving() {
-  return <HousingPage route={HOUSING_ROUTES.cost} copy={HOUSING_PAGES.cost} heroImage="/images/housing-cost-hero-polttopuut.webp" current="cost" workPromo="none" inserts={COST_ADS} />;
+  return <HousingPage route={HOUSING_ROUTES.cost} copy={HOUSING_PAGES.cost} copyKey="cost" heroImage="/images/housing-cost-hero-polttopuut.webp" current="cost" workPromo="none" inserts={COST_ADS} />;
 }
 
 const TOWN_HERO: Record<string, string | undefined> = {
@@ -91,6 +93,7 @@ export function RentalsTown() {
     <HousingPage
       route={`${HOUSING_ROUTES.rentals}/${town}`}
       copy={RENTAL_TOWNS[town]}
+      copyKey={`town-${town}`}
       heroImage={(!isSummerSeason() && TOWN_HERO_WINTER[town]) || TOWN_HERO[town]}
       heroScrim={STRONG_SCRIM_TOWNS.has(town) ? 'strong' : undefined}
       current="rentals"
@@ -101,5 +104,5 @@ export function RentalsTown() {
 }
 
 export function LongStays() {
-  return <HousingPage route={HOUSING_ROUTES.longStays} copy={HOUSING_PAGES.longStays} heroImage="/images/pillar-long-stays-hero-mokki.webp" heroScrim="strong" current="longStays" workPromo="inline" inserts={LONG_STAY_CABINS} />;
+  return <HousingPage route={HOUSING_ROUTES.longStays} copy={HOUSING_PAGES.longStays} copyKey="longstays" heroImage="/images/pillar-long-stays-hero-mokki.webp" heroScrim="strong" current="longStays" workPromo="inline" inserts={LONG_STAY_CABINS} />;
 }

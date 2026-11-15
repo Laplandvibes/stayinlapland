@@ -1,4 +1,4 @@
-import { Fragment, type ReactNode } from 'react';
+import { Fragment, use, type ReactNode } from 'react';
 import { Link } from 'react-router-dom';
 import {
   ArrowRight,
@@ -43,26 +43,27 @@ import { useLang, useLocalePath, useLocalPageUrl } from '../../i18n/useLang';
 import { getCopy } from '../../locales/copy';
 import {
   HOME,
-  HOUSING_LANG_NOTICE,
   HOUSING_NAV,
   HOUSING_ROUTES,
   HOUSING_UI,
-  housingLang,
-  isHousingLang,
-  pickHousing,
+  isHomeLang,
+  isL10nLang,
+  l10nCommon,
+  l10nPage,
   type Card,
   type FactTable,
   type HousingCopyMap,
+  type HousingLang,
+  type HousingPageKey,
   type HousingRouteKey,
   type Section,
 } from '../../housing';
 
 /**
  * Asumissivujen yhteinen runko (rooli §23). Sisältö tulee `src/housing/*.ts`-
- * tiedostoista suomeksi ja englanniksi; muut kymmenen kieltä näkevät englannin
- * ja ilmoituksen, ja sivu kanonisoituu englanninkieliseen osoitteeseen, jotta
- * Google ei näe kymmentä kopiota (routes.json `nativeLocales` tekee saman
- * prerenderiin).
+ * tiedostoista suomeksi ja englanniksi ja `src/housing/l10n/<kieli>/`-tiedostoista
+ * muilla kymmenellä kielellä (15.11.2026). Jokainen kieliversio kanonisoituu omaan
+ * osoitteeseensa ja kuuluu samaan hreflang-joukkoon kaikkien 12 kielen kanssa.
  *
  * 🎨 ILME (Vesa 18.9.2026: "saisi eloa vähän, liian vaaleaa kaikkialla, jotain
  * korostusvärejä"): sivu ei ole valkoista valkoisella. Osiot vuorottelevat
@@ -86,7 +87,10 @@ import {
  */
 interface HousingPageProps {
   route: string;
+  /** Perustekstit (en, fi). */
   copy: HousingCopyMap;
+  /** Käännöstiedoston nimi `src/housing/l10n/<kieli>/<copyKey>.ts`. */
+  copyKey: HousingPageKey;
   /** Tyhjä = PageHeron graafinen tausta (paikasta ei ole rehellistä valokuvaa). */
   heroImage?: string;
   current: HousingRouteKey;
@@ -164,8 +168,8 @@ const OUT_ATTRS = (page: string, target?: string) => ({
 
 const LINK_LIGHT = '[&_a]:text-[#BE185D] [&_a]:font-medium [&_a]:underline [&_a]:underline-offset-2 hover:[&_a]:text-[#9D174D]';
 
-// Kielellä, jolle sivua ei ole käännetty, näytetään englanninkielinen teksti. Sen sisäiset linkit
-// (esim. /moving-to-lapland/) viedään lukijan omaan kielipuuhun kuten navigaatiossa (gate:kielietuliite).
+// Tekstin sisäiset linkit (esim. /moving-to-lapland/) viedään lukijan omaan kielipuuhun kuten navigaatiossa
+// (gate:kielietuliite). Käännökset kirjoittavat linkit englannin tapaan ilman etuliitettä.
 // Valmiiksi kielietuliitteinen linkki (suomenkielisen tekstin /fi/…) ja //-alkuinen jäävät ennalleen.
 const LOCALE_SEGMENT = /^\/(fi|de|ja|es|br|cn|kr|fr|it|nl|sv)(\/|$)/;
 
@@ -386,17 +390,18 @@ function SectionBlock({ s, page, tone, accentKey, photoLabel }: { s: Section; pa
   );
 }
 
-export default function HousingPage({ route, copy, heroImage, current, parent, workPromo = 'inline', inserts, heroScrim }: HousingPageProps) {
+export default function HousingPage({ route, copy, copyKey, heroImage, current, parent, workPromo = 'inline', inserts, heroScrim }: HousingPageProps) {
   const lang = useLang();
-  const hl = housingLang(lang);
-  const c = pickHousing(copy, lang);
-  const ui = HOUSING_UI[hl];
+  // Käännöskieli ladataan omasta palastaan (use() odottaa reitin Suspense-rajalla); en ja fi ovat valmiina.
+  const l10n = isL10nLang(lang) ? lang : null;
+  const common = l10n ? use(l10nCommon(l10n)) : null;
+  const c = (l10n ? use(l10nPage(l10n, copyKey)) : null) ?? copy[l10n ? 'en' : (lang as HousingLang)];
+  const ui = isHomeLang(lang) ? HOUSING_UI[lang] : (common?.ui ?? HOUSING_UI.en);
+  const work = isHomeLang(lang) ? HOME[lang].work : (common?.work ?? HOME.en.work);
   const localePath = useLocalePath();
   const localUrl = useLocalPageUrl();
-  const native = isHousingLang(lang);
-  // Kanoninen: oma kieli, kun sivu on kirjoitettu sillä; muuten englanti
-  // (sama päätös kuin prerenderin nativeLocales), jotta 12 osoitetta ei ole 12 kopiota.
-  const canonical = native ? localUrl(route) : pageUrl(route);
+  // Kanoninen = sivun oma kieliosoite (15.11.2026 alkaen kaikilla 12 kielellä oma sisältö).
+  const canonical = localUrl(route);
   const t = getCopy(lang);
   const page = current;
 
@@ -415,8 +420,8 @@ export default function HousingPage({ route, copy, heroImage, current, parent, w
       description: c.metaDescription,
       publisher: { '@id': `${pageUrl('/')}#organization` },
       mainEntityOfPage: canonical,
-      inLanguage: hl,
-      dateModified: '2026-09-18',
+      inLanguage: lang,
+      dateModified: '2026-11-15',
     },
     { '@type': 'BreadcrumbList', itemListElement: crumbs },
   ];
@@ -449,19 +454,6 @@ export default function HousingPage({ route, copy, heroImage, current, parent, w
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({ '@context': 'https://schema.org', '@graph': graph }) }} />
 
       <PageHero eyebrow={c.hero.eyebrow} title={c.hero.title} subtitle={c.hero.subtitle} imageSrc={heroImage} scrim={heroScrim ?? (heroImage?.includes('-talvi.') ? 'strong' : 'default')} />
-
-      {!native && (
-        <div className="bg-finland-blue text-snow px-5 sm:px-6 py-3">
-          <p className="max-w-4xl mx-auto text-sm leading-relaxed">
-            {HOUSING_LANG_NOTICE[lang]}{' '}
-            {/* Kieliversiolinkit: sivu on vain englanniksi ja suomeksi, joten nämä vievät toiseen kieleen tarkoituksella.
-                hreflang + lang kertovat sen selaimelle, ruudunlukijalle ja gate:kielietuliitteelle (15.11.2026). */}
-            <a href={route} hrefLang="en" lang="en" className="underline underline-offset-2 font-semibold">English</a>
-            {' · '}
-            <a href={`/fi${route}`} hrefLang="fi" lang="fi" className="underline underline-offset-2 font-semibold">Suomi</a>
-          </p>
-        </div>
-      )}
 
       {/* Johdanto + sisällysnavigaatio. Ei tarkistusmerkintää eikä sivuston itsepuhetta kärjessä. */}
       <section className="py-12 sm:py-16 px-5 sm:px-6">
@@ -527,7 +519,7 @@ export default function HousingPage({ route, copy, heroImage, current, parent, w
       )}
 
       {/* Työlinkki sisällön JÄLKEEN, ei johdannon alla (Vesa 23.9.2026: vuokrasivu "poukkoilee"). */}
-      {workPromo === 'inline' && <HousingWorkPromo copy={HOME[hl].work} placement={`housing_${current}`} variant="strip" />}
+      {workPromo === 'inline' && <HousingWorkPromo copy={work} placement={`housing_${current}`} variant="strip" />}
 
       {c.faqs && c.faqs.length > 0 && (
         <section className="py-14 sm:py-20 px-5 sm:px-6">
@@ -553,7 +545,7 @@ export default function HousingPage({ route, copy, heroImage, current, parent, w
         </section>
       )}
 
-      {workPromo === 'full' && <HousingWorkPromo copy={HOME[hl].work} placement={`housing_${current}_full`} />}
+      {workPromo === 'full' && <HousingWorkPromo copy={work} placement={`housing_${current}_full`} />}
 
       {/* Muut asumisen sivut: kuvakkeelliset linkit (ei toistuvia valokuvia) */}
       <section className="py-12 sm:py-16 px-5 sm:px-6 bg-cream-2/70">

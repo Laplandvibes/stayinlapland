@@ -1,3 +1,4 @@
+import { use } from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowRight, Plus } from 'lucide-react';
 import PageHero from '../components/PageHero';
@@ -7,7 +8,9 @@ import { pageUrl } from '../lib/meta';
 import { useLang, useLocalePath, useLocalPageUrl } from '../i18n/useLang';
 import { getCopy } from '../locales/copy';
 import { WHEN_TO_GO, type WhenMonth } from '../housing/whentogo';
-import { HOUSING_LANG_NOTICE, HOUSING_UI, housingLang, isHousingLang } from '../housing/labels';
+import { HOUSING_UI, isHomeLang } from '../housing/labels';
+import type { HousingLang } from '../housing/types';
+import { isL10nLang, l10nCommon, l10nWhenToGo } from '../housing/l10n';
 
 /**
  * Lapin vuosi kuukausittain.
@@ -16,24 +19,23 @@ import { HOUSING_LANG_NOTICE, HOUSING_UI, housingLang, isHousingLang } from '../
  * faktat tarkistettu? ja miksi kesää ei ole ollenkaan mainittu?"* Sivu kattoi 8 kuukautta (syys–huhti) ja
  * neljä väitettä oli lähteiden mukaan väärin. Nyt 12 kuukautta tammikuusta joulukuuhun, koko vuoden taulukko
  * Ilmatieteen laitoksen 1991–2020 luvuista, asujan osio (vuokra-asunto, kausityö, auto, valo) ja lähteet
- * suljettuna rivinä. Sisältö `src/housing/whentogo.ts`, fi/en natiivi; muut kielet näyttävät englannin ja
- * kanonisoituvat englantiin kuten asumissivut (routes.json nativeLocales).
+ * suljettuna rivinä. Sisältö `src/housing/whentogo.ts` (fi/en natiivi) ja `src/housing/l10n/<kieli>/whentogo.ts`
+ * (muut kymmenen kieltä 15.11.2026, käännetty englannista natiivilukijalla); jokainen kieli kanonisoituu itseensä.
  *
  * Ensimmäisen kierroksen rakenne säilyy: kuukausipillerit hyppylinkkeinä, kuukaudet pareittain (parilla oma
  * <h2>, kuukaudella <h3>), kaksi palstaa ≥ 768 px, ei sitaattikorttia.
  */
 export default function WhenToGo() {
   const lang = useLang();
-  const hl = housingLang(lang);
-  const native = isHousingLang(lang);
-  const w = WHEN_TO_GO[hl];
-  const ui = HOUSING_UI[hl];
+  const l10n = isL10nLang(lang) ? lang : null;
+  const common = l10n ? use(l10nCommon(l10n)) : null;
+  const w = (l10n ? use(l10nWhenToGo(l10n)) : null) ?? WHEN_TO_GO[l10n ? 'en' : (lang as HousingLang)];
+  const ui = isHomeLang(lang) ? HOUSING_UI[lang] : (common?.ui ?? HOUSING_UI.en);
   const t = getCopy(lang);
   const localUrl = useLocalPageUrl();
   const localePath = useLocalePath();
-  // Kanoninen: oma kieli, kun sivu on kirjoitettu sillä; muuten englanti (sama kuin prerenderin nativeLocales).
-  const canonical = native ? localUrl('/when-to-go') : pageUrl('/when-to-go');
-  const checked = hl === 'fi' ? 'Tarkistettu 23.9.2026' : 'Checked 23 September 2026';
+  const canonical = localUrl('/when-to-go');
+  const checked = ui.updated;
 
   const groups: { start: number; months: WhenMonth[] }[] = [];
   for (let i = 0; i < w.months.length; i += 2) groups.push({ start: i, months: w.months.slice(i, i + 2) });
@@ -97,8 +99,8 @@ export default function WhenToGo() {
                 description: w.metaDescription,
                 publisher: { '@id': `${pageUrl('/')}#organization` },
                 mainEntityOfPage: canonical,
-                inLanguage: hl,
-                dateModified: '2026-09-23',
+                inLanguage: lang,
+                dateModified: '2026-11-15',
               },
               {
                 '@type': 'BreadcrumbList',
@@ -117,18 +119,6 @@ export default function WhenToGo() {
       />
 
       <PageHero eyebrow={w.hero.eyebrow} title={w.hero.title} subtitle={w.hero.subtitle} imageSrc="/images/whentogo-hero-tykky.webp" scrim="strong" />
-
-      {!native && (
-        <div className="bg-finland-blue text-snow px-5 sm:px-6 py-3">
-          <p className="max-w-4xl mx-auto text-sm leading-relaxed">
-            {HOUSING_LANG_NOTICE[lang]}{' '}
-            {/* Kieliversiolinkit vievät toiseen kieleen tarkoituksella (sivu on vain en + fi): hreflang + lang (15.11.2026). */}
-            <a href="/when-to-go" hrefLang="en" lang="en" className="underline underline-offset-2 font-semibold">English</a>
-            {' · '}
-            <a href="/fi/when-to-go" hrefLang="fi" lang="fi" className="underline underline-offset-2 font-semibold">Suomi</a>
-          </p>
-        </div>
-      )}
 
       {/* Johdanto + kuukaudet hyppylinkkeinä. */}
       <section className="px-5 sm:px-6 pt-12 sm:pt-16 pb-4">

@@ -1,16 +1,15 @@
 import type { Lang } from '../i18n/useLang';
 import type { HomeLang, HousingLang } from './types';
 
-/** Kielet, joilla asumissisältö on kirjoitettu natiivisti. Laajennetaan vasta mitatun kysynnän mukaan (§25). */
+/**
+ * Asumissivujen perustekstien kielet: englanti ja suomi ovat sivutiedostoissa (`src/housing/*.ts`) ja
+ * sivupalassa valmiina. Muut kymmenen kieltä ovat 15.11.2026 alkaen `src/housing/l10n/<kieli>/`
+ * -tiedostoissa ja ladataan tarvittaessa (Vesa 18.10.2026: sivu kaikille sivuston kielille).
+ */
 export const HOUSING_LANGS: readonly HousingLang[] = ['en', 'fi'];
 
 export function isHousingLang(lang: Lang): lang is HousingLang {
   return (HOUSING_LANGS as readonly string[]).includes(lang);
-}
-
-/** Lukijan kieli → sisällön kieli (englanti, kun omaa kieltä ei vielä ole). */
-export function housingLang(lang: Lang): HousingLang {
-  return isHousingLang(lang) ? lang : 'en';
 }
 
 /** Kielet, joilla asumisen ETUSIVU on kirjoitettu (alasivuja enemmän, ks. HomeLang). */
@@ -36,15 +35,7 @@ export const HOUSING_ROUTES = {
 export type HousingRouteKey = keyof typeof HOUSING_ROUTES;
 
 /**
- * Reitit, joiden sisältö on kirjoitettu vain suomeksi ja englanniksi (hreflang = en, fi, x-default).
- * /when-to-go ei ole asumissivu eikä sisarlinkeissä, mutta sen sisältö on 23.9.2026 alkaen fi/en natiivi.
- */
-export const HOUSING_ROUTE_PATHS: readonly string[] = [...Object.values(HOUSING_ROUTES), '/when-to-go'];
-
-/**
- * Navin ja murupolun otsikot kaikilla 12 kielellä. Lyhyet nimet kirjoitetaan
- * natiivisti, koska navi näkyy jokaisella kielellä vaikka sivun runko on
- * englanniksi. Sama kuvio kuin Nav.tsx:n DESTINATIONS_LABEL.
+ * Navin ja murupolun otsikot kaikilla 12 kielellä. Sama kuvio kuin Nav.tsx:n DESTINATIONS_LABEL.
  */
 export const HOUSING_NAV: Record<HousingRouteKey | 'stays' | 'housingHome' | 'staysSite', Record<Lang, string>> = {
   housingHome: {
@@ -91,24 +82,8 @@ export const HOUSING_NAV: Record<HousingRouteKey | 'stays' | 'housingHome' | 'st
   },
 };
 
-/** Ilmoitus lukijalle, jonka kielellä sivua ei vielä ole. Linkit vievät englantiin ja suomeen. */
-export const HOUSING_LANG_NOTICE: Record<Lang, string> = {
-  en: '',
-  fi: '',
-  sv: 'Den här sidan finns än så länge på engelska och finska.',
-  de: 'Diese Seite gibt es bisher auf Englisch und Finnisch.',
-  fr: 'Cette page existe pour l’instant en anglais et en finnois.',
-  es: 'Esta página está disponible por ahora en inglés y en finés.',
-  it: 'Questa pagina è per ora disponibile in inglese e in finlandese.',
-  nl: 'Deze pagina is voorlopig beschikbaar in het Engels en het Fins.',
-  'pt-BR': 'Esta página está disponível, por enquanto, em inglês e finlandês.',
-  ja: 'このページは現在、英語とフィンランド語でご覧いただけます。',
-  ko: '이 페이지는 현재 영어와 핀란드어로 제공됩니다.',
-  'zh-CN': '此页面目前提供英文和芬兰文版本。',
-};
-
-/** Sivujen yhteiset pienet UI-merkkijonot (vain sisältökielillä). */
-export const HOUSING_UI: Record<HomeLang, {
+/** Sivujen yhteiset pienet UI-merkkijonot. */
+export interface HousingUiCopy {
   sources: string;
   /** Avattavan lähderivin otsikko (SourcesDisclosure, 23.9.2026). */
   sourcesSummary: string;
@@ -125,12 +100,18 @@ export const HOUSING_UI: Record<HomeLang, {
   photo: string;
   photosHeading: string;
   photosLead: string;
-}> = {
+}
+
+/**
+ * Etusivun kielet (en, fi, fr, nl). Asumissivujen muut kahdeksan kieltä saavat samat tekstit omasta
+ * `l10n/<kieli>/common.ts`:stä.
+ */
+export const HOUSING_UI: Record<HomeLang, HousingUiCopy> = {
   fi: {
     sources: 'Lähteet',
     sourcesSummary: 'Lähteet ja kuvat',
     sourcesLead: 'Jokainen luku tällä sivulla on jostakin näistä. Lasketut luvut näyttävät kaavansa.',
-    updated: 'Tarkistettu 17.9.2026',
+    updated: 'Tarkistettu 15.11.2026',
     readMore: 'Lue lisää',
     faqKicker: 'Kysytyimmät',
     faqH2: 'Ennen kuin muutat.',
@@ -147,7 +128,7 @@ export const HOUSING_UI: Record<HomeLang, {
     sources: 'Sources',
     sourcesSummary: 'Sources and photos',
     sourcesLead: 'Every figure on this page comes from one of these. Calculated figures show their formula.',
-    updated: 'Checked 17 September 2026',
+    updated: 'Checked 15 November 2026',
     readMore: 'Read more',
     faqKicker: 'Most asked',
     faqH2: 'Before you move.',
@@ -164,7 +145,7 @@ export const HOUSING_UI: Record<HomeLang, {
     sources: 'Sources',
     sourcesSummary: 'Sources et photos',
     sourcesLead: 'Chaque chiffre de cette page vient de l’une d’elles. Les chiffres calculés montrent leur formule.',
-    updated: 'Vérifié le 17 septembre 2026',
+    updated: 'Vérifié le 15 novembre 2026',
     readMore: 'En savoir plus',
     faqKicker: 'Les questions les plus posées',
     faqH2: 'Avant de vous installer.',
@@ -181,7 +162,7 @@ export const HOUSING_UI: Record<HomeLang, {
     sources: 'Bronnen',
     sourcesSummary: 'Bronnen en foto’s',
     sourcesLead: 'Elk cijfer op deze pagina komt uit een van deze bronnen. Berekende cijfers laten hun formule zien.',
-    updated: 'Gecontroleerd op 17 september 2026',
+    updated: 'Gecontroleerd op 15 november 2026',
     readMore: 'Lees meer',
     faqKicker: 'Meest gesteld',
     faqH2: 'Voordat u verhuist.',

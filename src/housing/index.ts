@@ -1,5 +1,3 @@
-import type { Lang } from '../i18n/useLang';
-import type { HousingCopyMap, HousingPageCopy } from './types';
 import { RENTALS } from './rentals';
 import { SEASONAL } from './seasonal';
 import { MOVING } from './moving';
@@ -11,7 +9,6 @@ import { TOWN_KITTILA_LEVI } from './towns/kittila-levi';
 import { TOWN_IVALO_INARI } from './towns/ivalo-inari';
 import { TOWN_KEMIJARVI } from './towns/kemijarvi';
 import { TOWN_SODANKYLA } from './towns/sodankyla';
-import { housingLang } from './labels';
 
 export * from './types';
 export * from './labels';
@@ -41,9 +38,6 @@ export function isRentalTownSlug(slug: string): slug is RentalTownSlug {
   return Object.prototype.hasOwnProperty.call(RENTAL_TOWNS, slug);
 }
 
-/** Sivukohtainen copy lukijan kielellä; englanti, kun omaa kieltä ei vielä ole. */
-export function pickHousing(map: HousingCopyMap, lang: Lang): HousingPageCopy {
-  return map[housingLang(lang)];
-}
+export * from './l10n';
 
 export const HOUSING_PAGES = { rentals: RENTALS, seasonal: SEASONAL, moving: MOVING, cost: COST, longStays: LONG_STAYS } as const;

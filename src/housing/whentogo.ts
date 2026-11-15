@@ -15,7 +15,7 @@ import type { Faq, FactTable, HousingLang, Source } from './types';
  * 1 300, ruska lapissa 390, lappi kesällä 210 /kk. en (UK): best time to visit lapland 590, lapland in
  * summer 390, lapland in december / february 390, november 320, january 260, march 210, october 170.
  *
- * Muut kymmenen kieltä näyttävät englannin ja kanonisoituvat englantiin (routes.json nativeLocales).
+ * Muut kymmenen kieltä: `l10n/<kieli>/whentogo.ts` (käännetty englannista 15.11.2026, natiivilukija).
  */
 
 export interface WhenMonth {
@@ -77,7 +77,8 @@ const SRC = {
   arcticSnowHotel: { url: 'https://arcticsnowhotel.fi/' },
 } as const;
 
-type SrcId = keyof typeof SRC;
+export type WhenSrcId = keyof typeof SRC;
+type SrcId = WhenSrcId;
 
 const LABELS: Record<SrcId, Record<HousingLang, string>> = {
   fmi1991: { fi: 'Ilmatieteen laitos: Tilastoja Suomen ilmastosta ja merestä 1991–2020 (Raportteja 2021:8), Rovaniemen, Sodankylän ja Utsjoen Kevon asemat', en: 'Finnish Meteorological Institute: Climate statistics of Finland 1991–2020 (Reports 2021:8), Rovaniemi, Sodankylä and Utsjoki Kevo stations' },
@@ -110,6 +111,17 @@ const LABELS: Record<SrcId, Record<HousingLang, string>> = {
 
 const sources = (hl: HousingLang): Source[] =>
   (Object.keys(SRC) as SrcId[]).map((id) => ({ id, label: LABELS[id][hl], url: SRC[id].url }));
+
+/** Käännöskielten lähdeluettelo (`l10n/<kieli>/whentogo.ts`): nimet kielen `common.ts`:stä, osoitteet täältä. */
+export const whenToGoSources = (labels: Partial<Record<SrcId, string>>): Source[] =>
+  (Object.keys(SRC) as SrcId[]).map((id) =>
+    labels[id] ? { id, label: labels[id]!, url: SRC[id].url } : { id, label: LABELS[id].en, url: SRC[id].url, lang: 'en' },
+  );
+
+/** Englanninkieliset lähdenimet (käännöspohjien generointiin). */
+export const WHEN_SOURCE_LABELS_EN = Object.fromEntries(
+  (Object.keys(SRC) as SrcId[]).map((id) => [id, LABELS[id].en]),
+) as Record<SrcId, string>;
 
 export const WHEN_TO_GO: Record<HousingLang, WhenToGoCopy> = {
   fi: {

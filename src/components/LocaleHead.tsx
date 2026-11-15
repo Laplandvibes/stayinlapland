@@ -3,15 +3,13 @@
 // <BrowserRouter> alongside ScrollToTop. Pages still emit their own
 // <title>/<meta description>/<link canonical> inline (React 19 head hoisting).
 //
-// 2026-09-18: asumissivut (rooli §23) on kirjoitettu vain suomeksi ja
-// englanniksi. Niille hreflang-joukko on {en, fi, x-default}, sama kuin
-// prerenderin `nativeLocales`: 17.9. mitattiin, että Google lukee kanonisen ja
-// hreflangin RENDERÖIDYSTÄ sivusta, joten JS ei saa mainostaa kymmentä
-// kieliversiota, joita ei ole.
+// 2026-09-18 – 2026-11-15 asumissivuilla oli vain {en, fi, x-default}. 15.11.2026 alkaen ne ovat
+// kaikilla 12 kielellä (src/housing/l10n/), joten joka reitti saa koko joukon. 17.9. mitattiin, että
+// Google lukee kanonisen ja hreflangin RENDERÖIDYSTÄ sivusta: tämä joukko ja prerenderin joukko pitää
+// olla samat (routes.json ilman nativeLocales-rajausta).
 import { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 import { useLang, type Lang } from '../i18n/useLang';
-import { HOUSING_LANGS, HOUSING_ROUTE_PATHS } from '../housing/labels';
 
 const SITE_URL = 'https://stayinlapland.com';
 
@@ -33,12 +31,6 @@ function stripLocalePath(path: string): string {
   return path.replace(/^\/(fi|de|ja|es|br|cn|kr|fr|it|nl|sv)(?=\/|$)/, '') || '/';
 }
 
-/** Asumisreitit (myös /rentals/<paikkakunta>): vain sisältökielet hreflangiin. */
-function isHousingPath(cleanPath: string): boolean {
-  const p = cleanPath.replace(/\/$/, '') || '/';
-  return HOUSING_ROUTE_PATHS.some((r) => p === r || p.startsWith(`${r}/`));
-}
-
 export default function LocaleHead() {
   const lang = useLang();
   const { pathname } = useLocation();
@@ -46,7 +38,7 @@ export default function LocaleHead() {
   useEffect(() => {
     document.documentElement.lang = BCP47[lang];
     const cleanPath = stripLocalePath(pathname);
-    const langs: Lang[] = isHousingPath(cleanPath) ? [...HOUSING_LANGS] : SUPPORTED;
+    const langs: Lang[] = SUPPORTED;
 
     // hreflang × N + x-default
     document.head.querySelectorAll('link[rel="alternate"][data-seo-hreflang]').forEach((el) => el.remove());

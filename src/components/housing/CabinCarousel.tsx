@@ -1,6 +1,8 @@
-import { useEffect, useMemo, useState } from 'react';
+import { use, useEffect, useMemo, useState } from 'react';
 import { ArrowRight, ArrowUpRight, BedDouble, Ruler, Users } from 'lucide-react';
 import type { HousingLang } from '../../housing/types';
+import { isL10nLang, l10nCommon, type CabinGroupKey, type CabinTextCopy } from '../../housing/l10n';
+import { useLang, type Lang } from '../../i18n/useLang';
 import { CHIP_BASE } from './ui';
 
 /**
@@ -20,7 +22,13 @@ import { CHIP_BASE } from './ui';
  * sääntö), "Muu Lappi" -välilehti mukaan. Linkit Workerin kautta, rel ilman noreferreriä.
  */
 
-type GroupKey = 'levi' | 'yllas' | 'saariselka' | 'lapland';
+type GroupKey = CabinGroupKey;
+
+/** Lukujen ja päivien muoto lukijan kielellä. */
+const NUM_LOCALE: Record<Lang, string> = {
+  en: 'en-GB', fi: 'fi-FI', sv: 'sv-SE', de: 'de-DE', fr: 'fr-FR', es: 'es-ES', it: 'it-IT', nl: 'nl-NL',
+  'pt-BR': 'pt-BR', ja: 'ja-JP', ko: 'ko-KR', 'zh-CN': 'zh-CN',
+};
 
 type ApiCabin = {
   id: string;
@@ -55,14 +63,12 @@ const AREA_URL: Record<GroupKey, { fi: string; intl: string }> = {
 const goLomarengas = (dest: string, sid: string) =>
   `${REDIRECT}/go/lomarengas?sid=${encodeURIComponent(sid)}&dest=${encodeURIComponent(dest)}`;
 
-/** Mökin oma sivu syötteen slugista (kunta-kylä-nimi-id); fi /mokit/, muut /en/cottages/. */
+/** Mökin oma sivu syötteen slugista (kunta-kylä-nimi-id); fi /mokit/, muut /en/cottages/ (Lomarengas on fi + en). */
 const cabinUrl = (slug: string, sid: string, hl: HousingLang) =>
   goLomarengas(hl === 'fi' ? `https://www.lomarengas.fi/mokit/${slug}` : `https://www.lomarengas.fi/en/cottages/${slug}`, sid);
 
-const TEXT: Record<HousingLang, {
-  ad: string; kicker: string; h2: string; lead: string; tabs: Record<GroupKey, string>; weekFrom: string;
-  guests: string; bedrooms: string; size: string; view: string; browseAll: string; note: string; updated: string;
-}> = {
+/** en + fi; muut kielet `l10n/<kieli>/common.ts` `cabins` (ne kertovat, että varaussivu on englanniksi). */
+export const TEXT: Record<HousingLang, CabinTextCopy> = {
   fi: {
     ad: 'Mainos',
     kicker: 'Mökki viikoiksi',
@@ -111,8 +117,14 @@ function loadCabins(): Promise<ApiData | null> {
   return pending;
 }
 
-export default function CabinCarousel({ hl, sidPrefix, id }: { hl: HousingLang; sidPrefix: string; id?: string }) {
-  const t = TEXT[hl];
+export default function CabinCarousel({ sidPrefix, id }: { sidPrefix: string; id?: string }) {
+  const lang = useLang();
+  const l10n = isL10nLang(lang) ? lang : null;
+  const common = l10n ? use(l10nCommon(l10n)) : null;
+  // Varauslinkit: Lomarenkaan suomenkielinen sivu suomeksi, muuten englanninkielinen.
+  const hl: HousingLang = lang === 'fi' ? 'fi' : 'en';
+  const t = common?.cabins ?? TEXT[hl];
+  const numLocale = NUM_LOCALE[lang];
   const [data, setData] = useState<ApiData | null>(cache);
   const [failed, setFailed] = useState(false);
   const [tab, setTab] = useState<GroupKey>('levi');
@@ -129,12 +141,12 @@ export default function CabinCarousel({ hl, sidPrefix, id }: { hl: HousingLang; 
     };
   }, []);
 
-  const nf = useMemo(() => new Intl.NumberFormat(hl === 'fi' ? 'fi-FI' : 'en-GB', { maximumFractionDigits: 0 }), [hl]);
+  const nf = useMemo(() => new Intl.NumberFormat(numLocale, { maximumFractionDigits: 0 }), [numLocale]);
   const updated = useMemo(() => {
     if (!data?.updatedAt) return '';
     const d = new Date(data.updatedAt);
-    return Number.isNaN(d.getTime()) ? '' : d.toLocaleDateString(hl === 'fi' ? 'fi-FI' : 'en-GB', { day: 'numeric', month: 'numeric', year: 'numeric' });
-  }, [data, hl]);
+    return Number.isNaN(d.getTime()) ? '' : d.toLocaleDateString(numLocale, { day: 'numeric', month: 'numeric', year: 'numeric' });
+  }, [data, numLocale]);
 
   // Syöte ei vastaa (mainosesto, verkko): osio piiloutuu, ei tyhjää laatikkoa.
   if (failed) return null;

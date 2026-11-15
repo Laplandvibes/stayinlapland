@@ -16,8 +16,9 @@
 import { ArrowRight, Zap, Wifi, BadgeCheck, FileSignature, Globe2, Languages, Smartphone, PlaneLanding, QrCode } from "lucide-react";
 import { useLang, type Lang } from "../i18n/useLang";
 import airaloSpec from "../shared/ads/advertisers/airalo";
-import { housingLang } from "../housing/labels";
+import { use } from "react";
 import type { HousingLang } from "../housing/types";
+import { isL10nLang, l10nCommon, type AdContext, type AdWrapCopy } from "../housing/l10n";
 
 
 /**
@@ -254,7 +255,7 @@ function PartnerAd({
 
 function FortumAd({ sid = "stay_moving_electricity", lang: langProp, layout }: { sid?: string; lang?: Lang; layout?: "stack" | "row" }) {
   const ctxLang = useLang();
-  // Asumissivujen sisältö on fi/en; kortin kieli seuraa sisällön kieltä, ei osoitteen kieltä.
+  // Kortin kieli seuraa sivun kieltä (asumissivut ovat 15.11.2026 alkaen kaikilla 12 kielellä).
   const lang = langProp ?? ctxLang;
   const href = `https://go.laplandvibes.com/go/fortum?sid=${encodeURIComponent(sid)}`;
 
@@ -425,7 +426,7 @@ function FortumAd({ sid = "stay_moving_electricity", lang: langProp, layout }: {
 
 function TeliaAd({ sid = "stay_moving_telecom", lang: langProp, layout }: { sid?: string; lang?: Lang; layout?: "stack" | "row" }) {
   const ctxLang = useLang();
-  // Asumissivujen sisältö on fi/en; kortin kieli seuraa sisällön kieltä, ei osoitteen kieltä.
+  // Kortin kieli seuraa sivun kieltä (asumissivut ovat 15.11.2026 alkaen kaikilla 12 kielellä).
   const lang = langProp ?? ctxLang;
   const href = `https://go.laplandvibes.com/go/telia?sid=${encodeURIComponent(sid)}`;
 
@@ -596,7 +597,7 @@ function TeliaAd({ sid = "stay_moving_telecom", lang: langProp, layout }: { sid?
 
 function AiraloAd({ sid = "stay_moving_esim", lang: langProp, layout }: { sid?: string; lang?: Lang; layout?: "stack" | "row" }) {
   const ctxLang = useLang();
-  // Asumissivujen sisältö on fi/en; kortin kieli seuraa sisällön kieltä, ei osoitteen kieltä.
+  // Kortin kieli seuraa sivun kieltä (asumissivut ovat 15.11.2026 alkaen kaikilla 12 kielellä).
   const lang = langProp ?? ctxLang;
   // linkFor rakentaa per-locale dest-syvälinkin Finland-eSIM-sivulle — paljas
   // /go/airalo ilman destiä pudottaisi TP-wrapin kautta Airalon etusivulle
@@ -768,14 +769,14 @@ function AiraloAd({ sid = "stay_moving_esim", lang: langProp, layout }: { sid?: 
 
 type AdKind = "fortum" | "telia" | "airalo";
 /** Lukijan tilanne sivulla: otsikko lähtee siitä, ei tuotteesta (CLAUDE.md). */
-type AdContext = "moving" | "electricity" | "arrival";
 
-const NOTE: Record<HousingLang, string> = {
+export const NOTE: Record<HousingLang, string> = {
   fi: "Kumppanilinkkejä: jos teet sopimuksen niiden kautta, saamme pienen palkkion. Sinulle hinta on sama.",
   en: "Affiliate links: if you sign up through them we earn a small commission. Your price is the same.",
 };
 
-const WRAP_TEXT: Record<AdContext, Record<HousingLang, { kicker: string; title: string; lead: string }>> = {
+/** en + fi; muut kielet `l10n/<kieli>/common.ts` (`adsNote`, `adsWrap`). */
+export const WRAP_TEXT: Record<AdContext, Record<HousingLang, AdWrapCopy>> = {
   // Muuttosivu, "Ensimmäinen viikko": osio nimeää sähkösopimuksen ja netin.
   moving: {
     fi: {
@@ -834,8 +835,12 @@ export default function SettlingInAds({
   context: AdContext;
   className?: string;
 }) {
-  const hl = housingLang(useLang());
-  const t = WRAP_TEXT[context][hl];
+  const lang = useLang();
+  const l10n = isL10nLang(lang) ? lang : null;
+  const common = l10n ? use(l10nCommon(l10n)) : null;
+  const hl: HousingLang = lang === 'fi' ? 'fi' : 'en';
+  const t = common?.adsWrap[context] ?? WRAP_TEXT[context][hl];
+  const note = common?.adsNote ?? NOTE[hl];
   // Yksi mainos: sivun tekstipalstan levyinen vaakakortti (sama max-w-3xl kuin osioilla), ei
   // pystykortti leveän alueen vasempaan reunaan. Useampi: rinnakkain leveämmässä ruudukossa.
   const single = kinds.length === 1;
@@ -850,11 +855,11 @@ export default function SettlingInAds({
         <h2 className="max-w-3xl mx-auto lg:mx-0 text-center lg:text-left font-heading text-3xl sm:text-4xl text-charcoal leading-tight tracking-wide">{t.title}</h2>
         <p className="mt-3 mb-8 max-w-2xl mx-auto w-fit text-left lg:mx-0 lg:w-auto text-base leading-relaxed text-graphite">{t.lead}</p>
         <div className={single ? "" : `grid items-stretch gap-5 ${cols}`}>
-          {kinds.includes("fortum") && <FortumAd sid={`${sidPrefix}_electricity`} lang={hl} layout={layout} />}
-          {kinds.includes("telia") && <TeliaAd sid={`${sidPrefix}_telecom`} lang={hl} layout={layout} />}
-          {kinds.includes("airalo") && <AiraloAd sid={`${sidPrefix}_esim`} lang={hl} layout={layout} />}
+          {kinds.includes("fortum") && <FortumAd sid={`${sidPrefix}_electricity`} lang={lang} layout={layout} />}
+          {kinds.includes("telia") && <TeliaAd sid={`${sidPrefix}_telecom`} lang={lang} layout={layout} />}
+          {kinds.includes("airalo") && <AiraloAd sid={`${sidPrefix}_esim`} lang={lang} layout={layout} />}
         </div>
-        <p className="mt-5 max-w-3xl text-[13px] leading-relaxed text-graphite">{NOTE[hl]}</p>
+        <p className="mt-5 max-w-3xl text-[13px] leading-relaxed text-graphite">{note}</p>
       </div>
     </section>
   );

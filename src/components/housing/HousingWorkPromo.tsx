@@ -1,6 +1,7 @@
 import { ArrowUpRight, Briefcase } from 'lucide-react';
 import type { HousingHomeCopy } from '../../housing/home';
 import { CHIP_BASE } from './ui';
+import { useLang, type Lang } from '../../i18n/useLang';
 
 interface HousingWorkPromoProps {
   copy: HousingHomeCopy['work'];
@@ -54,8 +55,14 @@ function NordicCross() {
  * sisällön JÄLKEEN (ei johdannon alla: promo ennen sisältöä oli yksi syy siihen,
  * että vuokrasivu "poukkoili", Vesa 23.9.2026).
  */
+/** laplandworkin kielipolut ovat samat kuin tällä sivustolla (verkoston 12 kieltä, mitattu 25.9.2026: 308/308 kielietusivua). */
+const WORK_PREFIX: Record<Lang, string> = {
+  en: '', fi: 'fi/', de: 'de/', ja: 'ja/', es: 'es/', 'pt-BR': 'br/', 'zh-CN': 'cn/', ko: 'kr/', fr: 'fr/', it: 'it/', nl: 'nl/', sv: 'sv/',
+};
+
 export default function HousingWorkPromo({ copy, placement, variant = 'banner' }: HousingWorkPromoProps) {
-  const href = `https://laplandwork.com/?utm_source=stayinlapland&utm_medium=crosslink&utm_campaign=${encodeURIComponent(placement)}`;
+  const lang = useLang();
+  const href = `https://laplandwork.com/${WORK_PREFIX[lang]}?utm_source=stayinlapland&utm_medium=crosslink&utm_campaign=${encodeURIComponent(placement)}`;
   const out = { 'data-umami-event': 'housing_out', 'data-umami-event-page': placement, 'data-umami-event-target': 'laplandwork' };
 
   if (variant === 'strip') {

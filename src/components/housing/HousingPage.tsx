@@ -569,7 +569,9 @@ export default function HousingPage({ route, copy, copyKey, heroImage, current, 
                     </span>
                   );
                 })()}
-                <span className="flex-1 font-semibold text-charcoal text-[15px] leading-snug group-hover:text-[#BE185D] transition-colors">
+                {/* min-w-0 + tavutus: saksan "Lebenshaltungskosten" ei mahtunut 1024 px:n neljän sarakkeen riviin, ja nuoli
+                    työntyi ruudun yli (gate:tabletti 15.11.2026, vaakavieritys 16 px). */}
+                <span className="flex-1 min-w-0 [hyphens:auto] [overflow-wrap:break-word] font-semibold text-charcoal text-[15px] leading-snug group-hover:text-[#BE185D] transition-colors">
                   {k === 'home' ? HOUSING_NAV.housingHome[lang] : HOUSING_NAV[k][lang]}
                 </span>
                 <ArrowRight className="w-4 h-4 shrink-0 text-[#BE185D] group-hover:translate-x-0.5 transition-transform" />

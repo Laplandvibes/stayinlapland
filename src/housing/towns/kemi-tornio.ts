@@ -20,7 +20,7 @@ export const TOWN_KEMI_TORNIO: HousingCopyMap = {
     authorNote:
       'Vuokrayhtiöiden asuntomäärät Kemin, Tornion ja Keminmaan kuntien omilta sivuilta, hakuehdot yhtiöiden omilta sivuilta, neliövuokrat Tilastokeskuksen vuokratilastosta (Lapin maakunta 2026Q3). Tarkistettu 15.11.2026.',
     intro: [
-      'Kemissä asuu 19 339, Torniossa 20 823 ja Keminmaalla 7 576 ihmistä (Tilastokeskus 31.12.2025). Kolme kuntaa ovat toistensa naapureita, ja asunto voi olla eri kunnassa kuin työpaikka.',
+      'Kemissä asuu 19 339, Torniossa 20 823 ja Keminmaalla 7 576 ihmistä (Tilastokeskus 31.12.2025). Kaikki kolme ovat toistensa naapurikuntia, ja asunto voi olla eri kunnassa kuin työpaikka.',
       'Kaupunkien omat vuokrayhtiöt ovat ensimmäinen osoite: Kemin kaupungin vuokra-asunnoista vastaa Kiinteistö Oy Itätuuli (kemi.fi), joka on Kemin suurin vuokra-asuntotoimija ja tarjoaa asuntoja viiden kilometrin säteellä keskustasta (itatuuli.fi). Keminmaan Vuokra-asunnot Oy:llä on 18 kiinteistöä ja reilut 300 asuntoa (keminmaa.fi). Kumpaankin haetaan omalla sähköisellä hakemuksellaan. Torniossa kaupungin asuntoja hallinnoi Tornion Krunni Oy, jonka alle kuuluu Tornion Vuokra-asunnot Oy (tornio.fi).',
       'Tilastokeskuksen tuoreessa vuokrataulukossa Kemillä ja Torniolla ei ole omaa riviä, joten alla on Lapin maakunnan luku. Rovaniemen luvut löydät omalta sivultaan.',
     ],
@@ -90,7 +90,7 @@ export const TOWN_KEMI_TORNIO: HousingCopyMap = {
           },
           {
             title: 'Oikotie ja Vuokraovi',
-            body: 'Yksityisten ja välittäjien ilmoitukset. Hae kunnalla Kemi, Tornio ja Keminmaa erikseen, sillä ne ovat kolme eri kuntahakua.',
+            body: 'Yksityisten ja välittäjien ilmoitukset. Hae kunnalla Kemi, Tornio ja Keminmaa erikseen, sillä portaaleissa jokainen kunta on oma hakunsa.',
             href: 'https://asunnot.oikotie.fi/vuokra-asunnot/kemi',
             linkLabel: 'Oikotie: vuokra-asunnot Kemi',
             event: 'oikotie',
@@ -110,11 +110,11 @@ export const TOWN_KEMI_TORNIO: HousingCopyMap = {
     faqs: [
       {
         q: 'Miten Kemin kaupungin vuokra-asuntoa haetaan?',
-        a: 'Kiinteistö Oy Itätuulen omalla sähköisellä hakemuksella, joka on voimassa neljä kuukautta. Itätuuli on Kemin suurin vuokra-asuntotoimija ja tarjoaa asuntoja viiden kilometrin säteellä keskustasta, ja se vuokraa kaikki asuntonsa ilman vakuutta (itatuuli.fi). Keminmaan Vuokra-asunnot Oy:llä on oma hakemuksensa.',
+        a: 'Kiinteistö Oy Itätuulen omalla sähköisellä hakemuksella, joka on voimassa neljä kuukautta. Itätuuli on Kemin suurin vuokra-asuntotoimija ja tarjoaa asuntoja viiden kilometrin säteellä keskustasta. Se vuokraa kaikki asuntonsa ilman vakuutta (itatuuli.fi). Keminmaan Vuokra-asunnot Oy:llä on oma hakemuksensa.',
       },
       {
         q: 'Mitä vuokra maksaa Kemissä ja Torniossa?',
-        a: 'Tilastokeskuksen tuoreessa taulukossa kaupungeilla ei ole omaa keskineliövuokrariviä. Lapin maakunnan keskineliövuokra oli 13,14 €/m² heinä–syyskuussa 2026 (yksiöt 17,25, kaksiot 12,87), ja luku sisältää kalliimman Rovaniemen.',
+        a: 'Tilastokeskuksen tuoreessa vuokrataulukossa kaupungeilla ei ole omaa riviä. Lapin maakunnan keskineliövuokra oli 13,14 €/m² heinä–syyskuussa 2026 (yksiöt 17,25, kaksiot 12,87), ja luku sisältää kalliimman Rovaniemen.',
       },
     ],
     cta: {
@@ -213,7 +213,7 @@ export const TOWN_KEMI_TORNIO: HousingCopyMap = {
           },
           {
             title: 'Oikotie and Vuokraovi',
-            body: 'Private and agency listings. Search Kemi, Tornio and Keminmaa as separate municipalities: they are three separate municipal searches.',
+            body: 'Private and agency listings. Search Kemi, Tornio and Keminmaa one at a time: on the portals each municipality is a search of its own.',
             href: 'https://asunnot.oikotie.fi/vuokra-asunnot/kemi',
             linkLabel: 'Oikotie: rentals in Kemi',
             event: 'oikotie',
@@ -233,7 +233,7 @@ export const TOWN_KEMI_TORNIO: HousingCopyMap = {
     faqs: [
       {
         q: 'How do I apply for a municipal flat in Kemi?',
-        a: 'With Kiinteistö Oy Itätuuli’s own online application, valid for four months. Itätuuli is Kemi’s largest rental housing provider with flats within five kilometres of the centre, and lets all of them with no deposit (itatuuli.fi). Keminmaan Vuokra-asunnot Oy has its own application.',
+        a: 'With Kiinteistö Oy Itätuuli’s own online application, valid for four months. Itätuuli is Kemi’s largest rental housing provider, with flats within five kilometres of the centre, and it lets all of them with no deposit (itatuuli.fi). Keminmaan Vuokra-asunnot Oy has its own application.',
       },
       {
         q: 'What does rent cost in Kemi and Tornio?',

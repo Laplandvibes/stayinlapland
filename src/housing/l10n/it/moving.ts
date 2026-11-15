@@ -38,7 +38,7 @@ const copy: HousingPageCopy = {
         '<strong>Comunicazione del cambio di indirizzo al DVV</strong>: al più presto un mese prima del giorno del trasloco e al più tardi una settimana dopo il trasloco (DVV). La stessa comunicazione arriva a Posti. I servizi comunali (asilo, scuola, centro sanitario) seguono il comune di residenza registrato, quindi la presenti subito.',
         '<strong>Contratto di elettricità.</strong> Il prezzo totale dell’elettricità per una famiglia che consuma 2.500–4.999 kWh all’anno era in media di 23,7 centesimi per kWh in tutta la Finlandia a giugno 2026, e di 14,9 centesimi nella fascia oltre i 15.000 kWh, a cui appartiene una casa con riscaldamento elettrico (Statistics Finland). La stagione di riscaldamento in Lapponia è lunga, quindi stimi il consumo per eccesso.',
         '<strong>L’assistenza sanitaria</strong> è gestita dalla contea del benessere della Lapponia (Lapha). Le cure non urgenti passano dal centro sanitario locale; trovi quello più vicino sul sito della contea e si registri su Omakanta.',
-        '<strong>Internet.</strong> Chieda alla società condominiale o al locatore della fibra prima di firmare. Nelle zone poco popolate un router mobile è spesso l’unica opzione, e chi lavora da remoto dovrebbe prima provare la connessione nell’appartamento.',
+        '<strong>Internet.</strong> Prima di firmare, chieda alla società condominiale o al locatore se c’è la fibra. Nelle zone poco popolate un router mobile è spesso l’unica opzione, e chi lavora da remoto dovrebbe prima provare la connessione nell’appartamento.',
       ],
     },
     {
@@ -106,9 +106,9 @@ const copy: HousingPageCopy = {
   cta: {
     partner: 'cars',
     kicker: 'Un’auto per le prime settimane',
-    h2: 'Visite, il carico del trasloco, il negozio.',
+    h2: 'Visite, trasloco, spesa.',
     lead:
-      'L’auto propria spesso arriva più tardi. Un’auto a noleggio dall’aeroporto copre le visite e le prime settimane; la ricerca del partner confronta le società di noleggio in un colpo solo.',
+      'La Sua auto spesso arriva più tardi. Un’auto a noleggio dall’aeroporto copre le visite e le prime settimane; la ricerca del nostro partner confronta le società di noleggio in un colpo solo.',
     chips: [
       { label: 'Rovaniemi (RVN)', destination: 'RVN', sid: 'moving_car_rvn' },
       { label: 'Kittilä (KTT)', destination: 'KTT', sid: 'moving_car_ktt' },

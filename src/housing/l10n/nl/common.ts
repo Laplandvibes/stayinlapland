@@ -7,7 +7,7 @@ import type { HousingCommonCopy } from '../types';
 
 const common: HousingCommonCopy = {
   "sourceLabels": {
-    "tkVuokrat": "Statistics Finland: huren van woningen, vrije-sectorhuurwoningen, gemiddelde huur per m² 2026Q3 (tabel 15fa, geraadpleegd op 15 november 2026)",
+    "tkVuokrat": "Statistics Finland: huren van woningen, vrijesectorhuurwoningen, gemiddelde huur per m² 2026Q3 (tabel 15fa, geraadpleegd op 15 november 2026)",
     "tkVaesto": "Statistics Finland: bevolkingsopbouw, bevolking op 31 december 2025 per gemeente (tabel 11ra)",
     "tkSahko": "Statistics Finland: elektriciteitsprijs per type verbruiker, totaalprijs juni 2026 (tabel 13rb, geraadpleegd op 15 november 2026)",
     "tkPolttoaine": "Statistics Finland: consumentenprijzen van vloeibare brandstoffen, juni 2026 (tabel 12ge, geraadpleegd op 15 november 2026)",
@@ -26,7 +26,7 @@ const common: HousingCommonCopy = {
     "foreca": "Weerencyclopedie van Foreca: de poolnacht in Finland",
     "yle2017": "Yle, 25 oktober 2017: het toerisme in Lapland bloeit, maar er zijn te weinig woningen voor seizoenswerkers",
     "yle2023": "Yle, 25 mei 2023: door de woningnood belanden werknemers in skigebieden in vakantieappartementen",
-    "yle2025das": "Yle, 27 juli 2026: woningnood in Rovaniemi nog altijd groot: honderden studenten zoeken een dak boven hun hoofd",
+    "yle2025das": "Yle, 27 juli 2026: woningnood in Rovaniemi nog altijd groot: honderden studenten zoeken een dak boven hun hoofd terwijl toeristen de studio’s inpikken",
     "lapinKansaDas": "Lapin Kansa, 12 juli 2017: de jacht op woningen is geopend: DAS kan maar 30 procent van de aanvragers huisvesten",
     "yle2026yllas": "Yle, 16 juni 2026: in Ylläs pakken winkeliers de woningnood zelf aan",
     "kesko2026": "Kesko, 17 juni 2026: de ondernemers van K-Market Jounin Kauppa laten drie rijtjeshuizen bouwen voor hun personeel",
@@ -40,7 +40,7 @@ const common: HousingCommonCopy = {
     "keminmaa": "Gemeente Keminmaa: Keminmaan Vuokra-asunnot Oy",
     "tornio": "Stad Tornio: huurwoningen (Tornion Krunni Oy)",
     "sodankyla": "Gemeente Sodankylä: gemeentelijke huurwoningen (Asentopuulaaki Oy)",
-    "tkVuokratPostinumero": "Statistics Finland: gemiddelde huren van vrije-sectorhuurwoningen per postcodegebied 2015Q1–2025Q4 (tabel 13eb, archief, geraadpleegd op 15 november 2026)",
+    "tkVuokratPostinumero": "Statistics Finland: gemiddelde huren van vrijesectorhuurwoningen per postcodegebied 2015Q1–2025Q4 (tabel 13eb, archief, geraadpleegd op 15 november 2026)",
     "tkAvainluvut": "Statistics Finland: kerncijfers over gemeenten (aandeel werklozen in de beroepsbevolking, 2024)",
     "kemijarvi": "Stad Kemijärvi: de huurwoningen van de stad (560 woningen)",
     "kemijarviHaku": "Stad Kemijärvi: een woning aanvragen (aanvraag vier maanden geldig)",
@@ -52,7 +52,7 @@ const common: HousingCommonCopy = {
     "osrm": "OpenStreetMap: rijafstanden met de OSRM-routeplanner (berekend op 15 november 2026)",
     "asentopuulaaki": "Asentopuulaaki Oy: objecten, met de huur van elke woning (geraadpleegd op 15 november 2026)",
     "asentopuulaakiHaku": "Asentopuulaaki Oy: een woning aanvragen",
-    "asentopuulaakiVapaat": "Asentopuulaaki Oy: woningzoeker, vrije woningen en woningen die binnenkort vrijkomen (geraadpleegd op 15 november 2026)",
+    "asentopuulaakiVapaat": "Asentopuulaaki Oy: zoekfunctie, vrije woningen en woningen die binnenkort vrijkomen (geraadpleegd op 15 november 2026)",
     "asentopuulaakiMuutto": "Asentopuulaaki Oy: uitverhuizen (opzegtermijn en teruggave van de waarborgsom)",
     "sodankyla2025": "Gemeente Sodankylä, 2 juli 2025: 36 nieuwe woningen opgeleverd in Sodankylä, het woningaanbod groeit",
     "sodankylaAsuntola": "Gemeente Sodankylä, 5 maart 2026: de gemeente richt een studentenhuis in",
@@ -94,7 +94,7 @@ const common: HousingCommonCopy = {
     "levi": "Levi: skigebied vandaag (pistes aan het begin van het seizoen vanaf oktober, alpine wereldbeker 13–15 november 2026)",
     "arcticRally": "Arctic Lapland Rally 28–30 januari 2027",
     "msff": "Midnight Sun Film Festival 16–20 juni 2027",
-    "jutajaiset": "Jutajaiset: festival voor volksmuziek en volksdans in Rovaniemi in oktober",
+    "jutajaiset": "Jutajaiset: festival voor noordelijke volksmuziek en volksdans in Rovaniemi in oktober",
     "simerock": "Simerock 13–14 augustus 2027",
     "arcticSnowHotel": "Arctic SnowHotel: opening 15 december 2026"
   },
@@ -103,11 +103,11 @@ const common: HousingCommonCopy = {
     "moving": {
       "kicker": "Advertentie · rond de verhuizing",
       "title": "Stroom en internet geregeld vóór de verhuisdag",
-      "lead": "Beide kunt u online starten voordat u de sleutels in handen hebt, zodat de nieuwe woning vanaf de eerste avond stroom en een verbinding heeft."
+      "lead": "Beide kunt u online aanvragen voordat u de sleutels in handen hebt, zodat de nieuwe woning vanaf de eerste avond stroom en een verbinding heeft."
     },
     "electricity": {
-      "kicker": "Advertentie · stroomcontract",
-      "title": "Huurt u? Het stroomcontract regelt u meestal zelf",
+      "kicker": "Advertentie · energiecontract",
+      "title": "Huurt u? Het energiecontract regelt u meestal zelf",
       "lead": "De tabel hierboven toont wat een kilowattuur kost. Het contract kunt u online afsluiten vóór de verhuisdag."
     },
     "arrival": {

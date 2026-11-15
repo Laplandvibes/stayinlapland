@@ -51,7 +51,7 @@ const copy: HousingPageCopy = {
       },
       paras: [
         '<strong>Exempel:</strong> en tvåa på 55 m² i ett flerbostadshus i centrum 632 € i månaden; en tvåa på 42 m² i Käpyriihi 756 €; ett radhus med tre rum på 80 m² i Kaanaanmaa 800 €.',
-        '<strong>Privata hyror:</strong> fritt finansierade tvåor hade i genomsnitt 11,73 € per m² i postnummerområdet Sodankylä centrum i oktober–december 2025 (Statistikcentralen, tabell 13eb). Det finns ingen nyare kommunsiffra: Sodankylä ingår inte i Statistikcentralens aktuella hyrestabell.',
+        '<strong>Privata hyror:</strong> fritt finansierade tvåor kostade i genomsnitt 11,73 € per m² i postnummerområdet Sodankylä centrum i oktober–december 2025 (Statistikcentralen, tabell 13eb). Det finns ingen nyare kommunsiffra: Sodankylä ingår inte i Statistikcentralens aktuella hyrestabell.',
       ],
     },
     {
@@ -62,7 +62,7 @@ const copy: HousingPageCopy = {
       cards: [
         {
           title: 'Asentopuulaaki Oy',
-          body: 'Det kommunala dotterbolaget som hyr ut kommunens omkring 720 bostäder. Du ansöker på nätet och bifogar inkomstbevis. Kreditupplysning tas, och betalningsanmärkningar räknas emot dig.',
+          body: 'Det kommunala dotterbolaget som hyr ut kommunens omkring 720 bostäder. Du ansöker på nätet och bifogar inkomstbevis. Kreditupplysning tas, och betalningsanmärkningar talar emot dig.',
           href: 'https://www.asentopuulaaki.fi/asunnon-hakeminen/',
           linkLabel: 'asentopuulaaki.fi: Ansöka om bostad',
           event: 'asentopuulaaki',
@@ -88,7 +88,7 @@ const copy: HousingPageCopy = {
       kicker: 'För nyinflyttade',
       h2: 'Upp till 5 800 € för nyutexaminerade.',
       paras: [
-        'Sodankylä, Inari och Utsjoki kompenserar studielånen för nyutexaminerade som flyttar dit och arbetar minst 50 procent av heltid eller som företagare. Kompensationen är högst 5 800 €, betalas retroaktivt under högst tre år i perioder om 12 månader (Sodankylä kommun).',
+        'Sodankylä, Inari och Utsjoki kompenserar studielånen för nyutexaminerade som flyttar dit och arbetar minst 50 procent av heltid eller som företagare. Kompensationen är högst 5 800 € och betalas retroaktivt under högst tre år i perioder om 12 månader (Sodankylä kommun).',
         'Den gäller studielån för en yrkesinriktad examen på andra stadiet eller en yrkeshögskole- eller universitetsexamen, och du måste ha tagit examen under de senaste två åren. Ansökningarna behandlas första gången i januari 2027, och enligt Yle öppnas ansökningsblanketten den 1 december 2026 (Yle, 1 september 2026).',
       ],
     },
@@ -116,7 +116,7 @@ const copy: HousingPageCopy = {
       bullets: [
         'Jägarbrigaden sysselsätter omkring 400 personer och utbildar omkring 2 200 värnpliktiga per år (Armén). En kasern för nästan 700 värnpliktiga byggs vid Sodankylä garnison och ska vara klar i början av 2028 (Yle, 2 april 2026).',
         'Bolidens Kevitsa-gruva meddelade 77 uppsägningar i maj 2026, och gruvan ska stänga 2034 (Yle, 26 maj 2026).',
-        'Anglo Americans planerade Sakatti-gruva ska börja verka omkring 2032, men projektet är fortfarande i tillståndsskedet, och Finlands naturskyddsförbunds Lapplandsdistrikt har överklagat Sakatti-beslutet i domstol (Anglo American; Yle, 18 juni 2026).',
+        'Anglo Americans planerade Sakatti-gruva ska enligt planerna tas i drift omkring 2032, men projektet är fortfarande i tillståndsskedet, och Finlands naturskyddsförbunds Lapplandsdistrikt har överklagat Sakatti-beslutet i domstol (Anglo American; Yle, 18 juni 2026).',
         'Kommunen nämner också forskarsamhället Tähtelä och fjällorten Luosto (sodankyla.fi). Luosto ligger 38 km från centralorten (OpenStreetMap).',
       ],
     },
@@ -127,7 +127,7 @@ const copy: HousingPageCopy = {
       bullets: [
         'I Sodankylä varar polarnatten bara fyra dagar, strax före jul (Meteorologiska institutet).',
         'Närmaste flygplats är Kittilä, 93 km bort, och Rovaniemi centrum ligger 130 km bort (OpenStreetMap).',
-        'För studerande: REDU har ett studenthem i Sodankylä, och i mars 2026 meddelade kommunen ett studenthem för gymnasiestuderande och vuxenstuderande i stora Asentopuulaaki-bostäder (redu.fi; Sodankylä kommun, 5 mars 2026).',
+        'För studerande: REDU har ett studenthem i Sodankylä, och i mars 2026 meddelade kommunen ett studenthem för studerande på andra stadiet och vuxenstuderande i stora Asentopuulaaki-bostäder (redu.fi; Sodankylä kommun, 5 mars 2026).',
       ],
     },
     {
@@ -144,15 +144,15 @@ const copy: HousingPageCopy = {
   faqs: [
     {
       q: 'Hur ansöker jag om en kommunal bostad i Sodankylä?',
-      a: 'Med Asentopuulaaki Oy:s webbansökan, med inkomstbevis bifogat, till exempel ett lönebesked. Kreditupplysning tas hos Suomen Asiakastieto, och betalningsanmärkningar räknas emot dig (Asentopuulaaki).',
+      a: 'Med Asentopuulaaki Oy:s webbansökan, med inkomstbevis bifogat, till exempel ett lönebesked. Kreditupplysning tas hos Suomen Asiakastieto, och betalningsanmärkningar talar emot dig (Asentopuulaaki).',
     },
     {
       q: 'Vad kostar en hyresbostad i Sodankylä?',
-      a: 'I det kommunala bolagets äldre flerbostadshus cirka 10 € per m², i radhus och loftgångshus mest 10–12,50 €, och i Käpyriihi, som stod klart 2025, 18 €, vilket gör en tvåa på 42 m² till 756 € i månaden (Asentopuulaaki, 15 nov 2026). Fritt finansierade tvåor i centrum hade i genomsnitt 11,73 € per m² i oktober–december 2025 (Statistikcentralen).',
+      a: 'I det kommunala bolagets äldre flerbostadshus cirka 10 € per m², i radhus och loftgångshus oftast 10–12,50 €, och i Käpyriihi, som stod klart 2025, 18 €, vilket gör en tvåa på 42 m² till 756 € i månaden (Asentopuulaaki, 15 nov 2026). Fritt finansierade tvåor i centrum kostade i genomsnitt 11,73 € per m² i oktober–december 2025 (Statistikcentralen).',
     },
     {
       q: 'Finns det bostadsbrist i Sodankylä?',
-      a: 'Det fanns i åratal. Enligt kommunen har den lättat i takt med att nya byggnader blivit klara (2 juli 2025), och det kommunala bolagets bostadssökning listar lediga och snart lediga bostäder (Asentopuulaaki).',
+      a: 'Ja, i åratal. Enligt kommunen har den lättat i takt med att nya byggnader blivit klara (2 juli 2025), och det kommunala bolagets bostadssökning listar lediga och snart lediga bostäder (Asentopuulaaki).',
     },
     {
       q: 'Vem kan få kompensation för studielån?',

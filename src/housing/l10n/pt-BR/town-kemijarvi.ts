@@ -26,7 +26,7 @@ const copy: HousingPageCopy = {
   authorNote:
     'População da Statistics Finland, número de apartamentos e como se candidatar nas páginas da Cidade de Kemijärvi, reajustes de aluguel e metas de ocupação do orçamento de 2026 da cidade. Verificado em 15 de novembro de 2026.',
   intro: [
-    'Kemijärvi tinha 6.919 habitantes no fim de 2025, 35 a menos do que um ano antes (Statistics Finland). A cidade se descreve como a mais ao norte da Finlândia e diz que os serviços do centro ficam a uma distância que se faz a pé (kemijarvi.fi).',
+    'Kemijärvi tinha 6.919 habitantes no fim de 2025, 35 a menos do que um ano antes (Statistics Finland). A cidade se descreve como a mais ao norte da Finlândia e diz que os serviços do centro podem ser acessados a pé (kemijarvi.fi).',
     'As duas empresas imobiliárias da cidade, Kemijärven Vuokratalot e Kemijärven Töveli, possuem 560 apartamentos de aluguel (kemijarvi.fi). O orçamento da cidade trata como meta realista ter de 80 a 85 por cento desses apartamentos alugados, então há apartamentos vazios.',
     'Os aluguéis estão subindo: a Kemijärven Vuokratalot reajustou os seus aluguéis em 4,5 por cento em 1º de fevereiro de 2026 e a Töveli em 5 por cento em 1º de julho de 2026. Os mesmos reajustes estão previstos no plano para 2027 e 2028 (orçamento de 2026).',
   ],
@@ -76,8 +76,8 @@ const copy: HousingPageCopy = {
         foot: 'Statistics Finland, aluguéis do 3º trimestre de 2026, tabela 15fa. Não há valor separado publicado para Kemijärvi, e o valor regional inclui Rovaniemi, que é mais cara.',
       },
       paras: [
-        '<strong>O valor próprio de Kemijärvi é de 2022.</strong> Na área do código postal do centro, 98100, os quitinetes do mercado livre custavam em média 12,15 € por m² e os apartamentos de dois cômodos 9,10 € por m² em janeiro–março de 2022. Todos os trimestres desde então foram suprimidos: a Statistics Finland não publica o valor de uma área de código postal quando há poucas observações (tabela 13eb).',
-        'Os aluguéis das empresas da cidade não estão on-line. Pergunte o valor do aluguel à secretária de moradia antes de aceitar uma oferta, e lembre-se de que os aluguéis subiram em 2026: 4,5 por cento na Vuokratalot e 5 por cento na Töveli.',
+        '<strong>O valor próprio de Kemijärvi é de 2022.</strong> Na área do código postal do centro, 98100, as quitinetes do mercado livre custavam em média 12,15 € por m² e os apartamentos de dois cômodos 9,10 € por m² em janeiro–março de 2022. Todos os trimestres desde então foram suprimidos: a Statistics Finland não publica o valor de uma área de código postal quando há poucas observações (tabela 13eb).',
+        'Os aluguéis das empresas da cidade não estão on-line. Pergunte o valor do aluguel ao responsável pela moradia antes de aceitar uma oferta, e lembre-se de que os aluguéis subiram em 2026: 4,5 por cento na Vuokratalot e 5 por cento na Töveli.',
       ],
     },
     {
@@ -99,7 +99,7 @@ const copy: HousingPageCopy = {
     },
     {
       id: 'work',
-      kicker: 'Trabalho e conexões',
+      kicker: 'Trabalho e transporte',
       h2: 'Combine o emprego antes de se mudar.',
       bullets: [
         'Segundo a cidade, os seus principais empregadores, além da própria cidade, são o Keitele Group, o Festivo Porkka Group e a central de atendimento da Kela, além de empresas do comércio, de serviços e do turismo (orçamento de 2026).',
@@ -111,9 +111,9 @@ const copy: HousingPageCopy = {
     {
       id: 'contract',
       kicker: 'O contrato',
-      h2: 'Duas seções da lei que vale conhecer.',
+      h2: 'Dois artigos da lei que vale conhecer.',
       bullets: [
-        'A caução é de no máximo três meses de aluguel (Lei de Locação Residencial, seção 8).',
+        'A caução é de no máximo três meses de aluguel (Lei de Locação Residencial, artigo 8).',
         'A partir de 1º de outubro de 2026, a caução deve ser devolvida, ou a sua retenção explicada por escrito, em até 14 dias após o fim da locação (Rakli).',
       ],
     },
@@ -121,11 +121,11 @@ const copy: HousingPageCopy = {
   faqs: [
     {
       q: 'Como me candidato a um apartamento da cidade em Kemijärvi?',
-      a: 'Pela candidatura on-line no site da cidade, ou em formulário de papel no Sortteeri (Vapaudenkatu 8). A candidatura vale por quatro meses e pode ser renovada por mais quatro. O crédito é consultado, e a candidatura só é processada quando os anexos chegam. As reuniões de seleção de inquilinos costumam ser realizadas a cada duas quartas-feiras (kemijarvi.fi).',
+      a: 'Pela candidatura on-line no site da cidade, ou em formulário de papel no Sortteeri (Vapaudenkatu 8). A candidatura vale por quatro meses e pode ser renovada por mais quatro. O histórico de crédito é consultado, e a candidatura só é processada quando os anexos chegam. As reuniões de seleção de inquilinos costumam ser realizadas a cada duas quartas-feiras (kemijarvi.fi).',
     },
     {
       q: 'Há apartamentos de aluguel livres em Kemijärvi?',
-      a: 'Muito provavelmente. O orçamento da cidade trata como meta realista ter de 80 a 85 por cento dos apartamentos das empresas alugados (orçamento de 2026). Pergunte à secretária de moradia quais apartamentos estão livres.',
+      a: 'Muito provavelmente. O orçamento da cidade trata como meta realista ter de 80 a 85 por cento dos apartamentos das empresas alugados (orçamento de 2026). Pergunte ao responsável pela moradia quais apartamentos estão livres.',
     },
     {
       q: 'Quanto custa um apartamento de aluguel em Kemijärvi?',
@@ -140,7 +140,7 @@ const copy: HousingPageCopy = {
     partner: 'hotels',
     kicker: 'As primeiras noites',
     h2: 'Visitas pessoalmente.',
-    lead: 'A busca do parceiro mostra quartos e apartamentos livres em Kemijärvi e em Pyhä com os preços de hoje.',
+    lead: 'A busca do nosso parceiro mostra quartos e apartamentos livres em Kemijärvi e em Pyhä com os preços de hoje.',
     chips: [
       { label: 'Kemijärvi', destination: 'Kemijärvi', sid: 'rentals_kemijarvi_first_weeks' },
       { label: 'Pyhä', destination: 'Pyhä', sid: 'rentals_pyha_first_weeks' },

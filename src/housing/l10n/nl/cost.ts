@@ -20,13 +20,13 @@ const copy: HousingPageCopy = {
     eyebrow: 'Kosten van levensonderhoud in Lapland',
     title: 'Wat kost wonen in Lapland?',
     subtitle:
-      'Huren zijn in Lapland goedkoper dan in de rest van Finland; de auto en de verwarming zijn duurder. Zo telt een maandbudget op.',
+      'Huren zijn in Lapland goedkoper dan in de rest van Finland; de auto en de verwarming zijn duurder. Zo ziet een maandbudget eruit.',
   },
   authorNote:
     'Elk cijfer komt van Statistics Finland, Kela of de Vereniging van Finse gemeenten; de voorbeelden zijn uit die cijfers berekend en tonen hun formule. Geen schattingen.',
   intro: [
-    'Als het om kosten gaat, zijn er twee Laplanden. Rovaniemi is een universiteitsstad waar studenten en toeristen om de studio’s strijden; in de skigebieden volgt de prijs het seizoen. Aan de kust en in de kleine gemeenten is de meeste woonruimte beschikbaar en is wonen het goedkoopst, maar een auto is verplicht.',
-    'Hieronder staan de vier posten waaruit een maandbudget echt bestaat: huur, elektriciteit, vervoer en kinderen. Er is geen statistiek voor Lapland over voedselprijzen, dus we raden er niet naar.',
+    'Als het om kosten gaat, zijn er twee Laplanden. Rovaniemi is een universiteitsstad waar studenten en toeristen om de studio’s strijden; in de skigebieden volgt de prijs het seizoen. Aan de kust en in de kleine gemeenten woont u het ruimst en het goedkoopst, maar een auto is onmisbaar.',
+    'Hieronder staan de vier posten waaruit een maandbudget echt bestaat: huur, elektriciteit, vervoer en kinderen. Voor voedselprijzen bestaat geen aparte statistiek voor Lapland, dus daar doen we geen gok naar.',
   ],
   sections: [
     {
@@ -34,7 +34,7 @@ const copy: HousingPageCopy = {
       kicker: 'Huur',
       h2: 'Goedkoper dan het landelijke gemiddelde, behalve wanneer dat niet zo is.',
       table: {
-        caption: 'Gemiddelde huur €/m²/maand, vrije-sectorhuurwoningen, 2026Q3',
+        caption: 'Gemiddelde huur €/m²/maand, vrijesectorhuurwoningen, 2026Q3',
         head: ['', 'Rovaniemi', 'Lapland (regio)', 'Heel Finland'],
         rows: [
           ['Studio’s', '18,63', '17,25', '20,49'],
@@ -46,7 +46,7 @@ const copy: HousingPageCopy = {
       },
       paras: [
         '<strong>Voorbeelden:</strong> een studio van 30 m² in Rovaniemi ongeveer € 560 per maand (18,63 × 30); een tweekamerwoning van 50 m² in Rovaniemi ongeveer € 720 (14,40 × 50); een driekamerwoning van 75 m² tegen het regionale gemiddelde van Lapland ongeveer € 830 (11,08 × 75).',
-        'De uitzondering is de winter in de skigebieden: vlak bij het centrum van Levi kostte een appartement van 80 m² in een alpine huis € 750 per maand van mei tot november, maar € 2.000 per week in het hoogseizoen (Yle, 25 mei 2023). Een jaarcontract voor dezelfde woning kostte € 1.650 per maand. De prijs in een skigebied is niet de prijs voor Lapland.',
+        'De uitzondering is de winter in de skigebieden: vlak bij het centrum van Levi kostte een appartement van 80 m² in een gebouw in alpenstijl € 750 per maand van mei tot november, maar € 2.000 per week in het hoogseizoen (Yle, 25 mei 2023). Een jaarcontract voor dezelfde woning kostte € 1.650 per maand. De prijs in een skigebied is niet de prijs voor Lapland.',
       ],
     },
     {
@@ -75,7 +75,7 @@ const copy: HousingPageCopy = {
       h2: 'Dit is de post die in Lapland groter is.',
       paras: [
         'Benzine 95E10 kostte in juni 2026 gemiddeld € 2,09 per liter in heel Finland en diesel € 2,15 (Statistics Finland). Afstanden uit de autoroutes van LaplandVibes: Kemi–Rovaniemi 118 km, Rovaniemi–Ylläs 175 km, Sodankylä–Saariselkä 130 km.',
-        '<strong>Voorbeeld:</strong> een dagelijks woon-werktraject van 40 km, 22 werkdagen, 7 l/100 km: 880 km × 0,07 l/km × € 2,09 = ongeveer € 129 per maand aan benzine. In het centrum van Rovaniemi kunt u zonder auto leven; in een fjelddorp hoort de auto bij de huur, ook als het huurcontract dat niet zegt.',
+        '<strong>Voorbeeld:</strong> een dagelijks woon-werktraject van 40 km, 22 werkdagen, 7 l/100 km: 880 km × 0,07 l/km × € 2,09 = ongeveer € 129 per maand aan benzine. In het centrum van Rovaniemi kunt u zonder auto leven; in een fjelddorp hoort de auto bij de huur, ook al staat dat niet in het huurcontract.',
       ],
     },
     {
@@ -95,7 +95,7 @@ const copy: HousingPageCopy = {
         foot: 'Kela, algemene huurtoeslag 2026. De toeslag bedraagt hoogstens 70 % van de erkende woonkosten, en een toeslag van minder dan € 15 wordt niet uitbetaald.',
       },
       paras: [
-        '<strong>Voorbeeld:</strong> alleenwonend in Rovaniemi met een huur van € 600. Hoogstens € 447 telt mee, en de toeslag bedraagt hoogstens 70 % daarvan, dus € 313 per maand (447 × 0,70), voordat het inkomen de toeslag via het basisbedrag verlaagt. De rekenmodule van Kela houdt rekening met uw eigen inkomen.',
+        '<strong>Voorbeeld:</strong> u woont alleen in Rovaniemi en betaalt € 600 huur. Hoogstens € 447 telt mee, en de toeslag bedraagt hoogstens 70 % daarvan, dus € 313 per maand (447 × 0,70), voordat het inkomen de toeslag via het basisbedrag verlaagt. De rekenmodule van Kela houdt rekening met uw eigen inkomen.',
       ],
     },
     {
@@ -135,7 +135,7 @@ const copy: HousingPageCopy = {
     },
     {
       q: 'Hoeveel heeft een alleenstaande per maand nodig in Rovaniemi?',
-      a: 'We berekenen alleen wat een bron heeft: een studio van 30 m² ongeveer € 560 per maand (18,63 × 30) en elektriciteit bij 1.800 kWh per jaar ongeveer € 42 per maand (1.800 × 0,282 / 12). Eten, internet, verzekeringen en vervoer komen erbovenop, afhankelijk van uw eigen gewoonten.',
+      a: 'We rekenen alleen met cijfers die een bron hebben: een studio van 30 m² ongeveer € 560 per maand (18,63 × 30) en elektriciteit bij 1.800 kWh per jaar ongeveer € 42 per maand (1.800 × 0,282 / 12). Eten, internet, verzekeringen en vervoer komen erbovenop, afhankelijk van uw eigen gewoonten.',
     },
     {
       q: 'Kan ik in Lapland huurtoeslag krijgen?',

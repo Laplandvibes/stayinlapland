@@ -83,7 +83,7 @@ const copy: HousingPageCopy = {
         },
         {
           title: 'DAS: für Studierende',
-          body: 'Die Stiftung Domus Arctica hat etwa 1.700 Wohnungen, davon 700 Studios und 460 Zweizimmerwohnungen, bei einer Durchschnittsmiete von 12,50 € pro m² (Yle, 27. Juli 2026). Bewerbungen sind laufend möglich und drei Monate gültig, und neue Studierende haben im August und September Vorrang. Bewerben können Sie sich, wenn Sie in Rovaniemi an einer Einrichtung nach der Grundschulbildung studieren.',
+          body: 'Die Stiftung Domus Arctica hat etwa 1.700 Wohnungen, davon 700 Studios und 460 Zweizimmerwohnungen, bei einer Durchschnittsmiete von 12,50 € pro m² (Yle, 27. Juli 2026). Bewerbungen sind laufend möglich und drei Monate gültig, und neue Studierende haben im August und September Vorrang. Bewerben können Sie sich, wenn Sie in Rovaniemi nach der Gesamtschule an einer Schule oder Hochschule studieren.',
           href: 'https://www.das.fi/en/apply/applying-info',
           linkLabel: 'das.fi: Hinweise zur Bewerbung',
           event: 'das',
@@ -111,7 +111,7 @@ const copy: HousingPageCopy = {
         },
         {
           title: 'NAL Rovaniemi: unter 30',
-          body: 'Die Regionalstelle Rovaniemi des Finnischen Jugendwohnungsverbands bietet Jugendwohnungen für unter 30-Jährige an (Verzeichnis der Stadt). Eine Möglichkeit, wenn DAS nicht infrage kommt und Sie nicht studieren.',
+          body: 'Die Regionalstelle Rovaniemi des Finnischen Jugendwohnungsverbands bietet Jugendwohnungen für Unter-30-Jährige an (Verzeichnis der Stadt). Eine Möglichkeit, wenn DAS nicht infrage kommt und Sie nicht studieren.',
           href: 'https://www.rovaniemi.fi/Asuminen-ja-ymparisto/Asuminen',
           linkLabel: 'rovaniemi.fi: Jugendwohnungen',
           event: 'nal',
@@ -121,11 +121,11 @@ const copy: HousingPageCopy = {
     {
       id: 'when',
       kicker: 'Wann Sie sich bewerben',
-      h2: 'Zwei Ansturmzeiten im Jahr.',
+      h2: 'Zweimal im Jahr wird es eng.',
       bullets: [
-        '<strong>August–September</strong> ist am knappsten: DAS kann nicht jeden Bewerber unterbringen, und frei finanzierte Studios sind rar (Yle, 27. Juli 2026).',
+        '<strong>August–September</strong> ist die knappste Zeit: DAS kann nicht jeden Bewerber unterbringen, und frei finanzierte Studios sind rar (Yle, 27. Juli 2026).',
         '<strong>November–Dezember:</strong> Manche Studios werden für die Wintersaison kurzzeitig an Touristen vermietet. Befristete Verträge enden oft Ende Oktober (Yle, 27. Juli 2026).',
-        '<strong>Im Frühjahr</strong> kommen die für die Wintersaison vermieteten Studios zurück.',
+        '<strong>Im Frühjahr</strong> kommen die für die Wintersaison vermieteten Studios wieder auf den Markt.',
         '<strong>Die Kaution</strong> beträgt höchstens drei Monatsmieten (Wohnraummietgesetz, § 8), und ab dem 1. Oktober 2026 muss sie binnen 14 Tagen nach Ende des Mietverhältnisses zurückgezahlt werden (Rakli).',
       ],
     },
@@ -137,7 +137,7 @@ const copy: HousingPageCopy = {
     },
     {
       q: 'Ist es schwer, in Rovaniemi eine Mietwohnung zu finden?',
-      a: 'Studios sind im August–September schwer zu bekommen: DAS kann nicht jeden Bewerber unterbringen (Yle, 27. Juli 2026), und frei finanzierte Studios sind rar. Zwei- und Dreizimmerwohnungen sind leichter zu finden.',
+      a: 'Studios sind im August und September schwer zu bekommen: DAS kann nicht jeden Bewerber unterbringen (Yle, 27. Juli 2026), und frei finanzierte Studios sind rar. Zwei- und Dreizimmerwohnungen sind leichter zu finden.',
     },
     {
       q: 'Kann ich mich bewerben, ohne nach Rovaniemi zu reisen?',

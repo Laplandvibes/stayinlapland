@@ -15,18 +15,18 @@ const SOURCES = [
 const copy: HousingPageCopy = {
   metaTitle: '凯米耶尔维租房：市属560套住房及申请方式',
   metaDescription:
-    '在凯米耶尔维租房：市属560套出租住房、在线申请、2026年的租金上调、Pyhä 附近的 Vuostimo 联排住宅，以及 Kela 住房补贴。',
+    '在凯米耶尔维租房：市属560套出租住房、在线申请、2026年的租金上调、皮哈附近的 Vuostimo 联排住宅，以及 Kela 住房补贴。',
   breadcrumb: '凯米耶尔维',
   hero: {
     eyebrow: '凯米耶尔维，6,919位居民',
     title: '凯米耶尔维租房。',
     subtitle:
-      '芬兰最北的城镇，市政府拥有560套出租住房，其中一些是空着的。向哪里申请，搬来之前要知道什么。',
+      '芬兰最北的城市，市政府拥有560套出租住房，其中一些是空着的。向哪里申请，搬来之前要知道什么。',
   },
   authorNote:
     '人口来自芬兰统计局，住房数量和申请方式来自凯米耶尔维市的页面，租金上调和入住率目标来自市政府2026年预算。已于2026年11月15日核对。',
   intro: [
-    '凯米耶尔维在2025年底有6,919位居民，比一年前少了35人（芬兰统计局）。该市自称是芬兰最北的城镇，并表示市中心的各项服务步行即可到达（kemijarvi.fi）。',
+    '凯米耶尔维在2025年底有6,919位居民，比一年前少了35人（芬兰统计局）。该市自称是芬兰最北的城市，并表示市中心的各项服务步行即可到达（kemijarvi.fi）。',
     '市属的两家房产公司 Kemijärven Vuokratalot 和 Kemijärven Töveli 拥有560套出租住房（kemijarvi.fi）。市政府预算把这些住房80–85%有人入住视为现实的目标，所以确实有空房。',
     '租金在上涨：Kemijärven Vuokratalot 在2026年2月1日把租金上调了4.5%，Töveli 在2026年7月1日上调了5%。同样的涨幅也写进了2027年和2028年的计划（2026年预算）。',
   ],
@@ -46,7 +46,7 @@ const copy: HousingPageCopy = {
         },
         {
           title: 'Vuostimo，距皮哈14公里',
-          body: '市属的1987年联排住宅，位于 Vuostimo，在市中心以北约35公里。Pyhätunturi 滑雪度假村在14公里之外，所以这是市属出租住房中离皮哈最近的。',
+          body: '市属的1987年联排住宅，位于 Vuostimo，在市中心以北约35公里。皮哈通图里滑雪度假村在14公里之外，所以这是市属出租住房中离皮哈最近的。',
           href: 'https://kemijarvi.fi/asuminen-ja-ymparisto/asuminen/kemijarven-kaupungin-vuokratalot/vuokratalokohteet/vuostimo/',
           linkLabel: 'kemijarvi.fi：Vuostimo',
           event: 'kemijarvi_vuostimo',
@@ -77,7 +77,7 @@ const copy: HousingPageCopy = {
       },
       paras: [
         '<strong>凯米耶尔维自己的数字来自2022年。</strong>在市中心的邮政编码区98100，2022年1月至3月自由市场单间公寓平均为每平方米12.15欧元，两室公寓为每平方米9.10欧元。此后的每个季度都被隐去了：观测数太少时，芬兰统计局不公布某个邮政编码区的数字（表13eb）。',
-        '市属公司的租金没有上网。接受报价之前，请向住房秘书询问租金，并记住2026年租金上涨过：Vuokratalot 上调4.5%，Töveli 上调5%。',
+        '市属公司没有在网上公布租金。接受报价之前，请向住房秘书询问租金，并记住2026年租金上涨过：Vuokratalot 上调4.5%，Töveli 上调5%。',
       ],
     },
     {
@@ -104,7 +104,7 @@ const copy: HousingPageCopy = {
       bullets: [
         '据市政府称，除市政府本身之外，主要雇主还有 Keitele Group、Festivo Porkka Group 和 Kela 的联络中心，以及零售、服务和旅游企业（2026年预算）。',
         '2024年，失业者占劳动力的15.6%，芬兰全国为11.7%（芬兰统计局）。',
-        'Suomutunturi 距市中心46公里，Pyhätunturi 距市中心50公里（OpenStreetMap）。Suomu 位于凯米耶尔维境内；皮哈则属于相邻的佩尔科塞涅米市镇。',
+        'Suomutunturi 距市中心46公里，皮哈通图里距市中心50公里（OpenStreetMap）。Suomu 位于凯米耶尔维境内；皮哈则属于相邻的佩尔科森涅米市镇。',
         '罗瓦涅米机场在80公里之外（OpenStreetMap），市政府称有直达铁路一路通到赫尔辛基（kemijarvi.fi）。',
       ],
     },
@@ -114,14 +114,14 @@ const copy: HousingPageCopy = {
       h2: '值得了解的两条法律规定。',
       bullets: [
         '押金最多为三个月租金（《住宅租赁法》第8条）。',
-        '自2026年10月1日起，押金必须退还，或在租约结束后14天内书面说明扣留的理由（Rakli）。',
+        '自2026年10月1日起，押金必须在租约结束后14天内退还，或在此期限内书面说明扣留的理由（Rakli）。',
       ],
     },
   ],
   faqs: [
     {
       q: '怎样申请凯米耶尔维的市属住房？',
-      a: '通过市政府网站上的在线申请，或向 Sortteeri（Vapaudenkatu 8）领取纸质表格。申请有效期为四个月，可再续期四个月。会查信用记录，附件没有到齐之前，申请不会被处理。选房会议通常每隔一个星期三举行（kemijarvi.fi）。',
+      a: '通过市政府网站上的在线申请，或向 Sortteeri（Vapaudenkatu 8）领取纸质表格。申请有效期为四个月，可再续期四个月。会查信用记录，附件没有到齐之前，申请不会被处理。租户遴选会议通常每隔一个星期三举行（kemijarvi.fi）。',
     },
     {
       q: '凯米耶尔维有空置的出租房吗？',

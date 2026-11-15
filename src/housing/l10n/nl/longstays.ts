@@ -21,7 +21,7 @@ const copy: HousingPageCopy = {
       'Een gemeubileerde huurwoning, een huisje per week of huisvesting van uw werkgever: drie manieren om van een maand tot een hele winter in Lapland te wonen, en wat elk contract van u vraagt.',
   },
   authorNote:
-    'Wetgeving van Finlex (Wet op de woninghuur 481/1995, wijziging 531/2026), adresmelding van het Fins agentschap voor digitale en bevolkingsgegevens, gegevens over huisjes uit de productfeed van Lomarengas. Gecontroleerd op 15 november 2026.',
+    'Wetgeving van Finlex (Wet op de woninghuur 481/1995, wijziging 531/2026), adresmelding van het Finse agentschap voor digitale en bevolkingsgegevens, gegevens over huisjes uit de productfeed van Lomarengas. Gecontroleerd op 15 november 2026.',
   intro: [
     'Een maand telewerken in Levi, een winter in Rovaniemi of een seizoen in een skigebied: een langer verblijf in Lapland komt meestal neer op een van drie opties. Ze verschillen in prijs, maar nog meer in het soort contract dat u krijgt en wat de wet dan beschermt.',
     'Komt u op vakantie in plaats van om te wonen, dan staan hotels en huisjes op onze zustersite <a href="https://laplandstays.com/" target="_blank" rel="noopener">laplandstays.com</a> en villa’s op <a href="https://laplandluxuryvillas.com/" target="_blank" rel="noopener">laplandluxuryvillas.com</a>.',
@@ -67,8 +67,8 @@ const copy: HousingPageCopy = {
       kicker: 'Adresmelding',
       h2: 'Drie maanden of langer: geef uw adres door.',
       paras: [
-        'Volgens het Fins agentschap voor digitale en bevolkingsgegevens meldt u een verhuizing telkens wanneer uw woonadres verandert en het verblijf minstens drie maanden duurt. Keert u binnen een jaar terug naar hetzelfde vaste adres, dan is de verhuizing tijdelijk en blijft uw vaste adres van kracht.',
-        'De melding doet u ten vroegste een maand vóór de verhuisdag en uiterlijk een week na de verhuizing. Voor een definitieve verhuizing staat de rest, zoals winterbanden, het stroomcontract en uw gezondheidscentrum, op de <a href="/moving-to-lapland/">checklist voor verhuizen</a>.',
+        'Volgens het Finse agentschap voor digitale en bevolkingsgegevens meldt u een verhuizing telkens wanneer uw woonadres verandert en het verblijf minstens drie maanden duurt. Keert u binnen een jaar terug naar hetzelfde vaste adres, dan is de verhuizing tijdelijk en blijft uw vaste adres van kracht.',
+        'De melding doet u ten vroegste een maand vóór de verhuisdag en uiterlijk een week na de verhuizing. Voor een definitieve verhuizing staat de rest, zoals winterbanden, het energiecontract en uw gezondheidscentrum, op de <a href="/moving-to-lapland/">checklist voor verhuizen</a>.',
       ],
     },
   ],

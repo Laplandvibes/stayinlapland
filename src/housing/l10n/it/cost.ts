@@ -46,13 +46,13 @@ const copy: HousingPageCopy = {
       },
       paras: [
         '<strong>Esempi:</strong> un monolocale di 30 m² a Rovaniemi circa 560 € al mese (18,63 × 30); un bilocale di 50 m² a Rovaniemi circa 720 € (14,40 × 50); un trilocale di 75 m² alla media regionale della Lapponia circa 830 € (11,08 × 75).',
-        'L’eccezione è l’inverno nelle stazioni sciistiche: vicino al centro di Levi un appartamento di 80 m² in una casa in stile alpino costava 750 € al mese da maggio a novembre ma 2.000 € a settimana in alta stagione (Yle, 25 maggio 2023). Un contratto annuale per lo stesso appartamento costava 1.650 € al mese. Il prezzo di una stazione sciistica non è il prezzo della Lapponia.',
+        'L’eccezione è l’inverno nelle stazioni sciistiche: vicino al centro di Levi un appartamento di 80 m² in stile alpino costava 750 € al mese da maggio a novembre ma 2.000 € a settimana in alta stagione (Yle, 25 maggio 2023). Un contratto annuale per lo stesso appartamento costava 1.650 € al mese. Il prezzo di una stazione sciistica non è il prezzo della Lapponia.',
       ],
     },
     {
       id: 'electricity',
       kicker: 'Elettricità e riscaldamento',
-      h2: 'Un chilowattora costa uguale, ma se ne consumano di più.',
+      h2: 'Il chilowattora costa lo stesso, ma se ne consumano di più.',
       table: {
         caption: 'Prezzo totale dell’elettricità per le famiglie, centesimi/kWh, giugno 2026, intero paese',
         head: ['Consumo annuo', 'Prezzo totale'],
@@ -81,7 +81,7 @@ const copy: HousingPageCopy = {
     {
       id: 'housing-allowance',
       kicker: 'Sussidio abitativo Kela',
-      h2: 'Quanto dell’affitto viene riconosciuto.',
+      h2: 'Quanta parte dell’affitto viene riconosciuta.',
       table: {
         caption: 'Spese abitative massime 2026, €/mese',
         head: ['Dimensione del nucleo', 'Rovaniemi', 'Altri comuni della Lapponia'],
@@ -139,7 +139,7 @@ const copy: HousingPageCopy = {
     },
     {
       q: 'Posso ottenere il sussidio abitativo in Lapponia?',
-      a: 'Alle stesse condizioni che in tutta la Finlandia. A Rovaniemi le spese abitative di un nucleo di una persona vengono riconosciute fino a 447 € al mese, negli altri comuni della Lapponia fino a 394 €, e il sussidio è al massimo il 70% di tale importo (Kela 2026).',
+      a: 'Alle stesse condizioni che nel resto della Finlandia. A Rovaniemi le spese abitative di un nucleo di una persona vengono riconosciute fino a 447 € al mese, negli altri comuni della Lapponia fino a 394 €, e il sussidio è al massimo il 70% di tale importo (Kela 2026).',
     },
   ],
   sources: pickSources('it', SOURCES, common.sourceLabels),

@@ -18,13 +18,13 @@ const copy: HousingPageCopy = {
     eyebrow: 'Kittilä, 6.973 habitantes',
     title: 'Aluguel em Kittilä e Levi.',
     subtitle:
-      'Um dos municípios que mais crescem na Lapônia e a sua estação de esqui, onde o mesmo apartamento custa um aluguel mensal no verão e uma diária semanal no inverno. Onde se candidatar e quando.',
+      'Um dos municípios que mais crescem na Lapônia e a sua estação de esqui, onde o mesmo apartamento custa um aluguel mensal no verão e uma tarifa semanal no inverno. Onde se candidatar e quando.',
   },
   authorNote:
     'População e crescimento da Statistics Finland, Kittilän Vuokratalot Oy nas páginas do município e da própria empresa, preços sazonais de Levi da Yle, 25 de maio de 2023. Verificado em 15 de novembro de 2026.',
   intro: [
     'Kittilä tinha 6.973 habitantes no fim de 2025 e cresceu 2,0 por cento em um ano, o segundo maior crescimento entre os municípios da Lapônia: só Pelkosenniemi cresceu mais, 2,4 por cento (Statistics Finland). O motor é Levi: em 2017, a Levin Matkailu Oy estimou que a área da estação de esqui contrataria pouco mais de 2.000 trabalhadores sazonais para a temporada de inverno (Yle, 25 de outubro de 2017).',
-    'O mercado de aluguel de Levi acompanha a temporada: um apartamento de 80 m² em casa de estilo alpino perto do centro custava 750 € por mês de maio a novembro, 2.000 € por semana na alta temporada e 1.650 € por mês o ano todo (Yle, 25 de maio de 2023). Um apartamento de temporada também pode não conseguir um endereço oficial.',
+    'O mercado de aluguel de Levi acompanha a temporada: um apartamento de 80 m² em estilo alpino perto do centro custava 750 € por mês de maio a novembro, 2.000 € por semana na alta temporada e 1.650 € por mês o ano todo (Yle, 25 de maio de 2023). Também é possível que você não consiga um endereço oficial em um apartamento de temporada.',
     'Um aluguel permanente é mais provável no vilarejo de Kittilä do que no centro de Levi. Os apartamentos do município são alugados pela Kittilän Vuokratalot Oy, e a candidatura é feita eletronicamente no site da empresa (kittila.fi, Kittilän Vuokratalot).',
   ],
   sections: [
@@ -77,7 +77,7 @@ const copy: HousingPageCopy = {
         foot: 'Statistics Finland, aluguéis do 3º trimestre de 2026, tabela 15fa. Não há valor separado publicado para Kittilä, e os aluguéis de temporada de Levi não entram nas estatísticas.',
       },
       paras: [
-        '<strong>O exemplo de Levi (Yle, 25 de maio de 2023):</strong> um apartamento de 80 m² em casa de estilo alpino a 750 € por mês de maio a novembro = 9,38 € por m², 2.000 € por semana na alta temporada, 1.650 € por mês o ano todo = 20,63 € por m². O mesmo apartamento é mais barato do que a média regional no verão e mais caro do que o preço nacional de um quitinete o ano todo.',
+        '<strong>O exemplo de Levi (Yle, 25 de maio de 2023):</strong> um apartamento de 80 m² em estilo alpino a 750 € por mês de maio a novembro = 9,38 € por m², 2.000 € por semana na alta temporada, 1.650 € por mês o ano todo = 20,63 € por m². O mesmo apartamento é mais barato do que a média regional no verão e mais caro do que o preço nacional de uma quitinete o ano todo.',
       ],
     },
     {
@@ -100,18 +100,18 @@ const copy: HousingPageCopy = {
     {
       id: 'when',
       kicker: 'Quando se candidatar',
-      h2: 'No verão, antes de começarem as diárias semanais.',
+      h2: 'No verão, antes de começarem as tarifas semanais.',
       bullets: [
-        'Os aluguéis mensais de apartamentos de temporada só existem de maio a novembro, e na alta temporada o preço é uma diária semanal (Yle, 25 de maio de 2023). Para a temporada de inverno, encontre o apartamento no verão.',
+        'Os aluguéis mensais de apartamentos de temporada só existem de maio a novembro, e na alta temporada o preço passa a ser semanal (Yle, 25 de maio de 2023). Para a temporada de inverno, encontre o apartamento no verão.',
         'Envie a candidatura à empresa municipal antes da temporada e pergunte à empresa por quanto tempo ela continua válida.',
-        'A caução é de no máximo três meses de aluguel (Lei de Locação Residencial, seção 8) e, a partir de 1º de outubro de 2026, é devolvida em até 14 dias após o fim da locação (Rakli).',
+        'A caução é de no máximo três meses de aluguel (Lei de Locação Residencial, artigo 8) e, a partir de 1º de outubro de 2026, é devolvida em até 14 dias após o fim da locação (Rakli).',
       ],
     },
   ],
   faqs: [
     {
       q: 'Onde encontro um aluguel de inverno em Levi?',
-      a: 'Muito provavelmente com o seu empregador: as empresas da estação de esqui alugam casas em fileira e apartamentos de temporada para a equipe durante toda a temporada. No mercado aberto, os apartamentos de Levi são alugados por semana no inverno (Yle, 25 de maio de 2023), então o aluguel mensal é possível principalmente de maio a novembro. A empresa municipal tem apartamentos tanto no vilarejo de Kittilä quanto em Sirkka, em Levi (Kittilän Vuokratalot).',
+      a: 'Muito provavelmente com o seu empregador: as empresas da estação de esqui alugam casas em fileira e apartamentos de temporada para a equipe durante toda a temporada. No mercado livre, os apartamentos de Levi são alugados por semana no inverno (Yle, 25 de maio de 2023), então o aluguel mensal é possível principalmente de maio a novembro. A empresa municipal tem apartamentos tanto no vilarejo de Kittilä quanto em Sirkka, em Levi (Kittilän Vuokratalot).',
     },
     {
       q: 'Como me candidato a um apartamento municipal em Kittilä?',
@@ -122,7 +122,7 @@ const copy: HousingPageCopy = {
     partner: 'hotels',
     kicker: 'As primeiras noites',
     h2: 'Antes de o apartamento ficar livre.',
-    lead: 'A busca do parceiro mostra quartos e apartamentos livres em Levi e em Kittilä com os preços de hoje.',
+    lead: 'A busca do nosso parceiro mostra quartos e apartamentos livres em Levi e em Kittilä com os preços de hoje.',
     chips: [
       { label: 'Levi', destination: 'Levi', sid: 'rentals_levi_first_weeks' },
       { label: 'Kittilä', destination: 'Kittilä', sid: 'rentals_kittila_first_weeks' },

@@ -26,9 +26,9 @@ const copy: HousingPageCopy = {
   authorNote:
     'Chiffres de la pénurie tirés des articles de Yle et de Kesko, 2017–2026 ; canaux de recherche tirés des pages des communes elles-mêmes. Notre site jumeau laplandwork.com traite les emplois eux-mêmes.',
   intro: [
-    'La zone touristique de Levi embauche un peu plus de 2 000 saisonniers pour la saison d’hiver, estimait dès 2017 Kristiina Kukkohovi, directrice générale de Levin Matkailu Oy, qui jugeait que la pénurie de logements devenait un gros problème dans toutes les stations de Laponie (Yle, 25 octobre 2017). Elle ne s’est pas résorbée : au printemps 2023, Yle racontait que des travailleurs de Levi et d’Ylläs vivaient dans des appartements de vacances où ils ne peuvent pas déclarer leur adresse.',
-    'En juin 2026, les propriétaires du K-Market Jounin Kauppa à Äkäslompolo ont décidé de construire trois maisons en bande pour leur propre personnel, car les logements sont trop peu nombreux et les loyers ont beaucoup grimpé (Yle, 16 juin 2026). Le magasin emploie environ 20 saisonniers par an, et environ la moitié d’entre eux ont besoin d’un logement en location (Kesko, 17 juin 2026).',
-    'À Rovaniemi, l’entreprise de recrutement Career.fi a fait venir environ 250 travailleurs en Laponie et les a logés dans une dizaine d’endroits différents ; deux travailleurs estoniens ont passé deux hivers dans la famille du directeur du développement après que leur appartement locatif est passé en rénovation des canalisations. Trouver un logement est « tout un spectacle chaque année » (Yle, 9 mars 2026).',
+    'La zone touristique de Levi embauche un peu plus de 2 000 saisonniers pour la saison d’hiver, estimait dès 2017 Kristiina Kukkohovi, directrice générale de Levin Matkailu Oy, qui jugeait que la pénurie de logements devenait un gros problème dans toutes les stations de Laponie (Yle, 25 octobre 2017). Elle ne s’est pas résorbée : au printemps 2023, Yle racontait que des travailleurs de Levi et d’Ylläs vivaient dans des appartements de vacances où ils ne pouvaient pas déclarer leur adresse.',
+    'En juin 2026, les propriétaires du K-Market Jounin Kauppa à Äkäslompolo ont décidé de construire trois maisons mitoyennes pour leur propre personnel, car les logements sont trop peu nombreux et les loyers ont beaucoup grimpé (Yle, 16 juin 2026). Le magasin emploie environ 20 saisonniers par an, et environ la moitié d’entre eux ont besoin d’un logement en location (Kesko, 17 juin 2026).',
+    'À Rovaniemi, l’entreprise de recrutement Career.fi a fait venir environ 250 travailleurs en Laponie et les a logés dans une dizaine d’endroits différents ; deux travailleurs estoniens ont passé deux hivers dans la famille du directeur du développement après que leur appartement locatif est passé en rénovation des canalisations. Trouver un logement, c’est « tout un cirque chaque année » (Yle, 9 mars 2026).',
   ],
   sections: [
     {
@@ -39,12 +39,12 @@ const copy: HousingPageCopy = {
         {
           title: '1. Le logement de l’employeur',
           body:
-            'La réponse la plus courante dans les stations de ski : l’employeur loue des maisons en bande, des chalets et des appartements de vacances pour le personnel pendant toute la saison et retient le loyer sur votre salaire. À Ruka, un groupe de restaurants louait déjà en 2017 quatre biens de vacances de novembre à mai pour son personnel (Yle, 25 octobre 2017). L’avantage : un toit vous attend à l’arrivée. Le risque : le logement s’arrête avec l’emploi.',
+            'La réponse la plus courante dans les stations de ski : l’employeur loue des maisons mitoyennes, des chalets et des appartements de vacances pour le personnel pendant toute la saison et retient le loyer sur votre salaire. À Ruka, un groupe de restaurants louait déjà en 2017 quatre biens de vacances de novembre à mai pour son personnel (Yle, 25 octobre 2017). L’avantage : un toit vous attend à l’arrivée. Le risque : le logement s’arrête avec l’emploi.',
         },
         {
           title: '2. Un appartement de vacances en bail saisonnier',
           body:
-            'Un appartement de 80 m² dans une maison alpine à Levi : 750 € par mois de mai à novembre, 2 000 € par semaine en haute saison, 1 650 € par mois à l’année (Yle, 25 mai 2023). Bon marché l’été, hors de portée l’hiver. De plus, on ne peut pas obtenir d’adresse officielle dans un appartement de vacances (Yle, 25 mai 2023).',
+            'Un appartement de 80 m² de style alpin à Levi : 750 € par mois de mai à novembre, 2 000 € par semaine en haute saison, 1 650 € par mois à l’année (Yle, 25 mai 2023). Bon marché l’été, hors de portée l’hiver. De plus, on ne peut pas obtenir d’adresse officielle dans un appartement de vacances (Yle, 25 mai 2023).',
         },
         {
           title: '3. Un logement communal',
@@ -63,7 +63,7 @@ const copy: HousingPageCopy = {
           title: 'Levi et Kittilä',
           image: { src: '/images/housing-levi-keskusta-card.webp', alt: 'Bâtiments en bois au centre de Levi, un jour d’été' },
           body:
-            'La population de Kittilä a augmenté de 2,0 % en 2025, soit la deuxième plus forte hausse des communes de Laponie après Pelkosenniemi (2,4 %) (Statistics Finland). Les employeurs louent des maisons en bande pour le personnel pendant toute la saison, et tous les autres cherchent dans le groupe Facebook sur le logement à Levi. Kittilän Vuokratalot Oy propose des logements à la fois dans le village de Kittilä et à Levi, à Sirkka.',
+            'La population de Kittilä a augmenté de 2,0 % en 2025, soit la deuxième plus forte hausse des communes de Laponie après Pelkosenniemi et ses 2,4 % (Statistics Finland). Les employeurs louent des maisons mitoyennes pour le personnel pendant toute la saison, et tous les autres cherchent dans le groupe Facebook sur le logement à Levi. Kittilän Vuokratalot Oy propose des logements à la fois dans le village de Kittilä et à Sirkka, à Levi.',
           href: 'https://kittila.fi/asuminen-ja-ymparisto/asuminen/vuokra-asunnot',
           linkLabel: 'Kittilän Vuokratalot Oy',
           event: 'kittila',
@@ -72,7 +72,7 @@ const copy: HousingPageCopy = {
           title: 'Ylläs : Äkäslompolo et Ylläsjärvi',
           image: { src: '/images/housing-seasonal-card-yllas-tunturi.webp', alt: 'Le fjeld Ylläs vu de l’autre côté du lac à Äkäslompolo, un matin de septembre' },
           body:
-            'Les commerçants construisent pour eux-mêmes : les trois maisons en bande de Jounin Kauppa sont prévues pour novembre–décembre 2026 en l’état actuel des choses, avec des studios, des deux-chambres destinés à la colocation et des trois-chambres pour les familles, chacun avec un sauna (Kesko, 17 juin 2026). Le premier bâtiment modulaire du village était presque terminé en octobre 2025 (Yle, 16 juin 2026).',
+            'Les commerçants construisent pour eux-mêmes : les trois maisons mitoyennes de Jounin Kauppa sont prévues pour novembre–décembre 2026 en l’état actuel des choses, avec des studios, des appartements de deux chambres prévus pour la colocation et des trois-chambres pour les familles, chacun avec un sauna (Kesko, 17 juin 2026). Le premier bâtiment modulaire du village était presque terminé en octobre 2025 (Yle, 16 juin 2026).',
           href: 'https://www.kesko.fi/media/uutiset-ja-tiedotteet/uutiset/2026/lapin-asuntopulaa-ratkomassa-k-market-jounin-kaupan-kauppiaat-rakennuttavat-kolme-rivitaloa-tyontekijoilleen/',
           linkLabel: 'Kesko, 17 juin 2026',
           event: 'yllas',
@@ -118,7 +118,7 @@ const copy: HousingPageCopy = {
         src: '/images/housing-jouninkauppa.webp',
         alt: 'La façade du magasin K-Market Jounin Kauppa à Äkäslompolo, en été',
         caption:
-          'K-Market Jounin Kauppa, Äkäslompolo, juillet 2026. Les propriétaires construisent trois maisons en bande pour leur personnel (Kesko, 17 juin 2026). Photo : LaplandVibes.',
+          'K-Market Jounin Kauppa, Äkäslompolo, juillet 2026. Les propriétaires construisent trois maisons mitoyennes pour leur personnel (Kesko, 17 juin 2026). Photo : LaplandVibes.',
         ratio: '4/3',
       },
     },
@@ -140,7 +140,7 @@ const copy: HousingPageCopy = {
   faqs: [
     {
       q: 'L’employeur loge-t-il les saisonniers à Levi ?',
-      a: 'Souvent, mais pas toujours et pas gratuitement. Les employeurs louent des maisons en bande et des appartements de vacances pour le personnel pendant toute la saison et retiennent le loyer sur votre salaire. Demandez l’offre par écrit et vérifiez ce que devient le logement si l’emploi s’arrête.',
+      a: 'Souvent, mais pas toujours et pas gratuitement. Les employeurs louent des maisons mitoyennes et des appartements de vacances pour le personnel pendant toute la saison et retiennent le loyer sur votre salaire. Demandez l’offre par écrit et vérifiez ce que devient le logement si l’emploi s’arrête.',
     },
     {
       q: 'Quand commencer à chercher un logement pour la saison d’hiver ?',
@@ -156,7 +156,7 @@ const copy: HousingPageCopy = {
     kicker: 'Les premières nuits',
     h2: 'Avant d’avoir les clés en main.',
     lead:
-      'La saison commence souvent avant que le logement soit libre. Notre moteur partenaire affiche les chambres et les appartements disponibles aux prix du jour.',
+      'La saison commence souvent avant que le logement soit libre. Le moteur de réservation de notre partenaire affiche les chambres et les appartements disponibles aux prix du jour.',
     chips: [
       { label: 'Levi', destination: 'Levi', sid: 'seasonal_first_nights_levi' },
       { label: 'Ylläs', destination: 'Äkäslompolo', sid: 'seasonal_first_nights_yllas' },

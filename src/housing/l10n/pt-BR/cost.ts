@@ -25,8 +25,8 @@ const copy: HousingPageCopy = {
   authorNote:
     'Cada número vem da Statistics Finland, da Kela ou da Associação de Municípios da Finlândia; os exemplos são calculados a partir desses números e mostram a fórmula. Nada de estimativas.',
   intro: [
-    'Quando o assunto é custo, há duas Lapônias. Rovaniemi é uma cidade universitária onde estudantes e turistas disputam os quitinetes; nas estações de esqui, o preço acompanha a temporada. No litoral e nos municípios pequenos, a moradia é mais ampla e mais barata, mas o carro é obrigatório.',
-    'Abaixo estão as quatro linhas de que um orçamento mensal realmente é feito: aluguel, eletricidade, deslocamento e crianças. Não existe uma estatística específica da Lapônia sobre preços de alimentos, então não inventamos uma.',
+    'Quando o assunto é custo, há duas Lapônias. Rovaniemi é uma cidade universitária onde estudantes e turistas disputam as quitinetes; nas estações de esqui, o preço acompanha a temporada. No litoral e nos municípios pequenos, a moradia é mais ampla e mais barata, mas o carro é obrigatório.',
+    'Abaixo estão os quatro itens que realmente compõem um orçamento mensal: aluguel, eletricidade, deslocamento e crianças. Não existe uma estatística específica da Lapônia sobre preços de alimentos, então não inventamos uma.',
   ],
   sections: [
     {
@@ -45,14 +45,14 @@ const copy: HousingPageCopy = {
         foot: 'Statistics Finland, aluguéis do 3º trimestre de 2026, tabela 15fa.',
       },
       paras: [
-        '<strong>Exemplos:</strong> um quitinete de 30 m² em Rovaniemi, cerca de 560 € por mês (18,63 × 30); um apartamento de dois cômodos de 50 m² em Rovaniemi, cerca de 720 € (14,40 × 50); um apartamento de três cômodos de 75 m² na média regional da Lapônia, cerca de 830 € (11,08 × 75).',
-        'A exceção é o inverno nas estações de esqui: perto do centro de Levi, um apartamento de 80 m² em casa de estilo alpino custava 750 € por mês de maio a novembro, mas 2.000 € por semana na alta temporada (Yle, 25 de maio de 2023). Um contrato anual do mesmo apartamento custava 1.650 € por mês. O preço da estação de esqui não é o preço da Lapônia.',
+        '<strong>Exemplos:</strong> uma quitinete de 30 m² em Rovaniemi, cerca de 560 € por mês (18,63 × 30); um apartamento de dois cômodos de 50 m² em Rovaniemi, cerca de 720 € (14,40 × 50); um apartamento de três cômodos de 75 m² na média regional da Lapônia, cerca de 830 € (11,08 × 75).',
+        'A exceção é o inverno nas estações de esqui: perto do centro de Levi, um apartamento de 80 m² em estilo alpino custava 750 € por mês de maio a novembro, mas 2.000 € por semana na alta temporada (Yle, 25 de maio de 2023). Um contrato anual do mesmo apartamento custava 1.650 € por mês. O preço da estação de esqui não é o preço da Lapônia.',
       ],
     },
     {
       id: 'electricity',
       kicker: 'Eletricidade e aquecimento',
-      h2: 'Um quilowatt-hora custa o mesmo, você é que usa mais deles.',
+      h2: 'O quilowatt-hora custa o mesmo; você só usa mais.',
       table: {
         caption: 'Preço total da eletricidade para residências, centavos/kWh, junho de 2026, país inteiro',
         head: ['Consumo anual', 'Preço total'],
@@ -72,7 +72,7 @@ const copy: HousingPageCopy = {
     {
       id: 'getting-around',
       kicker: 'Deslocamento',
-      h2: 'Esta é a linha que pesa mais na Lapônia.',
+      h2: 'Este é o item que pesa mais na Lapônia.',
       paras: [
         'A gasolina 95E10 custou, em média, 2,09 € o litro em toda a Finlândia em junho de 2026 e o diesel 2,15 € (Statistics Finland). Distâncias das rotas de carro do LaplandVibes: Kemi–Rovaniemi 118 km, Rovaniemi–Ylläs 175 km, Sodankylä–Saariselkä 130 km.',
         '<strong>Exemplo:</strong> um trajeto diário de 40 km, 22 dias úteis, 7 l/100 km: 880 km × 0,07 l/km × 2,09 € = cerca de 129 € por mês em gasolina. No centro de Rovaniemi dá para viver sem carro; em um vilarejo de monte, o carro faz parte do aluguel, mesmo que o contrato não diga isso.',
@@ -104,7 +104,7 @@ const copy: HousingPageCopy = {
       h2: 'Creche conforme a renda, escola gratuita.',
       bullets: [
         'A partir de 1º de agosto de 2026, a taxa máxima da educação infantil é de 335 € por mês por criança, a mínima cobrada é de 32 €, e o segundo filho paga no máximo 134 € (Associação de Municípios da Finlândia). A taxa segue a renda da família, então, com renda baixa, pode ser zero.',
-        'A pré-escola e o ensino fundamental são gratuitos, incluindo material didático e merenda escolar (Lei do Ensino Fundamental, seção 31). Para um trajeto escolar de mais de cinco quilômetros, o município organiza o transporte (seção 32).',
+        'A pré-escola e o ensino fundamental são gratuitos, incluindo material didático e merenda escolar (Lei do Ensino Fundamental, artigo 31). Para um trajeto escolar de mais de cinco quilômetros, o município organiza o transporte (artigo 32).',
       ],
     },
     {
@@ -131,11 +131,11 @@ const copy: HousingPageCopy = {
   faqs: [
     {
       q: 'Rovaniemi é uma cidade cara para morar?',
-      a: 'Não pelos aluguéis: a média de 14,63 € por m² fica abaixo dos 15,99 € nacionais (Statistics Finland, 3º trimestre de 2026), e Rovaniemi é mais barata do que o país como um todo em todos os tamanhos de apartamento, quitinetes inclusive (18,63 contra 20,49). Nos novos contratos, um quitinete em Rovaniemi custa 20,14 € por m²: um quitinete que fica livre agora custa cerca de 8 % mais do que um já alugado, mas ainda assim menos do que um quitinete em novo contrato no país, 21,11 € por m².',
+      a: 'Não pelos aluguéis: a média de 14,63 € por m² fica abaixo dos 15,99 € nacionais (Statistics Finland, 3º trimestre de 2026), e Rovaniemi é mais barata do que o país como um todo em todos os tamanhos de apartamento, quitinetes inclusive (18,63 contra 20,49). Nos novos contratos, uma quitinete em Rovaniemi custa 20,14 € por m²: uma quitinete que fica livre agora custa cerca de 8 % mais do que uma já alugada, mas ainda assim menos do que uma quitinete em novo contrato no país, 21,11 € por m².',
     },
     {
       q: 'Quanto uma pessoa que mora sozinha precisa por mês em Rovaniemi?',
-      a: 'Só calculamos o que tem fonte: um quitinete de 30 m² custa cerca de 560 € por mês (18,63 × 30) e a eletricidade, a 1.800 kWh por ano, cerca de 42 € por mês (1.800 × 0,282 / 12). Alimentação, internet, seguros e transporte entram à parte, conforme os seus hábitos.',
+      a: 'Só calculamos o que tem fonte: uma quitinete de 30 m² custa cerca de 560 € por mês (18,63 × 30) e a eletricidade, a 1.800 kWh por ano, cerca de 42 € por mês (1.800 × 0,282 / 12). Alimentação, internet, seguros e transporte entram à parte, conforme os seus hábitos.',
     },
     {
       q: 'Posso receber auxílio-moradia na Lapônia?',

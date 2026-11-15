@@ -27,11 +27,11 @@ const common: HousingCommonCopy = {
     "kicker": "Schwesterseite · LaplandWork.com",
     "h2a": "Erst der Job,",
     "h2b": "dann die Wohnung.",
-    "body": "LaplandWork.com listet die offenen Stellen in Lappland auf: Skiresorts, Hotels, Aktivitätsanbieter und Gesundheitswesen. Saisonjobs bringen oft eine Unterkunft mit. Sehen Sie sich also zuerst die Stellenangebote an, bevor Sie nach einer Wohnung suchen.",
-    "stripText": "LaplandWork.com: offene Stellen in Lapplands Skiresorts, Hotels und im Gesundheitswesen.",
+    "body": "LaplandWork.com listet die offenen Stellen in Lappland auf: Skigebiete, Hotels, Aktivitätsanbieter und Gesundheitswesen. Saisonjobs bringen oft eine Unterkunft mit. Sehen Sie sich also zuerst die Stellenangebote an, bevor Sie nach einer Wohnung suchen.",
+    "stripText": "LaplandWork.com: offene Stellen in Lapplands Skigebieten, Hotels und im Gesundheitswesen.",
     "cta": "Stellen ansehen",
     "image": "/images/housing-yllas-hiihtokeskus.webp",
-    "alt": "Skiverleih und Skischule im Skiresort Ylläs im Sommer, die Schneekanonen lagern unter dem Vordach",
+    "alt": "Skiverleih und Skischule im Skigebiet Ylläs im Sommer, die Schneekanonen lagern unter dem Vordach",
     "caption": "Ylläs im Juli 2026: Die Schneekanonen warten auf die Saison. Foto: LaplandVibes."
   },
   "sourceLabels": {
@@ -53,7 +53,7 @@ const common: HousingCommonCopy = {
     "ounasvaara": "Ounasvaara: Pisten und Loipen (rund 100 km Loipen, davon 50 km beleuchtet; abgerufen am 23. September 2026)",
     "foreca": "Foreca-Wetterlexikon: Polarnacht in Finnland",
     "yle2017": "Yle, 25. Oktober 2017: Der Tourismus in Lappland boomt, aber für die Saisonkräfte fehlen Wohnungen",
-    "yle2023": "Yle, 25. Mai 2023: Wohnungsmangel drängt Resort-Beschäftigte in Ferienwohnungen",
+    "yle2023": "Yle, 25. Mai 2023: Wohnungsmangel drängt Beschäftigte der Skigebiete in Ferienwohnungen",
     "yle2025das": "Yle, 27. Juli 2026: Rovaniemis Wohnungsnot ist weiter gravierend: Hunderte Studierende suchen ein Zuhause, während Touristen die Studios belegen",
     "lapinKansaDas": "Lapin Kansa, 12. Juli 2017: Der Wettlauf um Wohnungen läuft: DAS kann nur 30 Prozent der Bewerber unterbringen",
     "yle2026yllas": "Yle, 16. Juni 2026: In Ylläs wollen Ladenbesitzer die Wohnungsnot selbst bekämpfen",
@@ -119,10 +119,10 @@ const common: HousingCommonCopy = {
     "yleAsunnot": "Yle, 27. Juli 2026: Studierendenwohnungen in Rovaniemi und Wohnungen, die für den Winter an Touristen vermietet werden",
     "yleKausi": "Yle, 16. April 2025: Zahl der Saisonkräfte und das Ende der Saison",
     "yleRekry": "Yle, 18. Juni 2024: Die Anwerbung für die Wintersaison erreicht im August ihren Höhepunkt",
-    "levi": "Levi: Skiresort heute (Pisten zum Saisonstart ab Oktober, alpiner Weltcup 13.–15. November 2026)",
+    "levi": "Levi: Skigebiet heute (Pisten zum Saisonstart ab Oktober, alpiner Weltcup 13.–15. November 2026)",
     "arcticRally": "Arctic Lapland Rally 28.–30. Januar 2027",
     "msff": "Midnight Sun Film Festival 16.–20. Juni 2027",
-    "jutajaiset": "Jutajaiset: Volksmusik- und Tanzfestival in Rovaniemi im Oktober",
+    "jutajaiset": "Jutajaiset: Festival für Volksmusik und Volkstanz des Nordens in Rovaniemi im Oktober",
     "simerock": "Simerock 13.–14. August 2027",
     "arcticSnowHotel": "Arctic SnowHotel: Eröffnung am 15. Dezember 2026"
   },
@@ -130,8 +130,8 @@ const common: HousingCommonCopy = {
   "adsWrap": {
     "moving": {
       "kicker": "Anzeige · rund um den Umzug",
-      "title": "Strom und Internet geregelt, bevor der Umzugstag kommt",
-      "lead": "Beides lässt sich online starten, bevor Sie den Schlüssel in der Hand halten. So hat die neue Wohnung vom ersten Abend an Strom und eine Verbindung."
+      "title": "Strom und Internet schon vor dem Umzugstag geregelt",
+      "lead": "Beides lässt sich online beauftragen, bevor Sie den Schlüssel in der Hand halten. So hat die neue Wohnung vom ersten Abend an Strom und Internet."
     },
     "electricity": {
       "kicker": "Anzeige · Stromvertrag",
@@ -146,7 +146,7 @@ const common: HousingCommonCopy = {
   },
   "cabins": {
     "ad": "Anzeige",
-    "kicker": "Eine Hütte pro Woche",
+    "kicker": "Hütte zur Wochenmiete",
     "h2": "Verfügbare Hütten mit Fotos.",
     "lead": "Hütten werden wochenweise vermietet, auch für mehrere Wochen in Folge. Die Angaben stammen aus dem Produktfeed von Lomarengas und werden täglich aktualisiert.",
     "tabs": {

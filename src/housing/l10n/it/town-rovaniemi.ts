@@ -23,8 +23,8 @@ const copy: HousingPageCopy = {
   authorNote:
     'Affitti al m² da Statistics Finland (luglio–settembre 2026), locatori dalla pagina sull’abitare della Città di Rovaniemi, dati sulla carenza da Yle. Verificato il 15 novembre 2026.',
   intro: [
-    'Rovaniemi ha 66.191 abitanti (Statistics Finland, 31 dic 2025) e una concorrenza feroce per i monolocali: la fondazione per gli alloggi studenteschi DAS ha ricevuto circa 550 domande urgenti nell’estate 2026, il 15 percento in più di un anno prima, quasi il 90 percento dei richiedenti voleva un monolocale, e i monolocali della città vengono affittati a breve termine ai turisti per la stagione invernale (Yle, 27 lug 2026). Secondo l’amministratore delegato della DAS, in agosto e settembre non può offrire un appartamento a ogni richiedente.',
-    'Una società di reclutamento che ha portato in Lapponia circa 250 lavoratori li ha alloggiati in una decina di posti diversi a Rovaniemi (Yle, 9 mar 2026). Lavoratori stagionali, studenti e turisti cercano tutti gli stessi piccoli appartamenti.',
+    'Rovaniemi ha 66.191 abitanti (Statistics Finland, 31 dicembre 2025) e una concorrenza feroce per i monolocali: la fondazione per gli alloggi studenteschi DAS ha ricevuto circa 550 domande urgenti nell’estate 2026, il 15 percento in più di un anno prima, e quasi il 90 percento dei richiedenti voleva un monolocale. Inoltre i monolocali della città vengono affittati a breve termine ai turisti per la stagione invernale (Yle, 27 luglio 2026). Secondo l’amministratore delegato della DAS, ad agosto e settembre la fondazione non può offrire un appartamento a ogni richiedente.',
+    'Una società di reclutamento che ha portato in Lapponia circa 250 lavoratori li ha alloggiati in una decina di posti diversi a Rovaniemi (Yle, 9 marzo 2026). Lavoratori stagionali, studenti e turisti cercano tutti gli stessi piccoli appartamenti.',
     'La buona notizia è il prezzo: l’affitto medio di Rovaniemi, 14,63 € al m², è inferiore alla media nazionale di 15,99 € (Statistics Finland 2026T3). Qui sotto, i dati per taglio di appartamento e i canali a cui rivolgersi.',
   ],
   sections: [
@@ -76,14 +76,14 @@ const copy: HousingPageCopy = {
       cards: [
         {
           title: 'Città di Rovaniemi: locatori',
-          body: 'La pagina della città indica i locatori societari KAS asunnot, M2-Kodit, Tarveasunnot, Avara e Lumo, e i servizi di ricerca Oikotie, Vuokraovi e Qasa. Ogni locatore ha la propria domanda online; faccia domanda a più di uno insieme.',
+          body: 'La pagina della città indica i locatori societari KAS asunnot, M2-Kodit, Tarveasunnot, Avara e Lumo, e i servizi di ricerca Oikotie, Vuokraovi e Qasa. Ogni locatore ha la propria domanda online; presenti domanda a più locatori contemporaneamente.',
           href: 'https://www.rovaniemi.fi/Asuminen-ja-ymparisto/Asuminen',
           linkLabel: 'rovaniemi.fi: Abitare',
           event: 'rovaniemi_city',
         },
         {
           title: 'DAS: per gli studenti',
-          body: 'La Fondazione Domus Arctica ha circa 1.700 appartamenti, 700 dei quali monolocali e 460 bilocali, a un affitto medio di 12,50 € al m² (Yle, 27 lug 2026). Le domande sono continue, valide tre mesi, e ad agosto e settembre hanno la precedenza i nuovi studenti. Può fare domanda se studia a Rovaniemi in un istituto di livello successivo alla scuola dell’obbligo.',
+          body: 'La Fondazione Domus Arctica ha circa 1.700 appartamenti, 700 dei quali monolocali e 460 bilocali, a un affitto medio di 12,50 € al m² (Yle, 27 luglio 2026). Le domande sono continue, valide tre mesi, e ad agosto e settembre hanno la precedenza i nuovi studenti. Può fare domanda se studia a Rovaniemi in un istituto di livello successivo alla scuola dell’obbligo.',
           href: 'https://www.das.fi/en/apply/applying-info',
           linkLabel: 'das.fi: Informazioni per la domanda',
           event: 'das',
@@ -121,10 +121,10 @@ const copy: HousingPageCopy = {
     {
       id: 'when',
       kicker: 'Quando fare domanda',
-      h2: 'Due corse all’anno.',
+      h2: 'Due picchi all’anno.',
       bullets: [
-        '<strong>Agosto–settembre</strong> è il periodo più difficile: la DAS non riesce ad alloggiare tutti i richiedenti e i monolocali a libero mercato scarseggiano (Yle, 27 lug 2026).',
-        '<strong>Novembre–dicembre:</strong> alcuni monolocali vengono affittati a breve termine ai turisti per la stagione invernale. I contratti a tempo determinato spesso finiscono a fine ottobre (Yle, 27 lug 2026).',
+        '<strong>Agosto–settembre</strong> è il periodo più difficile: la DAS non riesce ad alloggiare tutti i richiedenti e i monolocali a libero mercato scarseggiano (Yle, 27 luglio 2026).',
+        '<strong>Novembre–dicembre:</strong> alcuni monolocali vengono affittati a breve termine ai turisti per la stagione invernale. I contratti a tempo determinato spesso finiscono a fine ottobre (Yle, 27 luglio 2026).',
         '<strong>In primavera</strong> i monolocali affittati per la stagione invernale tornano disponibili.',
         '<strong>Il deposito</strong> è al massimo di tre mensilità (Legge sugli affitti abitativi, art. 8), e dal 1° ottobre 2026 deve essere restituito entro 14 giorni dalla fine del contratto (Rakli).',
       ],
@@ -137,7 +137,7 @@ const copy: HousingPageCopy = {
     },
     {
       q: 'È difficile trovare un affitto a Rovaniemi?',
-      a: 'I monolocali sono difficili da ottenere ad agosto–settembre: la DAS non riesce ad alloggiare tutti i richiedenti (Yle, 27 lug 2026) e i monolocali a libero mercato scarseggiano. Bilocali e trilocali sono più facili.',
+      a: 'I monolocali sono difficili da ottenere ad agosto–settembre: la DAS non riesce ad alloggiare tutti i richiedenti (Yle, 27 luglio 2026) e i monolocali a libero mercato scarseggiano. Bilocali e trilocali sono più facili.',
     },
     {
       q: 'Posso fare domanda senza andare a Rovaniemi?',
@@ -148,7 +148,7 @@ const copy: HousingPageCopy = {
     partner: 'hotels',
     kicker: 'Le prime settimane',
     h2: 'Un hotel o un aparthotel mentre visita gli appartamenti.',
-    lead: 'Veda gli appartamenti di persona prima di firmare. La ricerca del partner mostra le camere libere di Rovaniemi ai prezzi di oggi.',
+    lead: 'Veda gli appartamenti di persona prima di firmare. La ricerca del nostro partner mostra le camere libere di Rovaniemi ai prezzi di oggi.',
     chips: [
       { label: 'Rovaniemi', destination: 'Rovaniemi', sid: 'rentals_rovaniemi_first_weeks' },
     ],

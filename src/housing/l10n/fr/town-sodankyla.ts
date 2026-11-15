@@ -29,8 +29,8 @@ const copy: HousingPageCopy = {
     'Population de Statistics Finland, nombre de logements tiré de la page de la commune, loyers, conditions et logements libres tirés des pages d’Asentopuulaaki Oy, emplois tirés de l’armée de terre finlandaise, de Yle et des entreprises. Vérifié le 15 novembre 2026.',
   intro: [
     'Sodankylä comptait 8 095 habitants fin 2025 (Statistics Finland). La commune possède environ 720 logements locatifs, loués par sa filiale Asentopuulaaki Oy (sodankyla.fi). Presque tous les logements de la liste de la société sont dans le bourg principal ; les autres sont à Aska, Orajärvi, Riipi, Torvinen et Vaalajärvi.',
-    'Selon la commune, la pénurie de logements qui a longtemps pesé sur Sodankylä s’est atténuée : à l’été 2025, Käpyriihi, avec 36 logements neufs, a été achevé au bord de la rivière Jeesiöjoki (commune de Sodankylä, 2 juillet 2025). La recherche de logements de la société indique les logements libres ou sur le point de l’être à tout moment, avec leur loyer et la date de disponibilité (Asentopuulaaki).',
-    'La pénurie n’est pas totalement terminée. En septembre 2025, le directeur technique de la commune a déclaré à Yle qu’elle complique encore l’arrivée de travailleurs à Sodankylä, bien qu’il y ait des emplois (Yle, 11 septembre 2025).',
+    'Selon la commune, la pénurie de logements qui a longtemps pesé sur Sodankylä s’est atténuée : à l’été 2025, Käpyriihi, avec 36 logements neufs, a été achevé au bord de la rivière Jeesiöjoki (commune de Sodankylä, 2 juillet 2025). La recherche de logements de la société tient à jour la liste des logements libres ou sur le point de l’être, avec leur loyer et la date de disponibilité (Asentopuulaaki).',
+    'La pénurie n’a pas entièrement disparu. En septembre 2025, le directeur technique de la commune a déclaré à Yle qu’elle complique encore l’arrivée de travailleurs à Sodankylä, bien qu’il y ait des emplois (Yle, 11 septembre 2025).',
   ],
   sections: [
     {
@@ -43,15 +43,15 @@ const copy: HousingPageCopy = {
         rows: [
           ['Käpyriihi, achevé en 2025', '18,00'],
           ['Peuranpalas 2013 et Kehtoranta 2015', '12,80–13,00'],
-          ['Maisons en bande, à coursive et immeubles 1977–1998', '8,80–12,50'],
+          ['Maisons mitoyennes, immeubles à coursive et immeubles collectifs 1977–1998', '8,80–12,50'],
           ['Immeubles du centre, 1968–1970', '10,20'],
-          ['Maisons en bande des villages périphériques', '7,40–10,90'],
+          ['Maisons mitoyennes des villages périphériques', '7,40–10,90'],
         ],
         foot: 'Calculé à partir du loyer de chaque logement de la liste des biens d’Asentopuulaaki Oy au 15 novembre 2026 : 42 immeubles, 597 logements. Le dépôt de garantie est d’un mois de loyer, l’eau est facturée d’avance et le locataire paie l’électricité domestique. Dans les maisons de village chauffées à l’électricité, le locataire paie aussi le chauffage, que la société estime à environ 100 € par mois en été et 200 € en hiver.',
       },
       paras: [
-        '<strong>Exemples :</strong> un deux-pièces de 55 m² dans un immeuble du centre, 632 € par mois ; un deux-pièces de 42 m² à Käpyriihi, 756 € ; une maison en bande de trois pièces de 80 m² à Kaanaanmaa, 800 €.',
-        '<strong>Loyers privés :</strong> les deux-pièces du marché libre coûtaient en moyenne 11,73 € par m² dans la zone postale du centre de Sodankylä en octobre–décembre 2025 (Statistics Finland, tableau 13eb). Il n’existe pas de chiffre communal plus récent : Sodankylä ne figure pas dans le tableau actuel des loyers de Statistics Finland.',
+        '<strong>Exemples :</strong> un deux-pièces de 55 m² dans un immeuble du centre, 632 € par mois ; un deux-pièces de 42 m² à Käpyriihi, 756 € ; une maison mitoyenne de trois pièces de 80 m² à Kaanaanmaa, 800 €.',
+        '<strong>Loyers privés :</strong> les deux-pièces du parc privé coûtaient en moyenne 11,73 € par m² dans la zone postale du centre de Sodankylä en octobre–décembre 2025 (Statistics Finland, tableau 13eb). Il n’existe pas de chiffre communal plus récent : Sodankylä ne figure pas dans le tableau actuel des loyers de Statistics Finland.',
       ],
     },
     {
@@ -69,14 +69,14 @@ const copy: HousingPageCopy = {
         },
         {
           title: 'Logements libres',
-          body: 'La recherche de logements de la société indique les logements libres ou sur le point de l’être, avec leur loyer et la date de disponibilité. La liste est mise à jour sur le site de la société, consultez-la donc avant de déposer votre demande.',
+          body: 'La recherche de logements de la société indique les logements libres ou sur le point de l’être, avec leur loyer et la date de disponibilité. La liste est mise à jour sur le site de la société : consultez-la donc avant de déposer votre demande.',
           href: 'https://www.asentopuulaaki.fi/asuntohaku/',
           linkLabel: 'asentopuulaaki.fi : recherche de logements',
           event: 'asentopuulaaki_vapaat',
         },
         {
           title: 'Oikotie et Vuokraovi',
-          body: 'Annonces de particuliers sous la commune de Sodankylä. La page logement de la commune ne nomme aucun bailleur autre que sa propre société : les logements privés se trouvent donc sur les portails.',
+          body: 'Annonces de particuliers pour la commune de Sodankylä. La page logement de la commune ne nomme aucun bailleur autre que sa propre société : les logements privés se trouvent donc sur les portails.',
           href: 'https://asunnot.oikotie.fi/vuokra-asunnot/sodankyl%C3%A4',
           linkLabel: 'Oikotie : locations à Sodankylä',
           event: 'oikotie',
@@ -148,7 +148,7 @@ const copy: HousingPageCopy = {
     },
     {
       q: 'Que coûte un logement à louer à Sodankylä ?',
-      a: 'Dans les anciens immeubles de la société communale, environ 10 € le m², dans les maisons en bande et à coursive surtout 10–12,50 €, et à Käpyriihi, achevé en 2025, 18 €, ce qui fait 756 € par mois pour un deux-pièces de 42 m² (Asentopuulaaki, 15 novembre 2026). Les deux-pièces du marché libre au centre coûtaient en moyenne 11,73 € le m² en octobre–décembre 2025 (Statistics Finland).',
+      a: 'Dans les anciens immeubles de la société communale, environ 10 € le m², dans les maisons mitoyennes et les immeubles à coursive surtout 10–12,50 €, et à Käpyriihi, achevé en 2025, 18 €, ce qui fait 756 € par mois pour un deux-pièces de 42 m² (Asentopuulaaki, 15 novembre 2026). Les deux-pièces du parc privé au centre coûtaient en moyenne 11,73 € le m² en octobre–décembre 2025 (Statistics Finland).',
     },
     {
       q: 'Y a-t-il une pénurie de logements à Sodankylä ?',
@@ -163,7 +163,7 @@ const copy: HousingPageCopy = {
     partner: 'hotels',
     kicker: 'Les premières nuits',
     h2: 'Des visites sur place.',
-    lead: 'Le moteur partenaire affiche les chambres et les appartements libres à Sodankylä et à Luosto aux prix du jour.',
+    lead: 'Le moteur de réservation de notre partenaire affiche les chambres et les appartements libres à Sodankylä et à Luosto aux prix du jour.',
     chips: [
       { label: 'Sodankylä', destination: 'Sodankylä', sid: 'rentals_sodankyla_first_weeks' },
       { label: 'Luosto', destination: 'Luosto', sid: 'rentals_luosto_first_weeks' },

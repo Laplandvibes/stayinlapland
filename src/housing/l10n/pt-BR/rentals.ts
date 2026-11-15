@@ -17,10 +17,10 @@ const copy: HousingPageCopy = {
   metaTitle: 'Alugar na Lapônia: Rovaniemi, Levi, Kemi–Tornio',
   metaDescription:
     'Aluguel de longa duração na Lapônia finlandesa, de Rovaniemi e Kemi–Tornio a Levi e Inari: preço por m² (Statistics Finland), caução e auxílio-moradia da Kela.',
-  breadcrumb: 'Aluguel',
+  breadcrumb: 'Aluguéis',
   hero: {
     eyebrow: 'Alugar na Lapônia',
-    title: 'Alugar uma casa na Lapônia.',
+    title: 'Morar de aluguel na Lapônia.',
     subtitle:
       'Onde encontrar um apartamento para alugar, quanto custa e quanto a Kela cobre. Cidade por cidade.',
   },
@@ -28,7 +28,7 @@ const copy: HousingPageCopy = {
     'Aluguéis por m²: estatísticas de aluguel da Statistics Finland, imóveis de aluguel no mercado livre, de julho a setembro de 2026. Empresas municipais de habitação verificadas nos sites dos próprios municípios e empresas em 15 de novembro de 2026.',
   intro: [
     'Na Lapônia, um apartamento para alugar vem de uma de três fontes: a empresa municipal de habitação, os portais nacionais ou os grupos locais. Comece pelo município. As empresas municipais têm centenas de apartamentos, por exemplo pouco mais de 300 em Keminmaa, cerca de 720 em Sodankylä, 560 em Kemijärvi e mais de 500 em Inari, e você pode se candidatar mesmo quando não há nada livre no momento.',
-    'O preço depende de onde você se muda. Em Rovaniemi, um quitinete de 30 m² custa em média cerca de 560 € por mês; no resto da Lapônia, menos. Nos vilarejos dos montes, o aluguel acompanha a temporada, então, para o inverno, pergunte primeiro ao seu empregador sobre moradia para funcionários.',
+    'O preço depende de onde você se muda. Em Rovaniemi, uma quitinete de 30 m² custa em média cerca de 560 € por mês; no resto da Lapônia, menos. Nos vilarejos dos montes, o aluguel acompanha a temporada, então, para o inverno, pergunte primeiro ao seu empregador sobre moradia para funcionários.',
   ],
   sections: [
     {
@@ -103,7 +103,7 @@ const copy: HousingPageCopy = {
     {
       id: 'prices',
       kicker: 'Quanto custa o aluguel',
-      h2: 'Por metro quadrado, não por impressão.',
+      h2: 'Por metro quadrado, não a olho.',
       lead:
         'A Statistics Finland publica os aluguéis a cada trimestre. Abaixo, o aluguel médio de imóveis no mercado livre de julho a setembro de 2026, em euros por metro quadrado por mês.',
       table: {
@@ -119,13 +119,13 @@ const copy: HousingPageCopy = {
         foot: 'Statistics Finland, aluguéis do 3º trimestre de 2026, tabela 15fa. Novo contrato = contratos iniciados durante o trimestre; mostram o que está sendo pedido agora.',
       },
       paras: [
-        '<strong>Como calcular:</strong> multiplique o aluguel por m² pela área. Em Rovaniemi, um quitinete de 30 m² custa em média cerca de 560 € por mês (18,63 × 30) e cerca de 600 € em um novo contrato (20,14 × 30, o valor de quitinetes em novos contratos em Rovaniemi). Um apartamento de dois cômodos de 50 m²: cerca de 720 € por mês (14,40 × 50). Água e eletricidade geralmente são cobradas à parte.',
+        '<strong>Como calcular:</strong> multiplique o aluguel por m² pela área. Em Rovaniemi, uma quitinete de 30 m² custa em média cerca de 560 € por mês (18,63 × 30) e cerca de 600 € em um novo contrato (20,14 × 30, o valor de quitinetes em novos contratos em Rovaniemi). Um apartamento de dois cômodos de 50 m²: cerca de 720 € por mês (14,40 × 50). Água e eletricidade geralmente são cobradas à parte.',
         'O aluguel por metro quadrado na Lapônia fica abaixo da média nacional em todos os tamanhos de apartamento, e a diferença é menor nos de dois cômodos.',
       ],
       note: {
         label: 'O que as estatísticas não enxergam',
         body:
-          'Os aluguéis de temporada nas estações de esqui e os aluguéis mobiliados de curta duração não entram nestes números. Perto do centro de Levi, um apartamento de 80 m² em casa de estilo alpino custava 750 € por mês de maio a novembro, 2.000 € por semana na alta temporada e 1.650 € por mês o ano todo (Yle, 25 de maio de 2023): o mesmo apartamento por três preços.',
+          'Os aluguéis de temporada nas estações de esqui e os aluguéis mobiliados de curta duração não entram nestes números. Perto do centro de Levi, um apartamento de 80 m² em estilo alpino custava 750 € por mês de maio a novembro, 2.000 € por semana na alta temporada e 1.650 € por mês o ano todo (Yle, 25 de maio de 2023): o mesmo apartamento por três preços.',
       },
     },
     {
@@ -155,11 +155,11 @@ const copy: HousingPageCopy = {
       kicker: 'O contrato de locação',
       h2: 'Cinco coisas antes de assinar.',
       bullets: [
-        '<strong>A caução é de no máximo três meses de aluguel</strong> (Lei de Locação Residencial, seção 8). Um ou dois meses é o mais comum.',
+        '<strong>A caução é de no máximo três meses de aluguel</strong> (Lei de Locação Residencial, artigo 8). Um ou dois meses é o mais comum.',
         '<strong>A partir de 1º de outubro de 2026, a caução deve ser devolvida</strong>, ou a sua retenção explicada por escrito, em até 14 dias após o fim da locação ou a devolução do apartamento (reforma em vigor desde 1º de outubro de 2026, Rakli).',
-        '<strong>O prazo de aviso prévio do locatário é de um mês.</strong> Nos contratos feitos a partir de 1º de outubro de 2026, o aviso prévio do locador é de três meses, e de quatro meses se a locação durou ininterruptamente pelo menos dois anos (Rakli). Os contratos feitos antes de 1º de outubro de 2026 mantêm os prazos antigos (Kuluttajaliitto).',
+        '<strong>O prazo de aviso prévio do locatário é de um mês.</strong> Nos contratos feitos a partir de 1º de outubro de 2026, o aviso prévio do locador é de três meses, e de quatro meses se a locação tiver durado ininterruptamente pelo menos dois anos (Rakli). Os contratos feitos antes de 1º de outubro de 2026 mantêm os prazos antigos (Kuluttajaliitto).',
         '<strong>Um contrato por prazo determinado obriga as duas partes até o fim.</strong> No trabalho sazonal, o apartamento do empregador costuma estar vinculado ao emprego: leia o que acontece se o emprego terminar antes da temporada.',
-        '<strong>O histórico de crédito quase sempre é consultado.</strong> Uma anotação de inadimplência não impede alugar, mas uma empresa municipal de habitação ou um locador particular tem mais chance de aceitar do que as grandes redes.',
+        '<strong>O histórico de crédito quase sempre é consultado.</strong> Uma anotação de inadimplência não impede a locação, mas uma empresa municipal de habitação ou um locador particular tem mais chance de aceitar do que as grandes redes.',
       ],
     },
     {
@@ -168,15 +168,15 @@ const copy: HousingPageCopy = {
       h2: 'Três regras que protegem a sua caução.',
       bullets: [
         'Nunca pague a caução antes de uma visita ou de uma visita em vídeo em que você veja o apartamento e as chaves no mesmo quadro.',
-        'Contrato por escrito, com o nome do locador e o número de empresa ou o código de identificação pessoal. Uma empresa municipal de habitação é o começo mais seguro se você não conhece o mercado.',
-        'Um aluguel mobiliado de curta duração não é um contrato de locação: um apartamento de temporada pode não ter endereço oficial, e a falta de endereço dificulta o trato com empresas, por exemplo nas consultas de crédito (Yle, 25 de maio de 2023).',
+        'Contrato por escrito, com o nome do locador e o número de registro da empresa ou o número de identificação pessoal. Uma empresa municipal de habitação é o ponto de partida mais seguro se você não conhece o mercado.',
+        'Um aluguel mobiliado de curta duração não é um contrato de locação: talvez você não consiga um endereço oficial em um apartamento de temporada, e sem ele os trâmites do dia a dia, como consultas de crédito, ficam mais difíceis (Yle, 25 de maio de 2023).',
       ],
     },
   ],
   faqs: [
     {
-      q: 'Quanto custa um quitinete em Rovaniemi?',
-      a: 'Segundo a Statistics Finland, o aluguel médio de um quitinete no mercado livre em Rovaniemi foi de 18,63 € por m² de julho a setembro de 2026 e de 20,14 € por m² nos novos contratos. Um quitinete de 30 m² custa, portanto, cerca de 560–600 € por mês, sem a eletricidade.',
+      q: 'Quanto custa uma quitinete em Rovaniemi?',
+      a: 'Segundo a Statistics Finland, o aluguel médio de uma quitinete no mercado livre em Rovaniemi foi de 18,63 € por m² de julho a setembro de 2026 e de 20,14 € por m² nos novos contratos. Uma quitinete de 30 m² custa, portanto, cerca de 560–600 € por mês, sem a eletricidade.',
     },
     {
       q: 'Posso alugar na Lapônia sem histórico de crédito finlandês?',
@@ -184,11 +184,11 @@ const copy: HousingPageCopy = {
     },
     {
       q: 'Qual é a melhor época para procurar apartamento em Rovaniemi?',
-      a: 'Qualquer mês que não seja agosto ou setembro. Nessa época, a DAS não consegue abrigar todos os candidatos, e os quitinetes no mercado livre são escassos (Yle, 27 de julho de 2026). Os quitinetes alugados por temporada de inverno voltam ao mercado na primavera.',
+      a: 'Qualquer mês que não seja agosto ou setembro. Nessa época, a DAS não consegue abrigar todos os candidatos, e as quitinetes no mercado livre são escassas (Yle, 27 de julho de 2026). As quitinetes alugadas por temporada de inverno voltam ao mercado na primavera.',
     },
     {
       q: 'Por que o aluguel em Levi é várias vezes mais alto no inverno?',
-      a: 'Porque na alta temporada o mesmo apartamento é alugado por semana. No exemplo da Yle (25 de maio de 2023), um apartamento de 80 m² em casa de estilo alpino custava 750 € por mês no verão e 2.000 € por semana no inverno. O aluguel mensal é possível de maio a novembro; para o inverno, pergunte ao empregador sobre moradia para funcionários ou consulte a empresa municipal de Kittilä.',
+      a: 'Porque na alta temporada o mesmo apartamento é alugado por semana. No exemplo da Yle (25 de maio de 2023), um apartamento de 80 m² em estilo alpino custava 750 € por mês no verão e 2.000 € por semana no inverno. O aluguel mensal é possível de maio a novembro; para o inverno, pergunte ao empregador sobre moradia para funcionários ou consulte a empresa municipal de Kittilä.',
     },
   ],
   cta: {

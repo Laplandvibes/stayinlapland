@@ -26,7 +26,7 @@ const copy: HousingPageCopy = {
   authorNote:
     'Einwohnerzahl von Statistik Finnland, Wohnungszahlen und Bewerbung von den Seiten der Stadt Kemijärvi, Mieterhöhungen und Belegungsziele aus dem Haushalt der Stadt für 2026. Geprüft am 15. November 2026.',
   intro: [
-    'Kemijärvi hatte Ende 2025 6.919 Einwohner, 35 weniger als ein Jahr zuvor (Statistik Finnland). Die Stadt nennt sich selbst Finnlands nördlichste Stadt und sagt, die Dienste im Zentrum seien zu Fuß erreichbar (kemijarvi.fi).',
+    'Kemijärvi hatte Ende 2025 6.919 Einwohner, 35 weniger als ein Jahr zuvor (Statistik Finnland). Die Stadt nennt sich selbst Finnlands nördlichste Stadt und sagt, die Dienstleistungen im Zentrum seien zu Fuß erreichbar (kemijarvi.fi).',
     'Die beiden Immobiliengesellschaften der Stadt, Kemijärven Vuokratalot und Kemijärven Töveli, besitzen 560 Mietwohnungen (kemijarvi.fi). Der Haushalt der Stadt sieht es als realistisches Ziel an, 80–85 Prozent dieser Wohnungen zu vermieten, es gibt also tatsächlich leere Wohnungen.',
     'Die Mieten steigen: Kemijärven Vuokratalot erhöhte seine Mieten am 1. Februar 2026 um 4,5 Prozent und Töveli am 1. Juli 2026 um 5 Prozent. Dieselben Erhöhungen stehen im Plan für 2027 und 2028 (Haushalt 2026).',
   ],
@@ -46,7 +46,7 @@ const copy: HousingPageCopy = {
         },
         {
           title: 'Vuostimo, 14 km von Pyhä',
-          body: 'Reihenhäuser im Besitz der Stadt aus dem Jahr 1987 in Vuostimo, etwa 35 Kilometer nördlich des Zentrums. Das Skiresort Pyhätunturi ist 14 Kilometer entfernt, damit sind es die städtischen Mietwohnungen, die Pyhä am nächsten liegen.',
+          body: 'Reihenhäuser im Besitz der Stadt aus dem Jahr 1987 in Vuostimo, etwa 35 Kilometer nördlich des Zentrums. Das Skigebiet Pyhätunturi ist 14 Kilometer entfernt, damit sind es die städtischen Mietwohnungen, die Pyhä am nächsten liegen.',
           href: 'https://kemijarvi.fi/asuminen-ja-ymparisto/asuminen/kemijarven-kaupungin-vuokratalot/vuokratalokohteet/vuostimo/',
           linkLabel: 'kemijarvi.fi: Vuostimo',
           event: 'kemijarvi_vuostimo',
@@ -76,7 +76,7 @@ const copy: HousingPageCopy = {
         foot: 'Statistik Finnland, Mieten 2026Q3, Tabelle 15fa. Für Kemijärvi wird kein eigener Wert veröffentlicht, und der regionale Wert schließt das teurere Rovaniemi ein.',
       },
       paras: [
-        '<strong>Kemijärvis eigener Wert stammt aus dem Jahr 2022.</strong> Im Postleitzahlgebiet 98100 im Stadtzentrum lagen frei finanzierte Studios im Januar–März 2022 im Durchschnitt bei 12,15 € pro m² und Zweizimmerwohnungen bei 9,10 € pro m². Jedes Quartal seither ist unterdrückt: Statistik Finnland veröffentlicht den Wert eines Postleitzahlgebiets nicht, wenn zu wenige Beobachtungen vorliegen (Tabelle 13eb).',
+        '<strong>Kemijärvis eigener Wert stammt aus dem Jahr 2022.</strong> Im Postleitzahlgebiet 98100 im Stadtzentrum lagen frei finanzierte Studios im Januar–März 2022 im Durchschnitt bei 12,15 € pro m² und Zweizimmerwohnungen bei 9,10 € pro m². Seitdem wird der Wert jedes Quartal zurückgehalten: Statistik Finnland veröffentlicht den Wert eines Postleitzahlgebiets nicht, wenn zu wenige Beobachtungen vorliegen (Tabelle 13eb).',
         'Die Mieten der städtischen Gesellschaften stehen nicht online. Fragen Sie die Wohnungssekretärin oder den Wohnungssekretär nach der Miete, bevor Sie ein Angebot annehmen, und denken Sie daran, dass die Mieten 2026 gestiegen sind: um 4,5 Prozent bei Vuokratalot und um 5 Prozent bei Töveli.',
       ],
     },
@@ -129,7 +129,7 @@ const copy: HousingPageCopy = {
     },
     {
       q: 'Was kostet eine Mietwohnung in Kemijärvi?',
-      a: 'Ein aktueller Durchschnitt wird nicht veröffentlicht. Der jüngste Wert für das Postleitzahlgebiet im Stadtzentrum stammt von Anfang 2022: Studios 12,15 € pro m² und Zweizimmerwohnungen 9,10 € pro m². Der Durchschnitt Lapplands lag im Juli–September 2026 bei 13,14 € pro m², und er schließt das teurere Rovaniemi ein (Statistik Finnland).',
+      a: 'Ein aktueller Durchschnitt wird nicht veröffentlicht. Der jüngste Wert für das Postleitzahlgebiet im Stadtzentrum stammt von Anfang 2022: Studios 12,15 € pro m² und Zweizimmerwohnungen 9,10 € pro m². Der Durchschnitt Lapplands lag von Juli bis September 2026 bei 13,14 € pro m², und er schließt das teurere Rovaniemi ein (Statistik Finnland).',
     },
     {
       q: 'Gibt es in Kemijärvi Studierendenwohnungen?',

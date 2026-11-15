@@ -33,7 +33,7 @@ const copy: HousingPageCopy = {
       kicker: 'Wat huur kost',
       h2: 'Huren in Rovaniemi per m², juli–september 2026.',
       table: {
-        caption: 'Gemiddelde huur €/m²/maand, vrije-sectorhuurwoningen, Rovaniemi 2026Q3',
+        caption: 'Gemiddelde huur €/m²/maand, vrijesectorhuurwoningen, Rovaniemi 2026Q3',
         head: ['', 'Alle huren', 'Nieuwe huren', 'Heel Finland'],
         rows: [
           ['Studio’s', '18,63', '20,14', '20,49'],
@@ -97,7 +97,7 @@ const copy: HousingPageCopy = {
         },
         {
           title: 'Lumo',
-          body: 'Een zakelijke verhuurder met gebouwen in Rovaniemi. Standaardcontract, onlineaanvraag, snelle ingebruikname.',
+          body: 'Een zakelijke verhuurder met gebouwen in Rovaniemi. Standaardcontract, onlineaanvraag, snel intrekken.',
           href: 'https://lumo.fi/en/rental-apartments',
           linkLabel: 'lumo.fi: huurwoningen',
           event: 'lumo',
@@ -125,7 +125,7 @@ const copy: HousingPageCopy = {
       bullets: [
         '<strong>Augustus–september</strong> is het krapst: DAS kan niet alle aanvragers huisvesten, en studio’s op de vrije markt zijn schaars (Yle, 27 juli 2026).',
         '<strong>November–december:</strong> sommige studio’s worden voor het winterseizoen kortdurend aan toeristen verhuurd. Contracten voor bepaalde tijd eindigen vaak eind oktober (Yle, 27 juli 2026).',
-        '<strong>In het voorjaar</strong> komen de studio’s die voor het winterseizoen waren verhuurd weer terug.',
+        '<strong>In het voorjaar</strong> komen de studio’s die voor het winterseizoen waren verhuurd weer op de markt.',
         '<strong>De waarborgsom</strong> bedraagt hoogstens drie maanden huur (Wet op de woninghuur, paragraaf 8), en vanaf 1 oktober 2026 moet ze binnen 14 dagen na het einde van de huur worden teruggegeven (Rakli).',
       ],
     },
@@ -148,7 +148,7 @@ const copy: HousingPageCopy = {
     partner: 'hotels',
     kicker: 'De eerste weken',
     h2: 'Een hotel of aparthotel terwijl u woningen bekijkt.',
-    lead: 'Bekijk de woningen in persoon voordat u tekent. De partnerzoekmachine toont de vrije kamers in Rovaniemi tegen de prijzen van vandaag.',
+    lead: 'Bekijk de woningen zelf voordat u tekent. De partnerzoekmachine toont de vrije kamers in Rovaniemi tegen de prijzen van vandaag.',
     chips: [
       { label: 'Rovaniemi', destination: 'Rovaniemi', sid: 'rentals_rovaniemi_first_weeks' },
     ],

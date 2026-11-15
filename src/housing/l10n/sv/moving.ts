@@ -27,7 +27,7 @@ const copy: HousingPageCopy = {
     'Tidsfrister från DVV, Traficom och Finlands Kommunförbund, polarnattens längd från Meteorologiska institutet, avstånd från LaplandVibes körrutter. Kontrollerat den 15 november 2026.',
   intro: [
     'Pappersarbetet vid en flytt till Lappland är detsamma som var som helst i Finland, men tre saker väger tyngre här än i söder: vintern varar halva året, avstånden mäts i hundratals kilometer, och i små kommuner finns tjänsterna på ett och samma ställe. Den här sidan är en checklista i den ordning sakerna behöver göras.',
-    'Om du flyttar till Finland från utlandet behandlas uppehållstillstånd, personbeteckning, skattekort och bankkonto på vår systersajt <a href="https://laplandwork.com/moving-to-finland" target="_blank" rel="noopener">laplandwork.com</a>. Den här sidan börjar när nycklarna ligger i din hand.',
+    'Om du flyttar till Finland från utlandet behandlas uppehållstillstånd, personbeteckning, skattekort och bankkonto på vår systersajt <a href="https://laplandwork.com/moving-to-finland" target="_blank" rel="noopener">laplandwork.com</a>. Den här sidan börjar när du har fått nycklarna.',
   ],
   sections: [
     {
@@ -36,8 +36,8 @@ const copy: HousingPageCopy = {
       h2: 'Fyra anmälningar, en tidsfrist.',
       bullets: [
         '<strong>Flyttanmälan till DVV</strong>: tidigast en månad före flyttdagen och senast en vecka efter flytten (DVV). Samma anmälan går till Posti. Kommunala tjänster (barnomsorg, skola, hälsocentral) följer din registrerade hemkommun, så gör anmälan genast.',
-        '<strong>Elavtal.</strong> Totalpriset på el för ett hushåll som använder 2 500–4 999 kWh om året var i genomsnitt 23,7 cent per kWh i hela Finland i juni 2026, och 14,9 cent i klassen över 15 000 kWh, dit ett eluppvärmt hus hör (Statistikcentralen). Lapplands uppvärmningssäsong är lång, så räkna med en förbrukning i den högre delen.',
-        '<strong>Hälso- och sjukvården</strong> ordnas av Lapplands välfärdsområde (Lapha). Icke-brådskande vård går via din lokala hälsocentral; hitta den närmaste på välfärdsområdets webbplats och registrera dig i Omakanta.',
+        '<strong>Elavtal.</strong> Totalpriset på el för ett hushåll som använder 2 500–4 999 kWh om året var i genomsnitt 23,7 cent per kWh i hela Finland i juni 2026, och 14,9 cent i klassen över 15 000 kWh, dit ett eluppvärmt hus hör (Statistikcentralen). Lapplands uppvärmningssäsong är lång, så räkna hellre med en hög förbrukning.',
+        '<strong>Hälso- och sjukvården</strong> ordnas av Lapplands välfärdsområde (Lapha). Vård som inte är brådskande sköts av din lokala hälsocentral. Den närmaste hittar du på välfärdsområdets webbplats; registrera dig också i Omakanta.',
         '<strong>Internet.</strong> Fråga bostadsbolaget eller hyresvärden om fiber innan du skriver under. I glest befolkade områden är en mobil router ofta det enda alternativet, och den som arbetar på distans bör testa anslutningen i bostaden först.',
       ],
     },
@@ -65,7 +65,7 @@ const copy: HousingPageCopy = {
       bullets: [
         '<strong>Avgifterna för småbarnspedagogik</strong> följer familjens inkomster: från och med 1 augusti 2026 är den högsta avgiften 335 € i månaden per barn och den lägsta som tas ut 32 €. Det andra barnet betalar högst 40 % av det yngsta barnets avgift, alltså högst 134 € (Finlands Kommunförbund).',
         '<strong>Förskola och grundläggande utbildning</strong> är avgiftsfria, läromedel och skolmåltider inberäknade (lagen om grundläggande utbildning, 31 §). Skolskjuts ordnas när skolvägen överstiger fem kilometer (32 §), och i små kommuner hör den till vardagen.',
-        'Du ansöker om barnomsorgsplats hos kommunen, och kommunen avgörs av den adress som är registrerad hos DVV. Därför kommer adressanmälan först, inte sist.',
+        'Du ansöker om barnomsorgsplats hos kommunen, och kommunen avgörs av den adress som är registrerad hos DVV. Därför kommer flyttanmälan först, inte sist.',
       ],
     },
     {
@@ -74,13 +74,13 @@ const copy: HousingPageCopy = {
       h2: 'Polarnatten är kortare än du tror. Utom i Utsjoki.',
       paras: [
         'Kaamos, polarnatten, innebär att solen inte går upp över horisonten. Enligt Meteorologiska institutet varar den nästan två månader i Nuorgam i Utsjoki, från 25 november till 17 januari, och bara fyra dagar strax före jul i Sodankylä. Polarnattens gräns går något norr om polcirkeln, så Rovaniemi har ingen egentlig polarnatt (Foreca): på vintern står solen lågt, men den går upp.',
-        'På sommaren vänds det. Midnattssolens gräns nås vid polcirkeln i Rovaniemi, och i Nuorgam går solen inte ned från 16 maj till 29 juli (Meteorologiska institutet). Mörkläggningsgardiner är det viktigaste sommarinköpet, en dagsljuslampa det viktigaste vinterinköpet.',
+        'På sommaren är det tvärtom. Midnattssolens gräns nås vid polcirkeln i Rovaniemi, och i Nuorgam går solen inte ned från 16 maj till 29 juli (Meteorologiska institutet). Mörkläggningsgardiner är det viktigaste sommarinköpet, en dagsljuslampa det viktigaste vinterinköpet.',
       ],
     },
     {
       id: 'before-signing',
       kicker: 'Innan du skriver under',
-      h2: 'Fråga hyresvärden detta.',
+      h2: 'Fråga hyresvärden om det här.',
       bullets: [
         'Uppvärmningssätt och vem som betalar det: fjärrvärme ingår oftast i hyran, eluppvärmning hamnar på din egen räkning.',
         'En parkeringsplats med värmeuttag och förvaring för vinterutrustning: skidor, pulka, vinterdäck.',

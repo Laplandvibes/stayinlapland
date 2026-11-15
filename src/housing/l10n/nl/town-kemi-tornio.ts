@@ -18,14 +18,14 @@ const copy: HousingPageCopy = {
     eyebrow: 'De kust van Zee-Lapland',
     title: 'Huren in Kemi, Tornio en Keminmaa.',
     subtitle:
-      'De kuststeden die bij elkaar liggen, waar de gemeentelijke woningbedrijven honderden woningen hebben en aanvragen online worden ingediend. Waar u begint en wat huur kost.',
+      'De tweelingsteden aan de kust, waar de gemeentelijke woningbedrijven honderden woningen hebben en aanvragen online worden ingediend. Waar u het best begint en wat huur kost.',
   },
   authorNote:
     'Aantallen woningen van de woningbedrijven van de eigen pagina’s van de gemeenten Kemi, Tornio en Keminmaa, aanvraagvoorwaarden van de eigen pagina’s van de bedrijven, huren per m² van Statistics Finland (regio Lapland 2026Q3). Gecontroleerd op 15 november 2026.',
   intro: [
     'Kemi heeft 19.339 inwoners, Tornio 20.823 en Keminmaa 7.576 (Statistics Finland, 31 december 2025). De drie gemeenten grenzen aan elkaar, dus de woning kan in een andere gemeente liggen dan het werk.',
     'De gemeentelijke woningbedrijven zijn het eerste adres: de gemeentelijke woningen van Kemi worden beheerd door Kiinteistö Oy Itätuuli (kemi.fi), de grootste verhuurder van huurwoningen in de stad, met woningen binnen vijf kilometer van het centrum (itatuuli.fi). Keminmaan Vuokra-asunnot Oy heeft 18 objecten met ruim 300 woningen (keminmaa.fi). Elk bedrijf heeft een eigen onlineaanvraag. In Tornio worden de woningen van de stad beheerd door Tornion Krunni Oy, waartoe Tornion Vuokra-asunnot Oy behoort (tornio.fi).',
-    'De huidige huurtabel van Statistics Finland heeft geen aparte rij voor Kemi of Tornio, dus hieronder staat het regionale cijfer voor Lapland. De cijfers van Rovaniemi staan op de eigen pagina.',
+    'De huidige huurtabel van Statistics Finland heeft geen aparte rij voor Kemi of Tornio, dus hieronder staat het regionale cijfer voor Lapland. De cijfers van Rovaniemi staan op een eigen pagina.',
   ],
   sections: [
     {
@@ -33,7 +33,7 @@ const copy: HousingPageCopy = {
       kicker: 'Wat huur kost',
       h2: 'Regionale huren in Lapland per m², juli–september 2026.',
       table: {
-        caption: 'Gemiddelde huur €/m²/maand, vrije-sectorhuurwoningen, 2026Q3',
+        caption: 'Gemiddelde huur €/m²/maand, vrijesectorhuurwoningen, 2026Q3',
         head: ['', 'Lapland (regio)', 'Rovaniemi', 'Heel Finland'],
         rows: [
           ['Studio’s', '17,25', '18,63', '20,49'],
@@ -78,22 +78,22 @@ const copy: HousingPageCopy = {
           event: 'kemi_city',
         },
         {
-          title: 'Woningbedrijf Keminmaan Vuokra-asunnot Oy',
+          title: 'Keminmaan Vuokra-asunnot Oy',
           body: 'Het woningbedrijf van de gemeente: 18 objecten met ruim 300 woningen, en water en verwarming zijn bij de huur inbegrepen. De eigen onlineaanvraag is drie maanden geldig, en de waarborgsom is een maand huur.',
           href: 'https://www.keminmaanvuokra-asunnot.fi/asunnonhaku.html',
           linkLabel: 'Keminmaan Vuokra-asunnot: hoe u zich aanmeldt',
           event: 'keminmaa',
         },
         {
-          title: 'Tornio: woningbedrijf Tornion Krunni Oy',
-          body: 'Beheert Tornion Vuokra-asunnot Oy, Tornion Oppilasasuntola Oy en Tornion Palveluasunnot Oy; de afdeling voorzieningen van de stad behandelt ook woningen die de stad rechtstreeks bezit. Vragen over wonen telefonisch, en de pagina van de stad verwijst ook naar particuliere verhuurders en makelaars.',
+          title: 'Tornio: Tornion Krunni Oy',
+          body: 'Beheert Tornion Vuokra-asunnot Oy, Tornion Oppilasasuntola Oy en Tornion Palveluasunnot Oy; de vastgoedafdeling van de stad behandelt ook woningen die de stad rechtstreeks bezit. Vragen over wonen telefonisch, en de pagina van de stad verwijst ook naar particuliere verhuurders en makelaars.',
           href: 'https://www.tornio.fi/asuminen-ja-ymparisto/asuminen/vuokra-asunnot/',
           linkLabel: 'tornio.fi: huurwoningen',
           event: 'tornio_city',
         },
         {
           title: 'Oikotie en Vuokraovi',
-          body: 'Advertenties van particulieren en makelaars. Zoek Kemi, Tornio en Keminmaa als afzonderlijke gemeenten: het zijn drie afzonderlijke zoekopdrachten per gemeente.',
+          body: 'Advertenties van particulieren en makelaars. Zoek Kemi, Tornio en Keminmaa één voor één: op de portalen is elke gemeente een aparte zoekopdracht.',
           href: 'https://asunnot.oikotie.fi/vuokra-asunnot/kemi',
           linkLabel: 'Oikotie: huurwoningen in Kemi',
           event: 'oikotie',
@@ -123,7 +123,7 @@ const copy: HousingPageCopy = {
   cta: {
     partner: 'hotels',
     kicker: 'De eerste weken',
-    h2: 'Bezichtigingen in persoon.',
+    h2: 'Bezichtigingen ter plaatse.',
     lead: 'Boek een verblijf voor de bezichtigingen en bekijk de woning voordat u tekent.',
     chips: [
       { label: 'Kemi', destination: 'Kemi', sid: 'rentals_kemi_first_weeks' },

@@ -36,28 +36,28 @@ const copy: HousingPageCopy = {
       cards: [
         {
           title: 'Inarin Vuokra-asunnot Oy',
-          body: '지자체 주택회사로, 이발로, 이나리, 사리셀카, 넬림, 세베트야르비에 500채 이상을 보유하며 기본 서비스에 가까이 접근할 수 있습니다. 빈집과 신청은 회사 사이트에서 확인합니다.',
+          body: '지자체 주택회사로, 이발로, 이나리, 사리셀카, 넬림, 세베트야르비에 500채 이상을 보유하며 기본 생활 서비스와 가깝습니다. 빈집과 신청은 회사 사이트에서 확인합니다.',
           href: 'https://inarinvuokra-asunnot.fi/',
           linkLabel: 'inarinvuokra-asunnot.fi',
           event: 'inari_company',
         },
         {
           title: '이나리 지자체: 민간 집주인',
-          body: '지자체 주거 페이지에는 Bilto Oy, Ivalon vuokra-asunnot, IvaloCenter, Rakennusliike Holmberg Oy, Uni Kodit가 연락처와 함께 나열되어 있고, 페이스북의 소단퀼래–이나리–우츠요키 임대 그룹도 안내됩니다. 자세한 정보는 inari@inari.fi로 문의하십시오.',
+          body: '지자체 주거 페이지에는 Bilto Oy, Ivalon vuokra-asunnot, IvaloCenter, Rakennusliike Holmberg Oy, Uni Kodit의 연락처가 나열되어 있고, 페이스북의 소단퀼래–이나리–우츠요키 임대 그룹도 안내됩니다. 자세한 정보는 inari@inari.fi로 문의하세요.',
           href: 'https://www.inari.fi/fi/palvelut/asuminen.html',
           linkLabel: 'inari.fi: 주거',
           event: 'inari_city',
         },
         {
           title: 'Oikotie와 Vuokraovi',
-          body: '이나리 지자체 아래의 개인 매물이며, 이발로와 사리셀카의 집도 같은 검색에 나옵니다. 매물이 적으니 검색 알림을 설정하십시오.',
+          body: '이나리 지자체로 분류된 개인 매물이며, 이발로와 사리셀카의 집도 같은 검색에 나옵니다. 매물이 적으니 검색 알림을 설정하세요.',
           href: 'https://asunnot.oikotie.fi/vuokra-asunnot/inari',
           linkLabel: 'Oikotie: 이나리 임대',
           event: 'oikotie',
         },
         {
           title: '사리셀카 시즌 근로자를 위해',
-          body: '사리셀카의 고용주도 직원 숙소를 직접 제공하며, 지자체 회사에는 사리셀카에도 주택이 있습니다. 면접 때 주거에 대해 물어보십시오. 전체 상황은 시즌 근로자 페이지에 있습니다.',
+          body: '사리셀카의 고용주도 직원 숙소를 직접 제공하며, 지자체 회사에는 사리셀카에도 주택이 있습니다. 면접 때 주거에 대해 물어보세요. 전체 상황은 시즌 근로자 페이지에 있습니다.',
           href: '/seasonal-worker-housing',
           linkLabel: '시즌 근로자 숙소',
           event: 'seasonal_page',
@@ -100,10 +100,10 @@ const copy: HousingPageCopy = {
     {
       id: 'contract',
       kicker: '계약',
-      h2: '보증금과 그 반환.',
+      h2: '보증금과 반환.',
       bullets: [
         '보증금은 월세 세 달 치가 최대입니다(주거용 임대차법 제8조).',
-        '2026년 10월 1일부터 보증금은 임대가 끝난 날부터 14일 안에 반환하거나, 보유 사유를 서면으로 설명해야 합니다(Rakli).',
+        '2026년 10월 1일부터 보증금은 임대가 끝난 날부터 14일 안에 반환하거나, 돌려주지 않는 사유를 서면으로 알려야 합니다(Rakli).',
       ],
     },
   ],
@@ -119,7 +119,7 @@ const copy: HousingPageCopy = {
   ],
   cta: {
     partner: 'hotels',
-    kicker: '첫 며칠 밤',
+    kicker: '첫 며칠 숙소',
     h2: '열쇠를 받기 전에.',
     lead: '제휴사 검색에서 오늘 가격으로 이발로와 사리셀카의 빈 객실을 확인할 수 있습니다.',
     chips: [

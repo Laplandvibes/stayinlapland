@@ -23,8 +23,8 @@ const copy: HousingPageCopy = {
   authorNote:
     'Popolazione e crescita da Statistics Finland, Kittilän Vuokratalot Oy dalle pagine del comune e della società, prezzi stagionali di Levi da Yle, 25 maggio 2023. Verificato il 15 novembre 2026.',
   intro: [
-    'Kittilä aveva 6.973 abitanti alla fine del 2025 ed è cresciuta del 2,0 percento in un anno, la seconda più rapida tra i comuni della Lapponia: solo Pelkosenniemi è cresciuto di più, del 2,4 percento (Statistics Finland). Il motore è Levi: nel 2017 Levin Matkailu Oy stimava che l’area della stazione avrebbe assunto poco più di 2.000 lavoratori stagionali per la stagione invernale (Yle, 25 ott 2017).',
-    'Il mercato degli affitti di Levi segue la stagione: un appartamento di 80 m² in una casa in stile alpino vicino al centro costava 750 € al mese da maggio a novembre, 2.000 € a settimana in alta stagione e 1.650 € al mese tutto l’anno (Yle, 25 maggio 2023). Anche a un appartamento vacanza può non essere assegnato un indirizzo ufficiale.',
+    'Kittilä aveva 6.973 abitanti alla fine del 2025 ed è cresciuta del 2,0 percento in un anno, la seconda più rapida tra i comuni della Lapponia: solo Pelkosenniemi è cresciuto di più, del 2,4 percento (Statistics Finland). Il motore è Levi: nel 2017 Levin Matkailu Oy stimava che l’area della stazione avrebbe assunto poco più di 2.000 lavoratori stagionali per la stagione invernale (Yle, 25 ottobre 2017).',
+    'Il mercato degli affitti di Levi segue la stagione: un appartamento di 80 m² in stile alpino vicino al centro costava 750 € al mese da maggio a novembre, 2.000 € a settimana in alta stagione e 1.650 € al mese tutto l’anno (Yle, 25 maggio 2023). Inoltre, in un appartamento vacanza potrebbe non riuscire a ottenere un indirizzo ufficiale.',
     'Un affitto a lungo termine è più probabile nel villaggio di Kittilä che nel centro di Levi. Gli appartamenti del comune sono affittati da Kittilän Vuokratalot Oy, e la domanda si presenta in via elettronica sul sito della società (kittila.fi, Kittilän Vuokratalot).',
   ],
   sections: [
@@ -36,14 +36,14 @@ const copy: HousingPageCopy = {
       cards: [
         {
           title: 'Kittilän Vuokratalot Oy',
-          body: 'Affitta gli appartamenti comunali di proprietà del comune. L’ufficio è al piano terra del municipio (Valtatie 15, 99100 Kittilä). La società tratta solo domande elettroniche presentate tramite il suo sito, con gli allegati richiesti. Le sue pagine non dicono per quanto tempo resta valida una domanda, quindi lo chieda alla società.',
+          body: 'Affitta gli appartamenti di proprietà del comune. L’ufficio è al piano terra del municipio (Valtatie 15, 99100 Kittilä). La società tratta solo domande elettroniche presentate tramite il suo sito, con gli allegati richiesti. Le sue pagine non dicono per quanto tempo resta valida una domanda, quindi lo chieda alla società.',
           href: 'https://kittila.fi/asuminen-ja-ymparisto/asuminen/vuokra-asunnot',
           linkLabel: 'kittila.fi: Alloggi in affitto',
           event: 'kittila_city',
         },
         {
           title: 'Oikotie, Vuokraovi e TA-Asunnot',
-          body: 'Annunci di privati e agenzie sotto il comune di Kittilä; le case di Levi sono nella stessa ricerca. TA-Asunnot ha propri appartamenti in affitto liberi a Kittilä.',
+          body: 'Annunci di privati e agenzie nel comune di Kittilä; le case di Levi sono nella stessa ricerca. TA-Asunnot ha propri appartamenti in affitto liberi a Kittilä.',
           href: 'https://asunnot.oikotie.fi/vuokra-asunnot/kittil%C3%A4',
           linkLabel: 'Oikotie: affitti a Kittilä',
           event: 'oikotie',
@@ -57,7 +57,7 @@ const copy: HousingPageCopy = {
         },
         {
           title: 'Il gruppo Facebook sugli alloggi di Levi',
-          body: 'Il canale più rapido nel villaggio ai piedi del fjäll e dove i lavoratori stagionali trovano spesso il loro appartamento. Nessuno garantisce per esso: non versi mai un deposito prima di una visita e si faccia dare il contratto per iscritto.',
+          body: 'Il canale più rapido nel villaggio ai piedi del fjäll e dove i lavoratori stagionali trovano spesso il loro appartamento. Nessuno garantisce per gli annunci: non versi mai un deposito prima di una visita e si faccia dare il contratto per iscritto.',
         },
       ],
     },
@@ -77,7 +77,7 @@ const copy: HousingPageCopy = {
         foot: 'Statistics Finland, affitti 2026T3, tabella 15fa. Per Kittilä non viene pubblicato un dato separato, e gli affitti stagionali di Levi non rientrano affatto nelle statistiche.',
       },
       paras: [
-        '<strong>L’esempio di Levi (Yle, 25 maggio 2023):</strong> un appartamento di 80 m² in una casa in stile alpino a 750 € al mese da maggio a novembre = 9,38 € al m², 2.000 € a settimana in alta stagione, 1.650 € al mese tutto l’anno = 20,63 € al m². Lo stesso appartamento costa meno della media regionale in estate e più del prezzo nazionale dei monolocali tutto l’anno.',
+        '<strong>L’esempio di Levi (Yle, 25 maggio 2023):</strong> un appartamento di 80 m² in stile alpino a 750 € al mese da maggio a novembre = 9,38 € al m², 2.000 € a settimana in alta stagione, 1.650 € al mese tutto l’anno = 20,63 € al m². Lo stesso appartamento costa meno della media regionale in estate e più del prezzo nazionale dei monolocali tutto l’anno.',
       ],
     },
     {
@@ -122,7 +122,7 @@ const copy: HousingPageCopy = {
     partner: 'hotels',
     kicker: 'Le prime notti',
     h2: 'Prima che l’appartamento sia libero.',
-    lead: 'La ricerca del partner mostra camere e appartamenti liberi a Levi e a Kittilä ai prezzi di oggi.',
+    lead: 'La ricerca del nostro partner mostra camere e appartamenti liberi a Levi e a Kittilä ai prezzi di oggi.',
     chips: [
       { label: 'Levi', destination: 'Levi', sid: 'rentals_levi_first_weeks' },
       { label: 'Kittilä', destination: 'Kittilä', sid: 'rentals_kittila_first_weeks' },

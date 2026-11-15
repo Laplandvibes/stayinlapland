@@ -18,14 +18,14 @@ const copy: HousingPageCopy = {
     eyebrow: 'Kittilä, 6.973 Einwohner',
     title: 'Mietwohnungen in Kittilä und Levi.',
     subtitle:
-      'Eine der am schnellsten wachsenden Gemeinden Lapplands und ihr Skiresort, wo dieselbe Wohnung im Sommer eine Monatsmiete und im Winter einen Wochenpreis kostet. Wo Sie sich bewerben und wann.',
+      'Eine der am schnellsten wachsenden Gemeinden Lapplands und ihr Skigebiet, wo dieselbe Wohnung im Sommer eine Monatsmiete und im Winter einen Wochenpreis kostet. Wo Sie sich bewerben und wann.',
   },
   authorNote:
     'Einwohnerzahl und Wachstum von Statistik Finnland, Kittilän Vuokratalot Oy von den eigenen Seiten der Gemeinde und der Gesellschaft, Saisonpreise in Levi von Yle, 25. Mai 2023. Geprüft am 15. November 2026.',
   intro: [
-    'Kittilä hatte Ende 2025 6.973 Einwohner und wuchs binnen eines Jahres um 2,0 Prozent, die zweitschnellste Entwicklung unter den Gemeinden Lapplands: Nur Pelkosenniemi wuchs schneller, mit 2,4 Prozent (Statistik Finnland). Der Motor ist Levi: 2017 schätzte Levin Matkailu Oy, dass das Resortgebiet für die Wintersaison gut 2.000 Saisonkräfte einstellen würde (Yle, 25. Oktober 2017).',
-    'Levis Mietmarkt folgt der Saison: Eine Wohnung von 80 m² in einem Alpenhaus nahe dem Zentrum kostete von Mai bis November 750 € im Monat, in der Hochsaison 2.000 € pro Woche und ganzjährig 1.650 € im Monat (Yle, 25. Mai 2023). Auch eine amtliche Adresse bekommt man in einer Ferienwohnung womöglich nicht.',
-    'Eine dauerhafte Mietwohnung findet man eher im Dorf Kittilä als im Zentrum von Levi. Die Wohnungen der Gemeinde vermietet Kittilän Vuokratalot Oy, und Sie bewerben sich elektronisch auf der Seite der Gesellschaft (kittila.fi, Kittilän Vuokratalot).',
+    'Kittilä hatte Ende 2025 6.973 Einwohner und wuchs binnen eines Jahres um 2,0 Prozent, die zweitschnellste Entwicklung unter den Gemeinden Lapplands: Nur Pelkosenniemi wuchs schneller, mit 2,4 Prozent (Statistik Finnland). Der Motor ist Levi: 2017 schätzte Levin Matkailu Oy, dass das Skigebiet für die Wintersaison gut 2.000 Saisonkräfte einstellen würde (Yle, 25. Oktober 2017).',
+    'Levis Mietmarkt folgt der Saison: Eine Wohnung von 80 m² in einem Haus im Alpenstil nahe dem Zentrum kostete von Mai bis November 750 € im Monat, in der Hochsaison 2.000 € pro Woche und ganzjährig 1.650 € im Monat (Yle, 25. Mai 2023). Außerdem können Sie in einer Ferienwohnung womöglich keine amtliche Adresse anmelden.',
+    'Eine dauerhafte Mietwohnung findet man eher im Dorf Kittilä als im Zentrum von Levi. Die Wohnungen der Gemeinde vermietet Kittilän Vuokratalot Oy, und Sie bewerben sich online über die Seite der Gesellschaft (kittila.fi, Kittilän Vuokratalot).',
   ],
   sections: [
     {
@@ -36,7 +36,7 @@ const copy: HousingPageCopy = {
       cards: [
         {
           title: 'Kittilän Vuokratalot Oy',
-          body: 'Vermietet die eigenen Mietwohnungen der Gemeinde. Das Büro liegt im Erdgeschoss des Gemeindehauses (Valtatie 15, 99100 Kittilä). Die Gesellschaft bearbeitet nur elektronische Bewerbungen über ihre Website, mit den erforderlichen Anlagen. Auf ihren Seiten steht nicht, wie lange eine Bewerbung gültig bleibt, fragen Sie also bei der Gesellschaft nach.',
+          body: 'Vermietet die eigenen Mietwohnungen der Gemeinde. Das Büro liegt im Erdgeschoss des Gemeindehauses (Valtatie 15, 99100 Kittilä). Die Gesellschaft bearbeitet nur Online-Bewerbungen über ihre Website, denen die erforderlichen Anlagen beiliegen. Auf ihren Seiten steht nicht, wie lange eine Bewerbung gültig bleibt, fragen Sie also bei der Gesellschaft nach.',
           href: 'https://kittila.fi/asuminen-ja-ymparisto/asuminen/vuokra-asunnot',
           linkLabel: 'kittila.fi: Mietwohnungen',
           event: 'kittila_city',
@@ -50,9 +50,9 @@ const copy: HousingPageCopy = {
         },
         {
           title: 'Personalunterkunft',
-          body: 'Arbeitgeber im Resort mieten Reihenhäuser und Ferienwohnungen für das Personal für die ganze Saison und ziehen die Miete vom Lohn ab. Fragen Sie schriftlich mit dem Jobangebot nach der Unterkunft. Das ganze Bild finden Sie auf der Seite für Saisonkräfte.',
+          body: 'Arbeitgeber im Skigebiet mieten Reihenhäuser und Ferienwohnungen für das Personal für die ganze Saison und ziehen die Miete vom Lohn ab. Klären Sie die Unterkunft schriftlich zusammen mit dem Jobangebot. Mehr dazu auf der Seite für Saisonkräfte.',
           href: '/seasonal-worker-housing',
-          linkLabel: 'Wohnen bei Saisonarbeit',
+          linkLabel: 'Wohnen für Saisonkräfte',
           event: 'seasonal_page',
         },
         {
@@ -77,7 +77,7 @@ const copy: HousingPageCopy = {
         foot: 'Statistik Finnland, Mieten 2026Q3, Tabelle 15fa. Für Kittilä wird kein eigener Wert veröffentlicht, und Levis Saisonmieten stehen gar nicht in der Statistik.',
       },
       paras: [
-        '<strong>Das Beispiel Levi (Yle, 25. Mai 2023):</strong> eine Wohnung von 80 m² in einem Alpenhaus zu 750 € im Monat von Mai bis November = 9,38 € pro m², 2.000 € pro Woche in der Hochsaison, 1.650 € im Monat ganzjährig = 20,63 € pro m². Dieselbe Wohnung ist im Sommer günstiger als der regionale Durchschnitt und ganzjährig teurer als der landesweite Preis für Studios.',
+        '<strong>Das Beispiel Levi (Yle, 25. Mai 2023):</strong> eine Wohnung von 80 m² in einem Haus im Alpenstil zu 750 € im Monat von Mai bis November = 9,38 € pro m², 2.000 € pro Woche in der Hochsaison, 1.650 € im Monat ganzjährig = 20,63 € pro m². Dieselbe Wohnung ist im Sommer günstiger als der regionale Durchschnitt und ganzjährig teurer als der landesweite Preis für Studios.',
       ],
     },
     {
@@ -102,7 +102,7 @@ const copy: HousingPageCopy = {
       kicker: 'Wann Sie sich bewerben',
       h2: 'Im Sommer, bevor die Wochenpreise beginnen.',
       bullets: [
-        'Monatsmieten für Ferienwohnungen gibt es nur von Mai bis November, und in der Hochsaison gilt ein Wochenpreis (Yle, 25. Mai 2023). Für die Wintersaison sollten Sie die Wohnung im Sommer finden.',
+        'Monatsmieten für Ferienwohnungen gibt es nur von Mai bis November, und in der Hochsaison gilt ein Wochenpreis (Yle, 25. Mai 2023). Eine Wohnung für die Wintersaison suchen Sie also am besten schon im Sommer.',
         'Reichen Sie die Bewerbung bei der kommunalen Gesellschaft vor der Saison ein und fragen Sie die Gesellschaft, wie lange sie gültig bleibt.',
         'Die Kaution beträgt höchstens drei Monatsmieten (Wohnraummietgesetz, § 8), und ab dem 1. Oktober 2026 wird sie binnen 14 Tagen nach Ende des Mietverhältnisses zurückgezahlt (Rakli).',
       ],
@@ -111,11 +111,11 @@ const copy: HousingPageCopy = {
   faqs: [
     {
       q: 'Wo finde ich eine Winterwohnung in Levi?',
-      a: 'Höchstwahrscheinlich über Ihren Arbeitgeber: Resortunternehmen mieten Reihenhäuser und Ferienwohnungen für das Personal für die ganze Saison. Auf dem freien Markt werden Wohnungen in Levi im Winter wochenweise vermietet (Yle, 25. Mai 2023), eine Monatsmiete ist also hauptsächlich von Mai bis November möglich. Die kommunale Gesellschaft hat Wohnungen sowohl im Dorf Kittilä als auch in Sirkka bei Levi (Kittilän Vuokratalot).',
+      a: 'Höchstwahrscheinlich über Ihren Arbeitgeber: Unternehmen im Skigebiet mieten Reihenhäuser und Ferienwohnungen für das Personal für die ganze Saison. Auf dem freien Markt werden Wohnungen in Levi im Winter wochenweise vermietet (Yle, 25. Mai 2023), eine Monatsmiete ist also hauptsächlich von Mai bis November möglich. Die kommunale Gesellschaft hat Wohnungen sowohl im Dorf Kittilä als auch in Sirkka bei Levi (Kittilän Vuokratalot).',
     },
     {
       q: 'Wie bewerbe ich mich um eine kommunale Wohnung in Kittilä?',
-      a: 'Mit der elektronischen Bewerbung von Kittilän Vuokratalot Oy auf der Seite der Gesellschaft. Unvollständige Bewerbungen ohne die erforderlichen Anlagen werden nicht bearbeitet. Das Büro liegt im Erdgeschoss des Gemeindehauses, Valtatie 15 (kittila.fi, Kittilän Vuokratalot).',
+      a: 'Mit der Online-Bewerbung von Kittilän Vuokratalot Oy auf der Seite der Gesellschaft. Unvollständige Bewerbungen ohne die erforderlichen Anlagen werden nicht bearbeitet. Das Büro liegt im Erdgeschoss des Gemeindehauses, Valtatie 15 (kittila.fi, Kittilän Vuokratalot).',
     },
   ],
   cta: {

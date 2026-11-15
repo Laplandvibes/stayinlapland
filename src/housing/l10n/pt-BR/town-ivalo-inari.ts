@@ -102,7 +102,7 @@ const copy: HousingPageCopy = {
       kicker: 'O contrato',
       h2: 'A caução e a sua devolução.',
       bullets: [
-        'A caução é de no máximo três meses de aluguel (Lei de Locação Residencial, seção 8).',
+        'A caução é de no máximo três meses de aluguel (Lei de Locação Residencial, artigo 8).',
         'A partir de 1º de outubro de 2026, a caução deve ser devolvida, ou a sua retenção explicada por escrito, em até 14 dias após o fim da locação (Rakli).',
       ],
     },
@@ -114,14 +114,14 @@ const copy: HousingPageCopy = {
     },
     {
       q: 'Há apartamentos para alugar em Saariselkä?',
-      a: 'A empresa municipal também tem apartamentos em Saariselkä, e os empregadores alojam os trabalhadores sazonais por conta própria. No mercado aberto, os apartamentos de Saariselkä são na maioria casas de temporada.',
+      a: 'A empresa municipal também tem apartamentos em Saariselkä, e os empregadores alojam os trabalhadores sazonais por conta própria. No mercado livre, os apartamentos de Saariselkä são na maioria casas de temporada.',
     },
   ],
   cta: {
     partner: 'hotels',
     kicker: 'As primeiras noites',
-    h2: 'Antes das chaves.',
-    lead: 'A busca do parceiro mostra quartos livres em Ivalo e Saariselkä com os preços de hoje.',
+    h2: 'Enquanto as chaves não chegam.',
+    lead: 'A busca do nosso parceiro mostra quartos livres em Ivalo e Saariselkä com os preços de hoje.',
     chips: [
       { label: 'Ivalo', destination: 'Ivalo', sid: 'rentals_ivalo_first_weeks' },
       { label: 'Saariselkä', destination: 'Saariselkä', sid: 'rentals_saariselka_first_weeks' },

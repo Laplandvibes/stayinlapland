@@ -16,7 +16,7 @@ const SOURCES = [
 const copy: HousingPageCopy = {
   metaTitle: 'Affittare casa in Lapponia: Rovaniemi, Levi, Kemi–Tornio',
   metaDescription:
-    'Affitti nella Lapponia finlandese: appartamento a Rovaniemi, Kemi–Tornio, Levi e Inari, affitto al m² (Statistics Finland), deposito e sussidio Kela.',
+    'Affitti a lungo termine nella Lapponia finlandese, da Rovaniemi e Kemi–Tornio a Levi e Inari: affitto al m² (Statistics Finland), deposito e sussidio Kela.',
   breadcrumb: 'Affitti',
   hero: {
     eyebrow: 'Affittare in Lapponia',
@@ -27,7 +27,7 @@ const copy: HousingPageCopy = {
   authorNote:
     'Affitti al m²: statistiche sugli affitti di Statistics Finland, appartamenti in affitto a libero mercato, luglio–settembre 2026. Le società comunali di alloggi sono state verificate sui siti dei comuni e delle società stesse il 15 novembre 2026.',
   intro: [
-    'In Lapponia un appartamento in affitto arriva da una di tre fonti: la società di alloggi del comune, i portali nazionali o i gruppi locali. Si parta dal comune. Le sue società possiedono centinaia di appartamenti, per esempio poco più di 300 a Keminmaa, circa 720 a Sodankylä, 560 a Kemijärvi e oltre 500 a Inari, e si può presentare domanda anche quando al momento non c’è nulla di libero.',
+    'In Lapponia un appartamento in affitto proviene da una di queste tre fonti: la società di alloggi del comune, i portali nazionali o i gruppi locali. Cominci dal comune. Le società comunali possiedono centinaia di appartamenti, per esempio poco più di 300 a Keminmaa, circa 720 a Sodankylä, 560 a Kemijärvi e oltre 500 a Inari, e si può presentare domanda anche quando al momento non c’è nulla di libero.',
     'Il prezzo dipende da dove ci si trasferisce. A Rovaniemi un monolocale di 30 m² costa in media circa 560 € al mese, nel resto della Lapponia meno. Nei villaggi ai piedi dei fjäll l’affitto segue la stagione, quindi per l’inverno chieda prima al datore di lavoro dell’alloggio per il personale.',
   ],
   sections: [
@@ -66,7 +66,7 @@ const copy: HousingPageCopy = {
           title: 'Sodankylä',
           image: { src: '/images/housing-sodankyla-jaamerentie.webp', alt: 'Jäämerentie, la via principale del villaggio di Sodankylä, a settembre' },
           body:
-            'Asentopuulaaki Oy affitta i circa 720 appartamenti del comune, e la ricerca appartamenti della società mostra quelli liberi o in via di liberarsi in ogni momento. Gli edifici più vecchi si affittano a circa 9–12,50 € al m², e Käpyriihi, completato nel 2025, a 18 €.',
+            'Asentopuulaaki Oy affitta i circa 720 appartamenti del comune, e la ricerca appartamenti della società mostra di volta in volta quelli liberi o che si stanno liberando. Gli edifici più vecchi si affittano a circa 9–12,50 € al m², e Käpyriihi, completato nel 2025, a 18 €.',
           href: '/rentals/sodankyla',
           linkLabel: 'Affitti a Sodankylä',
         },
@@ -74,7 +74,7 @@ const copy: HousingPageCopy = {
           title: 'Kittilä e Levi',
           image: { src: '/images/housing-kittila-levi-card-kyla.webp', alt: 'Il villaggio di Levi visto dalla cima del fjäll Levi a novembre, con un lago e altri fjäll sullo sfondo' },
           body:
-            'Kittilän Vuokratalot Oy affitta gli appartamenti comunali di proprietà del comune; l’ufficio è al piano terra del municipio (Valtatie 15). La domanda si presenta online sul sito della società. Gli appartamenti vacanza di Levi passano all’affitto mensile soprattutto da maggio a novembre; in inverno lo stesso appartamento si affitta a settimana.',
+            'Kittilän Vuokratalot Oy affitta gli appartamenti di proprietà del comune; l’ufficio è al piano terra del municipio (Valtatie 15). La domanda si presenta online sul sito della società. Gli appartamenti vacanza di Levi passano all’affitto mensile soprattutto da maggio a novembre; in inverno lo stesso appartamento si affitta a settimana.',
           href: '/rentals/kittila-levi',
           linkLabel: 'Affitti a Kittilä e Levi',
         },
@@ -125,7 +125,7 @@ const copy: HousingPageCopy = {
       note: {
         label: 'Ciò che le statistiche non vedono',
         body:
-          'Gli affitti stagionali nelle stazioni sciistiche e gli affitti brevi ammobiliati non rientrano in questi dati. Vicino al centro di Levi un appartamento di 80 m² in una casa in stile alpino costava 750 € al mese da maggio a novembre, 2.000 € a settimana in alta stagione e 1.650 € al mese tutto l’anno (Yle, 25 maggio 2023): lo stesso appartamento a tre prezzi.',
+          'Gli affitti stagionali nelle stazioni sciistiche e gli affitti brevi ammobiliati non rientrano in questi dati. Vicino al centro di Levi un appartamento di 80 m² in stile alpino costava 750 € al mese da maggio a novembre, 2.000 € a settimana in alta stagione e 1.650 € al mese tutto l’anno (Yle, 25 maggio 2023): lo stesso appartamento a tre prezzi.',
       },
     },
     {
@@ -156,10 +156,10 @@ const copy: HousingPageCopy = {
       h2: 'Cinque cose prima di firmare.',
       bullets: [
         '<strong>Il deposito cauzionale è al massimo di tre mensilità</strong> (Legge sugli affitti abitativi, art. 8). Una o due mensilità sono la norma.',
-        '<strong>Dal 1° ottobre 2026 il deposito deve essere restituito</strong>, o la sua trattenuta motivata per iscritto, entro 14 giorni dalla fine del contratto o dalla riconsegna dell’appartamento (riforma in vigore dal 1° ott 2026, Rakli).',
+        '<strong>Dal 1° ottobre 2026 il deposito deve essere restituito</strong>, o la sua trattenuta motivata per iscritto, entro 14 giorni dalla fine del contratto o dalla riconsegna dell’appartamento (riforma in vigore dal 1° ottobre 2026, Rakli).',
         '<strong>Il preavviso dell’inquilino è di un mese.</strong> Per i contratti stipulati dal 1° ottobre 2026 il preavviso del locatore è di tre mesi, e di quattro mesi se il contratto dura ininterrottamente da almeno due anni (Rakli). I contratti stipulati prima del 1° ottobre 2026 mantengono i vecchi termini di preavviso (Kuluttajaliitto).',
         '<strong>Un contratto a tempo determinato vincola entrambe le parti fino alla scadenza.</strong> Nel lavoro stagionale l’appartamento del datore di lavoro è spesso legato all’impiego: legga che cosa succede se il lavoro finisce prima della stagione.',
-        '<strong>La solvibilità (luottotiedot) viene quasi sempre controllata.</strong> Una segnalazione di insolvenza non esclude l’affitto, ma in quel caso una società comunale di alloggi o un locatore privato è più probabile delle grandi catene.',
+        '<strong>La solvibilità (luottotiedot) viene quasi sempre controllata.</strong> Una segnalazione di insolvenza non esclude l’affitto, ma in quel caso è più facile trovare casa presso una società comunale di alloggi o un locatore privato che presso le grandi catene.',
       ],
     },
     {
@@ -169,7 +169,7 @@ const copy: HousingPageCopy = {
       bullets: [
         'Non versi mai un deposito prima di una visita o di una visita in video in cui si vedano nella stessa inquadratura l’appartamento e le chiavi.',
         'Contratto scritto, con il nome del locatore e il suo codice aziendale (Y-tunnus) o codice personale di identità. Una società comunale di alloggi è il punto di partenza più sicuro se non si conosce il mercato.',
-        'Un affitto breve ammobiliato non è un contratto d’affitto: a un appartamento vacanza può non essere assegnato un indirizzo ufficiale, e la mancanza dell’indirizzo complica i rapporti con le aziende, per esempio nei controlli di solvibilità (Yle, 25 maggio 2023).',
+        'Un affitto breve ammobiliato non è un contratto d’affitto: in un appartamento vacanza potrebbe non riuscire a ottenere un indirizzo ufficiale, e senza indirizzo le pratiche quotidiane, come i controlli di solvibilità, si complicano (Yle, 25 maggio 2023).',
       ],
     },
   ],
@@ -184,11 +184,11 @@ const copy: HousingPageCopy = {
     },
     {
       q: 'Qual è il momento migliore per cercare un appartamento a Rovaniemi?',
-      a: 'Qualsiasi mese tranne agosto e settembre. In quei mesi la DAS non riesce ad alloggiare tutti i richiedenti e i monolocali a libero mercato scarseggiano (Yle, 27 lug 2026). I monolocali affittati per breve periodo durante la stagione invernale tornano sul mercato in primavera.',
+      a: 'Qualsiasi mese tranne agosto e settembre. In quei mesi la DAS non riesce ad alloggiare tutti i richiedenti e i monolocali a libero mercato scarseggiano (Yle, 27 luglio 2026). I monolocali affittati per breve periodo durante la stagione invernale tornano sul mercato in primavera.',
     },
     {
       q: 'Perché un affitto a Levi in inverno è molte volte più alto?',
-      a: 'Perché in alta stagione lo stesso appartamento si affitta a settimana. Nell’esempio di Yle (25 maggio 2023) un appartamento di 80 m² in una casa in stile alpino costava 750 € al mese in estate e 2.000 € a settimana in inverno. L’affitto mensile è possibile da maggio a novembre; per l’inverno chieda al datore di lavoro dell’alloggio per il personale o alla società comunale di Kittilä.',
+      a: 'Perché in alta stagione lo stesso appartamento si affitta a settimana. Nell’esempio di Yle (25 maggio 2023) un appartamento di 80 m² in stile alpino costava 750 € al mese in estate e 2.000 € a settimana in inverno. L’affitto mensile è possibile da maggio a novembre; per l’inverno chieda al datore di lavoro dell’alloggio per il personale o alla società comunale di Kittilä.',
     },
   ],
   cta: {

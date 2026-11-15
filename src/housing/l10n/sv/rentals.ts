@@ -14,7 +14,7 @@ const SOURCES = [
 ] as const;
 
 const copy: HousingPageCopy = {
-  metaTitle: 'Hyra lägenhet i finska Lappland: Rovaniemi, Levi, Torneå',
+  metaTitle: 'Hyra lägenhet i finska Lappland: Rovaniemi, Levi, Kemi–Torneå',
   metaDescription:
     'Långtidshyra i finska Lappland, från Rovaniemi och Kemi–Torneå till Levi och Inari: hyra per m² (Statistikcentralen), deposition och bostadsbidrag från Kela.',
   breadcrumb: 'Hyresbostäder',
@@ -25,9 +25,9 @@ const copy: HousingPageCopy = {
       'Var du hittar en hyresbostad, vad den kostar och hur mycket Kela täcker. Stad för stad.',
   },
   authorNote:
-    'Hyror per m²: Statistikcentralens hyresstatistik, fritt finansierade hyresbostäder, juli–september 2026. De kommunala hyresbolagen är kontrollerade på kommunernas och bolagens egna webbplatser den 15 november 2026.',
+    'Hyror per m²: Statistikcentralens hyresstatistik, fritt finansierade hyresbostäder, juli–september 2026. Uppgifterna om de kommunala hyresbolagen har kontrollerats på kommunernas och bolagens egna webbplatser den 15 november 2026.',
   intro: [
-    'I finska Lappland kommer en hyresbostad från en av tre källor: kommunens eget hyresbolag, de nationella portalerna eller lokala grupper. Börja med kommunen. Deras bolag äger hundratals bostäder, till exempel drygt 300 i Keminmaa, omkring 720 i Sodankylä, 560 i Kemijärvi och över 500 i Inari, och du kan ansöka även när ingenting är ledigt just nu.',
+    'I finska Lappland kommer en hyresbostad från en av tre källor: kommunens eget hyresbolag, de nationella portalerna eller lokala grupper. Börja med kommunen. Kommunernas bolag äger hundratals bostäder, till exempel drygt 300 i Keminmaa, omkring 720 i Sodankylä, 560 i Kemijärvi och över 500 i Inari, och du kan ansöka även när ingenting är ledigt just nu.',
     'Priset beror på var du flyttar. I Rovaniemi kostar en etta på 30 m² i genomsnitt cirka 560 € i månaden, på andra håll i Lappland mindre. I fjällbyarna följer hyran säsongen, så för vintern bör du först fråga din arbetsgivare om personalbostad.',
   ],
   sections: [
@@ -58,13 +58,13 @@ const copy: HousingPageCopy = {
           title: 'Kemijärvi',
           image: { src: '/images/housing-kemijarvi-card-kerrostalo.webp', alt: 'Ett flerbostadshus och en gammal tall i Kemijärvi en julikväll' },
           body:
-            'Stadens två fastighetsbolag äger 560 hyresbostäder, och budgeten siktar på att 80–85 procent av dem ska vara uthyrda, så tomma bostäder finns. En ansökan gäller i fyra månader. Radhusen i Vuostimo ligger 14 km från Pyhätunturi.',
+            'Stadens två fastighetsbolag äger 560 hyresbostäder, och budgeten siktar på att 80–85 procent av dem ska vara uthyrda, så det finns faktiskt lediga bostäder. En ansökan gäller i fyra månader. Radhusen i Vuostimo ligger 14 km från Pyhätunturi.',
           href: '/rentals/kemijarvi',
           linkLabel: 'Hyresbostäder i Kemijärvi',
         },
         {
           title: 'Sodankylä',
-          image: { src: '/images/housing-sodankyla-jaamerentie.webp', alt: 'Jäämerentie, huvudgatan i Sodankylä by, i september' },
+          image: { src: '/images/housing-sodankyla-jaamerentie.webp', alt: 'Jäämerentie, huvudgatan i byn Sodankylä, i september' },
           body:
             'Asentopuulaaki Oy hyr ut kommunens omkring 720 bostäder, och bolagets bostadssökning visar de bostäder som är lediga eller blir lediga just nu. Äldre hus hyrs ut för cirka 9–12,50 € per m², och Käpyriihi, som stod klart 2025, för 18 €.',
           href: '/rentals/sodankyla',
@@ -72,9 +72,9 @@ const copy: HousingPageCopy = {
         },
         {
           title: 'Kittilä och Levi',
-          image: { src: '/images/housing-kittila-levi-card-kyla.webp', alt: 'Levi by sedd från toppen av Levifjället i november, med en sjö och fjäll bortom' },
+          image: { src: '/images/housing-kittila-levi-card-kyla.webp', alt: 'Byn Levi sedd från toppen av Levifjället i november, med en sjö och fjäll i bakgrunden' },
           body:
-            'Kittilän Vuokratalot Oy hyr ut kommunens egna hyresbostäder; kontoret ligger på nedre botten i kommunhuset (Valtatie 15). Ansökan görs på nätet på bolagets webbplats. Levis semesterlägenheter går ut på månadshyra främst från maj till november; på vintern hyrs samma lägenhet ut per vecka.',
+            'Kittilän Vuokratalot Oy hyr ut kommunens egna hyresbostäder; kontoret ligger i kommunhusets bottenvåning (Valtatie 15). Ansökan görs på nätet på bolagets webbplats. Levis semesterlägenheter hyrs ut per månad främst från maj till november; på vintern hyrs samma lägenhet ut per vecka.',
           href: '/rentals/kittila-levi',
           linkLabel: 'Hyresbostäder i Kittilä och Levi',
         },
@@ -97,7 +97,7 @@ const copy: HousingPageCopy = {
         '<a href="https://www.vuokraovi.com/vuokra-asunnot/rovaniemi" target="_blank" rel="noopener">Vuokraovi</a>: enbart hyresbostäder.',
         '<a href="https://qasa.fi" target="_blank" rel="noopener">Qasa</a>: listas av Rovaniemi stad; avtalet skrivs under elektroniskt på plattformen.',
         '<a href="https://www.tori.fi" target="_blank" rel="noopener">Tori</a>: en annonssajt som också har hyresbostäder. Läs nedan vad du bör kontrollera innan du betalar.',
-        'Facebook-grupper: Levi housing search, Kemi–Keminmaa och Sodankylä–Inari–Utsjoki. Den snabbaste kanalen i fjällbyarna, men ingen står för att annonserna stämmer.',
+        'Facebook-grupper: bostadssökning i Levi, Kemi–Keminmaa och Sodankylä–Inari–Utsjoki. Den snabbaste kanalen i fjällbyarna, men ingen står för att annonserna stämmer.',
       ],
     },
     {
@@ -147,7 +147,7 @@ const copy: HousingPageCopy = {
         foot: 'Kela, allmänt bostadsbidrag 2026. Ett bidrag under 15 € betalas inte ut.',
       },
       paras: [
-        'Taket betyder att hyran för ett hushåll med en person i Rovaniemi räknas upp till 447 €, även om hyran är 600 €. Resten betalar du själv. Inkomsterna minskar bidraget genom grundomkostnaden; Kelas räknare visar ditt eget fall.',
+        'Taket betyder att hyran för ett hushåll med en person i Rovaniemi räknas upp till 447 €, även om hyran är 600 €. Resten betalar du själv. Inkomsterna minskar bidraget genom grundsjälvrisken; Kelas räknare visar ditt eget fall.',
       ],
     },
     {
@@ -156,10 +156,10 @@ const copy: HousingPageCopy = {
       h2: 'Fem saker innan du skriver under.',
       bullets: [
         '<strong>Depositionen är högst tre månadshyror</strong> (lagen om hyra av bostadslägenhet, 8 §). En eller två månader är vanligt.',
-        '<strong>Från och med den 1 oktober 2026 ska depositionen betalas tillbaka</strong>, eller så ska det skriftligen förklaras varför den hålls kvar, inom 14 dagar efter att hyresförhållandet upphört eller bostaden lämnats tillbaka (reformen träder i kraft den 1 oktober 2026, Rakli).',
+        '<strong>Från och med den 1 oktober 2026 ska depositionen betalas tillbaka</strong>, eller så ska det skriftligen förklaras varför den hålls kvar, inom 14 dagar efter att hyresförhållandet upphört eller bostaden lämnats tillbaka (reformen i kraft sedan den 1 oktober 2026, Rakli).',
         '<strong>Hyresgästens uppsägningstid är en månad.</strong> För avtal som ingås den 1 oktober 2026 eller senare är hyresvärdens uppsägningstid tre månader, och fyra månader om hyresförhållandet har pågått oavbrutet i minst två år (Rakli). Avtal som ingåtts före den 1 oktober 2026 behåller de gamla uppsägningstiderna (Konsumentförbundet).',
         '<strong>Ett tidsbundet avtal binder båda parter till slutet.</strong> I säsongsarbete är arbetsgivarens bostad ofta knuten till jobbet: läs vad som händer om jobbet tar slut före säsongen.',
-        '<strong>Kreditupplysning tas nästan alltid.</strong> En betalningsanmärkning utesluter inte att du kan hyra, men ett kommunalt hyresbolag eller en privat hyresvärd är då troligare än de stora kedjorna.',
+        '<strong>Kreditupplysning tas nästan alltid.</strong> En betalningsanmärkning utesluter inte att du kan hyra, men då är chansen större hos ett kommunalt hyresbolag eller en privat hyresvärd än hos de stora kedjorna.',
       ],
     },
     {
@@ -169,14 +169,14 @@ const copy: HousingPageCopy = {
       bullets: [
         'Betala aldrig deposition före en visning eller en videovisning där du ser både bostaden och nycklarna i samma bild.',
         'Skriftligt avtal, med hyresvärdens namn och FO-nummer eller personbeteckning på. Ett kommunalt hyresbolag är den tryggaste starten om du inte känner marknaden.',
-        'En möblerad korttidsuthyrning är inte ett hyresförhållande: en semesterlägenhet kanske inte får en officiell adress, och den saknade adressen försvårar kontakter med företag, till exempel vid kreditprövning (Yle, 25 maj 2023).',
+        'En möblerad korttidsuthyrning är inte ett hyresförhållande: en semesterlägenhet kanske inte får en officiell adress, och den saknade adressen försvårar kontakter med företag, till exempel vid kreditupplysning (Yle, 25 maj 2023).',
       ],
     },
   ],
   faqs: [
     {
       q: 'Hur mycket kostar en etta i Rovaniemi?',
-      a: 'Enligt Statistikcentralen var genomsnittshyran för en fritt finansierad etta i Rovaniemi 18,63 € per m² i juli–september 2026 och 20,14 € per m² i nya hyresavtal. En etta på 30 m² kostar därmed cirka 560–600 € i månaden före el.',
+      a: 'Enligt Statistikcentralen var genomsnittshyran för en fritt finansierad etta i Rovaniemi 18,63 € per m² i juli–september 2026 och 20,14 € per m² i nya hyresavtal. En etta på 30 m² kostar därmed cirka 560–600 € i månaden exklusive el.',
     },
     {
       q: 'Kan jag hyra i Lappland utan finsk kreditupplysning?',
@@ -184,11 +184,11 @@ const copy: HousingPageCopy = {
     },
     {
       q: 'När är det bäst att söka bostad i Rovaniemi?',
-      a: 'Bäst är alla månader utom augusti och september. Då kan DAS inte ge bostad åt alla sökande, och fritt finansierade ettor är ont om (Yle, 27 juli 2026). Ettor som hyrts ut kortvarigt för vintersäsongen kommer tillbaka på marknaden på våren.',
+      a: 'Bäst är alla månader utom augusti och september. Då kan DAS inte ge bostad åt alla sökande, och det är ont om fritt finansierade ettor (Yle, 27 juli 2026). Ettor som hyrts ut kortvarigt för vintersäsongen kommer tillbaka på marknaden på våren.',
     },
     {
       q: 'Varför är hyran i Levi flera gånger högre på vintern?',
-      a: 'Därför att samma lägenhet hyrs ut per vecka under högsäsongen. I Yles exempel (25 maj 2023) kostade en lägenhet på 80 m² i ett fjällhus 750 € i månaden på sommaren och 2 000 € i veckan på vintern. Månadshyra är möjlig från maj till november; för vintern, fråga din arbetsgivare om personalbostad eller det kommunala bolaget i Kittilä.',
+      a: 'Därför att samma lägenhet hyrs ut per vecka under högsäsongen. I Yles exempel (25 maj 2023) kostade en lägenhet på 80 m² i ett fjällhus 750 € i månaden på sommaren och 2 000 € i veckan på vintern. Månadshyra är möjlig från maj till november. Inför vintern kan du fråga din arbetsgivare om personalbostad eller vända dig till det kommunala bolaget i Kittilä.',
     },
   ],
   cta: {

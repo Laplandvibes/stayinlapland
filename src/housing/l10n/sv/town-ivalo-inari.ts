@@ -18,14 +18,14 @@ const copy: HousingPageCopy = {
     eyebrow: 'Enare kommun, 7 244 invånare',
     title: 'Hyra bostad i Ivalo och Inari.',
     subtitle:
-      'Finlands nordligaste hyresmarknad: ett kommunalt bolag, några privata hyresvärdar och Saariselkäs säsong. Var du börjar.',
+      'Finlands nordligaste hyresmarknad: ett kommunalt bolag, några privata hyresvärdar och Saariselkäs säsong. Var du ska börja.',
   },
   authorNote:
     'Inarin Vuokra-asunnot Oy och de privata hyresvärdarna från Enare kommuns egen bostadssida, folkmängd från Statistikcentralen, hyror per m² från Statistikcentralen (landskapet Lappland 2026Q3). Kontrollerat den 15 november 2026.',
   intro: [
-    'Enare kommun har 7 244 invånare (Statistikcentralen, 31 dec 2025), och enligt kommunen har intresset för att bo där vuxit, varför den har sammanställt en lista över hyresvärdar på sin sida (inari.fi).',
+    'Enare kommun har 7 244 invånare (Statistikcentralen, 31 dec 2025), och enligt kommunen har intresset för att bo där vuxit. Därför har kommunen sammanställt en lista över hyresvärdar på sin sida (inari.fi).',
     'Det kommunala bolaget Inarin Vuokra-asunnot Oy hyr ut över 500 bostäder i Ivalo, Inari, Saariselkä, Nellim och Sevettijärvi, från ettor till familjebostäder. De privata hyresvärdarna på kommunens lista är Bilto Oy, Ivalon vuokra-asunnot, IvaloCenter, Rakennusliike Holmberg Oy och Uni Kodit (inari.fi).',
-    'Statistikcentralen publicerar ingen separat hyressiffra för Inari, så nedan visas siffran för landskapet Lappland. Boende för Saariselkäs säsongsarbetare har en egen sida.',
+    'Statistikcentralen publicerar ingen separat hyressiffra för Enare kommun, så nedan visas siffran för landskapet Lappland. Boende för Saariselkäs säsongsarbetare har en egen sida.',
   ],
   sections: [
     {
@@ -57,7 +57,7 @@ const copy: HousingPageCopy = {
         },
         {
           title: 'För Saariselkäs säsongsarbetare',
-          body: 'Arbetsgivarna i Saariselkä inkvarterar också personal själva, och det kommunala bolaget har bostäder i Saariselkä. Fråga om boende vid intervjun; hela bilden finns på sidan för säsongsarbetare.',
+          body: 'Arbetsgivarna i Saariselkä inkvarterar också personal själva, och det kommunala bolaget har bostäder i Saariselkä. Fråga om boende vid intervjun; mer om det finns på sidan för säsongsarbetare.',
           href: '/seasonal-worker-housing',
           linkLabel: 'Boende för säsongsarbetare',
           event: 'seasonal_page',
@@ -77,13 +77,13 @@ const copy: HousingPageCopy = {
           ['Treor och större', '11,08', '13,98'],
           ['Alla bostäder', '13,14', '15,99'],
         ],
-        foot: 'Statistikcentralen, hyror 2026Q3, tabell 15fa. Ingen separat siffra publiceras för Inari.',
+        foot: 'Statistikcentralen, hyror 2026Q3, tabell 15fa. Ingen separat siffra publiceras för Enare.',
       },
     },
     {
       id: 'housing-allowance',
       kicker: 'Bostadsbidrag från Kela',
-      h2: 'Inari hör till Kelas ”övriga kommuner”.',
+      h2: 'Enare hör till Kelas ”övriga kommuner”.',
       table: {
         caption: 'Högsta boendeutgifter 2026, €/månad, Kelas grupp ”övriga kommuner”',
         head: ['Hushållets storlek', 'Högsta boendeutgifter'],
@@ -120,7 +120,7 @@ const copy: HousingPageCopy = {
   cta: {
     partner: 'hotels',
     kicker: 'De första nätterna',
-    h2: 'Innan nycklarna.',
+    h2: 'Innan du får nycklarna.',
     lead: 'Partnersökningen visar lediga rum i Ivalo och Saariselkä till dagens priser.',
     chips: [
       { label: 'Ivalo', destination: 'Ivalo', sid: 'rentals_ivalo_first_weeks' },

@@ -35,10 +35,10 @@ const copy: HousingPageCopy = {
       kicker: 'La primera semana',
       h2: 'Cuatro notificaciones, un plazo.',
       bullets: [
-        '<strong>Notificación de cambio de domicilio a DVV</strong>: como pronto un mes antes del día de la mudanza y como tarde una semana después (DVV). La misma notificación llega a Posti. Los servicios municipales (guardería, escuela, centro de salud) dependen del municipio donde esté empadronado, así que hágala enseguida.',
+        '<strong>Notificación de cambio de domicilio a DVV</strong>: como pronto un mes antes del día de la mudanza y como tarde una semana después (DVV). La misma notificación llega a Posti. Los servicios municipales (guardería, escuela, centro de salud) dependen del municipio en el que esté registrado su domicilio, así que hágala enseguida.',
         '<strong>Contrato de electricidad.</strong> El precio total de la electricidad para un hogar con un consumo de 2500–4999 kWh al año fue de media 23,7 céntimos por kWh en toda Finlandia en junio de 2026, y de 14,9 céntimos en la clase de más de 15 000 kWh, a la que pertenece una casa con calefacción eléctrica (Statistics Finland). La temporada de calefacción de Laponia es larga, así que estime su consumo por lo alto.',
         '<strong>La atención sanitaria</strong> corre a cargo del condado de servicios de bienestar de Laponia (Lapha). La atención no urgente pasa por su centro de salud local; busque el más cercano en la web del condado y regístrese en Omakanta.',
-        '<strong>Internet.</strong> Pregunte a la comunidad de propietarios o al arrendador por la fibra antes de firmar. En las zonas poco pobladas un router móvil suele ser la única opción, y quien trabaje a distancia debería probar antes la conexión en el piso.',
+        '<strong>Internet.</strong> Antes de firmar, pregunte a la administración del edificio o al arrendador si hay fibra. En las zonas poco pobladas un router móvil suele ser la única opción, y quien trabaje a distancia debería probar antes la conexión en el apartamento.',
       ],
     },
     {
@@ -64,8 +64,8 @@ const copy: HousingPageCopy = {
       h2: 'La guardería se paga según los ingresos; la escuela es gratuita.',
       bullets: [
         '<strong>Las tarifas de educación infantil</strong> dependen de los ingresos familiares: desde el 1 de agosto de 2026 la tarifa máxima es de 335 € al mes por niño y la mínima que se cobra, de 32 €. El segundo hijo paga como máximo el 40 % de la tarifa del más pequeño, es decir, como máximo 134 € (Asociación de Municipios de Finlandia).',
-        '<strong>La educación preprimaria y básica</strong> son gratuitas, con material escolar y comidas incluidos (Ley de educación básica, sección 31). El transporte escolar se organiza cuando el trayecto supera los cinco kilómetros (sección 32), y en los municipios pequeños forma parte de la vida cotidiana.',
-        'La plaza de guardería se solicita al municipio, y el municipio lo determina la dirección registrada en DVV. Por eso la notificación de domicilio va primero, no la última.',
+        '<strong>La educación preprimaria y básica</strong> son gratuitas, con material escolar y comidas incluidos (Ley de educación básica, artículo 31). El transporte escolar se organiza cuando el trayecto supera los cinco kilómetros (artículo 32), y en los municipios pequeños forma parte de la vida cotidiana.',
+        'La plaza de guardería se solicita al municipio, y el municipio lo determina la dirección registrada en DVV. Por eso la notificación de domicilio va primero, no al final.',
       ],
     },
     {
@@ -85,7 +85,7 @@ const copy: HousingPageCopy = {
         'Tipo de calefacción y quién la paga: la calefacción urbana suele estar incluida en el alquiler; la calefacción eléctrica va en su propia factura.',
         'Una plaza de aparcamiento con poste de calefacción y un trastero para el equipo de invierno: esquís, trineo, neumáticos de invierno.',
         'Distancia a la tienda, al centro de salud y a la escuela más cercanos, y si en invierno hay autobús hasta allí.',
-        'La fianza y su devolución: como máximo tres meses de alquiler (Ley de arrendamientos de vivienda, sección 8) y, desde el 1 de octubre de 2026, devolución en un plazo de 14 días desde el fin del contrato (Rakli).',
+        'La fianza y su devolución: como máximo tres meses de alquiler (Ley de arrendamientos de vivienda, artículo 8) y, desde el 1 de octubre de 2026, devolución en un plazo de 14 días desde el fin del contrato (Rakli).',
       ],
     },
   ],
@@ -106,9 +106,9 @@ const copy: HousingPageCopy = {
   cta: {
     partner: 'cars',
     kicker: 'Un coche para las primeras semanas',
-    h2: 'Las visitas a pisos, la mudanza, la compra.',
+    h2: 'Visitas, mudanza, compras.',
     lead:
-      'Su propio coche suele llegar más tarde. Un coche de alquiler desde el aeropuerto cubre las visitas y las primeras semanas; el buscador de socios compara las empresas de alquiler de una vez.',
+      'Su propio coche suele llegar más tarde. Un coche de alquiler desde el aeropuerto cubre las visitas y las primeras semanas; el buscador de nuestro socio compara las empresas de alquiler de una sola vez.',
     chips: [
       { label: 'Rovaniemi (RVN)', destination: 'RVN', sid: 'moving_car_rvn' },
       { label: 'Kittilä (KTT)', destination: 'KTT', sid: 'moving_car_ktt' },

@@ -18,14 +18,14 @@ const copy: HousingPageCopy = {
     eyebrow: 'Havslapplands kust',
     title: 'Hyra bostad i Kemi, Torneå och Keminmaa.',
     subtitle:
-      'Tvillingstäderna vid kusten, där de kommunala hyresbolagen har hundratals bostäder och ansökningarna görs på nätet. Var du börjar och vad hyran kostar.',
+      'Tvillingstäderna vid kusten, där de kommunala hyresbolagen har hundratals bostäder och ansökningarna görs på nätet. Var du ska börja och vad hyran kostar.',
   },
   authorNote:
     'Antalet bostäder i hyresbolagen från kommunernas egna sidor för Kemi, Torneå och Keminmaa, ansökningsvillkor från bolagens egna sidor, hyror per m² från Statistikcentralen (landskapet Lappland 2026Q3). Kontrollerat den 15 november 2026.',
   intro: [
     'Kemi har 19 339 invånare, Torneå 20 823 och Keminmaa 7 576 (Statistikcentralen, 31 dec 2025). De tre kommunerna gränsar till varandra, så bostaden kan ligga i en annan kommun än jobbet.',
-    'De kommunala hyresbolagen är första adressen: Kemis kommunala bostäder drivs av Kiinteistö Oy Itätuuli (kemi.fi), stadens största hyresvärd, med bostäder inom fem kilometer från centrum (itatuuli.fi). Keminmaan Vuokra-asunnot Oy har 18 fastigheter med drygt 300 bostäder (keminmaa.fi). Varje bolag har sin egen webbansökan. I Torneå förvaltas stadens bostäder av Tornion Krunni Oy, dit Tornion Vuokra-asunnot Oy hör (tornio.fi).',
-    'Statistikcentralens aktuella hyrestabell har ingen separat rad för Kemi eller Torneå, så nedan visas siffran för landskapet Lappland. Rovaniemis siffror finns på dess egen sida.',
+    'De kommunala hyresbolagen är det första stället att vända sig till: Kemis kommunala bostäder drivs av Kiinteistö Oy Itätuuli (kemi.fi), stadens största hyresvärd, med bostäder inom fem kilometer från centrum (itatuuli.fi). Keminmaan Vuokra-asunnot Oy har 18 fastigheter med drygt 300 bostäder (keminmaa.fi). Varje bolag har sin egen webbansökan. I Torneå förvaltas stadens bostäder av Tornion Krunni Oy, dit Tornion Vuokra-asunnot Oy hör (tornio.fi).',
+    'Statistikcentralens aktuella hyrestabell har ingen separat rad för Kemi eller Torneå, så nedan visas siffran för landskapet Lappland. Rovaniemis siffror finns på stadens egen sida.',
   ],
   sections: [
     {
@@ -44,7 +44,7 @@ const copy: HousingPageCopy = {
         foot: 'Statistikcentralen, hyror 2026Q3, tabell 15fa. Landskapssiffran inkluderar Rovaniemi, så nivån i Kemi–Torneå ligger sannolikt under den; den aktuella tabellen visar den inte separat.',
       },
       paras: [
-        '<strong>Exempel vid landskapsgenomsnittet:</strong> en etta på 30 m² cirka 520 € i månaden (17,25 × 30); en tvåa på 50 m² cirka 640 € (12,87 × 50); en trea på 75 m² cirka 830 € (11,08 × 75).',
+        '<strong>Exempel med landskapets genomsnittshyra:</strong> en etta på 30 m² cirka 520 € i månaden (17,25 × 30); en tvåa på 50 m² cirka 640 € (12,87 × 50); en trea på 75 m² cirka 830 € (11,08 × 75).',
       ],
     },
     {
@@ -78,7 +78,7 @@ const copy: HousingPageCopy = {
           event: 'kemi_city',
         },
         {
-          title: 'Keminmaa: Keminmaan Vuokra-asunnot Oy',
+          title: 'Keminmaan Vuokra-asunnot Oy',
           body: 'Det kommunägda bostadsbolaget: 18 fastigheter med drygt 300 bostäder, och vatten och uppvärmning ingår i hyran. Bolagets egen webbansökan gäller i tre månader, och depositionen är en månadshyra.',
           href: 'https://www.keminmaanvuokra-asunnot.fi/asunnonhaku.html',
           linkLabel: 'Keminmaan Vuokra-asunnot: Så ansöker du',
@@ -93,7 +93,7 @@ const copy: HousingPageCopy = {
         },
         {
           title: 'Oikotie och Vuokraovi',
-          body: 'Privata annonser och förmedlarannonser. Sök Kemi, Torneå och Keminmaa som separata kommuner: det är tre skilda kommunsökningar.',
+          body: 'Privata annonser och förmedlarannonser. Sök på Kemi, Torneå och Keminmaa var för sig: på portalerna är varje kommun en egen sökning.',
           href: 'https://asunnot.oikotie.fi/vuokra-asunnot/kemi',
           linkLabel: 'Oikotie: hyresbostäder i Kemi',
           event: 'oikotie',

@@ -16,7 +16,7 @@ const copy: HousingPageCopy = {
   breadcrumb: 'Långa vistelser',
   hero: {
     eyebrow: 'Från en månad till en vinter',
-    title: 'En månad i Lappland.',
+    title: 'En månad i finska Lappland.',
     subtitle:
       'En möblerad hyreslägenhet, en stuga per vecka eller boende från din arbetsgivare: tre sätt att bo i Lappland från en månad till en hel vinter, och vad varje avtal kräver av dig.',
   },
@@ -57,7 +57,7 @@ const copy: HousingPageCopy = {
       bullets: [
         '<strong>Ett tidsbundet hyresavtal gäller till det datum som står i det.</strong> Hyresgästen kan inte säga upp det under avtalstiden. Det kan upphöra tidigare bara genom överenskommelse med hyresvärden eller i de särskilda situationer som anges i lagen (Konsumentförbundet, hyreslagen).',
         '<strong>Om du inte vet hur länge du stannar</strong> bör du be om ett tillsvidareavtal i stället. Hyresgästen kan säga upp det, och hyresgästens uppsägningstid ändras inte i reformen den 1 oktober 2026 (Rakli).',
-        '<strong>Korta avtal efter varandra:</strong> om samma hyresgäst får ett tidsbundet avtal på tre månader eller kortare mer än två gånger i följd, räknas avtalet som tillsvidare, oavsett vilket slutdatum det har.',
+        '<strong>Korta avtal efter varandra:</strong> om samma hyresgäst får ett tidsbundet avtal på tre månader eller kortare mer än två gånger i följd, räknas avtalet som ett tillsvidareavtal, oavsett vilket slutdatum det har.',
         '<strong>Hyreslagen täcker inte allt.</strong> Den gäller en lägenhet som hyrs för boende, men inte logiföretagens verksamhet (lagen om hyra av bostadslägenhet, 1 och 2 §). Fråga innan du skriver under om du får ett hyresavtal för bostad eller ett logiavtal.',
         '<strong>Depositionen</strong> är högst tre månadshyror. Från och med 1 oktober 2026 ska den betalas tillbaka, eller så ska det meddelas att den hålls kvar, inom 14 dagar efter att hyresförhållandet upphört.',
       ],
@@ -67,7 +67,7 @@ const copy: HousingPageCopy = {
       kicker: 'Adressanmälan',
       h2: 'Tre månader eller mer: anmäl din adress.',
       paras: [
-        'Enligt Digitaliserings- och befolkningsdatabyrån anmäler du flytten så fort din bostadsadress ändras och vistelsen varar minst tre månader. Om du återvänder till samma permanenta adress inom ett år är flytten tillfällig och din permanenta adress gäller fortfarande.',
+        'Enligt Digitaliserings- och befolkningsdatabyrån ska du alltid göra flyttanmälan när din bostadsadress ändras och vistelsen varar minst tre månader. Om du återvänder till samma permanenta adress inom ett år är flytten tillfällig och din permanenta adress gäller fortfarande.',
         'Anmälan görs tidigast en månad före flyttdagen och senast en vecka efter flytten. Vid en permanent flytt finns resten, som vinterdäck, elavtal och din hälsocentral, i <a href="/moving-to-lapland/">flyttchecklistan</a>.',
       ],
     },

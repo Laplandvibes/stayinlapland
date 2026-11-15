@@ -18,12 +18,12 @@ const copy: HousingPageCopy = {
     eyebrow: 'Gemeente Inari, 7.244 inwoners',
     title: 'Huren in Ivalo en Inari.',
     subtitle:
-      'De noordelijkste huurmarkt van Finland: één gemeentelijk bedrijf, een paar particuliere verhuurders en het seizoen in Saariselkä. Waar u begint.',
+      'De noordelijkste huurmarkt van Finland: één gemeentelijk bedrijf, een paar particuliere verhuurders en het seizoen in Saariselkä. Waar u het best begint.',
   },
   authorNote:
     'Inarin Vuokra-asunnot Oy en de particuliere verhuurders van de eigen woonpagina van de gemeente Inari, bevolking van Statistics Finland, huren per m² van Statistics Finland (regio Lapland 2026Q3). Gecontroleerd op 15 november 2026.',
   intro: [
-    'De gemeente Inari heeft 7.244 inwoners (Statistics Finland, 31 december 2025), en volgens de gemeente is de belangstelling om er te wonen gegroeid, waarom ze op haar pagina een lijst met verhuurders heeft samengesteld (inari.fi).',
+    'De gemeente Inari heeft 7.244 inwoners (Statistics Finland, 31 december 2025), en volgens de gemeente is de belangstelling om er te wonen gegroeid. Daarom heeft ze op haar pagina een lijst met verhuurders samengesteld (inari.fi).',
     'Het gemeentelijke bedrijf Inarin Vuokra-asunnot Oy verhuurt meer dan 500 woningen in Ivalo, Inari, Saariselkä, Nellim en Sevettijärvi, van studio’s tot gezinswoningen. De particuliere verhuurders op de lijst van de gemeente zijn Bilto Oy, Ivalon vuokra-asunnot, IvaloCenter, Rakennusliike Holmberg Oy en Uni Kodit (inari.fi).',
     'Statistics Finland publiceert geen apart huurcijfer voor Inari, dus hieronder staat het regionale cijfer voor Lapland. Huisvesting voor seizoenswerkers in Saariselkä heeft een eigen pagina.',
   ],
@@ -36,7 +36,7 @@ const copy: HousingPageCopy = {
       cards: [
         {
           title: 'Inarin Vuokra-asunnot Oy',
-          body: 'Het gemeentelijke woningbedrijf: meer dan 500 woningen in Ivalo, Inari, Saariselkä, Nellim en Sevettijärvi, met basisvoorzieningen op korte afstand. Vacatures en aanvragen op de eigen site van het bedrijf.',
+          body: 'Het gemeentelijke woningbedrijf: meer dan 500 woningen in Ivalo, Inari, Saariselkä, Nellim en Sevettijärvi, met basisvoorzieningen op korte afstand. Vrije woningen en aanvragen op de eigen site van het bedrijf.',
           href: 'https://inarinvuokra-asunnot.fi/',
           linkLabel: 'inarinvuokra-asunnot.fi',
           event: 'inari_company',
@@ -57,7 +57,7 @@ const copy: HousingPageCopy = {
         },
         {
           title: 'Voor seizoenswerkers in Saariselkä',
-          body: 'Werkgevers in Saariselkä huisvesten hun personeel ook zelf, en het gemeentelijke bedrijf heeft woningen in Saariselkä. Vraag tijdens het gesprek naar huisvesting; het hele plaatje staat op de pagina voor seizoenswerkers.',
+          body: 'Werkgevers in Saariselkä huisvesten hun personeel ook zelf, en het gemeentelijke bedrijf heeft woningen in Saariselkä. Vraag tijdens het gesprek naar huisvesting; meer daarover op de pagina voor seizoenswerkers.',
           href: '/seasonal-worker-housing',
           linkLabel: 'Huisvesting voor seizoenswerkers',
           event: 'seasonal_page',
@@ -69,7 +69,7 @@ const copy: HousingPageCopy = {
       kicker: 'Wat huur kost',
       h2: 'Regionale huren in Lapland per m², juli–september 2026.',
       table: {
-        caption: 'Gemiddelde huur €/m²/maand, vrije-sectorhuurwoningen, 2026Q3',
+        caption: 'Gemiddelde huur €/m²/maand, vrijesectorhuurwoningen, 2026Q3',
         head: ['', 'Lapland (regio)', 'Heel Finland'],
         rows: [
           ['Studio’s', '17,25', '20,49'],

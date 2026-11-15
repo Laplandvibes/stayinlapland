@@ -15,7 +15,7 @@ const copy: HousingPageCopy = {
     'Affittare a Kemi, Tornio e Keminmaa sulla costa della Lapponia: società comunali di alloggi come Itätuuli e Tornion Krunni, agenzie private e sostegno di Kela.',
   breadcrumb: 'Kemi e Tornio',
   hero: {
-    eyebrow: 'La costa della Lapponia del mare (Meri-Lappi)',
+    eyebrow: 'La costa della Lapponia marittima',
     title: 'Affitti a Kemi, Tornio e Keminmaa.',
     subtitle:
       'Le città gemelle della costa, dove le società comunali di alloggi possiedono centinaia di appartamenti e le domande si presentano online. Da dove cominciare e quanto costa l’affitto.',
@@ -23,7 +23,7 @@ const copy: HousingPageCopy = {
   authorNote:
     'Numero di appartamenti delle società di alloggi dalle pagine dei comuni di Kemi, Tornio e Keminmaa, condizioni di domanda dalle pagine delle società, affitti al m² da Statistics Finland (regione della Lapponia 2026T3). Verificato il 15 novembre 2026.',
   intro: [
-    'Kemi ha 19.339 abitanti, Tornio 20.823 e Keminmaa 7.576 (Statistics Finland, 31 dic 2025). I tre comuni confinano tra loro, quindi l’appartamento può trovarsi in un comune diverso da quello del lavoro.',
+    'Kemi ha 19.339 abitanti, Tornio 20.823 e Keminmaa 7.576 (Statistics Finland, 31 dicembre 2025). I tre comuni confinano tra loro, quindi l’appartamento può trovarsi in un comune diverso da quello del lavoro.',
     'Le società comunali di alloggi sono il primo indirizzo: gli appartamenti comunali di Kemi sono gestiti da Kiinteistö Oy Itätuuli (kemi.fi), il maggiore fornitore di alloggi in affitto della città, con appartamenti entro cinque chilometri dal centro (itatuuli.fi). Keminmaan Vuokra-asunnot Oy ha 18 immobili con poco più di 300 appartamenti (keminmaa.fi). Ogni società ha la propria domanda online. A Tornio gli appartamenti della città sono gestiti da Tornion Krunni Oy, che comprende Tornion Vuokra-asunnot Oy (tornio.fi).',
     'L’attuale tabella degli affitti di Statistics Finland non ha una riga separata per Kemi o Tornio, quindi qui sotto è riportato il dato regionale della Lapponia. I dati di Rovaniemi sono nella sua pagina.',
   ],
@@ -78,14 +78,14 @@ const copy: HousingPageCopy = {
           event: 'kemi_city',
         },
         {
-          title: 'Keminmaa: Keminmaan Vuokra-asunnot Oy',
+          title: 'Keminmaan Vuokra-asunnot Oy',
           body: 'La società di alloggi di proprietà del comune: 18 immobili con poco più di 300 appartamenti, e acqua e riscaldamento sono compresi nell’affitto. La sua domanda online ha una validità di tre mesi, e il deposito è pari a una mensilità.',
           href: 'https://www.keminmaanvuokra-asunnot.fi/asunnonhaku.html',
           linkLabel: 'Keminmaan Vuokra-asunnot: come fare domanda',
           event: 'keminmaa',
         },
         {
-          title: 'Tornio: la società Tornion Krunni Oy',
+          title: 'Tornio: Tornion Krunni Oy',
           body: 'Gestisce Tornion Vuokra-asunnot Oy, Tornion Oppilasasuntola Oy e Tornion Palveluasunnot Oy; l’unità dei servizi immobiliari della città si occupa anche degli appartamenti che la città possiede direttamente. Richieste sull’alloggio per telefono, e la pagina della città rimanda anche a locatori privati e agenzie.',
           href: 'https://www.tornio.fi/asuminen-ja-ymparisto/asuminen/vuokra-asunnot/',
           linkLabel: 'tornio.fi: Alloggi in affitto',
@@ -93,7 +93,7 @@ const copy: HousingPageCopy = {
         },
         {
           title: 'Oikotie e Vuokraovi',
-          body: 'Annunci di privati e agenzie. Cerchi Kemi, Tornio e Keminmaa come comuni separati: sono tre ricerche comunali distinte.',
+          body: 'Annunci di privati e agenzie. Cerchi Kemi, Tornio e Keminmaa uno alla volta: sui portali ogni comune è una ricerca a sé.',
           href: 'https://asunnot.oikotie.fi/vuokra-asunnot/kemi',
           linkLabel: 'Oikotie: affitti a Kemi',
           event: 'oikotie',

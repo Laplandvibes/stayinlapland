@@ -13,7 +13,7 @@ const SOURCES = [
 ] as const;
 
 const copy: HousingPageCopy = {
-  metaTitle: 'Wohnen bei Saisonarbeit in Lappland: Levi, Ylläs, Saariselkä',
+  metaTitle: 'Saisonarbeit in Lappland: Wohnen in Levi, Ylläs, Saariselkä',
   metaDescription:
     'Wo Saisonkräfte in Levi, Ylläs, Saariselkä und Rovaniemi wohnen: Personalunterkunft, Saisonmiete oder kommunale Wohnung, und was Sie vorab klären sollten.',
   breadcrumb: 'Saisonkräfte',
@@ -21,30 +21,30 @@ const copy: HousingPageCopy = {
     eyebrow: 'Saisonarbeit, Winter und Sommer',
     title: 'Wo wohnen Saisonkräfte?',
     subtitle:
-      'In einer gemeinsamen Personalwohnung, in einer Ferienwohnung mit Saisonmietvertrag oder in einer kommunalen Mietwohnung. Der Wohnungsmangel in den Skiresorts ist real, und so kommen die Menschen damit zurecht.',
+      'In einer gemeinsamen Personalwohnung, in einer Ferienwohnung mit Saisonmietvertrag oder in einer kommunalen Mietwohnung. Die Wohnungsnot in den Skigebieten ist Realität, und so kommen die Menschen damit zurecht.',
   },
   authorNote:
     'Zahlen zum Wohnungsmangel aus den Nachrichten von Yle und Kesko 2017–2026, Suchkanäle von den eigenen Seiten der Gemeinden. Unsere Schwesterseite laplandwork.com kümmert sich um die Stellen selbst.',
   intro: [
-    'Das Tourismusgebiet Levi stellt für die Wintersaison gut 2.000 Saisonkräfte ein, schätzte schon 2017 Kristiina Kukkohovi, Geschäftsführerin von Levin Matkailu Oy, und sie sagte, der Wohnungsmangel werde in jedem Resort Lapplands zu einem großen Problem (Yle, 25. Oktober 2017). Entspannt hat er sich nicht: Im Frühjahr 2023 berichtete Yle über Beschäftigte in Levi und Ylläs, die in Ferienwohnungen leben, in denen sie keine Adresse anmelden können.',
+    'Das Tourismusgebiet Levi stellt für die Wintersaison gut 2.000 Saisonkräfte ein, schätzte schon 2017 Kristiina Kukkohovi, Geschäftsführerin von Levin Matkailu Oy, und sie sagte, der Wohnungsmangel werde in jedem Skigebiet Lapplands zu einem großen Problem (Yle, 25. Oktober 2017). Entspannt hat er sich nicht: Im Frühjahr 2023 berichtete Yle über Beschäftigte in Levi und Ylläs, die in Ferienwohnungen leben, in denen sie keine Adresse anmelden können.',
     'Im Juni 2026 beschlossen die Inhaber des K-Market Jounin Kauppa in Äkäslompolo, drei Reihenhäuser für ihr eigenes Personal zu bauen, weil es zu wenige Wohnungen gibt und die Mieten stark gestiegen sind (Yle, 16. Juni 2026). Der Laden beschäftigt jährlich rund 20 Saisonkräfte, und etwa die Hälfte von ihnen braucht eine Mietwohnung (Kesko, 17. Juni 2026).',
-    'In Rovaniemi holte das Personalvermittlungsunternehmen Career.fi rund 250 Arbeitskräfte nach Lappland und brachte sie an etwa zehn verschiedenen Orten unter. Zwei estnische Arbeiter wohnten zwei Winter lang bei der Familie des Wachstumsdirektors, nachdem ihre Mietwohnung in die Rohrsanierung gegangen war. Die Wohnungssuche sei „jedes Jahr ein ziemliches Schauspiel“ (Yle, 9. März 2026).',
+    'In Rovaniemi holte das Personalvermittlungsunternehmen Career.fi rund 250 Arbeitskräfte nach Lappland und brachte sie an etwa zehn verschiedenen Orten unter. Zwei estnische Arbeiter wohnten zwei Winter lang bei der Familie des Wachstumsdirektors, nachdem in ihrer Mietwohnung eine Rohrsanierung begonnen hatte. Die Wohnungssuche sei „jedes Jahr ein ziemliches Theater“ (Yle, 9. März 2026).',
   ],
   sections: [
     {
       id: 'three-ways',
-      kicker: 'Drei Wege, eine Saison zu wohnen',
+      kicker: 'Drei Wohnformen für eine Saison',
       h2: 'Personalunterkunft, Saisonmietvertrag oder kommunale Wohnung.',
       cards: [
         {
           title: '1. Personalunterkunft',
           body:
-            'Die häufigste Antwort in den Skiresorts: Der Arbeitgeber mietet Reihenhäuser, Hütten und Ferienwohnungen für das Personal für die ganze Saison und zieht die Miete vom Lohn ab. In Ruka mietete eine Restaurantgruppe 2017 bereits vier Ferienobjekte von November bis Mai für ihr Personal (Yle, 25. Oktober 2017). Der Vorteil: Bei Ihrer Ankunft steht ein Dach bereit. Das Risiko: Mit dem Job endet auch die Wohnung.',
+            'Die häufigste Antwort in den Skigebieten: Der Arbeitgeber mietet Reihenhäuser, Hütten und Ferienwohnungen für das Personal für die ganze Saison und zieht die Miete vom Lohn ab. In Ruka mietete eine Restaurantgruppe 2017 bereits vier Ferienobjekte von November bis Mai für ihr Personal (Yle, 25. Oktober 2017). Der Vorteil: Bei Ihrer Ankunft haben Sie schon ein Dach über dem Kopf. Das Risiko: Mit dem Job endet auch die Wohnung.',
         },
         {
           title: '2. Eine Ferienwohnung mit Saisonmietvertrag',
           body:
-            'Eine Wohnung von 80 m² in einem Alpenhaus in Levi: 750 € im Monat von Mai bis November, 2.000 € pro Woche in der Hochsaison, 1.650 € im Monat ganzjährig (Yle, 25. Mai 2023). Im Sommer günstig, im Winter unmöglich. Außerdem erhalten Sie in einer Ferienwohnung keine amtliche Adresse (Yle, 25. Mai 2023).',
+            'Eine Wohnung von 80 m² in einem Haus im Alpenstil in Levi: 750 € im Monat von Mai bis November, 2.000 € pro Woche in der Hochsaison, 1.650 € im Monat ganzjährig (Yle, 25. Mai 2023). Im Sommer günstig, im Winter unmöglich. Außerdem erhalten Sie in einer Ferienwohnung keine amtliche Adresse (Yle, 25. Mai 2023).',
         },
         {
           title: '3. Eine kommunale Mietwohnung',
@@ -63,7 +63,7 @@ const copy: HousingPageCopy = {
           title: 'Levi und Kittilä',
           image: { src: '/images/housing-levi-keskusta-card.webp', alt: 'Holzgebäude im Zentrum von Levi an einem Sommertag' },
           body:
-            'Die Einwohnerzahl von Kittilä wuchs 2025 um 2,0 Prozent, nach Pelkosenniemi (2,4 Prozent) der zweithöchste Wert aller Gemeinden Lapplands (Statistik Finnland). Arbeitgeber mieten Reihenhäuser für ihr Personal für die ganze Saison, alle anderen suchen in der Levi-Wohnungsgruppe auf Facebook. Kittilän Vuokratalot Oy führt Wohnungen sowohl im Dorf Kittilä als auch in Levi, in Sirkka.',
+            'Die Einwohnerzahl von Kittilä wuchs 2025 um 2,0 Prozent, nach Pelkosenniemi (2,4 Prozent) der zweithöchste Wert aller Gemeinden Lapplands (Statistik Finnland). Arbeitgeber mieten Reihenhäuser für ihr Personal für die ganze Saison, alle anderen suchen in der Levi-Wohnungsgruppe auf Facebook. Kittilän Vuokratalot Oy führt Wohnungen sowohl im Dorf Kittilä als auch in Sirkka bei Levi.',
           href: 'https://kittila.fi/asuminen-ja-ymparisto/asuminen/vuokra-asunnot',
           linkLabel: 'Kittilän Vuokratalot Oy',
           event: 'kittila',
@@ -72,7 +72,7 @@ const copy: HousingPageCopy = {
           title: 'Ylläs: Äkäslompolo und Ylläsjärvi',
           image: { src: '/images/housing-seasonal-card-yllas-tunturi.webp', alt: 'Der Ylläs, über den See bei Äkäslompolo hinweg gesehen, an einem Septembermorgen' },
           body:
-            'Ladenbesitzer bauen für sich selbst: Die drei Reihenhäuser von Jounin Kauppa sollen nach heutigem Stand im November–Dezember 2026 fertig sein, mit Studios, Zweizimmerwohnungen für Wohngemeinschaften und Dreizimmerwohnungen für Familien, jeweils mit Sauna (Kesko, 17. Juni 2026). Das erste Modulgebäude des Dorfes war im Oktober 2025 fast fertig (Yle, 16. Juni 2026).',
+            'Ladenbesitzer bauen für sich selbst: Die drei Reihenhäuser von Jounin Kauppa sollen nach heutigem Stand im November oder Dezember 2026 fertig sein, mit Studios, Wohnungen mit zwei Schlafzimmern für Wohngemeinschaften und Familienwohnungen mit drei Schlafzimmern, jeweils mit Sauna (Kesko, 17. Juni 2026). Das erste Modulgebäude des Dorfes war im Oktober 2025 fast fertig (Yle, 16. Juni 2026).',
           href: 'https://www.kesko.fi/media/uutiset-ja-tiedotteet/uutiset/2026/lapin-asuntopulaa-ratkomassa-k-market-jounin-kaupan-kauppiaat-rakennuttavat-kolme-rivitaloa-tyontekijoilleen/',
           linkLabel: 'Kesko, 17. Juni 2026',
           event: 'yllas',
@@ -111,8 +111,8 @@ const copy: HousingPageCopy = {
       kicker: 'Die Sommersaison',
       h2: 'Der Sommer ist nicht ruhig.',
       paras: [
-        'Die Sommerarbeit in Lappland ist eine eigene Saison: der ganzjährige Tourismus in Rovaniemi, die Wandergebiete, Baustellen und der Sommerhöhepunkt der Läden. Im Sommer werden Ferienwohnungen monatsweise vermietet (750 € im Monat von Mai bis November im Levi-Beispiel, Yle, 25. Mai 2023).',
-        'In Rovaniemi hofft der Wachstumsdirektor eines Personalvermittlers, im Winter Saisonkräfte unter einem Dach unterzubringen und im Sommer Bauarbeiter und Sportmannschaften (Yle, 9. März 2026). Für eine Ankunft im Sommer ist das eine gute Nachricht: Für den Winter gebaute Personalunterkünfte stehen im Sommer leer.',
+        'Die Sommerarbeit in Lappland ist eine eigene Saison: der ganzjährige Tourismus in Rovaniemi, die Wandergebiete, Baustellen und das Sommergeschäft der Läden. Im Sommer werden Ferienwohnungen monatsweise vermietet (750 € im Monat von Mai bis November im Levi-Beispiel, Yle, 25. Mai 2023).',
+        'In Rovaniemi hofft der Wachstumsdirektor eines Personalvermittlers, im Winter Saisonkräfte unter einem Dach unterzubringen und im Sommer Bauarbeiter und Sportmannschaften (Yle, 9. März 2026). Für alle, die im Sommer kommen, ist das eine gute Nachricht: Für den Winter gebaute Personalunterkünfte stehen im Sommer leer.',
       ],
       image: {
         src: '/images/housing-jouninkauppa.webp',
@@ -125,7 +125,7 @@ const copy: HousingPageCopy = {
     {
       id: 'ask',
       kicker: 'Vor der Unterschrift',
-      h2: 'Fragen Sie Ihren Arbeitgeber das.',
+      h2: 'Das sollten Sie Ihren Arbeitgeber fragen.',
       bullets: [
         'Gehört die Wohnung zum Anstellungspaket oder ist es ein eigener Mietvertrag? Wie viel wird vom Lohn abgezogen, und steht es auf der Gehaltsabrechnung?',
         'Ein eigenes Zimmer oder ein geteiltes? Wie viele Personen wohnen in der Wohnung, und hat Ihre Tür ein Schloss?',

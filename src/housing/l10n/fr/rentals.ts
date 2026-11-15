@@ -25,7 +25,7 @@ const copy: HousingPageCopy = {
       'Où trouver un appartement à louer, ce qu’il coûte et ce que Kela prend en charge. Commune par commune.',
   },
   authorNote:
-    'Loyers au m² : statistiques des loyers de Statistics Finland, logements locatifs du marché libre, juillet–septembre 2026. Sociétés de logement communales vérifiées sur les sites des communes et des sociétés elles-mêmes le 15 novembre 2026.',
+    'Loyers au m² : statistiques des loyers de Statistics Finland, logements locatifs du parc privé, juillet–septembre 2026. Sociétés de logement communales vérifiées sur les sites des communes et des sociétés elles-mêmes le 15 novembre 2026.',
   intro: [
     'En Laponie, un appartement à louer vient de l’une de ces trois sources : la société de logement de la commune, les portails nationaux ou les groupes locaux. Commencez par la commune. Ses sociétés possèdent des centaines de logements, par exemple un peu plus de 300 à Keminmaa, environ 720 à Sodankylä, 560 à Kemijärvi et plus de 500 à Inari, et vous pouvez déposer un dossier même quand rien n’est libre pour le moment.',
     'Le prix dépend de l’endroit où vous vous installez. À Rovaniemi, un studio de 30 m² coûte en moyenne environ 560 € par mois, et moins ailleurs en Laponie. Dans les villages de fjeld, le loyer suit la saison : pour l’hiver, demandez d’abord à votre employeur s’il propose un logement pour le personnel.',
@@ -58,7 +58,7 @@ const copy: HousingPageCopy = {
           title: 'Kemijärvi',
           image: { src: '/images/housing-kemijarvi-card-kerrostalo.webp', alt: 'Un immeuble et un vieux pin à Kemijärvi, un soir de juillet' },
           body:
-            'Les deux sociétés immobilières de la ville possèdent 560 logements locatifs, et le budget vise un taux d’occupation de 80–85 %, il y a donc bien des logements vacants. Une demande est valable quatre mois. Les maisons en bande de Vuostimo sont à 14 km de Pyhätunturi.',
+            'Les deux sociétés immobilières de la ville possèdent 560 logements locatifs, et le budget vise un taux d’occupation de 80–85 % : il y a donc bien des logements vacants. Une demande est valable quatre mois. Les maisons mitoyennes de Vuostimo sont à 14 km de Pyhätunturi.',
           href: '/rentals/kemijarvi',
           linkLabel: 'Louer à Kemijärvi',
         },
@@ -105,9 +105,9 @@ const copy: HousingPageCopy = {
       kicker: 'Ce que coûte un loyer',
       h2: 'Au mètre carré, pas à l’intuition.',
       lead:
-        'Statistics Finland publie les loyers chaque trimestre. Ci-dessous, le loyer moyen des logements locatifs du marché libre en juillet–septembre 2026, en euros par mètre carré et par mois.',
+        'Statistics Finland publie les loyers chaque trimestre. Ci-dessous, le loyer moyen des logements locatifs du parc privé en juillet–septembre 2026, en euros par mètre carré et par mois.',
       table: {
-        caption: 'Loyer moyen en €/m²/mois, logements locatifs du marché libre, 2026T3',
+        caption: 'Loyer moyen en €/m²/mois, logements locatifs du parc privé, 2026T3',
         head: ['', 'Rovaniemi', 'Laponie (région)', 'Ensemble du pays'],
         rows: [
           ['Studios', '18,63', '17,25', '20,49'],
@@ -125,7 +125,7 @@ const copy: HousingPageCopy = {
       note: {
         label: 'Ce que les statistiques ne voient pas',
         body:
-          'Les locations saisonnières dans les stations de ski et les locations meublées de courte durée ne figurent pas dans ces chiffres. Près du centre de Levi, un appartement de 80 m² dans une maison alpine coûtait 750 € par mois de mai à novembre, 2 000 € par semaine en haute saison et 1 650 € par mois à l’année (Yle, 25 mai 2023) : le même appartement, à trois prix.',
+          'Les locations saisonnières dans les stations de ski et les locations meublées de courte durée ne figurent pas dans ces chiffres. Près du centre de Levi, un appartement de 80 m² de style alpin coûtait 750 € par mois de mai à novembre, 2 000 € par semaine en haute saison et 1 650 € par mois à l’année (Yle, 25 mai 2023) : le même appartement, à trois prix.',
       },
     },
     {
@@ -155,7 +155,7 @@ const copy: HousingPageCopy = {
       kicker: 'Le contrat de location',
       h2: 'Cinq points avant de signer.',
       bullets: [
-        '<strong>Le dépôt de garantie est de trois mois de loyer au maximum</strong> (loi sur les baux d’habitation, article 8). Un ou deux mois est l’usage.',
+        '<strong>Le dépôt de garantie est de trois mois de loyer au maximum</strong> (loi sur les baux d’habitation, article 8). L’usage est d’un ou deux mois.',
         '<strong>À partir du 1er octobre 2026, le dépôt doit être restitué</strong>, ou sa retenue expliquée par écrit, dans les 14 jours suivant la fin du bail ou la remise du logement (réforme en vigueur le 1er octobre 2026, Rakli).',
         '<strong>Le préavis du locataire est d’un mois.</strong> Pour les contrats conclus à partir du 1er octobre 2026, le préavis du bailleur est de trois mois, et de quatre mois si le bail dure sans interruption depuis au moins deux ans (Rakli). Les contrats conclus avant le 1er octobre 2026 conservent les anciens préavis (Kuluttajaliitto).',
         '<strong>Un contrat à durée déterminée engage les deux parties jusqu’au terme.</strong> Dans le travail saisonnier, le logement de l’employeur est souvent lié au poste : lisez ce qui se passe si l’emploi s’arrête avant la fin de la saison.',
@@ -168,15 +168,15 @@ const copy: HousingPageCopy = {
       h2: 'Trois règles qui protègent votre dépôt.',
       bullets: [
         'Ne versez jamais de dépôt avant une visite, ou une visite en vidéo où l’on voit le logement et les clés dans le même plan.',
-        'Contrat écrit, avec le nom du bailleur et son numéro d’entreprise ou son numéro d’identité personnel. Une société de logement communale est le départ le plus sûr si vous ne connaissez pas le marché.',
-        'Une location meublée de courte durée n’est pas un bail : un appartement de vacances peut ne pas obtenir d’adresse officielle, et l’absence d’adresse complique les démarches auprès des entreprises, par exemple lors d’une vérification de crédit (Yle, 25 mai 2023).',
+        'Contrat écrit, avec le nom du bailleur et son numéro d’entreprise ou son numéro d’identité personnel. Une société de logement communale est le point de départ le plus sûr si vous ne connaissez pas le marché.',
+        'Une location meublée de courte durée n’est pas un bail : vous risquez de ne pas pouvoir obtenir d’adresse officielle dans un appartement de vacances, et sans adresse, les démarches courantes, comme une vérification de crédit, se compliquent (Yle, 25 mai 2023).',
       ],
     },
   ],
   faqs: [
     {
       q: 'Combien coûte un studio à Rovaniemi ?',
-      a: 'Selon Statistics Finland, le loyer moyen d’un studio du marché libre à Rovaniemi était de 18,63 € par m² en juillet–septembre 2026 et de 20,14 € par m² dans les nouveaux baux. Un studio de 30 m² revient donc à environ 560–600 € par mois, électricité non comprise.',
+      a: 'Selon Statistics Finland, le loyer moyen d’un studio du parc privé à Rovaniemi était de 18,63 € par m² en juillet–septembre 2026 et de 20,14 € par m² dans les nouveaux baux. Un studio de 30 m² revient donc à environ 560–600 € par mois, électricité non comprise.',
     },
     {
       q: 'Peut-on louer en Laponie sans historique de crédit en Finlande ?',
@@ -184,11 +184,11 @@ const copy: HousingPageCopy = {
     },
     {
       q: 'Quand chercher un logement à Rovaniemi ?',
-      a: 'Mieux vaut éviter août et septembre. DAS ne peut alors pas loger tous les demandeurs, et les studios du marché libre se font rares (Yle, 27 juillet 2026). Les studios loués à court terme pour la saison d’hiver reviennent sur le marché au printemps.',
+      a: 'Mieux vaut éviter août et septembre. DAS ne peut alors pas loger tous les demandeurs, et les studios du parc privé se font rares (Yle, 27 juillet 2026). Les studios loués à court terme pour la saison d’hiver reviennent sur le marché au printemps.',
     },
     {
       q: 'Pourquoi un loyer à Levi est-il plusieurs fois plus élevé en hiver ?',
-      a: 'Parce qu’en haute saison, le même appartement se loue à la semaine. Dans l’exemple de Yle (25 mai 2023), un appartement de 80 m² dans une maison alpine coûtait 750 € par mois en été et 2 000 € par semaine en hiver. La location mensuelle est possible de mai à novembre ; pour l’hiver, demandez à votre employeur un logement pour le personnel, ou à la société communale de Kittilä.',
+      a: 'Parce qu’en haute saison, le même appartement se loue à la semaine. Dans l’exemple de Yle (25 mai 2023), un appartement de 80 m² de style alpin coûtait 750 € par mois en été et 2 000 € par semaine en hiver. La location mensuelle est possible de mai à novembre ; pour l’hiver, demandez à votre employeur un logement pour le personnel, ou à la société communale de Kittilä.',
     },
   ],
   cta: {
@@ -196,7 +196,7 @@ const copy: HousingPageCopy = {
     kicker: 'Les premières semaines',
     h2: 'Visitez le logement sur place.',
     lead:
-      'Réservez un hôtel ou un appart-hôtel pour les premières semaines et visitez les logements vous-même avant de signer. Notre moteur partenaire affiche les chambres libres aux prix du jour.',
+      'Réservez un hôtel ou un appart-hôtel pour les premières semaines et visitez les logements vous-même avant de signer. Le moteur de réservation de notre partenaire affiche les chambres libres aux prix du jour.',
     chips: [
       { label: 'Rovaniemi', destination: 'Rovaniemi', sid: 'rentals_first_weeks_rovaniemi' },
       { label: 'Levi', destination: 'Levi', sid: 'rentals_first_weeks_levi' },

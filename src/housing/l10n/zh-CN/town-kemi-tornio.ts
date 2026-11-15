@@ -10,21 +10,21 @@ import common from './common';
 const SOURCES = ['tkVuokrat', 'tkVaesto', 'kela', 'kemi', 'itatuuli', 'keminmaa', 'keminmaaVuokra', 'tornio', 'ahvl', 'rakli'] as const;
 
 const copy: HousingPageCopy = {
-  metaTitle: '凯米、托尔尼奥与凯米昂马租房：市政公寓',
+  metaTitle: '凯米、托尔尼奥与凯米恩玛租房：市政公寓',
   metaDescription:
-    '在拉普兰海岸的凯米、托尔尼奥和凯米昂马租房：Itätuuli、Tornion Krunni 等市政住房公司、私人中介，以及 Kela 的补贴。',
+    '在拉普兰海岸的凯米、托尔尼奥和凯米恩玛租房：Itätuuli、Tornion Krunni 等市政住房公司、私人中介，以及 Kela 的补贴。',
   breadcrumb: '凯米与托尔尼奥',
   hero: {
-    eyebrow: '海滨拉普兰的海岸',
-    title: '凯米、托尔尼奥与凯米昂马租房。',
+    eyebrow: '海滨拉普兰沿岸',
+    title: '凯米、托尔尼奥与凯米恩玛租房。',
     subtitle:
       '海岸边的双子城，市政住房公司握有数百套住房，申请在线提交。从哪里入手，租金是多少。',
   },
   authorNote:
-    '住房公司的房屋数量来自凯米、托尔尼奥和凯米昂马各市镇自己的页面，申请条件来自各公司自己的页面，每平方米租金来自芬兰统计局（拉普兰地区，2026年第3季度）。已于2026年11月15日核对。',
+    '住房公司的房屋数量来自凯米、托尔尼奥和凯米恩玛各市镇自己的页面，申请条件来自各公司自己的页面，每平方米租金来自芬兰统计局（拉普兰地区，2026年第3季度）。已于2026年11月15日核对。',
   intro: [
-    '凯米有19,339位居民，托尔尼奥有20,823位，凯米昂马有7,576位（芬兰统计局，2025年12月31日）。这三个市镇彼此相邻，所以住的地方和工作的地方可能不在同一个市镇。',
-    '市政住房公司是首选的去处：凯米的市政住房由 Kiinteistö Oy Itätuuli 经营（kemi.fi），它是该镇最大的出租住房提供者，房源都在距市中心五公里以内（itatuuli.fi）。Keminmaan Vuokra-asunnot Oy 有18处房产、300多套住房（keminmaa.fi）。两家公司各有自己的在线申请。托尔尼奥的市属住房由 Tornion Krunni Oy 管理，其中包括 Tornion Vuokra-asunnot Oy（tornio.fi）。',
+    '凯米有19,339位居民，托尔尼奥有20,823位，凯米恩玛有7,576位（芬兰统计局，2025年12月31日）。这三个市镇彼此相邻，所以住的地方和工作的地方可能不在同一个市镇。',
+    '市政住房公司是首选的去处：凯米的市政住房由 Kiinteistö Oy Itätuuli 经营（kemi.fi），它是该市最大的出租住房提供者，房源都在距市中心五公里以内（itatuuli.fi）。Keminmaan Vuokra-asunnot Oy 有18处房产、300多套住房（keminmaa.fi）。两家公司各有自己的在线申请。托尔尼奥的市属住房由 Tornion Krunni Oy 管理，其中包括 Tornion Vuokra-asunnot Oy（tornio.fi）。',
     '芬兰统计局当前的租金表没有单独列出凯米或托尔尼奥，所以下面显示的是拉普兰地区的数字。罗瓦涅米的数字见它自己的页面。',
   ],
   sections: [
@@ -50,7 +50,7 @@ const copy: HousingPageCopy = {
     {
       id: 'housing-allowance',
       kicker: 'Kela 住房补贴',
-      h2: '凯米、托尔尼奥和凯米昂马属于 Kela 的“其他市镇”。',
+      h2: '凯米、托尔尼奥和凯米恩玛属于 Kela 的“其他市镇”。',
       table: {
         caption: '2026年最高住房费用，欧元/月，Kela 分组“其他市镇”',
         head: ['家庭人数', '最高住房费用'],
@@ -78,7 +78,7 @@ const copy: HousingPageCopy = {
           event: 'kemi_city',
         },
         {
-          title: '凯米昂马：Keminmaan Vuokra-asunnot Oy',
+          title: 'Keminmaan Vuokra-asunnot Oy',
           body: '市镇所有的住房公司：18处房产、300多套住房，房租已含水费和取暖费。它自己的在线申请有效期为三个月，押金为一个月租金。',
           href: 'https://www.keminmaanvuokra-asunnot.fi/asunnonhaku.html',
           linkLabel: 'Keminmaan Vuokra-asunnot：申请方式',
@@ -93,7 +93,7 @@ const copy: HousingPageCopy = {
         },
         {
           title: 'Oikotie 和 Vuokraovi',
-          body: '私人和中介房源。请把凯米、托尔尼奥和凯米昂马当作三个独立的市镇来搜索：它们是三个各自独立的市镇搜索。',
+          body: '私人和中介房源。请分别按凯米、托尔尼奥和凯米恩玛三个市镇搜索：在找房网站上，它们是三个独立的市镇选项。',
           href: 'https://asunnot.oikotie.fi/vuokra-asunnot/kemi',
           linkLabel: 'Oikotie：凯米租房',
           event: 'oikotie',
@@ -106,14 +106,14 @@ const copy: HousingPageCopy = {
       h2: '值得了解的两条法律规定。',
       bullets: [
         '押金最多为三个月租金（《住宅租赁法》第8条）。',
-        '自2026年10月1日起，押金必须退还，或在租约结束后14天内书面说明扣留的理由（Rakli）。',
+        '自2026年10月1日起，押金必须在租约结束后14天内退还，或在此期限内书面说明扣留的理由（Rakli）。',
       ],
     },
   ],
   faqs: [
     {
       q: '怎样申请凯米的市政住房？',
-      a: '通过 Kiinteistö Oy Itätuuli 自己的在线申请，有效期为四个月。Itätuuli 是凯米最大的出租住房提供者，房源都在距市中心五公里以内，全部房源都不收押金（itatuuli.fi）。Keminmaan Vuokra-asunnot Oy 有自己的申请。',
+      a: '通过 Kiinteistö Oy Itätuuli 自己的在线申请，有效期为四个月。Itätuuli 是凯米最大的出租住房提供者，房源都在距市中心五公里以内，全部房源都不收押金（itatuuli.fi）。Keminmaan Vuokra-asunnot Oy 有自己的申请系统。',
     },
     {
       q: '凯米和托尔尼奥的房租是多少？',

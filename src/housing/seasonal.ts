@@ -21,7 +21,7 @@ export const SEASONAL: HousingCopyMap = {
     authorNote:
       'Asuntopulan luvut Ylen ja Keskon uutisista 2017–2026, hakukanavat kuntien omilta sivuilta. Sisarsivusto laplandwork.com hoitaa itse työpaikat.',
     intro: [
-      'Levin matkailualueelle palkataan talvikaudeksi reilut 2 000 kausityöntekijää, arvioi Levin Matkailu Oy:n toimitusjohtaja Kristiina Kukkohovi jo vuonna 2017, ja asuntopula alkoi hänen sanoin olla iso ongelma kaikissa Lapin matkailukeskuksissa (Yle 25.10.2017). Tilanne ei ole helpottunut: keväällä 2023 Yle kertoi Levin ja Ylläksen työntekijöistä, jotka asuvat vapaa-ajan asunnoissa eivätkä voi rekisteröidä sinne osoitettaan.',
+      'Levin matkailualueelle palkataan talvikaudeksi reilut 2 000 kausityöntekijää, arvioi Levin Matkailu Oy:n toimitusjohtaja Kristiina Kukkohovi jo vuonna 2017, ja hänen mukaansa asuntopulasta oli tulossa iso ongelma kaikissa Lapin matkailukeskuksissa (Yle 25.10.2017). Tilanne ei ole helpottunut: keväällä 2023 Yle kertoi Levin ja Ylläksen työntekijöistä, jotka asuvat vapaa-ajan asunnoissa eivätkä voi rekisteröidä sinne osoitettaan.',
       'Kesäkuussa 2026 Äkäslompolon K-Market Jounin Kaupan kauppiaat päättivät rakennuttaa kolme rivitaloa omille työntekijöilleen, koska asuntoja on liian vähän ja vuokrat ovat nousseet korkeiksi (Yle 16.6.2026). Kauppa työllistää noin 20 kausityöntekijää vuodessa, ja heistä noin puolet tarvitsee vuokra-asunnon (Kesko 17.6.2026).',
       'Rovaniemellä rekrytointiyhtiö Career.fi toi Lappiin noin 250 työntekijää ja majoitti heitä kymmeneen eri paikkaan; kaksi virolaista työntekijää asui kahtena talvena yhtiön kasvujohtajan perheen luona, kun heidän vuokra-asuntonsa meni putkiremonttiin. Asuntojen löytäminen on ”aikamoinen show joka vuosi” (Yle 9.3.2026).',
     ],
@@ -58,7 +58,7 @@ export const SEASONAL: HousingCopyMap = {
             title: 'Levi ja Kittilä',
             image: { src: '/images/housing-levi-keskusta-card.webp', alt: 'Levin keskustan puurakennuksia kesäpäivänä' },
             body:
-              'Kittilän väkiluku kasvoi 2,0 prosenttia vuonna 2025, Lapin kunnista toiseksi eniten Pelkosenniemen (2,4 prosenttia) jälkeen (Tilastokeskus). Työnantajat vuokraavat rivitaloja henkilökunnalle koko kaudeksi, ja loput hakevat Levin asuntohaun Facebook-ryhmästä. Kittilän Vuokratalot Oy:n sivuilla on asuntoja sekä Kittilän kirkonkylässä että Levillä Sirkassa.',
+              'Kittilän väkiluku kasvoi 2,0 prosenttia vuonna 2025, Lapin kunnista toiseksi eniten Pelkosenniemen (2,4 prosenttia) jälkeen (Tilastokeskus). Työnantajat vuokraavat rivitaloja henkilökunnalle koko kaudeksi, ja loput hakevat Levin asuntohaun Facebook-ryhmästä. Kittilän Vuokratalot Oy:n sivuilla on asuntoja sekä Kittilän kirkonkylässä että Sirkassa Levillä.',
             href: 'https://kittila.fi/asuminen-ja-ymparisto/asuminen/vuokra-asunnot',
             linkLabel: 'Kittilän Vuokratalot Oy',
             event: 'kittila',
@@ -94,7 +94,7 @@ export const SEASONAL: HousingCopyMap = {
             title: 'Ruka ja Kuusamo',
             image: { src: '/images/housing-ruka-kyla-card.webp', alt: 'Rukan kävelykylän aukio ja punainen näkötorni kesällä' },
             body:
-              'Ruka on Pohjois-Pohjanmaata, ei Lappia, mutta kausi ja pula ovat samat. Rukan ravintolayhtiö kasvoi vuonna 2017 talveksi reilusta 20 vakituisesta yli 80 työntekijään ja vuokrasi henkilökunnalleen neljä vapaa-ajan kohdetta marraskuusta toukokuuhun (Yle 25.10.2017).',
+              'Ruka on Pohjois-Pohjanmaata, ei Lappia, mutta kausi ja pula ovat samat. Vuonna 2017 Rukan ravintolayhtiö kasvoi talveksi reilusta 20 vakituisesta yli 80 työntekijään ja vuokrasi henkilökunnalleen neljä vapaa-ajan kohdetta marraskuusta toukokuuhun (Yle 25.10.2017).',
             href: 'https://yle.fi/a/3-9895965',
             linkLabel: 'Yle 25.10.2017',
             event: 'ruka',
@@ -139,7 +139,7 @@ export const SEASONAL: HousingCopyMap = {
       },
       {
         q: 'Milloin asuntoa kannattaa alkaa etsiä talvikaudelle?',
-        a: 'Kesällä. Kunnan vuokrayhtiöiden (Kittilä, Inari, Sodankylä) hakemus kannattaa jättää ennen kautta, ja Levin esimerkissä vapaa-ajan asunnon sai kuukausivuokralle vain touko–marraskuuksi (Yle 25.5.2023).',
+        a: 'Kesällä. Kuntien vuokrayhtiöihin (Kittilä, Inari, Sodankylä) kannattaa hakea ennen kautta, ja Levin esimerkissä vapaa-ajan asunnon sai kuukausivuokralle vain touko–marraskuuksi (Yle 25.5.2023).',
       },
       {
         q: 'Voinko asua vapaa-ajan asunnossa koko kauden?',
@@ -193,7 +193,7 @@ export const SEASONAL: HousingCopyMap = {
           {
             title: '2. A holiday apartment on a seasonal lease',
             body:
-              'An 80 m² alpine-house flat at Levi: €750 a month from May to November, €2,000 a week in high season, €1,650 a month year-round (Yle, 25 May 2023). Cheap in summer, impossible in winter. You also cannot get an official address at a holiday apartment (Yle, 25 May 2023).',
+              'An 80 m² alpine-style flat at Levi: €750 a month from May to November, €2,000 a week in high season, €1,650 a month year-round (Yle, 25 May 2023). Cheap in summer, impossible in winter. You also cannot get an official address at a holiday apartment (Yle, 25 May 2023).',
           },
           {
             title: '3. A municipal rental',
@@ -212,7 +212,7 @@ export const SEASONAL: HousingCopyMap = {
             title: 'Levi and Kittilä',
             image: { src: '/images/housing-levi-keskusta-card.webp', alt: 'Wooden buildings in the centre of Levi on a summer day' },
             body:
-              'Kittilä’s population grew 2.0 percent in 2025, the second most of any Lapland municipality after Pelkosenniemi (2.4 percent) (Statistics Finland). Employers rent row houses for staff for the whole season, and everyone else searches the Levi housing group on Facebook. Kittilän Vuokratalot Oy lists flats both in Kittilä village and at Levi, in Sirkka.',
+              'Kittilä’s population grew 2.0 percent in 2025, the second-fastest growth of any Lapland municipality after Pelkosenniemi’s 2.4 percent (Statistics Finland). Employers rent row houses for staff for the whole season, and everyone else searches the Levi housing group on Facebook. Kittilän Vuokratalot Oy lists flats both in Kittilä village and in Sirkka at Levi.',
             href: 'https://kittila.fi/asuminen-ja-ymparisto/asuminen/vuokra-asunnot',
             linkLabel: 'Kittilän Vuokratalot Oy',
             event: 'kittila',
@@ -260,7 +260,7 @@ export const SEASONAL: HousingCopyMap = {
         kicker: 'The summer season',
         h2: 'Summer is not quiet.',
         paras: [
-          'Summer work in Lapland is a season of its own: Rovaniemi’s year-round tourism, the hiking areas, construction sites and the shops’ summer peak. In summer holiday apartments are let by the month (€750 a month from May to November in the Levi example, Yle, 25 May 2023).',
+          'Summer work in Lapland is a season of its own: Rovaniemi’s year-round tourism, the hiking areas, construction sites and the shops’ summer peak. In summer, holiday apartments are let by the month (€750 a month from May to November in the Levi example, Yle, 25 May 2023).',
           'In Rovaniemi a recruitment company’s growth director hopes to put seasonal workers under one roof in winter and construction workers and sports teams there in summer (Yle, 9 Mar 2026). For a summer arrival that is good news: staff housing built for winter stands empty in summer.',
         ],
         image: {

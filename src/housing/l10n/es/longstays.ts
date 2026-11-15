@@ -12,16 +12,16 @@ const SOURCES = ['ahvl531', 'kuluttajaliittoVuokra', 'rakli', 'dvvTilapainen', '
 const copy: HousingPageCopy = {
   metaTitle: 'Un mes o un invierno en Laponia: dónde alojarse',
   metaDescription:
-    'Pasar un mes o un invierno en la Laponia finlandesa: un piso de alquiler amueblado, una cabaña por semanas o el alojamiento del empleador.',
+    'Pasar un mes o un invierno en la Laponia finlandesa: un apartamento de alquiler amueblado, una cabaña por semanas o el alojamiento del empleador.',
   breadcrumb: 'Estancias largas',
   hero: {
     eyebrow: 'De un mes a un invierno',
     title: 'Un mes en Laponia.',
     subtitle:
-      'Un piso de alquiler amueblado, una cabaña por semanas o la vivienda de su empleador: tres formas de vivir en Laponia desde un mes hasta un invierno entero, y qué le exige cada contrato.',
+      'Un apartamento de alquiler amueblado, una cabaña por semanas o la vivienda de su empleador: tres formas de vivir en Laponia desde un mes hasta un invierno entero, y qué le exige cada contrato.',
   },
   authorNote:
-    'Legislación de Finlex (Ley de arrendamientos de vivienda 481/1995, modificación 531/2026), notificación de domicilio de la Agencia de Servicios de Datos Digitales y de Población, datos de las cabañas del catálogo de productos de Lomarengas. Comprobado el 15 nov 2026.',
+    'Legislación de Finlex (Ley de arrendamientos de vivienda 481/1995, modificación 531/2026), notificación de domicilio de la Agencia de Servicios de Datos Digitales y de Población, datos de las cabañas del catálogo de productos de Lomarengas. Comprobado el 15 de noviembre de 2026.',
   intro: [
     'Un mes de teletrabajo en Levi, un invierno en Rovaniemi o una temporada en una estación de esquí: una estancia larga en Laponia suele reducirse a una de tres opciones. Se diferencian en el precio, pero más aún en el tipo de contrato que acaba firmando y en lo que la ley protege entonces.',
     'Si viene de vacaciones y no a vivir, los hoteles y las cabañas están en nuestro sitio hermano <a href="https://laplandstays.com/" target="_blank" rel="noopener">laplandstays.com</a> y las villas en <a href="https://laplandluxuryvillas.com/" target="_blank" rel="noopener">laplandluxuryvillas.com</a>.',
@@ -30,10 +30,10 @@ const copy: HousingPageCopy = {
     {
       id: 'three-ways',
       kicker: 'Tres formas',
-      h2: 'Un piso, una cabaña o alojamiento laboral.',
+      h2: 'Un apartamento, una cabaña o alojamiento laboral.',
       cards: [
         {
-          title: 'Piso de alquiler amueblado',
+          title: 'Apartamento de alquiler amueblado',
           body: 'Un <strong>contrato de arrendamiento de vivienda</strong>, para una estancia larga normalmente de duración determinada. La ley de arrendamientos le protege: la fianza es como máximo de tres meses de alquiler y, desde el 1 de octubre de 2026, debe devolverse en un plazo de 14 días.',
           href: '/rentals',
           linkLabel: 'Alquiler localidad por localidad',
@@ -44,7 +44,7 @@ const copy: HousingPageCopy = {
         },
         {
           title: 'Alojamiento laboral',
-          body: 'En el trabajo de temporada la vivienda suele ir con el empleo. Antes de firmar, pregunte si el piso forma parte del contrato de trabajo y qué pasa con él si el empleo termina a mitad de temporada.',
+          body: 'En el trabajo de temporada la vivienda suele ir con el empleo. Antes de firmar, pregunte si el apartamento forma parte del contrato de trabajo y qué pasa con él si el empleo termina a mitad de temporada.',
           href: '/seasonal-worker-housing',
           linkLabel: 'Vivienda para trabajadores de temporada',
         },
@@ -56,9 +56,9 @@ const copy: HousingPageCopy = {
       h2: 'Un contrato de duración determinada no se puede terminar antes de tiempo.',
       bullets: [
         '<strong>Un contrato de duración determinada dura hasta la fecha que figura en él.</strong> El inquilino no puede dar preaviso durante ese plazo. Solo puede terminar antes por acuerdo con el arrendador o en las situaciones concretas que establece la ley (Unión de Consumidores de Finlandia, ley de arrendamientos).',
-        '<strong>Si no sabe cuánto tiempo se quedará,</strong> pida un contrato de duración indefinida. El inquilino puede darle preaviso, y el preaviso del inquilino no cambia con la reforma del 1 de octubre de 2026 (Rakli).',
+        '<strong>Si no sabe cuánto tiempo se quedará,</strong> pida un contrato de duración indefinida. El inquilino puede rescindirlo con preaviso, y el plazo de preaviso del inquilino no cambia con la reforma del 1 de octubre de 2026 (Rakli).',
         '<strong>Contratos cortos seguidos:</strong> si al mismo inquilino se le hacen más de dos contratos de duración determinada seguidos de tres meses o menos, el contrato se considera de duración indefinida, sea cual sea la fecha de fin que lleve.',
-        '<strong>La ley de arrendamientos no lo cubre todo.</strong> Se aplica a una vivienda alquilada para residir en ella, pero no a la actividad de las empresas de alojamiento (Ley de arrendamientos de vivienda, secciones 1 y 2). Antes de firmar, pregunte si le ofrecen un contrato de arrendamiento de vivienda o un contrato de alojamiento.',
+        '<strong>La ley de arrendamientos no lo cubre todo.</strong> Se aplica a una vivienda alquilada para residir en ella, pero no a la actividad de las empresas de alojamiento (Ley de arrendamientos de vivienda, artículos 1 y 2). Antes de firmar, pregunte si le ofrecen un contrato de arrendamiento de vivienda o un contrato de alojamiento.',
         '<strong>La fianza</strong> es como máximo de tres meses de alquiler. Desde el 1 de octubre de 2026 debe devolverse, o notificarse su retención, en un plazo de 14 días desde el fin del contrato.',
       ],
     },
@@ -74,7 +74,7 @@ const copy: HousingPageCopy = {
   ],
   faqs: [
     {
-      q: '¿Puedo alquilar un piso en Laponia por un mes?',
+      q: '¿Puedo alquilar un apartamento en Laponia por un mes?',
       a: 'Sí. Un contrato de duración determinada también puede ser corto, y las cabañas vacacionales se alquilan por semanas. Busque en los portales de alquiler la palabra «kalustettu» (amueblado). Antes de firmar, pregunte si es un contrato de arrendamiento de vivienda o un alojamiento, porque la ley de arrendamientos solo protege el primero.',
     },
     {
@@ -83,7 +83,7 @@ const copy: HousingPageCopy = {
     },
     {
       q: '¿Puedo terminar un contrato de duración determinada si se acaba mi empleo?',
-      a: 'Normalmente no. Un contrato de duración determinada dura hasta la fecha que figura en él. Acuerde con el arrendador un final anterior, o elija desde el principio un contrato de duración indefinida, al que el inquilino puede dar preaviso.',
+      a: 'Normalmente no. Un contrato de duración determinada dura hasta la fecha que figura en él. Acuerde con el arrendador una terminación anticipada, o elija desde el principio un contrato de duración indefinida, que el inquilino puede rescindir con preaviso.',
     },
   ],
   sources: pickSources('es', SOURCES, common.sourceLabels),

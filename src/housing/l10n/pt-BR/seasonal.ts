@@ -26,9 +26,9 @@ const copy: HousingPageCopy = {
   authorNote:
     'Números sobre a falta de moradia das notícias da Yle e da Kesko de 2017–2026, canais de busca das páginas dos próprios municípios. O nosso site irmão laplandwork.com cuida das vagas de trabalho em si.',
   intro: [
-    'A área turística de Levi contrata pouco mais de 2.000 trabalhadores sazonais para a temporada de inverno, estimou já em 2017 Kristiina Kukkohovi, diretora-geral da Levin Matkailu Oy, e ela disse que a falta de moradia estava se tornando um grande problema em todas as estações de esqui da Lapônia (Yle, 25 de outubro de 2017). O problema não diminuiu: na primavera de 2023, a Yle noticiou trabalhadores de Levi e Ylläs morando em apartamentos de temporada onde não podem registrar um endereço.',
+    'A área turística de Levi contrata pouco mais de 2.000 trabalhadores sazonais para a temporada de inverno, estimou já em 2017 Kristiina Kukkohovi, diretora-geral da Levin Matkailu Oy, e ela disse que a falta de moradia estava se tornando um grande problema em todas as estações de esqui da Lapônia (Yle, 25 de outubro de 2017). O problema não diminuiu: na primavera de 2023, a Yle noticiou trabalhadores de Levi e Ylläs morando em apartamentos de temporada onde não podiam registrar um endereço.',
     'Em junho de 2026, os donos do K-Market Jounin Kauppa, em Äkäslompolo, decidiram construir três casas em fileira para os próprios funcionários, porque há poucos apartamentos e os aluguéis subiram muito (Yle, 16 de junho de 2026). A loja emprega cerca de 20 trabalhadores sazonais por ano, e mais ou menos metade deles precisa de uma casa alugada (Kesko, 17 de junho de 2026).',
-    'Em Rovaniemi, a empresa de recrutamento Career.fi levou cerca de 250 trabalhadores para a Lapônia e os alojou em umas dez localidades diferentes; dois trabalhadores estonianos passaram dois invernos morando com a família do diretor de crescimento depois que o apartamento alugado entrou em reforma das tubulações. Encontrar moradia é “um verdadeiro espetáculo todos os anos” (Yle, 9 de março de 2026).',
+    'Em Rovaniemi, a empresa de recrutamento Career.fi levou cerca de 250 trabalhadores para a Lapônia e os alojou em umas dez localidades diferentes; dois trabalhadores estonianos passaram dois invernos morando com a família do diretor de crescimento depois que o apartamento alugado entrou em reforma das tubulações. Encontrar moradia é “um verdadeiro circo todos os anos” (Yle, 9 de março de 2026).',
   ],
   sections: [
     {
@@ -39,12 +39,12 @@ const copy: HousingPageCopy = {
         {
           title: '1. Moradia para funcionários',
           body:
-            'A resposta mais comum nas estações de esqui: o empregador aluga casas em fileira, cabanas e apartamentos de temporada para a equipe durante toda a temporada e desconta o aluguel do seu salário. Em Ruka, um grupo de restaurantes já alugava quatro imóveis de temporada de novembro a maio para os seus funcionários em 2017 (Yle, 25 de outubro de 2017). A vantagem: o teto está pronto quando você chega. O risco: o apartamento acaba quando o emprego acaba.',
+            'A resposta mais comum nas estações de esqui: o empregador aluga casas em fileira, cabanas e apartamentos de temporada para a equipe durante toda a temporada e desconta o aluguel do seu salário. Em Ruka, um grupo de restaurantes já alugava quatro imóveis de temporada de novembro a maio para os seus funcionários em 2017 (Yle, 25 de outubro de 2017). A vantagem: já há um teto esperando quando você chega. O risco: o apartamento acaba quando o emprego acaba.',
         },
         {
           title: '2. Apartamento de temporada com contrato sazonal',
           body:
-            'Um apartamento de 80 m² em casa de estilo alpino em Levi: 750 € por mês de maio a novembro, 2.000 € por semana na alta temporada, 1.650 € por mês o ano todo (Yle, 25 de maio de 2023). Barato no verão, impossível no inverno. Além disso, não é possível obter um endereço oficial em um apartamento de temporada (Yle, 25 de maio de 2023).',
+            'Um apartamento de 80 m² em estilo alpino em Levi: 750 € por mês de maio a novembro, 2.000 € por semana na alta temporada, 1.650 € por mês o ano todo (Yle, 25 de maio de 2023). Barato no verão, impossível no inverno. Além disso, não é possível obter um endereço oficial em um apartamento de temporada (Yle, 25 de maio de 2023).',
         },
         {
           title: '3. Um aluguel municipal',
@@ -63,7 +63,7 @@ const copy: HousingPageCopy = {
           title: 'Levi e Kittilä',
           image: { src: '/images/housing-levi-keskusta-card.webp', alt: 'Construções de madeira no centro de Levi em um dia de verão' },
           body:
-            'A população de Kittilä cresceu 2,0 por cento em 2025, o segundo maior crescimento entre os municípios da Lapônia, depois de Pelkosenniemi (2,4 por cento) (Statistics Finland). Os empregadores alugam casas em fileira para a equipe durante toda a temporada, e todos os demais procuram no grupo de moradia de Levi no Facebook. A Kittilän Vuokratalot Oy lista apartamentos tanto no vilarejo de Kittilä quanto em Levi, em Sirkka.',
+            'A população de Kittilä cresceu 2,0 por cento em 2025, o segundo maior crescimento entre os municípios da Lapônia, depois dos 2,4 por cento de Pelkosenniemi (Statistics Finland). Os empregadores alugam casas em fileira para a equipe durante toda a temporada, e todos os demais procuram no grupo de moradia de Levi no Facebook. A Kittilän Vuokratalot Oy lista apartamentos tanto no vilarejo de Kittilä quanto em Sirkka, em Levi.',
           href: 'https://kittila.fi/asuminen-ja-ymparisto/asuminen/vuokra-asunnot',
           linkLabel: 'Kittilän Vuokratalot Oy',
           event: 'kittila',
@@ -90,7 +90,7 @@ const copy: HousingPageCopy = {
           title: 'Rovaniemi',
           image: { src: '/images/housing-rovaniemi-lappia-card.webp', alt: 'A Lappia House no centro de Rovaniemi' },
           body:
-            'Estudantes, turistas e trabalhadores sazonais disputam os mesmos quitinetes ao mesmo tempo: no verão de 2026, a fundação de moradia estudantil DAS recebeu cerca de 550 candidaturas urgentes, 15 por cento mais que um ano antes, e quase 90 por cento dos candidatos queriam um quitinete (Yle, 27 de julho de 2026).',
+            'Estudantes, turistas e trabalhadores sazonais disputam as mesmas quitinetes ao mesmo tempo: no verão de 2026, a fundação de moradia estudantil DAS recebeu cerca de 550 candidaturas urgentes, 15 por cento mais que um ano antes, e quase 90 por cento dos candidatos queriam uma quitinete (Yle, 27 de julho de 2026).',
           href: 'https://yle.fi/a/74-20213937',
           linkLabel: 'Yle, 9 de março de 2026: falta de moradia em Rovaniemi',
           event: 'rovaniemi',
@@ -127,7 +127,7 @@ const copy: HousingPageCopy = {
       kicker: 'Antes de assinar',
       h2: 'Pergunte isto ao seu empregador.',
       bullets: [
-        'O apartamento faz parte do pacote de emprego ou é um contrato de locação separado? Quanto é descontado do seu salário, e isso aparece no holerite?',
+        'O apartamento faz parte do contrato de trabalho ou é um contrato de locação separado? Quanto é descontado do seu salário, e isso aparece no holerite?',
         'Quarto só seu ou compartilhado? Quantas pessoas moram no apartamento, e a sua porta tem tranca?',
         'O que acontece com o contrato de locação se o emprego terminar antes da temporada, ou continuar depois dela?',
         'Você pode registrar o seu endereço ali? A comunicação de mudança de endereço à DVV deve ser feita em até uma semana após a mudança, e um apartamento de temporada muitas vezes não se qualifica.',
@@ -154,7 +154,7 @@ const copy: HousingPageCopy = {
   cta: {
     partner: 'hotels',
     kicker: 'As primeiras noites',
-    h2: 'Antes de as chaves estarem na sua mão.',
+    h2: 'Antes de receber as chaves.',
     lead:
       'A temporada muitas vezes começa antes de o apartamento ficar livre. A busca do nosso parceiro mostra quartos e apartamentos disponíveis com os preços de hoje.',
     chips: [

@@ -35,7 +35,7 @@ const copy: HousingPageCopy = {
       kicker: 'La première semaine',
       h2: 'Quatre démarches, une échéance.',
       bullets: [
-        '<strong>Déclaration de changement d’adresse auprès du DVV</strong> : au plus tôt un mois avant le jour du déménagement et au plus tard une semaine après (DVV). La même déclaration est transmise à Posti. Les services communaux (crèche, école, centre de santé) suivent votre commune de résidence enregistrée, alors déclarez-la tout de suite.',
+        '<strong>Déclaration de changement d’adresse auprès du DVV</strong> : au plus tôt un mois avant le jour du déménagement et au plus tard une semaine après (DVV). La même déclaration est transmise à Posti. Les services communaux (crèche, école, centre de santé) suivent votre commune de résidence enregistrée : faites donc la déclaration tout de suite.',
         '<strong>Contrat d’électricité.</strong> Le prix total de l’électricité pour un foyer consommant 2 500–4 999 kWh par an s’élevait en moyenne à 23,7 cents le kWh dans toute la Finlande en juin 2026, et à 14,9 cents dans la tranche au-dessus de 15 000 kWh, où se range une maison chauffée à l’électricité (Statistics Finland). La saison de chauffage est longue en Laponie : estimez votre consommation plutôt à la hausse.',
         '<strong>Les soins de santé</strong> relèvent du comté de services de bien-être de Laponie (Lapha). Les soins non urgents passent par votre centre de santé local ; trouvez le plus proche sur le site du comté et inscrivez-vous sur Omakanta.',
         '<strong>Internet.</strong> Demandez à la copropriété ou au bailleur s’il y a la fibre avant de signer. Dans les zones peu peuplées, un routeur mobile est souvent la seule solution, et quiconque télétravaille devrait d’abord tester la connexion dans le logement.',
@@ -108,7 +108,7 @@ const copy: HousingPageCopy = {
     kicker: 'Une voiture pour les premières semaines',
     h2: 'Visites, déménagement, courses.',
     lead:
-      'Votre propre voiture arrive souvent plus tard. Une location depuis l’aéroport couvre les visites et les premières semaines ; le moteur partenaire compare les loueurs en une seule fois.',
+      'Votre propre voiture arrive souvent plus tard. Une location depuis l’aéroport couvre les visites et les premières semaines ; le moteur de notre partenaire compare les loueurs en une seule recherche.',
     chips: [
       { label: 'Rovaniemi (RVN)', destination: 'RVN', sid: 'moving_car_rvn' },
       { label: 'Kittilä (KTT)', destination: 'KTT', sid: 'moving_car_ktt' },

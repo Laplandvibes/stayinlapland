@@ -25,7 +25,7 @@ const copy: HousingPageCopy = {
   authorNote:
     'Jede Zahl stammt von Statistik Finnland, Kela oder dem Verband der finnischen Kommunen. Die Beispiele sind aus diesen Zahlen berechnet und zeigen ihre Formel. Keine Schätzungen.',
   intro: [
-    'Bei den Kosten gibt es zwei Lapplands. Rovaniemi ist eine Universitätsstadt, in der Studierende und Touristen um die Studios konkurrieren. In den Skiresorts folgt der Preis der Saison. An der Küste und in den kleinen Gemeinden ist das Wohnen am geräumigsten und günstigsten, aber ein Auto ist Pflicht.',
+    'Bei den Kosten gibt es zwei Lapplands. Rovaniemi ist eine Universitätsstadt, in der Studierende und Touristen um die Studios konkurrieren. In den Skigebieten folgt der Preis der Saison. An der Küste und in den kleinen Gemeinden ist das Wohnen am geräumigsten und günstigsten, aber ein Auto ist Pflicht.',
     'Unten stehen die vier Posten, aus denen ein Monatsbudget wirklich besteht: Miete, Strom, Fortbewegung und Kinder. Für Lebensmittelpreise gibt es keine Statistik speziell für Lappland, deshalb raten wir nicht.',
   ],
   sections: [
@@ -46,7 +46,7 @@ const copy: HousingPageCopy = {
       },
       paras: [
         '<strong>Beispiele:</strong> ein Studio von 30 m² in Rovaniemi etwa 560 € im Monat (18,63 × 30), eine Zweizimmerwohnung von 50 m² in Rovaniemi etwa 720 € (14,40 × 50), eine Dreizimmerwohnung von 75 m² zum Durchschnitt der Region Lappland etwa 830 € (11,08 × 75).',
-        'Die Ausnahme ist der Winter in den Skiresorts: Nahe dem Zentrum von Levi kostete eine Wohnung von 80 m² in einem Alpenhaus von Mai bis November 750 € im Monat, in der Hochsaison aber 2.000 € pro Woche (Yle, 25. Mai 2023). Ein ganzjähriger Mietvertrag für dieselbe Wohnung lag bei 1.650 € im Monat. Der Resortpreis ist nicht der Lappland-Preis.',
+        'Die Ausnahme ist der Winter in den Skigebieten: Nahe dem Zentrum von Levi kostete eine Wohnung von 80 m² in einem Haus im Alpenstil von Mai bis November 750 € im Monat, in der Hochsaison aber 2.000 € pro Woche (Yle, 25. Mai 2023). Ein ganzjähriger Mietvertrag für dieselbe Wohnung lag bei 1.650 € im Monat. Der Preis im Skigebiet ist nicht der Preis Lapplands.',
       ],
     },
     {
@@ -66,7 +66,7 @@ const copy: HousingPageCopy = {
       },
       paras: [
         '<strong>Beispiele:</strong> eine Zweizimmerwohnung mit 3.500 kWh Jahresverbrauch: 3.500 × 0,237 = etwa 830 € im Jahr, also 69 € im Monat. Ein elektrisch beheiztes Einfamilienhaus mit 18.000 kWh: 18.000 × 0,149 = etwa 2.680 € im Jahr, also 223 € im Monat.',
-        'Der Preis ist ein landesweiter Durchschnitt. Lapplands Heizsaison ist länger als die im Süden, dasselbe Haus verbraucht hier also mehr Kilowattstunden. Fragen Sie den Vormieter oder den Vermieter nach dem Verbrauch des letzten Jahres, es ist die beste Schätzung, die Sie bekommen.',
+        'Der Preis ist ein landesweiter Durchschnitt. Lapplands Heizsaison ist länger als die im Süden, dasselbe Haus verbraucht hier also mehr Kilowattstunden. Fragen Sie den Vormieter oder den Vermieter nach dem Verbrauch des letzten Jahres, das ist die beste Schätzung, die Sie bekommen können.',
       ],
     },
     {
@@ -135,7 +135,7 @@ const copy: HousingPageCopy = {
     },
     {
       q: 'Wie viel braucht eine Einzelperson pro Monat in Rovaniemi?',
-      a: 'Wir rechnen nur, was eine Quelle hat: ein Studio von 30 m² etwa 560 € im Monat (18,63 × 30) und Strom bei 1.800 kWh im Jahr etwa 42 € im Monat (1.800 × 0,282 / 12). Lebensmittel, Internet, Versicherung und Verkehr kommen je nach Ihren eigenen Gewohnheiten hinzu.',
+      a: 'Wir rechnen nur mit Zahlen, die eine Quelle haben: ein Studio von 30 m² etwa 560 € im Monat (18,63 × 30) und Strom bei 1.800 kWh im Jahr etwa 42 € im Monat (1.800 × 0,282 / 12). Lebensmittel, Internet, Versicherung und Verkehr kommen je nach Ihren eigenen Gewohnheiten hinzu.',
     },
     {
       q: 'Kann ich in Lappland Wohngeld bekommen?',

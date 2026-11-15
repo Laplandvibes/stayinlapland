@@ -15,7 +15,7 @@ const copy: WhenToGoCopy = {
     eyebrow: 'Von Januar bis Dezember',
     title: 'Lappland, Monat für Monat.',
     subtitle:
-      'Wie jeder Monat bei Wetter, Licht und Schnee ist, was man dann unternimmt und was es bedeutet, wenn Sie hier wohnen. Zahlen vom Finnischen Meteorologischen Institut und von Statistik Finnland.',
+      'Wie jeder Monat in Sachen Wetter, Licht und Schnee aussieht, was man dann unternimmt und was es bedeutet, wenn Sie hier wohnen. Zahlen vom Finnischen Meteorologischen Institut und von Statistik Finnland.',
   },
   intro: [
     'Lapplands Jahr besteht aus zwei verschiedenen Welten. Von November bis April gibt es Schnee, Frost und kurze Tage, von Mai bis September Licht, das im hohen Norden gar nicht untergeht. Dazwischen liegen zwei kurze Phasen, die Einheimische gut kennen: das Tauwetter im Frühjahr und die Herbstfärbung, Ruska.',
@@ -53,14 +53,14 @@ const copy: WhenToGoCopy = {
     {
       name: 'Februar',
       pitch: 'Schnee und Winterferien',
-      body: 'Zusammen mit dem Dezember ist der Februar der volleste Monat des Jahres: Lapplands Belegung lag im Februar 2025 bei 77,6 %, der durchschnittliche Zimmerpreis blieb aber unter dem des Dezembers. Der Schnee in Rovaniemi ist am 15. Februar im Durchschnitt 66 cm hoch, und der Tag ist schon acht Stunden lang.',
+      body: 'Zusammen mit dem Dezember ist der Februar der Monat mit der höchsten Auslastung: Lapplands Belegung lag im Februar 2025 bei 77,6 %, der durchschnittliche Zimmerpreis blieb aber unter dem des Dezembers. Der Schnee in Rovaniemi ist am 15. Februar im Durchschnitt 66 cm hoch, und der Tag ist schon acht Stunden lang.',
       good: ['Polarlichter im Spätwinter: Das Finnische Meteorologische Institut nennt Spätwinter und Frühherbst statistisch die besten Zeiten', 'Skifahren und lange Tagesausflüge'],
-      note: ['Buchen Sie früh, der Februar ist einer der vollsten Monate', 'Die Schulen im Raum Helsinki und in Turku haben ihre Skiferien in Woche 8 (22.–26. Februar 2027)'],
+      note: ['Buchen Sie früh: Der Februar ist einer der gefragtesten Monate', 'Die Schulen im Raum Helsinki und in Turku haben ihre Skiferien in Woche 8 (22.–26. Februar 2027)'],
     },
     {
       name: 'März',
       pitch: 'Polarlichter und der tiefste Schnee',
-      body: 'Das Finnische Meteorologische Institut empfiehlt den März zur Polarlichtbeobachtung, weil das Frühjahr im Durchschnitt weniger bewölkt ist. Der Schnee liegt am höchsten, in Rovaniemi im Durchschnitt 77 cm, und der Tag wächst über 13 Stunden. Sodankylä hat im März 141 Sonnenstunden gegenüber 59 im Februar.',
+      body: 'Das Finnische Meteorologische Institut empfiehlt den März zur Polarlichtbeobachtung, weil das Frühjahr im Durchschnitt weniger bewölkt ist. Der Schnee liegt am höchsten, in Rovaniemi im Durchschnitt 77 cm, und der Tag wird länger als 13 Stunden. Sodankylä hat im März 141 Sonnenstunden gegenüber 59 im Februar.',
       good: ['Polarlichter', 'Skifahren bei sonnigem Wetter', 'Ostern, 26.–29. März 2027'],
       note: ['Die Schulen in Rovaniemi haben ihre Skiferien in Woche 10 (8.–12. März 2027), und Ostern bringt Reisende aus dem Inland', 'Winterreifen sind bis zum 31. März vorgeschrieben, wenn die Bedingungen es erfordern'],
     },
@@ -69,19 +69,19 @@ const copy: WhenToGoCopy = {
       pitch: 'Harschschnee und lange Abende',
       body: 'Es liegt noch reichlich Schnee, in Rovaniemi am 15. April im Durchschnitt 64 cm, und laut Metsähallitus dauern die Harschschnee-Bedingungen von Mitte April bis teils Mitte Mai. Polarlichter sind Anfang des Monats noch zu sehen: Die Nächte in Rovaniemi werden bis etwa 21. April dunkel, in Utsjoki bis etwa 10. April. Der durchschnittliche Zimmerpreis in Lappland lag im April bei 139–141 € gegenüber 200–225 € im März (2024–2025).',
       good: ['Skifahren auf Harsch und Fjäll-Touren', 'Frühlingssonne: Am 20. April ist der Tag in Rovaniemi über 16 Stunden lang'],
-      note: ['Manche Skiresorts schließen im April: Die Saison am Ounasvaara endet am 17. April 2027, Ylläs rechnet mit dem Saisonende Anfang Mai', 'Saisonjobs enden: In Saariselkä liegen die letzten Arbeitstage des Winters Mitte April (Yle)'],
+      note: ['Manche Skigebiete schließen im April: Die Saison am Ounasvaara endet am 17. April 2027, Ylläs rechnet mit dem Saisonende Anfang Mai', 'Saisonjobs enden: In Saariselkä liegen die letzten Arbeitstage des Winters Mitte April (Yle)'],
     },
     {
       name: 'Mai',
       pitch: 'Der Schnee schmilzt, der ruhigste Monat',
-      body: 'Der dauerhafte Schnee schmilzt rund um Rovaniemi typischerweise zwischen dem 30. April und dem 10. Mai und im Fjäll-Lappland zwischen dem 10. und 20. Mai. Das Gelände ist im Tauwetter: zu nass zum Skifahren und zu verschneit zum Wandern. Der Mai ist der ruhigste Monat für den Tourismus, mit etwa 65.000 Übernachtungen gegenüber 430.000–620.000 in den Wintermonaten, und viele Betriebe machen Pause. Im hohen Norden beginnt schon die Mitternachtssonne: in Nuorgam am 16. Mai.',
+      body: 'Der dauerhafte Schnee schmilzt rund um Rovaniemi typischerweise zwischen dem 30. April und dem 10. Mai und im Fjäll-Lappland zwischen dem 10. und 20. Mai. Im Gelände herrscht Tauwetter: zu nass zum Skifahren und zu verschneit zum Wandern. Der Mai ist der ruhigste Monat für den Tourismus, mit etwa 65.000 Übernachtungen gegenüber 430.000–620.000 in den Wintermonaten, und viele Betriebe machen Pause. Im hohen Norden beginnt schon die Mitternachtssonne: in Nuorgam am 16. Mai.',
       good: ['Wohnungssuche in Rovaniemi: Laut DAS werden im Verhältnis zu den Bewerbern im Frühjahr und Frühsommer die meisten Wohnungen frei', 'Ruhige Landschaften und Frühlingslicht'],
       note: ['Viele touristische Angebote sind geschlossen oder haben verkürzte Öffnungszeiten', 'Das Frühjahrshochwasser schwankt von Mitte Mai bis Mitte Juni'],
     },
     {
       name: 'Juni',
       pitch: 'Die Mitternachtssonne',
-      body: 'Die Sonne geht in Rovaniemi vom 7. Juni bis zum 6. Juli nicht unter, in Sodankylä vom 31. Mai bis zum 13. Juli und in Utsjoki vom 18. Mai bis zum 27. Juli. Die Mitteltemperatur in Rovaniemi beträgt 12,5 °C. Die Wandersaison beginnt, wenn der Schnee die Fjälls verlässt, in Kilpisjärvi kann im Juni noch Schnee liegen.',
+      body: 'Die Sonne geht in Rovaniemi vom 7. Juni bis zum 6. Juli nicht unter, in Sodankylä vom 31. Mai bis zum 13. Juli und in Utsjoki vom 18. Mai bis zum 27. Juli. Die Mitteltemperatur in Rovaniemi beträgt 12,5 °C. Die Wandersaison beginnt, wenn der Schnee die Fjälls verlässt. In Kilpisjärvi kann im Juni noch Schnee liegen.',
       good: ['Midnight Sun Film Festival in Sodankylä, 16.–20. Juni 2027', 'Mittsommer, 25.–26. Juni 2027'],
       note: ['Die Mückensaison, Räkkä, beginnt meist um Mittsommer', 'Verdunkelungsvorhänge fürs Schlafzimmer: Eine helle Nacht ist schön, aber nicht zum Schlafen'],
     },
@@ -102,7 +102,7 @@ const copy: WhenToGoCopy = {
     {
       name: 'September',
       pitch: 'Herbstfärbung und Polarlichter im Herbst',
-      body: 'Ruska, die Herbstfärbung, erreicht Nordfinnland in der ersten Septemberhälfte: in den Wochen 36–38 in Kilpisjärvi, Pallas-Ylläs und Utsjoki, in den Wochen 37–39 im Urho-Kekkonen-Nationalpark. Um die Herbst-Tagundnachtgleiche sind magnetische Stürme im Durchschnitt häufiger, und auf der Breite von Sodankylä erscheinen Polarlichter im Durchschnitt in jeder zweiten klaren, dunklen Nacht. Der September ist der zweite Höhepunkt der finnischen Reisenden.',
+      body: 'Ruska, die Herbstfärbung, erreicht Nordfinnland in der ersten Septemberhälfte: in den Wochen 36–38 in Kilpisjärvi, Pallas-Ylläs und Utsjoki, in den Wochen 37–39 im Urho-Kekkonen-Nationalpark. Um die Herbst-Tagundnachtgleiche sind magnetische Stürme im Durchschnitt häufiger, und auf der Breite von Sodankylä erscheinen Polarlichter im Durchschnitt in jeder zweiten klaren, dunklen Nacht. Bei finnischen Reisenden ist der September der zweite Höhepunkt des Jahres.',
       good: ['Wanderungen zur Herbstfärbung', 'Polarlichter vor dem Winter', 'Preiselbeeren ab Anfang September'],
       note: ['Im September kann es auf den Fjälls schon schneien', 'In den Ruska-Wochen füllen Reisende aus dem Inland die Fjäll-Resorts'],
     },
@@ -116,8 +116,8 @@ const copy: WhenToGoCopy = {
     {
       name: 'November',
       pitch: 'Im hohen Norden beginnt die Polarnacht',
-      body: 'In Utsjoki beginnt die Polarnacht am 26. November und dauert im Durchschnitt 51 Tage. In Rovaniemi geht die Sonne jeden Tag auf, aber am 15. November ist der Tag knapp unter sechs Stunden lang. Die Skiresorts öffnen: in der Saison 2026–2027 der Ounasvaara am 11. November, Ylläs am 21. November und Luosto mit dem Ziel 28. November.',
-      good: ['Die Weltcup-Slaloms in Levi Mitte November', 'Winter zu Preisen vor Weihnachten: Ein Zimmer in Lapplands Beherbergungsbetrieben kostete im Durchschnitt 192–209 € im November und 285–313 € im Dezember (2024–2025)'],
+      body: 'In Utsjoki beginnt die Polarnacht am 26. November und dauert im Durchschnitt 51 Tage. In Rovaniemi geht die Sonne jeden Tag auf, aber am 15. November ist der Tag knapp unter sechs Stunden lang. Die Skigebiete öffnen: in der Saison 2026–2027 der Ounasvaara am 11. November, Ylläs am 21. November und Luosto mit dem Ziel 28. November.',
+      good: ['Die Weltcup-Slaloms in Levi Mitte November', 'Winter vor den Weihnachtspreisen: Ein Zimmer in Lapplands Beherbergungsbetrieben kostete im Durchschnitt 192–209 € im November und 285–313 € im Dezember (2024–2025)'],
       note: ['Rovaniemi ist im November nicht ruhig: Hotelbelegung 72–82 % (2023–2025)', 'Winterreifen ab dem 1. November, wenn die Bedingungen es erfordern. Das Arctic SnowHotel öffnet erst im Dezember'],
     },
     {
@@ -136,7 +136,7 @@ const copy: WhenToGoCopy = {
     h2: 'Was das Jahr für das Wohnen bedeutet.',
     items: [
       '<strong>Eine Mietwohnung in Rovaniemi:</strong> Laut DAS werden im Verhältnis zu den Bewerbern im Frühjahr und Frühsommer die meisten Wohnungen frei, und im August und September gibt es die meisten Bewerber. Befristete Mietverträge enden Ende Oktober, weil Wohnungen für den Winter an Touristen vermietet werden (Yle, 27. Juli 2026).',
-      '<strong>Saisonarbeit:</strong> Die Anwerbung für den Winter zieht ab August an (Yle), und die Skiresorts öffnen im Oktober oder November und schließen je nach Resort im April oder Mai.',
+      '<strong>Saisonarbeit:</strong> Die Anwerbung für den Winter zieht ab August an (Yle), und die Skigebiete öffnen im Oktober oder November und schließen je nach Ort im April oder Mai.',
       '<strong>Autofahren:</strong> Winterreifen sind vom 1. November bis 31. März vorgeschrieben, wenn die Bedingungen es erfordern, und Spikes dürfen zu anderen Zeiten benutzt werden, wenn die Bedingungen es verlangen (Traficom). Zusammenstöße mit Rentieren häufen sich von November bis Januar (Verband der Rentierzüchter).',
       '<strong>Licht:</strong> Verdunkelungsvorhänge und ein Moskitonetz im Sommer, eine Tageslichtlampe und ein Reflektor im Winter. In Rovaniemi ist die Polarnacht nur ein Name: Die Sonne geht jeden Tag auf.',
     ],
@@ -144,7 +144,7 @@ const copy: WhenToGoCopy = {
   links: [
     { label: 'Mietwohnungen Ort für Ort', href: '/rentals' },
     { label: 'Umzug nach Lappland', href: '/moving-to-lapland' },
-    { label: 'Wohnen bei Saisonarbeit', href: '/seasonal-worker-housing' },
+    { label: 'Wohnen für Saisonkräfte', href: '/seasonal-worker-housing' },
     { label: 'Ein Monat in Lappland', href: '/long-stays' },
   ],
   faqKicker: 'Häufig gefragt',
@@ -168,7 +168,7 @@ const copy: WhenToGoCopy = {
     },
   ],
   authorNote:
-    'Temperaturen, Schnee und Polarlichter vom Finnischen Meteorologischen Institut, der Naturkalender von Metsähallitus, monatliche Tourismuszahlen von Statistik Finnland, Ferien von der Finnischen Nationalen Bildungsagentur, Veranstaltungen von ihren Veranstaltern. Geprüft am 15. November 2026.',
+    'Temperaturen, Schnee und Polarlichter vom Finnischen Meteorologischen Institut, der Naturkalender von Metsähallitus, monatliche Tourismuszahlen von Statistik Finnland, Ferien von der Finnischen Nationalen Bildungsagentur, Veranstaltungsdaten von den Veranstaltern. Geprüft am 15. November 2026.',
   sources: whenToGoSources(common.whenToGoSourceLabels),
 };
 

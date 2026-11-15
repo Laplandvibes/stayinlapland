@@ -27,7 +27,7 @@ const copy: HousingPageCopy = {
     'Folkmängd från Statistikcentralen, antal bostäder och ansökan från Kemijärvi stads sidor, hyreshöjningar och uthyrningsmål från stadens budget för 2026. Kontrollerat den 15 november 2026.',
   intro: [
     'Kemijärvi hade 6 919 invånare i slutet av 2025, 35 färre än ett år tidigare (Statistikcentralen). Staden kallar sig Finlands nordligaste stad och säger att servicen i centrum ligger inom gångavstånd (kemijarvi.fi).',
-    'Stadens två fastighetsbolag, Kemijärven Vuokratalot och Kemijärven Töveli, äger 560 hyresbostäder (kemijarvi.fi). Stadens budget räknar det som ett realistiskt mål att 80–85 procent av bostäderna är uthyrda, så tomma bostäder finns.',
+    'Stadens två fastighetsbolag, Kemijärven Vuokratalot och Kemijärven Töveli, äger 560 hyresbostäder (kemijarvi.fi). Stadens budget räknar det som ett realistiskt mål att 80–85 procent av bostäderna är uthyrda, så det finns faktiskt lediga bostäder.',
     'Hyrorna stiger: Kemijärven Vuokratalot höjde sina hyror med 4,5 procent den 1 februari 2026 och Töveli med 5 procent den 1 juli 2026. Samma höjningar finns inskrivna i planen för 2027 och 2028 (budgeten 2026).',
   ],
   sections: [
@@ -77,7 +77,7 @@ const copy: HousingPageCopy = {
       },
       paras: [
         '<strong>Kemijärvis egen siffra är från 2022.</strong> I postnummerområdet 98100 i stadens centrum var genomsnittet för fritt finansierade ettor 12,15 € per m² och för tvåor 9,10 € per m² i januari–mars 2022. Varje kvartal sedan dess har dolts: Statistikcentralen publicerar inte ett postnummerområdes siffra när det finns för få observationer (tabell 13eb).',
-        'Stadens bolags hyror finns inte på nätet. Fråga bostadssekreteraren om hyran innan du tar emot ett erbjudande, och kom ihåg att hyrorna steg 2026: 4,5 procent hos Vuokratalot och 5 procent hos Töveli.',
+        'Hyrorna hos stadens bolag finns inte på nätet. Fråga bostadssekreteraren om hyran innan du tackar ja till ett erbjudande, och kom ihåg att hyrorna steg 2026: 4,5 procent hos Vuokratalot och 5 procent hos Töveli.',
       ],
     },
     {
@@ -100,7 +100,7 @@ const copy: HousingPageCopy = {
     {
       id: 'work',
       kicker: 'Arbete och förbindelser',
-      h2: 'Kom överens om jobbet innan du flyttar.',
+      h2: 'Ordna jobbet innan du flyttar.',
       bullets: [
         'Enligt staden är de stora arbetsgivarna vid sidan av staden själv Keitele Group, Festivo Porkka Group och Kelas kontaktcenter, tillsammans med handels-, service- och turistföretag (budgeten 2026).',
         'De arbetslösa utgjorde 15,6 procent av arbetskraften 2024, mot 11,7 procent i Finland som helhet (Statistikcentralen).',
@@ -121,7 +121,7 @@ const copy: HousingPageCopy = {
   faqs: [
     {
       q: 'Hur ansöker jag om en stadsägd bostad i Kemijärvi?',
-      a: 'Med webbansökan på stadens webbplats eller med pappersblankett från Sortteeri (Vapaudenkatu 8). Ansökan gäller i fyra månader och kan förnyas för ytterligare fyra. Kreditupplysning tas, och ansökan behandlas inte förrän bilagorna har kommit in. Möten för val av hyresgäster hålls vanligtvis varannan onsdag (kemijarvi.fi).',
+      a: 'Med webbansökan på stadens webbplats eller med pappersblankett från Sortteeri (Vapaudenkatu 8). Ansökan gäller i fyra månader och kan förnyas för ytterligare fyra. Kreditupplysning tas, och ansökan behandlas inte förrän bilagorna har kommit in. Hyresgästerna väljs vanligtvis vid ett möte varannan onsdag (kemijarvi.fi).',
     },
     {
       q: 'Finns det lediga hyresbostäder i Kemijärvi?',

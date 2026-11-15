@@ -26,15 +26,15 @@ const copy: HousingPageCopy = {
     'Chaque chiffre vient de Statistics Finland, de Kela ou de l’Association des communes de Finlande ; les exemples sont calculés à partir de ces chiffres et montrent leur formule. Aucune estimation.',
   intro: [
     'Pour les coûts, il y a deux Laponies. Rovaniemi est une ville universitaire où étudiants et touristes se disputent les studios ; dans les stations de ski, le prix suit la saison. Sur la côte et dans les petites communes, les logements sont les plus spacieux et les moins chers, mais la voiture est obligatoire.',
-    'Voici les quatre postes dont un budget mensuel est réellement fait : le loyer, l’électricité, les déplacements et les enfants. Il n’existe pas de statistique propre à la Laponie sur le prix de l’alimentation, nous n’en devinons donc pas une.',
+    'Voici les quatre postes qui composent réellement un budget mensuel : le loyer, l’électricité, les déplacements et les enfants. Il n’existe pas de statistique propre à la Laponie sur le prix de l’alimentation, et nous ne nous hasardons donc pas à l’estimer.',
   ],
   sections: [
     {
       id: 'rent',
       kicker: 'Le loyer',
-      h2: 'Moins cher que la moyenne nationale, sauf quand ce ne l’est pas.',
+      h2: 'Moins cher que la moyenne nationale, sauf quand il ne l’est pas.',
       table: {
-        caption: 'Loyer moyen en €/m²/mois, logements locatifs du marché libre, 2026T3',
+        caption: 'Loyer moyen en €/m²/mois, logements locatifs du parc privé, 2026T3',
         head: ['', 'Rovaniemi', 'Laponie (région)', 'Ensemble du pays'],
         rows: [
           ['Studios', '18,63', '17,25', '20,49'],
@@ -46,19 +46,19 @@ const copy: HousingPageCopy = {
       },
       paras: [
         '<strong>Exemples :</strong> un studio de 30 m² à Rovaniemi, environ 560 € par mois (18,63 × 30) ; un deux-pièces de 50 m² à Rovaniemi, environ 720 € (14,40 × 50) ; un trois-pièces de 75 m² au loyer moyen régional de la Laponie, environ 830 € (11,08 × 75).',
-        'L’exception, c’est l’hiver dans les stations de ski : près du centre de Levi, un appartement de 80 m² dans une maison alpine coûtait 750 € par mois de mai à novembre, mais 2 000 € par semaine en haute saison (Yle, 25 mai 2023). Un bail à l’année pour le même appartement était de 1 650 € par mois. Le prix de la station n’est pas le prix de la Laponie.',
+        'L’exception, c’est l’hiver dans les stations de ski : près du centre de Levi, un appartement de 80 m² de style alpin coûtait 750 € par mois de mai à novembre, mais 2 000 € par semaine en haute saison (Yle, 25 mai 2023). Un bail à l’année pour le même appartement était de 1 650 € par mois. Le prix de la station n’est pas le prix de la Laponie.',
       ],
     },
     {
       id: 'electricity',
       kicker: 'Électricité et chauffage',
-      h2: 'Un kilowattheure coûte pareil, mais on en consomme plus.',
+      h2: 'Le kilowattheure coûte le même prix, on en consomme simplement plus.',
       table: {
         caption: 'Prix total de l’électricité pour les ménages, cents/kWh, juin 2026, ensemble du pays',
         head: ['Consommation annuelle', 'Prix total'],
         rows: [
           ['1 000–2 499 kWh (petit appartement)', '28,2'],
-          ['2 500–4 999 kWh (appartement ou maison en bande)', '23,7'],
+          ['2 500–4 999 kWh (appartement ou maison mitoyenne)', '23,7'],
           ['5 000–15 000 kWh (maison individuelle, sans chauffage électrique)', '17,9'],
           ['plus de 15 000 kWh (maison chauffée à l’électricité)', '14,9'],
         ],
@@ -130,7 +130,7 @@ const copy: HousingPageCopy = {
   ],
   faqs: [
     {
-      q: 'Rovaniemi est-elle une ville chère pour y vivre ?',
+      q: 'Vivre à Rovaniemi coûte-t-il cher ?',
       a: 'Pas par les loyers : la moyenne de 14,63 € par m² est inférieure à celle du pays, 15,99 € (Statistics Finland 2026T3), et Rovaniemi est moins chère que l’ensemble du pays pour toutes les tailles de logement, studios compris (18,63 contre 20,49). Dans les nouveaux baux, un studio à Rovaniemi coûte 20,14 € par m² : un studio qui se libère maintenant coûte environ 8 % de plus qu’un studio déjà loué, mais reste moins cher qu’un studio en nouveau bail à l’échelle du pays, 21,11 € par m².',
     },
     {

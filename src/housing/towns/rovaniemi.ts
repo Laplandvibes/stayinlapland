@@ -19,7 +19,7 @@ export const TOWN_ROVANIEMI: HousingCopyMap = {
     authorNote:
       'Neliövuokrat Tilastokeskuksen vuokratilastosta (heinä–syyskuu 2026), vuokranantajat Rovaniemen kaupungin omalta Asuminen-sivulta, asuntopulan luvut Ylen uutisista. Tarkistettu 15.11.2026.',
     intro: [
-      'Rovaniemellä asuu 66 191 ihmistä (Tilastokeskus 31.12.2025), ja yksiöistä on kova kilpailu: opiskelija-asuntosäätiö DAS sai kesällä 2026 noin 550 kiireellistä hakemusta, 15 prosenttia enemmän kuin vuotta aiemmin, lähes 90 prosenttia hakijoista halusi yksiön, ja kaupungin yksiöitä lyhytvuokrataan talvisesongiksi matkailijoille (Yle 27.7.2026). DAS:n toimitusjohtajan mukaan kaikille hakijoille ei pystytä tarjoamaan asuntoa elo–syyskuussa.',
+      'Rovaniemellä asuu 66 191 ihmistä (Tilastokeskus 31.12.2025), ja yksiöistä on kova kilpailu. Opiskelija-asuntosäätiö DAS sai kesällä 2026 noin 550 kiireellistä hakemusta, 15 prosenttia enemmän kuin vuotta aiemmin, ja lähes 90 prosenttia hakijoista halusi yksiön. Lisäksi kaupungin yksiöitä lyhytvuokrataan talvisesongiksi matkailijoille (Yle 27.7.2026). DAS:n toimitusjohtajan mukaan elo–syyskuussa asuntoa ei pystytä tarjoamaan kaikille hakijoille.',
       'Rekrytointiyhtiö, joka toi Lappiin noin 250 työntekijää, majoitti heitä Rovaniemellä kymmeneen eri paikkaan (Yle 9.3.2026). Kausityöntekijät, opiskelijat ja matkailijat hakevat siis samoja pieniä asuntoja.',
       'Hyvä uutinen on hinta: Rovaniemen keskineliövuokra 14,63 €/m² on alle koko maan keskiarvon 15,99 (Tilastokeskus 2026Q3). Alla luvut asuntokoon mukaan ja kanavat, joista asuntoa haetaan.',
     ],
@@ -121,7 +121,7 @@ export const TOWN_ROVANIEMI: HousingCopyMap = {
         bullets: [
           '<strong>Elo–syyskuu</strong> on tiukin: DAS ei pysty tarjoamaan asuntoa kaikille hakijoille, ja vapailla markkinoilla yksiöitä on vähän (Yle 27.7.2026).',
           '<strong>Marras–joulukuu:</strong> osa yksiöistä on lyhytvuokrattu matkailijoille talvisesongiksi. Määräaikaiset sopimukset päättyvät usein lokakuun lopussa (Yle 27.7.2026).',
-          '<strong>Keväällä</strong> talvisesongiksi lyhytvuokratut yksiöt vapautuvat.',
+          '<strong>Keväällä</strong> vapautuvat talvisesongiksi lyhytvuokratut yksiöt.',
           '<strong>Vakuus</strong> on enintään kolmen kuukauden vuokra (laki asuinhuoneiston vuokrauksesta 8 §), ja 1.10.2026 alkaen se on palautettava viimeistään 14 päivän kuluessa vuokrasuhteen päättymisestä (Rakli).',
         ],
       },
@@ -165,7 +165,7 @@ export const TOWN_ROVANIEMI: HousingCopyMap = {
     authorNote:
       'Rents per m² from Statistics Finland (July–September 2026), landlords from the City of Rovaniemi’s own housing page, shortage figures from Yle. Checked 15 November 2026.',
     intro: [
-      'Rovaniemi has 66,191 residents (Statistics Finland, 31 Dec 2025) and fierce competition for studios: the student housing foundation DAS received about 550 urgent applications in summer 2026, 15 percent more than a year earlier, nearly 90 percent of applicants wanted a studio, and the city’s studios are let short-term to tourists for the winter season (Yle, 27 Jul 2026). According to DAS’s managing director, it cannot offer a flat to every applicant in August and September.',
+      'Rovaniemi has 66,191 residents (Statistics Finland, 31 Dec 2025) and fierce competition for studios. The student housing foundation DAS received about 550 urgent applications in summer 2026, 15 percent more than a year earlier, and nearly 90 percent of applicants wanted a studio. On top of that, the city’s studios are let short-term to tourists for the winter season (Yle, 27 Jul 2026). According to DAS’s managing director, the foundation cannot offer a flat to every applicant in August and September.',
       'A recruitment company that brought about 250 workers to Lapland housed them in some ten different places in Rovaniemi (Yle, 9 Mar 2026). Seasonal workers, students and tourists are all after the same small flats.',
       'The good news is the price: Rovaniemi’s average rent of €14.63 per m² is below the national average of €15.99 (Statistics Finland 2026Q3). Below, the figures by flat size and the channels to apply through.',
     ],
@@ -187,7 +187,7 @@ export const TOWN_ROVANIEMI: HousingCopyMap = {
         },
         paras: [
           '<strong>Examples:</strong> a 30 m² studio about €560 a month (18.63 × 30), in a new tenancy about €600 (20.14 × 30); a 50 m² two-room flat about €720 (14.40 × 50); a 75 m² three-room flat about €920 (12.29 × 75). Water and electricity usually come on top.',
-          'The new-tenancy studio price of €20.14 per m² is €1.51 (8 %) above the average of all studios in Rovaniemi, €18.63: a studio coming free right now costs more than one already let. Against the national average Rovaniemi is cheaper in every flat size.',
+          'The new-tenancy studio price of €20.14 per m² is €1.51 (8 %) above the €18.63 average for all studios in Rovaniemi: a studio coming free right now costs more than one already let. Against the national average, Rovaniemi is cheaper in every flat size.',
         ],
       },
       {
@@ -267,7 +267,7 @@ export const TOWN_ROVANIEMI: HousingCopyMap = {
         bullets: [
           '<strong>August–September</strong> is the tightest: DAS cannot house every applicant, and free-market studios are scarce (Yle, 27 Jul 2026).',
           '<strong>November–December:</strong> some studios are let short-term to tourists for the winter season. Fixed-term contracts often end in late October (Yle, 27 Jul 2026).',
-          '<strong>In spring</strong> studios let for the winter season come back.',
+          '<strong>In spring</strong>, studios let for the winter season come back onto the market.',
           '<strong>The deposit</strong> is at most three months’ rent (Act on Residential Leases, section 8), and from 1 October 2026 it must be returned within 14 days of the tenancy ending (Rakli).',
         ],
       },

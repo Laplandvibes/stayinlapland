@@ -18,7 +18,7 @@ const copy: HousingPageCopy = {
     eyebrow: 'Gemeinde Inari, 7.244 Einwohner',
     title: 'Mietwohnungen in Ivalo und Inari.',
     subtitle:
-      'Finnlands nördlichster Mietmarkt: eine kommunale Gesellschaft, ein paar private Vermieter und die Saison in Saariselkä. Wo Sie anfangen.',
+      'Finnlands nördlichster Mietmarkt: eine kommunale Gesellschaft, ein paar private Vermieter und die Saison in Saariselkä. Wo Sie am besten anfangen.',
   },
   authorNote:
     'Inarin Vuokra-asunnot Oy und die privaten Vermieter von der eigenen Wohnungsseite der Gemeinde Inari, Einwohnerzahl von Statistik Finnland, Mieten pro m² von Statistik Finnland (Region Lappland 2026Q3). Geprüft am 15. November 2026.',
@@ -57,9 +57,9 @@ const copy: HousingPageCopy = {
         },
         {
           title: 'Für Saisonkräfte in Saariselkä',
-          body: 'Arbeitgeber in Saariselkä bringen ihr Personal auch selbst unter, und die kommunale Gesellschaft hat Wohnungen in Saariselkä. Fragen Sie im Vorstellungsgespräch nach der Unterkunft. Das ganze Bild finden Sie auf der Seite für Saisonkräfte.',
+          body: 'Arbeitgeber in Saariselkä bringen ihr Personal auch selbst unter, und die kommunale Gesellschaft hat Wohnungen in Saariselkä. Fragen Sie im Vorstellungsgespräch nach der Unterkunft. Mehr dazu auf der Seite für Saisonkräfte.',
           href: '/seasonal-worker-housing',
-          linkLabel: 'Wohnen bei Saisonarbeit',
+          linkLabel: 'Wohnen für Saisonkräfte',
           event: 'seasonal_page',
         },
       ],

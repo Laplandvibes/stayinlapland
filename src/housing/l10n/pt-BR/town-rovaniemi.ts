@@ -23,7 +23,7 @@ const copy: HousingPageCopy = {
   authorNote:
     'Aluguéis por m² da Statistics Finland (julho a setembro de 2026), locadores da página de moradia da própria Cidade de Rovaniemi, números sobre a falta de moradia da Yle. Verificado em 15 de novembro de 2026.',
   intro: [
-    'Rovaniemi tem 66.191 habitantes (Statistics Finland, 31 de dezembro de 2025) e uma concorrência acirrada por quitinetes: a fundação de moradia estudantil DAS recebeu cerca de 550 candidaturas urgentes no verão de 2026, 15 por cento mais do que um ano antes, quase 90 por cento dos candidatos queriam um quitinete, e os quitinetes da cidade são alugados por temporada a turistas durante o inverno (Yle, 27 de julho de 2026). Segundo o diretor-geral da DAS, ela não consegue oferecer um apartamento a todos os candidatos em agosto e setembro.',
+    'Rovaniemi tem 66.191 habitantes (Statistics Finland, 31 de dezembro de 2025) e uma concorrência acirrada por quitinetes: a fundação de moradia estudantil DAS recebeu cerca de 550 candidaturas urgentes no verão de 2026, 15 por cento mais do que um ano antes, e quase 90 por cento dos candidatos queriam uma quitinete. Além disso, as quitinetes da cidade são alugadas por temporada a turistas durante o inverno (Yle, 27 de julho de 2026). Segundo o diretor-geral da DAS, a fundação não consegue oferecer um apartamento a todos os candidatos em agosto e setembro.',
     'Uma empresa de recrutamento que levou cerca de 250 trabalhadores para a Lapônia os alojou em umas dez localidades diferentes de Rovaniemi (Yle, 9 de março de 2026). Trabalhadores sazonais, estudantes e turistas disputam os mesmos apartamentos pequenos.',
     'A boa notícia é o preço: o aluguel médio de Rovaniemi, de 14,63 € por m², fica abaixo da média nacional de 15,99 € (Statistics Finland, 3º trimestre de 2026). Abaixo, os valores por tamanho de apartamento e os canais para se candidatar.',
   ],
@@ -44,8 +44,8 @@ const copy: HousingPageCopy = {
         foot: 'Statistics Finland, aluguéis do 3º trimestre de 2026, tabela 15fa. Novos contratos = contratos iniciados durante o trimestre, ou seja, o que está sendo pedido agora pelos apartamentos livres.',
       },
       paras: [
-        '<strong>Exemplos:</strong> um quitinete de 30 m², cerca de 560 € por mês (18,63 × 30), em um novo contrato cerca de 600 € (20,14 × 30); um apartamento de dois cômodos de 50 m², cerca de 720 € (14,40 × 50); um apartamento de três cômodos de 75 m², cerca de 920 € (12,29 × 75). Água e eletricidade geralmente são cobradas à parte.',
-        'O preço de 20,14 € por m² de um quitinete em novo contrato é 1,51 € (8 %) acima da média de todos os quitinetes de Rovaniemi, 18,63 €: um quitinete que fica livre agora custa mais do que um já alugado. Em relação à média nacional, Rovaniemi é mais barata em todos os tamanhos de apartamento.',
+        '<strong>Exemplos:</strong> uma quitinete de 30 m², cerca de 560 € por mês (18,63 × 30), em um novo contrato cerca de 600 € (20,14 × 30); um apartamento de dois cômodos de 50 m², cerca de 720 € (14,40 × 50); um apartamento de três cômodos de 75 m², cerca de 920 € (12,29 × 75). Água e eletricidade geralmente são cobradas à parte.',
+        'O preço de 20,14 € por m² de uma quitinete em novo contrato é 1,51 € (8 %) acima da média de todas as quitinetes de Rovaniemi, 18,63 €: uma quitinete que fica livre agora custa mais do que uma já alugada. Em relação à média nacional, Rovaniemi é mais barata em todos os tamanhos de apartamento.',
       ],
     },
     {
@@ -90,7 +90,7 @@ const copy: HousingPageCopy = {
         },
         {
           title: 'KAS asunnot',
-          body: 'Casas para alugar em vários bairros de Rovaniemi (lista da cidade). Candidatura on-line.',
+          body: 'Imóveis para alugar em vários bairros de Rovaniemi (lista da cidade). Candidatura on-line.',
           href: 'https://kas.fi/rovaniemen-vuokrattavat-kas-kodit/',
           linkLabel: 'kas.fi: Rovaniemi',
           event: 'kas',
@@ -121,23 +121,23 @@ const copy: HousingPageCopy = {
     {
       id: 'when',
       kicker: 'Quando se candidatar',
-      h2: 'Duas correrias por ano.',
+      h2: 'Dois picos de procura por ano.',
       bullets: [
-        '<strong>Agosto–setembro</strong> é o período mais apertado: a DAS não consegue abrigar todos os candidatos, e os quitinetes no mercado livre são escassos (Yle, 27 de julho de 2026).',
-        '<strong>Novembro–dezembro:</strong> alguns quitinetes são alugados por temporada a turistas durante o inverno. Os contratos por prazo determinado costumam terminar no fim de outubro (Yle, 27 de julho de 2026).',
-        '<strong>Na primavera</strong>, os quitinetes alugados durante a temporada de inverno voltam ao mercado.',
-        '<strong>A caução</strong> é de no máximo três meses de aluguel (Lei de Locação Residencial, seção 8) e, a partir de 1º de outubro de 2026, deve ser devolvida em até 14 dias após o fim da locação (Rakli).',
+        '<strong>Agosto–setembro</strong> é o período mais apertado: a DAS não consegue abrigar todos os candidatos, e as quitinetes no mercado livre são escassas (Yle, 27 de julho de 2026).',
+        '<strong>Novembro–dezembro:</strong> algumas quitinetes são alugadas por temporada a turistas durante o inverno. Os contratos por prazo determinado costumam terminar no fim de outubro (Yle, 27 de julho de 2026).',
+        '<strong>Na primavera</strong>, as quitinetes alugadas durante a temporada de inverno voltam ao mercado.',
+        '<strong>A caução</strong> é de no máximo três meses de aluguel (Lei de Locação Residencial, artigo 8) e, a partir de 1º de outubro de 2026, deve ser devolvida em até 14 dias após o fim da locação (Rakli).',
       ],
     },
   ],
   faqs: [
     {
-      q: 'Quanto custa um quitinete em Rovaniemi?',
-      a: 'Segundo a Statistics Finland, 18,63 € por m² em todos os contratos e 20,14 € por m² nos novos (3º trimestre de 2026). Um quitinete de 30 m² custa, portanto, cerca de 560–600 € por mês, sem a eletricidade.',
+      q: 'Quanto custa uma quitinete em Rovaniemi?',
+      a: 'Segundo a Statistics Finland, 18,63 € por m² em todos os contratos e 20,14 € por m² nos novos (3º trimestre de 2026). Uma quitinete de 30 m² custa, portanto, cerca de 560–600 € por mês, sem a eletricidade.',
     },
     {
       q: 'É difícil encontrar um aluguel em Rovaniemi?',
-      a: 'Os quitinetes são difíceis de conseguir em agosto–setembro: a DAS não consegue abrigar todos os candidatos (Yle, 27 de julho de 2026), e os quitinetes no mercado livre são escassos. Os apartamentos de dois e três cômodos são mais fáceis.',
+      a: 'As quitinetes são difíceis de conseguir em agosto–setembro: a DAS não consegue abrigar todos os candidatos (Yle, 27 de julho de 2026), e as quitinetes no mercado livre são escassas. Os apartamentos de dois e três cômodos são mais fáceis.',
     },
     {
       q: 'Posso me candidatar sem visitar Rovaniemi?',
@@ -148,7 +148,7 @@ const copy: HousingPageCopy = {
     partner: 'hotels',
     kicker: 'As primeiras semanas',
     h2: 'Um hotel ou apart-hotel enquanto você visita apartamentos.',
-    lead: 'Veja os apartamentos pessoalmente antes de assinar. A busca do parceiro mostra os quartos livres de Rovaniemi com os preços de hoje.',
+    lead: 'Veja os apartamentos pessoalmente antes de assinar. A busca do nosso parceiro mostra os quartos livres de Rovaniemi com os preços de hoje.',
     chips: [
       { label: 'Rovaniemi', destination: 'Rovaniemi', sid: 'rentals_rovaniemi_first_weeks' },
     ],

@@ -48,14 +48,14 @@ const copy: WhenToGoCopy = {
       pitch: 'De koudste maand, het licht keert terug',
       body: 'Januari is de koudste maand in Sodankylä en Utsjoki, met gemiddeld −12,5 en −13,3 °C; Rovaniemi komt gemiddeld op −10,3. In Rovaniemi neemt de dag in de loop van de maand toe van 2 u 44 min tot meer dan zes uur, en in Utsjoki komt de zon na de poolnacht op 17 januari weer op. De sneeuw ligt gemiddeld ongeveer een halve meter diep.',
       good: ['Skiën en wintersport op vaste sneeuw', 'Arctic Lapland Rally in Rovaniemi, 28–30 januari 2027'],
-      note: ['Rendieren op de weg: van november tot januari is het piekmoment voor aanrijdingen met rendieren', 'De hotels in Rovaniemi waren in januari 2025 nog 86 % vol'],
+      note: ['Rendieren op de weg: van november tot januari is de piekperiode voor aanrijdingen met rendieren', 'De hotels in Rovaniemi waren in januari 2025 nog 86 % vol'],
     },
     {
       name: 'Februari',
       pitch: 'Sneeuw en wintervakanties',
       body: 'Samen met december is februari de drukste maand van het jaar: de bezetting in Lapland was 77,6 % in februari 2025, maar de gemiddelde kamerprijs bleef onder die van december. De sneeuw in Rovaniemi is op 15 februari gemiddeld 66 cm dik, en de dag duurt al acht uur.',
       good: ['Noorderlicht aan het einde van de winter: het Fins Meteorologisch Instituut noemt het einde van de winter en het begin van de herfst statistisch de beste tijden', 'Skiën en lange dagtochten'],
-      note: ['Boek vroeg, februari is een van de drukste maanden', 'Scholen in de regio Helsinki en in Turku hebben hun skivakantie in week 8 (22–26 februari 2027)'],
+      note: ['Boek vroeg: februari is een van de drukste maanden', 'Scholen in de regio Helsinki en in Turku hebben hun skivakantie in week 8 (22–26 februari 2027)'],
     },
     {
       name: 'Maart',
@@ -74,9 +74,9 @@ const copy: WhenToGoCopy = {
     {
       name: 'Mei',
       pitch: 'De sneeuw smelt, de rustigste maand',
-      body: 'Blijvende sneeuw smelt rond Rovaniemi doorgaans tussen 30 april en 10 mei en in fjell-Lapland tussen 10 en 20 mei. Het terrein is in de dooiperiode: te nat om te skiën en te sneeuwrijk om te wandelen. Mei is de rustigste maand voor het toerisme, ongeveer 65.000 overnachtingen tegenover 430.000–620.000 in de wintermaanden, en veel bedrijven nemen een pauze. In het uiterste noorden begint de middernachtzon al: in Nuorgam op 16 mei.',
+      body: 'Blijvende sneeuw smelt rond Rovaniemi doorgaans tussen 30 april en 10 mei en in fjell-Lapland tussen 10 en 20 mei. Het terrein ontdooit: te nat om te skiën en te sneeuwrijk om te wandelen. Mei is de rustigste maand voor het toerisme, ongeveer 65.000 overnachtingen tegenover 430.000–620.000 in de wintermaanden, en veel bedrijven nemen een pauze. In het uiterste noorden begint de middernachtzon al: in Nuorgam op 16 mei.',
       good: ['Een woning zoeken in Rovaniemi: volgens DAS komen in verhouding tot het aantal aanvragers de meeste woningen vrij in het voorjaar en het begin van de zomer', 'Rustige landschappen en voorjaarslicht'],
-      note: ['Veel toeristische diensten zijn gesloten of hebben beperkte openingstijden', 'De lentevloed valt van half mei tot half juni'],
+      note: ['Veel toeristische diensten zijn gesloten of hebben beperkte openingstijden', 'Het hoogwater in het voorjaar valt ergens tussen half mei en half juni'],
     },
     {
       name: 'Juni',
@@ -110,7 +110,7 @@ const copy: WhenToGoCopy = {
       name: 'Oktober',
       pitch: 'De sneeuw bereikt de fjelden',
       body: 'In de referentieperiode 1991–2020 van het Fins Meteorologisch Instituut begon blijvende sneeuw in fjell-Lapland tussen 17 en 27 oktober en in Sodankylä op 29 oktober. Volgens Metsähallitus ontstaat ze nu vaak pas eind november, soms in december. In de herfst van 2026 gingen de pistes van Levi al begin oktober open. Oktober is na mei de op één na rustigste maand voor accommodaties.',
-      good: ['Herfstnoorderlicht vóór de sneeuw', 'Het volksfestival Jutajaiset in Rovaniemi in oktober'],
+      good: ['Herfstnoorderlicht vóór de sneeuw', 'Het folkfestival Jutajaiset in Rovaniemi in oktober'],
       note: ['In Rovaniemi eindigen veel contracten voor bepaalde tijd eind oktober omdat woningen voor de winter aan toeristen worden verhuurd (Yle, 27 juli 2026)', 'In 2026 viel de herfstvakantie in week 42 (12–16 oktober), bijvoorbeeld in Rovaniemi en Helsinki'],
     },
     {
@@ -137,8 +137,8 @@ const copy: WhenToGoCopy = {
     items: [
       '<strong>Een huurwoning in Rovaniemi:</strong> volgens DAS komen in verhouding tot het aantal aanvragers de meeste woningen vrij in het voorjaar en het begin van de zomer, en zijn er in augustus en september de meeste aanvragers. Contracten voor bepaalde tijd eindigen eind oktober omdat woningen voor de winter aan toeristen worden verhuurd (Yle, 27 juli 2026).',
       '<strong>Seizoenswerk:</strong> de werving voor de winter versnelt vanaf augustus (Yle), en de skigebieden openen in oktober of november en sluiten in april of mei, afhankelijk van het skigebied.',
-      '<strong>Autorijden:</strong> winterbanden zijn verplicht van 1 november tot 31 maart als de omstandigheden daarom vragen, en spijkers mogen op andere momenten worden gebruikt als de omstandigheden erom vragen (Traficom). Aanrijdingen met rendieren pieken van november tot januari (Vereniging van rendierhouders).',
-      '<strong>Licht:</strong> verduisterende gordijnen en een hor in de zomer, een lichttherapielamp en een reflector in de winter. In Rovaniemi is de poolnacht slechts een naam: de zon komt elke dag op.',
+      '<strong>Autorijden:</strong> winterbanden zijn verplicht van 1 november tot 31 maart als de omstandigheden daarom vragen, en spijkerbanden mogen op andere momenten worden gebruikt als de omstandigheden erom vragen (Traficom). Aanrijdingen met rendieren pieken van november tot januari (Vereniging van rendierhouders).',
+      '<strong>Licht:</strong> verduisterende gordijnen en een muggennet in de zomer, een lichttherapielamp en een reflector in de winter. In Rovaniemi is de poolnacht slechts een naam: de zon komt elke dag op.',
     ],
   },
   links: [
@@ -168,7 +168,7 @@ const copy: WhenToGoCopy = {
     },
   ],
   authorNote:
-    'Temperaturen, sneeuw en noorderlicht van het Fins Meteorologisch Instituut, de kalender van de natuur van Metsähallitus, maandelijkse toerismecijfers van Statistics Finland, vakanties van het Fins nationaal agentschap voor onderwijs, evenementen van de organisatoren. Gecontroleerd op 15 november 2026.',
+    'Temperaturen, sneeuw en noorderlicht van het Fins Meteorologisch Instituut, de kalender van de natuur van Metsähallitus, maandelijkse toerismecijfers van Statistics Finland, vakanties van het Finse nationale agentschap voor onderwijs, evenementen van de organisatoren. Gecontroleerd op 15 november 2026.',
   sources: whenToGoSources(common.whenToGoSourceLabels),
 };
 

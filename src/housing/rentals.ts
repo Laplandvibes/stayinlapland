@@ -155,7 +155,7 @@ export const RENTALS: HousingCopyMap = {
         bullets: [
           '<strong>Vakuus on enintään kolmen kuukauden vuokra</strong> (laki asuinhuoneiston vuokrauksesta 8 §). Yksi tai kaksi kuukautta on tavallinen.',
           '<strong>1.10.2026 alkaen vakuus on palautettava</strong> tai sen pidättämisestä on ilmoitettava kirjallisesti viimeistään 14 päivän kuluessa vuokrasuhteen päättymisestä tai asunnon luovuttamisesta (lakimuutos 1.10.2026, Rakli).',
-          '<strong>Vuokralaisen irtisanomisaika on yksi kuukausi.</strong> Vuokranantajan irtisanomisaika on 1.10.2026 tai sen jälkeen tehdyissä sopimuksissa kolme kuukautta ja neljä kuukautta, jos vuokrasuhde on kestänyt yhtäjaksoisesti vähintään kaksi vuotta (Rakli). Ennen 1.10.2026 tehdyissä sopimuksissa noudatetaan vanhoja irtisanomisaikoja (Kuluttajaliitto).',
+          '<strong>Vuokralaisen irtisanomisaika on yksi kuukausi.</strong> Jos sopimus on tehty 1.10.2026 tai sen jälkeen, vuokranantajan irtisanomisaika on kolme kuukautta tai, jos vuokrasuhde on kestänyt yhtäjaksoisesti vähintään kaksi vuotta, neljä kuukautta (Rakli). Ennen 1.10.2026 tehdyissä sopimuksissa noudatetaan vanhoja irtisanomisaikoja (Kuluttajaliitto).',
           '<strong>Määräaikainen sopimus sitoo molempia sen loppuun.</strong> Kausityössä työnantajan asunnon sopimus on usein sidottu työsuhteeseen: lue, mitä tapahtuu, jos työ loppuu ennen kautta.',
           '<strong>Luottotiedot tarkistetaan lähes aina.</strong> Maksuhäiriömerkintä ei estä vuokraamista, mutta kunnan vuokrayhtiö ja suora vuokranantaja ovat silloin todennäköisempiä kuin isot ketjut.',
         ],
@@ -182,7 +182,7 @@ export const RENTALS: HousingCopyMap = {
       },
       {
         q: 'Milloin Rovaniemeltä kannattaa hakea asuntoa?',
-        a: 'Parhaiten muina kuukausina kuin elo–syyskuussa. Silloin DAS ei pysty tarjoamaan asuntoa kaikille hakijoille, ja vapailla markkinoilla yksiöitä on vähän (Yle 27.7.2026). Talvisesongiksi lyhytvuokratut yksiöt vapautuvat keväällä.',
+        a: 'Mieluiten muina kuukausina kuin elo–syyskuussa. Silloin DAS ei pysty tarjoamaan asuntoa kaikille hakijoille, ja vapailla markkinoilla yksiöitä on vähän (Yle 27.7.2026). Talvisesongiksi lyhytvuokratut yksiöt vapautuvat keväällä.',
       },
       {
         q: 'Miksi Levin vuokra on talvella moninkertainen?',
@@ -257,7 +257,7 @@ export const RENTALS: HousingCopyMap = {
             title: 'Sodankylä',
             image: { src: '/images/housing-sodankyla-jaamerentie.webp', alt: 'Jäämerentie, the main street of Sodankylä village, in September' },
             body:
-              'Asentopuulaaki Oy lets the municipality’s roughly 720 flats, and the company’s flat search shows the flats free or coming free at any given time. Older buildings rent for about €9–12.50 per m², and Käpyriihi, completed in 2025, for €18.',
+              'Asentopuulaaki Oy lets the municipality’s roughly 720 flats, and the company’s flat search shows which flats are free or coming free at any given time. Older buildings rent for about €9–12.50 per m², and Käpyriihi, completed in 2025, for €18.',
             href: '/rentals/sodankyla',
             linkLabel: 'Rentals in Sodankylä',
           },
@@ -316,7 +316,7 @@ export const RENTALS: HousingCopyMap = {
         note: {
           label: 'What the statistics do not see',
           body:
-            'Seasonal lets in the ski resorts and furnished short-term rentals are not in these figures. Near the centre of Levi an 80 m² alpine-house flat cost €750 a month from May to November, €2,000 a week in high season and €1,650 a month year-round (Yle, 25 May 2023): the same flat at three prices.',
+            'Seasonal lets in the ski resorts and furnished short-term rentals are not in these figures. Near the centre of Levi an 80 m² alpine-style flat cost €750 a month from May to November, €2,000 a week in high season and €1,650 a month year-round (Yle, 25 May 2023): the same flat at three prices.',
         },
       },
       {
@@ -360,7 +360,7 @@ export const RENTALS: HousingCopyMap = {
         bullets: [
           'Never pay a deposit before a viewing or a video tour in which you see the flat and the keys in the same frame.',
           'Contract in writing, with the landlord’s name and business ID or personal identity code on it. A municipal housing company is the safest start if you do not know the market.',
-          'A furnished short-term let is not a tenancy: a holiday apartment may not get an official address, and the missing address makes dealing with companies harder, for example in credit checks (Yle, 25 May 2023).',
+          'A furnished short-term let is not a tenancy: you may not be able to get an official address at a holiday apartment, and without one, everyday dealings such as credit checks get harder (Yle, 25 May 2023).',
         ],
       },
     ],
@@ -375,11 +375,11 @@ export const RENTALS: HousingCopyMap = {
       },
       {
         q: 'When is the best time to look for a flat in Rovaniemi?',
-        a: 'Best in any month other than August and September. Then DAS cannot house every applicant, and free-market studios are scarce (Yle, 27 Jul 2026). Studios let short-term for the winter season come back onto the market in spring.',
+        a: 'Ideally any month other than August and September. Then DAS cannot house every applicant, and free-market studios are scarce (Yle, 27 Jul 2026). Studios let short-term for the winter season come back onto the market in spring.',
       },
       {
         q: 'Why is a Levi rent several times higher in winter?',
-        a: 'Because in high season the same flat is let by the week. In Yle’s example (25 May 2023) an 80 m² alpine-house flat cost €750 a month in summer and €2,000 a week in winter. Monthly rent is possible from May to November; for winter, ask your employer about staff housing or the Kittilä municipal company.',
+        a: 'Because in high season the same flat is let by the week. In Yle’s example (25 May 2023) an 80 m² alpine-style flat cost €750 a month in summer and €2,000 a week in winter. Monthly rent is possible from May to November; for winter, ask your employer about staff housing or the Kittilä municipal company.',
       },
     ],
     cta: {

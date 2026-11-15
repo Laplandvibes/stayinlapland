@@ -29,7 +29,7 @@ const common: HousingCommonCopy = {
     "h2b": "poi arriva la casa.",
     "body": "LaplandWork.com raccoglie le offerte di lavoro aperte in Lapponia: stazioni sciistiche, hotel, aziende di attività all’aperto e sanità. I lavori stagionali includono spesso l’alloggio, quindi guardi prima le offerte e solo dopo cerchi un appartamento.",
     "stripText": "LaplandWork.com: offerte di lavoro aperte nelle stazioni sciistiche, negli hotel e nella sanità della Lapponia.",
-    "cta": "Sfogli le offerte",
+    "cta": "Sfoglia le offerte",
     "image": "/images/housing-yllas-hiihtokeskus.webp",
     "alt": "Il noleggio sci e la scuola di sci della stazione di Ylläs in estate, con i cannoni da neve riposti sotto la tettoia",
     "caption": "Ylläs a luglio 2026: i cannoni da neve aspettano la stagione. Foto: LaplandVibes."
@@ -47,7 +47,7 @@ const common: HousingCommonCopy = {
     "rakli": "Rakli (associazione finlandese dei proprietari immobiliari): La riforma della legge sugli affitti abitativi del 1° ott 2026: restituzione del deposito in 14 giorni e termini di disdetta",
     "traficom": "Traficom (Agenzia finlandese per i trasporti e le comunicazioni): Pneumatici estivi e invernali",
     "dvv": "Agenzia per i servizi digitali e i dati sulla popolazione (DVV): Comunicazione del cambio di indirizzo",
-    "kuntaliitto": "Associazione dei comuni finlandesi: Rette dell’educazione prescolare dal 1° ago 2026",
+    "kuntaliitto": "Associazione dei comuni finlandesi: Rette dell’educazione della prima infanzia dal 1° ago 2026",
     "perusopetuslaki": "Legge sull’istruzione di base (628/1998): istruzione gratuita (art. 31) e trasporto scolastico (art. 32)",
     "fmi": "Istituto meteorologico finlandese: Stagioni astronomiche (notte polare e sole di mezzanotte)",
     "ounasvaara": "Ounasvaara: Piste e percorsi (circa 100 km di piste di sci, 50 km dei quali illuminati; consultata il 23 set 2026)",
@@ -126,7 +126,7 @@ const common: HousingCommonCopy = {
     "simerock": "Simerock 13–14 ago 2027",
     "arcticSnowHotel": "Arctic SnowHotel: apertura il 15 dic 2026"
   },
-  "adsNote": "Link di affiliazione: se si iscrive tramite essi riceviamo una piccola commissione. Il prezzo per Lei resta lo stesso.",
+  "adsNote": "Link di affiliazione: se si iscrive tramite questi link riceviamo una piccola commissione. Il prezzo per Lei resta lo stesso.",
   "adsWrap": {
     "moving": {
       "kicker": "Pubblicità · intorno al trasloco",

@@ -23,7 +23,7 @@ const copy: HousingPageCopy = {
   authorNote:
     'Inarin Vuokra-asunnot Oy e i locatori privati dalla pagina sull’abitare del Comune di Inari, popolazione da Statistics Finland, affitti al m² da Statistics Finland (regione della Lapponia 2026T3). Verificato il 15 novembre 2026.',
   intro: [
-    'Il comune di Inari ha 7.244 abitanti (Statistics Finland, 31 dic 2025), e secondo il comune l’interesse a viverci è cresciuto, per cui ha compilato sulla sua pagina un elenco dei fornitori di alloggi in affitto (inari.fi).',
+    'Il comune di Inari ha 7.244 abitanti (Statistics Finland, 31 dicembre 2025), e secondo il comune l’interesse a viverci è cresciuto, per cui ha compilato sulla sua pagina un elenco dei fornitori di alloggi in affitto (inari.fi).',
     'La società comunale Inarin Vuokra-asunnot Oy affitta oltre 500 appartamenti a Ivalo, Inari, Saariselkä, Nellim e Sevettijärvi, dai monolocali agli appartamenti per famiglie. I locatori privati dell’elenco del comune sono Bilto Oy, Ivalon vuokra-asunnot, IvaloCenter, Rakennusliike Holmberg Oy e Uni Kodit (inari.fi).',
     'Statistics Finland non pubblica un dato separato sugli affitti per Inari, quindi qui sotto è riportato il dato regionale della Lapponia. L’alloggio per i lavoratori stagionali di Saariselkä ha una pagina a parte.',
   ],
@@ -50,7 +50,7 @@ const copy: HousingPageCopy = {
         },
         {
           title: 'Oikotie e Vuokraovi',
-          body: 'Annunci di privati sotto il comune di Inari; le case di Ivalo e Saariselkä sono nella stessa ricerca. Gli annunci sono pochi, quindi imposti un avviso di ricerca.',
+          body: 'Annunci di privati nel comune di Inari; le case di Ivalo e Saariselkä sono nella stessa ricerca. Gli annunci sono pochi, quindi imposti un avviso di ricerca.',
           href: 'https://asunnot.oikotie.fi/vuokra-asunnot/inari',
           linkLabel: 'Oikotie: affitti a Inari',
           event: 'oikotie',
@@ -120,8 +120,8 @@ const copy: HousingPageCopy = {
   cta: {
     partner: 'hotels',
     kicker: 'Le prime notti',
-    h2: 'Prima delle chiavi.',
-    lead: 'La ricerca del partner mostra le camere libere a Ivalo e Saariselkä ai prezzi di oggi.',
+    h2: 'In attesa delle chiavi.',
+    lead: 'La ricerca del nostro partner mostra le camere libere a Ivalo e Saariselkä ai prezzi di oggi.',
     chips: [
       { label: 'Ivalo', destination: 'Ivalo', sid: 'rentals_ivalo_first_weeks' },
       { label: 'Saariselkä', destination: 'Saariselkä', sid: 'rentals_saariselka_first_weeks' },

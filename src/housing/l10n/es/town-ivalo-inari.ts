@@ -23,8 +23,8 @@ const copy: HousingPageCopy = {
   authorNote:
     'Inarin Vuokra-asunnot Oy y los arrendadores privados, según la propia página de vivienda del municipio de Inari; población de Statistics Finland; alquileres por m² de Statistics Finland (región de Laponia, 3.er trimestre de 2026). Comprobado el 15 de noviembre de 2026.',
   intro: [
-    'El municipio de Inari tiene 7244 habitantes (Statistics Finland, 31 dic 2025) y, según el municipio, el interés por vivir allí ha crecido, por lo que ha elaborado en su página una lista de proveedores de alquiler (inari.fi).',
-    'La empresa municipal Inarin Vuokra-asunnot Oy alquila más de 500 viviendas en Ivalo, Inari, Saariselkä, Nellim y Sevettijärvi, desde estudios hasta pisos familiares. Los arrendadores privados de la lista del municipio son Bilto Oy, Ivalon vuokra-asunnot, IvaloCenter, Rakennusliike Holmberg Oy y Uni Kodit (inari.fi).',
+    'El municipio de Inari tiene 7244 habitantes (Statistics Finland, 31 de diciembre de 2025) y, según el municipio, el interés por vivir allí ha crecido, por lo que ha elaborado en su página una lista de proveedores de alquiler (inari.fi).',
+    'La empresa municipal Inarin Vuokra-asunnot Oy alquila más de 500 viviendas en Ivalo, Inari, Saariselkä, Nellim y Sevettijärvi, desde estudios hasta apartamentos familiares. Los arrendadores privados de la lista del municipio son Bilto Oy, Ivalon vuokra-asunnot, IvaloCenter, Rakennusliike Holmberg Oy y Uni Kodit (inari.fi).',
     'Statistics Finland no publica una cifra de alquiler aparte para Inari, por lo que a continuación se muestra la cifra regional de Laponia. La vivienda para los trabajadores de temporada de Saariselkä tiene su propia página.',
   ],
   sections: [
@@ -50,14 +50,14 @@ const copy: HousingPageCopy = {
         },
         {
           title: 'Oikotie y Vuokraovi',
-          body: 'Anuncios privados bajo el municipio de Inari; las viviendas de Ivalo y Saariselkä aparecen en la misma búsqueda. Los anuncios son pocos, así que active una alerta de búsqueda.',
+          body: 'Anuncios de particulares en el municipio de Inari; las viviendas de Ivalo y Saariselkä aparecen en la misma búsqueda. Los anuncios son pocos, así que active una alerta de búsqueda.',
           href: 'https://asunnot.oikotie.fi/vuokra-asunnot/inari',
           linkLabel: 'Oikotie: alquileres en Inari',
           event: 'oikotie',
         },
         {
           title: 'Para los trabajadores de temporada de Saariselkä',
-          body: 'Los empleadores de Saariselkä también alojan ellos mismos al personal, y la empresa municipal tiene pisos en Saariselkä. Pregunte por la vivienda en la entrevista; el panorama completo está en la página de los trabajadores de temporada.',
+          body: 'Los empleadores de Saariselkä también alojan ellos mismos al personal, y la empresa municipal tiene apartamentos en Saariselkä. Pregunte por la vivienda en la entrevista; el panorama completo está en la página de los trabajadores de temporada.',
           href: '/seasonal-worker-housing',
           linkLabel: 'Vivienda para trabajadores de temporada',
           event: 'seasonal_page',
@@ -73,7 +73,7 @@ const copy: HousingPageCopy = {
         head: ['', 'Laponia (región)', 'Todo el país'],
         rows: [
           ['Estudios', '17,25', '20,49'],
-          ['Pisos de dos habitaciones', '12,87', '15,07'],
+          ['Apartamentos de dos habitaciones', '12,87', '15,07'],
           ['Tres habitaciones o más', '11,08', '13,98'],
           ['Todas las viviendas', '13,14', '15,99'],
         ],
@@ -102,7 +102,7 @@ const copy: HousingPageCopy = {
       kicker: 'El contrato',
       h2: 'La fianza y su devolución.',
       bullets: [
-        'La fianza es como máximo de tres meses de alquiler (Ley de arrendamientos de vivienda, sección 8).',
+        'La fianza es como máximo de tres meses de alquiler (Ley de arrendamientos de vivienda, artículo 8).',
         'Desde el 1 de octubre de 2026 la fianza debe devolverse, o justificarse por escrito su retención, en un plazo de 14 días desde el fin del contrato (Rakli).',
       ],
     },
@@ -114,14 +114,14 @@ const copy: HousingPageCopy = {
     },
     {
       q: '¿Hay alquileres en Saariselkä?',
-      a: 'La empresa municipal tiene pisos también en Saariselkä, y los empleadores alojan ellos mismos al personal de temporada. En el mercado libre, las viviendas de Saariselkä son sobre todo casas de vacaciones.',
+      a: 'La empresa municipal tiene apartamentos también en Saariselkä, y los empleadores alojan ellos mismos al personal de temporada. En el mercado libre, las viviendas de Saariselkä son sobre todo casas de vacaciones.',
     },
   ],
   cta: {
     partner: 'hotels',
     kicker: 'Las primeras noches',
-    h2: 'Antes de las llaves.',
-    lead: 'El buscador de socios muestra las habitaciones libres en Ivalo y Saariselkä a los precios de hoy.',
+    h2: 'Mientras llegan las llaves.',
+    lead: 'El buscador de nuestro socio muestra las habitaciones libres en Ivalo y Saariselkä a los precios de hoy.',
     chips: [
       { label: 'Ivalo', destination: 'Ivalo', sid: 'rentals_ivalo_first_weeks' },
       { label: 'Saariselkä', destination: 'Saariselkä', sid: 'rentals_saariselka_first_weeks' },

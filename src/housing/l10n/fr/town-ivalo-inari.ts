@@ -43,14 +43,14 @@ const copy: HousingPageCopy = {
         },
         {
           title: 'Commune d’Inari : les bailleurs privés',
-          body: 'La page logement de la commune recense Bilto Oy, Ivalon vuokra-asunnot, IvaloCenter, Rakennusliike Holmberg Oy et Uni Kodit avec leurs coordonnées, ainsi que le groupe Facebook de location Sodankylä–Inari–Utsjoki. Plus d’informations auprès de inari@inari.fi.',
+          body: 'La page logement de la commune recense Bilto Oy, Ivalon vuokra-asunnot, IvaloCenter, Rakennusliike Holmberg Oy et Uni Kodit avec leurs coordonnées, ainsi que le groupe Facebook de location Sodankylä–Inari–Utsjoki. Plus d’informations : inari@inari.fi.',
           href: 'https://www.inari.fi/fi/palvelut/asuminen.html',
           linkLabel: 'inari.fi : se loger',
           event: 'inari_city',
         },
         {
           title: 'Oikotie et Vuokraovi',
-          body: 'Annonces de particuliers sous la commune d’Inari ; les logements d’Ivalo et de Saariselkä sont dans la même recherche. Les annonces sont peu nombreuses, créez donc une alerte de recherche.',
+          body: 'Annonces de particuliers pour la commune d’Inari ; les logements d’Ivalo et de Saariselkä sont dans la même recherche. Les annonces sont peu nombreuses : créez donc une alerte de recherche.',
           href: 'https://asunnot.oikotie.fi/vuokra-asunnot/inari',
           linkLabel: 'Oikotie : locations à Inari',
           event: 'oikotie',
@@ -69,7 +69,7 @@ const copy: HousingPageCopy = {
       kicker: 'Ce que coûte un loyer',
       h2: 'Les loyers régionaux de la Laponie au m², juillet–septembre 2026.',
       table: {
-        caption: 'Loyer moyen en €/m²/mois, logements locatifs du marché libre, 2026T3',
+        caption: 'Loyer moyen en €/m²/mois, logements locatifs du parc privé, 2026T3',
         head: ['', 'Laponie (région)', 'Ensemble du pays'],
         rows: [
           ['Studios', '17,25', '20,49'],
@@ -120,8 +120,8 @@ const copy: HousingPageCopy = {
   cta: {
     partner: 'hotels',
     kicker: 'Les premières nuits',
-    h2: 'Avant les clés.',
-    lead: 'Le moteur partenaire affiche les chambres libres à Ivalo et à Saariselkä aux prix du jour.',
+    h2: 'En attendant les clés.',
+    lead: 'Le moteur de réservation de notre partenaire affiche les chambres libres à Ivalo et à Saariselkä aux prix du jour.',
     chips: [
       { label: 'Ivalo', destination: 'Ivalo', sid: 'rentals_ivalo_first_weeks' },
       { label: 'Saariselkä', destination: 'Saariselkä', sid: 'rentals_saariselka_first_weeks' },

@@ -21,7 +21,7 @@ const copy: HousingPageCopy = {
       'Un appartamento arredato in affitto, una baita a settimana o l’alloggio del datore di lavoro: tre modi di vivere in Lapponia da un mese a un intero inverno, e che cosa chiede ciascun contratto.',
   },
   authorNote:
-    'Normativa da Finlex (Legge sugli affitti abitativi 481/1995, modifica 531/2026), comunicazione dell’indirizzo dall’Agenzia per i servizi digitali e i dati sulla popolazione, dettagli delle baite dal feed prodotti di Lomarengas. Verificato il 15 nov 2026.',
+    'Normativa da Finlex (Legge sugli affitti abitativi 481/1995, modifica 531/2026), comunicazione dell’indirizzo dall’Agenzia per i servizi digitali e i dati sulla popolazione, dettagli delle baite dal feed prodotti di Lomarengas. Verificato il 15 novembre 2026.',
   intro: [
     'Un mese di lavoro da remoto a Levi, un inverno a Rovaniemi o una stagione in una stazione sciistica: un soggiorno più lungo in Lapponia si riduce di solito a una di tre opzioni. Differiscono per prezzo, ma ancora di più per il tipo di contratto che si ottiene e per ciò che la legge tutela in quel caso.',
     'Se viene in vacanza e non per viverci, gli hotel e le baite si trovano sul nostro sito gemello <a href="https://laplandstays.com/" target="_blank" rel="noopener">laplandstays.com</a> e le ville su <a href="https://laplandluxuryvillas.com/" target="_blank" rel="noopener">laplandluxuryvillas.com</a>.',
@@ -57,7 +57,7 @@ const copy: HousingPageCopy = {
       bullets: [
         '<strong>Un contratto a tempo determinato dura fino alla data scritta al suo interno.</strong> L’inquilino non può dare disdetta durante il periodo. Può finire prima solo per accordo con il locatore o nelle situazioni specifiche previste dalla legge (Unione finlandese dei consumatori, legge sugli affitti).',
         '<strong>Se non sa quanto resterà,</strong> chieda invece un contratto a tempo indeterminato. L’inquilino può dare disdetta, e il preavviso dell’inquilino non cambia con la riforma del 1° ottobre 2026 (Rakli).',
-        '<strong>Contratti brevi uno dopo l’altro:</strong> se allo stesso inquilino viene dato più di due volte di seguito un contratto a tempo determinato di tre mesi o meno, il contratto vale come a tempo indeterminato, qualunque data di scadenza porti.',
+        '<strong>Contratti brevi uno dopo l’altro:</strong> se allo stesso inquilino viene dato più di due volte di seguito un contratto a tempo determinato di tre mesi o meno, il contratto si considera a tempo indeterminato, qualunque data di scadenza porti.',
         '<strong>La legge sugli affitti non copre tutto.</strong> Si applica a un appartamento affittato per abitarci, ma non all’attività delle imprese ricettive (Legge sugli affitti abitativi, artt. 1 e 2). Prima di firmare, chieda se riceve un contratto d’affitto abitativo o un contratto di alloggio.',
         '<strong>Il deposito</strong> è al massimo di tre mensilità. Dal 1° ottobre 2026 deve essere restituito, o la sua trattenuta comunicata, entro 14 giorni dalla fine del contratto.',
       ],

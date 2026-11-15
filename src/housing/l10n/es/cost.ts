@@ -12,12 +12,12 @@ const SOURCES = [
 ] as const;
 
 const copy: HousingPageCopy = {
-  metaTitle: 'Coste de vida en Laponia 2026: alquiler, luz y combustible',
+  metaTitle: 'Costo de vida en Laponia 2026: alquiler, luz y combustible',
   metaDescription:
     'Cuánto cuesta vivir en la Laponia finlandesa: alquiler por m² (Statistics Finland 2026), electricidad, combustible, ayuda de Kela y guardería, con ejemplos.',
-  breadcrumb: 'Coste de vida',
+  breadcrumb: 'Costo de vida',
   hero: {
-    eyebrow: 'Coste de vida en Laponia',
+    eyebrow: 'Costo de vida en Laponia',
     title: '¿Cuánto cuesta vivir en Laponia?',
     subtitle:
       'El alquiler es más barato en Laponia que en el resto de Finlandia; el coche y la calefacción, más caros. Así se compone un presupuesto mensual.',
@@ -25,7 +25,7 @@ const copy: HousingPageCopy = {
   authorNote:
     'Todas las cifras proceden de Statistics Finland, Kela o la Asociación de Municipios de Finlandia; los ejemplos se calculan a partir de esas cifras y muestran su fórmula. Nada de estimaciones.',
   intro: [
-    'En cuanto a costes, hay dos Laponias. Rovaniemi es una ciudad universitaria donde estudiantes y turistas compiten por los estudios; en las estaciones de esquí el precio sigue a la temporada. En la costa y en los municipios pequeños la vivienda es más amplia y barata, pero el coche es imprescindible.',
+    'En cuanto a costos, hay dos Laponias. Rovaniemi es una ciudad universitaria donde estudiantes y turistas compiten por los estudios; en las estaciones de esquí el precio sigue a la temporada. En la costa y en los municipios pequeños la vivienda es más amplia y barata, pero el coche es imprescindible.',
     'A continuación están las cuatro partidas de las que realmente se compone un presupuesto mensual: alquiler, electricidad, desplazamientos y niños. No existe una estadística específica de Laponia sobre los precios de la comida, así que no la inventamos.',
   ],
   sections: [
@@ -38,41 +38,41 @@ const copy: HousingPageCopy = {
         head: ['', 'Rovaniemi', 'Laponia (región)', 'Todo el país'],
         rows: [
           ['Estudios', '18,63', '17,25', '20,49'],
-          ['Pisos de dos habitaciones', '14,40', '12,87', '15,07'],
-          ['Tres habitaciones o más', '12,29', '11,08', '13,98'],
+          ['Apartamentos de un dormitorio', '14,40', '12,87', '15,07'],
+          ['Dos dormitorios o más', '12,29', '11,08', '13,98'],
           ['Todas las viviendas', '14,63', '13,14', '15,99'],
         ],
         foot: 'Statistics Finland, alquileres del 3.er trimestre de 2026, tabla 15fa.',
       },
       paras: [
-        '<strong>Ejemplos:</strong> un estudio de 30 m² en Rovaniemi, unos 560 € al mes (18,63 × 30); un piso de dos habitaciones de 50 m² en Rovaniemi, unos 720 € (14,40 × 50); un piso de tres habitaciones de 75 m² con el alquiler medio regional de Laponia, unos 830 € (11,08 × 75).',
-        'La excepción es el invierno en las estaciones de esquí: cerca del centro de Levi, un piso de 80 m² en una casa alpina costaba 750 € al mes de mayo a noviembre, pero 2000 € por semana en temporada alta (Yle, 25 may 2023). Un contrato anual del mismo piso costaba 1650 € al mes. El precio de la estación de esquí no es el precio de Laponia.',
+        '<strong>Ejemplos:</strong> un estudio de 30 m² en Rovaniemi, unos 560 € al mes (18,63 × 30); un apartamento de un dormitorio de 50 m² en Rovaniemi, unos 720 € (14,40 × 50); un apartamento de dos dormitorios de 75 m² con el alquiler medio regional de Laponia, unos 830 € (11,08 × 75).',
+        'La excepción es el invierno en las estaciones de esquí: cerca del centro de Levi, un apartamento de 80 m² de estilo alpino costaba 750 € al mes de mayo a noviembre, pero 2000 € por semana en temporada alta (Yle, 25 de mayo de 2023). Un contrato anual del mismo apartamento costaba 1650 € al mes. El precio de la estación de esquí no es el precio de Laponia.',
       ],
     },
     {
       id: 'electricity',
       kicker: 'Electricidad y calefacción',
-      h2: 'Un kilovatio hora cuesta lo mismo; lo que pasa es que se gastan más.',
+      h2: 'El kilovatio hora cuesta lo mismo; simplemente se consumen más.',
       table: {
         caption: 'Precio total de la electricidad para hogares, céntimos/kWh, junio de 2026, todo el país',
         head: ['Consumo anual', 'Precio total'],
         rows: [
-          ['1000–2499 kWh (piso pequeño)', '28,2'],
-          ['2500–4999 kWh (piso o casa adosada)', '23,7'],
+          ['1000–2499 kWh (apartamento pequeño)', '28,2'],
+          ['2500–4999 kWh (apartamento o casa adosada)', '23,7'],
           ['5000–15 000 kWh (casa unifamiliar sin calefacción eléctrica)', '17,9'],
           ['más de 15 000 kWh (casa con calefacción eléctrica)', '14,9'],
         ],
         foot: 'Statistics Finland, precio de la electricidad por tipo de consumidor, tabla 13rb. El precio incluye energía, transporte e impuestos.',
       },
       paras: [
-        '<strong>Ejemplos:</strong> un piso de dos habitaciones con un consumo de 3500 kWh al año: 3500 × 0,237 = unos 830 € al año, o 69 € al mes; una casa unifamiliar con calefacción eléctrica y un consumo de 18 000 kWh: 18 000 × 0,149 = unos 2680 € al año, o 223 € al mes.',
+        '<strong>Ejemplos:</strong> un apartamento de un dormitorio con un consumo de 3500 kWh al año: 3500 × 0,237 = unos 830 € al año, o 69 € al mes; una casa unifamiliar con calefacción eléctrica y un consumo de 18 000 kWh: 18 000 × 0,149 = unos 2680 € al año, o 223 € al mes.',
         'El precio es una media nacional. La temporada de calefacción de Laponia es más larga que la del sur, así que la misma casa consume aquí más kilovatios hora; pregunte al inquilino anterior o al arrendador por el consumo del año pasado, es la mejor estimación que obtendrá.',
       ],
     },
     {
       id: 'getting-around',
       kicker: 'Desplazamientos',
-      h2: 'Esta es la partida que es mayor en Laponia.',
+      h2: 'Esta es la partida que pesa más en Laponia.',
       paras: [
         'La gasolina 95E10 costó de media 2,09 € el litro en toda Finlandia en junio de 2026 y el diésel 2,15 € (Statistics Finland). Distancias de las rutas en coche de LaplandVibes: Kemi–Rovaniemi 118 km, Rovaniemi–Ylläs 175 km, Sodankylä–Saariselkä 130 km.',
         '<strong>Ejemplo:</strong> un trayecto diario de 40 km, 22 días laborables, 7 l/100 km: 880 km × 0,07 l/km × 2,09 € = unos 129 € al mes en gasolina. En el centro de Rovaniemi se puede vivir sin coche; en un pueblo de montaña el coche forma parte del alquiler aunque el contrato no lo diga.',
@@ -104,7 +104,7 @@ const copy: HousingPageCopy = {
       h2: 'Guardería según los ingresos, escuela gratuita.',
       bullets: [
         'Desde el 1 de agosto de 2026 la tarifa máxima de educación infantil es de 335 € al mes por niño, la mínima que se cobra es de 32 €, y el segundo hijo paga como máximo 134 € (Asociación de Municipios de Finlandia). La tarifa sigue los ingresos familiares, así que con ingresos bajos puede ser cero.',
-        'La educación preprimaria y básica son gratuitas, con material escolar y comidas incluidos (Ley de educación básica, sección 31). Si el trayecto escolar supera los cinco kilómetros, el municipio organiza el transporte (sección 32).',
+        'La educación preprimaria y básica son gratuitas, con material escolar y comidas incluidos (Ley de educación básica, artículo 31). Si el trayecto escolar supera los cinco kilómetros, el municipio organiza el transporte (artículo 32).',
       ],
     },
     {

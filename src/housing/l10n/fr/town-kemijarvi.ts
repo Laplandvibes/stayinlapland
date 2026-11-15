@@ -27,7 +27,7 @@ const copy: HousingPageCopy = {
     'Population de Statistics Finland, nombre de logements et marche à suivre tirés des pages de la ville de Kemijärvi, hausses de loyer et objectifs d’occupation tirés du budget 2026 de la ville. Vérifié le 15 novembre 2026.',
   intro: [
     'Kemijärvi comptait 6 919 habitants fin 2025, soit 35 de moins qu’un an plus tôt (Statistics Finland). La ville se présente comme la plus septentrionale de Finlande et indique que les services du centre sont accessibles à pied (kemijarvi.fi).',
-    'Les deux sociétés immobilières de la ville, Kemijärven Vuokratalot et Kemijärven Töveli, possèdent 560 logements locatifs (kemijarvi.fi). Le budget de la ville considère comme réaliste un objectif de 80–85 % de ces logements loués, il y a donc bien des logements vacants.',
+    'Les deux sociétés immobilières de la ville, Kemijärven Vuokratalot et Kemijärven Töveli, possèdent 560 logements locatifs (kemijarvi.fi). Le budget de la ville considère comme réaliste un objectif de 80–85 % de ces logements loués : il y a donc bien des logements vacants.',
     'Les loyers augmentent : Kemijärven Vuokratalot a relevé ses loyers de 4,5 % le 1er février 2026 et Töveli de 5 % le 1er juillet 2026. Les mêmes hausses sont inscrites dans le plan pour 2027 et 2028 (budget 2026).',
   ],
   sections: [
@@ -46,14 +46,14 @@ const copy: HousingPageCopy = {
         },
         {
           title: 'Vuostimo, à 14 km de Pyhä',
-          body: 'Des maisons en bande de 1987 appartenant à la ville, à Vuostimo, à environ 35 kilomètres au nord du centre. La station de ski de Pyhätunturi est à 14 kilomètres, ce qui en fait les logements locatifs de la ville les plus proches de Pyhä.',
+          body: 'Des maisons mitoyennes de 1987 appartenant à la ville, à Vuostimo, à environ 35 kilomètres au nord du centre. La station de ski de Pyhätunturi est à 14 kilomètres, ce qui en fait les logements locatifs de la ville les plus proches de Pyhä.',
           href: 'https://kemijarvi.fi/asuminen-ja-ymparisto/asuminen/kemijarven-kaupungin-vuokratalot/vuokratalokohteet/vuostimo/',
           linkLabel: 'kemijarvi.fi : Vuostimo',
           event: 'kemijarvi_vuostimo',
         },
         {
           title: 'Oikotie et Vuokraovi',
-          body: 'Annonces de particuliers et d’agences sous la commune de Kemijärvi. Les pages logement de la ville ne recensent aucun bailleur privé : leurs logements se trouvent donc sur les portails.',
+          body: 'Annonces de particuliers et d’agences pour la commune de Kemijärvi. Les pages logement de la ville ne recensent aucun bailleur privé : leurs logements se trouvent donc sur les portails.',
           href: 'https://asunnot.oikotie.fi/vuokra-asunnot/kemij%C3%A4rvi',
           linkLabel: 'Oikotie : locations à Kemijärvi',
           event: 'oikotie',
@@ -65,7 +65,7 @@ const copy: HousingPageCopy = {
       kicker: 'Ce que coûte un loyer',
       h2: 'Les sociétés de la ville ne publient pas leurs loyers.',
       table: {
-        caption: 'Loyer moyen en €/m²/mois, logements locatifs du marché libre, 2026T3',
+        caption: 'Loyer moyen en €/m²/mois, logements locatifs du parc privé, 2026T3',
         head: ['', 'Laponie (région)', 'Ensemble du pays'],
         rows: [
           ['Studios', '17,25', '20,49'],
@@ -76,7 +76,7 @@ const copy: HousingPageCopy = {
         foot: 'Statistics Finland, loyers 2026T3, tableau 15fa. Aucun chiffre distinct n’est publié pour Kemijärvi, et le chiffre régional inclut Rovaniemi, plus chère.',
       },
       paras: [
-        '<strong>Le chiffre propre à Kemijärvi date de 2022.</strong> Dans la zone postale du centre-ville, 98100, les studios du marché libre coûtaient en moyenne 12,15 € par m² et les deux-pièces 9,10 € par m² en janvier–mars 2022. Depuis, chaque trimestre est masqué : Statistics Finland ne publie pas le chiffre d’une zone postale quand les observations sont trop peu nombreuses (tableau 13eb).',
+        '<strong>Le chiffre propre à Kemijärvi date de 2022.</strong> Dans la zone postale du centre-ville, 98100, les studios du parc privé coûtaient en moyenne 12,15 € par m² et les deux-pièces 9,10 € par m² en janvier–mars 2022. Depuis, chaque trimestre est masqué : Statistics Finland ne publie pas le chiffre d’une zone postale quand les observations sont trop peu nombreuses (tableau 13eb).',
         'Les loyers des sociétés de la ville ne sont pas en ligne. Demandez le loyer au secrétaire du logement avant d’accepter une proposition, et rappelez-vous que les loyers ont augmenté en 2026 : de 4,5 % chez Vuokratalot et de 5 % chez Töveli.',
       ],
     },
@@ -140,7 +140,7 @@ const copy: HousingPageCopy = {
     partner: 'hotels',
     kicker: 'Les premières nuits',
     h2: 'Des visites sur place.',
-    lead: 'Le moteur partenaire affiche les chambres et les appartements libres à Kemijärvi et à Pyhä aux prix du jour.',
+    lead: 'Le moteur de réservation de notre partenaire affiche les chambres et les appartements libres à Kemijärvi et à Pyhä aux prix du jour.',
     chips: [
       { label: 'Kemijärvi', destination: 'Kemijärvi', sid: 'rentals_kemijarvi_first_weeks' },
       { label: 'Pyhä', destination: 'Pyhä', sid: 'rentals_pyha_first_weeks' },

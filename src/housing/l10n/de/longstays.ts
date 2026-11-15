@@ -23,7 +23,7 @@ const copy: HousingPageCopy = {
   authorNote:
     'Gesetzestexte von Finlex (Wohnraummietgesetz 481/1995, Änderung 531/2026), Adressmeldung von der Agentur für Digitalisierung und Bevölkerungsdaten, Hüttendaten aus dem Produktfeed von Lomarengas. Geprüft am 15. November 2026.',
   intro: [
-    'Ein Monat Remote-Arbeit in Levi, ein Winter in Rovaniemi oder eine Saison in einem Skiresort: Ein längerer Aufenthalt in Lappland läuft meist auf eine von drei Möglichkeiten hinaus. Sie unterscheiden sich im Preis, aber noch mehr darin, welchen Vertrag Sie am Ende haben und was das Gesetz dann schützt.',
+    'Ein Monat Remote-Arbeit in Levi, ein Winter in Rovaniemi oder eine Saison in einem Skigebiet: Ein längerer Aufenthalt in Lappland läuft meist auf eine von drei Möglichkeiten hinaus. Sie unterscheiden sich im Preis, aber noch mehr darin, welchen Vertrag Sie am Ende haben und was das Gesetz dann schützt.',
     'Wenn Sie zum Urlaub kommen und nicht zum Wohnen, finden Sie Hotels und Hütten auf unserer Schwesterseite <a href="https://laplandstays.com/" target="_blank" rel="noopener">laplandstays.com</a> und Villen auf <a href="https://laplandluxuryvillas.com/" target="_blank" rel="noopener">laplandluxuryvillas.com</a>.',
   ],
   sections: [
@@ -46,7 +46,7 @@ const copy: HousingPageCopy = {
           title: 'Personalunterkunft',
           body: 'Bei Saisonarbeit gehört die Unterkunft oft zum Job. Fragen Sie vor der Unterschrift, ob die Wohnung Teil des Arbeitsverhältnisses ist und was mit ihr geschieht, wenn der Job mitten in der Saison endet.',
           href: '/seasonal-worker-housing',
-          linkLabel: 'Wohnen bei Saisonarbeit',
+          linkLabel: 'Wohnen für Saisonkräfte',
         },
       ],
     },
@@ -55,7 +55,7 @@ const copy: HousingPageCopy = {
       kicker: 'Der Vertrag',
       h2: 'Ein befristeter Mietvertrag lässt sich nicht vorzeitig beenden.',
       bullets: [
-        '<strong>Ein befristeter Mietvertrag läuft bis zu dem Datum, das darin steht.</strong> Der Mieter kann während der Laufzeit nicht kündigen. Er kann nur durch Vereinbarung mit dem Vermieter oder in den im Gesetz genannten besonderen Fällen früher enden (Finnischer Verbraucherverband, Mietrecht).',
+        '<strong>Ein befristeter Mietvertrag läuft bis zu dem Datum, das darin steht.</strong> Der Mieter kann während der Laufzeit nicht kündigen. Der Vertrag kann nur durch Vereinbarung mit dem Vermieter oder in den im Gesetz genannten besonderen Fällen früher enden (Finnischer Verbraucherverband, Mietrecht).',
         '<strong>Wenn Sie nicht wissen, wie lange Sie bleiben,</strong> bitten Sie stattdessen um einen unbefristeten Vertrag. Den kann der Mieter kündigen, und die Kündigungsfrist des Mieters ändert sich durch die Reform vom 1. Oktober 2026 nicht (Rakli).',
         '<strong>Kurze Verträge hintereinander:</strong> Erhält derselbe Mieter mehr als zweimal nacheinander einen befristeten Vertrag von höchstens drei Monaten, gilt der Vertrag als unbefristet, welches Enddatum er auch trägt.',
         '<strong>Das Mietrecht erfasst nicht alles.</strong> Es gilt für eine zum Wohnen vermietete Wohnung, nicht für die Tätigkeit von Beherbergungsbetrieben (Wohnraummietgesetz, §§ 1 und 2). Fragen Sie vor der Unterschrift, ob Sie einen Wohnraummietvertrag oder einen Beherbergungsvertrag bekommen.',
@@ -67,7 +67,7 @@ const copy: HousingPageCopy = {
       kicker: 'Adressmeldung',
       h2: 'Drei Monate oder mehr: Melden Sie Ihre Adresse.',
       paras: [
-        'Laut der Agentur für Digitalisierung und Bevölkerungsdaten melden Sie einen Umzug, sobald sich Ihre Wohnadresse ändert und der Aufenthalt mindestens drei Monate dauert. Kehren Sie binnen eines Jahres an dieselbe ständige Adresse zurück, gilt der Umzug als vorübergehend, und Ihre ständige Adresse bleibt bestehen.',
+        'Laut der Agentur für Digitalisierung und Bevölkerungsdaten melden Sie einen Umzug immer dann, wenn sich Ihre Wohnadresse ändert und der Aufenthalt mindestens drei Monate dauert. Kehren Sie binnen eines Jahres an dieselbe ständige Adresse zurück, gilt der Umzug als vorübergehend, und Ihre ständige Adresse bleibt bestehen.',
         'Die Meldung erfolgt frühestens einen Monat vor dem Umzugstag und spätestens eine Woche nach dem Umzug. Bei einem dauerhaften Umzug steht der Rest, etwa Winterreifen, Stromvertrag und Gesundheitszentrum, in der <a href="/moving-to-lapland/">Umzugs-Checkliste</a>.',
       ],
     },

@@ -29,8 +29,8 @@ const copy: HousingPageCopy = {
     'Bevolking van Statistics Finland, het aantal woningen van de pagina van de gemeente, huren, voorwaarden en vrije woningen van de eigen pagina’s van Asentopuulaaki Oy, banen van het Finse leger, Yle en de bedrijven. Gecontroleerd op 15 november 2026.',
   intro: [
     'Sodankylä had eind 2025 8.095 inwoners (Statistics Finland). De gemeente bezit ongeveer 720 huurwoningen, die worden verhuurd door haar dochterbedrijf Asentopuulaaki Oy (sodankyla.fi). Bijna elke woning op de lijst van het bedrijf ligt in het hoofddorp; de rest ligt in Aska, Orajärvi, Riipi, Torvinen en Vaalajärvi.',
-    'Volgens de gemeente is de woningnood die Sodankylä jarenlang plaagde afgenomen: in de zomer van 2025 werd Käpyriihi, met 36 nieuwe woningen, opgeleverd bij de rivier Jeesiöjoki (gemeente Sodankylä, 2 juli 2025). De woningzoeker van het bedrijf toont de woningen die op dat moment vrij zijn of binnenkort vrijkomen, met hun huur en de datum waarop ze vrijkomen (Asentopuulaaki).',
-    'De woningnood is nog niet helemaal voorbij. In september 2025 zei de technisch directeur van de gemeente tegen Yle dat het nog steeds moeilijk maakt om werknemers naar Sodankylä te halen, hoewel er banen zijn (Yle, 11 september 2025).',
+    'Volgens de gemeente is de woningnood die Sodankylä jarenlang plaagde afgenomen: in de zomer van 2025 werd Käpyriihi, met 36 nieuwe woningen, opgeleverd bij de rivier Jeesiöjoki (gemeente Sodankylä, 2 juli 2025). De zoekfunctie van het bedrijf toont de woningen die op dat moment vrij zijn of binnenkort vrijkomen, met hun huur en de datum waarop ze vrijkomen (Asentopuulaaki).',
+    'De woningnood is nog niet helemaal voorbij. In september 2025 zei de technisch directeur van de gemeente tegen Yle dat die het nog steeds moeilijk maakt om werknemers naar Sodankylä te halen, hoewel er banen zijn (Yle, 11 september 2025).',
   ],
   sections: [
     {
@@ -69,9 +69,9 @@ const copy: HousingPageCopy = {
         },
         {
           title: 'Vrije woningen',
-          body: 'De woningzoeker van het bedrijf toont vrije woningen en woningen die binnenkort vrijkomen met hun huur en de datum waarop ze vrijkomen. De lijst wordt bijgewerkt op de eigen site van het bedrijf, dus controleer die voordat u zich aanmeldt.',
+          body: 'De zoekfunctie van het bedrijf toont vrije woningen en woningen die binnenkort vrijkomen met hun huur en de datum waarop ze vrijkomen. De lijst wordt bijgewerkt op de eigen site van het bedrijf, dus controleer die voordat u zich aanmeldt.',
           href: 'https://www.asentopuulaaki.fi/asuntohaku/',
-          linkLabel: 'asentopuulaaki.fi: woningzoeker',
+          linkLabel: 'asentopuulaaki.fi: woningen zoeken',
           event: 'asentopuulaaki_vapaat',
         },
         {
@@ -126,7 +126,7 @@ const copy: HousingPageCopy = {
       h2: 'De poolnacht duurt hier vier dagen.',
       bullets: [
         'In Sodankylä duurt de poolnacht maar vier dagen, vlak voor Kerstmis (Fins Meteorologisch Instituut).',
-        'De dichtstbijzijnde luchthaven is Kittilä, 93 km verderop, en het centrum van Rovaniemi ligt 130 km ver (OpenStreetMap).',
+        'De dichtstbijzijnde luchthaven is Kittilä, 93 km verderop, en het centrum van Rovaniemi ligt op 130 km (OpenStreetMap).',
         'Voor studenten: REDU heeft een studentenhuis in Sodankylä, en in maart 2026 kondigde de gemeente een studentenhuis aan voor leerlingen van het middelbaar onderwijs en volwassen studenten in grote woningen van Asentopuulaaki (redu.fi; gemeente Sodankylä, 5 maart 2026).',
       ],
     },
@@ -152,7 +152,7 @@ const copy: HousingPageCopy = {
     },
     {
       q: 'Is er woningnood in Sodankylä?',
-      a: 'Jarenlang wel. Volgens de gemeente is die afgenomen doordat er nieuwe gebouwen werden opgeleverd (2 juli 2025), en de woningzoeker van het gemeentelijke bedrijf toont vrije woningen en woningen die binnenkort vrijkomen (Asentopuulaaki).',
+      a: 'Jarenlang wel. Volgens de gemeente is die afgenomen doordat er nieuwe gebouwen werden opgeleverd (2 juli 2025), en de zoekfunctie van het gemeentelijke bedrijf toont vrije woningen en woningen die binnenkort vrijkomen (Asentopuulaaki).',
     },
     {
       q: 'Wie komt in aanmerking voor de compensatie voor studieleningen?',
@@ -162,7 +162,7 @@ const copy: HousingPageCopy = {
   cta: {
     partner: 'hotels',
     kicker: 'De eerste nachten',
-    h2: 'Bezichtigingen in persoon.',
+    h2: 'Bezichtigingen ter plaatse.',
     lead: 'De partnerzoekmachine toont vrije kamers en appartementen in Sodankylä en Luosto tegen de prijzen van vandaag.',
     chips: [
       { label: 'Sodankylä', destination: 'Sodankylä', sid: 'rentals_sodankyla_first_weeks' },

@@ -175,7 +175,7 @@ export const TOWN_SODANKYLA: HousingCopyMap = {
   en: {
     metaTitle: 'Rentals in Sodankylä: 720 Municipal Flats and What They Cost',
     metaDescription:
-      'Renting in Sodankylä: Asentopuulaaki Oy’s roughly 720 municipal flats, rents of about €7.40–18 per m², the online application, the student loan pilot and Kela support.',
+      'Sodankylä rentals: Asentopuulaaki Oy’s roughly 720 municipal flats, rents of about €7.40–18 per m², the online application, the student loan pilot and Kela.',
     breadcrumb: 'Sodankylä',
     hero: {
       eyebrow: 'Sodankylä, 8,095 residents',
@@ -187,7 +187,7 @@ export const TOWN_SODANKYLA: HousingCopyMap = {
       'Population from Statistics Finland, the flat count from the municipality’s page, rents, terms and free flats from Asentopuulaaki Oy’s own pages, jobs from the Finnish Army, Yle and the companies. Checked 15 November 2026.',
     intro: [
       'Sodankylä had 8,095 residents at the end of 2025 (Statistics Finland). The municipality owns roughly 720 rental flats, let by its subsidiary Asentopuulaaki Oy (sodankyla.fi). Almost every flat on the company’s list is in the main village; the rest are in Aska, Orajärvi, Riipi, Torvinen and Vaalajärvi.',
-      'According to the municipality, the housing shortage that dogged Sodankylä for years has eased: in summer 2025 Käpyriihi, with 36 new flats, was completed by the Jeesiöjoki river (Municipality of Sodankylä, 2 Jul 2025). The company’s flat search lists the flats that are free or coming free at any given time, with their rent and the date they come free (Asentopuulaaki).',
+      'According to the municipality, the housing shortage that dogged Sodankylä for years has eased: in summer 2025 Käpyriihi, with 36 new flats, was completed by the Jeesiöjoki river (Municipality of Sodankylä, 2 Jul 2025). The company’s flat search lists the flats that are free or coming free at any given time, with the rent and the date each one becomes available (Asentopuulaaki).',
       'The shortage is not entirely over. In September 2025 the municipality’s technical director told Yle that it still makes it hard to bring workers to Sodankylä, even though there are jobs (Yle, 11 Sep 2025).',
     ],
     sections: [

@@ -104,7 +104,7 @@ const LABELS: Record<SrcId, Record<HousingLang, string>> = {
   levi: { fi: 'Levi: hiihtokeskus tänään (alkukauden rinteet lokakuusta, alppihiihdon maailmancup 13.–15.11.2026)', en: 'Levi: ski resort today (early-season slopes from October, alpine World Cup 13–15 Nov 2026)' },
   arcticRally: { fi: 'Arctic Lapland Rally 28.–30.1.2027', en: 'Arctic Lapland Rally 28–30 Jan 2027' },
   msff: { fi: 'Midnight Sun Film Festival 16.–20.6.2027', en: 'Midnight Sun Film Festival 16–20 Jun 2027' },
-  jutajaiset: { fi: 'Jutajaiset: pohjoisen kansanmusiikin ja kansantanssin festivaali Rovaniemellä lokakuussa', en: 'Jutajaiset: folk music and dance festival in Rovaniemi in October' },
+  jutajaiset: { fi: 'Jutajaiset: pohjoisen kansanmusiikin ja kansantanssin festivaali Rovaniemellä lokakuussa', en: 'Jutajaiset: northern folk music and dance festival in Rovaniemi in October' },
   simerock: { fi: 'Simerock 13.–14.8.2027', en: 'Simerock 13–14 Aug 2027' },
   arcticSnowHotel: { fi: 'Arctic SnowHotel: avaus 15.12.2026', en: 'Arctic SnowHotel: opening 15 Dec 2026' },
 };
@@ -187,7 +187,7 @@ export const WHEN_TO_GO: Record<HousingLang, WhenToGoCopy> = {
         pitch: 'Hankikanto ja pitkät illat',
         body: 'Lunta on yhä paljon, Rovaniemellä keskimäärin 64 cm 15.4., ja Metsähallituksen mukaan hankikantokeli kestää huhtikuun puolivälistä jopa toukokuun puoliväliin. Revontulia voi vielä nähdä kuun alkupuolella: Rovaniemellä yöt pimenevät noin 21.4. asti, Utsjoella noin 10.4. asti. Lapin majoitusliikkeiden huoneen keskihinta oli huhtikuussa 139–141 euroa, maaliskuussa 200–225 (2024–2025).',
         good: ['Hankihiihto ja tunturiretket', 'Kevätaurinko: 20.4. päivä on Rovaniemellä yli 16 tuntia'],
-        note: ['Osa hiihtokeskuksista sulkee jo huhtikuussa: Ounasvaaran kausi päättyy 17.4.2027, Ylläksen arviolta toukokuun alussa', 'Kausityöt loppuvat: Saariselällä talven viimeiset työpäivät ovat huhtikuun puolivälissä (Yle)'],
+        note: ['Osa hiihtokeskuksista sulkee jo huhtikuussa: Ounasvaaran kausi päättyy 17.4.2027, mutta Ylläksen vasta arviolta toukokuun alussa', 'Kausityöt loppuvat: Saariselällä talven viimeiset työpäivät ovat huhtikuun puolivälissä (Yle)'],
       },
       {
         name: 'Toukokuu',
@@ -213,7 +213,7 @@ export const WHEN_TO_GO: Record<HousingLang, WhenToGoCopy> = {
       {
         name: 'Elokuu',
         pitch: 'Pimeät yöt palaavat',
-        body: 'Yöt pimenevät Rovaniemellä taas noin 24.8., ja Visit Finlandin mukaan revontulet näkyvät Lapissa elokuun lopusta huhtikuuhun. Ensimmäiset lumisateet osuvat tunturien huipuille tavallisesti elo–syyskuussa. Rovaniemellä koulut alkavat elokuun puolivälissä (vuonna 2026 12.8.), ja opiskelijoiden asunnonhaku on huipussaan.',
+        body: 'Yöt pimenevät Rovaniemellä taas noin 24.8., ja Visit Finlandin mukaan revontulet näkyvät Lapissa elokuun lopusta huhtikuuhun. Ensimmäiset lumisateet osuvat tunturien huipuille tavallisesti elo–syyskuussa. Rovaniemellä koulut alkavat elokuun puolivälissä (12.8. vuonna 2026), ja opiskelijoiden asunnonhaku on huipussaan.',
         good: ['Mustikka- ja retkeilykausi jatkuu', 'Simerock Rovaniemellä 13.–14.8.2027'],
         note: ['Rovaniemellä DAS:n asuntoihin on elo–syyskuussa eniten hakijoita, ja vapautuvat asunnot vuokrataan nopeasti', 'Talven kausitöiden rekrytointi kiihtyy elokuusta (Yle)'],
       },
@@ -234,7 +234,7 @@ export const WHEN_TO_GO: Record<HousingLang, WhenToGoCopy> = {
       {
         name: 'Marraskuu',
         pitch: 'Kaamos alkaa pohjoisessa',
-        body: 'Utsjoella kaamos alkaa 26.11. ja kestää keskimäärin 51 vuorokautta. Rovaniemellä aurinko nousee joka päivä, mutta 15.11. päivä on enää vajaa kuusi tuntia. Hiihtokeskukset avautuvat: kaudella 2026–2027 Ounasvaara 11.11., Ylläs 21.11. ja Luosto tavoitteena 28.11.',
+        body: 'Utsjoella kaamos alkaa 26.11. ja kestää keskimäärin 51 vuorokautta. Rovaniemellä aurinko nousee joka päivä, mutta 15.11. päivä on enää vajaa kuusi tuntia. Hiihtokeskukset avautuvat: kaudella 2026–2027 Ounasvaara 11.11., Ylläs 21.11. ja Luosto tavoitteen mukaan 28.11.',
         good: ['Levin maailmancupin pujottelut marraskuun puolivälissä', 'Talvi ennen joulun hintoja: huone Lapin majoitusliikkeissä maksoi marraskuussa keskimäärin 192–209 euroa, joulukuussa 285–313 (2024–2025)'],
         note: ['Rovaniemi ei ole marraskuussa hiljainen: hotellien käyttöaste 72–82 % (2023–2025)', 'Talvirenkaat 1.11. alkaen, kun keli sitä vaatii. Arctic SnowHotel avautuu vasta joulukuussa'],
       },
@@ -270,7 +270,7 @@ export const WHEN_TO_GO: Record<HousingLang, WhenToGoCopy> = {
     faqs: [
       {
         q: 'Milloin Lapissa näkee revontulia?',
-        a: 'Kun yöt ovat pimeät, eli elokuun lopusta huhtikuuhun. Ilmatieteen laitoksen mukaan magneettisia myrskyjä esiintyy syksyllä ja keväällä keskimäärin enemmän kuin kesällä ja talvella, ja se suosittelee maaliskuuta, koska kevät on keskimäärin vähäpilvistä aikaa. Sodankylän korkeudella niitä näkyy keskimäärin joka toinen kirkas ja pimeä yö.',
+        a: 'Kun yöt ovat pimeät, eli elokuun lopusta huhtikuuhun. Ilmatieteen laitoksen mukaan magneettisia myrskyjä esiintyy syksyllä ja keväällä keskimäärin enemmän kuin kesällä ja talvella, ja se suosittelee maaliskuuta, koska kevät on keskimäärin vähäpilvistä aikaa. Sodankylän korkeudella revontulia näkyy keskimäärin joka toinen kirkas ja pimeä yö.',
       },
       {
         q: 'Onko Rovaniemellä kaamosta?',
@@ -399,7 +399,7 @@ export const WHEN_TO_GO: Record<HousingLang, WhenToGoCopy> = {
       {
         name: 'November',
         pitch: 'The polar night begins in the far north',
-        body: 'In Utsjoki the polar night begins on 26 November and lasts 51 days on average. In Rovaniemi the sun rises every day, but on 15 November the day is just under six hours. The ski resorts open: in the 2026–2027 season Ounasvaara on 11 November, Ylläs on 21 November and Luosto with a target of 28 November.',
+        body: 'In Utsjoki the polar night begins on 26 November and lasts 51 days on average. In Rovaniemi the sun rises every day, but on 15 November the day is just under six hours. The ski resorts open: in the 2026–2027 season Ounasvaara on 11 November and Ylläs on 21 November, while Luosto is aiming for 28 November.',
         good: ['The Levi World Cup slaloms in mid-November', 'Winter before Christmas prices: a room in Lapland’s accommodation establishments averaged €192–209 in November and €285–313 in December (2024–2025)'],
         note: ['Rovaniemi is not quiet in November: hotel occupancy 72–82 % (2023–2025)', 'Winter tyres from 1 November whenever conditions require. Arctic SnowHotel opens only in December'],
       },
@@ -435,7 +435,7 @@ export const WHEN_TO_GO: Record<HousingLang, WhenToGoCopy> = {
     faqs: [
       {
         q: 'When can you see the northern lights in Lapland?',
-        a: 'Whenever the nights are dark, from the end of August to April. According to the Finnish Meteorological Institute, magnetic storms are on average more frequent in autumn and spring than in summer and winter, and it recommends March because spring is on average less cloudy. At Sodankylä’s latitude they appear on average on every second clear, dark night.',
+        a: 'Whenever the nights are dark, from the end of August to April. According to the Finnish Meteorological Institute, magnetic storms are on average more frequent in autumn and spring than in summer and winter, and it recommends March because spring is on average less cloudy. At Sodankylä’s latitude auroras appear on average on every second clear, dark night.',
       },
       {
         q: 'Is there a polar night in Rovaniemi?',

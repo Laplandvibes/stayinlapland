@@ -26,9 +26,9 @@ const copy: HousingPageCopy = {
   authorNote:
     'Popolazione da Statistics Finland, numero di appartamenti e modalità di domanda dalle pagine della Città di Kemijärvi, aumenti degli affitti e obiettivi di occupazione dal bilancio 2026 della città. Verificato il 15 novembre 2026.',
   intro: [
-    'Kemijärvi aveva 6.919 abitanti alla fine del 2025, 35 in meno di un anno prima (Statistics Finland). La città si definisce la città più settentrionale della Finlandia e dice che i servizi del centro sono raggiungibili a piedi (kemijarvi.fi).',
+    'Kemijärvi aveva 6.919 abitanti alla fine del 2025, 35 in meno di un anno prima (Statistics Finland). La città si definisce la più settentrionale della Finlandia e dice che i servizi del centro sono raggiungibili a piedi (kemijarvi.fi).',
     'Le due società immobiliari della città, Kemijärven Vuokratalot e Kemijärven Töveli, possiedono 560 appartamenti in affitto (kemijarvi.fi). Il bilancio comunale considera realistico un obiettivo dell’80–85 percento di quegli appartamenti dati in locazione, quindi appartamenti vuoti ce ne sono.',
-    'Gli affitti salgono: Kemijärven Vuokratalot ha aumentato gli affitti del 4,5 percento il 1° febbraio 2026 e Töveli del 5 percento il 1° luglio 2026. Gli stessi aumenti sono scritti nel piano per il 2027 e il 2028 (bilancio 2026).',
+    'Gli affitti salgono: Kemijärven Vuokratalot ha aumentato gli affitti del 4,5 percento il 1° febbraio 2026 e Töveli del 5 percento il 1° luglio 2026. Gli stessi aumenti sono previsti nel piano per il 2027 e il 2028 (bilancio 2026).',
   ],
   sections: [
     {
@@ -53,7 +53,7 @@ const copy: HousingPageCopy = {
         },
         {
           title: 'Oikotie e Vuokraovi',
-          body: 'Annunci di privati e agenzie sotto il comune di Kemijärvi. Le pagine della città sull’abitare non elencano locatori privati, quindi i loro appartamenti si trovano sui portali.',
+          body: 'Annunci di privati e agenzie nel comune di Kemijärvi. Le pagine della città sull’abitare non elencano locatori privati, quindi i loro appartamenti si trovano sui portali.',
           href: 'https://asunnot.oikotie.fi/vuokra-asunnot/kemij%C3%A4rvi',
           linkLabel: 'Oikotie: affitti a Kemijärvi',
           event: 'oikotie',
@@ -76,7 +76,7 @@ const copy: HousingPageCopy = {
         foot: 'Statistics Finland, affitti 2026T3, tabella 15fa. Per Kemijärvi non viene pubblicato un dato separato, e il dato regionale include la più cara Rovaniemi.',
       },
       paras: [
-        '<strong>Il dato proprio di Kemijärvi risale al 2022.</strong> Nell’area postale del centro, 98100, i monolocali a libero mercato costavano in media 12,15 € al m² e i bilocali 9,10 € al m² a gennaio–marzo 2022. Ogni trimestre da allora è stato soppresso: Statistics Finland non pubblica il dato di un’area postale quando le osservazioni sono troppo poche (tabella 13eb).',
+        '<strong>Il dato proprio di Kemijärvi risale al 2022.</strong> Nell’area postale del centro, 98100, i monolocali a libero mercato costavano in media 12,15 € al m² e i bilocali 9,10 € al m² a gennaio–marzo 2022. Da allora i dati di tutti i trimestri sono stati oscurati: Statistics Finland non pubblica il dato di un’area postale quando le osservazioni sono troppo poche (tabella 13eb).',
         'Gli affitti delle società della città non sono online. Chieda l’affitto al segretario degli alloggi prima di accettare un’offerta, e ricordi che nel 2026 gli affitti sono saliti: del 4,5 percento a Vuokratalot e del 5 percento a Töveli.',
       ],
     },
@@ -140,7 +140,7 @@ const copy: HousingPageCopy = {
     partner: 'hotels',
     kicker: 'Le prime notti',
     h2: 'Visite di persona.',
-    lead: 'La ricerca del partner mostra camere e appartamenti liberi a Kemijärvi e a Pyhä ai prezzi di oggi.',
+    lead: 'La ricerca del nostro partner mostra camere e appartamenti liberi a Kemijärvi e a Pyhä ai prezzi di oggi.',
     chips: [
       { label: 'Kemijärvi', destination: 'Kemijärvi', sid: 'rentals_kemijarvi_first_weeks' },
       { label: 'Pyhä', destination: 'Pyhä', sid: 'rentals_pyha_first_weeks' },

@@ -23,7 +23,7 @@ const copy: HousingPageCopy = {
   authorNote:
     'Nombre de logements des sociétés tiré des pages des communes de Kemi, de Tornio et de Keminmaa, conditions de demande tirées des pages des sociétés elles-mêmes, loyers au m² de Statistics Finland (région de Laponie 2026T3). Vérifié le 15 novembre 2026.',
   intro: [
-    'Kemi compte 19 339 habitants, Tornio 20 823 et Keminmaa 7 576 (Statistics Finland, 31 décembre 2025). Les trois communes sont voisines, le logement peut donc se trouver dans une autre commune que l’emploi.',
+    'Kemi compte 19 339 habitants, Tornio 20 823 et Keminmaa 7 576 (Statistics Finland, 31 décembre 2025). Les trois communes sont voisines : le logement peut donc se trouver dans une autre commune que l’emploi.',
     'Les sociétés de logement communales sont la première adresse : les logements communaux de Kemi sont gérés par Kiinteistö Oy Itätuuli (kemi.fi), le plus grand bailleur de logements locatifs de la ville, avec des appartements à moins de cinq kilomètres du centre (itatuuli.fi). Keminmaan Vuokra-asunnot Oy compte 18 immeubles et un peu plus de 300 logements (keminmaa.fi). Chaque société a sa propre demande en ligne. À Tornio, les logements de la ville sont gérés par Tornion Krunni Oy, qui regroupe Tornion Vuokra-asunnot Oy (tornio.fi).',
     'Le tableau actuel des loyers de Statistics Finland n’a pas de ligne distincte pour Kemi ou Tornio ; le chiffre régional de la Laponie est donc affiché ci-dessous. Les chiffres de Rovaniemi sont sur sa propre page.',
   ],
@@ -33,7 +33,7 @@ const copy: HousingPageCopy = {
       kicker: 'Ce que coûte un loyer',
       h2: 'Les loyers régionaux de la Laponie au m², juillet–septembre 2026.',
       table: {
-        caption: 'Loyer moyen en €/m²/mois, logements locatifs du marché libre, 2026T3',
+        caption: 'Loyer moyen en €/m²/mois, logements locatifs du parc privé, 2026T3',
         head: ['', 'Laponie (région)', 'Rovaniemi', 'Ensemble du pays'],
         rows: [
           ['Studios', '17,25', '18,63', '20,49'],
@@ -78,7 +78,7 @@ const copy: HousingPageCopy = {
           event: 'kemi_city',
         },
         {
-          title: 'Keminmaa : Keminmaan Vuokra-asunnot Oy',
+          title: 'Keminmaan Vuokra-asunnot Oy',
           body: 'La société de logement appartenant à la commune : 18 immeubles et un peu plus de 300 logements, avec l’eau et le chauffage compris dans le loyer. Sa demande en ligne est valable trois mois, et le dépôt de garantie est d’un mois de loyer.',
           href: 'https://www.keminmaanvuokra-asunnot.fi/asunnonhaku.html',
           linkLabel: 'Keminmaan Vuokra-asunnot : comment faire une demande',
@@ -93,7 +93,7 @@ const copy: HousingPageCopy = {
         },
         {
           title: 'Oikotie et Vuokraovi',
-          body: 'Annonces de particuliers et d’agences. Cherchez Kemi, Tornio et Keminmaa comme des communes distinctes : ce sont trois recherches communales séparées.',
+          body: 'Annonces de particuliers et d’agences. Cherchez Kemi, Tornio et Keminmaa l’une après l’autre : sur les portails, chaque commune est une recherche à part.',
           href: 'https://asunnot.oikotie.fi/vuokra-asunnot/kemi',
           linkLabel: 'Oikotie : locations à Kemi',
           event: 'oikotie',

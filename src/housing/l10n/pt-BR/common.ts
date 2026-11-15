@@ -40,7 +40,7 @@ const common: HousingCommonCopy = {
     "tkSahko": "Statistics Finland: preço da eletricidade por tipo de consumidor, preço total em junho de 2026 (tabela 13rb, consultada em 15 de novembro de 2026)",
     "tkPolttoaine": "Statistics Finland: preços de combustíveis líquidos ao consumidor, junho de 2026 (tabela 12ge, consultada em 15 de novembro de 2026)",
     "kela": "Kela (Instituto de Seguridade Social da Finlândia): auxílio-moradia geral, custos máximos de moradia e grupos de municípios em 2026",
-    "ahvl": "Lei de Locação Residencial (481/1995), seção 8 sobre a caução e seção 52 sobre os prazos de aviso prévio",
+    "ahvl": "Lei de Locação Residencial (481/1995), artigo 8 sobre a caução e artigo 52 sobre os prazos de aviso prévio",
     "ahvl531": "Lei de Locação Residencial (481/1995), texto consolidado com a alteração 531/2026 (em vigor desde 1º de outubro de 2026): âmbito, contratos por prazo determinado, caução; consultada em 15 de novembro de 2026",
     "kuluttajaliittoVuokra": "União Finlandesa de Consumidores (Kuluttajaliitto): guia do aluguel (contratos por prazo determinado, prazos de aviso prévio e cauções; atualizado em 7 de outubro de 2026)",
     "dvvTilapainen": "Agência de Serviços de Dados Digitais e Populacionais (DVV): perguntas frequentes sobre mudança na Finlândia (mudanças temporárias, regra dos três meses)",
@@ -48,13 +48,13 @@ const common: HousingCommonCopy = {
     "traficom": "Traficom (Agência Finlandesa de Transportes e Comunicações): pneus de verão e de inverno",
     "dvv": "Agência de Serviços de Dados Digitais e Populacionais (DVV): comunicação de mudança de endereço",
     "kuntaliitto": "Associação de Municípios da Finlândia: taxas da educação infantil a partir de 1º de agosto de 2026",
-    "perusopetuslaki": "Lei do Ensino Fundamental (628/1998): ensino gratuito (seção 31) e transporte escolar (seção 32)",
+    "perusopetuslaki": "Lei do Ensino Fundamental (628/1998): ensino gratuito (artigo 31) e transporte escolar (artigo 32)",
     "fmi": "Instituto Meteorológico da Finlândia: estações astronômicas (noite polar e sol da meia-noite)",
     "ounasvaara": "Ounasvaara: pistas e trilhas (cerca de 100 km de trilhas de esqui, 50 km deles iluminados; consultado em 23 de setembro de 2026)",
     "foreca": "Enciclopédia do tempo da Foreca: a noite polar na Finlândia",
     "yle2017": "Yle, 25 de outubro de 2017: o turismo na Lapônia está em alta, mas faltam casas para os trabalhadores sazonais",
     "yle2023": "Yle, 25 de maio de 2023: a falta de moradia empurra os trabalhadores das estações de esqui para apartamentos de temporada",
-    "yle2025das": "Yle, 27 de julho de 2026: a falta de moradia em Rovaniemi continua grave: centenas de estudantes procuram casa enquanto os turistas ficam com os quitinetes",
+    "yle2025das": "Yle, 27 de julho de 2026: a falta de moradia em Rovaniemi continua grave: centenas de estudantes procuram casa enquanto os turistas ficam com as quitinetes",
     "lapinKansaDas": "Lapin Kansa, 12 de julho de 2017: a corrida por moradia começou: a DAS consegue abrigar apenas 30 por cento dos candidatos",
     "yle2026yllas": "Yle, 16 de junho de 2026: em Ylläs, os comerciantes decidem enfrentar a falta de moradia",
     "kesko2026": "Kesko, 17 de junho de 2026: os donos do K-Market Jounin Kauppa constroem três casas em fileira para os funcionários",
@@ -131,7 +131,7 @@ const common: HousingCommonCopy = {
     "moving": {
       "kicker": "Anúncio · em torno da mudança",
       "title": "Eletricidade e internet resolvidas antes do dia da mudança",
-      "lead": "Os dois podem ser contratados on-line antes de você ter as chaves na mão, e a nova casa já tem energia e conexão na primeira noite."
+      "lead": "Os dois podem ser contratados on-line antes de você ter as chaves na mão, para que a nova casa já tenha energia e conexão na primeira noite."
     },
     "electricity": {
       "kicker": "Anúncio · contrato de eletricidade",

@@ -33,18 +33,18 @@ const copy: HousingPageCopy = {
   sections: [
     {
       id: 'three-ways',
-      kicker: '度过一个雪季的三种方式',
+      kicker: '度过一个工作季的三种方式',
       h2: '员工住房、季节性租约，或市政公寓。',
       cards: [
         {
           title: '1. 员工住房',
           body:
-            '滑雪度假村里最常见的办法：雇主为员工租下联排住宅、木屋和度假公寓，租期覆盖整个雪季，房租从您的工资里扣。在鲁卡，一家餐饮集团早在2017年就在11月至5月为员工租下了四处度假房产（Yle，2017年10月25日）。好处是：您到的时候已经有屋顶。风险是：工作一结束，住房也跟着结束。',
+            '滑雪度假村里最常见的办法：雇主为员工租下联排住宅、木屋和度假公寓，租期覆盖整个雪季，房租从您的工资里扣。在鲁卡，一家餐饮集团早在2017年就在11月至5月为员工租下了四处度假房产（Yle，2017年10月25日）。好处是：您一到就有地方住。风险是：工作一结束，住房也跟着结束。',
         },
         {
           title: '2. 按季节租约出租的度假公寓',
           body:
-            '莱维一套80平方米的高山屋公寓：5月至11月每月750欧元，旺季每周2,000欧元，全年包租每月1,650欧元（Yle，2023年5月25日）。夏季便宜，冬季根本租不起。而且在度假公寓里，您也无法登记正式地址（Yle，2023年5月25日）。',
+            '莱维一套80平方米的阿尔卑斯风格公寓：5月至11月每月750欧元，旺季每周2,000欧元，全年长租每月1,650欧元（Yle，2023年5月25日）。夏季便宜，冬季根本租不起。而且在度假公寓里，您也无法登记正式地址（Yle，2023年5月25日）。',
         },
         {
           title: '3. 市政出租房',
@@ -63,16 +63,16 @@ const copy: HousingPageCopy = {
           title: '莱维与基蒂莱',
           image: { src: '/images/housing-levi-keskusta-card.webp', alt: '夏日里莱维中心的木造建筑' },
           body:
-            '2025年基蒂莱的人口增长了2.0%，在拉普兰各市镇中位居第二，仅次于佩尔科塞涅米（2.4%）（芬兰统计局）。雇主为员工租下联排住宅，租期覆盖整个雪季，其他人则在 Facebook 的莱维找房群里找房。Kittilän Vuokratalot Oy 的房源既有基蒂莱村里的，也有莱维的 Sirkka 的。',
+            '2025年基蒂莱的人口增长了2.0%，在拉普兰各市镇中位居第二，仅次于佩尔科森涅米（2.4%）（芬兰统计局）。雇主为员工租下联排住宅，租期覆盖整个雪季，其他人则在 Facebook 的莱维找房群里找房。Kittilän Vuokratalot Oy 的房源既有基蒂莱村里的，也有位于莱维 Sirkka 的。',
           href: 'https://kittila.fi/asuminen-ja-ymparisto/asuminen/vuokra-asunnot',
           linkLabel: 'Kittilän Vuokratalot Oy',
           event: 'kittila',
         },
         {
-          title: '于拉斯：阿卡斯隆波洛与 Ylläsjärvi',
+          title: '于拉斯：阿卡斯隆波洛与于拉斯耶尔维',
           image: { src: '/images/housing-seasonal-card-yllas-tunturi.webp', alt: '9月的早晨，隔着阿卡斯隆波洛的湖面望向于拉斯' },
           body:
-            '店主们自己动手盖房：按目前的进度，Jounin Kauppa 的三栋联排住宅预计在2026年11月至12月完工，有单间公寓、供合租的两卧公寓和三卧的家庭公寓，每套都带桑拿（Kesko，2026年6月17日）。村里第一栋模块化建筑在2025年10月已接近完工（Yle，2026年6月16日）。',
+            '店主们自己动手盖房：按目前的进度，Jounin Kauppa 的三栋联排住宅预计在2026年11月至12月完工，有单间公寓、供合租的两居室公寓和三居室家庭公寓，每套都带桑拿（Kesko，2026年6月17日）。村里第一栋模块化建筑在2025年10月已接近完工（Yle，2026年6月16日）。',
           href: 'https://www.kesko.fi/media/uutiset-ja-tiedotteet/uutiset/2026/lapin-asuntopulaa-ratkomassa-k-market-jounin-kaupan-kauppiaat-rakennuttavat-kolme-rivitaloa-tyontekijoilleen/',
           linkLabel: 'Kesko，2026年6月17日',
           event: 'yllas',
@@ -129,7 +129,7 @@ const copy: HousingPageCopy = {
       bullets: [
         '住房是雇佣待遇的一部分，还是单独的租约？从您的工资里扣多少，工资单上看得到吗？',
         '是单人房间还是合住？公寓里住几个人，您的房门有锁吗？',
-        '如果工作在雪季结束前结束了，或者超出了雪季，租约会怎么样？',
+        '如果工作在季节结束前就结束了，或者延续到季节之后，租约会怎么样？',
         '您能在那里登记地址吗？向 DVV 提交迁居登记须在搬家后一周内完成，而度假公寓往往不符合条件。',
         '电费、水费和网费由谁付？',
         '没有车，怎么去上班：距离多远，有公交或滑雪巴士吗？',
@@ -156,7 +156,7 @@ const copy: HousingPageCopy = {
     kicker: '最初的几晚',
     h2: '在拿到钥匙之前。',
     lead:
-      '雪季往往在住房空出来之前就开始了。我们合作伙伴的搜索页面会按今天的价格显示可订的客房和公寓。',
+      '工作季往往在住房空出来之前就开始了。我们合作伙伴的搜索页面会按今天的价格显示可订的客房和公寓。',
     chips: [
       { label: '莱维', destination: 'Levi', sid: 'seasonal_first_nights_levi' },
       { label: '于拉斯', destination: 'Äkäslompolo', sid: 'seasonal_first_nights_yllas' },

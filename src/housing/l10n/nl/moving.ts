@@ -21,7 +21,7 @@ const copy: HousingPageCopy = {
     eyebrow: 'Verhuizen naar Lapland: de eerste 30 dagen',
     title: 'Verhuizen naar Lapland.',
     subtitle:
-      'Adreswijziging, winterbanden, kinderopvang, het stroomcontract en de poolnacht: wat u in de eerste maand moet regelen, en in welke volgorde.',
+      'Adreswijziging, winterbanden, kinderopvang, het energiecontract en de poolnacht: wat u in de eerste maand moet regelen, en in welke volgorde.',
   },
   authorNote:
     'Termijnen van DVV, Traficom en de Vereniging van Finse gemeenten, duur van de poolnacht van het Fins Meteorologisch Instituut, afstanden uit de autoroutes van LaplandVibes. Gecontroleerd op 15 november 2026.',
@@ -36,7 +36,7 @@ const copy: HousingPageCopy = {
       h2: 'Vier meldingen, één deadline.',
       bullets: [
         '<strong>Adreswijziging bij DVV</strong>: ten vroegste een maand vóór de verhuisdag en uiterlijk een week na de verhuizing (DVV). Dezelfde melding gaat ook naar Posti. Gemeentelijke diensten (kinderopvang, school, gezondheidscentrum) volgen uw geregistreerde woongemeente, dus doe de melding meteen.',
-        '<strong>Stroomcontract.</strong> De totaalprijs van elektriciteit voor een huishouden met een verbruik van 2.500–4.999 kWh per jaar bedroeg in juni 2026 gemiddeld 23,7 cent per kWh in heel Finland, en 14,9 cent in de klasse boven 15.000 kWh, waartoe een elektrisch verwarmd huis behoort (Statistics Finland). Het stookseizoen in Lapland is lang, dus schat uw verbruik aan de hoge kant in.',
+        '<strong>Energiecontract.</strong> De totaalprijs van elektriciteit voor een huishouden met een verbruik van 2.500–4.999 kWh per jaar bedroeg in juni 2026 gemiddeld 23,7 cent per kWh in heel Finland, en 14,9 cent in de klasse boven 15.000 kWh, waartoe een elektrisch verwarmd huis behoort (Statistics Finland). Het stookseizoen in Lapland is lang, dus schat uw verbruik aan de hoge kant in.',
         '<strong>De gezondheidszorg</strong> wordt verzorgd door het welzijnsgebied Lapland (Lapha). Niet-spoedeisende zorg loopt via uw plaatselijke gezondheidscentrum; zoek het dichtstbijzijnde op de site van het welzijnsgebied en schrijf u in bij Omakanta.',
         '<strong>Internet.</strong> Vraag het woningbedrijf of de verhuurder naar glasvezel voordat u tekent. In dunbevolkte gebieden is een mobiele router vaak de enige optie, en wie thuiswerkt, moet de verbinding eerst in de woning testen.',
       ],
@@ -61,11 +61,11 @@ const copy: HousingPageCopy = {
     {
       id: 'children',
       kicker: 'Kinderen',
-      h2: 'De kinderopvang is naar inkomen geprijsd, school kost niets.',
+      h2: 'De prijs van de kinderopvang hangt af van het inkomen, school kost niets.',
       bullets: [
         '<strong>De kosten van kinderopvang</strong> volgen het gezinsinkomen: vanaf 1 augustus 2026 bedraagt de hoogste bijdrage € 335 per maand per kind en de laagste in rekening gebrachte € 32. Het tweede kind betaalt hoogstens 40 % van de bijdrage voor het jongste kind, dus hoogstens € 134 (Vereniging van Finse gemeenten).',
-        '<strong>Voorschools en basisonderwijs</strong> zijn gratis, inclusief leermiddelen en schoolmaaltijden (Wet op het basisonderwijs, paragraaf 31). Leerlingenvervoer wordt geregeld als de schoolreis langer is dan vijf kilometer (paragraaf 32), en in kleine gemeenten hoort dat bij het dagelijks leven.',
-        'U vraagt een plaats in de kinderopvang aan bij de gemeente, en de gemeente wordt bepaald door het adres dat bij DVV is geregistreerd. Daarom komt de adresmelding eerst, niet laatst.',
+        '<strong>Voorschools en basisonderwijs</strong> zijn gratis, inclusief leermiddelen en schoolmaaltijden (Wet op het basisonderwijs, paragraaf 31). Leerlingenvervoer wordt geregeld als de schoolweg langer is dan vijf kilometer (paragraaf 32), en in kleine gemeenten hoort dat bij het dagelijks leven.',
+        'U vraagt een plaats in de kinderopvang aan bij de gemeente, en de gemeente wordt bepaald door het adres dat bij DVV is geregistreerd. Daarom komt de adreswijziging eerst, niet als laatste.',
       ],
     },
     {
@@ -74,13 +74,13 @@ const copy: HousingPageCopy = {
       h2: 'De poolnacht is korter dan u denkt. Behalve in Utsjoki.',
       paras: [
         'Kaamos, de poolnacht, betekent dat de zon niet boven de horizon uitkomt. Volgens het Fins Meteorologisch Instituut duurt die in Nuorgam, Utsjoki, bijna twee maanden, van 25 november tot 17 januari, en in Sodankylä maar vier dagen vlak voor Kerstmis. De grens van de poolnacht loopt iets ten noorden van de poolcirkel, dus Rovaniemi kent geen echte poolnacht (Foreca): in de winter blijft de zon laag, maar hij komt op.',
-        'In de zomer keert het om. De grens van de middernachtzon ligt bij Rovaniemi op de poolcirkel, en in Nuorgam gaat de zon van 16 mei tot 29 juli niet onder (Fins Meteorologisch Instituut). Verduisterende gordijnen zijn de belangrijkste aankoop voor de zomer, een daglichtlamp die voor de winter.',
+        'In de zomer is het omgekeerd. De grens van de middernachtzon ligt bij Rovaniemi op de poolcirkel, en in Nuorgam gaat de zon van 16 mei tot 29 juli niet onder (Fins Meteorologisch Instituut). Verduisterende gordijnen zijn de belangrijkste aankoop voor de zomer, een daglichtlamp die voor de winter.',
       ],
     },
     {
       id: 'before-signing',
       kicker: 'Voordat u tekent',
-      h2: 'Vraag de verhuurder dit.',
+      h2: 'Dit vraagt u de verhuurder.',
       bullets: [
         'Het type verwarming en wie die betaalt: stadsverwarming zit meestal in de huur, elektrische verwarming komt op uw eigen rekening.',
         'Een parkeerplaats met verwarmingspaal en opslagruimte voor winteruitrusting: ski’s, slee, winterbanden.',
@@ -92,11 +92,11 @@ const copy: HousingPageCopy = {
   faqs: [
     {
       q: 'Wanneer moet ik de adreswijziging doorgeven?',
-      a: 'Ten vroegste een maand vóór de verhuisdag en uiterlijk een week na de verhuizing (DVV). Eén melding geldt zowel voor het Fins agentschap voor digitale en bevolkingsgegevens als voor Posti.',
+      a: 'Ten vroegste een maand vóór de verhuisdag en uiterlijk een week na de verhuizing (DVV). Eén melding geldt zowel voor het Finse agentschap voor digitale en bevolkingsgegevens als voor Posti.',
     },
     {
       q: 'Wanneer zijn winterbanden verplicht in Lapland?',
-      a: 'De wet zegt van 1 november tot 31 maart als het weer of de wegomstandigheden dat vereisen, en spijkers zijn in dezelfde periode toegestaan en op andere momenten als de omstandigheden erom vragen (Traficom). De banden worden dus gewisseld naar de omstandigheden, niet naar de kalender.',
+      a: 'Volgens de wet zijn ze verplicht van 1 november tot 31 maart als het weer of de wegomstandigheden dat vereisen, en spijkerbanden zijn in dezelfde periode toegestaan en op andere momenten als de omstandigheden erom vragen (Traficom). De banden worden dus gewisseld naar de omstandigheden, niet naar de kalender.',
     },
     {
       q: 'Heeft Rovaniemi een poolnacht?',

@@ -17,7 +17,7 @@ const common: HousingCommonCopy = {
     "siblingsKicker": "Att bo i Lappland",
     "siblingsH2": "De andra boendesidorna.",
     "photoCredit": "Foto: LaplandVibes",
-    "affiliateNote": "Partnerlänk: en bokning ger oss provision, priset för dig är detsamma.",
+    "affiliateNote": "Partnerlänk: en bokning ger oss provision; priset för dig är detsamma.",
     "onThisPage": "På den här sidan",
     "photo": "Foto",
     "photosHeading": "Foton",
@@ -26,8 +26,8 @@ const common: HousingCommonCopy = {
   "work": {
     "kicker": "Systersajt · LaplandWork.com",
     "h2a": "Jobbet först,",
-    "h2b": "bostaden följer.",
-    "body": "LaplandWork.com listar de lediga jobben i Lappland: skidorter, hotell, aktivitetsföretag och hälso- och sjukvård. Säsongsjobb följs ofta av boende, så titta på de lediga tjänsterna innan du börjar leta bostad.",
+    "h2b": "sedan bostaden.",
+    "body": "LaplandWork.com listar de lediga jobben i Lappland: skidorter, hotell, aktivitetsföretag och hälso- och sjukvård. I säsongsjobb ingår ofta boende, så titta på de lediga tjänsterna innan du börjar leta bostad.",
     "stripText": "LaplandWork.com: lediga jobb i Lapplands skidorter, hotell och hälso- och sjukvård.",
     "cta": "Se lediga jobb",
     "image": "/images/housing-yllas-hiihtokeskus.webp",
@@ -58,7 +58,7 @@ const common: HousingCommonCopy = {
     "lapinKansaDas": "Lapin Kansa, 12 juli 2017: Kampen om bostäderna har börjat: DAS kan hysa bara 30 procent av de sökande",
     "yle2026yllas": "Yle, 16 juni 2026: I Ylläs tar handlarna itu med bostadsbristen",
     "kesko2026": "Kesko, 17 juni 2026: Ägarna till K-Market Jounin Kauppa bygger tre radhus åt sin personal",
-    "yle2026rovaniemi": "Yle, 9 mars 2026: Rovaniemis bostadsbrist gav en kreativ lösning, säsongsarbetare bodde hos sin chef",
+    "yle2026rovaniemi": "Yle, 9 mars 2026: Rovaniemis bostadsbrist gav en kreativ lösning: säsongsarbetare bodde hos sin chef",
     "rovaniemi": "Rovaniemi stad: Boende (hyresvärdar och söktjänster)",
     "das": "Domus Arctica-stiftelsen (DAS): Ansöka om studentbostad",
     "kittila": "Kittilä kommun: Hyresbostäder (Kittilän Vuokratalot Oy)",
@@ -122,7 +122,7 @@ const common: HousingCommonCopy = {
     "levi": "Levi: skidorten i dag (backar för tidig säsong från oktober, världscupen i alpina grenar 13–15 nov 2026)",
     "arcticRally": "Arctic Lapland Rally 28–30 jan 2027",
     "msff": "Midnattssolens filmfestival 16–20 juni 2027",
-    "jutajaiset": "Jutajaiset: folkmusik- och danshelg i Rovaniemi i oktober",
+    "jutajaiset": "Jutajaiset: nordlig folkmusik- och dansfestival i Rovaniemi i oktober",
     "simerock": "Simerock 13–14 aug 2027",
     "arcticSnowHotel": "Arctic SnowHotel: öppnar 15 dec 2026"
   },
@@ -131,7 +131,7 @@ const common: HousingCommonCopy = {
     "moving": {
       "kicker": "Annons · kring flytten",
       "title": "El och internet ordnade före flyttdagen",
-      "lead": "Båda kan beställas på nätet innan nycklarna ligger i din hand, så att det nya hemmet har ström och uppkoppling från första kvällen."
+      "lead": "Båda kan beställas på nätet innan du har fått nycklarna, så att det nya hemmet har ström och uppkoppling från första kvällen."
     },
     "electricity": {
       "kicker": "Annons · elavtal",
@@ -141,7 +141,7 @@ const common: HousingCommonCopy = {
     "arrival": {
       "kicker": "Annons · ankomst",
       "title": "Kommer du från utlandet? Data och ett finskt nummer för de första dagarna",
-      "lead": "Kartor, bank och arbetsgivarens meddelanden fungerar från det ögonblick du landar när datat redan finns i telefonen."
+      "lead": "Kartor, bank och arbetsgivarens meddelanden fungerar från det ögonblick du landar om du redan har mobildata i telefonen."
     }
   },
   "cabins": {

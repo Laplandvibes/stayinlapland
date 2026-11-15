@@ -23,7 +23,7 @@ const copy: HousingPageCopy = {
   authorNote:
     'Loyers au m² de Statistics Finland (juillet–septembre 2026), bailleurs tirés de la page logement de la ville de Rovaniemi, chiffres de la pénurie de Yle. Vérifié le 15 novembre 2026.',
   intro: [
-    'Rovaniemi compte 66 191 habitants (Statistics Finland, 31 décembre 2025) et une concurrence acharnée pour les studios : la fondation de logement étudiant DAS a reçu environ 550 demandes urgentes à l’été 2026, soit 15 % de plus qu’un an plus tôt, près de 90 % des demandeurs voulaient un studio, et les studios de la ville sont loués à court terme aux touristes pour la saison d’hiver (Yle, 27 juillet 2026). Selon la directrice générale de DAS, elle ne peut pas proposer un logement à chaque demandeur en août et en septembre.',
+    'Rovaniemi compte 66 191 habitants (Statistics Finland, 31 décembre 2025) et une concurrence acharnée pour les studios : la fondation de logement étudiant DAS a reçu environ 550 demandes urgentes à l’été 2026, soit 15 % de plus qu’un an plus tôt, et près de 90 % des demandeurs voulaient un studio. En outre, les studios de la ville sont loués à court terme aux touristes pour la saison d’hiver (Yle, 27 juillet 2026). D’après la direction de DAS, la fondation ne peut pas proposer un logement à chaque demandeur en août et en septembre.',
     'Une entreprise de recrutement qui a fait venir environ 250 travailleurs en Laponie les a logés dans une dizaine d’endroits différents à Rovaniemi (Yle, 9 mars 2026). Saisonniers, étudiants et touristes recherchent tous les mêmes petits logements.',
     'La bonne nouvelle, c’est le prix : le loyer moyen de Rovaniemi, 14,63 € par m², est inférieur à la moyenne nationale de 15,99 € (Statistics Finland 2026T3). Voici les chiffres par taille de logement et les canaux pour déposer un dossier.',
   ],
@@ -33,7 +33,7 @@ const copy: HousingPageCopy = {
       kicker: 'Ce que coûte un loyer',
       h2: 'Les loyers de Rovaniemi au m², juillet–septembre 2026.',
       table: {
-        caption: 'Loyer moyen en €/m²/mois, logements locatifs du marché libre, Rovaniemi 2026T3',
+        caption: 'Loyer moyen en €/m²/mois, logements locatifs du parc privé, Rovaniemi 2026T3',
         head: ['', 'Tous les loyers', 'Nouveaux loyers', 'Ensemble du pays'],
         rows: [
           ['Studios', '18,63', '20,14', '20,49'],
@@ -41,7 +41,7 @@ const copy: HousingPageCopy = {
           ['Trois pièces et plus', '12,29', '13,66', '13,98'],
           ['Tous logements', '14,63', '15,93', '15,99'],
         ],
-        foot: 'Statistics Finland, loyers 2026T3, tableau 15fa. Nouveaux baux = contrats commencés pendant le trimestre, c’est-à-dire ce que demandent les logements libres en ce moment.',
+        foot: 'Statistics Finland, loyers 2026T3, tableau 15fa. Nouveaux baux = contrats commencés pendant le trimestre, c’est-à-dire le loyer demandé en ce moment pour les logements libres.',
       },
       paras: [
         '<strong>Exemples :</strong> un studio de 30 m² environ 560 € par mois (18,63 × 30), dans un nouveau bail environ 600 € (20,14 × 30) ; un deux-pièces de 50 m² environ 720 € (14,40 × 50) ; un trois-pièces de 75 m² environ 920 € (12,29 × 75). L’eau et l’électricité s’ajoutent en général.',
@@ -104,7 +104,7 @@ const copy: HousingPageCopy = {
         },
         {
           title: 'Oikotie et Vuokraovi',
-          body: 'Les portails nationaux regroupent la plupart des annonces de particuliers et d’agences. Filtrez par la commune de Rovaniemi, pas par quartier, pour que Ounasvaara, Saarenkylä et les logements hors du centre apparaissent aussi.',
+          body: 'Les portails nationaux regroupent la plupart des annonces de particuliers et d’agences. Filtrez par la commune de Rovaniemi, pas par quartier, pour qu’Ounasvaara, Saarenkylä et les logements hors du centre apparaissent aussi.',
           href: 'https://asunnot.oikotie.fi/vuokra-asunnot/rovaniemi',
           linkLabel: 'Oikotie : locations à Rovaniemi',
           event: 'oikotie',
@@ -123,7 +123,7 @@ const copy: HousingPageCopy = {
       kicker: 'Quand déposer un dossier',
       h2: 'Deux pics par an.',
       bullets: [
-        '<strong>Août–septembre</strong> est la période la plus tendue : DAS ne peut pas loger tous les demandeurs, et les studios du marché libre se font rares (Yle, 27 juillet 2026).',
+        '<strong>Août–septembre</strong> est la période la plus tendue : DAS ne peut pas loger tous les demandeurs, et les studios du parc privé se font rares (Yle, 27 juillet 2026).',
         '<strong>Novembre–décembre :</strong> certains studios sont loués à court terme aux touristes pour la saison d’hiver. Les contrats à durée déterminée se terminent souvent fin octobre (Yle, 27 juillet 2026).',
         '<strong>Au printemps</strong>, les studios loués pour la saison d’hiver reviennent sur le marché.',
         '<strong>Le dépôt de garantie</strong> est de trois mois de loyer au maximum (loi sur les baux d’habitation, article 8), et à partir du 1er octobre 2026, il doit être restitué dans les 14 jours suivant la fin du bail (Rakli).',
@@ -137,7 +137,7 @@ const copy: HousingPageCopy = {
     },
     {
       q: 'Est-il difficile de trouver un logement à louer à Rovaniemi ?',
-      a: 'Les studios sont difficiles à obtenir en août–septembre : DAS ne peut pas loger tous les demandeurs (Yle, 27 juillet 2026), et les studios du marché libre se font rares. Les deux et trois-pièces sont plus faciles.',
+      a: 'Les studios sont difficiles à obtenir en août–septembre : DAS ne peut pas loger tous les demandeurs (Yle, 27 juillet 2026), et les studios du parc privé se font rares. Les deux-pièces et les trois-pièces sont plus faciles à trouver.',
     },
     {
       q: 'Peut-on déposer un dossier sans se rendre à Rovaniemi ?',
@@ -148,7 +148,7 @@ const copy: HousingPageCopy = {
     partner: 'hotels',
     kicker: 'Les premières semaines',
     h2: 'Un hôtel ou un appart-hôtel pendant vos visites.',
-    lead: 'Visitez les logements sur place avant de signer. Le moteur partenaire affiche les chambres libres de Rovaniemi aux prix du jour.',
+    lead: 'Visitez les logements sur place avant de signer. Le moteur de réservation de notre partenaire affiche les chambres libres de Rovaniemi aux prix du jour.',
     chips: [
       { label: 'Rovaniemi', destination: 'Rovaniemi', sid: 'rentals_rovaniemi_first_weeks' },
     ],

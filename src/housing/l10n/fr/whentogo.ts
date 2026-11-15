@@ -30,7 +30,7 @@ const copy: WhenToGoCopy = {
       ['Janvier', '4 h 15 min', '−10,3 / −12,5 °C', '47 cm', 'Le mois le plus froid'],
       ['Février', '8 h 10 min', '−10,3 / −12,1 °C', '66 cm', 'Vacances d’hiver'],
       ['Mars', '11 h 37 min', '−5,6 / −7,1 °C', '77 cm', 'Aurores boréales, neige la plus épaisse'],
-      ['Avril', '15 h 25 min', '0,1 / −0,8 °C', '64 cm', 'Neige croûtée'],
+      ['Avril', '15 h 25 min', '0,1 / −0,8 °C', '64 cm', 'Neige durcie'],
       ['Mai', '19 h 24 min', '6,5 / 5,6 °C', '–', 'La neige fond, le dégel'],
       ['Juin', '24 h (sans coucher)', '12,5 / 11,9 °C', '–', 'Soleil de minuit'],
       ['Juillet', '21 h 29 min', '15,6 / 15,0 °C', '–', 'Le mois le plus chaud, moustiques'],
@@ -54,8 +54,8 @@ const copy: WhenToGoCopy = {
       name: 'Février',
       pitch: 'La neige et les vacances d’hiver',
       body: 'Avec décembre, février est le mois le plus chargé de l’année : le taux d’occupation de la Laponie était de 77,6 % en février 2025, mais le prix moyen d’une chambre est resté inférieur à celui de décembre. À Rovaniemi, la neige atteint en moyenne 66 cm le 15 février, et le jour dure déjà huit heures.',
-      good: ['Aurores boréales de fin d’hiver : l’Institut météorologique finlandais qualifie la fin de l’hiver et le début de l’automne de meilleures périodes statistiquement', 'Ski et longues excursions à la journée'],
-      note: ['Réservez tôt, février est l’un des mois les plus chargés', 'Les écoles de la région d’Helsinki et de Turku ont leurs vacances de ski en semaine 8 (22–26 février 2027)'],
+      good: ['Aurores boréales de fin d’hiver : l’Institut météorologique finlandais considère la fin de l’hiver et le début de l’automne comme les meilleures périodes sur le plan statistique', 'Ski et longues excursions à la journée'],
+      note: ['Réservez tôt : février est l’un des mois les plus chargés', 'Les écoles de la région d’Helsinki et de Turku ont leurs vacances de ski en semaine 8 (22–26 février 2027)'],
     },
     {
       name: 'Mars',
@@ -66,9 +66,9 @@ const copy: WhenToGoCopy = {
     },
     {
       name: 'Avril',
-      pitch: 'Neige croûtée et longues soirées',
-      body: 'Il reste beaucoup de neige, 64 cm en moyenne à Rovaniemi le 15 avril, et selon Metsähallitus, les conditions de neige croûtée durent de la mi-avril jusqu’à la mi-mai. On peut encore voir des aurores boréales en début de mois : à Rovaniemi, les nuits restent sombres jusqu’au 21 avril environ, à Utsjoki jusqu’au 10 avril environ. Le prix moyen d’une chambre en Laponie était de 139–141 € en avril contre 200–225 € en mars (2024–2025).',
-      good: ['Ski sur la neige croûtée et excursions sur les fjelds', 'Soleil de printemps : le 20 avril, le jour dure plus de 16 heures à Rovaniemi'],
+      pitch: 'Neige durcie et longues soirées',
+      body: 'Il reste beaucoup de neige, 64 cm en moyenne à Rovaniemi le 15 avril, et selon Metsähallitus, les conditions de neige durcie durent de la mi-avril jusqu’à la mi-mai. On peut encore voir des aurores boréales en début de mois : à Rovaniemi, les nuits restent sombres jusqu’au 21 avril environ, à Utsjoki jusqu’au 10 avril environ. Le prix moyen d’une chambre en Laponie était de 139–141 € en avril contre 200–225 € en mars (2024–2025).',
+      good: ['Ski sur la neige durcie et excursions sur les fjelds', 'Soleil de printemps : le 20 avril, le jour dure plus de 16 heures à Rovaniemi'],
       note: ['Certaines stations de ski ferment en avril : la saison d’Ounasvaara se termine le 17 avril 2027, tandis qu’Ylläs prévoit de fermer début mai', 'Les emplois saisonniers prennent fin : à Saariselkä, les derniers jours de travail de l’hiver sont à la mi-avril (Yle)'],
     },
     {
@@ -88,9 +88,9 @@ const copy: WhenToGoCopy = {
     {
       name: 'Juillet',
       pitch: 'Le mois le plus chaud, le préféré des Finlandais',
-      body: 'Juillet est le mois le plus chaud de l’année : 15,6 °C en moyenne à Rovaniemi, avec des maximales quotidiennes autour de 20. C’est aussi le mois le plus populaire de Laponie pour les voyageurs finlandais, et juin à août sont les mois les moins chers : la chambre moyenne des établissements d’hébergement de la Laponie coûtait environ 96–102 € (2024–2025). Les mûres des marais (lakka) mûrissent de la mi-juillet au début d’août.',
-      good: ['Randonnée et sorties dans la nature', 'Cueillette de baies : mûres des marais dès la mi-juillet, myrtilles dès la fin de juillet'],
-      note: ['Les moustiques sont à leur pire, jusqu’au début ou à la mi-août', 'Juillet est aussi le mois le plus pluvieux, 81 mm à Rovaniemi'],
+      body: 'Juillet est le mois le plus chaud de l’année : 15,6 °C en moyenne à Rovaniemi, avec des maximales quotidiennes autour de 20. C’est aussi le mois le plus populaire de Laponie pour les voyageurs finlandais, et les mois de juin à août sont les moins chers : la chambre moyenne des établissements d’hébergement de la Laponie coûtait environ 96–102 € (2024–2025). Les plaquebières (lakka) mûrissent de la mi-juillet au début d’août.',
+      good: ['Randonnée et sorties dans la nature', 'Cueillette de baies : plaquebières dès la mi-juillet, myrtilles dès la fin de juillet'],
+      note: ['Les moustiques sont au plus fort, jusqu’au début ou à la mi-août', 'Juillet est aussi le mois le plus pluvieux, 81 mm à Rovaniemi'],
     },
     {
       name: 'Août',
@@ -102,7 +102,7 @@ const copy: WhenToGoCopy = {
     {
       name: 'Septembre',
       pitch: 'Couleurs d’automne et aurores d’automne',
-      body: 'La ruska, les couleurs d’automne, atteint le nord de la Finlande dans la première moitié de septembre : semaines 36–38 à Kilpisjärvi, Pallas-Ylläs et Utsjoki, semaines 37–39 dans le parc national Urho Kekkonen. Autour de l’équinoxe d’automne, les orages magnétiques sont en moyenne plus fréquents, et à la latitude de Sodankylä, des aurores boréales apparaissent en moyenne une nuit claire et sombre sur deux. Septembre est le second pic des voyageurs finlandais.',
+      body: 'La ruska, les couleurs d’automne, atteint le nord de la Finlande dans la première moitié de septembre : semaines 36–38 à Kilpisjärvi, Pallas-Ylläs et Utsjoki, semaines 37–39 dans le parc national Urho Kekkonen. Autour de l’équinoxe d’automne, les orages magnétiques sont en moyenne plus fréquents, et à la latitude de Sodankylä, des aurores boréales apparaissent en moyenne une nuit claire et sombre sur deux. Septembre est le deuxième pic de fréquentation des voyageurs finlandais.',
       good: ['Randonnées dans les couleurs d’automne', 'Aurores boréales avant l’hiver', 'Airelles rouges dès le début de septembre'],
       note: ['Il peut déjà neiger sur les fjelds en septembre', 'Les semaines de la ruska remplissent les stations de fjeld de voyageurs finlandais'],
     },
@@ -116,9 +116,9 @@ const copy: WhenToGoCopy = {
     {
       name: 'Novembre',
       pitch: 'La nuit polaire commence dans l’extrême nord',
-      body: 'À Utsjoki, la nuit polaire commence le 26 novembre et dure en moyenne 51 jours. À Rovaniemi, le soleil se lève tous les jours, mais le 15 novembre, le jour dure tout juste moins de six heures. Les stations de ski ouvrent : pour la saison 2026–2027, Ounasvaara le 11 novembre, Ylläs le 21 novembre et Luosto avec un objectif au 28 novembre.',
+      body: 'À Utsjoki, la nuit polaire commence le 26 novembre et dure en moyenne 51 jours. À Rovaniemi, le soleil se lève tous les jours, mais le 15 novembre, le jour dure un peu moins de six heures. Les stations de ski ouvrent : pour la saison 2026–2027, Ounasvaara le 11 novembre, Ylläs le 21 novembre, tandis que Luosto vise le 28 novembre.',
       good: ['Les slaloms de la Coupe du monde à Levi à la mi-novembre', 'L’hiver avant les prix de Noël : une chambre dans les établissements d’hébergement de la Laponie coûtait en moyenne 192–209 € en novembre et 285–313 € en décembre (2024–2025)'],
-      note: ['Rovaniemi n’est pas calme en novembre : taux d’occupation des hôtels de 72–82 % (2023–2025)', 'Pneus hiver dès le 1er novembre dès que les conditions l’exigent. L’Arctic SnowHotel n’ouvre qu’en décembre'],
+      note: ['Rovaniemi n’est pas calme en novembre : taux d’occupation des hôtels de 72–82 % (2023–2025)', 'Pneus hiver à partir du 1er novembre dès que les conditions l’exigent. L’Arctic SnowHotel n’ouvre qu’en décembre'],
     },
     {
       name: 'Décembre',
@@ -152,7 +152,7 @@ const copy: WhenToGoCopy = {
   faqs: [
     {
       q: 'Quand peut-on voir les aurores boréales en Laponie ?',
-      a: 'Chaque fois que les nuits sont sombres, de la fin août à avril. Selon l’Institut météorologique finlandais, les orages magnétiques sont en moyenne plus fréquents à l’automne et au printemps qu’en été et en hiver, et il recommande mars parce que le printemps est en moyenne moins nuageux. À la latitude de Sodankylä, elles apparaissent en moyenne une nuit claire et sombre sur deux.',
+      a: 'Chaque fois que les nuits sont sombres, de la fin août à avril. Selon l’Institut météorologique finlandais, les orages magnétiques sont en moyenne plus fréquents à l’automne et au printemps qu’en été et en hiver, et il recommande mars parce que le printemps est en moyenne moins nuageux. À la latitude de Sodankylä, les aurores boréales apparaissent en moyenne une nuit claire et sombre sur deux.',
     },
     {
       q: 'Y a-t-il une nuit polaire à Rovaniemi ?',

@@ -25,9 +25,9 @@ const copy: HousingPageCopy = {
       'Waar u een huurwoning vindt, wat die kost en hoeveel Kela vergoedt. Plaats voor plaats.',
   },
   authorNote:
-    'Huren per m²: huurstatistiek van Statistics Finland, vrije-sectorhuurwoningen, juli–september 2026. De gemeentelijke woningbedrijven zijn op 15 november 2026 gecontroleerd op de eigen sites van de gemeenten en bedrijven.',
+    'Huren per m²: huurstatistiek van Statistics Finland, vrijesectorhuurwoningen, juli–september 2026. De gemeentelijke woningbedrijven zijn op 15 november 2026 gecontroleerd op de eigen sites van de gemeenten en bedrijven.',
   intro: [
-    'In Lapland komt een huurwoning uit een van drie bronnen: het woningbedrijf van de gemeente zelf, de landelijke portalen of lokale groepen. Begin bij de gemeente. Haar bedrijven bezitten honderden woningen, bijvoorbeeld ruim 300 in Keminmaa, ongeveer 720 in Sodankylä, 560 in Kemijärvi en meer dan 500 in Inari, en u kunt zich aanmelden ook als er nu niets vrij is.',
+    'In Lapland komt een huurwoning uit een van drie bronnen: het woningbedrijf van de gemeente zelf, de landelijke portalen of lokale groepen. Begin bij de gemeente. De gemeentelijke bedrijven bezitten honderden woningen, bijvoorbeeld ruim 300 in Keminmaa, ongeveer 720 in Sodankylä, 560 in Kemijärvi en meer dan 500 in Inari, en u kunt zich ook aanmelden als er nu niets vrij is.',
     'De prijs hangt af van waar u gaat wonen. In Rovaniemi kost een studio van 30 m² gemiddeld ongeveer € 560 per maand, elders in Lapland minder. In de fjelddorpen volgt de huur het seizoen, dus vraag voor de winter eerst uw werkgever naar personeelshuisvesting.',
   ],
   sections: [
@@ -58,7 +58,7 @@ const copy: HousingPageCopy = {
           title: 'Kemijärvi',
           image: { src: '/images/housing-kemijarvi-card-kerrostalo.webp', alt: 'Een flatgebouw en een oude den in Kemijärvi op een juli-avond' },
           body:
-            'De twee vastgoedbedrijven van de stad bezitten 560 huurwoningen, en de begroting streeft ernaar dat 80–85 procent daarvan verhuurd is, dus er staan echt woningen leeg. Een aanvraag is vier maanden geldig. De rijtjeshuizen van Vuostimo liggen 14 km van Pyhätunturi.',
+            'De twee vastgoedbedrijven van de stad bezitten 560 huurwoningen, en de begroting streeft ernaar dat 80–85 procent daarvan verhuurd is, dus er staan echt woningen leeg. Een aanvraag is vier maanden geldig. De rijtjeshuizen van Vuostimo liggen op 14 km van Pyhätunturi.',
           href: '/rentals/kemijarvi',
           linkLabel: 'Huren in Kemijärvi',
         },
@@ -66,7 +66,7 @@ const copy: HousingPageCopy = {
           title: 'Sodankylä',
           image: { src: '/images/housing-sodankyla-jaamerentie.webp', alt: 'Jäämerentie, de hoofdstraat van het dorp Sodankylä, in september' },
           body:
-            'Asentopuulaaki Oy verhuurt de ongeveer 720 woningen van de gemeente, en de woningzoeker van het bedrijf toont welke woningen op dat moment vrij zijn of binnenkort vrijkomen. Oudere gebouwen worden verhuurd voor ongeveer € 9–12,50 per m², en Käpyriihi, opgeleverd in 2025, voor € 18.',
+            'Asentopuulaaki Oy verhuurt de ongeveer 720 woningen van de gemeente, en de zoekfunctie op de site van het bedrijf toont welke woningen op dat moment vrij zijn of binnenkort vrijkomen. Oudere gebouwen worden verhuurd voor ongeveer € 9–12,50 per m², en Käpyriihi, opgeleverd in 2025, voor € 18.',
           href: '/rentals/sodankyla',
           linkLabel: 'Huren in Sodankylä',
         },
@@ -74,7 +74,7 @@ const copy: HousingPageCopy = {
           title: 'Kittilä en Levi',
           image: { src: '/images/housing-kittila-levi-card-kyla.webp', alt: 'Het dorp Levi vanaf de top van de Levi-fjell in november, met een meer en fjelden erachter' },
           body:
-            'Kittilän Vuokratalot Oy verhuurt de eigen huurwoningen van de gemeente; het kantoor zit op de begane grond van het gemeentehuis (Valtatie 15). De aanvraag dient u online in op de website van het bedrijf. De vakantieappartementen in Levi gaan vooral van mei tot november op maandhuur; in de winter wordt dezelfde woning per week verhuurd.',
+            'Kittilän Vuokratalot Oy verhuurt de eigen huurwoningen van de gemeente; het kantoor zit op de begane grond van het gemeentehuis (Valtatie 15). De aanvraag dient u online in op de website van het bedrijf. De vakantieappartementen in Levi worden vooral van mei tot november per maand verhuurd; in de winter wordt dezelfde woning per week verhuurd.',
           href: '/rentals/kittila-levi',
           linkLabel: 'Huren in Kittilä en Levi',
         },
@@ -105,9 +105,9 @@ const copy: HousingPageCopy = {
       kicker: 'Wat huur kost',
       h2: 'Per vierkante meter, niet op gevoel.',
       lead:
-        'Statistics Finland publiceert elk kwartaal de huren. Hieronder staat de gemiddelde huur van vrije-sectorhuurwoningen in juli–september 2026, in euro per vierkante meter per maand.',
+        'Statistics Finland publiceert elk kwartaal de huren. Hieronder staat de gemiddelde huur van vrijesectorhuurwoningen in juli–september 2026, in euro per vierkante meter per maand.',
       table: {
-        caption: 'Gemiddelde huur €/m²/maand, vrije-sectorhuurwoningen, 2026Q3',
+        caption: 'Gemiddelde huur €/m²/maand, vrijesectorhuurwoningen, 2026Q3',
         head: ['', 'Rovaniemi', 'Lapland (regio)', 'Heel Finland'],
         rows: [
           ['Studio’s', '18,63', '17,25', '20,49'],
@@ -125,7 +125,7 @@ const copy: HousingPageCopy = {
       note: {
         label: 'Wat de statistiek niet ziet',
         body:
-          'Seizoensverhuur in de skigebieden en gemeubileerde kortetermijnverhuur zitten niet in deze cijfers. Vlak bij het centrum van Levi kostte een appartement van 80 m² in een alpine huis € 750 per maand van mei tot november, € 2.000 per week in het hoogseizoen en € 1.650 per maand het hele jaar door (Yle, 25 mei 2023): dezelfde woning tegen drie prijzen.',
+          'Seizoensverhuur in de skigebieden en gemeubileerde kortetermijnverhuur zitten niet in deze cijfers. Vlak bij het centrum van Levi kostte een appartement van 80 m² in een gebouw in alpenstijl € 750 per maand van mei tot november, € 2.000 per week in het hoogseizoen en € 1.650 per maand het hele jaar door (Yle, 25 mei 2023): dezelfde woning tegen drie prijzen.',
       },
     },
     {
@@ -159,7 +159,7 @@ const copy: HousingPageCopy = {
         '<strong>Vanaf 1 oktober 2026 moet de waarborgsom worden teruggegeven</strong>, of moet schriftelijk worden uitgelegd waarom ze wordt ingehouden, binnen 14 dagen nadat de huur is geëindigd of de woning is opgeleverd (hervorming van kracht sinds 1 oktober 2026, Rakli).',
         '<strong>De opzegtermijn voor de huurder is één maand.</strong> Voor contracten die op of na 1 oktober 2026 zijn gesloten, is de opzegtermijn voor de verhuurder drie maanden, en vier maanden als de huur ten minste twee jaar ononderbroken heeft geduurd (Rakli). Contracten van vóór 1 oktober 2026 behouden de oude opzegtermijnen (Kuluttajaliitto).',
         '<strong>Een contract voor bepaalde tijd bindt beide partijen tot het einde.</strong> Bij seizoenswerk is een woning van de werkgever vaak aan de baan gekoppeld: lees wat er gebeurt als de baan eindigt voordat het seizoen voorbij is.',
-        '<strong>De kredietgegevens worden bijna altijd gecontroleerd.</strong> Een registratie van betalingsachterstanden sluit huren niet uit, maar dan is een gemeentelijk woningbedrijf of een particuliere verhuurder een waarschijnlijker match dan de grote verhuurketens.',
+        '<strong>De kredietgegevens worden bijna altijd gecontroleerd.</strong> Een registratie van betalingsachterstanden sluit huren niet uit, maar dan maakt u meer kans bij een gemeentelijk woningbedrijf of een particuliere verhuurder dan bij de grote verhuurketens.',
       ],
     },
     {
@@ -169,7 +169,7 @@ const copy: HousingPageCopy = {
       bullets: [
         'Betaal nooit een waarborgsom vóór een bezichtiging of een videotour waarin u de woning en de sleutels in hetzelfde beeld ziet.',
         'Een schriftelijk contract, met de naam van de verhuurder en het bedrijfsnummer of persoonsnummer erop. Een gemeentelijk woningbedrijf is de veiligste start als u de markt niet kent.',
-        'Gemeubileerde kortetermijnverhuur is geen huurovereenkomst: een vakantieappartement kan geen officieel adres krijgen, en door dat ontbrekende adres verloopt het contact met bedrijven moeizamer, bijvoorbeeld bij kredietchecks (Yle, 25 mei 2023).',
+        'Gemeubileerde kortetermijnverhuur is geen huurovereenkomst: in een vakantieappartement krijgt u mogelijk geen officieel adres, en zonder adres verloopt het contact met bedrijven moeizamer, bijvoorbeeld bij kredietchecks (Yle, 25 mei 2023).',
       ],
     },
   ],
@@ -187,14 +187,14 @@ const copy: HousingPageCopy = {
       a: 'In elke andere maand dan augustus en september. Dan kan DAS niet alle aanvragers huisvesten en zijn studio’s op de vrije markt schaars (Yle, 27 juli 2026). Studio’s die voor het winterseizoen kortdurend worden verhuurd, komen in het voorjaar weer op de markt.',
     },
     {
-      q: 'Waarom is een huur in Levi in de winter een veelvoud hoger?',
-      a: 'Omdat dezelfde woning in het hoogseizoen per week wordt verhuurd. In het voorbeeld van Yle (25 mei 2023) kostte een appartement van 80 m² in een alpine huis € 750 per maand in de zomer en € 2.000 per week in de winter. Maandhuur is mogelijk van mei tot november; vraag voor de winter uw werkgever naar personeelshuisvesting of informeer bij het gemeentelijke bedrijf van Kittilä.',
+      q: 'Waarom is de huur in Levi in de winter vele malen hoger?',
+      a: 'Omdat dezelfde woning in het hoogseizoen per week wordt verhuurd. In het voorbeeld van Yle (25 mei 2023) kostte een appartement van 80 m² in een gebouw in alpenstijl € 750 per maand in de zomer en € 2.000 per week in de winter. Maandhuur is mogelijk van mei tot november; vraag voor de winter uw werkgever naar personeelshuisvesting of informeer bij het gemeentelijke bedrijf van Kittilä.',
     },
   ],
   cta: {
     partner: 'hotels',
     kicker: 'De eerste weken',
-    h2: 'Bekijk de woning in persoon.',
+    h2: 'Bekijk de woning zelf.',
     lead:
       'Boek een hotel of aparthotel voor de eerste weken en bekijk de woningen zelf voordat u tekent. Onze partnerzoekmachine toont vrije kamers tegen de prijzen van vandaag.',
     chips: [

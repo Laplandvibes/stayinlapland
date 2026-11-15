@@ -15,7 +15,7 @@ const copy: HousingPageCopy = {
     'ラップランドの海沿い、ケミ、トルニオ、ケミンマーで部屋を借りる方へ。ItätuuliやTornion Krunniなどの自治体住宅会社、民間の仲介会社、Kelaの支援をご案内します。',
   breadcrumb: 'ケミとトルニオ',
   hero: {
-    eyebrow: 'ラップランドの沿岸部',
+    eyebrow: 'シーラップランドの沿岸部',
     title: 'ケミ、トルニオ、ケミンマーの賃貸。',
     subtitle:
       '海沿いの双子の町では、自治体の住宅会社が数百戸を持ち、申込みはオンラインで行います。どこから始め、家賃はいくらかをご案内します。',
@@ -24,7 +24,7 @@ const copy: HousingPageCopy = {
     '住宅会社の住戸数はケミ、トルニオ、ケミンマーの各自治体の公式ページ、申込みの条件は各社の公式ページ、m²あたりの家賃はフィンランド統計局（ラップランド地域 2026年第3四半期）から。2026年11月15日に確認しました。',
   intro: [
     '住民はケミが19,339人、トルニオが20,823人、ケミンマーが7,576人です（フィンランド統計局、2025年12月31日）。三つの自治体は互いに隣り合っているため、住まいと職場が別の自治体になることもあります。',
-    '最初に当たるのは自治体の住宅会社です。ケミ市の公営住宅は、市内最大の賃貸住宅事業者Kiinteistö Oy Itätuuliが運営しており（kemi.fi）、住戸は中心部から五キロメートル以内にあります（itatuuli.fi）。Keminmaan Vuokra-asunnot Oyは18棟、300戸強を持っています（keminmaa.fi）。どちらの会社も独自のオンライン申込みがあります。トルニオでは、市の住宅をTornion Krunni Oyが管理しており、これにはTornion Vuokra-asunnot Oyも含まれます（tornio.fi）。',
+    '最初に当たるのは自治体の住宅会社です。ケミ市の自治体住宅は、市内最大の賃貸住宅事業者Kiinteistö Oy Itätuuliが運営しており（kemi.fi）、住戸は中心部から五キロメートル以内にあります（itatuuli.fi）。Keminmaan Vuokra-asunnot Oyは18棟、300戸強を持っています（keminmaa.fi）。どちらの会社も独自のオンライン申込みがあります。トルニオでは、市の住宅をTornion Krunni Oyが管理しており、これにはTornion Vuokra-asunnot Oyも含まれます（tornio.fi）。',
     'フィンランド統計局の現在の家賃表には、ケミとトルニオ単独の行がないため、以下ではラップランド地域の数字を示します。ロヴァニエミの数字は、専用のページにあります。',
   ],
   sections: [
@@ -78,7 +78,7 @@ const copy: HousingPageCopy = {
           event: 'kemi_city',
         },
         {
-          title: 'ケミンマー：Keminmaan Vuokra-asunnot Oy',
+          title: 'Keminmaan Vuokra-asunnot Oy',
           body: '自治体が所有する住宅会社で、18棟、300戸強があり、水道代と暖房費は家賃に含まれます。独自のオンライン申込みの有効期間は三か月で、敷金は家賃一か月分です。',
           href: 'https://www.keminmaanvuokra-asunnot.fi/asunnonhaku.html',
           linkLabel: 'Keminmaan Vuokra-asunnot：申込み方法',
@@ -93,7 +93,7 @@ const copy: HousingPageCopy = {
         },
         {
           title: 'OikotieとVuokraovi',
-          body: '個人や仲介会社の掲載です。ケミ、トルニオ、ケミンマーは別々の自治体として検索してください。三つの別々の自治体検索になります。',
+          body: '個人や仲介会社の掲載です。ケミ、トルニオ、ケミンマーは一つずつ検索してください。ポータルサイトでは、自治体ごとに検索が分かれています。',
           href: 'https://asunnot.oikotie.fi/vuokra-asunnot/kemi',
           linkLabel: 'Oikotie：ケミの賃貸',
           event: 'oikotie',
@@ -105,7 +105,7 @@ const copy: HousingPageCopy = {
       kicker: '契約',
       h2: '知っておきたい法律の二つの規定。',
       bullets: [
-        '敷金は家賃三か月分が上限です（住宅賃貸借法 第8条）。',
+        '敷金は家賃三か月分が上限です（住宅賃貸借法第8条）。',
         '2026年10月1日からは、賃貸借の終了後14日以内に、敷金を返還するか、返還しない理由を書面で説明しなければなりません（Rakli）。',
       ],
     },

@@ -18,14 +18,14 @@ const copy: HousingPageCopy = {
   breadcrumb: 'Levnadskostnader',
   hero: {
     eyebrow: 'Levnadskostnader i Lappland',
-    title: 'Vad kostar det att bo i Lappland?',
+    title: 'Vad kostar det att bo i finska Lappland?',
     subtitle:
       'Hyran är lägre i Lappland än i resten av Finland; bilen och uppvärmningen är dyrare. Så här läggs en månadsbudget ihop.',
   },
   authorNote:
     'Varje siffra kommer från Statistikcentralen, Kela eller Finlands Kommunförbund; exemplen är uträknade från de siffrorna och visar sin formel. Inga uppskattningar.',
   intro: [
-    'Det finns två Lapplanden när det gäller kostnader. Rovaniemi är en universitetsstad där studerande och turister konkurrerar om ettorna; i skidorterna följer priset säsongen. På kusten och i de små kommunerna är boendet rymligast och billigast, men bil är ett måste.',
+    'När det gäller kostnader finns det två olika Lappland. Rovaniemi är en universitetsstad där studerande och turister konkurrerar om ettorna; i skidorterna följer priset säsongen. Vid kusten och i de små kommunerna är boendet rymligast och billigast, men bil är ett måste.',
     'Nedan finns de fyra poster som en månadsbudget egentligen består av: hyra, el, att ta sig fram och barn. Det finns ingen Lapplandsspecifik statistik över matpriser, så vi gissar inte på någon.',
   ],
   sections: [
@@ -52,7 +52,7 @@ const copy: HousingPageCopy = {
     {
       id: 'electricity',
       kicker: 'El och uppvärmning',
-      h2: 'En kilowattimme kostar lika mycket, du använder bara fler av dem.',
+      h2: 'En kilowattimme kostar lika mycket, men du gör av med fler.',
       table: {
         caption: 'Totalpris på el för hushåll, cent/kWh, juni 2026, hela landet',
         head: ['Årsförbrukning', 'Totalpris'],
@@ -66,7 +66,7 @@ const copy: HousingPageCopy = {
       },
       paras: [
         '<strong>Exempel:</strong> en tvåa som förbrukar 3 500 kWh om året: 3 500 × 0,237 = cirka 830 € om året, eller 69 € i månaden; ett eluppvärmt småhus som förbrukar 18 000 kWh: 18 000 × 0,149 = cirka 2 680 € om året, eller 223 € i månaden.',
-        'Priset är ett riksgenomsnitt. Lapplands uppvärmningssäsong är längre än södra Finlands, så samma hus förbrukar fler kilowattimmar här; be den tidigare hyresgästen eller hyresvärden om förra årets förbrukning, det är den bästa uppskattningen du kan få.',
+        'Priset är ett riksgenomsnitt. Lapplands uppvärmningssäsong är längre än södra Finlands, så samma hus förbrukar fler kilowattimmar här; be den tidigare hyresgästen eller hyresvärden om förra årets förbrukning: det är den bästa uppskattningen du kan få.',
       ],
     },
     {
@@ -95,7 +95,7 @@ const copy: HousingPageCopy = {
         foot: 'Kela, allmänt bostadsbidrag 2026. Bidraget är högst 70 % av de godtagbara boendeutgifterna, och ett bidrag under 15 € betalas inte ut.',
       },
       paras: [
-        '<strong>Exempel:</strong> en person som bor ensam i Rovaniemi med en hyra på 600 €. Högst 447 € räknas, och bidraget är högst 70 % av det, alltså 313 € i månaden (447 × 0,70) innan inkomsterna minskar det genom grundomkostnaden. Kelas räknare tar hänsyn till dina egna inkomster.',
+        '<strong>Exempel:</strong> en person som bor ensam i Rovaniemi med en hyra på 600 €. Högst 447 € räknas, och bidraget är högst 70 % av det, alltså 313 € i månaden (447 × 0,70) innan inkomsterna minskar det genom grundsjälvrisken. Kelas räknare tar hänsyn till dina egna inkomster.',
       ],
     },
     {
@@ -134,12 +134,12 @@ const copy: HousingPageCopy = {
       a: 'Inte med tanke på hyrorna: genomsnittet 14,63 € per m² ligger under riksgenomsnittet 15,99 € (Statistikcentralen 2026Q3), och Rovaniemi är billigare än landet som helhet för alla bostadsstorlekar, ettor inräknade (18,63 mot 20,49). I nya hyresavtal kostar en etta i Rovaniemi 20,14 € per m²: en etta som blir ledig nu kostar cirka 8 % mer än en som redan är uthyrd, men ändå mindre än en etta i ett nytt hyresavtal i hela landet, 21,11 € per m².',
     },
     {
-      q: 'Hur mycket behöver en ensamstående person i månaden i Rovaniemi?',
+      q: 'Hur mycket behöver en ensamstående per månad i Rovaniemi?',
       a: 'Vi räknar bara det som har en källa: en etta på 30 m² cirka 560 € i månaden (18,63 × 30) och el vid 1 800 kWh om året cirka 42 € i månaden (1 800 × 0,282 / 12). Mat, internet, försäkringar och resor tillkommer efter dina egna vanor.',
     },
     {
       q: 'Kan jag få bostadsbidrag i Lappland?',
-      a: 'På samma villkor som var som helst i Finland. I Rovaniemi räknas ett hushåll med en persons boendeutgifter upp till 447 € i månaden, i övriga kommuner i Lappland upp till 394 €, och bidraget är högst 70 % av det (Kela 2026).',
+      a: 'På samma villkor som var som helst i Finland. I Rovaniemi räknas boendeutgifterna för ett enpersonshushåll upp till 447 € i månaden, i övriga kommuner i Lappland upp till 394 €, och bidraget är högst 70 % av det (Kela 2026).',
     },
   ],
   sources: pickSources('sv', SOURCES, common.sourceLabels),

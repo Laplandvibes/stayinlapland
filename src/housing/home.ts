@@ -493,8 +493,8 @@ export const HOME: Record<HomeLang, HousingHomeCopy> = {
    * 🔴 "logement laponie" (320, kaupallinen) on majoitushaku = laplandstays.com (§23),
    * ei tämän sivun kohde.
    * Teksti on kirjoitettu ranskaksi, ei käännetty. Luvut ovat samat lähteistetyt luvut
-   * kuin fi/en-versiossa. Alasivut ovat yhä englanniksi, ja lukija näkee sen sivun
-   * omasta kielilapusta (HOUSING_LANG_NOTICE).
+   * kuin fi/en-versiossa. Alasivut ovat 15.11.2026 alkaen ranskaksi (src/housing/l10n/fr/),
+   * ja niiden sanasto seuraa tätä lohkoa.
    */
   fr: {
     metaTitle: 'Vivre en Laponie : logement, travail saisonnier et budget',

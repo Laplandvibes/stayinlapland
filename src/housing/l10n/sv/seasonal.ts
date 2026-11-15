@@ -26,9 +26,9 @@ const copy: HousingPageCopy = {
   authorNote:
     'Siffror om bristen från Yle och Keskos nyheter 2017–2026, sökkanaler från kommunernas egna sidor. Vår systersajt laplandwork.com tar hand om själva jobben.',
   intro: [
-    'Levi turistområde anställer drygt 2 000 säsongsarbetare för vintersäsongen, uppskattade Kristiina Kukkohovi, verkställande direktör för Levin Matkailu Oy, redan 2017, och hon sade att bostadsbristen höll på att bli ett stort problem i alla skidorter i Lappland (Yle, 25 oktober 2017). Det har inte blivit bättre: våren 2023 rapporterade Yle om arbetare i Levi och Ylläs som bor i semesterlägenheter där de inte kan folkbokföra sig på adressen.',
+    'Turistområdet Levi anställer drygt 2 000 säsongsarbetare för vintersäsongen, uppskattade Kristiina Kukkohovi, verkställande direktör för Levin Matkailu Oy, redan 2017, och hon sade att bostadsbristen höll på att bli ett stort problem i alla skidorter i finska Lappland (Yle, 25 oktober 2017). Det har inte blivit bättre: våren 2023 rapporterade Yle om arbetare i Levi och Ylläs som bor i semesterlägenheter där de inte kan folkbokföra sig på adressen.',
     'I juni 2026 beslöt ägarna till K-Market Jounin Kauppa i Äkäslompolo att bygga tre radhus åt sin egen personal, eftersom det finns för få bostäder och hyrorna har stigit högt (Yle, 16 juni 2026). Butiken har omkring 20 säsongsarbetare per år, och ungefär hälften av dem behöver en hyresbostad (Kesko, 17 juni 2026).',
-    'I Rovaniemi tog rekryteringsföretaget Career.fi omkring 250 arbetare till Lappland och inkvarterade dem på ett tiotal olika ställen; två estniska arbetare bodde två vintrar hos tillväxtchefens familj efter att deras hyresbostad hamnat i rörrenovering. Att hitta boende är ”varje år ett riktigt spektakel” (Yle, 9 mars 2026).',
+    'I Rovaniemi hämtade rekryteringsföretaget Career.fi omkring 250 arbetare till Lappland och inkvarterade dem på ett tiotal olika ställen; två estniska arbetare bodde två vintrar hos tillväxtchefens familj efter att det blev stambyte i deras hyresbostad. Att hitta boende är ”varje år ett riktigt spektakel” (Yle, 9 mars 2026).',
   ],
   sections: [
     {
@@ -39,7 +39,7 @@ const copy: HousingPageCopy = {
         {
           title: '1. Personalbostad',
           body:
-            'Det vanligaste svaret i skidorterna: arbetsgivaren hyr radhus, stugor och semesterlägenheter åt personalen för hela säsongen och drar hyran från lönen. I Ruka hyrde en restaurangkoncern redan 2017 fyra semesterfastigheter från november till maj åt sin personal (Yle, 25 oktober 2017). Fördelen: ett tak över huvudet väntar när du kommer. Risken: bostaden upphör när jobbet upphör.',
+            'Det vanligaste svaret i skidorterna: arbetsgivaren hyr radhus, stugor och semesterlägenheter åt personalen för hela säsongen och drar hyran från lönen. I Ruka hyrde en restaurangkoncern redan 2017 fyra semesterfastigheter från november till maj åt sin personal (Yle, 25 oktober 2017). Fördelen: ett tak över huvudet väntar när du kommer. Risken: när jobbet tar slut försvinner också bostaden.',
         },
         {
           title: '2. En semesterlägenhet på säsongshyra',
@@ -63,7 +63,7 @@ const copy: HousingPageCopy = {
           title: 'Levi och Kittilä',
           image: { src: '/images/housing-levi-keskusta-card.webp', alt: 'Trähus i centrala Levi en sommardag' },
           body:
-            'Kittiläs folkmängd ökade med 2,0 procent 2025, näst mest av Lapplands kommuner efter Pelkosenniemi (2,4 procent) (Statistikcentralen). Arbetsgivare hyr radhus åt personalen för hela säsongen, och alla andra söker i Levi housing-gruppen på Facebook. Kittilän Vuokratalot Oy listar bostäder både i Kittilä by och i Levi, i Sirkka.',
+            'Kittiläs folkmängd ökade med 2,0 procent 2025, näst mest av Lapplands kommuner efter Pelkosenniemi (2,4 procent) (Statistikcentralen). Arbetsgivare hyr radhus åt personalen för hela säsongen, och alla andra söker i Levis bostadsgrupp på Facebook. Kittilän Vuokratalot Oy listar bostäder både i byn Kittilä och i Sirkka vid Levi.',
           href: 'https://kittila.fi/asuminen-ja-ymparisto/asuminen/vuokra-asunnot',
           linkLabel: 'Kittilän Vuokratalot Oy',
           event: 'kittila',
@@ -72,7 +72,7 @@ const copy: HousingPageCopy = {
           title: 'Ylläs: Äkäslompolo och Ylläsjärvi',
           image: { src: '/images/housing-seasonal-card-yllas-tunturi.webp', alt: 'Ylläs sett över sjön i Äkäslompolo en septembermorgon' },
           body:
-            'Handlarna bygger åt sig själva: Jounin Kauppas tre radhus ska enligt nuvarande plan vara klara i november–december 2026, med ettor, tvåor avsedda för delat boende och treor för familjer, alla med bastu (Kesko, 17 juni 2026). Byns första modulbyggnad var nästan klar i oktober 2025 (Yle, 16 juni 2026).',
+            'Handlarna bygger åt sig själva: Jounin Kauppas tre radhus ska enligt nuvarande plan vara klara i november–december 2026, med ettor, treor med två sovrum avsedda för delat boende och familjebostäder med tre sovrum, alla med bastu (Kesko, 17 juni 2026). Byns första modulbyggnad var nästan klar i oktober 2025 (Yle, 16 juni 2026).',
           href: 'https://www.kesko.fi/media/uutiset-ja-tiedotteet/uutiset/2026/lapin-asuntopulaa-ratkomassa-k-market-jounin-kaupan-kauppiaat-rakennuttavat-kolme-rivitaloa-tyontekijoilleen/',
           linkLabel: 'Kesko, 17 juni 2026',
           event: 'yllas',
@@ -97,7 +97,7 @@ const copy: HousingPageCopy = {
         },
         {
           title: 'Ruka och Kuusamo',
-          image: { src: '/images/housing-ruka-kyla-card.webp', alt: 'Torget och det röda utsiktstornet i Rukas gågatuby på sommaren' },
+          image: { src: '/images/housing-ruka-kyla-card.webp', alt: 'Torget och det röda utsiktstornet i Rukas bilfria by på sommaren' },
           body:
             'Ruka ligger i Norra Österbotten, inte i Lappland, men säsongen och bristen är desamma. År 2017 växte Rukas restaurangkoncern från drygt 20 fasta anställda till över 80 på vintern och hyrde fyra semesterfastigheter åt personalen från november till maj (Yle, 25 oktober 2017).',
           href: 'https://yle.fi/a/3-9895965',
@@ -125,7 +125,7 @@ const copy: HousingPageCopy = {
     {
       id: 'ask',
       kicker: 'Innan du skriver under',
-      h2: 'Fråga din arbetsgivare detta.',
+      h2: 'Fråga din arbetsgivare om det här.',
       bullets: [
         'Ingår bostaden i anställningsvillkoren eller är det ett separat hyresavtal? Hur mycket dras från lönen, och syns det på lönebeskedet?',
         'Eget rum eller delat? Hur många bor i bostaden, och finns det lås på din dörr?',
@@ -154,7 +154,7 @@ const copy: HousingPageCopy = {
   cta: {
     partner: 'hotels',
     kicker: 'De första nätterna',
-    h2: 'Innan nycklarna ligger i din hand.',
+    h2: 'Innan du har fått nycklarna.',
     lead:
       'Säsongen börjar ofta innan bostaden är ledig. Vår partnersökning visar lediga rum och lägenheter till dagens priser.',
     chips: [

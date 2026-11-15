@@ -39,7 +39,7 @@ const copy: HousingPageCopy = {
       cards: [
         {
           title: 'De huurwoningen van de stad',
-          body: 'De 560 woningen van de stad liggen in het centrum, Särkikangas, Sipovaara, Isokylä, Halosenranta en Vuostimo. Meld u online aan of op een papieren formulier bij Sortteeri (Vapaudenkatu 8). Een aanvraag is vier maanden geldig en kan worden verlengd.',
+          body: 'De 560 woningen van de stad liggen in het centrum, Särkikangas, Sipovaara, Isokylä, Halosenranta en Vuostimo. Meld u online aan of met een papieren formulier van Sortteeri (Vapaudenkatu 8). Een aanvraag is vier maanden geldig en kan worden verlengd.',
           href: 'https://kemijarvi.fi/asuminen-ja-ymparisto/asuminen/kemijarven-kaupungin-vuokratalot/asunnon-hakeminen/',
           linkLabel: 'kemijarvi.fi: een woning aanvragen',
           event: 'kemijarvi_city',
@@ -65,7 +65,7 @@ const copy: HousingPageCopy = {
       kicker: 'Wat huur kost',
       h2: 'De bedrijven van de stad publiceren hun huren niet.',
       table: {
-        caption: 'Gemiddelde huur €/m²/maand, vrije-sectorhuurwoningen, 2026Q3',
+        caption: 'Gemiddelde huur €/m²/maand, vrijesectorhuurwoningen, 2026Q3',
         head: ['', 'Lapland (regio)', 'Heel Finland'],
         rows: [
           ['Studio’s', '17,25', '20,49'],
@@ -76,8 +76,8 @@ const copy: HousingPageCopy = {
         foot: 'Statistics Finland, huren 2026Q3, tabel 15fa. Voor Kemijärvi wordt geen apart cijfer gepubliceerd, en het regionale cijfer omvat het duurdere Rovaniemi.',
       },
       paras: [
-        '<strong>Het eigen cijfer van Kemijärvi dateert uit 2022.</strong> In het postcodegebied 98100 in het stadscentrum bedroeg de gemiddelde huur van studio’s op de vrije markt € 12,15 per m² en van tweekamerwoningen € 9,10 per m² in januari–maart 2022. Elk kwartaal sindsdien is onderdrukt: Statistics Finland publiceert het cijfer van een postcodegebied niet als er te weinig waarnemingen zijn (tabel 13eb).',
-        'De huren van de bedrijven van de stad staan niet online. Vraag de woonsecretaris naar de huur voordat u een aanbod aanvaardt, en bedenk dat de huren in 2026 zijn gestegen: 4,5 procent bij Vuokratalot en 5 procent bij Töveli.',
+        '<strong>Het eigen cijfer van Kemijärvi dateert uit 2022.</strong> In het postcodegebied 98100 in het stadscentrum bedroeg de gemiddelde huur van studio’s op de vrije markt € 12,15 per m² en van tweekamerwoningen € 9,10 per m² in januari–maart 2022. Sindsdien is het cijfer elk kwartaal achtergehouden: Statistics Finland publiceert het cijfer van een postcodegebied niet als er te weinig waarnemingen zijn (tabel 13eb).',
+        'De huren van de bedrijven van de stad staan niet online. Vraag de woonconsulent naar de huur voordat u een aanbod aanvaardt, en bedenk dat de huren in 2026 zijn gestegen: 4,5 procent bij Vuokratalot en 5 procent bij Töveli.',
       ],
     },
     {
@@ -102,7 +102,7 @@ const copy: HousingPageCopy = {
       kicker: 'Werk en verbindingen',
       h2: 'Regel de baan voordat u verhuist.',
       bullets: [
-        'Volgens de stad zijn haar grote werkgevers, naast de stad zelf, Keitele Group, Festivo Porkka Group en het klantencontactcentrum van Kela, naast bedrijven in de detailhandel, dienstverlening en het toerisme (begroting 2026).',
+        'Volgens de stad zijn de grote werkgevers, naast de stad zelf, Keitele Group, Festivo Porkka Group en het klantencontactcentrum van Kela, aangevuld met bedrijven in de detailhandel, dienstverlening en het toerisme (begroting 2026).',
         'Werklozen vormden in 2024 15,6 procent van de beroepsbevolking, tegenover 11,7 procent in heel Finland (Statistics Finland).',
         'Suomutunturi ligt 46 km van het centrum en Pyhätunturi 50 km (OpenStreetMap). Suomu ligt binnen Kemijärvi; Pyhä hoort bij de naburige gemeente Pelkosenniemi.',
         'De luchthaven van Rovaniemi ligt 80 km verderop (OpenStreetMap), en volgens de stad loopt er een directe treinverbinding helemaal naar Helsinki (kemijarvi.fi).',
@@ -121,11 +121,11 @@ const copy: HousingPageCopy = {
   faqs: [
     {
       q: 'Hoe vraag ik een woning van de stad aan in Kemijärvi?',
-      a: 'Met de onlineaanvraag op de site van de stad, of op een papieren formulier bij Sortteeri (Vapaudenkatu 8). De aanvraag is vier maanden geldig en kan nog eens vier maanden worden verlengd. Kredietgegevens worden gecontroleerd, en de aanvraag wordt pas behandeld als de bijlagen binnen zijn. Vergaderingen voor het kiezen van huurders worden meestal om de woensdag gehouden (kemijarvi.fi).',
+      a: 'Met de onlineaanvraag op de site van de stad, of op een papieren formulier bij Sortteeri (Vapaudenkatu 8). De aanvraag is vier maanden geldig en kan nog eens vier maanden worden verlengd. Kredietgegevens worden gecontroleerd, en de aanvraag wordt pas behandeld als de bijlagen binnen zijn. Huurders worden meestal om de woensdag in een vergadering gekozen (kemijarvi.fi).',
     },
     {
       q: 'Zijn er vrije huurwoningen in Kemijärvi?',
-      a: 'Hoogstwaarschijnlijk wel. De begroting van de stad beschouwt het als een realistisch doel dat 80–85 procent van de woningen van de bedrijven verhuurd is (begroting 2026). Vraag de woonsecretaris welke woningen vrij zijn.',
+      a: 'Hoogstwaarschijnlijk wel. De begroting van de stad beschouwt het als een realistisch doel dat 80–85 procent van de woningen van de bedrijven verhuurd is (begroting 2026). Vraag de woonconsulent welke woningen vrij zijn.',
     },
     {
       q: 'Wat kost een huurwoning in Kemijärvi?',
@@ -139,7 +139,7 @@ const copy: HousingPageCopy = {
   cta: {
     partner: 'hotels',
     kicker: 'De eerste nachten',
-    h2: 'Bezichtigingen in persoon.',
+    h2: 'Bezichtigingen ter plaatse.',
     lead: 'De partnerzoekmachine toont vrije kamers en appartementen in Kemijärvi en bij Pyhä tegen de prijzen van vandaag.',
     chips: [
       { label: 'Kemijärvi', destination: 'Kemijärvi', sid: 'rentals_kemijarvi_first_weeks' },

@@ -28,7 +28,7 @@ const copy: HousingPageCopy = {
   intro: [
     'Het toeristengebied Levi neemt voor het winterseizoen ruim 2.000 seizoenswerkers aan, schatte Kristiina Kukkohovi, directeur van Levin Matkailu Oy, al in 2017, en volgens haar werd de woningnood in elk skigebied van Lapland een groot probleem (Yle, 25 oktober 2017). Het is niet beter geworden: in het voorjaar van 2023 berichtte Yle over werknemers in Levi en Ylläs die in vakantieappartementen wonen waar ze geen adres kunnen laten registreren.',
     'In juni 2026 besloten de eigenaren van K-Market Jounin Kauppa in Äkäslompolo drie rijtjeshuizen te bouwen voor hun eigen personeel, omdat er te weinig woningen zijn en de huren hoog zijn opgelopen (Yle, 16 juni 2026). De winkel heeft ongeveer 20 seizoenswerkers per jaar, en ruwweg de helft van hen heeft een huurwoning nodig (Kesko, 17 juni 2026).',
-    'In Rovaniemi bracht het wervingsbureau Career.fi ongeveer 250 werknemers naar Lapland en bracht ze onder op een tiental verschillende plekken; twee Estse werknemers woonden twee winters bij het gezin van de groeidirecteur nadat hun huurwoning een leidingrenovatie inging. Woonruimte vinden is “elk jaar een hele toestand” (Yle, 9 maart 2026).',
+    'In Rovaniemi bracht het wervingsbureau Career.fi ongeveer 250 werknemers naar Lapland en bracht ze onder op een tiental verschillende plekken; twee Estse werknemers woonden twee winters bij het gezin van de groeidirecteur nadat in hun huurwoning een leidingrenovatie begon. Woonruimte vinden is “elk jaar een hele toestand” (Yle, 9 maart 2026).',
   ],
   sections: [
     {
@@ -39,12 +39,12 @@ const copy: HousingPageCopy = {
         {
           title: '1. Personeelshuisvesting',
           body:
-            'Het meest gegeven antwoord in de skigebieden: de werkgever huurt rijtjeshuizen, huisjes en vakantieappartementen voor het personeel voor het hele seizoen en houdt de huur in op uw loon. In Ruka huurde een restaurantgroep in 2017 al vier vakantieobjecten van november tot mei voor haar personeel (Yle, 25 oktober 2017). Het voordeel: er is een dak als u aankomt. Het risico: de woning eindigt zodra de baan eindigt.',
+            'Het meest gegeven antwoord in de skigebieden: de werkgever huurt rijtjeshuizen, huisjes en vakantieappartementen voor het personeel voor het hele seizoen en houdt de huur in op uw loon. In Ruka huurde een restaurantgroep in 2017 al vier vakantiewoningen van november tot mei voor haar personeel (Yle, 25 oktober 2017). Het voordeel: u hebt meteen een dak boven uw hoofd als u aankomt. Het risico: met de baan verliest u ook de woning.',
         },
         {
           title: '2. Een vakantieappartement op seizoenshuur',
           body:
-            'Een appartement van 80 m² in een alpine huis in Levi: € 750 per maand van mei tot november, € 2.000 per week in het hoogseizoen, € 1.650 per maand het hele jaar door (Yle, 25 mei 2023). Goedkoop in de zomer, onbetaalbaar in de winter. Bij een vakantieappartement kunt u bovendien geen officieel adres krijgen (Yle, 25 mei 2023).',
+            'Een appartement van 80 m² in een gebouw in alpenstijl in Levi: € 750 per maand van mei tot november, € 2.000 per week in het hoogseizoen, € 1.650 per maand het hele jaar door (Yle, 25 mei 2023). Goedkoop in de zomer, onbetaalbaar in de winter. Bij een vakantieappartement kunt u bovendien geen officieel adres krijgen (Yle, 25 mei 2023).',
         },
         {
           title: '3. Een gemeentelijke huurwoning',
@@ -63,7 +63,7 @@ const copy: HousingPageCopy = {
           title: 'Levi en Kittilä',
           image: { src: '/images/housing-levi-keskusta-card.webp', alt: 'Houten gebouwen in het centrum van Levi op een zomerse dag' },
           body:
-            'De bevolking van Kittilä groeide in 2025 met 2,0 procent, na Pelkosenniemi (2,4 procent) de sterkste groei van alle gemeenten in Lapland (Statistics Finland). Werkgevers huren rijtjeshuizen voor personeel voor het hele seizoen, en alle anderen zoeken in de Facebookgroep voor woningen in Levi. Kittilän Vuokratalot Oy biedt woningen aan in het dorp Kittilä en in Levi, in Sirkka.',
+            'De bevolking van Kittilä groeide in 2025 met 2,0 procent, na Pelkosenniemi (2,4 procent) de sterkste groei van alle gemeenten in Lapland (Statistics Finland). Werkgevers huren rijtjeshuizen voor personeel voor het hele seizoen, en alle anderen zoeken in de Facebookgroep voor woningen in Levi. Kittilän Vuokratalot Oy biedt woningen aan in het dorp Kittilä en in Sirkka bij Levi.',
           href: 'https://kittila.fi/asuminen-ja-ymparisto/asuminen/vuokra-asunnot',
           linkLabel: 'Kittilän Vuokratalot Oy',
           event: 'kittila',
@@ -88,7 +88,7 @@ const copy: HousingPageCopy = {
         },
         {
           title: 'Rovaniemi',
-          image: { src: '/images/housing-rovaniemi-lappia-card.webp', alt: 'Lappia-huis in het centrum van Rovaniemi' },
+          image: { src: '/images/housing-rovaniemi-lappia-card.webp', alt: 'Het Lappia-huis in het centrum van Rovaniemi' },
           body:
             'Studenten, toeristen en seizoenswerkers strijden tegelijk om dezelfde studio’s: in de zomer van 2026 ontving de studentenhuisvestingsstichting DAS ongeveer 550 spoedaanvragen, 15 procent meer dan een jaar eerder, en bijna 90 procent van de aanvragers wilde een studio (Yle, 27 juli 2026).',
           href: 'https://yle.fi/a/74-20213937',
@@ -99,7 +99,7 @@ const copy: HousingPageCopy = {
           title: 'Ruka en Kuusamo',
           image: { src: '/images/housing-ruka-kyla-card.webp', alt: 'Het plein en de rode uitkijktoren in het autovrije dorp Ruka in de zomer' },
           body:
-            'Ruka ligt in Noord-Österbotten, niet in Lapland, maar het seizoen en de woningnood zijn dezelfde. In 2017 groeide de restaurantgroep van Ruka van ruim 20 vaste medewerkers naar meer dan 80 in de winter en huurde ze van november tot mei vier vakantieobjecten voor personeel (Yle, 25 oktober 2017).',
+            'Ruka ligt in Noord-Österbotten, niet in Lapland, maar het seizoen en de woningnood zijn dezelfde. In 2017 groeide de restaurantgroep van Ruka van ruim 20 vaste medewerkers naar meer dan 80 in de winter en huurde ze van november tot mei vier vakantiewoningen voor personeel (Yle, 25 oktober 2017).',
           href: 'https://yle.fi/a/3-9895965',
           linkLabel: 'Yle, 25 oktober 2017',
           event: 'ruka',
@@ -109,7 +109,7 @@ const copy: HousingPageCopy = {
     {
       id: 'summer',
       kicker: 'Het zomerseizoen',
-      h2: 'De zomer is niet stil.',
+      h2: 'De zomer is geen stille tijd.',
       paras: [
         'Zomerwerk in Lapland is een seizoen op zich: het toerisme in Rovaniemi dat het hele jaar doorgaat, de wandelgebieden, de bouwplaatsen en de zomerpiek van de winkels. In de zomer worden vakantieappartementen per maand verhuurd (€ 750 per maand van mei tot november in het voorbeeld van Levi, Yle, 25 mei 2023).',
         'In Rovaniemi hoopt de groeidirecteur van een wervingsbureau seizoenswerkers in de winter onder één dak te brengen, en bouwvakkers en sportteams in de zomer (Yle, 9 maart 2026). Voor wie in de zomer aankomt is dat goed nieuws: personeelshuisvesting die voor de winter is gebouwd, staat in de zomer leeg.',
@@ -125,9 +125,9 @@ const copy: HousingPageCopy = {
     {
       id: 'ask',
       kicker: 'Voordat u tekent',
-      h2: 'Vraag uw werkgever dit.',
+      h2: 'Dit vraagt u uw werkgever.',
       bullets: [
-        'Maakt de woning deel uit van het arbeidspakket of is het een apart huurcontract? Hoeveel wordt er van uw loon ingehouden, en staat het op de loonstrook?',
+        'Maakt de woning deel uit van het arbeidsvoorwaardenpakket of is het een apart huurcontract? Hoeveel wordt er van uw loon ingehouden, en staat het op de loonstrook?',
         'Een eigen kamer of gedeeld? Hoeveel mensen wonen er in de woning, en zit er een slot op uw deur?',
         'Wat gebeurt er met het huurcontract als de baan eindigt voordat het seizoen voorbij is, of er langer doorloopt?',
         'Kunt u zich daar laten inschrijven? De adreswijziging bij DVV moet binnen een week na de verhuizing worden doorgegeven, en een vakantieappartement komt daar vaak niet voor in aanmerking.',

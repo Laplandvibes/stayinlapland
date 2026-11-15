@@ -72,7 +72,7 @@ const copy: HousingPageCopy = {
       cards: [
         {
           title: '케미: Kiinteistö Oy Itätuuli',
-          body: '시 소유 임대 주택입니다. Itätuuli는 케미 최대의 임대주택 사업자이며, 주택은 중심가에서 다섯 킬로미터 이내에 있습니다. 자체 온라인 신청서는 넉 달간 유효하고 보증금은 받지 않습니다. 케미 관광·비즈니스 안내 페이지에는 민간 중개업체도 나열되어 있습니다. Forenom, Habita Kemi, HVC Group, Kiinteistömaailma, KVP Group, OP Koti Kemi, Pihlajaniemi & Co, Solecco, AJK Asunnot입니다.',
+          body: '시 소유 임대 주택입니다. Itätuuli는 케미 최대의 임대주택 사업자이며, 주택은 중심가에서 다섯 킬로미터 이내에 있습니다. 자체 온라인 신청서는 넉 달간 유효하고 보증금은 받지 않습니다. Visit Kemi의 비즈니스 안내 페이지에는 민간 중개업체도 나열되어 있습니다. Forenom, Habita Kemi, HVC Group, Kiinteistömaailma, KVP Group, OP Koti Kemi, Pihlajaniemi & Co, Solecco, AJK Asunnot입니다.',
           href: 'https://www.kemi.fi/asuminen-ja-ymparisto/asuminen/vuokra-asunnot/',
           linkLabel: 'kemi.fi: 임대 주택',
           event: 'kemi_city',
@@ -93,7 +93,7 @@ const copy: HousingPageCopy = {
         },
         {
           title: 'Oikotie와 Vuokraovi',
-          body: '개인과 중개업체의 매물입니다. 케미, 토르니오, 케민마를 각각 별도의 지자체로 검색하십시오. 검색이 세 번 따로 이루어집니다.',
+          body: '개인과 중개업체의 매물입니다. 케미, 토르니오, 케민마를 하나씩 따로 검색하세요. 포털에서는 지자체마다 검색이 따로 되어 있습니다.',
           href: 'https://asunnot.oikotie.fi/vuokra-asunnot/kemi',
           linkLabel: 'Oikotie: 케미 임대',
           event: 'oikotie',
@@ -106,7 +106,7 @@ const copy: HousingPageCopy = {
       h2: '알아 둘 만한 법 조항 두 가지.',
       bullets: [
         '보증금은 월세 세 달 치가 최대입니다(주거용 임대차법 제8조).',
-        '2026년 10월 1일부터 보증금은 임대가 끝난 날부터 14일 안에 반환하거나, 보유 사유를 서면으로 설명해야 합니다(Rakli).',
+        '2026년 10월 1일부터 보증금은 임대가 끝난 날부터 14일 안에 반환하거나, 돌려주지 않는 사유를 서면으로 알려야 합니다(Rakli).',
       ],
     },
   ],
@@ -124,7 +124,7 @@ const copy: HousingPageCopy = {
     partner: 'hotels',
     kicker: '첫 몇 주',
     h2: '직접 방문해서 집 보기.',
-    lead: '집을 보러 다니는 동안 머무를 곳을 예약하고, 서명하기 전에 집을 직접 확인하십시오.',
+    lead: '집을 보러 다니는 동안 머무를 곳을 예약하고, 서명하기 전에 집을 직접 확인하세요.',
     chips: [
       { label: '케미', destination: 'Kemi', sid: 'rentals_kemi_first_weeks' },
       { label: '토르니오', destination: 'Tornio', sid: 'rentals_tornio_first_weeks' },

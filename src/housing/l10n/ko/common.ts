@@ -27,12 +27,12 @@ const common: HousingCommonCopy = {
     "kicker": "자매 사이트 · LaplandWork.com",
     "h2a": "먼저 일자리,",
     "h2b": "집은 그다음입니다.",
-    "body": "LaplandWork.com에는 스키 리조트, 호텔, 액티비티 업체, 의료 분야 등 라플란드의 채용 공고가 올라옵니다. 시즌 일자리에는 주거가 딸려 오는 경우가 많으니, 집을 찾기 전에 먼저 채용 공고를 확인하십시오.",
+    "body": "LaplandWork.com에는 스키 리조트, 호텔, 액티비티 업체, 의료 분야 등 라플란드의 채용 공고가 올라옵니다. 시즌 일자리에는 주거가 딸려 오는 경우가 많으니, 집을 찾기 전에 먼저 채용 공고를 확인하세요.",
     "stripText": "LaplandWork.com: 라플란드 스키 리조트, 호텔, 의료 분야의 채용 공고.",
     "cta": "일자리 보기",
     "image": "/images/housing-yllas-hiihtokeskus.webp",
-    "alt": "여름의 윌래스 리조트 스키 대여점과 스키 학교, 처마 아래에 보관된 인공 눈 제설기",
-    "caption": "2026년 7월의 윌래스: 제설기가 시즌을 기다립니다. 사진: LaplandVibes."
+    "alt": "여름의 윌래스 리조트 스키 대여점과 스키 학교, 차양 아래에 보관된 인공 눈 제조기",
+    "caption": "2026년 7월의 윌래스: 인공 눈 제조기가 시즌을 기다립니다. 사진: LaplandVibes."
   },
   "sourceLabels": {
     "tkVuokrat": "핀란드 통계청: 주택 임대료, 자유시장 임대 주택, ㎡당 평균 월세 2026Q3(표 15fa, 2026년 11월 15일 열람)",
@@ -63,7 +63,7 @@ const common: HousingCommonCopy = {
     "das": "도무스 아르크티카 재단(DAS): 학생 주택 신청",
     "kittila": "키틸래 지자체: 임대 주택(Kittilän Vuokratalot Oy)",
     "kemi": "케미 시: 임대 주택(Kiinteistö Oy Itätuuli)",
-    "itatuuli": "Kiinteistö Oy Itätuuli: 주택 신청(넉 달간 유효)과 보증금 €0 주택(2026년 11월 15일 열람)",
+    "itatuuli": "Kiinteistö Oy Itätuuli: 주택 신청(신청서 4개월 유효)과 보증금 €0 임대(2026년 11월 15일 열람)",
     "keminmaaVuokra": "Keminmaan Vuokra-asunnot Oy: 신청 방법(신청서 3개월 유효, 보증금 월세 한 달 치)과 건물 페이지(2026년 11월 15일 열람)",
     "keminmaa": "케민마 지자체: Keminmaan Vuokra-asunnot Oy",
     "tornio": "토르니오 시: 임대 주택(Tornion Krunni Oy)",
@@ -96,11 +96,11 @@ const common: HousingCommonCopy = {
     "inari": "이나리 지자체: 이나리의 주거(Inarin Vuokra-asunnot Oy와 민간 집주인)",
     "lvDrive": "LaplandVibes: 라플란드 운전 경로(구간별 거리)",
     "laplandwork": "LaplandWork: 핀란드로 이주하기: 체류 허가, 개인 식별번호, 세금 카드, 은행 계좌",
-    "lapha": "라플란드 복지서비스 광역(Lapha): 보건 및 사회 서비스"
+    "lapha": "라플란드 복지서비스 권역(Lapha): 보건 및 사회 서비스"
   },
   "whenToGoSourceLabels": {
     "fmi1991": "핀란드 기상청: 핀란드 기후 통계 1991–2020(보고서 2021:8), 로바니에미, 소단퀼래, 우츠요키 Kevo 관측소",
-    "fmiLumi": "핀란드 기상청: 적설 통계(영구 적설의 시작과 끝 1991–2020)",
+    "fmiLumi": "핀란드 기상청: 적설 통계(지속 적설의 시작과 끝 1991–2020)",
     "fmiVuodenajat": "핀란드 기상청: 천문학적 계절(극야와 백야)",
     "fmiRevontulet": "핀란드 기상청: 오로라, 질문과 답변",
     "fmiRevontuletMissa": "핀란드 기상청: 오로라는 어디서 언제 보이는가?",
@@ -122,7 +122,7 @@ const common: HousingCommonCopy = {
     "levi": "레비: 오늘의 스키 리조트(10월부터 시즌 초 슬로프 운영, 2026년 11월 13–15일 알파인 월드컵)",
     "arcticRally": "Arctic Lapland Rally 2027년 1월 28–30일",
     "msff": "Midnight Sun Film Festival 2027년 6월 16–20일",
-    "jutajaiset": "Jutajaiset: 10월 로바니에미의 민속 음악과 춤 축제",
+    "jutajaiset": "Jutajaiset: 10월 로바니에미에서 열리는 북부 민속 음악과 춤 축제",
     "simerock": "Simerock 2027년 8월 13–14일",
     "arcticSnowHotel": "Arctic SnowHotel: 2026년 12월 15일 개장"
   },
@@ -130,7 +130,7 @@ const common: HousingCommonCopy = {
   "adsWrap": {
     "moving": {
       "kicker": "광고 · 이사 관련",
-      "title": "이삿날 전에 전기와 인터넷을 해결하십시오",
+      "title": "이삿날 전에 전기와 인터넷을 해결하세요",
       "lead": "둘 다 열쇠를 받기 전에 온라인으로 개통을 신청할 수 있어, 새 집에서 첫날 저녁부터 전기와 인터넷을 쓸 수 있습니다."
     },
     "electricity": {

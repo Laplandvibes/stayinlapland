@@ -38,7 +38,7 @@ const copy: WhenToGoCopy = {
       ['Settembre', '13 h 13 min', '7,7 / 7,0 °C', '–', 'Colori d’autunno'],
       ['Ottobre', '9 h 37 min', '0,8 / 0,0 °C', '–', 'Neve sui fjäll'],
       ['Novembre', '5 h 45 min', '−4,4 / −5,8 °C', '9 cm', 'Notte polare nell’estremo nord'],
-      ['Dicembre', '2 h 27 min', '−7,7 / −9,6 °C', '28 cm', 'Il giorno più corto 2 h 14 min'],
+      ['Dicembre', '2 h 27 min', '−7,7 / −9,6 °C', '28 cm', 'Giorno più corto: 2 h 14 min'],
     ],
     foot: 'Temperature e neve: Istituto meteorologico finlandese, periodo di riferimento 1991–2020; l’altezza della neve è la mediana. Durata del giorno: timeanddate.com per il 2027 (fonte secondaria; gli anni differiscono di circa un giorno). A giugno il sole non tramonta a Rovaniemi dal 7 giugno al 6 luglio.',
   },
@@ -55,19 +55,19 @@ const copy: WhenToGoCopy = {
       pitch: 'Neve e vacanze invernali',
       body: 'Insieme a dicembre, febbraio è il mese più pieno dell’anno: l’occupazione della Lapponia era del 77,6% a febbraio 2025, ma il prezzo medio delle camere è rimasto inferiore a quello di dicembre. La neve a Rovaniemi è in media alta 66 cm il 15 febbraio, e il giorno dura già otto ore.',
       good: ['Aurore boreali di fine inverno: l’Istituto meteorologico finlandese definisce fine inverno e inizio autunno i periodi statisticamente migliori', 'Sci e lunghe gite in giornata'],
-      note: ['Prenoti presto, febbraio è uno dei mesi più pieni', 'Le scuole della regione di Helsinki e di Turku hanno le vacanze dello sci nella settimana 8 (22–26 febbraio 2027)'],
+      note: ['Prenoti presto: febbraio è uno dei mesi più pieni', 'Le scuole della regione di Helsinki e di Turku hanno la settimana bianca nella settimana 8 (22–26 febbraio 2027)'],
     },
     {
       name: 'Marzo',
       pitch: 'Aurore boreali e la neve più alta',
       body: 'L’Istituto meteorologico finlandese consiglia marzo per osservare le aurore boreali, perché la primavera è in media meno nuvolosa. La neve è al massimo, in media 77 cm a Rovaniemi, e il giorno supera le 13 ore. Sodankylä ha 141 ore di sole a marzo contro 59 a febbraio.',
       good: ['Aurore boreali', 'Sci con il bel tempo', 'Pasqua, 26–29 marzo 2027'],
-      note: ['Le scuole di Rovaniemi hanno le vacanze dello sci nella settimana 10 (8–12 marzo 2027), e la Pasqua porta i viaggiatori finlandesi', 'Gli pneumatici invernali sono obbligatori fino al 31 marzo ogni volta che le condizioni lo richiedono'],
+      note: ['Le scuole di Rovaniemi hanno la settimana bianca nella settimana 10 (8–12 marzo 2027), e la Pasqua porta i viaggiatori finlandesi', 'Gli pneumatici invernali sono obbligatori fino al 31 marzo ogni volta che le condizioni lo richiedono'],
     },
     {
       name: 'Aprile',
       pitch: 'Neve crostosa e lunghe sere',
-      body: 'C’è ancora molta neve, in media 64 cm a Rovaniemi il 15 aprile, e secondo Metsähallitus le condizioni di neve crostosa durano da metà aprile fino a metà maggio. Le aurore boreali si possono ancora vedere all’inizio del mese: le notti a Rovaniemi si fanno buie fino a circa il 21 aprile, a Utsjoki fino a circa il 10 aprile. Il prezzo medio delle camere in Lapponia era di 139–141 € ad aprile contro 200–225 € a marzo (2024–2025).',
+      body: 'C’è ancora molta neve, in media 64 cm a Rovaniemi il 15 aprile, e secondo Metsähallitus le condizioni di neve crostosa durano da metà aprile fino a metà maggio. Le aurore boreali si possono ancora vedere all’inizio del mese: a Rovaniemi le notti restano buie fino al 21 aprile circa, a Utsjoki fino al 10 aprile circa. Il prezzo medio delle camere in Lapponia era di 139–141 € ad aprile contro 200–225 € a marzo (2024–2025).',
       good: ['Sci sulla crosta e gite sui fjäll', 'Sole primaverile: il 20 aprile il giorno a Rovaniemi supera le 16 ore'],
       note: ['Alcune stazioni sciistiche chiudono ad aprile: la stagione di Ounasvaara finisce il 17 aprile 2027, mentre Ylläs prevede di chiudere all’inizio di maggio', 'I lavori stagionali finiscono: a Saariselkä gli ultimi giorni lavorativi invernali sono a metà aprile (Yle)'],
     },
@@ -88,7 +88,7 @@ const copy: WhenToGoCopy = {
     {
       name: 'Luglio',
       pitch: 'Il mese più caldo, il preferito dei finlandesi',
-      body: 'Luglio è il mese più caldo dell’anno: 15,6 °C in media a Rovaniemi, con massime giornaliere intorno ai 20. È anche il mese più popolare in Lapponia per i viaggiatori finlandesi, e da giugno ad agosto sono i mesi più economici: la camera media nelle strutture ricettive della Lapponia costava circa 96–102 € (2024–2025). Le more artiche maturano da metà luglio a inizio agosto.',
+      body: 'Luglio è il mese più caldo dell’anno: 15,6 °C in media a Rovaniemi, con massime giornaliere intorno ai 20. È anche il mese più popolare in Lapponia per i viaggiatori finlandesi, e i mesi da giugno ad agosto sono i più economici: la camera media nelle strutture ricettive della Lapponia costava circa 96–102 € (2024–2025). Le more artiche maturano da metà luglio a inizio agosto.',
       good: ['Escursioni e gite nella natura', 'Raccolta di bacche: more artiche da metà luglio, mirtilli da fine luglio'],
       note: ['Le zanzare sono al massimo, e durano fino a inizio o metà agosto', 'Luglio è anche il mese più piovoso, 81 mm a Rovaniemi'],
     },
@@ -116,14 +116,14 @@ const copy: WhenToGoCopy = {
     {
       name: 'Novembre',
       pitch: 'Nell’estremo nord inizia la notte polare',
-      body: 'A Utsjoki la notte polare inizia il 26 novembre e dura in media 51 giorni. A Rovaniemi il sole sorge ogni giorno, ma il 15 novembre il giorno dura poco meno di sei ore. Le stazioni sciistiche aprono: nella stagione 2026–2027 Ounasvaara l’11 novembre, Ylläs il 21 novembre e Luosto con l’obiettivo del 28 novembre.',
+      body: 'A Utsjoki la notte polare inizia il 26 novembre e dura in media 51 giorni. A Rovaniemi il sole sorge ogni giorno, ma il 15 novembre il giorno dura poco meno di sei ore. Le stazioni sciistiche aprono: nella stagione 2026–2027 Ounasvaara l’11 novembre, Ylläs il 21 novembre, mentre Luosto punta al 28 novembre.',
       good: ['Gli slalom della Coppa del Mondo a Levi a metà novembre', 'Inverno a prezzi pre-natalizi: una camera nelle strutture ricettive della Lapponia costava in media 192–209 € a novembre e 285–313 € a dicembre (2024–2025)'],
       note: ['Rovaniemi non è tranquilla a novembre: occupazione degli hotel del 72–82% (2023–2025)', 'Pneumatici invernali dal 1° novembre ogni volta che le condizioni lo richiedono. L’Arctic SnowHotel apre solo a dicembre'],
     },
     {
       name: 'Dicembre',
       pitch: 'Natale, il mese più affollato',
-      body: 'Dicembre è il mese turistico più affollato e più caro della Lapponia: 622.449 pernottamenti e un prezzo medio della camera di 313 € a dicembre 2025. Il giorno più corto di Rovaniemi dura 2 h 14 min, ma il sole sorge; la notte polare dura solo quattro giorni a Sodankylä appena prima di Natale e dal 14 al 29 dicembre a Kittilä. A Sodankylä c’è stata neve a terra ogni vigilia di Natale registrata.',
+      body: 'Dicembre è il mese turistico più affollato e più caro della Lapponia: 622.449 pernottamenti e un prezzo medio della camera di 313 € a dicembre 2025. Il giorno più corto di Rovaniemi dura 2 h 14 min, ma il sole sorge; la notte polare dura solo quattro giorni a Sodankylä appena prima di Natale e dal 14 al 29 dicembre a Kittilä. Da quando esistono le misurazioni, a Sodankylä c’è sempre stata neve al suolo alla vigilia di Natale.',
       good: ['Natale: il Villaggio di Babbo Natale è aperto ogni giorno', 'Hotel di neve: l’Arctic SnowHotel apre il 15 dicembre 2026'],
       note: ['Prenoti con largo anticipo: gli hotel di Rovaniemi erano pieni al 93,5–97% a dicembre (2023–2025)', 'Secondo l’Istituto meteorologico finlandese, tardo autunno e inizio inverno sono il periodo più nuvoloso dell’anno, il che rende più difficile vedere le aurore boreali'],
     },
@@ -132,7 +132,7 @@ const copy: WhenToGoCopy = {
   noteLabel: 'Da tenere presente',
   monthsNav: 'Mesi',
   living: {
-    kicker: 'Se ci si vive',
+    kicker: 'Per chi vive qui',
     h2: 'Che cosa significa l’anno per chi ci vive.',
     items: [
       '<strong>Un appartamento in affitto a Rovaniemi:</strong> secondo la DAS è in primavera e all’inizio dell’estate che si liberano più appartamenti rispetto ai richiedenti, e agosto e settembre hanno il maggior numero di richiedenti. I contratti a tempo determinato finiscono a fine ottobre perché gli appartamenti vengono affittati ai turisti per l’inverno (Yle, 27 luglio 2026).',
@@ -152,7 +152,7 @@ const copy: WhenToGoCopy = {
   faqs: [
     {
       q: 'Quando si può vedere l’aurora boreale in Lapponia?',
-      a: 'Ogni volta che le notti sono buie, da fine agosto ad aprile. Secondo l’Istituto meteorologico finlandese le tempeste magnetiche sono in media più frequenti in autunno e in primavera che in estate e in inverno, e consiglia marzo perché la primavera è in media meno nuvolosa. Alla latitudine di Sodankylä compaiono in media una notte serena e buia su due.',
+      a: 'Ogni volta che le notti sono buie, da fine agosto ad aprile. Secondo l’Istituto meteorologico finlandese le tempeste magnetiche sono in media più frequenti in autunno e in primavera che in estate e in inverno, e consiglia marzo perché la primavera è in media meno nuvolosa. Alla latitudine di Sodankylä le aurore boreali compaiono in media una notte serena e buia su due.',
     },
     {
       q: 'A Rovaniemi c’è la notte polare?',

@@ -23,7 +23,7 @@ const copy: HousingPageCopy = {
     eyebrow: 'Sodankylä, 8.095 habitantes',
     title: 'Aluguel em Sodankylä.',
     subtitle:
-      'Um quartel, uma mina e uma comunidade científica em um só município, onde a antiga falta de moradia do vilarejo principal diminuiu com a construção de prédios novos. Onde se candidatar e quanto custa.',
+      'Um quartel, uma mina e uma comunidade científica em um só município, onde a longa falta de moradia do vilarejo principal diminuiu com a construção de prédios novos. Onde se candidatar e quanto custa.',
   },
   authorNote:
     'População da Statistics Finland, número de apartamentos da página do município, aluguéis, condições e apartamentos livres das páginas da própria Asentopuulaaki Oy, empregos do Exército Finlandês, da Yle e das empresas. Verificado em 15 de novembro de 2026.',
@@ -62,7 +62,7 @@ const copy: HousingPageCopy = {
       cards: [
         {
           title: 'Asentopuulaaki Oy',
-          body: 'A subsidiária municipal que aluga os cerca de 720 apartamentos do município. Você se candidata on-line e anexa um comprovante de renda. O crédito é consultado, e inadimplências pesam contra você.',
+          body: 'A subsidiária municipal que aluga os cerca de 720 apartamentos do município. Você se candidata on-line e anexa um comprovante de renda. O histórico de crédito é consultado, e inadimplências pesam contra você.',
           href: 'https://www.asentopuulaaki.fi/asunnon-hakeminen/',
           linkLabel: 'asentopuulaaki.fi: como se candidatar a um apartamento',
           event: 'asentopuulaaki',
@@ -136,7 +136,7 @@ const copy: HousingPageCopy = {
       h2: 'Um mês de aviso prévio.',
       bullets: [
         'Na Asentopuulaaki, o prazo de aviso prévio é de um mês corrido, e a caução é devolvida cerca de duas semanas depois de você sair (Asentopuulaaki).',
-        'A caução é de no máximo três meses de aluguel (Lei de Locação Residencial, seção 8).',
+        'A caução é de no máximo três meses de aluguel (Lei de Locação Residencial, artigo 8).',
         'A partir de 1º de outubro de 2026, a caução deve ser devolvida, ou a sua retenção explicada por escrito, em até 14 dias após o fim da locação (Rakli).',
       ],
     },
@@ -144,7 +144,7 @@ const copy: HousingPageCopy = {
   faqs: [
     {
       q: 'Como me candidato a um apartamento municipal em Sodankylä?',
-      a: 'Pela candidatura on-line da Asentopuulaaki Oy, anexando um comprovante de renda, como um holerite. O crédito é consultado na Suomen Asiakastieto, e inadimplências pesam contra você (Asentopuulaaki).',
+      a: 'Pela candidatura on-line da Asentopuulaaki Oy, anexando um comprovante de renda, como um holerite. O histórico de crédito é consultado na Suomen Asiakastieto, e inadimplências pesam contra você (Asentopuulaaki).',
     },
     {
       q: 'Quanto custa um apartamento de aluguel em Sodankylä?',
@@ -163,7 +163,7 @@ const copy: HousingPageCopy = {
     partner: 'hotels',
     kicker: 'As primeiras noites',
     h2: 'Visitas pessoalmente.',
-    lead: 'A busca do parceiro mostra quartos e apartamentos livres em Sodankylä e em Luosto com os preços de hoje.',
+    lead: 'A busca do nosso parceiro mostra quartos e apartamentos livres em Sodankylä e em Luosto com os preços de hoje.',
     chips: [
       { label: 'Sodankylä', destination: 'Sodankylä', sid: 'rentals_sodankyla_first_weeks' },
       { label: 'Luosto', destination: 'Luosto', sid: 'rentals_luosto_first_weeks' },

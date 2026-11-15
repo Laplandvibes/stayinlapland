@@ -26,8 +26,8 @@ const copy: HousingPageCopy = {
   authorNote:
     'Población de Statistics Finland; número de viviendas y cómo solicitar, de las páginas de la ciudad de Kemijärvi; subidas de alquiler y objetivos de ocupación, del presupuesto de 2026 de la ciudad. Comprobado el 15 de noviembre de 2026.',
   intro: [
-    'Kemijärvi tenía 6919 habitantes a finales de 2025, 35 menos que un año antes (Statistics Finland). La ciudad se define como la ciudad más septentrional de Finlandia y dice que los servicios del centro están a poca distancia a pie (kemijarvi.fi).',
-    'Las dos empresas inmobiliarias de la ciudad, Kemijärven Vuokratalot y Kemijärven Töveli, poseen 560 viviendas de alquiler (kemijarvi.fi). El presupuesto municipal considera realista un objetivo de que entre el 80 y el 85 por ciento de esas viviendas estén alquiladas, de modo que sí hay pisos vacíos.',
+    'Kemijärvi tenía 6919 habitantes a finales de 2025, 35 menos que un año antes (Statistics Finland). La ciudad se define como la más septentrional de Finlandia y dice que los servicios del centro están a poca distancia a pie (kemijarvi.fi).',
+    'Las dos empresas inmobiliarias de la ciudad, Kemijärven Vuokratalot y Kemijärven Töveli, poseen 560 viviendas de alquiler (kemijarvi.fi). El presupuesto municipal considera realista un objetivo de que entre el 80 y el 85 por ciento de esas viviendas estén alquiladas, de modo que sí hay viviendas vacías.',
     'Los alquileres suben: Kemijärven Vuokratalot los subió un 4,5 por ciento el 1 de febrero de 2026 y Töveli un 5 por ciento el 1 de julio de 2026. Las mismas subidas figuran en el plan para 2027 y 2028 (presupuesto 2026).',
   ],
   sections: [
@@ -53,7 +53,7 @@ const copy: HousingPageCopy = {
         },
         {
           title: 'Oikotie y Vuokraovi',
-          body: 'Anuncios de particulares y de agencias bajo el municipio de Kemijärvi. Las páginas de vivienda de la ciudad no recogen arrendadores privados, así que sus pisos se encuentran en los portales.',
+          body: 'Anuncios de particulares y de agencias en el municipio de Kemijärvi. Las páginas de vivienda de la ciudad no recogen arrendadores privados, así que sus apartamentos se encuentran en los portales.',
           href: 'https://asunnot.oikotie.fi/vuokra-asunnot/kemij%C3%A4rvi',
           linkLabel: 'Oikotie: alquileres en Kemijärvi',
           event: 'oikotie',
@@ -69,15 +69,15 @@ const copy: HousingPageCopy = {
         head: ['', 'Laponia (región)', 'Todo el país'],
         rows: [
           ['Estudios', '17,25', '20,49'],
-          ['Pisos de dos habitaciones', '12,87', '15,07'],
+          ['Apartamentos de dos habitaciones', '12,87', '15,07'],
           ['Tres habitaciones o más', '11,08', '13,98'],
           ['Todas las viviendas', '13,14', '15,99'],
         ],
         foot: 'Statistics Finland, alquileres del 3.er trimestre de 2026, tabla 15fa. No se publica una cifra aparte para Kemijärvi, y la cifra regional incluye a Rovaniemi, más cara.',
       },
       paras: [
-        '<strong>La cifra propia de Kemijärvi es de 2022.</strong> En el distrito postal del centro, 98100, los estudios del mercado libre costaban de media 12,15 € por m² y los pisos de dos habitaciones 9,10 € por m² en enero–marzo de 2022. Todos los trimestres posteriores se han suprimido: Statistics Finland no publica la cifra de un distrito postal cuando hay muy pocas observaciones (tabla 13eb).',
-        'Los alquileres de las empresas de la ciudad no están en internet. Pregunte el alquiler a la secretaria de vivienda antes de aceptar una oferta, y recuerde que los alquileres subieron en 2026: un 4,5 por ciento en Vuokratalot y un 5 por ciento en Töveli.',
+        '<strong>La cifra propia de Kemijärvi es de 2022.</strong> En el distrito postal del centro, 98100, los estudios del mercado libre costaban de media 12,15 € por m² y los apartamentos de un dormitorio 9,10 € por m² en enero–marzo de 2022. Todos los trimestres posteriores se han suprimido: Statistics Finland no publica la cifra de un distrito postal cuando hay muy pocas observaciones (tabla 13eb).',
+        'Los alquileres de las empresas de la ciudad no están en internet. Pregunte el alquiler al responsable de vivienda antes de aceptar una oferta, y recuerde que los alquileres subieron en 2026: un 4,5 por ciento en Vuokratalot y un 5 por ciento en Töveli.',
       ],
     },
     {
@@ -99,7 +99,7 @@ const copy: HousingPageCopy = {
     },
     {
       id: 'work',
-      kicker: 'Trabajo y conexiones',
+      kicker: 'Trabajo y transporte',
       h2: 'Acuerde el empleo antes de mudarse.',
       bullets: [
         'Según la ciudad, sus grandes empleadores, además del propio ayuntamiento, son Keitele Group, Festivo Porkka Group y el centro de contacto de Kela, junto con negocios de comercio, servicios y turismo (presupuesto 2026).',
@@ -111,9 +111,9 @@ const copy: HousingPageCopy = {
     {
       id: 'contract',
       kicker: 'El contrato',
-      h2: 'Dos secciones de la ley que conviene conocer.',
+      h2: 'Dos artículos de la ley que conviene conocer.',
       bullets: [
-        'La fianza es como máximo de tres meses de alquiler (Ley de arrendamientos de vivienda, sección 8).',
+        'La fianza es como máximo de tres meses de alquiler (Ley de arrendamientos de vivienda, artículo 8).',
         'Desde el 1 de octubre de 2026 la fianza debe devolverse, o justificarse por escrito su retención, en un plazo de 14 días desde el fin del contrato (Rakli).',
       ],
     },
@@ -125,11 +125,11 @@ const copy: HousingPageCopy = {
     },
     {
       q: '¿Hay viviendas de alquiler libres en Kemijärvi?',
-      a: 'Lo más probable es que sí. El presupuesto municipal considera realista un objetivo de que entre el 80 y el 85 por ciento de las viviendas de las empresas estén alquiladas (presupuesto 2026). Pregunte a la secretaria de vivienda cuáles están libres.',
+      a: 'Lo más probable es que sí. El presupuesto municipal considera realista un objetivo de que entre el 80 y el 85 por ciento de las viviendas de las empresas estén alquiladas (presupuesto 2026). Pregunte al responsable de vivienda cuáles están libres.',
     },
     {
-      q: '¿Cuánto cuesta un piso de alquiler en Kemijärvi?',
-      a: 'No se publica una media actual. La última cifra del distrito postal del centro es de principios de 2022: estudios a 12,15 € por m² y pisos de dos habitaciones a 9,10 € por m². La media de Laponia fue de 13,14 € por m² en julio–septiembre de 2026, e incluye a Rovaniemi, más cara (Statistics Finland).',
+      q: '¿Cuánto cuesta un apartamento de alquiler en Kemijärvi?',
+      a: 'No se publica una media actual. La última cifra del distrito postal del centro es de principios de 2022: estudios a 12,15 € por m² y apartamentos de un dormitorio a 9,10 € por m². La media de Laponia fue de 13,14 € por m² en julio–septiembre de 2026, e incluye a Rovaniemi, más cara (Statistics Finland).',
     },
     {
       q: '¿Hay vivienda para estudiantes en Kemijärvi?',
@@ -140,7 +140,7 @@ const copy: HousingPageCopy = {
     partner: 'hotels',
     kicker: 'Las primeras noches',
     h2: 'Visitas en persona.',
-    lead: 'El buscador de socios muestra habitaciones y apartamentos libres en Kemijärvi y en Pyhä a los precios de hoy.',
+    lead: 'El buscador de nuestro socio muestra habitaciones y apartamentos libres en Kemijärvi y en Pyhä a los precios de hoy.',
     chips: [
       { label: 'Kemijärvi', destination: 'Kemijärvi', sid: 'rentals_kemijarvi_first_weeks' },
       { label: 'Pyhä', destination: 'Pyhä', sid: 'rentals_pyha_first_weeks' },

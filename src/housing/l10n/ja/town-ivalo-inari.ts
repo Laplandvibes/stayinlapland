@@ -24,7 +24,7 @@ const copy: HousingPageCopy = {
     'Inarin Vuokra-asunnot Oyと民間の貸主はイナリ町の住まいのページ、人口はフィンランド統計局、m²あたりの家賃はフィンランド統計局（ラップランド地域 2026年第3四半期）から。2026年11月15日に確認しました。',
   intro: [
     'イナリ町の住民は7,244人です（フィンランド統計局、2025年12月31日）。町によると、ここに住みたいという関心が高まっており、そのため町は賃貸事業者の一覧をページにまとめました（inari.fi）。',
-    '自治体の会社Inarin Vuokra-asunnot Oyは、イヴァロ、イナリ、サーリセルカ、ネリム、セヴェットヤルヴィで、ワンルームからファミリー向けまで500戸超を貸しています。町の一覧にある民間の貸主は、Bilto Oy、Ivalon vuokra-asunnot、IvaloCenter、Rakennusliike Holmberg Oy、Uni Koditです（inari.fi）。',
+    '自治体の会社Inarin Vuokra-asunnot Oyは、イヴァロ、イナリ、サーリセルカ、ネッリム、セヴェッティヤルヴィで、ワンルームからファミリー向けまで500戸超を貸しています。町の一覧にある民間の貸主は、Bilto Oy、Ivalon vuokra-asunnot、IvaloCenter、Rakennusliike Holmberg Oy、Uni Koditです（inari.fi）。',
     'フィンランド統計局はイナリ単独の家賃の数字を公表していないため、以下ではラップランド地域の数字を示します。サーリセルカの季節労働者の住まいは、専用のページで扱っています。',
   ],
   sections: [
@@ -36,14 +36,14 @@ const copy: HousingPageCopy = {
       cards: [
         {
           title: 'Inarin Vuokra-asunnot Oy',
-          body: '自治体の住宅会社です。イヴァロ、イナリ、サーリセルカ、ネリム、セヴェットヤルヴィに500戸超があり、基本的なサービスに手が届く場所にあります。空き状況と申込みは、同社の公式サイトにあります。',
+          body: '自治体の住宅会社です。イヴァロ、イナリ、サーリセルカ、ネッリム、セヴェッティヤルヴィに500戸超があり、生活に必要なサービスの近くにあります。空き状況と申込みは、同社の公式サイトにあります。',
           href: 'https://inarinvuokra-asunnot.fi/',
           linkLabel: 'inarinvuokra-asunnot.fi',
           event: 'inari_company',
         },
         {
           title: 'イナリ町：民間の貸主',
-          body: '町の住まいのページには、Bilto Oy、Ivalon vuokra-asunnot、IvaloCenter、Rakennusliike Holmberg Oy、Uni Kodit が連絡先つきで載っているほか、FacebookのSodankylä–Inari–Utsjoki賃貸グループも紹介されています。詳しい情報はinari@inari.fiで尋ねられます。',
+          body: '町の住まいのページには、Bilto Oy、Ivalon vuokra-asunnot、IvaloCenter、Rakennusliike Holmberg Oy、Uni Koditが連絡先つきで載っているほか、Facebookの「ソダンキュラ・イナリ・ウツヨキ」賃貸グループも紹介されています。詳しくはinari@inari.fiへお問い合わせください。',
           href: 'https://www.inari.fi/fi/palvelut/asuminen.html',
           linkLabel: 'inari.fi：住まい',
           event: 'inari_city',
@@ -102,7 +102,7 @@ const copy: HousingPageCopy = {
       kicker: '契約',
       h2: '敷金とその返還。',
       bullets: [
-        '敷金は家賃三か月分が上限です（住宅賃貸借法 第8条）。',
+        '敷金は家賃三か月分が上限です（住宅賃貸借法第8条）。',
         '2026年10月1日からは、賃貸借の終了後14日以内に、敷金を返還するか、返還しない理由を書面で説明しなければなりません（Rakli）。',
       ],
     },
@@ -119,9 +119,9 @@ const copy: HousingPageCopy = {
   ],
   cta: {
     partner: 'hotels',
-    kicker: '最初の数日',
+    kicker: '最初の数泊',
     h2: '鍵を受け取る前に。',
-    lead: 'パートナーの検索では、イヴァロとサーリセルカの空室を本日の料金で確認できます。',
+    lead: '提携先の検索では、イヴァロとサーリセルカの空室を本日の料金で確認できます。',
     chips: [
       { label: 'イヴァロ', destination: 'Ivalo', sid: 'rentals_ivalo_first_weeks' },
       { label: 'サーリセルカ', destination: 'Saariselkä', sid: 'rentals_saariselka_first_weeks' },

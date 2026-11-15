@@ -23,9 +23,9 @@ const copy: HousingPageCopy = {
   authorNote:
     'Hyror per m² från Statistikcentralen (juli–september 2026), hyresvärdar från Rovaniemi stads egen bostadssida, siffror om bristen från Yle. Kontrollerat den 15 november 2026.',
   intro: [
-    'Rovaniemi har 66 191 invånare (Statistikcentralen, 31 dec 2025) och hård konkurrens om ettorna: studentbostadsstiftelsen DAS fick omkring 550 brådskande ansökningar sommaren 2026, 15 procent fler än ett år tidigare, nästan 90 procent av de sökande ville ha en etta, och stadens ettor hyrs ut kortvarigt till turister för vintersäsongen (Yle, 27 juli 2026). Enligt DAS verkställande direktör kan stiftelsen inte erbjuda bostad åt alla sökande i augusti och september.',
-    'Ett rekryteringsföretag som tog omkring 250 arbetare till Lappland inkvarterade dem på ett tiotal olika ställen i Rovaniemi (Yle, 9 mars 2026). Säsongsarbetare, studerande och turister är alla ute efter samma små lägenheter.',
-    'Det goda är priset: Rovaniemis genomsnittliga hyra på 14,63 € per m² ligger under riksgenomsnittet på 15,99 € (Statistikcentralen 2026Q3). Nedan finns siffrorna efter bostadsstorlek och kanalerna du kan ansöka genom.',
+    'Rovaniemi har 66 191 invånare (Statistikcentralen, 31 dec 2025) och hård konkurrens om ettorna: studentbostadsstiftelsen DAS fick omkring 550 brådskande ansökningar sommaren 2026, 15 procent fler än ett år tidigare, nästan 90 procent av de sökande ville ha en etta, och stadens ettor hyrs ut kortvarigt till turister för vintersäsongen (Yle, 27 juli 2026). Enligt DAS:s verkställande direktör kan stiftelsen inte erbjuda bostad åt alla sökande i augusti och september.',
+    'Ett rekryteringsföretag som hämtade omkring 250 arbetare till Lappland inkvarterade dem på ett tiotal olika ställen i Rovaniemi (Yle, 9 mars 2026). Säsongsarbetare, studerande och turister är alla ute efter samma små lägenheter.',
+    'Den goda nyheten är priset: Rovaniemis genomsnittliga hyra på 14,63 € per m² ligger under riksgenomsnittet på 15,99 € (Statistikcentralen 2026Q3). Nedan finns siffrorna efter bostadsstorlek och kanalerna du kan ansöka genom.',
   ],
   sections: [
     {
@@ -64,7 +64,7 @@ const copy: HousingPageCopy = {
           ['4 personer', '981'],
           ['Varje ytterligare person', '+134'],
         ],
-        foot: 'Kela, allmänt bostadsbidrag 2026. Ett bidrag under 15 € betalas inte ut. Inkomsterna minskar bidraget genom grundomkostnaden.',
+        foot: 'Kela, allmänt bostadsbidrag 2026. Ett bidrag under 15 € betalas inte ut. Inkomsterna minskar bidraget genom grundsjälvrisken.',
       },
     },
     {
@@ -111,7 +111,7 @@ const copy: HousingPageCopy = {
         },
         {
           title: 'NAL Rovaniemi: under 30 år',
-          body: 'Nuorisoasuntoliittos lokalförening i Rovaniemi (Finlands ungdomsbostadsförbund) erbjuder ungdomsbostäder för personer under 30 år (stadens lista). Ett alternativ när DAS inte är möjligt och du inte studerar.',
+          body: 'Rovaniemiföreningen inom Finlands ungdomsbostadsförbund (Nuorisoasuntoliitto) erbjuder ungdomsbostäder för personer under 30 år (stadens lista). Ett alternativ när DAS inte är möjligt och du inte studerar.',
           href: 'https://www.rovaniemi.fi/Asuminen-ja-ymparisto/Asuminen',
           linkLabel: 'rovaniemi.fi: ungdomsbostäder',
           event: 'nal',
@@ -121,11 +121,11 @@ const copy: HousingPageCopy = {
     {
       id: 'when',
       kicker: 'När du ska söka',
-      h2: 'Två rusningar om året.',
+      h2: 'Två rusningsperioder om året.',
       bullets: [
-        '<strong>Augusti–september</strong> är trängst: DAS kan inte ge bostad åt alla sökande, och fritt finansierade ettor är ont om (Yle, 27 juli 2026).',
+        '<strong>Augusti–september</strong> är den trångaste perioden: DAS kan inte ge bostad åt alla sökande, och det är ont om fritt finansierade ettor (Yle, 27 juli 2026).',
         '<strong>November–december:</strong> vissa ettor hyrs ut kortvarigt till turister för vintersäsongen. Tidsbundna avtal tar ofta slut i slutet av oktober (Yle, 27 juli 2026).',
-        '<strong>På våren</strong> kommer ettor som hyrts ut för vintersäsongen tillbaka.',
+        '<strong>På våren</strong> kommer ettor som hyrts ut för vintersäsongen tillbaka ut på marknaden.',
         '<strong>Depositionen</strong> är högst tre månadshyror (lagen om hyra av bostadslägenhet, 8 §), och från och med 1 oktober 2026 ska den betalas tillbaka inom 14 dagar efter att hyresförhållandet upphört (Rakli).',
       ],
     },
@@ -133,11 +133,11 @@ const copy: HousingPageCopy = {
   faqs: [
     {
       q: 'Hur mycket kostar en etta i Rovaniemi?',
-      a: 'Enligt Statistikcentralen 18,63 € per m² för alla hyresavtal och 20,14 € per m² för nya (2026Q3). En etta på 30 m² kostar därmed cirka 560–600 € i månaden före el.',
+      a: 'Enligt Statistikcentralen 18,63 € per m² för alla hyresavtal och 20,14 € per m² för nya (2026Q3). En etta på 30 m² kostar därmed cirka 560–600 € i månaden exklusive el.',
     },
     {
       q: 'Är det svårt att hitta en hyresbostad i Rovaniemi?',
-      a: 'Ettor är svåra att få i augusti–september: DAS kan inte ge bostad åt alla sökande (Yle, 27 juli 2026), och fritt finansierade ettor är ont om. Tvåor och treor är lättare.',
+      a: 'Ettor är svåra att få i augusti–september: DAS kan inte ge bostad åt alla sökande (Yle, 27 juli 2026), och det är ont om fritt finansierade ettor. Tvåor och treor är lättare.',
     },
     {
       q: 'Kan jag ansöka utan att besöka Rovaniemi?',

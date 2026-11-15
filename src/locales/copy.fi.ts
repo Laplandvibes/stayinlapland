@@ -153,7 +153,7 @@ export const copyFI: SectionCopy = {
     stats: { stays: 'Valittua kohdetta', bases: 'Lapin tukikohtaa', categories: 'Tapaa majoittua', months: 'Arvioitua kuukautta' },
     intro: {
       p1: 'Lapissa asuu 176 215 ihmistä (Tilastokeskus 31.12.2025), ja yli kolmannes heistä Rovaniemellä. Loput jakautuvat rannikolle, jokivarsiin ja tunturikyliin, joissa kausi määrää vuokramarkkinan.',
-      p2: 'Vapaarahoitteisen yksiön keskineliövuokra Rovaniemellä oli 18,63 €/m² heinä–syyskuussa 2026 (Tilastokeskus), eli 30 m²:n yksiö maksaa noin 560 €/kk. Kemissä ja Inarissa vuokra-asuntoja tarjoaa kunnan oma vuokrayhtiö: Kemissä Itätuuli ja Inarissa Inarin Vuokra-asunnot, jolla on yli 500 asuntoa.',
+      p2: 'Vapaarahoitteisen yksiön keskineliövuokra Rovaniemellä oli 18,63 €/m² heinä–syyskuussa 2026 (Tilastokeskus), eli 30 m²:n yksiö maksaa noin 560 €/kk. Kemissä ja Inarissa vuokra-asuntoja tarjoaa kunnan oma vuokrayhtiö: Kemissä Itätuuli ja Inarissa Inarin Vuokra-asunnot Oy, jolla on yli 500 asuntoa.',
       p3: 'Kausityössä asunto tulee usein työnantajalta ja vuokra vähennetään palkasta. Kysy asumisesta kirjallisesti jo työtarjouksen yhteydessä.',
     },
     authorNote:

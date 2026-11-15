@@ -25,7 +25,7 @@ const copy: HousingPageCopy = {
       'Wo Sie eine Mietwohnung finden, was sie kostet und wie viel Kela übernimmt. Ort für Ort.',
   },
   authorNote:
-    'Mieten pro m²: Mietstatistik von Statistik Finnland, frei finanzierte Mietwohnungen, Juli–September 2026. Kommunale Wohnungsgesellschaften geprüft auf den eigenen Seiten der Gemeinden und Gesellschaften am 15. November 2026.',
+    'Mieten pro m²: Mietstatistik von Statistik Finnland, frei finanzierte Mietwohnungen, Juli–September 2026. Angaben zu den kommunalen Wohnungsgesellschaften am 15. November 2026 auf den eigenen Seiten der Gemeinden und Gesellschaften geprüft.',
   intro: [
     'In Lappland kommt eine Mietwohnung aus einer von drei Quellen: von der kommunalen Wohnungsgesellschaft, von den landesweiten Portalen oder aus lokalen Gruppen. Beginnen Sie bei der Gemeinde. Deren Gesellschaften besitzen Hunderte Wohnungen, etwa gut 300 in Keminmaa, rund 720 in Sodankylä, 560 in Kemijärvi und über 500 in Inari, und Sie können sich auch bewerben, wenn gerade nichts frei ist.',
     'Der Preis hängt davon ab, wohin Sie ziehen. In Rovaniemi kostet ein Studio von 30 m² im Durchschnitt etwa 560 € im Monat, im übrigen Lappland weniger. In den Fjäll-Dörfern folgt die Miete der Saison. Fragen Sie für den Winter deshalb zuerst Ihren Arbeitgeber nach einer Personalunterkunft.',
@@ -42,7 +42,7 @@ const copy: HousingPageCopy = {
           title: 'Rovaniemi',
           image: { src: '/images/housing-rovaniemi-card-talvikatu.webp', alt: 'Wohnblöcke und Fußgänger auf einer verschneiten Straße in Rovaniemi im Januar' },
           body:
-            'Die Seite der Stadt verweist auf die Vermieter KAS asunnot, M2-Kodit, Tarveasunnot, Avara und Lumo sowie auf die Suchdienste Oikotie, Vuokraovi und Qasa. Studierende bewerben sich bei der Stiftung Domus Arctica DAS (etwa 1.700 Wohnungen, davon 700 Studios), unter 30-Jährige bei NAL Rovaniemi. Eine DAS-Bewerbung gilt drei Monate, und neue Studierende haben im August und September Vorrang.',
+            'Die Seite der Stadt verweist auf die Vermieter KAS asunnot, M2-Kodit, Tarveasunnot, Avara und Lumo sowie auf die Suchdienste Oikotie, Vuokraovi und Qasa. Studierende bewerben sich bei der Stiftung Domus Arctica DAS (etwa 1.700 Wohnungen, davon 700 Studios), Unter-30-Jährige bei NAL Rovaniemi. Eine DAS-Bewerbung gilt drei Monate, und neue Studierende haben im August und September Vorrang.',
           href: '/rentals/rovaniemi',
           linkLabel: 'Mietwohnungen in Rovaniemi',
         },
@@ -125,7 +125,7 @@ const copy: HousingPageCopy = {
       note: {
         label: 'Was die Statistik nicht erfasst',
         body:
-          'Saisonvermietungen in den Skiresorts und möblierte Kurzzeitmieten sind in diesen Zahlen nicht enthalten. Nahe dem Zentrum von Levi kostete eine Wohnung von 80 m² in einem Alpenhaus von Mai bis November 750 € im Monat, in der Hochsaison 2.000 € pro Woche und ganzjährig 1.650 € im Monat (Yle, 25. Mai 2023): dieselbe Wohnung zu drei Preisen.',
+          'Saisonvermietungen in den Skigebieten und möblierte Kurzzeitmieten sind in diesen Zahlen nicht enthalten. Nahe dem Zentrum von Levi kostete eine Wohnung von 80 m² in einem Haus im Alpenstil von Mai bis November 750 € im Monat, in der Hochsaison 2.000 € pro Woche und ganzjährig 1.650 € im Monat (Yle, 25. Mai 2023): dieselbe Wohnung zu drei Preisen.',
       },
     },
     {
@@ -188,7 +188,7 @@ const copy: HousingPageCopy = {
     },
     {
       q: 'Warum ist die Miete in Levi im Winter um ein Vielfaches höher?',
-      a: 'Weil in der Hochsaison dieselbe Wohnung wochenweise vermietet wird. In Yles Beispiel (25. Mai 2023) kostete eine Wohnung von 80 m² in einem Alpenhaus im Sommer 750 € im Monat und im Winter 2.000 € pro Woche. Eine Monatsmiete ist von Mai bis November möglich. Fragen Sie für den Winter Ihren Arbeitgeber nach einer Personalunterkunft oder bei der kommunalen Gesellschaft in Kittilä.',
+      a: 'Weil in der Hochsaison dieselbe Wohnung wochenweise vermietet wird. In Yles Beispiel (25. Mai 2023) kostete eine Wohnung von 80 m² in einem Haus im Alpenstil im Sommer 750 € im Monat und im Winter 2.000 € pro Woche. Eine Monatsmiete ist von Mai bis November möglich. Fragen Sie für den Winter Ihren Arbeitgeber nach einer Personalunterkunft oder bei der kommunalen Gesellschaft in Kittilä.',
     },
   ],
   cta: {

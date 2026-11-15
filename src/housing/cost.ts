@@ -126,7 +126,7 @@ export const COST: HousingCopyMap = {
     faqs: [
       {
         q: 'Onko Rovaniemi kallis kaupunki asua?',
-        a: 'Vuokrilla mitattuna ei: keskineliövuokra 14,63 €/m² on alle koko maan keskiarvon 15,99 (Tilastokeskus 2026Q3), ja Rovaniemi on koko maata halvempi kaikissa asuntokooissa, myös yksiöissä (18,63 vastaan 20,49). Uusissa vuokrasuhteissa Rovaniemen yksiö maksaa 20,14 €/m²: juuri vapautuva yksiö on noin 8 % kalliimpi kuin jo vuokralla oleva, mutta yhä halvempi kuin koko maan uusien vuokrasuhteiden yksiö, 21,11 €/m².',
+        a: 'Vuokrilla mitattuna ei: keskineliövuokra 14,63 €/m² on alle koko maan keskiarvon 15,99 (Tilastokeskus 2026Q3). Rovaniemi on koko maata halvempi kaikissa asuntokooissa, myös yksiöissä (18,63 vastaan 20,49). Uusissa vuokrasuhteissa Rovaniemen yksiö maksaa 20,14 €/m²: juuri vapautuva yksiö on noin 8 % kalliimpi kuin jo vuokralla oleva, mutta yhä halvempi kuin koko maan uusien vuokrasuhteiden yksiö (21,11 €/m²).',
       },
       {
         q: 'Paljonko yksin asuva tarvitsee kuukaudessa Rovaniemellä?',
@@ -174,7 +174,7 @@ export const COST: HousingCopyMap = {
         },
         paras: [
           '<strong>Examples:</strong> a 30 m² studio in Rovaniemi about €560 a month (18.63 × 30); a 50 m² two-room flat in Rovaniemi about €720 (14.40 × 50); a 75 m² three-room flat at the Lapland regional average about €830 (11.08 × 75).',
-          'The exception is winter in the ski resorts: near the centre of Levi an 80 m² alpine-house flat cost €750 a month from May to November but €2,000 a week in high season (Yle, 25 May 2023). A year-round lease on the same flat was €1,650 a month. The resort price is not the Lapland price.',
+          'The exception is winter in the ski resorts: near the centre of Levi an 80 m² alpine-style flat cost €750 a month from May to November but €2,000 a week in high season (Yle, 25 May 2023). A year-round lease on the same flat was €1,650 a month. The resort price is not the Lapland price.',
         ],
       },
       {
@@ -259,7 +259,7 @@ export const COST: HousingCopyMap = {
     faqs: [
       {
         q: 'Is Rovaniemi an expensive city to live in?',
-        a: 'Not by rents: the average €14.63 per m² is below the national €15.99 (Statistics Finland 2026Q3), and Rovaniemi is cheaper than the country as a whole in every flat size, studios included (18.63 against 20.49). In new tenancies a Rovaniemi studio costs €20.14 per m²: a studio coming free now costs about 8 % more than one already let, but still less than a new-tenancy studio nationally, €21.11 per m².',
+        a: 'Not by rents: the average €14.63 per m² is below the national €15.99 (Statistics Finland 2026Q3). Rovaniemi is cheaper than the country as a whole in every flat size, studios included (18.63 against 20.49). In new tenancies a Rovaniemi studio costs €20.14 per m²: a studio coming free now costs about 8 % more than one already let, but still less than a new-tenancy studio nationally (€21.11 per m²).',
       },
       {
         q: 'How much does a single person need per month in Rovaniemi?',

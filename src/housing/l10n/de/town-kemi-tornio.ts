@@ -15,17 +15,17 @@ const copy: HousingPageCopy = {
     'Mieten in Kemi, Tornio und Keminmaa an Lapplands Küste: kommunale Gesellschaften wie Itätuuli und Tornion Krunni, private Agenturen und Wohngeld von Kela.',
   breadcrumb: 'Kemi und Tornio',
   hero: {
-    eyebrow: 'Die Küste von Meri-Lappi (Meereslappland)',
+    eyebrow: 'Die Küste Seelapplands',
     title: 'Mietwohnungen in Kemi, Tornio und Keminmaa.',
     subtitle:
-      'Die Zwillingsstädte an der Küste, in denen die kommunalen Wohnungsgesellschaften Hunderte Wohnungen halten und Bewerbungen online eingereicht werden. Wo Sie anfangen und was Miete kostet.',
+      'Die Zwillingsstädte an der Küste, in denen die kommunalen Wohnungsgesellschaften Hunderte Wohnungen besitzen und Bewerbungen online eingereicht werden. Wo Sie am besten anfangen und was Miete kostet.',
   },
   authorNote:
     'Wohnungszahlen der Wohnungsgesellschaften von den eigenen Seiten der Gemeinden Kemi, Tornio und Keminmaa, Bewerbungsbedingungen von den eigenen Seiten der Gesellschaften, Mieten pro m² von Statistik Finnland (Region Lappland 2026Q3). Geprüft am 15. November 2026.',
   intro: [
     'Kemi hat 19.339 Einwohner, Tornio 20.823 und Keminmaa 7.576 (Statistik Finnland, 31. Dezember 2025). Die drei Gemeinden grenzen aneinander, die Wohnung kann also in einer anderen Gemeinde liegen als der Arbeitsplatz.',
-    'Die kommunalen Wohnungsgesellschaften sind die erste Adresse: Die kommunalen Wohnungen in Kemi betreibt Kiinteistö Oy Itätuuli (kemi.fi), der größte Anbieter von Mietwohnungen der Stadt, mit Wohnungen im Umkreis von fünf Kilometern um das Zentrum (itatuuli.fi). Keminmaan Vuokra-asunnot Oy hat 18 Objekte mit gut 300 Wohnungen (keminmaa.fi). Jede Gesellschaft hat ihre eigene Online-Bewerbung. In Tornio verwaltet Tornion Krunni Oy die städtischen Wohnungen, zu der auch Tornion Vuokra-asunnot Oy gehört (tornio.fi).',
-    'In der aktuellen Mietentabelle von Statistik Finnland gibt es keine eigene Zeile für Kemi oder Tornio, deshalb steht unten der Wert für die Region Lappland. Die Zahlen für Rovaniemi stehen auf der eigenen Seite.',
+    'Die kommunalen Wohnungsgesellschaften sind die erste Adresse: Die kommunalen Wohnungen in Kemi betreibt Kiinteistö Oy Itätuuli (kemi.fi), der größte Anbieter von Mietwohnungen der Stadt, mit Wohnungen im Umkreis von fünf Kilometern um das Zentrum (itatuuli.fi). Keminmaan Vuokra-asunnot Oy hat 18 Objekte mit gut 300 Wohnungen (keminmaa.fi). Jede Gesellschaft hat ihre eigene Online-Bewerbung. In Tornio verwaltet Tornion Krunni Oy, zu der auch Tornion Vuokra-asunnot Oy gehört, die städtischen Wohnungen (tornio.fi).',
+    'In der aktuellen Mietentabelle von Statistik Finnland gibt es keine eigene Zeile für Kemi oder Tornio, deshalb steht unten der Wert für die Region Lappland. Die Zahlen für Rovaniemi stehen auf einer eigenen Seite.',
   ],
   sections: [
     {
@@ -78,14 +78,14 @@ const copy: HousingPageCopy = {
           event: 'kemi_city',
         },
         {
-          title: 'Keminmaa: Keminmaan Vuokra-asunnot Oy',
+          title: 'Keminmaan Vuokra-asunnot Oy',
           body: 'Die Wohnungsgesellschaft im Besitz der Gemeinde: 18 Objekte mit gut 300 Wohnungen, Wasser und Heizung sind in der Miete enthalten. Die eigene Online-Bewerbung ist drei Monate gültig, und die Kaution beträgt eine Monatsmiete.',
           href: 'https://www.keminmaanvuokra-asunnot.fi/asunnonhaku.html',
           linkLabel: 'Keminmaan Vuokra-asunnot: So bewerben Sie sich',
           event: 'keminmaa',
         },
         {
-          title: 'Tornio: Wohnungsgesellschaft Tornion Krunni Oy',
+          title: 'Tornio: Tornion Krunni Oy',
           body: 'Verwaltet Tornion Vuokra-asunnot Oy, Tornion Oppilasasuntola Oy und Tornion Palveluasunnot Oy. Die Liegenschaftseinheit der Stadt betreut außerdem Wohnungen, die der Stadt direkt gehören. Wohnungsanfragen telefonisch, und die Seite der Stadt verweist auch auf private Vermieter und Agenturen.',
           href: 'https://www.tornio.fi/asuminen-ja-ymparisto/asuminen/vuokra-asunnot/',
           linkLabel: 'tornio.fi: Mietwohnungen',
@@ -93,7 +93,7 @@ const copy: HousingPageCopy = {
         },
         {
           title: 'Oikotie und Vuokraovi',
-          body: 'Private und Agentur-Inserate. Suchen Sie Kemi, Tornio und Keminmaa als getrennte Gemeinden: Es sind drei getrennte kommunale Suchen.',
+          body: 'Private und Agentur-Inserate. Suchen Sie Kemi, Tornio und Keminmaa einzeln: In den Portalen ist jede Gemeinde eine eigene Suche.',
           href: 'https://asunnot.oikotie.fi/vuokra-asunnot/kemi',
           linkLabel: 'Oikotie: Mietwohnungen in Kemi',
           event: 'oikotie',
@@ -117,7 +117,7 @@ const copy: HousingPageCopy = {
     },
     {
       q: 'Was kostet die Miete in Kemi und Tornio?',
-      a: 'Die aktuelle Tabelle von Statistik Finnland hat keine eigene Zeile für die Städte. Der Durchschnitt der Region Lappland lag im Juli–September 2026 bei 13,14 € pro m² (Studios 17,25, Zweizimmerwohnungen 12,87), und dieser Wert schließt das teurere Rovaniemi ein.',
+      a: 'Die aktuelle Tabelle von Statistik Finnland hat keine eigene Zeile für die Städte. Der Durchschnitt der Region Lappland lag von Juli bis September 2026 bei 13,14 € pro m² (Studios 17,25, Zweizimmerwohnungen 12,87), und dieser Wert schließt das teurere Rovaniemi ein.',
     },
   ],
   cta: {

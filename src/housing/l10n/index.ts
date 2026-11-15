@@ -25,7 +25,7 @@ function load<T>(lang: L10nLang, file: string): Promise<T | null> {
     p = loader
       ? loader().then((m) => m.default)
       : Promise.resolve(null).then(() => {
-          // Puuttuva käännös ei saa kaataa sivua: kutsuja näyttää englannin. scripts/assert-housing-l10n.mjs
+          // Puuttuva käännös ei saa kaataa sivua: kutsuja näyttää englannin. scripts/generate-prerender-meta.mjs
           // kaataa buildin, jos tiedosto puuttuu, joten tähän ei pitäisi koskaan päätyä tuotannossa.
           console.error(`[housing-l10n] missing ${key}`);
           return null;

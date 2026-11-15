@@ -56,9 +56,9 @@ const copy: HousingPageCopy = {
       h2: 'Um contrato por prazo determinado não pode ser encerrado antes.',
       bullets: [
         '<strong>Um contrato por prazo determinado vale até a data escrita nele.</strong> O locatário não pode dar aviso prévio no meio do prazo. Ele só pode terminar antes por acordo com o locador ou nas situações específicas previstas na lei (União Finlandesa de Consumidores, lei de locação).',
-        '<strong>Se você não sabe por quanto tempo vai ficar,</strong> peça um contrato por prazo indeterminado. O locatário pode dar aviso prévio nele, e o prazo de aviso prévio do locatário não muda na reforma de 1º de outubro de 2026 (Rakli).',
+        '<strong>Se você não sabe por quanto tempo vai ficar,</strong> peça um contrato por prazo indeterminado. O locatário pode rescindi-lo com aviso prévio, e o prazo de aviso prévio do locatário não muda na reforma de 1º de outubro de 2026 (Rakli).',
         '<strong>Contratos curtos em sequência:</strong> se o mesmo locatário recebe mais de duas vezes seguidas um contrato por prazo determinado de três meses ou menos, o contrato passa a valer como por prazo indeterminado, seja qual for a data final que ele traga.',
-        '<strong>A lei de locação não cobre tudo.</strong> Ela se aplica a um apartamento alugado para morar, mas não à atividade de empresas de hospedagem (Lei de Locação Residencial, seções 1 e 2). Antes de assinar, pergunte se você está recebendo um contrato de locação residencial ou um contrato de hospedagem.',
+        '<strong>A lei de locação não cobre tudo.</strong> Ela se aplica a um apartamento alugado para morar, mas não à atividade de empresas de hospedagem (Lei de Locação Residencial, artigos 1 e 2). Antes de assinar, pergunte se você está recebendo um contrato de locação residencial ou um contrato de hospedagem.',
         '<strong>A caução</strong> é de no máximo três meses de aluguel. A partir de 1º de outubro de 2026, ela deve ser devolvida, ou a sua retenção comunicada, em até 14 dias após o fim da locação.',
       ],
     },
@@ -68,7 +68,7 @@ const copy: HousingPageCopy = {
       h2: 'Três meses ou mais: comunique o seu endereço.',
       paras: [
         'Segundo a Agência de Serviços de Dados Digitais e Populacionais, você comunica uma mudança sempre que o seu endereço de residência muda e a estadia dura pelo menos três meses. Se você voltar ao mesmo endereço permanente em até um ano, a mudança é temporária e o seu endereço permanente continua em vigor.',
-        'A comunicação é feita no mínimo um mês antes do dia da mudança e no máximo uma semana depois dela. Para uma mudança definitiva, o restante, como pneus de inverno, contrato de eletricidade e posto de saúde, está na <a href="/moving-to-lapland/">lista de tarefas da mudança</a>.',
+        'A comunicação pode ser feita a partir de um mês antes do dia da mudança e, no máximo, até uma semana depois dela. Para uma mudança definitiva, o restante, como pneus de inverno, contrato de eletricidade e posto de saúde, está na <a href="/moving-to-lapland/">lista de tarefas da mudança</a>.',
       ],
     },
   ],

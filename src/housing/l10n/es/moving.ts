@@ -27,7 +27,7 @@ const copy: HousingPageCopy = {
     'Plazos de DVV, Traficom y la Asociación de Municipios de Finlandia, duración de la noche polar del Instituto Meteorológico Finlandés, distancias de las rutas en coche de LaplandVibes. Comprobado el 15 de noviembre de 2026.',
   intro: [
     'Los trámites de mudarse a Laponia son los mismos que en cualquier parte de Finlandia, pero tres cosas pesan aquí más que en el sur: el invierno dura medio año, las distancias se miden en cientos de kilómetros y, en los municipios pequeños, los servicios están concentrados en un solo lugar. Esta página es una lista de comprobación en el orden en que hay que hacer las cosas.',
-    'Si se muda a Finlandia desde el extranjero, los permisos de residencia, el número de identificación personal, la tarjeta fiscal y la cuenta bancaria se explican en nuestro sitio hermano <a href="https://laplandwork.com/moving-to-finland" target="_blank" rel="noopener">laplandwork.com</a>. Esta página empieza cuando ya tiene las llaves en la mano.',
+    'Si se muda a Finlandia desde el extranjero, los permisos de residencia, el número de identificación personal, la tarjeta fiscal y la cuenta bancaria se explican en nuestro sitio hermano <a href="https://laplandwork.com/es/moving-to-finland/" target="_blank" rel="noopener">laplandwork.com</a>. Esta página empieza cuando ya tiene las llaves en la mano.',
   ],
   sections: [
     {

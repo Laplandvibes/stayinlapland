@@ -27,7 +27,7 @@ const copy: HousingPageCopy = {
     '期限はDVV、Traficom、フィンランド自治体協会から、極夜の長さはフィンランド気象研究所から、距離はLaplandVibesのドライブルートから。2026年11月15日に確認しました。',
   intro: [
     'ラップランドへ引っ越すときの手続きは、フィンランドのどこへ行く場合とも同じです。ただし、南部より重くのしかかることが三つあります。冬が一年の半分を占めること、距離が何百キロメートルという単位で測られること、そして小さな自治体ではサービスが一か所に集まっていることです。このページは、やるべき順番に並べたチェックリストです。',
-    '海外からフィンランドへ移る場合、在留許可、個人識別番号、税カード、銀行口座については、姉妹サイト<a href="https://laplandwork.com/moving-to-finland" target="_blank" rel="noopener">laplandwork.com</a>で扱っています。このページは、鍵を受け取ったところから始まります。',
+    '海外からフィンランドへ移る場合、在留許可、個人識別番号、税カード、銀行口座については、姉妹サイト<a href="https://laplandwork.com/ja/moving-to-finland/" target="_blank" rel="noopener">laplandwork.com</a>で扱っています。このページは、鍵を受け取ったところから始まります。',
   ],
   sections: [
     {

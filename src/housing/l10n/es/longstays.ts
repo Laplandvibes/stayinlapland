@@ -24,7 +24,7 @@ const copy: HousingPageCopy = {
     'Legislación de Finlex (Ley de arrendamientos de vivienda 481/1995, modificación 531/2026), notificación de domicilio de la Agencia de Servicios de Datos Digitales y de Población, datos de las cabañas del catálogo de productos de Lomarengas. Comprobado el 15 de noviembre de 2026.',
   intro: [
     'Un mes de teletrabajo en Levi, un invierno en Rovaniemi o una temporada en una estación de esquí: una estancia larga en Laponia suele reducirse a una de tres opciones. Se diferencian en el precio, pero más aún en el tipo de contrato que acaba firmando y en lo que la ley protege entonces.',
-    'Si viene de vacaciones y no a vivir, los hoteles y las cabañas están en nuestro sitio hermano <a href="https://laplandstays.com/" target="_blank" rel="noopener">laplandstays.com</a> y las villas en <a href="https://laplandluxuryvillas.com/" target="_blank" rel="noopener">laplandluxuryvillas.com</a>.',
+    'Si viene de vacaciones y no a vivir, los hoteles y las cabañas están en nuestro sitio hermano <a href="https://laplandstays.com/es/" target="_blank" rel="noopener">laplandstays.com</a> y las villas en <a href="https://laplandluxuryvillas.com/es/" target="_blank" rel="noopener">laplandluxuryvillas.com</a>.',
   ],
   sections: [
     {

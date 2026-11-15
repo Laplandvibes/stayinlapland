@@ -24,7 +24,7 @@ const copy: HousingPageCopy = {
     '法令はFinlex（住宅賃貸借法481/1995、改正531/2026）、住所の届出はデジタル・人口データ庁、コテージの詳細はLomarengasの商品フィードから。2026年11月15日に確認しました。',
   intro: [
     'レヴィでのリモートワークの一か月、ロヴァニエミでの一冬、スキーリゾートでの一シーズン。ラップランドでの長めの滞在は、たいてい三つの選択肢のどれかになります。価格も違いますが、それ以上に違うのは、どんな契約になり、法律がそのとき何を守ってくれるかです。',
-    '暮らすためではなく休暇で来られる場合、ホテルとコテージは姉妹サイト<a href="https://laplandstays.com/" target="_blank" rel="noopener">laplandstays.com</a>に、ヴィラは<a href="https://laplandluxuryvillas.com/" target="_blank" rel="noopener">laplandluxuryvillas.com</a>に掲載しています。',
+    '暮らすためではなく休暇で来られる場合、ホテルとコテージは姉妹サイト<a href="https://laplandstays.com/ja/" target="_blank" rel="noopener">laplandstays.com</a>に、ヴィラは<a href="https://laplandluxuryvillas.com/ja/" target="_blank" rel="noopener">laplandluxuryvillas.com</a>に掲載しています。',
   ],
   sections: [
     {

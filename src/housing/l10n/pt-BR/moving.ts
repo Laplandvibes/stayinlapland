@@ -27,7 +27,7 @@ const copy: HousingPageCopy = {
     'Prazos da DVV, da Traficom e da Associação de Municípios da Finlândia, duração da noite polar segundo o Instituto Meteorológico da Finlândia, distâncias das rotas de carro do LaplandVibes. Verificado em 15 de novembro de 2026.',
   intro: [
     'A papelada de quem se muda para a Lapônia é a mesma de qualquer lugar da Finlândia, mas três coisas pesam mais aqui do que no sul: o inverno dura metade do ano, as distâncias se medem em centenas de quilômetros e, nos municípios pequenos, os serviços ficam todos num lugar só. Esta página é uma lista de tarefas na ordem em que precisam ser feitas.',
-    'Se você está se mudando para a Finlândia vindo do exterior, as autorizações de residência, o código de identificação pessoal, o cartão fiscal e a conta bancária estão no nosso site irmão <a href="https://laplandwork.com/moving-to-finland" target="_blank" rel="noopener">laplandwork.com</a>. Esta página começa quando você já tem as chaves na mão.',
+    'Se você está se mudando para a Finlândia vindo do exterior, as autorizações de residência, o código de identificação pessoal, o cartão fiscal e a conta bancária estão no nosso site irmão <a href="https://laplandwork.com/br/moving-to-finland/" target="_blank" rel="noopener">laplandwork.com</a>. Esta página começa quando você já tem as chaves na mão.',
   ],
   sections: [
     {

@@ -27,7 +27,7 @@ const copy: HousingPageCopy = {
     'Scadenze di DVV, Traficom e dell’Associazione dei comuni finlandesi, durata della notte polare dell’Istituto meteorologico finlandese, distanze dai percorsi in auto di LaplandVibes. Verificato il 15 novembre 2026.',
   intro: [
     'Le pratiche per trasferirsi in Lapponia sono le stesse di qualsiasi altro posto in Finlandia, ma tre cose pesano più qui che al sud: l’inverno dura metà dell’anno, le distanze si misurano in centinaia di chilometri e nei piccoli comuni i servizi sono concentrati in un solo posto. Questa pagina è una lista di controllo nell’ordine in cui le cose vanno fatte.',
-    'Se si trasferisce in Finlandia dall’estero, permessi di soggiorno, codice personale di identità, tessera fiscale e conto bancario sono trattati sul nostro sito gemello <a href="https://laplandwork.com/moving-to-finland" target="_blank" rel="noopener">laplandwork.com</a>. Questa pagina comincia quando ha le chiavi in mano.',
+    'Se si trasferisce in Finlandia dall’estero, permessi di soggiorno, codice personale di identità, tessera fiscale e conto bancario sono trattati sul nostro sito gemello <a href="https://laplandwork.com/it/moving-to-finland/" target="_blank" rel="noopener">laplandwork.com</a>. Questa pagina comincia quando ha le chiavi in mano.',
   ],
   sections: [
     {

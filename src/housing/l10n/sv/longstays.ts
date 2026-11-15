@@ -24,7 +24,7 @@ const copy: HousingPageCopy = {
     'Lagstiftning från Finlex (lagen om hyra av bostadslägenhet 481/1995, ändring 531/2026), adressanmälan från Digitaliserings- och befolkningsdatabyrån, stugornas uppgifter från Lomarengas produktflöde. Kontrollerat den 15 november 2026.',
   intro: [
     'En månads distansarbete i Levi, en vinter i Rovaniemi eller en säsong i en skidort: en längre vistelse i Lappland handlar oftast om ett av tre alternativ. De skiljer sig i pris, men ännu mer i vilket slags avtal du får och vad lagen då skyddar.',
-    'Om du kommer på semester och inte för att bo finns hotell och stugor på vår systersajt <a href="https://laplandstays.com/" target="_blank" rel="noopener">laplandstays.com</a> och villor på <a href="https://laplandluxuryvillas.com/" target="_blank" rel="noopener">laplandluxuryvillas.com</a>.',
+    'Om du kommer på semester och inte för att bo finns hotell och stugor på vår systersajt <a href="https://laplandstays.com/sv/" target="_blank" rel="noopener">laplandstays.com</a> och villor på <a href="https://laplandluxuryvillas.com/sv/" target="_blank" rel="noopener">laplandluxuryvillas.com</a>.',
   ],
   sections: [
     {

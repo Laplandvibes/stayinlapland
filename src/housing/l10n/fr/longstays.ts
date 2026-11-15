@@ -24,7 +24,7 @@ const copy: HousingPageCopy = {
     'Législation tirée de Finlex (loi sur les baux d’habitation 481/1995, modification 531/2026), déclaration d’adresse tirée de l’Agence des services numériques et des données de population, détails des chalets tirés du flux de produits de Lomarengas. Vérifié le 15 novembre 2026.',
   intro: [
     'Un mois de télétravail à Levi, un hiver à Rovaniemi ou une saison dans une station de ski : un séjour plus long en Laponie se résume en général à l’une de trois options. Elles diffèrent par le prix, mais plus encore par le type de contrat auquel vous aboutissez et par ce que la loi protège alors.',
-    'Si vous venez en vacances plutôt que pour vivre ici, les hôtels et les chalets sont sur notre site jumeau <a href="https://laplandstays.com/" target="_blank" rel="noopener">laplandstays.com</a> et les villas sur <a href="https://laplandluxuryvillas.com/" target="_blank" rel="noopener">laplandluxuryvillas.com</a>.',
+    'Si vous venez en vacances plutôt que pour vivre ici, les hôtels et les chalets sont sur notre site jumeau <a href="https://laplandstays.com/fr/" target="_blank" rel="noopener">laplandstays.com</a> et les villas sur <a href="https://laplandluxuryvillas.com/fr/" target="_blank" rel="noopener">laplandluxuryvillas.com</a>.',
   ],
   sections: [
     {

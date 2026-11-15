@@ -27,7 +27,7 @@ const copy: HousingPageCopy = {
     '기한은 DVV, Traficom, 핀란드 지자체협회 자료, 극야 기간은 핀란드 기상청 자료, 거리는 LaplandVibes 운전 경로를 근거로 했습니다. 2026년 11월 15일에 확인했습니다.',
   intro: [
     '라플란드로 이사할 때 필요한 서류 절차는 핀란드 어디서나 같지만, 세 가지는 남부보다 여기서 훨씬 중요합니다. 겨울이 한 해의 절반이고, 거리는 수백 킬로미터 단위로 재며, 작은 지자체에서는 서비스가 한곳에 모여 있다는 점입니다. 이 페이지는 해야 할 순서대로 정리한 체크리스트입니다.',
-    '해외에서 핀란드로 이주하는 경우 체류 허가, 개인 식별번호, 세금 카드, 은행 계좌는 자매 사이트 <a href="https://laplandwork.com/moving-to-finland" target="_blank" rel="noopener">laplandwork.com</a>에서 다룹니다. 이 페이지는 열쇠를 손에 받은 시점부터 시작합니다.',
+    '해외에서 핀란드로 이주하는 경우 체류 허가, 개인 식별번호, 세금 카드, 은행 계좌는 자매 사이트 <a href="https://laplandwork.com/kr/moving-to-finland/" target="_blank" rel="noopener">laplandwork.com</a>에서 다룹니다. 이 페이지는 열쇠를 손에 받은 시점부터 시작합니다.',
   ],
   sections: [
     {

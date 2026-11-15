@@ -27,7 +27,7 @@ const copy: HousingPageCopy = {
     'Tidsfrister från DVV, Traficom och Finlands Kommunförbund, polarnattens längd från Meteorologiska institutet, avstånd från LaplandVibes körrutter. Kontrollerat den 15 november 2026.',
   intro: [
     'Pappersarbetet vid en flytt till Lappland är detsamma som var som helst i Finland, men tre saker väger tyngre här än i söder: vintern varar halva året, avstånden mäts i hundratals kilometer, och i små kommuner finns tjänsterna på ett och samma ställe. Den här sidan är en checklista i den ordning sakerna behöver göras.',
-    'Om du flyttar till Finland från utlandet behandlas uppehållstillstånd, personbeteckning, skattekort och bankkonto på vår systersajt <a href="https://laplandwork.com/moving-to-finland" target="_blank" rel="noopener">laplandwork.com</a>. Den här sidan börjar när du har fått nycklarna.',
+    'Om du flyttar till Finland från utlandet behandlas uppehållstillstånd, personbeteckning, skattekort och bankkonto på vår systersajt <a href="https://laplandwork.com/sv/moving-to-finland/" target="_blank" rel="noopener">laplandwork.com</a>. Den här sidan börjar när du har fått nycklarna.',
   ],
   sections: [
     {

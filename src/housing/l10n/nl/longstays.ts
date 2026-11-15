@@ -24,7 +24,7 @@ const copy: HousingPageCopy = {
     'Wetgeving van Finlex (Wet op de woninghuur 481/1995, wijziging 531/2026), adresmelding van het Finse agentschap voor digitale en bevolkingsgegevens, gegevens over huisjes uit de productfeed van Lomarengas. Gecontroleerd op 15 november 2026.',
   intro: [
     'Een maand telewerken in Levi, een winter in Rovaniemi of een seizoen in een skigebied: een langer verblijf in Lapland komt meestal neer op een van drie opties. Ze verschillen in prijs, maar nog meer in het soort contract dat u krijgt en wat de wet dan beschermt.',
-    'Komt u op vakantie in plaats van om te wonen, dan staan hotels en huisjes op onze zustersite <a href="https://laplandstays.com/" target="_blank" rel="noopener">laplandstays.com</a> en villa’s op <a href="https://laplandluxuryvillas.com/" target="_blank" rel="noopener">laplandluxuryvillas.com</a>.',
+    'Komt u op vakantie in plaats van om te wonen, dan staan hotels en huisjes op onze zustersite <a href="https://laplandstays.com/nl/" target="_blank" rel="noopener">laplandstays.com</a> en villa’s op <a href="https://laplandluxuryvillas.com/nl/" target="_blank" rel="noopener">laplandluxuryvillas.com</a>.',
   ],
   sections: [
     {

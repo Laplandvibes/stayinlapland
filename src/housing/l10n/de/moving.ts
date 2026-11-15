@@ -27,7 +27,7 @@ const copy: HousingPageCopy = {
     'Fristen von DVV, Traficom und dem Verband der finnischen Kommunen, Länge der Polarnacht vom Finnischen Meteorologischen Institut, Entfernungen aus den Fahrtrouten von LaplandVibes. Geprüft am 15. November 2026.',
   intro: [
     'Der Papierkram beim Umzug nach Lappland ist derselbe wie überall in Finnland, aber drei Dinge wiegen hier schwerer als im Süden: Der Winter dauert ein halbes Jahr, Entfernungen werden in Hunderten Kilometern gemessen, und in kleinen Gemeinden konzentrieren sich die Dienstleistungen an einem Ort. Diese Seite ist eine Checkliste in der Reihenfolge, in der die Dinge anstehen.',
-    'Wenn Sie aus dem Ausland nach Finnland ziehen, finden Sie Aufenthaltsgenehmigungen, Personenkennzahl, Steuerkarte und Bankkonto auf unserer Schwesterseite <a href="https://laplandwork.com/moving-to-finland" target="_blank" rel="noopener">laplandwork.com</a>. Diese Seite beginnt, wenn Sie den Schlüssel in der Hand halten.',
+    'Wenn Sie aus dem Ausland nach Finnland ziehen, finden Sie Aufenthaltsgenehmigungen, Personenkennzahl, Steuerkarte und Bankkonto auf unserer Schwesterseite <a href="https://laplandwork.com/de/moving-to-finland/" target="_blank" rel="noopener">laplandwork.com</a>. Diese Seite beginnt, wenn Sie den Schlüssel in der Hand halten.',
   ],
   sections: [
     {

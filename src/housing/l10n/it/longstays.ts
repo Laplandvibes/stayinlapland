@@ -24,7 +24,7 @@ const copy: HousingPageCopy = {
     'Normativa da Finlex (Legge sugli affitti abitativi 481/1995, modifica 531/2026), comunicazione dell’indirizzo dall’Agenzia per i servizi digitali e i dati sulla popolazione, dettagli delle baite dal feed prodotti di Lomarengas. Verificato il 15 novembre 2026.',
   intro: [
     'Un mese di lavoro da remoto a Levi, un inverno a Rovaniemi o una stagione in una stazione sciistica: un soggiorno più lungo in Lapponia si riduce di solito a una di tre opzioni. Differiscono per prezzo, ma ancora di più per il tipo di contratto che si ottiene e per ciò che la legge tutela in quel caso.',
-    'Se viene in vacanza e non per viverci, gli hotel e le baite si trovano sul nostro sito gemello <a href="https://laplandstays.com/" target="_blank" rel="noopener">laplandstays.com</a> e le ville su <a href="https://laplandluxuryvillas.com/" target="_blank" rel="noopener">laplandluxuryvillas.com</a>.',
+    'Se viene in vacanza e non per viverci, gli hotel e le baite si trovano sul nostro sito gemello <a href="https://laplandstays.com/it/" target="_blank" rel="noopener">laplandstays.com</a> e le ville su <a href="https://laplandluxuryvillas.com/it/" target="_blank" rel="noopener">laplandluxuryvillas.com</a>.',
   ],
   sections: [
     {

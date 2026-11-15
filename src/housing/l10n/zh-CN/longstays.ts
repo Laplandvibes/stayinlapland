@@ -24,7 +24,7 @@ const copy: HousingPageCopy = {
     '法律来自 Finlex（《住宅租赁法》481/1995，修正案531/2026），迁居登记来自数字与人口数据服务局，木屋详情来自 Lomarengas 的产品数据源。已于2026年11月15日核对。',
   intro: [
     '在莱维远程办公一个月，在罗瓦涅米过一个冬天，或在滑雪度假村做一个雪季：想在拉普兰住得久一些，通常有三种选择。它们的价格不同，但更大的差别在于您最终签的是哪种合同，以及法律因此保护您什么。',
-    '如果您是来度假而不是来生活，酒店和木屋请看我们的姐妹站点 <a href="https://laplandstays.com/" target="_blank" rel="noopener">laplandstays.com</a>，别墅请看 <a href="https://laplandluxuryvillas.com/" target="_blank" rel="noopener">laplandluxuryvillas.com</a>。',
+    '如果您是来度假而不是来生活，酒店和木屋请看我们的姐妹站点 <a href="https://laplandstays.com/cn/" target="_blank" rel="noopener">laplandstays.com</a>，别墅请看 <a href="https://laplandluxuryvillas.com/cn/" target="_blank" rel="noopener">laplandluxuryvillas.com</a>。',
   ],
   sections: [
     {

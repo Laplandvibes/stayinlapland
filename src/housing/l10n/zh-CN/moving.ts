@@ -27,7 +27,7 @@ const copy: HousingPageCopy = {
     '期限来自 DVV、Traficom 和芬兰地方政府协会，极夜时长来自芬兰气象研究所，距离来自 LaplandVibes 自驾路线。已于2026年11月15日核对。',
   intro: [
     '搬到拉普兰要办的手续与芬兰其他地方相同，但有三件事在这里比在南方更要紧：冬季长达半年，距离以数百公里计，而且在小市镇里，各项服务都集中在一处。本页是一份清单，按需要办理的先后顺序排列。',
-    '如果您是从国外搬到芬兰，居留许可、个人身份编码、税卡和银行账户请看我们的姐妹站点 <a href="https://laplandwork.com/moving-to-finland" target="_blank" rel="noopener">laplandwork.com</a>。本页从您拿到钥匙那一刻开始。',
+    '如果您是从国外搬到芬兰，居留许可、个人身份编码、税卡和银行账户请看我们的姐妹站点 <a href="https://laplandwork.com/cn/moving-to-finland/" target="_blank" rel="noopener">laplandwork.com</a>。本页从您拿到钥匙那一刻开始。',
   ],
   sections: [
     {

@@ -24,7 +24,7 @@ const copy: HousingPageCopy = {
     '법령은 Finlex(주거용 임대차법 481/1995, 개정 531/2026), 주소 신고는 디지털·인구정보청, 캐빈 정보는 Lomarengas 상품 피드를 근거로 했습니다. 2026년 11월 15일에 확인했습니다.',
   intro: [
     '레비에서 한 달 원격 근무, 로바니에미에서 한 겨울, 스키 리조트에서 한 시즌. 라플란드의 장기 체류는 대개 세 가지 방법 중 하나로 정리됩니다. 가격도 다르지만, 어떤 계약을 맺게 되고 그에 따라 법이 무엇을 보호하는지가 더 크게 다릅니다.',
-    '거주가 아니라 휴가로 오신다면 호텔과 캐빈은 자매 사이트 <a href="https://laplandstays.com/" target="_blank" rel="noopener">laplandstays.com</a>에, 빌라는 <a href="https://laplandluxuryvillas.com/" target="_blank" rel="noopener">laplandluxuryvillas.com</a>에 있습니다.',
+    '거주가 아니라 휴가로 오신다면 호텔과 캐빈은 자매 사이트 <a href="https://laplandstays.com/kr/" target="_blank" rel="noopener">laplandstays.com</a>에, 빌라는 <a href="https://laplandluxuryvillas.com/kr/" target="_blank" rel="noopener">laplandluxuryvillas.com</a>에 있습니다.',
   ],
   sections: [
     {

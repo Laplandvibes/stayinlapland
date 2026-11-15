@@ -27,7 +27,7 @@ const copy: HousingPageCopy = {
     'Termijnen van DVV, Traficom en de Vereniging van Finse gemeenten, duur van de poolnacht van het Fins Meteorologisch Instituut, afstanden uit de autoroutes van LaplandVibes. Gecontroleerd op 15 november 2026.',
   intro: [
     'De papierwinkel bij een verhuizing naar Lapland is dezelfde als overal in Finland, maar drie dingen wegen hier zwaarder dan in het zuiden: de winter duurt het halve jaar, afstanden worden in honderden kilometers gemeten, en in kleine gemeenten zitten de voorzieningen op één plek. Deze pagina is een checklist in de volgorde waarin dingen geregeld moeten worden.',
-    'Verhuist u vanuit het buitenland naar Finland, dan staan verblijfsvergunningen, het persoonsnummer, de belastingkaart en een bankrekening op onze zustersite <a href="https://laplandwork.com/moving-to-finland" target="_blank" rel="noopener">laplandwork.com</a>. Deze pagina begint op het moment dat u de sleutels in handen hebt.',
+    'Verhuist u vanuit het buitenland naar Finland, dan staan verblijfsvergunningen, het persoonsnummer, de belastingkaart en een bankrekening op onze zustersite <a href="https://laplandwork.com/nl/moving-to-finland/" target="_blank" rel="noopener">laplandwork.com</a>. Deze pagina begint op het moment dat u de sleutels in handen hebt.',
   ],
   sections: [
     {

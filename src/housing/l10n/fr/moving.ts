@@ -27,7 +27,7 @@ const copy: HousingPageCopy = {
     'Délais du DVV, de Traficom et de l’Association des communes de Finlande, durées de la nuit polaire de l’Institut météorologique finlandais, distances tirées des itinéraires routiers de LaplandVibes. Vérifié le 15 novembre 2026.',
   intro: [
     'Les formalités pour s’installer en Laponie sont les mêmes que partout en Finlande, mais trois choses pèsent plus ici que dans le sud : l’hiver dure la moitié de l’année, les distances se comptent en centaines de kilomètres, et dans les petites communes, les services sont réunis en un seul endroit. Cette page est une liste de contrôle, dans l’ordre où les choses doivent être faites.',
-    'Si vous venez vous installer en Finlande depuis l’étranger, les titres de séjour, le numéro d’identité finlandais, la carte d’impôt et le compte bancaire sont traités sur notre site jumeau <a href="https://laplandwork.com/moving-to-finland" target="_blank" rel="noopener">laplandwork.com</a>. Cette page commence quand vous avez les clés en main.',
+    'Si vous venez vous installer en Finlande depuis l’étranger, les titres de séjour, le numéro d’identité finlandais, la carte d’impôt et le compte bancaire sont traités sur notre site jumeau <a href="https://laplandwork.com/fr/moving-to-finland/" target="_blank" rel="noopener">laplandwork.com</a>. Cette page commence quand vous avez les clés en main.',
   ],
   sections: [
     {

@@ -24,7 +24,7 @@ const copy: HousingPageCopy = {
     'Gesetzestexte von Finlex (Wohnraummietgesetz 481/1995, Änderung 531/2026), Adressmeldung von der Agentur für Digitalisierung und Bevölkerungsdaten, Hüttendaten aus dem Produktfeed von Lomarengas. Geprüft am 15. November 2026.',
   intro: [
     'Ein Monat Remote-Arbeit in Levi, ein Winter in Rovaniemi oder eine Saison in einem Skigebiet: Ein längerer Aufenthalt in Lappland läuft meist auf eine von drei Möglichkeiten hinaus. Sie unterscheiden sich im Preis, aber noch mehr darin, welchen Vertrag Sie am Ende haben und was das Gesetz dann schützt.',
-    'Wenn Sie zum Urlaub kommen und nicht zum Wohnen, finden Sie Hotels und Hütten auf unserer Schwesterseite <a href="https://laplandstays.com/" target="_blank" rel="noopener">laplandstays.com</a> und Villen auf <a href="https://laplandluxuryvillas.com/" target="_blank" rel="noopener">laplandluxuryvillas.com</a>.',
+    'Wenn Sie zum Urlaub kommen und nicht zum Wohnen, finden Sie Hotels und Hütten auf unserer Schwesterseite <a href="https://laplandstays.com/de/" target="_blank" rel="noopener">laplandstays.com</a> und Villen auf <a href="https://laplandluxuryvillas.com/de/" target="_blank" rel="noopener">laplandluxuryvillas.com</a>.',
   ],
   sections: [
     {

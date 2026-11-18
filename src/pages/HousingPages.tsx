@@ -19,15 +19,15 @@ import { HOUSING_PAGES, HOUSING_ROUTES, RENTAL_TOWNS, isRentalTownSlug } from '.
  * ja oma liittymä on jo olemassa.
  */
 const MOVING_ADS = {
-  viikko: <SettlingInAds context="moving" sidPrefix="stay_moving" kinds={['fortum', 'telia']} />,
-  'week-one': <SettlingInAds context="moving" sidPrefix="stay_moving" kinds={['fortum', 'telia', 'airalo']} />,
+  viikko: <SettlingInAds context="moving" sidPrefix="stay_moving" kinds={['sahko', 'telia', 'moi']} />,
+  'week-one': <SettlingInAds context="moving" sidPrefix="stay_moving" kinds={['sahko', 'telia', 'airalo']} />,
   // "Auto ja talvi": ensimmäinen talvi. fi takki + nastakengät, muut kielet takki (Icebug toimittaa vain Suomeen).
   auto: <SettlingInAds context="winter" sidPrefix="stay_moving_winter" kinds={['halti', 'icebug']} />,
   car: <SettlingInAds context="winter" sidPrefix="stay_moving_winter" kinds={['halti']} />,
 };
 const COST_ADS = {
-  sahko: <SettlingInAds context="electricity" sidPrefix="stay_cost" kinds={['fortum']} />,
-  electricity: <SettlingInAds context="electricity" sidPrefix="stay_cost" kinds={['fortum']} />,
+  sahko: <SettlingInAds context="electricity" sidPrefix="stay_cost" kinds={['sahko']} />,
+  electricity: <SettlingInAds context="electricity" sidPrefix="stay_cost" kinds={['sahko']} />,
 };
 /*
  * Vuokrasivut (/rentals + 6 kaupunkisivua): sähkösopimus ja liittymä heti hintaosion perään, koska lukija on juuri
@@ -35,9 +35,13 @@ const COST_ADS = {
  * piilotettu. nämä on kuitenkin hyödykkeitä joita jokainen muuttaja tarvitsee"). Ennen tätä vuokrasivujen ainoa
  * mainos oli hotellihaku 47–65 %:n syvyydellä (mitattu 18.11. puhelimella). sid: stay_rentals[_<kaupunki>]_<laji>.
  */
+/*
+ * 19.11.2026 (Vesa: "Kyllä, sähkövertailu"): Fortum-kortin tilalla kolmen sähköyhtiön vertailu (Fortum, Vattenfall,
+ * Oomi) kaikissa sähkökohdissa, ja suomenkielisillä sivuilla Moi Telian rinnalla (moi.fi on vain suomeksi).
+ */
 const rentalAds = (sidPrefix: string) => ({
-  hinnat: <SettlingInAds context="renting" sidPrefix={sidPrefix} kinds={['fortum', 'telia']} />,
-  prices: <SettlingInAds context="renting" sidPrefix={sidPrefix} kinds={['fortum', 'telia', 'airalo']} />,
+  hinnat: <SettlingInAds context="renting" sidPrefix={sidPrefix} kinds={['sahko', 'telia', 'moi']} />,
+  prices: <SettlingInAds context="renting" sidPrefix={sidPrefix} kinds={['sahko', 'telia', 'airalo']} />,
 });
 
 /*

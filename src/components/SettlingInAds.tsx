@@ -22,6 +22,7 @@ import { withKampanja } from "../shared/ads/kampanjat";
 import AdUnit, { type AdLang } from "../shared/ads/AdUnit";
 import haltiSpec from "../shared/ads/advertisers/halti";
 import icebugSpec from "../shared/ads/advertisers/icebug";
+import SahkoVertailu from "./SahkoVertailu";
 import type { HousingLang } from "../housing/types";
 import { isL10nLang, l10nCommon, type AdContext, type AdWrapCopy } from "../housing/l10n";
 
@@ -605,6 +606,42 @@ function TeliaAd({ sid = "stay_moving_telecom", lang: langProp, layout }: { sid?
   );
 }
 
+/* ── Moi — puhelinliittymä ilman määräaikaa (vain fi) ─────────────────── */
+/*
+ * Vesa 19.11.2026 ("Kyllä, sähkövertailu", jossa Moi oli mukana). Moi on puhelinliittymä, ei sähköyhtiö, joten se on
+ * Telian rinnalla. Vain suomeksi: moi.fi on vain suomenkielinen (/en ⇒ 404, mitattu 19.11.). Väitteet moi.fi:n
+ * etusivulta 19.11.2026: "Määräaikaisten liittymien ja tarjousten sijaan Moi on aina yhtä edullinen", "käytät DNA:n
+ * … 5G- ja 4G-verkkoa. Verkko kattaa kaikki Manner-Suomen kunnat", valikossa eSIM, "Mun Moi -sovelluksella hoidat
+ * kaikki liittymäasiasi". Hintoja ei kirjoiteta: ne eivät ole tämän kortin asia, ja ne vanhenisivat.
+ */
+function MoiAd({ sid = "stay_moving_moi", layout }: { sid?: string; layout?: "stack" | "row" }) {
+  const trust: TrustPoint[] = [
+    { icon: FileSignature, label: "Ei määräaikaisia liittymiä" },
+    { icon: Globe2, label: "DNA:n verkko kaikissa Manner-Suomen kunnissa" },
+    { icon: QrCode, label: "eSIM ja Mun Moi -sovellus" },
+  ];
+  return (
+    <PartnerAd
+      partner="moi"
+      layout={layout}
+      href={`https://go.laplandvibes.com/go/moi?sid=${encodeURIComponent(sid)}`}
+      sid={sid}
+      accent="#FF5A00"
+      ctaColor="#D4001A"
+      logoSrc="/images/partners/moi.png"
+      logoAlt="Moi"
+      IconBadge={Smartphone}
+      adLabel="Mainos"
+      eyebrow="Puhelinliittymä"
+      headline="Liittymä ilman määräaikaa"
+      sub="Moi myy liittymiä ilman määräaikaa, joten liittymä sopii myös kauden mittaiseen työhön tai lyhyeen vuokrasuhteeseen. Liittymät toimivat DNA:n 5G- ja 4G-verkossa."
+      trust={trust}
+      cta="Katso Moin liittymät"
+      poweredBy="Kumppani: Moi"
+    />
+  );
+}
+
 /* ── Airalo — eSIM for the arrival gap ────────────────────────────────── */
 
 function AiraloAd({ sid = "stay_moving_esim", lang: langProp, layout }: { sid?: string; lang?: Lang; layout?: "stack" | "row" }) {
@@ -785,7 +822,13 @@ function AiraloAd({ sid = "stay_moving_esim", lang: langProp, layout }: { sid?: 
  * vain Suomeen, ks. icebug.ts), joten AdUnit palauttaa sille null muilla kielillä. Kutsuja antaa siksi
  * kielikohtaisen `kinds`-listan (fi-osiotunnisteella icebug mukana, en-tunnisteella ei), ettei ruudukkoon jää reikää.
  */
-type AdKind = "fortum" | "telia" | "airalo" | "halti" | "icebug";
+type AdKind = "fortum" | "sahko" | "telia" | "moi" | "airalo" | "halti" | "icebug";
+/*
+ * sahko = kolmen sähköyhtiön vertailu (SahkoVertailu.tsx, Vesa 19.11.2026), korvaa asumissivuilla yksittäisen
+ * Fortum-kortin. FortumAd jää vientinä, mutta sitä ei käytetä: sen muiden kuin fi/en-kielten teksti väittää yhä
+ * Lapin lämmityksen toimivan sähköllä (korjattu vain fi/en 23.9.), joten älä ota sitä takaisin korjaamatta.
+ * moi = Moi Telian rinnalla, vain fi (MoiAd).
+ */
 /** Lukijan tilanne sivulla: otsikko lähtee siitä, ei tuotteesta (CLAUDE.md). */
 
 export const NOTE: Record<HousingLang, string> = {
@@ -905,7 +948,9 @@ export default function SettlingInAds({
         <p className="mt-3 mb-8 max-w-2xl mx-auto w-fit text-left lg:mx-0 lg:w-auto text-base leading-relaxed text-graphite">{t.lead}</p>
         <div className={single ? "" : `grid items-stretch gap-5 ${cols}`}>
           {kinds.includes("fortum") && <FortumAd sid={`${sidPrefix}_electricity`} lang={lang} layout={layout} />}
+          {kinds.includes("sahko") && <SahkoVertailu sid={`${sidPrefix}_electricity`} lang={lang} layout={layout} />}
           {kinds.includes("telia") && <TeliaAd sid={`${sidPrefix}_telecom`} lang={lang} layout={layout} />}
+          {kinds.includes("moi") && lang === "fi" && <MoiAd sid={`${sidPrefix}_moi`} layout={layout} />}
           {kinds.includes("airalo") && <AiraloAd sid={`${sidPrefix}_esim`} lang={lang} layout={layout} />}
           {kinds.includes("halti") && <AdUnit spec={haltiSpec} sid={`${sidPrefix}_halti`} lang={lang as AdLang} variant="light" />}
           {kinds.includes("icebug") && <AdUnit spec={icebugSpec} sid={`${sidPrefix}_icebug`} lang={lang as AdLang} variant="light" />}

@@ -114,6 +114,11 @@ const common: HousingCommonCopy = {
       "kicker": "Publicité · arrivée",
       "title": "Vous arrivez de l’étranger ? Des données mobiles et un numéro finlandais pour les premiers jours",
       "lead": "Cartes, banque et messages de votre employeur fonctionnent dès l’atterrissage quand les données sont déjà sur votre téléphone."
+    },
+    "renting": {
+      "kicker": "Publicité · pour les locataires",
+      "title": "En plus du loyer : l’électricité et un forfait mobile",
+      "lead": "Le locataire souscrit en général lui-même son contrat d’électricité, et cela peut se faire en ligne avant le jour du déménagement. Un numéro finlandais facilite les démarches bancaires et les services Suomi.fi, et une eSIM dépanne les premiers jours, en attendant d’avoir un numéro finlandais."
     }
   },
   "cabins": {

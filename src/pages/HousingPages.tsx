@@ -26,6 +26,17 @@ const COST_ADS = {
   sahko: <SettlingInAds context="electricity" sidPrefix="stay_cost" kinds={['fortum']} />,
   electricity: <SettlingInAds context="electricity" sidPrefix="stay_cost" kinds={['fortum']} />,
 };
+/*
+ * Vuokrasivut (/rentals + 6 kaupunkisivua): sähkösopimus ja liittymä heti hintaosion perään, koska lukija on juuri
+ * nähnyt vuokran ilman sähköä (Vesa 18.11.2026: "stayinlapland sivulla saa olla mainontaa enemmänkin, nyt turhaa
+ * piilotettu. nämä on kuitenkin hyödykkeitä joita jokainen muuttaja tarvitsee"). Ennen tätä vuokrasivujen ainoa
+ * mainos oli hotellihaku 47–65 %:n syvyydellä (mitattu 18.11. puhelimella). sid: stay_rentals[_<kaupunki>]_<laji>.
+ */
+const rentalAds = (sidPrefix: string) => ({
+  hinnat: <SettlingInAds context="renting" sidPrefix={sidPrefix} kinds={['fortum', 'telia']} />,
+  prices: <SettlingInAds context="renting" sidPrefix={sidPrefix} kinds={['fortum', 'telia', 'airalo']} />,
+});
+
 const SEASONAL_ADS = {
   ask: <SettlingInAds context="arrival" sidPrefix="stay_seasonal" kinds={['airalo', 'telia']} />,
 };
@@ -41,7 +52,7 @@ const LONG_STAY_CABINS = {
 };
 
 export function Rentals() {
-  return <HousingPage route={HOUSING_ROUTES.rentals} copy={HOUSING_PAGES.rentals} copyKey="rentals" heroImage="/images/housing-rentals-hero-talvikatu.webp" current="rentals" workPromo="inline" />;
+  return <HousingPage route={HOUSING_ROUTES.rentals} copy={HOUSING_PAGES.rentals} copyKey="rentals" heroImage="/images/housing-rentals-hero-talvikatu.webp" current="rentals" workPromo="inline" inserts={rentalAds('stay_rentals')} />;
 }
 
 export function SeasonalWorkerHousing() {
@@ -99,6 +110,7 @@ export function RentalsTown() {
       current="rentals"
       parent={{ route: HOUSING_ROUTES.rentals, key: 'rentals' }}
       workPromo="inline"
+      inserts={rentalAds(`stay_rentals_${town.replace(/-/g, '_')}`)}
     />
   );
 }

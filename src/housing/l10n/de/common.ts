@@ -142,6 +142,11 @@ const common: HousingCommonCopy = {
       "kicker": "Anzeige · Ankunft",
       "title": "Sie kommen aus dem Ausland? Datenvolumen und eine finnische Nummer für die ersten Tage",
       "lead": "Karten, Online-Banking und die Nachrichten Ihres Arbeitgebers funktionieren ab der Landung, wenn die Daten schon auf Ihrem Handy sind."
+    },
+    "renting": {
+      "kicker": "Anzeige · für Mieter",
+      "title": "Zur Miete kommen noch Strom und Handyvertrag dazu",
+      "lead": "Den Stromvertrag schließen Mieter meist selbst ab, und das geht online schon vor dem Umzugstag. Mit einer finnischen Nummer sind Online-Banking und Suomi.fi-Dienste einfacher, und eine eSIM überbrückt die ersten Tage, bis Sie eine finnische Nummer haben."
     }
   },
   "cabins": {

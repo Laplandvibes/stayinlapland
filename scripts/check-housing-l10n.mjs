@@ -37,7 +37,7 @@ const commonEn = (lang) => ({
   sourceLabels: Object.fromEntries(S.SOURCE_IDS.map((id) => [id, S.sourceLabelEn(id)])),
   whenToGoSourceLabels: WG.WHEN_SOURCE_LABELS_EN,
   adsNote: SA.NOTE.en,
-  adsWrap: { moving: SA.WRAP_TEXT.moving.en, electricity: SA.WRAP_TEXT.electricity.en, arrival: SA.WRAP_TEXT.arrival.en },
+  adsWrap: { moving: SA.WRAP_TEXT.moving.en, electricity: SA.WRAP_TEXT.electricity.en, arrival: SA.WRAP_TEXT.arrival.en, renting: SA.WRAP_TEXT.renting.en },
   cabins: CC.TEXT.en,
 });
 

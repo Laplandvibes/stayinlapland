@@ -142,6 +142,11 @@ const common: HousingCommonCopy = {
       "kicker": "Annons · ankomst",
       "title": "Kommer du från utlandet? Data och ett finskt nummer för de första dagarna",
       "lead": "Kartor, bank och arbetsgivarens meddelanden fungerar från det ögonblick du landar om du redan har mobildata i telefonen."
+    },
+    "renting": {
+      "kicker": "Annons · för hyresgäster",
+      "title": "Utöver hyran: el och mobilabonnemang",
+      "lead": "Hyresgäster ordnar oftast sitt eget elavtal, och det går att göra på nätet före flyttdagen. Ett finskt telefonnummer gör bankärenden och Suomi.fi-tjänster enklare, och ett eSIM täcker de första dagarna tills du har ett finskt nummer."
     }
   },
   "cabins": {

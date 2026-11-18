@@ -142,6 +142,11 @@ const common: HousingCommonCopy = {
       "kicker": "Anuncio · llegada",
       "title": "¿Llega del extranjero? Datos y un número finlandés para los primeros días",
       "lead": "Los mapas, el banco y los mensajes de su empleador funcionan desde el momento en que aterriza si ya tiene los datos en el teléfono."
+    },
+    "renting": {
+      "kicker": "Anuncio · para inquilinos",
+      "title": "Además del alquiler: electricidad y una tarifa móvil",
+      "lead": "El inquilino suele contratar por su cuenta la electricidad, y se puede hacer en línea antes del día de la mudanza. Un número finlandés facilita los trámites bancarios y los servicios de Suomi.fi, y una eSIM cubre los primeros días hasta que tenga un número finlandés."
     }
   },
   "cabins": {

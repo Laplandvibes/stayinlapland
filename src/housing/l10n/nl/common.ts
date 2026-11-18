@@ -114,6 +114,11 @@ const common: HousingCommonCopy = {
       "kicker": "Advertentie · aankomst",
       "title": "Komt u uit het buitenland? Data en een Fins nummer voor de eerste dagen",
       "lead": "Kaarten, bankieren en de berichten van uw werkgever werken vanaf het moment dat u landt, als de data al op uw telefoon staat."
+    },
+    "renting": {
+      "kicker": "Advertentie · voor huurders",
+      "title": "Naast de huur: stroom en een mobiel abonnement",
+      "lead": "Huurders regelen meestal zelf hun stroomcontract, en dat kan online vóór de verhuisdag. Met een Fins telefoonnummer gaan bankzaken en Suomi.fi-diensten makkelijker, en een eSIM overbrugt de eerste dagen totdat u een Fins nummer hebt."
     }
   },
   "cabins": {

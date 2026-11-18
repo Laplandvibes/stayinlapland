@@ -31,7 +31,7 @@ export type HousingPageKey =
   | 'town-kittila-levi'
   | 'town-ivalo-inari';
 
-export type AdContext = 'moving' | 'electricity' | 'arrival';
+export type AdContext = 'moving' | 'electricity' | 'arrival' | 'renting';
 
 export interface AdWrapCopy {
   kicker: string;

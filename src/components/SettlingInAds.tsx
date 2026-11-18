@@ -812,6 +812,21 @@ export const WRAP_TEXT: Record<AdContext, Record<HousingLang, AdWrapCopy>> = {
       lead: "The table above shows what a kilowatt-hour costs. The contract can be made online before moving day.",
     },
   },
+  // Vuokrasivut (/rentals + kaupunkisivut), hintaosion perässä: lukija on juuri nähnyt vuokran ilman sähköä.
+  // Vesa 18.11.2026: "nämä on kuitenkin hyödykkeitä joita jokainen muuttaja tarvitsee". fi: Fortum + Telia,
+  // muut kielet lisäksi Airalo (lukija tulee ulkomailta), siksi eSIM vain en-tekstissä.
+  renting: {
+    fi: {
+      kicker: "Mainos · vuokralaiselle",
+      title: "Vuokran lisäksi: sähkösopimus ja puhelinliittymä",
+      lead: "Vuokralainen tekee sähkösopimuksen yleensä itse, ja sen voi tehdä verkossa jo ennen muuttopäivää. Suomalainen puhelinnumero helpottaa pankkiasiointia ja Suomi.fi-palveluja.",
+    },
+    en: {
+      kicker: "Ad · for tenants",
+      title: "On top of the rent: electricity and a phone plan",
+      lead: "Tenants usually arrange their own electricity contract, and it can be done online before moving day. A Finnish phone number makes banking and Suomi.fi services easier, and an eSIM covers the first days until you have a Finnish number.",
+    },
+  },
   // Kausityösivu (en): ulkomailta tuleva työntekijä, ensimmäiset päivät ennen suomalaista liittymää.
   arrival: {
     fi: {

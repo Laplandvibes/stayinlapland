@@ -31,12 +31,14 @@ export type HousingPageKey =
   | 'town-kittila-levi'
   | 'town-ivalo-inari';
 
-export type AdContext = 'moving' | 'electricity' | 'arrival' | 'renting';
+export type AdContext = 'moving' | 'electricity' | 'arrival' | 'renting' | 'winter';
 
 export interface AdWrapCopy {
   kicker: string;
   title: string;
   lead: string;
+  /** Osion oma alaviite, kun yleinen ("jos teet sopimuksen…") ei sovi, esim. ostettava tuote (talvivarusteet). */
+  note?: string;
 }
 
 export type CabinGroupKey = 'levi' | 'yllas' | 'saariselka' | 'lapland';

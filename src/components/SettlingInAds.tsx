@@ -19,6 +19,9 @@ import airaloSpec from "../shared/ads/advertisers/airalo";
 import { use, type ReactNode } from "react";
 import KampanjaNauha from "../shared/ads/KampanjaNauha";
 import { withKampanja } from "../shared/ads/kampanjat";
+import AdUnit, { type AdLang } from "../shared/ads/AdUnit";
+import haltiSpec from "../shared/ads/advertisers/halti";
+import icebugSpec from "../shared/ads/advertisers/icebug";
 import type { HousingLang } from "../housing/types";
 import { isL10nLang, l10nCommon, type AdContext, type AdWrapCopy } from "../housing/l10n";
 
@@ -776,7 +779,13 @@ function AiraloAd({ sid = "stay_moving_esim", lang: langProp, layout }: { sid?: 
   );
 }
 
-type AdKind = "fortum" | "telia" | "airalo";
+/*
+ * halti + icebug = talvivarusteet (Vesa 18.11.2026: "Talvivarusteet ensin"). Ne ovat verkoston jaettuja
+ * AdUnit-kortteja (shared/ads/advertisers): Halti 12 kielellä, Icebug tarkoituksella vain fi (kauppa toimittaa
+ * vain Suomeen, ks. icebug.ts), joten AdUnit palauttaa sille null muilla kielillä. Kutsuja antaa siksi
+ * kielikohtaisen `kinds`-listan (fi-osiotunnisteella icebug mukana, en-tunnisteella ei), ettei ruudukkoon jää reikää.
+ */
+type AdKind = "fortum" | "telia" | "airalo" | "halti" | "icebug";
 /** Lukijan tilanne sivulla: otsikko lähtee siitä, ei tuotteesta (CLAUDE.md). */
 
 export const NOTE: Record<HousingLang, string> = {
@@ -827,6 +836,22 @@ export const WRAP_TEXT: Record<AdContext, Record<HousingLang, AdWrapCopy>> = {
       lead: "Tenants usually arrange their own electricity contract, and it can be done online before moving day. A Finnish phone number makes banking and Suomi.fi services easier, and an eSIM covers the first days until you have a Finnish number.",
     },
   },
+  // Muuttosivu "Auto ja talvi" + kausityösivu "Paikkakunnat": ensimmäinen talvi Lapissa. fi Halti + Icebug
+  // (takki + nastakengät), muut kielet Halti (Icebugin kauppa toimittaa vain Suomeen), siksi kengät vain fi-tekstissä.
+  winter: {
+    fi: {
+      kicker: "Mainos · ensimmäinen talvi",
+      title: "Lapin talveen: lämmin takki ja pitävät kengät",
+      lead: "Pakkasella arjessa tarvitaan lämmin takki ja liukkaalla pitävät kengät. Molemmat kannattaa hankkia ennen kuin kovat pakkaset alkavat.",
+      note: "Kumppanilinkkejä: jos ostat niiden kautta, saamme pienen palkkion. Sinulle hinta on sama.",
+    },
+    en: {
+      kicker: "Ad · your first winter",
+      title: "Dressed for a Lapland winter",
+      lead: "Everyday life in the cold calls for a warm coat and proper layers. Both are worth getting before the real cold sets in.",
+      note: "Affiliate links: if you buy through them we earn a small commission. Your price is the same.",
+    },
+  },
   // Kausityösivu (en): ulkomailta tuleva työntekijä, ensimmäiset päivät ennen suomalaista liittymää.
   arrival: {
     fi: {
@@ -864,7 +889,7 @@ export default function SettlingInAds({
   const common = l10n ? use(l10nCommon(l10n)) : null;
   const hl: HousingLang = lang === 'fi' ? 'fi' : 'en';
   const t = common?.adsWrap[context] ?? WRAP_TEXT[context][hl];
-  const note = common?.adsNote ?? NOTE[hl];
+  const note = t.note ?? common?.adsNote ?? NOTE[hl];
   // Yksi mainos: sivun tekstipalstan levyinen vaakakortti (sama max-w-3xl kuin osioilla), ei
   // pystykortti leveän alueen vasempaan reunaan. Useampi: rinnakkain leveämmässä ruudukossa.
   const single = kinds.length === 1;
@@ -882,6 +907,8 @@ export default function SettlingInAds({
           {kinds.includes("fortum") && <FortumAd sid={`${sidPrefix}_electricity`} lang={lang} layout={layout} />}
           {kinds.includes("telia") && <TeliaAd sid={`${sidPrefix}_telecom`} lang={lang} layout={layout} />}
           {kinds.includes("airalo") && <AiraloAd sid={`${sidPrefix}_esim`} lang={lang} layout={layout} />}
+          {kinds.includes("halti") && <AdUnit spec={haltiSpec} sid={`${sidPrefix}_halti`} lang={lang as AdLang} variant="light" />}
+          {kinds.includes("icebug") && <AdUnit spec={icebugSpec} sid={`${sidPrefix}_icebug`} lang={lang as AdLang} variant="light" />}
         </div>
         <p className="mt-5 max-w-3xl text-[13px] leading-relaxed text-graphite">{note}</p>
       </div>

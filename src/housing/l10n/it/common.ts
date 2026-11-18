@@ -147,6 +147,12 @@ const common: HousingCommonCopy = {
       "kicker": "Pubblicità · per gli inquilini",
       "title": "Oltre all’affitto: elettricità e un piano telefonico",
       "lead": "Di solito l’inquilino stipula da sé il contratto di fornitura elettrica, e si può fare online prima del giorno del trasloco. Un numero finlandese semplifica le operazioni bancarie e i servizi Suomi.fi, e una eSIM copre i primi giorni, finché non ha un numero finlandese."
+    },
+    "winter": {
+      "kicker": "Pubblicità · il Suo primo inverno",
+      "title": "Vestirsi bene per l’inverno in Lapponia",
+      "lead": "Nella vita di tutti i giorni il freddo richiede un cappotto caldo e un buon abbigliamento a strati. Conviene procurarsi entrambi prima dei grandi freddi.",
+      "note": "Link di affiliazione: se acquista tramite questi link riceviamo una piccola commissione. Il prezzo per Lei resta lo stesso."
     }
   },
   "cabins": {

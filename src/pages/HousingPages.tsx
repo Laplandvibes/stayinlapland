@@ -21,6 +21,9 @@ import { HOUSING_PAGES, HOUSING_ROUTES, RENTAL_TOWNS, isRentalTownSlug } from '.
 const MOVING_ADS = {
   viikko: <SettlingInAds context="moving" sidPrefix="stay_moving" kinds={['fortum', 'telia']} />,
   'week-one': <SettlingInAds context="moving" sidPrefix="stay_moving" kinds={['fortum', 'telia', 'airalo']} />,
+  // "Auto ja talvi": ensimmäinen talvi. fi takki + nastakengät, muut kielet takki (Icebug toimittaa vain Suomeen).
+  auto: <SettlingInAds context="winter" sidPrefix="stay_moving_winter" kinds={['halti', 'icebug']} />,
+  car: <SettlingInAds context="winter" sidPrefix="stay_moving_winter" kinds={['halti']} />,
 };
 const COST_ADS = {
   sahko: <SettlingInAds context="electricity" sidPrefix="stay_cost" kinds={['fortum']} />,
@@ -37,7 +40,14 @@ const rentalAds = (sidPrefix: string) => ({
   prices: <SettlingInAds context="renting" sidPrefix={sidPrefix} kinds={['fortum', 'telia', 'airalo']} />,
 });
 
+/*
+ * Kausityösivu: talvivarusteet "Paikkakunnat"-osion perään (tunturikeskukset). Tämä koskee myös suomenkielistä
+ * sivua: yllä mainittu "ei mainosta" -päätös (23.9.) koski sähköä ja liittymää, ei talvivarusteita, joita etelästä
+ * kauden töihin tuleva tarvitsee (Vesa 18.11.2026: "Talvivarusteet ensin").
+ */
 const SEASONAL_ADS = {
+  paikkakunnat: <SettlingInAds context="winter" sidPrefix="stay_seasonal_winter" kinds={['halti', 'icebug']} />,
+  places: <SettlingInAds context="winter" sidPrefix="stay_seasonal_winter" kinds={['halti']} />,
   ask: <SettlingInAds context="arrival" sidPrefix="stay_seasonal" kinds={['airalo', 'telia']} />,
 };
 

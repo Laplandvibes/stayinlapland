@@ -147,6 +147,12 @@ const common: HousingCommonCopy = {
       "kicker": "Annons · för hyresgäster",
       "title": "Utöver hyran: el och mobilabonnemang",
       "lead": "Hyresgäster ordnar oftast sitt eget elavtal, och det går att göra på nätet före flyttdagen. Ett finskt telefonnummer gör bankärenden och Suomi.fi-tjänster enklare, och ett eSIM täcker de första dagarna tills du har ett finskt nummer."
+    },
+    "winter": {
+      "kicker": "Annons · din första vinter",
+      "title": "Rätt klädd för vintern i Lappland",
+      "lead": "Vardagen i kylan kräver en varm jacka och ordentliga klädlager. Det är bra att ordna båda delarna innan kylan på allvar sätter in.",
+      "note": "Affiliatelänkar: om du handlar via dem får vi en liten provision. Priset för dig är detsamma."
     }
   },
   "cabins": {

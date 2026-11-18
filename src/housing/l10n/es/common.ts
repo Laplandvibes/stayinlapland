@@ -147,6 +147,12 @@ const common: HousingCommonCopy = {
       "kicker": "Anuncio · para inquilinos",
       "title": "Además del alquiler: electricidad y una tarifa móvil",
       "lead": "El inquilino suele contratar por su cuenta la electricidad, y se puede hacer en línea antes del día de la mudanza. Un número finlandés facilita los trámites bancarios y los servicios de Suomi.fi, y una eSIM cubre los primeros días hasta que tenga un número finlandés."
+    },
+    "winter": {
+      "kicker": "Anuncio · su primer invierno",
+      "title": "Abríguese bien para el invierno en Laponia",
+      "lead": "El día a día con frío exige un abrigo cálido y buenas capas de ropa. Conviene tener ambas cosas antes de que llegue el frío fuerte.",
+      "note": "Enlaces de afiliados: si compra a través de ellos, ganamos una pequeña comisión. Su precio es el mismo."
     }
   },
   "cabins": {

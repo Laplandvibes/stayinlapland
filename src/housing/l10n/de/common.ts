@@ -147,6 +147,12 @@ const common: HousingCommonCopy = {
       "kicker": "Anzeige · für Mieter",
       "title": "Zur Miete kommen noch Strom und Handyvertrag dazu",
       "lead": "Den Stromvertrag schließen Mieter meist selbst ab, und das geht online schon vor dem Umzugstag. Mit einer finnischen Nummer sind Online-Banking und Suomi.fi-Dienste einfacher, und eine eSIM überbrückt die ersten Tage, bis Sie eine finnische Nummer haben."
+    },
+    "winter": {
+      "kicker": "Anzeige · Ihr erster Winter",
+      "title": "Warm angezogen für den Winter in Lappland",
+      "lead": "Der Alltag in der Kälte verlangt eine warme Jacke und mehrere gute Kleidungsschichten. Beides besorgen Sie am besten, bevor der Frost richtig einsetzt.",
+      "note": "Affiliate-Links: Wenn Sie darüber einkaufen, erhalten wir eine kleine Provision. Ihr Preis bleibt gleich."
     }
   },
   "cabins": {

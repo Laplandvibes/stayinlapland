@@ -147,6 +147,12 @@ const common: HousingCommonCopy = {
       "kicker": "Anúncio · para inquilinos",
       "title": "Além do aluguel: eletricidade e um plano de celular",
       "lead": "O inquilino geralmente cuida sozinho do contrato de eletricidade, e dá para fazer isso on-line antes do dia da mudança. Um número finlandês facilita as operações bancárias e os serviços do Suomi.fi, e um eSIM cobre os primeiros dias até você ter um número finlandês."
+    },
+    "winter": {
+      "kicker": "Anúncio · seu primeiro inverno",
+      "title": "Agasalhe-se bem para o inverno na Lapônia",
+      "lead": "O dia a dia no frio pede um casaco quente e camadas de roupa adequadas. Vale resolver as duas coisas antes de o frio chegar para valer.",
+      "note": "Links de afiliado: se você comprar por eles, recebemos uma pequena comissão. O seu preço é o mesmo."
     }
   },
   "cabins": {

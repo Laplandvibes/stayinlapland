@@ -119,6 +119,12 @@ const common: HousingCommonCopy = {
       "kicker": "Advertentie · voor huurders",
       "title": "Naast de huur: stroom en een mobiel abonnement",
       "lead": "Huurders regelen meestal zelf hun stroomcontract, en dat kan online vóór de verhuisdag. Met een Fins telefoonnummer gaan bankzaken en Suomi.fi-diensten makkelijker, en een eSIM overbrugt de eerste dagen totdat u een Fins nummer hebt."
+    },
+    "winter": {
+      "kicker": "Advertentie · uw eerste winter",
+      "title": "Goed gekleed voor een winter in Lapland",
+      "lead": "Het dagelijks leven in de kou vraagt om een warme jas en goede kledinglagen. Beide schaft u het best aan voordat de echte kou invalt.",
+      "note": "Affiliatelinks: als u via deze links koopt, ontvangen wij een kleine commissie. Uw prijs blijft hetzelfde."
     }
   },
   "cabins": {

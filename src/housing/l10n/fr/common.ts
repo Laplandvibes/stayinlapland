@@ -119,6 +119,12 @@ const common: HousingCommonCopy = {
       "kicker": "Publicité · pour les locataires",
       "title": "En plus du loyer : l’électricité et un forfait mobile",
       "lead": "Le locataire souscrit en général lui-même son contrat d’électricité, et cela peut se faire en ligne avant le jour du déménagement. Un numéro finlandais facilite les démarches bancaires et les services Suomi.fi, et une eSIM dépanne les premiers jours, en attendant d’avoir un numéro finlandais."
+    },
+    "winter": {
+      "kicker": "Publicité · votre premier hiver",
+      "title": "Bien s’équiper pour l’hiver en Laponie",
+      "lead": "Au quotidien, le froid demande un manteau chaud et de bonnes couches de vêtements. Mieux vaut prévoir les deux avant l’arrivée des grands froids.",
+      "note": "Liens d’affiliation : si vous achetez par leur intermédiaire, nous percevons une petite commission. Votre prix reste le même."
     }
   },
   "cabins": {

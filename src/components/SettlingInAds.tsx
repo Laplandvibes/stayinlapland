@@ -16,7 +16,9 @@
 import { ArrowRight, Zap, Wifi, BadgeCheck, FileSignature, Globe2, Languages, Smartphone, PlaneLanding, QrCode } from "lucide-react";
 import { useLang, type Lang } from "../i18n/useLang";
 import airaloSpec from "../shared/ads/advertisers/airalo";
-import { use } from "react";
+import { use, type ReactNode } from "react";
+import KampanjaNauha from "../shared/ads/KampanjaNauha";
+import { withKampanja } from "../shared/ads/kampanjat";
 import type { HousingLang } from "../housing/types";
 import { isL10nLang, l10nCommon, type AdContext, type AdWrapCopy } from "../housing/l10n";
 
@@ -114,6 +116,8 @@ interface PartnerAdProps {
    * pystykortista leveän alueen vasemmassa reunassa: "miksi tämä mainos on näin vinossa".
    */
   layout?: "stack" | "row";
+  /** Kumppanin määräaikainen kampanja (shared/ads/kampanjat.ts) korttiin ennen nappia; null kun ei kampanjaa. */
+  extra?: ReactNode;
 }
 
 
@@ -136,6 +140,7 @@ function PartnerAd({
   cta,
   poweredBy,
   layout = "stack",
+  extra,
 }: PartnerAdProps) {
   const badge = (
     <div className="flex items-center gap-3">
@@ -214,6 +219,7 @@ function PartnerAd({
             </h3>
             <p className="text-sm leading-relaxed text-slate-600 [text-wrap:pretty]">{sub}</p>
             {trustList}
+            {extra}
           </div>
           <div className="flex flex-col items-start justify-center gap-5 border-t border-slate-200 pt-5 md:items-center md:border-l md:border-t-0 md:pl-10 md:pt-0">
             {logo}
@@ -240,6 +246,7 @@ function PartnerAd({
         </h3>
         <p className="max-w-xl text-sm leading-relaxed text-slate-600 [text-wrap:pretty]">{sub}</p>
         {trustList}
+        {extra}
         {/* 🔴 mt-AUTO, ei mt-6: emo on `flex h-full flex-col`, joten mt-auto tasaa rinnakkaisten
             korttien napit samalle korkeudelle (Vesa 2026-08-17: "nämä mainokset ei ole tasaisesti"). */}
         <div className="mt-auto flex flex-wrap items-center gap-x-4 gap-y-2 pt-6">
@@ -428,7 +435,8 @@ function TeliaAd({ sid = "stay_moving_telecom", lang: langProp, layout }: { sid?
   const ctxLang = useLang();
   // Kortin kieli seuraa sivun kieltä (asumissivut ovat 15.11.2026 alkaen kaikilla 12 kielellä).
   const lang = langProp ?? ctxLang;
-  const href = `https://go.laplandvibes.com/go/telia?sid=${encodeURIComponent(sid)}`;
+  // Kampanjan ajaksi nappi vie Telian kampanjasivulle (edut saa vain sen kautta); muuten perusmainos.
+  const href = withKampanja(`https://go.laplandvibes.com/go/telia?sid=${encodeURIComponent(sid)}`, "telia", lang);
 
   const trust: TrustPoint[] = [
     {
@@ -559,6 +567,7 @@ function TeliaAd({ sid = "stay_moving_telecom", lang: langProp, layout }: { sid?
         "Ett lokalt nummer gör bankinloggningar, Suomi.fi och meddelanden från din arbetsgivare mycket enklare. Telia är ett av Finlands tre stora nät, med mobilabonnemang, hembredband och engelskspråkig kundtjänst för nyanlända.",
       )}
       trust={trust}
+      extra={<KampanjaNauha mainostaja="telia" lang={lang} marginTop="1.25rem" />}
       cta={pick(
         lang,
         "See Telia plans",

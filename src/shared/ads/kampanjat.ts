@@ -103,6 +103,8 @@ export const KAMPANJAT: readonly Kampanja[] = [
   // määräaikaisia. Edut saa vain kampanjasivulta ⇒ landing, ja sijoitus vie mainoksen napin sinne.
   // Vain fi: ehdot on julkaistu suomeksi (Telian EN-linkki vie yleiselle englanninkieliselle etusivulle).
   // Sijoitukset: stayinlaplandin ja laplandworkin TeliaAd (SettlingInAds.tsx).
+  // Ehdot lyhennetty 19.11.2026 (Vesa: "Kyllä, lyhennä"; 480 merkin ehdot olivat puhelimella 792 px): sivu luettu
+  // uudelleen 19.11.2026, samat ehdot; natiivilukijan tarkistama; voucherin ajoitus jäi Telian sivulle.
   {
     mainostaja: 'telia',
     showFrom: Date.UTC(2026, 10, 17, 22), // 18.11.2026 klo 00.00 Suomen aikaa
@@ -115,13 +117,7 @@ export const KAMPANJAT: readonly Kampanja[] = [
           `Wolt+-jäsenyys 12${NBSP}kuukaudeksi 0${NBSP}€ (arvo 71,88${NBSP}€) kaikkiin Telian 5G-liittymiin`,
           `Avausmaksu 5${NBSP}€ (normaalisti 8,99${NBSP}€) uusiin liittymiin ja numeronsiirtoihin toiselta operaattorilta`,
         ],
-        ehdot:
-          `Kampanja on voimassa 26.11.2026 asti, ja edut saa vain Telian kampanjasivun kautta verkkokaupasta. ` +
-          `Edut koskevat uutta 12${NBSP}kuukauden määräaikaista liittymää uudella numerolla tai toiselta ` +
-          `operaattorilta siirretyllä numerolla, eivät nykyisen Telia-liittymän päivitystä eivätkä numeronsiirtoa ` +
-          `Telia Dot -liittymästä. Wolt+-etukoodi tulee sähköpostiin noin viikon kuluttua liittymän aktivoinnista, ` +
-          `jos liittymä on silloin käytössä, sopimus voimassa ja ensimmäinen lasku maksettu. ` +
-          `Ehdot on tarkistettu Telian sivulta 18.11.2026.`,
+        ehdot: `Edut saa 26.11.2026 asti vain Telian kampanjasivun kautta verkkokaupasta. Liittymä on 12${NBSP}kuukauden määräaikainen, eivätkä edut koske nykyisen Telia-liittymän päivitystä tai numeronsiirtoa Telia Dotista. Ehdot on tarkistettu Telian sivulta 19.11.2026.`,
       },
     },
   },

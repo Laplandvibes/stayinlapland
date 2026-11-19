@@ -18,8 +18,10 @@
  *
  * 🔴 Hinnat näytetään vain viikon lukuhetkestä (sama raja kuin GYG-hinnoilla, lv_permanent_rules §40): hinnat ja
  * perusmaksuedut ovat kampanjoita, joiden päättymistä emme tiedä. Viikon jälkeen kortti näyttää yhä sopimukset,
- * mutta hinnan tilalla "katso voimassa oleva hinta yhtiön sivulta". Päivitys = lue sivut uudelleen, vaihda luvut
- * ja SAHKO_LUETTU, julkaise.
+ * mutta hinnan tilalla "katso voimassa oleva hinta yhtiön sivulta". Päivitys: lv-opsin juuressa
+ * `node scripts/sahko/lue_sahkohinnat.mjs` (lukee kolme sivua selaimella ja vertaa; `--kirjoita` vaihtaa luvut ja
+ * SAHKO_LUETTU vain, jos kaikki kolme löytyivät samoilla ehdoilla), sitten julkaise. Ajastettu luku 25.11.2026
+ * (Vesa 19.11.: "Kyllä, ajasta"): sovelluksen tehtävä `stayinlapland-sahkohinnat-20261125`.
  */
 
 export type SahkoKumppani = 'fortum' | 'vattenfall' | 'oomi';

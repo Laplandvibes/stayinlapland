@@ -125,6 +125,24 @@ export const KAMPANJAT: readonly Kampanja[] = [
       },
     },
   },
+  // <adtraction:2026-11-12-elamyslahjat> Elämyslahjat.fi: Elämyslahjat black month alennukset alkaneet
+  // Lähde: Adtractionin kumppaniviesti 12.11.2026 + kumppanin oma sivu
+  // https://www.elamyslahjat.fi/kampanja/black-friday-kampanja/, luettu 19.11.2026. Teksti kumppanin sanoin, natiivilukijan
+  // tarkistama; hyväksytty painikkeella 19.11.2026 (Adtraction-julkaisuajo, scripts/lv-adtraction-kampanjat).
+  {
+    mainostaja: 'elamyslahjat',
+    showFrom: Date.UTC(2026, 10, 18, 22), // 19.11.2026 klo 00.00 Suomen aikaa
+    showUntil: Date.UTC(2026, 11, 3, 22), // 4.12.2026 klo 00.00 Suomen aikaa
+    landing: 'https://www.elamyslahjat.fi/kampanja/black-friday-kampanja/',
+    teksti: {
+      fi: {
+        otsikko: `Elämyslahjojen Black Friday -tarjoukset 3.12. asti`,
+        ehdot: `Kampanja on voimassa 3.12.2026 asti. Tarjoukset ovat pikadiilejä, ja aikalaskuri kertoo, kuinka kauan kampanjaa on jäljellä. Alennuksen suuruus ja hinta vaihtelevat lahjan mukaan, ja tarjolla olevat lahjat voivat vaihtua kampanjan aikana. Valikoimassa on elämyksiä eri puolilta Suomea ja ulkomailta, ja Lapin kohteet löytyvät kumppanin sivuston Sijainnin mukaan -valikosta kohdasta Lappi. Lahjakortin voimassaoloaika kerrotaan kunkin lahjan tiedoissa. Tiedot on tarkistettu kumppanin sivulta 19.11.2026.`,
+        cta: `Katso tarjoukset`,
+      },
+    },
+  },
+  // </adtraction:2026-11-12-elamyslahjat>
 ]
 
 const kieliavain = (lang?: string) => (lang || '').split('-')[0]

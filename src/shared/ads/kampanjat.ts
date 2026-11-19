@@ -136,8 +136,8 @@ export const KAMPANJAT: readonly Kampanja[] = [
     landing: 'https://www.elamyslahjat.fi/kampanja/black-friday-kampanja/',
     teksti: {
       fi: {
-        otsikko: `Elämyslahjat.fi:n Black Friday -tarjoukset 3.12. asti`,
-        ehdot: `Kampanja on voimassa 3.12.2026 asti. Alennus vaihtelee lahjan mukaan ja tarjouksessa olevat lahjat voivat vaihtua kampanjan aikana. Tiedot on tarkistettu kumppanin sivulta 19.11.2026.`,
+        otsikko: `Black Friday -tarjouksia 3.12. asti`,
+        ehdot: `Elämyslahjat.fi:n kampanja on voimassa 3.12.2026 asti. Alennus vaihtelee lahjoittain ja tarjousvalikoima voi vaihtua kampanjan aikana. Tiedot on tarkistettu kumppanin sivulta 19.11.2026.`,
         cta: `Katso tarjoukset`,
       },
     },

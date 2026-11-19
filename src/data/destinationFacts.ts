@@ -603,7 +603,6 @@ const levi: DestinationFacts = {
   places: [
     { name: 'Hullu Poro', href: 'https://www.hulluporo.fi/en/', kind: 'food' },
     { name: 'Panoramic Restaurant TUIKKU', href: 'https://tuikku.fi/', kind: 'food' },
-    { name: 'Ravintola Riihi', href: 'https://immelkartano.fi/ravintola-riihi', kind: 'food' },
     { name: 'Kekäle', href: 'https://www.levihotelspa.fi/en/kekale/', kind: 'food' },
     { name: 'NiliPoro', href: 'https://www.niliporo.fi/', kind: 'food' },
     { name: 'Sports Bar Kota', href: 'https://www.cafebarkota.com/', kind: 'food' },

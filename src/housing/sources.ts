@@ -202,7 +202,7 @@ const DEFS = {
   tkAvainluvut: {
     fi: 'Tilastokeskus: Kuntien avainluvut (työttömien osuus työvoimasta 2024)',
     en: 'Statistics Finland: Key figures on municipalities (unemployed share of the labour force, 2024)',
-    url: 'https://pxdata.stat.fi/PxWeb/pxweb/fi/Kuntien_avainluvut/Kuntien_avainluvut__uusin/kuntien_avainluvut_viimeisin.px/',
+    url: 'https://pxdata.stat.fi/PxWeb/pxweb/fi/Kuntien_avainluvut/Kuntien_avainluvut__2026/142h_al2026_ka_as.px/',
   },
   kemijarvi: {
     fi: 'Kemijärven kaupunki: Kemijärven kaupungin vuokratalot (560 vuokra-asuntoa)',

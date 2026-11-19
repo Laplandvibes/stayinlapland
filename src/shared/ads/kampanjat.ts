@@ -139,6 +139,30 @@ export const KAMPANJAT: readonly Kampanja[] = [
     },
   },
   // </adtraction:2026-11-12-elamyslahjat>
+  // <adtraction:2026-11-19-ikaalinenspa> Ikaalinenspa.fi: Ikaalinen Spa: viikon tarjoukset voimassa vielä 22.11. asti
+  // Lähde: Adtractionin kumppaniviesti 19.11.2026 + kumppanin oma sivu
+  // https://ikaalinenspa.fi/yritys-faq/kylpylatarjous/black-friday-2026, luettu 19.11.2026. Teksti kumppanin sanoin, natiivilukijan
+  // tarkistama; hyväksytty painikkeella 19.11.2026 (Adtraction-julkaisuajo, scripts/lv-adtraction-kampanjat).
+  {
+    mainostaja: 'ikaalinenspa',
+    showFrom: Date.UTC(2026, 10, 18, 22), // 19.11.2026 klo 00.00 Suomen aikaa
+    showUntil: Date.UTC(2026, 10, 22, 22), // 23.11.2026 klo 00.00 Suomen aikaa
+    landing: 'https://ikaalinenspa.fi/yritys-faq/kylpylatarjous/black-friday-2026',
+    teksti: {
+      fi: {
+        otsikko: `Viikon lahjakorttitarjoukset 22.11. asti`,
+        rivit: [
+          `Tuomarlan kolmen ruokalajin illallinen kahdelle 99${NBSP}€ (normaalisti 118${NBSP}€)`,
+          `Day Spa -lahjakortti 100${NBSP}€ (arvo 130${NBSP}€)`,
+          `Avoin lahjakortti 100${NBSP}€ (arvo 120${NBSP}€)`,
+          `Avoin lahjakortti 200${NBSP}€ (arvo 250${NBSP}€)`,
+        ],
+        ehdot: `Tarjoukset ovat voimassa 22.11.2026 asti. Lahjakortteja on rajallinen erä, ja ne ovat voimassa 12${NBSP}kuukautta ostopäivästä. Tiedot on tarkistettu kumppanin sivulta 19.11.2026.`,
+        cta: `Katso viikon tarjoukset`,
+      },
+    },
+  },
+  // </adtraction:2026-11-19-ikaalinenspa>
 ]
 
 const kieliavain = (lang?: string) => (lang || '').split('-')[0]

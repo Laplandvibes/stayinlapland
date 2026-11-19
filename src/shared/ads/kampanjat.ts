@@ -136,8 +136,8 @@ export const KAMPANJAT: readonly Kampanja[] = [
     landing: 'https://www.elamyslahjat.fi/kampanja/black-friday-kampanja/',
     teksti: {
       fi: {
-        otsikko: `Elämyslahjojen Black Friday -tarjoukset 3.12. asti`,
-        ehdot: `Kampanja on voimassa 3.12.2026 asti. Tarjoukset ovat pikadiilejä, ja aikalaskuri kertoo, kuinka kauan kampanjaa on jäljellä. Alennuksen suuruus ja hinta vaihtelevat lahjan mukaan, ja tarjolla olevat lahjat voivat vaihtua kampanjan aikana. Valikoimassa on elämyksiä eri puolilta Suomea ja ulkomailta, ja Lapin kohteet löytyvät kumppanin sivuston Sijainnin mukaan -valikosta kohdasta Lappi. Lahjakortin voimassaoloaika kerrotaan kunkin lahjan tiedoissa. Tiedot on tarkistettu kumppanin sivulta 19.11.2026.`,
+        otsikko: `Elämyslahjat.fi:n Black Friday -tarjoukset 3.12. asti`,
+        ehdot: `Kampanja on voimassa 3.12.2026 asti. Alennus vaihtelee lahjan mukaan ja tarjouksessa olevat lahjat voivat vaihtua kampanjan aikana. Tiedot on tarkistettu kumppanin sivulta 19.11.2026.`,
         cta: `Katso tarjoukset`,
       },
     },

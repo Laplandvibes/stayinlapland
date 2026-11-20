@@ -163,6 +163,42 @@ export const KAMPANJAT: readonly Kampanja[] = [
     },
   },
   // </adtraction:2026-11-19-ikaalinenspa>
+  // <adtraction:2026-11-20-omenahotels> Omena Hotels: Omena Hotels: -40% kaikista huoneista
+  // Lähde: Adtractionin kumppaniviesti 20.11.2026 + kumppanin oma sivu
+  // https://www.omenahotels.com/fi/hotellitarjoukset/, luettu 20.11.2026. Teksti kumppanin sanoin, natiivilukijan
+  // tarkistama; lisätty Vesan pyynnöstä 20.11.2026 ("Nykyiset + lentosivu"): hubin Omena-mainos + laplandflights /from/helsinki.
+  {
+    mainostaja: 'omenahotels',
+    showFrom: Date.UTC(2026, 10, 19, 22), // 20.11.2026 klo 00.00 Suomen aikaa
+    showUntil: Date.UTC(2026, 10, 29, 22), // 30.11.2026 klo 00.00 Suomen aikaa
+    landing: 'https://www.omenahotels.com/fi/hotellitarjoukset/',
+    teksti: {
+      fi: {
+        otsikko: `Hotelliyöt -40 % koodilla BLACKWEEK40, varaa 29.11. mennessä`,
+        ehdot: `Varaa viimeistään 29.11.2026, majoittua voit 30.4.2027 asti. Varaukset ovat sitovia, eikä maksua palauteta. Etu on voimassa vain Omenan sivuilla ja sovelluksessa, ja huoneita on rajoitetusti. Tiedot on tarkistettu kumppanin sivulta 20.11.2026.`,
+        cta: `Katso tarjous`,
+      },
+    },
+  },
+  // </adtraction:2026-11-20-omenahotels>
+  // <adtraction:2026-11-20-omenahotels-en> Omena Hotels: Omena Hotels: -40% kaikista huoneista
+  // Lähde: Adtractionin kumppaniviesti 20.11.2026 + kumppanin oma sivu
+  // https://www.omenahotels.com/en/offers/, luettu 20.11.2026. Teksti kumppanin sanoin, natiivilukijan
+  // tarkistama; lisätty Vesan pyynnöstä 20.11.2026 ("Nykyiset + lentosivu"): hubin Omena-mainos + laplandflights /from/helsinki.
+  {
+    mainostaja: 'omenahotels',
+    showFrom: Date.UTC(2026, 10, 19, 22), // 20.11.2026 klo 00.00 Suomen aikaa
+    showUntil: Date.UTC(2026, 10, 29, 22), // 30.11.2026 klo 00.00 Suomen aikaa
+    landing: 'https://www.omenahotels.com/en/offers/',
+    teksti: {
+      en: {
+        otsikko: `40% off hotel nights with code BLACKWEEK40, book by 29 November`,
+        ehdot: `Book by 29 November 2026 for stays until 30 April 2027. Bookings are non-refundable and cannot be changed, and availability is limited. Details checked on the partner's website on 20 November 2026.`,
+        cta: `See the offer`,
+      },
+    },
+  },
+  // </adtraction:2026-11-20-omenahotels-en>
 ]
 
 const kieliavain = (lang?: string) => (lang || '').split('-')[0]

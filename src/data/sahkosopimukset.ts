@@ -45,8 +45,8 @@ export interface SahkoTarjous {
   cta: string;
 }
 
-/** 19.11.2026 klo 00.30 Suomen aikaa (UTC+2). */
-export const SAHKO_LUETTU = Date.UTC(2026, 10, 18, 22, 30);
+/** Luettu 25.11.2026 klo 09.03 Suomen aikaa (scripts/sahko/lue_sahkohinnat.mjs lv-opsissa). */
+export const SAHKO_LUETTU = Date.UTC(2026, 10, 25, 7, 3);
 export const SAHKO_HINNAT_NAKYVAT_ASTI = SAHKO_LUETTU + 7 * 24 * 60 * 60 * 1000;
 
 export const SAHKO_TARJOUKSET: readonly SahkoTarjous[] = [

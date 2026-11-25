@@ -199,6 +199,44 @@ export const KAMPANJAT: readonly Kampanja[] = [
     },
   },
   // </adtraction:2026-11-20-omenahotels-en>
+  // <adtraction:2026-11-25-halti> Halti: Halti BLACK WEEK jopa -60 %
+  // Lähde: Adtractionin kumppaniviesti 25.11.2026 + kumppanin oma sivu
+  // https://www.halti.fi, luettu 25.11.2026. Teksti kumppanin sanoin, natiivilukijan
+  // tarkistama; hyväksytty painikkeella 25.11.2026 (Adtraction-julkaisuajo, scripts/lv-adtraction-kampanjat).
+  {
+    mainostaja: 'halti',
+    showFrom: Date.UTC(2026, 10, 24, 22), // 25.11.2026 klo 00.00 Suomen aikaa
+    showUntil: Date.UTC(2026, 10, 30, 22), // 1.12.2026 klo 00.00 Suomen aikaa
+    teksti: {
+      fi: {
+        otsikko: `Black Week -alennukset jopa -60${NBSP}%, voimassa 30.11. asti`,
+        ehdot: `Haltin Black Week -kampanja on voimassa 30.11.2026 asti. Alennuksen määrä vaihtelee tuotteen mukaan, ja palautusaika on pidennetty 7. tammikuuta saakka. Tiedot on tarkistettu kumppanin sivulta 25.11.2026.`,
+      },
+    },
+  },
+  // </adtraction:2026-11-25-halti>
+  // <adtraction:2026-11-25-scandinavianoutdoor> Scandinavian Outdoor FI: Scandinavian Outdoorin Black Friday kampanja on alkanut!
+  // Lähde: Adtractionin kumppaniviesti 25.11.2026 + kumppanin oma sivu
+  // https://scandinavianoutdoor.fi/sivu/black-friday/, luettu 25.11.2026. Teksti kumppanin sanoin, natiivilukijan
+  // tarkistama; hyväksytty painikkeella 25.11.2026 (Adtraction-julkaisuajo, scripts/lv-adtraction-kampanjat).
+  {
+    mainostaja: 'scandinavianoutdoor',
+    showFrom: Date.UTC(2026, 10, 24, 22), // 25.11.2026 klo 00.00 Suomen aikaa
+    showUntil: Date.UTC(2026, 10, 29, 22), // 30.11.2026 klo 00.00 Suomen aikaa
+    landing: 'https://scandinavianoutdoor.fi/sivu/black-friday/',
+    teksti: {
+      fi: {
+        otsikko: `Black Friday: lähes kaikki vaatteet ja kengät -20${NBSP}% 29.11. asti`,
+        rivit: [
+          `Rinkat ja makuupussit: alennus 15–20${NBSP}%`,
+          `Laskettelumonot ja suksisetti -10${NBSP}%, kypärä ja laskettelulasit -20${NBSP}%`,
+        ],
+        ehdot: `Scandinavian Outdoorin Black Friday -tarjoukset ovat voimassa 29.11.2026 asti. Alennetut hinnat ovat Elämää Ulkona -klubin jäsenhintoja, ja alennus vaihtelee tuotteen ja tuoteryhmän mukaan. Tiedot on tarkistettu kumppanin sivulta 25.11.2026.`,
+        cta: `Katso tarjoukset`,
+      },
+    },
+  },
+  // </adtraction:2026-11-25-scandinavianoutdoor>
 ]
 
 const kieliavain = (lang?: string) => (lang || '').split('-')[0]

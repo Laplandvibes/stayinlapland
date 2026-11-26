@@ -237,6 +237,28 @@ export const KAMPANJAT: readonly Kampanja[] = [
     },
   },
   // </adtraction:2026-11-25-scandinavianoutdoor>
+  // <adtraction:2026-11-26-finlayson> Finlayson: Finlaysonilla jopa -50% alet Black Fridayn Flash Salessa! 🖤
+  // Lähde: Adtractionin kumppaniviesti 26.11.2026 + kumppanin oma sivu
+  // https://www.finlayson.fi, luettu 26.11.2026. Teksti kumppanin sanoin, natiivilukijan
+  // tarkistama; hyväksytty painikkeella 26.11.2026 (Adtraction-julkaisuajo, scripts/lv-adtraction-kampanjat).
+  {
+    mainostaja: 'finlayson',
+    showFrom: Date.UTC(2026, 10, 25, 22), // 26.11.2026 klo 00.00 Suomen aikaa
+    showUntil: Date.UTC(2026, 10, 29, 22), // 30.11.2026 klo 00.00 Suomen aikaa
+    teksti: {
+      fi: {
+        otsikko: `Kodintekstiilit jopa -50${NBSP}%, Black Week 29.11. asti`,
+        rivit: [
+          `Pussilakanat ja tyynyliinat jopa -50${NBSP}%`,
+          `Pyyhkeet ja kylpytakit jopa -50${NBSP}%`,
+          `Peitot ja tyynyt -40${NBSP}%`,
+          `Keittiötekstiilit jopa -50${NBSP}%`,
+        ],
+        ehdot: `Finlaysonin Black Week -kampanja on voimassa 29.11.2026 asti. Alennuksen määrä vaihtelee tuoteryhmän mukaan, ja osa tuotteista on loppunut verkkokaupasta. Tiedot on tarkistettu kumppanin sivulta 26.11.2026.`,
+      },
+    },
+  },
+  // </adtraction:2026-11-26-finlayson>
 ]
 
 const kieliavain = (lang?: string) => (lang || '').split('-')[0]

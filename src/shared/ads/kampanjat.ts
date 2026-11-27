@@ -259,6 +259,85 @@ export const KAMPANJAT: readonly Kampanja[] = [
     },
   },
   // </adtraction:2026-11-26-finlayson>
+  // <adtraction:2026-11-27-ikaalinenspa> Ikaalinenspa.fi: Ikaalinen Spa: Black Friday & Cyber Monday -tarjoukset
+  // Lähde: Adtractionin kumppaniviesti 27.11.2026 + kumppanin oma sivu
+  // https://ikaalinenspa.fi/yritys-faq/kylpylatarjous/black-friday-2026, luettu 27.11.2026. Teksti kumppanin sanoin, natiivilukijan
+  // tarkistama; hyväksytty painikkeella 27.11.2026 (Adtraction-julkaisuajo, scripts/lv-adtraction-kampanjat).
+  {
+    mainostaja: 'ikaalinenspa',
+    showFrom: Date.UTC(2026, 10, 26, 22), // 27.11.2026 klo 00.00 Suomen aikaa
+    showUntil: Date.UTC(2026, 10, 30, 22), // 1.12.2026 klo 00.00 Suomen aikaa
+    landing: 'https://ikaalinenspa.fi/yritys-faq/kylpylatarjous/black-friday-2026',
+    teksti: {
+      fi: {
+        otsikko: `Black Friday 30.11. asti: majoituksesta 50${NBSP}% alennus ja kylpylätarjouksia`,
+        rivit: [
+          `Majoituksesta 50${NBSP}% alennus koodilla BLACKSPA (majoitusajankohta 25.1.–31.5.2027)`,
+          `Kylpyläloma kahdelle 109${NBSP}€ (normaalisti 209${NBSP}€) – sisältää aamiaisen, kylpylän ja kuntosalin`,
+          `Kylpylä ja UTU Saunamaailma kahdelle 38${NBSP}€ (normaalisti 66${NBSP}€)`,
+          `Perhelippu kylpylään 37${NBSP}€ (normaalisti 72${NBSP}€)`,
+        ],
+        ehdot: `Tarjoukset ovat voimassa 30.11.2026 asti, ja niitä on saatavilla rajoitettu erä. Majoitusalennus edellyttää koodia BLACKSPA ja majoittumista 25.1.–31.5.2027, eikä se koske Apartment Budget -huoneluokkaa. Tiedot on tarkistettu kumppanin sivulta 27.11.2026.`,
+        cta: `Katso tarjoukset`,
+      },
+    },
+  },
+  // </adtraction:2026-11-27-ikaalinenspa>
+  // <adtraction:2026-11-27-makia> Makia: Makialla Black Week: kaikki vähintään -30 %, jopa -70 %! 🖤
+  // Lähde: Adtractionin kumppaniviesti 27.11.2026 + kumppanin oma sivu
+  // https://makia.com/fi, luettu 27.11.2026. Teksti kumppanin sanoin, natiivilukijan
+  // tarkistama; hyväksytty painikkeella 27.11.2026 (Adtraction-julkaisuajo, scripts/lv-adtraction-kampanjat).
+  {
+    mainostaja: 'makia',
+    showFrom: Date.UTC(2026, 10, 26, 22), // 27.11.2026 klo 00.00 Suomen aikaa
+    showUntil: Date.UTC(2026, 10, 30, 22), // 1.12.2026 klo 00.00 Suomen aikaa
+    teksti: {
+      fi: {
+        otsikko: `Black Week 30.11. asti: kaikki tuotteet vähintään -30${NBSP}%, valikoidut jopa -70${NBSP}%`,
+        ehdot: `Makian Black Week -kampanja on voimassa 30.11.2026 asti. Alennuksen suuruus vaihtelee tuotteen mukaan ja suurimmat alennukset koskevat vain valikoituja tuotteita. Tiedot on tarkistettu kumppanin sivulta 27.11.2026.`,
+      },
+    },
+  },
+  // </adtraction:2026-11-27-makia>
+  // <adtraction:2026-11-27-northoutdoor> North Outdoor FI: North Outdoorilla koko valikoima -25 % Black Fridayna! 🖤
+  // Lähde: Adtractionin kumppaniviesti 27.11.2026 + kumppanin oma sivu
+  // https://northoutdoor.com, luettu 27.11.2026. Teksti kumppanin sanoin, natiivilukijan
+  // tarkistama; hyväksytty painikkeella 27.11.2026 (Adtraction-julkaisuajo, scripts/lv-adtraction-kampanjat).
+  {
+    mainostaja: 'northoutdoor',
+    showFrom: Date.UTC(2026, 10, 26, 22), // 27.11.2026 klo 00.00 Suomen aikaa
+    showUntil: Date.UTC(2026, 10, 30, 22), // 1.12.2026 klo 00.00 Suomen aikaa
+    teksti: {
+      fi: {
+        otsikko: `Black Friday: koko valikoimasta -25${NBSP}% 30.11. asti`,
+        ehdot: `North Outdoorin Black Friday -hinnat ovat voimassa 23.–30.11.2026. Tarjous ei koske Outlet-tuotteita eikä lahjakortteja, eikä sitä voi yhdistää muihin tarjouksiin tai alennuskoodeihin. Tiedot on tarkistettu kumppanin sivulta 27.11.2026.`,
+      },
+    },
+  },
+  // </adtraction:2026-11-27-northoutdoor>
+  // <adtraction:2026-11-27-telia> Telia FI: Telian Black Friday kampanja 27.-30.11.
+  // Lähde: Adtractionin kumppaniviesti 27.11.2026 + kumppanin oma sivu
+  // https://www.telia.fi/kampanjat/liittymat/liittymaedut, luettu 27.11.2026. Teksti kumppanin sanoin, natiivilukijan
+  // tarkistama; hyväksytty painikkeella 27.11.2026 (Adtraction-julkaisuajo, scripts/lv-adtraction-kampanjat).
+  {
+    mainostaja: 'telia',
+    showFrom: Date.UTC(2026, 10, 26, 22), // 27.11.2026 klo 00.00 Suomen aikaa
+    showUntil: Date.UTC(2026, 10, 30, 22), // 1.12.2026 klo 00.00 Suomen aikaa
+    landing: 'https://www.telia.fi/kampanjat/liittymat/liittymaedut',
+    teksti: {
+      fi: {
+        otsikko: `5G-liittymät alkaen 25,99${NBSP}€ kuukaudessa, edut voimassa 30.11. asti`,
+        rivit: [
+          `Rehti 5G 200M -liittymä 25,99${NBSP}€ kuukaudessa ensimmäiset 12${NBSP}kuukautta, sen jälkeen 35,99${NBSP}€ kuukaudessa`,
+          `Wolt+-jäsenyys 12${NBSP}kuukaudeksi 0${NBSP}€ (arvo 71,88${NBSP}€) kaikkiin kampanjan 5G-liittymiin`,
+          `Avausmaksu 5${NBSP}€ (normaalisti 8,99${NBSP}€)`,
+        ],
+        ehdot: `Telian kampanja on voimassa 27.–30.11.2026. Edut saa vain kampanjasivun kautta uuteen määräaikaiseen liittymään tai numeronsiirtoon toiselta operaattorilta. Edut eivät koske Telia-liittymän päivityksiä. Tiedot on tarkistettu kumppanin sivulta 27.11.2026.`,
+        cta: `Katso liittymätarjoukset`,
+      },
+    },
+  },
+  // </adtraction:2026-11-27-telia>
 ]
 
 const kieliavain = (lang?: string) => (lang || '').split('-')[0]
